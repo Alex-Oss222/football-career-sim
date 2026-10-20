@@ -22,7 +22,10 @@ built before a page or file it links to or reads:
                                                            jobs, Staff page)
  9. cap views            scripts/render_jaguars_cap_tracker.py
 10. box scores           scripts/render_box_score.py      (each game page's marked
-                                                           block, only where stale)
+                                                           block, only where stale; a
+                                                           Game Report's last, its
+                                                           markers named once its
+                                                           game has closed)
 11. game-week pages      scripts/render_game_week.py      (each played week's index;
                                                            the open week's decision
                                                            items, briefing, Game Plan
@@ -189,13 +192,18 @@ def cap_views(run):
 
 def box_scores(run):
     from runtime.seasons import GAME_OUTPUT, GAME_REPORT
-    from scripts.render_box_score import fill, is_report, stale_blocks
+    from scripts.render_box_score import fill, is_report, named, stale_blocks
     pages = sorted(p for name in (GAME_OUTPUT, GAME_REPORT) for folder in (run.paths.regular_season,
                                                                            run.paths.postseason)
                    if folder.is_dir() for p in folder.glob("*/" + name))
     for page in pages:
-        if stale_blocks(page, run.paths.receipts, season=run.year):
-            run.put(page, fill(page.read_text(encoding="utf-8"), run.paths.receipts, run.year, report=is_report(page)))
+        try:
+            # A Game Report's template markers name its game once the game has closed.
+            text = named(page, run.year, run.root)
+        except ValueError:
+            continue        # the game is still to be played: its box score waits for it
+        if text != page.read_text(encoding="utf-8") or stale_blocks(page, run.paths.receipts, season=run.year):
+            run.put(page, fill(text, run.paths.receipts, run.year, report=is_report(page)))
 
 
 def game_week_pages(run):
@@ -205,7 +213,9 @@ def game_week_pages(run):
         # Every week's index and issue record, played weeks included, and the open week's briefing.
         run.problems += render_game_week.check(run.root)
         return
-    played = sorted({int(r["week"]) for r in run.receipts() if JAX in (r["home"], r["away"])})
+    from runtime import game_weeks
+    closed = run.receipts() + game_weeks.postseason_receipts(run.paths)     # a playoff game's week too
+    played = sorted({int(r["week"]) for r in closed if JAX in (r["home"], r["away"])})
     for week in played:
         pages = decisions.week_pages(run.year, week, run.root)
         if not (pages.briefing.is_file() or pages.plan.is_file()):

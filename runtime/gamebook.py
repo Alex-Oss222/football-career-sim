@@ -1,6 +1,8 @@
 """Gamebook layout for 2014-onward box scores, rendered from a closed-game receipt.
 
-This is the "Full stats for the game" block of the weekly game turn template
+This is the "Full game statistics" block at the end of the Game Report (from 2014
+Week 6, foundation/templates/game_week/game_report_template.md), and the "Full stats
+for the game" block in section 3 of the 2014 Weeks 1 to 5 turns
 (foundation/templates/regular_season_output_template.md): scoring summary, team stats,
 eleven individual tables per club, drive chart and snap counts. The 2013 box
 score keeps its own layout in scripts/render_box_score.py; nothing here changes
@@ -771,7 +773,8 @@ def render(receipt, lead_team, report=False):
 
 
 def line_score_table(receipt):
-    """The Section 3 line score (away first) as Markdown, from the scoring summary."""
+    """The line score (away first) as Markdown, from the scoring summary: the Game Report's "Final score
+    by quarter" table (section 3 of a Weeks 1 to 5 turn)."""
     view = GameView(receipt, receipt["home"])
     periods = view.line_score()
     header = ["Team"] + [label for label, _ in periods] + ["Final"]

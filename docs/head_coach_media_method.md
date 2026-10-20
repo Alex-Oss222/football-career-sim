@@ -1,6 +1,6 @@
 # Head-coach media: questions and answers that belong to this week
 
-Revised October 18, 2026 at the user's instruction to overhaul the writing process while preserving the career and its game-output layouts. This method governs pregame and postgame media in the [regular-season](../foundation/templates/regular_season_output_template.md) and [preseason](../foundation/templates/preseason_output_template.md) templates. Use it with the [game-output workflow](game_output_workflow.md). It supplies a writing method, not career facts or a license to make decisions for Stone.
+Revised October 18, 2026 at the user's instruction to overhaul the writing process while preserving the career and its game-output layouts, and October 20, 2026 for game week version 2 ([docs/game_week_v2.md](game_week_v2.md), section 6). This file is the one owner of the media guidance: the pregame and postgame media of the [Game Report](../foundation/templates/game_week/game_report_template.md) (sections 2 and 4, every played game from 2014 Week 6, playoff games included) and of the [preseason template](../foundation/templates/preseason_output_template.md). 2014 Weeks 1 to 5 kept their media in the [regular-season output](../foundation/templates/regular_season_output_template.md) as written. Use it with the [game-output workflow](game_output_workflow.md), which owns the rest of the report's prose. It supplies a writing method, not career facts or a license to make decisions for Stone.
 
 Changing this method does not authorize rewriting an existing game report or its dialogue. Apply it when the user requests a new game turn or an edit to a particular output.
 
@@ -17,6 +17,8 @@ A missing detail in the author's sources is not evidence that Stone forgot the p
 The user controls Stone's substantive positions and decisions. An authorized game report may give routine expression to established positions in his voice, including rephrasing already-authored routine answers when the user requests a rewrite. Preserve the user's actual wording where it is recorded as theirs. Do not invent a new promise, lineup choice, policy, public accusation, relationship or private motive. If a question requires an uncovered consequential choice, leave it for the user. Routine answers do not require a fresh approval turn each time.
 
 A presentation revision cannot manufacture a previously absent press conference, private conversation or quote from a real reporter. Use **Reporter:** for an original fictional question. Preserve dated actual dialogue and its provenance.
+
+**In the Game Report.** The pregame session (section 2) is written from pregame knowledge and frozen before the game: no question or answer refers to the still-unplayed outcome, and nothing is backfilled after it. The postgame session (section 4) is written from what was known immediately after the game; next day's film findings stay out of it. If no media session was documented, the section says so in one sentence ("No pregame media session was recorded.") instead of inventing one. There is no forced question count, no obligatory confession, no question about every unit and no statistical recital; a session can be two exchanges or ten. Where an answer would need a new public position or commitment the user has not authorized, the question goes unasked rather than the position being manufactured.
 
 ## 2. Write the questions from the event
 
@@ -67,7 +69,7 @@ An occasional guarded, familiar or incomplete answer is plausible. The failure i
 
 Then verify every material premise, number and commitment against its proper dated source. Keep the natural wording where accurate. Correct unsupported substance rather than sanding every answer into the same cautious voice. Check that private preparation and later knowledge have not leaked into the room.
 
-Preserve source links and any material limitations in one compact supporting section at the end of the output. Refer to this method for established writing references; add a specific new reference only when it was actually consulted and useful. Do not append a borrowed-question citation after every exchange or narrate unsuccessful browsing as part of the football week.
+Keep the research out of the dialogue. In a Game Report no source catalogue or question-source list appears on the page (the box score is its last block): a reference that was actually consulted and useful is noted with the report's other official records in section 7, or kept in its technical owner. Refer to this method for the established writing references. Do not append a borrowed-question citation after every exchange or narrate unsuccessful browsing as part of the football week.
 
 ## 5. Research basis and limits
 

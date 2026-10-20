@@ -161,7 +161,13 @@ def exams_ahead(item, as_of):
     return [w for w in waits_ahead(item, as_of) if w.get("date")]
 
 
-def week_pages(year, week, root=None, postseason=False):
+def week_pages(year, week, root=None, postseason=None):
+    """The game week's pages; ``postseason`` None reads it from the week (a postseason round after the
+    season's last regular-season week, runtime/game_weeks.is_postseason), so a playoff game's pages
+    are in the postseason folder through the folder map."""
     paths = SeasonPaths(year) if root is None else SeasonPaths(year, root)
+    if postseason is None:
+        from .game_weeks import is_postseason
+        postseason = is_postseason(paths, week)
     return WeekPages(paths.week_folder(week, postseason), paths.week_data(week, postseason),
                      paths.game_report(week, postseason))

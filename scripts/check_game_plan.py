@@ -3,6 +3,10 @@
 
   python scripts/check_game_plan.py WEEK --season YEAR [--file PATH] [--root PATH]
 
+A postseason week (18 to 21) is a playoff round: its game is found in the
+bracket (runtime/game_weeks.py), never before the bracket sets it, and its page
+is in the round's folder under the postseason folder.
+
 Reads the week's Game Plan page (runtime/game_plan.py) and says exactly what
 is missing or invalid, in football words, for example "Inactives: 6 named, 7
 needed", "Red zone: 'Flood Sail' is not in the active playbook" or
@@ -127,11 +131,17 @@ class Plan:
         self.root = Path(root).resolve()
         self.season, self.week = season, week
         self.paths = SeasonPaths(season, self.root)
-        self.pages = week_pages(season, week, self.root)
         self.master = master_date(self.root)
         self.job = current_job.load(self.root)
-        games = [g for g in self.paths.regular_games() if g["week"] == week and JAX in (g["away"], g["home"])]
-        self.game = games[0] if games else None
+        # A playoff game is found in the bracket (runtime/game_weeks.py), never before it is set.
+        from runtime import game_weeks
+        self.postseason = game_weeks.is_postseason(self.paths, week)
+        self.unset = None
+        try:
+            self.game = game_weeks.club_game(self.paths, week, JAX)
+        except game_weeks.NotSet as exc:
+            self.game, self.unset = None, str(exc)
+        self.pages = week_pages(season, week, self.root, postseason=self.postseason)
         self.roster = roster_record.load(self.paths.roster)
         self.chart = json.loads(self.paths.depth_chart.read_text(encoding="utf-8"))
         self.text = self.pages.plan.read_text(encoding="utf-8") if self.pages.plan.is_file() else None
@@ -143,6 +153,11 @@ class Plan:
 
     def rel(self, path):
         return Path(path).relative_to(self.root).as_posix()
+
+    def label(self):
+        """The game's name: "Week 6", or its playoff round ("Wild Card")."""
+        from runtime import game_weeks
+        return game_weeks.round_name(self.week) if self.postseason else "Week %d" % self.week
 
     def active(self):
         return [p["name"] for p in roster_record.players(self.roster, ("active",))]
@@ -156,7 +171,7 @@ class Plan:
         out = {}
         for key, value in self.choices.items():
             if isinstance(value, dict) and "same_as" in value:
-                path = self.paths.call_sheet(value["same_as"])
+                path = week_pages(self.season, value["same_as"], self.root).call_sheet
                 if path.is_file():
                     out[value["same_as"]] = json.loads(path.read_text(encoding="utf-8"))
         return out
@@ -186,19 +201,20 @@ class Plan:
         g = self.game
         place = lambda club: club.rsplit(" ", 1)[0]
         d = date.fromisoformat(g["date"])
-        return "%d regular season Week %d, %s at %s, %s %d, %d" % (
-            self.season, self.week, place(g["away"]), place(g["home"]), d.strftime("%B"), d.day, d.year)
+        part = "postseason %s" % self.label() if self.postseason else "regular season Week %d" % self.week
+        return "%d %s, %s at %s, %s %d, %d" % (
+            self.season, part, place(g["away"]), place(g["home"]), d.strftime("%B"), d.day, d.year)
 
     def frame(self):
         from runtime.defensive_calls import active_defensive_book
         page = self.rel(self.pages.plan)
         today = self.master.isoformat()
-        provenance = ("Stone's Week %d Game Plan (%s), checked by scripts/check_game_plan.py and applied by "
+        provenance = ("Stone's %s Game Plan (%s), checked by scripts/check_game_plan.py and applied by "
                       "scripts/apply_game_plan.py on %s: the calls, the situation menus, the decision rules and the "
                       "defensive sheet as the page writes them, each defensive row citing the page's own line."
-                      % (self.week, page, today))
-        return game_plan.page_frame(page, self.event(), "%s, from Stone's Week %d Game Plan after its check passed; "
-                                    "before any draw" % (today, self.week), provenance, JAX,
+                      % (self.label(), page, today))
+        return game_plan.page_frame(page, self.event(), "%s, from Stone's %s Game Plan after its check passed; "
+                                    "before any draw" % (today, self.label()), provenance, JAX,
                                     active_defensive_book(self.root), self.week)
 
     def filled(self):
@@ -709,15 +725,18 @@ def closed_for_changes(root, season, week):
     paused (nothing that a game reads changes during a pause), or the week's game has been built
     from the applied plan (its inputs or results are on file)."""
     paths = SeasonPaths(season, root)
-    played = list(paths.receipts.glob("week_%02d_*.json" % week)) if paths.receipts.is_dir() else []
+    from runtime import game_weeks
+    name = game_weeks.round_name(week) if game_weeks.is_postseason(paths, week) else "Week %d" % week
+    played = [p for folder in (paths.receipts, paths.postseason_receipts) if folder.is_dir()
+              for p in folder.glob("week_%02d_*.json" % week)]
     if any(JAX in json.loads(p.read_text(encoding="utf-8"))["matchup"] for p in played):
-        return "Week %d has been played; its plan stays as it was set" % week
+        return "%s has been played; its plan stays as it was set" % name
     from scripts.render_career_views import paused_games
     if paused_games(root):
         return "A game is paused; the plan stays as it was set until the game is finished"
     if any(paths.cache(week, kind).exists() for kind in ("inputs", "results")):
-        return ("Week %d: the game has been built from the applied plan; the plan stays as it was set unless the "
-                "staff withdraws that build" % week)
+        return ("%s: the game has been built from the applied plan; the plan stays as it was set unless the "
+                "staff withdraws that build" % name)
     return None
 
 
@@ -725,12 +744,15 @@ def check(root, season, week):
     """(problems, notes, plan): what is missing or invalid, and what is still to come."""
     plan = Plan(root, season, week)
     if plan.game is None:
-        return ["Week %d: Jacksonville has no game this week" % week], [], plan
+        if plan.unset:
+            return ["%s: Jacksonville's game is not set yet: %s" % (plan.label(), plan.unset)], [], plan
+        return ["%s: Jacksonville has no game %s" % (plan.label(), "in this round" if plan.postseason
+                                                     else "this week")], [], plan
     refused = closed_for_changes(plan.root, season, week)
     if refused:
         return [refused], [], plan
     if plan.text is None:
-        return ["Week %d: no Game Plan page (%s)" % (week, plan.rel(plan.pages.plan))], [], plan
+        return ["%s: no Game Plan page (%s)" % (plan.label(), plan.rel(plan.pages.plan))], [], plan
     problems = list(plan.problems)
     problems += required(plan)
     problems += inactive_problems(plan)
@@ -814,11 +836,11 @@ def main(argv=None):
         for problem in problems:
             print("- " + problem)
     elif plan.changed_since_applied:
-        print("GAME PLAN: COMPLETE, NOT YET SET  Week %d, %d" % (args.week, args.season))
+        print("GAME PLAN: COMPLETE, NOT YET SET  %s, %d" % (plan.label(), args.season))
         print("- The page has changed since it was applied on %s; apply it again to set the game from it"
               % plan.changed_since_applied)
     else:
-        print("GAME PLAN: COMPLETE  Week %d, %d" % (args.week, args.season))
+        print("GAME PLAN: COMPLETE  %s, %d" % (plan.label(), args.season))
     for note in notes:
         print("  note: " + note)
     return 1 if problems or plan.changed_since_applied else 0

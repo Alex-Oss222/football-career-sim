@@ -608,6 +608,14 @@ def validate(root=ROOT):
                                    f'differs from its receipt; run render_box_score.py --season {year} --write')
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f'Box score cannot be rebuilt from its receipt: {exc}')
+    # Game week version 2 (runtime/game_report.py): every Game Report in the template's section
+    # order, its box score last under "Full game statistics" once the game has closed, and its
+    # final score, line score, overtime and record agreeing with the game.
+    try:
+        from runtime.game_report import validation_errors as game_report_errors
+        errors.extend(game_report_errors(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Game Reports cannot be checked: {exc}')
 
     # Every committed weekly call sheet must be labellable by kernel 2013.7:
     # each call names who it can describe, explicitly or through the family map.
@@ -780,6 +788,10 @@ def validate(root=ROOT):
         return not rel.startswith('archive/') and (not rel.startswith('career/playbook/') or rel in allowed_books)
     for path in sorted(root.rglob('*.md')):
         if '.git' in path.parts or not readable(path):
+            continue
+        # The Game Report acceptance fixtures link as their game's folder would; tests/test_game_report.py
+        # and tests/test_postseason_game_week.py resolve every link from there.
+        if path.relative_to(root).as_posix().startswith('tests/fixtures/game_reports/'):
             continue
         content = without_code(path.read_text())
         for dest in link_destinations(content):

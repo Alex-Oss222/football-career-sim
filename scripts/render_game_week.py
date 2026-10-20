@@ -5,7 +5,14 @@ blank Game Plan and the week folder's index.
   python scripts/render_game_week.py [--week N] [--check] [--root PATH]
 
 The week is the next Jacksonville game that has not closed, unless --week
-names another. Every page is built from its stored owners only:
+names another. After the regular season it is Jacksonville's next playoff game
+(runtime/game_weeks.py): the bracket set from the closed games only, its pages
+in the round's folder under the postseason folder; a first-round bye, a round
+still awaiting results and a season ended by a loss issue nothing, and the
+briefing adds the playoff game's own facts (``playoff_section``: the round and
+seeds, the site, the rest, what a win and a loss mean, any earlier meeting, the
+2014-era overtime rule and the game-day limit). Every page is built from its
+stored owners only:
 
 - the Game Week Briefing, brought by the coaching staff (the coordinators who
   prepare each phase, from the current-job record), with the medical update
@@ -136,6 +143,7 @@ class Week:
     """Everything a game week's pages read, loaded once."""
 
     def __init__(self, root=ROOT, week=None):
+        from runtime import game_weeks
         from scripts import render_career_views as views
         self.root = Path(root).resolve()
         self.views = views
@@ -143,19 +151,37 @@ class Week:
         self.season, self.paths, self.master = self.cv.season, self.cv.paths, self.cv.master
         self.job = self.cv.job
         self.receipts = self._receipts()
-        closed = {int(r["week"]) for r in self.receipts if JAX in (r["home"], r["away"])}
+        # Postseason games (runtime/game_weeks.py): the bracket set from the closed games only.
+        self.post_receipts = [r for r in game_weeks.postseason_receipts(self.paths) if JAX in (r["home"], r["away"])]
+        closed = {int(r["week"]) for r in self.receipts + self.post_receipts if JAX in (r["home"], r["away"])}
         games = self.cv.games
+        self.waiting = None     # why no game is open (a playoff round awaiting results, the season over)
         if week is None:
             open_games = [g for g in games if g["week"] not in closed]
             self.game = open_games[0] if open_games else None
+            if self.game is None and games:
+                self.game, self.waiting = game_weeks.next_postseason_game(self.paths, JAX)
+        elif game_weeks.is_postseason(self.paths, week):
+            try:
+                self.game = game_weeks.club_game(self.paths, week, JAX)
+            except game_weeks.NotSet as exc:
+                raise ValueError("Jacksonville's %s game is not set: %s" % (game_weeks.round_name(week), exc))
+            if self.game is None:
+                raise ValueError("Jacksonville has no %s game in %d" % (game_weeks.round_name(week), self.season))
         else:
             self.game = next((g for g in games if g["week"] == week), None)
             if self.game is None:
                 raise ValueError("Jacksonville has no game in Week %d of %d" % (week, self.season))
+        self.postseason = self.game is not None and self.game.get("game_type") == "postseason"
         self.closed = self.game is not None and self.game["week"] in closed
         if self.game is not None:
-            self.pages = decisions.week_pages(self.season, self.game["week"], self.root)
+            self.pages = decisions.week_pages(self.season, self.game["week"], self.root, postseason=self.postseason)
             self.opponent = self.game["home"] if self.game["away"] == JAX else self.game["away"]
+
+    def label(self):
+        """The game's name: "Week 6", or its playoff round ("Wild Card")."""
+        from runtime import game_weeks
+        return game_weeks.label(self.game)
 
     def _receipts(self):
         folder = self.paths.receipts
@@ -214,12 +240,68 @@ def coordinators(wk):
 
 def game_section(wk):
     g = wk.game
-    site = "%s (%s)" % (g.get("stadium"), "away" if g["away"] == JAX else "home")
+    site = "%s (%s)" % (g.get("stadium"), "neutral site" if g.get("site") == "neutral"
+                        else "away" if g["away"] == JAX else "home")
     rows = [[club_short(c), wk.record(c)] for c in (JAX, wk.opponent)]
     return (["## The game", ""] + table(["Opponent", "Date", "Kickoff", "Site"],
                                         [[wk.opponent, "%s, %s" % (g.get("weekday"), day(g["date"])),
                                           wk.views.kickoff(g["kickoff_et"]), site]]) + [""]
             + table(["Club", "Record"], rows) + [""])
+
+
+# A playoff game in 2014-era rules (library/2013_nfl_playing_rules_for_simulation.md R2 and R5,
+# library/2013_postseason_format_and_schedule.md R-P1 and R-P3; unchanged in 2014, the postseason
+# possession rule changing only in 2022): no tie, modified sudden death, and the season's game-day limit.
+PLAYOFF_OVERTIME = ("A playoff game cannot end tied: overtime is played in 15-minute periods until there is a "
+                    "winner. A touchdown on the first possession wins, as does a safety or a touchdown by the "
+                    "defense; if the first possession ends in a field goal, the other club gets the ball, its "
+                    "touchdown wins and its field goal leads to sudden death; after a first possession without a "
+                    "score, the next score wins.")
+AFTER_A_WIN = {"wild_card": "We play in the Divisional round; the opponent and the site are set by the other "
+                            "Wild Card games.",
+               "divisional": "We play in the Conference Championship; the opponent and the site are set by the "
+                             "other Divisional game.",
+               "conference": "We play in the Super Bowl; the opponent is set by the other conference's "
+                             "championship game.",
+               "super_bowl": "We are the league champions."}
+
+
+def playoff_section(wk):
+    """A playoff game's own facts, from the bracket and the closed games (docs/game_week_v2.md, section
+    7): the round and both seeds, the site, the rest since our last game, what a win and a loss mean,
+    any earlier meeting this season, the overtime rule and the game-day limit. Empty for a season game."""
+    if not wk.postseason:
+        return []
+    from runtime import game_weeks
+    from runtime.rules import RULES
+    g = wk.game
+    ours, theirs = ("away", "home") if g["away"] == JAX else ("home", "away")
+    round_text = g["round_name"] if g["conference"] == "NFL" else "%s, %s" % (g["round_name"], g["conference"])
+    seeds = "%s No. %s, %s No. %s" % (club_short(JAX), g.get(ours + "_seed"), club_short(wk.opponent),
+                                      g.get(theirs + "_seed"))
+    site = ("Neutral site, %s" if g.get("site") == "neutral" else "Away, %s" if ours == "away" else "Home, %s") % (
+        g.get("stadium"))
+    played = [x for x in game_weeks.club_games(wk.paths, JAX) if x["date"] < g["date"]]
+    rows = [["Round", round_text], ["Seeds", seeds], ["Site", site]]
+    if played:
+        last = played[-1]
+        rest = (date.fromisoformat(g["date"]) - date.fromisoformat(last["date"])).days
+        rows.append(["Rest", "%d days since our last game (%s, %s)" % (rest, game_weeks.label(last),
+                                                                      day(last["date"], False))])
+    rows.append(["If we lose", "The season is over."])
+    rows.append(["If we win", AFTER_A_WIN[g["round"]]])
+    met = []
+    for r in wk.receipts:
+        if wk.opponent in (r["home"], r["away"]) and JAX in (r["home"], r["away"]):
+            mine, other = r["final_score"][JAX], r["final_score"][wk.opponent]
+            verb = "beat" if mine > other else "lost to" if mine < other else "tied"
+            met.append("Week %d, %s %s %d-%d %s" % (int(r["week"]), verb, wk.place(wk.opponent), max(mine, other),
+                                                    min(mine, other), "at home" if r["home"] == JAX else "away"))
+    rows.append(["Earlier meeting", "; ".join(met) + "." if met else "None this season."])
+    rows.append(["Overtime", PLAYOFF_OVERTIME])
+    rows.append(["Game-day roster", "%d dress, as in the regular season; every other player on the active roster "
+                                    "is inactive." % RULES.active_limit])
+    return ["## The playoff game", ""] + table(["", "For this game"], rows) + [""]
 
 
 # A reserve status from which no return this season is possible (runtime/roster.status_name).
@@ -339,15 +421,19 @@ def last_game_section(wk):
     out = ["## How we played", ""]
     if not games:
         return out + ["No regular-season game has been played.", ""]
-    last = games[-1]
+    # The last game may be a playoff game; the season leaders stay the regular season's.
+    last = max(games + wk.post_receipts, key=lambda r: int(r["week"]))
     other = last["away"] if last["home"] == JAX else last["home"]
     mine, theirs = last["final_score"][JAX], last["final_score"][other]
     verb = "beat" if mine > theirs else "lost to" if mine < theirs else "tied"
-    out += ["Last game: Week %d, %s %s %d-%d %s." % (int(last["week"]), verb, wk.place(other), max(mine, theirs),
-                                                     min(mine, theirs), "at home" if last["home"] == JAX else "away"), ""]
+    from runtime import game_weeks
+    name = (game_weeks.round_name(last["week"]) if game_weeks.is_postseason(wk.paths, last["week"])
+            else "Week %d" % int(last["week"]))
+    out += ["Last game: %s, %s %s %d-%d %s." % (name, verb, wk.place(other), max(mine, theirs),
+                                                min(mine, theirs), "at home" if last["home"] == JAX else "away"), ""]
     rows, note = team_rows([last], JAX)
     out += table(["", club_short(JAX), club_short(other)], rows) + [""] + ([note, ""] if note else [])
-    out += ["Season leaders through Week %d:" % int(last["week"]), ""]
+    out += ["Season leaders through Week %d:" % int(games[-1]["week"]), ""]
     out += table(["Category", "Player", "Pos", "Season"], leaders(games, JAX)) + [""]
     return out
 
@@ -545,10 +631,11 @@ def briefing(wk, issued=None, plan_open=False):
     names = coordinators(wk)
     staff = ", ".join("%s (%s)" % n for n in names[:-1]) + (" and " if len(names) > 1 else "") + (
         "%s (%s)" % names[-1] if names else "")
-    out = ["# Week %d Game Week Briefing: %s" % (wk.game["week"], wk.title_where()), "",
+    out = ["# %s Game Week Briefing: %s" % (wk.label(), wk.title_where()), "",
            "From the coaching staff, %s: %s, with the medical staff's update and the pro scouting report on %s."
            % (day(issued), staff or "the coordinators", club_short(wk.opponent)), ""]
     out += game_section(wk)
+    out += playoff_section(wk)
     out += medical_section(wk, page_rel)
     out += last_game_section(wk)
     out += opponent_section(wk)
@@ -556,7 +643,7 @@ def briefing(wk, issued=None, plan_open=False):
     out += standing_section(wk, page_rel)
     out += others_section(wk, page_rel)
     out += read_section(wk)
-    out += [" · ".join([link(page_rel, wk.rel(wk.pages.plan), "Game Plan"), link(page_rel, wk.rel(wk.pages.readme), "Week %d" % wk.game["week"]),
+    out += [" · ".join([link(page_rel, wk.rel(wk.pages.plan), "Game Plan"), link(page_rel, wk.rel(wk.pages.readme), wk.label()),
                         link(page_rel, wk.rel(wk.paths.record("depth_chart.md")), "Depth chart"),
                         link(page_rel, wk.rel(wk.paths.roster_page), "Roster"),
                         link(page_rel, wk.rel(wk.paths.record("medical/medical_history.md")), "Medical history")]), ""]
@@ -614,7 +701,7 @@ def issue_errors(wk):
     """The week's briefings against the issue record: each recorded briefing present with the bytes
     it went out with, the latest the current briefing, dates in order and not after today, and no
     briefing in the folder that no issue produced."""
-    label = "Week %d" % wk.game["week"]
+    label = wk.label()
     entries = issues(wk)
     current = wk.pages.briefing
     if not entries:
@@ -681,7 +768,8 @@ def read_errors(wk, text):
 # ---------------------------------------------------------------- the plan and the index
 def plan_page(wk):
     week = wk.game["week"]
-    previous = [g["week"] for g in wk.cv.games if g["week"] < week]
+    from runtime import game_weeks
+    previous = [g["week"] for g in game_weeks.club_games(wk.paths, JAX) if g["week"] < week]
     roster = roster_record.load(wk.paths.roster)
     from runtime.rules import RULES
     inactive = len(roster_record.players(roster, ("active",))) - RULES.active_limit
@@ -696,7 +784,7 @@ def plan_page(wk):
              "the page and tells you what is missing or invalid before anything is set for the game; the page "
              "stays as the record of your decisions. %s" % (wk.when(), link(page_rel, wk.rel(wk.pages.briefing),
                                                                          "Game Week Briefing")))
-    return game_plan.blank("Week %d Game Plan: %s" % (week, wk.title_where()), intro, legal)
+    return game_plan.blank("%s Game Plan: %s" % (wk.label(), wk.title_where()), intro, legal)
 
 
 def earlier_briefings(wk):
@@ -726,7 +814,7 @@ def index_page(wk):
                  "What happened and what changed",
                  # Opened before the game with its preparation; written once the game has closed.
                  ("Written" if wk.closed else "Preparation written") if report.is_file() else "After the game"])
-    out = ["# Week %d: %s" % (week, wk.title_where()), "", "%s." % wk.when(), ""]
+    out = ["# %s: %s" % (wk.label(), wk.title_where()), "", "%s." % wk.when(), ""]
     out += table(["Page", "What it holds", "Status"], rows) + [""]
     earlier = earlier_briefings(wk)
     if earlier:
@@ -735,6 +823,11 @@ def index_page(wk):
     applied = game_plan.applied_record(wk.pages.applied)
     if applied is not None and applied.get("event"):
         out += [game_plan.event_line(applied), ""]
+    if wk.postseason:
+        # No weekly awards are drawn for a playoff game (library/2013_postseason_format_and_schedule.md, R-P4).
+        out += [" · ".join([link(page_rel, wk.rel(wk.pages.folder.parent / "README.md"), "Playoff games"),
+                            link(page_rel, wk.rel(wk.paths.record("postseason/README.md")), "Postseason")]), ""]
+        return "\n".join(out)
     out += [" · ".join([link(page_rel, wk.rel(wk.pages.folder.parent / "README.md"), "All weeks"),
                         link(page_rel, wk.rel(wk.paths.record("statbook.md")), "Regular-season statistics"),
                         link(page_rel, wk.rel(wk.paths.awards / ("week_%02d" % week) / "README.md"),
@@ -752,7 +845,7 @@ def write(root=ROOT, week=None):
     if wk.game is None:
         return []
     if wk.closed:
-        raise ValueError("Week %d has closed; its briefing stays as it went out" % wk.game["week"])
+        raise ValueError("%s has closed; its briefing stays as it went out" % wk.label())
     written = []
     # The week's decision items, opened before its first briefing (scripts/open_game_week.py).
     from scripts import open_game_week
@@ -807,16 +900,19 @@ def has_pages(pages):
 
 def page_weeks(root=ROOT):
     """The weeks of the season's Jacksonville games whose folder holds a game week page, played
-    weeks included."""
+    weeks included, the postseason games the bracket has set among them (runtime/game_weeks.py)."""
+    from runtime import game_weeks
     wk = Week(root)
-    return [g["week"] for g in wk.cv.games if has_pages(decisions.week_pages(wk.season, g["week"], wk.root))]
+    weeks = [g["week"] for g in wk.cv.games]
+    weeks += [g["week"] for g in game_weeks.club_games(wk.paths, JAX) if g.get("game_type") == "postseason"]
+    return [w for w in weeks if has_pages(decisions.week_pages(wk.season, w, wk.root))]
 
 
 def week_errors(wk):
     """One week's pages against their owners: the index current, the briefings as their issue record
     holds them, the staff read well formed and, while the week is open, its Game Plan beside its
     briefing."""
-    label = "Week %d" % wk.game["week"]
+    label = wk.label()
     errors = []
     if not has_pages(wk.pages):
         return errors
@@ -856,7 +952,7 @@ def _check(root, week):
     if wk.game is None:
         return []
     errors = validation_errors(root) if week is None else week_errors(wk)
-    label = "Week %d" % wk.game["week"]
+    label = wk.label()
     if wk.closed:
         return errors
     if not wk.pages.briefing.is_file():
@@ -881,8 +977,8 @@ def main(argv=None):
         return 1
     note = None
     if wk.game is not None and not wk.closed and not wk.pages.staff_read.is_file():
-        note = "note: Week %d's staff read is still to come (%s); the briefing says so" % (
-            wk.game["week"], wk.rel(wk.pages.staff_read))
+        note = "note: %s's staff read is still to come (%s); the briefing says so" % (
+            wk.label(), wk.rel(wk.pages.staff_read))
     if args.check:
         errors = check(args.root, args.week)
         print("\n".join(errors) if errors else "GAME WEEK PAGES CURRENT")

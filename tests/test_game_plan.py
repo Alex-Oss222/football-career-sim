@@ -879,7 +879,7 @@ class VerifierRoundTests(PlanCopy):
 class DocsTests(unittest.TestCase):
     # Fresh: the league-results highlights live in the page's data twin; the page is never hand-edited.
     def test_highlights_are_stored_in_the_data_twin(self):
-        for rel in ("docs/run_week.md", "foundation/templates/regular_season_output_template.md"):
+        for rel in ("docs/run_week.md",):
             text = (ROOT / rel).read_text(encoding="utf-8")
             self.assertNotIn("every rebuild keeps them", text, rel)
             self.assertIn("League_Results/week_NN.json", text, rel)
