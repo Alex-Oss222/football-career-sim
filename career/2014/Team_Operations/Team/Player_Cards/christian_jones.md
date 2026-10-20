@@ -14,9 +14,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A big linebacker who played middle and outside at Florida State, with size for a SAM role and coverage-unit experience; instincts and change of direction are the questions.
+Christian Jones is an undrafted rookie who has been active for five games, with three tackles on special teams. He has the size and strength for a strongside linebacker role, played both middle and outside linebacker at Florida State and brings experience on the coverage units. His instincts and his change of direction are the main questions.
 
-*Staff view, May 11, 2014; dated updates through October 5, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

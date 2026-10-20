@@ -8,7 +8,7 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-A developmental rotational rusher with a useful first step. I see a situational pressure option whose edge anchor and block defeat need to catch up to his movement tools.
+Ryan Davis earned the fourth edge-rusher job in Jacksonville's 2013 rotation with his preseason rush finishes and dressed for 15 regular-season games and both playoff games. He was a developmental situational pass rusher whose first step, edge bend and pursuit were his best tools. His edge anchor against the run and his ability to beat blocks had to catch up to that movement.
 
 *Staff view, March 31, 2014.*
 

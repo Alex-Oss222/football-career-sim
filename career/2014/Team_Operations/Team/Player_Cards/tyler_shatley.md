@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A converted defensive lineman who played guard and center at Clemson, with strength and a short learning history on the offensive line.
+Tyler Shatley signed with Jacksonville as an undrafted rookie in 2014 and joined the practice squad after being waived at the final roster cut. A converted defensive lineman who played guard and center at Clemson, he brings strength to the interior line. He has a short history on the offensive line, and his technique and his snap and call operation at center need the most work.
 
 *Staff view, May 11, 2014.*
 

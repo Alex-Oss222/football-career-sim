@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.
+Allen Hurns signed with Jacksonville as an undrafted rookie from Miami in May 2014 and has played in five games, with three catches for 48 yards and four special-teams tackles. He is a tall outside receiver with body control on the boundary, and Stone's order for the Pittsburgh game had him as the first general relief receiver and the second punt returner. His speed is average, and creating separation is the main limit on his game.
 
-*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

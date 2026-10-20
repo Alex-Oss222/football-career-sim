@@ -12,9 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-An athletic starting right tackle who can move on reach and second-level work and retain taught protection answers. I see leverage, hand precision and consistent anchoring as the remaining limits of his rookie profile.
+Lane Johnson has shown he is a viable NFL starting right tackle. Jacksonville drafted him second overall in 2013, he started all 16 regular-season games as a rookie and he has started five games in 2014. He is an athletic mover who is at his best on reach blocks and can work to the second level, and he keeps the protection answers he is taught, including twist exchanges against changed fronts. His remaining limits are leverage, hand precision and a consistent anchor against power.
 
-*Staff view, March 31, 2014; dated updates through September 20, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

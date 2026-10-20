@@ -8,7 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A small-school lineman with size and weight-room strength (36 bench reps at the combine, tied for second among linemen) and no experience against major-conference rushers.
+Matt Feiler signed with Jacksonville as an undrafted rookie in 2014 and joined the practice squad after being waived at the final roster cut. He is a small-school lineman with good size and weight-room strength, including one of the best bench-press results among linemen at the combine. His technique is unrefined, and he has no experience against major-conference rushers.
 
 *Staff view, May 11, 2014.*
 

@@ -242,7 +242,23 @@
      "source": "Source: [Week 4 record](career/2014/Regular_Season/Games/Week_04/output.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/marcedes_lewis.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/marcedes_lewis.md at commit 332d70b",
+   "short": {
+    "text": "Marcedes Lewis has proven himself an NFL starting tight end and remains Jacksonville's starter in 2014. He played in all {{2013.regular.games}} regular-season games for Jacksonville in 2013, catching {{2013.regular.receptions}} passes for {{2013.regular.receiving_yards}} yards, and has {{2014.regular.receiving_touchdowns:words}} touchdown catches in {{2014.regular.games:words}} games in 2014. He is a big, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. His game rests on structure and strength rather than sudden separation, and speed and yards after the catch are his weaker traits.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

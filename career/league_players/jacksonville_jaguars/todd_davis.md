@@ -10,9 +10,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A productive small-school inside linebacker with a downhill style and coverage-unit value; coverage range is the question.
+Todd Davis is an undrafted rookie from Sacramento State who was active for the first time against Pittsburgh and has played 18 snaps on special teams. He was a productive inside linebacker in college, plays downhill and has value on the coverage units. His range in coverage is the question.
 
-*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

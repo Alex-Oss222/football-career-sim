@@ -166,7 +166,19 @@
      "source": "Source: [Week 5 record](career/2014/Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/allen_hurns.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/allen_hurns.md at commit 332d70b",
+   "short": {
+    "text": "Allen Hurns signed with Jacksonville as an undrafted rookie from Miami in May 2014 and has played in {{2014.regular.games:words}} games, with {{2014.regular.receptions:words}} catches for {{2014.regular.receiving_yards}} yards and {{2014.regular.special_teams_tackles:words}} special-teams tackles. He is a tall outside receiver with body control on the boundary, and Stone's order for the Pittsburgh game had him as the first general relief receiver and the second punt returner. His speed is average, and creating separation is the main limit on his game.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

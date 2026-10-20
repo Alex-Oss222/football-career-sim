@@ -14,9 +14,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-An H-back tight end (Harold Hoskins) with receiving production at Marshall and a movable alignment profile; blocking is unproven.
+Gator Hoskins came to Jacksonville as an undrafted rookie H-back from Marshall, where he produced as a receiver, and he is the fourth tight end in 2014. He has the profile for a movable alignment, with athleticism, speed and change of direction the best of his tools, and in camp he was assignment-correct in his attached work with a mixed finish. Blocking is his main limitation and remains unproven, with his strength and technique behind his movement.
 
-*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+*Staff view, May 11, 2014.*
 
 ## Contract
 

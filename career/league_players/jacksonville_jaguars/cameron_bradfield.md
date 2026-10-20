@@ -8,7 +8,7 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-A swing tackle and heavy-package blocker who can recognize the job and cover either edge in a reserve role. I see assignment utility ahead of his recovery ceiling against NFL rushers.
+Cameron Bradfield was Jacksonville's swing tackle throughout 2013 and, from the fifth week, the sixth lineman in its six-lineman package, dressing for all 16 regular-season games and both playoff games. He recognized his assignments, including twists and blitzes, well enough to cover either edge in a reserve role. His hand use, movement blocking and recovery against NFL rushers were the limits.
 
 *Staff view, March 31, 2014.*
 

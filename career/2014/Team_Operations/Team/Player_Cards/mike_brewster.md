@@ -12,9 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A young center who can hold the operation and communicate the core protection work. I see a viable starting option whose anchor, leverage and second-level work remain less developed than his operation.
+Mike Brewster took over at center for Jacksonville early in the 2013 season, when Brad Meester was hurt, and kept the job through both playoff games; he has started five games in 2014. He is a viable starting option whose strength is running the operation: the snap, the line's communication and the core protection calls. In camp he reset the protection point correctly against a mugged front. His anchor, leverage, hand use and work at the second level are less developed than his operation.
 
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

@@ -166,7 +166,19 @@
      "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/cornelius_lucas.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/cornelius_lucas.md at commit 332d70b",
+   "short": {
+    "text": "Cornelius Lucas signed with Jacksonville as an undrafted rookie in 2014, made the opening roster as the first reserve tackle and started at right tackle in the preseason game at Chicago. He has been active for {{2014.regular.games:words}} regular-season games, with {{2014.regular.special_teams_snaps}} special-teams snaps and {{2014.regular.offensive_snaps:words}} on offense. He is a very large tackle whose length and strength are his best assets, and in camp his set landmark held against rookie rushers. His set is still raw and he is limited in bend, foot speed and change of direction; in camp he was beaten around the edge once.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

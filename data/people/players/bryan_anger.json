@@ -213,7 +213,23 @@
      "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/bryan_anger.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/bryan_anger.md at commit 332d70b",
+   "short": {
+    "text": "Bryan Anger has been a viable NFL starting punter. He punted {{2013.regular.punts}} times across all {{2013.regular.games}} regular-season games for Jacksonville in 2013 and has {{2014.regular.punts}} punts in {{2014.regular.games:words}} games in 2014. His best weapon is a strong leg for distance, with useful hang time and operation, and in camp he put his situational punts to the instructed side. His directional punting and his control in plus territory are less developed than his leg.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

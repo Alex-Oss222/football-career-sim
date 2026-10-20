@@ -247,7 +247,19 @@
      "source": "Source: [Week 4 record](career/2014/Regular_Season/Games/Week_04/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/aqib_talib.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/aqib_talib.md at commit 332d70b",
+   "short": {
+    "text": "Aqib Talib signed with Jacksonville in March 2014 as a physical outside corner the staff judged above the NFL starting standard in nearly every part of his game. His best tools are press coverage, ball skills and play at the catch point, and the staff believes he can challenge bigger receivers, with consistent technique still important to that matchup; in camp he re-routed Hakeem Nicks on some press reps and lost others to Nicks's hands. Tackling in run support, getting off blocks and penalty discipline are the weakest parts of his game, though still at a starting standard. In {{2014.regular.games:words}} games this season he has {{2014.regular.tackles}} tackles and {{2014.regular.passes_defended:words}} passes defended, including a September interception of Andrew Luck against Indianapolis.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-An athletic package linebacker with range and useful pressure tools. I see his movement ahead of his run diagnosis and fit consistency, which need to become dependable before expanding the job.
+Sio Moore played in all 16 regular-season games as a rookie in 2013, working as a package linebacker in a rotation role. He is athletic, covers ground and has useful tools for pressuring the quarterback, and the coverage corrections he was given in his first spring held when the looks changed. His reading of the run and his fit discipline are behind his movement and need to become dependable before his job grows.
 
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Contract
 

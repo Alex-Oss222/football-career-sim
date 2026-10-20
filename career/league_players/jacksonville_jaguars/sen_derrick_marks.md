@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A penetrating interior starter whose quick entry and lateral pursuit can disrupt the pocket and backfield. I see better single-gap pressure tools than double-team anchoring.
+Sen'Derrick Marks has proven himself an NFL starting defensive tackle: he was a starter on Jacksonville's interior line in 2013, dressed for all 16 regular-season games and was named a defensive captain for 2014. His quick first step, penetration and lateral pursuit can disrupt the pocket and the backfield. He is better as a one-gap pressure player than as an anchor against double teams.
 
 *Staff view, March 31, 2014.*
 

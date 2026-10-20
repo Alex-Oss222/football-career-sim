@@ -205,7 +205,23 @@
    ],
    "one_line": "A blocking and special-teams fullback who can handle a small carry or flat-receiving package. I see utility and dependable physical work before I see a featured offensive weapon.",
    "updates": [],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/montell_owens.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/montell_owens.md at commit 332d70b",
+   "short": {
+    "text": "Montell Owens held Jacksonville's fullback job through the 2013 season, dressing for all {{2013.regular.games}} regular-season games and {{2013.playoffs.games:words}} playoff games without a fumble. He is a blocking and special-teams fullback who can handle a small package of carries and flat throws, and his special-teams work and lead blocking are the strongest parts of his game. He brings dependable utility rather than a featured offensive threat, and route running and hands are where he is limited.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

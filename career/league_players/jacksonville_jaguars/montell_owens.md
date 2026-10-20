@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A blocking and special-teams fullback who can handle a small carry or flat-receiving package. I see utility and dependable physical work before I see a featured offensive weapon.
+Montell Owens held Jacksonville's fullback job through the 2013 season, dressing for all 16 regular-season games and two playoff games without a fumble. He is a blocking and special-teams fullback who can handle a small package of carries and flat throws, and his special-teams work and lead blocking are the strongest parts of his game. He brings dependable utility rather than a featured offensive threat, and route running and hands are where he is limited.
 
 *Staff view, March 31, 2014.*
 

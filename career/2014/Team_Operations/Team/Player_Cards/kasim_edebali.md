@@ -14,7 +14,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A German-born edge rusher with motor and hand activity, a productive senior season and a shorter frame.
+Kasim Edebali, an undrafted rookie from Boston College, signed with Jacksonville in May 2014 and made the roster at the final cuts as the eighth defensive lineman; his NFL level is not yet established. He is an edge rusher with motor and active hands who had a productive senior season. His shorter frame and lack of length are the main concern, and his technique is not yet at an NFL starter's level.
 
 *Staff view, May 11, 2014.*
 

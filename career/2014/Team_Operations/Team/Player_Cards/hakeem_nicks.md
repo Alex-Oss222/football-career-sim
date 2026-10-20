@@ -14,9 +14,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A physical outside receiver who wins through hands, catch-point strength and route timing. My starting view is that he offers more contested-catch value than sudden separation.
+Hakeem Nicks joined Jacksonville from the New York Giants on a one-year contract in March 2014 and competed with Davante Adams for the X job in camp until a lower-body injury in the final preseason game kept him out until late September. He dressed for the San Diego and Pittsburgh games without an offensive snap, and for Pittsburgh Stone kept Adams at X and made Nicks the fifth receiver and the X relief. He is a physical outside receiver who wins with his hands, strength at the catch point and route timing, and he offers more on contested catches than with sudden separation. In camp he won leverage against Aqib Talib with his hands while keeping the quick timing, though Talib re-routed him on other reps.
 
-*Staff view, March 31, 2014; dated updates through October 4, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Contract
 

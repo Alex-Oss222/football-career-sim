@@ -253,7 +253,23 @@
      "source": "Source: [preseason game 1 output](career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_01/output.md) and its public receipt. This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/c_j_anderson.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/c_j_anderson.md at commit 332d70b",
+   "short": {
+    "text": "C.J. Anderson joined Jacksonville as an undrafted rookie in 2013 and was active for all {{2013.regular.games}} regular-season games as a complementary back with a defined special-teams coverage job. He is a sturdy inside runner with useful balance and short-yardage finishing, and his run-track and protection-check assignments held against changed looks in 2013. Receiving detail and open-field speed trail his inside running, and he is a developing pass protector.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

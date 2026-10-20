@@ -14,9 +14,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-An undersized, explosive interior defensive lineman whose first step and hand quickness beat blockers before they set. Anchoring against double teams and holding gaps on early downs are the unproven questions at NFL size.
+Aaron Donald, Jacksonville's first-round pick in 2014, is a rookie whose NFL level is not yet established: he has dressed for five games and played zero defensive snaps. He is an undersized, explosive interior lineman whose first step and quick hands beat blockers before they set, and in camp his first step beat Trai Turner on a one-on-one rep. Whether he can anchor against double teams and hold his gap on early downs at his size is unproven; in camp the double team of Mike Brewster and Trai Turner moved him off the strong-side A-gap more often than he split it.
 
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

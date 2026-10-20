@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A four-year college starter at both tackle spots with a heavy lower body, good short-area quickness and a finished set. Whether he is a tackle or a guard in Jacksonville is Stone's decision; his arm length is unresolved in the record.
+Jacksonville drafted Joel Bitonio in the first round in 2014; he began at left guard in May, Stone named him the starter there on the season depth chart issued at the final roster cut, and he has started five games. He is a strong blocker with a heavy lower body who drives defenders in the run game, and he brings good short-area quickness and a finished pass set from four years as a college tackle. Length is the main limitation the staff sees if he plays tackle, though his arm length conflicts in the sources. In camp he over-set once and opened the inside lane, and the correction to his set angle and inside hand held.
 
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

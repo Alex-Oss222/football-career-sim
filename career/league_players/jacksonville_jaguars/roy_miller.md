@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A run-priority interior anchor built to occupy blocks and hold the front. I see his double-team and power work ahead of penetration and developed pass-rush counters.
+Roy Miller has proven himself an NFL starting defensive tackle: he was a starter beside Sen'Derrick Marks on Jacksonville's interior line in 2013 and dressed for all 16 regular-season games. He is a run-first anchor who occupies blocks, holds up against double teams with his power and keeps the front in place. His pass rush is less developed, with his penetration and rush counters trailing his work against the run.
 
 *Staff view, March 31, 2014.*
 

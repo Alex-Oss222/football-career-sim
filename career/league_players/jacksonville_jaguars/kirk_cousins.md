@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Structured pocket passer with advanced command of the pre-snap and in-pocket phases of the position. Cousins uses cadence to control the operation, processes coverage and protection cleanly, and works through progressions on schedule. Pocket movement is a defining strength: he can climb, slide and reset without abandoning the structure of the play, keeping his eyes downfield and creating a usable throwing lane as pressure closes. His mechanics stay compact and repeatable, and his best accuracy comes in the short-to-intermediate game, where placement and timing allow him to throw receivers into space. He has enough arm strength and deep-outside placement to attack the full field, though neither is the foundation of his game. Under pressure he generally remains a passer first, relying on movement, processing and disciplined decisions rather than scrambling. His mobility is functional, but speed and open-field creation are secondary traits.
+Kirk Cousins has proven he is an NFL starting quarterback. He started all 16 regular-season games for Jacksonville in 2013, led the team to the playoffs and remains the starter in 2014. He runs the offense well, particularly its protection calls and short-to-intermediate passing game. Interceptions remain his biggest concern: 18 in 2013 and seven through the first five games of 2014.
 
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

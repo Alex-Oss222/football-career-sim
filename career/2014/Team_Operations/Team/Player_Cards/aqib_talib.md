@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A physical outside corner with strong press and catch-point tools. My starting view is that he can challenge bigger receivers, with technique consistency still important to that matchup value.
+Aqib Talib signed with Jacksonville in March 2014 as a physical outside corner the staff judged above the NFL starting standard in nearly every part of his game. His best tools are press coverage, ball skills and play at the catch point, and the staff believes he can challenge bigger receivers, with consistent technique still important to that matchup; in camp he re-routed Hakeem Nicks on some press reps and lost others to Nicks's hands. Tackling in run support, getting off blocks and penalty discipline are the weakest parts of his game, though still at a starting standard. In five games this season he has 36 tackles and five passes defended, including a September interception of Andrew Luck against Indianapolis.
 
-*Staff view, March 31, 2014; dated updates through September 27, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

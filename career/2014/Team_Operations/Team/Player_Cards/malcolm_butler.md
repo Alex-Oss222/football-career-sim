@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A Division II cornerback with a ball-production record (seven interceptions and 25 pass breakups across 2012 and 2013), kick-return experience and a competitive style; not invited to the combine, so no verified testing exists.
+Malcolm Butler is a rookie seventh-round pick from Division II football who has played in two NFL games, and the staff sees him as an outside corner with a special-teams path. His strengths are ball skills, change of direction and a competitive style in press, backed by a college record of interceptions, pass breakups and kick returns. The jump from Division II competition is the biggest question, along with his strength and technique, and he arrived with no verified testing. In camp he was late once on a press transition against Allen Hurns and on time after the correction, though one retained correction leaves a later test open.
 
-*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

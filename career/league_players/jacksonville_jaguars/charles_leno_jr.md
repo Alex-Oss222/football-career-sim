@@ -10,9 +10,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A four-year college starter, 39 consecutive games, the last 26 at left tackle, with good short-area movement and a long frame; he did not run at the combine and his strength marks are light for the position.
+Jacksonville drafted Charles Leno Jr. in the fifth round in 2014, and he made the opening roster as a reserve tackle. He has been active for five regular-season games and has played zero offensive snaps. A four-year college starter who finished at left tackle, he has good short-area movement, quick feet in his set and a long frame. His strength is light for the position, and his anchor against NFL power rushers is the main question.
 
-*Staff view, May 11, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

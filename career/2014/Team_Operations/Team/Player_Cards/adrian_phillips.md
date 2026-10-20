@@ -12,9 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A safety with a physical tackling profile and coverage-unit experience; range on the back end is the question.
+Adrian Phillips is an undrafted rookie from Texas who was promoted from the practice squad in September and has been active for four games. He brings a physical tackling style and experience on the coverage units. His range on the back end is the question.
 
-*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

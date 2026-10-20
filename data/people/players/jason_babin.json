@@ -6,7 +6,19 @@
   {
    "season": 2013,
    "stage": "final",
-   "owner": "career/2013/player_profiles/jason_babin.md"
+   "owner": "career/2013/player_profiles/jason_babin.md",
+   "short": {
+    "text": "Jason Babin was Jacksonville's lead edge rusher in 2013, first in every recorded edge order, and dressed for all {{2013.regular.games}} regular-season games and both playoff games. Camp marked him as the club's leading edge-pressure option, built on his get-off, bend and a useful rush plan, and he finished the regular season with {{2013.regular.sacks:words}} sacks. His run defense at the point of attack, block shedding and contain discipline were below his value as a rusher.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

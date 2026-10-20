@@ -8,9 +8,9 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-The recorded outside-reserve workload began after injuries elsewhere; individual technique evidence remains thin. Return credits are unreliable, and no dated retirement has been established.
+Kevin Rutland was a reserve corner for Jacksonville in 2013, playing in seven regular-season games and both playoff games and serving late in the season as the first outside reserve while A.J. Bouye was hurt. The staff saw functional movement but unfinished technique and route recognition, suited to a narrow depth role rather than a corner to isolate consistently in matchups. Press coverage, reading routes and ball skills were the least developed parts of his game.
 
-*Staff view at the 2013 season close, January 14, 2014.*
+*Staff view, January 14, 2014.*
 
 ## Statistics
 

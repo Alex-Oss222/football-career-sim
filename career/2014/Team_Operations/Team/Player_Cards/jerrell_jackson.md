@@ -8,9 +8,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A developmental receiver with useful movement but an unfinished NFL route and adjustment profile. I see a practice-squad receiver competing for a narrow depth role.
+Jerrell Jackson spent 2013 on Jacksonville's practice squad without a regular-season game, signed a reserve/future contract in February 2014 and went to reserve/injured for the season after an injury in the second preseason game. The staff saw him entering 2014 as a developmental receiver with useful movement, a practice-squad player competing for a narrow depth role. His route running, release against press and adjustments to coverage are still unfinished at NFL level.
 
-*Staff view, March 31, 2014; dated updates through August 14, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Contract
 

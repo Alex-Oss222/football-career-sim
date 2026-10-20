@@ -14,9 +14,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A fifth-year senior center with rare weight-room strength for the position and a full season of calls in a power conference; athletic marks are modest and his arms are short.
+Jacksonville drafted Corey Linsley in the fifth round in 2014, and he made the opening roster as the reserve center. He brings rare weight-room strength for a center, a strong anchor and a full college season of making the line calls in a power conference. In camp he made the protection point on time with Chad Henne in the relief pairing on every recorded rep. His athletic marks are modest, his arms are short, and reach blocks and second-level movement are the weakest part of his game.
 
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff view, May 11, 2014.*
 
 ## Contract
 

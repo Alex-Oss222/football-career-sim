@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A complete second-level veteran whose communication, diagnosis and zone awareness organize the defense. I see a strong starter whose value is reading and coordinating rather than being a featured pressure player.
+Daryl Smith has proven he is a strong NFL starting linebacker. He played in all 16 regular-season games for Jacksonville in 2013 and became the defense's communication lead when Paul Posluszny missed a game early that season, keeping that job through the playoffs. His value is in reading and organizing the defense: he communicates the calls, diagnoses the run, fits his gap with discipline and plays zone coverage with good awareness. He is not a featured pass rusher, and taking on blocks and man coverage are the weaker parts of his game.
 
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Contract
 

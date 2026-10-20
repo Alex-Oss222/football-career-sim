@@ -238,7 +238,23 @@
    ],
    "one_line": "A rhythm-route receiver who can uncover on intermediate concepts and add yards after the catch. I see a legitimate starter whose route work is stronger than his contested-catch and blocking profile.",
    "updates": [],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/cecil_shorts.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/cecil_shorts.md at commit 332d70b",
+   "short": {
+    "text": "Cecil Shorts was Jacksonville's primary receiver in 2013, catching {{2013.regular.receptions}} passes for {{2013.regular.receiving_yards}} yards in all {{2013.regular.games}} regular-season games, and Jacksonville traded him to Indianapolis with Justin Blackmon in March 2014. The staff saw him as a legitimate starter who ran rhythm routes, uncovered on intermediate concepts and added yards after the catch, and his Stick and Drive landmarks held against changing leverage. His route work was stronger than his contested catches and blocking.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

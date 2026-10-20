@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A strong-legged punter whose best weapon is gross distance. I see hang and operation as useful, with directional and plus-territory control less developed than the leg.
+Bryan Anger has been a viable NFL starting punter. He punted 69 times across all 16 regular-season games for Jacksonville in 2013 and has 25 punts in five games in 2014. His best weapon is a strong leg for distance, with useful hang time and operation, and in camp he put his situational punts to the instructed side. His directional punting and his control in plus territory are less developed than his leg.
 
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

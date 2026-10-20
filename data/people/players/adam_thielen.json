@@ -246,7 +246,23 @@
      "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/adam_thielen.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/adam_thielen.md at commit 332d70b",
+   "short": {
+    "text": "Adam Thielen joined Jacksonville as an undrafted rookie in 2013, played in all {{2013.regular.games}} regular-season games and earned an expanded receiving role at H, finishing with {{2013.regular.receptions}} catches for {{2013.regular.receiving_yards}} yards. He is a route-driven possession receiver who wins with the pace of his stem, leverage and timing, finds space against zone and has dependable hands that reach outside his frame. He has {{2014.regular.receptions}} catches for {{2014.regular.receiving_yards}} yards through {{2014.regular.games:words}} games of 2014. His separation comes from setup and tempo more than burst or change of direction, he is not built to win repeated vertical races, and against press he has functional answers without consistently releasing clean.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

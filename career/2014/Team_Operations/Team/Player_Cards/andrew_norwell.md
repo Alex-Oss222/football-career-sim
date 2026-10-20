@@ -14,9 +14,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A three-year college starting guard with a strong upper body and a physical finish; a limited athlete who went undrafted.
+Andrew Norwell signed with Jacksonville as an undrafted rookie in 2014, competed for the left guard job and made the opening roster as the reserve guard. He has been active for five regular-season games and has played zero offensive snaps. A three-year college starter at guard, he has a strong upper body and finishes blocks physically, and in camp he carried a combination block to the linebacker and recovered after losing leverage in protection. He is a limited athlete, short on speed and lateral movement.
 
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

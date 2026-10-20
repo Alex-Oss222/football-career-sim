@@ -253,7 +253,23 @@
      "source": "Source: [September 8 transactions](career/2014/Team_Operations/Team/Roster/transactions_2014-09-08.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/dwight_lowery.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/dwight_lowery.md at commit 332d70b",
+   "short": {
+    "text": "Dwight Lowery has proven he is an NFL starting safety, and he played in all {{2013.regular.games}} regular-season games and both playoff games for Jacksonville in 2013. He started the 2014 opener at safety before an injury in that game put him on reserve/injured, with the club's designation to return. His communication, positioning and recognition of route combinations steady the coverage. His anticipation and clean operation make up for ordinary movement when he has to recover.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

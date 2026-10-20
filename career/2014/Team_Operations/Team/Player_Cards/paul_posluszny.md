@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-An instinctive middle linebacker who can set fits, communicate the front and finish inside tackles. I see downhill work as stronger than isolated man coverage or recovery range.
+Paul Posluszny has proven he is an NFL starting middle linebacker: he started every game for Jacksonville in 2012 and was a base linebacker in the 11 games he played in 2013. He diagnoses the run, can set the fits and communicate the front, and finishes tackles inside. Man coverage on his own is the weakest part of his game, and he is better working downhill than covering ground to recover.
 
-*Staff view, March 31, 2014; dated updates through October 4, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Contract
 

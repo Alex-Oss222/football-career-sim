@@ -6,7 +6,19 @@
   {
    "season": 2013,
    "stage": "final",
-   "owner": "career/2013/player_profiles/brad_meester.md"
+   "owner": "career/2013/player_profiles/brad_meester.md",
+   "short": {
+    "text": "Brad Meester started Jacksonville's first two games of 2013 at center and, after an injury in the second, dressed as the reserve center; he was active for {{2013.regular.games}} regular-season games and both playoff games. His protection calls and line communication were his defining value: he steadied the common calls and finished changed-front and twist work without help from the coaches. His movement blocking, second-level work and sustained physical blocking were below that mental operation.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

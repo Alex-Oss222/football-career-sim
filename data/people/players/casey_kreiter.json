@@ -166,7 +166,19 @@
      "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/casey_kreiter.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/casey_kreiter.md at commit 332d70b",
+   "short": {
+    "text": "Casey Kreiter came in as an undrafted rookie with no NFL track record after four seasons snapping at Iowa, and he has handled {{2014.regular.long_snaps}} long snaps in {{2014.regular.games:words}} games for Jacksonville in 2014. The best of his tools on arrival were technique, snap accuracy and an understanding of the job, and he kept the punt operation clean against a controlled rush in camp. Athleticism, speed, change of direction and coverage after the snap are the weakest parts of his game.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A redshirt-sophomore right guard with a powerful base and short-area quickness, a full 2013 season as an every-game starter in the SEC. Technique is raw: hand placement and pass-set discipline need coaching, and he did not complete the agility drills at the combine.
+Jacksonville drafted Trai Turner in the third round in 2014, and the rookie held the right guard job through camp and has started five games. He plays with a powerful base, a strong anchor and short-area quickness, and in camp he held his anchor against C.J. Mosley and C.J. Wilson. His technique is still raw: hand placement, pass-set discipline and interior exchanges need coaching, and late hands cost him one rep against Aaron Donald in camp before he held the repeat.
 
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

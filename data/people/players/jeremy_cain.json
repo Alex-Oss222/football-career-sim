@@ -213,7 +213,23 @@
      "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/jeremy_cain.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/jeremy_cain.md at commit 332d70b",
+   "short": {
+    "text": "Jeremy Cain was a viable NFL starting long snapper for Jacksonville in 2013, active for all {{2013.regular.games}} regular-season games and {{2013.playoffs.games:words}} playoff games. Jacksonville released him at the cut to the final roster in August 2014, and he signed with Chicago two days later. His value is repeatable, accurate delivery and routine operation; the operation was recorded clean through the first half of the 2013 season, and he kept the punt operation clean against a controlled rush in the 2014 camp. His protection after the snap and his coverage athleticism trail his snapping.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

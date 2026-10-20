@@ -8,7 +8,7 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-An interior depth lineman whose clearest route to a role is size and basic power work. My view is that protection coordination, movement and recovery need a defined backup assignment.
+Mark Asper was an interior reserve for Jacksonville in 2013, dressing for six regular-season games before the backup job went to Austin Pasztor on the strength of Pasztor's own practice work. His clearest route to a role was his size and basic power. His protection coordination, movement and recovery were the weaker parts of his game and called for a defined backup assignment.
 
 *Staff view, March 31, 2014.*
 

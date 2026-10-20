@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A lean, fast linebacker who played weak side in 2013 after two platoon seasons inside; range, pursuit and ball skills are his case, and his 218-pound frame is the question in the run game.
+Telvin Smith, a fourth-round pick in 2014, has been active for five games as a rookie and made four tackles on special teams. He is a lean, fast linebacker whose speed, range in pursuit and ball skills are his strengths. His light frame is the question in the run game, and taking on blocks is the weakest part of his game.
 
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

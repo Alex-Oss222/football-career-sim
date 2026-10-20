@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A developing nickel corner who can sort routes and maintain leverage through communication. I see short-area recognition ahead of outside recovery speed, press power and catch-point size.
+Jordan Poyer held the nickel job for Jacksonville as a rookie in 2013, playing in all 16 regular-season games and both playoff games, and he opened 2014 at nickel until an injury against Indianapolis in September. He is a developing nickel corner who sorts routes and keeps his leverage through communication, with short-area quickness and route recognition at a starting standard. Outside recovery speed, press strength and size at the catch point are behind his short-area recognition, and how he recovers when a route beats his leverage is still an open question.
 
-*Staff view, March 31, 2014; dated updates through October 4, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Contract
 

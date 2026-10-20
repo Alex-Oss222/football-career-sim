@@ -8,7 +8,7 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-A physical interior reserve with useful recovery but uneven combinations and leverage. I see a backup who can cover a job, with less consistent coordination than the starting pair.
+Austin Pasztor was a reserve guard for Jacksonville in 2013, pushing Will Rackley for the right-guard job in camp and dressing as the primary interior backup for the last eight regular-season games and both playoff games. He was a physical lineman who could cover a job as a backup, and camp credited his recovery after losing initial leverage and his pickup of the rush. His combination work and leverage were uneven, and his coordination with the line was less consistent than the starting pair's.
 
 *Staff view, March 31, 2014.*
 

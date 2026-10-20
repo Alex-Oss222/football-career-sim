@@ -14,9 +14,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A stabilizing safety whose communication, positioning and combination recognition support the coverage structure. I see anticipation and clean operation compensating for ordinary recovery movement.
+Dwight Lowery has proven he is an NFL starting safety, and he played in all 16 regular-season games and both playoff games for Jacksonville in 2013. He started the 2014 opener at safety before an injury in that game put him on reserve/injured, with the club's designation to return. His communication, positioning and recognition of route combinations steady the coverage. His anticipation and clean operation make up for ordinary movement when he has to recover.
 
-*Staff view, March 31, 2014; dated updates through September 8, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Contract
 

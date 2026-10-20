@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A compact, powerful lead back who wins with track decisions, balance and useful protection work. I see a complete veteran runner whose inside efficiency matters more than open-field speed.
+Maurice Jones-Drew has proven himself an NFL starting running back, running for 1,334 yards as Jacksonville's lead back in 2013 and 461 more through five games of 2014. He is a compact, powerful runner who picks the right track, keeps his balance through contact and finishes in short yardage, and he adds useful pass protection and receiving work. His game rests on inside efficiency more than open-field speed, and long speed and route detail are his lesser traits.
 
-*Staff view, March 31, 2014; dated updates through September 13, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

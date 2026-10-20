@@ -10,9 +10,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-He won and held the outside job on camp evidence in 2013; pair-level coverage reads and teams portability add context. No specific individual technique fault is recorded, and injury is not effort evidence.
+Alan Ball started the first nine games of 2013 at outside corner for Jacksonville and held the job until his injury, with 41 tackles, nine passes defended and an interception in the season opener. He is a long corner who can handle a defined starting coverage job and communicate the exchanges, with speed, quickness and press technique at a starting standard. He makes fewer plays on the ball and anticipates routes less well than the better corners, and getting off blocks and penalty discipline are also among his weaker areas. The staff now views him as a reserve outside corner: he rejoined Jacksonville in September 2014 after ten months without football, and whether he is the same player after the layoff is still open.
 
-*Staff view, September 8, 2014; dated updates through October 4, 2014.*
+*Staff view, September 8, 2014.*
 
 ## Contract
 

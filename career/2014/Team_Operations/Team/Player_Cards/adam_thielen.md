@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Route technician with a possession-receiver frame and a developed understanding of leverage. Thielen varies the pace of his stem, keeps defensive backs from sitting on the break point and can change the picture late by leaning on leverage before snapping the route away from it. He is comfortable working option routes, crossers, digs, outs and intermediate in-breakers, and he finds space against zone without drifting off the quarterback's timing. His separation comes more from setup, tempo and body positioning than sudden change of direction. He has dependable hands, can extend outside his frame and competes through contact at the catch point. He has enough speed to threaten a corner who squats on underneath routes, but he is not built around winning repeated vertical footraces, and his deep tracking is less advanced than his work in the short and intermediate game. Against press, he has functional answers but does not consistently create an immediate clean release with burst alone. After the catch he is direct and balanced rather than especially elusive. He is assignment-sound as a blocker and can stay attached when his angle is right. His best value comes as a receiver who can move across the formation, read coverage with the quarterback and stay on schedule while creating separation through route detail.
+Adam Thielen joined Jacksonville as an undrafted rookie in 2013, played in all 16 regular-season games and earned an expanded receiving role at H, finishing with 52 catches for 616 yards. He is a route-driven possession receiver who wins with the pace of his stem, leverage and timing, finds space against zone and has dependable hands that reach outside his frame. He has 19 catches for 168 yards through five games of 2014. His separation comes from setup and tempo more than burst or change of direction, he is not built to win repeated vertical races, and against press he has functional answers without consistently releasing clean.
 
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

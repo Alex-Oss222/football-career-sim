@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A coverage-unit safety with useful straight-line range and a reserve defensive role. I see movement and lane work ahead of route-combination recognition and man coverage.
+Chris Prosinski was a reserve safety and coverage-unit player for Jacksonville in 2013, dressing for all 16 regular-season games. He has useful straight-line range and held his assigned lane on the coverage units through camp and the preseason that year. Recognizing route combinations and playing man coverage are behind his movement.
 
 *Staff view, March 31, 2014.*
 

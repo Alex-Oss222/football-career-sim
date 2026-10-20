@@ -12,9 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A mobile reserve linebacker who can cover space and take a defined replacement assignment. I see limited block destruction and coverage detail as the barriers to a larger base role.
+Julian Stanford was a reserve linebacker for Jacksonville in 2013, dressing for all 16 regular-season games and moving into an expanded role late in the season. In 2014 he has been the third linebacker in the base defense, with two sacks in five games. He moves well, covers space and can handle a defined replacement assignment. Taking on blocks and the detail of his coverage are what stand between him and a larger base role.
 
-*Staff view, March 31, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

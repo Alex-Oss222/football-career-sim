@@ -8,9 +8,9 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Camp/preseason assignment reliability and route work provide a baseline. TE3 usage leaves individual blocking and broader receiving capability underobserved, not disproven.
+Allen Reisner was a reserve tight end for Jacksonville in 2013, dressing for all 16 regular-season games and two playoff games in the third tight end's job in heavy personnel. He was a dependable package player who knew his alignments and ran the routes he was given, with the versatility to play in several spots and a functional read of coverage. He offered limited separation and little after the catch, and his blocking and protection were not individually evaluated.
 
-*Staff view at the 2013 season close, January 14, 2014.*
+*Staff view, January 14, 2014.*
 
 ## Statistics
 

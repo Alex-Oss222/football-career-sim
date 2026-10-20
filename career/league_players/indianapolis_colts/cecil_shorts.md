@@ -14,7 +14,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A rhythm-route receiver who can uncover on intermediate concepts and add yards after the catch. I see a legitimate starter whose route work is stronger than his contested-catch and blocking profile.
+Cecil Shorts was Jacksonville's primary receiver in 2013, catching 104 passes for 1,158 yards in all 16 regular-season games, and Jacksonville traded him to Indianapolis with Justin Blackmon in March 2014. The staff saw him as a legitimate starter who ran rhythm routes, uncovered on intermediate concepts and added yards after the catch, and his Stick and Drive landmarks held against changing leverage. His route work was stronger than his contested catches and blocking.
 
 *Staff view, March 31, 2014.*
 

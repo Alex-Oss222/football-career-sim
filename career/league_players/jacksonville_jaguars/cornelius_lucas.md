@@ -14,9 +14,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A very large developmental tackle with length and a raw set; measurements conflict in the sources, and he was measured at the combine on crutches after a foot stress fracture in pre-combine training.
+Cornelius Lucas signed with Jacksonville as an undrafted rookie in 2014, made the opening roster as the first reserve tackle and started at right tackle in the preseason game at Chicago. He has been active for five regular-season games, with 23 special-teams snaps and zero on offense. He is a very large tackle whose length and strength are his best assets, and in camp his set landmark held against rookie rushers. His set is still raw and he is limited in bend, foot speed and change of direction; in camp he was beaten around the edge once.
 
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

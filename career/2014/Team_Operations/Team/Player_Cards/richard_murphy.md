@@ -8,9 +8,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A reserve runner with usable movement and receiving assignments. I see a player who needs a specific complementary job, with protection and inside power limiting a broader role.
+Richard Murphy spent the 2013 season on Jacksonville's practice squad without a regular-season game and returned to it after the August 2014 roster cuts. He is a reserve runner with usable movement and receiving assignments: his routes were correct in the 2013 preseason games against Miami and Atlanta, and his recorded reps in the week before the third 2014 preseason game were assignment-correct. Pass protection and inside power limit him to a specific complementary job rather than a broader role.
 
-*Staff view, March 31, 2014; dated updates through August 18, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Contract
 

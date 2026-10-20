@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-An instinctive coverage corner who wins through route recognition, positioning and ball awareness. My starting view favors his coverage judgment over recovery-speed matchups.
+Alterraun Verner signed with Jacksonville in March 2014 as a coverage corner the staff judged above the NFL starting standard in most of his game. He wins with instincts, route recognition, positioning and ball awareness, and his best work comes reading routes in zone and off coverage. His recovery speed and press coverage are at a starting standard rather than strengths, and the staff favors his coverage judgment over recovery-speed matchups; getting off blocks and penalty discipline are the weakest parts of his game. In five games this season he has 20 tackles, and he intercepted Andrew Luck in September against Indianapolis.
 
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

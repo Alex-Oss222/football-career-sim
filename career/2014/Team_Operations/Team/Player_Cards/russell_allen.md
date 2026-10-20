@@ -8,7 +8,7 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-A dependable complementary linebacker and coverage-unit contributor who can prepare for expanded assignments. I see a role player with communication value and less ability to dictate pressure or man-matchups.
+Russell Allen was a rotation linebacker for Jacksonville who played in all 16 regular-season games in 2013 and started beside Daryl Smith when Paul Posluszny was out. He was dependable when his job expanded on a week's notice, brought value as a communicator and contributed on the coverage units. Creating pressure and man coverage were the weakest parts of his game.
 
 *Staff view, March 31, 2014.*
 

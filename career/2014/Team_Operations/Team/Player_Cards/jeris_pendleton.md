@@ -8,9 +8,9 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-A power-oriented interior reserve. I see a narrow run-defense role, with first-step disruption, hand technique and pass-rush development below his raw strength.
+Jeris Pendleton was an interior reserve for Jacksonville in 2013, dressing for the first seven games before a numbers decision on the game-day list made him inactive. His raw strength and anchor suited a narrow run-defense role. His first step, hand technique and pass-rush counters were below that strength.
 
-*Staff view, March 31, 2014; dated updates through August 28, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Statistics
 

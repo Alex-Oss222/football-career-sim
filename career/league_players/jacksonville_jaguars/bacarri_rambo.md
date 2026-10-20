@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A developing safety with useful ball instincts and improving exchange communication. I see the reads and communication becoming usable, while live tackling and play-action discipline need a firmer foundation.
+Bacarri Rambo won a starting safety job beside Dwight Lowery as a rookie in 2013 and held it all season, playing in all 16 regular-season games. He is a developing safety with useful ball instincts, and his reads and his communication on coverage exchanges are becoming usable. His live tackling and his discipline against play-action need a firmer foundation.
 
 *Staff view, March 31, 2014.*
 

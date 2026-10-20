@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A balanced starting left tackle with useful pass-set movement, recovery and sufficient anchor. I see pass protection as his best contribution, with solid rather than dominant drive blocking.
+Eugene Monroe has proven he is an NFL starting left tackle. He was Jacksonville's left tackle for all 16 regular-season games and both playoff games in 2013, re-signed for five years in March 2014, was named an offensive captain and has started five games in 2014. Pass protection is his best contribution: he sets and mirrors well, has a sound punch, recovers after losing leverage and has enough anchor against power. As a run blocker he is solid rather than dominant, both driving defenders off the ball and working up to the second level.
 
-*Staff view, March 31, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

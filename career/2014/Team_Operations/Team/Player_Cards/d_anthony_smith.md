@@ -8,7 +8,7 @@ As of August 31, 2014.
 
 ## Staff assessment
 
-A developmental interior defender with some initial movement utility. I see a player who needs stronger anchoring and a defined hand/counter sequence to earn a regular rotation job.
+D'Anthony Smith, who had played NFL games before 2013, was waived at Jacksonville's final roster cut that year and spent the season on its practice squad without playing a game. He was a developmental interior defender with some quickness off the snap and some penetration. He needed a stronger anchor and a defined sequence of hand moves and counters to earn a regular place in the rotation.
 
 *Staff view, March 31, 2014.*
 

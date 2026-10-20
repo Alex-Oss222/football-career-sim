@@ -12,7 +12,7 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-A short-area reserve receiver who can work underneath routes and offer modest run-after-catch utility. I see depth rather than a receiver I would feature against press or at the catch point.
+Mike Brown was a Jacksonville reserve receiver in 2013, active for nine regular-season games with 12 catches, and Jacksonville withdrew his exclusive-rights tender at the August 2014 roster cut. He worked underneath routes in a short area with modest run-after-catch value, and he caught all five passes thrown to him against San Diego that season. The staff saw him as depth rather than a receiver to feature against press or at the catch point.
 
 *Staff view, March 31, 2014.*
 

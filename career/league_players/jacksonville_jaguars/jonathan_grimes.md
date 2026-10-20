@@ -12,9 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A change-of-pace back with useful cuts, receiving utility and enough burst for the core runs. I see a flexible reserve, with less certainty in physical pickups and power finishing.
+Jonathan Grimes was Jacksonville's second running back in 2013, active for all 16 regular-season games, and he produced four rushing touchdowns and one receiving touchdown when his calls came. He is a flexible reserve and change-of-pace back with useful cuts, enough burst for the core runs and receiving value, and his assigned route work held from the 2013 camp into the preseason games. Pass protection and power finishing are the less certain parts of his game.
 
-*Staff view, March 31, 2014; dated updates through September 27, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Contract
 

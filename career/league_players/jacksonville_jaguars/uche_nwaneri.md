@@ -8,9 +8,9 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Correct identification and recovery appear in preseason; shared interior exchange work improved in spring. Individual leverage and the Week 2 sack cause remain underclassified. A VERIFY retirement row does not retire him.
+Uche Nwaneri was Jacksonville's starting left guard in every game of 2013, all 16 regular-season games and both playoff games. He was a power guard whose anchor inside and drive blocking were his best tools, and he identified his protection assignments correctly in the preseason. Pulling and movement work were less of an advantage, and he needed steadier leverage after reading his assignment.
 
-*Staff view at the 2013 season close, January 14, 2014.*
+*Staff view, January 14, 2014.*
 
 ## Statistics
 

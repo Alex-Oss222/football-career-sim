@@ -12,9 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A power-oriented edge reserve suited to a defined run-setting assignment. My starting view gives him more edge/contain utility than speed-rush or counter value.
+Daniel Te'o-Nesheim is a veteran end who signed with Jacksonville as a free agent from Tampa Bay in March 2014 and has dressed for five games, opening the season as a reserve. He is a power end suited to a defined job setting the edge and keeping contain against the run. He has more value there than as a speed rusher, because his get-off, bend and counter moves are his main weaknesses.
 
-*Staff view, March 31, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

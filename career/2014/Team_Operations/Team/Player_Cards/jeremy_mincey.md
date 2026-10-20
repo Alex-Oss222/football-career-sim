@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A sturdy edge defender who offers power, run setting and rotational rush work. I see a balanced role player whose speed/bend are less threatening than his physical edge play.
+Jeremy Mincey is a veteran role player at defensive end: he dressed for all 16 regular-season games for Jacksonville in 2013 as the second edge in the rotation, then came out of camp in 2014 holding the first edge job. He is a sturdy, physical end who plays with power and sets the edge against the run, and in camp he kept contain on every recorded rep. His limitation is speed: his get-off, bend around the corner and pursuit do not threaten blockers the way his strength does.
 
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Contract
 

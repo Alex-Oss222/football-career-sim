@@ -166,7 +166,19 @@
      "source": "Source: [Week 5 game record](career/2014/Regular_Season/Games/Week_05/output.md) and its public receipt. This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/christian_jones.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/christian_jones.md at commit 332d70b",
+   "short": {
+    "text": "Christian Jones is an undrafted rookie who has been active for {{2014.regular.games:words}} games, with {{2014.regular.special_teams_tackles:words}} tackles on special teams. He has the size and strength for a strongside linebacker role, played both middle and outside linebacker at Florida State and brings experience on the coverage units. His instincts and his change of direction are the main questions.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

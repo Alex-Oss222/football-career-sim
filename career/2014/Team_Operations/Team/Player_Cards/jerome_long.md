@@ -8,7 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A developmental interior lineman who offers size and a basic power role. My working view is that block defeat and disciplined technique are the larger questions than raw strength.
+Jerome Long is a developmental defensive tackle who spent the 2013 season on Jacksonville's practice squad and, after signing a reserve/future contract in February 2014, returned to the practice squad at the final cuts. He offers size and a basic power role inside, but defeating blocks and playing with disciplined technique, from his hand use to his gap control, are bigger questions than his strength.
 
 *Staff view, March 31, 2014.*
 

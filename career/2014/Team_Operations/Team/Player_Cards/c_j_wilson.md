@@ -12,7 +12,7 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-A strong-side edge defender whose power and run setting offer more than bend or speed. I see a rotational run defender with limited reason to feature him as a wide speed rusher.
+C.J. Wilson was in Jacksonville's edge rotation on the strong side in 2013 camp and in the opener, then was hurt in the second game and dressed for only two regular-season games. He was a rotational run defender whose power, edge setting and block shedding were his strengths. His bend, speed and get-off were his main weaknesses, which gave the staff limited reason to feature him as a wide speed rusher.
 
 *Staff view, March 31, 2014.*
 

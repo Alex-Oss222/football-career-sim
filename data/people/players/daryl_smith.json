@@ -246,7 +246,23 @@
      "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/daryl_smith.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/daryl_smith.md at commit 332d70b",
+   "short": {
+    "text": "Daryl Smith has proven he is a strong NFL starting linebacker. He played in all {{2013.regular.games}} regular-season games for Jacksonville in 2013 and became the defense's communication lead when Paul Posluszny missed a game early that season, keeping that job through the playoffs. His value is in reading and organizing the defense: he communicates the calls, diagnoses the run, fits his gap with discipline and plays zone coverage with good awareness. He is not a featured pass rusher, and taking on blocks and man coverage are the weaker parts of his game.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

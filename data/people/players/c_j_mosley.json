@@ -227,7 +227,23 @@
    ],
    "one_line": "A veteran interior reserve who can supply strength and hold a limited run assignment. I see more value in occupying a block than in creating repeated penetration or rush-counter wins.",
    "updates": [],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/c_j_mosley.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/c_j_mosley.md at commit 332d70b",
+   "short": {
+    "text": "C.J. Mosley is a veteran NFL interior reserve who came into Jacksonville's line rotation late in 2013, dressing for {{2013.regular.games:words}} regular-season games and {{2013.playoffs.games:words}} playoff games. He brings strength to the middle of the line and can occupy a block and hold a limited run assignment. He is more useful holding a block than creating repeated penetration, and his get-off and pass-rush counters are his main weaknesses.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

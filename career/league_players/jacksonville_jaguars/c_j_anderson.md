@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A sturdy complementary runner with useful balance and inside finishing. I see a developing protection back, with receiving detail and open-field speed behind his inside-running tools.
+C.J. Anderson joined Jacksonville as an undrafted rookie in 2013 and was active for all 16 regular-season games as a complementary back with a defined special-teams coverage job. He is a sturdy inside runner with useful balance and short-yardage finishing, and his run-track and protection-check assignments held against changed looks in 2013. Receiving detail and open-field speed trail his inside running, and he is a developing pass protector.
 
-*Staff view, March 31, 2014; dated updates through August 8, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Contract
 

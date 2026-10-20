@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A redshirt-sophomore receiver with a large catch radius, strong hands and route polish at the top of the stem; a record-volume college season in a pass-heavy offense. Long speed is average and his release against NFL press is unproven.
+Davante Adams, Jacksonville's second-round pick in 2014, was named the X receiver when the camp competition closed in August and has 30 catches for 369 yards and two touchdowns in five games as a rookie. He has a large catch radius and strong hands, and his routes are polished at the top of the stem. His long speed is average, and his release against press, unproven when he arrived, was mixed in camp, where he won a contact release and lost another to Aqib Talib.
 
-*Staff view, May 11, 2014; dated updates through September 27, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

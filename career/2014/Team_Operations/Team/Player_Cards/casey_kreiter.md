@@ -12,9 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A long snapper from Iowa with four seasons of Big Ten snapping; the memo signs him to compete with Jeremy Cain.
+Casey Kreiter came in as an undrafted rookie with no NFL track record after four seasons snapping at Iowa, and he has handled 48 long snaps in five games for Jacksonville in 2014. The best of his tools on arrival were technique, snap accuracy and an understanding of the job, and he kept the punt operation clean against a controlled rush in camp. Athleticism, speed, change of direction and coverage after the snap are the weakest parts of his game.
 
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

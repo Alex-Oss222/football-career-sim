@@ -8,9 +8,9 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Communication and point/echo/confirm work provide a recorded veteran contribution. His two starts and reserve period deserve the promised review. His [recorded retirement](../../2014/League/personnel/retirements.md) ends training eligibility.
+Brad Meester started Jacksonville's first two games of 2013 at center and, after an injury in the second, dressed as the reserve center; he was active for 15 regular-season games and both playoff games. His protection calls and line communication were his defining value: he steadied the common calls and finished changed-front and twist work without help from the coaches. His movement blocking, second-level work and sustained physical blocking were below that mental operation.
 
-*Staff view at the 2013 season close, January 14, 2014.*
+*Staff view, January 14, 2014.*
 
 ## Statistics
 

@@ -8,7 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A developmental vertical passer with a stronger throwing tool than his command of the offense. I see a quarterback who needs timing and protection answers to catch up to the arm.
+Jacksonville drafted Tyler Bray in 2013, and he spent his rookie season on the practice squad without a regular-season game, returning there after the August 2014 roster cuts. He is a developmental vertical passer whose arm is the strongest part of his game, and his cadence and footwork improved in 2013. His timing and protection answers need to catch up to the arm, and his throws came late when the defense changed its look.
 
 *Staff view, March 31, 2014.*
 

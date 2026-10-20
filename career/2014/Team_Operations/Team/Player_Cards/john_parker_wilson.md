@@ -8,9 +8,9 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-A reserve pocket quarterback whose value is clean execution of a defined menu. I would trust his preparation before I would ask him to create offense under disruption.
+John Parker Wilson was Jacksonville's third quarterback in 2013, active for four regular-season games without throwing a pass, and was waived at the final roster cut in August 2014. His value was clean execution of a defined menu, and in 2014 camp he kept the corrected launch depth on sprint-out flood throws and ran the core menu. The staff trusted his preparation more than his ability to create offense when a play broke down, and decisions under pressure were the weakest part of his game.
 
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff view, March 31, 2014.*
 
 ## Statistics
 

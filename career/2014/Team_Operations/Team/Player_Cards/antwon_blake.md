@@ -12,7 +12,7 @@ As of August 31, 2014.
 
 ## Staff assessment
 
-A small, mobile developmental defensive back being reviewed at safety in 2013. I see quickness and pursuit utility ahead of the route reads and positioning required for a full safety role.
+Antwon Blake was a developmental defensive back who spent the 2013 season on Jacksonville's practice squad at safety. He was small and mobile, and his quickness and pursuit were his useful traits. His route reads and positioning were not yet at the level a full safety role requires.
 
 *Staff view, March 31, 2014.*
 

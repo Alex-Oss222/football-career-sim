@@ -227,7 +227,23 @@
    ],
    "one_line": "A developmental interior defender with some initial movement utility. I see a player who needs stronger anchoring and a defined hand/counter sequence to earn a regular rotation job.",
    "updates": [],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/d_anthony_smith.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/d_anthony_smith.md at commit 332d70b",
+   "short": {
+    "text": "D'Anthony Smith, who had played NFL games before 2013, was waived at Jacksonville's final roster cut that year and spent the season on its practice squad without playing a game. He was a developmental interior defender with some quickness off the snap and some penetration. He needed a stronger anchor and a defined sequence of hand moves and counters to earn a regular place in the rotation.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

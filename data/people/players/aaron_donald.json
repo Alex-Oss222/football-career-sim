@@ -166,7 +166,19 @@
      "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/aaron_donald.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/aaron_donald.md at commit 332d70b",
+   "short": {
+    "text": "Aaron Donald, Jacksonville's first-round pick in 2014, is a rookie whose NFL level is not yet established: he has dressed for {{2014.regular.games:words}} games and played {{2014.regular.defensive_snaps:words}} defensive snaps. He is an undersized, explosive interior lineman whose first step and quick hands beat blockers before they set, and in camp his first step beat Trai Turner on a one-on-one rep. Whether he can anchor against double teams and hold his gap on early downs at his size is unproven; in camp the double team of Mike Brewster and Trai Turner moved him off the strong-side A-gap more often than he split it.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

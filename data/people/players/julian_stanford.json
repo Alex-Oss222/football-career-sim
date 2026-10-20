@@ -274,7 +274,23 @@
      "source": "Source: [Week 5 record](career/2014/Regular_Season/Games/Week_05/output.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/julian_stanford.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/julian_stanford.md at commit 332d70b",
+   "short": {
+    "text": "Julian Stanford was a reserve linebacker for Jacksonville in 2013, dressing for all {{2013.regular.games}} regular-season games and moving into an expanded role late in the season. In 2014 he has been the third linebacker in the base defense, with {{2014.regular.sacks:words}} sacks in {{2014.regular.games:words}} games. He moves well, covers space and can handle a defined replacement assignment. Taking on blocks and the detail of his coverage are what stand between him and a larger base role.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-20",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [
