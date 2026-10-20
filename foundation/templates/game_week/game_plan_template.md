@@ -5,7 +5,7 @@
 **Briefing used:** [Issue date / revision]  
 **Baseline:** [Carry Week NN / New plan]. **No change** means carry the last *eligible and legal* frozen instruction; **None** means intentionally no special adjustment. A new or changed call must belong to the active playbook and have been installed. Medical eligibility cannot be overridden.
 
-> FILL-IN GUIDE (remove from locked page): This is a coach's decision, not a call-sheet database. Replace the bracketed prompts with the decision you want. You may write in ordinary football language under each fixed heading. Do not invent percentage targets, ratings, unobserved opponent tendencies or arbitrary practice repetitions. The checker will compile your decisions into the technical call sheet and return precise problems if it cannot. **This template requires a new parser/compiler before it can replace the repository's current Game_Plan.md.**
+> FILL-IN GUIDE (remove from locked page): This is a coach's decision, not a call-sheet database. Replace the bracketed prompts with the decision you want. You may write in ordinary football language under each fixed heading. Do not invent percentage targets, ratings, unobserved opponent tendencies or arbitrary practice repetitions. The checker will compile your decisions into the technical call sheet and return precise problems if it cannot. Every line needs an answer: a line left empty is unanswered, never a yes or a no.
 
 ## 1. What I want this game to look like
 
@@ -25,7 +25,8 @@
 **Caller:** [Stone, unless authority has actually changed].  
 **Base personnel and roles:** [Who leads, who substitutes and *why*, without snap quotas.]  
 **The first things I want to learn:** [Two or three looks, motions or personnel presentations. This is *not* an obligation to run every play regardless of down, distance or score.]  
-**Opening approach:** [Show -> response to identify -> available answer. If keeping last week's eligible opener, write 'Carry Week NN opening approach, with changes below'.]
+**Opening approach:** [Show -> response to identify -> available answer. If keeping last week's eligible opener, write 'Carry Week NN opening approach, with changes below'.]  
+**Opening calls, in order:** [The calls separated by semicolons, a call repeated for a return to it; or 'Carry Week NN opening', No change or None.]
 
 ### Primary calls
 
@@ -52,6 +53,7 @@ Use as many lines as football requires. Each entry is a *concept with a purpose*
 **Caller:** [Stone / other authorized caller].  
 **Base front and run fits:** [What we will teach, who sets strength, force/cutback responsibilities and eligible personnel.]  
 **Coverage and rush approach:** [Use the active defensive book's words: e.g. Quarters / 6 and four-man replacement pressures, with credible run answers. Do not force one call regardless of offensive formation.]  
+**Rush rule:** [The active defensive book's rule: Four unless I call the five-man counter; or No change.]  
 **What we need to discover early:** [One or two actual questions about their protection, alignment or reaction to a look.]
 
 | Offensive situation / presentation | Prepared front, coverage or pressure response | Football reason | Counter / when to get out of it |
