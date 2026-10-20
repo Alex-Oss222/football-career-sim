@@ -3,7 +3,7 @@
 **Through:** [Current in-career date; separate February and March closing dates as needed]  
 **Final contract authority:** [General manager]  
 **Head-coach football direction:** [My Re-signing Priorities link]  
-**Answers to later inserts:** [This phase's My Responses link, or None]
+**Answers to later inserts:** [This phase's My Responses link (`February/My_Responses.md`, beside this page), or None]
 
 This is the **phase's navigational result**, not a substitute for an individual transaction or concluded negotiation. Keep one separately dated event output for each different completed offer negotiation, extension, franchise/transition designation, tender, declined proposal or other concluded rights decision that constituted an actual event, each in the form of the shared event result. If a discussion remains live, it stays pending, not falsely 'closed, no deal'. A contract that lapsed with no offer, talks, tag or tender has no result page, because nobody made a decision; it is listed below with its contract record.
 
@@ -41,4 +41,4 @@ This is the **phase's navigational result**, not a substitute for an individual 
 
 [Record final retention decisions and reconcile the pre-March 10 rights filings. If the issue lasts into March or April, retain the event in the same canonical contract/rights owner; this page keeps indexing own-player events after March 10, and the March free-agency page links it rather than retelling it.]
 
-[Links: calendar, contract owners, player cards, current roster, salary-cap tracker, phase brief, your response, this phase's My Responses page and all individual outcomes.]
+[Links: calendar, contract owners, player cards, current roster, salary-cap tracker, phase brief, your response, this phase's My Responses page (`February/My_Responses.md`) and all individual outcomes.]

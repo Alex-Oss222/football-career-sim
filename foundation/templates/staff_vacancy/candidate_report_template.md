@@ -79,7 +79,7 @@ For each meaningful candidate, assess the *actual job*, not abstract leadership 
 
 | Needed decision | Possible response | Deadline | What can continue |
 |---|---|---|---|
-| [Approach/contact / interview / seek budget / offer / assign teaching cover] | [Real options, including request more evidence, wait lawfully, or reject this pool; any other lawful instruction is accepted] | [Verified due time or **none established**] | [What genuinely does not depend on this choice. Jacksonville's game waits only for an answer due before a game input that depends on it; the other clubs' games are never held] |
+| [Approach/contact / interview / seek budget / offer / assign teaching cover] | [Real options, including request more evidence, wait lawfully, or reject this pool; any other lawful instruction is accepted] | [Verified due time or **none established**] | [What genuinely does not depend on this choice. Search business that does not hold Jacksonville's game never holds the week's slate, and in a bye the other clubs' games close. Where an answer is due before a Jacksonville game input that depends on it, the whole slate waits until the user rules whether the other clubs' games may close] |
 
 **Your page:** [My Hire link]. A reply authorizes only the stages it names, with their limits. Interview is not offer and offer is not hired unless your page says so.
 
