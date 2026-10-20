@@ -1,6 +1,28 @@
 # Final Roster Cuts: implementation and validation contract
 
-**Status:** Design-only proposed workflow, never executed. Repository inspected at `main` tree `75fd41fbfc5ed0363d9f6cb68b5bef37a6583f24` (2026-10-20). Active career still October 5, 2014 after the Week 5 Pittsburgh game. This package did not make a transaction, medical designation, assistant appointment or Stone decision.
+**Status:** Uploaded by the user on October 20, 2026 and adopted; built in step 8 of the [rebuild plan](rebuild_plan.md). The templates and the 75, 53 and aftercare checklist are in [foundation/templates/final_cuts/](../foundation/templates/final_cuts/), the worked example is [docs/examples/final_roster_cuts_jacksonville.md](examples/final_roster_cuts_jacksonville.md) and the research register and repository assessment are in [docs/final_roster_cuts_research.md](final_roster_cuts_research.md).
+
+As uploaded: **Status:** Design-only proposed workflow, never executed. Repository inspected at `main` tree `75fd41fbfc5ed0363d9f6cb68b5bef37a6583f24` (2026-10-20). Active career still October 5, 2014 after the Week 5 Pittsburgh game. This package did not make a transaction, medical designation, assistant appointment or Stone decision.
+
+## Final Roster Cuts: research and design package
+
+Three full coach-facing Markdown templates, one separately dated individual-personnel result reference, an implementation contract with **68 proposed tests**, the completed 2014 Jacksonville precedent and future 2015 schedule, period CBA research/source register, concrete repository blockers and a 75/53/waiver checklist.
+
+**Status:** Design only; GitHub unchanged, all 2014 and 2015 simulated results unchanged. The active career remains after the October 5, 2014 regular-season Week 5 game. The 2015 player list cannot be completed until the career actually reaches that period.
+
+### Documents
+
+1. [Roster Cutdown Report](../foundation/templates/final_cuts/roster_cutdown_report_template.md)
+2. [My Cut Recommendations](../foundation/templates/final_cuts/my_cut_recommendations_template.md)
+3. [Final 53](../foundation/templates/final_cuts/final_53_template.md)
+4. [Individual Personnel Result](../foundation/templates/final_cuts/personnel_result_template.md)
+5. [Implementation and Validation](#1-three-page-workflow-two-mandatory-roster-deadlines)
+6. [Worked Jacksonville 2014/2015 Example](examples/final_roster_cuts_jacksonville.md)
+7. [Research and Source Register](final_roster_cuts_research.md#final-roster-cuts-2011-cba-and-201415-contemporary-research)
+8. [Repository Assessment and Blockers](final_roster_cuts_research.md#final-roster-cuts-repository-assessment-and-unresolved-implementation-requirements)
+9. [75, 53 and Aftercare Checklist](../foundation/templates/final_cuts/cutdown_75_53_and_aftercare_checklist.md)
+
+**Fixed ownership:** David Caldwell retains final roster and contracts/trades authority; Stone supplies football recommendations and decides depth, roles and game-day inactives. Every individually concluded personnel transaction or failed pursuit is a separate dated result at its department. The first 75 deadline is a distinct stage that gates preseason game four; the final 53 is not also the post-waiver/practice-squad roster.
 
 ## 1. Three-page workflow, two mandatory roster deadlines
 

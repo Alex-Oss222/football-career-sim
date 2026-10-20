@@ -1,6 +1,28 @@
 # Every Preseason Game: implementation and validation contract
 
-**Status:** Proposed design, not implemented or executed. Repository inspected at `main` tree `75fd41fbfc5ed0363d9f6cb68b5bef37a6583f24` on 2026-10-20. No source file, game, player status, decision queue or state has been changed by this package.
+**Status:** Uploaded by the user on October 20, 2026 and adopted; built in step 8 of the [rebuild plan](rebuild_plan.md). The templates and the four-game checklist are in [foundation/templates/preseason_game/](../foundation/templates/preseason_game/), the worked example is [docs/examples/preseason_games_jacksonville.md](examples/preseason_games_jacksonville.md) and the research register and repository assessment are in [docs/preseason_games_research.md](preseason_games_research.md).
+
+As uploaded: **Status:** Proposed design, not implemented or executed. Repository inspected at `main` tree `75fd41fbfc5ed0363d9f6cb68b5bef37a6583f24` on 2026-10-20. No source file, game, player status, decision queue or state has been changed by this package.
+
+## Every Preseason Game: research and design package
+
+Three full coach-facing Markdown templates plus a dated-event result reference, detailed implementation specification, completed 2014 Jacksonville evidence example, 2011 CBA and contemporary research sources, repo assessment and per-game integration checklist.
+
+**Status:** Design-only. The active Jacksonville career remains at October 5, 2014 after regular-season Week 5. The 2015 fixtures are historically sourced future calendar appointments. Neither completed 2014 preseason nor any unplayed game, staffing, health, player status, transaction or performance was changed.
+
+### Contents
+
+1. [Preseason Game Briefing](../foundation/templates/preseason_game/preseason_game_briefing_template.md)
+2. [My Preseason Game Plan](../foundation/templates/preseason_game/preseason_game_plan_template.md)
+3. [Preseason Game Report](../foundation/templates/preseason_game/preseason_game_report_template.md)
+4. [Individual Event Result](../foundation/templates/preseason_game/preseason_game_result_template.md)
+5. [Implementation and Validation Spec](#a-operating-interpretation-and-governing-authority), **56 proposed tests**
+6. [Worked Jacksonville Example](examples/preseason_games_jacksonville.md)
+7. [Research and Sources](preseason_games_research.md#preseason-game-research-and-source-register-20142015)
+8. [Repository Assessment and Blockers](preseason_games_research.md#preseason-games-repository-assessment-and-implementation-blockers)
+9. [Four-game Operational Checklist](../foundation/templates/preseason_game/four_game_checklist.md)
+
+Every preseason game repeats the three main pages in its own `Game_0N` folder. Dated off-field events get standalone canonical owner results, even when rejected. The existing 2014 full `output.md` documents remain frozen history; no second competing 2014 report is created by this design.
 
 ## A. Operating interpretation and governing authority
 
