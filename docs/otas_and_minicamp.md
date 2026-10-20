@@ -1,6 +1,29 @@
 # OTAs and mandatory minicamp: implementation and validation specification
 
-**Status:** Research and design only, inspected against GitHub `Alex-Oss222/football-career-sim` at commit `75fd41fbfc5ed0363d9f6cb68b5bef37a6583f24` (October 20, 2026). The current career remains October 5, 2014, with Week 5 closed and Week 6 unplayed. This package neither edits GitHub nor advances the career. It does not install a practice resolver or run repository tests.
+**Status:** Uploaded by the user on October 20, 2026 and adopted; built in step 7 of the [rebuild plan](rebuild_plan.md). The templates are in [foundation/templates/otas/](../foundation/templates/otas/), the worked example is [docs/examples/otas_and_minicamp_jacksonville.md](examples/otas_and_minicamp_jacksonville.md) and the research register and repository assessment are in [docs/otas_and_minicamp_research.md](otas_and_minicamp_research.md).
+
+As uploaded: **Status:** Research and design only, inspected against GitHub `Alex-Oss222/football-career-sim` at commit `75fd41fbfc5ed0363d9f6cb68b5bef37a6583f24` (October 20, 2026). The current career remains October 5, 2014, with Week 5 closed and Week 6 unplayed. This package neither edits GitHub nor advances the career. It does not install a practice resolver or run repository tests.
+
+## Workflow 3: May-June OTAs and mandatory minicamp
+
+**Design complete; GitHub implementation not attempted.** The user controls Alex Stone's consequential head-coach decisions. David Caldwell controls player contracts, acquisitions, trades, draft choices and roster cuts; medical professionals control diagnoses and clearance. The live career is October 5, 2014 after Week 5. The real 2015 calendar is reference, not simulated participation.
+
+### Files
+
+| File | Purpose |
+|---|---|
+| [ota_brief_template.md](../foundation/templates/otas/ota_brief_template.md) | Full staff brief with real unit questions and active event-insert placement |
+| [my_install_plan_template.md](../foundation/templates/otas/my_install_plan_template.md) | Editable coach page with practice/teaching choices and existing standing directions |
+| [ota_report_template.md](../foundation/templates/otas/ota_report_template.md) | Narrative and evidence-based combined result, built from distinct official OTA and minicamp reports |
+| [otas_result_template.md](../foundation/templates/otas/otas_result_template.md) | Per-event negative and positive result format, reusing existing event owners |
+| This document | Folder routes, legal guards, state transitions and 58 proposed tests |
+| [otas_and_minicamp_jacksonville.md](examples/otas_and_minicamp_jacksonville.md) | Completed 2014 actual-career evidence, with 2015 legitimately unknown |
+| [otas_and_minicamp_research.md](otas_and_minicamp_research.md#may-june-otas-and-minicamp-period-source-register) | Original 2011 CBA, contemporary club reports and source-release boundary |
+| [otas_and_minicamp_research.md](otas_and_minicamp_research.md#otas-and-minicamp-repository-assessment-and-blockers) | Proven integration gaps and genuine rule/ownership risks |
+
+### Boundary
+
+The rookie minicamp is its own phase and result owner. OTA and veteran minicamp teaching happen in different windows and reports, then one third-page OTA Report can synthesize their consequential football. No action insert replaces an individually resolved event output. Do not edit completed 2014 records, import historical 2015 Jaguars player performance or automatically award a position based on non-contact work.
 
 ## 1. What this workflow is, and is not
 
