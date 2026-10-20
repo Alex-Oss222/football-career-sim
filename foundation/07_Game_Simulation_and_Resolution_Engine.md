@@ -152,7 +152,7 @@ Added September 27, 2026 after an audit of the Week 1 receipts found backups sha
 2. **Tackles are solo or assisted, and runs can lose yardage,** at the sourced 2012 rates, and every drive total still reconciles exactly.
 3. **Drive length and clock follow the resolved drive result.** Plays per drive and seconds per play come from 2012 drive data by terminal result, scaled so expected team-game totals equal the verified aggregate baseline (§8). Third-down attempts and first downs use sourced 2012 rates instead of fixed formulas.
 4. **Thin inputs fail closed.** The production runner and the weekly input gate reject a TeamInput that is not a legal game-day unit or lacks QB/RB/WR/TE depth order.
-5. **Band audit.** `runtime/bands.py` compares league receipts with the 2012 shapes and is rendered as `career/<year>/stats/calibration_audit.md`, fulfilling §3.6's standing audit. It detects engine or input defects. It never reruns, selects or edits a closed game.
+5. **Band audit.** `runtime/bands.py` compares league receipts with the 2012 shapes and is rendered as `data/<year>/Regular_Season/Statistics/records/calibration_audit.md` from 2014 (2013 keeps `career/2013/stats/calibration_audit.md`), fulfilling §3.6's standing audit. It detects engine or input defects. It never reruns, selects or edits a closed game.
 
 ## 4. Mandatory decision pauses
 
