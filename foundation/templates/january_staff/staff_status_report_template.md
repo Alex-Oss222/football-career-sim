@@ -64,7 +64,7 @@ Select only the material staff findings that can affect retention or job design.
 
 ## Football operations' recommendation
 
-[Named author]: [One or two short, evidence-linked paragraphs explaining which decisions matter, what retaining or changing a role would accomplish, and what it would cost or risk. Clearly distinguish recommendation from fact and from Stone's choice. It is legitimate to recommend no staff changes.]
+**[Named author]:** [One or two short, evidence-linked paragraphs explaining which decisions matter, what retaining or changing a role would accomplish, and what it would cost or risk. Clearly distinguish recommendation from fact and from Stone's choice. It is legitimate to recommend no staff changes.]
 
 ## What is requested of you
 

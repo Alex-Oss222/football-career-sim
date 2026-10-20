@@ -1,6 +1,47 @@
 # January Staff Review: implementation specification and acceptance tests
 
-**Design status:** Proposed. This document authorizes no changes to current repo, no 2014 season closure, no personnel event, and no hypothetical 2015 staff transaction. Preserves 2014 Weeks 1–5 as closed history.
+**Status:** Uploaded by the user on October 20, 2026 and adopted; built in step 6 of the [rebuild plan](rebuild_plan.md). The templates are in [foundation/templates/january_staff/](../foundation/templates/january_staff/) and the worked example is [docs/examples/january_staff_2014_into_2015.md](examples/january_staff_2014_into_2015.md).
+
+As uploaded: **Design status:** Proposed. This document authorizes no changes to current repo, no 2014 season closure, no personnel event, and no hypothetical 2015 staff transaction. Preserves 2014 Weeks 1–5 as closed history.
+
+## January Staff Review: Three-page system
+
+**Design only.** These files are proposals for football-career-sim; they do not change a canonical game, job, contract, calendar, or personnel decision.
+
+**Cycle illustrated:** Review of the 2014 Jacksonville Jaguars coaching staff, carried out on dates actually established after Jacksonville's last game in the 2014 NFL season. Relevant work may occur in January or February 2015. Do not invent a review day from the month name, or treat January 1 as an assistant's proven contract-expiration day.
+
+### Documents
+
+1. [`staff_status_report_template.md`](../foundation/templates/january_staff/staff_status_report_template.md) — football operations presents verified staff responsibilities, evidence, contracts and open questions. It is a staff status report, not a new 53-player season review.
+2. [`my_staff_decisions_template.md`](../foundation/templates/january_staff/my_staff_decisions_template.md) — Stone's fixed-heading fill-in page. A decision to pursue renewal is not an agreed contract.
+3. [`staff_moves_template.md`](../foundation/templates/january_staff/staff_moves_template.md) — the January phase's closing account and **index** of completed independent staff results, not a pooled substitute for them.
+4. [`staff_result_template.md`](../foundation/templates/january_staff/staff_result_template.md) — one separate, dated reader-facing outcome for **each resolved staff event**. A completed renewal, rejected renewal offer, termination, contract lapse, interview permission disposition, resignation, hire or material role change gets its own event result if it actually occurs.
+5. This document — authority, dates, routing, immutable issuance, event records, status transitions and tests.
+6. [`january_staff_2014_into_2015.md`](examples/january_staff_2014_into_2015.md) — the real current staff as recorded October 5, 2014; unresolved 2014-season football; no invented future contract or employment outcome.
+
+### Place in the season
+
+The 2014 team's football season review and coach exit interviews belong to the 2014 `Season_Review/`. The **January 2015** staff-retention and contract actions belong to the **2015** `Early_Offseason` staff-review or staff-changes owner, with links back to the 2014 exit-interview evidence. The current repository has not yet created the 2015 `Early_Offseason` directory; its implementation must route through `SeasonPaths` rather than hard-coding a raw path or prematurely switching the active playing season.
+
+### Behavior
+
+- Stone is the final staff-selection authority under his Jacksonville appointment, within the promised but unquantified assistant budget. Caldwell confirms contract funding and related administration. No one can sign the coach's acceptance on his behalf.
+- Review only after Stone is confirmed as continuing Jacksonville's head coach. If he is dismissed, he does not get to decide Jacksonville's next staff; the employer's new chain of authority takes over.
+- Only concluded events get separate individual outputs. Open proposals retain dated status and a link; a plan to retain nine coaches does not fabricate nine signed renewals.
+- A staff review does not pre-decide the next `Candidate Report → My Hire → Staff Hire` workflow for genuine vacancies.
+- Absent a staff concern, it is legitimate to keep the current duties intact. No praise/criticism quota, staff grade, or forced turnover.
+
+### Research basis
+
+Contemporary process references for **form**, not future simulated NFL outcomes:
+- Brian Billick, NFL.com, 2014, [What offseason? NFL coaches busy preparing for 2014 campaign](https://www.nfl.com/news/what-offseason-nfl-coaches-busy-preparing-for-2014-campaign-0ap2000000323842): end-of-season staff evaluation and studying prior decisions.
+- Chris Mortensen, ESPN, January 30, 2014, [Jason Garrett given latitude to make staff changes](https://www.espn.com/nfl/story/_/id/10376181/jason-garrett-coach-dallas-cowboys-had-authority-make-staff-changes): retained head coach evaluates assistants, with owner/GM authority depending on the club.
+- Washington Post, December 29, 2014, [Jay Gruden to meet with management about assistants and team](https://www.washingtonpost.com/news/football-insider/wp/2014/12/29/jay-gruden-to-meet-with-bruce-allen-and-daniel-snyder-this-week-on-assistants-team/): film/evaluation first, decisions after management discussion.
+- Andrew Brandt, Sports Illustrated, January 16, 2014, [Getting Down to Business](https://www.si.com/nfl/2014/01/16/nfl-finances-concussion-settlement-playoff-pay): coaching agreements, guaranteed money and offsets.
+- DallasCowboys.com, January 3, 2014, [Rich Bisaccia head-coach interview](https://www.dallascowboys.com/news/st-coach-bisaccia-interviewing-for-skins-head-coaching-job-345951): the period-specific head-coach versus assistant-interview permission distinction.
+- NFL.com, March 2013, [Rooney Rule not extended to coordinators](https://www.nfl.com/news/rooney-rule-will-not-be-extended-to-coordinators-0ap1000000152292): do not import later coordinator-hiring requirements into the 2014-15 cycle.
+
+The repository's dated player/coach records, accepted employment authority, financial tables and canonical season result remain authoritative over generic process articles.
 
 ## A. Why the workflow exists
 
@@ -70,7 +111,7 @@ The *Staff Status Report* presents information from football operations, the ind
 4. Parse `My_Staff_Decisions.md` into validated, dated instructions and any pending negotiations. Bind every decision to the issued brief version and source coach identity, never to an arbitrary row index. Re-apply changed answers only while no irreversible dependent result has been finalized.
 5. Use `data/people/coaches/<coach>.json` to store dated `contract_signed`, `contract_amended`, `role_changed`, `departed` and other existing kinds where appropriate. Do not create parallel contract numbers in `Staff_Moves.md`. Preserve term/guarantee/offset across a season handoff until legally changed.
 6. Update the single Staff page renderer, coaching payroll renderer, coaching profiles, current appointment and 2015 phase/annual indexes **only if facts changed**, in the same atomic event update.
-7. Reuse the established `docs/football_event_inserts_v2_separate_outputs/` route for outside interviews, unsolicited renewal contacts, offers and departures. Never generate separate mini-briefs for each; reuse the active phase briefing and one shared response journal.
+7. Reuse the established [`docs/event_inserts.md`](event_inserts.md) route for outside interviews, unsolicited renewal contacts, offers and departures. Never generate separate mini-briefs for each; reuse the active phase briefing and one shared response journal.
 8. Add Staff Moves as an index of separate canonical event results. A terminated, retained-under-new-contract and interview-permission result on the same day appear as three distinct links, not one synthesized outcome.
 9. Check 2014-to-2015 handoff: the 2014 Season Review remains the football/exit-interview owner, while 2015 Early_Offseason owns new staff contracts; the later 2015 baseline only carries actually settled new employment rights, with pending items still pending.
 10. Keep game outputs, game receipts, game results and 2014 historical contract records unchanged during a template-only implementation. A staff *action* can change current authority and future team preparation, never retroactively rewrite played calls or the previous game's story.
@@ -104,7 +145,7 @@ The *Staff Status Report* presents information from football operations, the ind
 
 ## G. Sources to read when implementing
 
-Repository: `career/2014/Team_Operations/Staff/README.md`; `coaching_staff.md`; `career/finances/coaching_and_organization/coaching_payroll.md`; `career/Assistant_Coaches/staff_profiles.md`; `state/current_job.json`; `docs/season_cycle_milestones.md` open questions; `career/2015/Calendar.md`; `foundation/templates/season_review/exit_interview.md`; `runtime/decisions.py`; `runtime/decision_queue.py`; and `docs/football_event_inserts_v2_separate_outputs/Implementation_Spec.md`.
+Repository: `career/2014/Team_Operations/Staff/README.md`; `coaching_staff.md`; `career/finances/coaching_and_organization/coaching_payroll.md`; `career/Assistant_Coaches/staff_profiles.md`; `state/current_job.json`; `docs/season_cycle_milestones.md` open questions; `career/2015/Calendar.md`; `foundation/templates/season_review/exit_interview.md`; `runtime/decisions.py`; `runtime/decision_queue.py`; and [`docs/event_inserts.md`](event_inserts.md).
 
 Contemporaneous research (used for **procedural principles**, not for importing later coaching outcomes):
 - https://www.nfl.com/news/what-offseason-nfl-coaches-busy-preparing-for-2014-campaign-0ap2000000323842

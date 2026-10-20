@@ -71,7 +71,7 @@ Keep this table selective. Full league standings, every game score, full player 
 **Deadline:** [Real date/time or Not set]  
 **What continues while you answer:** [Film reviews, exit interviews, medical care and other independently authorized activities]  
 **What cannot proceed yet:** [Only the particular decision/actions actually dependent on this response; do not automatically freeze the entire league]  
-**Where to answer:** [My_Response.md](My_Response.md), or another authorized response channel.
+**Where to answer:** [My Season Response link], or another authorized response channel.
 
 ## Related records
 

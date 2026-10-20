@@ -1,6 +1,39 @@
 # Coaching vacancy and assistant hiring: implementation and realism specification
 
-**Status:** Proposed design, not installed. Does not authorize a 2014 or 2015 personnel action. Applies whenever the *currently employed and authorized* head coach must fill a real NFL assistant/coordinator position; all dates and permissions follow the actual season being simulated. Preserve existing closed career history.
+**Status:** Uploaded by the user on October 20, 2026 and adopted; built in step 6 of the [rebuild plan](rebuild_plan.md). The templates are in [foundation/templates/staff_vacancy/](../foundation/templates/staff_vacancy/) and the worked example is [docs/examples/staff_vacancy_2014_westhoff_precedent.md](examples/staff_vacancy_2014_westhoff_precedent.md).
+
+As uploaded: **Status:** Proposed design, not installed. Does not authorize a 2014 or 2015 personnel action. Applies whenever the *currently employed and authorized* head coach must fill a real NFL assistant/coordinator position; all dates and permissions follow the actual season being simulated. Preserve existing closed career history.
+
+## Coaching vacancy / assistant hiring, three-page templates
+
+**Design:** Candidate Report → My Hire → Staff Hire. An actual vacancy appears first as a conspicuous insert in whichever briefing is active. If your hiring input is required, this vacancy gets its own full Candidate Report, a fill-in My Hire page, and a search outcome/index. Each concluded permission request, candidate interview when recorded as a distinct event, offer resolution, departure and accepted appointment keeps its own independent dated event output. The weekly/phase report merely links these records.
+
+**Status:** Research/design only. No changes to the football-career-sim repository or current staff. No future Jacksonville 2015 hiring result is assumed or created. Historic 2014 Lowry/Westhoff sequence is used as a **closed example only**.
+
+### Files
+
+| File | Who uses it | What it contains |
+|---|---|---|
+| [`candidate_report_template.md`](../foundation/templates/staff_vacancy/candidate_report_template.md) | Football operations creates it | Vacancy, real duties, candidates with employer/permission/interest status, evidence, advice, and precise question for Stone |
+| [`my_hire_template.md`](../foundation/templates/staff_vacancy/my_hire_template.md) | Stone fills it | Interim coverage, outreach order, interview direction, post-interview choice, explicit negotiating limits, fallbacks |
+| [`staff_hire_template.md`](../foundation/templates/staff_vacancy/staff_hire_template.md) | Club creates it after actual events | Search status and index of individual dated results, with executed appointment terms only if a hire closes |
+| [`search_event_result_template.md`](../foundation/templates/staff_vacancy/search_event_result_template.md) | Club creates one per concluded material event | Each permission denial, withdrawal, offer resolution or accepted appointment, on its in-career date |
+| [`staff_vacancy_2014_westhoff_precedent.md`](examples/staff_vacancy_2014_westhoff_precedent.md) | Example and testing | Real 2014 special-teams search without retroactive changes; no invented next-cycle candidate |
+| This document | Developer/runner | Applicable 2014 NFL rights, contracts, state transitions, data-owner routing and 32 regression tests |
+
+### When to use
+
+Use for a confirmed departure, actual open assistant job, authorized new coaching position or a conditional vacancy after its condition becomes true. January is common, but a real vacancy may also occur during the playing season. If the assistant's deal is merely approaching expiry, handle the retention question in the Staff Status Report first. Do not open a hiring search from a rumor, from an unverified coach contract lapse, or because the system thinks the staff could use a stronger name.
+
+### Rules that survive every change
+
+- A shortlist is not a permission grant, an interview, an offer or a hire.
+- Stone hires his assistants within his actual authority; Caldwell verifies funding and executes the club's finances; the candidate controls acceptance.
+- Being a familiar former head coach does not prove he will accept, teach well, improve a unit or want a lesser title.
+- A new title does not automatically shift Stone's existing offensive/defensive play calls.
+- A declined candidate does not disappear from history. The record has a dated outcome, while the vacancy may remain open.
+- One event, one independent output at the time it is resolved. `Staff_Hire.md` summarizes and links, never replaces them.
+- No future real coaching changes are imported as outcomes in this divergent 2013-onward Jacksonville career.
 
 ## 1. Architecture and boundaries
 
@@ -10,7 +43,7 @@ There are three coach-facing pages **per genuine search**:
 2. `My_Hire.md`: Stone's fixed-heading, fill-in directions. A decision at a particular stage can be submitted in chat or the page. The stage and its source brief are recorded and immutable after application. A later direction is an explicit amendment, not a retroactive overwrite.
 3. `Staff_Hire.md`: the search result and event index. Lists the actual search sequence and whether the job is filled, still open, or lawfully closed without a hire; does not combine the individual candidate/permission/offer/hiring outputs.
 
-**Separate completed event records:** Each concluded request/permission decision, substantive interview, distinct offer disposition and signed appointment receives its own dated readable result, using `Individual_Search_Event_Result_TEMPLATE.md`. One appointment does not erase the unsuccessful contacts. The active week's or phase's index links each independent result when it closes, even if the search itself continues.
+**Separate completed event records:** Each concluded request/permission decision, substantive interview, distinct offer disposition and signed appointment receives its own dated readable result, using [`search_event_result_template.md`](../foundation/templates/staff_vacancy/search_event_result_template.md). One appointment does not erase the unsuccessful contacts. The active week's or phase's index links each independent result when it closes, even if the search itself continues.
 
 The shared **event-inserts v2** format controls the announcement: when the vacancy opens, the current Game Week Briefing, Bye Week Review, Season Review, or offseason desk gets a prominent `ACTION REQUIRED` item if Stone must decide. It links to the Candidate Report; it does not start a redundant vacancy-specific one-page briefing. A search can occur outside January. After Stone leaves the club, his private staffing access and signing authority cease.
 
@@ -159,6 +192,6 @@ Never write a change to already-closed 2013 or early-2014 search results to make
 - `career/2014/Team_Operations/Staff/README.md` and `career/finances/coaching_and_organization/coaching_payroll.md`: current responsibilities and contractual commitments.
 - `state/current_job.json`: Stone's actual staff-hiring, budget and play-calling authority.
 - `library/2014_coaching_hiring_and_anti_tampering_rules.md` and `career/2015/Calendar.md`: applicable 2014/2015 rights, playoff interview windows and source limits.
-- `docs/rebuild_plan.md`, `docs/season_cycle_milestones.md`, `foundation/decision_rules.md`, `docs/football_event_inserts_v2_separate_outputs/Implementation_Spec.md`: phase routing, standing instructions and independent outputs.
+- `docs/rebuild_plan.md`, `docs/season_cycle_milestones.md`, `foundation/decision_rules.md`, [`docs/event_inserts.md`](event_inserts.md): phase routing, standing instructions and independent outputs.
 
 **Contemporaneous external research, used only for procedure and authenticity (not to import actual future branch hires):** [NFL 2015 dates](https://www.jaguars.com/news/2015-nfl-important-dates-14709246); [PFT on assistant interview rights, Jan. 21, 2015](https://www.nbcsports.com/nfl/profootballtalk/rumor-mill/news/fair-or-not-plenty-of-teams-prevent-assistants-from-leaving); [Sean Payton on staff structure, Feb. 19, 2015](https://www.neworleanssaints.com/news/saints-coach-sean-payton-talks-about-coaching-changes-combine-and-mark--14943593); [NFL on Jason Garrett's staff hiring, Feb. 8, 2013](https://www.nfl.com/news/jerry-jones-has-faith-in-dallas-cowboys-jason-garrett-0ap1000000137267); [NFL no coordinator Rooney Rule, Mar. 2013](https://www.nfl.com/news/rooney-rule-will-not-be-extended-to-coordinators-0ap1000000152292); [NFL 2020 rule-change contrast](https://www.nfl.com/_amp/nfl-announces-new-policies-designed-to-increase-diversity).

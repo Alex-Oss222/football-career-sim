@@ -1,4 +1,4 @@
-# My Response: Season Review
+# My Season Response
 
 **Head coach:** [Alex Stone]  
 **NFL season:** [YEAR]  

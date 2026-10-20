@@ -25,7 +25,7 @@
 
 ## Stone's input
 
-**Written or spoken response:** [Link to actual `My_Response.md` / dated interview record, or “None was requested or submitted before the club decided.”]  
+**Written or spoken response:** [Link to actual `My_Season_Response.md` / dated interview record, or “None was requested or submitted before the club decided.”]  
 **Material factual correction considered:** [Specific supported fact, or “None.”]  
 **Requests made:** [Contract/budget/authority discussion as actually requested, or “None.”]  
 **Club's response to those requests:** [Actual disposition, or “No offer or decision made.”]
