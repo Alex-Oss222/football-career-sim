@@ -4,16 +4,27 @@
 
 **NFL season:** [YEAR]  
 **Issued:** [Actual career date/time, Eastern]  
+**Edition:** [First issue, or reissue of an earlier dated edition with the reason]  
 **Jacksonville's final game:** [Opposition, date and recorded result, including playoff round where applicable]  
 **Review appointment:** [Actual scheduled date/place/attendees, or Not scheduled]  
 **Response requested by:** [Actual deadline, or Not set]  
 **Employment position communicated so far:** [No decision announced / a specifically announced decision, with source]
 
 > **Publication rule:** Render only the briefing's public-to-Stone information. Do not reveal the owner's hidden evaluation, undisclosed decision, internal bargaining limit or confidential personnel comments simply because a data file contains them. No new offer, private quotation or invented meeting.
+>
+> **Editions:** the briefing has one scheduled issue, on the date the club sets. The one reissue rule that governs every brief applies: issue a new dated edition when a new event needs an answer from Stone, a dated finding materially changes a choice still pending, or an answer falls due before the next scheduled issue. An informational event that affects no pending answer waits for the next scheduled issue, so it appears under FOR YOUR INFORMATION only in an edition issued for another reason; its own result page is readable as soon as it is written. Keep every issued edition; this page shows the latest. A reissue changes no club decision.
 
 ## ACTION REQUIRED
 
-[Include only **open**, consequential requests properly routed from the event system. Put any actual written extension proposal, assistant matter or other employment-related decision here as its **own concise insert**, referencing its own event and eventual separate result. Omit the heading if no action is required.]
+[Include only **open**, consequential matters that need Stone's own answer, each as its **own concise notice** with its due time and what it holds, referencing its own event and eventual separate result. Examples: an actual written extension offer from Khan and Caldwell; a real vacancy on Stone's staff, linking its Candidate Report; another club's request to interview a Jacksonville assistant for a different position at the same level, the one case neither the standing instruction nor the design's rule for requests it does not name answers, which is Stone's staff-permission decision. Stone answers these on this phase's My Responses page, not on My Season Response. Omit the heading if no action is required.]
+
+## FOR YOUR INFORMATION
+
+[Matters that need no answer from Stone: another club's request to contact or interview Stone and Shad Khan's answer (Khan alone decides; Stone's standing answer is that he is not open to job offers); another club's request to interview an assistant, with the answer Jacksonville's standing instruction gave, or the rule for a request it does not name (a real step up granted, a nominal title at the same level refused); a head-coach vacancy elsewhere. Omit the heading if there is none.]
+
+## COMING UP
+
+[Known dated windows and deadlines that need no action yet, such as an assistant contract's end date or a league signing period. Omit the heading if there is none.]
 
 ## The club's starting position
 
@@ -30,7 +41,7 @@
 | Special teams / game management | [Only material season evidence, not an exhaustive inventory] | [Specific decision or process the club wishes to examine] |
 | Staff and player development | [Dated changes or demonstrated work] | [What Stone controlled; where Caldwell or others controlled inputs] |
 
-**Source and cutoff:** [Generated season statistics through Jacksonville's actual final game; team season review and relevant game reports. Identify anything genuinely unavailable at issue time.]
+**Source and cutoff:** [Season statistics through Jacksonville's actual final game; team season review and relevant game reports. Identify anything genuinely unavailable at issue time.]
 
 Keep this table selective. Full league standings, every game score, full player assessments and the box scores stay with their existing owners.
 
@@ -38,11 +49,12 @@ Keep this table selective. Full league standings, every game score, full player 
 
 | Standard or concern | When the club adopted or communicated it | Evidence for / against, with link |
 |---|---|---|
-| [Original hiring requirement] | [Actual hiring record and date] | [Relevant season evidence] |
+| [The club's recorded criteria for the hire] | [Actual hiring record and date] | [Relevant season evidence] |
+| [The contract's first-season standard, a signed term for the season it named] | [The signed contract] | [Relevant evidence, or "Applied to an earlier season"] |
 | [Previously communicated corrective priority] | [Actual prior review/date] | [Evidence of response, recurrence, or uncertainty] |
-| [Other established organizational consideration] | [Real source, not a hindsight-invented target] | [Evidence and limit] |
+| [Other established organizational consideration or request] | [Real source, not a hindsight-invented target] | [Evidence, its status (open, met or withdrawn) and its limit] |
 
-**No retroactive standards.** If the club had not set a ten-win condition, division-title requirement, target quarterback statistic or mandatory playoff round, do not present one as its previously established promise. Ownership may have new expectations, but label them as new, dated and actually communicated.
+**No retroactive standards.** If the club had not set a ten-win condition, division-title requirement, target quarterback statistic or mandatory playoff round, do not present one as its previously established promise. An ownership view with no record of being delivered to Stone is not a standard on record. Ownership may have new expectations, but label them as new, dated and actually communicated.
 
 ## What Caldwell wants to discuss
 
@@ -58,21 +70,23 @@ Keep this table selective. Full league standings, every game score, full player 
 
 ## Your authority and the choices available
 
-- **Employment decision:** Khan and Caldwell decide whether to retain, dismiss or otherwise change the head-coach relationship, within signed terms. Stone may respond, negotiate or resign; he cannot veto dismissal.
+- **Employment decision:** Khan and Caldwell decide whether to retain, dismiss or otherwise change the head-coach relationship, within the contract in Stone's coach record. Stone may respond, negotiate or resign; he cannot veto dismissal. A formal hearing is not required.
+- **Your contract:** an extension offer, if the club makes one, is Khan and Caldwell's decision. It arrives as its own ACTION REQUIRED notice, you answer it on this phase's My Responses page, and its result is its own page. Requesting a discussion does not mean the club has offered or agreed to it.
+- **Another club's interest in you:** Shad Khan alone decides another club's request to contact or interview you. Your standing answer is that you are not open to job offers, so such a request reaches you as news.
 - **Your presentation:** You may confirm, dispute or correct the football assessment; explain what you would do differently; and submit a concrete next-season direction. A persuasive speech alone does not earn retention.
-- **Your requests:** You may request discussion of an extension, compensation, authority or assistant budget; requesting one does not mean the club has offered or agreed to it. Keep personal contract negotiations in their own event/result if they arise.
-- **Football staff:** Stone's permitted staff decisions remain his within the agreed budget. Actual renewals, resignations, interviews and appointments each require their separate event and output as warranted.
-- **Players, trades, contracts and cap:** Caldwell retains final decision authority. Stone supplies football projections and any required franchise-quarterback consultation, not an executed transaction.
+- **Your requests:** You may request discussion of an extension, compensation, authority or assistant budget; requesting one does not mean the club has offered or agreed to it. Keep personal contract negotiations in their own notice and result if they arise.
+- **Football staff:** Stone's permitted staff decisions remain his within the agreed budget. Actual renewals, resignations, interviews and appointments each require their separate notice and result as warranted. Another club's request to interview an assistant is answered by Jacksonville's standing instruction and the rule for requests it does not name (a real step up is granted, a nominal title at the same level is refused); only a request for a different position at the same level, the one case neither answers, comes to Stone as a staff-permission item.
+- **Players, trades, contracts and cap:** Stone recommends; Caldwell decides. Stone supplies football projections and any required franchise-quarterback consultation, not an executed transaction.
 - **Medical findings and clearances:** Remain with qualified staff; a season-end date clears nobody by itself.
 
 ## What is actually due from you
 
 **Requested response:** [Specific answer the owner or GM has asked for: season assessment, corrections, next-year direction, requests, or None]  
 **Deadline:** [Real date/time or Not set]  
-**What continues while you answer:** [Film reviews, exit interviews, medical care and other independently authorized activities]  
-**What cannot proceed yet:** [Only the particular decision/actions actually dependent on this response; do not automatically freeze the entire league]  
-**Where to answer:** [My Season Response link], or another authorized response channel.
+**What continues while you answer:** [Film reviews, exit interviews, medical care, the other clubs' games and other independently authorized activities]  
+**What cannot proceed yet:** [Only the particular decision or action this answer is due before; an answer due after an event holds nothing]  
+**Where to answer:** [My Season Response link] for this briefing; this phase's My Responses page for each ACTION REQUIRED notice.
 
 ## Related records
 
-[Link, when actually available: the team football `season_review.md`, completed game reports and generated season statistics; the signed head-coach contract; the prior owner/GM review and communicated concerns; actual player/staff exit interviews; open event notices. Do not create missing reports just to fill the link list.]
+[Link, when actually available: the team football `season_review.md`, completed game reports and season statistics; the head-coach contract in Stone's coach record; the prior owner/GM review and communicated concerns; actual player/staff exit interviews; open notices. Do not create missing reports just to fill the link list.]

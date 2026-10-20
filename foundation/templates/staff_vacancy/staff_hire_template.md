@@ -6,9 +6,9 @@
 
 **Search status:** [Open / Filled / Closed without appointment / Suspended by explicit authorized decision]
 
-**Staffing authority:** [Stone if still authorized; otherwise the current actual authorized head coach]
+**Staffing authority:** [Stone if still authorized. If he has left, Caldwell answers for Jacksonville on items still open and the opening stays for the next head coach]
 
-*This is the search's result/index page, not the combined report for every hiring event. The specific appointments, interview permissions, refusals, offers, rejections and accepted contracts each have their own dated event output in their proper staff-record owner. This page provides the search sequence and links. Regenerate it from those events; do not change history when the search turns out differently than expected.*
+*This is the search's result/index page, not the combined report for every hiring event. Each concluded event (an employment check, a permission answer, a contact answer, an interview, an offer that ended without a hire, the appointment, or the search closing) has its own dated result page in this search's `outcomes/` folder. This page provides the search sequence and links. Regenerate it from those events; do not change history when the search turns out differently than expected.*
 
 ## The position and its coverage
 
@@ -24,7 +24,7 @@
 
 | Date | Candidate / party | Actual step and result | Own result record |
 |---|---|---|---|
-| [Day] | [Candidate / employer club] | [Permission denied, interview held, terms submitted, offer declined, accepted, withdrawn, etc.] | [Link to this stage's dated result] |
+| [Day] | [Candidate / employer club] | [Employment settled, permission refused, agreed to interview, interview held, terms submitted, counter pending, offer declined, accepted, withdrawn, etc.] | [Link to this stage's dated result, or 'In progress' for a step still open] |
 
 [Only stages that really occurred. A proposed target who was never contacted does not receive a fabricated rejection. A closed result document for each distinct event is linked rather than pasted.]
 
@@ -40,11 +40,11 @@ If the position is **filled**:
 
 **Football responsibilities:** [Specific duties that were actually agreed; what transfers from interim work and what remains with Stone / coordinator]
 
-**Who calls the plays:** [Existing arrangement unless a separate user-authorized delegation event actually changed it]
+**Who calls the plays:** [Calls the head coach held only as interim cover for this job pass to the new coach on his effective date unless My Hire said otherwise; calls he held before the opening stay with him; any other change only by a separate delegation he authored]
 
-**Contract:** [Executed years, compensation by year, guarantee/offset, and source link; no numerical data copied from an estimate]
+**Contract:** [Executed years, compensation by year, guarantee/offset, as the coach's Coach page shows them; no numerical data copied from an estimate]
 
-**Payroll consequence:** [Actual changed commitments, including previous guaranteed liabilities; link finance owner]
+**Payroll consequence:** [Actual changed commitments, including previous guaranteed liabilities; link the coaching payroll, which is rebuilt from the coach records]
 
 **Individual appointment:** [Link to this person's standalone dated Staff Hire Result]
 
@@ -62,4 +62,4 @@ If the position is **not filled**:
 
 **Other related outputs:** [Separate searches/renewals/departures link out rather than being merged into this page.]
 
-**Season/career links:** [Active phase desk, staff page, coaching payroll, actual coach record, annual Record and corresponding My Hire answer.]
+**Season/career links:** [Active phase desk, Staff page, coaching payroll, the new coach's Coach page, annual Record and corresponding My Hire answer.]

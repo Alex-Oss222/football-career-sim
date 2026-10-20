@@ -2,9 +2,10 @@
 
 **Through:** [Date and time in career]  
 **Final transaction authority:** [David Caldwell]  
-**Football priorities:** [My Free-Agent Priorities link]
+**Football priorities:** [My Free-Agent Priorities link]  
+**Answers to later inserts:** [This phase's My Responses link (`March/My_Responses.md`, beside this page), or None]
 
-The index records **completed individual acquisition negotiations** and the current state of the March board. It does not turn several negotiations into one combined output, and it doesn't claim that everyone on a target list was contacted.
+The index records **completed individual acquisition negotiations** and the current state of the March board. Each completed negotiation has its own dated result page in the form of the shared event result. It does not turn several negotiations into one combined output, and it doesn't claim that everyone on a target list was contacted.
 
 ## Signed players
 
@@ -44,4 +45,4 @@ Do not report agent terms or a rival offer unless communicated through lawful, d
 
 ## Sources
 
-[Links to Pro Personnel Report editions, My Free-Agent Priorities, individual completed event results, executed contract owners, current roster, finance/cap views, applicable rights and 2015 league calendar.]
+[Links to Pro Personnel Report editions, My Free-Agent Priorities, this phase's My Responses page (`March/My_Responses.md`), individual completed event results, executed contract owners, current roster, finance/cap views, applicable rights and 2015 league calendar.]
