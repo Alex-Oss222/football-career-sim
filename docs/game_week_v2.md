@@ -1,6 +1,6 @@
 # Game Week v2: research, contract and implementation plan
 
-**Status:** Proposed redesign, not yet integrated. No live career files or outcomes have been changed.
+**Status:** Uploaded by the user on October 20, 2026 and adopted for the build (see the [rebuild plan](rebuild_plan.md), step 4b). Phases A to C are built under the rebuild rules; Phase D changes the game engine and waits for the user's decision. The templates it describes are in [foundation/templates/game_week/](../foundation/templates/game_week/), and the worked example is [docs/examples/week_06_illustration.md](examples/week_06_illustration.md).
 
 **Applies:** Every played regular-season game and every played postseason game. Byes belong to their separate workflow. Each game creates exactly three coach-facing Markdown pages in the game's folder:
 
@@ -146,4 +146,3 @@ Extend `scripts/render_game_week.py` and `scripts/check_game_plan.py` to use pos
 - `scripts/render_game_week.py`, `scripts/check_game_plan.py`, `scripts/render_box_score.py`
 - `runtime/game_plan.py`, `runtime/game_runner.py`, `runtime/play_detail.py`, `runtime/decisions.py`, `runtime/week_inputs.py`, `runtime/postseason.py`
 
-**No GitHub mutation performed.**

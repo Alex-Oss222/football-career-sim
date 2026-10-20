@@ -1,6 +1,10 @@
 # Event inserts: implementation and validation specification
 
-**Status:** Proposed design; no repository edits made. Applies to 2014-era decisions at their actual in-career dates, not real-world results after divergence. Keep legacy Weeks 1 to 5 closed and immutable.
+**Status:** Uploaded by the user on October 20, 2026 and adopted; built in step 5 of the [rebuild plan](rebuild_plan.md). The templates are in [foundation/templates/event_inserts/](../foundation/templates/event_inserts/) and the worked scenarios in [docs/examples/2014_event_scenarios.md](examples/2014_event_scenarios.md).
+
+**Fixed requirement (the user's rule):** one active period briefing and one possible shared response page, but one standalone dated result file per resolved event, individual trades included. Never aggregate separate outcomes into one output or postpone them until the weekly game report.
+
+**Scope:** Applies to 2014-era decisions at their actual in-career dates, not real-world results after divergence. Keep legacy Weeks 1 to 5 closed and immutable.
 
 ## A. Architecture: event source -> active briefing -> response -> result
 
@@ -51,7 +55,7 @@ A “trade deadline approaching” window is not a reason to manufacture a trade
 - **Player contracts:** drafted rookies are ineligible for renegotiation until after their third contracted regular season; undrafted rookies until after their second. Verify original player contract, rights, league year, guarantees, cap effect and applicable franchise/tender restrictions. A veteran deal may be extendable during the season subject to the 2011 CBA and original deal. Never use a fabricated market quote or deterministic “delay tax.”
 - **Stone's authority:** Caldwell executes player acquisitions, contracts and trades; Stone supplies requested football recommendation and retains his specified QB consultation right. Stone selects his assistant staff inside the approved budget. Khan/Caldwell determine Stone's own employment. Stone accepts, rejects or counters personal offers himself.
 - **Coach standing contract:** as recorded at the Oct 5, 2014 checkpoint, Stone's four-year deal runs through the later of January 31, 2017 or the day after Jacksonville's last 2016 game, unless changed by a real employment event. No weekly fictitious expiration warning.
-- **Existing unanswered authority gap:** the repo flags who may approve another club contacting Stone as unresolved. Do not invent the approver; resolve its source before authorizing a hypothetical request.
+- **Who approves another club contacting Stone:** settled by the user's employment answers of October 18, 2026 (recorded in the [rebuild plan](rebuild_plan.md)): Stone keeps a standing yes-or-no answer to whether he is open to job offers, and Shad Khan and David Caldwell handle the club's formal permission. Verify the standing answer on file before routing a request; do not invent one.
 
 ## E. Files and integration points in existing repository
 

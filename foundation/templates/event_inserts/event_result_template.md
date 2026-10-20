@@ -1,6 +1,6 @@
 # One Separate Result Per Event: reusable output template
 
-**Design status:** Proposed, updated to make the user's per-event output rule explicit. This is a template for **one individual result document**, not an `Event_Results.md` omnibus. Every distinct event that reaches a final disposition receives its own dated, readable Markdown result in the period where it happened, even if multiple events were introduced by the same weekly briefing or answered together on `My_Responses.md`.
+**Design status:** Adopted October 20, 2026 from the user's upload; built in step 5 of the [rebuild plan](../../../docs/rebuild_plan.md). It states the user's per-event output rule. This is a template for **one individual result document**, not an `Event_Results.md` omnibus. Every distinct event that reaches a final disposition receives its own dated, readable Markdown result in the period where it happened, even if multiple events were introduced by the same weekly briefing or answered together on `My_Responses.md`.
 
 ## Non-negotiable output ownership
 

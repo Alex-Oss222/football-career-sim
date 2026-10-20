@@ -1,6 +1,6 @@
 # My Responses: short event answers
 
-**Design status:** Proposed. One small response journal per active week or career phase, NOT a new three-page decision for each event. The journal is separate from a frozen `Game_Plan.md`. Each block is bound to a pending event ID in machine metadata and is validated before application; the user-facing page shows the issue name, not technical IDs.
+**Design status:** Adopted October 20, 2026 from the user's upload; built in step 5 of the [rebuild plan](../../../docs/rebuild_plan.md). One small response journal per active week or career phase, NOT a new three-page decision for each event. The journal is separate from a frozen `Game_Plan.md`. Each block is bound to a pending event ID in machine metadata and is validated before application; the user-facing page shows the issue name, not technical IDs.
 
 **One shared answer journal does not mean one shared result.** Every closed event named here must yield a separate dated outcome page under its own appropriate event owner, linked from the week/phase index, even if the answer was “Oppose trade” or “Decline offer.”
 
