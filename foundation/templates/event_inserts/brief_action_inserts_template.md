@@ -1,6 +1,6 @@
 # Action Items: reusable briefing inserts
 
-**Design status:** Proposed. This is a reusable insert inside the briefing already active at that time, NOT a new standalone brief. Substitute verified facts and only show relevant items. Do not display these instructions to the coach.
+**Design status:** Adopted October 20, 2026 from the user's upload; built in step 5 of the [rebuild plan](../../../docs/rebuild_plan.md). This is a reusable insert inside the briefing already active at that time, NOT a new standalone brief. Substitute verified facts and only show relevant items. Do not display these instructions to the coach.
 
 **Outcome rule:** When each inserted event resolves, it receives its **own separate dated output file immediately in that simulated period**. The weekly briefing and shared response page can hold multiple events; their result pages may not be combined. The week/phase index links to each distinct result. Trade offers, including rejected offers, follow the same rule.
 

@@ -1,6 +1,6 @@
 # Bye Week: three-page implementation and football-realism specification
 
-**Status:** Proposed design, **not installed in the repository**. No game, practice, medical decision, transaction, or career date is advanced by these templates.
+**Status:** Uploaded by the user on October 20, 2026 and adopted; built in step 5 of the [rebuild plan](rebuild_plan.md). The templates are in [foundation/templates/bye_week/](../foundation/templates/bye_week/) and the worked example is [docs/examples/week_11_bye_illustration.md](examples/week_11_bye_illustration.md). No game, practice, medical decision, transaction or career date is advanced by these templates.
 
 ## 1. Actual repository findings
 

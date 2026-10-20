@@ -10,6 +10,8 @@
 
 > AUTHORING RULE (omit from the issued page): This is the staff's **self-scouting brief**, not a season review, game plan, player-rating exercise or a record of work not yet performed. Use facts that existed when the brief was issued. A finding is an observed football conclusion, a hypothesis is labelled as a hypothesis, and an unsupported statistical breakdown is omitted. Don't invent formation splits, coverage rates, route diagnoses, practice outcomes or private conversations. Empty or unsupported categories may say "Nothing material established" rather than manufacturing findings. Tables lead; interpretation stays short and references only evidence above.
 
+[Event inserts, when any event is pending: ACTION REQUIRED, FOR YOUR INFORMATION and COMING UP go here, before the first section, in the form of the [event insert template](../event_inserts/brief_action_inserts_template.md). Omit each section that has nothing in it. Answers go on the week's My Responses page; each resolved event gets its own dated result page.]
+
 ## The club entering the bye
 
 | Item | Verified position on issue date |
