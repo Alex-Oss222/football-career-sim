@@ -3,7 +3,7 @@
 **Head coach:** Alex Stone  
 **Game:** [Away] at [Home], [date, kickoff time, venue]  
 **Briefing used:** [Issue date / revision]  
-**Baseline:** [Carry Week NN / New plan]. **No change** means carry the last *eligible and legal* frozen instruction; **None** means intentionally no special adjustment. A new or changed call must belong to the active playbook and have been installed. Medical eligibility cannot be overridden.
+**Baseline:** [Carry Week NN / New plan]. **No change** means carry the last *eligible and legal* frozen instruction; **None** means intentionally no special adjustment. Any call in the active playbook may be named for any situation, whether or not it has been practiced this week; a call from a book that starts after this season is refused. Medical eligibility cannot be overridden.
 
 > FILL-IN GUIDE (remove from locked page): This is a coach's decision, not a call-sheet database. Replace the bracketed prompts with the decision you want. You may write in ordinary football language under each fixed heading. Do not invent percentage targets, ratings, unobserved opponent tendencies or arbitrary practice repetitions. The checker will compile your decisions into the technical call sheet and return precise problems if it cannot. Every line needs an answer: a line left empty is unanswered, never a yes or a no.
 
@@ -26,11 +26,11 @@
 **Base personnel and roles:** [Who leads, who substitutes and *why*, without snap quotas.]  
 **The first things I want to learn:** [Two or three looks, motions or personnel presentations. This is *not* an obligation to run every play regardless of down, distance or score.]  
 **Opening approach:** [Show -> response to identify -> available answer. If keeping last week's eligible opener, write 'Carry Week NN opening approach, with changes below'.]  
-**Opening calls, in order:** [The calls separated by semicolons, a call repeated for a return to it; or 'Carry Week NN opening', No change or None.]
+**Opening ideas:** [The calls you want early, in your order of preference. Any call in the book stays available. The calls separated by semicolons, a call repeated for a return to it; or 'Carry Week NN opening', No change or None.]
 
 ### Primary calls
 
-Use as many lines as football requires. Each entry is a *concept with a purpose*, not a counter in a 30-play program. The compiler resolves the full legal formation, personnel, motion, protection and tags from the active book and prior frozen sheet. Explicit variations need to be approved/install-eligible.
+Use as many lines as football requires. Each entry is a *concept with a purpose*, not a counter in a 30-play program. The compiler resolves the full legal formation, personnel, motion, protection and tags from the active book and prior frozen sheet. Any call or variation the active book holds may be named, practiced or not. Name a call by its full name; a shorter one is asked about, and a new call whose words a longer call's name holds is written `New call: [its name]`.
 
 | Call / concept as named in the active book | When I want it | Football reason and key read | Protection, personnel or stop condition |
 |---|---|---|---|
@@ -46,7 +46,7 @@ Use as many lines as football requires. Each entry is a *concept with a purpose*
 **Four-minute / protect a lead:** [Carry / call and risk priorities.]  
 **Sudden change / shot opportunities:** [Carry / what actual defensive response must precede the shot. A turnover by itself is not a coverage tell.]  
 **Special plays:** [Flea Flicker, TE Delay, etc.: Keep, Remove, or Practice Only; a football explanation for each changed status. Do not specify artificial return numbers.]  
-**Calls not available this week:** [Only actual removals, uninstalled calls or medical restrictions; or No change.]
+**Calls not available this week:** [Only actual removals or medical restrictions; or No change.]
 
 ## 4. Defense: what we are showing and answering
 
@@ -75,7 +75,7 @@ Use as many lines as football requires. Each entry is a *concept with a purpose*
 
 ## 6. What we will practice
 
-Name the work, personnel, responsible coach and successful check. Actual practice records will be written *after* they occur; these intentions are not claims of completed work. Avoid meaningless fixed repetitions.
+Name the work, personnel, responsible coach and successful check. This section is information for the staff (what to practice, who takes a limited player's work), never a condition on a call: any call in the active book stays available whether or not it is practiced. Actual practice records will be written *after* they occur; these intentions are not claims of completed work. Avoid meaningless fixed repetitions.
 
 | Priority | Responsible coach and players | Football situation to rehearse | What shows it is ready |
 |---|---|---|---|

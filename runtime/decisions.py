@@ -1,17 +1,25 @@
 """The decisions in a year (docs/rebuild_plan.md, "How a decision works" and
-"The decisions in a year"): every decision point and its three pages.
+"The decisions in a year"): every phase decision and its three pages, and the
+events that come up inside a week or phase.
 
-Each decision has a brief (named for whoever really brings it), his page (a
+A phase decision has a brief (named for whoever really brings it), his page (a
 fill-in page with fixed headings) and a result (named for where it is
-decided), all in one folder. The registry below names each one; only the game
-week is built so far (``implemented``), and the build steps that fill in the
-others are named beside them. Nothing here reads or writes a record: the
-registry and the page paths are data, and opening a page never moves time or
-creates an event.
+decided), all in one folder (``REGISTRY``). An event inside a week or phase (an
+injury replacement, a trade call, Stone's own contract extension, another club
+calling, an offer after an interview) is not a decision of three pages
+(``EVENTS``, docs/event_inserts.md): it appears as an insert at the top of the
+active brief (ACTION REQUIRED, FOR YOUR INFORMATION or COMING UP), is answered
+on that week's or phase's one My Responses page, and each resolved event gets
+its own dated result page in its owner's folder, linked from the week or phase
+index and never pasted into the weekly report. Only the game week is built so
+far (``implemented``); the build steps that fill in the rest are named beside
+them. Nothing here reads or writes a record: the registries and the page paths
+are data, and opening a page never moves time or creates an event.
 
 Folders are found through the folder map (runtime/seasons.SeasonPaths and
-runtime/season_layout): ``place`` names where a decision's pages live, and
-``folder`` resolves it for a season.
+runtime/season_layout): a decision's ``place`` and an event's ``owner`` name
+where its pages live, and ``folder`` and ``event_folder`` resolve them for a
+season.
 """
 from __future__ import annotations
 
@@ -52,20 +60,12 @@ REGISTRY = (
              "The coaching staff: the coordinators, with the medical update and the pro scouting report", 4, True),
     Decision("bye_week", "Bye week", "Bye Week Review", "My Adjustments", "Bye Week Report", "week",
              "The coaching staff", 5),
-    Decision("injury_replacement", "Injury replacement in season", "Roster Move Request", "My Recommendation",
-             "Transaction", "week", "The general manager and the medical staff", 5),
-    Decision("trade_talks", "Trade talks", "Trade Call", "My Recommendation", "Trade Result", "trades",
-             "The general manager", 5),
-    Decision("season_end", "Season ends", "Season Review", "My Response", "Club Decision", "season_review",
+    # The season's own page, apart from any week's My Responses page (the user's answer of October 20,
+    # 2026: "Keep them separate, and give the season one a different name").
+    Decision("season_end", "Season ends", "Season Review", "My Season Response", "Club Decision", "season_review",
              "The owner and the general manager", 6),
-    Decision("extension", "Contract extension", "Extension Offer", "My Answer", "New Contract or Unchanged",
-             "stone", "The club", 6),
     Decision("contract_ending", "Fired, or contract ending", "Agent's Report", "Instructions to My Agent",
              "Interviews and Offers", "stone", "His agent", 6),
-    Decision("club_calls", "Another club calls", "Permission Request", "My Answer", "Interview or Declined",
-             "stone", "The calling club, through his club", 6),
-    Decision("after_interview", "After an interview", "Offer Sheet", "My Answer", "Signed or Talks Ended",
-             "stone", "The interviewing club", 6),
     Decision("january_staff", "January staff", "Staff Status Report", "My Staff Decisions", "Staff Moves",
              "early_offseason", "The coaching staff and the general manager", 6),
     Decision("staff_vacancy", "Staff vacancy", "Candidate Report", "My Hire", "Staff Hire", "early_offseason",
@@ -90,6 +90,45 @@ REGISTRY = (
 BY_KIND = {d.kind: d for d in REGISTRY}
 
 
+@dataclass(frozen=True)
+class Event:
+    """An event that comes up inside a week or phase (docs/event_inserts.md): an insert in the active
+    brief, his answer on the week's or phase's one My Responses page, and one dated result page of its
+    own in its owner's folder for each event resolved."""
+    kind: str          # the registry key
+    when: str          # when it comes up
+    result: str        # the result page's name
+    owner: str         # the folder its result lives in (``OWNERS``)
+    brings: str        # who brings it
+    step: int          # the rebuild step that builds it
+    implemented: bool = False
+
+
+# The owner folders of event results: a logical season record of the folder map and how many folders
+# up from it the result sits; "stone" is Stone's own folder (career/Stone), whoever employs him.
+OWNERS = {
+    "roster": ("team/roster", 0),                 # roster moves: Team_Operations/Team/Roster
+    "free_agency": ("free_agency", 0),            # signings: Team_Operations/Free_Agency
+    "trades": ("trades/README.md", 1),            # trades: Team_Operations/Trades
+    "staff": ("team/coaching_staff", 0),          # staff: Team_Operations/Staff
+}
+
+EVENTS = (
+    Event("injury_replacement", "Injury replacement in season", "Transaction", "roster",
+          "The general manager and the medical staff", 5),
+    Event("trade_talks", "Trade talks", "Trade Result", "trades", "The general manager", 5),
+    Event("extension", "Stone's contract extension", "New Contract or Unchanged", "stone", "The club", 6),
+    # Shad Khan alone answers another club's request (Document 3 row 1a); Stone is not open to job offers,
+    # so the call reaches him as news.
+    Event("club_calls", "Another club calls", "Interview or Declined", "stone",
+          "The calling club, through Shad Khan", 6),
+    Event("after_interview", "After an interview", "Signed or Talks Ended", "stone", "The interviewing club", 6),
+)
+EVENT_KIND = {e.kind: e for e in EVENTS}
+# The week's or phase's one answer page for the events inserted in its brief.
+RESPONSES = "My Responses"
+
+
 def file_name(page_name):
     """A page's file name from its fixed name: "Game Week Briefing" is Game_Week_Briefing.md."""
     return page_name.replace("'", "").replace(" ", "_") + ".md"
@@ -105,7 +144,20 @@ def folder(decision, year, root=None, week=None, postseason=False):
         return paths.week_folder(week, postseason)
     if decision.place == "stone":
         return paths.root / STONE_PAGES
-    logical, up = PLACES[decision.place]
+    return _resolve(paths, PLACES[decision.place])
+
+
+def event_folder(event, year, root=None):
+    """The owner folder an event's dated result pages live in, through the folder map."""
+    event = EVENT_KIND[event] if isinstance(event, str) else event
+    paths = SeasonPaths(year) if root is None else SeasonPaths(year, root)
+    if event.owner == "stone":
+        return paths.root / STONE_PAGES
+    return _resolve(paths, OWNERS[event.owner])
+
+
+def _resolve(paths, place):
+    logical, up = place
     target = paths.record(logical)
     for _ in range(up):
         target = target.parent
@@ -128,6 +180,11 @@ class WeekPages:
     @property
     def plan(self): return self.folder / file_name(BY_KIND["game_week"].page)
     @property
+    def responses(self):
+        """The week's one My Responses page: his answers to the events inserted in its briefing
+        (docs/event_inserts.md); not a game page, and separate from the frozen Game Plan."""
+        return self.folder / file_name(RESPONSES)
+    @property
     def call_sheet(self): return self.data / "call_sheet.json"
     @property
     def staff_texts(self):
@@ -145,13 +202,6 @@ class WeekPages:
         page bytes the call sheet was frozen, its depth-chart changes and the event of the apply."""
         return self.data / "applied_plan.json"
 
-    @property
-    def practice(self):
-        """The practice week's record of the installs his Game Plan names (``installs``: each install's
-        words as the page writes them, ``taught`` true or false, the ``date`` and the coach ``by``
-        whom), written by whoever closes the practice week, never by code. The plan is set for the game
-        only once every install it relies on is recorded taught (scripts/apply_game_plan.py)."""
-        return self.data / "practice.json"
     @property
     def pregame(self):
         """The Game Report's pregame sections as they stood at the game-day commit (``sections``: each

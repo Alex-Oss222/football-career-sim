@@ -28,24 +28,24 @@
 
 ## 3. Offense: what we are calling and why
 
-> Caller: who calls the offense on the staff page (Alex Stone), or No change. Opening calls, in order: the calls separated by semicolons, a call repeated for a return to it; or Carry Week 5 opening, No change or None.
+> Caller: who calls the offense on the staff page (Alex Stone), or No change. Opening ideas: The calls you want early, in your order of preference. Any call in the book stays available. Write them separated by semicolons, a call repeated for a return to it; or Carry Week 5 opening, No change or None.
 
 **Caller:**  
 **Base personnel and roles:**  
 **The first things I want to learn:**  
 **Opening approach:**  
-**Opening calls, in order:**
+**Opening ideas:**
 
 ### Primary calls
 
-> One row for each call you add or change; with Carry Week 5 every call of that week stays as set unless you change it here, list it as not available or remove it as a special play. Name a call by its full name, as the active playbook and the earlier call sheets name it (Week 5: 12 Ace, Power Right; 12 SHIFT Empty, Stick; 12 Trey, Y-Cross, SOLID; 11 Bunch, Mesh, HALF; 12 Wing, Outside Zone Left; 12 Wing, Boot Flood Right; 12 Ace, Counter Right; 11 Doubles, Drive, HALF; 11 Doubles, Stick, SCAT; 11 Doubles, RB Slow Screen; 12 Ace, Power Left; 12 Ace, Flea Flicker, MAX; 12 Wing, TE Delay; 11 SHIFT Empty, Spacing, SCAT; 11 Doubles, Inside Zone Right; 11 Trips, Inside Zone + Bubble; 12 Ace, Power Pass / Post-Cross, MAX; 11 Trey, Dagger, HALF; 12 Trey, TE Delay; 11 Doubles, Spacing, SCAT; 11 Bunch, Snag); a shorter name is asked about, never filled in. A new call is its formation, concept and protection, named as this week's install in section 6. A variation goes in parentheses after the call, or (without the variation) to take one off. When I want it: the situations separated by commas (normal downs, second and long, third and short, third and medium, third and long, backed up, high red zone, low red zone, goal line, two-minute, PRESS sequence, four-minute, sudden change, two-point tries, final play of the half); the opening calls line puts a call in the opening sequence. Your reason and stop condition are kept with the plan and never change a call.
+> One row for each call you add or change; with Carry Week 5 every call of that week stays as set unless you change it here, list it as not available or remove it as a special play. Name a call by its full name, as the active playbook and the earlier call sheets name it (Week 5: 12 Ace, Power Right; 12 SHIFT Empty, Stick; 12 Trey, Y-Cross, SOLID; 11 Bunch, Mesh, HALF; 12 Wing, Outside Zone Left; 12 Wing, Boot Flood Right; 12 Ace, Counter Right; 11 Doubles, Drive, HALF; 11 Doubles, Stick, SCAT; 11 Doubles, RB Slow Screen; 12 Ace, Power Left; 12 Ace, Flea Flicker, MAX; 12 Wing, TE Delay; 11 SHIFT Empty, Spacing, SCAT; 11 Doubles, Inside Zone Right; 11 Trips, Inside Zone + Bubble; 12 Ace, Power Pass / Post-Cross, MAX; 11 Trey, Dagger, HALF; 12 Trey, TE Delay; 11 Doubles, Spacing, SCAT; 11 Bunch, Snag); a shorter name is asked about, never filled in. Any call in the active playbook may be named, whether or not it has been practiced: a new call is its formation, concept and protection, and one whose words a longer call's name holds is written New call: before it. A variation goes in parentheses after the call, or (without the variation) to take one off. When I want it: the situations separated by commas (normal downs, second and long, third and short, third and medium, third and long, backed up, high red zone, low red zone, goal line, two-minute, PRESS sequence, four-minute, sudden change, two-point tries, final play of the half); the opening ideas line puts a call in the opening sequence. Your reason and stop condition are kept with the plan and never change a call.
 
 | Call / concept as named in the active book | When I want it | Football reason and key read | Protection, personnel or stop condition |
 |---|---|---|---|
 
 ### Situational changes from the standing / previous menu
 
-> How you want each situation called is your direction to the staff; which calls are on each situation's list is set by the table above. Special plays: each call by its full name with Keep, Remove or Practice only, separated by semicolons; a special play is called only in the situations it has been installed for, unless section 6 installs a new one. Calls not available this week: the calls by their full names, separated by semicolons, or None. A call taken off leaves the opening calls, and the calls after it move up.
+> How you want each situation called is your direction to the staff; which calls are on each situation's list is set by the table above. Special plays: each call by its full name with Keep, Remove or Practice only, separated by semicolons; a special play may be named for any situation in the table above. Calls not available this week: the calls by their full names, separated by semicolons, or None. A call taken off leaves the opening calls, and the calls after it move up.
 
 **Third down:**  
 **Backed up:**  
@@ -66,7 +66,7 @@
 **Rush rule:**  
 **What we need to discover early:**
 
-> One row for each prepared response; with Carry Week 5 and no rows, that week's responses stay as set, and any row replaces them all. First column: a situation the defense keys (normal downs, second and long, third and short, third and medium, third and long, two-point try, goal line, low red zone, high red zone, red zone, backed up, two-minute, four-minute, late lead) is that situation's call; begin with If or When for a conditional response and with Counter for a counter; anything else is a presentation. Response: the active defensive playbook's words, one package, front and pressure at most, the coverages as alternatives (Quarters or Cover 6); practiced on an earlier sheet: Dime, Nickel, Nickel Even, Under, Cover 1 Robber, Cover 3 Match, Cover 6, Fire 3, Quarters, base four, Fire Zone, Replace, Replace Boundary, Replace Field, the interior mug; anything else is named as this week's install.
+> One row for each prepared response; with Carry Week 5 and no rows, that week's responses stay as set, and any row replaces them all. First column: a situation the defense keys (normal downs, second and long, third and short, third and medium, third and long, two-point try, goal line, low red zone, high red zone, red zone, backed up, two-minute, four-minute, late lead) is that situation's call; begin with If or When for a conditional response and with Counter for a counter; anything else is a presentation. Response: the active defensive playbook's words, one package, front and pressure at most, the coverages as alternatives (Quarters or Cover 6); any word of the active defensive playbook may be named, whether or not it has been practiced.
 
 | Offensive situation / presentation | Prepared front, coverage or pressure response | Football reason | Counter / when to get out of it |
 |---|---|---|---|
@@ -91,7 +91,7 @@
 
 ## 6. What we will practice
 
-> One row for each priority. A first column beginning Install names this week's installs, separated by semicolons: a new call, a new variation, a defensive word, or a special play's new situation (the call, then on and the situation). These are intentions; the practices themselves are recorded when they happen, and a plan that relies on an install is set for the game on game day, once the practice week records it taught.
+> Information for the staff, one row for each priority: what you want practiced and who takes a limited player's work. It never decides which calls you may name; any call in the book stays available. These are intentions; the practices themselves are recorded when they happen.
 
 | Priority | Responsible coach and players | Football situation to rehearse | What shows it is ready |
 |---|---|---|---|

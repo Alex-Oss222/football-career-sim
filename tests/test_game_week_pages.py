@@ -36,17 +36,49 @@ def copy_repo(test):
 
 
 class RegistryTests(unittest.TestCase):
-    def test_every_decision_of_the_plan_is_named(self):
+    def tables(self):
+        """{subheading: rows} of the plan's "The decisions in a year" section."""
         text = (ROOT / "docs/rebuild_plan.md").read_text(encoding="utf-8")
-        table = text.split("## The decisions in a year", 1)[1].split("\n## ", 1)[0]
-        rows = [[c.strip() for c in line.strip().strip("|").split("|")] for line in table.splitlines()
-                if line.startswith("| ") and not line.startswith("| When")]
-        named = [(d.brief, d.page, d.result) for d in decisions.REGISTRY]
+        section = text.split("## The decisions in a year", 1)[1].split("\n## ", 1)[0]
+        out = {}
+        for part in section.split("\n### ")[1:]:
+            title, body = part.split("\n", 1)
+            out[title.split(":")[0].strip()] = [[c.strip() for c in line.strip().strip("|").split("|")]
+                                                for line in body.splitlines()
+                                                if line.startswith("| ") and not line.startswith("| When")]
+        return out
+
+    def test_every_decision_of_the_plan_is_named(self):
+        rows = self.tables()["Phase decisions"]
+        named = [(d.when, d.brief, d.page, d.result) for d in decisions.REGISTRY]
         for row in rows:
             brief = re.sub(r"\s*\(.*\)$", "", row[1])
-            self.assertIn((brief, row[2], row[3]), named)
+            self.assertIn((row[0], brief, row[2], row[3]), named)
         self.assertEqual(len(rows), len(decisions.REGISTRY))
         self.assertEqual([d.kind for d in decisions.REGISTRY if d.implemented], ["game_week"])
+        # The season's own page, apart from any week's My Responses page.
+        self.assertEqual(decisions.BY_KIND["season_end"].page, "My Season Response")
+        self.assertNotIn(decisions.RESPONSES, [d.page for d in decisions.REGISTRY])
+
+    def test_every_event_of_the_plan_is_named(self):
+        # The events inside a week or phase are inserts, not decisions of three pages.
+        rows = self.tables()["Events inside a week or phase"]
+        self.assertEqual([(r[0], r[1], r[2], int(r[4])) for r in rows],
+                         [(e.when, e.brings, e.result, e.step) for e in decisions.EVENTS])
+        for row, event in zip(rows, decisions.EVENTS):
+            folder = decisions.event_folder(event, 2014, ROOT)
+            self.assertTrue(folder.is_dir(), (event.kind, folder))
+            self.assertTrue(folder.relative_to(ROOT).as_posix().endswith(row[3]), (event.kind, folder, row[3]))
+        self.assertEqual({e.step for e in decisions.EVENTS if e.kind in ("injury_replacement", "trade_talks")}, {5})
+        self.assertEqual({e.step for e in decisions.EVENTS if e.kind not in ("injury_replacement", "trade_talks")}, {6})
+        self.assertFalse(set(decisions.EVENT_KIND) & set(decisions.BY_KIND))
+        # Every owner folder the plan names resolves through the folder map.
+        text = (ROOT / "docs/rebuild_plan.md").read_text(encoding="utf-8")
+        for owner in decisions.OWNERS:
+            folder = decisions.event_folder(decisions.Event("x", "x", "x", owner, "x", 5), 2014, ROOT)
+            self.assertTrue(folder.is_dir(), (owner, folder))
+            self.assertIn(folder.relative_to(ROOT / "career/2014").as_posix(), text)
+        self.assertEqual(decisions.week_pages(2014, 6, ROOT).responses.name, "My_Responses.md")
 
     def test_every_folder_resolves_through_the_map(self):
         for d in decisions.REGISTRY:

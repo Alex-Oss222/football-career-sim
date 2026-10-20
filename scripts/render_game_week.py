@@ -1341,7 +1341,6 @@ def earlier_sheets(wk):
 def plan_facts(wk):
     """The builder's lines of the week's blank Game Plan: the head coach, the game, the briefing it
     answers, the pending players, and the guide line of each part, naming the legal choices."""
-    from runtime import defensive_calls
     from runtime.rules import RULES
     week = wk.game["week"]
     g = wk.game
@@ -1361,15 +1360,6 @@ def plan_facts(wk):
     rule = lambda subject: ("Standing rule (%s)" % (standing[subject][:1].lower() + standing[subject][1:]).rstrip(".")
                             if standing.get(subject) else "Standing rule")
     calls = [c["name"] for c in (earlier.get(last) or {}).get("offensive_call_sheet") or () if isinstance(c, dict)]
-    practiced = game_plan.earlier_practiced(earlier)
-    words = []
-    spelled = {"base-4": "base four", "replace": "Replace", "field": "Replace Field", "boundary": "Replace Boundary",
-               "mug": "the interior mug"}
-    for key in game_plan.PRACTICED_KEYS:
-        for word in sorted(practiced.get(key) or ()):
-            words.append(spelled.get(word) or (defensive_calls.PRESSURE_FAMILIES.get(word, word) if key == "pressures"
-                                               else "Cover %s" % word if key == "coverages" and word[:1].isdigit()
-                                               else word))
     carry = "Carry Week %d" % last if last else "Carry Week N"
     guides = {
         "header": ("Answer every line under its heading. No change keeps the last legal instruction set; None means "
@@ -1383,23 +1373,24 @@ def plan_facts(wk):
             "or the changes separated by semicolons: a role and its player (%s) or a group's new order (Wide "
             "receivers order: the names). Medical decisions cannot be overridden."
             % (inactive, active, rule("inactives"), carry, ", ".join(game_plan.ROLES))),
-        3: ("Caller: who calls the offense on the staff page (%s), or No change. Opening calls, in order: the calls "
+        3: ("Caller: who calls the offense on the staff page (%s), or No change. Opening ideas: %s Write them "
             "separated by semicolons, a call repeated for a return to it; or %s opening, No change or None."
-            % (callers.get("offense", "not recorded"), carry)),
+            % (callers.get("offense", "not recorded"), game_plan.OPENING_GUIDE, carry)),
         "calls": ("One row for each call you add or change; with %s every call of that week stays as set unless you "
                   "change it here, list it as not available or remove it as a special play. Name a call by its full "
                   "name, as the active playbook and the earlier call sheets name it (%s); a shorter name is asked "
-                  "about, never filled in. A new call is its formation, concept and protection, named as this week's "
-                  "install in section 6. A variation goes in parentheses after "
+                  "about, never filled in. Any call in the active playbook may be named, whether or not it has been "
+                  "practiced: a new call is its formation, concept and protection, and one whose words a longer "
+                  "call's name holds is written New call: before it. A variation goes in parentheses after "
                   "the call, or (without the variation) to take one off. When I want it: the situations separated "
-                  "by commas (%s); the opening calls line puts a call in the opening sequence. Your reason and stop "
+                  "by commas (%s); the opening ideas line puts a call in the opening sequence. Your reason and stop "
                   "condition are kept with the plan and never change a call."
                   % (carry, "Week %d: %s" % (last, "; ".join(calls)) if calls else "none yet",
                      ", ".join(game_plan.SITUATION_WORDS))),
         "situations": ("How you want each situation called is your direction to the staff; which calls are on each "
                        "situation's list is set by the table above. Special plays: each call by its full name with "
-                       "Keep, Remove or Practice only, separated by semicolons; a special play is called only in the "
-                       "situations it has been installed for, unless section 6 installs a new one. Calls not available "
+                       "Keep, Remove or Practice only, separated by semicolons; a special play may be named for any "
+                       "situation in the table above. Calls not available "
                        "this week: the calls by their full names, separated by semicolons, or None. A call taken off "
                        "leaves the opening calls, and the calls after it move up."),
         4: ("Caller: who calls the defense on the staff page (%s), or No change. Rush rule: %s, as the active "
@@ -1410,19 +1401,15 @@ def plan_facts(wk):
                       "situation's call; begin with If or When for a conditional response and with Counter for a "
                       "counter; anything else is a presentation. Response: the active defensive playbook's words, "
                       "one package, front and pressure at most, the coverages as alternatives (Quarters or Cover 6); "
-                      "practiced on an earlier sheet: %s; "
-                      "anything else is named as this week's install."
-                      % (carry, ", ".join(w.lower() for w in game_plan.DEF_MENU_WORDS.values()),
-                         ", ".join(words) if words else "none yet")),
+                      "any word of the active defensive playbook may be named, whether or not it has been practiced."
+                      % (carry, ", ".join(w.lower() for w in game_plan.DEF_MENU_WORDS.values()))),
         5: ("Kicking-game caller: %s calls it on the staff page, or No change. Fourth downs: %s. Two-point tries: "
             "%s. Kickoffs and onside situations: %s. Each also takes %s, No change, None (fourth downs only: your "
             "live call on each) or My rules, otherwise the decision, above a rule table."
             % (callers.get("special_teams", "no one"), rule("fourth_down"), rule("two_point"), rule("kickoff"), carry)),
-        6: ("One row for each priority. A first column beginning Install names this week's installs, separated by "
-            "semicolons: a new call, a new variation, a defensive word, or a special play's new situation (the call, "
-            "then on and the situation). These are intentions; the practices themselves are recorded when they "
-            "happen, and a plan that relies on an install is set for the game on game day, once the practice week "
-            "records it taught."),
+        6: ("Information for the staff, one row for each priority: what you want practiced and who takes a "
+            "limited player's work. It never decides which calls you may name; any call in the book stays "
+            "available. These are intentions; the practices themselves are recorded when they happen."),
         7: ("Your directions, on the line or in bullets below it; nothing here is set for the game, and silence never "
             "means approval."),
     }

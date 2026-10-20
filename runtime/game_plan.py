@@ -26,17 +26,23 @@ carried frozen item it came from:
   the active book and the earlier frozen sheets name it, its situations in
   "When I want it", and any explicit variation in parentheses, "(Kelce
   receiving Y)" or "(without Kelce receiving Y)"), less the calls not
-  available and the special plays removed or kept for practice. A call's
-  personnel, formation, motion, protection and tags are resolved from the
-  frozen form when exactly one form matches what he wrote; when more than one
-  does, the check asks which (never a guess); a call no earlier Jacksonville
-  sheet carries is a new install, read from its name, and must be named as
-  this week's install in section 6;
-- the opening sequence: "Opening calls, in order" (a call repeated is a
-  return to it), or "Carry Week NN opening"; a call on it that is not a
-  normal-down call is on the opening sequence's list. The tags the opening
-  list and the two-point list imply ("opener", "two-point folder") follow
-  them;
+  available and the special plays removed or kept for practice. Any call in
+  the active book may be named for any situation he writes, whether or not
+  the week's practice covered it (the user's ruling of October 20, 2026: "We
+  can call anything from the playbook. It's accessible."); the check holds
+  every word to the active book. A call's personnel, formation, motion,
+  protection and tags are resolved from the frozen form when its full name is
+  an earlier sheet's; a shorter or partial name is asked about (never a
+  guess); a call no earlier Jacksonville sheet carries is read from its name,
+  and one whose words an earlier call's name holds is written "New call:
+  <its name>" once the check has asked;
+- the opening sequence: "Opening ideas" (the calls he wants early, in his
+  order of preference; a call repeated is a return to it), or "Carry Week NN
+  opening". Today the order fills the sheet's opening slots, which name the
+  early calls in the play-by-play and do not change results; a call on it
+  that is not a normal-down call is on the opening sequence's list. The tags
+  the opening list and the two-point list imply ("opener", "two-point
+  folder") follow them;
 - the defensive responses table, in the active defensive book's words: a
   first cell naming a situation the defense keys (normal downs, third and
   long, the red zone, late lead and the rest) is that situation's row, one
@@ -50,8 +56,9 @@ carried frozen item it came from:
 
 Everything else is author intent: what he wants the game to look like, each
 call's football reason and stop condition, the situational lines, the
-contingencies, the practice table (besides its installs) and the staff
-directions. Intent is stored and shown (the page is its record, and the
+contingencies, the practice table (information for the staff: who takes
+a limited player's work and what the staff will practice, never a condition
+on a call) and the staff directions. Intent is stored and shown (the page is its record, and the
 applied plan record keeps it with its line and date), and it never changes
 the compiled sheet: the same choices with reworded reasons compile to the
 same bytes (tests/test_game_plan.py). Nothing here reads the current-job
@@ -95,7 +102,7 @@ FIELDS = (
     ("base_personnel", 3, "Base personnel and roles", "intent"),
     ("learn", 3, "The first things I want to learn", "intent"),
     ("opening_approach", 3, "Opening approach", "intent"),
-    ("opening", 3, "Opening calls, in order", "opening"),
+    ("opening", 3, "Opening ideas", "opening"),
     ("third_down", 3, "Third down", "situational"),
     ("backed_up", 3, "Backed up", "situational"),
     ("red_zone", 3, "High red zone, low red zone, goal line", "situational"),
@@ -124,6 +131,10 @@ FIELDS = (
     ("ready", 7, "Ready to lock after", "intent"),
 )
 FIELD = {key: (section, label, kind) for key, section, label, kind in FIELDS}
+# Labels an earlier page wrote, read as today's: a page written before October 20, 2026 names its
+# opening list "Opening calls, in order".
+OLD_LABELS = {(3, "Opening calls, in order"): "opening"}
+OPENING_GUIDE = "The calls you want early, in your order of preference. Any call in the book stays available."
 # The kinds whose answer may run on below its label (further lines or bullets): his own direction,
 # kept as written and never compiled. Every other answer is read from its label's line alone.
 CONTINUED_KINDS = ("intent", "situational")
@@ -600,7 +611,7 @@ def _label_key(section, label):
     for key, s, l, _ in FIELDS:
         if s == section and l == label:
             return key
-    return None
+    return OLD_LABELS.get((section, label))
 
 
 def split(text):
@@ -723,11 +734,6 @@ def parse(text):
     practice = read_table(tables["practice"], PRACTICE_COLUMNS, "What we will practice", problems)
     choices["practice"] = [{"line": n, **{k: row[c] for k, c in zip(("priority", "who", "situation", "ready"),
                                                                     PRACTICE_COLUMNS)}} for n, row in practice]
-    choices["installs"] = []
-    for row in choices["practice"]:
-        m = re.match(r"^install\b[:\s]*(.*)$", row["priority"], re.I)
-        if m:
-            choices["installs"] += [{"text": item, "line": row["line"]} for item in items(m[1])]
     return choices, problems
 
 
@@ -908,8 +914,14 @@ READERS = {"briefing": _date, "baseline": _baseline, "inactives": _inactives, "d
            "removals": _removals, "rush": _rush, "decision": _decision}
 
 
+NEW_CALL = re.compile(r"^new call\s*:\s*(.*)$", re.I)
+
+
 def _call_row(n, row, problems):
     text = row[CALL_COLUMNS[0]]
+    marked = NEW_CALL.match(text.strip())
+    if marked:
+        text = marked[1]
     m = re.match(r"^(.*?)\s*\(([^()]*)\)\s*$", text)
     name, variations, without = (m[1].strip(), [], []) if m else (text.strip(), [], [])
     if m:
@@ -927,8 +939,8 @@ def _call_row(n, row, problems):
         problems.append("Offense, Primary calls: a row (line %d) names no call" % n)
     if not words:
         problems.append("Offense, Primary calls, %s: say when you want it (%s)" % (name, ", ".join(SITUATION_WORDS)))
-    return {"line": n, "cell": text, "name": name, "variations": variations, "without": without, "menus": menus,
-            "reason": row[CALL_COLUMNS[2]], "condition": row[CALL_COLUMNS[3]]}
+    return {"line": n, "cell": row[CALL_COLUMNS[0]], "name": name, "variations": variations, "without": without,
+            "menus": menus, "new": bool(marked), "reason": row[CALL_COLUMNS[2]], "condition": row[CALL_COLUMNS[3]]}
 
 
 def _response_row(n, row, problems):
@@ -1107,7 +1119,11 @@ def form_of(call):
 
 def new_call_form(name):
     """(form, problem) of a call no earlier sheet carries, read from its name: the grouping and
-    formation before the first comma, then the concept (with its direction) and the protection."""
+    formation before the first comma, then the concept (with its direction) and the protection. A
+    special play or gadget of the book that the call-family map gives no carrier or receiver for
+    (runtime/call_families.py) is set with both unspecified, the map's own word for a call whose
+    players are not named: the play-by-play then never names it on a snap, and nothing about the
+    game changes (its calls never reach the outcome packet)."""
     from . import call_families, offensive_words
     parts = [p.strip() for p in name.split(",")]
     if len(parts) < 2 or len(parts) > 3:
@@ -1120,11 +1136,13 @@ def new_call_form(name):
     family, entry = call_families.family_entry(concept)
     if family is None:
         book = offensive_words.concept(concept)
-        return None, ("%r: %s is a play the book gives no receiver or carrier for; it needs the staff's prepared "
-                      "card before it is called" % (name, book) if book else
-                      "%r: %r is not a concept of the active playbook" % (name, concept))
-    kind = "mixed" if "carrier" in entry and "target" in entry else "run" if "carrier" in entry else "pass"
-    form = {"family": family, "type": kind}
+        if not book:
+            return None, "%r: %r is not a concept of the active playbook" % (name, concept)
+        form = {"family": book, "type": "any", "carrier": call_families.UNSPECIFIED,
+                "target": call_families.UNSPECIFIED}
+    else:
+        kind = "mixed" if "carrier" in entry and "target" in entry else "run" if "carrier" in entry else "pass"
+        form = {"family": family, "type": kind}
     if personnel:
         form["personnel"] = personnel
     form["formation"] = formation
@@ -1148,75 +1166,6 @@ def earlier_forms(earlier, baseline=None):
     return forms
 
 
-def earlier_tags(earlier):
-    return {t for sheet in earlier.values() for c in sheet.get("offensive_call_sheet") or () if isinstance(c, dict)
-            for t in c.get("tags") or ()}
-
-
-def earlier_practiced(earlier):
-    out = {}
-    for sheet in earlier.values():
-        practiced = (sheet.get("defensive_call_sheet") or {}).get("practiced") or {}
-        for key in PRACTICED_KEYS:
-            out.setdefault(key, set()).update(practiced.get(key) or ())
-    return out
-
-
-SPECIAL_TAG = "special play"
-
-
-def is_special(name, forms, named=()):
-    """Whether a call is a special play: its frozen form is tagged one, its concept is one of the
-    active book's special plays and gadgets (runtime/offensive_words.BOOK_PLAYS), or the page names it
-    under Special plays."""
-    from . import offensive_words
-    call = (forms.get(name) or ({},))[0]
-    plays = {norm(p) for p in offensive_words.BOOK_PLAYS}
-    return SPECIAL_TAG in (call.get("tags") or ()) or norm(call.get("family")) in plays or norm(name) in named
-
-
-def special_situations(name, earlier):
-    """The situations a carried call has been set for on the earlier frozen sheets (the opening
-    sequence aside): a special play's installed situations."""
-    out = set()
-    for sheet in earlier.values():
-        for call in sheet.get("offensive_call_sheet") or ():
-            if isinstance(call, dict) and call.get("name") == name:
-                out.update(m for m in cs.menu_keys(call.get("menus")) if m != cs.OPENING)
-    return out
-
-
-def situations_in(text):
-    """The situations a phrase names in the page's words ("third and long and backed up", "goal line,
-    two-minute"), or None when any part of it is not one."""
-    forms = {}
-    for words in SITUATION_WORDS + tuple(SITUATION_TEXT.values()):
-        key, problem = situation_key(words)
-        if key and not problem:
-            forms[tuple(norm(words).split())] = key
-    words, out, i = norm(text).split(), [], 0
-    while i < len(words):
-        if words[i] in ("and", "or"):
-            i += 1
-            continue
-        for n in range(len(words) - i, 0, -1):
-            key = forms.get(tuple(words[i:i + n]))
-            if key:
-                out.append(key)
-                i += n
-                break
-        else:
-            return None
-    return out or None
-
-
-def situation_list(keys):
-    """Situations in the page's words, in the call sheet's order: "third and long and backed up"."""
-    words = dict(zip((situation_key(w)[0] for w in SITUATION_WORDS), SITUATION_WORDS))
-    names = [words.get(k, SITUATION_TEXT.get(k, k)) for k in SITUATION_TEXT if k in set(keys)]
-    return names[0] if len(names) == 1 else ", ".join(names[:-1]) + " and " + names[-1] if names else ""
-
-
 def latest(earlier, test=lambda sheet: True):
     weeks = [w for w in sorted(earlier) if test(earlier[w])]
     return weeks[-1] if weeks else None
@@ -1236,25 +1185,6 @@ def compile_sheet(choices, frame, earlier, standing=None, arrangement=None):
         baseline = None
     base = earlier.get(baseline) if baseline is not None else None
     forms = earlier_forms(earlier, baseline)
-    installs = {norm(i["text"]): i for i in choices.get("installs") or ()}
-    known_tags = earlier_tags(earlier)
-    used = []          # the installs the sheet relies on, each confirmed taught before it is set
-
-    def rely(item):
-        if item not in used:
-            used.append(item)
-
-    # A special play's installed situations: those its frozen entries have set on an earlier sheet. An
-    # install line may add one ("Install 12 Ace, Flea Flicker, MAX on third and long").
-    situational = {}
-    for item in choices.get("installs") or ():
-        for m in re.finditer(r"\s(?:on|for)\s", item["text"], re.I):
-            keys = situations_in(item["text"][m.end():])
-            if keys:
-                situational.setdefault(norm(item["text"][:m.start()]), {"situations": set(), "item": item})[
-                    "situations"].update(keys)
-                break
-    special_named = {norm(i["call"]) for i in choices.get("special_plays") or () if isinstance(i, dict)}
 
     # The calls on the sheet: the baseline's, then the table's.
     calls, order = {}, []
@@ -1276,52 +1206,30 @@ def compile_sheet(choices, frame, earlier, standing=None, arrangement=None):
                                         "from": [{"carried": {"week": w, "call": idx}}]}
         else:
             near = near_calls(row["name"], list(forms))
-            if near and norm(row["name"]) not in installs:
-                # A short or partial name is asked about, never resolved to a longer call.
+            if near and not row.get("new"):
+                # A short or partial name is asked about, never resolved to a longer call; the call its
+                # own words name is written "New call: <name>".
                 problems.append("Offense, Primary calls: %s is not a call of an earlier Jacksonville sheet as written; "
-                                "did you mean %s? Write the call's full name, or, for a new call, name it as this "
-                                "week's install in What we will practice (Install %s)"
-                                % (row["name"], did_you_mean(row["name"], near), row["name"]))
+                                "did you mean %s? Write the call's full name, or, for the call these words name, "
+                                "New call: %s" % (row["name"], did_you_mean(row["name"], near), row["name"]))
                 continue
+            # Any call of the active book may be named, practiced this week or not; the check holds
+            # every word of it to the book (scripts/check_game_plan.offense_problems).
             form, problem = new_call_form(row["name"])
             if problem:
                 problems.append("Offense, Primary calls: %s" % problem)
                 continue
             name = row["name"]
-            if norm(name) not in installs:
-                problems.append("Offense, Primary calls: %s is not on an earlier Jacksonville call sheet; name it as "
-                                "this week's install in What we will practice (Install %s)" % (name, name))
-            else:
-                rely(installs[norm(name)])
             entry = {"name": name, "form": form, "tags": [], "from": [], "new": True}
         if name in table_order:
             problems.append("Offense, Primary calls: %s is written twice" % name)
             continue
         entry = dict(entry, menus=list(row["menus"]))
-        if not entry.get("new") and is_special(name, forms, special_named):
-            installed = special_situations(name, earlier)
-            extra = situational.get(norm(name)) or {}
-            new = [m for m in row["menus"] if m not in installed]
-            missing = [m for m in new if m not in extra.get("situations", ())]
-            if missing:
-                problems.append("Offense, Primary calls, %s: it is a special play installed for %s; %s %s not among "
-                                "its installed situations. Choose an installed situation, or name the install in "
-                                "What we will practice (Install %s on %s)" % (
-                                    name, situation_list(installed) or "no situation yet",
-                                    situation_list(missing), "is" if len(missing) == 1 else "are", name,
-                                    situation_list(missing)))
-            elif new:
-                rely(extra["item"])
         for tag in row["without"]:
             if tag not in entry["tags"]:
                 problems.append("Offense, Primary calls, %s: it carries no %s to take off" % (name, tag))
             entry["tags"] = [t for t in entry["tags"] if t != tag]
         for tag in row["variations"]:
-            if tag not in known_tags and norm(tag) not in installs:
-                problems.append("Offense, Primary calls, %s: %s is a new variation; name it as this week's install "
-                                "in What we will practice (Install %s)" % (name, tag, tag))
-            elif tag not in known_tags:
-                rely(installs[norm(tag)])
             if tag not in entry["tags"]:
                 entry["tags"].append(tag)
         entry["from"] = list(entry["from"]) + [{"page": row["line"], "text": row["cell"]}]
@@ -1366,7 +1274,7 @@ def compile_sheet(choices, frame, earlier, standing=None, arrangement=None):
         week_ = opening.get("carry") if "carry" in opening else latest(
             earlier, lambda s: any(isinstance(c, dict) and c.get("opener") for c in s.get("offensive_call_sheet") or ()))
         if week_ not in earlier:
-            problems.append("Offense, Opening calls: Week %s has no opening calls as set to carry" % week_)
+            problems.append("Offense, Opening ideas: Week %s has no opening calls as set to carry" % week_)
         else:
             slots = sorted((int(s), call["name"]) for call in earlier[week_].get("offensive_call_sheet") or ()
                            for s in ([call["opener"]] if call.get("opener") is not None else [])
@@ -1374,8 +1282,8 @@ def compile_sheet(choices, frame, earlier, standing=None, arrangement=None):
             dropped = []
             for _, name in slots:
                 if name not in calls and name not in removed and name not in dropped:
-                    problems.append("Offense, Opening calls: Week %d's opening calls include %s, which is not on this "
-                                    "week's sheet; give the opening calls in order" % (week_, name))
+                    problems.append("Offense, Opening ideas: Week %d's opening calls include %s, which is not on this "
+                                    "week's sheet; give your opening ideas in order" % (week_, name))
                 if name not in calls and name not in dropped:
                     dropped.append(name)
             # A call this page takes off leaves the carried opening: the calls after it move up in order.
@@ -1390,7 +1298,7 @@ def compile_sheet(choices, frame, earlier, standing=None, arrangement=None):
     elif isinstance(opening, dict):
         line = choices["fields"]["opening"]["line"]
         for n, text in enumerate(opening["items"], 1):
-            name = on_sheet(text, "Offense, Opening calls, number %d" % n)
+            name = on_sheet(text, "Offense, Opening ideas, number %d" % n)
             if name:
                 positions.setdefault(name, []).append(n)
         for name in positions:
@@ -1456,12 +1364,8 @@ def compile_sheet(choices, frame, earlier, standing=None, arrangement=None):
             decisions[kind] = block
             source["decisions"][kind] = {"page": choices["fields"][kind]["line"]}
 
-    defense = _compile_defense(choices, frame, earlier, base, baseline, installs, problems, source,
-                               (arrangement or {}).get("defense"), rely)
-    # The installs the sheet relies on (a new call, a new variation, a defensive word off the practiced
-    # menu, a special play's new situation), each confirmed taught in the practice week before the plan
-    # is set for the game (scripts/apply_game_plan.py).
-    source["installs"] = [{"text": i["text"], "line": i["line"]} for i in used]
+    defense = _compile_defense(choices, frame, earlier, base, baseline, problems, source,
+                               (arrangement or {}).get("defense"))
     sheet = dict(frame["top"])
     for key in ("menus", "notes"):
         if key in (frame.get("record_text") or {}):
@@ -1483,8 +1387,7 @@ def _caller_name(choices, key, arrangement=None):
     return value.get("name") if isinstance(value, dict) else None
 
 
-def _compile_defense(choices, frame, earlier, base, baseline, installs, problems, source, arranged=None,
-                     rely=lambda item: None):
+def _compile_defense(choices, frame, earlier, base, baseline, problems, source, arranged=None):
     fd = frame.get("defense") or {}
     page = fd.get("page")
     rows_in = choices.get("responses") or []
@@ -1516,26 +1419,18 @@ def _compile_defense(choices, frame, earlier, base, baseline, installs, problems
             out["rush_rule"] = copy.deepcopy(carried["rush_rule"])
         source["defense"] = {"carried": {"week": baseline}}
         return {k: out[k] for k in DEFENSE_KEYS if k in out}
-    known = earlier_practiced(earlier)
-    taught = {}
-    for item in choices.get("installs") or ():
-        call, _ = response_call(norm(item["text"]))
-        for word in response_words(call or {}):
-            taught.setdefault(word, item)
     fixed_rows = fd.get("rows")
     if fixed_rows is not None and len(fixed_rows) != len(rows_in):
         problems.append("Defense: the frozen sheet has %d rows and the page %d" % (len(fixed_rows), len(rows_in)))
         return None
+    # The sheet's practiced menu (the schema's) is the page's own rows: every word they name, each row
+    # citing its line. Any word of the active defensive book may be named, whether or not an earlier
+    # week practiced it; the validators hold each one to the book.
     rows, seen, practiced = [], set(), {k: [] for k in PRACTICED_KEYS}
     practiced_sources = []
     for i, r in enumerate(rows_in):
         call = r["call"]
         for key, word in response_words(call or {}):
-            if word not in known.get(key, set()) and (key, word) not in taught:
-                problems.append("Defense, %s: %s has not been practiced on an earlier Jacksonville sheet; name it as "
-                                "this week's install in What we will practice" % (r["first"], word))
-            elif word not in known.get(key, set()):
-                rely(taught[(key, word)])
             if word not in practiced[key]:
                 practiced[key].append(word)
         text = r["response"] or r["first"]

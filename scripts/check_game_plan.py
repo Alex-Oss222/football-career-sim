@@ -24,9 +24,9 @@ What it checks:
   already built from an applied plan (the inputs or results of the week);
 - every heading and every line is present and answered: a line left empty is
   unanswered (No change and None are answers; silence never is), the Primary
-  calls table holds a call unless the baseline carries a week, the practice
-  table names at least one priority, and no section carries a heading of its
-  own the page does not have;
+  calls table holds a call unless the baseline carries a week, and no section
+  carries a heading of its own the page does not have (the practice table is
+  information for the staff and never a condition on the plan);
 - the briefing he answers is the current one (its date on "Briefing used",
   and from the second issue of a day its revision, as the issue record
   numbers them), and the briefing has not been overtaken by the situation (a
@@ -50,13 +50,14 @@ What it checks:
   role holder, new or carried on the chart, dresses (``role_problems``);
 - the offense: the page compiles (runtime/game_plan.compile_sheet): each call
   is named by its full name (a shorter one is asked about, never resolved to
-  a longer call) or is a new call named as this week's install; a special
-  play keeps the situations it has been set for, unless one is named as an
-  install; a call kept as a special play is not also not available; every
-  word of every call on the sheet is the active
-  offensive playbook's (its concept, personnel, formation, motion,
-  protection, name and tags; runtime/offensive_words.py, read through the
-  playbook lock); every call's personnel grouping can be fielded by the
+  a longer call) or is a new call read from its own words; any call of the
+  active book may be named for any situation, whether or not the week's
+  practice covered it (the user's ruling of October 20, 2026); a call kept as
+  a special play is not also not available; every word of every call on the
+  sheet is the active offensive playbook's (its concept, personnel,
+  formation, motion, protection, name and tags; runtime/offensive_words.py,
+  read through the playbook lock, which refuses a book whose range starts
+  after the season); every call's personnel grouping can be fielded by the
   players who dress, and a variation naming a player needs him dressed;
 - the decisions: "Carry Week N" or No change carries a rule that week froze
   (the two-point and kickoff rules are required for the game), and with
@@ -66,10 +67,7 @@ What it checks:
   (runtime/call_families.sheet_errors, runtime/scoring_decisions.sheet_errors
   and input_policies, runtime/defensive_calls.sheet_errors and
   source_errors), so a page that passes here applies and builds cleanly;
-- the page is clean (runtime/clean_pages.py);
-- the installs the plan relies on (``install_status``): noted before game day;
-  on game day each must be recorded taught in the week's practice record
-  (runtime/decisions.WeekPages.practice), or the page is not complete.
+- the page is clean (runtime/clean_pages.py).
 
 Open items with other people that hold the week, and medical exams still to
 come (each once), are listed as notes; they do not fail the check, and a
@@ -477,8 +475,6 @@ def required(plan):
         out.append("Baseline: Carry Week %d names a week that has not come before this one" % baseline["carry"])
     if not plan.choices.get("calls") and "carry" not in baseline and plan.choices.get("baseline") is not None:
         out.append("Offense, Primary calls: a new plan needs its calls in the table")
-    if not plan.choices.get("practice") and plan.text is not None:
-        out.append("What we will practice: name at least one priority (or write None in its first column)")
     for key in game_plan.SITUATIONAL_KEYS:
         value = plan.choices.get(key)
         if isinstance(value, dict) and value.get("carry") is not None and value["carry"] != baseline.get("carry"):
@@ -702,47 +698,6 @@ def role_problems(plan):
     return out
 
 
-def practice_record(plan):
-    """The week's practice record (runtime/decisions.WeekPages.practice): {install text, as words: entry}
-    of each install the practice week records, taught or not; {} before any."""
-    from scripts.apply_game_plan import practice_entries
-    return practice_entries(plan.pages.practice, "What we will practice")
-
-
-def install_status(plan):
-    """(notes, problems) of the installs the compiled plan relies on (a new call, a new variation, a
-    defensive word off the practiced menu, a special play's new situation): before game day each is
-    still to be taught, and the plan is set once the practice week records it; on game day an install
-    the practice record does not hold as taught blocks the plan until it is taken off."""
-    sheet, source, _ = plan.compiled()
-    installs = (source or {}).get("installs") or [] if sheet is not None else []
-    if not installs:
-        return [], []
-    game_day = date.fromisoformat(plan.game["date"])
-    names = "; ".join(i["text"] for i in installs)
-    if plan.master < game_day:
-        return (["The plan relies on this week's installs (%s); it is set for the game on game day, once the "
-                 "practice week records each one taught" % names], [])
-    try:
-        record = practice_record(plan)
-    except ValueError as exc:
-        return [], [str(exc)]
-    problems = []
-    for item in installs:
-        entry = record.get(game_plan.norm(item["text"]))
-        if entry is None:
-            problems.append("What we will practice: the practice week does not record the install of %s as taught; "
-                            "take it off the plan (and the calls that rely on it), or record its practice"
-                            % item["text"])
-        elif entry.get("taught") is not True:
-            problems.append("What we will practice: %s was not taught in the practice week (%s, %s); take it off the "
-                            "plan and the calls that rely on it" % (item["text"], entry.get("by") or "the staff",
-                                                                    game_plan.long_date(date.fromisoformat(
-                                                                        entry["date"])) if entry.get("date")
-                                                                    else "undated"))
-    return [], problems
-
-
 def dressing(plan):
     """The players who dress on the page's inactives (active, not inactive), or None before the list
     can be set."""
@@ -857,7 +812,8 @@ def defensive_words(error, sheet=None, source=None):
         return "%s: '%s' is not a %s in the active defensive playbook" % (where(m[1]), m[3], m[2])
     m = re.match(r"row (\S+): (\w+) '([^']+)' is not on the practiced menu", error)
     if m:
-        return "%s: '%s' was not practiced this week (name it as this week's install)" % (where(m[1]), m[3])
+        # Only a sheet carried as frozen keeps its own menu; a page's menu is its own rows' words.
+        return "%s: '%s' is not among the words of the prepared responses carried" % (where(m[1]), m[3])
     m = re.match(r"practiced\.(\w+): '([^']+)' is not a word of the active defensive book", error)
     if m:
         return ": '%s' is not one of the active defensive playbook's %s" % (m[2], m[1])
@@ -961,10 +917,6 @@ def check(root, season, week):
         problems += offense_problems(plan, sheet)
         if not problems:
             problems += sheet_problems(plan, sheet)
-        if not problems:
-            install_notes, install_problems = install_status(plan)
-            problems += install_problems
-            plan.notes += install_notes
     problems += clean_problems(plan)
     from scripts import render_game_week
     try:
