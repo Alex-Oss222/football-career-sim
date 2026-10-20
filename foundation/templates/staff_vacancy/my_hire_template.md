@@ -6,13 +6,13 @@
 
 **Submitted:** [Actual in-career date, entered by the workflow when you submit]
 
-*This is your hiring instruction, not a contract or a completed search. Fill the stage that is actually on your desk. 'Not yet reached' is a valid answer for later stages. Once a stage has been recorded, preserve it; do not rewrite your earlier instructions after learning an outcome. You can submit a new, dated update to the same decision record.*
+*This is your hiring instruction, not a contract or a completed search. Fill the stage that is actually on your desk. 'Not yet reached' is a valid answer for later stages. Fill this page in place, or upload a .md or .txt file with the same headings. An answer given in chat is first written onto this page, dated on Submitted, and checked before any stage runs; the page stays the record. The bracketed choices are examples, not a closed list: any other lawful instruction is accepted. Once a stage has been recorded, preserve it; do not rewrite your earlier instructions after learning an outcome. You can submit a new, dated update to the same decision record.*
 
 ## 1. The opening and interim responsibilities
 
 **Position:** [Actual open job]
 
-**Interim:** [Use the existing authorized coverage / Assign [eligible coach] these specific duties / I want the staff to propose an interim plan / No new interim instruction]
+**Interim:** [Use the existing authorized coverage / Assign [eligible coach] these specific duties / I want the staff to propose an interim plan / No new interim instruction. If the departed coach called a phase, you direct it on an interim basis from the departure without an answer here; name only who covers his teaching duties.]
 
 **Role I want filled:** [Keep the existing description or state a specific revision. If changed, identify what is removed from or added to another coach's responsibilities.]
 
@@ -25,7 +25,7 @@
 
 **If no suitable name exists:** [Ask for more candidates / keep lawful interim work / authorize a narrower research search. You are not required to invent a candidate.]
 
-**Permission instruction:** [Apply applicable 2014/2015 anti-tampering rules and obtain actual employer consent before contact when required. No employer's assent is inferred from a phone call or a title.] 
+**Permission instruction:** [Apply the season's anti-tampering rules and obtain actual employer consent before contact when required. No employer's assent is inferred from a phone call or a title.]
 
 ## 3. Interviews and football tests
 
@@ -55,13 +55,13 @@
 
 **Job and reporting:** [Exact title, unit, who reports to whom, and whether this changes a caller]
 
-**Compensation and term:** [Actual authorized opening terms or 'Caldwell to bring costed terms before I decide'. Do not treat estimated market figures as an accepted contract.]
+**Compensation and term:** [Your opening terms, or 'Caldwell to bring costed terms before I decide'. Costed terms come only from dated comparable contracts signed before the brief's cutoff, labelled as a reconstruction with the calculation; with no sourced comparable, none is offered and the stage returns to you. The Candidate Report's reference figures are not offers.]
 
 **Ceiling and counter authority:** [Exact amount/term/guarantee limits I authorize, **or ask me before any counter**; never an unlimited silent approval]
 
-**Funding confirmation:** [Received with dated source / Not yet received, so no offer may be executed]
+**Funding confirmation:** [Received with dated source / Not yet received, so no offer may be executed. An offer for the same job at no more than the departed coach's salary, on the common terms, is within the promised budget once Caldwell confirms it; anything above is Caldwell's decision.]
 
-**Candidate acceptance:** [Pending an independent response; never supplied by Stone]
+**Candidate acceptance:** [Pending an independent response; never supplied by Stone. An offer at or within the candidate's counter is accepted; one below it returns to me.]
 
 ## 6. Contingencies and final football responsibility
 
@@ -71,10 +71,10 @@
 
 **If a coach accepts:** [Named day-one teaching or operational responsibilities, if within the offered job; otherwise 'Preserve the current position description']
 
-**Play calling and existing assignments:** [Unchanged unless I explicitly make a separate legal delegation change. A hire of a coordinator does not automatically take my offensive or defensive calls.]
+**Play calling and existing assignments:** [Calls I hold only as interim cover for this job pass to the new coach on his effective date unless I say otherwise here. Calls I held before the opening, such as my offensive or defensive calls, stay with me unless I make a separate delegation change.]
 
 **Anything not addressed:** [No additional instruction / specific request]
 
 ## Submission check, performed before action
 
-*A normal game plan, contract or staff report is not overwritten. The runner must check the candidate exists in the branch, can legally be contacted, has an appropriate status, fits the authorized role, and can be offered only sourced/approved terms. When something is missing, return an exact football/contract explanation and keep that stage open.*
+*A normal game plan, contract or staff report is not overwritten. The runner must check the candidate exists in this career's records, can legally be contacted, has an appropriate status, fits the authorized role, and can be offered only sourced/approved terms. When something is missing, return an exact football/contract explanation and keep that stage open. Your stage answers close your own items; a staff hire is never closed by a standing instruction. The candidate's answer and his employer's answer are their own events.*
