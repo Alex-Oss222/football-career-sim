@@ -80,7 +80,7 @@ Do not import the actual 2015 Jaguars adjusted cap or free-agent signings into t
 |---|---|---|---|
 | [Player and exact issue] | [Continue talks / prefer market / protect rights / conditional recommendation / request more evidence] | [Actual deadline or no date set] | [Contract negotiation, execution and cap approval] |
 
-**Reply on:** [My Re-signing Priorities](My_Re_Signing_Priorities.md). The report may carry new ACTION REQUIRED inserts as legally meaningful offers or deadlines arise. Every *separate concluded negotiation, tender or designation event* produces its own dated result even if several replies are entered on one page.
+**Reply on:** [My Re-signing Priorities link]. The report may carry new ACTION REQUIRED inserts as legally meaningful offers or deadlines arise. Every *separate concluded negotiation, tender or designation event* produces its own dated result even if several replies are entered on one page.
 
 ## Caldwell's read
 

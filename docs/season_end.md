@@ -1,6 +1,38 @@
 # Season-end workflow: implementation, evidence and tests
 
-**Proposal only. No GitHub implementation or career event is authorized by this design.** Apply to the next actual final game of Stone's club and later years. Never rewrite closed 2013 history or pre-decide the unplayed 2014 season.
+**Status:** Uploaded by the user on October 20, 2026 and adopted; built in step 6 of the [rebuild plan](rebuild_plan.md). The templates are in [foundation/templates/season_end/](../foundation/templates/season_end/) and the worked example is [docs/examples/season_end_2013_precedent_and_2014_setup.md](examples/season_end_2013_precedent_and_2014_setup.md). The user ruled on October 20, 2026 that Stone's season-end page is separate from the weekly My Responses page and has a different name: it is My Season Response (`My_Season_Response.md`, from the [My Season Response template](../foundation/templates/season_end/my_season_response_template.md)).
+
+As uploaded: **Proposal only. No GitHub implementation or career event is authorized by this design.** Apply to the next actual final game of Stone's club and later years. Never rewrite closed 2013 history or pre-decide the unplayed 2014 season.
+
+## Season ends: ownership review and club decision
+
+**Design proposal, not installed in the repository.** Applies after Jacksonville's **actual final game of an NFL season**, whether that is Week 17 or a postseason game. No 2014 ending has been played or presumed by these documents.
+
+### Reader-facing files
+
+| Proposed file | Owner | What it does |
+|---|---|---|
+| `Season_Review_Briefing.md` | Khan and Caldwell, with evidence supplied by the football department | Gives Stone their communicated concerns and the questions they want answered. It does **not** announce a decision they have not made. |
+| `My_Season_Response.md` | Stone | Holds Stone's actual account of the football year and any request he deliberately makes. |
+| `Club_Decision.md` | Khan and Caldwell | Records the club's completed employment decision and its actual consequences. |
+
+The existing `career/YEAR/Season_Review/season_review.md` **is a different document**, the football-department's team season report. It remains in place and owns the detailed offensive, defensive, special-teams, player-development and coaching review. The proposed `Season_Review_Briefing.md` deliberately has a different filename to avoid a case-insensitive clash with that established owner. Alter the registry and links together when implemented.
+
+### Supporting files
+
+- This document gives the decision gates, authority boundaries, chronology, independent ownership decision method, validation and regression tests.
+- [`season_end_2013_precedent_and_2014_setup.md`](examples/season_end_2013_precedent_and_2014_setup.md) shows what can be stated from the closed 2013 review and 2014 evidence **without fabricating a 2014 outcome or owner conversation**.
+
+### Governing distinctions
+
+1. The **club** decides whether Stone stays, with which existing terms, and whether it wishes to make a new offer. Stone does not decide his own retention.
+2. A **meeting** is not mandatory. The owner may issue a lawful employment decision before meeting the coach. In that case record the real decision, do not generate fake prior discussion or an answered `My_Season_Response.md`.
+3. Being **retained** does not mean getting a raise, extension, new authority or guaranteed employment for another year. Such changes need real offers, approval and signatures.
+4. A separate extension negotiation, hiring request, staff appointment, assistant exit, trade or player contract is a **separate event** with its **own dated output**, even if introduced in this briefing and answered through `My_Responses.md`.
+5. If employment ends, stop showing confidential Jacksonville briefings to Stone and route the next genuine career decisions to his agent/career view.
+6. The existing 2013 closed decision must not be revised and the 2014 outcome must not be preselected.
+
+Read the implementation specification before attempting to use these Markdown files with the current parsers. This is a template design only; it does not advance game time or alter any canonical record.
 
 ## A. Research-supported design decision
 
@@ -26,14 +58,14 @@ A head coach's employment status and the club's football evaluation are related 
 | `career/Stone/Performance_Reviews.md` | Existing ownership perspective and standing concerns. This assessment is not itself a new legal employment decision. |
 | `data/people/coaches/alex_stone.json` and `state/current_job.json` | Employment contract and live authority owners. Update only on the actual employment event; do not invent an extension. |
 | `state/decision_queue.json` | User decisions that are genuinely pending, owned and consequential; employer's decision is not owned by Stone. |
-| `docs/football_event_inserts_v2_separate_outputs/` | Existing design for one active briefing / answer surface and **one standalone dated output per resolved independent event**. Reuse it for extension, staff, trade and job-search events. |
+| [`docs/event_inserts.md`](event_inserts.md) and [`foundation/templates/event_inserts/`](../foundation/templates/event_inserts/) | Existing design for one active briefing / answer surface and **one standalone dated output per resolved independent event**. Reuse it for extension, staff, trade and job-search events. |
 
 ### Filenames: avoid a real collision
 
 The original `runtime/decisions.py` registry declares `Season Review` -> `My Response` -> `Club Decision` under `career/YEAR/Season_Review/`. That collides conceptually and, if named `Season_Review.md`, **case-insensitively** with the existing team `season_review.md`. Implement:
 
 - `Season_Review_Briefing.md` (reader title: “Season Review: Ownership and General Manager”),
-- `My_Response.md`,
+- `My_Season_Response.md`,
 - `Club_Decision.md`,
 - while retaining `season_review.md` unchanged as the team football report.
 
@@ -44,7 +76,7 @@ Update `runtime/decisions.py` registry/page resolver, link generation and valida
 1. **Actual team completion.** Start only after Jacksonville's final played game of that NFL season. If the club qualifies for the playoffs, Week 17 alone is insufficient; the real elimination or Super Bowl completion is the trigger. Calendar and NFL-season ownership for January/February remain with the preceding NFL season. Do not import the actual 2014 Jaguars finish.
 2. **Freeze the employer's decision basis before its resolution.** The signed hire criteria, later properly communicated performance priorities, record, and legally relevant contract terms must be available with valid as-of timestamps. Where the implementation needs an independent discretionary club decision, bind a method to substantive facts *before* reading Stone's answer. Do not invent arbitrary “owner satisfaction” scores, secret fixed wins or guaranteed retention. An adjudication unable to distinguish possible outcomes must say its decision method is unresolved rather than make up an answer.
 3. **Team review and individual records remain distinct.** Gather completed game books, final stats, the detailed team review when actually ready, medical/contract records, completed exit interviews and staff issues. No forced parallel completion: if ownership decides before all exit interviews or league awards finish, use the evidence available at that actual moment.
-4. **Does ownership actually request Stone's input?** If yes, issue the briefing with the specific communicated concerns and genuine meeting date/deadline; the `My_Response.md` user turn opens only for those requests. If the club has already decided and communicated termination, write the decision first; do not invent a meeting, and do not ask Stone to “approve” the firing. If the owner has conveyed retention before a later discussion, preserve that decision and treat subsequent requests as separate issues.
+4. **Does ownership actually request Stone's input?** If yes, issue the briefing with the specific communicated concerns and genuine meeting date/deadline; the `My_Season_Response.md` user turn opens only for those requests. If the club has already decided and communicated termination, write the decision first; do not invent a meeting, and do not ask Stone to “approve” the firing. If the owner has conveyed retention before a later discussion, preserve that decision and treat subsequent requests as separate issues.
 5. **Stone's response.** Accept same fixed headings, or the same named sections in an uploaded `.md` / `.txt` or chat. Permit brief football prose, concrete proposals, “None”/“No change” where applicable. Reject contradictions to the real roster/playbook/contract/authority; do not accept ghost offers. An unanswered required choice holds only genuinely dependent actions, not the league's games or unrelated offseason work. Silence never equals approval, acceptance or request.
 6. **Independent decision.** Khan/Caldwell determine Stone's employment. The decision accounts for the earlier frozen criteria, actual results, roster and staff circumstances, contract and material new information, under protagonist-blind logic. Stone may rebut an error or provide a *substantive* new plan; rhetorical polish, word count and actor name cannot change the conclusion. An owner's private mental state is not magically conveyed to the coach.
 7. **Write result immediately.** When the club actually decides, issue `Club_Decision.md` then and there, with real date, actual basis, input where applicable, status, financial/authority consequences and access change. Record one canonical event in the coach job/contract owner, then rebuild dependent live state, desk, calendar and annual event index. A pending matter has no fabricated final output.
@@ -57,7 +89,7 @@ The model supports at least four timelines without inventing conversations:
 
 - Club requests review -> Stone responds -> club decides -> result.
 - Club determines retention immediately -> result -> optional later football meeting or extension discussion.
-- Club dismisses Stone immediately -> result -> agent/career view (no fictitious prior `My_Response.md`).
+- Club dismisses Stone immediately -> result -> agent/career view (no fictitious prior `My_Season_Response.md`).
 - Club requests information -> a specified clarification remains unanswered -> only dependent decision waits; other legitimate work continues.
 
 Do **not** use December 29 (“Black Monday”) as a compulsory dismissal, review or decision date. It was the Monday after the real 2014 regular season, not a mandatory NFL deadline and not Jacksonville's review date if the simulated team has a playoff game to play.
@@ -94,7 +126,7 @@ For the existing 2014 career, Stone's signed head-coach agreement is recorded as
 2. **No invented last game:** Week 5 current checkpoint -> 2014 season review remains unissued; no final 2014 record, score, grade, awards or outcome manufactured.
 3. **Prior criteria immutable:** review includes established 2013 hire and January 2014 concerns; a new unstated requirement is rejected as an earlier criterion.
 4. **No date invented:** owner has not scheduled a meeting -> briefing shows “Not scheduled,” not fake January appointment.
-5. **Owner dismissal without hearing:** employer may record a dismissal before a user response, producing an immediate standalone `Club_Decision.md`, without generating fictitious `My_Response.md` or a meeting transcript.
+5. **Owner dismissal without hearing:** employer may record a dismissal before a user response, producing an immediate standalone `Club_Decision.md`, without generating fictitious `My_Season_Response.md` or a meeting transcript.
 6. **User decision vs owner authority:** a response saying “I retain myself” fails; a request to discuss an extension does not create a signed extension.
 7. **No appearance bias:** equivalent football/contract evidence with Stone's identity swapped or his response paraphrased at different length yields the same employer evaluation.
 8. **Concrete correction permitted:** a sourced factual correction can change the evaluated fact before the club decides; a rhetorical restatement cannot.

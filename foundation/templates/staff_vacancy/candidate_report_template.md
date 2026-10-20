@@ -81,7 +81,7 @@ For each meaningful candidate, assess the *actual job*, not abstract leadership 
 |---|---|---|---|
 | [Approach/contact / interview / seek budget / offer / assign interim] | [Real options, including request more evidence, wait lawfully, or reject this pool] | [Verified due time or **none established**] | [What genuinely does not depend on this choice] |
 
-**Your page:** [My Hire](My_Hire.md). A reply may authorize only the named stage. 'Interview' never means 'offer', and 'offer' never means 'hired'.
+**Your page:** [My Hire link]. A reply may authorize only the named stage. 'Interview' never means 'offer', and 'offer' never means 'hired'.
 
 **Separate results:** [Each concluded permission request, offer decision and completed appointment gets its own dated outcome record; the phase's Staff Hire page links them.]
 
