@@ -79,7 +79,7 @@ The page names below are fixed (`runtime/decisions.py`: `REGISTRY` for the phase
 |---|---|---|---|---|
 | Every game week | Game Week Briefing | Game Plan | Game Report | Regular_Season, a folder per week; Postseason for playoffs |
 | Bye week | Bye Week Review | My Adjustments | Bye Week Report | Regular_Season, the bye week's folder |
-| Season ends | Season Review (owner and GM) | My Season Response | Club Decision | Season_Review |
+| Season ends | Season Review Briefing (owner and GM) | My Season Response | Club Decision | Season_Review |
 | Fired, or contract ending | Agent's Report | Instructions to My Agent | Interviews and Offers | career/Stone |
 | January staff | Staff Status Report | My Staff Decisions | Staff Moves | Early_Offseason |
 | Staff vacancy | Candidate Report | My Hire | Staff Hire | Early_Offseason |

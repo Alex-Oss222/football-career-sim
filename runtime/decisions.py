@@ -63,7 +63,7 @@ REGISTRY = (
              "The coaching staff", 5),
     # The season's own page, apart from any week's My Responses page (the user's answer of October 20,
     # 2026: "Keep them separate, and give the season one a different name").
-    Decision("season_end", "Season ends", "Season Review", "My Season Response", "Club Decision", "season_review",
+    Decision("season_end", "Season ends", "Season Review Briefing", "My Season Response", "Club Decision", "season_review",
              "The owner and the general manager", 6),
     Decision("contract_ending", "Fired, or contract ending", "Agent's Report", "Instructions to My Agent",
              "Interviews and Offers", "stone", "His agent", 6),
