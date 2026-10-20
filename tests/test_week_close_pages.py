@@ -248,9 +248,9 @@ class WeekClosePagesTests(unittest.TestCase):
         briefing = following.briefing.read_text(encoding="utf-8")
         for injury in (i for i in receipt["injuries"] if i.get("team") == JAX and i.get("reassessment_days")):
             exam = week_pages.month_day(self.played + timedelta(days=injury["reassessment_days"]))
-            line = next(l for l in briefing.splitlines() if l.startswith("| %s |" % injury["player"]))
-            self.assertIn("| %s |" % exam, line)
-            self.assertNotIn("projected return", line)
+            line = next(l for l in briefing.splitlines() if l.startswith("| ") and injury["player"] in l.split("|")[1])
+            self.assertIn("| Reassessment, %s |" % exam, line)
+            self.assertNotIn("; reassessment", line)      # the note is read whole, not copied as written
 
         # A played week's index is checked like the open week's (F4): left stale, it fails.
         played_pages = decisions.week_pages(SEASON, WEEK, root)

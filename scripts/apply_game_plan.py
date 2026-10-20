@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Apply Stone's checked Game Plan (rebuild step 4).
+"""Apply Stone's checked Game Plan (game week version 2).
 
   python scripts/apply_game_plan.py WEEK --season YEAR [--file PATH] [--root PATH]
 
 Runs scripts/check_game_plan.py first and refuses (exit 1) until the page is
-complete. Then it converts the page into exactly the records the game path
-already reads, and the record of the apply:
+complete. Then it compiles the page (runtime/game_plan.compile_sheet) into
+exactly the records the game path already reads, and the record of the apply:
 
 - the frozen call sheet, ``SeasonPaths(YEAR).call_sheet(WEEK)`` (a playoff
   round's in the postseason folder's data twin, ``postseason=True``), written as
@@ -25,11 +25,15 @@ already reads, and the record of the apply:
   once the exams are held, when the check reads their results (``waiting``);
 - the week's inactives record beside the call sheet (``inactives.json``,
   runtime/decisions.WeekPages.inactives), the permanent owner of the list
-  ("Same as Week N" reads it; the chart holds only the latest list);
+  ("Carry Week N" reads it; the chart holds only the latest list);
 - the applied plan record (``applied_plan.json``, WeekPages.applied): the day
   it was applied, the digest of the page and of the call sheet as frozen, its
-  depth changes and the chart before them, and the event of the apply, whose
-  event line the week index carries (the annual record lists it).
+  depth changes and the chart before them, the source map from every emitted
+  call, defensive row and decision to the page line or the carried frozen
+  item it came from, his reasons and other author intent with their page
+  lines and the day they were known (intent never reaches the call sheet),
+  and the event of the apply, whose event line the week index carries (the
+  annual record lists it).
 
 Applying again (a revised page, before the game is built) first undoes the
 earlier apply's depth changes, replaces its update-log entry and its record,
@@ -179,6 +183,8 @@ def event_for(plan, sheet, players, changes):
             how = "his standing rule"
         elif isinstance(entry, dict) and "same_as" in entry:
             how = "as in Week %d" % entry["same_as"]
+        elif isinstance(entry, dict) and entry.get("no_change"):
+            how = "unchanged"
         else:
             how = "his own rules"
         if how:
@@ -253,9 +259,13 @@ def apply_records(plan, sheet, players, resolve_queue=True):
             "season": plan.season, "week": plan.week, "set": plan.master.isoformat(), "players": list(players),
             "note": inactive_note(plan, players), "page": page}, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         written.append(plan.pages.inactives)
+    _, source, _ = plan.compiled()
     record = {"season": plan.season, "week": plan.week, "applied": plan.master.isoformat(), "page": page,
               "page_sha256": page_digest(plan.text), "call_sheet_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
               "before": before, "set": _set(after, before), "labels_cleared": cleared,
+              # Where every emitted call, defensive row and decision came from (a page line or a carried
+              # frozen item), and his reasons, kept as author intent: they never reach the call sheet.
+              "source_map": source, "intent": dict(game_plan.intent(plan.choices), known=plan.master.isoformat()),
               "event": event_for(plan, sheet, players or [], changes)}
     write_like(plan.pages.applied, record)
     written.append(plan.pages.applied)
@@ -360,7 +370,7 @@ def validation_errors(root=ROOT):
         listed = chart.get("game_day_inactives") or {}
         if inactives is not None and listed.get("week") == week and \
                 list(listed.get("players") or []) != list(inactives.get("players") or []):
-            errors.append("Week %d: the depth chart's inactives are not the week's inactives as set" % week)
+            errors.append("%s: the depth chart's inactives are not the week's inactives as set" % game_weeks.label(game))
         if record is None:
             if pages.plan.is_file() and pages.call_sheet.is_file():
                 errors.append("%s: the call sheet was not frozen from the page; apply it (python "
@@ -384,8 +394,8 @@ def validation_errors(root=ROOT):
         if not any(i.get("class") == "weekly_game_plan" and any(
                 b.get("season") == season and b.get("week") == week for b in i.get("blocks") or ())
                 for i in queue["items"]):
-            errors.append("Week %d: the Game Week Briefing is issued, but the decision queue holds no game-plan item "
-                          "for the week (python scripts/open_game_week.py opens it)" % week)
+            errors.append("%s: the Game Week Briefing is issued, but the decision queue holds no game-plan item "
+                          "for the week (python scripts/open_game_week.py opens it)" % wk.label())
     return errors
 
 

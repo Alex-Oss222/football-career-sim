@@ -3,8 +3,13 @@
  "issued": [
   {
    "date": "2014-10-05",
-   "file": "Game_Week_Briefing.md",
+   "file": "Game_Week_Briefing_October_5.md",
    "sha256": "57a097b380b83b72ed35234e1e05243985511f4849c7d1f3b3b0c419e2c8a212"
+  },
+  {
+   "date": "2014-10-05",
+   "file": "Game_Week_Briefing.md",
+   "sha256": "9014992400e2bf16b2874fc9028f155449ee997e5dc61ecba8a279b3ffe838f5"
   }
  ]
 }

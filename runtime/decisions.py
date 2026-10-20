@@ -130,7 +130,10 @@ class WeekPages:
     @property
     def call_sheet(self): return self.data / "call_sheet.json"
     @property
-    def staff_read(self): return self.data / "staff_read.json"
+    def staff_texts(self):
+        """The staff's authored parts of the week's briefing, each with its author and date
+        (scripts/render_game_week.py renders a missing one "To come")."""
+        return self.data / "staff_briefing.json"
     @property
     def inactives(self):
         """The week's game-day inactives as Stone set them (``players``, ``set`` and ``note``): the

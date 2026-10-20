@@ -1,93 +1,109 @@
 # Week 6 Game Plan: at Tennessee
 
-Sunday, October 12, 2014, 1 p.m. ET, LP Field. Your decisions for the game: write under each heading, or upload a .md or .txt file with the same headings. The first line under each heading names the choices open to you. The staff checks the page and tells you what is missing or invalid before anything is set for the game; the page stays as the record of your decisions. [Game Week Briefing](Game_Week_Briefing.md)
+> Your decisions for the game, in football words: answer every line here, or upload a .md or .txt file with the same headings. The staff checks the page and tells you what is missing or invalid before anything is set for the game; the page stays as the record of your decisions. [Game Week Briefing](Game_Week_Briefing.md)
 
-## Inactives
+**Head coach:** Alex Stone  
+**Game:** Jacksonville at Tennessee, Sunday, October 12, 2014, 1 p.m. ET, LP Field  
+**Briefing used:** October 5, 2014  
+**Baseline:**
 
-> 7 players from the active roster, one per row, among them every player out on a medical instruction on game day (when more are out, those players only); or Standing rule, which means every player out on a medical instruction on game day and the healthy players your rule in force sits: the deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week; when the week needs more than that, write Standing rule above the table and name the others in it; or Same as Week 5.
+> Answer every line under its heading. No change keeps the last legal instruction set; None means intentionally nothing; a line left empty is unanswered, and nothing is set for the game until every line is answered. Baseline: Carry Week 5 starts from that week's calls and defensive responses as set; New plan starts from none.
 
-| Player | Pos | Reason |
-|---|---|---|
+## 1. What I want this game to look like
 
-## Depth chart changes
+> Your direction to the staff, in your words. It is kept with the plan and never changes a call.
 
-> A position group's full new order from the players now in it, first listed first, or a game role and its player; or None.
+**The matchup I am attacking:**  
+**What I must not give them:**  
+**What would make me change course:**
 
-## Practice
+## 2. Game-day availability and personnel
 
-> Who takes which work this week, for example a limited player's reps; or None.
+> 7 of the 53 on the active roster do not dress. Inactives: Standing rule (the deepest healthy reserve on the chart in each of the five largest healthy position groups, never below a legal game-day unit, re-set each week), Standing rule with the others you name after it, the players by name with commas between them, or Carry Week 5. Depth/role changes: No change, None, or the changes separated by semicolons: a role and its player (Starter, Kicker, Punter, Kick returner, Punt returner, Nickel, Outside reserve corner) or a group's new order (Wide receivers order: the names). Medical decisions cannot be overridden.
 
-## Offense
+**Inactives:**  
+**Depth/role changes:**  
+**If Jones, Trawick or Poyer cannot dress:**  
+**Special coverage and substitution consequences:**
 
-> Each situation in your words, and the calls from the active offensive playbook (its concepts, personnel groupings, formations, motions and protections) with the situations each belongs to, from normal down, second and long, third and short, third and medium, third and long, backed up, high red zone, low red zone, goal line, red zone, two-minute, PRESS sequence, four-minute, sudden change, opening sequence, two-point, final play of half, empty; or Same as Week 5.
+## 3. Offense: what we are calling and why
 
-### Opening sequence
+> Caller: who calls the offense on the staff page (Alex Stone), or No change. Opening calls, in order: the calls separated by semicolons, a call repeated for a return to it; or Carry Week 5 opening, No change or None.
 
-### Normal downs
+**Caller:**  
+**Base personnel and roles:**  
+**The first things I want to learn:**  
+**Opening approach:**  
+**Opening calls, in order:**
 
-### Second and long
+### Primary calls
 
-### Third down
+> One row for each call you add or change; with Carry Week 5 every call of that week stays as set unless you change it here, list it as not available or remove it as a special play. Name a call as the active playbook and the earlier call sheets name it (Week 5: 12 Ace, Power Right; 12 SHIFT Empty, Stick; 12 Trey, Y-Cross, SOLID; 11 Bunch, Mesh, HALF; 12 Wing, Outside Zone Left; 12 Wing, Boot Flood Right; 12 Ace, Counter Right; 11 Doubles, Drive, HALF; 11 Doubles, Stick, SCAT; 11 Doubles, RB Slow Screen; 12 Ace, Power Left; 12 Ace, Flea Flicker, MAX; 12 Wing, TE Delay; 11 SHIFT Empty, Spacing, SCAT; 11 Doubles, Inside Zone Right; 11 Trips, Inside Zone + Bubble; 12 Ace, Power Pass / Post-Cross, MAX; 11 Trey, Dagger, HALF; 12 Trey, TE Delay; 11 Doubles, Spacing, SCAT; 11 Bunch, Snag), or a new call as its formation, concept and protection, named as this week's install in section 6. A variation goes in parentheses after the call, or (without the variation) to take one off. When I want it: the situations separated by commas (normal downs, second and long, third and short, third and medium, third and long, backed up, high red zone, low red zone, goal line, two-minute, PRESS sequence, four-minute, sudden change, two-point tries, final play of the half); the opening calls line puts a call in the opening sequence. Your reason and stop condition are kept with the plan and never change a call.
 
-### Backed up
+| Call / concept as named in the active book | When I want it | Football reason and key read | Protection, personnel or stop condition |
+|---|---|---|---|
 
-### Red zone
+### Situational changes from the standing / previous menu
 
-### Two-minute
+> How you want each situation called is your direction to the staff; which calls are on each situation's list is set by the table above. Special plays: each call with Keep, Remove or Practice only, separated by semicolons. Calls not available this week: the calls separated by semicolons, or None.
 
-### PRESS sequence
+**Third down:**  
+**Backed up:**  
+**High red zone, low red zone, goal line:**  
+**Two-minute / hurry-up:**  
+**Four-minute / protect a lead:**  
+**Sudden change / shot opportunities:**  
+**Special plays:**  
+**Calls not available this week:**
 
-### Four-minute
+## 4. Defense: what we are showing and answering
 
-### Sudden change
+> Caller: who calls the defense on the staff page (Alex Stone), or No change. Rush rule: Four unless I call the five-man counter, as the active defensive playbook has it, or No change.
 
-### Final play of the half
+**Caller:**  
+**Base front and run fits:**  
+**Coverage and rush approach:**  
+**Rush rule:**  
+**What we need to discover early:**
 
-### Empty
+> One row for each prepared response; with Carry Week 5 and no rows, that week's responses stay as set, and any row replaces them all. First column: a situation the defense keys (normal downs, second and long, third and short, third and medium, third and long, two-point try, goal line, low red zone, high red zone, red zone, backed up, two-minute, four-minute, late lead) is that situation's call; begin with If or When for a conditional response and with Counter for a counter; anything else is a presentation. Response: the active defensive playbook's words, one package, front and pressure at most, the coverages as alternatives (Quarters or Cover 6); practiced on an earlier sheet: Dime, Nickel, Nickel Even, Under, Cover 1 Robber, Cover 3 Match, Cover 6, Fire 3, Quarters, base four, Fire Zone, Replace, Replace Boundary, Replace Field, the interior mug; anything else is named as this week's install.
 
-### Receiver arrangement
+| Offensive situation / presentation | Prepared front, coverage or pressure response | Football reason | Counter / when to get out of it |
+|---|---|---|---|
 
-### Calls
+**Individual matchups / roles changed:**
 
-| Call | Family | Type | Personnel | Formation | Motion | Protection | Target | Tags | Opener | Returns | Situations |
-|---|---|---|---|---|---|---|---|---|---|---|---|
+## 5. Special teams and game decisions
 
-### What I am looking at
+> Kicking-game caller: Mike Westhoff calls it on the staff page, or No change. Fourth downs: Standing rule (fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt). Two-point tries: Standing rule (kick, except go for two in the fourth quarter when the touchdown leaves Jacksonville down 2, up 1 or down 5). Kickoffs and onside situations: Standing rule (onside when trailing by 1 to 16 with 2:00 or less left; onside when trailing by 9 to 16 with 5:00 or less left; deep otherwise). Each also takes Carry Week 5, No change, None (fourth downs only: your live call on each) or My rules, otherwise the decision, above a rule table.
 
-## Fourth downs
+**Kicking-game caller:**
 
-> Rules by distance, yards to the goal line, quarter, score and clock, each Go, Field goal or Punt, and what happens otherwise (Go, Field goal, Punt or Ask me); or Standing rule, which means your rule in force: fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt; or None for your call on each one; or Same as Week 5.
+**Return, coverage and operation instructions:**
 
-## Two-point tries
+**Fourth downs:**
 
-> Rules by quarter, score after the touchdown and clock, each Go for two or Kick, and what happens otherwise (Kick, Go for two or Ask me); or Standing rule, which means your rule in force: kick, except go for two in the fourth quarter when the touchdown leaves Jacksonville down 2, up 1 or down 5; or Same as Week 5.
+**Two-point tries:**
 
-## Kickoffs
+**Kickoffs and onside situations:**
 
-> Rules by quarter, score after our score and clock, each Onside or Deep, and what happens otherwise (Deep, Onside or Ask me); or Standing rule, which means your rule in force: onside when trailing by 1 to 16 with 2:00 or less left; onside when trailing by 9 to 16 with 5:00 or less left; deep otherwise; or Same as Week 5.
+**Timeouts, challenges and endgame:**
 
-## Defense
+## 6. What we will practice
 
-> Who calls it; the rush rule, which in the active defensive playbook is four unless I call the five-man counter; the menu practiced this week; and the calls by situation, each with its use (Situation, Presentation, Counter, Conditional), in the active defensive playbook's words; or Same as Week 5.
+> One row for each priority. A first column beginning Install names this week's installs, separated by semicolons: a new call, a new variation or a defensive word. These are intentions; the practices themselves are recorded when they happen.
 
-**Who calls it:**
+| Priority | Responsible coach and players | Football situation to rehearse | What shows it is ready |
+|---|---|---|---|
 
-**Rush rule:**
+**If a medical assessment changes participation:**  
+**What leaves the practice menu to make room:**
 
-### Practiced this week
+## 7. Directions to the staff and public position
 
-| Menu | Words |
-|---|---|
+> Your directions; nothing here is set for the game, and silence never means approval.
 
-### Calls by situation
-
-| Use | Situation | Package | Front | Strength | Coverage | Pressure | Tags | As written |
-|---|---|---|---|---|---|---|---|---|
-
-## Special teams
-
-> Mike Westhoff calls the kicking game; your instructions for the kicking game, or None.
-
-## Notes to the staff
-
-> Anything else the staff should know, one note per line, or None.
+**Staff instructions:**  
+**Public position, if I am adding one:**  
+**Other open decisions:**  
+**Ready to lock after:**

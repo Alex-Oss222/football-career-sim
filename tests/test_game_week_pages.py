@@ -21,8 +21,10 @@ from runtime.clean_pages import page_errors  # noqa: E402
 from scripts import render_game_week  # noqa: E402
 
 IGNORED = (".git", ".sim_cache", "__pycache__", ".pytest_cache")
-SECTIONS = ("## The game", "## Medical update", "## How we played", "## Pro scouting report", "## What we need from you",
-            "## Your standing instructions", "## Who else decides", "## Staff read")
+SECTIONS = ("## 1. The game and what is at stake", "## 2. Our last game and the self-scout",
+            "## 3. Medical and game-day availability", "## 4. Opponent scouting: when they have the ball",
+            "## 5. Opponent scouting: when we have the ball", "## 6. Special teams and game operations",
+            "## 7. Staff proposals, alternatives and costs", "## 8. What is owed by the head coach")
 
 
 def copy_repo(test):
@@ -80,35 +82,74 @@ class BriefingTests(unittest.TestCase):
         self.assertEqual(page_errors(self.wk.rel(self.wk.pages.briefing), text, root=self.root), [])
         places = [text.index(s) for s in SECTIONS]
         self.assertEqual(places, sorted(places))
-        self.assertIn(self.wk.opponent, text)
+        # The template's sections, in its order and words (foundation/templates/game_week).
+        template = (ROOT / "foundation/templates/game_week/game_week_briefing_template.md").read_text(encoding="utf-8")
+        self.assertEqual([l for l in template.splitlines() if l.startswith("## ")], list(SECTIONS))
+        from runtime.player_pages import club_short
+        self.assertIn(club_short(self.wk.opponent), text)
         self.assertIsNotNone(render_game_week.issued_on(self.wk))
         self.assertEqual(render_game_week.validation_errors(self.root), [])
         self.assertEqual(render_game_week.check(self.root), [])
 
-    def test_a_missing_staff_read_is_to_come(self):
-        # Whatever the week's stored state, a briefing without a read says it is to come.
-        self.wk.pages.staff_read.unlink(missing_ok=True)
-        with contextlib.redirect_stdout(io.StringIO()):
-            render_game_week.write(self.root)
-        self.assertIn("## Staff read\n\nStaff read to come.\n", self.wk.pages.briefing.read_text(encoding="utf-8"))
-
-    def test_a_stored_read_is_shown_and_may_cite_only_the_page(self):
-        record = self.wk.record("Jacksonville Jaguars")
-        read = {"author": "Mike Tice", "date": self.wk.master.isoformat(), "text": "We are %s." % record}
-        self.wk.pages.staff_read.parent.mkdir(parents=True, exist_ok=True)
-        self.wk.pages.staff_read.write_text(json.dumps(read), encoding="utf-8")
+    def test_missing_staff_texts_are_to_come(self):
+        # Whatever the week's stored state, a briefing without the staff's texts says they are to come.
+        self.wk.pages.staff_texts.unlink(missing_ok=True)
         with contextlib.redirect_stdout(io.StringIO()):
             render_game_week.write(self.root)
         text = self.wk.pages.briefing.read_text(encoding="utf-8")
-        self.assertIn("**Mike Tice, ", text)
-        self.assertIn(read["text"], text)
+        for label in ("Staff's central football question", "Two things to carry forward"):
+            self.assertIn("**%s:** To come." % label, text)
+        self.assertEqual(len(re.findall(r"\*\*\w+'s recommendation:\*\* To come\.", text)), 2)
+        self.assertIn("'s report:** To come.", text)
+        proposals = text.split(SECTIONS[6], 1)[1].split("\n## ", 1)[0]
+        self.assertIn("| To come | To come | To come |", proposals)
+        # The optional parts are left out until they are stored.
+        for label in ("What the game book does not settle", "Not established", "Possible operational question"):
+            self.assertNotIn("**%s:**" % label, text)
+
+    def test_stored_texts_are_shown_and_may_cite_only_the_page(self):
+        record = self.wk.record("Jacksonville Jaguars")
+        when = self.wk.master.isoformat()
+        texts = {"texts": {
+            "central_question": {"author": "Mike Tice", "date": when, "text": "Can we stay %s on the road?" % record},
+            "carry_forward": {"author": "Mike Tice", "date": when,
+                              "items": [{"point": "Ball security", "text": "Film first."},
+                                        {"point": "Fourth downs", "text": "Decide at the spot."}]},
+            "defense_questions": {"author": "Romeo Crennel", "date": when, "rows": {"Jake Locker": "Contain him."}}}}
+        path = self.wk.pages.staff_texts
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(texts), encoding="utf-8")
+        with contextlib.redirect_stdout(io.StringIO()):
+            render_game_week.write(self.root)
+        text = self.wk.pages.briefing.read_text(encoding="utf-8")
+        self.assertIn("**Staff's central football question:** Can we stay %s on the road? (Mike Tice, " % record, text)
+        self.assertIn("- **Fourth downs.** Decide at the spot.", text)
         self.assertEqual(render_game_week.validation_errors(self.root), [])
-        read["text"] = "We are 9,876 yards better."
-        self.wk.pages.staff_read.write_text(json.dumps(read), encoding="utf-8")
+        if "| Jake Locker, QB |" in text:
+            self.assertIn("Contain him.", text)
+        texts["texts"]["central_question"]["text"] = "We are 9,876 yards better."
+        path.write_text(json.dumps(texts), encoding="utf-8")
         with contextlib.redirect_stdout(io.StringIO()):
             render_game_week.write(self.root)
         self.assertTrue(any("9,876 is not a figure the briefing shows" in e
                             for e in render_game_week.validation_errors(self.root)))
+        # A text with no author, or a part the briefing has no place for, is refused.
+        del texts["texts"]["central_question"]["author"]
+        path.write_text(json.dumps(texts), encoding="utf-8")
+        self.assertTrue(any("needs its author and date" in e for e in render_game_week.validation_errors(self.root)))
+        texts["texts"] = {"staff_mood": {"author": "x", "date": when, "text": "y"}}
+        path.write_text(json.dumps(texts), encoding="utf-8")
+        self.assertTrue(any("is not a part of the briefing" in e for e in render_game_week.validation_errors(self.root)))
+
+    def test_the_medical_table_shows_only_whom_a_decision_turns_on(self):
+        text = self.wk.pages.briefing.read_text(encoding="utf-8")
+        section = text.split(SECTIONS[2], 1)[1].split("\n## ", 1)[0]
+        data = json.loads(self.wk.paths.roster.read_text(encoding="utf-8"))
+        for p in data["players"]:
+            if p["list"] == "reserve" and "designated for return" not in p["status"]:
+                self.assertNotIn(p["name"], section)
+        self.assertIn("**Game-day numbers:**", section)
+        self.assertIn("**Medical authority:**", section)
 
     def test_a_changed_situation_issues_a_new_briefing_and_keeps_the_old(self):
         old = self.wk.pages.briefing.read_text(encoding="utf-8")
@@ -124,18 +165,22 @@ class BriefingTests(unittest.TestCase):
         self.assertTrue(any("a new briefing is due" in e for e in render_game_week.check(self.root)))
         state = (self.root / "state/05_Current_Season_State.md").read_bytes()
         queue = (self.root / "state/decision_queue.json").read_bytes()
+        kept = [p for p, _ in render_game_week.earlier_briefings(render_game_week.Week(self.root))]
         with contextlib.redirect_stdout(io.StringIO()):
             written = render_game_week.write(self.root)
         earlier = [path for path, _ in render_game_week.earlier_briefings(render_game_week.Week(self.root))]
-        self.assertEqual(len(earlier), 1)
+        self.assertEqual(earlier[:-1], kept)
+        earlier = earlier[-1:]
         self.assertEqual(earlier[0].read_text(encoding="utf-8"), old)
         self.assertIn(earlier[0], written)
-        shown = changed["name"] + " |" in self.wk.pages.briefing.read_text(encoding="utf-8")
-        self.assertEqual(shown, not under)
+        section = self.wk.pages.briefing.read_text(encoding="utf-8").split(SECTIONS[2], 1)[1].split("\n## ", 1)[0]
+        self.assertEqual(changed["name"] in section, not under)
         self.assertIn(earlier[0].name, self.wk.pages.readme.read_text(encoding="utf-8"))
         # Both issues are in the week's issue record, the earlier one under its kept name.
         record = render_game_week.issues(render_game_week.Week(self.root))
-        self.assertEqual([e["file"] for e in record], [earlier[0].name, self.wk.pages.briefing.name])
+        self.assertEqual([e["file"] for e in record], [p.name for p in kept] + [earlier[0].name,
+                                                                                 self.wk.pages.briefing.name])
+        self.assertIn("**Status:** Revised: it replaces the briefing of", self.wk.pages.briefing.read_text(encoding="utf-8"))
         # Issuing a page moves no time and settles nothing.
         self.assertEqual((self.root / "state/05_Current_Season_State.md").read_bytes(), state)
         self.assertEqual((self.root / "state/decision_queue.json").read_bytes(), queue)
@@ -179,14 +224,16 @@ class IssueRecordTests(unittest.TestCase):
         record = render_game_week.issues(self.wk)
         self.assertEqual(record[-1]["sha256"], render_game_week.sha256(page))
         mine = self.wk.record("Jacksonville Jaguars")
-        edited = issued.replace("| Jacksonville | %s |" % mine, "| Jacksonville | 9-0 |", 1)
+        kept = render_game_week.earlier_briefings(render_game_week.Week(self.root))
+        edited = issued.replace("| Records entering the week | Jacksonville %s;" % mine,
+                                "| Records entering the week | Jacksonville 9-0;", 1)
         self.assertNotEqual(edited, issued)
         page.write_text(edited, encoding="utf-8")
         self.assertTrue(any("differs from the briefing issued" in e for e in render_game_week.validation_errors(self.root)))
         with self.assertRaises(ValueError):
             render_game_week.write(self.root)
-        self.assertEqual(render_game_week.earlier_briefings(render_game_week.Week(self.root)), [])
-        self.assertFalse(list(self.wk.pages.folder.glob(page.stem + "_*.md")))
+        self.assertEqual(render_game_week.earlier_briefings(render_game_week.Week(self.root)), kept)
+        self.assertEqual(sorted(self.wk.pages.folder.glob(page.stem + "_*.md")), sorted(p for p, _ in kept))
         page.write_text(issued, encoding="utf-8")
         self.assertEqual(render_game_week.validation_errors(self.root), [])
 
@@ -203,7 +250,7 @@ class IssueRecordTests(unittest.TestCase):
         page = self.wk.pages.briefing
         when = render_game_week.issued_on(self.wk)
         self.assertEqual(when.isoformat(), render_game_week.issues(self.wk)[-1]["date"])
-        self.assertIn("From the coaching staff, %s:" % render_game_week.day(when), page.read_text(encoding="utf-8"))
+        self.assertIn("**Issued:** %s" % render_game_week.day(when), page.read_text(encoding="utf-8"))
         self.assertIn("Issued %s" % render_game_week.day(when), self.wk.pages.readme.read_text(encoding="utf-8"))
 
 

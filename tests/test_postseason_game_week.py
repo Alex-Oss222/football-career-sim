@@ -12,8 +12,8 @@ hosts Pittsburgh in the Wild Card round. Then, the way the weekly workflow runs 
 - briefing: render_game_week.py opens the week's two decision items and issues the Game Week
   Briefing (with the playoff game's own facts), the blank Game Plan and the index in the round's
   folder under the postseason folder, through the folder map;
-- check and apply: a complete Game Plan (the Week 5 offense and defense carried, the standing
-  two-point and kickoff rules, fourth downs left to the live call, the inactives named) checks and,
+- check and apply: a complete version 2 Game Plan (Baseline: Carry Week 5, the standing two-point
+  and kickoff rules, fourth downs left to the live call, the inactives named) checks and,
   once the exams the items wait on are held, applies: the call sheet is frozen in the postseason
   folder's data twin, where the weekly build looks for it, and the items are settled;
 - close and report: the copy's Week 5 game record becomes the Wild Card game (Pittsburgh at
@@ -184,10 +184,15 @@ class PostseasonGameWeekTests(unittest.TestCase):
         self.assertFalse(paths.week_folder(WILD_CARD).exists())
         briefing = pages.briefing.read_text(encoding="utf-8")
         self.assertTrue(briefing.startswith("# Wild Card Game Week Briefing: Pittsburgh\n"))
-        for text in ("## The playoff game", "| Round | Wild Card, AFC |", "| Seeds | Jacksonville No. 3, Pittsburgh No. 6 |",
-                     "| Site | Home, EverBank Field |", "| If we lose | The season is over. |",
-                     "A playoff game cannot end tied", "first possession", "| Game-day roster | 46 dress"):
-            self.assertIn(text, briefing)
+        # The playoff game's own facts are section 1's rows, in place of the regular season's standings.
+        section = briefing.split("## 1. The game and what is at stake", 1)[1].split("\n## 2.", 1)[0]
+        for text in ("| Game type | Wild Card, AFC |", "| Seeds | Jacksonville No. 3, Pittsburgh No. 6 |",
+                     "| Venue and kickoff | EverBank Field, ", "Jacksonville: ", "since its Week 2 game, at home",
+                     "| If we lose | The season is over. |", "| If we win | We play in the Divisional round",
+                     "| Earlier meeting |", "A playoff game cannot end tied", "first possession",
+                     "| Game-day roster | 46 dress"):
+            self.assertIn(text, section)
+        self.assertNotIn("| Stakes |", section)
         self.assertEqual(clean_pages.page_errors(pages.briefing.relative_to(root).as_posix(), briefing, root=root), [])
         self.assertTrue(pages.plan.read_text(encoding="utf-8").startswith("# Wild Card Game Plan: Pittsburgh\n"))
         self.assertTrue(pages.readme.read_text(encoding="utf-8").startswith("# Wild Card: Pittsburgh\n"))
@@ -200,12 +205,24 @@ class PostseasonGameWeekTests(unittest.TestCase):
         # Check and apply: the page's choices into the call sheet in the postseason folder's data twin.
         plan = check_game_plan.Plan(root, SEASON, WILD_CARD)
         players = self.inactives(plan)
-        choices = {"inactives": {"players": players}, "depth": "none", "practice": ["None beyond the plan."],
-                   "offense": {"same_as": 5}, "fourth_down": "none", "two_point": {"standing": True},
-                   "kickoff": {"standing": True}, "defense": {"same_as": 5}, "special_teams": "none",
-                   "notes": "none"}
-        pages.plan.write_text(game_plan.render("Wild Card Game Plan: Pittsburgh", "Intro.", choices,
-                                               game_plan.legal_lines(7, None, 2)), encoding="utf-8")
+        answers = {
+            "baseline": "Carry Week 5", "attack": "Their linebackers in space against our tight ends.",
+            "protect": "A cutback behind an overrun.", "change_course": "A safety rotating late to the second tight end.",
+            "inactives": ", ".join(players), "depth": "No change", "contingency": "None",
+            "coverage_units": "No change", "offense_caller": "No change", "base_personnel": "Twelve personnel leads.",
+            "learn": "Who travels with the second tight end.", "opening_approach": "As in Week 5.",
+            "opening": "Carry Week 5 opening", "third_down": "No change", "backed_up": "No change",
+            "red_zone": "No change", "two_minute": "No change", "four_minute": "No change",
+            "sudden_change": "No change", "special_plays": "No change", "not_available": "None",
+            "defense_caller": "No change", "front": "Force and cutback first.", "coverage": "Quarters and 6.",
+            "rush": game_plan.RUSH_CHOICE, "discover": "Their protection against the replaced rusher.",
+            "matchups": "No change", "kicking_caller": "No change", "kicking": "No change",
+            "fourth_down": "None", "two_point": "Standing rule", "kickoff": "Standing rule",
+            "endgame": "No change", "participation": "None", "tradeoff": "None", "staff": "None",
+            "public": "No new statement", "open_decisions": "None", "ready": "None",
+            "practice": [["Third down", "Tice with the offense", "Third and medium", "The Saturday walkthrough"]]}
+        facts = render_game_week.plan_facts(render_game_week.Week(root, WILD_CARD))
+        pages.plan.write_text(game_plan.render("Wild Card Game Plan: Pittsburgh", facts, answers), encoding="utf-8")
         problems, _, _ = check_game_plan.check(root, SEASON, WILD_CARD)
         self.assertEqual(problems, [])
         self.exams_held()
@@ -218,7 +235,10 @@ class PostseasonGameWeekTests(unittest.TestCase):
         sheet = json.loads(sheet_path.read_text(encoding="utf-8"))
         week5 = json.loads(paths.call_sheet(5).read_text(encoding="utf-8"))
         self.assertEqual(sheet["event"], "2014 postseason Wild Card, Pittsburgh at Jacksonville, October 12, 2014")
-        self.assertEqual(sheet["offensive_call_sheet"], week5["offensive_call_sheet"])
+        # Week 5's calls carried as set; its "what I am looking at" text is author intent, not the sheet's.
+        strip = lambda calls: [{k: v for k, v in c.items() if k != "what_stone_is_looking_at"} for c in calls]
+        self.assertEqual(sheet["offensive_call_sheet"], strip(week5["offensive_call_sheet"]))
+        self.assertEqual(sheet["defensive_call_sheet"]["rows"], week5["defensive_call_sheet"]["rows"])
         self.assertNotIn("fourth_down", sheet["decisions"])
         chart = json.loads(paths.depth_chart.read_text(encoding="utf-8"))
         self.assertEqual(chart["game_day_inactives"]["week"], WILD_CARD)
