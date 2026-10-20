@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Tre_Boston_Dec_2016.jpg)).*
 
+**Current assignment:** Reserve strong safety.
+
+**Passes defended:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

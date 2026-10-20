@@ -10,11 +10,15 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Aqwfyj, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Russell_Wilson_at_the_2013_Jessie_Vetter_Classic,_July_1,_2013.jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 89.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Seattle | 25 | 3 | 4 | 100 | 155 | 64.5 | 1,124 | 7.3 | 281.0 | 4 | 2 | 89.3 |
 | 2013 | Seattle | 24 | 3 | 16 | 346 | 560 | 61.8 | 3,504 | 6.3 | 219.0 | 19 | 10 | 83.5 |

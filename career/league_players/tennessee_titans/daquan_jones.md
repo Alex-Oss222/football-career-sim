@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Chipermc, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:DaQuan_Jones_2018_08-09.jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
+**Sacks:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

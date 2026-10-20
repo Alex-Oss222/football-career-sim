@@ -10,11 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Talltodd66, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Geno_Smith.jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 91.9 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | N.Y. Jets | 23 | 7 | 5 | 96 | 162 | 59.3 | 974 | 6.0 | 194.8 | 10 | 2 | 91.9 |
 | 2013 | N.Y. Jets | 22 | 7 | 16 | 384 | 613 | 62.6 | 3,933 | 6.4 | 245.8 | 24 | 19 | 81.2 |
@@ -27,7 +31,7 @@ As of October 5, 2014, after Week 5.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | N.Y. Jets | 22 | 7 | 1 | 17 | 27 | 63.0 | 201 | 7.4 | 201.0 | 2 | 0 | 110.3 |
 

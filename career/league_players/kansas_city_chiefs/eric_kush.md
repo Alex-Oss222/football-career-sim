@@ -10,6 +10,8 @@ As of January 4, 2014, after the Wild Card round.
 
 *Photo: LaDanian1000000, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Eric_Kush_2018.png)).*
 
+**Current assignment:** Reserve center.
+
 ## Statistics
 
 ### Regular season

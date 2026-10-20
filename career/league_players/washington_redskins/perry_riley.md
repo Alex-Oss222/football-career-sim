@@ -10,6 +10,10 @@ As of October 6, 2014, after Week 5.
 
 *Photo: original: Keith Allison derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Perry_riley_redskins.jpg)).*
 
+**Current assignment:** Starting linebacker.
+
+**Tackles:** 34 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

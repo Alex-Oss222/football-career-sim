@@ -10,6 +10,10 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Ghastlyghost, Public domain ([source](https://commons.wikimedia.org/wiki/File:Deangelo_Hall_redskins_training_camp_2009.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

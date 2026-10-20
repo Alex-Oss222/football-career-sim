@@ -10,20 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Atlanta Falcons, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Aaron_Donald_2014_combine.jpg)).*
 
-## Staff assessment
+**Current assignment:** Reserve defensive tackle.
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.0/10 |
-| Athleticism | 8.5/10 |
-| Speed | 7.5/10 |
-| Strength and power | 7.0/10 |
-| Agility and change of direction | 8.0/10 |
-| Technique | 7.0/10 |
-| Football IQ | 6.0/10 |
-| First-step quickness | 8.5/10 |
-| Hand use and pad level | 7.5/10 |
-| Anchor vs. double teams | 4.5/10 |
+## Staff assessment
 
 An undersized, explosive interior defensive lineman whose first step and hand quickness beat blockers before they set. Anchoring against double teams and holding gaps on early downs are the unproven questions at NFL size.
 

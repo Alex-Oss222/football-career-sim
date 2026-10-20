@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Charles_Brown_(offensive_lineman).JPG)).*
 
+**Current assignment:** Reserve left tackle.
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Senior Master Sgt. Michael Crane, Public domain ([source](https://commons.wikimedia.org/wiki/File:Kansas_City_Chiefs_host_military_appreciation_day_at_training_camp_(7378597)_(cropped).jpg)).*
 
+**Current assignment:** Starting defensive end.
+
+**Tackles:** 4 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

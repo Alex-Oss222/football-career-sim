@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kyle_Wilson_(American_football).JPG)).*
 
+**Current assignment:** Reserve cornerback.
+
+**Passes defended:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Johnmaxmena2, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Joebarksdale25-2013.jpg)).*
 
+**Current assignment:** Starting right tackle.
+
+**Sacks allowed:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

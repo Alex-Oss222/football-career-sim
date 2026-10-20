@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Chairman of the Joint Chiefs of Staff from Washington D.C, United States, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:190326-D-SW162-1977_(46564316465).jpg)).*
 
+**Current assignment:** Starting tight end.
+
+**Yards per target:** 6.9 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

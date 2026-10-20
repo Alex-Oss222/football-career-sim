@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: C Watts, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Greg_Toler_training_camp,_2016.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

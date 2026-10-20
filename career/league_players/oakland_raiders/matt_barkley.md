@@ -14,7 +14,7 @@ As of September 28, 2014, after Week 4.
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Oakland | 23 | N/A | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Oakland | 22 | N/A | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |

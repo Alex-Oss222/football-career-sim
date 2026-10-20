@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: BrokenSphere, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Morgan_at_49ers_training_camp_2010-08-09_1.JPG)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 13.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

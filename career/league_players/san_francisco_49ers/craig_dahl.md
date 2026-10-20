@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Craig_Dahl_(San_Francisco_49ers_player)_during_October_19,_2014_game_against_Denver_Broncos_at_Empower_Field_in_Denver,_Colorado.jpg)).*
 
+**Current assignment:** Reserve strong safety.
+
+**Passes defended:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

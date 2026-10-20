@@ -10,20 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Malcolm_Butler_(American_football).JPG)).*
 
-## Staff assessment
+**Current assignment:** Reserve cornerback.
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 5.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Ball skills | 6.0/10 |
-| Competitiveness and press | 5.5/10 |
-| Level of competition | 3.0/10 |
+**Passes defended:** 0 (2014, through Week 5).
+
+## Staff assessment
 
 A Division II cornerback with a ball-production record (seven interceptions and 25 pass breakups across 2012 and 2013), kick-return experience and a competitive style; not invited to the combine, so no verified testing exists.
 

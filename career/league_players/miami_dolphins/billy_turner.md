@@ -10,6 +10,8 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Billy_Turner_(Denver_Broncos_offensive_lineman)_during_pre-season_game_against_Green_Bay_Packers_on_August_26,_2017_in_Denver,_Colorado.jpg)).*
 
+**Current assignment:** Reserve left guard.
+
 ## Statistics
 
 ### Regular season

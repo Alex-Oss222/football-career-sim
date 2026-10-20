@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Damien_Williams_(running_back).JPG)).*
 
+**Current assignment:** Reserve running back.
+
+**Yards per carry:** 3.1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

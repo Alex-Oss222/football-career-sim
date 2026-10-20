@@ -8,26 +8,6 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 5.5/10 |
-| Football IQ | 6.0/10 |
-| Run diagnosis | 5.5/10 |
-| Fit discipline | 5.5/10 |
-| Block destruction | 5.0/10 |
-| Range | 5.5/10 |
-| Tackling | 5.5/10 |
-| Zone coverage | 5.0/10 |
-| Man coverage | 4.5/10 |
-| Blitz and pressure | 4.0/10 |
-| Communication | 6.0/10 |
-| Pursuit angles | 5.5/10 |
-
 A dependable complementary linebacker and coverage-unit contributor who can prepare for expanded assignments. I see a role player with communication value and less ability to dictate pressure or man-matchups.
 
 *Staff view, March 31, 2014.*

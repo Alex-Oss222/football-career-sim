@@ -12,26 +12,6 @@ As of August 31, 2014.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 3.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 3.0/10 |
-| Football IQ | 3.5/10 |
-| Range | 4.5/10 |
-| Speed and change of direction | 5.0/10 |
-| Route-combination recognition | 3.0/10 |
-| Deep positioning | 3.0/10 |
-| Man and slot coverage | 3.0/10 |
-| Ball skills | 3.0/10 |
-| Tackling | 3.5/10 |
-| Run support and angles | 3.5/10 |
-| Communication | 3.5/10 |
-| Play-action discipline | 3.0/10 |
-
 A small, mobile developmental defensive back being reviewed at safety in 2013. I see quickness and pursuit utility ahead of the route reads and positioning required for a full safety role.
 
 *Staff view, March 31, 2014.*

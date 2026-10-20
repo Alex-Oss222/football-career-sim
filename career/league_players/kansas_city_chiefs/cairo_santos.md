@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Air National Guard Senior Airman Bruce Jenkins, Public domain ([source](https://commons.wikimedia.org/wiki/File:Cairo_santos_2015_(cropped).jpg)).*
 
+**Current assignment:** Kicker.
+
+**Field-goal percentage:** 77.8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

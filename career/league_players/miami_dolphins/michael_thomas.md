@@ -10,6 +10,8 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Steven Bowles, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Michael_Thomas_49ers_2012.jpg)).*
 
+**Current assignment:** Reserve safety.
+
 ## Statistics
 
 ### Regular season

@@ -6,20 +6,9 @@ Born May 17, 1992 · Sacramento State · Undrafted
 
 As of October 5, 2014, after Week 5.
 
-## Staff assessment
+**Current assignment:** Reserve linebacker.
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Downhill fit | 5.5/10 |
-| Coverage range | 4.0/10 |
-| Coverage-unit fit | 5.5/10 |
+## Staff assessment
 
 A productive small-school inside linebacker with a downhill style and coverage-unit value; coverage range is the question.
 

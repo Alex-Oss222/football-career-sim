@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Original:thebudman623 Derivative:Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Patrick_chung.jpg)).*
 
+**Current assignment:** Reserve safety.
+
+**Passes defended:** 4 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

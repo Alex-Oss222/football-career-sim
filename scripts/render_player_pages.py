@@ -6,18 +6,24 @@
 One builder for every player page (rebuild step 3a): each league player page
 under career/league_players/ (with the league index and the club pages) and
 each Jacksonville player page in the active season's player folder (with its
-index), in the approved layout: header, physical line and photo; staff
-assessment; contract; statistics; awards; transactions. The pages are built
-from data/people/players/ and the owners runtime/people.READ_THROUGH names
-(the awards from the award results), never edited by hand.
+index), in the layout of the user's player card template
+(foundation/templates/player_card_template.md): header, physical line, As of
+and photo; the current assignment (runtime/assignments.py); the position
+statistic from the closed games; the short staff assessment, its season
+figures resolved from the closed games and no grades; contract; statistics
+(the quarterback's column is Passer rating); awards; transactions. The pages
+are built from data/people/players/ and the owners runtime/people.READ_THROUGH
+names (the awards from the award results), never edited by hand.
 
 Writing first adds an identity-only record for any player new to the game
 records; no other fact is created. Files under the two folders that no
 longer belong to a page are removed. --check writes nothing and fails on a
-record that breaks the schema, an award whose winner is not in the game
-records, a player without a record and any page that differs from its
-rebuild. Run after every closed game and its awards, and after any change to
-a record (docs/update_workflow.md).
+record that breaks the schema, a staff assessment whose figures cannot be read
+from the closed games, a role label or Week 1 slot with no page words, an
+award whose winner is not in the game records, a player without a record and
+any page that differs from its rebuild. Run after every closed game and its
+awards, after any change to a record and after any depth chart or role change
+(docs/update_workflow.md).
 """
 from __future__ import annotations
 

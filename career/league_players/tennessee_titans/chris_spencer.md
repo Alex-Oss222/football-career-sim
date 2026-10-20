@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Luis Antonio Rodríguez Ochoa from Redmond, Washington. Cropped by User:Blueag9 ., [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chris-Spencer-2008-11-02-Eagles.jpg)).*
 
+**Current assignment:** Reserve left guard.
+
 ## Statistics
 
 ### Regular season

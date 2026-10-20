@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Clinton & Charles Robertson from Del Rio, Texas & College Station, TX, USA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jorvorskie_Lane_2006.jpg)).*
 
+**Current assignment:** Starting fullback.
+
 ## Statistics
 
 ### Regular season

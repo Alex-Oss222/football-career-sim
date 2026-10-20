@@ -8,19 +8,6 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 6.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 6.0/10 |
-| Versatility | 6.5/10 |
-| Tackling | 6.0/10 |
-| Length and outside coverage | 3.5/10 |
-
 A compact, versatile senior defensive back who played both safety spots and slot corner and led Georgia Tech in tackles in 2013, with return and coverage-unit experience. Height and length limit him outside.
 
 *Staff view, May 11, 2014.*

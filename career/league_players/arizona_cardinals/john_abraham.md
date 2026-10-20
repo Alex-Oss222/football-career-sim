@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Navy photo by Petty Officer 2nd Class Raquell Williams, Public domain ([source](https://commons.wikimedia.org/wiki/File:John_Abraham_at_Commander,_Fleet_Activities_Sasebo_(cropped).jpg)).*
 
+**Current assignment:** Starting weakside linebacker.
+
+**Tackles:** 14 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

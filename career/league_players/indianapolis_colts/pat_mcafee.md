@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: FanDuel, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Pat_McAfee_on_The_Pat_McAfee_Show_8.31.2022_(cropped).png)).*
 
+**Current assignment:** Punter.
+
+**Net punting average:** 37.4 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

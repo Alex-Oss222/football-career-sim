@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Usama_Young_Saints_victory_parade.jpg : Tulane Public Relations derivative work: Arbor to SJ, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Usama_Young_Saints_victory_parade_cropped.jpg)).*
 
+**Current assignment:** Reserve strong safety.
+
+**Passes defended:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

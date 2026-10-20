@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison: Flickr , e-mail , Twitter , Instagram , website, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Ben_Jacobs_(45324571861)_(cropped).jpg)).*
 
+**Current assignment:** Reserve middle linebacker.
+
+**Tackles:** 10 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

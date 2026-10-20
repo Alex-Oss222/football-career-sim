@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Eltiempo10, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Mauga_at_Jets_training_camp.JPG)).*
 
+**Current assignment:** Starting inside linebacker.
+
+**Tackles:** 22 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

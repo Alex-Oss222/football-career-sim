@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: The_Saints'_Victory_Parade_2.jpg : Tulane Public Relations derivative work: Arbor to SJ, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Robert_Meachem_at_Super_Bowl_XLIV_victory_parade.jpg)).*
 
+**Yards per target:** 9.8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

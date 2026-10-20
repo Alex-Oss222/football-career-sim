@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sarah Stierch, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Dwayne_Allen_-_2015_500_Festival_-_sarah_Stierch.jpg)).*
 
+**Current assignment:** Starting tight end.
+
+**Yards per target:** 9.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Akeem_Spence.jpg)).*
 
+**Current assignment:** Reserve defensive tackle.
+
 ## Statistics
 
 ### Regular season

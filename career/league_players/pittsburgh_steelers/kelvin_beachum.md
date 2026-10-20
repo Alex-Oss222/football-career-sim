@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Ramsey Cardy / Collision via Sportsfile, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Collision_2023_-_RCZ_7927_(53008453231).jpg)).*
 
+**Current assignment:** Starting left tackle.
+
+**Sacks allowed:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Derek Kaczmarczyk from Chicago, IL. Cropped by User:Blueag9 ., [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Ray-McDonald-2008-preseason-vsBears.jpg)).*
 
+**Current assignment:** Starting defensive tackle.
+
+**Sacks:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

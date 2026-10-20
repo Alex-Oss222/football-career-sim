@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Bflbarlow, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ricky_Wagners%27s_Senior_Introductions.jpg)).*
 
+**Current assignment:** Starting right tackle.
+
+**Sacks allowed:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

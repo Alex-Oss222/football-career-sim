@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Cyrus_Gray.JPG)).*
 
+**Current assignment:** Reserve running back.
+
 ## Statistics
 
 ### Regular season

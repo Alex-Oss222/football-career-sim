@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels from District of Columbia, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Lorenzo_Alexander_September_2021_(cropped).jpg)).*
 
+**Current assignment:** Reserve inside linebacker.
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Ted Kerwin, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Zak_DeOssie_at_Super_Bowl_XLII_victory_parade.jpg)).*
 
+**Current assignment:** Long snapper.
+
+**Long snaps:** 45 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

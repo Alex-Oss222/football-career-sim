@@ -10,26 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jeremy_Mincey.JPG)).*
 
-## Staff assessment
+**Current assignment:** Starting defensive end.
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 4.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 5.5/10 |
-| Football IQ | 5.5/10 |
-| Get-off | 5.0/10 |
-| Edge speed and bend | 4.5/10 |
-| Power | 6.0/10 |
-| Hand use and counters | 5.5/10 |
-| Edge setting and run defense | 6.0/10 |
-| Block shedding | 5.5/10 |
-| Pursuit | 5.0/10 |
-| Rush plan and recognition | 5.0/10 |
-| Contain discipline | 5.5/10 |
+**Sacks:** 2 (2014, through Week 5).
+
+## Staff assessment
 
 A sturdy edge defender who offers power, run setting and rotational rush work. I see a balanced role player whose speed/bend are less threatening than his physical edge play.
 

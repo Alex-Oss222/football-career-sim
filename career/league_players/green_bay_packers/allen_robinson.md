@@ -10,6 +10,8 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Allen_Robinson_Jan_2019.jpg)).*
 
+**Yards per target:** 7.2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

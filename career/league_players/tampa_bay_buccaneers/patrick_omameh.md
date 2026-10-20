@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Missy Caulk from Saline, MI, United States, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Patrick_Omameh.jpg)).*
 
+**Current assignment:** Starting right guard.
+
+**Sacks allowed:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

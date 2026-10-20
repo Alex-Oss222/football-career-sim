@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Navy photo by Mass Communication Specialist 3rd Class Pyoung K. Yi/Released, Public domain ([source](https://commons.wikimedia.org/wiki/File:Joe_Vellano_(1691317)_(cropped).jpg)).*
 
+**Current assignment:** Starting defensive tackle.
+
+**Sacks:** 5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

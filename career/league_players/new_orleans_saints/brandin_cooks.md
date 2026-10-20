@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Brandin_Cooks.jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 8.7 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

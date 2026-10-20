@@ -10,11 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: SRA Moses Ross, Public domain ([source](https://commons.wikimedia.org/wiki/File:Michael_Vick_at_Eagles_training_camp_2010-08-03.jpg)).*
 
+**Current assignment:** Backup quarterback.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | N.Y. Jets | 34 | 1 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Philadelphia | 33 | 7 | 16 | 369 | 585 | 63.1 | 4,120 | 7.0 | 257.5 | 16 | 17 | 81.0 |
@@ -27,7 +29,7 @@ As of October 5, 2014, after Week 5.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Philadelphia | 33 | 7 | 3 | 70 | 104 | 67.3 | 797 | 7.7 | 265.7 | 5 | 5 | 86.1 |
 

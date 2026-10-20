@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Keenan_Allen_-_2025_Commanders_at_Chargers_(cropped).jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 10.8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

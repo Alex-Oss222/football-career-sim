@@ -10,6 +10,8 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Mike Morris, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Alvin_Bailey_in_2013.jpg)).*
 
+**Current assignment:** Reserve left tackle.
+
 ## Statistics
 
 ### Regular season

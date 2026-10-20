@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:T.J._McDonald.jpg)).*
 
+**Current assignment:** Starting strong safety.
+
+**Passes defended:** 2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

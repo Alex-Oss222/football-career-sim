@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sgt. Ashley Bell, Public domain ([source](https://commons.wikimedia.org/wiki/File:USO_tour_in_Kandahar_Davin_Joseph_130319-A-VM825-473_(cropped).jpg)).*
 
+**Current assignment:** Starting right guard.
+
+**Sacks allowed:** 2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

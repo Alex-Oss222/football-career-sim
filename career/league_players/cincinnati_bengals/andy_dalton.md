@@ -10,11 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Navin75, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andy_Dalton_pass(CROP).jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 67.7 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Cincinnati | 26 | 14 | 4 | 87 | 149 | 58.4 | 1,046 | 7.0 | 261.5 | 2 | 6 | 67.7 |
 | 2013 | Cincinnati | 25 | 14 | 16 | 388 | 619 | 62.7 | 4,370 | 7.1 | 273.1 | 28 | 15 | 88.7 |

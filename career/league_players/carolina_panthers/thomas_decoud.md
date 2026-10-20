@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Staff Sgt. John Johnson, Public domain ([source](https://commons.wikimedia.org/wiki/File:Thomas_DeCoud_2013.jpg)).*
 
+**Current assignment:** Starting free safety.
+
+**Passes defended:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

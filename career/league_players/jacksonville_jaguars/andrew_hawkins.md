@@ -10,27 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: Navin75 derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andrew_hawkins_bengals.jpg)).*
 
-## Staff assessment
+**Current assignment:** Starting Z receiver.
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.0/10 |
-| Strength and power | 3.5/10 |
-| Agility and change of direction | 7.0/10 |
-| Technique | 5.5/10 |
-| Football IQ | 5.5/10 |
-| Release vs press | 4.0/10 |
-| Route running | 6.0/10 |
-| Separation and quickness | 6.5/10 |
-| Long speed | 6.0/10 |
-| Hands | 5.5/10 |
-| Catch radius and contested catches | 3.5/10 |
-| Ball tracking and deep receiving | 4.5/10 |
-| YAC and contact balance | 6.0/10 |
-| Coverage recognition and adjustments | 5.0/10 |
-| Blocking | 3.5/10 |
+**Yards per target:** 7.7 (2014, through Week 5).
+
+## Staff assessment
 
 A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.
 

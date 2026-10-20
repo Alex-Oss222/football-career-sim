@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Chykie_Brown_2011_Stadium_Practice.jpg)).*
 
+**Current assignment:** Reserve cornerback.
+
+**Passes defended:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

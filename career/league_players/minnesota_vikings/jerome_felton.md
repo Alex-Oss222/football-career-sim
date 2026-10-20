@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: United States Marine Corps/Sgt. D.R. Cotton, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jerome_Felton_2013_Pro_Bowl_(cropped).JPG)).*
 
+**Current assignment:** Starting fullback.
+
+**Yards per carry:** 4.7 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

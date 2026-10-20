@@ -8,25 +8,6 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.0/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.5/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.5/10 |
-| Pass-set and mirror | 5.0/10 |
-| Anchor vs power | 5.0/10 |
-| Hand usage and punch | 4.5/10 |
-| Recovery and balance | 5.0/10 |
-| Drive blocking | 5.0/10 |
-| Reach and movement blocking | 4.5/10 |
-| Second-level work | 4.5/10 |
-| Twist and blitz recognition | 5.5/10 |
-| Assignment and penalty consistency | 5.5/10 |
-
 A swing tackle and heavy-package blocker who can recognize the job and cover either edge in a reserve role. I see assignment utility ahead of his recovery ceiling against NFL rushers.
 
 *Staff view, March 31, 2014.*

@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Olivier_Vernon.JPG)).*
 
+**Current assignment:** Starting defensive end.
+
+**Sacks:** 4 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

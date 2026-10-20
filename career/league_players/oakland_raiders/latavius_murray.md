@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Pete Sheffield, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Latavius_Murray.jpg)).*
 
+**Current assignment:** Reserve running back.
+
+**Yards per carry:** 6.6 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

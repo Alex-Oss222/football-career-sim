@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Scott Mecum, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Demarco_Murray_2012_cropped.jpg)).*
 
+**Current assignment:** Starting running back.
+
+**Yards per carry:** 3.6 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -6,6 +6,8 @@
 
 As of September 28, 2014, after Week 4.
 
+**Current assignment:** Reserve cornerback.
+
 ## Statistics
 
 ### Regular season

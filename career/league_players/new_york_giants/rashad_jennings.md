@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Rashad_Jennings.jpg)).*
 
+**Current assignment:** Starting running back.
+
+**Yards per carry:** 5.9 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

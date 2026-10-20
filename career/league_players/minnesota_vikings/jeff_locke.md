@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: MN National Guard, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jeff_Locke.JPG)).*
 
+**Current assignment:** Punter.
+
+**Net punting average:** 38.8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

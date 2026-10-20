@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Matt Morris, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Clinton_McDonald_in_2013.jpg)).*
 
+**Current assignment:** Starting defensive tackle.
+
+**Sacks:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

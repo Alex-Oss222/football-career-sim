@@ -10,6 +10,8 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Eddie_Pleasant.JPG)).*
 
+**Current assignment:** Reserve strong safety.
+
 ## Statistics
 
 ### Regular season

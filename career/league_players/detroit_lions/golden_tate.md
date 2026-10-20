@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Mike Morris, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Golden_Tate_vs._Rams_2013.jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 10.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

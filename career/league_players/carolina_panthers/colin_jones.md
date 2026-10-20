@@ -10,6 +10,8 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Steve Bowles, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Colin_Jones_49ers.jpg)).*
 
+**Current assignment:** Reserve free safety.
+
 ## Statistics
 
 ### Regular season

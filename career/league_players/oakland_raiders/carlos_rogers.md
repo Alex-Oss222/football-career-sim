@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Ray_Rice_run_during_SB_XLVII.jpg : Au Kirk derivative work: Lpdrew, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Carlos_Rogers_in_Super_Bowl_XLVII.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

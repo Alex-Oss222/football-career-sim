@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Staff Sgt. Richard Williams; cropped by User:Blueag9 ., Public domain ([source](https://commons.wikimedia.org/wiki/File:Joe-Thomas_March-2010.jpg)).*
 
+**Current assignment:** Starting left tackle.
+
+**Sacks allowed:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

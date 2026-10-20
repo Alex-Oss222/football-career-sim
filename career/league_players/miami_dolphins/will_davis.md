@@ -6,6 +6,10 @@
 
 As of September 28, 2014, after Week 4.
 
+**Current assignment:** Reserve cornerback.
+
+**Passes defended:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

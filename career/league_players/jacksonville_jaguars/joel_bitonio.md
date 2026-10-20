@@ -10,20 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Joel_Bitonio_(51372881330)_(cropped).jpg)).*
 
-## Staff assessment
+**Current assignment:** Starting left guard.
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 7.0/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 6.5/10 |
-| Football IQ | 6.0/10 |
-| Pass set and balance | 6.5/10 |
-| Run-block drive | 7.0/10 |
-| Length at tackle | 5.0/10 |
+**Sacks allowed:** 0 (2014, through Week 5).
+
+## Staff assessment
 
 A four-year college starter at both tackle spots with a heavy lower body, good short-area quickness and a finished set. Whether he is a tackle or a guard in Jacksonville is Stone's decision; his arm length is unresolved in the record.
 

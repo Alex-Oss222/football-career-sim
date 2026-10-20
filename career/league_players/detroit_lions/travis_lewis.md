@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Kevind810, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Travis_Lewis_at_the_2012_Detroit_Lions_Training_Camp.jpg)).*
 
+**Current assignment:** Reserve middle linebacker.
+
+**Tackles:** 11 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

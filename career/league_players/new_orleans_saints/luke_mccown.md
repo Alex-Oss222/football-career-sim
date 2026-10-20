@@ -10,11 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sgt. Randall A. Clinton, US Marines, Public domain ([source](https://commons.wikimedia.org/wiki/File:Luke_McCown_2009_pregame.jpg)).*
 
+**Current assignment:** Backup quarterback.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | New Orleans | 33 | 7 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | New Orleans | 32 | 7 | 16 | 153 | 237 | 64.6 | 1,872 | 7.9 | 117.0 | 12 | 8 | 91.6 |
@@ -27,7 +29,7 @@ As of October 5, 2014, after Week 5.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | New Orleans | 32 | 7 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 

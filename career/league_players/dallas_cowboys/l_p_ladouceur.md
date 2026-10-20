@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:L._P._Ladouceur.JPG)).*
 
+**Current assignment:** Long snapper.
+
+**Long snaps:** 43 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

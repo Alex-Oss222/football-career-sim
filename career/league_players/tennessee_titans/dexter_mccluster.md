@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Guiltlessgecko, Public domain ([source](https://commons.wikimedia.org/wiki/File:Mccluster_spring_game.jpg)).*
 
+**Current assignment:** Reserve running back.
+
 ## Statistics
 
 ### Regular season

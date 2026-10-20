@@ -10,6 +10,10 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Cooper_Helfet_and_Zach_Miller_at_Seahawks_training_camp_2012.jpg : erocsid derivative work: Arbor to SJ, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Zach_Miller_at_2012_Seahawks_training_camp.jpg)).*
 
+**Current assignment:** Starting tight end.
+
+**Yards per target:** 6.6 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

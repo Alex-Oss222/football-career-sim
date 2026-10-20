@@ -6,6 +6,10 @@
 
 As of October 5, 2014, after Week 5.
 
+**Current assignment:** Reserve middle linebacker.
+
+**Tackles:** 10 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

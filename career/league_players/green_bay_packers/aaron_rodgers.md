@@ -10,11 +10,15 @@ As of October 2, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Aaron_Rodgers_Packers_OCT2021_(cropped).jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 98.5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Green Bay | 30 | 12 | 5 | 109 | 176 | 61.9 | 1,234 | 7.0 | 246.8 | 12 | 3 | 98.5 |
 | 2013 | Green Bay | 29 | 12 | 16 | 383 | 585 | 65.5 | 3,952 | 6.8 | 247.0 | 21 | 18 | 83.9 |

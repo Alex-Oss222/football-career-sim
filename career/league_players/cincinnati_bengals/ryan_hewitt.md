@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Ryan_Hewitt_(American_fotball).JPG)).*
 
+**Current assignment:** Reserve tight end.
+
+**Yards per target:** 12.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

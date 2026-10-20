@@ -8,25 +8,6 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 4.5/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.5/10 |
-| Interior pass protection | 5.5/10 |
-| Anchor and power | 5.5/10 |
-| Hand usage | 5.0/10 |
-| Recovery and balance | 5.0/10 |
-| Drive blocking | 5.5/10 |
-| Pull and movement blocking | 5.0/10 |
-| Combination and second-level work | 6.0/10 |
-| Stunt and blitz recognition | 5.5/10 |
-| Leverage and consistency | 5.0/10 |
-
 A combination-oriented guard whose communication can support a coherent starting unit. I see functional inside strength, with individual leverage and recovery limiting a higher grade.
 
 *Staff view, March 31, 2014.*

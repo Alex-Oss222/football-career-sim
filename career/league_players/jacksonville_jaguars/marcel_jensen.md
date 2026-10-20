@@ -6,20 +6,11 @@
 
 As of October 5, 2014, after Week 5.
 
-## Staff assessment
+**Current assignment:** Reserve tight end.
 
-| Category | Grade |
-|---|---:|
-| Overall | 2.5/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 4.0/10 |
-| Football IQ | 4.5/10 |
-| Size | 6.0/10 |
-| Attached blocking | 4.5/10 |
-| Receiving | 3.5/10 |
+**Yards per target:** 10.0 (2014, through Week 5).
+
+## Staff assessment
 
 A big tight end from Fresno State with size for attached blocking and modest receiving production in a pass-heavy offense.
 

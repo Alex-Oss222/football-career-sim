@@ -10,6 +10,8 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Brian_Folkerts.JPG)).*
 
+**Current assignment:** Reserve center.
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Johnathan_Joseph_and_Todd_Heap.jpg : Keith Allison derivative work: Lpdrew ( talk ), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Johnathan_Joseph_Bengals.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 4 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

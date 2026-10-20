@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Greg_Robinson_(offensive_tackle).jpg)).*
 
+**Current assignment:** Starting left guard.
+
+**Sacks allowed:** 2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

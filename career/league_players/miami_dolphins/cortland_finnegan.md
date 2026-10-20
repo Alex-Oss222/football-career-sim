@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Michele Moore, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cortland_Finnegan_Pro_Bowl_cropped.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

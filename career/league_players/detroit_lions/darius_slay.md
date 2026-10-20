@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Kevind810, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Darius_Slay_On_January_1_2017_(cropped).jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

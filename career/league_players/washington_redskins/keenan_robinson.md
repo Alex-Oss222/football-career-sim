@@ -10,6 +10,10 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Keenan_Robinson_2014.jpg)).*
 
+**Current assignment:** Starting middle linebacker.
+
+**Tackles:** 45 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

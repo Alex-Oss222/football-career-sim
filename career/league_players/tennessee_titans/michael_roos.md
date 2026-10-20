@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Ray Montgomery . Cropped by User:Blueag9 ., [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Michael-Roos-TitansvsPackers-Nov-2-08.jpg)).*
 
+**Current assignment:** Starting left tackle.
+
+**Sacks allowed:** 5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

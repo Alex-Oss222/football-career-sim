@@ -6,6 +6,8 @@
 
 As of October 5, 2014, after Week 5.
 
+**Current assignment:** Reserve outside linebacker.
+
 ## Statistics
 
 ### Regular season

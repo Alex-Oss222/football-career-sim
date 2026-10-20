@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: felicito rustique, jr. derivative: Diddykong1130, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Matt_Tobin_2015.jpg)).*
 
+**Current assignment:** Reserve left guard.
+
 ## Statistics
 
 ### Regular season

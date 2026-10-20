@@ -12,19 +12,6 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall at position | 5.5/10 |
-| Get-off | 5.5/10 |
-| Anchor | 5.5/10 |
-| Power | 6.0/10 |
-| Hand use | 5.0/10 |
-| Block shedding | 5.0/10 |
-| Penetration | 5.5/10 |
-| Pass-rush counters | 4.5/10 |
-| Double-team play | 5.5/10 |
-| Gap discipline and lateral pursuit | 5.5/10 |
-
 Experience across front jobs is recorded, but the individual physical/technical evaluation is thin. A stronger camp pairing elsewhere does not identify his defect or settle his best job.
 
 *Staff view at the 2013 season close, January 14, 2014.*

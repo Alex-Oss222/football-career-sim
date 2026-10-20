@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: BrokenSphere, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Roddy_White_at_Falcons_at_Raiders_11-2-08.JPG)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 12.9 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

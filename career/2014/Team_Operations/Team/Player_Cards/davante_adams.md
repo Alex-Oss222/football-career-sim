@@ -10,20 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Davante_Adams_Cropped.jpg)).*
 
-## Staff assessment
+**Current assignment:** Starting X receiver.
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.0/10 |
-| Athleticism | 6.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 6.5/10 |
-| Football IQ | 6.0/10 |
-| Hands and catch radius | 7.5/10 |
-| Route running | 6.5/10 |
-| Release vs. press | 5.0/10 |
+**Yards per target:** 7.1 (2014, through Week 5).
+
+## Staff assessment
 
 A redshirt-sophomore receiver with a large catch radius, strong hands and route polish at the top of the stem; a record-volume college season in a pass-heavy offense. Long speed is average and his release against NFL press is unproven.
 

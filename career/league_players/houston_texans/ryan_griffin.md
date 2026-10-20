@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Ryan_Griffin_(tight_end).JPG)).*
 
+**Current assignment:** Reserve tight end.
+
+**Yards per target:** 2.2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

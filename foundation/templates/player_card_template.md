@@ -1,3 +1,5 @@
+*Player card template: uploaded by the user on October 20, 2026 and adopted for every player page, built by the shared player-page builder (`runtime/player_pages.py`, run with `scripts/render_player_pages.py`); the worked example is [the Kirk Cousins preview](../../docs/examples/kirk_cousins_player_card_preview.md) and the record of the change is [the rebuild plan](../../docs/rebuild_plan.md) ("The pages to read", Player). The page keeps the photo and its credit below the As of line, as the user approved on the Kirk Cousins page on October 19, 2026. The text below is the user's.*
+
 # [Player name]
 
 **[Team] · [Position] · No. [number if known] · Age [verified age] · [actual roster status]**

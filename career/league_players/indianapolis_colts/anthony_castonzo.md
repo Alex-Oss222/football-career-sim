@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: United States Navy Mass Communication Specialist 1st Class Juan A. King derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Anthony_Castonzo_2016.jpg)).*
 
+**Current assignment:** Starting left tackle.
+
+**Sacks allowed:** 5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

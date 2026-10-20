@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Neon Tommy, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Matt_Kalil_USC.jpg)).*
 
+**Current assignment:** Starting left tackle.
+
+**Sacks allowed:** 4 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kelechi_Osemele_Ravens_Stadium_Practice_2013.jpg)).*
 
+**Current assignment:** Starting left guard.
+
+**Sacks allowed:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

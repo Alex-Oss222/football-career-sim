@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Bradley McDougald, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Bradley_McDougald_2018.JPG)).*
 
+**Current assignment:** Reserve strong safety.
+
+**Passes defended:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

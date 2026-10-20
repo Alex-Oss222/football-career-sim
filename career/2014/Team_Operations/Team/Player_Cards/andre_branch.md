@@ -10,26 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Hector Alejandro, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andre_Branch_(cropped).jpg)).*
 
-## Staff assessment
+**Current assignment:** Starting defensive end.
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.0/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.0/10 |
-| Get-off | 5.5/10 |
-| Edge speed and bend | 5.5/10 |
-| Power | 4.5/10 |
-| Hand use and counters | 4.5/10 |
-| Edge setting and run defense | 4.5/10 |
-| Block shedding | 4.5/10 |
-| Pursuit | 5.5/10 |
-| Rush plan and recognition | 4.0/10 |
-| Contain discipline | 4.5/10 |
+**Sacks:** 1 (2014, through Week 5).
+
+## Staff assessment
 
 A rotational edge defender with useful first-step and pursuit tools. I see a rusher who needs a more developed hand/counter plan and firmer edge work to become a dependable full-time starter.
 

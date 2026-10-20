@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jkt1234, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Knowshon-8602.jpg)).*
 
+**Current assignment:** Reserve running back.
+
+**Yards per carry:** 5.9 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

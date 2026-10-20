@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Chipermc, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Randy_Bullock_2021_09-19.jpg)).*
 
+**Current assignment:** Kicker.
+
+**Field-goal percentage:** 88.9 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

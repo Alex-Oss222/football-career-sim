@@ -10,6 +10,8 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Norman.jpg)).*
 
+**Current assignment:** Reserve cornerback.
+
 ## Statistics
 
 ### Regular season

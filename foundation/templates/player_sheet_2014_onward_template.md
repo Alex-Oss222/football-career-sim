@@ -1,12 +1,13 @@
-# [Player Name] — [Season] NFL Player Sheet (2014 onward)
+# [Player Name] — [Season] full player assessment (2014 onward)
+
+This is the form of a full annual assessment, kept in the player's permanent record (`data/people/players/<id>.json`, `runtime/people.py`), not a page. No page shows it whole: every player page follows the [player card template](player_card_template.md) and shows only this assessment's short staff assessment, never its grades.
 
 **Team:**  
 **Season:**  
-**Profile status:** Working player card  
+**Record:** The player's permanent record, this assessment's entry  
 **Assessment stage:** Opening annual assessment  
-**Evaluation policy:** Exactly two full assessments: this opening baseline, maintained with dated updates through the year, and a separate final assessment after season close. Update statistics after each closed game.  
+**Evaluation policy:** Exactly two full assessments: this opening baseline, maintained with dated updates through the year, and a separate final assessment after season close. Statistics are not part of the assessment; the player page reads them from the closed games after each one.  
 **Checkpoint:**  
-**Age:**  
 **Position:**  
 **NFL standing:**  
 **Player identity:**  
@@ -17,17 +18,17 @@
 > supports a change. A grade summarizes the staff view at this checkpoint; it
 > does not directly set play probabilities, potential, or future development.
 
-## How this card is maintained
+## How this assessment is maintained
 
 Record the opening assessment once, using the previous final assessment and evidence available when this player joins. Retain that original judgment. Spring, camp, preseason and season reports supply specific coaching findings; add a dated update below when they materially change or qualify the staff view. Do not produce another whole-player assessment at each phase or automatically change a grade after a practice.
 
 ### Opening and final modes
 
-Use this same 2014-onward format for both annual assessments. The opening card lives at `career/[year]/Team_Operations/Team/Player_Cards/[player].md`. Keep its initial grades and interpretation intact, append dated coaching updates, and refresh only its statistics after closed games.
+Use this same 2014-onward form for both annual assessments. The opening assessment is kept on the player's permanent record: its grades, comparisons and staff read, whose view it is and when, and its dated coaching updates. Keep its initial grades and interpretation intact and append dated coaching updates to that record entry. `career/[year]/Team_Operations/Team/Player_Cards/[player].md` is his built player page, which shows no grade and no update. Write the assessment's short staff assessment on the same record entry: two to four sentences on his demonstrated level and role, his main strengths and his main limitation, drawn only from this assessment and its dated updates, every current figure written as a token the page reads from the closed games (docs/update_workflow.md, "Player, coaching and film records").
 
-Write the separate final assessment only after the completed season and actual player and coach exit reviews, at `career/[year]/Season_Review/Player_Assessments/[player].md`. Set **Profile status** to `Final annual assessment`, **Assessment stage** to `Final annual assessment`, and **Checkpoint** to the season-close date. Link the same-year opening card and its dated updates beneath the header. Set **Evaluation policy** to `Frozen final assessment; preserve the opening baseline and dated evidence separately.`
+Write the separate final assessment only after the completed season and actual player and coach exit reviews, at `career/[year]/Season_Review/Player_Assessments/[player].md`, with its entry on the permanent record and its own short staff assessment on that entry (the page then shows that short). Set **Assessment stage** to `Final annual assessment` and **Checkpoint** to the season-close date. Link the same-year opening assessment and its dated updates beneath the header. Set **Evaluation policy** to `Frozen final assessment; preserve the opening baseline and dated evidence separately.`
 
-In final mode retain every personnel section below: Overall and position traits, vs. Average / vs. Best / vs. Worst, established player state, year-over-year change, play style, strengths, weaknesses and evidence limits. Write the completed-season staff judgment from the actual work; explain meaningful changes from the opening view in the final-only section below. The year-over-year table compares with the previous year's final assessment. Keep both full yearly statistics tables at the bottom with previous years preserved and the completed season's receipt-derived rows frozen. Link the year's dated updates instead of copying them into another running journal. Do not use the 2013-only position-baseline template for a 2014-onward final assessment.
+In final mode retain every personnel section below: Overall and position traits, vs. Average / vs. Best / vs. Worst, established player state, year-over-year change, play style, strengths, weaknesses and evidence limits. Write the completed-season staff judgment from the actual work; explain meaningful changes from the opening view in the final-only section below. The year-over-year table compares with the previous year's final assessment. The statistics are the player page's, built from the closed games; the assessment cites the figures it relies on rather than copying tables. Link the year's dated updates instead of copying them into another running journal. Do not use the 2013-only position-baseline template for a 2014-onward final assessment.
 
 A departure closes the player's Jacksonville work at its actual date. Retain that evidence and any actual exit review; do not invent the rest of his season or create a third full assessment.
 
@@ -146,23 +147,19 @@ career as an answer key.
 [Simple sentence describing what kind of player he is at this checkpoint.]
 
 
-Keep these two tables at the bottom. Start in 2014 and append one row per
-season (2015, 2016, and onward); preserve the earlier rows. Regular season and
-playoffs stay separate. Use full position-specific counting and rate statistics,
-not only headline totals. Generate totals from that season's receipts.
-Never insert real-world statistics into these history tables.
+The statistics an assessment draws on are on the player page, not in the
+assessment. The page builds them from the closed games: regular season and
+playoffs apart, every row led by Season, Team, Age and #, previous seasons
+kept, a partial season labelled like 2014 (through Week 5), "No regular-season
+games on record." or "No playoff games on record." when there are none, and N/A
+where the records do not hold a field (zero is a recorded count, never a
+substitute). No unplayed season gets a row, and no real-world statistic is
+ever inserted.
 
-Use Not played before a season starts; label partial rows Through Week N or
-Through [playoff round]. At season close freeze the full row. Use No playoff
-appearance when the completed season has none, and Unrecorded where the 
-source genuinely lacks the field. Zero is a recorded count, not a substitute
-for missing data. A multi-position season may add a second position-specific
-block without mixing different metrics under one heading.
-
-Position columns:
+Position columns an assessment may cite:
 
 - QB: G, GS when recorded, CMP, ATT, CMP%, PASS YDS, Y/A, PASS TD, INT,
-  RTG, SCK, SCK YDS, RUSH ATT, RUSH YDS, RUSH TD, FUM, LOST.
+  Passer rating (never QBR), SCK, SCK YDS, RUSH ATT, RUSH YDS, RUSH TD, FUM, LOST.
 - RB/FB: G, GS when recorded, CAR, RUSH YDS, Y/C, RUSH TD, RUSH LNG,
   TGT, REC, REC YDS, Y/R, REC TD, REC LNG, FUM, LOST.
 - WR/TE: G, GS when recorded, TGT, REC, CATCH%, REC YDS, Y/R, REC TD,
@@ -187,35 +184,14 @@ Best and worst still mean trait-specific, opportunity-qualified references in
 the checkpoint's NFL season, not one universal best or a one-snap worst player.
 Current grades require current recorded evidence. Reuse the prior established
 player, including the completed 2013 baseline, without manufacturing change.
-Create the opening card when the player joins the controlled roster. Keep dated coaching updates here and write the separate final assessment only after season close; do not populate future statistics ahead of play.
+Create the opening assessment on his record when the player joins the controlled roster. Keep dated coaching updates on that record entry and write the separate final assessment only after season close.
 
 ## Change from the opening assessment
 
-[Final mode only. Compare the opening view with the completed season: what the player could do reliably, what changed in his technique or decisions, how he fit the jobs actually assigned, and what remained untested. Explain any revised grade with dated football evidence and contrary observations. Include actual player and coach exit-review findings without inventing their statements. Link the preserved opening card and relevant reports. Omit this section from the opening card.]
+[Final mode only. Compare the opening view with the completed season: what the player could do reliably, what changed in his technique or decisions, how he fit the jobs actually assigned, and what remained untested. Explain any revised grade with dated football evidence and contrary observations. Include actual player and coach exit-review findings without inventing their statements. Link the preserved opening assessment and relevant reports. Omit this section from the opening assessment.]
 
 ## Dated coaching updates
 
 ### [Actual date] | [Work that changed or qualified the view]
 
-[State the job, what the linked phase/game record demonstrated, the staff's interpretation and the next useful check. Preserve contrary evidence and the limits of the opportunity. A new role is recorded only when actually decided. This is an update to the opening assessment, not a fresh overall assessment or another grade table. Opening mode only; omit until there is a material update. In final mode link these notes from the opening card rather than duplicate them.]
-
-## Previous-season production
-
-| Statistic | [Previous season] regular season | [Previous season] playoffs |
-| --- | --- | --- |
-| [Position-specific statistic] | [Recorded value or Unrecorded] | [Recorded value or Unrecorded] |
-
-Keep the following two yearly statistics tables at the bottom. Use the selected
-position's complete columns, beginning with 2014 and appending later years.
-
-## Regular-season statistics by year
-
-| Season | Team(s) | [Position-specific regular-season stat columns] |
-| --- | --- | --- |
-| 2014 | Not played | Not played |
-
-## Playoff statistics by year
-
-| Season | Team(s) | [Position-specific playoff stat columns] |
-| --- | --- | --- |
-| 2014 | Not played | Not played |
+[State the job, what the linked phase/game record demonstrated, the staff's interpretation and the next useful check. Preserve contrary evidence and the limits of the opportunity. A new role is recorded only when actually decided. This is an update to the opening assessment, not a fresh overall assessment or another grade table. Opening mode only; omit until there is a material update. In final mode link these notes from the opening assessment rather than duplicate them.]

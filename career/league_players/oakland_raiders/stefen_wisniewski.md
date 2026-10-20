@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: U.S. Air Force Staff Sgt. Danielle Quilla, Public domain ([source](https://commons.wikimedia.org/wiki/File:Stefen_Wisniewski_2019_(cropped).jpg)).*
 
+**Current assignment:** Starting center.
+
+**Sacks allowed:** 5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

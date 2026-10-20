@@ -10,27 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brynden_Trawick.JPG)).*
 
-## Staff assessment
+**Current assignment:** Starting safety.
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.5/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 3.5/10 |
-| Football IQ | 5.5/10 |
-| Range | 4.5/10 |
-| Speed and change of direction | 4.5/10 |
-| Route-combination recognition | 3.5/10 |
-| Deep positioning | 3.5/10 |
-| Man and slot coverage | 3.0/10 |
-| Ball skills | 3.5/10 |
-| Tackling | 5.0/10 |
-| Run support and angles | 5.0/10 |
-| Communication | 5.5/10 |
-| Play-action discipline | 3.5/10 |
+**Passes defended:** 1 (2014, through Week 5).
+
+## Staff assessment
 
 A physical developmental safety whose coverage-unit communication and run-support tools offer a path to playing time. I see his defensive recognition and coverage positioning as less developed.
 

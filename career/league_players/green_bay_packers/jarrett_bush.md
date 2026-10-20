@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Jarrett_Bush_with_U.S._Sailors_and_Marines.jpg : MC2 Joshua Mann derivative work: Delaywaves talk • contribs, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jarrett_Bush_with_U.S._Sailors_and_Marines_CROP.jpg)).*
 
+**Current assignment:** Reserve cornerback.
+
+**Passes defended:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

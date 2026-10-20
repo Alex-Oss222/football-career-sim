@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Samson_Satele_2014.JPG)).*
 
+**Current assignment:** Starting center.
+
+**Sacks allowed:** 2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jermaine_Kearse_2014.JPG)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 8.9 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Tulane Public Relations, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jonathan_Casillas_Saints_parade.jpg)).*
 
+**Current assignment:** Starting strongside linebacker.
+
+**Tackles:** 40 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

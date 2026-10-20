@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: MN National Guard, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:John_Carlson_2013.JPG)).*
 
+**Current assignment:** Starting tight end.
+
+**Yards per target:** 16.8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

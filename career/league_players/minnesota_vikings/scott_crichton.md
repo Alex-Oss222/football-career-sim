@@ -10,6 +10,8 @@ As of October 2, 2014, after Week 5.
 
 *Photo: conway_ba, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Crichton_Wisconsin_at_Oregon_State_2012.jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
 ## Statistics
 
 ### Regular season

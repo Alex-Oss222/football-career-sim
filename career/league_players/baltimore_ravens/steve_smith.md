@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Melanie Rodgers Cox, Public domain ([source](https://commons.wikimedia.org/wiki/File:Steve_Smith_Sr._2015_(cropped).jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 7.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

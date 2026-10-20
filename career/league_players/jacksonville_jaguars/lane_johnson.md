@@ -6,26 +6,11 @@
 
 As of October 5, 2014, after Week 5.
 
-## Staff assessment
+**Current assignment:** Starting right tackle.
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 7.0/10 |
-| Speed | 7.0/10 |
-| Strength and power | 6.5/10 |
-| Agility and change of direction | 7.0/10 |
-| Technique | 6.0/10 |
-| Football IQ | 6.5/10 |
-| Pass-set and mirror | 6.5/10 |
-| Anchor vs power | 6.0/10 |
-| Hand usage and punch | 6.0/10 |
-| Recovery and balance | 6.5/10 |
-| Drive blocking | 6.5/10 |
-| Reach and movement blocking | 7.0/10 |
-| Second-level work | 6.5/10 |
-| Twist and blitz recognition | 6.5/10 |
-| Assignment and penalty consistency | 6.0/10 |
+**Sacks allowed:** 3 (2014, through Week 5).
+
+## Staff assessment
 
 An athletic starting right tackle who can move on reach and second-level work and retain taught protection answers. I see leverage, hand precision and consistent anchoring as the remaining limits of his rookie profile.
 

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kevin_Minter.JPG)).*
 
+**Current assignment:** Starting inside linebacker.
+
+**Tackles:** 20 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

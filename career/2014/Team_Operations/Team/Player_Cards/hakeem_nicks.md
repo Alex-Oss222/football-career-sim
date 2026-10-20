@@ -10,27 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Hakeem_Nicks.JPG)).*
 
-## Staff assessment
+**Current assignment:** Fifth receiver and X relief.
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 6.0/10 |
-| Speed | 5.5/10 |
-| Strength and power | 7.0/10 |
-| Agility and change of direction | 5.5/10 |
-| Technique | 6.5/10 |
-| Football IQ | 6.5/10 |
-| Release vs press | 6.5/10 |
-| Route running | 6.5/10 |
-| Separation and quickness | 5.5/10 |
-| Long speed | 5.5/10 |
-| Hands | 7.0/10 |
-| Catch radius and contested catches | 7.5/10 |
-| Ball tracking and deep receiving | 7.0/10 |
-| YAC and contact balance | 6.0/10 |
-| Coverage recognition and adjustments | 6.5/10 |
-| Blocking | 5.5/10 |
+## Staff assessment
 
 A physical outside receiver who wins through hands, catch-point strength and route timing. My starting view is that he offers more contested-catch value than sudden separation.
 

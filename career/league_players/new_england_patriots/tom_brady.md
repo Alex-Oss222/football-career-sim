@@ -10,11 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Congressman Charlie Crist, Public domain ([source](https://commons.wikimedia.org/wiki/File:Tom_Brady_2021.png)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 104.7 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | New England | 37 | 12 | 5 | 96 | 141 | 68.1 | 1,053 | 7.5 | 210.6 | 10 | 3 | 104.7 |
 | 2013 | New England | 36 | 12 | 16 | 367 | 579 | 63.4 | 3,831 | 6.6 | 239.4 | 22 | 16 | 83.6 |

@@ -6,27 +6,11 @@
 
 As of October 5, 2014, after Week 5.
 
-## Staff assessment
+**Current assignment:** Starting linebacker.
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 4.0/10 |
-| Agility and change of direction | 5.5/10 |
-| Technique | 4.0/10 |
-| Football IQ | 4.0/10 |
-| Run diagnosis | 4.0/10 |
-| Fit discipline | 4.0/10 |
-| Block destruction | 4.0/10 |
-| Range | 5.5/10 |
-| Tackling | 4.5/10 |
-| Zone coverage | 4.0/10 |
-| Man coverage | 3.5/10 |
-| Blitz and pressure | 4.0/10 |
-| Communication | 4.5/10 |
-| Pursuit angles | 5.0/10 |
+**Tackles:** 25 (2014, through Week 5).
+
+## Staff assessment
 
 A mobile reserve linebacker who can cover space and take a defined replacement assignment. I see limited block destruction and coverage detail as the barriers to a larger base role.
 

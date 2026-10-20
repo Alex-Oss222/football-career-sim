@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: User:PantherFan86, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Carolina_Panthers_Tight_End_Brandon_Williams_warming_up-_2014-04-25_07-18.png)).*
 
+**Current assignment:** Reserve tight end.
+
+**Yards per target:** 10.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

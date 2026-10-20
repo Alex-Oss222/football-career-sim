@@ -6,27 +6,9 @@
 
 As of October 5, 2014, after Week 5.
 
-## Staff assessment
+**Passes defended:** 0 (2014, through Week 5).
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.0/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 5.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.5/10 |
-| Long and recovery speed | 5.0/10 |
-| Short-area quickness and hips | 5.5/10 |
-| Press coverage | 4.5/10 |
-| Off-man coverage | 5.0/10 |
-| Zone and pattern match | 5.0/10 |
-| Route recognition and eyes | 4.5/10 |
-| Ball skills | 4.5/10 |
-| Catch-point play | 4.5/10 |
-| Tackling and run support | 5.0/10 |
-| Block defeat and penalty discipline | 4.5/10 |
+## Staff assessment
 
 A replacement starter or reserve corner who can execute a bounded outside role. I see usable movement without a defining press, ball or catch-point advantage.
 

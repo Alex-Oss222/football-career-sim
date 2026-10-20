@@ -6,6 +6,10 @@
 
 As of October 5, 2014, after Week 5.
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

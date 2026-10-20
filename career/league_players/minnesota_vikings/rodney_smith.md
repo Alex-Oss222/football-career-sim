@@ -10,6 +10,8 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Cmm3, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:81,_Rodney_Smith,_Aug_2,_2018.jpg)).*
 
+**Yards per target:** 3.9 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

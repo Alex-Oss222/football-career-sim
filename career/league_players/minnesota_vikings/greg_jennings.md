@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Gabriel Cervantes, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Greg_Jennings-1.jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 5.4 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

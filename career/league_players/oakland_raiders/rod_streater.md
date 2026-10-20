@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: U.S. Air National Guard Photo by Master Sgt. Brandy Fowler, Public domain ([source](https://commons.wikimedia.org/wiki/File:Rod_Streater_(4664329)_(cropped).jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 5.8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

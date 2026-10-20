@@ -10,6 +10,10 @@ As of October 6, 2014, after Week 5.
 
 *Photo: derivative work: Blueag9 ( talk ) File:Brian-Orakpo-UT-vs-A&M-11-27-08.jpg : Enoch Lai, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brian-Orakpo-UT-vs-A%26M-11-27-08_(2).jpg)).*
 
+**Current assignment:** Starting outside linebacker.
+
+**Tackles:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

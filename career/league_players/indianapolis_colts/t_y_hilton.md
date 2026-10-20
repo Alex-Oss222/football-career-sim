@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Nothingxs, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:T.Y._Hilton_-_2008_Shula_Bowl.png)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 7.2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jamar_Taylor_2017_preseason_(cropped).jpg)).*
 
+**Current assignment:** Reserve cornerback.
+
+**Passes defended:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Phil Roeder, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:UTEP_QB_throws_under_pressure_from_Chris_Borland2.jpg)).*
 
+**Current assignment:** Reserve inside linebacker.
+
+**Tackles:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

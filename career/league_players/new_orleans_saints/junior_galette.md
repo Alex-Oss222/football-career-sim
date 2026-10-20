@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sareineb, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Junior_Galette_For_the_Love_of_Football.png)).*
 
+**Current assignment:** Starting outside linebacker.
+
+**Tackles:** 19 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

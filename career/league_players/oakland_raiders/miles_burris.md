@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Miles_Burris.JPG)).*
 
+**Current assignment:** Starting middle linebacker.
+
+**Tackles:** 42 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Rafael_Bush.JPG)).*
 
+**Current assignment:** Reserve free safety.
+
 ## Statistics
 
 ### Regular season

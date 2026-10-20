@@ -10,27 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Adam_Thielen_2017.jpg)).*
 
-## Staff assessment
+**Current assignment:** Starting H receiver.
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.0/10 |
-| Strength and power | 6.5/10 |
-| Agility and change of direction | 5.5/10 |
-| Technique | 7.0/10 |
-| Football IQ | 8.0/10 |
-| Release vs press | 6.0/10 |
-| Route running | 9.0/10 |
-| Separation and quickness | 6.5/10 |
-| Long speed | 6.0/10 |
-| Hands | 7.5/10 |
-| Catch radius and contested catches | 7.5/10 |
-| Ball tracking and deep receiving | 6.0/10 |
-| YAC and contact balance | 6.5/10 |
-| Coverage recognition and adjustments | 6.0/10 |
-| Blocking | 6.5/10 |
+**Yards per target:** 6.0 (2014, through Week 5).
+
+## Staff assessment
 
 Route technician with a possession-receiver frame and a developed understanding of leverage. Thielen varies the pace of his stem, keeps defensive backs from sitting on the break point and can change the picture late by leaning on leverage before snapping the route away from it. He is comfortable working option routes, crossers, digs, outs and intermediate in-breakers, and he finds space against zone without drifting off the quarterback's timing. His separation comes more from setup, tempo and body positioning than sudden change of direction. He has dependable hands, can extend outside his frame and competes through contact at the catch point. He has enough speed to threaten a corner who squats on underneath routes, but he is not built around winning repeated vertical footraces, and his deep tracking is less advanced than his work in the short and intermediate game. Against press, he has functional answers but does not consistently create an immediate clean release with burst alone. After the catch he is direct and balanced rather than especially elusive. He is assignment-sound as a blocker and can stay attached when his angle is right. His best value comes as a receiver who can move across the formation, read coverage with the quarterback and stay on schedule while creating separation through route detail.
 

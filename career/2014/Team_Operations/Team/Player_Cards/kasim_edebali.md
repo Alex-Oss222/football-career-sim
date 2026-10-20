@@ -10,20 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Kasim_Edebali.JPG)).*
 
-## Staff assessment
+**Current assignment:** Reserve defensive end.
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.5/10 |
-| Motor | 6.0/10 |
-| Length | 3.5/10 |
-| Rush plan | 4.5/10 |
+## Staff assessment
 
 A German-born edge rusher with motor and hand activity, a productive senior season and a shorter frame.
 

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Andre_Williams_(American_football)_2012.jpg)).*
 
+**Current assignment:** Reserve running back.
+
+**Yards per carry:** 4.2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

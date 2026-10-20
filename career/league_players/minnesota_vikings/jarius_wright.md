@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Joe Bielawa, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jarius_Wright.jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 3.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

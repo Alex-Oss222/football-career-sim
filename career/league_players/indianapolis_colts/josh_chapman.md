@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Matthew Tosh, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:JoshChapman2011.jpg)).*
 
+**Current assignment:** Starting nose tackle.
+
+**Sacks:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Air Force photo/Airman 1st Class Rae Perry, Public domain ([source](https://commons.wikimedia.org/wiki/File:Dwayne_Harris,_2009_(cropped).jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 10.2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

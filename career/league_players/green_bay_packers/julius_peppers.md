@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: United States Marine Corps/Sgt. D.R. Cotton, Public domain ([source](https://commons.wikimedia.org/wiki/File:Julius_Peppers_(cropped).JPG)).*
 
+**Current assignment:** Starting outside linebacker.
+
+**Sacks:** 5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

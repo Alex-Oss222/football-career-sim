@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Joe_Flacco_under_center_vs_Pittsburgh_Steelers_12-2-12.jpg : Au Kirk derivative work: Lpdrew, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cortez_Allen.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

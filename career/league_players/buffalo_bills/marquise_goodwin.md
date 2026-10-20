@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Tab59 from Düsseldorf, Allemagne, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Marquise_Goodwin_2012_Olympics.jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 14.5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

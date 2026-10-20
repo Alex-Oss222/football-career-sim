@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Brian Allen for Voice of America, Public domain ([source](https://commons.wikimedia.org/wiki/File:Joe_Thuney_and_Beau_Allen_Super_Bowl_LII_85F9D5D.jpg)).*
 
+**Current assignment:** Reserve nose tackle.
+
+**Sacks:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

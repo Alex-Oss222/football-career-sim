@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: (U.S. Navy photo by Mass Communication Specialist 2nd Class Timothy Schumaker/Released), Public domain ([source](https://commons.wikimedia.org/wiki/File:Tommy_Bohanon_(cropped).jpg)).*
 
+**Current assignment:** Starting fullback.
+
+**Yards per carry:** 5.2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

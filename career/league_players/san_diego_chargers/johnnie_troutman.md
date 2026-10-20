@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: MC3 Omar Powell, Public domain ([source](https://commons.wikimedia.org/wiki/File:Johnnie_Troutman_(cropped).jpg)).*
 
+**Current assignment:** Starting right guard.
+
+**Sacks allowed:** 2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

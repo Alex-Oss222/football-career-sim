@@ -10,26 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Marcedes_Lewis_2014.jpg)).*
 
-## Staff assessment
+**Current assignment:** Starting tight end.
 
-| Category | Grade |
-|---|---:|
-| Overall | 7.0/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.0/10 |
-| Strength and power | 7.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 7.0/10 |
-| Football IQ | 6.5/10 |
-| Route running and separation | 6.0/10 |
-| Hands and catch radius | 7.0/10 |
-| Contested catch and ball tracking | 7.0/10 |
-| YAC | 5.5/10 |
-| Run blocking | 7.5/10 |
-| Pass protection and chip | 7.0/10 |
-| Alignment versatility | 7.0/10 |
-| Speed and athleticism | 5.0/10 |
-| Coverage recognition | 6.5/10 |
+**Yards per target:** 7.2 (2014, through Week 5).
+
+## Staff assessment
 
 A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.
 

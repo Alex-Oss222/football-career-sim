@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Chad_Greenway_(2).JPG)).*
 
+**Current assignment:** Starting weakside linebacker.
+
+**Tackles:** 47 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

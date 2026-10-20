@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: John Martinez Pavliga derivative: Diddykong1130, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jeremy_Ross_Golden_Bears.jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 7.8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

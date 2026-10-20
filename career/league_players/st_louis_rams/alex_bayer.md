@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: David, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Alex_Bayer_(8334388522)_(cropped).jpg)).*
 
+**Current assignment:** Reserve tight end.
+
+**Yards per target:** 5.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

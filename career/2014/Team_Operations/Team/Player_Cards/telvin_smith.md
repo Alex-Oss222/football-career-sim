@@ -10,20 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jacksonville Sheriff's Office, Public domain ([source](https://commons.wikimedia.org/wiki/File:Telvin_Smith.png)).*
 
-## Staff assessment
+**Current assignment:** Reserve linebacker.
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 7.0/10 |
-| Speed | 7.5/10 |
-| Strength and power | 4.0/10 |
-| Agility and change of direction | 7.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.5/10 |
-| Range and pursuit | 7.5/10 |
-| Coverage instincts | 6.0/10 |
-| Taking on blocks | 3.5/10 |
+**Tackles:** 2 (2014, through Week 5).
+
+## Staff assessment
 
 A lean, fast linebacker who played weak side in 2013 after two platoon seasons inside; range, pursuit and ball skills are his case, and his 218-pound frame is the question in the run game.
 

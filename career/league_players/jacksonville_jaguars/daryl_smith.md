@@ -10,27 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Daryl_Smith.JPG)).*
 
-## Staff assessment
+**Current assignment:** Starting linebacker.
 
-| Category | Grade |
-|---|---:|
-| Overall | 7.0/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 7.0/10 |
-| Football IQ | 8.0/10 |
-| Run diagnosis | 7.5/10 |
-| Fit discipline | 7.0/10 |
-| Block destruction | 6.0/10 |
-| Range | 6.5/10 |
-| Tackling | 7.0/10 |
-| Zone coverage | 7.0/10 |
-| Man coverage | 6.0/10 |
-| Blitz and pressure | 5.5/10 |
-| Communication | 8.0/10 |
-| Pursuit angles | 7.0/10 |
+**Tackles:** 48 (2014, through Week 5).
+
+## Staff assessment
 
 A complete second-level veteran whose communication, diagnosis and zone awareness organize the defense. I see a strong starter whose value is reading and coordinating rather than being a featured pressure player.
 

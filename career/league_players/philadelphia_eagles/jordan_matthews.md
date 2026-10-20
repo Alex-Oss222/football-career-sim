@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: United States Army, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jordan_Matthews_Vanderbilt_US_Army_photo_(cropped).jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 6.2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

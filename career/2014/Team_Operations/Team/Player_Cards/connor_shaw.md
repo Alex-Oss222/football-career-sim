@@ -8,19 +8,6 @@ As of August 31, 2014.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 6.0/10 |
-| Speed | 6.0/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 6.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.5/10 |
-| Arm strength | 4.0/10 |
-| Mobility | 6.5/10 |
-| Decision-making | 5.5/10 |
-
 A four-year college starting quarterback with mobility, ball security and a record of winning; arm strength and size are ordinary.
 
 *Staff view, May 11, 2014; dated updates through August 1, 2014.*

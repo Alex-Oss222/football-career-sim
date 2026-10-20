@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: FF Swami, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Darren_Fells_in_2014.jpg)).*
 
+**Current assignment:** Reserve tight end.
+
 ## Statistics
 
 ### Regular season

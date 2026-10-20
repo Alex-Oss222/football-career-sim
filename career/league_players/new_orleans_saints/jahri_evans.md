@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Ed Schipul, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jahri_Evans_2007.jpg)).*
 
+**Current assignment:** Starting right guard.
+
+**Sacks allowed:** 2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

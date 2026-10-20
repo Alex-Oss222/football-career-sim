@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Christian_Kirksey_Cleveland_Browns_New_Uniform_Unveiling_(17153806041).jpg)).*
 
+**Current assignment:** Reserve weakside linebacker.
+
+**Tackles:** 2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

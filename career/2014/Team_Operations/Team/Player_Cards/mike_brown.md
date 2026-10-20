@@ -12,26 +12,6 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 4.5/10 |
-| Strength and power | 3.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 4.5/10 |
-| Release vs press | 4.0/10 |
-| Route running | 5.0/10 |
-| Separation and quickness | 5.0/10 |
-| Long speed | 4.5/10 |
-| Hands | 5.0/10 |
-| Catch radius and contested catches | 4.0/10 |
-| Ball tracking and deep receiving | 4.0/10 |
-| YAC and contact balance | 5.0/10 |
-| Coverage recognition and adjustments | 4.5/10 |
-| Blocking | 3.5/10 |
-
 A short-area reserve receiver who can work underneath routes and offer modest run-after-catch utility. I see depth rather than a receiver I would feature against press or at the catch point.
 
 *Staff view, March 31, 2014.*

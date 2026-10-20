@@ -10,26 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Roy_Miller_(American_football).JPG)).*
 
-## Staff assessment
+**Current assignment:** Starting defensive tackle.
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.0/10 |
-| Athleticism | 4.5/10 |
-| Speed | 3.5/10 |
-| Strength and power | 7.0/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 5.5/10 |
-| Football IQ | 5.5/10 |
-| Get-off | 5.0/10 |
-| Anchor | 7.0/10 |
-| Power | 7.0/10 |
-| Hand use | 5.5/10 |
-| Block shedding | 6.5/10 |
-| Penetration | 4.5/10 |
-| Pass-rush counters | 4.0/10 |
-| Double-team play | 7.0/10 |
-| Gap discipline and lateral pursuit | 5.5/10 |
+**Sacks:** 1 (2014, through Week 5).
+
+## Staff assessment
 
 A run-priority interior anchor built to occupy blocks and hold the front. I see his double-team and power work ahead of penetration and developed pass-rush counters.
 

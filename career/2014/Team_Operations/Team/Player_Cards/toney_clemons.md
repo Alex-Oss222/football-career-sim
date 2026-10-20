@@ -8,26 +8,6 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.5/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.0/10 |
-| Release vs press | 4.5/10 |
-| Route running | 4.5/10 |
-| Separation and quickness | 5.0/10 |
-| Long speed | 5.5/10 |
-| Hands | 4.5/10 |
-| Catch radius and contested catches | 5.0/10 |
-| Ball tracking and deep receiving | 5.0/10 |
-| YAC and contact balance | 4.5/10 |
-| Coverage recognition and adjustments | 4.0/10 |
-| Blocking | 4.5/10 |
-
 A reserve outside receiver with more vertical utility than polished route detail. I see situational depth who needs cleaner adjustments and dependable catch execution to claim a larger job.
 
 *Staff view, March 31, 2014.*

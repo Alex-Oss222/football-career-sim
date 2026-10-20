@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Shotgun Spratling, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Nickell_Robey_USC_2010.jpg)).*
 
+**Current assignment:** Reserve cornerback.
+
 ## Statistics
 
 ### Regular season

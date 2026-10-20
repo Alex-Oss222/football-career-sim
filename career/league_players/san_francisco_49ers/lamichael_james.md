@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Obamafan70 at English Wikipedia, Public domain ([source](https://commons.wikimedia.org/wiki/File:Lamichael_james606.jpg)).*
 
+**Yards per carry:** 7.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

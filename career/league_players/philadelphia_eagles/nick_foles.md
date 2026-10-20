@@ -10,11 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Governor Tom Wolf from Harrisburg, PA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Nick_Foles_Philadelphia_Eagles_Super_Bowl_LII_Victory_Parade_(40140602902)_(cropped1).jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 91.1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Philadelphia | 25 | 9 | 5 | 114 | 185 | 61.6 | 1,334 | 7.2 | 266.8 | 8 | 3 | 91.1 |
 | 2013 | Philadelphia | 24 | 9 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
@@ -27,7 +31,7 @@ As of October 5, 2014, after Week 5.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Philadelphia | 24 | 9 | 3 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 

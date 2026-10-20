@@ -10,20 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: U.S. Army Photo by Sgt. 1st Class Michel Sauret on behalf of 416th Theater Engineer Command Army Reserve derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Christian_Jones_bears.jpg)).*
 
-## Staff assessment
+**Current assignment:** Reserve linebacker.
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Size and length | 6.5/10 |
-| Diagnosis and instincts | 4.0/10 |
-| Coverage-unit fit | 5.5/10 |
+## Staff assessment
 
 A big linebacker who played middle and outside at Florida State, with size for a SAM role and coverage-unit experience; instincts and change of direction are the questions.
 

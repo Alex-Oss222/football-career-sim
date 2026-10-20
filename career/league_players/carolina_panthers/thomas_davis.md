@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: Spc. Klinton Smith of the 3d U.S. Infantry Regiment of the United States Army derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Thomas_davis_2014.jpg)).*
 
+**Current assignment:** Starting weakside linebacker.
+
+**Tackles:** 49 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

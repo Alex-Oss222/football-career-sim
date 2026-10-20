@@ -10,6 +10,8 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Keith Lovett, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Akeem_Jordan.jpg)).*
 
+**Current assignment:** Reserve middle linebacker.
+
 ## Statistics
 
 ### Regular season

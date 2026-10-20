@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Navin75, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Sean_Porter.jpg)).*
 
+**Current assignment:** Reserve weakside linebacker.
+
 ## Statistics
 
 ### Regular season

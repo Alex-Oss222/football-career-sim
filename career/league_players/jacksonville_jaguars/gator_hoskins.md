@@ -10,20 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Gator_Hoskins.JPG)).*
 
-## Staff assessment
+**Current assignment:** Reserve tight end.
 
-| Category | Grade |
-|---|---:|
-| Overall | 2.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.0/10 |
-| Football IQ | 4.5/10 |
-| Receiving | 5.0/10 |
-| Movable alignment | 5.0/10 |
-| Blocking | 3.5/10 |
+## Staff assessment
 
 An H-back tight end (Harold Hoskins) with receiving production at Marshall and a movable alignment profile; blocking is unproven.
 

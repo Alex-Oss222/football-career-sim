@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Malcom_Floyd.JPG)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 4.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

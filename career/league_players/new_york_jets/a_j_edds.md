@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Staff Sgt. Matt Scotten, Public domain ([source](https://commons.wikimedia.org/wiki/File:A._J._Edds_(518168)_(cropped).jpg)).*
 
+**Tackles:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

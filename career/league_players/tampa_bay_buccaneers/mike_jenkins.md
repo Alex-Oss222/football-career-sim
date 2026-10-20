@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Bigcats lair ( talk ), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Jenkins_with_mouthguard.JPG)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

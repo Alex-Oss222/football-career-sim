@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: scott mecum, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Lance_Dunbar.jpg)).*
 
+**Current assignment:** Reserve running back.
+
+**Yards per carry:** 6.8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

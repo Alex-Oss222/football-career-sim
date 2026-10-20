@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Air Force photo by Staff Sgt. Benjamin Hughes/Released, Public domain ([source](https://commons.wikimedia.org/wiki/File:Anquan_Boldin_at_McDaniel_College_in_2010.JPG)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 6.7 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

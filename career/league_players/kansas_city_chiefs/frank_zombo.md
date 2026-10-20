@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Gabriel Cervantes, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Frank_Zombo.jpg)).*
 
+**Current assignment:** Reserve outside linebacker.
+
 ## Statistics
 
 ### Regular season

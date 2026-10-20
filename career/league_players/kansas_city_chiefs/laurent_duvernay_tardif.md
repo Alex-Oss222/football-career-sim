@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Laurent_Duvernay-Tardif_2017.JPG)).*
 
+**Current assignment:** Reserve left guard.
+
 ## Statistics
 
 ### Regular season

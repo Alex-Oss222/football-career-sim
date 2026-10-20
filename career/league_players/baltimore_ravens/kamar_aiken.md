@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Kamar_Aiken.jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 11.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

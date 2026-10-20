@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Spc. Kathryn Summerhill, U.S. Army Civil Affairs and Psychological Operations Command (Airborne), Public domain ([source](https://commons.wikimedia.org/wiki/File:Thomas_Keiser_Carolina_Panthers_2011.jpg)).*
 
+**Current assignment:** Reserve strongside linebacker.
+
 ## Statistics
 
 ### Regular season

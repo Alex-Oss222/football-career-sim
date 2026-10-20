@@ -10,27 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Lance Cpl. Matthew Bragg, Public domain ([source](https://commons.wikimedia.org/wiki/File:Paul_Posluszny_2014_Pro_Bowl.jpg)).*
 
-## Staff assessment
+**Current assignment:** Starting linebacker.
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 6.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 7.0/10 |
-| Football IQ | 7.5/10 |
-| Run diagnosis | 7.5/10 |
-| Fit discipline | 7.0/10 |
-| Block destruction | 6.5/10 |
-| Range | 5.5/10 |
-| Tackling | 7.0/10 |
-| Zone coverage | 5.5/10 |
-| Man coverage | 4.5/10 |
-| Blitz and pressure | 5.0/10 |
-| Communication | 7.5/10 |
-| Pursuit angles | 6.0/10 |
+**Tackles:** 31 (2014, through Week 5).
+
+## Staff assessment
 
 An instinctive middle linebacker who can set fits, communicate the front and finish inside tackles. I see downhill work as stronger than isolated man coverage or recovery range.
 

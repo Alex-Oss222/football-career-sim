@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: NYCMarines, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_DeVito_Marine_Corps.jpg)).*
 
+**Current assignment:** Starting defensive end.
+
+**Sacks:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

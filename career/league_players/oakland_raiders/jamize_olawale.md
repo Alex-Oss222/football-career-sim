@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Pete Sheffield, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jamize_Olawale.jpg)).*
 
+**Current assignment:** Reserve fullback.
+
+**Yards per carry:** 25.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

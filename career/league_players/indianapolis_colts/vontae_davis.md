@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: FanDuel, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Vontae_Davis_2018_01.png)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 6 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

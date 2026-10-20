@@ -10,20 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cornelius_Lucas_WFT_2021_training_camp_(cropped).jpg)).*
 
-## Staff assessment
+**Current assignment:** Reserve tackle.
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 4.0/10 |
-| Speed | 3.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 3.5/10 |
-| Technique | 3.5/10 |
-| Football IQ | 4.5/10 |
-| Length | 7.0/10 |
-| Bend and knee flexibility | 3.0/10 |
-| Set consistency | 3.5/10 |
+## Staff assessment
 
 A very large developmental tackle with length and a raw set; measurements conflict in the sources, and he was measured at the combine on crutches after a foot stress fracture in pre-combine training.
 

@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Whiskeytango88, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brandon_LaFell_Panthers.jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
 ## Statistics
 
 ### Regular season

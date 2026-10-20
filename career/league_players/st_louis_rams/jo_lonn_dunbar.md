@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Tulane Public Relations, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jo-Lonn_Dunbar_Saints_victory_parade.jpg)).*
 
+**Current assignment:** Starting outside linebacker.
+
+**Tackles:** 20 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

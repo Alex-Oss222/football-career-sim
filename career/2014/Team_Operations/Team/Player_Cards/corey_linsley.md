@@ -10,20 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Corey_Linsley.jpg)).*
 
-## Staff assessment
+**Current assignment:** Reserve center.
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.0/10 |
-| Strength and power | 7.5/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 6.0/10 |
-| Football IQ | 6.0/10 |
-| Anchor and strength | 7.5/10 |
-| Protection identification | 6.0/10 |
-| Reach and second-level movement | 4.0/10 |
+## Staff assessment
 
 A fifth-year senior center with rare weight-room strength for the position and a full season of calls in a power conference; athletic marks are modest and his arms are short.
 

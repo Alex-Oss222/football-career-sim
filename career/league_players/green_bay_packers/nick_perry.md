@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Mike Morbeck, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Nick_Perry_-_San_Francisco_vs_Green_Bay_2012.jpg)).*
 
+**Current assignment:** Reserve outside linebacker.
+
+**Tackles:** 8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

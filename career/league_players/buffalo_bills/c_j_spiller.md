@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:C.J._Spiller_2015.jpg)).*
 
+**Current assignment:** Starting running back.
+
+**Yards per carry:** 5.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

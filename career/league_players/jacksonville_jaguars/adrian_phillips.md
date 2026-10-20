@@ -6,20 +6,11 @@ Born March 28, 1992 · Texas · Undrafted
 
 As of October 5, 2014, after Week 5.
 
-## Staff assessment
+**Current assignment:** Reserve safety.
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Tackling | 5.5/10 |
-| Deep range | 4.0/10 |
-| Coverage-unit fit | 5.5/10 |
+**Passes defended:** 0 (2014, through Week 5).
+
+## Staff assessment
 
 A safety with a physical tackling profile and coverage-unit experience; range on the back end is the question.
 

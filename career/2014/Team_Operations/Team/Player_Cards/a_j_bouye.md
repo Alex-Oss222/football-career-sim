@@ -10,27 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:A._J._Bouye.JPG)).*
 
-## Staff assessment
+**Current assignment:** Nickel cornerback.
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.0/10 |
-| Football IQ | 4.0/10 |
-| Long and recovery speed | 5.0/10 |
-| Short-area quickness and hips | 5.0/10 |
-| Press coverage | 4.0/10 |
-| Off-man coverage | 4.5/10 |
-| Zone and pattern match | 4.0/10 |
-| Route recognition and eyes | 4.0/10 |
-| Ball skills | 4.5/10 |
-| Catch-point play | 5.0/10 |
-| Tackling and run support | 4.0/10 |
-| Block defeat and penalty discipline | 3.5/10 |
+**Passes defended:** 0 (2014, through Week 5).
+
+## Staff assessment
 
 A developmental outside corner with enough movement and catch-point size to pursue a reserve role. I see press technique and route recognition behind the physical outline of the player.
 

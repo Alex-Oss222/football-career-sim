@@ -10,11 +10,15 @@ As of September 28, 2014, after Week 4.
 
 *Photo: SD Dirk, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Ryan_Tannehill_vs_Iowa_State_2011.jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 79.1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Miami | 26 | 17 | 4 | 93 | 158 | 58.9 | 1,081 | 6.8 | 270.2 | 6 | 5 | 79.1 |
 | 2013 | Miami | 25 | 17 | 16 | 339 | 560 | 60.5 | 3,591 | 6.4 | 224.4 | 23 | 21 | 77.3 |

@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Amy Anderson Photography, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Bulaga_blocking.jpg)).*
 
+**Current assignment:** Starting right tackle.
+
+**Sacks allowed:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

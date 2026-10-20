@@ -6,27 +6,11 @@
 
 As of October 5, 2014, after Week 5.
 
-## Staff assessment
+**Current assignment:** Dime defensive back.
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 4.0/10 |
-| Football IQ | 4.0/10 |
-| Range | 5.0/10 |
-| Speed and change of direction | 5.0/10 |
-| Route-combination recognition | 4.0/10 |
-| Deep positioning | 4.0/10 |
-| Man and slot coverage | 3.5/10 |
-| Ball skills | 3.5/10 |
-| Tackling | 4.5/10 |
-| Run support and angles | 4.5/10 |
-| Communication | 4.5/10 |
-| Play-action discipline | 4.0/10 |
+**Passes defended:** 0 (2014, through Week 5).
+
+## Staff assessment
 
 A coverage-unit safety with useful straight-line range and a reserve defensive role. I see movement and lane work ahead of route-combination recognition and man coverage.
 

@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Tennessee Titans, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Hill.png)).*
 
+**Current assignment:** Reserve tight end.
+
 ## Statistics
 
 ### Regular season

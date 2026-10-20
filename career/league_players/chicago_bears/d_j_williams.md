@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:DJ_Williams.JPG)).*
 
+**Current assignment:** Starting middle linebacker.
+
+**Tackles:** 25 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

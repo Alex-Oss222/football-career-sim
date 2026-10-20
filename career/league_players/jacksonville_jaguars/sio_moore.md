@@ -10,27 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Sio_Moore.JPG)).*
 
-## Staff assessment
+**Current assignment:** Reserve linebacker.
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.5/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.5/10 |
-| Run diagnosis | 4.5/10 |
-| Fit discipline | 4.5/10 |
-| Block destruction | 5.5/10 |
-| Range | 6.5/10 |
-| Tackling | 5.0/10 |
-| Zone coverage | 5.0/10 |
-| Man coverage | 5.0/10 |
-| Blitz and pressure | 5.5/10 |
-| Communication | 5.5/10 |
-| Pursuit angles | 5.5/10 |
+**Tackles:** 13 (2014, through Week 5).
+
+## Staff assessment
 
 An athletic package linebacker with range and useful pressure tools. I see his movement ahead of his run diagnosis and fit consistency, which need to become dependable before expanding the job.
 

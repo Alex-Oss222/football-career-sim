@@ -10,6 +10,8 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Cmm3, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:2019,_95,_Anthony_Johnson.jpg)).*
 
+**Current assignment:** Reserve defensive tackle.
+
 ## Statistics
 
 ### Regular season

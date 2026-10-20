@@ -10,6 +10,8 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Boyd.jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
 ## Statistics
 
 ### Regular season

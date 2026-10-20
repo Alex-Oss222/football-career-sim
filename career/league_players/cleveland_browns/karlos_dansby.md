@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Daniel Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Karlos_Dansby_2014_Browns_Training_Camp.jpg)).*
 
+**Current assignment:** Starting middle linebacker.
+
+**Tackles:** 19 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

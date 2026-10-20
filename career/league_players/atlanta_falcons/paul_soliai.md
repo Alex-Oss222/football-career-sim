@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Ola Thorsen/Department of State, Public domain ([source](https://commons.wikimedia.org/wiki/File:Paul_Soliai_2014_(cropped).jpg)).*
 
+**Current assignment:** Starting defensive tackle.
+
+**Sacks:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

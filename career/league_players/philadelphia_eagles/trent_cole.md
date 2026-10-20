@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Tech. Sgt. Scott T. Sturkol, Public domain ([source](https://commons.wikimedia.org/wiki/File:Trent_Cole_080805-F-9429S-132_crop.jpg)).*
 
+**Current assignment:** Starting outside linebacker.
+
+**Tackles:** 49 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

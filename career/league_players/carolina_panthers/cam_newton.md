@@ -10,11 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: sportiqe, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cam_Newton_-_Carolina_Panthers.jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 80.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Carolina | 25 | 1 | 5 | 108 | 173 | 62.4 | 1,309 | 7.6 | 261.8 | 6 | 7 | 80.3 |
 | 2013 | Carolina | 24 | 1 | 14 | 307 | 480 | 64.0 | 3,654 | 7.6 | 261.0 | 20 | 9 | 93.2 |

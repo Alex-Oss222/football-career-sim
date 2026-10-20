@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Rex_Burkhead_2013.jpg)).*
 
+**Current assignment:** Reserve running back.
+
 ## Statistics
 
 ### Regular season

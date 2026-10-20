@@ -10,28 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cousins_2022.jpg)).*
 
-## Staff assessment
+**Current assignment:** Starting quarterback.
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.0/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.0/10 |
-| Strength and power | 6.5/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 7.5/10 |
-| Football IQ | 8.5/10 |
-| Arm strength and velocity | 7.5/10 |
-| Short-intermediate ball placement | 8.5/10 |
-| Deep-outside placement | 7.5/10 |
-| Timing and anticipation | 7.5/10 |
-| Cadence | 8.5/10 |
-| Coverage and protection processing | 8.5/10 |
-| Pocket movement | 9.0/10 |
-| Scramble speed and mobility | 6.5/10 |
-| Mechanics and release | 8.0/10 |
-| Pressure decision-making | 8.0/10 |
-| Ball security and command | 7.5/10 |
+**Passer rating:** 82.4 (2014, through Week 5).
+
+## Staff assessment
 
 Structured pocket passer with advanced command of the pre-snap and in-pocket phases of the position. Cousins uses cadence to control the operation, processes coverage and protection cleanly, and works through progressions on schedule. Pocket movement is a defining strength: he can climb, slide and reset without abandoning the structure of the play, keeping his eyes downfield and creating a usable throwing lane as pressure closes. His mechanics stay compact and repeatable, and his best accuracy comes in the short-to-intermediate game, where placement and timing allow him to throw receivers into space. He has enough arm strength and deep-outside placement to attack the full field, though neither is the foundation of his game. Under pressure he generally remains a passer first, relying on movement, processing and disciplined decisions rather than scrambling. His mobility is functional, but speed and open-field creation are secondary traits.
 
@@ -50,7 +33,7 @@ Four-year contract through 2015.
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Jacksonville | 23 | 8 | 5 | 105 | 173 | 60.7 | 1,213 | 7.0 | 242.6 | 9 | 7 | 82.4 |
 | 2013 | Jacksonville | 22 | N/A | 16 | 357 | 564 | 63.3 | 3,981 | 7.1 | 248.8 | 23 | 18 | 84.5 |
@@ -63,7 +46,7 @@ Four-year contract through 2015.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Jacksonville | 22 | N/A | 2 | 38 | 59 | 64.4 | 480 | 8.1 | 240.0 | 4 | 0 | 112.3 |
 

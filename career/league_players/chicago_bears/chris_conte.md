@@ -10,6 +10,8 @@ As of December 29, 2013, after Week 17.
 
 *Photo: 416th Theater Engineer Command Army Reserve, Public domain ([source](https://commons.wikimedia.org/wiki/File:Chris_Conte_(15807903445)_(1).jpg)).*
 
+**Current assignment:** Reserve strong safety.
+
 ## Statistics
 
 ### Regular season

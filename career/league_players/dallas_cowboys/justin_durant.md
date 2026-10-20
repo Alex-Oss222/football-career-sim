@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sgt. Randall A. Clinton, Public domain ([source](https://commons.wikimedia.org/wiki/File:Justin_Durant.jpg)).*
 
+**Current assignment:** Starting weakside linebacker.
+
+**Tackles:** 45 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Air Force photo/Sgt. Brian Ferguson, Public domain ([source](https://commons.wikimedia.org/wiki/File:Vinatieri,_Adam_(USAF).jpg)).*
 
+**Current assignment:** Kicker.
+
+**Field-goal percentage:** 80.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

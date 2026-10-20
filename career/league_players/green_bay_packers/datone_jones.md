@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Gaby C, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Datone_Jones,_Green_Bay_Packers.jpg)).*
 
+**Current assignment:** Starting defensive end.
+
+**Sacks:** 3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Air Force/Louis Briscese, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jared_Cook.jpg)).*
 
+**Current assignment:** Starting tight end.
+
+**Yards per target:** 5.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

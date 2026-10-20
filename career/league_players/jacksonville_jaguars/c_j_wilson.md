@@ -12,25 +12,6 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.0/10 |
-| Athleticism | 4.5/10 |
-| Speed | 3.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.5/10 |
-| Get-off | 4.5/10 |
-| Edge speed and bend | 3.5/10 |
-| Power | 6.0/10 |
-| Hand use and counters | 5.0/10 |
-| Edge setting and run defense | 5.5/10 |
-| Block shedding | 5.5/10 |
-| Pursuit | 4.5/10 |
-| Rush plan and recognition | 4.5/10 |
-| Contain discipline | 5.5/10 |
-
 A strong-side edge defender whose power and run setting offer more than bend or speed. I see a rotational run defender with limited reason to feature him as a wide speed rusher.
 
 *Staff view, March 31, 2014.*

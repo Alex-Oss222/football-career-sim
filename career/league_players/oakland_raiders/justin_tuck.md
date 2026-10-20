@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Daniela Farrera, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Justin_Tuck_at_the_NY_Knicks_vs_Miami_Heat_(May_2012).JPG)).*
 
+**Current assignment:** Starting defensive end.
+
+**Sacks:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Arlington National Cemetery, Public domain ([source](https://commons.wikimedia.org/wiki/File:2025_Zach_Ertz_(cropped).jpg)).*
 
+**Current assignment:** Reserve tight end.
+
+**Yards per target:** 15.4 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

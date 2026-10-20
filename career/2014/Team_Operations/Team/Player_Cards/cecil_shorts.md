@@ -10,27 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cecil_Shorts_III.jpg)).*
 
-## Staff assessment
+**Yards per target:** 0.0 (2014, through Week 5).
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 7.0/10 |
-| Football IQ | 6.5/10 |
-| Release vs press | 6.0/10 |
-| Route running | 7.0/10 |
-| Separation and quickness | 6.5/10 |
-| Long speed | 6.0/10 |
-| Hands | 6.5/10 |
-| Catch radius and contested catches | 5.5/10 |
-| Ball tracking and deep receiving | 6.0/10 |
-| YAC and contact balance | 6.5/10 |
-| Coverage recognition and adjustments | 6.5/10 |
-| Blocking | 5.0/10 |
+## Staff assessment
 
 A rhythm-route receiver who can uncover on intermediate concepts and add yards after the catch. I see a legitimate starter whose route work is stronger than his contested-catch and blocking profile.
 

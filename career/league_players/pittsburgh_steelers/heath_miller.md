@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Fido, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Heath_Miller_in_2012.jpg)).*
 
+**Current assignment:** Starting tight end.
+
+**Yards per target:** 5.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

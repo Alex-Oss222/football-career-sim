@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Chrisjnelson at en.wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brian_Hartline.jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 6.9 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

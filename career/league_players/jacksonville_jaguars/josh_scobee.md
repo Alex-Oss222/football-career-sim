@@ -10,23 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Scobee.jpg)).*
 
-## Staff assessment
+**Current assignment:** Kicker.
 
-| Category | Grade |
-|---|---:|
-| Overall | 7.0/10 |
-| Athleticism | 5.5/10 |
-| Speed | 4.5/10 |
-| Strength and power | 7.5/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 7.0/10 |
-| Football IQ | 6.5/10 |
-| Field-goal accuracy by distance | 7.0/10 |
-| Leg strength and range | 7.5/10 |
-| Kickoff distance and hang | 6.5/10 |
-| Directional kickoff control | 6.0/10 |
-| Snap-hold operation | 7.0/10 |
-| Pressure consistency | 6.5/10 |
+**Field-goal percentage:** 80.0 (2014, through Week 5).
+
+## Staff assessment
 
 A starting NFL kicker with a useful long-distance leg and dependable established operation. I see range and ordinary accuracy ahead of precision kickoff control and my confidence in repeated pressure consistency.
 

@@ -10,20 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Arnie Papp, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Trai_Turner.jpg)).*
 
-## Staff assessment
+**Current assignment:** Starting right guard.
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 6.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 7.0/10 |
-| Agility and change of direction | 5.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Anchor and power | 7.0/10 |
-| Interior exchanges | 4.5/10 |
-| Pass-set discipline | 4.5/10 |
+**Sacks allowed:** 2 (2014, through Week 5).
+
+## Staff assessment
 
 A redshirt-sophomore right guard with a powerful base and short-area quickness, a full 2013 season as an every-game starter in the SEC. Technique is raw: hand placement and pass-set discipline need coaching, and he did not complete the agility drills at the combine.
 

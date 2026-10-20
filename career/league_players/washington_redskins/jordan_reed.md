@@ -10,6 +10,10 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jordan_Reed.JPG)).*
 
+**Current assignment:** Starting tight end.
+
+**Yards per target:** 7.4 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

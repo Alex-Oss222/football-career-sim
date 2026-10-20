@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Tammy Anthony Baker, Photographer, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Saints_vs_Panthers_12.6.15_039.jpg)).*
 
+**Current assignment:** Starting defensive tackle.
+
+**Sacks:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

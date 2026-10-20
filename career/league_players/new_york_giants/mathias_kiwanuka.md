@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Mission Uganda, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mathias_Kiwanuka_in_Uganda_(cropped).jpg)).*
 
+**Current assignment:** Starting defensive end.
+
+**Sacks:** 4 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

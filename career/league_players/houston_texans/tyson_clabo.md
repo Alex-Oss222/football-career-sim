@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Chrisjnelson at English Wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Rader,_Clabo_and_Norwood.png)).*
 
+**Current assignment:** Reserve right tackle.
+
 ## Statistics
 
 ### Regular season

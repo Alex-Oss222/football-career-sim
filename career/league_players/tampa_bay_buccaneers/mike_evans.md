@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Evans_face_shot_vs_Washington_Redskins_November_16_2014.jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 9.4 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

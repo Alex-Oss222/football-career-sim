@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Garrett_Gilkey_at_2013_training_camp.jpg)).*
 
+**Current assignment:** Reserve center.
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sgt. Randall A. Clinton, US marines, Public domain ([source](https://commons.wikimedia.org/wiki/File:Rashean_Mathis_in_2009.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Justin_Pugh.JPG)).*
 
+**Current assignment:** Starting right tackle.
+
+**Sacks allowed:** 7 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

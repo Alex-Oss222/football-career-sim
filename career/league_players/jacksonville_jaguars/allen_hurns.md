@@ -10,20 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Allen_Hurns.jpg)).*
 
-## Staff assessment
+**Current assignment:** First relief receiver.
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.0/10 |
-| Boundary body control | 5.5/10 |
-| Separation | 4.0/10 |
-| Special-teams value | 4.5/10 |
+**Yards per target:** 9.6 (2014, through Week 5).
+
+## Staff assessment
 
 A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.
 

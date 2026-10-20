@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Kevin Stabinsky, Public domain ([source](https://commons.wikimedia.org/wiki/File:Michael_Palmer_Kuwait.jpg)).*
 
+**Current assignment:** Reserve tight end.
+
 ## Statistics
 
 ### Regular season

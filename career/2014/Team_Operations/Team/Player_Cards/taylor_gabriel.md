@@ -10,20 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Taylor_Gabriel.jpg)).*
 
-## Staff assessment
+**Current assignment:** Sixth receiver.
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 6.5/10 |
-| Speed | 7.0/10 |
-| Strength and power | 3.0/10 |
-| Agility and change of direction | 7.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.5/10 |
-| Speed and burst | 7.0/10 |
-| Return skills | 5.5/10 |
-| Size and contested catches | 2.5/10 |
+## Staff assessment
 
 A small, fast receiver and returner (5-8, 167) from Abilene Christian with run-after-catch ability; size limits him outside.
 

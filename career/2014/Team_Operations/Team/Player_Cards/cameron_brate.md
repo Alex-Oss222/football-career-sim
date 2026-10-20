@@ -8,19 +8,6 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.5/10 |
-| Hands | 5.5/10 |
-| Attached blocking | 3.5/10 |
-| Route feel | 5.0/10 |
-
 A receiving tight end from Harvard with reliable hands and route feel; blocking strength and level of competition are the limits.
 
 *Staff view, May 11, 2014; dated updates through August 8, 2014.*

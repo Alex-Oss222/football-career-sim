@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: Randall Chancellor derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Kenny_vaccaro_longhorns_2010.jpg)).*
 
+**Current assignment:** Starting strong safety.
+
+**Passes defended:** 5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -8,19 +8,6 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall at position | 6.0/10 |
-| Interior pass protection | 6.0/10 |
-| Anchor and power | 6.5/10 |
-| Hand usage | 6.0/10 |
-| Recovery and balance | 5.5/10 |
-| Drive blocking | 6.5/10 |
-| Pull and movement blocking | 5.0/10 |
-| Combination and second-level work | 6.0/10 |
-| Stunt and blitz recognition | 6.0/10 |
-| Leverage and consistency | 5.5/10 |
-
 Correct identification and recovery appear in preseason; shared interior exchange work improved in spring. Individual leverage and the Week 2 sack cause remain underclassified. A VERIFY retirement row does not retire him.
 
 *Staff view at the 2013 season close, January 14, 2014.*

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Time2Football, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:49ers_FB_Kyle_Juszczyk_Super_Bowl_LIV_Interview_(cropped).png)).*
 
+**Current assignment:** Starting fullback.
+
+**Yards per carry:** 7.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

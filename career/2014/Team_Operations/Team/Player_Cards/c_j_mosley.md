@@ -10,26 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Seaman Apprentice Marcus Stanley, Public domain ([source](https://commons.wikimedia.org/wiki/File:CJ_Mosley_(defensive_lineman)_2012.jpg)).*
 
-## Staff assessment
+**Current assignment:** Reserve defensive tackle.
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.0/10 |
-| Athleticism | 4.0/10 |
-| Speed | 3.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 3.5/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.0/10 |
-| Get-off | 4.5/10 |
-| Anchor | 5.5/10 |
-| Power | 6.0/10 |
-| Hand use | 5.0/10 |
-| Block shedding | 5.0/10 |
-| Penetration | 4.0/10 |
-| Pass-rush counters | 3.5/10 |
-| Double-team play | 5.5/10 |
-| Gap discipline and lateral pursuit | 4.5/10 |
+**Sacks:** 0 (2014, through Week 5).
+
+## Staff assessment
 
 A veteran interior reserve who can supply strength and hold a limited run assignment. I see more value in occupying a block than in creating repeated penetration or rush-counter wins.
 

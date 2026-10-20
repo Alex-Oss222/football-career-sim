@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Navin75, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mohamed_Sanu_Bengals_2012.jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 7.7 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

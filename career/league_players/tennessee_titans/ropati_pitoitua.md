@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Ed Yourdon, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Ropati_Pipotuia_perseason_Jets-v-Eagles,_Sep_2009_-_65.jpg)).*
 
+**Current assignment:** Starting defensive end.
+
+**Sacks:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

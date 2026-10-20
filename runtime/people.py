@@ -11,7 +11,14 @@ season. A record holds only the facts that have no other single owner:
   2013 final player sheet) is a pointer, ``{"season", "stage", "owner"}``.
   An assessment stores no age: his age on the assessment date is worked out
   from his birth date (the as-written card, pinned by ``transcribed_from``,
-  keeps the text it carried).
+  keeps the text it carried). Each assessment may carry ``short``: the
+  two-to-four-sentence staff assessment a player page shows, the latest
+  assessment's on his page (the user's player card template of October 20,
+  2026). It is a dated summary of the
+  full assessment it names in ``summarizes``, not a third assessment; its
+  words never change automatically, and each current figure in it is a token
+  (``TOKEN``) the page resolves from the closed games at build time. The
+  grades stay here and are never rendered.
 - ``transactions``: the dated moves the season records hold (drafted,
   signed, traded, released, re-signed, reserve lists), each with its source.
   A date is as precise as its source: YYYY-MM-DD, YYYY-MM or YYYY, with
@@ -52,6 +59,10 @@ OWNERS = {
     "roster": "the current Jacksonville roster (position and status)",
     "player_contracts": "the Jacksonville contract inputs (salary by year)",
     "award_results": "the award results of each season's awards data (runtime/player_cards.award_entries)",
+    "game_depth_chart": "Jacksonville's game depth chart and Stone's dated role decisions on the working chart "
+                        "(runtime/assignments.py)",
+    "week1_depth_charts": "the other clubs' Week 1 depth charts for the season (library/data/2014_week1_depth_charts.json), "
+                          "less branch placements, applied in-season moves and branch reserve placements",
 }
 # Each fact a page shows and its owners, in the order they are read: a later owner only when the
 # earlier ones hold nothing for him (runtime/player_cards.Identity.birth_date and card_data,
@@ -68,6 +79,9 @@ READ_THROUGH = {
     "position_and_status": ("roster", "game_records"),
     "contract": ("player_contracts",),
     "awards": ("award_results",),
+    "current_assignment": ("roster", "game_depth_chart", "week1_depth_charts"),
+    "position_statistic": ("game_records",),
+    "staff_assessment": ("record", "game_records"),
 }
 RECORD_KEYS = ("schema_version", "name", "gsis_id", "assessments", "transactions")
 # Facts other owners hold, which an assessment never stores (his age is worked out from his birth date).
@@ -79,6 +93,21 @@ TRANSACTION_KINDS = frozenset({
     "offer_sheet", "contract_expired", "retired",
 })
 DATE_FORM = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
+# The staff assessment a page shows (``short``) and its season-figure tokens:
+# {{YEAR.KIND.MEASURE}} or {{YEAR.KIND.MEASURE:words}} / {{...:Words}} (runtime/player_pages
+# resolves them from the closed games).
+SHORT_KEYS = ("text", "date", "recorded", "by", "summarizes", "source")
+SHORT_REQUIRED = ("text", "date", "recorded", "by", "summarizes")
+TOKEN = re.compile(r"\{\{(\d{4})\.(regular|playoffs)\.([a-z_]+)(?::(words|Words))?\}\}")
+RATES = ("passer_rating", "completion_percentage", "yards_per_attempt", "yards_per_carry", "yards_per_catch",
+         "yards_per_target", "catch_rate", "field_goal_percentage", "extra_point_percentage", "punting_average",
+         "net_punting_average")
+# Ambiguous names a token may not use: "interceptions" (thrown or made).
+AMBIGUOUS = {"interceptions": "interceptions_thrown or defensive_interceptions"}
+# Grade and rating language: the page shows no grade (a statistic's name, passer rating, is not one).
+GRADE_WORDS = re.compile(r"/\s*10\b|\bgrad(?:e|es|ed|ing)\b|(?<!passer )\bratings?\b|\brated\b", re.I)
+# A full stop after a single capital letter or one of these is not a sentence end (C.J., Leno Jr., No. 8).
+ABBREVIATIONS = re.compile(r"(?:(?<![A-Za-z])[A-Z]|\bJr|\bSr|\bNo|\bSt)$")
 
 
 def slugify(name):
@@ -162,10 +191,15 @@ def record_errors(rid, record, root=ROOT):
         if not isinstance(a.get("season"), int) or a.get("stage") not in ("opening", "entry", "final"):
             errors.append("%s: an assessment needs a season and a stage" % label)
         elif "owner" in a:
-            if set(a) != {"season", "stage", "owner"} or not (Path(root) / a["owner"]).is_file():
+            if (not {"season", "stage", "owner"} <= set(a) <= {"season", "stage", "owner", "short"}
+                    or not (Path(root) / a["owner"]).is_file()):
                 errors.append("%s: assessment pointer %s does not resolve" % (label, a.get("owner")))
+            elif "short" in a:
+                errors += short_errors(label, a, record, root)
         elif not (a.get("date") and a.get("by") and a.get("grades") and a.get("read")):
             errors.append("%s: a transcribed assessment needs its date, whose view, grades and read" % label)
+        elif "short" in a:
+            errors += short_errors(label, a, record, root)
     for t in record["transactions"]:
         if (not DATE_FORM.match(str(t.get("date", ""))) or t.get("kind") not in TRANSACTION_KINDS
                 or not t.get("text") or not t.get("source")):
@@ -174,4 +208,134 @@ def record_errors(rid, record, root=ROOT):
             errors.append("%s: transaction source missing: %s" % (label, t["source"]))
     if record["transactions"] != sorted(record["transactions"], key=sort_key):
         errors.append("%s: transactions must be in date order" % label)
+    return errors
+
+
+# ------------------------------------------------------------------ the short staff assessment
+def assessment_date(a, root=ROOT):
+    """The ISO date of a full assessment: a transcribed entry's own date, or for a pointer to a
+    frozen 2013 final sheet the date of its "Season-close checkpoint" line."""
+    if "owner" not in a:
+        return a["date"]
+    text = (Path(root) / a["owner"]).read_text(encoding="utf-8")
+    line = re.search(r"^\*\*Season-close checkpoint:\*\*\s*(.*?)\s*$", text, re.M)
+    when = re.search(r"([A-Z][a-z]+) (\d{1,2}), (\d{4})", line.group(1)) if line else None
+    if not when:
+        raise ValueError("%s: no season-close checkpoint date" % a["owner"])
+    month = ("January February March April May June July August September October November "
+             "December").split().index(when.group(1)) + 1
+    return date(int(when.group(3)), month, int(when.group(2))).isoformat()
+
+
+def measures():
+    """Every measure a token may name: games, the recorded player fields and the rates."""
+    from .player_evidence import STAT_FIELDS
+    return ("games",) + tuple(f for f in STAT_FIELDS if f not in AMBIGUOUS) + RATES
+
+
+def token_errors(label, text, root=ROOT):
+    """Static problems of the tokens in ``text``: an unknown season, kind, measure or format, a
+    format on a rate, and any brace left that is not a whole token."""
+    errors = []
+    try:
+        repo = json.loads((Path(root) / "docs/repository_map.json").read_text(encoding="utf-8"))
+        years = {int(y) for y in repo.get("record_years", ())}
+        active = int(repo["active_season"])
+    except (OSError, ValueError, KeyError):
+        return ["%s: the record years and active season cannot be read" % label]
+    known = set(measures())
+    for m in TOKEN.finditer(text):
+        year, _kind, measure, fmt = int(m.group(1)), m.group(2), m.group(3), m.group(4)
+        if year not in years or year > active:
+            errors.append("%s: token %s names a season with no game records up to %d" % (label, m.group(0), active))
+        if measure in AMBIGUOUS:
+            errors.append("%s: token %s is ambiguous; use %s" % (label, m.group(0), AMBIGUOUS[measure]))
+        elif measure not in known:
+            errors.append("%s: token %s names an unknown measure" % (label, m.group(0)))
+        elif fmt and measure in RATES:
+            errors.append("%s: token %s formats a rate; a rate prints with one decimal" % (label, m.group(0)))
+    rest = TOKEN.sub(" ", text)
+    if "{" in rest or "}" in rest:
+        errors.append("%s: the staff assessment has a malformed token: %s" % (label, rest))
+    return errors
+
+
+def sentence_count(text):
+    """Sentences in ``text``: each full stop, question or exclamation mark followed by a space or
+    the end, except a full stop after a single capital letter or Jr, Sr, No or St."""
+    count = 0
+    for m in re.finditer(r"[.!?](?=\s|$)", text):
+        if m.group(0) == "." and ABBREVIATIONS.search(text[:m.start()]) and m.end() < len(text):
+            continue
+        count += 1
+    return count
+
+
+def text_errors(label, text, root=ROOT, resolved=False):
+    """The rules on the words of a staff assessment: one line, two to four sentences, no link or
+    table cell, no grade or rating language, the clean-page rule and, before its tokens are
+    resolved, every figure a token (a four-digit year apart)."""
+    from . import clean_pages
+    errors = []
+    if not isinstance(text, str) or not text.strip():
+        return ["%s: the staff assessment needs its text" % label]
+    if "\n" in text or "|" in text or "](" in text or re.search(r"https?://", text):
+        errors.append("%s: the staff assessment is one line with no link or table cell" % label)
+    plain = TOKEN.sub("0", text)
+    stray = [d for d in re.findall(r"\d+", TOKEN.sub(" ", text)) if not re.fullmatch(r"(?:19|20)\d\d", d)]
+    if stray and not resolved:
+        errors.append("%s: every figure in a staff assessment is a token (found %s); write football terms in "
+                      "words" % (label, ", ".join(stray)))
+    n = sentence_count(plain)
+    if not 2 <= n <= 4 or not re.search(r"[.!?]$", plain.strip()):
+        errors.append("%s: a staff assessment is two to four sentences (found %d)" % (label, n))
+    for m in GRADE_WORDS.finditer(plain):
+        errors.append("%s: no grade or rating language in a staff assessment: %s" % (label, m.group(0)))
+    errors += ["%s: the staff assessment breaks the clean-page rule (%s)" % (label, e.split(": ", 1)[-1])
+               for e in clean_pages.page_errors("short.md", plain + "\n", root=root)]
+    return errors
+
+
+def short_errors(label, a, record, root=ROOT):
+    """Static errors of an assessment's ``short``: its keys, text and tokens, its dates (on or
+    after the assessment it summarizes, no later than the master date), who wrote it, the
+    assessments it summarizes (the first is the entry carrying it) and any adopted source."""
+    from . import player_bios
+    short = a["short"]
+    label = "%s: %d %s staff assessment" % (label, a["season"], a["stage"])
+    if not isinstance(short, dict):
+        return ["%s must be an object" % label]
+    keys = set(short)
+    if not set(SHORT_REQUIRED) <= keys or keys - set(SHORT_KEYS):
+        return ["%s keys must be %s, with an optional source" % (label, ", ".join(SHORT_REQUIRED))]
+    errors = text_errors(label, short["text"], root) + token_errors(label, short["text"], root)
+    dates = {}
+    for field in ("date", "recorded"):
+        try:
+            dates[field] = date.fromisoformat(str(short[field]))
+        except ValueError:
+            errors.append("%s: %s must be an ISO date" % (label, field))
+    if not isinstance(short["by"], str) or not short["by"].strip():
+        errors.append("%s: by must name whose view it is" % label)
+    if "date" in dates:
+        try:
+            if dates["date"] < date.fromisoformat(assessment_date(a, root)):
+                errors.append("%s: dated %s, before the assessment it summarizes" % (label, short["date"]))
+            if dates["date"] > player_bios.master_date(root):
+                errors.append("%s: dated %s, after the master date" % (label, short["date"]))
+        except (OSError, ValueError) as exc:
+            errors.append("%s: its date cannot be checked: %s" % (label, exc))
+    items = short["summarizes"]
+    have = {(x.get("season"), x.get("stage")) for x in record["assessments"]}
+    if (not isinstance(items, list) or not items
+            or any(not isinstance(i, dict) or set(i) != {"season", "stage"} for i in items)):
+        errors.append("%s: summarizes is a list of {season, stage}" % label)
+    else:
+        if (items[0]["season"], items[0]["stage"]) != (a["season"], a["stage"]):
+            errors.append("%s: the first assessment it summarizes is the one carrying it" % label)
+        for i in items:
+            if (i["season"], i["stage"]) not in have:
+                errors.append("%s: summarizes %s %s, which is not on the record" % (label, i["season"], i["stage"]))
+    if "source" in short and not (isinstance(short["source"], str) and (Path(root) / short["source"]).is_file()):
+        errors.append("%s: source %s does not exist" % (label, short.get("source")))
     return errors

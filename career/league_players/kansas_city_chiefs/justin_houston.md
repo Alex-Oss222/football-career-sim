@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Mike Morbeck, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Justin_Houston_(cropped).jpg)).*
 
+**Tackles:** 47 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

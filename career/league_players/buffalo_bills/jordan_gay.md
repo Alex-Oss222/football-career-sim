@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jordan_Gay.JPG)).*
 
+**Current assignment:** Kickoff specialist.
+
+**Net punting average:** 39.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

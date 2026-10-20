@@ -8,20 +8,6 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall at position | 4.0/10 |
-| Long and recovery speed | 4.5/10 |
-| Short-area quickness and hips | 4.5/10 |
-| Press coverage | 3.5/10 |
-| Off-man coverage | 4.0/10 |
-| Zone and pattern match | 4.0/10 |
-| Route recognition and eyes | 3.5/10 |
-| Ball skills | 3.5/10 |
-| Catch-point play | 4.0/10 |
-| Tackling and run support | 3.5/10 |
-| Block defeat and penalty discipline | 3.5/10 |
-
 The recorded outside-reserve workload began after injuries elsewhere; individual technique evidence remains thin. Return credits are unreliable, and no dated retirement has been established.
 
 *Staff view at the 2013 season close, January 14, 2014.*

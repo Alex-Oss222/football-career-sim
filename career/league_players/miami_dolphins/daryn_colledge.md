@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Mike Morbeck, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Daryn_Colledge.jpg)).*
 
+**Current assignment:** Starting left guard.
+
+**Sacks allowed:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

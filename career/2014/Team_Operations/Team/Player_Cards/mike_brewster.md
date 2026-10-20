@@ -6,26 +6,11 @@
 
 As of October 5, 2014, after Week 5.
 
-## Staff assessment
+**Current assignment:** Starting center.
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 4.5/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 6.0/10 |
-| Snap and operation | 6.0/10 |
-| Protection identification and calls | 5.5/10 |
-| Pass anchor | 5.0/10 |
-| Hand usage | 5.0/10 |
-| Run-fit and combination blocking | 5.5/10 |
-| Reach and movement blocking | 5.0/10 |
-| Second-level work | 4.5/10 |
-| Leverage | 5.0/10 |
-| Communication | 6.0/10 |
+**Sacks allowed:** 0 (2014, through Week 5).
+
+## Staff assessment
 
 A young center who can hold the operation and communicate the core protection work. I see a viable starting option whose anchor, leverage and second-level work remain less developed than his operation.
 

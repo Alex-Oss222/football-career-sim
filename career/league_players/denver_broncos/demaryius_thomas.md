@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels from District of Columbia, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Demaryius_Thomas_2018_(cropped).jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 4.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

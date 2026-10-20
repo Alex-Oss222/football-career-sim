@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Dirk Hansen from San Diego, CA. Cropped by User:Blueag9 ., [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mike_Scifres-Aug-2-08-Practice.jpg)).*
 
+**Current assignment:** Punter.
+
+**Net punting average:** 34.7 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

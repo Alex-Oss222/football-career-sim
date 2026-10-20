@@ -10,24 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sgt. Randall A. Clinton, US Marine Corps, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jeremy_Cain.jpg)).*
 
-## Staff assessment
+**Current assignment:** Long snapper.
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.0/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.0/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 6.0/10 |
-| Football IQ | 6.0/10 |
-| Snap accuracy | 6.5/10 |
-| Snap velocity | 6.0/10 |
-| Target consistency | 6.0/10 |
-| Field-goal snap trajectory | 6.0/10 |
-| Punt snap trajectory | 6.0/10 |
-| Protection transition | 5.5/10 |
-| Coverage and tackling | 4.5/10 |
+**Long snaps:** 46 (2014, through Week 5).
+
+## Staff assessment
 
 A specialist long snapper whose primary value is repeatable delivery and routine operation. I see snap utility as stronger than protection transition or coverage athleticism.
 

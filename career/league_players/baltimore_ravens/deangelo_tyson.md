@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:DeAngelo_Tyson_Navy_Stadium_2012_Practice.jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
+**Sacks:** 2 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

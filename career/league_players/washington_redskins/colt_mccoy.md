@@ -10,11 +10,15 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Colt_McCoy_Redskins.jpg)).*
 
+**Current assignment:** Backup quarterback.
+
+**Passer rating:** 69.3 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Washington | 27 | 16 | 5 | 20 | 35 | 57.1 | 185 | 5.3 | 37.0 | 1 | 1 | 69.3 |
 | 2013 | San Francisco | 27 | 2 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |

@@ -10,20 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andrew_Norwell_2022.jpg)).*
 
-## Staff assessment
+**Current assignment:** Reserve guard.
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.5/10 |
-| Athleticism | 4.0/10 |
-| Speed | 3.5/10 |
-| Strength and power | 6.5/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.0/10 |
-| Power and finish | 6.5/10 |
-| Lateral movement | 3.5/10 |
-| Pass-set consistency | 4.5/10 |
+## Staff assessment
 
 A three-year college starting guard with a strong upper body and a physical finish; a limited athlete who went undrafted.
 

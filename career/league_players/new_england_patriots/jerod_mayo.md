@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Baltimore, Maryland, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jerod-Mayo_8-28-09_Patriots-vs.-Redskins.jpg)).*
 
+**Current assignment:** Starting linebacker.
+
+**Tackles:** 22 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

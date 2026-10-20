@@ -10,6 +10,8 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Unknown author Unknown author, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Brain_leonhardt_vikings_1016.webp)).*
 
+**Current assignment:** Reserve tight end.
+
 ## Statistics
 
 ### Regular season

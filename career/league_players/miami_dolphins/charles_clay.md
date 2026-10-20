@@ -10,6 +10,10 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Chrisjnelson at English Wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Charles_Clay.jpg)).*
 
+**Current assignment:** Starting tight end.
+
+**Yards per target:** 10.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -6,6 +6,8 @@
 
 As of October 2, 2014, after Week 5.
 
+**Current assignment:** Reserve weakside linebacker.
+
 ## Statistics
 
 ### Regular season

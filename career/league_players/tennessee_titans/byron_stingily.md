@@ -10,6 +10,8 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Tom Hanny from Kinnelon, USA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Byron_Stingily_(American_football).jpg)).*
 
+**Current assignment:** Reserve right tackle.
+
 ## Statistics
 
 ### Regular season

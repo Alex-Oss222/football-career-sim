@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: Keith Allison derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Avery_Williamson.jpg)).*
 
+**Current assignment:** Reserve inside linebacker.
+
+**Tackles:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

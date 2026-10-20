@@ -6,26 +6,11 @@
 
 As of October 5, 2014, after Week 5.
 
-## Staff assessment
+**Current assignment:** Reserve defensive end.
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 4.0/10 |
-| Speed | 4.0/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.5/10 |
-| Get-off | 4.0/10 |
-| Edge speed and bend | 4.0/10 |
-| Power | 5.0/10 |
-| Hand use and counters | 4.0/10 |
-| Edge setting and run defense | 5.0/10 |
-| Block shedding | 4.5/10 |
-| Pursuit | 4.0/10 |
-| Rush plan and recognition | 4.0/10 |
-| Contain discipline | 5.0/10 |
+**Sacks:** 1 (2014, through Week 5).
+
+## Staff assessment
 
 A power-oriented edge reserve suited to a defined run-setting assignment. My starting view gives him more edge/contain utility than speed-rush or counter value.
 

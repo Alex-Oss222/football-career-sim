@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Chris_Jones_vs_Ina_Liaina_at_2012_Military_Bowl.jpg : David King derivative work: Arbor to SJ, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chris_Jones_at_2012_Military_Bowl.jpg)).*
 
+**Current assignment:** Reserve defensive tackle.
+
+**Sacks:** 0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

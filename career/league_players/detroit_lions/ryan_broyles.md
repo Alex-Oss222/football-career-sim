@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Kevind810, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Detroit_Lions_Receiver_Ryan_Broyles_at_the_2012_Lions_training_camp.jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 2.7 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Baltimore, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Shayne_Graham_2006-11-05.jpg)).*
 
+**Field-goal percentage:** 100.0 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

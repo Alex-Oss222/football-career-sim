@@ -10,6 +10,8 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ross_Cockrell.JPG)).*
 
+**Current assignment:** Reserve cornerback.
+
 ## Statistics
 
 ### Regular season

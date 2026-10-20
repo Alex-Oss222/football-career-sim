@@ -55,6 +55,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime import current_job, people, player_bios, roster as roster_record  # noqa: E402
+from runtime.assignments import ROLE_NAMES, SEATS, role_labels as chart_role_labels  # noqa: E402,F401
 from runtime.league import DIVISION_OF  # noqa: E402
 from runtime.player_bios import master_date  # noqa: E402
 from runtime.seasons import SeasonPaths, active_season  # noqa: E402
@@ -63,9 +64,8 @@ UNITS = (("Offense", ("QB", "RB", "FB", "WR", "TE", "OL")), ("Defense", ("DL", "
 GROUP_NAMES = {"QB": "Quarterbacks", "RB": "Running backs", "FB": "Fullback", "WR": "Wide receivers",
                "TE": "Tight ends", "OL": "Offensive line", "DL": "Defensive line", "LB": "Linebackers",
                "DB": "Defensive backs"}
-# The game chart's role names in football words.
-ROLE_NAMES = {"passer": "Starter", "placekicker": "Kicker", "punt": "Punter", "kick_return": "Kick returner",
-              "punt_return": "Punt returner", "nickel": "Nickel", "outside_reserve": "Outside reserve corner"}
+# The game chart's role names in football words, the seats and the role labels are
+# runtime/assignments.py's, shared with the player pages' Current assignment line.
 ACTIONS = {"decides": "Decides", "decides_part": "Decides part", "recommends": "Recommends",
            "consulted": "Consulted", "responds": "Responds", "informs": "Supplies information", "none": "No part",
            "unset": "Not recorded"}
@@ -304,18 +304,9 @@ def roster_page(ctx):
 
 # ------------------------------------------------------------------ depth chart page
 def role_labels(ctx):
-    """{player: label}: Stone's latest dated role decision on the working chart, else his game role."""
-    labels = {}
-    for decision in ctx.working.get("stone_role_decisions", ()):
-        for row in decision.get("decisions", ()):
-            if row.get("role") is None:
-                labels.pop(row["player"], None)     # a later decision cleared the label
-            else:
-                labels[row["player"]] = row["role"]
-    for player, roles in ctx.chart.get("roles", {}).items():
-        if player not in labels and roles:
-            labels[player] = ", ".join(ROLE_NAMES.get(r, r) for r in roles)
-    return labels
+    """{player: label}: Stone's latest dated role decision on the working chart, else his game role
+    (runtime/assignments.role_labels)."""
+    return chart_role_labels(ctx.chart, ctx.working)
 
 
 def depth_chart_page(ctx):
@@ -339,30 +330,30 @@ def depth_chart_page(ctx):
              "Player use varies with the personnel package. The starting line and the X, H and Z "
              "receiver assignments are shown separately.", ""]
     offense = []
-    def seat(pos, name, note=""):
-        if name:
-            offense.append([pos, player_link(ctx, rel, name), note])
-    quarterbacks, backs = depth.get("QB") or [None], depth.get("RB") or [None]
-    seat("QB", quarterbacks[0], "%s is QB2" % quarterbacks[1] if len(quarterbacks) > 1 else "")
-    seat("RB", backs[0], "%s %s" % (join_names(backs[1:]), "follows" if len(backs) == 2 else "follow")
-         if len(backs) > 1 else "")
-    seat("FB", (depth.get("FB") or [None])[0], "For fullback packages")
-    receivers = depth.get("WR") or []
-    for i, label in enumerate(("X", "H", "Z")):
-        if i < len(receivers):
-            seat(label, receivers[i], labels.get(receivers[i], ""))
-    seat("TE", (depth.get("TE") or [None])[0], "Additional tight ends follow in the group order")
-    line = depth.get("OL") or []
-    for i, label in enumerate(("LT", "LG", "C", "RG", "RT")):
-        if i < len(line):
-            seat(label, line[i], "")
+
+    def note(group, names, name):
+        if group == "QB":
+            return "%s is QB2" % names[1] if len(names) > 1 else ""
+        if group == "RB":
+            return ("%s %s" % (join_names(names[1:]), "follows" if len(names) == 2 else "follow")
+                    if len(names) > 1 else "")
+        if group == "FB":
+            return "For fullback packages"
+        if group == "WR":
+            return labels.get(name, "")
+        if group == "TE":
+            return "Additional tight ends follow in the group order"
+        return ""
+    for group, index, label, _words in SEATS["offense"]:
+        names = depth.get(group) or []
+        if index < len(names) and names[index]:
+            offense.append([label, player_link(ctx, rel, names[index]), note(group, names, names[index])])
     lines += [table(["Position", "Player", "Assignment"], offense), "",
               "## Base defense", "",
               "The first defensive-line and linebacker groups, and the first four defensive backs, "
               "are shown here. Individual front and package calls still control the snap.", ""]
     defense = []
-    for unit, group, count in (("Defensive line", "DL", 4), ("Linebackers", "LB", 3),
-                               ("Defensive backs", "DB", 4)):
+    for group, unit, count in SEATS["defense"]:
         names = (depth.get(group) or [])[:count]
         defense.append([unit, ", ".join(player_link(ctx, rel, name) for name in names)])
     lines += [table(["Unit", "First group"], defense), "",
@@ -373,9 +364,10 @@ def depth_chart_page(ctx):
         names = [name for name, roles in ctx.chart.get("roles", {}).items() if code in roles]
         if names:
             special_defense.append([label, ", ".join(player_link(ctx, rel, name) for name in names)])
-    dbs = depth.get("DB") or []
-    if len(dbs) >= 6:
-        special_defense.append(["Dime, sixth defensive back", player_link(ctx, rel, dbs[5])])
+    dime_group, dime = SEATS["dime"]
+    dbs = depth.get(dime_group) or []
+    if len(dbs) > dime:
+        special_defense.append(["Dime, sixth defensive back", player_link(ctx, rel, dbs[dime])])
     lines += [table(["Role", "Player"], special_defense) if special_defense else "No separate package seats recorded.", "",
               "## Current medical limitations", ""]
     active = summary.held(ctx.roster)
@@ -399,9 +391,8 @@ def depth_chart_page(ctx):
                       table(["Order", "Player", "Pos", "Role"],
                             [[i, player_link(ctx, rel, p), positions.get(p, ""), labels.get(p, "")]
                              for i, p in enumerate(players, 1)], right=(0,)), ""]
-    special = [["Kicker", ", ".join(player_link(ctx, rel, p) for p in depth.get("K") or [])],
-               ["Punter", ", ".join(player_link(ctx, rel, p) for p in depth.get("P") or [])],
-               ["Long snapper", ", ".join(player_link(ctx, rel, p) for p in depth.get("LS") or [])]]
+    special = [[job, ", ".join(player_link(ctx, rel, p) for p in depth.get(group) or [])]
+               for group, job in SEATS["specialists"]]
     for code, label in (("kick_return", "Kick returner"), ("punt_return", "Punt returner")):
         names = [p for p, roles in ctx.chart.get("roles", {}).items() if code in roles]
         special.append([label, ", ".join(player_link(ctx, rel, p) for p in names)])

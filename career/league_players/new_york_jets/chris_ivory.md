@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: Staff Sgt. Nicholas Young - New Jersey National Guard Public Affairs Office derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Chris_ivory_jets2015.jpg)).*
 
+**Current assignment:** Starting running back.
+
+**Yards per carry:** 3.8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

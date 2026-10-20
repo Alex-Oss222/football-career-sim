@@ -10,27 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Ed Yourdon, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Dwight_Lowery.jpg)).*
 
-## Staff assessment
+**Passes defended:** 0 (2014, through Week 5).
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.0/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 6.0/10 |
-| Football IQ | 7.0/10 |
-| Range | 5.5/10 |
-| Speed and change of direction | 5.0/10 |
-| Route-combination recognition | 6.5/10 |
-| Deep positioning | 6.5/10 |
-| Man and slot coverage | 5.0/10 |
-| Ball skills | 6.0/10 |
-| Tackling | 5.5/10 |
-| Run support and angles | 5.5/10 |
-| Communication | 7.0/10 |
-| Play-action discipline | 6.0/10 |
+## Staff assessment
 
 A stabilizing safety whose communication, positioning and combination recognition support the coverage structure. I see anticipation and clean operation compensating for ordinary recovery movement.
 

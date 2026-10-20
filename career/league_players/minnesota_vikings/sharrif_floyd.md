@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: U.S. Army, Public domain ([source](https://commons.wikimedia.org/wiki/File:Floyd_Army_Bowl.jpg)).*
 
+**Current assignment:** Starting defensive tackle.
+
+**Sacks:** 5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

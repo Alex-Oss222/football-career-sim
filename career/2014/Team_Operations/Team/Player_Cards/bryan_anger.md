@@ -10,24 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: BrokenSphere, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Bryan_Anger_punts_at_2008_Emerald_Bowl.JPG)).*
 
-## Staff assessment
+**Current assignment:** Punter.
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 4.5/10 |
-| Strength and power | 7.5/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 6.0/10 |
-| Football IQ | 6.0/10 |
-| Gross distance | 7.5/10 |
-| Hang time | 6.5/10 |
-| Net and location control | 6.0/10 |
-| Directional punting | 5.5/10 |
-| Plus-territory control | 5.5/10 |
-| Catch-to-kick operation | 6.0/10 |
-| Pressure consistency | 6.0/10 |
+**Net punting average:** 37.9 (2014, through Week 5).
+
+## Staff assessment
 
 A strong-legged punter whose best weapon is gross distance. I see hang and operation as useful, with directional and plus-territory control less developed than the leg.
 

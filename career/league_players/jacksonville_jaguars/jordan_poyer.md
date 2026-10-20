@@ -10,27 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jordan_Poyer_2021_(cropped).jpg)).*
 
-## Staff assessment
+**Current assignment:** Reserve cornerback.
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 6.0/10 |
-| Technique | 5.5/10 |
-| Football IQ | 6.0/10 |
-| Long and recovery speed | 5.0/10 |
-| Short-area quickness and hips | 6.0/10 |
-| Press coverage | 4.5/10 |
-| Off-man coverage | 5.5/10 |
-| Zone and pattern match | 6.0/10 |
-| Route recognition and eyes | 6.0/10 |
-| Ball skills | 5.5/10 |
-| Catch-point play | 4.5/10 |
-| Tackling and run support | 5.0/10 |
-| Block defeat and penalty discipline | 4.5/10 |
+**Passes defended:** 2 (2014, through Week 5).
+
+## Staff assessment
 
 A developing nickel corner who can sort routes and maintain leverage through communication. I see short-area recognition ahead of outside recovery speed, press power and catch-point size.
 

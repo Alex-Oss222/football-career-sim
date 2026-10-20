@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Kyle_Rudolph_runs_ball_vs_Packers.jpg : Joe Bielawa derivative work: Lpdrew, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Brad_Jones_Packers_LB.jpg)).*
 
+**Current assignment:** Starting middle linebacker.
+
+**Tackles:** 24 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

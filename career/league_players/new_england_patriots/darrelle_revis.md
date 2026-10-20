@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeff Kern, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Darrelle_Revis_ESPNWeekend2010-051.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 8 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

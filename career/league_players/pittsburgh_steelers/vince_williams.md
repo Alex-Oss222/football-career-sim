@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: I, the copyright holder of this work, hereby publish it under the following license:, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Vince_Williams_American_Football_98_leaving_field_2013.jpg)).*
 
+**Current assignment:** Reserve inside linebacker.
+
+**Tackles:** 1 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

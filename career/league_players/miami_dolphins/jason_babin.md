@@ -12,19 +12,6 @@ As of September 28, 2014, after Week 4.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall at position | 6.0/10 |
-| Get-off | 6.5/10 |
-| Edge speed and bend | 6.5/10 |
-| Power | 5.5/10 |
-| Hand use and counters | 6.0/10 |
-| Edge setting and run defense | 4.5/10 |
-| Block shedding | 4.5/10 |
-| Pursuit | 5.5/10 |
-| Rush plan and recognition | 6.5/10 |
-| Contain discipline | 4.5/10 |
-
 Camp identified leading edge pressure. The season requires separating called containment from chances to finish; raw sack totals cannot provide that split.
 
 *Staff view at the 2013 season close, January 14, 2014.*

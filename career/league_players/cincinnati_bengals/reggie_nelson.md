@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Craig O'Neal, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Reggie_Nelson.jpg)).*
 
+**Current assignment:** Starting free safety.
+
+**Passes defended:** 6 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season

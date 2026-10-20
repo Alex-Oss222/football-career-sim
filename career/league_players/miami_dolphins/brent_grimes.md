@@ -10,21 +10,11 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Torsten Bolten , AFpix.de, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brent_Grimes-Hamburg_Sea_Devils.jpg)).*
 
-## Staff assessment
+**Current assignment:** Starting cornerback.
 
-| Category | Grade |
-|---|---:|
-| Overall at position | 7.5/10 |
-| Long and recovery speed | 6.5/10 |
-| Short-area quickness and hips | 8.0/10 |
-| Press coverage | 6.0/10 |
-| Off-man coverage | 7.5/10 |
-| Zone and pattern match | 7.5/10 |
-| Route recognition and eyes | 8.0/10 |
-| Ball skills | 8.0/10 |
-| Catch-point play | 6.5/10 |
-| Tackling and run support | 5.5/10 |
-| Block defeat and penalty discipline | 5.0/10 |
+**Passes defended:** 4 (2014, through Week 5).
+
+## Staff assessment
 
 Camp supports sound leverage and clear exchanges. The full season raises meaningful help/target questions, but totals cannot reconstruct individual responsibility.
 

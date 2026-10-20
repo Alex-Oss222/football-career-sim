@@ -6,20 +6,9 @@
 
 As of October 5, 2014, after Week 5.
 
-## Staff assessment
+**Current assignment:** Reserve tackle.
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 4.5/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 6.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.0/10 |
-| Foot quickness and set | 6.0/10 |
-| Anchor | 4.0/10 |
-| Run-block finish | 4.5/10 |
+## Staff assessment
 
 A four-year college starter, 39 consecutive games, the last 26 at left tackle, with good short-area movement and a long frame; he did not run at the combine and his strength marks are light for the position.
 

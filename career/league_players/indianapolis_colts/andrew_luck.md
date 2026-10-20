@@ -10,11 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: BrokenSphere, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Andrew_Luck_at_2010_Stanford_football_open_house.JPG)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 90.7 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Indianapolis | 24 | 12 | 5 | 124 | 206 | 60.2 | 1,639 | 8.0 | 327.8 | 12 | 7 | 90.7 |
 | 2013 | Indianapolis | 23 | 12 | 16 | 340 | 549 | 61.9 | 3,681 | 6.7 | 230.1 | 24 | 16 | 84.1 |

@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sodexo USA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Polamalu_closeup2.jpg)).*
 
+**Current assignment:** Starting strong safety.
+
+**Passes defended:** 5 (2014, through Week 5).
+
 ## Statistics
 
 ### Regular season
