@@ -48,7 +48,7 @@ Every `record` is `{"path", "anchor"?, "pointer"?}`: a repository-relative path 
 | `delegation.relay`, `delegation.emergency` | Who carries what on game day; the emergency practice leads, their limits and the game-day caller (null: not appointed) |
 | `standing_instructions` | `id`, `subject`, `status` (`IN_FORCE`, `RECORDED`, `SUPERSEDED`, `WITHDRAWN`), the queue classes it `closes`, `summary`, optional `applies`, `given` or `effective`, and its record |
 
-A `subject`, on an instruction or a queue item, is one of `SUBJECTS` in `runtime/current_job.py`: `play_calling`, `inactives` and the game-management ids (`fourth_down`, `two_point`, `kickoff`, `timeouts_and_clock`, `replay_challenge`). Validation refuses any other, so an item cannot escape an instruction's coverage by a spelling.
+A `subject`, on an instruction or a queue item, is one of `ITEM_SUBJECTS` in `runtime/current_job.py`: `play_calling`, `inactives`, the game-management ids (`fourth_down`, `two_point`, `kickoff`, `timeouts_and_clock`, `replay_challenge`) and the two career answers in `CAREER_SUBJECTS` (`assistant_interview_permission`, Jacksonville's permission for an assistant to interview elsewhere, and `outside_job_approach`, the holder's own answer to another club's approach). A game-management decision takes only a game subject. Validation refuses any other, so an item cannot escape an instruction's coverage by a spelling.
 
 ### The decision queue
 
@@ -86,6 +86,8 @@ Each item has one class. The class fixes the default owner, the Document 3 rows 
 | `personnel_recommendation` | the job holder (Stone) | 3, 4, 7, 20 | nothing | no | no |
 | `quarterback_consultation` | the job holder (Stone) | 3a | nothing | no | no |
 | `employment_response` | the job holder (Stone) | 1 | nothing | no | no |
+| `outside_job_approach` | the job holder (Stone) | 1a | nothing | yes | no |
+| `staff_permission` | the job holder (Stone) | 2 | nothing | yes | no |
 | `personnel_transaction` | David Caldwell | 3, 5, 7, 20 | nothing | no | no |
 | `medical_status` | Team medical staff | 15, 16, 17 | nothing | no | no |
 | `staff_work` | Jacksonville coaching staff | none | nothing | no | no |

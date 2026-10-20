@@ -1,8 +1,8 @@
 # Game Week v2: research, contract and implementation plan
 
-**Status:** Uploaded by the user on October 20, 2026 and adopted for the build (see the [rebuild plan](rebuild_plan.md), step 4b). Phases A to C are built under the rebuild rules; Phase D changes the game engine and waits for the user's decision. The templates it describes are in [foundation/templates/game_week/](../foundation/templates/game_week/), and the worked example is [docs/examples/week_06_illustration.md](examples/week_06_illustration.md).
+**Status:** Uploaded by the user on October 20, 2026 and adopted for the build (see the [rebuild plan](rebuild_plan.md), step 4b). Phases A to C are built under the rebuild rules; Phase D changes the game engine and waits for the user's decision. Corrected October 20, 2026 after the process check and the user's rulings: any call in the active playbook may be named, the opening list is ideas rather than an order, and only a decision that holds the game blocks the plan. The templates it describes are in [foundation/templates/game_week/](../foundation/templates/game_week/), and the worked example is [docs/examples/week_06_illustration.md](examples/week_06_illustration.md).
 
-**Applies:** Every played regular-season game and every played postseason game. Byes belong to their separate workflow. Each game creates exactly three coach-facing Markdown pages in the game's folder:
+**Applies:** Every played regular-season game and every played postseason game. Byes belong to their separate workflow. Each game has exactly three decision pages in the game's folder. The same folder may also hold the week's `My_Responses.md` and links to separate event results ([event inserts](event_inserts.md)); those answer the week's other business and are not game pages.
 
 1. `Game_Week_Briefing.md`: what the staff can responsibly tell the head coach as of a particular date.
 2. `Game_Plan.md`: Alex Stone's decisions, expressed in football language.
@@ -60,14 +60,14 @@ The compiler must:
 2. Resolve `Carry Week NN` only from that week's immutable applied plan and carry *eligible* calls, not game-specific use cases that no longer apply. If an inherited call is unavailable because of personnel, playbook or medical status, fail with a football explanation.
 3. Resolve `No change` and `None` differently; a blank is **unanswered**, not accepted as a negative or carry-forward.
 4. Validate active players, seven inactives when 53 are active, legal game-day units, role eligibility and dependent medical exams.
-5. Validate calls and variations against the active book and confirmed weekly install. Do not hallucinate an unmentioned formation, tag, protection, or route in order to make a row legal.
+5. Validate calls and variations against the active book. Any call in the active book may be named, whether or not that week's practice covered it (the user's ruling of October 20, 2026: "We can call anything from the playbook. It's accessible."). The opening list is a set of ideas the staff may draw on by situation, not a fixed order. Do not hallucinate an unmentioned formation, tag, protection, or route in order to make a row legal.
 6. Record *why* the user chose a call as author-intent metadata, with a provenance link and when-known date. Keep that separate from game outcome.
 7. Produce the existing machine-readable `call_sheet.json` and decision policy blocks deterministically, with a reversible source mapping from every emitted call to the exact user text or inherited frozen item.
-8. Refuse plan freeze while a briefing is stale, a medical dependency remains unresolved, or a required head-coach decision remains open. Reissue revised briefing when new facts arrive, preserving the earlier page and its date.
+8. Refuse plan freeze while a briefing is stale, a medical dependency remains unresolved, or a head-coach decision that holds this game (one due before kickoff) remains open. Business that does not hold the game, such as an open trade call or an assistant's interview request, never blocks the plan. Reissue revised briefing when new facts arrive, preserving the earlier page and its date.
 9. Hash the applied plan and compiled sheet. Treat a later revision as a new explicit apply event. Open/read-only pages never advance the game clock.
 10. Store technical records in their existing data owners. Coach-facing Markdown is football, not diagnostics.
 
-**Example validation:** `Flea Flicker is named for third-and-long, but the installed special-play card permits only a favorable second-and-short setup. Choose another eligible situation or change your coaching instruction and complete the required install.`
+**Example validation:** `Red zone: 'Flood Sail' is not in the active playbook. Choose a call from the 2014 book.`
 
 **Another:** `Your inactives are not final. Brynden Trawick's October 7 reassessment and Jordan Poyer's October 9 projected return have not been reconciled. Your football plan is complete, but it cannot be set as the final 46 yet.` (The dates and record state must be rechecked when run.)
 
@@ -102,13 +102,13 @@ No mechanism may change the game because the author writes confidently, uses a l
 
 ## 7. Postseason extension
 
-Use the same three pages with `Game Week Briefing -> Game Plan -> Game Report`. No game pages on a bye. The briefing adds only material playoff facts: bracket position and seed, elimination consequences, confirmed opponent, venue, available rest, prior meeting evidence available by that date, and the correct overtime/roster context. Do not invent an opponent until the preceding bracket results establish it, or assume a next game after a loss. The regular-season carry-forward plan remains available subject to roster, medical, install and era legality.
+Use the same three pages with `Game Week Briefing -> Game Plan -> Game Report`. No game pages on a bye. The briefing adds only material playoff facts: bracket position and seed, elimination consequences, confirmed opponent, venue, available rest, prior meeting evidence available by that date, and the correct overtime/roster context. Do not invent an opponent until the preceding bracket results establish it, or assume a next game after a loss. The regular-season carry-forward plan remains available subject to roster, medical and era legality.
 
 Extend `scripts/render_game_week.py` and `scripts/check_game_plan.py` to use postseason fixtures and `week_pages(..., postseason=True)` with correct folder/data routing. Exercise full check, apply, report and stat-render flows in a postseason fixture test. The core `runtime/week_inputs.py` already routes playoff weeks to a separately built schedule, but this fact alone does not prove the user-facing page workflow is complete.
 
 ## 8. Non-negotiable acceptance tests
 
-1. Three, and only three, reader-facing decision pages per played game. Existing roster and medical pages remain their own source owners.
+1. Three, and only three, decision pages per played game; the week's My Responses page and separate event results are not game pages. Existing roster and medical pages remain their own source owners.
 2. `Game_Plan.md` contains no required `Opener`, `Returns`, `Family`, `Type`, internal menu key or artificial frequency number.
 3. A valid plan compiles to a legal `call_sheet.json`; an invalid one fails with a specific football reason, never a silently filled fake.
 4. Rephrasing a coach's explanation without changing choices produces the same executable plan and outcome. Longer prose cannot act as a bonus.

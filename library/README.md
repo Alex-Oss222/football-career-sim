@@ -79,6 +79,7 @@ These artifacts are pinned by the 2012 base in `runtime/calibration_base.py`, wh
 | [2014_playing_and_roster_rules.md](2014_playing_and_roster_rules.md) | Playing and roster rules | Researched and verified; backs Document 2 | None |
 | [2014_offseason_phase_rules_verification.md](2014_offseason_phase_rules_verification.md) | Offseason phase activity rules | Research only | None |
 | [2014_coaching_hiring_and_anti_tampering_rules.md](2014_coaching_hiring_and_anti_tampering_rules.md) | Coach hiring and anti-tampering rules, January 2014 cycle | Researched and verified | None |
+| [2014_cba_practice_rest_and_rookie_renegotiation.md](2014_cba_practice_rest_and_rookie_renegotiation.md) | 2011 CBA rules for 2014: padded practices, the bye-week break, regular-season days off and rookie renegotiation | Research only; two passes with Confirmed, Corrected and Unverified labels | None |
 | [2014_jaguars_original_contract_reconstruction.md](2014_jaguars_original_contract_reconstruction.md) | Jaguars original contracts carried into 2014 | Supplemented by the contract completion | None |
 | [2014_jaguars_contract_completion.md](2014_jaguars_contract_completion.md) | Completing Jacksonville's existing contracts | User-authorized labelled simulation terms | None |
 | [2014_draft_information_gates.md](2014_draft_information_gates.md) | 2014 draft information gates | Runtime date-gating companion | None |

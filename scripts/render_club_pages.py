@@ -74,6 +74,8 @@ ACTIONS = {"decides": "Decides", "decides_part": "Decides part", "recommends": "
 # holds needs a label here; a new one fails the build until it is named.
 DECISIONS = {
     "Hire, retain, suspend, or fire the head coach": "Hiring and firing the head coach",
+    "Permission for another club to contact or interview the head coach while he is under contract, including "
+    "any compensation asked for it": "Letting another club talk to the head coach",
     "Hire, retain, assign, suspend, or fire assistant coaches": "Hiring, assigning and firing assistant coaches",
     "Final player-acquisition and target-selection decisions": "Which players to acquire",
     "Franchise-level quarterback decisions specifically: using the first-round pick on a QB, trading premium "

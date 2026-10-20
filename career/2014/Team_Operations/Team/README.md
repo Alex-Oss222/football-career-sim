@@ -61,6 +61,7 @@ Next: Week 6 at Tennessee, October 12, 2014.
 | Decision | Decided by | Head coach |
 |---|---|---|
 | Hiring and firing the head coach | Shad Khan and David Caldwell | Responds |
+| Letting another club talk to the head coach | Shad Khan | Responds |
 | Hiring, assigning and firing assistant coaches | Alex Stone | Decides |
 | Which players to acquire | David Caldwell | Recommends |
 | Franchise quarterback moves: a first-round quarterback, premium picks traded for one, a major long-term contract for an intended starter, or moving on from the starter | David Caldwell | Consulted: written football projection and a meeting to resolve disagreement before Caldwell acts; no concurrence or veto |

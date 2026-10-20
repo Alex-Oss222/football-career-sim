@@ -1053,7 +1053,7 @@ def asks_section(wk, page_rel, plan_open=False, issued=None):
         out += table(["Decision", "Choice required", "Deadline / dependency"], rows) + [""]
         out += ["Write your decisions on the %s; the staff checks it and tells you what is missing before "
                 "anything is set for the game." % link(page_rel, wk.rel(wk.pages.plan), "Game Plan"), ""]
-    out += ["**Standing directions:**", ""] + [wk.views.localize(l, page_rel) for l in wk.views._instructions(wk.cv)]
+    out += ["**Standing directions:**", ""] + [wk.views.localize(l, page_rel) for l in wk.views._instructions(wk.cv, current_job.SUBJECTS)]
     out += ["", "**What the club, not Stone, decides:**", ""] + club_decides(wk) + [""]
     out += ["**If facts change:** The staff issues a new briefing, dated and, when it is the day's second or later, "
             "numbered as that day's revision; this one is kept as what you knew when you answered.", ""]

@@ -186,6 +186,28 @@ class BriefingTests(unittest.TestCase):
         self.assertEqual((self.root / "state/decision_queue.json").read_bytes(), queue)
         self.assertEqual(render_game_week.validation_errors(self.root), [])
 
+    def test_the_briefing_lists_only_the_games_standing_instructions(self):
+        # The career answers (current_job.CAREER_SUBJECTS) are never game directions: the briefing
+        # lists the game's (current_job.SUBJECTS), the desk lists every one.
+        from runtime import current_job
+        from scripts import render_career_views
+        text = self.wk.pages.briefing.read_text(encoding="utf-8")
+        block = text.split("**Standing directions:**", 1)[1].split("**What the club, not Stone, decides:**", 1)[0]
+        every = current_job.instructions(self.wk.job)
+        career = [i for i in every if i.get("subject") in current_job.CAREER_SUBJECTS]
+        game = [i for i in every if i.get("subject") in current_job.SUBJECTS]
+        self.assertTrue(career and game)
+        for item in career:
+            self.assertNotIn("**%s" % render_career_views.SUBJECT_LABEL[item["subject"]], block)
+        for item in game:
+            self.assertIn("**%s" % render_career_views.SUBJECT_LABEL[item["subject"]], block)
+        render_career_views.write(self.root)
+        desk = self.wk.paths.desk.read_text(encoding="utf-8")
+        for item in career:
+            self.assertIn("**%s" % render_career_views.SUBJECT_LABEL[item["subject"]], desk)
+        # A career answer alone never makes the briefing out of date.
+        self.assertFalse(any("a new briefing is due" in e for e in render_game_week.check(self.root)))
+
     def test_the_game_plan_is_never_rewritten(self):
         self.wk.pages.plan.write_text(self.wk.pages.plan.read_text(encoding="utf-8") + "\n", encoding="utf-8")
         mine = self.wk.pages.plan.read_bytes()

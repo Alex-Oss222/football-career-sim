@@ -8,6 +8,8 @@
 
 > AUTHORING NOTE (remove from issued briefing): Populate from the dated season record, closed game books, actual roster and available scouting. If a fact is not on file, describe the uncertainty only if it affects a decision. Do not import historical results that happened after the issue date in the real 2014 season. No fabricated opponent tendency percentages, injury clearance, conversations, or film observations. All numbers must have source records.
 
+[Event inserts, when any event is pending: ACTION REQUIRED, FOR YOUR INFORMATION and COMING UP go here, under the title block and before section 1, in the form of the [event insert template](../event_inserts/brief_action_inserts_template.md). Omit each section that has nothing in it. The week's own decisions (the Game Plan and the inactives) stay in section 8; answers to inserted events go on the week's My Responses page, and each resolved event gets its own dated result page in its owner's folder.]
+
 ## 1. The game and what is at stake
 
 | Item | This game |
@@ -98,6 +100,8 @@ Each recommendation needs a football basis. It is a staff proposal, not a decisi
 | Game Plan | [Opponent-specific offensive/defensive emphasis, calls, personnel and practice choices] | [Before relevant practice or game-plan freeze] |
 | Game-day inactives / changed roles | [Only the selections not already determined by medical instruction or standing policy] | [After outstanding medical decisions; before inactive declaration] |
 | Other material football decision | [Only if not covered by a standing rule or another official's authority] | [Actual deadline] |
+
+[Events raised during the week (a trade call, a roster vacancy, a staff permission request, a contract matter) are not listed here: they appear as inserts at the top and are answered on the week's My Responses page.]
 
 **Standing directions:** [Short reference to rules already in force, with the current source page; not a new questionnaire.]  
 **What the club, not Stone, decides:** [Only live issues such as medical clearance, transactions or league decisions, with the responsible person.]  

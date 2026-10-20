@@ -61,6 +61,8 @@ Projected dates require medical clearance. [Full injury report](Team_Operations/
 - **Two-point tries:** Kick, except go for two in the fourth quarter when the touchdown leaves Jacksonville down 2, up 1 or down 5. [Week 5 report](Regular_Season/Games/Week_05/output.md)
 - **Kickoffs:** Onside when trailing by 1 to 16 with 2:00 or less left; onside when trailing by 9 to 16 with 5:00 or less left; deep otherwise. [Week 5 report](Regular_Season/Games/Week_05/output.md)
 - **Fourth downs:** Fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt. [Week 5 report](Regular_Season/Games/Week_05/output.md)
+- **Other clubs' approaches:** You are not open to job offers or interviews with other clubs; another club's request and Shad Khan's answer reach you as news.
+- **Assistants' interviews elsewhere:** Grant an assistant's head-coach interview and a position coach's coordinator interview; refuse a move to the same title elsewhere; alike whatever the asking club, within the league's rules for the season.
 
 ## Who calls what
 
