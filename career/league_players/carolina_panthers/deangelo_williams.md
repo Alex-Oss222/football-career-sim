@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeff Kern, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:DeAngelo_Williams.jpg)).*
 
+**Current assignment:** Starting running back.
+
+**Yards per carry:** 5.4 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

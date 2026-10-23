@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Eldorado Owens, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Greg_Warren_Steelers.jpg)).*
 
+**Current assignment:** Long snapper.
+
+**Long snaps:** 46 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

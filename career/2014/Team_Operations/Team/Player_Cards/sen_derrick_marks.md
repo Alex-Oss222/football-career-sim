@@ -10,28 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Flickr user Melissa Hillier, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Sen%27Derrick_Marks_2014_Jaguars_training_camp_Cropped.jpg)).*
 
+**Current assignment:** Starting defensive tackle.
+
+**Sacks:** 0 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.0/10 |
-| Strength and power | 6.5/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 6.5/10 |
-| Football IQ | 6.0/10 |
-| Get-off | 7.0/10 |
-| Anchor | 6.0/10 |
-| Power | 6.5/10 |
-| Hand use | 6.5/10 |
-| Block shedding | 6.0/10 |
-| Penetration | 7.0/10 |
-| Pass-rush counters | 6.0/10 |
-| Double-team play | 5.5/10 |
-| Gap discipline and lateral pursuit | 6.5/10 |
-
-A penetrating interior starter whose quick entry and lateral pursuit can disrupt the pocket and backfield. I see better single-gap pressure tools than double-team anchoring.
+Sen'Derrick Marks has proven he is an NFL starting defensive tackle: he dressed for all 16 regular-season games and both playoff games for Jacksonville in 2013, paired inside with Roy Miller. He is a penetrating, single-gap tackle whose quick get-off and lateral pursuit can disrupt the pocket and the backfield. He is less effective anchoring against double teams than attacking a single gap.
 
 *Staff view, March 31, 2014.*
 

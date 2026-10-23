@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Arthur_Brown_Ravens_Stadium_Practice_2013.jpg)).*
 
+**Current assignment:** Reserve inside linebacker.
+
+**Tackles:** 2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

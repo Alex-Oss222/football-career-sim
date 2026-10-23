@@ -12,22 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.0/10 |
-| Athleticism | 8.5/10 |
-| Speed | 7.5/10 |
-| Strength and power | 7.0/10 |
-| Agility and change of direction | 8.0/10 |
-| Technique | 7.0/10 |
-| Football IQ | 6.0/10 |
-| First-step quickness | 8.5/10 |
-| Hand use and pad level | 7.5/10 |
-| Anchor vs. double teams | 4.5/10 |
+Aaron Donald is a rookie defensive tackle who has been active for five games in his first NFL season. He is undersized but explosive, with a first step and hand quickness that beat blockers before they set; in camp his first step beat Trai Turner on a one-on-one rep. His anchor against double teams is below a starter's standard and holding his gap on early downs is still unproven at his size; in camp the Mike Brewster and Trai Turner double team moved him off the strong A-gap, and he split it only once.
 
-An undersized, explosive interior defensive lineman whose first step and hand quickness beat blockers before they set. Anchoring against double teams and holding gaps on early downs are the unproven questions at NFL size.
-
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

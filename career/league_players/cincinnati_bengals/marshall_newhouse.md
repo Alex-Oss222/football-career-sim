@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Gabriel Cervantes (cropped by Moe Epsilon), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Marshall_Newhouse_(cropped).jpg)).*
 
+**Current assignment:** Reserve left tackle.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

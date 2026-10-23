@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Atlanta Falcons, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Chris_Watt_2014_combine.jpg)).*
 
+**Current assignment:** Reserve right guard.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

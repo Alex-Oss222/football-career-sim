@@ -10,19 +10,27 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jason_Trusnik_2014.JPG)).*
 
+**Current assignment:** Reserve linebacker.
+
+**Tackles:** 1 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 30 | 93 | 4 | 1 | 0 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 30 | 93 | 4 | 1 | 0 | 1 | 1 | 0 | 0 |
 | 2013 | Miami | 29 | 93 | 16 | 30 | 22 | 8 | 3 | 0 | 1 |
 | Career |  |  |  | 20 | 31 | 22 | 9 | 4 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 30 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 30 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 29 | 93 | 2 | 32 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

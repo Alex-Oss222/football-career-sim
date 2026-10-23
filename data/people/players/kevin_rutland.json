@@ -6,7 +6,19 @@
   {
    "season": 2013,
    "stage": "final",
-   "owner": "career/2013/player_profiles/kevin_rutland.md"
+   "owner": "career/2013/player_profiles/kevin_rutland.md",
+   "short": {
+    "text": "Kevin Rutland was a reserve outside cornerback for Jacksonville in 2013, inactive until injuries elsewhere in the secondary opened an outside-reserve job late in the season, and then dressing for the final {{2013.regular.games:words}} regular-season games and both playoff games. The staff saw functional movement, with recovery speed, short-area quickness and off coverage the better parts of his game. His technique and recognition were unfinished, with press coverage, route recognition and ball skills the main gaps, and the staff saw a narrow depth role rather than a corner it would consistently isolate in a matchup.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

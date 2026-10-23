@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Air Force 2nd Lt. Keenan Kunst, Public domain ([source](https://commons.wikimedia.org/wiki/File:Johnathan_Cyprien_2013_(cropped).jpg)).*
 
+**Passes defended:** 1 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

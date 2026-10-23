@@ -10,13 +10,21 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Shelley_Smith_(American_football).JPG)).*
 
+**Current assignment:** Starting right guard.
+
+**Sacks allowed:** 0 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 27 | 66 | 4 | 4 | 277 | 0 | 18 |
+| 2014 (through Week 4) | Miami | 27 | 66 | 4 | 4 | 277 | 0 | 18 |
 | 2013 | St. Louis | 26 | 66 | 16 | N/A | N/A | 6 | N/A |
 | Career |  |  |  | 20 | N/A | N/A | 6 | N/A |
 

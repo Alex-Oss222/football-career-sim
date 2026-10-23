@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: User:Whodattt, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Autograph_signing_summer_of_2013_2013-11-12_13-32.png)).*
 
+**Current assignment:** Reserve defensive end.
+
+**Sacks:** 0 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

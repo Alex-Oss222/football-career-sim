@@ -12,22 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.5/10 |
-| Athleticism | 4.0/10 |
-| Speed | 3.5/10 |
-| Strength and power | 6.5/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.0/10 |
-| Power and finish | 6.5/10 |
-| Lateral movement | 3.5/10 |
-| Pass-set consistency | 4.5/10 |
+Andrew Norwell is an undrafted rookie guard who has been active for five regular-season games. A three-year college starter at guard, he has a strong upper body and a physical finish, and in camp he carried a combination block with Mike Brewster to the linebacker and handled the protection calls at both guard spots. He is a limited athlete, short on lateral movement and speed.
 
-A three-year college starting guard with a strong upper body and a physical finish; a limited athlete who went undrafted.
-
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

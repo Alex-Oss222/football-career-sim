@@ -6,30 +6,13 @@
 
 As of October 5, 2014, after Week 5.
 
+**Sacks:** 1 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 4.0/10 |
-| Speed | 4.0/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.5/10 |
-| Get-off | 4.0/10 |
-| Edge speed and bend | 4.0/10 |
-| Power | 5.0/10 |
-| Hand use and counters | 4.0/10 |
-| Edge setting and run defense | 5.0/10 |
-| Block shedding | 4.5/10 |
-| Pursuit | 4.0/10 |
-| Rush plan and recognition | 4.0/10 |
-| Contain discipline | 5.0/10 |
+Daniel Te'o-Nesheim has been active for five games in his first season with Jacksonville. He is a power-oriented edge reserve suited to a defined run-setting assignment, more useful setting the edge and holding contain than rushing the passer. His get-off, bend around the corner and counter moves are below a starter's standard.
 
-A power-oriented edge reserve suited to a defined run-setting assignment. My starting view gives him more edge/contain utility than speed-rush or counter value.
-
-*Staff view, March 31, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

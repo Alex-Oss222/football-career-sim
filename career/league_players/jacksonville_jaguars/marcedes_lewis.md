@@ -10,30 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Marcedes_Lewis_2014.jpg)).*
 
+**Current assignment:** Starting tight end.
+
+**Yards per target:** 7.2 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 7.0/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.0/10 |
-| Strength and power | 7.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 7.0/10 |
-| Football IQ | 6.5/10 |
-| Route running and separation | 6.0/10 |
-| Hands and catch radius | 7.0/10 |
-| Contested catch and ball tracking | 7.0/10 |
-| YAC | 5.5/10 |
-| Run blocking | 7.5/10 |
-| Pass protection and chip | 7.0/10 |
-| Alignment versatility | 7.0/10 |
-| Speed and athleticism | 5.0/10 |
-| Coverage recognition | 6.5/10 |
+Marcedes Lewis has proven himself a strong NFL starting tight end. He was active for all 16 regular-season games for Jacksonville in 2013, catching 61 passes for 720 yards, and he has three touchdown catches in five games in 2014. He is a big, complete attached tight end whose blocking, catch radius and dependable operation anchor the position, and in camp he sustained his attached blocks on the recorded reps at controlled contact. He gives the offense more structure and physical usefulness than sudden separation, and his speed and yards after the catch are below an NFL starter's standard.
 
-A large, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. I see a strong starter who offers more structure and physical usefulness than sudden separation.
-
-*Staff view, March 31, 2014; dated updates through September 27, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

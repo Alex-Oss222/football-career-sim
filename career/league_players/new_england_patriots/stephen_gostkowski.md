@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Patriots_panorama.jpg : Jeffrey Beall derivative work: Arbor to SJ, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Stephen_Gostkowski_pregame_2009-10-11.jpg)).*
 
+**Current assignment:** Kicker.
+
+**Field-goal percentage:** 57.1 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

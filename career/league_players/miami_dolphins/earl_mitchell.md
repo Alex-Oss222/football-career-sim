@@ -10,19 +10,27 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Earl_Mitchell_2012.JPG)).*
 
+**Current assignment:** Starting defensive tackle.
+
+**Sacks:** 1 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 26 | 90 | 4 | 11 | 7 | 4 | 3 | 1 | 2 |
+| 2014 (through Week 4) | Miami | 26 | 90 | 4 | 11 | 7 | 4 | 3 | 1 | 2 |
 | 2013 | Houston | 25 | 92 | 16 | 70 | 50 | 20 | 11 | 3 | 12 |
 | Career |  |  |  | 20 | 81 | 57 | 24 | 14 | 4 | 14 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 26 | 90 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 26 | 90 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Houston | 25 | 92 | 0 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs

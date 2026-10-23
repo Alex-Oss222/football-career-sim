@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Cpl Jody Lee Smith, Public domain ([source](https://commons.wikimedia.org/wiki/File:Miami_Dolphins_wide_receiver_Brandon_Marshall_practices_during_pregame_warm_up_for_the_National_Football_League%27s_2012_Pro_Bowl_game_at_Aloha_Stadium_in_Honolulu_Jan_120129-M-DX861-041_(cropped).jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 6.2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

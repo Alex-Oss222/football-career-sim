@@ -10,6 +10,14 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Gabriel Cervantes, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jordy_Nelson_during_Green_Bay_Packers_training_camp_on_August_1,_2011_(cropped).jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 7.5 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

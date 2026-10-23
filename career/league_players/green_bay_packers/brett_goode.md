@@ -6,6 +6,12 @@
 
 As of October 2, 2014, after Week 5.
 
+**Long snaps:** 12 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jesse Kornblum, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Anthony_Dixon_Coach_Mooch_Battle_of_the_Bay_Charity_Bocce_2026_01.jpg)).*
 
+**Current assignment:** Reserve running back.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

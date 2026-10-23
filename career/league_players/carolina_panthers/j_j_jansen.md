@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Army National Guard Photo by Sgt. Leticia Samuels, North Carolina National Guard Public Affairs/Released North Carolina National Guard, Public domain ([source](https://commons.wikimedia.org/wiki/File:JJ_Jansen_panthers.jpg)).*
 
+**Current assignment:** Long snapper.
+
+**Long snaps:** 41 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

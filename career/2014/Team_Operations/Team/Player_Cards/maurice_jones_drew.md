@@ -10,31 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeff Kern, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Maurice_Jones-Drew_ESPNWeekend2010-066.jpg)).*
 
+**Current assignment:** Starting running back.
+
+**Yards per carry:** 4.7 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 7.5/10 |
-| Athleticism | 7.0/10 |
-| Speed | 6.5/10 |
-| Strength and power | 8.0/10 |
-| Agility and change of direction | 7.5/10 |
-| Technique | 7.5/10 |
-| Football IQ | 8.0/10 |
-| Vision and decision | 8.0/10 |
-| Burst and acceleration | 7.0/10 |
-| Long speed | 6.5/10 |
-| Cut efficiency and change of direction | 7.5/10 |
-| Contact balance and power | 8.0/10 |
-| Ball security | 7.0/10 |
-| Receiving | 7.0/10 |
-| Route detail | 6.5/10 |
-| Pass protection | 7.5/10 |
-| Short-yardage finishing | 8.0/10 |
+Maurice Jones-Drew has proven himself an NFL starting running back, carrying 282 times for 1,334 yards as Jacksonville's lead back in 2013 and 99 times for 461 yards so far in 2014. He is a compact, powerful and complete veteran runner who wins with his decisions on the run track, his balance through contact and his short-yardage finishing, and he adds useful protection work. His inside efficiency matters more than his open-field speed, and long speed and route detail are the least of his tools.
 
-A compact, powerful lead back who wins with track decisions, balance and useful protection work. I see a complete veteran runner whose inside efficiency matters more than open-field speed.
-
-*Staff view, March 31, 2014; dated updates through September 13, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

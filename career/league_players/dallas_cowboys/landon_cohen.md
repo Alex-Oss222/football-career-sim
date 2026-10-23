@@ -6,6 +6,10 @@
 
 As of January 11, 2014, after the Divisional round.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

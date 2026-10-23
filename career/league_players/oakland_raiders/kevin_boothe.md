@@ -10,13 +10,19 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Kevin_Boothe.JPG)).*
 
+**Current assignment:** Reserve center.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 31 | 67 | 4 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 31 | 67 | 4 | 0 | 0 | 0 | 0 |
 | 2013 | N.Y. Giants | 30 | 77 | 11 | N/A | N/A | 1 | N/A |
 | Career |  |  |  | 15 | N/A | N/A | 1 | N/A |
 

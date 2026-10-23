@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Navin75, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Leon_Hall,_Bengals_training_camp_2012.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 0 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

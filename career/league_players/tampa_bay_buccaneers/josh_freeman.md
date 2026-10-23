@@ -6,11 +6,15 @@
 
 As of January 5, 2014, after the Wild Card round.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Tampa Bay | 25 | N/A | 16 | 362 | 541 | 66.9 | 3,994 | 7.4 | 249.6 | 24 | 14 | 92.6 |
 
@@ -20,7 +24,7 @@ As of January 5, 2014, after the Wild Card round.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Tampa Bay | 25 | N/A | 1 | 28 | 40 | 70.0 | 258 | 6.5 | 258.0 | 1 | 2 | 74.8 |
 

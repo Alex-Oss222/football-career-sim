@@ -10,19 +10,27 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brandon_Gibson.JPG)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 8.8 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 27 | 10 | 4 | 52 | 33 | 458 | 13.9 | 3 | 35 | 114.5 | 63.5 |
+| 2014 (through Week 4) | Miami | 27 | 10 | 4 | 52 | 33 | 458 | 13.9 | 3 | 35 | 114.5 | 63.5 |
 | 2013 | Miami | 26 | 10 | 16 | 72 | 44 | 568 | 12.9 | 6 | 75 | 35.5 | 61.1 |
 | Career |  |  |  | 20 | 124 | 77 | 1,026 | 13.3 | 9 | 75 | 51.3 | 62.1 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 27 | 10 | 2 | -5 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 27 | 10 | 2 | -5 | 0 | 0 | 0 |
 | 2013 | Miami | 26 | 10 | 2 | 4 | 0 | 1 | 1 |
 
 ### Playoffs

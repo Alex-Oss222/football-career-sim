@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Marquis_Flowers.JPG)).*
 
+**Current assignment:** Reserve weakside linebacker.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

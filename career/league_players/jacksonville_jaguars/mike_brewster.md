@@ -6,30 +6,15 @@
 
 As of October 5, 2014, after Week 5.
 
+**Current assignment:** Starting center.
+
+**Sacks allowed:** 0 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 4.5/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 6.0/10 |
-| Snap and operation | 6.0/10 |
-| Protection identification and calls | 5.5/10 |
-| Pass anchor | 5.0/10 |
-| Hand usage | 5.0/10 |
-| Run-fit and combination blocking | 5.5/10 |
-| Reach and movement blocking | 5.0/10 |
-| Second-level work | 4.5/10 |
-| Leverage | 5.0/10 |
-| Communication | 6.0/10 |
+Mike Brewster took over at center for Jacksonville during the 2013 season while Brad Meester was hurt, kept the job once Meester was cleared, and has started five games in 2014. He is a viable starting option at center whose best work is the operation: the snap, the communication and the core protection calls. His anchor, leverage and hand use are less developed than his operation, and he is weakest when he has to climb to the second level.
 
-A young center who can hold the operation and communicate the core protection work. I see a viable starting option whose anchor, leverage and second-level work remain less developed than his operation.
-
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

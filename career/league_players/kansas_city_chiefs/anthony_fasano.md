@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Anthony_Fasano_Jets-Dolphin_game,_Nov_2009_-_040.jpg : Ed Yourdon derivative work: Ytoyoda ( talk ), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Anthony_Fasano_vs_Jets_cropped.jpg)).*
 
+**Current assignment:** Starting tight end.
+
+**Yards per target:** 5.8 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

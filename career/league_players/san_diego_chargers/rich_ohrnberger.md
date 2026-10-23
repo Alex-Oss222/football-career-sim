@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: xanderer ( talk ), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ohrnberger_08blueandwhite.jpg)).*
 
+**Current assignment:** Reserve left guard.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

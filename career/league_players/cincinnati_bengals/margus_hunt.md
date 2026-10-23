@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Navin Rajagopalan, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Margus_Hunt_2014_Bengals_training_camp_Cropped.jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
+**Sacks:** 0 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

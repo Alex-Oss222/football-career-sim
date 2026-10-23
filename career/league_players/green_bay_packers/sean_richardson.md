@@ -10,6 +10,14 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Sean_Richardson_(American_football)_2015.jpg)).*
 
+**Current assignment:** Reserve strong safety.
+
+**Passes defended:** 2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

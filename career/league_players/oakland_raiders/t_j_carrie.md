@@ -10,21 +10,27 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:T._J._Carrie.JPG)).*
 
+**Current assignment:** Reserve cornerback.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 24 | 38 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 24 | 38 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 24 | 38 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 24 | 38 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 24 | 38 | 0 | 0 | N/A | 10 | 135 | 13.5 |
+| 2014 (through Week 4) | Oakland | 24 | 38 | 0 | 0 | N/A | 10 | 135 | 13.5 |
 
 ### Playoffs
 

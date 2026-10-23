@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Bengals_on_defense_in_Wild_Card_Game_2010-01-09.jpg : fujimatt derivative work: Lpdrew, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Robert_Geathers_in_Jan_2010.jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
+**Sacks:** 0 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

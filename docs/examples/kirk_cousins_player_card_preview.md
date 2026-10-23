@@ -1,3 +1,5 @@
+*Worked example of the [player card template](../../foundation/templates/player_card_template.md): the user's preview of the Kirk Cousins page, uploaded on October 20, 2026. Kept as the user wrote it, except that the separator rows of four statistics tables now have one cell per column (they had 15 or 16 cells under 14 headings, and 10 under 11), so the tables render. The built page also keeps his photo below the As of line. Its staff assessment is the user's own wording of Cousins's short staff assessment.*
+
 # Kirk Cousins
 
 **Jacksonville Jaguars · Quarterback · No. 8 · Age 23 · Active roster**
@@ -30,7 +32,7 @@ Four-year contract through 2015.
 ### Regular season
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Jacksonville | 23 | 8 | 5 | 105 | 173 | 60.7 | 1,213 | 7.0 | 242.6 | 9 | 7 | 82.4 |
 | 2013 | Jacksonville | 22 | N/A | 16 | 357 | 564 | 63.3 | 3,981 | 7.1 | 248.8 | 23 | 18 | 84.5 |
 | With Jacksonville | | | | 21 | 462 | 737 | 62.7 | 5,194 | 7.0 | 247.3 | 32 | 25 | 84.0 |
@@ -43,11 +45,11 @@ Four-year contract through 2015.
 ### Playoffs
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Jacksonville | 22 | N/A | 2 | 38 | 59 | 64.4 | 480 | 8.1 | 240.0 | 4 | 0 | 112.3 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
-|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Jacksonville | 22 | N/A | 4 | 24 | 7 | 12 | 0 | 0 | 0 |
 
 ## Awards

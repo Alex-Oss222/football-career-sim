@@ -10,27 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_Scobee.jpg)).*
 
+**Current assignment:** Kicker.
+
+**Field-goal percentage:** 80.0 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 7.0/10 |
-| Athleticism | 5.5/10 |
-| Speed | 4.5/10 |
-| Strength and power | 7.5/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 7.0/10 |
-| Football IQ | 6.5/10 |
-| Field-goal accuracy by distance | 7.0/10 |
-| Leg strength and range | 7.5/10 |
-| Kickoff distance and hang | 6.5/10 |
-| Directional kickoff control | 6.0/10 |
-| Snap-hold operation | 7.0/10 |
-| Pressure consistency | 6.5/10 |
+Josh Scobee has proven himself a strong NFL starting kicker. He made 36 of 41 field goals in the 2013 regular season and all three in the playoffs, and he has made 8 of 10 in five games in 2014. His strengths are a leg with useful long-distance range and a dependable, established kicking operation. Kickoff placement trails his range, and the staff is less confident in his consistency over repeated pressure kicks than in his leg.
 
-A starting NFL kicker with a useful long-distance leg and dependable established operation. I see range and ordinary accuracy ahead of precision kickoff control and my confidence in repeated pressure consistency.
-
-*Staff view, March 31, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

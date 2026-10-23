@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Tom Hanny from Kinnelon, USA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Ryan_Seymour.jpg)).*
 
+**Sacks allowed:** 0 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

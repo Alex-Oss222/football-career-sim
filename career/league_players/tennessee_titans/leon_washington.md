@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: GMO66, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Leon_Washington.jpg)).*
 
+**Current assignment:** Reserve running back.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

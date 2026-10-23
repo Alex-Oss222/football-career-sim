@@ -8,29 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 5.5/10 |
-| Football IQ | 6.0/10 |
-| Run diagnosis | 5.5/10 |
-| Fit discipline | 5.5/10 |
-| Block destruction | 5.0/10 |
-| Range | 5.5/10 |
-| Tackling | 5.5/10 |
-| Zone coverage | 5.0/10 |
-| Man coverage | 4.5/10 |
-| Blitz and pressure | 4.0/10 |
-| Communication | 6.0/10 |
-| Pursuit angles | 5.5/10 |
-
-A dependable complementary linebacker and coverage-unit contributor who can prepare for expanded assignments. I see a role player with communication value and less ability to dictate pressure or man-matchups.
+Russell Allen was a dependable complementary linebacker for Jacksonville in 2013, dressing for all 16 regular-season games and two playoff games and twice stepping into a larger role on a week's notice. His value was his communication, his readiness for expanded assignments and his work on the coverage units. He was less able to create pressure or win man-to-man matchups.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

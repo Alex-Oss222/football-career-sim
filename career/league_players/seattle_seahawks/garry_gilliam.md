@@ -10,6 +10,12 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Governor Tom Wolf from Harrisburg, PA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Garry_Gilliam_(52087267209)_(cropped).jpg)).*
 
+**Current assignment:** Reserve right tackle.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

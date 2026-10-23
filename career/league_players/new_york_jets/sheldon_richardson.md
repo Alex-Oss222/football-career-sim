@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: J. Van Meter, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Sheldon_Richardson_Jets91.jpg)).*
 
+**Current assignment:** Starting tackle.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

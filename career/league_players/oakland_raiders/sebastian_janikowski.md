@@ -10,19 +10,27 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Sebastian_Janikowski_2018.JPG)).*
 
+**Current assignment:** Kicker.
+
+**Field-goal percentage:** 100.0 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 36 | 11 | 4 | 8 | 8 | 100.0 | 43 | 11 | 12 | 91.7 | 35 |
+| 2014 (through Week 4) | Oakland | 36 | 11 | 4 | 8 | 8 | 100.0 | 43 | 11 | 12 | 91.7 | 35 |
 | 2013 | Oakland | 35 | 11 | 12 | 13 | 16 | 81.2 | N/A | 26 | 26 | 100.0 | 65 |
 | Career |  |  |  | 16 | 21 | 24 | 87.5 | N/A | 37 | 38 | 97.4 | 100 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 36 | 11 | 7-7 | 1-1 | 0-0 |
+| 2014 (through Week 4) | Oakland | 36 | 11 | 7-7 | 1-1 | 0-0 |
 | 2013 | Oakland | 35 | 11 | N/A | N/A | N/A |
 
 ### Playoffs

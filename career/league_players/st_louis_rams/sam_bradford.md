@@ -6,11 +6,15 @@
 
 As of January 12, 2014, after the Divisional round.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | St. Louis | 25 | 8 | 16 | 389 | 592 | 65.7 | 3,924 | 6.6 | 245.2 | 29 | 20 | 86.7 |
 
@@ -20,7 +24,7 @@ As of January 12, 2014, after the Divisional round.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | St. Louis | 25 | 8 | 1 | 29 | 49 | 59.2 | 335 | 6.8 | 335.0 | 2 | 2 | 76.5 |
 

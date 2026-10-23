@@ -10,19 +10,27 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Charles_Woodson_2014_2.JPG)).*
 
+**Current assignment:** Starting free safety.
+
+**Passes defended:** 4 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 37 | 24 | 4 | 27 | 16 | 11 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 37 | 24 | 4 | 27 | 16 | 11 | 0 | 0 | 0 |
 | 2013 | Oakland | 36 | 24 | 16 | 98 | 62 | 36 | 4 | 1 | 3 |
 | Career |  |  |  | 20 | 125 | 78 | 47 | 4 | 1 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 37 | 24 | 0 | 0 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 37 | 24 | 0 | 0 | 4 | 0 | 0 | 0 |
 | 2013 | Oakland | 36 | 24 | 2 | 0 | 18 | 1 | 1 | N/A |
 
 ### Playoffs

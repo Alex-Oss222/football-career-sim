@@ -8,22 +8,13 @@ As of August 31, 2014.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 4.0/10 |
-| Speed | 3.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.0/10 |
-| Anchor | 6.0/10 |
-| Movement | 3.5/10 |
-| Protection identification | 4.5/10 |
-
-A four-year college starting center with a thick frame and functional strength; athletic marks are modest.
+Tyler Larsen is an undrafted rookie center from Utah State, a four-year college starter with a thick frame whose strength and anchor were at an NFL starter's standard. His speed, movement and overall athletic ability were modest.
 
 *Staff view, May 11, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

@@ -158,7 +158,19 @@
    ],
    "one_line": "A four-year college starter, 39 consecutive games, the last 26 at left tackle, with good short-area movement and a long frame; he did not run at the combine and his strength marks are light for the position.",
    "updates": [],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/charles_leno_jr.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/charles_leno_jr.md at commit 332d70b",
+   "short": {
+    "text": "Charles Leno Jr. is a rookie tackle who has been active for {{2014.regular.games:words}} regular-season games. A four-year college starter who finished at left tackle, he moves well in a short area and has a long frame. His strength is light for the position, and his anchor is the staff's biggest concern.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

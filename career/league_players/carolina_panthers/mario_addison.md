@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: Keith Allison derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mario_addison_panthers.jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
+**Sacks:** 1 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

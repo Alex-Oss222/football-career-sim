@@ -10,31 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Daryl_Smith.JPG)).*
 
+**Current assignment:** Starting linebacker.
+
+**Tackles:** 48 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 7.0/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 7.0/10 |
-| Football IQ | 8.0/10 |
-| Run diagnosis | 7.5/10 |
-| Fit discipline | 7.0/10 |
-| Block destruction | 6.0/10 |
-| Range | 6.5/10 |
-| Tackling | 7.0/10 |
-| Zone coverage | 7.0/10 |
-| Man coverage | 6.0/10 |
-| Blitz and pressure | 5.5/10 |
-| Communication | 8.0/10 |
-| Pursuit angles | 7.0/10 |
+Daryl Smith has proven he is an NFL starting linebacker, and the staff views him as a strong one. He was a base linebacker for Jacksonville in 2013, dressing for all 16 regular-season games and two playoff games, and he kept the base defense's communication lead from the fourth week through the playoffs despite role changes. He organizes the defense with his communication, run diagnosis and zone awareness. His value is in reading and coordinating rather than rushing the passer, and his blitzing is below an NFL starter's standard.
 
-A complete second-level veteran whose communication, diagnosis and zone awareness organize the defense. I see a strong starter whose value is reading and coordinating rather than being a featured pressure player.
-
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff view, August 1, 2014.*
 
 ## Contract
 

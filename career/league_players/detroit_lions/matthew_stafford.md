@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Matthew_Stafford_2015.jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 102.8 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Detroit | 26 | 9 | 5 | 125 | 185 | 67.6 | 1,532 | 8.3 | 306.4 | 8 | 2 | 102.8 |
 | 2013 | Detroit | 25 | 9 | 16 | 384 | 580 | 66.2 | 3,776 | 6.5 | 236.0 | 24 | 10 | 91.0 |

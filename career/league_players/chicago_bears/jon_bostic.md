@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels from District of Columbia, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jon_Bostic_Jaguars_at_Commanders_(cropped).jpg)).*
 
+**Current assignment:** Reserve middle linebacker.
+
+**Tackles:** 2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

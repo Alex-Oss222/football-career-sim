@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Daniel Lin, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Tyrod_Taylor_scrambles_vs_Boise_State.jpg)).*
 
+**Current assignment:** Starting strongside linebacker.
+
+**Tackles:** 46 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

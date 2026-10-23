@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Daniel Hartwig, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Quinton_Patton_49ers.jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Shaun_Phillips.JPG)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

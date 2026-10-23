@@ -10,11 +10,17 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Joe Bielawa, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Christian_Ponder_close-up.jpg)).*
 
+**Current assignment:** Backup quarterback.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Minnesota | 26 | 7 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Minnesota | 25 | 7 | 16 | 354 | 547 | 64.7 | 3,608 | 6.6 | 225.5 | 24 | 9 | 91.3 |
@@ -27,7 +33,7 @@ As of October 2, 2014, after Week 5.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Minnesota | 25 | 7 | 3 | 66 | 98 | 67.3 | 784 | 8.0 | 261.3 | 7 | 3 | 102.6 |
 

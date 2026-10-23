@@ -10,28 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: BrokenSphere, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Bryan_Anger_punts_at_2008_Emerald_Bowl.JPG)).*
 
+**Current assignment:** Punter.
+
+**Net punting average:** 37.9 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 4.5/10 |
-| Strength and power | 7.5/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 6.0/10 |
-| Football IQ | 6.0/10 |
-| Gross distance | 7.5/10 |
-| Hang time | 6.5/10 |
-| Net and location control | 6.0/10 |
-| Directional punting | 5.5/10 |
-| Plus-territory control | 5.5/10 |
-| Catch-to-kick operation | 6.0/10 |
-| Pressure consistency | 6.0/10 |
+Bryan Anger has been a viable NFL starting punter for Jacksonville. He was active for all 16 regular-season games in 2013, punting 69 times, and he has 25 punts in five games in 2014. His best weapon is a strong leg for distance, with useful hang time and operation, and in camp he put the recorded situational punts to the side the staff called for. Directional punting and control in plus territory are less developed than his leg.
 
-A strong-legged punter whose best weapon is gross distance. I see hang and operation as useful, with directional and plus-territory control less developed than the leg.
-
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

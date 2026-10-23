@@ -10,6 +10,12 @@ As of January 11, 2014, after the Divisional round.
 
 *Photo: Big Cowboy Kev ( talk ), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Antspencer.jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

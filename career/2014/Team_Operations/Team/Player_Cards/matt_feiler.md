@@ -8,20 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 2.5/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 3.0/10 |
-| Football IQ | 4.0/10 |
-| Size | 6.0/10 |
-| Technique | 3.0/10 |
-| Level of competition | 2.5/10 |
-
-A small-school lineman with size and weight-room strength (36 bench reps at the combine, tied for second among linemen) and no experience against major-conference rushers.
+Matt Feiler is a rookie lineman from a small school with good size and weight-room strength; his bench press tied for second among linemen at the combine. His technique is a long way from NFL standard, and his college snaps came against Division II opponents rather than major-conference rushers.
 
 *Staff view, May 11, 2014.*
 

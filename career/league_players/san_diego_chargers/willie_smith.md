@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Owings Mills, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Willie_smith_redskins.jpg)).*
 
+**Current assignment:** Reserve left tackle.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

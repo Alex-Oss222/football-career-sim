@@ -246,7 +246,23 @@
      "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/chad_henne.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/chad_henne.md at commit 332d70b",
+   "short": {
+    "text": "Chad Henne spent the 2013 season as Jacksonville's backup quarterback, active for all {{2013.regular.games}} regular-season games and {{2013.playoffs.games:words}} playoff games. He holds his protection resets when the defense changes the picture and keeps the short Stick and Drive throws on schedule, with enough arm to run the offense. Tempo and substitution communication was his unfinished work entering 2014, and in camp he ran the situational menus without needing another explanation. The staff sees his limit in hurried command and decisions once the clean rhythm breaks.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

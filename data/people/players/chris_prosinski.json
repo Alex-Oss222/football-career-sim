@@ -238,7 +238,23 @@
    ],
    "one_line": "A coverage-unit safety with useful straight-line range and a reserve defensive role. I see movement and lane work ahead of route-combination recognition and man coverage.",
    "updates": [],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/chris_prosinski.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/chris_prosinski.md at commit 332d70b",
+   "short": {
+    "text": "Chris Prosinski has been a reserve safety and coverage-unit player for Jacksonville, dressing for all {{2013.regular.games}} regular-season games and {{2013.playoffs.games:words}} playoff games in 2013. He brings useful straight-line range to the coverage units, and he held his assigned coverage lanes through 2013 camp and the preseason. His movement and lane work are ahead of his recognition of route combinations, his man coverage and his ball skills.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

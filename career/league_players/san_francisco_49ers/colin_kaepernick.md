@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Colin_Kaepernick_(18391502680).jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 90.0 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | San Francisco | 26 | 7 | 5 | 114 | 187 | 61.0 | 1,324 | 7.1 | 264.8 | 8 | 3 | 90.0 |
 | 2013 | San Francisco | 25 | 7 | 16 | 341 | 544 | 62.7 | 3,461 | 6.4 | 216.3 | 21 | 14 | 83.0 |

@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: John H. Kim ; cropped by User:Blueag9, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:ColinCole-8-16-08-49ers.jpg)).*
 
+**Current assignment:** Starting defensive tackle.
+
+**Sacks:** 1 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Airman first class Christopher R. Morales, Public domain ([source](https://commons.wikimedia.org/wiki/File:Charles_tillman_2016.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

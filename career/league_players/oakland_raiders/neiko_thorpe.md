@@ -10,17 +10,25 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Neiko_Thorpe.JPG)).*
 
+**Current assignment:** Reserve cornerback.
+
+**Passes defended:** 0 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 24 | 31 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 24 | 31 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 24 | 31 | 0 | 0 | 0 | 0 | 0 | 3 |
+| 2014 (through Week 4) | Oakland | 24 | 31 | 0 | 0 | 0 | 0 | 0 | 3 |
 
 ### Playoffs
 

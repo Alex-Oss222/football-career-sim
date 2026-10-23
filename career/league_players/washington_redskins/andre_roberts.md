@@ -10,6 +10,14 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andre_Roberts_2018.jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 3.4 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

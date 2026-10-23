@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Hector Alejandro, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:TJ_Barnes_(4024925022)_(cropped).jpg)).*
 
+**Current assignment:** Reserve tackle.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

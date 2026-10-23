@@ -10,6 +10,12 @@ As of October 6, 2014, after Week 5.
 
 *Photo: John Martinez Pavliga, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Gabe_Miller_(2009).jpg)).*
 
+**Tackles:** 14 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

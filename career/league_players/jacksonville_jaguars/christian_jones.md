@@ -12,22 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Size and length | 6.5/10 |
-| Diagnosis and instincts | 4.0/10 |
-| Coverage-unit fit | 5.5/10 |
+Christian Jones is a rookie linebacker who has made three special-teams tackles in five games. He is a big linebacker who played both middle and outside linebacker at Florida State, with the size and strength for the strong side and experience on coverage units. His instincts and change of direction are the questions.
 
-A big linebacker who played middle and outside at Florida State, with size for a SAM role and coverage-unit experience; instincts and change of direction are the questions.
-
-*Staff view, May 11, 2014; dated updates through October 5, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

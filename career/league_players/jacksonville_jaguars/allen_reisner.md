@@ -8,22 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall at position | 4.5/10 |
-| Route running and separation | 4.0/10 |
-| Hands and catch radius | 4.5/10 |
-| Contested catch and ball tracking | 4.0/10 |
-| YAC | 3.5/10 |
-| Run blocking | 4.5/10 |
-| Pass protection and chip | 4.5/10 |
-| Alignment versatility | 5.5/10 |
-| Speed and athleticism | 4.0/10 |
-| Coverage recognition | 5.0/10 |
+Allen Reisner was a reserve tight end for Jacksonville in 2013, dressing for all 16 regular-season games and two playoff games as the third tight end in heavy personnel. He was a dependable package player who lined up correctly and ran the routes he was given in the 2013 camp and preseason. He offered limited receiving separation and little after the catch, and the staff saw little reason to feature him in space.
 
-Camp/preseason assignment reliability and route work provide a baseline. TE3 usage leaves individual blocking and broader receiving capability underobserved, not disproven.
+*Staff view, January 14, 2014.*
 
-*Staff view at the 2013 season close, January 14, 2014.*
+## Contract
+
+Contract not established.
 
 ## Statistics
 

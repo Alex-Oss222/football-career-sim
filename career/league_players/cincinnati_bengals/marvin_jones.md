@@ -10,6 +10,10 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Navin75, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:WR_Marvin_Jones.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

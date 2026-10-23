@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Ronald_Leary_(Denver_Broncos_player)_during_pre-season_game_against_Green_Bay_Packers_on_August_26,_2017_in_Denver,_Colorado.jpg)).*
 
+**Current assignment:** Starting left guard.
+
+**Sacks allowed:** 3 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

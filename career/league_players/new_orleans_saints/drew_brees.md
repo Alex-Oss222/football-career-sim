@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Senate Democrats, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Drew_Brees_(49396271982)_(1).jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 92.4 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | New Orleans | 35 | 9 | 5 | 105 | 175 | 60.0 | 1,414 | 8.1 | 282.8 | 6 | 2 | 92.4 |
 | 2013 | New Orleans | 34 | 9 | 9 | 207 | 317 | 65.3 | 2,158 | 6.8 | 239.8 | 11 | 12 | 80.7 |
@@ -27,7 +35,7 @@ As of October 5, 2014, after Week 5.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | New Orleans | 34 | 9 | 1 | 18 | 26 | 69.2 | 170 | 6.5 | 170.0 | 1 | 2 | 67.8 |
 

@@ -166,7 +166,19 @@
      "source": "Source: [Week 5 record](career/2014/Regular_Season/Games/Week_05/output.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/allen_hurns.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/allen_hurns.md at commit 332d70b",
+   "short": {
+    "text": "Allen Hurns is an undrafted rookie from Miami who has been active for {{2014.regular.games:words}} games, with {{2014.regular.receptions:words}} catches for {{2014.regular.receiving_yards}} yards and {{2014.regular.special_teams_tackles:words}} special-teams tackles. He is a tall outside receiver with body control along the boundary, and he was productive as a senior. On Stone's chart for the Pittsburgh game he was the first relief receiver and the second punt returner, behind Andrew Hawkins. His speed is average, and creating separation is his main limitation.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

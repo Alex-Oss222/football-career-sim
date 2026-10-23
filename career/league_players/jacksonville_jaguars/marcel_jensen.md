@@ -6,24 +6,13 @@
 
 As of October 5, 2014, after Week 5.
 
+**Yards per target:** 10.0 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 2.5/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 4.0/10 |
-| Football IQ | 4.5/10 |
-| Size | 6.0/10 |
-| Attached blocking | 4.5/10 |
-| Receiving | 3.5/10 |
+Marcel Jensen is a rookie tight end from Fresno State with no established NFL standing, and he has been active for five games for Jacksonville in 2014. He is a big, strong tight end with the size for attached blocking, and in camp he was assignment-correct in that work, with a mixed finish. Receiving is his main limitation, with modest production in a pass-heavy college offense, and his speed and change of direction are below an NFL starter's standard.
 
-A big tight end from Fresno State with size for attached blocking and modest receiving production in a pass-heavy offense.
-
-*Staff view, May 11, 2014; dated updates through August 28, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

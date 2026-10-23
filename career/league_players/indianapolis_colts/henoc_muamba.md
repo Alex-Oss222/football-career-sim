@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Cmm3, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:10,_Henoc_Muamba,_Sept_10,_2021.jpg)).*
 
+**Current assignment:** Reserve middle linebacker.
+
+**Tackles:** 3 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

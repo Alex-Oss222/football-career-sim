@@ -253,7 +253,23 @@
      "source": "Source: [September 8 transactions](career/2014/Team_Operations/Team/Roster/transactions_2014-09-08.md) and the [medical history](career/2014/Team_Operations/Medical/medical_history.md#september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/dwight_lowery.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/dwight_lowery.md at commit 332d70b",
+   "short": {
+    "text": "Dwight Lowery has been a viable NFL starter at safety for Jacksonville, starting beside Bacarri Rambo in 2013 and dressing for all {{2013.regular.games}} regular-season games and {{2013.playoffs.games:words}} playoff games. He steadies the coverage with his communication, positioning and recognition of route combinations, and in 2013 camp he was the cleanest and most stabilizing communicator among the safeties. His anticipation and clean operation make up for ordinary recovery speed, and his man coverage in the slot is below a starter's standard.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

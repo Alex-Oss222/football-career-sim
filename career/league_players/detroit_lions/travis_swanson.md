@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Pete Sheffield, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Travis_Swanson.jpg)).*
 
+**Current assignment:** Reserve center.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

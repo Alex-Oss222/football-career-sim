@@ -10,6 +10,14 @@ As of October 2, 2014, after Week 5.
 
 *Photo: All-Pro Reels from District of Columbia, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chiefs_541_(51615470661)_(cropped).jpg)).*
 
+**Current assignment:** Reserve running back.
+
+**Yards per carry:** 3.9 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

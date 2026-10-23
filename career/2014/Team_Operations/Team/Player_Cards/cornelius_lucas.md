@@ -12,22 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 4.0/10 |
-| Speed | 3.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 3.5/10 |
-| Technique | 3.5/10 |
-| Football IQ | 4.5/10 |
-| Length | 7.0/10 |
-| Bend and knee flexibility | 3.0/10 |
-| Set consistency | 3.5/10 |
+Cornelius Lucas is a rookie tackle who has been active for five regular-season games, with 23 snaps on special teams. He is a very large tackle with long arms and enough strength for the position. His set is still raw, and he falls short on bend, foot speed and change of direction; in camp his set landmark held against the rookie rushers, though Andre Branch beat him around the edge once.
 
-A very large developmental tackle with length and a raw set; measurements conflict in the sources, and he was measured at the combine on crutches after a foot stress fracture in pre-combine training.
-
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

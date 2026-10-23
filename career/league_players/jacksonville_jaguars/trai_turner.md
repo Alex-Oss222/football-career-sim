@@ -10,24 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Arnie Papp, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Trai_Turner.jpg)).*
 
+**Current assignment:** Starting right guard.
+
+**Sacks allowed:** 2 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 6.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 7.0/10 |
-| Agility and change of direction | 5.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Anchor and power | 7.0/10 |
-| Interior exchanges | 4.5/10 |
-| Pass-set discipline | 4.5/10 |
+Trai Turner is a rookie guard who has started five games on Jacksonville's line. He plays with a powerful base, a strong anchor and short-area quickness, and in camp he held his anchor against C.J. Mosley and C.J. Wilson. His technique is raw: hand placement, pass-set discipline and exchanges with the linemen beside him still need coaching, and late hands cost him one camp rep against Aaron Donald, though he held the repeat.
 
-A redshirt-sophomore right guard with a powerful base and short-area quickness, a full 2013 season as an every-game starter in the SEC. Technique is raw: hand placement and pass-set discipline need coaching, and he did not complete the agility drills at the combine.
-
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

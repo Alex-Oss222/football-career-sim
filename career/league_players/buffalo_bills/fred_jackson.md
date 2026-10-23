@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Ed Yourdon, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Fred_Jackson_NY_Jets_vs._Buffalo,_Oct_2009_-_05.jpg)).*
 
+**Current assignment:** Reserve running back.
+
+**Yards per carry:** 5.0 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

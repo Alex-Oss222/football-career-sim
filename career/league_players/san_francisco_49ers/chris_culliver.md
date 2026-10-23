@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: queenbeeofscrap, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chris_Culliver_signs_autograph_in_2009.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 4 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

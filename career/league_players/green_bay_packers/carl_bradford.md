@@ -10,6 +10,12 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Carl_Bradford.jpg)).*
 
+**Current assignment:** Reserve linebacker.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

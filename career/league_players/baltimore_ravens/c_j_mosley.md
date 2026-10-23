@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Executive Office of the President, Public domain ([source](https://commons.wikimedia.org/wiki/File:C.J.Mosley.png)).*
 
+**Current assignment:** Starting inside linebacker.
+
+**Tackles:** 31 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

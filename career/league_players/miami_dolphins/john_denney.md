@@ -10,13 +10,21 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Chrisjnelson at English Wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:John_Denney_in_2011.jpg)).*
 
+**Current assignment:** Long snapper.
+
+**Long snaps:** 38 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 35 | 92 | 4 | 38 | 38 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 35 | 92 | 4 | 38 | 38 | 0 | 0 |
 | 2013 | Miami | 34 | 92 | 16 | N/A | N/A | N/A | 0 |
 | Career |  |  |  | 20 | N/A | N/A | N/A | 0 |
 

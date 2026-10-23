@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Lovett aka Wigstruck on Flickr, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Maclin_crop.jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 8.9 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

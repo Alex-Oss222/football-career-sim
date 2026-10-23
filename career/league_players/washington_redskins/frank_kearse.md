@@ -10,6 +10,12 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Chrisjnelson at en.wikipedia, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Frank_Kearse.jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

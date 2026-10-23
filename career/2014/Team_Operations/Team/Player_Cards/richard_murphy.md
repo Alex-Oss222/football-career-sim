@@ -8,29 +8,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.0/10 |
-| Athleticism | 4.5/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.0/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 4.0/10 |
-| Football IQ | 4.0/10 |
-| Vision and decision | 4.5/10 |
-| Burst and acceleration | 5.0/10 |
-| Long speed | 5.0/10 |
-| Cut efficiency and change of direction | 4.5/10 |
-| Contact balance and power | 4.0/10 |
-| Ball security | 4.5/10 |
-| Receiving | 4.5/10 |
-| Route detail | 4.5/10 |
-| Pass protection | 3.5/10 |
-| Short-yardage finishing | 4.0/10 |
+Richard Murphy is a reserve running back who spent 2013 on Jacksonville's practice squad. He has usable movement and handles his receiving assignments; his routes were correct in the 2013 Miami and Atlanta preseason games, and he was assignment-correct in the developmental backfields in the August 2014 practices. Pass protection and inside power limit him to a specific complementary job.
 
-A reserve runner with usable movement and receiving assignments. I see a player who needs a specific complementary job, with protection and inside power limiting a broader role.
-
-*Staff view, March 31, 2014; dated updates through August 18, 2014.*
+*Staff view, August 18, 2014.*
 
 ## Contract
 

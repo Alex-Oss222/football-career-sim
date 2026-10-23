@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: U.S. Army Public Affairs Midwest derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Willie_young_2015.jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

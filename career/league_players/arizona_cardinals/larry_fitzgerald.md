@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Larry_Fitzgerald_2017.jpg)).*
 
+**Current assignment:** Starting wide receiver.
+
+**Yards per target:** 8.2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

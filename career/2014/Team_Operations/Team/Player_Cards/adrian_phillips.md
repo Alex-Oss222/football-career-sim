@@ -6,24 +6,13 @@ Born March 28, 1992 · Texas · Undrafted
 
 As of October 5, 2014, after Week 5.
 
+**Passes defended:** 0 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Tackling | 5.5/10 |
-| Deep range | 4.0/10 |
-| Coverage-unit fit | 5.5/10 |
+Adrian Phillips is an undrafted rookie safety who moved from the practice squad to the active roster after Dwight Lowery went to reserve/injured, and he has been active for four games. He has a physical tackling style and coverage-unit experience from Texas. Range on the back end is the question.
 
-A safety with a physical tackling profile and coverage-unit experience; range on the back end is the question.
-
-*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

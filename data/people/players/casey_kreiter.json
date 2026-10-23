@@ -166,7 +166,19 @@
      "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/casey_kreiter.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/casey_kreiter.md at commit 332d70b",
+   "short": {
+    "text": "Casey Kreiter, a rookie long snapper from Iowa signed to compete with Jeremy Cain, has handled {{2014.regular.long_snaps}} long snaps in {{2014.regular.games:words}} games in 2014. He arrived after four seasons of Big Ten snapping with technique and snap accuracy as his best tools, and in camp he kept the punt operation clean against a controlled rush. Athleticism, speed and change of direction are his main limitations, and the staff judged every part of his game below an NFL starter's standard when he signed.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Johnathon Shell (crash8130), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jake_Locker.jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 81.4 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Tennessee | 26 | 10 | 4 | 91 | 151 | 60.3 | 995 | 6.6 | 248.8 | 7 | 5 | 81.4 |
 | 2013 | Tennessee | 25 | 10 | 16 | 389 | 600 | 64.8 | 3,928 | 6.5 | 245.5 | 25 | 18 | 84.8 |
@@ -27,7 +35,7 @@ As of October 5, 2014, after Week 5.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Tennessee | 25 | 10 | 2 | 54 | 84 | 64.3 | 477 | 5.7 | 238.5 | 1 | 1 | 78.3 |
 

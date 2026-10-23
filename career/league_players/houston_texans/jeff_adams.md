@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Flickr user slgckgc, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jeff_Adams_(5108934810)_(cropped).jpg)).*
 
+**Current assignment:** Reserve left tackle.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Stephanie Rush, Pacific Regional Medical Command Public Affairs, Public domain ([source](https://commons.wikimedia.org/wiki/File:Doug_Martin_at_Schoffield_Barracks_(cropped).jpg)).*
 
+**Current assignment:** Starting running back.
+
+**Yards per carry:** 5.7 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

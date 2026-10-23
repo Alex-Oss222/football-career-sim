@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Air Force employee Brad Fallin, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jacquizz_Rodgers_2014_Atlanta_Falcons.jpg)).*
 
+**Current assignment:** Reserve running back.
+
+**Yards per carry:** 4.5 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Peyton_Manning_(51665689271).jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 101.9 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Denver | 38 | 18 | 4 | 86 | 127 | 67.7 | 943 | 7.4 | 235.8 | 6 | 1 | 101.9 |
 | 2013 | Denver | 37 | 18 | 16 | 359 | 562 | 63.9 | 3,846 | 6.8 | 240.4 | 27 | 12 | 90.9 |
