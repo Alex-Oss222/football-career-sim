@@ -44,7 +44,7 @@ The research register and the repository assessment uploaded by the user on Octo
 4. **Roster-deadline interleaving:** September 1 changes eligibility before the September 3 game. Do not finish all four games before applying the 75-player reduction.
 5. **Different owner and presentation layers:** From 2015 the Preseason Game Report is the one result page for each game, and it carries the eight-section report's football substance (preparation, media, the story, the coaching review, the box score last). It is built only after the result owner and stat renderer are reconciled. No second full summary may be created.
 6. **Dropped sources:** the uploaded register's Chiefs article of August 24, 2014 (preseason game takeaways) could not be reached or confirmed in two passes, and the Patriots' August 26, 2014 Belichick transcript was confirmed by one search only, with the page itself unreachable. Neither is in a library register, so both are dropped, as the [final roster cuts register](final_roster_cuts_research.md) drops the Patriots transcript; neither decided a rule.
-7. **2015 practice observations:** how they are produced is awaiting the user's decision (design, section H, Q-P); until then no 2015 practice observation is produced, and a page cites only observations a training report already holds.
+7. **2015 practice observations:** decided by the user on October 20, 2026 (design, section H, Q-P): a 2015 practice records only its session facts, and performance evidence comes only from the plays the games produce.
 
 **Two-pass procedure:** The initial pass checked original 2011 labor language and 2014–15 official team and NFL calendars. The second used the NFL league schedule against Jaguars' dated club release, and independently used the Seahawks league deadline announcement plus the Chiefs' August 8, 2014 report for contemporary operating practices. Shared league bulletins are not independent rulemakers; sources marked independent here are different organizations or primary agreement versus practice. The process check re-read the April 9, 2015 Jaguars release, the NFL 2015 preseason schedule page, the May 19, 2015 try-rule article (with separate reports that the rule was adopted for 2015 and would then be reviewed) and Article 23 §§5 to 11 of the original agreement; it confirmed the Patriots transcript by search and could not retrieve the Chiefs August 24 article.
 
@@ -83,7 +83,7 @@ The research register and the repository assessment uploaded by the user on Octo
 | 2015 preseason opponent rosters | **Unavailable** as of Oct 5, 2014; later sourced build required, at the August 2015 clock. |
 | 2015 game release / 15-yard try behavior | **Unverified and not demonstrated implemented**; must pass season-specific tests before August 14, 2015. |
 | Event router to this phase | Event-insert design exists; a functional full connection to the preseason phase not demonstrated, and two briefs carrying inserts at once is a build item. |
-| 2015 practice observations | **Awaiting the user's decision** (design, section H, Q-P). |
-| Rulebook wording for per-game pages | **Awaiting the user's decision** (design, section H, Q-R). |
+| 2015 practice observations | **Decided by the user, October 20, 2026** (design, section H, Q-P): session facts only; performance evidence from game plays. |
+| Rulebook wording for per-game pages | **Approved by the user, October 20, 2026** (design, section H, Q-R); reworded in the step 8 build, when the per-game pages exist. |
 
 As uploaded: no code or GitHub contents were modified for this design. Proposed tests have not been run in the repository.

@@ -23,7 +23,7 @@
 
 **Important:** The money above is the *existing* 2015 scheduled salary for the three continuing contracts, not a verified staff-budget ceiling. The sum is $3,650,000 before any negotiated renewals or subsequent contract changes. Salaries for 2015 extensions of the other nine have not been agreed or established. These are this career's contract terms ([coaching payroll](../../career/finances/coaching_and_organization/coaching_payroll.md)); they do not claim to reproduce the coaches' real-world historical pay.
 
-**When the nine contracts end** is not yet set and awaits the user's decision (design, section B, item 5). The coach records hold the seasons only. The proposal, not adopted, is the later of January 31, 2015 or the day after Jacksonville's last 2014 game, from the wording of Jacksonville's own 2010 assistant extensions ([library row C73](../../library/nfl_head_coach_contracts_2005_2014.md)), labelled as a reconstruction. Until then, no act that needs that date is taken.
+**When the nine contracts end** was decided by the user on October 20, 2026 (design, section B, item 5): 2014 is their final contract season, and each ends on the later of January 31, 2015 or the day after Jacksonville's last 2014 game, from the wording of Jacksonville's own 2010 assistant extensions ([library row C73](../../library/nfl_head_coach_contracts_2005_2014.md)), labelled as a reconstruction in each coach record.
 
 **Funding, as the design's rule reads it.** A renewal to the same job at no more than the coach's 2014 salary, on the common terms of his contract, is within the promised staff budget once Caldwell confirms it before the offer. Calculation, not a ceiling: if all nine were renewed at their 2014 salaries ($4,150,000 together, from their coach records), 2015 scheduled assistant pay would be $7,800,000 ($3,650,000 continuing plus $4,150,000). Any renewal above a coach's 2014 salary returns to Caldwell as his decision.
 
@@ -46,11 +46,11 @@ The finished January report would then add each later game and the 2014 postseas
 ## 3. Sample of how an issued briefing could ask for a decision
 
 > **Bates: quarterback-coach contract**  
-> **Contract:** Runs through the 2014 season; the end date is not yet set (awaiting the user's decision on the nine contracts).  
+> **Contract:** Runs through the 2014 season; ends on the later of January 31, 2015 or the day after Jacksonville's last 2014 game (a reconstruction).  
 > **Football question:** How well did the quarterback room's protection identification and coverage preparation hold up over the full season? Who owns the different parts of recurring mistakes?  
 > **Proposed decision:** Pursue new terms, choose not to pursue renewal, or defer until the specific missing cutups/review are available.  
 > **Authority:** Stone determines whether Bates remains in his coaching plan; an extension needs actual contract terms, budget confirmation and Bates's agreement.  
-> **Your response due:** Not established until contractual timing is verified.
+> **Your response due:** Before the contract ends: January 31, 2015, or the day after Jacksonville's last 2014 game if that is later.
 
 This is a demonstration of format only. There is no supported conclusion that Bates should be renewed or dismissed.
 

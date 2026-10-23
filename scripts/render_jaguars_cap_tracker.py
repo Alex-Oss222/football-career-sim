@@ -526,7 +526,7 @@ def render_organization(data, years, root):
         raise ValueError('No coach contract schedules salary in the horizon; reconcile the coach records')
     season = int(repository_map(root)['active_season'])
     staff_page = SeasonPaths(season, root).staff_page
-    rows, head, assistants, ending = [], {y: 0 for y in years}, {y: 0 for y in years}, {}
+    rows, head, assistants, ending, ends = [], {y: 0 for y in years}, {y: 0 for y in years}, {}, {}
     for record, terms, salary in staff:
         rows.append([record['name'], terms.get('job')] + [dollars(salary.get(y)) for y in years]
                     + [organization_guarantee(terms)])
@@ -534,6 +534,8 @@ def render_organization(data, years, root):
         for y, v in salary.items():
             bucket[y] += v
         ending.setdefault(coaches.through_season(terms), []).append(record['name'])
+        ends.setdefault(coaches.through_season(terms), {}).setdefault(
+            (terms.get('end') or {}).get('text') or 'Not recorded', []).append(record['name'])
     def money(values):
         return [dollars(v) if v else '' for v in values]
     payroll = [['Head coach'] + money(head.values()), ['Assistant coaches'] + money(assistants.values()),
@@ -552,16 +554,33 @@ def render_organization(data, years, root):
     def listed(items):
         items = list(items)
         return ', '.join(items[:-1]) + ' and ' + items[-1] if len(items) > 1 else items[0]
-    completed = []
+    # The completed terms: the head coach's line links his Contract and jobs page; assistants whose
+    # contracts were completed the same way, from the same research, share one line that links it.
+    completed = {}
     for record, terms, _ in staff:
         groups = coaches.completed(terms)
         if groups:
-            (source, keys), rest = groups[0], groups[1:]
-            line = "%s's %s %s completed from %s" % (record['name'], listed(names[k] for k in keys),
+            head_coach = terms.get('job') == 'Head coach'
+            shape = (head_coach, record['name'] if head_coach else None,
+                     tuple((source, tuple(keys)) for source, keys in groups), tuple(coaches.completed_sources(terms)))
+            completed.setdefault(shape, []).append(record['name'])
+    def completed_line(coach_names, groups):
+        (source, keys), rest = groups[0], groups[1:]
+        if len(coach_names) == 1:
+            line = "%s's %s %s completed from %s" % (coach_names[0], listed(names[k] for k in keys),
                                                      'were' if len(keys) > 1 else 'was', source)
             for source, keys in rest:
                 line += ', and his %s from %s' % (listed(names[k] for k in keys), source)
-            completed.append(line + '; the rest is as signed')
+        else:
+            line = "%s: each contract's %s %s completed from %s" % (
+                listed(coach_names), listed(names[k] for k in keys), 'were' if len(keys) > 1 else 'was', source)
+            for source, keys in rest:
+                line += ', and its %s from %s' % (listed(names[k] for k in keys), source)
+        return line + '; the rest is as signed'
+    def research_label(path):
+        first = next((l for l in (root / path).read_text(encoding='utf-8').split('\n') if l.startswith('# ')),
+                     '# ' + Path(path).stem)
+        return re.sub(r'^Library:\s*', '', first[2:].strip())
     # The page is dated by the latest contract fact it shows (a signing, an amendment by its
     # in-world date, in force on the master date, or a departure), so it changes only when a
     # coach contract does.
@@ -598,10 +617,21 @@ def render_organization(data, years, root):
         out += 'Offset: ' + text[:1].lower() + text[1:].rstrip('.') + '.\n\n'
     for line in departed:
         out += line + '\n\n'
-    for line in completed:
-        out += '%s ([Contract and jobs](%s)).\n\n' % (line, here(root / STONE_PAGES / 'Contract_and_Jobs.md'))
-    out += '## Contracts ending\n\n' + table(['After the season', 'Coaches'],
-                                              [[s, ', '.join(names)] for s, names in sorted(ending.items())])
+    for (head_coach, _, groups, sources), coach_names in completed.items():
+        if head_coach:
+            links = ['[Contract and jobs](%s)' % here(root / STONE_PAGES / 'Contract_and_Jobs.md')]
+        else:
+            links = ['[%s](%s)' % (research_label(s), here(root / s)) for s in sources]
+        out += '%s%s.\n\n' % (completed_line(coach_names, list(groups)),
+                               ' (%s)' % ', '.join(links) if links else '')
+    def ends_text(by_text):
+        # One end term for the whole row reads alone; different ones name their coaches.
+        if len(by_text) == 1:
+            return next(iter(by_text))
+        return '; '.join('%s (%s)' % (text, ', '.join(who)) for text, who in by_text.items())
+    out += '## Contracts ending\n\n' + table(['After the season', 'Coaches', 'Ends'],
+                                              [[s, ', '.join(names), ends_text(ends[s])]
+                                               for s, names in sorted(ending.items())])
     return out.rstrip() + '\n'
 
 def render(data,root=ROOT):

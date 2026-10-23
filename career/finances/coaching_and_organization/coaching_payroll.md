@@ -72,10 +72,12 @@ Alan Lowry left on January 12, 2014; his 2014 salary of $625,000 ended with the 
 
 Alex Stone's end date was completed from the wording of Jacksonville's own 2010 assistant contracts, and his salary, offset, dismissal terms, signing bonus and options from comparable head-coach contracts of the time; the rest is as signed ([Contract and jobs](../../Stone/Contract_and_Jobs.md)).
 
+Frank Bush, George Yarno, Jeremy Bates, Darryl Drake, Tim Spencer, Tony Oden, Anthony Pleasant, John Zernhelt and Charlie Skalaski: each contract's end date was completed from the wording of Jacksonville's own 2010 assistant contracts; the rest is as signed ([NFL head-coach contracts and extensions, real practice 2005 to January 2014](../../../library/nfl_head_coach_contracts_2005_2014.md)).
+
 ## Contracts ending
 
-| After the season | Coaches |
-|---|---|
-| 2014 | Frank Bush, George Yarno, Jeremy Bates, Darryl Drake, Tim Spencer, Tony Oden, Anthony Pleasant, John Zernhelt, Charlie Skalaski |
-| 2015 | Romeo Crennel, Mike Tice, Mike Westhoff |
-| 2016 | Alex Stone |
+| After the season | Coaches | Ends |
+|---|---|---|
+| 2014 | Frank Bush, George Yarno, Jeremy Bates, Darryl Drake, Tim Spencer, Tony Oden, Anthony Pleasant, John Zernhelt, Charlie Skalaski | The later of January 31, 2015 or the day after Jacksonville's last game of the 2014 season |
+| 2015 | Romeo Crennel, Mike Tice, Mike Westhoff | Not recorded |
+| 2016 | Alex Stone | The later of January 31, 2017 or the day after Jacksonville's last game of the 2016 season |
