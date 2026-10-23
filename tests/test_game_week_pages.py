@@ -72,12 +72,20 @@ class RegistryTests(unittest.TestCase):
         self.assertEqual({e.step for e in decisions.EVENTS if e.kind in ("injury_replacement", "trade_talks")}, {5})
         self.assertEqual({e.step for e in decisions.EVENTS if e.kind not in ("injury_replacement", "trade_talks")}, {6})
         self.assertFalse(set(decisions.EVENT_KIND) & set(decisions.BY_KIND))
-        # Every owner folder the plan names resolves through the folder map.
+        # News (an event decided outside Jacksonville) is a kind of its own, built in step 5.
+        self.assertFalse(set(decisions.NEWS_KIND) & (set(decisions.EVENT_KIND) | set(decisions.BY_KIND)))
+        self.assertEqual({e.step for e in decisions.NEWS}, {5})
+        # Every owner folder resolves through the folder map; one that an event uses, or that exists,
+        # is a folder the plan names (a news owner's folder comes with its first page).
         text = (ROOT / "docs/rebuild_plan.md").read_text(encoding="utf-8")
+        used = {e.owner for e in decisions.EVENTS}
+        self.assertTrue({e.owner for e in decisions.NEWS} <= set(decisions.OWNERS))
         for owner in decisions.OWNERS:
             folder = decisions.event_folder(decisions.Event("x", "x", "x", owner, "x", 5), 2014, ROOT)
-            self.assertTrue(folder.is_dir(), (owner, folder))
-            self.assertIn(folder.relative_to(ROOT / "career/2014").as_posix(), text)
+            self.assertTrue(folder.is_relative_to(ROOT / "career/2014"), (owner, folder))
+            if owner in used or folder.exists():
+                self.assertTrue(folder.is_dir(), (owner, folder))
+                self.assertIn(folder.relative_to(ROOT / "career/2014").as_posix(), text)
         self.assertEqual(decisions.week_pages(2014, 6, ROOT).responses.name, "My_Responses.md")
 
     def test_every_folder_resolves_through_the_map(self):

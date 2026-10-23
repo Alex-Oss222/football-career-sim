@@ -5,10 +5,12 @@ operator commands require a season or use the map's explicit planning season.
 Current record ownership is separate from the season being prepared.
 """
 from dataclasses import dataclass
+import datetime
 import json
 from pathlib import Path
 import re
-from .season_layout import DATA_ROOT, is_system_file, season_relative
+from .season_layout import (DATA_ROOT, EVENT_STORE, GAME_DAY_CHANGES, LEAGUE_DATES, PRACTICE_LOG,
+                            RESPONSES_RECORD, TRANSACTIONS, is_system_file, season_relative)
 
 ROOT = Path(__file__).resolve().parents[1]
 # A game's result page. From 2014 Week 6 (every later game, the postseason included) it is the Game
@@ -175,6 +177,51 @@ class SeasonPaths:
     def call_sheet(self, week, postseason=False):
         """The week's frozen call sheet (``call_sheet.json``)."""
         return self.week_data(week, postseason) / 'call_sheet.json'
+
+    # ---- in-season decisions (rebuild step 5) ----------------------------------
+    def practice_log(self, week, postseason=False):
+        """The week's practice and rest record (``practices.json``), every week, byes included."""
+        return self.week_data(week, postseason) / PRACTICE_LOG
+
+    def game_day_changes(self, week, postseason=False):
+        """The week's record of a depth or inactives change made after its Game Plan was applied."""
+        return self.week_data(week, postseason) / GAME_DAY_CHANGES
+
+    def responses_record(self, folder):
+        """The binding and apply record of the My Responses page in a week's or phase's page
+        folder: the data-area twin of the folder, ``responses.json``."""
+        return self.data_for(folder) / RESPONSES_RECORD
+
+    def event_store(self, owner_folder):
+        """The open-event records of an event owner's page folder (runtime/decisions.event_folder):
+        one JSON file per event in the folder's data-area twin, under ``events``."""
+        return self.data_for(owner_folder) / EVENT_STORE
+
+    @property
+    def league_dates(self):
+        """The season's league dates (the trading deadline and the other dated league windows)."""
+        return self.record('schedule/' + LEAGUE_DATES)
+
+    @property
+    def transactions(self):
+        """The roster moves' transaction records: the data-area twin of the roster folder."""
+        return self.data_for(self.record('team/roster')) / TRANSACTIONS
+
+    def signing_record(self, player, date):
+        """The signing record of a player Jacksonville signs from outside the club, in the free
+        agency folder: ``<player record id>_signing_<ISO date>.md``, as
+        ``alan_ball_signing_2014-09-08.md``. It carries the terms and is not a result page."""
+        if not re.fullmatch(r'[a-z0-9]+(?:_[a-z0-9]+)*', str(player)):
+            raise ValueError('A signing record is named by the player record id: %r' % (player,))
+        when = date if isinstance(date, str) else date.isoformat()
+        datetime.date.fromisoformat(when)
+        return self.record('free_agency') / ('%s_signing_%s.md' % (player, when))
+
+    @property
+    def coaching_changes(self):
+        """The league's head-coach changes in season: the page folder (its index and one page per
+        change); the method and each week's check sit in its data-area twin (``data_for``)."""
+        return self.record('league/coaching_changes')
 
     def game_report(self, week, postseason=False):
         """The game's result page: the Game Report (``GAME_REPORT``) from 2014 Week 6, the
