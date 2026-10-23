@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Josh Scobee has proven himself an NFL starting kicker. He made 36 of 41 field goals in the 2013 regular season and every field goal and extra point he attempted in the 2013 playoffs, and he has made 8 of 10 in five games in 2014. He has a strong leg with useful long-distance range and a dependable operation with his snapper and holder, and the kicks that tied or won games in 2013 went through. His range and accuracy are ahead of his kickoff placement, and the staff is less confident in his consistency under repeated pressure.
+Josh Scobee has proven himself a strong NFL starting kicker. He made 36 of 41 field goals in the 2013 regular season and all three in the playoffs, and he has made 8 of 10 in five games in 2014. His strengths are a leg with useful long-distance range and a dependable, established kicking operation. Kickoff placement trails his range, and the staff is less confident in his consistency over repeated pressure kicks than in his leg.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

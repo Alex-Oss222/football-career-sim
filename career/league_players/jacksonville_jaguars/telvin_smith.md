@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Telvin Smith, a fourth-round pick in 2014, has been active for five games as a rookie and made four tackles on special teams. He is a lean, fast linebacker whose speed, range in pursuit and ball skills are his strengths. His light frame is the question in the run game, and taking on blocks is the weakest part of his game.
+Telvin Smith is a fourth-round rookie whom the staff projected first as a coverage linebacker and special-teams player, and he has made four special-teams tackles in five games. His case is speed, range, pursuit and ball skills: he played weak-side linebacker at Florida State in 2013 and ran the second-fastest forty among linebackers at the combine. His lean frame is the question against blockers in the run game; in camp he followed the flow on a counter and left the wrap gap, then fit the same misdirection correctly after the correction.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

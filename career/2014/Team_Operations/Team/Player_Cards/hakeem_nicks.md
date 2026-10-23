@@ -14,7 +14,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Hakeem Nicks joined Jacksonville from the New York Giants on a one-year contract in March 2014 and competed with Davante Adams for the X job in camp until a lower-body injury in the final preseason game kept him out until late September. He dressed for the San Diego and Pittsburgh games without an offensive snap, and for Pittsburgh Stone kept Adams at X and made Nicks the fifth receiver and the X relief. He is a physical outside receiver who wins with his hands, strength at the catch point and route timing, and he offers more on contested catches than with sudden separation. In camp he won leverage against Aqib Talib with his hands while keeping the quick timing, though Talib re-routed him on other reps.
+Hakeem Nicks signed a one-year contract with Jacksonville in March 2014 after his 2013 season with the New York Giants and competed with Davante Adams for the X job in camp until a lower-extremity injury in the final preseason game kept him out until he was cleared in September. For the Pittsburgh game Stone kept Adams at X and made Nicks the fifth receiver and the X relief. He is a physical outside receiver who wins with his hands, strength at the catch point, ball tracking and route timing. He gives more on contested catches than in sudden separation or long speed, and in camp he won leverage against Aqib Talib with his hands on some reps and was re-routed by him on others.
 
 *Staff view, March 31, 2014.*
 

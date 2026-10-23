@@ -196,7 +196,7 @@
    "updates": [],
    "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/josh_scobee.md at commit 332d70b",
    "short": {
-    "text": "Josh Scobee has proven himself an NFL starting kicker. He made {{2013.regular.field_goals_made}} of {{2013.regular.field_goals_attempted}} field goals in the 2013 regular season and every field goal and extra point he attempted in the 2013 playoffs, and he has made {{2014.regular.field_goals_made}} of {{2014.regular.field_goals_attempted}} in {{2014.regular.games:words}} games in 2014. He has a strong leg with useful long-distance range and a dependable operation with his snapper and holder, and the kicks that tied or won games in 2013 went through. His range and accuracy are ahead of his kickoff placement, and the staff is less confident in his consistency under repeated pressure.",
+    "text": "Josh Scobee has proven himself a strong NFL starting kicker. He made {{2013.regular.field_goals_made}} of {{2013.regular.field_goals_attempted}} field goals in the 2013 regular season and all {{2013.playoffs.field_goals_made:words}} in the playoffs, and he has made {{2014.regular.field_goals_made}} of {{2014.regular.field_goals_attempted}} in {{2014.regular.games:words}} games in 2014. His strengths are a leg with useful long-distance range and a dependable, established kicking operation. Kickoff placement trails his range, and the staff is less confident in his consistency over repeated pressure kicks than in his leg.",
     "date": "2014-10-05",
     "recorded": "2026-10-20",
     "by": "Jacksonville staff",

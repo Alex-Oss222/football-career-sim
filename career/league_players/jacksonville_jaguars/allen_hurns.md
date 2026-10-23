@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Allen Hurns signed with Jacksonville as an undrafted rookie from Miami in May 2014 and has played in five games, with three catches for 48 yards and four special-teams tackles. He is a tall outside receiver with body control on the boundary, and Stone's order for the Pittsburgh game had him as the first general relief receiver and the second punt returner. His speed is average, and creating separation is the main limit on his game.
+Allen Hurns joined Jacksonville as an undrafted rookie from Miami in May 2014 and has been active for five games, with three catches for 48 yards and four special-teams tackles. He is a tall outside receiver with body control along the boundary, and he was productive as a senior. On Stone's chart for the Pittsburgh game he was the first relief receiver and the second punt returner, behind Andrew Hawkins. His speed is average, and creating separation is his main limitation.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

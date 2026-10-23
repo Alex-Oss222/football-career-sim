@@ -14,7 +14,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Taylor Gabriel signed with Jacksonville as an undrafted rookie from Abilene Christian in May 2014, made the opening roster at the August cut and was inactive for every game from the opener through Pittsburgh. He is a small, fast receiver and returner with quickness and run-after-catch ability. His size and strength limit him outside and in contested catches, and his technique is not yet at an NFL starter's level.
+Taylor Gabriel, an undrafted rookie from Abilene Christian, signed with Jacksonville in May 2014 to compete for return and slot work and was inactive on game day from the opener through the Pittsburgh game. He is a small, fast receiver and returner with quick change of direction, burst and run-after-catch ability. His size and strength limit him outside and at the catch point, and his technique is below an NFL starter's standard.
 
 *Staff view, May 11, 2014.*
 

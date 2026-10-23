@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Sio Moore played in all 16 regular-season games as a rookie in 2013, working as a package linebacker in a rotation role. He is athletic, covers ground and has useful tools for pressuring the quarterback, and the coverage corrections he was given in his first spring held when the looks changed. His reading of the run and his fit discipline are behind his movement and need to become dependable before his job grows.
+Sio Moore was a rotation and package linebacker as a rookie after Jacksonville drafted him in 2013, dressing for all 16 regular-season games and two playoff games. He is a good athlete with range, pursuit speed and useful tools as a pass rusher, and the coverage corrections he was taught as a rookie held. His run diagnosis and fit discipline are behind his movement and need to become dependable before his job grows; in 2013 camp he overran a fit, kept the correction, then overran one again at the scrimmage, and Crennel narrowed his assignment.
 
 *Staff view, March 31, 2014.*
 

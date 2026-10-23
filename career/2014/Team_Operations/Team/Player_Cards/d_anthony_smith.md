@@ -8,7 +8,7 @@ As of August 31, 2014.
 
 ## Staff assessment
 
-D'Anthony Smith, who had played NFL games before 2013, was waived at Jacksonville's final roster cut that year and spent the season on its practice squad without playing a game. He was a developmental interior defender with some quickness off the snap and some penetration. He needed a stronger anchor and a defined sequence of hand moves and counters to earn a regular place in the rotation.
+D'Anthony Smith was a developmental interior defender who had played NFL games before 2013; Jacksonville waived him at the final roster cut that year and kept him on its practice squad for the season. He signed a reserve/future contract for 2014 and was waived again at that year's final roster cut. With no individual 2013 rep on record, the staff saw some quickness off the snap and some penetration. He needed a stronger anchor, better play against double teams and a defined sequence of hand moves and counters to earn a regular rotation job.
 
 *Staff view, March 31, 2014.*
 

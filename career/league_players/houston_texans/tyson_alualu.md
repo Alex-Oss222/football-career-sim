@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Tyson Alualu was a rotating defensive tackle behind Jacksonville's starting pair in 2013 and was available every week, dressing for all 16 regular-season games and both playoff games. He could handle several alignments on the front and supply useful power, and he finished when the play came to him, with three sacks and three tackles for loss in the regular season. His positional flexibility stood out more than any defining pass-rush counter or disruptive specialty.
+Tyson Alualu was a rotating defensive tackle behind starters Roy Miller and Sen'Derrick Marks in 2013, active for all 16 regular-season games and both playoff games, before Jacksonville traded him to Houston in March 2014. He could handle several alignments across the front and supply useful power, and he finished when the play came to him, with three sacks and three tackles for loss in the regular season. His positional flexibility stood out more than any defining pass-rush counter or disruptive specialty.
 
 *Staff view, January 14, 2014.*
 

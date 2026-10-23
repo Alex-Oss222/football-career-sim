@@ -12,7 +12,7 @@ As of August 31, 2014.
 
 ## Staff assessment
 
-Antwon Blake was a developmental defensive back who spent the 2013 season on Jacksonville's practice squad at safety. He was small and mobile, and his quickness and pursuit were his useful traits. His route reads and positioning were not yet at the level a full safety role requires.
+Antwon Blake was a developmental defensive back on Jacksonville's practice squad in 2013, where the staff reviewed him at safety, and he was waived at the final roster reduction in 2014. The staff saw a small, mobile player with quickness and pursuit value. His route reads and positioning were not yet at the level a full safety role requires.
 
 *Staff view, March 31, 2014.*
 

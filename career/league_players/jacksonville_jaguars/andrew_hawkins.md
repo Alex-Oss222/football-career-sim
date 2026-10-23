@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jacksonville signed Andrew Hawkins to a restricted free-agent offer sheet in March 2014 that Cincinnati declined to match, and he opened the season as the Z receiver and the first kick and punt returner. He is a quick underneath receiver who finds space and changes direction well, and his value lies in slot routes and running after the catch. In camp the staff corrected his depth on the short dig, first for spacing and then against a jam, and the depth held on later checks, though the contact retest was a short sample. He is not built to beat press outside or win contested catches, and blocking is a weak part of his game.
+Andrew Hawkins came to Jacksonville in March 2014 on a restricted free-agent offer sheet that Cincinnati declined to match, and he was named the Z receiver and the first kick and punt returner at the end of the preseason. He has been active for five games, with nine catches for 123 yards, 13 kickoff returns and 13 punt returns. He is a quick underneath receiver who finds space, changes direction well and adds yards after the catch, and his best use is on slot routes. Releasing against press, contested catches and blocking are his weakest areas.
 
-*Staff view, March 31, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

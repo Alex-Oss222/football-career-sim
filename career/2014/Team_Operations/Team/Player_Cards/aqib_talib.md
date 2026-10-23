@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Aqib Talib signed with Jacksonville in March 2014 as a physical outside corner the staff judged above the NFL starting standard in nearly every part of his game. His best tools are press coverage, ball skills and play at the catch point, and the staff believes he can challenge bigger receivers, with consistent technique still important to that matchup; in camp he re-routed Hakeem Nicks on some press reps and lost others to Nicks's hands. Tackling in run support, getting off blocks and penalty discipline are the weakest parts of his game, though still at a starting standard. In five games this season he has 36 tackles and five passes defended, including a September interception of Andrew Luck against Indianapolis.
+Aqib Talib signed with Jacksonville as a free agent in March 2014, opened the season outside in the starting defense and has five passes defended in five games, including an interception of Andrew Luck on third-and-long against Indianapolis. He is a physical outside corner whose best tools are press coverage, ball skills and play at the catch point, and the staff's starting view is that he can challenge bigger receivers. Technique consistency still matters to that matchup, and in camp he re-routed Hakeem Nicks on some press reps and lost others to Nicks's hands. His tackling, block defeat and penalty discipline trail his coverage.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

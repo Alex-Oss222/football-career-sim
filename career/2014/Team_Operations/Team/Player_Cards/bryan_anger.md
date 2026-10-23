@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Bryan Anger has been a viable NFL starting punter. He punted 69 times across all 16 regular-season games for Jacksonville in 2013 and has 25 punts in five games in 2014. His best weapon is a strong leg for distance, with useful hang time and operation, and in camp he put his situational punts to the instructed side. His directional punting and his control in plus territory are less developed than his leg.
+Bryan Anger has been a viable NFL starting punter for Jacksonville. He was active for all 16 regular-season games in 2013, punting 69 times, and he has 25 punts in five games in 2014. His best weapon is a strong leg for distance, with useful hang time and operation, and in camp he put the recorded situational punts to the side the staff called for. Directional punting and control in plus territory are less developed than his leg.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

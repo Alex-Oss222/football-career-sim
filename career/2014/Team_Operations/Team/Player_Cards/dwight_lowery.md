@@ -14,7 +14,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Dwight Lowery has proven he is an NFL starting safety, and he played in all 16 regular-season games and both playoff games for Jacksonville in 2013. He started the 2014 opener at safety before an injury in that game put him on reserve/injured, with the club's designation to return. His communication, positioning and recognition of route combinations steady the coverage. His anticipation and clean operation make up for ordinary movement when he has to recover.
+Dwight Lowery has been a viable NFL starter at safety for Jacksonville, starting beside Bacarri Rambo in 2013 and dressing for all 16 regular-season games and two playoff games. He steadies the coverage with his communication, positioning and recognition of route combinations, and in 2013 camp he was the cleanest and most stabilizing communicator among the safeties. His anticipation and clean operation make up for ordinary recovery speed, and his man coverage in the slot is below a starter's standard.
 
 *Staff view, March 31, 2014.*
 

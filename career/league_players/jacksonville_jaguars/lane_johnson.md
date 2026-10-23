@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Lane Johnson has shown he is a viable NFL starting right tackle. Jacksonville drafted him second overall in 2013, he started all 16 regular-season games as a rookie and he has started five games in 2014. He is an athletic mover who is at his best on reach blocks and can work to the second level, and he keeps the protection answers he is taught, including twist exchanges against changed fronts. His remaining limits are leverage, hand precision and a consistent anchor against power.
+Lane Johnson has shown he is a viable NFL starting right tackle. Jacksonville drafted him second overall in 2013, he started all 16 regular-season games and both playoff games as a rookie, and he has started five games in 2014. He is an athletic mover who is at his best on reach blocks and at the second level, and he keeps the protection answers he is taught. He still loses leverage at times, and his hand placement and his anchor are not yet consistent.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

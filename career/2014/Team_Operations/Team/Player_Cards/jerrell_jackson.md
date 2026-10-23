@@ -8,7 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jerrell Jackson spent 2013 on Jacksonville's practice squad without a regular-season game, signed a reserve/future contract in February 2014 and went to reserve/injured for the season after an injury in the second preseason game. The staff saw him entering 2014 as a developmental receiver with useful movement, a practice-squad player competing for a narrow depth role. His route running, release against press and adjustments to coverage are still unfinished at NFL level.
+Jerrell Jackson spent 2013 on Jacksonville's practice squad and has not played in a regular-season game; a lower-extremity injury in the 2014 preseason game at Chicago put him on reserve/injured for the season. Before the injury he converted a third down with a catch in the preseason opener and caught both passes thrown to him at Chicago. He moves well enough to be useful, but his route running, release against press and adjustments to coverage are unfinished, and the staff saw him competing for a narrow depth role.
 
 *Staff view, March 31, 2014.*
 

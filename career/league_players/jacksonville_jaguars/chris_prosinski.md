@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Chris Prosinski was a reserve safety and coverage-unit player for Jacksonville in 2013, dressing for all 16 regular-season games. He has useful straight-line range and held his assigned lane on the coverage units through camp and the preseason that year. Recognizing route combinations and playing man coverage are behind his movement.
+Chris Prosinski has been a reserve safety and coverage-unit player for Jacksonville, dressing for all 16 regular-season games and two playoff games in 2013. He brings useful straight-line range to the coverage units, and he held his assigned coverage lanes through 2013 camp and the preseason. His movement and lane work are ahead of his recognition of route combinations, his man coverage and his ball skills.
 
 *Staff view, March 31, 2014.*
 

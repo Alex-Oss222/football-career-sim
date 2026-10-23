@@ -8,7 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jackson Jeffcoat, an undrafted rookie from Texas, signed with Jacksonville in May 2014 and joined the practice squad after being waived at the final cuts; his NFL level is not yet established. At Texas he was a productive edge rusher with length, athleticism and a pass-rush record over four seasons. Setting the edge against the run and strength are his weakest areas, and injuries and a lean frame are part of his college history.
+Jackson Jeffcoat is an undrafted rookie defensive end from Texas who signed with Jacksonville in May 2014 and joined the practice squad after the final cuts. He brings length and a pass-rush record over four college seasons. Setting the edge against the run is his main limitation, his strength and technique are below a starter's standard, and his college history includes injuries and a lean frame.
 
 *Staff view, May 11, 2014.*
 

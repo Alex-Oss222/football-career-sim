@@ -12,7 +12,7 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-C.J. Wilson was in Jacksonville's edge rotation on the strong side in 2013 camp and in the opener, then was hurt in the second game and dressed for only two regular-season games. He was a rotational run defender whose power, edge setting and block shedding were his strengths. His bend, speed and get-off were his main weaknesses, which gave the staff limited reason to feature him as a wide speed rusher.
+C.J. Wilson was a rotational edge defender for Jacksonville in 2013, in the strong-side rotation early in camp and the edge rotation for the opener, before an injury at Oakland ended his season after two games. Jacksonville re-signed him for one year in March 2014 and released him at the final roster cut. The staff saw a rotational run defender whose power, edge setting and block shedding were his strengths. His bend and speed offered less than his power, and the staff saw limited reason to feature him as a wide speed rusher.
 
 *Staff view, March 31, 2014.*
 

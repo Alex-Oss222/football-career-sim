@@ -8,7 +8,7 @@ As of August 31, 2014.
 
 ## Staff assessment
 
-Connor Shaw, a four-year college starter from South Carolina, signed with Jacksonville as an undrafted rookie in May 2014 and was waived at the final roster cut in August without a regular-season game. He brings mobility, ball security and a record of winning, and in the later spring practices he kept the launch-point correction he made at rookie minicamp. His arm strength and size are ordinary.
+Connor Shaw signed with Jacksonville as an undrafted rookie from South Carolina in May 2014, worked in camp behind Cousins, Henne and Wilson and was waived at the final cuts. A four-year college starter, he brings mobility, ball security and a record of winning, and he kept the launch-point correction from rookie camp. His arm strength and size are ordinary.
 
 *Staff view, May 11, 2014.*
 

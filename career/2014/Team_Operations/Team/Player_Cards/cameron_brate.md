@@ -8,7 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Cameron Brate signed with Jacksonville as an undrafted rookie from Harvard, and a long-term lower-extremity injury in the first preseason game put him on reserve/injured before the regular season. He is a receiving tight end with reliable hands, a feel for routes and sound football sense, and he sustained his assigned blocks against the reserve ends on both padded days in camp. Blocking strength and the level of competition he faced in college are the limits.
+Cameron Brate is an undrafted rookie from Harvard who has not played a regular-season game: after a long-term injury in Jacksonville's first preseason game, he cleared waivers at the final cut and reverted to the reserve/injured list for the season. He is a receiving tight end with reliable hands, a feel for routes and a sound grasp of the game, and in camp he sustained his assigned block against the reserve ends on both padded days. Blocking strength and the level of competition he faced in college are the limits.
 
 *Staff view, May 11, 2014.*
 

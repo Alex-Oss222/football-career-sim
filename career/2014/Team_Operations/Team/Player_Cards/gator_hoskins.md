@@ -14,9 +14,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Gator Hoskins came to Jacksonville as an undrafted rookie H-back from Marshall, where he produced as a receiver, and he is the fourth tight end in 2014. He has the profile for a movable alignment, with athleticism, speed and change of direction the best of his tools, and in camp he was assignment-correct in his attached work with a mixed finish. Blocking is his main limitation and remains unproven, with his strength and technique behind his movement.
+Gator Hoskins is an undrafted rookie H-back from Marshall with no established NFL standing, and as the fourth tight end he has been active for one of Jacksonville's regular-season games in 2014. He came with receiving production at Marshall and the profile of a tight end who can move around the formation, and in camp he was assignment-correct in his attached work, with a mixed finish. Blocking is his main limitation and is still unproven, and his strength and technique are his other weak areas.
 
-*Staff view, May 11, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

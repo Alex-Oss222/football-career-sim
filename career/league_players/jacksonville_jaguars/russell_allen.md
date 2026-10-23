@@ -8,7 +8,7 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Russell Allen was a rotation linebacker for Jacksonville who played in all 16 regular-season games in 2013 and started beside Daryl Smith when Paul Posluszny was out. He was dependable when his job expanded on a week's notice, brought value as a communicator and contributed on the coverage units. Creating pressure and man coverage were the weakest parts of his game.
+Russell Allen was a dependable complementary linebacker for Jacksonville in 2013, dressing for all 16 regular-season games and two playoff games and twice stepping into a larger role on a week's notice. His value was his communication, his readiness for expanded assignments and his work on the coverage units. He was less able to create pressure or win man-to-man matchups.
 
 *Staff view, March 31, 2014.*
 

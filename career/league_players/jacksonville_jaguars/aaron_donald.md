@@ -14,7 +14,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Aaron Donald, Jacksonville's first-round pick in 2014, is a rookie whose NFL level is not yet established: he has dressed for five games and played zero defensive snaps. He is an undersized, explosive interior lineman whose first step and quick hands beat blockers before they set, and in camp his first step beat Trai Turner on a one-on-one rep. Whether he can anchor against double teams and hold his gap on early downs at his size is unproven; in camp the double team of Mike Brewster and Trai Turner moved him off the strong-side A-gap more often than he split it.
+Aaron Donald is a rookie defensive tackle, Jacksonville's first-round pick in 2014, and he has been active for five games in his first NFL season. He is undersized but explosive, with a first step and hand quickness that beat blockers before they set; in camp his first step beat Trai Turner on a one-on-one rep. His anchor against double teams is below a starter's standard and holding his gap on early downs is still unproven at his size; in camp the Mike Brewster and Trai Turner double team moved him off the strong A-gap on almost every recorded rep.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Andre Branch has been an NFL rotation end: he dressed for all 16 regular-season games for Jacksonville in 2013 as part of the edge rotation and came out of camp in 2014 as the second edge on the chart. His best tools are his first step and pursuit, and in camp he beat Lane Johnson around the corner. To become a dependable full-time starter he needs a better plan with his hands and counters and firmer edge play. In camp he twice left his rush lane on a winning rush, then kept contain on every recorded practice rep after the second correction.
+Andre Branch was a rotation defensive end for Jacksonville in 2013, dressing for all 16 regular-season games, and competed with Jeremy Mincey for the first edge spot in 2014 camp. He brings a useful first step and pursuit, and in that camp he beat Lane Johnson around the corner. He still needs a more developed hand and counter plan and firmer edge play to become a dependable full-time starter; in camp he twice left his lane while winning a rush, then kept contain on every recorded practice rep after Romeo Crennel's second correction.
 
 *Staff view, March 31, 2014.*
 

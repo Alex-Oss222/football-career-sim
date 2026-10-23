@@ -8,7 +8,7 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Uche Nwaneri was Jacksonville's starting left guard in every game of 2013, all 16 regular-season games and both playoff games. He was a power guard whose anchor inside and drive blocking were his best tools, and he identified his protection assignments correctly in the preseason. Pulling and movement work were less of an advantage, and he needed steadier leverage after reading his assignment.
+Uche Nwaneri was a viable NFL starting guard who held Jacksonville's left-guard job in every game of 2013, all 16 regular-season games and both playoff games, before Jacksonville traded him to Arizona in March 2014. He was a power guard whose strengths were his anchor inside and his drive blocking, and in the 2013 preseason he identified his protection assignments correctly. He was less effective on movement blocks, and he needed steadier leverage after reading his assignment correctly.
 
 *Staff view, January 14, 2014.*
 

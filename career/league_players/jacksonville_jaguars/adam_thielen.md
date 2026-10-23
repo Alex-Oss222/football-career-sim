@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Adam Thielen joined Jacksonville as an undrafted rookie in 2013, played in all 16 regular-season games and earned an expanded receiving role at H, finishing with 52 catches for 616 yards. He is a route-driven possession receiver who wins with the pace of his stem, leverage and timing, finds space against zone and has dependable hands that reach outside his frame. He has 19 catches for 168 yards through five games of 2014. His separation comes from setup and tempo more than burst or change of direction, he is not built to win repeated vertical races, and against press he has functional answers without consistently releasing clean.
+Adam Thielen joined Jacksonville as an undrafted rookie in 2013, was active for all 16 regular-season games and earned an expanded receiving role at H, catching 52 passes for 616 yards. He was named the H at the end of the 2014 preseason and has been active for five games this season, catching 19 passes for 168 yards. He is a route-driven possession receiver who wins with the pace of his stem, leverage, coverage awareness and reliable hands, and he can move across the formation. He wins more with route detail than with burst or long speed, and his release against press and his downfield play are secondary parts of his game.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

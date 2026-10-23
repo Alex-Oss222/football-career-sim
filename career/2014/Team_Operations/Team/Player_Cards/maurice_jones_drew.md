@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Maurice Jones-Drew has proven himself an NFL starting running back, running for 1,334 yards as Jacksonville's lead back in 2013 and 461 more through five games of 2014. He is a compact, powerful runner who picks the right track, keeps his balance through contact and finishes in short yardage, and he adds useful pass protection and receiving work. His game rests on inside efficiency more than open-field speed, and long speed and route detail are his lesser traits.
+Maurice Jones-Drew has proven himself an NFL starting running back, carrying 282 times for 1,334 yards as Jacksonville's lead back in 2013 and 99 times for 461 yards so far in 2014. He is a compact, powerful and complete veteran runner who wins with his decisions on the run track, his balance through contact and his short-yardage finishing, and he adds useful protection work. His inside efficiency matters more than his open-field speed, and long speed and route detail are the least of his tools.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

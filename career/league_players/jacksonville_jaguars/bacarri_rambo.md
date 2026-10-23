@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Bacarri Rambo won a starting safety job beside Dwight Lowery as a rookie in 2013 and held it all season, playing in all 16 regular-season games. He is a developing safety with useful ball instincts, and his reads and his communication on coverage exchanges are becoming usable. His live tackling and his discipline against play-action need a firmer foundation.
+Bacarri Rambo is a developing safety who won a starting job as a rookie in 2013 and held it all season, dressing for all 16 regular-season games and two playoff games. He has useful ball instincts, and his communication on coverage exchanges and substitutions has improved and held up through his rookie spring and camp. Live tackling, discipline against play-action and man coverage in the slot still need a firmer foundation.
 
 *Staff view, March 31, 2014.*
 

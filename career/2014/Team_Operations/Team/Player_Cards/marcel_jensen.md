@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Marcel Jensen joined Jacksonville as an undrafted rookie from Fresno State with no NFL track record and has been active for five games in 2014. He is a big, strong tight end with the size for attached blocking, and in camp he was assignment-correct in his attached work with a mixed finish. Receiving, speed and change of direction are his main weaknesses.
+Marcel Jensen is an undrafted rookie from Fresno State with no established NFL standing, and he has been active for five games as Jacksonville's third tight end in 2014. He is a big, strong tight end with the size for attached blocking, and in camp he was assignment-correct in that work, with a mixed finish. Receiving is his main limitation, with modest production in a pass-heavy college offense, and his speed and change of direction are below an NFL starter's standard.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

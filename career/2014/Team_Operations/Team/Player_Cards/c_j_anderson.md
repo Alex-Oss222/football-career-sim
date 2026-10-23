@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-C.J. Anderson joined Jacksonville as an undrafted rookie in 2013 and was active for all 16 regular-season games as a complementary back with a defined special-teams coverage job. He is a sturdy inside runner with useful balance and short-yardage finishing, and his run-track and protection-check assignments held against changed looks in 2013. Receiving detail and open-field speed trail his inside running, and he is a developing pass protector.
+C.J. Anderson joined Jacksonville as an undrafted rookie in 2013 and has played as a complementary back and on the coverage units, with 17 carries in 2013 and 27 for 138 yards so far in 2014. He is a sturdy inside runner with useful balance and finishing, and his corrections have held after teaching, from his pickup base in the 2013 camp to his Inside Zone track in 2014. His receiving detail and open-field speed trail his inside-running tools, and his protection is still developing.
 
-*Staff view, March 31, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

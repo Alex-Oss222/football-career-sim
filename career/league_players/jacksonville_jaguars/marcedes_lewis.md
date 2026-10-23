@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Marcedes Lewis has proven himself an NFL starting tight end and remains Jacksonville's starter in 2014. He played in all 16 regular-season games for Jacksonville in 2013, catching 61 passes for 720 yards, and has three touchdown catches in five games in 2014. He is a big, complete attached tight end whose blocking, catch radius and dependable operation anchor the position. His game rests on structure and strength rather than sudden separation, and speed and yards after the catch are his weaker traits.
+Marcedes Lewis has proven himself a strong NFL starting tight end. He was active for all 16 regular-season games for Jacksonville in 2013, catching 61 passes for 720 yards, and he has three touchdown catches in five games in 2014. He is a big, complete attached tight end whose blocking, catch radius and dependable operation anchor the position, and in camp he sustained his attached blocks on the recorded reps at controlled contact. He gives the offense more structure and physical usefulness than sudden separation, and his speed and yards after the catch are below an NFL starter's standard.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

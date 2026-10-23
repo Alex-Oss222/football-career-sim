@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Malcolm Butler is a rookie seventh-round pick from Division II football who has played in two NFL games, and the staff sees him as an outside corner with a special-teams path. His strengths are ball skills, change of direction and a competitive style in press, backed by a college record of interceptions, pass breakups and kick returns. The jump from Division II competition is the biggest question, along with his strength and technique, and he arrived with no verified testing. In camp he was late once on a press transition against Allen Hurns and on time after the correction, though one retained correction leaves a later test open.
+Malcolm Butler is a seventh-round rookie from West Alabama, a Division II program, and the staff sees him as an outside corner with a special-teams path; he has played in two games for Jacksonville. His strengths are his ball skills, change of direction and competitive press style, with kick-return experience in college. The jump from Division II competition is his biggest question, and his strength and technique are below an NFL starter's level.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

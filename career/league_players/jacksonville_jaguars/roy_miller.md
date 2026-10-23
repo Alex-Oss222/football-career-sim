@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Roy Miller has proven himself an NFL starting defensive tackle: he was a starter beside Sen'Derrick Marks on Jacksonville's interior line in 2013 and dressed for all 16 regular-season games. He is a run-first anchor who occupies blocks, holds up against double teams with his power and keeps the front in place. His pass rush is less developed, with his penetration and rush counters trailing his work against the run.
+Roy Miller has proven he can start at defensive tackle in the NFL: he dressed for all 16 regular-season games for Jacksonville in 2013 in a run-first role beside Sen'Derrick Marks. He is an interior anchor who occupies blocks, holds up against double teams and plays with power. His penetration and pass-rush counters trail his run work and are below a starter's standard.
 
 *Staff view, March 31, 2014.*
 

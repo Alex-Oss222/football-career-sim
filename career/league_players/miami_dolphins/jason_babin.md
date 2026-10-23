@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 ## Staff assessment
 
-Jason Babin was Jacksonville's lead edge rusher in 2013, first in every recorded edge order, and dressed for all 16 regular-season games and both playoff games. Camp marked him as the club's leading edge-pressure option, built on his get-off, bend and a useful rush plan, and he finished the regular season with three sacks. His run defense at the point of attack, block shedding and contain discipline were below his value as a rusher.
+Jason Babin, a veteran pass rusher and in the staff's view a viable NFL starter, led Jacksonville's edge rotation in 2013 and was active for all 16 regular-season games and both playoff games before Jacksonville traded him to Miami in March 2014. In 2013 camp he was the leading source of edge pressure in the rotation, rushing with get-off, bend and a useful plan. His run defense at the point of attack, block shedding and contain discipline were below his value as a rusher.
 
 *Staff view, January 14, 2014.*
 

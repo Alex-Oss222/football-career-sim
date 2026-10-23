@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Paul Posluszny has proven he is an NFL starting middle linebacker: he started every game for Jacksonville in 2012 and was a base linebacker in the 11 games he played in 2013. He diagnoses the run, can set the fits and communicate the front, and finishes tackles inside. Man coverage on his own is the weakest part of his game, and he is better working downhill than covering ground to recover.
+Paul Posluszny has been a viable NFL starter at middle linebacker for Jacksonville, dressing for 11 regular-season games in 2013 and five so far in 2014. He reads the run well, sets the fits, communicates the front and finishes tackles inside. He is stronger working downhill than in isolated man coverage, and his recovery range is limited.
 
-*Staff view, March 31, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

@@ -8,7 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jacksonville drafted Tyler Bray in 2013, and he spent his rookie season on the practice squad without a regular-season game, returning there after the August 2014 roster cuts. He is a developmental vertical passer whose arm is the strongest part of his game, and his cadence and footwork improved in 2013. His timing and protection answers need to catch up to the arm, and his throws came late when the defense changed its look.
+Tyler Bray is a developmental quarterback whom Jacksonville drafted in 2013; he spent that season on the practice squad and returned to it after the 2014 final cuts. His arm is the strongest part of his game, and his cadence and footwork improved in 2013. His command of the offense trails that arm, with his timing running late when the defense changed its look and his protection answers still catching up.
 
 *Staff view, March 31, 2014.*
 

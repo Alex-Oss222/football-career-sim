@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A.J. Bouye signed with Jacksonville as an undrafted rookie in 2013 and played in 15 regular-season games that year as a reserve corner and special-teams player; in 2014 he has played in five games, taking the nickel job against San Diego and Pittsburgh while Jordan Poyer was out. The staff sees a developmental outside corner with enough movement and size at the catch point to pursue a reserve role; nothing was charged to him on the recorded nickel reps in either game week, and before San Diego he named his contain and replacement jobs without prompting. His press technique and route recognition are still behind his physical tools, and getting off blocks and penalty discipline are his weakest areas. He has four tackles in the kicking game this season.
+A.J. Bouye made Jacksonville as an undrafted rookie in 2013 and was active for 15 regular-season games, earning a coverage-unit job and later serving as the outside reserve. He has played in five games in 2014, and with Jordan Poyer injured he took the nickel for the San Diego and Pittsburgh games, with nothing charged to him on the recorded practice reps in either week. The staff sees a developmental outside corner with enough movement and size at the catch point to compete for a reserve role, and in the walkthrough before the San Diego game he named his contain and replacement jobs without prompting. His press technique and route recognition still trail his physical tools.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

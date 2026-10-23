@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-In 2013 Travis Kelce was a complementary tight end rather than a proven high-volume receiver. As a rookie he was active for all 16 regular-season games but caught eight passes, and as the second tight end in 2014 he has four catches in five games. He is a movable receiving tight end who can line up attached, on the wing or in the slot, with the speed to threaten the seam, the change of direction and route tempo to separate from linebackers, and dependable hands outside his frame. His blocking trails his receiving: his pad level, hand placement and ability to sustain leverage still need work, and he suits chip-and-release jobs better than extended one-on-one protection.
+Travis Kelce is Jacksonville's second tight end behind Marcedes Lewis, the complementary role he held as a rookie in 2013, and he is not yet a proven high-volume receiver. He was active for all 16 regular-season games in 2013 with 17 targets, and he has four catches in five games in 2014. He is a movable receiving tight end who can line up attached, on the wing or in the slot, with enough speed to threaten the seam, the change of direction and route tempo to separate from linebackers and dependable hands away from his body. His blocking trails his receiving, with his pad level, hand placement and ability to sustain leverage still needing work, and he suits chip-and-release jobs better than extended one-on-one protection.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jeremy Cain was a viable NFL starting long snapper for Jacksonville in 2013, active for all 16 regular-season games and two playoff games. Jacksonville released him at the cut to the final roster in August 2014, and he signed with Chicago two days later. His value is repeatable, accurate delivery and routine operation; the operation was recorded clean through the first half of the 2013 season, and he kept the punt operation clean against a controlled rush in the 2014 camp. His protection after the snap and his coverage athleticism trail his snapping.
+Jeremy Cain was a viable NFL starting long snapper who was active for all 16 regular-season games and two playoff games for Jacksonville in 2013. Jacksonville re-signed him for one year in March 2014 and released him at the final roster cut in August, and he signed with Chicago in September. His value is repeatable, accurate delivery and a routine operation, and the recorded operation was clean through the first half of 2013 and against a controlled rush in the 2014 camp. His protection after the snap and his coverage athleticism trail his snapping.
 
 *Staff view, March 31, 2014.*
 

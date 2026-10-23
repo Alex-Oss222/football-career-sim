@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-C.J. Mosley is a veteran NFL interior reserve who came into Jacksonville's line rotation late in 2013, dressing for seven regular-season games and two playoff games. He brings strength to the middle of the line and can occupy a block and hold a limited run assignment. He is more useful holding a block than creating repeated penetration, and his get-off and pass-rush counters are his main weaknesses.
+C.J. Mosley has been a veteran interior reserve for Jacksonville: after a long early absence he was active for the final seven regular-season games of 2013 and both playoff games, and he has been active for five games in 2014. He brings strength and can hold a limited run assignment, with more value in occupying a block than in winning with penetration. Pass rush is the weaker part of his game, with his get-off, penetration and counter moves below a starter's standard.
 
-*Staff view, March 31, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

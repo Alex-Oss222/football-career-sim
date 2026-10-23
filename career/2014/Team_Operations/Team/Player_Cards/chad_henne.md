@@ -14,7 +14,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Chad Henne was Jacksonville's backup quarterback in 2013, active for all 16 regular-season games without throwing a pass, and he re-signed for two years in April 2014. He handles protection changes against shifting defensive looks, throws the short timing routes on schedule and has enough arm to run the offense, and in 2014 camp he ran the situational menus without needing another explanation. His limit is hurried command and decision-making once the clean rhythm breaks, and tempo and substitution communication is his unfinished work.
+Chad Henne spent the 2013 season as Jacksonville's backup quarterback, active for all 16 regular-season games and two playoff games without attempting a pass, and re-signed for two years in April 2014. He holds his protection resets when the defense changes the picture and keeps the short Stick and Drive throws on schedule, with enough arm to run the offense. Tempo and substitution communication was his unfinished work entering 2014, and in camp he ran the two-minute and four-minute menus without needing the situation restated. The staff sees his limit in hurried command and decisions once the clean rhythm breaks.
 
 *Staff view, April 4, 2014.*
 

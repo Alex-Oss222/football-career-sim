@@ -16,7 +16,7 @@ As of September 28, 2014, after Week 4.
 
 ## Staff assessment
 
-Brent Grimes was a strong starter at corner for Jacksonville in 2013, playing in all 16 regular-season games and both playoff games in his one season with the club. The staff saw a technically sharp coverage corner with excellent short-area reactions, eyes and ball skills, at his best in off coverage and reading patterns. Size and strength, getting off blocks and run support were the less favorable parts of his game. He finished 2013 with 67 tackles, two interceptions and five passes defended.
+Brent Grimes was a strong starting cornerback for Jacksonville in 2013, dressing for all 16 regular-season games and both playoff games. He was a technically sharp coverage corner with excellent short-area reactions, eyes and ball play, strongest in off coverage and pattern recognition. Size, power and getting off blocks were less favorable, and his tackling and penalty discipline trailed his coverage.
 
 *Staff view, January 14, 2014.*
 

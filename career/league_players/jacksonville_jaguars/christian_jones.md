@@ -14,7 +14,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Christian Jones is an undrafted rookie who has been active for five games, with three tackles on special teams. He has the size and strength for a strongside linebacker role, played both middle and outside linebacker at Florida State and brings experience on the coverage units. His instincts and his change of direction are the main questions.
+Christian Jones is an undrafted rookie who has made three special-teams tackles in five games. He is a big linebacker who played both middle and outside linebacker at Florida State, with the size and strength for the strong side and experience on coverage units. His instincts and change of direction are the questions.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

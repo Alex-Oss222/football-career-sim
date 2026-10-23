@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jonathan Grimes was Jacksonville's second running back in 2013, active for all 16 regular-season games, and he produced four rushing touchdowns and one receiving touchdown when his calls came. He is a flexible reserve and change-of-pace back with useful cuts, enough burst for the core runs and receiving value, and his assigned route work held from the 2013 camp into the preseason games. Pass protection and power finishing are the less certain parts of his game.
+Jonathan Grimes handled the second-back workload for Jacksonville in 2013, with 88 carries, four rushing touchdowns and one receiving touchdown, and he is the third back in 2014. He is a flexible change-of-pace back with useful cuts, receiving value and enough burst for the core runs, and his assigned route work held from camp into the preseason games in 2013. Physical pickups in pass protection and power finishing are the less certain parts of his game.
 
 *Staff view, March 31, 2014.*
 

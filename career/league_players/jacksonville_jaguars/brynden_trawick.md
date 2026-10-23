@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Brynden Trawick made the Jacksonville roster as an undrafted rookie in 2013 and dressed for all 16 regular-season games as a reserve safety and special-teams player. He took over at safety beside Bacarri Rambo when Dwight Lowery was hurt in the 2014 opener and has 16 tackles in five games. He is a physical, developmental safety whose run-support tools and communication on the coverage units are the strongest parts of his game. His recognition on defense and his positioning in coverage are less developed.
+Brynden Trawick was a reserve and kicking-game player as an undrafted rookie in 2013, dressing for all 16 regular-season games. In 2014 he moved into the safety spot beside Bacarri Rambo after Dwight Lowery was hurt in the opener, and he has 16 tackles in five games. He is a physical, developmental safety whose run support and communication on the coverage units are his best tools. His recognition of route combinations, his positioning in deep coverage and his man coverage in the slot are less developed.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

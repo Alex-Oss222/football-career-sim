@@ -14,7 +14,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jacksonville drafted Corey Linsley in the fifth round in 2014, and he made the opening roster as the reserve center. He brings rare weight-room strength for a center, a strong anchor and a full college season of making the line calls in a power conference. In camp he made the protection point on time with Chad Henne in the relief pairing on every recorded rep. His athletic marks are modest, his arms are short, and reach blocks and second-level movement are the weakest part of his game.
+Jacksonville drafted Corey Linsley in the fifth round in 2014, and the rookie made the opening roster as the reserve center behind Mike Brewster. He has rare weight-room strength for a center, a strong anchor and a full college season of making the line calls in a power conference, and in camp he made the protection point on time with Chad Henne in every recorded rep. His athletic marks are modest, his arms are short, and reach blocks and movement to the second level are his weakest areas.
 
 *Staff view, May 11, 2014.*
 
