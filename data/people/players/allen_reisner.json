@@ -6,7 +6,19 @@
   {
    "season": 2013,
    "stage": "final",
-   "owner": "career/2013/player_profiles/allen_reisner.md"
+   "owner": "career/2013/player_profiles/allen_reisner.md",
+   "short": {
+    "text": "Allen Reisner was a reserve tight end for Jacksonville in 2013, dressing for all {{2013.regular.games}} regular-season games and {{2013.playoffs.games:words}} playoff games as the third tight end in heavy personnel. He was a dependable package player who lined up correctly and ran the routes he was given in the 2013 camp and preseason. He offered limited receiving separation and little after the catch, and the staff saw little reason to feature him in space.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

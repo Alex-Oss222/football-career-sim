@@ -10,6 +10,14 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Luis Antonio Rodríguez Ochoa from Redmond, Washington. Cropped by User:Blueag9 ., [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Brandon-Mebane-2008-11-02-vsEagles.jpg)).*
 
+**Current assignment:** Starting defensive tackle.
+
+**Sacks:** 2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

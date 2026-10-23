@@ -143,14 +143,22 @@ class PlayerSheetResearchTests(unittest.TestCase):
             self.assertEqual(len(data['workouts']), 1)
             self.assertEqual(data['workouts'][0]['test_year'], 2012)
 
-    def test_restored_future_template_preserves_overall_and_stats_at_bottom(self):
+    def test_restored_future_template_is_the_full_assessment_form(self):
+        # From October 20, 2026 the 2014-onward sheet is the form of the full assessment kept in
+        # the permanent record; the page is the player card, which shows the statistics.
         text = (ROOT/'foundation/templates/player_sheet_2014_onward_template.md').read_text(encoding='utf-8')
         self.assertIn('| Overall |', text)
         self.assertIn('| Trait | vs. Average | vs. Best | vs. Worst |', text)
+        self.assertIn('permanent record', text)
+        self.assertIn('player_card_template.md', text)
         headings = [line for line in text.splitlines() if line.startswith('## ')]
-        self.assertEqual(headings[-2:], ['## Regular-season statistics by year', '## Playoff statistics by year'])
-        self.assertEqual(text.count('| 2014 | Not played | Not played |'), 2)
-        self.assertIn('2015, 2016, and onward', text)
+        self.assertNotIn('## Regular-season statistics by year', headings)
+        self.assertNotIn('## Playoff statistics by year', headings)
+        self.assertNotIn('Not played', text)
+        self.assertIn('Passer rating (never QBR)', text)
+        card = (ROOT/'foundation/templates/player_card_template.md').read_text(encoding='utf-8')
+        self.assertIn('## Staff assessment', card)
+        self.assertIn('**Current assignment:**', card)
 
 
 if __name__ == '__main__':

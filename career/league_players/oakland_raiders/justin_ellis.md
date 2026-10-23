@@ -10,17 +10,25 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Pete Sheffield, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Justin_Ellis.jpg)).*
 
+**Current assignment:** Reserve nose tackle.
+
+**Sacks:** 1 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 23 | 78 | 4 | 8 | 5 | 3 | 1 | 1 | 1 |
+| 2014 (through Week 4) | Oakland | 23 | 78 | 4 | 8 | 5 | 3 | 1 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 23 | 78 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 23 | 78 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

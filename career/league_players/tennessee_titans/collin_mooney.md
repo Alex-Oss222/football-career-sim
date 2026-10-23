@@ -6,6 +6,10 @@
 
 As of January 19, 2014, after the Conference Championships.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

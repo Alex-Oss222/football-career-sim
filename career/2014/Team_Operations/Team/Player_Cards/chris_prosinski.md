@@ -6,29 +6,13 @@
 
 As of October 5, 2014, after Week 5.
 
+**Current assignment:** Dime defensive back.
+
+**Passes defended:** 0 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 4.0/10 |
-| Football IQ | 4.0/10 |
-| Range | 5.0/10 |
-| Speed and change of direction | 5.0/10 |
-| Route-combination recognition | 4.0/10 |
-| Deep positioning | 4.0/10 |
-| Man and slot coverage | 3.5/10 |
-| Ball skills | 3.5/10 |
-| Tackling | 4.5/10 |
-| Run support and angles | 4.5/10 |
-| Communication | 4.5/10 |
-| Play-action discipline | 4.0/10 |
-
-A coverage-unit safety with useful straight-line range and a reserve defensive role. I see movement and lane work ahead of route-combination recognition and man coverage.
+Chris Prosinski has been a reserve safety and coverage-unit player for Jacksonville, dressing for all 16 regular-season games and two playoff games in 2013. He brings useful straight-line range to the coverage units, and he held his assigned coverage lanes through 2013 camp and the preseason. His movement and lane work are ahead of his recognition of route combinations, his man coverage and his ball skills.
 
 *Staff view, March 31, 2014.*
 

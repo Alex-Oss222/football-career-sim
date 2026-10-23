@@ -10,24 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Taylor_Gabriel.jpg)).*
 
+**Current assignment:** Sixth receiver.
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 6.5/10 |
-| Speed | 7.0/10 |
-| Strength and power | 3.0/10 |
-| Agility and change of direction | 7.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.5/10 |
-| Speed and burst | 7.0/10 |
-| Return skills | 5.5/10 |
-| Size and contested catches | 2.5/10 |
+Taylor Gabriel is a rookie receiver and returner from Abilene Christian who was sixth in the receiver order for the Pittsburgh game and, as in the first four weeks, inactive on game day. He is a small, fast receiver and returner with quick change of direction, burst and run-after-catch ability. His size and strength limit him outside and at the catch point, and his technique is below an NFL starter's standard.
 
-A small, fast receiver and returner (5-8, 167) from Abilene Christian with run-after-catch ability; size limits him outside.
-
-*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+*Staff view, October 4, 2014.*
 
 ## Contract
 

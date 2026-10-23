@@ -10,31 +10,17 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cecil_Shorts_III.jpg)).*
 
+**Yards per target:** 0.0 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 7.0/10 |
-| Football IQ | 6.5/10 |
-| Release vs press | 6.0/10 |
-| Route running | 7.0/10 |
-| Separation and quickness | 6.5/10 |
-| Long speed | 6.0/10 |
-| Hands | 6.5/10 |
-| Catch radius and contested catches | 5.5/10 |
-| Ball tracking and deep receiving | 6.0/10 |
-| YAC and contact balance | 6.5/10 |
-| Coverage recognition and adjustments | 6.5/10 |
-| Blocking | 5.0/10 |
-
-A rhythm-route receiver who can uncover on intermediate concepts and add yards after the catch. I see a legitimate starter whose route work is stronger than his contested-catch and blocking profile.
+Cecil Shorts was a starter and Jacksonville's primary receiver in 2013, active for all 16 regular-season games with 104 catches for 1,158 yards. He was a rhythm-route receiver who could uncover on intermediate concepts and add yards after the catch, and his Stick and Drive landmarks held against changing leverage. His route work was stronger than his contested catches and blocking.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

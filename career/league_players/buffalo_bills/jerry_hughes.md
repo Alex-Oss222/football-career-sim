@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Air Force photo/Tech. Sgt. Julie Briden-Garcia. Cropped by User:Blueag9 ., Public domain ([source](https://commons.wikimedia.org/wiki/File:Jerry-Hughes-TCU-vs-USAFA-Nov-22-08.jpg)).*
 
+**Current assignment:** Starting defensive end.
+
+**Sacks:** 2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

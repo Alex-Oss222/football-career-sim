@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Cedward Brice, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Anthony_Sherman_(cropped).jpg)).*
 
+**Current assignment:** Starting fullback.
+
+**Yards per carry:** 2.5 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

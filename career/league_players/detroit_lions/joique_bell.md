@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Kevin Doebler, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Joique_Bell_warming_up_before_a_Detroit_Lions_football_game_on_2013-09-29.jpg)).*
 
+**Current assignment:** Reserve running back.
+
+**Yards per carry:** 4.0 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

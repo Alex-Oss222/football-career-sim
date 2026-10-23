@@ -10,31 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chad_Henne_2014_(cropped).jpg)).*
 
+**Current assignment:** Backup quarterback.
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 4.5/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 6.0/10 |
-| Football IQ | 6.0/10 |
-| Arm strength and velocity | 6.5/10 |
-| Short-intermediate ball placement | 6.0/10 |
-| Deep-outside placement | 5.0/10 |
-| Timing and anticipation | 6.0/10 |
-| Coverage and protection processing | 6.0/10 |
-| Pocket movement | 5.0/10 |
-| Scramble speed and mobility | 4.5/10 |
-| Mechanics and release | 6.0/10 |
-| Pressure decision-making | 5.0/10 |
-| Ball security and command | 5.5/10 |
+Chad Henne spent the 2013 season as Jacksonville's backup quarterback, active for all 16 regular-season games and two playoff games. He holds his protection resets when the defense changes the picture and keeps the short Stick and Drive throws on schedule, with enough arm to run the offense. Tempo and substitution communication was his unfinished work entering 2014, and in camp he ran the situational menus without needing another explanation. The staff sees his limit in hurried command and decisions once the clean rhythm breaks.
 
-A backup pocket quarterback who holds changed-picture protection resets and on-schedule Stick/Drive timing. Tempo and substitution communication is his unfinished work; a full backup season gave role experience without enough game evidence for a broader ceiling.
-
-*Staff view, April 4, 2014; dated updates through August 1, 2014.*
+*Staff view, August 1, 2014.*
 
 ## Contract
 
@@ -49,7 +31,7 @@ Two-year contract through 2015.
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Jacksonville | 29 | 7 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Jacksonville | 28 | 7 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
@@ -62,7 +44,7 @@ Two-year contract through 2015.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Jacksonville | 28 | 7 | 2 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 

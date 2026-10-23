@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Air Force photo/Staff Sgt. Matthew Plew, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jace_Amaro_(131109-F-QP712-103)_(cropped).jpg)).*
 
+**Current assignment:** Reserve tight end.
+
+**Yards per target:** 15.0 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

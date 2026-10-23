@@ -6,7 +6,19 @@
   {
    "season": 2013,
    "stage": "final",
-   "owner": "career/2013/player_profiles/uche_nwaneri.md"
+   "owner": "career/2013/player_profiles/uche_nwaneri.md",
+   "short": {
+    "text": "Uche Nwaneri was a viable NFL starting guard who held Jacksonville's left-guard job in every game of 2013, all {{2013.regular.games}} regular-season games and both playoff games. He was a power guard whose strengths were his anchor inside and his drive blocking, and in the 2013 preseason he identified his protection assignments correctly. He was less effective on movement blocks, and he needed steadier leverage after reading his assignment correctly.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

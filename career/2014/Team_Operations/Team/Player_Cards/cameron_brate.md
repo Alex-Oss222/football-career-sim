@@ -8,22 +8,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.5/10 |
-| Hands | 5.5/10 |
-| Attached blocking | 3.5/10 |
-| Route feel | 5.0/10 |
+Cameron Brate is an undrafted rookie tight end from Harvard whose camp was cut short by a long-term injury in Jacksonville's first preseason game. He is a receiving tight end with reliable hands, a feel for routes and a sound grasp of the game, and in camp he sustained his assigned block against the reserve ends on both padded days. Blocking strength and the level of competition he faced in college are the limits.
 
-A receiving tight end from Harvard with reliable hands and route feel; blocking strength and level of competition are the limits.
-
-*Staff view, May 11, 2014; dated updates through August 8, 2014.*
+*Staff view, August 8, 2014.*
 
 ## Contract
 

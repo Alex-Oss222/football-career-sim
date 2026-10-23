@@ -8,28 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.0/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.0/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Interior pass protection | 5.0/10 |
-| Anchor and power | 5.0/10 |
-| Hand usage | 4.5/10 |
-| Recovery and balance | 5.5/10 |
-| Drive blocking | 5.0/10 |
-| Pull and movement blocking | 4.5/10 |
-| Combination and second-level work | 4.5/10 |
-| Stunt and blitz recognition | 5.0/10 |
-| Leverage and consistency | 4.5/10 |
-
-A physical interior reserve with useful recovery but uneven combinations and leverage. I see a backup who can cover a job, with less consistent coordination than the starting pair.
+Austin Pasztor was a reserve guard for Jacksonville in 2013: an injury-record problem kept him out of the first half of the season, and he then dressed as the primary interior backup for the last eight regular-season games and both playoff games. In the 2013 camp he competed with Will Rackley at guard, and he recovered after losing initial leverage and picked up the rush. The staff saw a physical backup who could cover a job, with uneven combination blocks and leverage and less consistent coordination than the starting pair.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

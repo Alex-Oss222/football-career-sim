@@ -227,7 +227,23 @@
    ],
    "one_line": "A penetrating interior starter whose quick entry and lateral pursuit can disrupt the pocket and backfield. I see better single-gap pressure tools than double-team anchoring.",
    "updates": [],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/sen_derrick_marks.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/sen_derrick_marks.md at commit 332d70b",
+   "short": {
+    "text": "Sen'Derrick Marks has proven he is an NFL starting defensive tackle: he dressed for all {{2013.regular.games}} regular-season games and both playoff games for Jacksonville in 2013, paired inside with Roy Miller. He is a penetrating, single-gap tackle whose quick get-off and lateral pursuit can disrupt the pocket and the backfield. He is less effective anchoring against double teams than attacking a single gap.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

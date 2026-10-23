@@ -10,30 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Seaman Apprentice Marcus Stanley, Public domain ([source](https://commons.wikimedia.org/wiki/File:CJ_Mosley_(defensive_lineman)_2012.jpg)).*
 
+**Sacks:** 0 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.0/10 |
-| Athleticism | 4.0/10 |
-| Speed | 3.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 3.5/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.0/10 |
-| Get-off | 4.5/10 |
-| Anchor | 5.5/10 |
-| Power | 6.0/10 |
-| Hand use | 5.0/10 |
-| Block shedding | 5.0/10 |
-| Penetration | 4.0/10 |
-| Pass-rush counters | 3.5/10 |
-| Double-team play | 5.5/10 |
-| Gap discipline and lateral pursuit | 4.5/10 |
+C.J. Mosley has been a veteran interior reserve for Jacksonville: after a long early absence he was active for the final seven regular-season games of 2013 and both playoff games, and he has been active for five games in 2014. He brings strength and can hold a limited run assignment, with more value in occupying a block than in winning with penetration. Pass rush is the weaker part of his game, with his get-off, penetration and counter moves below a starter's standard.
 
-A veteran interior reserve who can supply strength and hold a limited run assignment. I see more value in occupying a block than in creating repeated penetration or rush-counter wins.
-
-*Staff view, March 31, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

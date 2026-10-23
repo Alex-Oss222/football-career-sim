@@ -10,13 +10,21 @@ As of September 28, 2014, after Week 4.
 
 *Photo: U.S. Air Force Staff Sgt. Danielle Quilla, Public domain ([source](https://commons.wikimedia.org/wiki/File:Stefen_Wisniewski_2019_(cropped).jpg)).*
 
+**Current assignment:** Starting center.
+
+**Sacks allowed:** 5 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 25 | 61 | 4 | 4 | 282 | 5 | 20 |
+| 2014 (through Week 4) | Oakland | 25 | 61 | 4 | 4 | 282 | 5 | 20 |
 | 2013 | Oakland | 24 | 61 | 16 | N/A | N/A | 6 | N/A |
 | Career |  |  |  | 20 | N/A | N/A | 11 | N/A |
 

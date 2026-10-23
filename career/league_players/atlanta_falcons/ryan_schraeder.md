@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Ryan_Schraeder_2013.jpg)).*
 
+**Current assignment:** Reserve left tackle.
+
+**Sacks allowed:** 0 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

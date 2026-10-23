@@ -10,30 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Excel23, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:EugeneJ11.jpg)).*
 
+**Current assignment:** Starting left tackle.
+
+**Sacks allowed:** 3 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 7.0/10 |
-| Athleticism | 7.0/10 |
-| Speed | 6.0/10 |
-| Strength and power | 7.0/10 |
-| Agility and change of direction | 7.0/10 |
-| Technique | 7.0/10 |
-| Football IQ | 7.0/10 |
-| Pass-set and mirror | 7.5/10 |
-| Anchor vs power | 7.0/10 |
-| Hand usage and punch | 7.0/10 |
-| Recovery and balance | 7.0/10 |
-| Drive blocking | 6.5/10 |
-| Reach and movement blocking | 7.0/10 |
-| Second-level work | 6.5/10 |
-| Twist and blitz recognition | 7.0/10 |
-| Assignment and penalty consistency | 7.0/10 |
+Eugene Monroe has proven he is an NFL starting left tackle, and the staff views him as a strong one. He was Jacksonville's starting left tackle throughout 2013, active for all 16 regular-season games and both playoff games, and he has started five games in 2014. Pass protection is his best work: he sets and mirrors well, has a strong punch, recovers after losing leverage and has enough anchor against power. His drive blocking is solid rather than dominant, as is his work at the second level.
 
-A balanced starting left tackle with useful pass-set movement, recovery and sufficient anchor. I see pass protection as his best contribution, with solid rather than dominant drive blocking.
-
-*Staff view, March 31, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

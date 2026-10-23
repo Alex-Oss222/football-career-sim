@@ -10,6 +10,14 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Paul Cutler, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Mason_Crosby_kicks_a_field_goal_for_Green_Bay_Packers_off_ball_held_by_Jon_Ryan_during_October_7,_2007_game_against_Chicago_Bears_at_Lambeau_Field_in_Green_Bay.jpg)).*
 
+**Current assignment:** Kicker.
+
+**Field-goal percentage:** 77.8 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

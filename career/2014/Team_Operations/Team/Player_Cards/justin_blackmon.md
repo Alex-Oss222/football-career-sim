@@ -8,29 +8,13 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.0/10 |
-| Strength and power | 7.0/10 |
-| Agility and change of direction | 6.0/10 |
-| Technique | 6.0/10 |
-| Football IQ | 5.0/10 |
-| Release vs press | 6.5/10 |
-| Route running | 6.0/10 |
-| Separation and quickness | 6.0/10 |
-| Long speed | 6.0/10 |
-| Hands | 7.0/10 |
-| Catch radius and contested catches | 7.5/10 |
-| Ball tracking and deep receiving | 6.5/10 |
-| YAC and contact balance | 7.0/10 |
-| Coverage recognition and adjustments | 5.0/10 |
-| Blocking | 6.0/10 |
-
-A physical outside receiver with strong hands, catch-point power and useful run-after-catch ability. I see the receiving tools ahead of the alignment and adjustment consistency needed to use them every snap.
+Justin Blackmon served a league suspension in 2013 and was active for 10 regular-season games for Jacksonville, carrying the Z workload later in the season. He was a physical outside receiver with strong hands, power at the catch point and run-after-catch ability, and he stressed coverage when he was aligned correctly. His alignment and his adjustments to coverage were not consistent enough for him to use those tools on every snap.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Patrick_Murray_field_goal_vs._Redskins_Cropped.jpg)).*
 
+**Current assignment:** Kicker.
+
+**Field-goal percentage:** 91.7 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

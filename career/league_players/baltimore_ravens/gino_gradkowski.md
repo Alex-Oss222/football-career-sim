@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Gino_Gradkowski_2013.JPG)).*
 
+**Current assignment:** Reserve center.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

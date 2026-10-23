@@ -6,24 +6,15 @@ Born August 13, 1990 · Iowa · Undrafted
 
 As of October 5, 2014, after Week 5.
 
+**Current assignment:** Long snapper.
+
+**Long snaps:** 48 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 4.0/10 |
-| Speed | 4.0/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.0/10 |
-| Snap accuracy | 5.0/10 |
-| Snap speed | 4.5/10 |
-| Coverage after the snap | 4.0/10 |
+Casey Kreiter, a rookie long snapper from Iowa signed to compete with Jeremy Cain, has handled 48 long snaps in five games in 2014. He arrived after four seasons of Big Ten snapping with technique and snap accuracy as his best tools, and in camp he kept the punt operation clean against a controlled rush. Athleticism, speed and change of direction are his main limitations, and the staff judged every part of his game below an NFL starter's standard when he signed.
 
-A long snapper from Iowa with four seasons of Big Ten snapping; the memo signs him to compete with Jeremy Cain.
-
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

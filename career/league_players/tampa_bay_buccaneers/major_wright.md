@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Army Public Affairs Midwest, Public domain ([source](https://commons.wikimedia.org/wiki/File:Major_wright_bears2013.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

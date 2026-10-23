@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Melissa Hillier, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Marqise_Lee_2014_Jaguars_training_camp_(2)_Cropped.jpg)).*
 
+**Yards per target:** 6.9 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

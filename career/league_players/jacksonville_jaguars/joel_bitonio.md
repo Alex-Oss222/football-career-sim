@@ -10,24 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Joel_Bitonio_(51372881330)_(cropped).jpg)).*
 
+**Current assignment:** Starting left guard.
+
+**Sacks allowed:** 0 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 7.0/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 6.5/10 |
-| Football IQ | 6.0/10 |
-| Pass set and balance | 6.5/10 |
-| Run-block drive | 7.0/10 |
-| Length at tackle | 5.0/10 |
+Joel Bitonio is a rookie who has started five games on Jacksonville's line. A four-year college starter at both tackle spots, he has a heavy lower body, good short-area quickness and a finished set, and his strength makes him a forceful drive blocker in the run game. His length falls short of the staff's standard for a tackle. In camp he anchored against Sen'Derrick Marks, then over-set once and opened the inside lane, and George Yarno's correction of his set angle and inside hand held.
 
-A four-year college starter at both tackle spots with a heavy lower body, good short-area quickness and a finished set. Whether he is a tackle or a guard in Jacksonville is Stone's decision; his arm length is unresolved in the record.
-
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

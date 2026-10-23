@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels from District of Columbia, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Bears_at_Redskins_2019,_Aaron_Lynch_(48790913816)_(cropped).jpg)).*
 
+**Current assignment:** Reserve outside linebacker.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

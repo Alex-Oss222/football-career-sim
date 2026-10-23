@@ -10,30 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Jeremy_Mincey.JPG)).*
 
+**Current assignment:** Starting defensive end.
+
+**Sacks:** 2 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 4.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 5.5/10 |
-| Football IQ | 5.5/10 |
-| Get-off | 5.0/10 |
-| Edge speed and bend | 4.5/10 |
-| Power | 6.0/10 |
-| Hand use and counters | 5.5/10 |
-| Edge setting and run defense | 6.0/10 |
-| Block shedding | 5.5/10 |
-| Pursuit | 5.0/10 |
-| Rush plan and recognition | 5.0/10 |
-| Contain discipline | 5.5/10 |
+Jeremy Mincey has been a regular in Jacksonville's edge rotation: he dressed for all 16 regular-season games in 2013 as the second edge in every recorded order, and in the 2014 camp he gave the steadier lane play in the open competition for the first edge spot. He is a sturdy edge defender whose strengths are power and setting the edge against the run, and in that camp he kept contain on every recorded rep and won the edge once against Lane Johnson with the long arm. His speed and bend around the corner are less of a threat than his physical play, and his get-off and pursuit are below a starter's standard.
 
-A sturdy edge defender who offers power, run setting and rotational rush work. I see a balanced role player whose speed/bend are less threatening than his physical edge play.
-
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff view, August 1, 2014.*
 
 ## Contract
 

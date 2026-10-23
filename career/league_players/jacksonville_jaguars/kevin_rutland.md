@@ -8,23 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall at position | 4.0/10 |
-| Long and recovery speed | 4.5/10 |
-| Short-area quickness and hips | 4.5/10 |
-| Press coverage | 3.5/10 |
-| Off-man coverage | 4.0/10 |
-| Zone and pattern match | 4.0/10 |
-| Route recognition and eyes | 3.5/10 |
-| Ball skills | 3.5/10 |
-| Catch-point play | 4.0/10 |
-| Tackling and run support | 3.5/10 |
-| Block defeat and penalty discipline | 3.5/10 |
+Kevin Rutland was a reserve outside cornerback for Jacksonville in 2013, inactive until injuries elsewhere in the secondary opened an outside-reserve job late in the season, and then dressing for the final seven regular-season games and both playoff games. The staff saw functional movement, with recovery speed, short-area quickness and off coverage the better parts of his game. His technique and recognition were unfinished, with press coverage, route recognition and ball skills the main gaps, and the staff saw a narrow depth role rather than a corner it would consistently isolate in a matchup.
 
-The recorded outside-reserve workload began after injuries elsewhere; individual technique evidence remains thin. Return credits are unreliable, and no dated retirement has been established.
+*Staff view, January 14, 2014.*
 
-*Staff view at the 2013 season close, January 14, 2014.*
+## Contract
+
+Contract not established.
 
 ## Statistics
 

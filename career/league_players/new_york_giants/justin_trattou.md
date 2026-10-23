@@ -6,6 +6,10 @@
 
 As of December 29, 2013, after Week 17.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

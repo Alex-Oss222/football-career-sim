@@ -10,31 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Lance Cpl. Matthew Bragg, Public domain ([source](https://commons.wikimedia.org/wiki/File:Paul_Posluszny_2014_Pro_Bowl.jpg)).*
 
+**Current assignment:** Starting linebacker.
+
+**Tackles:** 31 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 6.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 7.0/10 |
-| Football IQ | 7.5/10 |
-| Run diagnosis | 7.5/10 |
-| Fit discipline | 7.0/10 |
-| Block destruction | 6.5/10 |
-| Range | 5.5/10 |
-| Tackling | 7.0/10 |
-| Zone coverage | 5.5/10 |
-| Man coverage | 4.5/10 |
-| Blitz and pressure | 5.0/10 |
-| Communication | 7.5/10 |
-| Pursuit angles | 6.0/10 |
+Paul Posluszny has been a viable NFL starter at middle linebacker for Jacksonville, dressing for 11 regular-season games in 2013 and five so far in 2014. He reads the run well, sets the fits, communicates the front and finishes tackles inside. He is stronger working downhill than in isolated man coverage, and his recovery range is limited.
 
-An instinctive middle linebacker who can set fits, communicate the front and finish inside tackles. I see downhill work as stronger than isolated man coverage or recovery range.
-
-*Staff view, March 31, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

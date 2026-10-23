@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Bobak Ha'Eri, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:2024-0106-EJ_Manuel.jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 90.1 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Buffalo | 24 | 3 | 3 | 53 | 81 | 65.4 | 632 | 7.8 | 210.7 | 4 | 3 | 90.1 |
 | 2013 | Buffalo | 23 | 3 | 16 | 356 | 547 | 65.1 | 3,923 | 7.2 | 245.2 | 25 | 10 | 93.8 |
@@ -27,7 +35,7 @@ As of October 5, 2014, after Week 5.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Buffalo | 23 | 3 | 2 | 52 | 91 | 57.1 | 825 | 9.1 | 412.5 | 5 | 1 | 101.2 |
 

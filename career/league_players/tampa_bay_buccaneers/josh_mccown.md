@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Josh_McCown_2015.jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 95.8 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Tampa Bay | 35 | 12 | 5 | 119 | 183 | 65.0 | 1,216 | 6.6 | 243.2 | 9 | 2 | 95.8 |
 | 2013 | Chicago | 34 | 12 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |

@@ -10,24 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Davante_Adams_Cropped.jpg)).*
 
+**Current assignment:** Starting X receiver.
+
+**Yards per target:** 7.1 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.0/10 |
-| Athleticism | 6.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 6.5/10 |
-| Football IQ | 6.0/10 |
-| Hands and catch radius | 7.5/10 |
-| Route running | 6.5/10 |
-| Release vs. press | 5.0/10 |
+Davante Adams is a rookie who has played X for Jacksonville, active for five games with 30 catches for 369 yards and two touchdowns. He has a large catch radius and strong hands, and his routes are polished at the top of the stem. His long speed is average, and his release against NFL press was unproven when he arrived; in camp he won one contact release and lost another to Aqib Talib.
 
-A redshirt-sophomore receiver with a large catch radius, strong hands and route polish at the top of the stem; a record-volume college season in a pass-heavy offense. Long speed is average and his release against NFL press is unproven.
-
-*Staff view, May 11, 2014; dated updates through September 27, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

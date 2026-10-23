@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Cmm3, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:24,_Justin_Tuggle,_Aug_2,_2018.jpg)).*
 
+**Current assignment:** Reserve middle linebacker.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

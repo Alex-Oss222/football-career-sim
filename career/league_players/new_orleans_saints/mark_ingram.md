@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Executive Office of the President, Public domain ([source](https://commons.wikimedia.org/wiki/File:Mark_Ingram,_Jr._at_the_White_House_2010-03-08_3.jpg)).*
 
+**Current assignment:** Starting running back.
+
+**Yards per carry:** 5.4 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

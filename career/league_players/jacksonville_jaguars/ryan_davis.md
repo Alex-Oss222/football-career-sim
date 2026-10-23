@@ -8,28 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.0/10 |
-| Football IQ | 4.0/10 |
-| Get-off | 5.5/10 |
-| Edge speed and bend | 5.0/10 |
-| Power | 4.0/10 |
-| Hand use and counters | 4.5/10 |
-| Edge setting and run defense | 3.5/10 |
-| Block shedding | 3.5/10 |
-| Pursuit | 5.0/10 |
-| Rush plan and recognition | 4.5/10 |
-| Contain discipline | 4.0/10 |
-
-A developmental rotational rusher with a useful first step. I see a situational pressure option whose edge anchor and block defeat need to catch up to his movement tools.
+Ryan Davis earned the fourth edge-rusher job in Jacksonville's 2013 rotation with his rush finishes in the preseason, and he dressed for 15 regular-season games and both playoff games. The staff saw a developmental situational pass rusher with a useful first step, edge speed and pursuit. His edge anchor against the run and his ability to defeat blocks needed to catch up to that movement.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

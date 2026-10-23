@@ -10,30 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Hector Alejandro, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andre_Branch_(cropped).jpg)).*
 
+**Current assignment:** Starting defensive end.
+
+**Sacks:** 1 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.0/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.0/10 |
-| Get-off | 5.5/10 |
-| Edge speed and bend | 5.5/10 |
-| Power | 4.5/10 |
-| Hand use and counters | 4.5/10 |
-| Edge setting and run defense | 4.5/10 |
-| Block shedding | 4.5/10 |
-| Pursuit | 5.5/10 |
-| Rush plan and recognition | 4.0/10 |
-| Contain discipline | 4.5/10 |
+Andre Branch was a rotation defensive end for Jacksonville in 2013, dressing for all 16 regular-season games, and competed for the first edge spot in the 2014 camp. He brings a useful first step and pursuit, and in that camp he beat Lane Johnson around the corner. He still needs a more developed hand and counter plan and firmer edge play to become a dependable full-time starter; in camp he left his lane once while winning a rush, then kept contain and still produced pressure after Romeo Crennel's correction.
 
-A rotational edge defender with useful first-step and pursuit tools. I see a rusher who needs a more developed hand/counter plan and firmer edge work to become a dependable full-time starter.
-
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff view, August 1, 2014.*
 
 ## Contract
 

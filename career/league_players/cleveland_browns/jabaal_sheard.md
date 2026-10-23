@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost from United States, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jabaal_Sheard_cropped.jpg)).*
 
+**Current assignment:** Reserve outside linebacker.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

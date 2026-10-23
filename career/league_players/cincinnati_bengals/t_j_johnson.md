@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:T._J._Johnson_(American_football)_2013.jpg)).*
 
+**Current assignment:** Reserve right guard.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

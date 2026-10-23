@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Texas_A&M_QB_Ryan_Tannehill_scrambling.jpg : SD Dirk derivative work: Arbor to SJ, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Luke_Joeckel_2011.jpg)).*
 
+**Sacks allowed:** 2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

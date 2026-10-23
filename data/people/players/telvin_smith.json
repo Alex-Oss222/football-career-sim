@@ -166,7 +166,19 @@
      "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/telvin_smith.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/telvin_smith.md at commit 332d70b",
+   "short": {
+    "text": "Telvin Smith is a rookie linebacker who has made {{2014.regular.special_teams_tackles:words}} special-teams tackles in {{2014.regular.games:words}} games. His case is speed, range, pursuit and ball skills: he played weak-side linebacker at Florida State in 2013 and ran the second-fastest forty among linebackers at the combine. His lean frame is the question against blockers in the run game; in camp he followed the flow on a counter and left the wrap gap, then fit the same misdirection correctly after the correction.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

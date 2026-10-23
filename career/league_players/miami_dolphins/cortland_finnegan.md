@@ -10,19 +10,27 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Michele Moore, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cortland_Finnegan_Pro_Bowl_cropped.jpg)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 1 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 30 | 24 | 4 | 19 | 9 | 10 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 30 | 24 | 4 | 19 | 9 | 10 | 0 | 0 | 0 |
 | 2013 | St. Louis | 29 | 31 | 16 | 110 | 76 | 34 | 4 | 2 | 2 |
 | Career |  |  |  | 20 | 129 | 85 | 44 | 4 | 2 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 30 | 24 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 30 | 24 | 1 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | St. Louis | 29 | 31 | 3 | 32 | 22 | 1 | 1 | N/A |
 
 ### Playoffs

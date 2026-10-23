@@ -12,20 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.5/10 |
-| Motor | 6.0/10 |
-| Length | 3.5/10 |
-| Rush plan | 4.5/10 |
-
-A German-born edge rusher with motor and hand activity, a productive senior season and a shorter frame.
+Kasim Edebali is a rookie defensive end from Boston College who plays with motor and active hands and had a productive senior season. His main limitation is a shorter frame without much length, and his technique, football sense and rush plan are below an NFL starter's standard.
 
 *Staff view, May 11, 2014.*
 

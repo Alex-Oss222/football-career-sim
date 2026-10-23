@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Photo by Sgt. 1st Class William Calohan, Public domain ([source](https://commons.wikimedia.org/wiki/File:Willie_Colon_(cropped).jpg)).*
 
+**Current assignment:** Starting right guard.
+
+**Sacks allowed:** 4 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

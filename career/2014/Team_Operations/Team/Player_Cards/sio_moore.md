@@ -10,31 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Sio_Moore.JPG)).*
 
+**Tackles:** 13 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.5/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 4.5/10 |
-| Run diagnosis | 4.5/10 |
-| Fit discipline | 4.5/10 |
-| Block destruction | 5.5/10 |
-| Range | 6.5/10 |
-| Tackling | 5.0/10 |
-| Zone coverage | 5.0/10 |
-| Man coverage | 5.0/10 |
-| Blitz and pressure | 5.5/10 |
-| Communication | 5.5/10 |
-| Pursuit angles | 5.5/10 |
+Sio Moore was a rotation and package linebacker for Jacksonville as a rookie in 2013, dressing for all 16 regular-season games and two playoff games. He is a good athlete with range, pursuit speed and useful tools as a pass rusher, and the coverage corrections he was taught as a rookie held. His run diagnosis and fit discipline are behind his movement and need to become dependable before his job grows; in the 2013 camp he overran a fit, kept the correction, then overran one again at the scrimmage, and Crennel narrowed his assignment.
 
-An athletic package linebacker with range and useful pressure tools. I see his movement ahead of his run diagnosis and fit consistency, which need to become dependable before expanding the job.
-
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff view, August 1, 2014.*
 
 ## Contract
 

@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Marianne O'Leary, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Adrien_Robinson_2012.jpg)).*
 
+**Current assignment:** Reserve tight end.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

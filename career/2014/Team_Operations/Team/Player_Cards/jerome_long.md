@@ -8,26 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.5/10 |
-| Athleticism | 3.5/10 |
-| Speed | 3.0/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 3.0/10 |
-| Technique | 3.0/10 |
-| Football IQ | 3.0/10 |
-| Get-off | 3.5/10 |
-| Anchor | 4.0/10 |
-| Power | 4.5/10 |
-| Hand use | 3.0/10 |
-| Block shedding | 3.5/10 |
-| Penetration | 3.5/10 |
-| Pass-rush counters | 3.0/10 |
-| Double-team play | 3.5/10 |
-| Gap discipline and lateral pursuit | 3.0/10 |
-
-A developmental interior lineman who offers size and a basic power role. My working view is that block defeat and disciplined technique are the larger questions than raw strength.
+Jerome Long is a developmental defensive tackle who spent the 2013 season on Jacksonville's practice squad. He offers size and a basic power role inside. Beating blocks and playing with disciplined technique are bigger questions for him than raw strength, and his hand use and gap discipline are still at a developmental level.
 
 *Staff view, March 31, 2014.*
 

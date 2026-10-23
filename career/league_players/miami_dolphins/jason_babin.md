@@ -12,22 +12,13 @@ As of September 28, 2014, after Week 4.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall at position | 6.0/10 |
-| Get-off | 6.5/10 |
-| Edge speed and bend | 6.5/10 |
-| Power | 5.5/10 |
-| Hand use and counters | 6.0/10 |
-| Edge setting and run defense | 4.5/10 |
-| Block shedding | 4.5/10 |
-| Pursuit | 5.5/10 |
-| Rush plan and recognition | 6.5/10 |
-| Contain discipline | 4.5/10 |
+Jason Babin, a veteran pass rusher and in the staff's view a viable NFL starter, led Jacksonville's edge rotation in 2013 and was active for all 16 regular-season games and both playoff games. In the 2013 camp he was the leading source of edge pressure in the rotation, rushing with get-off, bend and a useful plan. His run defense at the point of attack, block shedding and contain discipline were below his value as a rusher.
 
-Camp identified leading edge pressure. The season requires separating called containment from chances to finish; raw sack totals cannot provide that split.
+*Staff view, January 14, 2014.*
 
-*Staff view at the 2013 season close, January 14, 2014.*
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -35,13 +26,13 @@ Camp identified leading edge pressure. The season requires separating called con
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 34 | N/A | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 34 | N/A | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 33 | 58 | 16 | 52 | 35 | 17 | 6 | 3 | 7 |
 | Career |  |  |  | 19 | 52 | 35 | 17 | 6 | 3 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 34 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 34 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 33 | 58 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

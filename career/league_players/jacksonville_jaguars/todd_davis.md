@@ -8,22 +8,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Downhill fit | 5.5/10 |
-| Coverage range | 4.0/10 |
-| Coverage-unit fit | 5.5/10 |
+Todd Davis is an undrafted rookie linebacker whose first game-day activation came against Pittsburgh, for additional linebacker and coverage-unit depth, and he has played 18 snaps on special teams. He was a productive inside linebacker at Sacramento State with a downhill style, and the staff sees value in him on the coverage units. Coverage range is the main question, and his college evidence came against FCS competition.
 
-A productive small-school inside linebacker with a downhill style and coverage-unit value; coverage range is the question.
-
-*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

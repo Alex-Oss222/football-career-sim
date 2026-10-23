@@ -6,26 +6,13 @@
 
 As of October 5, 2014, after Week 5.
 
+**Current assignment:** Fullback.
+
+**Yards per carry:** 2.8 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 4.5/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 5.5/10 |
-| Football IQ | 5.5/10 |
-| Lead blocking | 6.0/10 |
-| Pass protection | 5.5/10 |
-| Short-yardage power | 5.5/10 |
-| Receiving and hands | 5.0/10 |
-| Route and flat utility | 4.5/10 |
-| Ball security | 6.0/10 |
-| Special-teams utility | 6.5/10 |
-
-A blocking and special-teams fullback who can handle a small carry or flat-receiving package. I see utility and dependable physical work before I see a featured offensive weapon.
+Montell Owens held Jacksonville's fullback job through the 2013 season, dressing for all 16 regular-season games and two playoff games without a fumble. He is a blocking and special-teams fullback who can handle a small package of carries and flat throws, and his special-teams work, lead blocking and ball security are his strongest tools. Routes and hands trail the rest of his game, and the staff sees dependable physical work and utility before a featured offensive weapon.
 
 *Staff view, March 31, 2014.*
 

@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Brian_Winters_(American_football).JPG)).*
 
+**Current assignment:** Starting right tackle.
+
+**Sacks allowed:** 3 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

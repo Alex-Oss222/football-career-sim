@@ -10,19 +10,27 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Stacy_McGee.JPG)).*
 
+**Current assignment:** Reserve defensive tackle.
+
+**Sacks:** 0 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 24 | 92 | 4 | 2 | 1 | 1 | 1 | 0 | 1 |
+| 2014 (through Week 4) | Oakland | 24 | 92 | 4 | 2 | 1 | 1 | 1 | 0 | 1 |
 | 2013 | Oakland | 23 | 92 | 16 | 1 | 1 | 0 | 0 | 0 | 0 |
 | Career |  |  |  | 20 | 3 | 2 | 1 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 24 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 24 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Oakland | 23 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

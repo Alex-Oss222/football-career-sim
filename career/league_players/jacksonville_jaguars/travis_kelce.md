@@ -10,30 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Adam Schultz, Public domain ([source](https://commons.wikimedia.org/wiki/File:Travis_Kelce_in_the_Oval_Office_of_the_White_House_on_June_5,_2023_-_P20230605AS-0902_(cropped).jpg)).*
 
+**Yards per target:** 5.3 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 7.0/10 |
-| Strength and power | 6.5/10 |
-| Agility and change of direction | 7.0/10 |
-| Technique | 7.0/10 |
-| Football IQ | 7.0/10 |
-| Route running and separation | 7.0/10 |
-| Hands and catch radius | 7.5/10 |
-| Contested catch and ball tracking | 6.5/10 |
-| YAC | 7.0/10 |
-| Run blocking | 5.0/10 |
-| Pass protection and chip | 5.5/10 |
-| Alignment versatility | 7.5/10 |
-| Speed and athleticism | 7.0/10 |
-| Coverage recognition | 7.5/10 |
+Travis Kelce is Jacksonville's second tight end behind Marcedes Lewis, the complementary role he held as a rookie in 2013, and he is not yet a proven high-volume receiver. He was active for all 16 regular-season games in 2013 with 17 targets, and he has four catches in five games in 2014. He is a movable receiving tight end who can line up attached, on the wing or in the slot, with enough speed to threaten the seam, the change of direction and route tempo to separate from linebackers and dependable hands away from his body. His blocking trails his receiving, with his pad level, hand placement and ability to sustain leverage still needing work, and he suits chip-and-release jobs better than extended one-on-one protection.
 
-Alignment-flexible move tight end with a receiving-first profile. Kelce can function as the Y, align off the ball as a wing, or flex into the slot without changing what the offense can ask him to do in the passing game. He gets into his release cleanly, builds enough speed to threaten the seam and works intermediate routes with controlled stems and efficient breaks. Against zone, he recognizes space and presents a defined target; against linebackers, his change of direction and route tempo give him a separation advantage. His hands are dependable outside his frame, his catch radius expands the quarterback's margin for error, and he transitions quickly from catch to runner. He has enough size and play strength to finish through contact, although contested catches are not yet a defining part of his game. As a blocker, positioning and effort are ahead of his ability to consistently displace NFL edge defenders. His pad level, hand placement and ability to sustain leverage still need work, and he is better suited to chip-and-release assignments than extended one-on-one pass protection. His best role is as a movable receiving piece who can create matchup problems from multiple alignments without being treated as a sixth offensive lineman.
-
-*Staff view, March 31, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

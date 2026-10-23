@@ -10,6 +10,12 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Tanner_Hawkinson_2013.jpg)).*
 
+**Current assignment:** Reserve right tackle.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

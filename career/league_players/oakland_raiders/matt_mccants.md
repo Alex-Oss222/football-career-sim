@@ -6,13 +6,19 @@
 
 As of September 28, 2014, after Week 4.
 
+**Current assignment:** Reserve left tackle.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 25 | 73 | 4 | 0 | 0 | 0 | 20 |
+| 2014 (through Week 4) | Oakland | 25 | 73 | 4 | 0 | 0 | 0 | 20 |
 
 ### Playoffs
 

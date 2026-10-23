@@ -10,6 +10,14 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Joe Bielawa from Minneapolis, USA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Blair_Walsh.jpg)).*
 
+**Current assignment:** Kicker.
+
+**Field-goal percentage:** 87.5 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

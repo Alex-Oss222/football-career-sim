@@ -6,31 +6,15 @@
 
 As of October 5, 2014, after Week 5.
 
+**Current assignment:** Starting linebacker.
+
+**Tackles:** 25 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 4.0/10 |
-| Agility and change of direction | 5.5/10 |
-| Technique | 4.0/10 |
-| Football IQ | 4.0/10 |
-| Run diagnosis | 4.0/10 |
-| Fit discipline | 4.0/10 |
-| Block destruction | 4.0/10 |
-| Range | 5.5/10 |
-| Tackling | 4.5/10 |
-| Zone coverage | 4.0/10 |
-| Man coverage | 3.5/10 |
-| Blitz and pressure | 4.0/10 |
-| Communication | 4.5/10 |
-| Pursuit angles | 5.0/10 |
+Julian Stanford was a reserve linebacker for Jacksonville in 2013, dressing for all 16 regular-season games, with his role expanding late that season. In 2014 he has played as the third linebacker in the base defense, with 25 tackles in five games. He is mobile, can cover space and pursue, and can handle a defined replacement assignment. His main limitations are taking on blocks, reading and fitting the run, and the detail of his coverage, especially in man coverage.
 
-A mobile reserve linebacker who can cover space and take a defined replacement assignment. I see limited block destruction and coverage detail as the barriers to a larger base role.
-
-*Staff view, March 31, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

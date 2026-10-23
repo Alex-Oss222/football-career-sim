@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: U.S. Army National Guard Photo by Sgt. Leticia Samuels, North Carolina National Guard Public Affairs/Released North Carolina National Guard derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jonathan_Stewart_2013.jpg)).*
 
+**Current assignment:** Reserve running back.
+
+**Yards per carry:** 6.5 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

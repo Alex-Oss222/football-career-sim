@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sam_Koch_and_John_Harbaugh.jpg : Keith Allison from Baltimore, USA derivative work: Rockfang ( talk ), [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Sam_Koch.jpg)).*
 
+**Current assignment:** Punter.
+
+**Net punting average:** 43.2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

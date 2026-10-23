@@ -10,19 +10,27 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Rishard_Matthews.JPG)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 10.5 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 24 | 18 | 4 | 2 | 1 | 21 | 21.0 | 0 | 21 | 5.2 | 50.0 |
+| 2014 (through Week 4) | Miami | 24 | 18 | 4 | 2 | 1 | 21 | 21.0 | 0 | 21 | 5.2 | 50.0 |
 | 2013 | Miami | 23 | 18 | 16 | 18 | 10 | 152 | 15.2 | 2 | 56 | 9.5 | 55.6 |
 | Career |  |  |  | 20 | 20 | 11 | 173 | 15.7 | 2 | 56 | 8.7 | 55.0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 24 | 18 | 0 | 0 | N/A | 4 | 58 | 14.5 |
+| 2014 (through Week 4) | Miami | 24 | 18 | 0 | 0 | N/A | 4 | 58 | 14.5 |
 | 2013 | Miami | 23 | 18 | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs

@@ -2,16 +2,29 @@
 
 Every page is built from the player's permanent record (runtime/people.py)
 and the owners runtime/people.READ_THROUGH names, in the order it gives
-(awards from the award results), in the layout the user approved on
-October 19, 2026 on the Kirk Cousins page (docs/rebuild_plan.md, "The pages
-to read", Player):
+(awards from the award results), in the layout of the user's player card
+template (foundation/templates/player_card_template.md, October 20, 2026;
+docs/rebuild_plan.md, "The pages to read", Player):
 
     header line (name; club, position, number, age, status)
-    height, weight, birth date, college and draft; the photo with its credit
-    Staff assessment (only for a player a Jacksonville staff assessed)
-    Contract (salary by year, where Jacksonville holds the contract)
+    height, weight, birth date, college and draft; "As of"; the photo with its credit
+    Current assignment: one plain confirmed role (runtime/assignments.py), from
+        the game depth chart for a Jaguar on the active roster, else his slot on
+        the season's Week 1 depth chart while nothing since has moved him
+    the position statistic (QB passer rating, RB yards per carry, ...) for the
+        active season, from the closed games only (``position_metric``), through
+        the week the As of line names
+    Staff assessment (only for a player a Jacksonville staff assessed): the
+        latest assessment's short summary, two to four sentences with its
+        season figures resolved from his closed Jacksonville games
+        (``resolve_tokens``) and one dated line (``date_line``: the date of the
+        view it summarizes, or the original date and the figures' cutoff); no
+        grade is shown (the grades stay in the record). A record whose latest
+        assessment has no short yet shows its staff read
+    Contract (salary by year, where Jacksonville holds the contract; else "Contract
+        not established.")
     Statistics (regular season and playoffs apart, every table led by
-        Season, Team, Age and #)
+        Season, Team, Age and #; the quarterback's column is "Passer rating")
     Awards
     Transactions (one dated line each)
 
@@ -39,10 +52,10 @@ from datetime import date
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
-from . import people, player_bios, player_cards
+from . import assignments, people, player_bios, player_cards
 from . import roster as roster_record
 from .league import DIVISION_OF, DIVISIONS
-from .season_layout import LEAGUE_PLAYER_PAGES, PHOTO_REGISTRY, PLAYER_FINANCES
+from .season_layout import LEAGUE_PLAYER_PAGES, PHOTO_REGISTRY, PLAYER_FINANCES, PLAYER_RECORDS
 from .seasons import SeasonPaths, active_season
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -91,19 +104,6 @@ def club_short(team):
     if team.startswith("New York "):
         return "N.Y. " + team.split()[-1]
     return team.rsplit(" ", 1)[0]
-
-
-def category_label(text):
-    """A grade category as the page shows it: 'Strength / Power' reads 'Strength and power'."""
-    parts = [p.strip() for p in text.split(" / ")]
-    out = [parts[0]]
-    for p in parts[1:]:
-        out.append(p[0].lower() + p[1:] if len(p) > 1 and p[0].isupper() and p[1].islower() else p)
-    return " and ".join(out)
-
-
-def grade_text(text):
-    return re.sub(r"\s+/10$", "/10", text.strip())
 
 
 def money(v):
@@ -196,7 +196,7 @@ def _rating(b):
 QB_PASSING = (("G", _games), ("CMP", _count("completions")), ("ATT", _count("pass_attempts")),
               ("CMP%", _rate("completions", "pass_attempts", 100)), ("YDS", _count("passing_yards")),
               ("Y/A", _rate("passing_yards", "pass_attempts")), ("YDS/G", _per_game("passing_yards")),
-              ("TD", _count("passing_touchdowns")), ("INT", _interceptions), ("Rating", _rating))
+              ("TD", _count("passing_touchdowns")), ("INT", _interceptions), ("Passer rating", _rating))
 QB_OTHER = (("Sacked", _count("sacks_taken")), ("Sack yards", _count("sack_yards")),
             ("Rushes", _count("rushing_attempts")), ("Rush yards", _count("rushing_yards")),
             ("Rush TD", _count("rushing_touchdowns")), ("Fumbles", _count("fumbles")), ("Lost", _count("fumbles_lost")))
@@ -290,11 +290,54 @@ class Context:
             key = (r["year"], r["type"])
             self.latest_week[key] = max(self.latest_week.get(key, 0), r["week"])
         self.jax_latest = max((d for (t, d) in self.weeks if t == JAX), default=None)
+        # The current assignment's owners (people.READ_THROUGH "current_assignment").
+        self.lists = ({row["name"]: row["list"] for row in roster_record.load(self.paths.roster)["players"]}
+                      if roster_record.is_record(self.paths.roster) else {})
+        self.chart = _json(self.paths.depth_chart)
+        self.working = _json(self.paths.record("offseason/depth_chart_working.json"))
+        week = self.latest_week.get((self.active, "regular"))
+        self.library = {}
+        self.week1, self.week1_added, self.rails_moved, self.branch_reserve = {}, set(), set(), set()
+        if week and self.paths.background_depth.is_file():
+            self.library = _json(self.paths.background_depth)
+            for club, data in self.library.get("clubs", {}).items():
+                for entry in data.get("players", ()):
+                    if entry.get("gsis_id"):
+                        self.week1[(club, entry["gsis_id"])] = entry
+                for line in data.get("branch_changes", ()):
+                    added = re.match(r"^Added (.+?) \(", line)
+                    if added:
+                        self.week1_added.add((club, added.group(1)))
+            self.rails_moved, self.branch_reserve = moved_since_week1(root, self.active, week,
+                                                                      rec["receipts"].get(self.active, {}))
 
     def league_player(self, record):
         if record["gsis_id"]:
             return self.by_gsis.get(record["gsis_id"])
         return self.by_key.get(record.get("game_key"))
+
+
+def _json(path):
+    path = Path(path)
+    return json.loads(path.read_text(encoding="utf-8")) if path.is_file() else {}
+
+
+def moved_since_week1(root, season, week, receipts):
+    """({gsis ids}, {(club, player)}): the players the in-season rails have moved by ``week`` (an
+    applied move effective by then), and the branch reserve placements from the closed games
+    (runtime/rails.c6_events on runtime/week_inputs.projected_returns). Their Week 1 slot no
+    longer says where they play."""
+    from . import rails, week_inputs
+    data = rails.load(season, root)
+    if data is None:
+        return set(), set()
+    moved = {row["uid"] for row in data.rows if row.get("outcome") == "APPLY" and row.get("uid")
+             and int(row["effective_from_week"]) <= int(week)}
+    regular = receipts.get("regular", [])
+    events = rails.c6_events(week_inputs.projected_returns(regular, season), week_inputs.last_regular_date(season),
+                             week_inputs.season_last_cutoffs(season), lambda r: r["week"],
+                             data.effective_from_week) if regular else []
+    return moved, {(e["team"], e["player_id"]) for e in events}
 
 
 def league_database(root, season):
@@ -346,29 +389,302 @@ def latest_assessment(record):
     return max(record["assessments"], key=lambda a: (a["season"], a["stage"] == "final"))
 
 
-def sheet_assessment(root, pointer):
-    """A frozen final player sheet read through its pointer: grades, the staff read and its date."""
+def sheet_read(root, pointer):
+    """A frozen final player sheet's staff read (its "Player identity" line) and its date, read
+    through its pointer; shown only while the assessment has no short summary."""
     text = (Path(root) / pointer["owner"]).read_text(encoding="utf-8")
-    body = text.split("## Position grades\n", 1)[1].split("\n## ", 1)[0]
-    rows = [[c.strip() for c in l.strip().strip("|").split("|")] for l in body.splitlines() if l.startswith("|")]
-    grades = [{"category": r[0], "grade": r[1]} for r in rows[2:]]
     read = re.search(r"^\*\*Player identity:\*\*\s*(.*?)\s*$", text, re.M).group(1).rstrip("\\").rstrip()
-    close = re.search(r"^\*\*Season-close checkpoint:\*\*\s*(.*?)\s*$", text, re.M).group(1)
-    when = re.search(r"([A-Z][a-z]+ \d{1,2}, \d{4})", close).group(1)
-    return {"grades": grades, "read": read, "source_dir": posixpath.dirname(pointer["owner"]),
-            "line": "Staff view at the %d season close, %s." % (pointer["season"], when)}
+    return read, long_date(people.assessment_date(pointer, root))
 
 
-def assessment_view(ctx, record):
+# ------------------------------------------------------------------ the staff assessment
+def words(n, capital=False):
+    """A count in the template's style: zero to nine spelled out, 10 and above in digits."""
+    if n != int(n):
+        raise ValueError("a count written in words must be whole: %s" % n)
+    n = int(n)
+    out = SPELLED[n] if 0 <= n < 10 else "{:,}".format(n)
+    return out[0].upper() + out[1:] if capital else out
+
+
+SPELLED = ("zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine")
+RATE_PARTS = {
+    "passer_rating": None,
+    "completion_percentage": ("completions", "pass_attempts", 100),
+    "yards_per_attempt": ("passing_yards", "pass_attempts", 1),
+    "yards_per_carry": ("rushing_yards", "rushing_attempts", 1),
+    "yards_per_catch": ("receiving_yards", "receptions", 1),
+    "yards_per_target": ("receiving_yards", "targets", 1),
+    "catch_rate": ("receptions", "targets", 100),
+    "field_goal_percentage": ("field_goals_made", "field_goals_attempted", 100),
+    "extra_point_percentage": ("extra_points_made", "extra_points_attempted", 100),
+    "punting_average": ("punt_yards", "punts", 1),
+    "net_punting_average": None,
+}
+
+
+def jacksonville_block(p, year, kind):
+    """His season block of Jacksonville games: the season's own when every game that season was
+    with Jacksonville, else Jacksonville's part of it (runtime/player_cards.club_blocks), dated
+    through his last Jacksonville game when he went on to another club; None when he has no such
+    game."""
+    season = p["seasons"].get(year) or {}
+    if season.get("clubs") == [JAX]:
+        return season.get(kind)
+    return ((season.get("by_club") or {}).get(JAX) or {}).get(kind)
+
+
+def token_value(p, year, kind, measure, fmt):
+    """(text, block) for one season-figure token, from his closed Jacksonville games that season
+    (the figures are his Jacksonville record: a season he also played for another club counts
+    only its Jacksonville games). Refused (a ValueError) when he has no such game, a field is not
+    in every game's record or a rate has no attempts."""
+    if p is None:
+        raise ValueError("no game records")
+    block = jacksonville_block(p, year, kind)
+    if not block:
+        raise ValueError("no %d %s games with Jacksonville on record"
+                         % (year, "regular-season" if kind == "regular" else "playoff"))
+    totals, available = block["totals"], block["available"]
+    if measure in people.RATES:
+        if fmt:
+            raise ValueError("a rate takes no format")
+        if measure == "passer_rating":
+            value = player_cards.rating_value(totals)
+        elif measure == "net_punting_average":
+            net = dict(block["tiles"]).get("NET") if p["group"] == "P" else None
+            value = None if net in (None, N_A) else float(net)
+        else:
+            num, den, scale = RATE_PARTS[measure]
+            value = ratio(totals.get(num, 0), totals.get(den, 0), scale)
+        if value is None:
+            raise ValueError("%s has no attempts" % measure)
+        return "%.1f" % value, block
+    if measure == "games":
+        value = block["games"]
+    else:
+        if measure not in people.measures():
+            raise ValueError("unknown measure %s" % measure)
+        if available.get(measure, True) is False:
+            raise ValueError("%s is not recorded in every game" % measure)
+        value = player_cards.thrown(totals) if measure == "interceptions_thrown" else totals.get(measure, 0)
+    if fmt:
+        return words(value, fmt == "Words"), block
+    return (player_cards.sack_text(value) if measure == "sacks" else "{:,}".format(int(value))), block
+
+
+def resolve_tokens(ctx, p, text):
+    """(text, [(season, kind, through)]) with every season-figure token replaced by its value
+    from the closed games; a ValueError names the token that cannot resolve."""
+    used = []
+
+    def one(m):
+        year, kind, measure, fmt = int(m.group(1)), m.group(2), m.group(3), m.group(4)
+        if year > ctx.active:
+            raise ValueError("%s: season after the active season" % m.group(0))
+        if measure in people.AMBIGUOUS:
+            raise ValueError("%s: ambiguous; use %s" % (m.group(0), people.AMBIGUOUS[measure]))
+        try:
+            value, block = token_value(p, year, kind, measure, fmt)
+        except ValueError as exc:
+            raise ValueError("%s: %s" % (m.group(0), exc)) from None
+        used.append((year, kind, block["through"]))
+        return value
+    out = people.TOKEN.sub(one, text)
+    if "{{" in out or "}}" in out:
+        raise ValueError("unresolved token in %r" % out)
+    return out, used
+
+
+def view_date(record, a, root=ROOT):
+    """The date of the staff view a short summarizes: the latest of the dates of the assessments
+    it summarizes and of their dated updates, no later than the short's own date (the day the
+    summary was written, which is not itself an assessment)."""
+    short = a["short"]
+    wanted = {(i["season"], i["stage"]) for i in short["summarizes"]}
+    dates = []
+    for x in record["assessments"]:
+        if (x["season"], x["stage"]) in wanted:
+            dates.append(people.assessment_date(x, root))
+            dates += [u["date"] for u in x.get("updates", ()) if u["date"] <= short["date"]]
+    return max(dates)
+
+
+def date_line(original, used, view=None):
+    """The staff assessment's dated line. With no figure from games after the assessment's date:
+    "Staff view," and the date of the view it summarizes (``view_date``; the assessment's own
+    date when it has no dated update). With such figures: the assessment's original date, the
+    season and the latest game day those figures cover, as the user's preview words it; should
+    those figures end before the view's date (he left Jacksonville before it), the view's date
+    leads instead, so the line is never dated before what the summary draws on."""
+    view = view or original
+    later = [(y, through) for y, _kind, through in used if through > original]
+    if not later:
+        return "Staff view, %s." % long_date(view)
+    season = max(y for y, _ in later)
+    last = max(t for y, t in later if y == season)
+    cutoff = date.fromisoformat(last)
+    when = ("%s %d" % (cutoff.strftime("%B"), cutoff.day) if cutoff.year == season else long_date(cutoff))
+    if view > last:
+        return "Staff view, %s; %d results current through %s." % (long_date(view), season, when)
+    return "Staff assessment originally dated %s; %d results current through %s." % (long_date(original), season, when)
+
+
+def staff_view(ctx, record, p, target):
+    """(text, dated line) of the page's Staff assessment, or None when no Jacksonville staff
+    assessed him. The latest assessment's short summary, its season figures resolved from the
+    closed games (its words never change); until that assessment has a short, its staff read as
+    written. No grade is shown."""
     a = latest_assessment(record)
     if a is None:
         return None
-    if "owner" in a:
-        return sheet_assessment(ctx.root, a)
-    line = "Staff view, %s" % long_date(a["date"])
-    if a.get("updates"):
-        line += "; dated updates through %s" % long_date(max(u["date"] for u in a["updates"]))
-    return {"grades": a["grades"], "read": a["read"], "source_dir": "", "line": line + "."}
+    short = a.get("short")
+    if short is not None and not (isinstance(short, dict) and isinstance(short.get("text"), str)):
+        raise ValueError("%s: a short staff assessment is an object with its text" % record["name"])
+    if short is None:
+        if "owner" in a:
+            read, when = sheet_read(ctx.root, a)
+            return (relink(read, posixpath.dirname(a["owner"]), target),
+                    "Staff view at the %d season close, %s." % (a["season"], when))
+        line = "Staff view, %s" % long_date(a["date"])
+        if a.get("updates"):
+            line += "; dated updates through %s" % long_date(max(u["date"] for u in a["updates"]))
+        return relink(a["read"], "", target), line + "."
+    try:
+        text, used = resolve_tokens(ctx, p, short["text"])
+    except ValueError as exc:
+        raise ValueError("%s: staff assessment token %s" % (record["name"], exc)) from None
+    return text, date_line(people.assessment_date(a, ctx.root), used, view_date(record, a, ctx.root))
+
+
+def assessment_errors(ctx):
+    """What would stop a page's Staff assessment or Current assignment from building: a short
+    whose tokens do not resolve or whose words break the rules once resolved, a role label or a
+    Week 1 slot code with no page words."""
+    errors = []
+    for rid, record in sorted(ctx.records.items()):
+        a = latest_assessment(record)
+        if a is None or "short" not in a:
+            continue
+        label = "%s/%s.json: %d %s staff assessment" % (PLAYER_RECORDS, rid, a["season"], a["stage"])
+        if not isinstance(a["short"], dict) or not isinstance(a["short"].get("text"), str):
+            errors.append("%s: a short staff assessment is an object with its text" % label)
+            continue
+        try:
+            text, used = resolve_tokens(ctx, ctx.league_player(record), a["short"]["text"])
+            date_line(people.assessment_date(a, ctx.root), used, view_date(record, a, ctx.root))
+        except (ValueError, KeyError, TypeError) as exc:
+            errors.append("%s: %s" % (label, exc))
+            continue
+        errors += people.text_errors(label, text, ctx.root, resolved=True)
+    errors += assignments.label_errors(ctx.working)
+    errors += assignments.slot_errors(ctx.library)
+    return errors
+
+
+# ------------------------------------------------------------------ assignment and position statistic
+def current_assignment(ctx, record, p, controlled):
+    """One plain confirmed role, or None. A Jaguar on the active roster: his seat or role on the
+    game depth chart (runtime/assignments.py, the depth chart page's own source); a Jaguar on a
+    reserve list or the practice squad: none (the header names his list). Another club's player:
+    his slot on the season's Week 1 depth chart with that club, unless the branch placed him
+    there, an applied in-season move has moved him since, he was not available, or he is on his
+    club's branch reserve list. Anyone else (a former Jaguar whose latest game was for
+    Jacksonville, a player with no game this season): none."""
+    if controlled:
+        if ctx.lists.get(record["name"], "active") != "active":
+            return None
+        return assignments.jacksonville_assignment(record["name"], ctx.chart, ctx.working)
+    if not p or p["team"] == JAX or not record["gsis_id"]:
+        return None
+    entry = ctx.week1.get((p["team"], record["gsis_id"]))
+    if entry is None or (p["team"], entry.get("player_id")) in ctx.week1_added:
+        return None
+    if record["gsis_id"] in ctx.rails_moved:
+        return None
+    from .depth_library import available
+    if not available(entry, ctx.latest_week.get((ctx.active, "regular"), 1)):
+        return None
+    if any((p["team"], n) in ctx.branch_reserve for n in p["record_names"]):
+        return None
+    return assignments.week1_assignment(entry)
+
+
+# (label, value, opportunity) of each position group's statistic; the value reads one season's
+# block, the opportunity is the field that must be nonzero (defenders: their snaps, else games).
+def _metric_count(field):
+    return lambda b: None if b["available"].get(field, True) is False else fi(b["totals"].get(field, 0))
+
+
+def _metric_rate(num, den):
+    return lambda b: f1(ratio(b["totals"].get(num, 0), b["totals"].get(den, 0)))
+
+
+def _net(b):
+    net = dict(b["tiles"]).get("NET")
+    return None if net in (None, N_A) else net
+
+
+METRICS = {
+    "QB": ("Passer rating", lambda b: f1(player_cards.rating_value(b["totals"])), "pass_attempts"),
+    "RB": ("Yards per carry", _metric_rate("rushing_yards", "rushing_attempts"), "rushing_attempts"),
+    "WR": ("Yards per target", _metric_rate("receiving_yards", "targets"), "targets"),
+    "TE": ("Yards per target", _metric_rate("receiving_yards", "targets"), "targets"),
+    "DL": ("Sacks", lambda b: player_cards.sack_text(b["totals"].get("sacks", 0)), "defensive_snaps"),
+    "LB": ("Tackles", _metric_count("tackles"), "defensive_snaps"),
+    "DB": ("Passes defended", _metric_count("passes_defended"), "defensive_snaps"),
+    "K": ("Field-goal percentage", lambda b: f1(ratio(b["totals"].get("field_goals_made", 0),
+                                                       b["totals"].get("field_goals_attempted", 0), 100)),
+          "field_goals_attempted"),
+    "P": ("Net punting average", _net, "punts"),
+    "LS": ("Long snaps", _metric_count("long_snaps"), "long_snaps"),
+    "OL": ("Sacks allowed", _metric_count("sacks_allowed"), "offensive_snaps"),
+}
+DEFENSIVE = ("DL", "LB", "DB")
+
+
+def period_week(ctx, year, gtype, week):
+    """The week a partial season's figures are labelled through: the page's own cutoff (the week
+    its As of line names, ``week``) when that is a week of this game type, else the latest such
+    week in the game records (the regular season's last week once the playoffs have begun)."""
+    if week is not None and (week in ROUND_NAMES) == (gtype == "playoffs"):
+        return week
+    return ctx.latest_week.get((year, gtype))
+
+
+def position_metric(ctx, p, pos, week=None):
+    """(label, value, period) of his position's statistic in the active season, from the closed
+    games only (the template's list: QB passer rating, RB and FB yards per carry, WR and TE yards
+    per target, a lineman's sacks, a linebacker's tackles, a defensive back's passes defended, the
+    kicker's field-goal percentage, the punter's net average, the long snapper's long snaps, an
+    offensive lineman's sacks allowed), or None: no game this season, no attempt, a field not in
+    every game's record, or no value. A partial season reads through ``week``, the week the
+    page's As of line names (``period_week``)."""
+    group = player_cards.GROUP_OF.get(pos)
+    if p is None or group not in METRICS:
+        return None
+    block = (p["seasons"].get(ctx.active) or {}).get("regular")
+    if not block:
+        return None
+    label, value_of, opportunity = METRICS[group]
+    if group == "P" and p["group"] != "P":
+        return None  # the net average is a punter's tile
+    if block["available"].get(opportunity, True) is False:
+        if group not in DEFENSIVE:
+            return None
+        chances = block["games"]
+    else:
+        chances = block["totals"].get(opportunity, 0)
+    if not chances:
+        return None
+    value = value_of(block)
+    if value in (None, N_A):
+        return None
+    if ctx.complete.get(ctx.active, True):
+        period = str(ctx.active)
+    else:
+        period = "%d, through Week %d" % (ctx.active, period_week(ctx, ctx.active, "regular", week))
+    return label, value, period
 
 
 def draft_view(ctx, record):
@@ -436,18 +752,28 @@ def page_date(ctx, record, p, controlled):
     return (max(dated), None) if dated else (None, None)
 
 
+def page_week(ctx, team, when):
+    """The week of the page's As of date for ``team``, or None."""
+    return ctx.weeks.get((team, when)) if team else None
+
+
 def week_text(ctx, team, when):
-    week = ctx.weeks.get((team, when)) if team else None
+    week = page_week(ctx, team, when)
     if week is None:
         return ""
     return ", after %s" % (ROUND_NAMES[week] if week in ROUND_NAMES else "Week %d" % week)
 
 
+NO_CONTRACT = "Contract not established."
+
+
 def contract_view(ctx, record, controlled):
-    """(line, rows) for a contract Jacksonville holds, else None."""
+    """(line, rows) of the Contract section: the terms and salary by year of a contract
+    Jacksonville holds, else the template's "not established" line and no rows (the records hold
+    no other club's contract)."""
     f = ctx.finances.get(record["name"])
     if not controlled or not f or f.get("former_player") or f.get("control") not in ("signed",):
-        return None
+        return NO_CONTRACT, []
     term = f.get("term", "")
     m = re.match(r"^(\d+) / (\d{4})", term)
     if term.startswith("Weekly"):
@@ -468,8 +794,9 @@ def contract_view(ctx, record, controlled):
     return line, rows
 
 
-def stats_view(ctx, p):
-    """The statistics section's tables for one league player."""
+def stats_view(ctx, p, week=None):
+    """The statistics section's tables for one league player; a partial season's row reads
+    through ``week``, the week the page's As of line names (``period_week``)."""
     out = {}
     group = p["group"]
     for gtype in ("regular", "playoffs"):
@@ -490,9 +817,10 @@ def stats_view(ctx, p):
             for year, s in seasons:
                 label = str(year)
                 if year == ctx.active and not ctx.complete.get(year, True):
-                    week = ctx.latest_week.get((year, gtype))
-                    if week:
-                        label += " (through %s)" % (ROUND_NAMES[week] if week in ROUND_NAMES else "Week %d" % week)
+                    through = period_week(ctx, year, gtype, week)
+                    if through:
+                        label += " (through %s)" % (ROUND_NAMES[through] if through in ROUND_NAMES
+                                                    else "Week %d" % through)
                 rows.append([label, ", ".join(club_short(c) for c in s["clubs"]),
                              N_A if s.get("age") is None else s["age"],
                              N_A if s.get("number") is None else s["number"]]
@@ -542,6 +870,7 @@ def render(ctx, record, target):
     else:
         team, pos = JAX, (a or {}).get("position", "")
     when, when_team = page_date(ctx, record, p, controlled)
+    cutoff = page_week(ctx, when_team, when)
     born = birth_date(ctx, record, p)
     head = [team, POSITION_NAMES.get(pos, pos)]
     if p and p["number"] is not None:
@@ -559,20 +888,21 @@ def render(ctx, record, target):
     if photo and photo.get("name") == record["name"]:
         lines += ["![%s](%s)" % (record["name"], photo["url"]), "",
                   player_photo_credit(photo), ""]
-    view = assessment_view(ctx, record)
+    assignment = current_assignment(ctx, record, p, controlled)
+    if assignment:
+        lines += ["**Current assignment:** %s." % assignment, ""]
+    metric = position_metric(ctx, p, pos, cutoff)
+    if metric:
+        lines += ["**%s:** %s (%s)." % metric, ""]
+    view = staff_view(ctx, record, p, target)
     if view:
-        lines += ["## Staff assessment", "", table(["Category", "Grade"],
-                                                   [[category_label(g["category"]), grade_text(g["grade"])]
-                                                    for g in view["grades"]], numeric_from=1), "",
-                  relink(view["read"], view["source_dir"], target), "", "*%s*" % view["line"], ""]
-    contract = contract_view(ctx, record, controlled)
-    if contract:
-        line, rows = contract
-        lines += ["## Contract", "", line, ""]
-        if rows:
-            lines += [table(["Year", "Base salary", "Cap charge"], rows, numeric_from=1), ""]
+        lines += ["## Staff assessment", "", view[0], "", "*%s*" % view[1], ""]
+    line, rows = contract_view(ctx, record, controlled)
+    lines += ["## Contract", "", line, ""]
+    if rows:
+        lines += [table(["Year", "Base salary", "Cap charge"], rows, numeric_from=1), ""]
     lines += ["## Statistics", ""]
-    stats = stats_view(ctx, p) if p else {"regular": None, "playoffs": None}
+    stats = stats_view(ctx, p, cutoff) if p else {"regular": None, "playoffs": None}
     for gtype, heading, empty in (("regular", "Regular season", "No regular-season games on record."),
                                   ("playoffs", "Playoffs", "No playoff games on record.")):
         lines += ["### " + heading, ""]
@@ -662,8 +992,8 @@ def jaguars_index(ctx, rids):
     current.sort(key=lambda r: (order.get(ctx.roster[r["name"]][0], 99), names.index(r["name"])))
     lines = ["# Jacksonville Jaguars players, %d" % ctx.active, "",
              "Every player Jacksonville controls, by position, and the players who left after their %d staff "
-             "assessment. Each page has the staff assessment, the contract, the statistics, the awards and the "
-             "transactions." % ctx.active, ""]
+             "assessment. Each page has the staff assessment, the contract where one is established, the "
+             "statistics, the awards and the transactions." % ctx.active, ""]
     if ctx.jax_latest:
         lines += ["As of %s%s." % (long_date(ctx.jax_latest), week_text(ctx, JAX, ctx.jax_latest)), ""]
     lines += ["## Current players", "",
@@ -750,6 +1080,9 @@ def check(root=ROOT):
     errors = []
     for rid, record in sorted(ctx.records.items()):
         errors += people.record_errors(rid, record, ctx.root)
+    refused = assessment_errors(ctx)
+    if refused:
+        return errors + refused  # no page can be built while a staff assessment or assignment cannot
     errors += ["Award with no winner in the game records: %s" % a for a in ctx.data["unmatched_awards"]]
     expected, missing = build(ctx=ctx)
     errors += ["Player record missing for %s (%s); run the player page builder" % (p["name"], p["team"])
@@ -768,9 +1101,13 @@ def check(root=ROOT):
 def write(root=ROOT):
     """Create the records of players new to the game records (identity only), then write every
     page and remove the folders' other files. Returns (records created, pages written, files
-    removed)."""
+    removed). Refused before anything is written (a ValueError naming each cause) while a staff
+    assessment, a role label or a Week 1 slot cannot be built (``assessment_errors``)."""
     root = Path(root).resolve()
     ctx = Context(root)
+    refused = assessment_errors(ctx)
+    if refused:  # nothing is written while a staff assessment or an assignment cannot be built
+        raise ValueError("player pages not written:\n" + "\n".join(refused))
     _, missing = build(ctx=ctx)
     taken = set(ctx.records)
     created = 0

@@ -10,17 +10,23 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Walt_Aikens.JPG)).*
 
+**Current assignment:** Reserve safety.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 23 | 35 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 23 | 35 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 23 | 35 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 4) | Miami | 23 | 35 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

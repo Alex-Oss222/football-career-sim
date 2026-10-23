@@ -8,22 +8,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 4.5/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 6.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.0/10 |
-| Foot quickness and set | 6.0/10 |
-| Anchor | 4.0/10 |
-| Run-block finish | 4.5/10 |
+Charles Leno Jr. is a rookie tackle who has been active for five regular-season games. A four-year college starter who finished at left tackle, he moves well in a short area and has a long frame. His strength is light for the position, and his anchor is the staff's biggest concern.
 
-A four-year college starter, 39 consecutive games, the last 26 at left tackle, with good short-area movement and a long frame; he did not run at the combine and his strength marks are light for the position.
-
-*Staff view, May 11, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

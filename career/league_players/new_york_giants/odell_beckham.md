@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Odell_Beckham_Jr._(51402744025)_(cropped).jpg)).*
 
+**Current assignment:** Reserve wide receiver.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

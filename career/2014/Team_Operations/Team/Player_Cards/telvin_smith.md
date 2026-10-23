@@ -10,24 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jacksonville Sheriff's Office, Public domain ([source](https://commons.wikimedia.org/wiki/File:Telvin_Smith.png)).*
 
+**Tackles:** 2 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 7.0/10 |
-| Speed | 7.5/10 |
-| Strength and power | 4.0/10 |
-| Agility and change of direction | 7.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.5/10 |
-| Range and pursuit | 7.5/10 |
-| Coverage instincts | 6.0/10 |
-| Taking on blocks | 3.5/10 |
+Telvin Smith is a rookie linebacker who has made four special-teams tackles in five games. His case is speed, range, pursuit and ball skills: he played weak-side linebacker at Florida State in 2013 and ran the second-fastest forty among linebackers at the combine. His lean frame is the question against blockers in the run game; in camp he followed the flow on a counter and left the wrap gap, then fit the same misdirection correctly after the correction.
 
-A lean, fast linebacker who played weak side in 2013 after two platoon seasons inside; range, pursuit and ball skills are his case, and his 218-pound frame is the question in the run game.
-
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

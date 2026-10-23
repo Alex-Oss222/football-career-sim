@@ -10,13 +10,21 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Andre_Holmes.JPG)).*
 
+**Current assignment:** Reserve wide receiver.
+
+**Yards per target:** 10.8 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 26 | 18 | 4 | 4 | 2 | 43 | 21.5 | 0 | 28 | 10.8 | 50.0 |
+| 2014 (through Week 4) | Oakland | 26 | 18 | 4 | 4 | 2 | 43 | 21.5 | 0 | 28 | 10.8 | 50.0 |
 
 ### Playoffs
 

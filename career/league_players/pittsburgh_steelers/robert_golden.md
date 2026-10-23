@@ -10,6 +10,12 @@ As of January 5, 2014, after the Wild Card round.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Robert_Golden.JPG)).*
 
+**Current assignment:** Reserve free safety.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

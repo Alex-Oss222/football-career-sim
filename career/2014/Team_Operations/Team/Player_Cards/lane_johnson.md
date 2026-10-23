@@ -6,30 +6,15 @@
 
 As of October 5, 2014, after Week 5.
 
+**Current assignment:** Starting right tackle.
+
+**Sacks allowed:** 3 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.5/10 |
-| Athleticism | 7.0/10 |
-| Speed | 7.0/10 |
-| Strength and power | 6.5/10 |
-| Agility and change of direction | 7.0/10 |
-| Technique | 6.0/10 |
-| Football IQ | 6.5/10 |
-| Pass-set and mirror | 6.5/10 |
-| Anchor vs power | 6.0/10 |
-| Hand usage and punch | 6.0/10 |
-| Recovery and balance | 6.5/10 |
-| Drive blocking | 6.5/10 |
-| Reach and movement blocking | 7.0/10 |
-| Second-level work | 6.5/10 |
-| Twist and blitz recognition | 6.5/10 |
-| Assignment and penalty consistency | 6.0/10 |
+Lane Johnson has shown he is a viable NFL starting right tackle. He started all 16 regular-season games and both playoff games as a rookie in 2013, and he has started five games in 2014. He is an athletic mover who is at his best on reach blocks and at the second level, and he keeps the protection answers he is taught. He still loses leverage at times, and his hand placement and his anchor are not yet consistent.
 
-An athletic starting right tackle who can move on reach and second-level work and retain taught protection answers. I see leverage, hand precision and consistent anchoring as the remaining limits of his rookie profile.
-
-*Staff view, March 31, 2014; dated updates through September 20, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

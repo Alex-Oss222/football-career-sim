@@ -246,7 +246,23 @@
      "source": "Source: [dated camp observations](career/2014/Training_Camp_and_Preseason/Training_Camp/training_report.md). This coaching update preserves the opening grades above."
     }
    ],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/daryl_smith.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/daryl_smith.md at commit 332d70b",
+   "short": {
+    "text": "Daryl Smith has proven he is an NFL starting linebacker, and the staff views him as a strong one. He was a base linebacker for Jacksonville in 2013, dressing for all {{2013.regular.games}} regular-season games and {{2013.playoffs.games:words}} playoff games, and he kept the base defense's communication lead from the fourth week through the playoffs despite role changes. He organizes the defense with his communication, run diagnosis and zone awareness. His value is in reading and coordinating rather than rushing the passer, and his blitzing is below an NFL starter's standard.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

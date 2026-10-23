@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Lucasfritas, Public domain ([source](https://commons.wikimedia.org/wiki/File:Vollmerphotocamp.jpg)).*
 
+**Current assignment:** Starting right tackle.
+
+**Sacks allowed:** 3 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

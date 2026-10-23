@@ -10,29 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Bacarri_Rambo.JPG)).*
 
+**Current assignment:** Starting safety.
+
+**Passes defended:** 3 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.5/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 5.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Range | 5.5/10 |
-| Speed and change of direction | 5.5/10 |
-| Route-combination recognition | 5.0/10 |
-| Deep positioning | 5.0/10 |
-| Man and slot coverage | 4.5/10 |
-| Ball skills | 6.0/10 |
-| Tackling | 4.5/10 |
-| Run support and angles | 5.0/10 |
-| Communication | 6.0/10 |
-| Play-action discipline | 4.5/10 |
-
-A developing safety with useful ball instincts and improving exchange communication. I see the reads and communication becoming usable, while live tackling and play-action discipline need a firmer foundation.
+Bacarri Rambo is a developing safety who won a starting job as a rookie in 2013 and held it all season, dressing for all 16 regular-season games and two playoff games. He has useful ball instincts, and his communication on coverage exchanges and substitutions has improved and held up through his rookie spring and camp. Live tackling, discipline against play-action and man coverage in the slot still need a firmer foundation.
 
 *Staff view, March 31, 2014.*
 

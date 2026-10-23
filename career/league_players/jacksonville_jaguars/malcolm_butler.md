@@ -10,24 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Malcolm_Butler_(American_football).JPG)).*
 
+**Passes defended:** 0 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.5/10 |
-| Agility and change of direction | 5.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.0/10 |
-| Ball skills | 6.0/10 |
-| Competitiveness and press | 5.5/10 |
-| Level of competition | 3.0/10 |
+Malcolm Butler is a rookie corner from a Division II program who has played in two games for Jacksonville. His strengths are his ball skills, change of direction and competitive press style, with kick-return experience in college, and in camp the correction of a late press transition held on the next rep. The jump from Division II competition is his biggest question, and his strength and technique are below an NFL starter's level.
 
-A Division II cornerback with a ball-production record (seven interceptions and 25 pass breakups across 2012 and 2013), kick-return experience and a competitive style; not invited to the combine, so no verified testing exists.
-
-*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

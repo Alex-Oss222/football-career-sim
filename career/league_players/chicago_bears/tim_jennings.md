@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: United States Marine Corps/Sgt. D.R. Cotton, Public domain ([source](https://commons.wikimedia.org/wiki/File:Tim_Jennings_2013_Pro_Bowl_(cropped).JPG)).*
 
+**Passes defended:** 4 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

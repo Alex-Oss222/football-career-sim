@@ -12,20 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.0/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.0/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 3.5/10 |
-| Football IQ | 4.5/10 |
-| Strength | 6.0/10 |
-| Snap and call operation | 3.5/10 |
-| Technique | 3.5/10 |
-
-A converted defensive lineman who played guard and center at Clemson, with strength and a short learning history on the offensive line.
+Tyler Shatley is a rookie lineman, a converted defensive lineman who played guard and center at Clemson, with enough strength for the interior line. His time on the offensive line has been short, and his technique and his snapping and line calls at center still need a lot of work.
 
 *Staff view, May 11, 2014.*
 

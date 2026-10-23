@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: FOX Sports, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Carson_Palmer_2019.jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 109.4 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Arizona | 34 | 3 | 4 | 82 | 121 | 67.8 | 1,017 | 8.4 | 254.2 | 7 | 1 | 109.4 |
 | 2013 | Arizona | 33 | 3 | 16 | 357 | 552 | 64.7 | 3,731 | 6.8 | 233.2 | 28 | 16 | 89.0 |

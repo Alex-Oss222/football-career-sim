@@ -10,6 +10,10 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Ed yourdon, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Chris_Clemons_with_Eagles_2009.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

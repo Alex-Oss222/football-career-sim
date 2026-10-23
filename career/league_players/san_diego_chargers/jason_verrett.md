@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sgt. 1st Class John Brown, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jason_Verrett.jpg)).*
 
+**Current assignment:** Reserve cornerback.
+
+**Passes defended:** 0 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

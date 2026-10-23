@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Damontre_Moore_(50743798778)_(cropped).jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -10,24 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Allen_Hurns.jpg)).*
 
+**Current assignment:** First relief receiver.
+
+**Yards per target:** 9.6 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 3.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 5.0/10 |
-| Football IQ | 5.0/10 |
-| Boundary body control | 5.5/10 |
-| Separation | 4.0/10 |
-| Special-teams value | 4.5/10 |
+Allen Hurns is an undrafted rookie from Miami who has been active for five games, with three catches for 48 yards and four special-teams tackles. He is a tall outside receiver with body control along the boundary, and he was productive as a senior. On Stone's chart for the Pittsburgh game he was the first relief receiver and the second punt returner, behind Andrew Hawkins. His speed is average, and creating separation is his main limitation.
 
-A tall outside receiver from Miami with a productive senior season, body control on the boundary and average speed.
-
-*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

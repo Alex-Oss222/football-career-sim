@@ -10,13 +10,21 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Branden_Albert.JPG)).*
 
+**Current assignment:** Starting left tackle.
+
+**Sacks allowed:** 2 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 29 | 71 | 4 | 4 | 277 | 2 | 18 |
+| 2014 (through Week 4) | Miami | 29 | 71 | 4 | 4 | 277 | 2 | 18 |
 | 2013 | Kansas City | 28 | 76 | 16 | N/A | N/A | 1 | N/A |
 | Career |  |  |  | 20 | N/A | N/A | 3 | N/A |
 

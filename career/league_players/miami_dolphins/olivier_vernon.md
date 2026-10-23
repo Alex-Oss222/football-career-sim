@@ -10,19 +10,27 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Olivier_Vernon.JPG)).*
 
+**Current assignment:** Starting defensive end.
+
+**Sacks:** 4 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 23 | 50 | 4 | 19 | 13 | 6 | 0 | 4 | 6 |
+| 2014 (through Week 4) | Miami | 23 | 50 | 4 | 19 | 13 | 6 | 0 | 4 | 6 |
 | 2013 | Miami | 22 | 50 | 16 | 67 | 42 | 25 | 5 | 4 | 14 |
 | Career |  |  |  | 20 | 86 | 55 | 31 | 5 | 8 | 20 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 23 | 50 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 23 | 50 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Miami | 22 | 50 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

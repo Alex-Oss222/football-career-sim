@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:David_Bass_(American_football).JPG)).*
 
+**Current assignment:** Reserve defensive end.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

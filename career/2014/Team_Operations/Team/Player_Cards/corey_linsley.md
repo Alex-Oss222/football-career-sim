@@ -12,22 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.5/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.0/10 |
-| Strength and power | 7.5/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 6.0/10 |
-| Football IQ | 6.0/10 |
-| Anchor and strength | 7.5/10 |
-| Protection identification | 6.0/10 |
-| Reach and second-level movement | 4.0/10 |
+Corey Linsley is a rookie center with rare weight-room strength for the position, a strong anchor and a full college season of making the line calls in a power conference. In camp he worked in the relief pairing with Chad Henne, made the protection point on time with him on every recorded rep and recovered after losing leverage to C.J. Mosley. His athletic marks are modest, his arms are short, and reach blocks and movement to the second level are his weakest areas.
 
-A fifth-year senior center with rare weight-room strength for the position and a full season of calls in a power conference; athletic marks are modest and his arms are short.
-
-*Staff view, May 11, 2014; dated updates through August 1, 2014.*
+*Staff view, August 1, 2014.*
 
 ## Contract
 

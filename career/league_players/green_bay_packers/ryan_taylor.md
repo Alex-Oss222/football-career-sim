@@ -10,6 +10,10 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Gabriel Cervantes, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ryan_Taylor_Rookie_year_Packers.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

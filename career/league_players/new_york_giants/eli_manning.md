@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: President's Council on Fitness and Sports, Public domain ([source](https://commons.wikimedia.org/wiki/File:Eli_Manning_US_govt.jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 81.7 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | N.Y. Giants | 33 | 10 | 5 | 89 | 154 | 57.8 | 1,161 | 7.5 | 232.2 | 5 | 4 | 81.7 |
 | 2013 | N.Y. Giants | 32 | 10 | 16 | 352 | 573 | 61.4 | 3,765 | 6.6 | 235.3 | 19 | 17 | 79.3 |

@@ -12,22 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 2.5/10 |
-| Athleticism | 5.0/10 |
-| Speed | 5.0/10 |
-| Strength and power | 4.0/10 |
-| Agility and change of direction | 5.0/10 |
-| Technique | 4.0/10 |
-| Football IQ | 4.5/10 |
-| Receiving | 5.0/10 |
-| Movable alignment | 5.0/10 |
-| Blocking | 3.5/10 |
+Gator Hoskins is a rookie H-back from Marshall with no established NFL standing, and as the fourth tight end he has been active for one of Jacksonville's regular-season games in 2014. He came with receiving production at Marshall and the profile of a tight end who can move around the formation, and in camp he was assignment-correct in his attached work, with a mixed finish. Blocking is his main limitation and is still unproven, and his strength and technique are his other weak areas.
 
-An H-back tight end (Harold Hoskins) with receiving production at Marshall and a movable alignment profile; blocking is unproven.
-
-*Staff view, May 11, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 
 ## Contract
 

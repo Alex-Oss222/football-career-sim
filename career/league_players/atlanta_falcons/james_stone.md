@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:James_Stone_(American_football)_2014.jpg)).*
 
+**Current assignment:** Reserve left guard.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

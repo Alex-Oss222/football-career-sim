@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Drost, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Joe_Flacco_2025_Browns_Camp_-_54694425196_(cropped).jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 103.9 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Baltimore | 29 | 5 | 5 | 104 | 165 | 63.0 | 1,350 | 8.2 | 270.0 | 10 | 2 | 103.9 |
 | 2013 | Baltimore | 28 | 5 | 16 | 343 | 552 | 62.1 | 3,618 | 6.6 | 226.1 | 18 | 24 | 73.9 |

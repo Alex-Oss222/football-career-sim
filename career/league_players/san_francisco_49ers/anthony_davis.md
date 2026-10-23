@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Anthony_Davis_(offensive_tackle,_born_1989).JPG)).*
 
+**Current assignment:** Starting right tackle.
+
+**Sacks allowed:** 6 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -6,6 +6,14 @@
 
 As of October 5, 2014, after Week 5.
 
+**Current assignment:** Reserve running back.
+
+**Yards per carry:** 1.4 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

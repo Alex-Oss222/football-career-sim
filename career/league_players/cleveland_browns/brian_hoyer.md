@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Erik Daniel Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Brian_Hoyer_2014_Browns_training_camp_(4).jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 88.3 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Cleveland | 28 | 6 | 4 | 102 | 158 | 64.6 | 1,151 | 7.3 | 287.8 | 6 | 4 | 88.3 |
 | 2013 | Cleveland | 27 | 6 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |

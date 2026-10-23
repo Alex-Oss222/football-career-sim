@@ -10,6 +10,12 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Lane_Taylor.jpg)).*
 
+**Current assignment:** Reserve left guard.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

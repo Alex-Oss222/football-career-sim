@@ -8,28 +8,13 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.0/10 |
-| Athleticism | 3.5/10 |
-| Speed | 3.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 3.0/10 |
-| Technique | 3.5/10 |
-| Football IQ | 3.5/10 |
-| Get-off | 3.5/10 |
-| Anchor | 5.0/10 |
-| Power | 5.5/10 |
-| Hand use | 3.5/10 |
-| Block shedding | 4.0/10 |
-| Penetration | 3.5/10 |
-| Pass-rush counters | 3.0/10 |
-| Double-team play | 4.5/10 |
-| Gap discipline and lateral pursuit | 3.5/10 |
+Jeris Pendleton was an interior reserve for Jacksonville in 2013, dressing for the first seven games before a game-day numbers decision left him inactive for the rest of the season. The staff saw a power-oriented reserve whose raw strength and anchor suited a narrow run-defense role. His first-step disruption, hand technique and pass-rush development were below that strength. He played the second half of the final 2014 preseason game with the reserves and stopped Antone Smith for a loss.
 
-A power-oriented interior reserve. I see a narrow run-defense role, with first-step disruption, hand technique and pass-rush development below his raw strength.
+*Staff view, August 28, 2014.*
 
-*Staff view, March 31, 2014; dated updates through August 28, 2014.*
+## Contract
+
+Contract not established.
 
 ## Statistics
 

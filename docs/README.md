@@ -24,6 +24,7 @@ How the repository is kept: file ownership, the season layout, the weekly workfl
 | [game_output_workflow.md](game_output_workflow.md) | Writing a regular-season or preseason game turn: evidence and scope, what the report explains, the sections and the media exchanges (adopted October 18, 2026) |
 | [head_coach_media_method.md](head_coach_media_method.md) | Head-coach media sessions: how real ones run and how Stone's are written |
 | [examples/preseason_game_review_2013_miami.md](examples/preseason_game_review_2013_miami.md) | Worked preseason report extract (2013 Miami game) |
+| [examples/kirk_cousins_player_card_preview.md](examples/kirk_cousins_player_card_preview.md) | The user's Kirk Cousins preview: the worked example of the [player card template](../foundation/templates/player_card_template.md) every player page follows (October 20, 2026) |
 
 ## Reviews
 

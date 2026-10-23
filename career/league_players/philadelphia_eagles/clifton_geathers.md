@@ -10,6 +10,10 @@ As of January 19, 2014, after the Conference Championships.
 
 *Photo: original: Keith Allison derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Clifton_geathers_redskins.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,10 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Melissa Hillier, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Toby_Gerhart_2014_Jaguars_training_camp_Cropped.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

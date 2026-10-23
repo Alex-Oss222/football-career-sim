@@ -10,6 +10,12 @@ As of January 12, 2014, after the Divisional round.
 
 *Photo: Chipermc, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Rodger_Saffold_2019_10-13.jpg)).*
 
+**Current assignment:** Reserve right tackle.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -10,6 +10,12 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:K%27Waun_Williams.jpg)).*
 
+**Current assignment:** Reserve cornerback.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

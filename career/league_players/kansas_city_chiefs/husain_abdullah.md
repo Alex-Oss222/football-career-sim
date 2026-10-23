@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: U.S. Air Force photo by Senior Airman Colin Cates, Public domain ([source](https://commons.wikimedia.org/wiki/File:Husain_Abdullah_signs_autographs_140709-F-DB574-050.JPG)).*
 
+**Current assignment:** Starting free safety.
+
+**Passes defended:** 1 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

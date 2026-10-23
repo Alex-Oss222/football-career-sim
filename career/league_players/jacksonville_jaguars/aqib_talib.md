@@ -10,31 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Aqib_Talib_2014.JPG)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 5 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 7.5/10 |
-| Athleticism | 7.0/10 |
-| Speed | 7.0/10 |
-| Strength and power | 7.0/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 7.5/10 |
-| Football IQ | 7.0/10 |
-| Long and recovery speed | 7.0/10 |
-| Short-area quickness and hips | 6.5/10 |
-| Press coverage | 8.0/10 |
-| Off-man coverage | 7.0/10 |
-| Zone and pattern match | 7.0/10 |
-| Route recognition and eyes | 7.0/10 |
-| Ball skills | 7.5/10 |
-| Catch-point play | 8.0/10 |
-| Tackling and run support | 6.0/10 |
-| Block defeat and penalty discipline | 6.0/10 |
+Aqib Talib has played outside in his first season with Jacksonville, with five passes defended in five games, including the interception of Andrew Luck's third-and-long throw against Indianapolis. He is a physical outside corner whose best tools are press coverage, ball skills and play at the catch point, and the staff's starting view is that he can challenge bigger receivers. Technique consistency still matters to that matchup, and in camp he re-routed Hakeem Nicks on some press reps and lost others to Nicks's hands. His tackling, block defeat and penalty discipline trail his coverage.
 
-A physical outside corner with strong press and catch-point tools. My starting view is that he can challenge bigger receivers, with technique consistency still important to that matchup value.
-
-*Staff view, March 31, 2014; dated updates through September 27, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

@@ -6,7 +6,19 @@
   {
    "season": 2013,
    "stage": "final",
-   "owner": "career/2013/player_profiles/brent_grimes.md"
+   "owner": "career/2013/player_profiles/brent_grimes.md",
+   "short": {
+    "text": "Brent Grimes was a strong starting cornerback for Jacksonville in 2013, dressing for all {{2013.regular.games}} regular-season games and both playoff games. He was a technically sharp coverage corner with excellent short-area reactions, eyes and ball play, strongest in off coverage and pattern recognition. Size, power and getting off blocks were less favorable, and his tackling and penalty discipline trailed his coverage.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

@@ -10,6 +10,10 @@ As of January 5, 2014, after the Wild Card round.
 
 *Photo: I, the copyright holder of this work, hereby publish it under the following license:, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ziggy_Hood_96_coming_off_field_2013.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

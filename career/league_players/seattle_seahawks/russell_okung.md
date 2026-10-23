@@ -10,6 +10,14 @@ As of October 6, 2014, after Week 5.
 
 *Photo: Mike Morris, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Russell_Okung.jpg)).*
 
+**Current assignment:** Starting left tackle.
+
+**Sacks allowed:** 4 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

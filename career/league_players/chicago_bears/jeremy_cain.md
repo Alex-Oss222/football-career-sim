@@ -10,28 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sgt. Randall A. Clinton, US Marine Corps, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jeremy_Cain.jpg)).*
 
+**Current assignment:** Long snapper.
+
+**Long snaps:** 46 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 6.0/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.0/10 |
-| Strength and power | 6.0/10 |
-| Agility and change of direction | 4.0/10 |
-| Technique | 6.0/10 |
-| Football IQ | 6.0/10 |
-| Snap accuracy | 6.5/10 |
-| Snap velocity | 6.0/10 |
-| Target consistency | 6.0/10 |
-| Field-goal snap trajectory | 6.0/10 |
-| Punt snap trajectory | 6.0/10 |
-| Protection transition | 5.5/10 |
-| Coverage and tackling | 4.5/10 |
+Jeremy Cain was a viable NFL starting long snapper who was active for all 16 regular-season games and two playoff games for Jacksonville in 2013. His value is repeatable, accurate delivery and a routine operation, and his operation was clean through the first half of 2013 and against a controlled rush in the 2014 camp. His protection after the snap and his coverage athleticism trail his snapping.
 
-A specialist long snapper whose primary value is repeatable delivery and routine operation. I see snap utility as stronger than protection transition or coverage athleticism.
+*Staff view, August 1, 2014.*
 
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+## Contract
+
+Contract not established.
 
 ## Statistics
 

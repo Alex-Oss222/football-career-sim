@@ -10,31 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: Navin75 derivative: Diddykong1130, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andrew_hawkins_bengals.jpg)).*
 
+**Current assignment:** Starting Z receiver.
+
+**Yards per target:** 7.7 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.0/10 |
-| Strength and power | 3.5/10 |
-| Agility and change of direction | 7.0/10 |
-| Technique | 5.5/10 |
-| Football IQ | 5.5/10 |
-| Release vs press | 4.0/10 |
-| Route running | 6.0/10 |
-| Separation and quickness | 6.5/10 |
-| Long speed | 6.0/10 |
-| Hands | 5.5/10 |
-| Catch radius and contested catches | 3.5/10 |
-| Ball tracking and deep receiving | 4.5/10 |
-| YAC and contact balance | 6.0/10 |
-| Coverage recognition and adjustments | 5.0/10 |
-| Blocking | 3.5/10 |
+Andrew Hawkins has been active for five games in his first season with Jacksonville, with nine catches for 123 yards, 13 kickoff returns and 13 punt returns. He is a quick underneath receiver who finds space, changes direction well and adds yards after the catch, and his best use is on slot routes. Releasing against press, contested catches and blocking are his weakest areas; in camp the depth of his dig held on later checks after it came up short once on spacing and once against Jordan Poyer's jam.
 
-A quick underneath receiver suited to finding space and changing direction. My starting view favors slot-route and run-after-catch utility over outside press or contested catches.
-
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

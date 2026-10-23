@@ -10,31 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:C._J._Anderson_2014.JPG)).*
 
+**Yards per carry:** 5.1 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 5.5/10 |
-| Speed | 5.0/10 |
-| Strength and power | 6.5/10 |
-| Agility and change of direction | 5.5/10 |
-| Technique | 5.5/10 |
-| Football IQ | 5.5/10 |
-| Vision and decision | 6.0/10 |
-| Burst and acceleration | 5.5/10 |
-| Long speed | 5.0/10 |
-| Cut efficiency and change of direction | 5.5/10 |
-| Contact balance and power | 6.5/10 |
-| Ball security | 5.5/10 |
-| Receiving | 5.0/10 |
-| Route detail | 4.5/10 |
-| Pass protection | 5.5/10 |
-| Short-yardage finishing | 6.0/10 |
+C.J. Anderson was a complementary back and a coverage-unit player for Jacksonville in 2013, with 17 carries, and he has 27 carries for 138 yards so far in 2014. He is a sturdy inside runner with useful balance and finishing, and his corrections have held after teaching, from his pickup base in the 2013 camp to his Inside Zone track in 2014. His receiving detail and open-field speed trail his inside-running tools, and his protection is still developing.
 
-A sturdy complementary runner with useful balance and inside finishing. I see a developing protection back, with receiving detail and open-field speed behind his inside-running tools.
-
-*Staff view, March 31, 2014; dated updates through August 8, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 

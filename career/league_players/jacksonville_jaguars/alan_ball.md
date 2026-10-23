@@ -6,31 +6,13 @@
 
 As of October 5, 2014, after Week 5.
 
+**Current assignment:** Reserve outside cornerback.
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.5/10 |
-| Athleticism | 6.0/10 |
-| Speed | 6.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 6.0/10 |
-| Technique | 5.5/10 |
-| Football IQ | 5.5/10 |
-| Long and recovery speed | 6.0/10 |
-| Short-area quickness and hips | 6.0/10 |
-| Press coverage | 6.0/10 |
-| Off-man coverage | 6.0/10 |
-| Zone and pattern match | 6.0/10 |
-| Route recognition and eyes | 5.5/10 |
-| Ball skills | 5.0/10 |
-| Catch-point play | 6.0/10 |
-| Tackling and run support | 5.5/10 |
-| Block defeat and penalty discipline | 5.0/10 |
+Alan Ball won Jacksonville's outside cornerback job in the 2013 camp and started the first nine games until he was hurt. Jacksonville signed him again in September 2014 after ten months out of football, and in his two games since, Stone has made him the outside reserve behind Aqib Talib and Alterraun Verner. He is a long outside corner who can handle a defined starting coverage job and communicate exchanges. He has a balanced profile, with less playmaking and route anticipation than the better corners.
 
-He won and held the outside job on camp evidence in 2013; pair-level coverage reads and teams portability add context. No specific individual technique fault is recorded, and injury is not effort evidence.
-
-*Staff view, September 8, 2014; dated updates through October 4, 2014.*
+*Staff assessment originally dated September 8, 2014; 2014 results current through October 5.*
 
 ## Contract
 

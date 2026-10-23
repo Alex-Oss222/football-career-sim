@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: BellaMeghan, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Muhammad_Wilkerson_crop.jpg)).*
 
+**Current assignment:** Starting defensive end.
+
+**Sacks:** 2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

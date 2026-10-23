@@ -10,11 +10,19 @@ As of October 5, 2014, after Week 5.
 
 *Photo: MC2 Elisia V. Gonzales, USN, Public domain ([source](https://commons.wikimedia.org/wiki/File:Tony_Romo_before_2008_Pro_Bowl_(cropped).JPEG)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 89.2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Dallas | 34 | 9 | 5 | 126 | 188 | 67.0 | 1,391 | 7.4 | 278.2 | 4 | 3 | 89.2 |
 | 2013 | Dallas | 33 | 9 | 16 | 344 | 551 | 62.4 | 3,888 | 7.1 | 243.0 | 26 | 12 | 90.2 |
@@ -27,7 +35,7 @@ As of October 5, 2014, after Week 5.
 
 ### Playoffs
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2013 | Dallas | 33 | 9 | 2 | 36 | 51 | 70.6 | 350 | 6.9 | 175.0 | 2 | 0 | 102.6 |
 

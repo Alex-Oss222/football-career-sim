@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Sgt. Randall A. Clinton This is a retouched picture , which means that it has been digitally altered from its original version. Modifications: Cropped to focus on #44. . Modifications made by Bluea..., Public domain ([source](https://commons.wikimedia.org/wiki/File:James-Ihedigbo_Jets-vs-Jaguars_Nov-15-09.jpg)).*
 
+**Current assignment:** Starting strong safety.
+
+**Passes defended:** 1 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

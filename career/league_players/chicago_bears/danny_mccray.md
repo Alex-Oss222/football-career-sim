@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: U.S. Army Photo by Sgt. 1st Class Michel Sauret on behalf of 416th Theater Engineer Command Army Reserve derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Danny_McCray_Bears_2014.jpg)).*
 
+**Current assignment:** Starting free safety.
+
+**Passes defended:** 2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

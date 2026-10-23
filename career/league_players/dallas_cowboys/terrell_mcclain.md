@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Cmm3, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:2022,_98,_Terrell_McClain.jpg)).*
 
+**Current assignment:** Reserve defensive tackle.
+
+**Sacks:** 2 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

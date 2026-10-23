@@ -10,11 +10,19 @@ As of October 6, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Robert_Griffin_III_2022.jpg)).*
 
+**Current assignment:** Starting quarterback.
+
+**Passer rating:** 90.3 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
-| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Rating |
+| Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | 2014 (through Week 5) | Washington | 24 | 10 | 4 | 107 | 153 | 69.9 | 1,119 | 7.3 | 279.8 | 6 | 5 | 90.3 |
 | 2013 | Washington | 23 | 10 | 16 | 384 | 586 | 65.5 | 3,920 | 6.7 | 245.0 | 20 | 14 | 86.0 |

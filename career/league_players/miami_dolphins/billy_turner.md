@@ -10,13 +10,19 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Billy_Turner_(Denver_Broncos_offensive_lineman)_during_pre-season_game_against_Green_Bay_Packers_on_August_26,_2017_in_Denver,_Colorado.jpg)).*
 
+**Current assignment:** Reserve left guard.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 22 | 77 | 2 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 22 | 77 | 2 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

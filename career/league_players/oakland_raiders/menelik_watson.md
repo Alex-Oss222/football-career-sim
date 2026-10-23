@@ -10,13 +10,21 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Pete Sheffield, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Menelik_Watson.jpg)).*
 
+**Current assignment:** Starting right tackle.
+
+**Sacks allowed:** 2 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 25 | 71 | 4 | 4 | 282 | 2 | 20 |
+| 2014 (through Week 4) | Oakland | 25 | 71 | 4 | 4 | 282 | 2 | 20 |
 | 2013 | Oakland | 24 | 71 | 12 | N/A | N/A | 4 | N/A |
 | Career |  |  |  | 16 | N/A | N/A | 6 | N/A |
 

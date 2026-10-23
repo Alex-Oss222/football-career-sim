@@ -12,22 +12,13 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall at position | 5.5/10 |
-| Get-off | 5.5/10 |
-| Anchor | 5.5/10 |
-| Power | 6.0/10 |
-| Hand use | 5.0/10 |
-| Block shedding | 5.0/10 |
-| Penetration | 5.5/10 |
-| Pass-rush counters | 4.5/10 |
-| Double-team play | 5.5/10 |
-| Gap discipline and lateral pursuit | 5.5/10 |
+Tyson Alualu was a rotating defensive tackle behind starters Roy Miller and Sen'Derrick Marks in 2013, active for all 16 regular-season games and both playoff games. He could handle several alignments across the front and supply useful power, and he finished when the play came to him, with three sacks and three tackles for loss in the regular season. His positional flexibility stood out more than any defining pass-rush counter or disruptive specialty.
 
-Experience across front jobs is recorded, but the individual physical/technical evaluation is thin. A stronger camp pairing elsewhere does not identify his defect or settle his best job.
+*Staff view, January 14, 2014.*
 
-*Staff view at the 2013 season close, January 14, 2014.*
+## Contract
+
+Contract not established.
 
 ## Statistics
 

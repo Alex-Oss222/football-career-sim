@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Thibous, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Deonte_Thmopson_MT_Stadium_2012_Practice.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

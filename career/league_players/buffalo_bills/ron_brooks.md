@@ -10,6 +10,12 @@ As of February 2, 2014, after the Super Bowl.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ron_Brooks.JPG)).*
 
+**Current assignment:** Reserve cornerback.
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -238,7 +238,23 @@
    ],
    "one_line": "A short-area reserve receiver who can work underneath routes and offer modest run-after-catch utility. I see depth rather than a receiver I would feature against press or at the catch point.",
    "updates": [],
-   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/mike_brown.md at commit 332d70b"
+   "transcribed_from": "career/2014/Team_Operations/Team/Player_Cards/mike_brown.md at commit 332d70b",
+   "short": {
+    "text": "Mike Brown was a reserve receiver for Jacksonville in 2013, active for {{2013.regular.games:words}} regular-season games with {{2013.regular.receptions}} catches for {{2013.regular.receiving_yards}} yards. He was a short-area receiver who could work underneath routes and add a little after the catch, and he caught all five passes thrown to him in the 2013 San Diego game. The staff saw him as depth rather than a receiver to feature against press or at the catch point, and he was a weak blocker.",
+    "date": "2014-10-05",
+    "recorded": "2026-10-23",
+    "by": "Jacksonville staff",
+    "summarizes": [
+     {
+      "season": 2014,
+      "stage": "opening"
+     },
+     {
+      "season": 2013,
+      "stage": "final"
+     }
+    ]
+   }
   }
  ],
  "transactions": [

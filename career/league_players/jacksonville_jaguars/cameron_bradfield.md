@@ -8,28 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 5.0/10 |
-| Athleticism | 4.5/10 |
-| Speed | 4.5/10 |
-| Strength and power | 5.0/10 |
-| Agility and change of direction | 4.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 5.5/10 |
-| Pass-set and mirror | 5.0/10 |
-| Anchor vs power | 5.0/10 |
-| Hand usage and punch | 4.5/10 |
-| Recovery and balance | 5.0/10 |
-| Drive blocking | 5.0/10 |
-| Reach and movement blocking | 4.5/10 |
-| Second-level work | 4.5/10 |
-| Twist and blitz recognition | 5.5/10 |
-| Assignment and penalty consistency | 5.5/10 |
-
-A swing tackle and heavy-package blocker who can recognize the job and cover either edge in a reserve role. I see assignment utility ahead of his recovery ceiling against NFL rushers.
+Cameron Bradfield was Jacksonville's swing tackle throughout 2013 and, from the fifth week, the sixth lineman in its six-lineman package, dressing for all 16 regular-season games and both playoff games. He could recognize his assignment, including twists and blitzes, and cover either edge in a reserve role, and his assignment responses held in padded camp work. His hand use, movement blocking and recovery against NFL rushers were behind that assignment work, and in a 2013 preseason game he lost leverage physically after identifying his protection job.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

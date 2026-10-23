@@ -10,6 +10,14 @@ As of October 2, 2014, after Week 5.
 
 *Photo: Thomson200, [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) ([source](https://commons.wikimedia.org/wiki/File:Brandon_Watts_2013.jpg)).*
 
+**Current assignment:** Reserve weakside linebacker.
+
+**Tackles:** 1 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

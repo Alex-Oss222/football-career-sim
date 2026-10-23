@@ -10,13 +10,21 @@ As of September 28, 2014, after Week 4.
 
 *Photo: Mike Morbeck, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Daryn_Colledge.jpg)).*
 
+**Current assignment:** Starting left guard.
+
+**Sacks allowed:** 1 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 32 | 67 | 4 | 4 | 277 | 1 | 18 |
+| 2014 (through Week 4) | Miami | 32 | 67 | 4 | 4 | 277 | 1 | 18 |
 | 2013 | Arizona | 31 | 71 | 16 | N/A | N/A | 5 | N/A |
 | Career |  |  |  | 20 | N/A | N/A | 6 | N/A |
 

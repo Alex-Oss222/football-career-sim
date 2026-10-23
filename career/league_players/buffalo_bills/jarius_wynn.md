@@ -10,6 +10,14 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: Spc. Eric Liesse of the Wisconsin National Guard derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jarius_wynn_packers.jpg)).*
 
+**Current assignment:** Reserve defensive end.
+
+**Sacks:** 1 (2014, through Week 5).
+
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -8,27 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 4.0/10 |
-| Athleticism | 4.0/10 |
-| Speed | 3.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 3.5/10 |
-| Technique | 4.5/10 |
-| Football IQ | 3.5/10 |
-| Arm strength and velocity | 7.0/10 |
-| Short-intermediate ball placement | 4.5/10 |
-| Deep-outside placement | 5.5/10 |
-| Timing and anticipation | 3.5/10 |
-| Coverage and protection processing | 3.5/10 |
-| Pocket movement | 3.5/10 |
-| Scramble speed and mobility | 3.0/10 |
-| Mechanics and release | 4.5/10 |
-| Pressure decision-making | 3.5/10 |
-| Ball security and command | 3.5/10 |
-
-A developmental vertical passer with a stronger throwing tool than his command of the offense. I see a quarterback who needs timing and protection answers to catch up to the arm.
+Tyler Bray is a developmental quarterback who spent the 2013 season on Jacksonville's practice squad. His arm is the strongest part of his game, and his cadence and footwork improved in 2013. His command of the offense trails that arm, with his timing running late when the defense changed its look and his protection answers still catching up.
 
 *Staff view, March 31, 2014.*
 

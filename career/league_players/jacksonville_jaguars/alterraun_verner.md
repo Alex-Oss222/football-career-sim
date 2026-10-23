@@ -10,31 +10,15 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Alterraun_Verner.JPG)).*
 
+**Current assignment:** Starting cornerback.
+
+**Passes defended:** 1 (2014, through Week 5).
+
 ## Staff assessment
 
-| Category | Grade |
-|---|---:|
-| Overall | 7.0/10 |
-| Athleticism | 6.5/10 |
-| Speed | 6.0/10 |
-| Strength and power | 5.5/10 |
-| Agility and change of direction | 6.5/10 |
-| Technique | 7.0/10 |
-| Football IQ | 7.5/10 |
-| Long and recovery speed | 6.0/10 |
-| Short-area quickness and hips | 6.5/10 |
-| Press coverage | 6.0/10 |
-| Off-man coverage | 7.0/10 |
-| Zone and pattern match | 7.5/10 |
-| Route recognition and eyes | 7.5/10 |
-| Ball skills | 7.0/10 |
-| Catch-point play | 6.0/10 |
-| Tackling and run support | 6.5/10 |
-| Block defeat and penalty discipline | 5.5/10 |
+Alterraun Verner has played in five games in his first season with Jacksonville. He is an instinctive coverage corner who wins with route recognition, positioning and ball awareness, at his best in zone and off coverage. The staff's starting view favors his coverage judgment over matchups that depend on recovery speed, and strength, block defeat and penalty discipline are the weakest parts of his game.
 
-An instinctive coverage corner who wins through route recognition, positioning and ball awareness. My starting view favors his coverage judgment over recovery-speed matchups.
-
-*Staff view, March 31, 2014; dated updates through August 1, 2014.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 
 ## Contract
 
