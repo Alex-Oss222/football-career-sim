@@ -9,7 +9,7 @@ Corrected after the process check of October 20, 2026: the brief follows the cor
 # OTA Brief | Jacksonville Jaguars | 2014
 
 **Prepared for:** Head Coach Alex Stone  
-**From:** Mike Tice, Romeo Crennel, Mike Westhoff and their position coaches  
+**Presented by:** Mike Tice, Romeo Crennel, Mike Westhoff and their position coaches  
 **Preparation date in this example:** May 23, 2014  
 **Edition:** Initial issue  
 **Spring work covered:** Phase One, April 21 to May 1; Phase Two, May 5 to 22; rookie minicamp, May 16 and 17  

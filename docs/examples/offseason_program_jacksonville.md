@@ -8,8 +8,9 @@ The last section then shows what could safely be said about **April 2015 as of t
 
 # Offseason Program Brief
 
-**Jacksonville Jaguars | For Coach Alex Stone | Before the April 21, 2014 start**  
-**From:** Mike Tice, Romeo Crennel, Mike Westhoff and the performance staff  
+**Jacksonville Jaguars | 2014 offseason program**  
+**Prepared for:** Head Coach Alex Stone, before the April 21, 2014 start  
+**Presented by:** Mike Tice, Romeo Crennel, Mike Westhoff and the performance staff  
 **Program:** Phase One begins April 21; Phase Two begins May 5
 
 ### The work in front of us

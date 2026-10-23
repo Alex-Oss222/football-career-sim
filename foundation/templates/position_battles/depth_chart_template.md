@@ -4,9 +4,9 @@
 **Issued:** [Date Stone's depth calls were applied]  
 **Edition:** [First edition / later edition of date, with the date of the depth calls it shows; the earlier edition kept]  
 **Work reviewed through:** [Latest completed camp or preseason event]  
-**Applies to:** [The next practice block / the season depth chart, issued after Final 53 closes]
+**Applies to:** [The next practice block / the season depth chart, issued at the reduction to 53 once Final 53 is filed]
 
-> FILL-IN GUIDE (remove from the issued page): This is the camp result of Stone's applied My Depth Calls, built from his applied record and the depth data as they stood on the issue date and checked against the depth chart's update log on that date. It stays as issued and never follows the current chart; the team depth chart page carries the current order. It is never a second editable chart. No Depth Chart page exists before his first applied depth calls; until then the camp index says that no depth chart has been issued. Each later application is a new edition, the earlier editions kept beside it with their dates in the name. The final edition, issued after Final 53 closes, is the season depth chart. A preseason game's lineup and rotation belong to that game's Preseason Game Plan and are not shown here.
+> FILL-IN GUIDE (remove from the issued page): This is the camp result of Stone's applied My Depth Calls, built from his applied record and the depth data as they stood on the issue date and checked against the depth chart's update log on that date. It stays as issued and never follows the current chart; the team depth chart page carries the current order. It is never a second editable chart. No Depth Chart page exists before his first applied depth calls; until then the camp index says that no depth chart has been issued. Each later application is a new edition, the earlier editions kept beside it with their dates in the name. The final edition, issued at the reduction to 53 once Final 53 is filed, is the season depth chart and links Final 53. A preseason game's lineup and rotation belong to that game's Preseason Game Plan and are not shown here.
 
 ## What Stone decided
 
