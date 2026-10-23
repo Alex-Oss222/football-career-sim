@@ -2,13 +2,14 @@
 
 **Alex Stone | Jacksonville Jaguars | [Season]**  
 **For the camp staff, as of:** [Date]  
-**Prepared from:** [Position Battle Report date]
+**Answering:** [Position Battle Report edition and date]  
+**Who decides:** Alex Stone sets the depth order, the roles and the practice work; [the general manager, named from the job record] makes the personnel transactions; the medical staff decide who can take part.
 
-The first group today is a starting point for a fair look, not a lifetime appointment. The order is mine to set and to change. Caldwell makes the personnel transactions. The medical staff decides who can take part. The work itself decides what we can honestly say we saw.
+> FILL-IN GUIDE (remove from locked page): This page is Stone's own decision and stays as the record of it; write only what he decides, in his words. Do not pre-write opinions, reasons or a philosophy for him. The order is his to set and to change; the general manager makes the personnel transactions; the medical staff decide who can take part. Replace the bracketed prompts under the fixed headings in ordinary football language, or upload a .md or .txt file with the same headings. Each edition is answered once; a later round of depth calls is a new edition, the earlier one kept beside it. A line left empty is unanswered, never a yes or a no, and closes nothing. The check names exactly what is missing or invalid before anything is applied.
 
 ## My camp priorities
 
-[Describe what I want the next practice block or preseason game to tell me. This can be short. Where a standing practice direction already answers the question, say it continues. I do not have to invent a new priority for every job.]
+[Describe what I want the next practice block to tell me. This can be short. Where a standing practice direction already answers the question, say it continues. I do not have to invent a new priority for every job.]
 
 ## Offense
 
@@ -55,7 +56,7 @@ The first group today is a starting point for a fair look, not a lifetime appoin
 
 ## Current depth and package changes
 
-[Set only roles that are mine to set: the starting group, relief roles, nickel/dime assignments, X/Z/H alignment, rotating edge, returner, long snapper and other concrete football assignments. Explain whether the order is for the next practice, a named preseason game, or the provisional season chart. Do not treat a trial as a cut or a contract.]
+[Set only roles that are mine to set: the starting group, relief roles, nickel/dime assignments, X/Z/H alignment, rotating edge, returner, long snapper and other concrete football assignments, including a temporary replacement for a player the medical staff has held out. Say whether the order is for the next practice block or the season chart. A preseason game's lineup, rotation and inactives go on that game's Preseason Game Plan, not here. Do not treat a trial as a cut or a contract.]
 
 | Group or package | My order or assignment | Effective date / condition |
 |---|---|---|
@@ -65,7 +66,7 @@ The first group today is a starting point for a fair look, not a lifetime appoin
 
 ## What I want Caldwell to know
 
-[Only real football advice bearing on a pending personnel decision: a specialist job that the current roster cannot cover twice, trade-off between backup lineman and coverage player, or medically unavailable starter whose roster position he controls. A recommendation does not make the transaction. If there is nothing new, write "No new roster recommendation."]
+[Only real football advice bearing on a pending personnel decision outside the cut deadlines: a specialist job that the current roster cannot cover twice, a trade-off between a backup lineman and a coverage player, or a medically unavailable starter whose roster position he controls. Recommendations for the cuts to 75 and 53 go on My Cut Recommendations. A recommendation does not make the transaction. If there is nothing new, write "No new roster recommendation."]
 
 ## What stays open
 
@@ -73,7 +74,7 @@ The first group today is a starting point for a fair look, not a lifetime appoin
 
 ## Any separate event answers
 
-[For a genuine trade, staff interview, signing request or other event already inserted at the top of the brief, use the active phase's shared My Responses page, not this depth decision. Each completed event still has its own dated result.]
+[For a genuine trade, staff interview, signing request or other event already inserted at the top of the brief, answer on the camp's My Responses page, not here. Each completed event still has its own dated result.]
 
 **My decision:** [Adopt these instructions / hold selected positions pending the next stated look]  
 **Date entered:** [Actual date when I answer]
