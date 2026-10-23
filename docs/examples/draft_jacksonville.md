@@ -1,8 +1,8 @@
 # Worked Jacksonville example: an existing draft, followed by a future draft's legitimate opening information
 
-**Purpose:** Demonstrate the three proposed coach-facing documents against the **completed Jacksonville 2014 career record** and the **October 5, 2014 information ceiling** for the still-future 2015 draft. Nothing in this illustration is a newly issued in-career briefing, a new Stone instruction, a second completed event or an alteration of the closed 2014 draft.
+**Purpose:** Demonstrate the three proposed coach-facing documents against the **completed Jacksonville 2014 career record** and the **October 5, 2014 information ceiling** for the still-future 2015 draft. Nothing in this illustration is a newly issued in-career briefing, a new Stone instruction, a second completed event or an alteration of the closed 2014 draft. Corrected after the October 20, 2026 process check of the [draft design](../draft.md): the 2015 pick count, Stone's quoted priorities, the page forms and the reader-page wording below follow that check.
 
-**Evidence discipline:** The 2014 examples below reorganize existing records into the new page form. They do not reproduce unrecorded staff conversations, a fictional original college-scout interview or invented prospect tape. Where an original 2014 file aggregated several selections or undrafted pursuits, that file remains the historical owner; a specimen individual-result page below illustrates what the new rule would require **prospectively**. Links go to the original authoritative record.
+**Evidence discipline:** The 2014 examples below reorganize existing records into the new page form. They do not reproduce unrecorded staff conversations, a fictional original college-scout interview or invented prospect tape. Where an original 2014 file aggregated several selections or undrafted pursuits, that file remains the historical owner; the specimen individual-result page below illustrates what the new rule would require **prospectively**, and it is never created. Links go to the original authoritative record.
 
 ## Part I. The 2014 precedent in the three-page format
 
@@ -12,6 +12,7 @@
 >
 > **Jacksonville Jaguars | 2014 NFL Draft**  
 > **Prepared for:** Head Coach Alex Stone  
+> **Presented by:** David Caldwell, general manager, for the college scouting department  
 > **Information reviewed:** May 7, 2014; no draft selection has yet occurred  
 > **Draft:** May 8 to 10, Radio City Music Hall, New York
 >
@@ -29,9 +30,9 @@
 >
 > Stone's current recorded order begins with Donald at No. 13, Bitonio at No. 26, Adams at No. 38 and Turner at No. 90. Donald's named alternative is Kyle Fuller; Bitonio's is Kyle Van Noy. No alternative is named for Adams. Late-round comparisons must not be substituted automatically for a formally designated fallback. Caldwell retains the final choice at each selection and the final say on any trade.
 >
-> **Known limitation:** A selection listed here is only a scouting and coaching recommendation. The player's actual availability is checked when Jacksonville is on the clock, against the permitted historical-personnel rule. An unsigned medical or contract claim is not replaced with an imagined clearance.
+> **Known limitation:** A selection listed here is only a scouting and coaching recommendation. The player's actual availability is checked when Jacksonville is on the clock. An unsigned medical or contract claim is not replaced with an imagined clearance.
 
-**Why this is evidence-based:** The nine assets and named priorities appear in the closed [draft board](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Draft/player_draft_board.md), the [completed order](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Draft/draft_order.md), the [March 20 Arizona trade](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Team_Operations/Trades/completed_trades/nwaneri_to_arizona_2014-03-20.md) and the [dated prospect evidence](https://github.com/Alex-Oss222/football-career-sim/tree/main/library/2014_prospect_evidence). This is a reconstruction of what the file could say, **not** evidence that this exact scouting briefing was historically issued on May 7.
+**Why this is evidence-based:** The nine assets and named priorities appear in the closed [draft board](../../career/2014/Draft/player_draft_board.md), the [completed order](../../career/2014/Draft/draft_order.md), the [March 20 Arizona trade](../../career/2014/Team_Operations/Trades/completed_trades/nwaneri_to_arizona_2014-03-20.md) and the [dated prospect evidence](../../library/2014_prospect_evidence/README.md). This is a reconstruction of what the file could say, **not** evidence that this exact scouting briefing was historically issued on May 7. Caldwell presents it because no scout is a party in the job record.
 
 ### B. My Draft Recommendations: Stone's recorded answers, arranged as a decision page
 
@@ -41,7 +42,7 @@
 >
 > ## My priorities
 >
-> I want the selections to address the interior offensive line and tackle depth without giving up the ability to pressure the quarterback or cover. The staff must identify each rookie's first job before treating additional positions as an advantage. A draft choice buys the opportunity to teach and evaluate a player, not a guaranteed starter.
+> The first-job questions on my February 2 board, as written there: Bitonio, “Tackle or guard first”; Turner, “Anchor and interior exchanges beside Brewster”; Telvin Smith, “WILL first, with Posluszny on a medical hold”; Leno, “A reserve swing tackle who can dress”; Butler, “Outside corner with a special-teams path”.
 >
 > ## Players and the alternatives I have already named
 >
@@ -59,7 +60,7 @@
 >
 > ## If my available names are gone
 >
-> Do not replace an unnamed fallback with whichever prospect happens to be next in a comparison paragraph. Bring the live board to me for a further football recommendation. Caldwell still makes the selection.
+> If a primary target is gone and no precise fallback is authorized, that selection stops for my choice. A named comparison is a reference, not an automatic choice. Caldwell still makes the selection.
 >
 > ## Draft-pick trades
 >
@@ -69,7 +70,7 @@
 >
 > After the seventh round, work from the separate, recorded 24-name recruiting list. A request to call a candidate does not make him accept or sign. The six offensive-line candidates remain contingent on eligibility, medical information and actual availability.
 
-**Attribution limitation:** This example condenses **Stone's already adopted board and amendments**. It is not a new first-person decision made in this conversation. The full dated priorities, comparison wording and conditional requirements remain in [Stone's original memorandum](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Early_Offseason/stone_to_caldwell_2014_offseason_decisions.md) and [the executed board](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Draft/player_draft_board.md). No other choices are authorized by this example.
+**Attribution limitation:** This example condenses **Stone's already adopted board and amendments**; the stop rule above is the board's own ("If a primary target is gone and no precise fallback is authorized, that selection stops for Stone's choice"). It is not a new first-person decision made in this conversation. The quoted priorities are the board's recorded first-job questions for the players still on the executed board; the memo records no wider statement of draft priorities, so none is written for him. The full dated priorities, comparison wording and conditional requirements remain in [Stone's original memorandum](../../career/2014/Early_Offseason/stone_to_caldwell_2014_offseason_decisions.md#4-2014-draft-board) and [the executed board](../../career/2014/Draft/player_draft_board.md). No other choices are authorized by this example.
 
 ### C. Draft Room Results: a report built from completed 2014 events
 
@@ -92,60 +93,86 @@
 > | May 10 | 129 | Telvin Smith, LB, Florida State | Stone's first choice selected |
 > | May 10 | 153 | Corey Linsley, C, Ohio State | Stone's first choice selected |
 > | May 10 | 168 | Charles Leno Jr., T, Boise State | Stone's first choice selected |
-> | May 10 | 205 | Jemea Thomas, DB, Georgia Tech | Stone's first two named candidates were gone. He supplied Thomas's name; Caldwell selected him |
+> | May 10 | 205 | Jemea Thomas, DB, Georgia Tech | Stone's first two named candidates were gone. The pick stopped for him; he supplied Thomas's name, and Caldwell selected him |
 > | May 10 | 241 | Malcolm Butler, CB, West Alabama | Stone's first choice selected |
 >
 > ## What the live board required
 >
-> At No. 205, E. J. Gaines had been taken at real No. 188, and Ross Cockrell at real No. 109. Neither passed Jacksonville's available-at-No.-205 test. The recorded plan named no third choice. Stone therefore provided Jemea Thomas, whose real selection was No. 206; Caldwell made the pick. The other eight Jacksonville picks followed the first recommendations. No draft-day pick trade is recorded.
+> At No. 205, E. J. Gaines had already been taken by St. Louis and Ross Cockrell by Buffalo. The recorded plan named no third choice, so the pick stopped for Stone. He named Jemea Thomas, and Caldwell made the pick. The other eight Jacksonville picks followed the first recommendations. No draft-day pick trade is recorded.
+>
+> ## Other clubs' moves tied to our selections
+>
+> | Date | Club | Player | Move |
+> |---|---|---|---|
+> | May 8 | St. Louis | Blake Bortles, QB | Joins St. Louis |
+> | May 8 | Cleveland | Marqise Lee, WR | Joins Cleveland |
+> | May 9 | Green Bay | Allen Robinson, WR | Joins Green Bay |
+> | May 9 | Carolina | Brandon Linder, C | Joins Carolina |
+> | May 10 | None | Aaron Colvin, CB | Joins no club |
+> | May 10 | Chicago | Chris Smith, DE | Joins Chicago |
+> | May 10 | New England | Luke Bowanko, C | Joins New England |
+> | May 10 | New England | Storm Johnson, RB | Joins New England |
+>
+> The full record is on the league's draft pairing page.
 >
 > ## Contracts and undrafted recruitment
 >
 > The nine drafted players acquired negotiating rights on their respective selection dates. Caldwell signed their separate four-year rookie contracts on May 11, as recorded in the completed draft register. These are not May 8 or May 10 signatures.
 >
-> Undrafted calls began after the seventh round on May 10. Seventeen players signed. Shaquil Barrett, Denico Autry, Albert Wilson, Trey Burton, Stephen Morris and Willie Snead declined. James Hurst was held and not called because the necessary medical clearance was not on record. A decline did not add a player to Jacksonville's roster or create a Jacksonville contract.
+> Undrafted calls began after the seventh round on May 10. Caldwell called 23 of the 24 names on the board, and seventeen players signed. Shaquil Barrett, Denico Autry, Albert Wilson, Trey Burton, Stephen Morris and Willie Snead declined. James Hurst was held and not called because the necessary medical clearance was not on record. A decline did not add a player to Jacksonville's roster or create a Jacksonville contract.
 >
 > ## Football handoff
 >
 > The selected players and signed undrafted rookies became candidates for later lawful onboarding and role evaluation. Their subsequent contract, medical, minicamp and training-camp information was not established merely by their names being called during the draft.
 
-**Historical ownership note:** Unlike the proposed future format, the **actual 2014 repository** recorded its nine choices in three dated groups and kept undrafted pursuits in one documented May 10 table. Those original files remain untouched. For a new draft, each of the nine individual Jacksonville choices would have needed its **own separately dated result**; the above table is only a linked index when the new design is implemented. Original sources: [2014 selections and contracts](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Draft/draftees.md), [undrafted recruiting](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Draft/udfa_signings.md), [historical personnel pairing](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/League/personnel/draft_pairing.md).
+**Behind "already taken":** the availability test used each player's real overall pick, Gaines 188, Cockrell 109 and Thomas 206 ([2014 draftees](../../career/2014/Draft/draftees.md)). Those numbers stay in the data area and the 2014 record; on a reader page they would read as Jacksonville's own pick numbers. The moves table lists one line per real Jaguars selection tied to a Jacksonville pick, from the [2014 pairing](../../career/2014/League/personnel/draft_pairing.md); the sixth pairing moved no player because Telvin Smith was already Jacksonville's, and it has no line.
+
+**Historical ownership note:** Unlike the proposed future format, the **actual 2014 repository** recorded its nine choices in three dated groups and kept undrafted pursuits in one documented May 10 table. Those original files remain untouched. For a new draft, each of the nine individual Jacksonville choices would have needed its **own separately dated result**; the above table is only a linked index when the new design is implemented. Original sources: [2014 selections and contracts](../../career/2014/Draft/draftees.md), [undrafted recruiting](../../career/2014/Draft/udfa_signings.md), [historical personnel pairing](../../career/2014/League/personnel/draft_pairing.md).
 
 ### D. Illustrative individual outcome: Jacksonville selection No. 205
 
-The following is a **design example rendered from existing facts**, not an assertion that the present repository has a standalone May 10 file for this selection. Creating it in the future would have to be a migration of the existing owner, not a second, contradictory official event.
+The following is a **design example rendered from existing facts**, not an assertion that the present repository has a standalone May 10 file for this selection. It is an illustration only and is never created: the 2014 records stay as written.
 
 > # Draft Selection: Jemea Thomas
 >
-> **Jacksonville Jaguars | Saturday, May 10, 2014**  
-> **Selection:** Round 6, No. 205  
-> **Original pick:** Jacksonville  
-> **Selected by:** David Caldwell
+> **Event date:** Saturday, May 10, 2014  
+> **Resolved on:** May 10, 2014  
+> **Involving:** Jemea Thomas, defensive back, Georgia Tech; round 6, No. 205, Jacksonville's own sixth; Jacksonville  
+> **What happened:** E. J. Gaines and Ross Cockrell, the two players Stone named for this pick, had already been taken, and his board named no third. The pick stopped for Stone, and he named Thomas.  
+> **Stone's answer:** Jemea Thomas, given when the pick stopped for him  
+> **Final decision:** David Caldwell selected him  
+> **Outcome:** Selected; exclusive negotiating rights acquired  
+> **Changes effective:** Negotiating rights from May 10; no contract, roster place or role  
+> **Outstanding issue:** The rookie contract, signed May 11 as a separate transaction  
+> **Source records:** The 2014 draft board, the 2014 draftees record and the league's draft pairing page
 >
 > ## The selection
 >
-> Jacksonville selected Jemea Thomas, defensive back, Georgia Tech. The current draft board had named E. J. Gaines first and Ross Cockrell second. Gaines was already unavailable at No. 205 because his real selection was No. 188; Cockrell was unavailable because his real selection was No. 109. The original board did not authorize a third name. Stone supplied Thomas after the board exhausted its two named choices, and Caldwell made the final pick.
+> Jacksonville selected Jemea Thomas, defensive back, Georgia Tech. The draft board had named E. J. Gaines first and Ross Cockrell second. Gaines had already been taken by St. Louis and Cockrell by Buffalo. The original board did not authorize a third name. Stone supplied Thomas after the board exhausted its two named choices, and Caldwell made the final pick.
 >
-> ## What we know
+> ## What the room actually knew
 >
 > Thomas's Georgia Tech senior status and East-West Shrine Game invitation were the available eligibility basis. The original scouting record states that the precise publication date of an additional online Thomas profile was not verified. There is no authenticated Jacksonville-authored individual scouting report, and none is invented here. This pick by itself does not establish an NFL coverage, tackling or special-teams performance.
 >
-> ## Next work
+> ## Rights, next actions and authority
 >
 > Jacksonville acquired Thomas's draft rights at No. 205. The later May 11 rookie contract is a separate transaction. Stone's eventual assignment, practice role and medical participation are not decided by the selection.
 >
-> ## League selection effect
+> ## Other clubs
 >
-> Thomas was the real No. 206 New England selection. Under the established ordinal pairing, the real Jaguars' eighth pick, Luke Bowanko, transfers to New England's personnel rail. The separate league pairing record owns the full reconciliation.
+> May 10 | New England | Luke Bowanko, center | Joins New England. The full record is on the league's draft pairing page.
+
+**Sources for the specimen:** [2014 draftees](../../career/2014/Draft/draftees.md) (the No. 205 row: Gaines real pick 188, St. Louis; Cockrell real pick 109, Buffalo; Thomas real pick 206, New England) and the [2014 pairing](../../career/2014/League/personnel/draft_pairing.md) (k = 8: the real Jaguars' eighth selection, Luke Bowanko, goes to New England). In 2014 Stone's answer is recorded in the draftees file; from 2015 it is on the Draft folder's My Responses page.
 
 ## Part II. The only legitimate October 5, 2014 setup for the **2015** draft
 
 > # Scouting Department Report: opening draft-capital note
 >
 > **Jacksonville Jaguars | Prepared October 5, 2014**  
+> **Presented by:** David Caldwell, general manager, for the college scouting department  
 > **Next draft:** April 30 to May 2, 2015, Auditorium Theatre, Chicago. The NFL announced the venue and dates on October 2, 2014.
 >
-> Jacksonville owns five identified 2015 ordinary picks at this date: its own second-round selection, Miami's third, Houston's fourth, Arizona's fourth and Seattle's seventh. The original Jacksonville first and fourth were sent to Arizona on March 20. The original Jacksonville second was recovered from Washington March 31. Arizona's fourth arrived April 7 in the Russell Allen trade; Seattle's seventh arrived May 12 in the Will Rackley trade. Jacksonville also owes its 2016 fifth to Arizona and its 2017 seventh to Miami.
+> Jacksonville owns nine identified 2015 ordinary picks at this date: its own second, third, fifth, sixth and seventh, Miami's third, Houston's fourth, Arizona's fourth and Seattle's seventh. The original Jacksonville first and fourth were sent to Arizona on March 20. The original Jacksonville second was recovered from Washington March 31. Miami's third and Houston's fourth arrived March 24 in the Jason Babin and Tyson Alualu trades; Arizona's fourth arrived April 7 in the Russell Allen trade; Seattle's seventh arrived May 12 in the Will Rackley trade. No trade has moved Jacksonville's own third, fifth, sixth or seventh; the league-wide count of every club's 2015 picks is still to be made. Jacksonville also owes its 2016 fifth to Arizona and its 2017 seventh to Miami.
 >
 > The overall numbers cannot yet be named. Jacksonville has played five 2014 regular-season games and has not finished the season or the playoffs. The draft order, post-season tie resolution, 2015 compensation and any later transfers remain open. This is not a completed 2015 scouting board. No underclassman eligibility list, prospect medical clearance, combine result, staff change, 2015 selected player or eventual rookie contract is asserted.
 >
@@ -153,12 +180,14 @@ The following is a **design example rendered from existing facts**, not an asser
 >
 > Stone's current contract and the established division of work remain in force. His priorities can respond to current 2014 film, but a responsible final draft recommendation waits for actual remaining games, then-current player contracts, complete scouting and Caldwell's decision process.
 
+**Why nine picks:** the [pick register](../../data/2014/Draft/pick_ownership.json) records every move of a 2015 pick involving Jacksonville, and neither it, the [2013 Cousins trade](../../career/2013/trades/trades.md) (the 2014 and 2015 seconds only) nor the [2014 trade records](../../career/2014/Team_Operations/Trades/completed_trades/README.md) moves Jacksonville's own third, fifth, sixth or seventh. The register's audit scope says other 2015 picks are not yet audited, so those four are held with no transfer recorded, pending the 2015 audit. The current-state summaries list five picks; that correction is made separately from this design.
+
 **What is deliberately absent:** A filled **2015 My Draft Recommendations** page and **2015 Draft Room Results** would require decisions and outcomes the career has not reached. Providing either today as if completed would be fictional canon. The two 2015 page templates supplied separately are blank for exactly that reason.
 
 ### Source map for the worked example
 
-- Current clock, known 2015 picks and debts: [October 5 current season state, section 5](https://github.com/Alex-Oss222/football-career-sim/blob/main/state/05_Current_Season_State.md).
-- 2014 selection recommendations, actual choices and rights: [2014 draft board](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Draft/player_draft_board.md), [2014 draftees](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Draft/draftees.md).
-- Undrafted negotiations and each of the six declined players: [May 10 undrafted record](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Draft/udfa_signings.md).
-- Pick-pairing collision examples: [2014 pairing](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/League/personnel/draft_pairing.md).
-- Historical 2015 calendar: [2015 calendar](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2015/Calendar.md) and [research register](https://github.com/Alex-Oss222/football-career-sim/blob/main/library/2015_historical_calendar.md).
+- Current clock and the 2015 debts: [October 5 current season state, section 5](../../state/05_Current_Season_State.md); the 2015 pick holdings from the [pick register](../../data/2014/Draft/pick_ownership.json) and the trade records above.
+- 2014 selection recommendations, actual choices and rights: [2014 draft board](../../career/2014/Draft/player_draft_board.md), [2014 draftees](../../career/2014/Draft/draftees.md).
+- Undrafted negotiations and each of the six declined players: [May 10 undrafted record](../../career/2014/Draft/udfa_signings.md).
+- Pick-pairing collision examples: [2014 pairing](../../career/2014/League/personnel/draft_pairing.md).
+- Historical 2015 calendar: [2015 calendar](../../career/2015/Calendar.md) and [research register](../../library/2015_historical_calendar.md).
