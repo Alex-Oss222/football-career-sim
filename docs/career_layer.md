@@ -77,7 +77,7 @@ Each item has one class. The class fixes the default owner, the Document 3 rows 
 |---|---|---|---|---|---|
 | `weekly_game_plan` | the job holder (Stone) | 9, 10, 11, 12, 13, 14 | `week_inputs`, `week_close` | no | no |
 | `game_day_inactives` | the job holder (Stone) | 8 | `week_inputs`, `week_close` | yes | no |
-| `depth_and_roles` | the job holder (Stone) | 9, 10 | `week_inputs`, `week_close`, `season_stage`, `season_opening` | yes | no |
+| `depth_and_roles` | the job holder (Stone) | 9, 10 | `week_inputs`, `week_close`, `season_stage`, `season_opening`, `event_resolution` | yes | no |
 | `game_management_rule` | the job holder (Stone) | 12, 13, 14 | `call_sheet_part` | yes | no |
 | `play_calling_delegation` | the job holder (Stone) | 12, 13, 14 | nothing | yes | yes |
 | `emergency_succession` | the job holder (Stone) | 2, 12, 13, 14 | nothing | yes | yes |
@@ -85,12 +85,13 @@ Each item has one class. The class fixes the default owner, the Document 3 rows 
 | `practice_plan` | the job holder (Stone) | 11 | nothing | yes | no |
 | `discipline` | the job holder (Stone) | 18 | nothing | no | no |
 | `media_statement` | the job holder (Stone) | 19 | nothing | no | no |
-| `personnel_recommendation` | the job holder (Stone) | 3, 4, 7, 20 | nothing | no | no |
-| `quarterback_consultation` | the job holder (Stone) | 3a | nothing | no | no |
+| `personnel_recommendation` | the job holder (Stone) | 3, 4, 7, 20 | `week_inputs`, `week_close`, `event_resolution` | no | no |
+| `quarterback_consultation` | the job holder (Stone) | 3a | `week_inputs`, `week_close`, `event_resolution` | no | no |
 | `employment_response` | the job holder (Stone) | 1 | nothing | no | no |
 | `outside_job_approach` | the job holder (Stone) | 1a | nothing | yes | no |
-| `staff_permission` | the job holder (Stone) | 2 | nothing | yes | no |
-| `personnel_transaction` | David Caldwell | 3, 5, 7, 20 | nothing | no | no |
+| `staff_permission` | the job holder (Stone) | 2 | `event_resolution` | yes | no |
+| `bye_adjustments` | the job holder (Stone) | 9, 10, 11 | `bye_close` | no | no |
+| `personnel_transaction` | David Caldwell | 3, 5, 7, 20 | `week_inputs`, `week_close`, `event_resolution` | no | no |
 | `medical_status` | Team medical staff | 15, 16, 17 | nothing | no | no |
 | `staff_work` | Jacksonville coaching staff | none | nothing | no | no |
 
