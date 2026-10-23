@@ -1,74 +1,76 @@
 # Roster Cutdown Report
 
-**Jacksonville Jaguars | [As-of date and time] | [Reduction to 75 / Reduction to 53]**  
+**Jacksonville Jaguars | [Reduction to 75 / Reduction to 53]**  
 **For:** Head coach Alex Stone  
-**From:** David Caldwell, pro personnel, football operations, Mike Tice, Romeo Crennel, Mike Westhoff and the position coaches
+**From:** The general manager and the coaching staff: [the general manager and each coach by name and title, from the job record and the coach records on the issue date; no scout is named as an author]  
+**Issued:** [Date and time ET, as known inside the career]  
+**Edition:** [First issue for the reduction to 75 / issue for the reduction to 53 / new edition of a date, with its reason; earlier editions kept]  
+**Football evidence through:** [The last completed practice or preseason game]  
+**Next deadline:** [The reduction's date and time ET, from the season calendar]
 
-## Decisions needing your attention
+> AUTHORING NOTE (remove from the issued report): this report has two scheduled issues, the first for the reduction to 75 and the second after preseason game four for the reduction to 53, which carries the 75 count. Any other edition follows the one reissue rule that governs every brief ([event inserts](../../../docs/event_inserts.md), section A, item 6): a new event needs Stone's answer, a dated finding materially changes a choice still pending, or an answer falls due before the next scheduled issue. Keep every issued edition. The deadlines come from the season calendar and the staff names from the job record and the coach records, never from this template. Practice observations are cited from the camp training report and never restated, and a player is judged only on taught material. The staff may propose keeps and cuts here; a proposal is never Stone's answer. When the count is already at or under 75, the first issue asks nothing: it gives the count under FOR YOUR INFORMATION, and no cut is made.
 
-[Place the standard **Action required / For your information / Coming up** inserts at the top only for genuine events. Show the real initiating club/agent/office, date, consequence and deadline. Stone's cut recommendations belong on his separate response page. Do not invent trade inquiries, waiver claims, medical clearances, practice-squad commitments or staff dialogue to fill this space. A completed event has its own dated individual result link.]
+[Event inserts, when any event is pending: ACTION REQUIRED, FOR YOUR INFORMATION and COMING UP go here, under the title block and before the first section, in the form of the [event insert template](../event_inserts/brief_action_inserts_template.md). Omit each section that has nothing in it. Show the real initiating club, agent or office, the date, the consequence and the deadline. Roster-limit, waiver, claim and practice-squad matters appear here; game-four preparation stays on that game's briefing, and each event appears on one brief only. Stone answers this report on My Cut Recommendations, once for each reduction; his answers to inserted events go on this phase's My Responses page, and each resolved event gets its own dated result page. Do not invent trade inquiries, waiver claims, medical clearances, practice-squad commitments or staff dialogue to fill this space.]
 
 ## Where the roster stands
 
-[Lead with the meaningful football and league obligation rather than a motivational roster-cutdown statement. Count **actual contracted eligible players** at this date and identify reserved/exempt/unsigned players separately under the governing current-year list rule. The two reductions have distinct deadlines. If this is the Sept 1 briefing, explain that the final preseason game is Sep 3. If the Sept 5 briefing, use its actual results and state that waivers and practice-squad decisions follow, not already happened.]
+[Lead with the football and league obligation rather than a motivational cutdown statement. Count **actual contracted eligible players** at this date and identify reserved, exempt and unsigned players separately under the current-year list rules. The two reductions have distinct deadlines. In the first issue, say that the last preseason game follows the reduction to 75. In the second, give the 75 count and its results, use the completed game-four play-by-play and medical communications, and say that waivers and practice-squad decisions follow the filing; they have not happened yet.]
 
-| Roster/accounting matter | Verified current position | What remains to be decided |
+| Roster matter | Verified current position | What remains to be decided |
 |---|---|---|
-| Players currently counting against applicable limit | [Actual count and roster owner] | [Difference from 75 or 53, or already compliant] |
-| Signed and eligible players with practice limits | [Names or counts if available] | [Can occupy a roster place, but cannot be used contrary to medical instruction] |
-| Reserve/PUP, NFI, Reserve/Injured or exemptions | [Individual lawful status and owner, not a sum guessed from injuries] | [Authorized list decisions or document check] |
-| Unsigned tenders, draft rights or other unsigned players | [Rights but not signed player contracts; list/accounting classification verified] | [Caldwell owns contract action; these are not automatically game candidates] |
-| Obligations and roster limits | [This year's date and actual Eastern cutoff] | [Necessary action before deadline] |
+| Players counting against the limit | [Actual count] | [Difference from 75 or 53, or already compliant] |
+| Signed players with practice limits | [Names, from the medical communications] | [Can hold a roster place; cannot be used against a medical instruction] |
+| Reserve/PUP, NFI, Reserve/Injured or exemptions | [Each player's lawful status, not a sum guessed from injuries] | [List decisions or document checks] |
+| Unsigned tenders, draft rights or other unsigned players | [Rights, not signed contracts; classification verified] | [The general manager owns any contract action; these are not game candidates] |
+| The count at the reduction to 75 (second issue only) | [The count filed at the reduction to 75 and its date] | [None; its results are linked from the cutdown index] |
+| Deadlines | [This year's dates and Eastern times] | [Action needed before each] |
 
-**Department status:** [Caldwell's actual position if he has supplied one. Staff recommendations do not become completed transactions.]
+**Department status:** [The general manager's position if he has supplied one, and any legal, contract, cap or medical constraint that would make him depart from the head coach's list. Only a constraint written here before Stone answers can do so. Staff recommendations are not completed transactions.]
 
 ## The usable football roster, by unit
 
-[Show a current roster by the **jobs players can perform**, not a forced template allocation. One player can fill multiple jobs; list him once in legal count. Use current depth, camp/battle work, the four preseason games **only insofar as played**, medical limits, special-teams evidence and the first regular-season opponent when publicly known. Explain why a reserve matters to the 46-player game-day list and emergency coverage.]
+[Show the current roster by the **jobs players can perform**, not a forced allocation. One player can fill several jobs; list him once in the count. Use the current depth chart, camp and battle work as the training report records it, the preseason games **only as played**, medical limits, special-teams evidence and the first regular-season opponent. Judge a player only on what was taught to him; a page of the playbook he was never taught is not evidence for or against him. Explain why a reserve matters to the game-day list and emergency coverage.]
 
 ### Offense
 
 | Role or room | Players presently eligible for consideration | Supported evidence | Risk if a place is lost |
 |---|---|---|---|
-| Quarterback and emergency coverage | [Named current players] | [Protection, command, available work] | [Back-up capability and actual roster consequences] |
-| Offensive line | [Tackles, guards, centers, emergency jobs] | [Blocking, protection calls, mixed combinations and preseason context] | [Missing tackle/center swing job or protection solution] |
-| Backs, receivers, tight ends | [Actual players and package jobs] | [Rushing, route, attached blocking, blocking/coverage, receiver exchange as applicable] | [Which specific offensive or coverage duty cannot be covered] |
+| Quarterback and emergency coverage | [Named current players] | [Protection, command, available work] | [Backup capability and roster consequences] |
+| Offensive line | [Tackles, guards, centers, emergency jobs] | [Blocking, protection calls, mixed combinations and preseason context] | [A missing tackle or center swing job or protection answer] |
+| Backs, receivers, tight ends | [Actual players and package jobs] | [Rushing, routes, attached blocking, coverage-unit work as applicable] | [Which offensive or coverage duty cannot be covered] |
 
 ### Defense
 
 | Role or room | Players presently eligible for consideration | Supported evidence | Risk if a place is lost |
 |---|---|---|---|
-| Defensive line and edges | [Named players] | [Contain, rush, interior fits, substitution effects] | [Available base/pressure and relief groups] |
+| Defensive line and edges | [Named players] | [Contain, rush, interior fits, substitution effects] | [Base, pressure and relief groups still available] |
 | Linebackers | [Named players] | [Run fits, coverage matchups, relay succession and coverage units] | [Communication or special-teams consequences] |
-| Corners and safeties | [Named players] | [Outside, nickel, safety, dime and return/coverage jobs] | [Outside and sub-package depth] |
+| Corners and safeties | [Named players] | [Outside, nickel, safety, dime and return or coverage jobs] | [Outside and sub-package depth] |
 
 ### Special teams
 
-[Westhoff's actual snapper, holder, kicker, punter, kickoff/punt return and four-core coverage job requirements. A reserve's offensive/defensive ranking does not measure his roster value if he is one of the credible coverage players. Do not equate a punt average with snap/protection performance.]
+[The special teams coordinator's actual snapper, holder, kicker, punter, kickoff and punt return and core coverage requirements. A reserve's offensive or defensive place does not measure his roster value if he is one of the credible coverage players. Do not equate a punt average with snap or protection performance.]
 
-## Live decisions and unresolved comparisons
+## Open competitions
 
-[Show *only* competitions still genuinely open. Each established comparison has one position-battle history. Identify the candidates, the specific job, support/opponent differences, and whether Stone must settle a depth assignment now or can preserve a provisional order. A starter is not chosen by the existence of a roster question.]
+[Link each position-battle card still open, by unit, position and spot, and say whether Stone must settle the depth call now or may keep a provisional order. Every open card closes with his season depth chart at the reduction to 53, at the latest. Do not build a second comparison table; the card holds the comparison. A starter is not chosen by the existence of a roster question.]
 
-| Actual open question | Evidence that distinguishes or fails to distinguish | What Stone decides | What Caldwell decides |
-|---|---|---|---|
-| [Named comparison] | [Actual completed observations, uncertainties] | [Depth, package, special-teams use within eligible roster] | [Retention, release, contract/list action] |
-
-**Medical and legal dependencies:** [List only genuine pending medical examinations, eligibility determinations, injured waiver routing, IR/PUP/NFI designations, guarantees or contract restrictions. The head coach cannot clear a player; a projected return is not clearance.]
+**Medical and legal dependencies:** [List only genuine pending medical examinations, eligibility determinations, injured-designation waivers, reserve, PUP or NFI designations, guarantees or contract restrictions. The head coach cannot clear a player; a projected return is not clearance.]
 
 ## Roster choices that cost something
 
-[Explain specific opportunity costs in football terms, not a 'best 53' slogan. Keeping a backup who can cover tackle and center may reduce a receiving option; keeping a developmental player who does not dress on Sunday may force extra special-teams work on another position. State both the football value and the limitation supported by actual usage. Describe Caldwell's cap/contract exposure only from the verified finance owner.]
+[Explain specific opportunity costs in football terms, not a 'best 53' slogan. Keeping a backup who can cover tackle and center may cost a receiving option; keeping a developmental player who does not dress on Sunday may force extra special-teams work elsewhere. State both the football value and the limitation shown by actual use. Describe contract and cap exposure only from the club's contract records.]
 
-**Reasonable groupings to compare:** [The actual two or more alternatives where a number decision exists. No invented rigid league-required QB/RB/WR allotments.]
+**Groupings to compare:** [The actual alternatives where a number decision exists. No invented position allotments.]  
+**Staff proposal:** [The keeps and cuts the general manager and the coaching staff propose, each with its football reason, or "None offered." A proposal for the head coach to accept, change or reject on his page; never an answer.]
 
-## What Caldwell needs from Stone
+## What the general manager needs from Stone
 
-[Ask for explicit football recommendations, not permission to execute a cut. Stone should identify the players he would keep for football reasons, the fringe cases he would release or reconsider, any valid contingent condition and the parts of the depth chart he wants to control. A recommendation can oppose Caldwell's ultimate decision.]
+[Ask for football recommendations, not permission to execute a cut. Stone names the players he would keep for football reasons, the fringe cases he would let go, any valid conditional case, any outside player worth a claim or a practice-squad approach, and the roles that rest on each choice. His depth calls and Week 1 inactives are made on My Depth Calls and the Week 1 Game Plan, not here. A recommendation can oppose the general manager's view; the general manager follows the head coach's lawful list unless a constraint written in this report applies.]
 
-**Before the [75/53] deadline:** [Actual time and tasks.]  
-**Before the next game or first regular-season game:** [Real role and availability commitments.]  
-**After waivers:** [Separate claims and practice-squad invitations, subject to eligibility, player acceptance and independent other-club actions; no guarantees.]
+**Before the [75/53] deadline:** [Actual time and what is due.]  
+**Before the first regular-season game:** [The depth calls and inactives still open, and where they are made.]  
+**After waivers:** [Claims close at noon the day after the filing; practice-squad signings follow the league's personnel notice. Another club's claim, and a player's choice to sign elsewhere, are outside Jacksonville's control.]
 
-**Your page:** My Cut Recommendations.  
-**Outcome:** [For the 75 stage, each actual individual result and the roster count; for final cutdown, the Final 53 page after Caldwell's actions. Both link individual dated event results and neither replaces them.]
+**Your page:** My Cut Recommendations, the section for this reduction. **Answers to the notices above:** My Responses.  
+**Outcome:** [For the reduction to 75, each actual result and the count, listed in the cutdown index; for the reduction to 53, the Final 53 page as filed. Both link each player's own dated result and neither replaces it.]

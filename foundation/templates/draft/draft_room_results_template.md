@@ -1,10 +1,13 @@
 # Draft Room Results
 
-**Jacksonville Jaguars | [Draft year] NFL Draft**  
+**[Club] | [Draft year] NFL Draft**  
 **Draft held:** [Verified actual dates and location]  
-**Reported through:** [Actual in-career date and time]  
+**Reported through:** [Actual date and time]  
 **Selections concluded:** [Number actually made]  
-**Draft status:** [In progress, complete, or stopped for a recorded unresolved decision]
+**Draft status:** [In progress, complete, or stopped for a recorded unresolved decision]  
+**Final selection authority:** [David Caldwell (or the general manager then in the job record)]  
+**Football recommendations:** [My Draft Recommendations link]  
+**Answers during the draft:** [The Draft folder's My Responses link, or None]
 
 [Open with the consequential football outcome of the selections actually made, not a newspaper-style declaration that the class is excellent. Name which player rights Jacksonville acquired, which positions or responsibilities can now be contested, and what did not change. Do not treat a chosen player as a signed player or a projected roster spot as awarded.]
 
@@ -12,21 +15,21 @@
 
 | Date | Round and overall pick | Original pick asset | Player and college | Final decision | Full individual result |
 |---|---|---|---|---|---|
-| [Actual date] | [Round, confirmed overall] | [Original club and ownership basis] | [Selected player's identity, position, college] | David Caldwell | [Link to this selection's own dated report] |
+| [Actual date] | [Round, confirmed overall] | [Original club and ownership basis] | [Selected player's identity, position, college] | [David Caldwell (or the general manager then in the job record)] | [Link to this selection's own dated result page] |
 
-[Every separately concluded Jacksonville pick must have its own dated, readable result. The link must open that individual report. This overall page must never substitute for it, even if several picks occurred on the same day. An unused or forfeited selection has its own correct dated disposition if consequential, not a phantom player.]
+[Every separately concluded Jacksonville pick must have its own dated, readable result. The link must open that individual page. This overall page must never substitute for it, even if several picks occurred on the same day. An unused or forfeited selection has its own correct dated disposition if consequential, not a phantom player.]
 
 ## What changed from Stone's recommendations
 
-[Compare the frozen version of Stone's recommendation that actually governed each selection with Caldwell's real choice. Report disagreement only when recorded. If a preferred player was unavailable, name the public preceding selection and describe whether an authorized fallback existed. If not, record the date Stone was asked and his real answer. Do not invent his answer, Caldwell's reasoning, or a tense room conversation.]
+[Compare Stone's recommendations as they stood when the first round began with the general manager's real choice at each pick. Report disagreement only when recorded; where an available player Stone named first was not taken, give the recorded medical, eligibility or contract restriction. If a preferred player was already taken, say so and name the club that took him; do not give the overall number of his selection or list the league's selections. Say whether an authorized fallback existed. If the pick stopped for Stone, record when he was asked and link his answer on the My Responses page. Do not invent his answer, the general manager's reasoning, or a tense room conversation.]
 
-[Identify any franchise-level quarterback consultation, including its actual dated written projection, meeting and Caldwell's final decision, when applicable. Do not claim a consultation happened simply because a quarterback was on a public mock board.]
+[Identify any franchise-quarterback consultation (the first-round pick used on a quarterback, premium draft capital traded for one, a major multiyear commitment to one as the intended starter, or a major disposition of the starting quarterback), including its actual dated written projection, meeting and the general manager's final decision, when applicable. Do not claim a consultation happened simply because a quarterback was on a public mock board.]
 
 ## Draft-day trades and approaches
 
 | Resolved on | Contact or completed exchange | Disposition | Separate dated result |
 |---|---|---|---|
-| [Actual date and time] | [Actual club, proposed or executed assets] | [Agreed, declined, withdrawn, countered and closed, or other verified closure] | [The specific trade-negotiation result owned by the trade department] |
+| [Actual date and time] | [Actual club, proposed or executed assets] | [Agreed, declined, withdrawn, countered and closed, or other verified closure] | [The trade result page in the trades folder] |
 
 [If no talks occurred, say “No draft-day trade approach is recorded.” A rejected call is still a separately resolved matter with its own result. A completed trade updates pick ownership on the date it was executed and cannot be used to backdate an earlier selection. Do not copy the negotiation's full story here.]
 
@@ -34,21 +37,25 @@
 
 | Selected player | Exclusive negotiating rights acquired | Contract actually signed? | Participation and next actual requirement |
 |---|---|---|---|
-| [Player] | [Date and team after valid selection] | [Only executed date and link, or not signed] | [Legal participation/medical eligibility check; no invented clearance] |
+| [Player] | [Date and team after valid selection] | [Only the executed date and a link to the contract's own result page, or not signed] | [Legal participation/medical eligibility check; no invented clearance] |
 
-[Four-year drafted-rookie terms and first-round fifth-year options come from the 2011 agreement. Contract dollar values, guarantees and cap consequences must come from Caldwell's actual signed terms, club allocation and current cap data. Never backfill a modern contract or copy the real player's subsequent NFL deal as Jacksonville's. Rookie participation is separately gated by the applicable NFL and college eligibility rules.]
+[Four-year drafted-rookie terms and first-round fifth-year options come from the 2011 agreement. Contract dollar values, guarantees and cap consequences come from the signed terms in the contract owner, where a reconstructed figure carries its label. Never backfill a modern contract or copy the real player's subsequent NFL deal as Jacksonville's. Rookie participation is separately gated by the applicable NFL and college eligibility rules.]
 
-## Other clubs and the historical selection reconciliation
+## Other clubs' moves tied to our selections
 
-[Explain relevant league selections actually resolved by this stage and link the authoritative league selection record. Under the established historical-league-rails exception, identify the Jacksonville selection's real counterpart and the permitted destination of the real Jaguars' corresponding selection. Keep the underlying complete swap table in its sole owner. A self-pairing, already-controlled player or absence of a valid partner may leave the player unplaced; it must not silently award another club a substitute. Do not reproduce a full league database here.]
+| Date | Club | Player | Move |
+|---|---|---|---|
+| [Date] | [Club] | [Player, position, college] | [Joins the club, or no move] |
+
+[One line per move at another club tied to a Jacksonville selection, and a link to the league's draft pairing page. Do not explain how the moves are matched, give other clubs' overall numbers or reproduce a league selection list.]
 
 ## Undrafted recruiting: each concluded pursuit
 
-| Date resolved | Player | What Caldwell actually attempted | Outcome | Individual result |
+| Date resolved | Player | What the general manager attempted | Outcome | Individual result |
 |---|---|---|---|---|
-| [After the final draft pick, at the true recruiting time] | [Name and college] | [Offer/contact only if recorded] | [Signed, declined, withdrew, still open] | [Link to the specific concluded pursuit, if closed] |
+| [After the final draft pick, at the true recruiting time] | [Name and college] | [Offer/contact only if recorded] | [Signed, declined, withdrew, still open] | [Link to that pursuit's own result page, if closed] |
 
-[The player must actually have gone undrafted and be eligible before negotiations can conclude as an undrafted signing. A priority list creates no call or acceptance. An unsuccessful pursuit receives its own dated report. For a signing, its own contract and legal rights must be recorded. Open pursuits are distinguished from final results.]
+[The player must actually have gone undrafted and be eligible before negotiations can conclude as an undrafted signing. A priority list creates no call or acceptance. An unsuccessful pursuit receives its own dated result. For a signing, its own contract and legal rights must be recorded. Open pursuits are distinguished from final results.]
 
 ## What our scouts and coaches can now say
 
@@ -56,7 +63,7 @@
 
 ## Next work and matters still open
 
-[Specific rookie eligibility checks, completed contract/physical processes, legal May rookie-minicamp dates, initial teaching assignments and questions to examine when permitted. Point to the upcoming OTA brief where it owns the next decision. Name unresolved selection rights, medical questions or club decisions without filling them in.]
+[Specific rookie eligibility checks, completed contract/physical processes, legal May rookie-minicamp dates, initial teaching assignments and questions to examine when permitted. Point to the Offseason Program Brief reissued after the draft, which carries rookie-minicamp direction, and to the upcoming OTA brief, each where it owns the next decision. Name unresolved selection rights, medical questions or club decisions without filling them in.]
 
 ## Separately resolved matters during this draft
 

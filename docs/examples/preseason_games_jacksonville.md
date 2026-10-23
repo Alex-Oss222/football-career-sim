@@ -10,7 +10,7 @@
 
 The existing camp plan gave Stone concrete comparisons, not a demand for a generic 'strong performance'. The first two Cousins possessions were intended to change two receiver/guard arrangements while preserving the quarterback and other support: initially Nicks at X, Adams in the WR3 work and Bitonio at left guard, then Adams at X, Hawkins in WR3 work and Norwell at left guard, with Turner remaining at right guard. That work sought route timing, protection assignments and blocking against an outside opponent.
 
-Crennel's defense sought first-group edge work for Mincey and Branch, then communicators Daryl Smith, Posluszny and Stanford in the units actually available. Westhoff planned Cain to begin snapping, with Kreiter receiving live specialist opportunities. These came from Stone's recorded Game 1 plan and frozen game inputs, not a staff meeting invented for this illustration.
+On defense, with Crennel then the caller, the plan sought first-group edge work for Mincey and Branch, then the relay succession of Daryl Smith, Posluszny and Stanford in the units actually available. On special teams, where Westhoff owned the technical plan, Cain kept the starting snapping job and Kreiter received live game operation. These came from Stone's recorded Game 1 plan and frozen game inputs, not a staff meeting invented for this illustration.
 
 **Decision boundary:** A report could legitimately request Stone's game plan, rotation and legal use of medically available players. It could not force a final WR1, left-guard or long-snapper decision ahead of the exhibition.
 
@@ -22,11 +22,11 @@ Stone's authored plan placed Cousins in the two comparison possessions subject t
 
 **Tampa Bay 30, Jacksonville 21 (career result).** The two Cousins possessions produced six snaps and two sacks, both at the right-tackle slot. This did **not** test the intended X or left-guard receiving comparison as designed: neither X had a target in his respective first-group possession, and the sacks did not identify which part of the protection caused them. It would be a factual error to score Nicks/Adams or Bitonio/Norwell from those drives as if each played a comparable passing-game sample.
 
-The existing 2014 account records three first-defense touchdowns allowed, three later Jacksonville scoring possessions led by Henne, Wilson and Shaw, seven Jacksonville sacks, and three Jaguars turnovers. The game generated medical incidents for Lane Johnson, Cameron Brate and C.J. Anderson. Their exact availability and any roster ramifications belong in the medical and personnel records, not an automatic deduction from the final score. No position competition was closed on August 8.
+The existing 2014 account records three first-defense touchdowns allowed, three later Jacksonville scoring possessions led by Henne, Wilson and Shaw, seven sacks by Jacksonville's defense, and three Jaguars turnovers. The game generated medical incidents for Lane Johnson, Cameron Brate and C.J. Anderson. Their exact availability and any roster ramifications belong in the medical and personnel records, not an automatic deduction from the final score. No position competition was closed on August 8.
 
 **A useful coaching finding:** Jacksonville needed a right-tackle correction with the protection call and quarterback response, not a new verdict about left guard. The staff could carry the receiver comparison into Chicago if legal and desired, and Stone could choose a new plan. No argument about 'momentum' changes what the six first-offense snaps showed.
 
-Canonical references: [Game 1 preparation and frozen choices](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_01/README.md), [completed Game 1 output](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_01/output.md).
+Canonical references: [Game 1 preparation and frozen choices](../../career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_01/README.md), [completed Game 1 output](../../career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_01/output.md).
 
 ## Example B: game four, August 28, 2014, Atlanta at Jacksonville
 
@@ -46,7 +46,7 @@ The game reported injuries to Hakeem Nicks, A.J. Bouye, Gator Hoskins and Jeris 
 
 **At the end of August 28:** all six actual position competitions remained open; Caldwell's final roster reduction and Stone's season depth decisions were still ahead. The career resolved them August 30 and recorded them at their own owners. Do not move those decisions backward into the preseason report.
 
-Canonical references: [Game 4 preparation](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_04/README.md), [completed Game 4 output](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md), [position battle index](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Training_Camp_and_Preseason/Position_Battles/README.md), [roster/depth decisions](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md).
+Canonical references: [Game 4 preparation](../../career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_04/README.md), [completed Game 4 output](../../career/2014/Training_Camp_and_Preseason/Preseason_Games/Game_04/output.md), [position battle index](../../career/2014/Training_Camp_and_Preseason/Position_Battles/README.md), [roster/depth decisions](../../career/2014/Training_Camp_and_Preseason/Roster_Decisions/roster_decisions.md).
 
 ## The prospective 2015 edition: schedule only
 
@@ -59,8 +59,10 @@ The playable 2015 game-by-game pages are not yet issuable. The historical league
 | 3 | Aug 28, 2015, Detroit at Jacksonville, 8 p.m. ET | Any in-career earlier preseason outcome or roster evaluation |
 | 4 | Sep 3, 2015, Jacksonville at Washington Redskins, 7:30 p.m. ET | Sep 1 reduction to 75, actual available players, rotations and result |
 
-The April 9 and April 20, 2015 publication gates still apply inside the story. Real 2015 scores are not loaded, and the 2015 PAT rule waits for its May 19 announcement/effective rule. The 2015 roster depends on the *unplayed* rest of 2014 and 2015 staff, free agency, draft, injury and roster events.
+The April 9 and April 20, 2015 publication gates still apply inside the story: before April 9 no 2015 preseason fixture is known, and from April 9 to April 19 only the opponents, sites and weeks. Real 2015 scores are not loaded, and the try rule adopted May 19, 2015 for that season is unknown before that date. The 2015 staff, calling arrangement and roster depend on the *unplayed* rest of 2014 and the 2015 staff, free agency, draft, injury and roster events, so a 2015 briefing reads them from the records at its issue. Game 4's inputs wait for the September 1 reduction to 75, which is Caldwell's on Stone's recommendation.
 
 ## What this design intentionally does not fix
 
-The 2014 output files remain the canonical original eight-section game records. Future new-season `Preseason_Game_Report.md` pages must be the sole readable game results after the workflow is implemented, with the old layout's genuine football/statistical content adapted rather than copied into a second full result. No retrospective edit of 2014 outcomes, decisions, metrics or personnel is authorized.
+The 2014 output files remain the canonical original eight-section game records. From 2015 each game's `Preseason_Game_Report.md` is its sole readable result once the workflow is implemented, with the old layout's genuine football and statistical content adapted rather than copied into a second full result: preparation and pregame media written before kickoff, the game, postgame media, the coaching review, and the box score last. No retrospective edit of 2014 outcomes, decisions, metrics or personnel is authorized.
+
+Read against the 2015 pages, each 2014 game's files map one to one: the README's camp questions are what the Preseason Game Briefing's staff questions now hold; the head-coach plan file (`Preseason Game N_ HC.md`) is what the Preseason Game Plan now holds; the README's frozen-inputs record becomes the game's applied plan in its data folder; `output.md` is what the Preseason Game Report now is; and the folder README becomes a built index of the three pages, My Responses and the linked event results. On a 2015 Preseason Game Plan, any call in the active book may be named for any situation, and a line about fourth downs, tries, kickoffs or defensive calls is recorded as Stone's direction to the staff, not as a game input, until the plan-level engine decision.
