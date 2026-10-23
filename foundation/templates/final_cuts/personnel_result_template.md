@@ -1,34 +1,33 @@
-# Individual personnel disposition: separate dated result reference
+# [Player] | [Waiver / Release / Reserve Placement / Claim / Practice-Squad Signing / Approach Ended / Other Result]
 
-**This is an additional format, not one of the three main workflow pages.** Each independently concluded roster/contract/list/pursuit event has its own canonical owner and one readable output. Several players processed in the same 53 reduction still receive individual outcomes; the reduction and Final 53 pages are indexes, never substitutes.
+**Event date:** [Date and time ET the action or approach opened, as known]  
+**Resolved on:** [Date and time ET the general manager acted, the waiver period closed, the league notice confirmed the move or the player signed elsewhere; no invented timestamp]  
+**Involving:** [Player and his status before the action; Jacksonville; the other club, where one acted]  
+**What happened:** [One to three factual sentences: the action or approach and the process that actually occurred]  
+**Stone's answer:** [His recommendation on My Cut Recommendations or this phase's My Responses page, linked, or "No recommendation required"]  
+**Final decision:** [The general manager and what he decided; the medical staff for a medical finding; or what another club or the player independently did]  
+**Outcome:** [Waived / contract terminated as a vested veteran / waived with the injured designation / reverted to reserve/injured / placed on a reserve list / claimed by [club] / cleared waivers / claim awarded to Jacksonville / claim not awarded / practice-squad contract signed / player signed with [club] / other supported disposition]  
+**Changes effective:** [What changed and when, or "No contract, roster or rights change"]  
+**Outstanding issue:** [A genuinely separate unresolved follow-up, with link, or "None"]  
+**Source records:** [Links to the contract owner, the roster, the cap worksheet and, where relevant, the medical record]  
+**From the current briefing:** [Link to the Roster Cutdown Report edition that carried the matter]
 
-# [Player] | [Waiver / Release / Reserve placement / Practice-squad pursuit / Claim / Other result]
-
-**Issued:** [Actual decision/disposition date, and time where relevant]  
-**Player or counterparty:** [Name and current lawful status before action]  
-**Club:** [Jacksonville or actual outside club]
+> This page is the final-cuts period's form of the [shared event result](../event_inserts/event_result_template.md): one page per concluded event, written on the day it resolves, in its owner's folder. Waivers, releases, reserve and list placements and claims: the roster folder. Practice-squad and other signed contracts, and approaches that end without a contract: the free-agency folder. Trades: the trades folder. A medical finding stays in its medical record and is linked; a completed trade's own record is its result. Several players moved at one reduction still get one page each; the cutdown index and the Final 53 list them and replace none. A later claim or signing is a new page, never an edit of this one.
+>
+> **Event-record line:** on a line of its own under the title block, invisible on the page: `<!-- event-record: {"id": "[date]-[player]-[action]", "date": "[YYYY-MM-DD resolved]", "status": "closed", "summary": "[One sentence in football words: who decided what, and its effect]"} -->`. Its summary is the event's line in the annual record.
 
 ## What the club was deciding
 
-[The actual available action and why it mattered: roster-limit compliance, football coverage, verified contract/list implications, injury instructions or genuine negotiation. Identify Stone's advice if he offered it; no authored quotation. If another club made an offer, it must be an actual dated approach, not a hypothetical.]
+[The action available and why it mattered: roster-limit compliance, football coverage, contract or list consequences, medical instructions or a genuine approach. Identify the head coach's advice if he gave it; no authored quotation. If another club acted, it must be an actual dated move.]
 
-## Stone's football recommendation
+## Contract, service and cap
 
-[The actual user-owned recommendation or standing instruction and its recorded date. If no football recommendation was required, state that; never invent assent. A starting-role decision made by Stone is a separate depth assignment and does not convert into roster authority.]
-
-## Authorized outcome
-
-**Decision maker:** [Caldwell for Jaguars roster, contract and player rights; medical staff for medical clearance; player/claiming club for their independent actions.]  
-**Decision:** [Actual waived, released, reserved, signed, claim submitted/rejected, declined offer, talks ended, properly expired, or another supported disposition.]  
-**Effective time:** [Actual date/time, not the deadline merely because it was scheduled.]  
-**Player rights/contract/list after decision:** [Precisely established consequence; if waivers pending, say pending.]  
-**Cap treatment:** [Verified source calculation only, or explicitly unresolved with no invented estimate.]
+**Service:** [For a release or waiver: the player's credited service under the Bert Bell/Pete Rozelle Plan, with its source, and whether that makes the move a termination or a waiver. If it cannot be established, say so, treat the move as a waiver, and say that a fourth credited year would make it a termination.]  
+**Contract and cap effect:** [From the club's recovered or adopted contract schedule, with the treatment named and a reconstruction labelled as one. Mark a figure unresolved only where no recovered or adopted term exists. Termination pay does not arise at the preseason reductions.]  
+**Rights and list after the decision:** [The established consequence; if the waiver period is still open, say it is pending.]
 
 ## What comes next
 
-[Waiver claim window, medical review, contract settlement, practice-squad invitation or depth reassignment only when independently relevant. No guarantee of clearing waivers, practice-squad assent, another club signing or return from IR.]
+[The waiver period, a medical review, the practice-squad window or a depth reassignment, only when it is a real next step. No promise that a player clears waivers, signs a practice-squad contract or returns from reserve.]
 
-**Related roster listing:** [Final 53 or 75-stage index]  
-**Original source:** [The one authorized personnel, finance, medical, trade or staff record]
-
-For future implementation only, keep the event identifier, original source digest, no-result/open state, executor, contractual rights, list effective date and delivery record outside the coach-facing prose. A closed event's page is stable even when a later event changes that player's status. If an existing individual authoritative trade/medical record is already the result, link it and **do not duplicate it**.
+**Related index:** [The cutdown index, or the Final 53 for a move at the reduction to 53]
