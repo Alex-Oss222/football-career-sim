@@ -106,6 +106,12 @@ RATES = ("passer_rating", "completion_percentage", "yards_per_attempt", "yards_p
 AMBIGUOUS = {"interceptions": "interceptions_thrown or defensive_interceptions"}
 # Grade and rating language: the page shows no grade (a statistic's name, passer rating, is not one).
 GRADE_WORDS = re.compile(r"/\s*10\b|\bgrad(?:e|es|ed|ing)\b|(?<!passer )\bratings?\b|\brated\b", re.I)
+# Statements about what the records hold, which a staff assessment never makes (the template: no
+# evidence-limit or process wording; plain football judgments only).
+RECORD_WORDS = re.compile(
+    r"\bon record\b|\brecords?\s+(?:named|names|shows?|showed|holds?|held|charged|charges|credit(?:s|ed)?)\b"
+    r"|\bcharged (?:to )?(?:him|his)\b|\bnothing charged\b|\bindividually (?:evaluated|classified|graded|assessed)\b"
+    r"|\bmeasurements?\b[^.]*\bconflict|\bconflicting measurements?\b", re.I)
 # A full stop after a single capital letter or one of these is not a sentence end (C.J., Leno Jr., No. 8).
 ABBREVIATIONS = re.compile(r"(?:(?<![A-Za-z])[A-Z]|\bJr|\bSr|\bNo|\bSt)$")
 
@@ -273,8 +279,9 @@ def sentence_count(text):
 
 def text_errors(label, text, root=ROOT, resolved=False):
     """The rules on the words of a staff assessment: one line, two to four sentences, no link or
-    table cell, no grade or rating language, the clean-page rule and, before its tokens are
-    resolved, every figure a token (a four-digit year apart)."""
+    table cell, no grade or rating language, no statement about what the records hold
+    (``RECORD_WORDS``), the clean-page rule and, before its tokens are resolved, every figure a
+    token (a four-digit year apart)."""
     from . import clean_pages
     errors = []
     if not isinstance(text, str) or not text.strip():
@@ -291,6 +298,9 @@ def text_errors(label, text, root=ROOT, resolved=False):
         errors.append("%s: a staff assessment is two to four sentences (found %d)" % (label, n))
     for m in GRADE_WORDS.finditer(plain):
         errors.append("%s: no grade or rating language in a staff assessment: %s" % (label, m.group(0)))
+    for m in RECORD_WORDS.finditer(plain):
+        errors.append("%s: a staff assessment is a football judgment, not a statement about the records: %s"
+                      % (label, m.group(0)))
     errors += ["%s: the staff assessment breaks the clean-page rule (%s)" % (label, e.split(": ", 1)[-1])
                for e in clean_pages.page_errors("short.md", plain + "\n", root=root)]
     return errors

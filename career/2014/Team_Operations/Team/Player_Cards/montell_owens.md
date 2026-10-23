@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Montell Owens held Jacksonville's fullback job through the 2013 season, dressing for all 16 regular-season games and two playoff games without a fumble. He is a blocking and special-teams fullback who can handle a small package of carries and flat throws, and his special-teams work, lead blocking and ball security are his strongest tools. Routes and hands trail the rest of his game, and after he was stripped following a catch in the 2014 preseason opener, the staff corrected his catch security through contact and the correction held the next day. The staff sees dependable physical work and utility before a featured offensive weapon.
+Montell Owens held Jacksonville's fullback job through the 2013 season, dressing for all 16 regular-season games and two playoff games without a fumble. He is a blocking and special-teams fullback who can handle a small package of carries and flat throws, and his special-teams work, lead blocking and ball security are his strongest tools. Routes and hands trail the rest of his game, and the staff sees dependable physical work and utility before a featured offensive weapon.
 
 *Staff view, March 31, 2014.*
 

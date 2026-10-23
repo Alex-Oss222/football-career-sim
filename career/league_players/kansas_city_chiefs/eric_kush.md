@@ -12,6 +12,10 @@ As of January 4, 2014, after the Wild Card round.
 
 **Current assignment:** Reserve center.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

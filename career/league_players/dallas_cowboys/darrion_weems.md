@@ -10,6 +10,10 @@ As of January 11, 2014, after the Divisional round.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Darrion_Weems.JPG)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

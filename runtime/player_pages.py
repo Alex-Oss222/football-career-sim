@@ -12,13 +12,17 @@ docs/rebuild_plan.md, "The pages to read", Player):
         the game depth chart for a Jaguar on the active roster, else his slot on
         the season's Week 1 depth chart while nothing since has moved him
     the position statistic (QB passer rating, RB yards per carry, ...) for the
-        active season, from the closed games only (``position_metric``)
+        active season, from the closed games only (``position_metric``), through
+        the week the As of line names
     Staff assessment (only for a player a Jacksonville staff assessed): the
         latest assessment's short summary, two to four sentences with its
-        season figures resolved from the closed games (``resolve_tokens``) and
-        one dated line; no grade is shown (the grades stay in the record). A
-        record whose latest assessment has no short yet shows its staff read
-    Contract (salary by year, where Jacksonville holds the contract)
+        season figures resolved from his closed Jacksonville games
+        (``resolve_tokens``) and one dated line (``date_line``: the date of the
+        view it summarizes, or the original date and the figures' cutoff); no
+        grade is shown (the grades stay in the record). A record whose latest
+        assessment has no short yet shows its staff read
+    Contract (salary by year, where Jacksonville holds the contract; else "Contract
+        not established.")
     Statistics (regular season and playoffs apart, every table led by
         Season, Team, Age and #; the quarterback's column is "Passer rating")
     Awards
@@ -419,18 +423,28 @@ RATE_PARTS = {
 }
 
 
+def jacksonville_block(p, year, kind):
+    """His season block of Jacksonville games: the season's own when every game that season was
+    with Jacksonville, else Jacksonville's part of it (runtime/player_cards.club_blocks), dated
+    through his last Jacksonville game when he went on to another club; None when he has no such
+    game."""
+    season = p["seasons"].get(year) or {}
+    if season.get("clubs") == [JAX]:
+        return season.get(kind)
+    return ((season.get("by_club") or {}).get(JAX) or {}).get(kind)
+
+
 def token_value(p, year, kind, measure, fmt):
-    """(text, block) for one season-figure token, from his closed games that season. Refused (a
-    ValueError) when he has no such season, a field is not in every game's record, a rate has no
-    attempts, or that season was not entirely with Jacksonville: the figures are his
-    Jacksonville record."""
+    """(text, block) for one season-figure token, from his closed Jacksonville games that season
+    (the figures are his Jacksonville record: a season he also played for another club counts
+    only its Jacksonville games). Refused (a ValueError) when he has no such game, a field is not
+    in every game's record or a rate has no attempts."""
     if p is None:
         raise ValueError("no game records")
-    block = (p["seasons"].get(year) or {}).get(kind)
+    block = jacksonville_block(p, year, kind)
     if not block:
-        raise ValueError("no %d %s games on record" % (year, "regular-season" if kind == "regular" else "playoff"))
-    if p["seasons"][year]["clubs"] != [JAX]:
-        raise ValueError("the %d figures are not all with Jacksonville (%s)" % (year, ", ".join(p["seasons"][year]["clubs"])))
+        raise ValueError("no %d %s games with Jacksonville on record"
+                         % (year, "regular-season" if kind == "regular" else "playoff"))
     totals, available = block["totals"], block["available"]
     if measure in people.RATES:
         if fmt:
@@ -482,15 +496,37 @@ def resolve_tokens(ctx, p, text):
     return out, used
 
 
-def date_line(original, used):
-    """The staff assessment's dated line: its original date, and when a figure in it comes from
-    games after that date, the season and the latest game day those figures cover."""
+def view_date(record, a, root=ROOT):
+    """The date of the staff view a short summarizes: the latest of the dates of the assessments
+    it summarizes and of their dated updates, no later than the short's own date (the day the
+    summary was written, which is not itself an assessment)."""
+    short = a["short"]
+    wanted = {(i["season"], i["stage"]) for i in short["summarizes"]}
+    dates = []
+    for x in record["assessments"]:
+        if (x["season"], x["stage"]) in wanted:
+            dates.append(people.assessment_date(x, root))
+            dates += [u["date"] for u in x.get("updates", ()) if u["date"] <= short["date"]]
+    return max(dates)
+
+
+def date_line(original, used, view=None):
+    """The staff assessment's dated line. With no figure from games after the assessment's date:
+    "Staff view," and the date of the view it summarizes (``view_date``; the assessment's own
+    date when it has no dated update). With such figures: the assessment's original date, the
+    season and the latest game day those figures cover, as the user's preview words it; should
+    those figures end before the view's date (he left Jacksonville before it), the view's date
+    leads instead, so the line is never dated before what the summary draws on."""
+    view = view or original
     later = [(y, through) for y, _kind, through in used if through > original]
     if not later:
-        return "Staff view, %s." % long_date(original)
+        return "Staff view, %s." % long_date(view)
     season = max(y for y, _ in later)
-    cutoff = date.fromisoformat(max(t for y, t in later if y == season))
+    last = max(t for y, t in later if y == season)
+    cutoff = date.fromisoformat(last)
     when = ("%s %d" % (cutoff.strftime("%B"), cutoff.day) if cutoff.year == season else long_date(cutoff))
+    if view > last:
+        return "Staff view, %s; %d results current through %s." % (long_date(view), season, when)
     return "Staff assessment originally dated %s; %d results current through %s." % (long_date(original), season, when)
 
 
@@ -518,7 +554,7 @@ def staff_view(ctx, record, p, target):
         text, used = resolve_tokens(ctx, p, short["text"])
     except ValueError as exc:
         raise ValueError("%s: staff assessment token %s" % (record["name"], exc)) from None
-    return text, date_line(people.assessment_date(a, ctx.root), used)
+    return text, date_line(people.assessment_date(a, ctx.root), used, view_date(record, a, ctx.root))
 
 
 def assessment_errors(ctx):
@@ -536,8 +572,8 @@ def assessment_errors(ctx):
             continue
         try:
             text, used = resolve_tokens(ctx, ctx.league_player(record), a["short"]["text"])
-            date_line(people.assessment_date(a, ctx.root), used)
-        except ValueError as exc:
+            date_line(people.assessment_date(a, ctx.root), used, view_date(record, a, ctx.root))
+        except (ValueError, KeyError, TypeError) as exc:
             errors.append("%s: %s" % (label, exc))
             continue
         errors += people.text_errors(label, text, ctx.root, resolved=True)
@@ -607,13 +643,23 @@ METRICS = {
 DEFENSIVE = ("DL", "LB", "DB")
 
 
-def position_metric(ctx, p, pos):
+def period_week(ctx, year, gtype, week):
+    """The week a partial season's figures are labelled through: the page's own cutoff (the week
+    its As of line names, ``week``) when that is a week of this game type, else the latest such
+    week in the game records (the regular season's last week once the playoffs have begun)."""
+    if week is not None and (week in ROUND_NAMES) == (gtype == "playoffs"):
+        return week
+    return ctx.latest_week.get((year, gtype))
+
+
+def position_metric(ctx, p, pos, week=None):
     """(label, value, period) of his position's statistic in the active season, from the closed
     games only (the template's list: QB passer rating, RB and FB yards per carry, WR and TE yards
     per target, a lineman's sacks, a linebacker's tackles, a defensive back's passes defended, the
     kicker's field-goal percentage, the punter's net average, the long snapper's long snaps, an
     offensive lineman's sacks allowed), or None: no game this season, no attempt, a field not in
-    every game's record, or no value."""
+    every game's record, or no value. A partial season reads through ``week``, the week the
+    page's As of line names (``period_week``)."""
     group = player_cards.GROUP_OF.get(pos)
     if p is None or group not in METRICS:
         return None
@@ -637,7 +683,7 @@ def position_metric(ctx, p, pos):
     if ctx.complete.get(ctx.active, True):
         period = str(ctx.active)
     else:
-        period = "%d, through Week %d" % (ctx.active, ctx.latest_week[(ctx.active, "regular")])
+        period = "%d, through Week %d" % (ctx.active, period_week(ctx, ctx.active, "regular", week))
     return label, value, period
 
 
@@ -706,18 +752,28 @@ def page_date(ctx, record, p, controlled):
     return (max(dated), None) if dated else (None, None)
 
 
+def page_week(ctx, team, when):
+    """The week of the page's As of date for ``team``, or None."""
+    return ctx.weeks.get((team, when)) if team else None
+
+
 def week_text(ctx, team, when):
-    week = ctx.weeks.get((team, when)) if team else None
+    week = page_week(ctx, team, when)
     if week is None:
         return ""
     return ", after %s" % (ROUND_NAMES[week] if week in ROUND_NAMES else "Week %d" % week)
 
 
+NO_CONTRACT = "Contract not established."
+
+
 def contract_view(ctx, record, controlled):
-    """(line, rows) for a contract Jacksonville holds, else None."""
+    """(line, rows) of the Contract section: the terms and salary by year of a contract
+    Jacksonville holds, else the template's "not established" line and no rows (the records hold
+    no other club's contract)."""
     f = ctx.finances.get(record["name"])
     if not controlled or not f or f.get("former_player") or f.get("control") not in ("signed",):
-        return None
+        return NO_CONTRACT, []
     term = f.get("term", "")
     m = re.match(r"^(\d+) / (\d{4})", term)
     if term.startswith("Weekly"):
@@ -738,8 +794,9 @@ def contract_view(ctx, record, controlled):
     return line, rows
 
 
-def stats_view(ctx, p):
-    """The statistics section's tables for one league player."""
+def stats_view(ctx, p, week=None):
+    """The statistics section's tables for one league player; a partial season's row reads
+    through ``week``, the week the page's As of line names (``period_week``)."""
     out = {}
     group = p["group"]
     for gtype in ("regular", "playoffs"):
@@ -760,9 +817,10 @@ def stats_view(ctx, p):
             for year, s in seasons:
                 label = str(year)
                 if year == ctx.active and not ctx.complete.get(year, True):
-                    week = ctx.latest_week.get((year, gtype))
-                    if week:
-                        label += " (through %s)" % (ROUND_NAMES[week] if week in ROUND_NAMES else "Week %d" % week)
+                    through = period_week(ctx, year, gtype, week)
+                    if through:
+                        label += " (through %s)" % (ROUND_NAMES[through] if through in ROUND_NAMES
+                                                    else "Week %d" % through)
                 rows.append([label, ", ".join(club_short(c) for c in s["clubs"]),
                              N_A if s.get("age") is None else s["age"],
                              N_A if s.get("number") is None else s["number"]]
@@ -812,6 +870,7 @@ def render(ctx, record, target):
     else:
         team, pos = JAX, (a or {}).get("position", "")
     when, when_team = page_date(ctx, record, p, controlled)
+    cutoff = page_week(ctx, when_team, when)
     born = birth_date(ctx, record, p)
     head = [team, POSITION_NAMES.get(pos, pos)]
     if p and p["number"] is not None:
@@ -832,20 +891,18 @@ def render(ctx, record, target):
     assignment = current_assignment(ctx, record, p, controlled)
     if assignment:
         lines += ["**Current assignment:** %s." % assignment, ""]
-    metric = position_metric(ctx, p, pos)
+    metric = position_metric(ctx, p, pos, cutoff)
     if metric:
         lines += ["**%s:** %s (%s)." % metric, ""]
     view = staff_view(ctx, record, p, target)
     if view:
         lines += ["## Staff assessment", "", view[0], "", "*%s*" % view[1], ""]
-    contract = contract_view(ctx, record, controlled)
-    if contract:
-        line, rows = contract
-        lines += ["## Contract", "", line, ""]
-        if rows:
-            lines += [table(["Year", "Base salary", "Cap charge"], rows, numeric_from=1), ""]
+    line, rows = contract_view(ctx, record, controlled)
+    lines += ["## Contract", "", line, ""]
+    if rows:
+        lines += [table(["Year", "Base salary", "Cap charge"], rows, numeric_from=1), ""]
     lines += ["## Statistics", ""]
-    stats = stats_view(ctx, p) if p else {"regular": None, "playoffs": None}
+    stats = stats_view(ctx, p, cutoff) if p else {"regular": None, "playoffs": None}
     for gtype, heading, empty in (("regular", "Regular season", "No regular-season games on record."),
                                   ("playoffs", "Playoffs", "No playoff games on record.")):
         lines += ["### " + heading, ""]
@@ -935,8 +992,8 @@ def jaguars_index(ctx, rids):
     current.sort(key=lambda r: (order.get(ctx.roster[r["name"]][0], 99), names.index(r["name"])))
     lines = ["# Jacksonville Jaguars players, %d" % ctx.active, "",
              "Every player Jacksonville controls, by position, and the players who left after their %d staff "
-             "assessment. Each page has the staff assessment, the contract, the statistics, the awards and the "
-             "transactions." % ctx.active, ""]
+             "assessment. Each page has the staff assessment, the contract where one is established, the "
+             "statistics, the awards and the transactions." % ctx.active, ""]
     if ctx.jax_latest:
         lines += ["As of %s%s." % (long_date(ctx.jax_latest), week_text(ctx, JAX, ctx.jax_latest)), ""]
     lines += ["## Current players", "",
@@ -1044,9 +1101,13 @@ def check(root=ROOT):
 def write(root=ROOT):
     """Create the records of players new to the game records (identity only), then write every
     page and remove the folders' other files. Returns (records created, pages written, files
-    removed)."""
+    removed). Refused before anything is written (a ValueError naming each cause) while a staff
+    assessment, a role label or a Week 1 slot cannot be built (``assessment_errors``)."""
     root = Path(root).resolve()
     ctx = Context(root)
+    refused = assessment_errors(ctx)
+    if refused:  # nothing is written while a staff assessment or an assignment cannot be built
+        raise ValueError("player pages not written:\n" + "\n".join(refused))
     _, missing = build(ctx=ctx)
     taken = set(ctx.records)
     created = 0

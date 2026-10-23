@@ -8,7 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jemea Thomas joined Jacksonville as a sixth-round pick in 2014 and has been on the practice squad since the final roster cuts, with no regular-season game. He is a compact, versatile defensive back who played both safety spots and slot corner at Georgia Tech, led the team in tackles in 2013 and has return and coverage-unit experience. Versatility, change of direction and football sense are his strengths, while his height and length limit him outside.
+Jemea Thomas is a rookie defensive back, a compact and versatile senior who played both safety spots and slot corner at Georgia Tech, led the team in tackles in 2013 and has return and coverage-unit experience. Versatility, change of direction and football sense are his strengths, while his height and length limit him outside.
 
 *Staff view, May 11, 2014.*
 

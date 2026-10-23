@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Casey Kreiter, an undrafted rookie from Iowa signed to compete with Jeremy Cain, was the long snapper Jacksonville kept at the final roster cut, and he has handled 48 long snaps in five games in 2014. He arrived after four seasons of Big Ten snapping with technique and snap accuracy as his best tools, and in camp he kept the punt operation clean against a controlled rush. Athleticism, speed and change of direction are his main limitations, and the staff judged every part of his game below an NFL starter's standard when he signed.
+Casey Kreiter, a rookie long snapper from Iowa signed to compete with Jeremy Cain, has handled 48 long snaps in five games in 2014. He arrived after four seasons of Big Ten snapping with technique and snap accuracy as his best tools, and in camp he kept the punt operation clean against a controlled rush. Athleticism, speed and change of direction are his main limitations, and the staff judged every part of his game below an NFL starter's standard when he signed.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

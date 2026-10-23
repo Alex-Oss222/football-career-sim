@@ -12,6 +12,10 @@ As of January 5, 2014, after the Wild Card round.
 
 **Current assignment:** Reserve free safety.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

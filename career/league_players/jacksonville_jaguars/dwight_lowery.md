@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 Dwight Lowery has been a viable NFL starter at safety for Jacksonville, starting beside Bacarri Rambo in 2013 and dressing for all 16 regular-season games and two playoff games. He steadies the coverage with his communication, positioning and recognition of route combinations, and in 2013 camp he was the cleanest and most stabilizing communicator among the safeties. His anticipation and clean operation make up for ordinary recovery speed, and his man coverage in the slot is below a starter's standard.
 
-*Staff view, March 31, 2014.*
+*Staff view, September 8, 2014.*
 
 ## Contract
 

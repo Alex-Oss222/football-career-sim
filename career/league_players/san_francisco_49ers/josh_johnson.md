@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:Commanders_Training_Camp_-_54752501999.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

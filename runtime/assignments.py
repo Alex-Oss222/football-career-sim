@@ -3,7 +3,8 @@
 A player's current assignment is one plain, confirmed role. For a Jaguar it comes from the game
 depth chart (``depth``, ``positions``, ``roles``) and Stone's dated role decisions on the working
 chart (``stone_role_decisions``), the owners the depth chart page renders
-(scripts/render_club_pages.depth_chart_page), so the two pages can never disagree. For another
+(scripts/render_club_pages.depth_chart_page), so the two pages can never disagree; a Jaguar with
+no seat, label or named role has none, as the depth chart page infers no unnamed reserve role. For another
 club's player it comes from his slot on the season's Week 1 depth chart (the library entry's
 ``slots``), when nothing since has moved him (runtime/player_pages.current_assignment decides
 that). Injuries do not change an assignment until the chart changes.
@@ -149,9 +150,11 @@ def position_words(position):
 
 
 def jacksonville_assignment(name, chart, working):
-    """The one plain role the club's records confirm for a Jaguar on the game depth chart, or None
-    when he is not on it. A seat first, then Stone's dated label, then his game role, then the
-    dime seat and the second quarterback, else a reserve at his chart position."""
+    """The one plain role the club's records confirm for a Jaguar on the game depth chart, or None.
+    A seat first, then Stone's dated label, then his game role, then the dime seat and the second
+    quarterback (the page's QB2). A player with none of these has no confirmed role: like the depth
+    chart page, which does not infer a reserve assignment that has not been named from the order,
+    his page shows no line."""
     depth = (chart or {}).get("depth") or {}
     positions = (chart or {}).get("positions") or {}
     if not any(name in (names or ()) for names in depth.values()):
@@ -189,7 +192,7 @@ def jacksonville_assignment(name, chart, working):
     quarterbacks = depth.get("QB") or []
     if len(quarterbacks) > 1 and quarterbacks[1] == name:
         return "Backup quarterback"
-    return "Reserve " + position_words(positions.get(name))
+    return None
 
 
 # ------------------------------------------------------------------ other clubs

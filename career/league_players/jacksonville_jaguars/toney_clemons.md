@@ -8,9 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Toney Clemons was a reserve receiver who moved into Jacksonville's third-receiver job in the second week of 2013 while Justin Blackmon was out, and he was active for all 16 regular-season games with five touchdown catches. He brought more vertical value than route polish, and he kept the concepts intact when his role grew. He needed cleaner adjustments to coverage and more dependable catching to claim a larger job. Jacksonville withdrew his unsigned exclusive-rights tender in August 2014.
+Toney Clemons was a reserve receiver who moved into Jacksonville's third-receiver job in the second week of 2013 while Justin Blackmon was out, and he was active for all 16 regular-season games with five touchdown catches. He brought more vertical value than route polish, and he kept the concepts intact when his role grew. He needed cleaner adjustments to coverage and more dependable catching to claim a larger job.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

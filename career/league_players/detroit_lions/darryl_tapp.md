@@ -10,6 +10,10 @@ As of October 5, 2014, after Week 5.
 
 *Photo: MC2 MATTHEW D. LEISTIKOW. Cropped by User:Blueag9 ., Public domain ([source](https://commons.wikimedia.org/wiki/File:Darryl_Tapp-Mar-24-08-Naval-BaseLittleCreek.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

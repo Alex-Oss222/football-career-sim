@@ -8,9 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Ryan Davis earned the fourth edge-rusher job in Jacksonville's 2013 rotation with his rush finishes in the preseason, dressed for 15 regular-season games and both playoff games, and was waived at the final roster cut in 2014. The staff saw a developmental situational pass rusher with a useful first step, edge speed and pursuit. His edge anchor against the run and his ability to defeat blocks needed to catch up to that movement.
+Ryan Davis earned the fourth edge-rusher job in Jacksonville's 2013 rotation with his rush finishes in the preseason, and he dressed for 15 regular-season games and both playoff games. The staff saw a developmental situational pass rusher with a useful first step, edge speed and pursuit. His edge anchor against the run and his ability to defeat blocks needed to catch up to that movement.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

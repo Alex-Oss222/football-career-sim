@@ -12,6 +12,10 @@ As of January 12, 2014, after the Divisional round.
 
 **Current assignment:** Reserve right tackle.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -8,9 +8,13 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-John Parker Wilson was Jacksonville's third quarterback in 2013, active for four regular-season games without attempting a pass, and was waived at the 2014 final cuts. His value is clean execution of a defined menu: his 2013 spring work was assignment-sound, he ran the cleaner passing operation in the final 2013 preseason game, and he kept the corrected Sprint Flood launch depth in the 2014 camp. Pressure decisions are the weakest part of his game, and the staff would trust his preparation before asking him to create offense under disruption.
+John Parker Wilson was Jacksonville's third quarterback in 2013, active for four regular-season games. His value is clean execution of a defined menu: his 2013 spring work was assignment-sound, he ran the cleaner passing operation in the final 2013 preseason game, and he kept the corrected Sprint Flood launch depth in the 2014 camp. Pressure decisions are the weakest part of his game, and the staff would trust his preparation before asking him to create offense under disruption.
 
-*Staff view, March 31, 2014.*
+*Staff view, August 1, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

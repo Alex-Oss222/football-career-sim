@@ -10,15 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jordan_Poyer_2021_(cropped).jpg)).*
 
-**Current assignment:** Reserve cornerback.
-
 **Passes defended:** 2 (2014, through Week 5).
 
 ## Staff assessment
 
 Jordan Poyer held Jacksonville's nickel job as a rookie in 2013, dressing for all 16 regular-season games and both playoff games, and held the nickel in the starting defense in 2014 until he was hurt against Indianapolis. He sorts routes and keeps his leverage through communication, and he corrects himself, having found his own footwork fault as a rookie. His outside recovery speed, press power and size at the catch point trail his short-area recognition, and how he recovers when a route beats his leverage is still an open question.
 
-*Staff view, March 31, 2014.*
+*Staff view, October 4, 2014.*
 
 ## Contract
 

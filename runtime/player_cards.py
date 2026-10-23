@@ -7,7 +7,8 @@ images are no longer drawn. This module keeps what the pages read through:
 - ``card_data``: every player in the game records (2013 and 2014), keyed by gsis id, with the
   club of his latest game, his clubs, age on each season's opening game and number by season
   (``season_number``), and a block per season and game type (regular season, playoffs) holding
-  his games, the totals of every recorded field and which later-record fields every game carries;
+  his games, the totals of every recorded field and which later-record fields every game carries
+  (a season with more than one club also keeps each club's blocks apart, ``by_club``);
 - ``Identity``: the committed identity sources (the identity map, the birth-date owners in the
   order of runtime/people.READ_THROUGH: the user's canon overrides through runtime/player_bios.py,
   the reviewed corrections, the registry, the 2014 Week 1 rosters and the league player
@@ -283,10 +284,10 @@ def tiles_for(group, rows, long_seen):
             ("REC", fi(gv("receptions"))), per_game("OFF SNAPS/G", "offensive_snaps")]
 
 
-def window_dates(club_games, year, gtype, rows):
-    """The dates of his clubs' games that season while he was theirs, as far as the record shows:
-    each club from his first game with it (the first club from the season's start) until his
-    first game with the next club."""
+def club_windows(club_games, year, gtype, rows):
+    """[(club, dates)] in the order he played for them that season: the dates of each club's games
+    while he was theirs, as far as the record shows: from his first game with it (the first club
+    from the season's start) until his first game with the next club."""
     order = []
     for r in sorted(rows, key=lambda r: (r["date"], r["week"])):
         if not order or order[-1][0] != r["team"]:
@@ -295,8 +296,34 @@ def window_dates(club_games, year, gtype, rows):
     out = []
     for i, (club, start) in enumerate(order):
         end = order[i + 1][1] if i + 1 < len(order) else None
-        out += [d for d in club_games.get((year, gtype, club), []) if (i == 0 or d >= start) and (end is None or d < end)]
-    return sorted(out)
+        out.append((club, [d for d in club_games.get((year, gtype, club), [])
+                           if (i == 0 or d >= start) and (end is None or d < end)]))
+    return out
+
+
+def window_dates(club_games, year, gtype, rows):
+    """The dates of his clubs' games that season while he was theirs (``club_windows``)."""
+    return sorted(d for _club, dates in club_windows(club_games, year, gtype, rows) for d in dates)
+
+
+def club_blocks(group, club_games, year, rows, long_seen):
+    """{club: {game type: block}} of a season he played for more than one club: each club's games
+    and figures apart. A club he went on to leave covers his games with it up to his last game
+    there, so its figures are dated no later than he played for it."""
+    out = {}
+    for gtype in ("regular", "playoffs"):
+        gr = [r for r in rows if r["type"] == gtype]
+        windows = club_windows(club_games, year, gtype, gr) if gr else []
+        for i, (club, dates) in enumerate(windows):
+            mine = [r for r in gr if r["team"] == club]
+            if i + 1 < len(windows):
+                last = max(r["date"] for r in mine)
+                dates = [d for d in dates if d <= last]
+            out.setdefault(club, {})[gtype] = block(group, mine, dates, long_seen)
+    for club in out:
+        for gtype in ("regular", "playoffs"):
+            out[club].setdefault(gtype, None)
+    return out
 
 
 def window_games(club_games, year, gtype, rows):
@@ -567,6 +594,8 @@ def card_data(root=ROOT):
                 s[gtype] = block(group, gr, dates, long_seen)
                 career_rows[gtype].extend(gr)
                 career_dates[gtype] += dates
+            if len(s["clubs"]) > 1:
+                s["by_club"] = club_blocks(group, club_games, year, yr, long_seen)
             seasons[year] = s
         career = {g: block(group, career_rows[g], career_dates[g], long_seen) for g in ("regular", "playoffs")}
         through = max(b["through"] for b in career.values() if b)

@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve linebacker.
 
-**Tackles:** 6 (2014, through Week 5).
+**Tackles:** 6 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,13 +24,13 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 25 | 56 | 4 | 6 | 2 | 4 | 1 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 25 | 56 | 4 | 6 | 2 | 4 | 1 | 0 | 0 |
 | 2013 | Miami | 24 | 56 | 16 | 11 | 7 | 4 | 1 | 1 | 1 |
 | Career |  |  |  | 20 | 17 | 9 | 8 | 2 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 25 | 56 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 25 | 56 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 24 | 56 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

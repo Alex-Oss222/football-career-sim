@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,13 +24,13 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 30 | 94 | 4 | 4 | 2 | 2 | 0 | 1 | 1 |
+| 2014 (through Week 4) | Miami | 30 | 94 | 4 | 4 | 2 | 2 | 0 | 1 | 1 |
 | 2013 | Miami | 29 | 94 | 16 | 29 | 23 | 6 | 2 | 3 | 6 |
 | Career |  |  |  | 20 | 33 | 25 | 8 | 2 | 4 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 30 | 94 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 30 | 94 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 29 | 94 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

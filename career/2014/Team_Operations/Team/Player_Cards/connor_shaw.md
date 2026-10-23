@@ -8,9 +8,13 @@ As of August 31, 2014.
 
 ## Staff assessment
 
-Connor Shaw signed with Jacksonville as an undrafted rookie from South Carolina in May 2014, worked in camp behind Cousins, Henne and Wilson and was waived at the final cuts. A four-year college starter, he brings mobility, ball security and a record of winning, and he kept the launch-point correction from rookie camp. His arm strength and size are ordinary.
+Connor Shaw is a rookie quarterback from South Carolina who worked the reduced camp menu in 2014. A four-year college starter, he brings mobility, ball security and a record of winning, and he kept the launch-point correction from rookie camp. His arm strength and size are ordinary.
 
-*Staff view, May 11, 2014.*
+*Staff view, August 1, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

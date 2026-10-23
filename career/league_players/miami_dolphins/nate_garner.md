@@ -12,13 +12,17 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve left tackle.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 29 | 75 | 4 | 0 | 0 | 0 | 18 |
+| 2014 (through Week 4) | Miami | 29 | 75 | 4 | 0 | 0 | 0 | 18 |
 | 2013 | Miami | 28 | 75 | 16 | N/A | N/A | 4 | N/A |
 | Career |  |  |  | 20 | N/A | N/A | 4 | N/A |
 

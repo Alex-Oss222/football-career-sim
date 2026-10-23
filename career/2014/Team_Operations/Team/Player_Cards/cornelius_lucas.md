@@ -10,11 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cornelius_Lucas_WFT_2021_training_camp_(cropped).jpg)).*
 
-**Current assignment:** Reserve tackle.
-
 ## Staff assessment
 
-Cornelius Lucas signed with Jacksonville as an undrafted rookie in 2014, made the opening roster as the first reserve tackle and started at right tackle in the preseason game at Chicago. He has been active for five regular-season games, with 23 snaps on special teams. He is a very large tackle with long arms and enough strength for the position. His set is still raw, and he falls short on bend, foot speed and change of direction; in camp his set held except for one rep each in which Andre Branch and Kasim Edebali beat him around the edge.
+Cornelius Lucas is a rookie tackle who has been active for five regular-season games, with 23 snaps on special teams. He is a very large tackle with long arms and enough strength for the position. His set is still raw, and he falls short on bend, foot speed and change of direction; in camp his set landmark held against the rookie rushers, though Andre Branch beat him around the edge once.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

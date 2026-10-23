@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Davante Adams, a 2014 second-round pick, was named the X receiver at the end of the preseason and has been active for five games as a rookie, with 30 catches for 369 yards and two touchdowns. He has a large catch radius and strong hands, and his routes are polished at the top of the stem. His long speed is average, and his release against press was unproven when he was drafted; in camp he won one contact release and lost another to Aqib Talib.
+Davante Adams is a rookie who has played X for Jacksonville, active for five games with 30 catches for 369 yards and two touchdowns. He has a large catch radius and strong hands, and his routes are polished at the top of the stem. His long speed is average, and his release against NFL press was unproven when he arrived; in camp he won one contact release and lost another to Aqib Talib.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

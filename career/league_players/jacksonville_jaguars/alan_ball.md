@@ -10,7 +10,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Alan Ball won Jacksonville's outside cornerback job in the 2013 camp and started the first nine games until he was hurt at Tennessee. Jacksonville signed him again in September 2014 after ten months out of football, and in his two games since, he has been the outside reserve behind Aqib Talib and Alterraun Verner, playing on the kicking game. He is a long outside corner who can handle a defined starting coverage job and communicate exchanges, and the 2013 record charged him with no coverage loss, missed tackle or technique fault. He has a balanced profile, with less playmaking and route anticipation than the better corners.
+Alan Ball won Jacksonville's outside cornerback job in the 2013 camp and started the first nine games until he was hurt. Jacksonville signed him again in September 2014 after ten months out of football, and in his two games since, Stone has made him the outside reserve behind Aqib Talib and Alterraun Verner. He is a long outside corner who can handle a defined starting coverage job and communicate exchanges. He has a balanced profile, with less playmaking and route anticipation than the better corners.
 
 *Staff assessment originally dated September 8, 2014; 2014 results current through October 5.*
 

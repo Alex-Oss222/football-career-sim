@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 8.7 (2014, through Week 5).
+**Yards per target:** 8.7 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,7 +24,7 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 23 | 81 | 4 | 3 | 3 | 26 | 8.7 | 0 | 18 | 6.5 | 100.0 |
+| 2014 (through Week 4) | Oakland | 23 | 81 | 4 | 3 | 3 | 26 | 8.7 | 0 | 18 | 6.5 | 100.0 |
 | 2013 | Oakland | 22 | 81 | 16 | 23 | 14 | 187 | 13.4 | 1 | 71 | 11.7 | 60.9 |
 | Career |  |  |  | 20 | 26 | 17 | 213 | 12.5 | 1 | 71 | 10.7 | 65.4 |
 

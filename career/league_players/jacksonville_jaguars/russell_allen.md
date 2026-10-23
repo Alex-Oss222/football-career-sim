@@ -12,6 +12,10 @@ Russell Allen was a dependable complementary linebacker for Jacksonville in 2013
 
 *Staff view, March 31, 2014.*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

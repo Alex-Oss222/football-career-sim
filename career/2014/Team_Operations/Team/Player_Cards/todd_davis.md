@@ -6,8 +6,6 @@ Born May 17, 1992 · Sacramento State · Undrafted
 
 As of October 5, 2014, after Week 5.
 
-**Current assignment:** Reserve linebacker.
-
 ## Staff assessment
 
 Todd Davis is an undrafted rookie linebacker whose first game-day activation came against Pittsburgh, for additional linebacker and coverage-unit depth, and he has played 18 snaps on special teams. He was a productive inside linebacker at Sacramento State with a downhill style, and the staff sees value in him on the coverage units. Coverage range is the main question, and his college evidence came against FCS competition.

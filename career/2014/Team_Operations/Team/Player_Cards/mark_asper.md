@@ -8,9 +8,13 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-Mark Asper was an interior reserve who dressed for six regular-season games for Jacksonville in 2013 and was waived at the final roster cut in 2014. From the tenth week of 2013 Austin Pasztor dressed as the primary interior backup instead, a choice based on Pasztor's practice work, not on any failure of Asper's. No 2013 spring, camp or preseason record named an individual rep of his, and the staff saw size and basic power as his clearest route to a role. In the staff's view his protection coordination, movement and recovery meant he needed a defined backup assignment.
+Mark Asper was an interior reserve who dressed for six regular-season games for Jacksonville in 2013, until Austin Pasztor took over as the primary interior backup on the strength of his own practice work rather than any failure of Asper's. The staff saw size and basic power as his clearest route to a role. In the staff's view his protection coordination, movement and recovery meant he needed a defined backup assignment.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

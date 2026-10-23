@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Mike Brewster took over at center for Jacksonville in the third week of the 2013 season, when Brad Meester was hurt, started the 14 regular-season games and both playoff games he dressed for, and has started five games in 2014. He is a viable starting option at center whose best work is the operation: the snap, the communication and the core protection calls. His anchor, leverage and hand use are less developed than his operation, and he is weakest when he has to climb to the second level.
+Mike Brewster took over at center for Jacksonville during the 2013 season while Brad Meester was hurt, kept the job once Meester was cleared, and has started five games in 2014. He is a viable starting option at center whose best work is the operation: the snap, the communication and the core protection calls. His anchor, leverage and hand use are less developed than his operation, and he is weakest when he has to climb to the second level.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

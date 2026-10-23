@@ -10,11 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andrew_Norwell_2022.jpg)).*
 
-**Current assignment:** Reserve guard.
-
 ## Staff assessment
 
-Andrew Norwell signed with Jacksonville as an undrafted rookie in 2014, competed with Joel Bitonio for the left guard job and made the opening roster as the reserve guard; he has been active for five regular-season games. A three-year college starter at guard, he has a strong upper body and a physical finish, and in camp he carried a combination block with Mike Brewster to the linebacker and handled the protection calls at both guard spots. He is a limited athlete, short on lateral movement and speed.
+Andrew Norwell is an undrafted rookie guard who has been active for five regular-season games. A three-year college starter at guard, he has a strong upper body and a physical finish, and in camp he carried a combination block with Mike Brewster to the linebacker and handled the protection calls at both guard spots. He is a limited athlete, short on lateral movement and speed.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

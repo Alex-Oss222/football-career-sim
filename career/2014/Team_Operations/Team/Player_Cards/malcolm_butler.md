@@ -10,13 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Malcolm_Butler_(American_football).JPG)).*
 
-**Current assignment:** Reserve cornerback.
-
 **Passes defended:** 0 (2014, through Week 5).
 
 ## Staff assessment
 
-Malcolm Butler is a seventh-round rookie from West Alabama, a Division II program, and the staff sees him as an outside corner with a special-teams path; he has played in two games for Jacksonville. His strengths are his ball skills, change of direction and competitive press style, with kick-return experience in college. The jump from Division II competition is his biggest question, and his strength and technique are below an NFL starter's level.
+Malcolm Butler is a rookie corner from a Division II program who has played in two games for Jacksonville. His strengths are his ball skills, change of direction and competitive press style, with kick-return experience in college, and in camp the correction of a late press transition held on the next rep. The jump from Division II competition is his biggest question, and his strength and technique are below an NFL starter's level.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

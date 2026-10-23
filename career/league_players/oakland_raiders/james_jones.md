@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 6.6 (2014, through Week 5).
+**Yards per target:** 6.6 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,13 +24,13 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 30 | 89 | 4 | 29 | 23 | 192 | 8.3 | 2 | 29 | 48.0 | 79.3 |
+| 2014 (through Week 4) | Oakland | 30 | 89 | 4 | 29 | 23 | 192 | 8.3 | 2 | 29 | 48.0 | 79.3 |
 | 2013 | Green Bay | 29 | 89 | 16 | 63 | 36 | 381 | 10.6 | 2 | 52 | 23.8 | 57.1 |
 | Career |  |  |  | 20 | 92 | 59 | 573 | 9.7 | 4 | 52 | 28.6 | 64.1 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 30 | 89 | 2 | 39 | 1 | 1 | 1 |
+| 2014 (through Week 4) | Oakland | 30 | 89 | 2 | 39 | 1 | 1 | 1 |
 | 2013 | Green Bay | 29 | 89 | 1 | 1 | 0 | 0 | 0 |
 
 ### Playoffs

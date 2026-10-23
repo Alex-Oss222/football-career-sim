@@ -8,9 +8,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Richard Murphy is a reserve running back who spent 2013 on Jacksonville's practice squad and returned to it after the 2014 final cuts. He has usable movement and handles his receiving assignments; his routes were correct in the 2013 Miami and Atlanta preseason games, and his recorded work in the August 2014 practices was assignment-correct. Pass protection and inside power limit him to a specific complementary job.
+Richard Murphy is a reserve running back who spent 2013 on Jacksonville's practice squad. He has usable movement and handles his receiving assignments; his routes were correct in the 2013 Miami and Atlanta preseason games, and he was assignment-correct in the developmental backfields in the August 2014 practices. Pass protection and inside power limit him to a specific complementary job.
 
-*Staff view, March 31, 2014.*
+*Staff view, August 18, 2014.*
 
 ## Contract
 

@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 3.1 (2014, through Week 5).
+**Yards per carry:** 3.1 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,11 +24,11 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 22 | 34 | 4 | 9 | 28 | 3.1 | 0 | 8 | 7.0 |
+| 2014 (through Week 4) | Miami | 22 | 34 | 4 | 9 | 28 | 3.1 | 0 | 8 | 7.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 22 | 34 | 1 | 1 | 9 | 9.0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 22 | 34 | 1 | 1 | 9 | 9.0 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 92.0 (2014, through Week 5).
+**Passer rating:** 92.0 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,11 +24,11 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 23 | 4 | 4 | 110 | 160 | 68.8 | 1,133 | 7.1 | 283.2 | 9 | 6 | 92.0 |
+| 2014 (through Week 4) | Oakland | 23 | 4 | 4 | 110 | 160 | 68.8 | 1,133 | 7.1 | 283.2 | 9 | 6 | 92.0 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 23 | 4 | 14 | 101 | 15 | 74 | 0 | 1 | 1 |
+| 2014 (through Week 4) | Oakland | 23 | 4 | 14 | 101 | 15 | 74 | 0 | 1 | 1 |
 
 ### Playoffs
 

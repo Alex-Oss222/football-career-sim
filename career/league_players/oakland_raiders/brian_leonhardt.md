@@ -12,13 +12,17 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve tight end.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 24 | 87 | 4 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 4) | Oakland | 24 | 87 | 4 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

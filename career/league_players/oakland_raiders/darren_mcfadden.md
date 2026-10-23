@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 3.8 (2014, through Week 5).
+**Yards per carry:** 3.8 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,18 +24,18 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 27 | 20 | 4 | 62 | 233 | 3.8 | 1 | 42 | 58.2 |
+| 2014 (through Week 4) | Oakland | 27 | 20 | 4 | 62 | 233 | 3.8 | 1 | 42 | 58.2 |
 | 2013 | Oakland | 26 | 20 | 15 | 256 | 1,060 | 4.1 | 11 | 30 | 70.7 |
 | Career |  |  |  | 19 | 318 | 1,293 | 4.1 | 12 | 42 | 68.1 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 27 | 20 | 27 | 23 | 273 | 11.9 | 1 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 27 | 20 | 27 | 23 | 273 | 11.9 | 1 | 0 | 0 |
 | 2013 | Oakland | 26 | 20 | 61 | 41 | 413 | 10.1 | 0 | 2 | 2 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 27 | 20 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 4) | Oakland | 27 | 20 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Oakland | 26 | 20 | 0 | 0 | N/A | 2 | 12 | 6.0 |
 
 ### Playoffs

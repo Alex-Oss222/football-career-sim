@@ -12,9 +12,13 @@ As of December 29, 2013, after Week 17.
 
 ## Staff assessment
 
-Mike Brown was a reserve receiver for Jacksonville in 2013, active for nine regular-season games with 12 catches for 112 yards, and Jacksonville withdrew his unsigned exclusive-rights tender in August 2014. He was a short-area receiver who could work underneath routes and add a little after the catch, and he caught all five passes thrown to him in the 2013 San Diego game. The staff saw him as depth rather than a receiver to feature against press or at the catch point, and he was a weak blocker.
+Mike Brown was a reserve receiver for Jacksonville in 2013, active for nine regular-season games with 12 catches for 112 yards. He was a short-area receiver who could work underneath routes and add a little after the catch, and he caught all five passes thrown to him in the 2013 San Diego game. The staff saw him as depth rather than a receiver to feature against press or at the catch point, and he was a weak blocker.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

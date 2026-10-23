@@ -8,9 +8,13 @@ As of August 31, 2014.
 
 ## Staff assessment
 
-Tyler Larsen signed with Jacksonville as an undrafted rookie center in May 2014 and was waived at the final roster cut without playing a regular-season game. He came from Utah State as a four-year college starting center with a thick frame, and his strength and anchor were at an NFL starter's standard. His speed, movement and overall athletic ability were modest.
+Tyler Larsen is an undrafted rookie center from Utah State, a four-year college starter with a thick frame whose strength and anchor were at an NFL starter's standard. His speed, movement and overall athletic ability were modest.
 
 *Staff view, May 11, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

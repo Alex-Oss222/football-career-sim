@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 4 (2014, through Week 5).
+**Passes defended:** 4 (2014, through Week 4).
 
 ## Staff assessment
 
@@ -20,24 +20,28 @@ Brent Grimes was a strong starting cornerback for Jacksonville in 2013, dressing
 
 *Staff view, January 14, 2014.*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 31 | 21 | 4 | 24 | 18 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 31 | 21 | 4 | 24 | 18 | 6 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 30 | N/A | 16 | 67 | 44 | 23 | 5 | 0 | 0 |
 | Career |  |  |  | 20 | 91 | 62 | 29 | 5 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 31 | 21 | 1 | 11 | 4 | 1 | 1 | 0 |
+| 2014 (through Week 4) | Miami | 31 | 21 | 1 | 11 | 4 | 1 | 1 | 0 |
 | 2013 | Jacksonville | 30 | N/A | 2 | 36 | 5 | 1 | 1 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 31 | 21 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 4) | Miami | 31 | 21 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 30 | N/A | 4 | 91 | 22.8 | 2 | 10 | 5.0 |
 
 ### Playoffs

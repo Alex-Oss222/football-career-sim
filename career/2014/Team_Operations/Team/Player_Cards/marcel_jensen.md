@@ -6,13 +6,11 @@
 
 As of October 5, 2014, after Week 5.
 
-**Current assignment:** Reserve tight end.
-
 **Yards per target:** 10.0 (2014, through Week 5).
 
 ## Staff assessment
 
-Marcel Jensen is an undrafted rookie from Fresno State with no established NFL standing, and he has been active for five games as Jacksonville's third tight end in 2014. He is a big, strong tight end with the size for attached blocking, and in camp he was assignment-correct in that work, with a mixed finish. Receiving is his main limitation, with modest production in a pass-heavy college offense, and his speed and change of direction are below an NFL starter's standard.
+Marcel Jensen is a rookie tight end from Fresno State with no established NFL standing, and he has been active for five games for Jacksonville in 2014. He is a big, strong tight end with the size for attached blocking, and in camp he was assignment-correct in that work, with a mixed finish. Receiving is his main limitation, with modest production in a pass-heavy college offense, and his speed and change of direction are below an NFL starter's standard.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

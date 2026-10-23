@@ -8,7 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Tyler Bray is a developmental quarterback whom Jacksonville drafted in 2013; he spent that season on the practice squad and returned to it after the 2014 final cuts. His arm is the strongest part of his game, and his cadence and footwork improved in 2013. His command of the offense trails that arm, with his timing running late when the defense changed its look and his protection answers still catching up.
+Tyler Bray is a developmental quarterback who spent the 2013 season on Jacksonville's practice squad. His arm is the strongest part of his game, and his cadence and footwork improved in 2013. His command of the offense trails that arm, with his timing running late when the defense changed its look and his protection answers still catching up.
 
 *Staff view, March 31, 2014.*
 

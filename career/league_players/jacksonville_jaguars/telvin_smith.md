@@ -10,13 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jacksonville Sheriff's Office, Public domain ([source](https://commons.wikimedia.org/wiki/File:Telvin_Smith.png)).*
 
-**Current assignment:** Reserve linebacker.
-
 **Tackles:** 2 (2014, through Week 5).
 
 ## Staff assessment
 
-Telvin Smith is a fourth-round rookie whom the staff projected first as a coverage linebacker and special-teams player, and he has made four special-teams tackles in five games. His case is speed, range, pursuit and ball skills: he played weak-side linebacker at Florida State in 2013 and ran the second-fastest forty among linebackers at the combine. His lean frame is the question against blockers in the run game; in camp he followed the flow on a counter and left the wrap gap, then fit the same misdirection correctly after the correction.
+Telvin Smith is a rookie linebacker who has made four special-teams tackles in five games. His case is speed, range, pursuit and ball skills: he played weak-side linebacker at Florida State in 2013 and ran the second-fastest forty among linebackers at the combine. His lean frame is the question against blockers in the run game; in camp he followed the flow on a counter and left the wrap gap, then fit the same misdirection correctly after the correction.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

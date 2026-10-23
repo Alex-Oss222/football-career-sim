@@ -6,13 +6,11 @@
 
 As of October 5, 2014, after Week 5.
 
-**Current assignment:** Reserve defensive end.
-
 **Sacks:** 1 (2014, through Week 5).
 
 ## Staff assessment
 
-Daniel Te'o-Nesheim signed with Jacksonville as a free agent in March 2014 after playing for Tampa Bay in 2013, and he has been active for five games in 2014. He is a power-oriented edge reserve suited to a defined run-setting assignment, more useful setting the edge and holding contain than rushing the passer. His get-off, bend around the corner and counter moves are below a starter's standard.
+Daniel Te'o-Nesheim has been active for five games in his first season with Jacksonville. He is a power-oriented edge reserve suited to a defined run-setting assignment, more useful setting the edge and holding contain than rushing the passer. His get-off, bend around the corner and counter moves are below a starter's standard.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

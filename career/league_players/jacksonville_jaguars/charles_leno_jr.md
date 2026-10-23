@@ -6,11 +6,9 @@
 
 As of October 5, 2014, after Week 5.
 
-**Current assignment:** Reserve tackle.
-
 ## Staff assessment
 
-Jacksonville drafted Charles Leno Jr. in the fifth round in 2014, and he made the opening roster as a reserve tackle; he has been active for five regular-season games. A four-year college starter who finished at left tackle, he moves well in a short area and has a long frame. His strength is light for the position, and his anchor is the staff's biggest concern.
+Charles Leno Jr. is a rookie tackle who has been active for five regular-season games. A four-year college starter who finished at left tackle, he moves well in a short area and has a long frame. His strength is light for the position, and his anchor is the staff's biggest concern.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

@@ -12,6 +12,10 @@ As of February 2, 2014, after the Super Bowl.
 
 **Current assignment:** Reserve cornerback.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

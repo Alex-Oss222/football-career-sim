@@ -10,6 +10,10 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Cotton Puryear, Virginia National Guard Public Affairs, Public domain ([source](https://commons.wikimedia.org/wiki/File:Demetrius_McCray_(20941753029)_(cropped).jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

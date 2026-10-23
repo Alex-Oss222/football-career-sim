@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve defensive end.
 
-**Tackles:** 4 (2014, through Week 5).
+**Tackles:** 4 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,13 +24,13 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 23 | 95 | 4 | 4 | 1 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 23 | 95 | 4 | 4 | 1 | 3 | 0 | 0 | 0 |
 | 2013 | Seattle | 22 | 95 | 16 | 5 | 3 | 2 | 0 | 0 | 0 |
 | Career |  |  |  | 20 | 9 | 4 | 5 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 23 | 95 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 23 | 95 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Seattle | 22 | 95 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

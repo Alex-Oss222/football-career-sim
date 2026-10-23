@@ -8,9 +8,13 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Justin Blackmon served a four-game league suspension in 2013 and was active for 10 regular-season games for Jacksonville, carrying the Z workload later in the season, before Jacksonville traded him to Indianapolis with Cecil Shorts in March 2014. He was a physical outside receiver with strong hands, power at the catch point and run-after-catch ability, and he stressed coverage when he was aligned correctly. His alignment and his adjustments to coverage were not consistent enough for him to use those tools on every snap.
+Justin Blackmon served a league suspension in 2013 and was active for 10 regular-season games for Jacksonville, carrying the Z workload later in the season. He was a physical outside receiver with strong hands, power at the catch point and run-after-catch ability, and he stressed coverage when he was aligned correctly. His alignment and his adjustments to coverage were not consistent enough for him to use those tools on every snap.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

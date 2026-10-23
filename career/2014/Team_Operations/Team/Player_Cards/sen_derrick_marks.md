@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Sen'Derrick Marks has proven he is an NFL starting defensive tackle: he dressed for all 16 regular-season games and both playoff games for Jacksonville in 2013, paired inside with Roy Miller, and was named a defensive captain in 2014. He is a penetrating, single-gap tackle whose quick get-off and lateral pursuit can disrupt the pocket and the backfield. He is less effective anchoring against double teams than attacking a single gap.
+Sen'Derrick Marks has proven he is an NFL starting defensive tackle: he dressed for all 16 regular-season games and both playoff games for Jacksonville in 2013, paired inside with Roy Miller. He is a penetrating, single-gap tackle whose quick get-off and lateral pursuit can disrupt the pocket and the backfield. He is less effective anchoring against double teams than attacking a single gap.
 
 *Staff view, March 31, 2014.*
 

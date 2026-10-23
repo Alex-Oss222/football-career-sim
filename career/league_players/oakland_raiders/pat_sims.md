@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting nose tackle.
 
-**Sacks:** 0 (2014, through Week 5).
+**Sacks:** 0 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,13 +24,13 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 28 | 90 | 4 | 10 | 6 | 4 | 0 | 0 | 3 |
+| 2014 (through Week 4) | Oakland | 28 | 90 | 4 | 10 | 6 | 4 | 0 | 0 | 3 |
 | 2013 | Oakland | 27 | 90 | 16 | 48 | 38 | 10 | 5 | 6 | 9 |
 | Career |  |  |  | 20 | 58 | 44 | 14 | 5 | 6 | 12 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 28 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 28 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Oakland | 27 | 90 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

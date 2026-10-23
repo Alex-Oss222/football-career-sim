@@ -10,13 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Corey_Linsley.jpg)).*
 
-**Current assignment:** Reserve center.
-
 ## Staff assessment
 
-Jacksonville drafted Corey Linsley in the fifth round in 2014, and the rookie made the opening roster as the reserve center behind Mike Brewster. He has rare weight-room strength for a center, a strong anchor and a full college season of making the line calls in a power conference, and in camp he made the protection point on time with Chad Henne in every recorded rep. His athletic marks are modest, his arms are short, and reach blocks and movement to the second level are his weakest areas.
+Corey Linsley is a rookie center with rare weight-room strength for the position, a strong anchor and a full college season of making the line calls in a power conference. In camp he worked in the relief pairing with Chad Henne, made the protection point on time with him on every recorded rep and recovered after losing leverage to C.J. Mosley. His athletic marks are modest, his arms are short, and reach blocks and movement to the second level are his weakest areas.
 
-*Staff view, May 11, 2014.*
+*Staff view, August 1, 2014.*
 
 ## Contract
 

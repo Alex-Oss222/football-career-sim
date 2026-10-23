@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 39.6 (2014, through Week 5).
+**Net punting average:** 39.6 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,7 +24,7 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 25 | 7 | 4 | 16 | 771 | 48.2 | 39.6 | 5 | 2 | 62 |
+| 2014 (through Week 4) | Oakland | 25 | 7 | 4 | 16 | 771 | 48.2 | 39.6 | 5 | 2 | 62 |
 | 2013 | Oakland | 24 | 7 | 16 | 86 | 3,828 | 44.5 | 38.1 | 30 | 1 | 61 |
 | Career |  |  |  | 20 | 102 | 4,599 | 45.1 | 38.3 | 35 | 3 | 62 |
 

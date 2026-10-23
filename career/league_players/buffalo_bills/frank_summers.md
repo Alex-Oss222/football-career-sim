@@ -8,6 +8,10 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting fullback.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

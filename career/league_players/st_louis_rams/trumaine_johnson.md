@@ -10,6 +10,10 @@ As of January 12, 2014, after the Divisional round.
 
 *Photo: Johnmaxmena2, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:TrumainJohnson2013.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

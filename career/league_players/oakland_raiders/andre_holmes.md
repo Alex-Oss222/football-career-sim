@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 10.8 (2014, through Week 5).
+**Yards per target:** 10.8 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,7 +24,7 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 26 | 18 | 4 | 4 | 2 | 43 | 21.5 | 0 | 28 | 10.8 | 50.0 |
+| 2014 (through Week 4) | Oakland | 26 | 18 | 4 | 4 | 2 | 43 | 21.5 | 0 | 28 | 10.8 | 50.0 |
 
 ### Playoffs
 

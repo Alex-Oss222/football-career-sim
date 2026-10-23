@@ -12,17 +12,21 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve safety.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 24 | 31 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 24 | 31 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 24 | 31 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 4) | Miami | 24 | 31 | 0 | 0 | 0 | 0 | 0 | 2 |
 
 ### Playoffs
 

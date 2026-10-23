@@ -21,7 +21,8 @@ longer belong to a page are removed. --check writes nothing and fails on a
 record that breaks the schema, a staff assessment whose figures cannot be read
 from the closed games, a role label or Week 1 slot with no page words, an
 award whose winner is not in the game records, a player without a record and
-any page that differs from its rebuild. Run after every closed game and its
+any page that differs from its rebuild; writing refuses, before it writes
+anything, while a staff assessment, role label or Week 1 slot cannot be built. Run after every closed game and its
 awards, after any change to a record and after any depth chart or role change
 (docs/update_workflow.md).
 """

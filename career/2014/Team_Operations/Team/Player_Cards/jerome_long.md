@@ -8,7 +8,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jerome Long is a developmental defensive tackle who spent the 2013 season on Jacksonville's practice squad, signed a reserve/future contract in February 2014 and returned to the practice squad after the 2014 final cuts. He offers size and a basic power role inside. Beating blocks and playing with disciplined technique are bigger questions for him than raw strength, and his hand use and gap discipline are still at a developmental level.
+Jerome Long is a developmental defensive tackle who spent the 2013 season on Jacksonville's practice squad. He offers size and a basic power role inside. Beating blocks and playing with disciplined technique are bigger questions for him than raw strength, and his hand use and gap discipline are still at a developmental level.
 
 *Staff view, March 31, 2014.*
 

@@ -10,8 +10,6 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Seaman Apprentice Marcus Stanley, Public domain ([source](https://commons.wikimedia.org/wiki/File:CJ_Mosley_(defensive_lineman)_2012.jpg)).*
 
-**Current assignment:** Reserve defensive tackle.
-
 **Sacks:** 0 (2014, through Week 5).
 
 ## Staff assessment

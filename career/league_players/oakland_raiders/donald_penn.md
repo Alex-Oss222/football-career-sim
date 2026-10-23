@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 7 (2014, through Week 5).
+**Sacks allowed:** 7 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,7 +24,7 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 31 | 72 | 4 | 4 | 282 | 7 | 20 |
+| 2014 (through Week 4) | Oakland | 31 | 72 | 4 | 4 | 282 | 7 | 20 |
 | 2013 | Tampa Bay | 30 | 70 | 16 | N/A | N/A | 5 | N/A |
 | Career |  |  |  | 20 | N/A | N/A | 12 | N/A |
 

@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 2 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,7 +24,7 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 29 | 64 | 4 | 4 | 277 | 2 | 18 |
+| 2014 (through Week 4) | Miami | 29 | 64 | 4 | 4 | 277 | 2 | 18 |
 | 2013 | Indianapolis | 28 | 64 | 15 | N/A | N/A | 4 | N/A |
 | Career |  |  |  | 19 | N/A | N/A | 6 | N/A |
 

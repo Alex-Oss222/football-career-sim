@@ -6,8 +6,6 @@ Born March 28, 1992 · Texas · Undrafted
 
 As of October 5, 2014, after Week 5.
 
-**Current assignment:** Reserve safety.
-
 **Passes defended:** 0 (2014, through Week 5).
 
 ## Staff assessment

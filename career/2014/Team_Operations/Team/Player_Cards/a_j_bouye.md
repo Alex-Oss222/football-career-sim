@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-A.J. Bouye made Jacksonville as an undrafted rookie in 2013 and was active for 15 regular-season games, earning a coverage-unit job and later serving as the outside reserve. He has played in five games in 2014, and with Jordan Poyer injured he took the nickel for the San Diego and Pittsburgh games, with nothing charged to him on the recorded practice reps in either week. The staff sees a developmental outside corner with enough movement and size at the catch point to compete for a reserve role, and in the walkthrough before the San Diego game he named his contain and replacement jobs without prompting. His press technique and route recognition still trail his physical tools.
+A.J. Bouye was a rookie reserve corner for Jacksonville in 2013, active for 15 regular-season games, earning a coverage-unit job and later serving as the outside reserve. He has played in five games in 2014, and with Jordan Poyer held out he took the nickel for the San Diego and Pittsburgh games. The staff sees a developmental outside corner with enough movement and size at the catch point to compete for a reserve role, and in the walkthrough before the San Diego game he named his contain and replacement jobs without prompting. His press technique and route recognition still trail his physical tools.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

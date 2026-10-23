@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jacksonville drafted Trai Turner in the third round in 2014, and Stone named the rookie his starting right guard on the season depth chart at the final roster cut; he has started five games. He plays with a powerful base, a strong anchor and short-area quickness, and in camp he held his anchor against C.J. Mosley and C.J. Wilson. His technique is raw: hand placement, pass-set discipline and exchanges with the linemen beside him still need coaching, and late hands cost him one camp rep against Aaron Donald, though he held the repeat.
+Trai Turner is a rookie guard who has started five games on Jacksonville's line. He plays with a powerful base, a strong anchor and short-area quickness, and in camp he held his anchor against C.J. Mosley and C.J. Wilson. His technique is raw: hand placement, pass-set discipline and exchanges with the linemen beside him still need coaching, and late hands cost him one camp rep against Aaron Donald, though he held the repeat.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

@@ -10,11 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: original: U.S. Army Photo by Sgt. 1st Class Michel Sauret on behalf of 416th Theater Engineer Command Army Reserve derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Christian_Jones_bears.jpg)).*
 
-**Current assignment:** Reserve linebacker.
-
 ## Staff assessment
 
-Christian Jones is an undrafted rookie who has made three special-teams tackles in five games. He is a big linebacker who played both middle and outside linebacker at Florida State, with the size and strength for the strong side and experience on coverage units. His instincts and change of direction are the questions.
+Christian Jones is a rookie linebacker who has made three special-teams tackles in five games. He is a big linebacker who played both middle and outside linebacker at Florida State, with the size and strength for the strong side and experience on coverage units. His instincts and change of direction are the questions.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

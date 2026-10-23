@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 79.1 (2014, through Week 5).
+**Passer rating:** 79.1 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,13 +24,13 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 26 | 17 | 4 | 93 | 158 | 58.9 | 1,081 | 6.8 | 270.2 | 6 | 5 | 79.1 |
+| 2014 (through Week 4) | Miami | 26 | 17 | 4 | 93 | 158 | 58.9 | 1,081 | 6.8 | 270.2 | 6 | 5 | 79.1 |
 | 2013 | Miami | 25 | 17 | 16 | 339 | 560 | 60.5 | 3,591 | 6.4 | 224.4 | 23 | 21 | 77.3 |
 | Career |  |  |  | 20 | 432 | 718 | 60.2 | 4,672 | 6.5 | 233.6 | 29 | 26 | 77.7 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 26 | 17 | 7 | 50 | 10 | 14 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 26 | 17 | 7 | 50 | 10 | 14 | 0 | 0 | 0 |
 | 2013 | Miami | 25 | 17 | 29 | 185 | 43 | 129 | 0 | 0 | 0 |
 
 ### Playoffs

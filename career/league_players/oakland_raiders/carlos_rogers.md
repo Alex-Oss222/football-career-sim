@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,13 +24,13 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 33 | 27 | 4 | 14 | 10 | 4 | 1 | 0 | 1 |
+| 2014 (through Week 4) | Oakland | 33 | 27 | 4 | 14 | 10 | 4 | 1 | 0 | 1 |
 | 2013 | San Francisco | 32 | 22 | 16 | 98 | 58 | 40 | 2 | 0 | 0 |
 | Career |  |  |  | 20 | 112 | 68 | 44 | 3 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 33 | 27 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 33 | 27 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | San Francisco | 32 | 22 | 1 | 2 | 12 | 2 | 2 | N/A |
 
 ### Playoffs

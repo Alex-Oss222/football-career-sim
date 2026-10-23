@@ -8,9 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Will Rackley won Jacksonville's right-guard job in 2013 camp and held it in every game, dressing for all 16 regular-season games and both playoff games, before Jacksonville traded him to Seattle in May 2014. His communication on combination blocks won him the job because it held late in practice, and he had functional strength inside. Individual leverage and his recovery after losing it were his main limitations.
+Will Rackley won Jacksonville's right-guard job in the 2013 camp and held it in every game, dressing for all 16 regular-season games and both playoff games. His communication on combination blocks won him the job because it held late in practice, and he had functional strength inside. Individual leverage and his recovery after losing it were his main limitations.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

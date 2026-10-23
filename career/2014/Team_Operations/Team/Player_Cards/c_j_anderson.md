@@ -10,13 +10,11 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:C._J._Anderson_2014.JPG)).*
 
-**Current assignment:** Reserve running back.
-
 **Yards per carry:** 5.1 (2014, through Week 5).
 
 ## Staff assessment
 
-C.J. Anderson joined Jacksonville as an undrafted rookie in 2013 and has played as a complementary back and on the coverage units, with 17 carries in 2013 and 27 for 138 yards so far in 2014. He is a sturdy inside runner with useful balance and finishing, and his corrections have held after teaching, from his pickup base in the 2013 camp to his Inside Zone track in 2014. His receiving detail and open-field speed trail his inside-running tools, and his protection is still developing.
+C.J. Anderson was a complementary back and a coverage-unit player for Jacksonville in 2013, with 17 carries, and he has 27 carries for 138 yards so far in 2014. He is a sturdy inside runner with useful balance and finishing, and his corrections have held after teaching, from his pickup base in the 2013 camp to his Inside Zone track in 2014. His receiving detail and open-field speed trail his inside-running tools, and his protection is still developing.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

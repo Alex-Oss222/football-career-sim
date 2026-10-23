@@ -8,9 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Brad Meester was a veteran center who started Jacksonville's first two games of 2013, dressed as the reserve center behind Mike Brewster for the rest of the season once cleared from an injury suffered at Oakland, and retired after the season. His protection calls and line communication were his defining value, and in the 2013 spring practices he steadied the common calls and finished changed-front and twist work without the coaches stepping in. His movement blocking, second-level work and sustained physical blocking were below that mental operation.
+Brad Meester was a veteran center who started Jacksonville's first two games of 2013, dressed as the reserve center behind Mike Brewster for the rest of the season once cleared from an injury, and retired after the season. His protection calls and line communication were his defining value, and in the 2013 spring practices he steadied the common calls and finished changed-front and twist work without the coaches stepping in. His movement blocking, second-level work and sustained physical blocking were below that mental operation.
 
 *Staff view, January 14, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

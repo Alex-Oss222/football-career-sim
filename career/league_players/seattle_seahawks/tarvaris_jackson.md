@@ -12,6 +12,10 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Backup quarterback.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

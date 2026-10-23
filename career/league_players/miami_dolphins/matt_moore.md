@@ -12,19 +12,23 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Backup quarterback.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 30 | 8 | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 4) | Miami | 30 | 8 | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Miami | 29 | 8 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | Career |  |  |  | 20 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 30 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 30 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 29 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

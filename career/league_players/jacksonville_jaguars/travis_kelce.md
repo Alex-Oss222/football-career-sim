@@ -10,8 +10,6 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Adam Schultz, Public domain ([source](https://commons.wikimedia.org/wiki/File:Travis_Kelce_in_the_Oval_Office_of_the_White_House_on_June_5,_2023_-_P20230605AS-0902_(cropped).jpg)).*
 
-**Current assignment:** Reserve tight end.
-
 **Yards per target:** 5.3 (2014, through Week 5).
 
 ## Staff assessment

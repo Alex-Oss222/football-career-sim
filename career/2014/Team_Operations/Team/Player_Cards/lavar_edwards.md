@@ -8,9 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Lavar Edwards, a 2013 Jacksonville draft pick waived at the final roster cut in 2014, was a reserve defensive end as a rookie: inactive for most of the season, he dressed for five regular-season games late in the year and both playoff games. At rookie minicamp he knew and communicated his edge and contain assignment and corrected a widened rush lane on the repeat, and the staff saw enough power and assignment understanding for a narrow package. Lane discipline and hand work were the steps between rookie depth and a stable rotation job.
+Lavar Edwards was a reserve defensive end for Jacksonville as a rookie in 2013: inactive for most of the season, he dressed for five regular-season games late in the year and both playoff games. At rookie minicamp he knew and communicated his edge and contain assignment and corrected a widened rush lane on the repeat, and the staff saw enough power and assignment understanding for a narrow package. Lane discipline and hand work were the steps between rookie depth and a stable rotation job.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

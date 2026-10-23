@@ -12,13 +12,17 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve right guard.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 24 | 63 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Miami | 24 | 63 | 3 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 23 | 70 | 16 | N/A | N/A | 4 | N/A |
 | Career |  |  |  | 19 | N/A | N/A | 4 | N/A |
 

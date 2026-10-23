@@ -10,11 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Atlanta Falcons, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Aaron_Donald_2014_combine.jpg)).*
 
-**Current assignment:** Reserve defensive tackle.
-
 ## Staff assessment
 
-Aaron Donald is a rookie defensive tackle, Jacksonville's first-round pick in 2014, and he has been active for five games in his first NFL season. He is undersized but explosive, with a first step and hand quickness that beat blockers before they set; in camp his first step beat Trai Turner on a one-on-one rep. His anchor against double teams is below a starter's standard and holding his gap on early downs is still unproven at his size; in camp the Mike Brewster and Trai Turner double team moved him off the strong A-gap on almost every recorded rep.
+Aaron Donald is a rookie defensive tackle who has been active for five games in his first NFL season. He is undersized but explosive, with a first step and hand quickness that beat blockers before they set; in camp his first step beat Trai Turner on a one-on-one rep. His anchor against double teams is below a starter's standard and holding his gap on early downs is still unproven at his size; in camp the Mike Brewster and Trai Turner double team moved him off the strong A-gap, and he split it only once.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

@@ -16,9 +16,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jeremy Mincey has been a regular in Jacksonville's edge rotation: he dressed for all 16 regular-season games in 2013 as the second edge in every recorded order and kept the first edge spot through the 2014 camp competition with Andre Branch. He is a sturdy edge defender whose strengths are power and setting the edge against the run, and in 2014 camp he kept contain on every recorded rep. His speed and bend around the corner are less of a threat than his physical play, and his get-off and pursuit are below a starter's standard.
+Jeremy Mincey has been a regular in Jacksonville's edge rotation: he dressed for all 16 regular-season games in 2013 as the second edge in every recorded order, and in the 2014 camp he gave the steadier lane play in the open competition for the first edge spot. He is a sturdy edge defender whose strengths are power and setting the edge against the run, and in that camp he kept contain on every recorded rep and won the edge once against Lane Johnson with the long arm. His speed and bend around the corner are less of a threat than his physical play, and his get-off and pursuit are below a starter's standard.
 
-*Staff view, March 31, 2014.*
+*Staff view, August 1, 2014.*
 
 ## Contract
 

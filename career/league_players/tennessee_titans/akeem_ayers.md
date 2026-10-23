@@ -12,6 +12,10 @@ As of January 19, 2014, after the Conference Championships.
 
 **Current assignment:** Reserve outside linebacker.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -18,7 +18,7 @@ As of October 5, 2014, after Week 5.
 
 Daryl Smith has proven he is an NFL starting linebacker, and the staff views him as a strong one. He was a base linebacker for Jacksonville in 2013, dressing for all 16 regular-season games and two playoff games, and he kept the base defense's communication lead from the fourth week through the playoffs despite role changes. He organizes the defense with his communication, run diagnosis and zone awareness. His value is in reading and coordinating rather than rushing the passer, and his blitzing is below an NFL starter's standard.
 
-*Staff view, March 31, 2014.*
+*Staff view, August 1, 2014.*
 
 ## Contract
 

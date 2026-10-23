@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 36 (2014, through Week 5).
+**Long snaps:** 36 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,7 +24,7 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 33 | 59 | 4 | 36 | 36 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 33 | 59 | 4 | 36 | 36 | 0 | 0 |
 | 2013 | Oakland | 32 | 59 | 16 | N/A | N/A | N/A | 0 |
 | Career |  |  |  | 20 | N/A | N/A | N/A | 0 |
 

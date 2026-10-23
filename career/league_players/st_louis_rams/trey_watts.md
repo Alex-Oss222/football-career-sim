@@ -8,6 +8,10 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve running back.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

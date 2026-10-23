@@ -8,9 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Allen Reisner was a reserve tight end for Jacksonville in 2013, dressing for all 16 regular-season games and two playoff games as the third tight end in heavy personnel. He was a dependable package player who lined up correctly and ran the routes he was given in the 2013 camp and preseason. He offered limited separation and little after the catch, and his blocking and protection were not individually evaluated. Jacksonville did not tender him in March 2014, and he became an unrestricted free agent.
+Allen Reisner was a reserve tight end for Jacksonville in 2013, dressing for all 16 regular-season games and two playoff games as the third tight end in heavy personnel. He was a dependable package player who lined up correctly and ran the routes he was given in the 2013 camp and preseason. He offered limited receiving separation and little after the catch, and the staff saw little reason to feature him in space.
 
 *Staff view, January 14, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

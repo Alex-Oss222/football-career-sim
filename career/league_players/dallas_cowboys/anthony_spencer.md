@@ -12,6 +12,10 @@ As of January 11, 2014, after the Divisional round.
 
 **Current assignment:** Reserve defensive end.
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Jacksonville drafted Joel Bitonio in the first round in 2014, and Stone named the rookie his starting left guard on the season depth chart at the final roster cut; he has started five games. A four-year college starter at both tackle spots, he has a heavy lower body, good short-area quickness and a finished set, and his strength makes him a forceful drive blocker in the run game. His length falls short of the staff's standard for a tackle, although the published measurements of his arms conflict. In camp he over-set once and opened the inside lane, and George Yarno's correction of his set angle and inside hand held.
+Joel Bitonio is a rookie who has started five games on Jacksonville's line. A four-year college starter at both tackle spots, he has a heavy lower body, good short-area quickness and a finished set, and his strength makes him a forceful drive blocker in the run game. His length falls short of the staff's standard for a tackle. In camp he anchored against Sen'Derrick Marks, then over-set once and opened the inside lane, and George Yarno's correction of his set angle and inside hand held.
 
 *Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
 

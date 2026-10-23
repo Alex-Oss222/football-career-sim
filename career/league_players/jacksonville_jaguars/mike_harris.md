@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 The staff sees Mike Harris as a replacement starter or reserve corner for a defined outside role, and he has filled one for Jacksonville: he took over for the injured Alan Ball in 2013 on a week's preparation, kept the job through both playoff games and started the 2014 opener at Philadelphia opposite Aqib Talib. He dressed for all 16 regular-season games in 2013, and an injury in the 2014 opener ended his season. He has usable movement without a defining edge in press coverage, ball skills or play at the catch point, and his route recognition is a limitation.
 
-*Staff view, March 31, 2014.*
+*Staff view, September 8, 2014.*
 
 ## Contract
 

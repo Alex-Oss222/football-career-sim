@@ -8,9 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Kevin Rutland was a reserve outside cornerback for Jacksonville in 2013, inactive until after Alan Ball's injury and then dressing for the final seven regular-season games and both playoff games. The staff saw functional movement, with recovery speed, short-area quickness and off coverage the better parts of his game. His technique and recognition were unfinished, with press coverage, route recognition and ball skills the main gaps, and the staff saw a narrow depth role rather than a corner it would consistently isolate in a matchup.
+Kevin Rutland was a reserve outside cornerback for Jacksonville in 2013, inactive until injuries elsewhere in the secondary opened an outside-reserve job late in the season, and then dressing for the final seven regular-season games and both playoff games. The staff saw functional movement, with recovery speed, short-area quickness and off coverage the better parts of his game. His technique and recognition were unfinished, with press coverage, route recognition and ball skills the main gaps, and the staff saw a narrow depth role rather than a corner it would consistently isolate in a matchup.
 
 *Staff view, January 14, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

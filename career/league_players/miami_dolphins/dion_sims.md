@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 6.0 (2014, through Week 5).
+**Yards per target:** 6.0 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,13 +24,13 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 23 | 80 | 4 | 13 | 9 | 78 | 8.7 | 0 | 15 | 19.5 | 69.2 |
+| 2014 (through Week 4) | Miami | 23 | 80 | 4 | 13 | 9 | 78 | 8.7 | 0 | 15 | 19.5 | 69.2 |
 | 2013 | Miami | 22 | 80 | 16 | 22 | 17 | 161 | 9.5 | 3 | 23 | 10.1 | 77.3 |
 | Career |  |  |  | 20 | 35 | 26 | 239 | 9.2 | 3 | 23 | 11.9 | 74.3 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Miami | 23 | 80 | 0 | 0 | 0 | 1 | 1 |
+| 2014 (through Week 4) | Miami | 23 | 80 | 0 | 0 | 0 | 1 | 1 |
 | 2013 | Miami | 22 | 80 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs

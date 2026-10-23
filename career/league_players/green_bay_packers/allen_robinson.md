@@ -12,6 +12,10 @@ As of October 2, 2014, after Week 5.
 
 **Yards per target:** 7.2 (2014, through Week 5).
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

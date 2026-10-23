@@ -10,15 +10,13 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Sio_Moore.JPG)).*
 
-**Current assignment:** Reserve linebacker.
-
 **Tackles:** 13 (2014, through Week 5).
 
 ## Staff assessment
 
-Sio Moore was a rotation and package linebacker as a rookie after Jacksonville drafted him in 2013, dressing for all 16 regular-season games and two playoff games. He is a good athlete with range, pursuit speed and useful tools as a pass rusher, and the coverage corrections he was taught as a rookie held. His run diagnosis and fit discipline are behind his movement and need to become dependable before his job grows; in 2013 camp he overran a fit, kept the correction, then overran one again at the scrimmage, and Crennel narrowed his assignment.
+Sio Moore was a rotation and package linebacker for Jacksonville as a rookie in 2013, dressing for all 16 regular-season games and two playoff games. He is a good athlete with range, pursuit speed and useful tools as a pass rusher, and the coverage corrections he was taught as a rookie held. His run diagnosis and fit discipline are behind his movement and need to become dependable before his job grows; in the 2013 camp he overran a fit, kept the correction, then overran one again at the scrimmage, and Crennel narrowed his assignment.
 
-*Staff view, March 31, 2014.*
+*Staff view, August 1, 2014.*
 
 ## Contract
 

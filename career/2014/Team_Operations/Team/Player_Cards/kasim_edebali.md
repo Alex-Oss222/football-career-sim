@@ -10,11 +10,9 @@ As of October 5, 2014, after Week 5.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Kasim_Edebali.JPG)).*
 
-**Current assignment:** Reserve defensive end.
-
 ## Staff assessment
 
-Kasim Edebali is an undrafted rookie defensive end from Boston College who signed with Jacksonville in May 2014 and made the season roster. He plays with motor and active hands and had a productive senior season. His main limitation is a shorter frame without much length, and his technique, football sense and rush plan are below an NFL starter's standard.
+Kasim Edebali is a rookie defensive end from Boston College who plays with motor and active hands and had a productive senior season. His main limitation is a shorter frame without much length, and his technique, football sense and rush plan are below an NFL starter's standard.
 
 *Staff view, May 11, 2014.*
 

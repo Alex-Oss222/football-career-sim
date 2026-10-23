@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,11 +24,11 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 24 | 31 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 24 | 31 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 24 | 31 | 0 | 0 | 0 | 0 | 0 | 3 |
+| 2014 (through Week 4) | Oakland | 24 | 31 | 0 | 0 | 0 | 0 | 0 | 3 |
 
 ### Playoffs
 

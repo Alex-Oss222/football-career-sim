@@ -8,9 +8,13 @@ As of January 11, 2014, after the Divisional round.
 
 ## Staff assessment
 
-Austin Pasztor was a reserve guard for Jacksonville in 2013: an error in the club's injury record held him out of the first half of the season, and he then dressed as the primary interior backup for the last eight regular-season games and both playoff games. In 2013 camp he competed with Will Rackley for the right-guard job until an injury in the preseason interrupted it, and his recovery after losing initial leverage and his pickup of the rush were the two positives camp recorded. The staff saw a physical backup who could cover a job, with uneven combination blocks and leverage and less consistent coordination than the starting pair. He never signed Jacksonville's 2014 exclusive-rights tender, and the club withdrew it at the final roster cut.
+Austin Pasztor was a reserve guard for Jacksonville in 2013: an injury-record problem kept him out of the first half of the season, and he then dressed as the primary interior backup for the last eight regular-season games and both playoff games. In the 2013 camp he competed with Will Rackley at guard, and he recovered after losing initial leverage and picked up the rush. The staff saw a physical backup who could cover a job, with uneven combination blocks and leverage and less consistent coordination than the starting pair.
 
 *Staff view, March 31, 2014.*
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 

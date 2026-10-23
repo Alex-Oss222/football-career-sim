@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting strongside linebacker.
 
-**Sacks:** 2 (2014, through Week 5).
+**Sacks:** 2 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,11 +24,11 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 23 | 52 | 4 | 15 | 11 | 4 | 1 | 2 | 4 |
+| 2014 (through Week 4) | Oakland | 23 | 52 | 4 | 15 | 11 | 4 | 1 | 2 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 23 | 52 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 23 | 52 | 0 | 0 | 3 | 0 | 0 | 0 |
 
 ### Playoffs
 

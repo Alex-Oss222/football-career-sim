@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve fullback.
 
-**Yards per carry:** 25.0 (2014, through Week 5).
+**Yards per carry:** 25.0 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,13 +24,13 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 25 | 49 | 4 | 1 | 25 | 25.0 | 0 | 25 | 6.2 |
+| 2014 (through Week 4) | Oakland | 25 | 49 | 4 | 1 | 25 | 25.0 | 0 | 25 | 6.2 |
 | 2013 | Oakland | 24 | 49 | 16 | 2 | -1 | -0.5 | 0 | 1 | -0.1 |
 | Career |  |  |  | 20 | 3 | 24 | 8.0 | 0 | 25 | 1.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 25 | 49 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 25 | 49 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 | 2013 | Oakland | 24 | 49 | 3 | 2 | 25 | 12.5 | 1 | 0 | 0 |
 
 ### Playoffs

@@ -16,7 +16,7 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Alterraun Verner signed with Jacksonville as a free agent in March 2014 and moved into the starting defense outside opposite Aqib Talib after Mike Harris was hurt in the opener. He has played in five games, and against Indianapolis he intercepted Andrew Luck on third down. He is an instinctive coverage corner who wins with route recognition, positioning and ball awareness, at his best in zone and off coverage. The staff's starting view favors his coverage judgment over matchups that depend on recovery speed, and strength, block defeat and penalty discipline are the weakest parts of his game.
+Alterraun Verner has played in five games in his first season with Jacksonville. He is an instinctive coverage corner who wins with route recognition, positioning and ball awareness, at his best in zone and off coverage. The staff's starting view favors his coverage judgment over matchups that depend on recovery speed, and strength, block defeat and penalty discipline are the weakest parts of his game.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
 

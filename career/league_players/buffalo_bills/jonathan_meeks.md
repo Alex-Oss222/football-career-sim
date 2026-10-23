@@ -10,6 +10,10 @@ As of December 29, 2013, after Week 17.
 
 *Photo: TigerNet.com, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jonathan_Meeks.jpg)).*
 
+## Contract
+
+Contract not established.
+
 ## Statistics
 
 ### Regular season

@@ -12,7 +12,11 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting defensive end.
 
-**Tackles:** 21 (2014, through Week 5).
+**Tackles:** 21 (2014, through Week 4).
+
+## Contract
+
+Contract not established.
 
 ## Statistics
 
@@ -20,13 +24,13 @@ As of September 28, 2014, after Week 4.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 29 | 58 | 4 | 21 | 11 | 10 | 3 | 0 | 1 |
+| 2014 (through Week 4) | Oakland | 29 | 58 | 4 | 21 | 11 | 10 | 3 | 0 | 1 |
 | 2013 | Pittsburgh | 28 | 56 | 16 | 58 | 43 | 15 | 5 | 0 | 3 |
 | Career |  |  |  | 20 | 79 | 54 | 25 | 8 | 0 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Oakland | 29 | 58 | 1 | 16 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 4) | Oakland | 29 | 58 | 1 | 16 | 2 | 0 | 0 | 0 |
 | 2013 | Pittsburgh | 28 | 56 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs
