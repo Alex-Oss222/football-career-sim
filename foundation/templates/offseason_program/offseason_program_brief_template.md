@@ -1,11 +1,16 @@
 # Offseason Program Brief
 
-**[Club] | Presented to Head Coach [name] | [issue date, Eastern time]**  
+**[Club] | [Season] offseason program**  
+**Prepared for:** Head Coach [name]  
+**Presented by:** [offensive coordinator], [defensive coordinator] and [special teams coordinator], named from the coach records, and the strength and conditioning staff  
+**Issued:** [Date and time, Eastern]  
+**Edition:** [Initial issue / new edition of date, the earlier edition kept]  
 **Program:** [confirmed first day] through [scheduled closing day]  
-**This briefing covers:** Phase One, [dates]; Phase Two, [dates]  
-**From:** [offensive coordinator], [defensive coordinator], [special teams coordinator] and [strength and conditioning lead]
+**This briefing covers:** Phase One, [dates]; Phase Two, [dates]
 
-<!-- If dated, consequential matters need a response, place their existing Action Required inserts here, before the ordinary football briefing. Include only real events and show each pending individual outcome separately. Leave this area empty otherwise. -->
+> AUTHORING NOTE (remove from the issued brief): Issue after the club has filed its program schedule, by the Friday ten days before the program opens (April 10 for the April 20, 2015 start); that is this brief's one scheduled issue. A new edition is issued only under the one reissue rule that governs every brief ([event inserts](../../../docs/event_inserts.md), section A, item 6): a new event needs Stone's answer, a dated finding materially changes a choice still pending, or an answer falls due before the next scheduled issue. The post-draft edition that carries any rookie-minicamp choice is such a reissue. An informational event that affects no pending answer appears under FOR YOUR INFORMATION only in an edition issued for another reason; its own result page is readable as soon as it is written. Keep every earlier edition beside the current page, with its date in its name. Name a staff member only from the coach records and the job record's parties; name a strength and conditioning lead only when a staff record names one. While another phase's brief is also active, each event appears once, on the brief of the phase it bears on: draft-pick trades and prospect, selection, rookie-contract and undrafted matters on the Scouting Department Report (from its April 29 issue until Draft Room Results is published); practice, roster, medical and staff matters here. This brief carries the program's events until Phase Two closes; from the OTA Brief's first issue that day, OTA and minicamp matters go on the OTA Brief. Build the tables from the stored roster, medical records, player cards and phase reports; each staff read cites only what the page shows.
+
+[Event inserts, when any event is pending: ACTION REQUIRED, FOR YOUR INFORMATION and COMING UP go here, under the title block and before the first section, in the form of the [event insert template](../event_inserts/brief_action_inserts_template.md). Include only real events. The club's schedule filing appears under FOR YOUR INFORMATION in the first issue. Omit each section that has nothing in it. Stone answers this brief once, on My Program Plan; answers to inserted events go on this phase's My Responses page, and each resolved event gets its own dated result page.]
 
 ## The work in front of us
 
@@ -18,7 +23,7 @@
 | [Coverage / front communication] | [Specific call, front, motion or bunch question] | [Responsibility described, then aligned and communicated without an opposing offense] | [Actual coverage, tackling, contested routes] |
 | [Special teams] | [Punt operation, return or coverage evidence, if any] | [Classroom operation and later separate-unit rehearsal] | [Protection or coverage against an opposing unit] |
 
-**Current teaching material.** [Name only the currently effective playbook and schemes already in service or lawfully authorized for this coming season. Distinguish a concept a player may study from a concept coaches have installed. List any proposed addition as a question for Stone, not a settled change.]
+**Current teaching material.** [Name only the currently effective playbooks for this coming season. Every player may hold and study the complete active books. Distinguish a concept a player may study from a concept coaches have installed: installation decides what is formally taught, practiced and evaluated, and players are evaluated only on taught material. Any call in the active books may already be called in a game. List any proposed teaching addition as a question for Stone, not a settled change.]
 
 ## Personnel and participation at the door
 
@@ -28,13 +33,13 @@
 |---|---|---|
 | [Signed returning players in relevant groups] | [Signed; eligible to be invited] | [Previous assignments that can be reviewed, pending lawful participation] |
 | [Signed veteran arrivals, if any] | [Confirmed acquisition and date] | [Primary-language translation needed; no previous Jacksonville evaluation invented] |
-| [Tendered but unsigned / expired contract, if any] | [Exact contract status and verified participation agreement, or no such agreement] | [May be invited only on a lawful basis; otherwise no scheduled club work] |
+| [Tendered but unsigned / expired contract, if any] | [Exact contract status, and whether the general manager's office has executed a participation agreement] | [Stone may invite him; he takes part in the program and its social events only after he signs a contract or the agreement. A catch-up plan is ready for the day he signs] |
 | [Players under medical instructions] | [What qualified medical staff has actually communicated about participation] | [Allowed classroom, rehabilitation or field work only; no coach-issued medical clearance] |
-| [Unfilled roster roles or unsettled contracts] | [Actual status; Caldwell owns action] | [Plan around the players available now, with a revision if they change] |
+| [Unfilled roster roles or unsettled contracts] | [Actual status; the general manager owns action] | [Plan around the players available now, with a revision if they change] |
 
 **Not a compulsory camp.** Phase One and Phase Two participation, including meetings, is voluntary. The club cannot treat nonattendance as failed commitment, conditioning deficiency or a reason for an adverse football consequence. The available teaching group is not a proxy for who will be on the final roster. Where reliable participation details are not yet known, this brief says so.
 
-**Medical and performance staff view:** [Record the actual permitted activity categories. Separate rehabilitation instructions and observed physical tests from football coaching judgments. No invented lifts, sprint times, weights or recovery forecasts.]
+**Medical and strength and conditioning staff view:** [Record the actual permitted activity categories. Separate rehabilitation instructions and observed physical tests from football coaching judgments. No invented lifts, sprint times, weights or recovery forecasts.]
 
 ## The calendar and legal boundaries
 
@@ -42,11 +47,11 @@
 |---|---|---|
 | **Phase One: [first two weeks]** | Classroom film, formation and call language, assignment discussion; individual strength, conditioning and rehabilitation directed by the permitted staff | No position-coach field teaching or observation; no helmets; no team football practice. Only the limited CBA quarterback exception allows a football, without covered defenders or coach-run routes. |
 | **Phase Two: [next three weeks]** | Individual football instruction, alignment, technique, formation and separate-unit rehearsal, including an unopposed punt operation | No helmets, live contact, one-on-one opponent drills or offense-versus-defense work. A carded front or defender is a drawing, not opposition. |
-| **Draft: [real dates]** | Scouting and personnel decisions continue under Caldwell | The draft does not authorize rookie participation in veteran field work before proper eligibility or create a reason to skip the veteran program rules. |
-| **Rookie minicamp: [real dates]** | Separate rookie program with its own participant and eligibility checks | Its work and outcomes remain in its own record, not in the veteran Phase Two count. |
+| **Draft: [real dates]** | Scouting and personnel decisions continue under the general manager; draft matters come to you on the Scouting Department Report from its issue (April 29 in 2015); before then, here | The draft does not authorize rookie participation in veteran field work before proper eligibility or create a reason to skip the veteran program rules. |
+| **Rookie minicamp: [real dates]** | Separate rookie program with its own participant and eligibility checks; any choice it needs from you arrives in a new edition of this brief after the draft | Its work and outcomes remain in its own record, not in the veteran Phase Two count. |
 | **First OTA / Phase Three: [date when legitimately confirmed]** | First opportunity for the specified non-contact team offense-versus-defense work | Do not quietly insert these reps into the April program. The OTA plan has its own later decision and report. |
 
-The schedule must have been filed with the NFL and NFLPA by the applicable agreed deadline, no later than 21 days before its start; the actual submission and any changes must be confirmed by club operations. During ordinary non-OTA, non-minicamp program days, at most four hours at the facility on at most four weekdays, at most 90 minutes on the field, with at most two specifically directed hours of attendance. Staff meetings, treatment, individual work and coaches' requests must fit those limits. Club operations and the performance staff will monitor compliance.
+[The club filed this schedule on [filing date], by the 21-day limit; the filing is under FOR YOUR INFORMATION above.] On program days other than the ten OTA days and minicamps, each player may be at the facility at most four hours a day on at most four weekdays, with at most 90 minutes on the field, at most two club-specified hours a day and no more than four workouts a week. Staff meetings, treatment, individual work and coaches' requests must fit those limits. Each group's schedule is checked against them.
 
 ## Offense: what the room needs from its coaches
 
@@ -76,25 +81,33 @@ The schedule must have been filed with the NFL and NFLPA by the applicable agree
 
 [Report the actual punt, field-position, return or substitution issue from film and previous work. Distinguish the snap-to-kick operation from kick placement and from coverage, rather than assigning one grade to a play. In Phase One teach the situation and operation in meetings. In Phase Two run only individual or separate-unit work permitted by the CBA. Do not turn a field-position goal into a manufactured improvement number.]
 
-**[Strength and conditioning lead] and medical staff**
+**The strength and conditioning staff and medical staff**
 
-[State the actual agreed preparation emphasis, known restrictions and measurements, if any. The strength staff owns legal physical field work in Phase One; medical personnel own rehabilitation limitations and clearance. An assigned plan proves only an assignment. Report changes only if subsequently measured.]
+[State the actual agreed preparation emphasis, known restrictions and measurements, if any. The strength and conditioning staff owns legal physical field work in Phase One; medical personnel own rehabilitation limitations and clearance. An assigned plan proves only an assignment. Report changes only if subsequently measured.]
 
 ## Staff organization already in force
 
-[Carry forward the established allocation of offensive, defensive and special-teams responsibilities, including the emergency practice lead and any valid standing consultation rhythm. Mention only operational changes relevant to this program. Do not request an unnecessary new play-caller appointment or give an assistant control over Stone's depth chart.]
+[Carry forward the established allocation of offensive, defensive and special-teams responsibilities and the standing policies already in force: the emergency practice lead as the job record holds it, injured-player learning, the cross-training rule (primary job first), the punt families and their grading, TAKE/GIVE/ANSWER, the consultation cadence and the dinner policy. If a coach named in a standing arrangement has left the staff, say so and ask for the succession under "What we need you to decide". Mention only operational changes relevant to this program. Do not request an unnecessary new play-caller appointment or give an assistant control over Stone's depth chart.]
 
+**Proposed player lists:** [The staff's proposal, from the current roster, for the defensive relay succession and the cross-training players, each with his secondary work and the reason for it. They take effect only when Stone writes them in his plan; until then each player works his primary job only.]  
 **Player feedback:** [How a player can identify unclear terminology or an unworkable assignment. Anonymous or voluntary contributions are not turned into attendance, loyalty or leadership scores.]  
 **Newcomer teaching:** [Primary assignment first. Secondary work only where the existing player evidence supports a practical emergency or package use, and without granting a roster role.]
+
+## Onboarding and the spring dinners
+
+**Onboarding:** [The welcome package with the complete active books, sent no earlier than the program's first day; Stone's follow-up conversation on Day 2 and the position coaches' on Days 2 to 4; the same process on an honest compressed timeline for a later arrival. Name only players whose club control is established.]  
+**Proposed dinner calendar:** [The staff's mapping of the standing dinner pattern onto this program's days: an opening team dinner on the first day, team and family meals on program days in Phases One and Two, a rookie and family welcome after the rookie minicamp and a family dinner before Phase Three. Stone may change it in his plan. Attendance is never recorded, no football is attached and nothing from a dinner becomes personnel evidence.]
 
 ## What we need you to decide
 
 1. **The teaching priorities.** Which questions deserve the limited classroom and unopposed field time, and what work is displaced?
-2. **Installation and repetition.** Which existing concepts are reviewed, which lawful additions are considered, and what independent later check would convince you to keep or cut them?
+2. **Installation and repetition.** Which existing concepts are reviewed, which lawful additions are taught, and what independent later check would convince you to keep or cut them?
 3. **Allocation and responsibility.** Which coaches own the teaching, how do current eligible players share opportunities, and what specifically waits on medical or contract confirmation?
-4. **Unresolved football authority.** [Only a genuine Stone decision that the present standing instructions do not answer. If none, say none.]
+4. **The proposed player lists and dinner calendar.** Adopt, change or decline them.
+5. **Unresolved football authority.** [Only a genuine Stone decision that the present standing instructions do not answer. If none, say none.]
 
-**Decision requested by:** [date before first affected club work].  
-**Your plan:** [My Program Plan].  
+**Decision requested by:** [date before first affected club work; April 17 for the April 20, 2015 start].  
+**Your plan:** [My Program Plan], answered once.  
+**Your answers to inserted events:** [My Responses].  
 **Expected reviews:** [Phase One actual close or date], [Phase Two actual close or date].  
 **What follows:** [First scheduled OTAs and their separate install briefing when known].

@@ -1,54 +1,71 @@
 # My Cut Recommendations
 
-**Alex Stone | Jacksonville Jaguars | [Date] | [75-player discussion / Final 53 discussion]**
+**Alex Stone | Jacksonville Jaguars | [Season]**  
+**Current depth chart:** [Link to the team depth chart page. It is linked, not restated here.]
 
-These are my football recommendations to David Caldwell. They are not a player release notice, a signed contract, a waiver claim or a medical clearance. I retain the depth-chart and game-use decisions for the roster the club actually keeps.
+These are my football recommendations to [the general manager, named from the job record]. They are not a release notice, a signed contract, a waiver claim or a medical clearance. I keep the depth-chart and game-day decisions for the roster the club actually keeps; I make them on My Depth Calls and the Week 1 Game Plan, not on this page.
 
-## What I need this roster to do
+> AUTHORING NOTE (remove from the issued page): one page with two stage sections. Stone answers each section once. The 75 section is filled only when the Roster Cutdown Report asks for it, and it is frozen when the general manager acts on it; when the count is already at or under 75 it is not requested and stays blank. The 53 section is filled after preseason game four and never rewrites the 75 answer. Keep the headings exactly as written: a check reads them before the general manager acts, confirms that every name is a Jacksonville-controlled player, and that each player appears only once within a section across keeping, moving on and conditional. Roles are given only as the football reason for a keep or a cut. Answers to the notices on the Roster Cutdown Report go on this phase's My Responses page, not here.
 
-[Set out the jobs that determine the football composition: starting offense and protection, base and sub-package defense, coverage/return units, emergency quarterback, offensive-line and specialist coverage. Name relevant known current players and actual fit questions. Do not invent a perfect position-count formula.]
+## The reduction to 75
 
-## Players I want Caldwell to retain
+### What I need this roster to do through the last preseason game
 
-[Name the actual eligible players whose football jobs I judge necessary, including reliable starters and backups. I can give a concise reason for a case whose role is disputed; I do not need to produce repetitive reasons for obvious incumbents. If my answer uses a medical contingency, do not treat it as clearance.]
+[The jobs that decide the football composition through game four: starting offense and protection, base and sub-package defense, coverage and return units, emergency quarterback, offensive-line and specialist coverage. Name the current players and the actual fit questions. Do not invent a position-count formula.]
 
-**Core personnel I would keep:** [My names and football rationale where consequential.]
+### Players I recommend keeping
 
-**Close roster calls:** [For each uncertain player, name the alternative and the specific job we give up or gain by keeping him. Include special teams, protection, sub-package roles and lawful availability.]
+[The eligible players whose football jobs I judge necessary through game four, including the late auditions I want protected. A concise reason for a disputed case; no repeated reasons for obvious incumbents. This does not bind the general manager to keep them, and it promises no player fourth-game snaps.]
 
-**Players I recommend moving on from:** [My list, if any, with actual priority/rationale. Caldwell decides transaction type, timing and contract consequences.]
+### Players I recommend moving on from
 
-**Players I would keep only if a real condition is satisfied:** [Specific, supportable condition, responsible authority and deadline. Do not create an invented automatic yes/no if the condition remains unknown.]
+[My list, if any, with priority and football reason. The general manager decides the transaction type, timing and contract consequences.]
 
-## Offensive roles on the roster Caldwell keeps
+### Players I would keep only if a condition is met
 
-[State the starting order and principal relief assignments I decide, not new acquisitions. Name the quarterback order, offensive line with its sixth/seventh-man/emergency options, receiver X/Z/H/slot work as appropriate, tight-end and back groupings. A player can fill more than one task without being counted twice. When two candidates remain legally on the roster, I may keep the comparison open for an actual later period instead of awarding a role without evidence.]
+[A specific, supportable condition, who decides it and by when. Do not create an automatic yes or no if the condition is still unknown.]
 
-## Defense and special teams
+### The football reasons, by unit
 
-[Name the starting front/coverage jobs, nickel and dime combinations, communicator succession, rush/contain and reserve/special-teams requirements that affect my recommendations. Westhoff's operation and coverage assessment matters. A back-up defender or receiver who covers kicks may be more useful on Sundays than a marginally better specialist who cannot dress for several units; explain the actual tradeoff, not a made-up points score.]
+[Offense, defense and special teams, only as far as they explain a keep or a cut: the job a player covers, the job lost if he goes, and the special teams coordinator's coverage needs.]
 
-## My 75-player instruction, if this is the first cutdown
+**Submitted:** [Actual in-career date and time.]
 
-[For the first reduction, list which **football recommendations** I would send Caldwell before the 75 limit; specify which legitimate late auditions I want protected through the fourth preseason game. This does not bind Caldwell to keep them. Do not spend players the club no longer controls and do not promise a player actual fourth-game snaps.]
+## The reduction to 53
 
-## My final-53 recommendations, if this is the second cutdown
+### What I need this roster to do
 
-[Use the actual four-game, camp and medical evidence **through this meeting**, not future results. Identify the boundary cases and my ranking for football reasons. Say which specific opponent/availability contingencies change my preferred combinations. Make my disagreements with the pro-personnel view plain if any were genuinely recorded.]
+[The jobs that decide the 53: starting offense and protection, base and sub-package defense, coverage and return units, emergency quarterback, offensive-line and specialist coverage. Use the four games, camp and medical evidence **through this meeting**, never later results.]
 
-**My proposed game-day operation:** [The roles and backups I would want within a legally dressed 46-player group under the 2015 rules; not the final 46 already submitted.]  
-**My depth decisions now:** [Assignments I actually make within my authority, effective only for retained/eligible players.]  
-**My depth decisions I am leaving open:** [An actual unresolved comparison and when to review it.]
+### Core personnel I would keep
 
-## Waivers, practice squad and outside players
+[My names, with the football reason where it is consequential.]
 
-[Recommend players worth pursuing or trying to keep for a *future* practice squad, subject to the 2015 ten-player eligibility rules, actual waiver clearance, player choice and Caldwell's final contract authority. I do not guarantee a cut player clears waivers or agrees to a squad contract. A waiver claim or trade requires its own actual team/personnel decision.]
+### Close roster calls
 
-## Message to Caldwell
+[For each uncertain player, the alternative and the specific job we give up or gain by keeping him: special teams, protection, sub-package roles and lawful availability. Rank the boundary cases for football reasons, and say which opponent or availability contingencies change my preferred combinations. Make a disagreement with the brief's view plain if there is one.]
 
-[Write the final football explanation in my own words: the roster's workable combinations, the genuine risks I accept and the unresolved issues I want reported back. Do not impersonate Caldwell's response.]
+### Players I recommend moving on from
 
-**Submitted:** [Actual in-career time.]  
-**Existing standing instructions I am changing:** [Only explicit changes; otherwise “No change.”]
+[My list, if any, with priority and football reason. The general manager decides the transaction type, timing and contract consequences.]
 
-After Caldwell executes actual transactions, the Final 53 and the depth chart must distinguish *his personnel decisions* from *my coaching assignments*. If he keeps or cuts a different player, return the affected football role to me rather than silently selecting a substitute.
+### Players I would keep only if a condition is met
+
+[A specific, supportable condition, who decides it and by when.]
+
+### The football reasons, by unit
+
+[Offense: the quarterback order, the line with its sixth, seventh and emergency options, receiver X, Z, H and slot jobs, tight-end and back groupings, as reasons for a keep or a cut. A player can fill more than one job without being counted twice. Defense and special teams: the front and coverage jobs, nickel and dime combinations, communicator succession, rush and contain, and the special teams coordinator's operation and coverage needs. A reserve who covers kicks may be worth more on Sundays than a marginally better player who cannot dress for several units; explain the actual tradeoff, not a made-up points score. The depth calls themselves are made on My Depth Calls and the Week 1 Game Plan.]
+
+### Waivers, practice squad and outside players
+
+[Players worth a waiver claim or a practice-squad place, subject to the season's practice-squad rules (ten places in 2015), actual waiver clearance and the general manager's contract authority. Another club's player can be claimed only once he is waived, and the waiver order decides who gets him. A player we approach may choose another club. I do not guarantee that a cut player clears waivers.]
+
+### Message to the general manager
+
+[The final football explanation in my own words: the roster's workable combinations, the risks I accept and the unresolved issues I want reported back. Do not write the general manager's response.]
+
+**Submitted:** [Actual in-career date and time.]  
+**Existing standing instructions I am changing:** [Only explicit changes; otherwise "No change."]
+
+After the general manager files the roster, a role whose holder left goes to the next player in my standing depth order, and I am told; a starting or specialist role with no ranked successor comes back to me before the Week 1 Game Plan freezes. The Final 53 and the depth chart keep his personnel decisions and my coaching assignments apart.

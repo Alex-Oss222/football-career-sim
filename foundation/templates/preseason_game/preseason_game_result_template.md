@@ -1,27 +1,15 @@
-# Individual preseason-period event result: reference format
+# Preseason events: no result form of their own
 
-**Scope:** This is a supplementary design template, not a fourth primary game-workflow page. It is instantiated for *one separately resolved off-field consequential event*, at its existing canonical owner. It is not a game report or a duplicate medical incident.
+The uploaded package's individual event-result reference duplicated the shared form and is dropped. An event resolved during the preseason (a trade call, a roster move, a waiver claim, a signing or undrafted pursuit, a staff request, a matter of Stone's own career) gets one dated result page of its own, built on the one result form, the [shared event result](../event_inserts/event_result_template.md), with its event-record line, in its owner's folder:
 
-# [Trade / Roster Move / Contract Discussion / Assistant Search] | [Affected person or club]
+| Event | Owner folder |
+|---|---|
+| Roster moves, waiver claims and reserve-list moves | `Team_Operations/Team/Roster` |
+| Signings and undrafted pursuits | `Team_Operations/Free_Agency` |
+| Trades | `Team_Operations/Trades` |
+| Staff | `Team_Operations/Staff` |
+| Stone's own career | `career/Stone` |
 
-**Issue raised:** [Actual in-career timestamp]  
-**Concluded:** [Actual in-career timestamp, after final decision or valid lapse]  
-**Participants:** [Only actual parties]
+A medical incident stays in its medical record, and an existing standalone owner record, such as a completed trade, is that event's result. The Preseason Game Report's after-action part and the game folder's index link each result; neither replaces it. The rules are in the [preseason games design](../../../docs/preseason_games.md), section D, and the [event inserts design](../../../docs/event_inserts.md), section A, item 5.
 
-## What was put to the club
-
-[The proposal, concern, request or obligation, including a known validity deadline and an authoritative original record. Distinguish actual contact from a possible rumor or recommendation. If negotiations continued, record their existing dated steps, without invented dialogue.]
-
-## Stone's input
-
-[Actual dated instruction or standing rule applicable to this event, or “No Stone decision was required.” Recommendations to Caldwell are not binding execution.]
-
-## How it ended
-
-[Who had final authority and what that person or the other club actually did. A declined offer, lapsed request, failed pursuit or no-agreement result is substantive, even when no transaction happened. A negotiation that remains open is **not** a concluded event and has no fabricated result.]
-
-**Effective change:** [Player rights, roster/medical list, contract/cap, staff or other actual consequence, if any; otherwise say no change.]  
-**What is still open:** [Independent follow-up issue only, linked to its own owner.]  
-**Related game:** [The active preseason game or phase index that links here; not a claim that the game produced the event.]
-
-In implementation, internal event ID, source version, authority row, disposition status and ownership reference live in data/metadata, not in this coach-facing page. The game's report is only an index to this separately dated conclusion. For an existing standalone completed trade or medical incident, **link that original owner instead of minting a second narrative**.
+This page is removed when the template catalog and the design index no longer link it (the design's section I).

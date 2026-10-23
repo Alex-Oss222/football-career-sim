@@ -1,31 +1,5 @@
-# [Specific event name] | [date]
+# Results in the April program: use the shared event result
 
-**Involving:** [Player, coach, club and the specific matter only]  
-**First brought to the club:** [actual known date or date not recorded]  
-**Concluded:** [date and time when established]  
-**Final authority:** [David Caldwell, Alex Stone for staff decisions, medical staff or other actual deciding party]
+The April program has no result form of its own. Each event resolved during Phase One and Phase Two, the rookie minicamp included, gets one dated result page built on the shared [event result](../event_inserts/event_result_template.md), with its fields and nothing added, written on the day it resolves, in its owner's folder: roster moves in `Team_Operations/Team/Roster`, signings and undrafted pursuits in `Team_Operations/Free_Agency`, trades in `Team_Operations/Trades`, staff in `Team_Operations/Staff` and Stone's own career in `career/Stone`. A medical decision stays in its medical record. An existing standalone transaction record that already serves as the event's result is used instead of a second page. Stone's answer, when one was needed, is on this phase's My Responses page, and the Program Report links each result and never repeats it.
 
-## What was considered
-
-[State the genuine proposal or issue, its verified terms or status, how it arose and the material facts known to the parties. Distinguish an inquiry from an offer and an offer from an agreement. Do not invent conversations or financial numbers.]
-
-## Stone's position
-
-[His actual dated recommendation, consent, refusal, standing response or “No response required.” Link to the preserved answer where appropriate. A personnel recommendation does not become Caldwell's transaction.]
-
-## How it finished
-
-[State the actual independent final decision: agreement signed, trade accepted or refused, proposal withdrawn, deadline properly elapsed, talks ended without agreement, offer declined, staff pursuit unsuccessful or supported medical disposition. Give a reason only to the extent the actual deciding source supports it.]
-
-**Disposition:** [one accurate final status]  
-**Effective date, if different:** [actual date or not applicable]
-
-## What changed
-
-[Specify any contract, roster, staff, financial, medical or coaching effect and its real owner and date. For a declined, failed or withdrawn proposal, say exactly what did **not** change. Do not apply phantom cap charges, player arrivals or extra openings.]
-
-## Still unresolved
-
-[Only an independently open related question, if any, with its own record. Otherwise “None.” Do not convert a counteroffer still under consideration into a closed event.]
-
-**Related records:** [Links to genuine offer history, medical communication, roster/contract change, approved staff direction and this period's Program Report. These are references, not duplicate narratives.]
+The page that stood here repeated the shared form's fields under the April program's name, so it is not kept as a form; the rules are in the [April design](../../../docs/offseason_program.md#65-individual-events-and-phase-level-summaries), section 6.5, and the [event inserts design](../../../docs/event_inserts.md), section A, item 5. This page stays only so that existing links resolve; the build points those links at the shared form and then removes it, as the OTA and preseason packs remove theirs.

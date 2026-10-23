@@ -1,6 +1,6 @@
 # Worked Jacksonville example: documentary 2014 precedent, safe 2015 boundary
 
-This example uses **only the completed Jacksonville career's own 2014 documents** for the three football pages. Its dates are the dates the events actually became knowable in that career. It does **not** purport to be an issued 2014 three-page packet; the 2014 work was originally recorded under a different format and is left untouched. The paragraphs below are an illustration of how the *new* format would read if built from the previously established records. They do not create new instructions, participation, results or player assessments.
+This example uses **only the completed Jacksonville career's own 2014 documents** for the three football pages. Its dates are the dates the events actually became knowable in that career. It does **not** purport to be an issued 2014 three-page packet; the 2014 work was originally recorded under a different format and is left untouched. The paragraphs below are an illustration of how the *new* format would read if built from the previously established records, re-presented from and linked to those records in the source crosswalk. They do not create new instructions, participation, results or player assessments, and they are never a second account in `career/2014`.
 
 The last section then shows what could safely be said about **April 2015 as of the still-active Oct 5, 2014 career date**. It contains no 2015 player or staff outcome.
 
@@ -8,8 +8,9 @@ The last section then shows what could safely be said about **April 2015 as of t
 
 # Offseason Program Brief
 
-**Jacksonville Jaguars | For Coach Alex Stone | Before the April 21, 2014 start**  
-**From:** Mike Tice, Romeo Crennel, Mike Westhoff and the relevant performance staff  
+**Jacksonville Jaguars | 2014 offseason program**  
+**Prepared for:** Head Coach Alex Stone, before the April 21, 2014 start  
+**Presented by:** Mike Tice, Romeo Crennel, Mike Westhoff and the performance staff  
 **Program:** Phase One begins April 21; Phase Two begins May 5
 
 ### The work in front of us
@@ -40,7 +41,11 @@ The staff needs the priority order for the limited periods, the emergency practi
 
 Keep the currently authorized offensive and defensive books in front of the players. Teach protection as a connected quarterback, center and running-back responsibility. Return Boot Flood to the room, including the free-edge answer. Crennel's packages must each have a defined TAKE, GIVE and ANSWER, so the player understands what the call protects and what it deliberately leaves available. These are not reasons to install an entirely new system in April.
 
-Westhoff owns the punt operation. Teach the four different purposes for a punt: field position, plus territory, backed up and end game. Keep the work in its component parts: operation, kick and coverage. The first two weeks' punt instruction is classroom instruction. Once Phase Two begins, move the legal separate-unit portions onto the field. Do not put the kick team against a return team before the rules allow it.
+Westhoff owns the punt unit; I own the decision to punt. Teach the four different purposes for a punt: field position, plus territory, backed up and end game. Grade every punt in three separate pieces: operation, kick and coverage. On the spring progression, in my April 18 words:
+
+> The spring progression has to respect the CBA. In Phase One, punters can kick but cannot work with a snapper/holder, while long snappers may snap into a net. Phase Two permits individual and "perfect play" work without offense-vs-defense competition; Phase Three permits non-contact unit work against an opposing look.
+
+*The verified Phase One rule allows no footballs, so all Phase One punt and snap instruction stayed in the classroom; Phase Two moved the legal separate-unit work onto the field.*
 
 ### How the staff operates
 
@@ -54,6 +59,8 @@ Use secondary positions selectively. Bradfield can work at both tackles when eli
 
 Keep a short first-active-day meeting with Tice, Crennel and Westhoff, follow useful field sessions with a focused review, and close each week with the coaches who must fix the next problem. Player feedback has a place. Optional dinners and family events remain genuinely voluntary; nobody keeps attendance for football judgment. The club and staff still operate inside all 2014 CBA limits.
 
+**How a later change is recorded.** This page is answered once and kept. Under the new format, the May 1 instruction on the four unsigned tenders, which kept them out of the program and its social events until they signed, closed Bradfield's and Pasztor's lanes and revised the cross-training list, would be a dated entry on the April My Responses page; the plan above stays as written.
+
 ## C. Illustrative Program Report, after the actual May 23, 2014 Phase Two handoff
 
 # Program Report
@@ -63,33 +70,50 @@ Keep a short first-active-day meeting with Tice, Crennel and Westhoff, follow us
 **Phase Two:** May 5 through May 22, with staff handoff May 23. Twelve unopposed field days actually recorded.  
 **The separate May 16 and 17 rookie minicamp is not counted as a veteran Phase Two session.**
 
-### The offense
+**Built from:** the [Phase One report](../../career/2014/Offseason_Training/Phase_One/training_report.md), the [Phase Two report](../../career/2014/Offseason_Training/Phase_Two/training_report.md), Stone's [April 18 decisions](../../career/2014/Offseason_Training/stone_april_18_2014_decisions.md) and each event result linked below.
 
-On the first classroom presentation of Boot Flood, quarterbacks and intermediate/flat receivers gave different answers about a free edge outside the quarterback's rollout path. Bates and Tice aligned their instruction. On April 29 the players described the same answer from a new diagram: a taught outlet or throwaway, not a demand that the quarterback outrun the unblocked defender. That was a useful meeting-room correction, not evidence against a defender.
+### Work completed and participation limits
 
-The double-A-gap protection teaching also exposed differences between Bates's and Yarno's point-reset language. The two coaches reconciled their cues on April 24. Cousins, Brewster and the backs subsequently identified the protection point and relevant echoes on the board. Phase Two moved the question to separate, unopposed offensive work. On May 6 and 8 the Boot Flood group carried the corrected free-edge response through movement, and it held again the next week when the formation changed. Cousins, Brewster and the backs carried the A-gap protection identification into the same kind of practice. The unobserved question is still how a changing, live defensive front affects speed, recognition and protection execution. The first lawful opposed OTA work lies ahead.
+| | Planned | Actually completed | Important limit |
+|---|---|---|---|
+| Phase One | Classroom protection language, Boot Flood, defensive intent, punt instruction; individual physical preparation | Eight days, April 21 to May 1 ([control, medical and participation](../../career/2014/Offseason_Training/Phase_One/training_report.md#control-medical-and-participation)) | The 49 signed players took part within their medical directions; the four unsigned tender players did not. No replacement was added for them. Attendance was not used as an effort or loyalty measure |
+| Phase Two | Unopposed offense-only, defense-only and kicking-unit work | Twelve field days, May 5 to 22 | No opponent; the 26 rookies joined the veteran groups on May 19 ([integrating the rookies](../../career/2014/Offseason_Training/Phase_Two/training_report.md#integrating-the-rookies)) |
+| Rookie minicamp | Its own plan | May 16 and 17 ([its record](../../career/2014/Offseason_Training/Rookie_Minicamp/training_report.md)) | Not veteran Phase Two work |
 
-### The defense
+### Plan priorities: where each stands
 
-Phase One tied the defensive calls to their intent and their changes under motion. Stanford initially needed another explanation of the motion answer, then gave the correct answer to a fresh diagram on April 29. Posluszny could explain his front and fit calls without prompting. In Phase Two, the defensive emphasis included Nickel Even, Cover 1 and connected Cover 3/Quarters answers. A May 14 bunch presentation produced two answers to the point-receiver ownership question. Oden clarified the rule before the next day's work; the group repeated it and did so again on May 20 with rookies in the group. Stanford delivered the call, check and motion response while the defense moved, but the offensive presentation was still supplied by a card. No receiver challenged the coverage in these sessions.
+| Priority from the plan | Unit and responsible coach | Where it stands | Evidence | What remains open |
+|---|---|---|---|---|
+| Boot Flood's free-edge answer | Offense; Tice and Bates | Rehearsed on air | [Phase One, learning the offense](../../career/2014/Offseason_Training/Phase_One/training_report.md#learning-the-offense); [Phase Two, running the offense on air](../../career/2014/Offseason_Training/Phase_Two/training_report.md#running-the-offense-on-air) | An actual edge defender |
+| Protection as one quarterback, center and back responsibility | Offense; Bates and Yarno | Rehearsed on air | The same two sections | A changing, live front |
+| TAKE, GIVE and ANSWER on every package | Defense; Crennel | Taught in meetings | [Phase One, learning the defense](../../career/2014/Offseason_Training/Phase_One/training_report.md#learning-the-defense) | Communication against a live offense |
+| The defensive relay | Defense; Crennel | Rehearsed on air | [Phase Two, getting the defense lined up](../../career/2014/Offseason_Training/Phase_Two/training_report.md#getting-the-defense-lined-up) | The relay while the offense moves |
+| The four punt purposes and three-part grading | Special teams; Westhoff | Rehearsed on air | [Phase One, special teams](../../career/2014/Offseason_Training/Phase_One/training_report.md#special-teams-and-individual-preparation); [Phase Two, special teams](../../career/2014/Offseason_Training/Phase_Two/training_report.md#special-teams-and-individual-work) | Protection against a live rush; coverage against a return unit |
+| Injured-player learning | All units | Taught in meetings | [Phase One, control, medical and participation](../../career/2014/Offseason_Training/Phase_One/training_report.md#control-medical-and-participation) | None for the program |
 
-### The personnel actually taught
+**Strength, conditioning and rehabilitation:** No measurement recorded. [Phase One, control, medical and participation](../../career/2014/Offseason_Training/Phase_One/training_report.md#control-medical-and-participation); [Phase Two, what goes into OTAs](../../career/2014/Offseason_Training/Phase_Two/training_report.md#what-goes-into-otas), which records the communicated medical position at the handoff.
 
-No replacement was added to the four unsigned tender players for this program. The Phase One record says all 49 signed players at that time participated within their medical directions and that the four unsigned tender players did not participate. Attendance itself was not used as an effort or loyalty measure. Rackley did his permitted classroom work while the performance staff governed his upper-extremity restrictions. The May Phase Two record still identifies the four tendered players as outside the program under the then-applicable instruction.
+**Onboarding and the spring dinners.** The [onboarding](../../career/2014/Offseason_Training/Phase_One/training_report.md#onboarding) of the eleven newcomers and the [dinners as held](../../career/2014/Offseason_Training/Phase_One/training_report.md#social-events) are recorded in the phase reports, with no attendance.
 
-The 26 actual rookies in the 2014 program joined the veteran separate-unit work on May 19, after Jacksonville's May 16-17 rookie minicamp. The report identifies concrete unopposed findings: Hurns switched X to Z without losing the assignment, Shaw kept his launch point when the protection point changed, and Lucas repeated the corrected set landmark. These establish only those specific unopposed assignments. Phase Two also gave Bitonio and Turner guard opportunities beside Brewster, with Norwell at both guards and Linsley working point calls. Real blocking against opposition remained untested.
+### Coaching adjustments and unresolved football matters
 
-Stone's May 12 direction established **starting points for repetitions**, not awarded jobs: Nicks at WR1 against Adams; Adams at WR3 against Hawkins; Bitonio at left guard against Norwell; Turner at right guard with a conditional alternative; Mincey at Edge 1 with Branch as competition. Those decisions already belong to the established May 12 directive and depth-chart owner. They were issued May 12, not as part of the April 18 program direction.
+| Follow-up | Owner | Evidence still needed | When it can next be checked |
+|---|---|---|---|
+| "The bunch rule against receivers releasing" ([Phase Two, what goes into OTAs](../../career/2014/Offseason_Training/Phase_Two/training_report.md#what-goes-into-otas); the rule's history is in [getting the defense lined up](../../career/2014/Offseason_Training/Phase_Two/training_report.md#getting-the-defense-lined-up)) | Oden | Receivers releasing against it | The first opposed OTA work |
 
-### Punt work, conditioning and next tests
+**Head-coach decisions:** Stone's [April 18 decisions](../../career/2014/Offseason_Training/stone_april_18_2014_decisions.md); the [May 1 instruction on the four unsigned tenders](../../career/2014/Offseason_Training/Phase_One/training_report.md#may-1-instruction-the-four-unsigned-tenders); and the [May 12 starting points for repetitions](../../career/2014/Offseason_Training/Phase_Two/training_report.md#may-12-instruction-starting-roles-entering-otas), not awarded jobs (Nicks at WR1 against Adams; Adams at WR3 against Hawkins; Bitonio at left guard against Norwell; Turner at right guard with a conditional alternative; Mincey at Edge 1 with Branch as competition), which the [depth chart](../../career/2014/Team_Operations/Team/Depth_Chart/depth_chart.md) records. They were issued May 12, not as part of the April 18 program direction.
 
-Westhoff's four punt situations were introduced in Phase One meetings. Phase Two separate-unit work included Cain with Anger and Scobee, then Kreiter after rookie minicamp, along with separate release, lane and substitution rehearsal. The recorded unopposed operations were clean. Neither snapper had proved protection against a live rush; punt coverage did not defeat a return unit in a test that never occurred.
+### Other consequential decisions resolved during this window
 
-The performance staff ran individual physical preparation, and the Phase One report does not supply measurable strength or conditioning gains. No new medical restriction was communicated by the close of Phase Two. The remaining football questions for OTAs include Boot Flood facing an actual edge, protection against a moving front, defensive responses to real bunch releases and relay calls while the opponent moves. Those are next tests, not predicted wins.
+| Dated matter | Final authority and disposition | Read its own result |
+|---|---|---|
+| May 12, 2014: Will Rackley trade | Caldwell; traded to Seattle for its unconditional 2015 seventh, Mike Brewster retained. Rackley's Phase Two work stands as recorded through May 8 | [Rackley to Seattle](../../career/2014/Team_Operations/Trades/completed_trades/rackley_to_seattle_2014-05-12.md) |
+| May 12, 2014: Alan Ball | Stone told Ball he would not be re-signed now; Caldwell contacted three clubs and kept Ball first on the veteran-corner call list | [Alan Ball, May 12](../../career/2014/Team_Operations/Free_Agency/alan_ball_2014-05-12.md) |
+| May 8 to 10, 2014: the draft and undrafted signings (the draft's own phase) | Caldwell | [Draftees](../../career/2014/Draft/draftees.md); [undrafted signings](../../career/2014/Draft/udfa_signings.md) |
 
-### Individual results and source ownership
+### What carries into OTAs
 
-The Phase One and Phase Two accounts provide the dated teaching observations. The May 12 instruction and depth chart explain the role-repetition starting points. Contract, trade or staff decisions concluded independently of the program are reported by the responsible department in their own dated results and would be linked here individually; this training report does not decide them.
+"Boot Flood against an actual edge, protection calls against a changing front, the bunch rule against receivers releasing, and the defensive relay while the offense moves" ([Phase Two, what goes into OTAs](../../career/2014/Offseason_Training/Phase_Two/training_report.md#what-goes-into-otas)). Those are next tests, not predicted wins.
 
 ## Source crosswalk, outside the illustrative pages
 
@@ -97,20 +121,23 @@ The three illustrations above are grounded in the following original, closed 201
 
 **Actual underlying sources:**
 
-- [Stone's April 18 instructions](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Offseason_Training/stone_april_18_2014_decisions.md)
-- [Phase One staff plan](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Offseason_Training/Phase_One/staff_plan.md)
-- [Actual Phase One teaching report](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Offseason_Training/Phase_One/training_report.md)
-- [Phase Two staff plan](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Offseason_Training/Phase_Two/staff_plan.md)
-- [Actual Phase Two teaching report](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Offseason_Training/Phase_Two/training_report.md)
-- [2014 club offseason training overview](https://github.com/Alex-Oss222/football-career-sim/blob/main/career/2014/Offseason_Training/README.md)
-- [2014 historical rule verification](https://github.com/Alex-Oss222/football-career-sim/blob/main/library/2014_offseason_phase_rules_verification.md)
+- [Stone's April 18 instructions](../../career/2014/Offseason_Training/stone_april_18_2014_decisions.md)
+- [Phase One staff plan](../../career/2014/Offseason_Training/Phase_One/staff_plan.md)
+- [Actual Phase One teaching report](../../career/2014/Offseason_Training/Phase_One/training_report.md)
+- [Phase Two staff plan](../../career/2014/Offseason_Training/Phase_Two/staff_plan.md)
+- [Actual Phase Two teaching report](../../career/2014/Offseason_Training/Phase_Two/training_report.md)
+- [2014 club offseason training overview](../../career/2014/Offseason_Training/README.md)
+- [2014 historical rule verification](../../library/2014_offseason_phase_rules_verification.md)
+- [Rackley to Seattle](../../career/2014/Team_Operations/Trades/completed_trades/rackley_to_seattle_2014-05-12.md) and [Alan Ball, May 12](../../career/2014/Team_Operations/Free_Agency/alan_ball_2014-05-12.md), the two event results concluded inside the window
 
 ## D. A forward-safe April 2015 example at the October 5, 2014 career clock
 
-**What may be researched now:** the historical returning-head-coach Jacksonville offseason-program start is Apr 20, 2015. Phase One would run Apr 20-May 1 and Phase Two May 4-May 22, subject to the actual club program and any change in head-coach employment. The actual 2015 draft is Apr 30-May 2, and the historical Jaguars rookie minicamp is May 8-10. These are dates, not player facts. Later NFL and club sources report the dates and announced OTAs, but their actual publication times cannot be treated as earlier dated club messages to Stone.
+**What may be researched now:** the historical returning-head-coach Jacksonville offseason-program start is Apr 20, 2015. Phase One would run Apr 20-May 1 and Phase Two May 4-May 22, subject to the actual club program and any change in head-coach employment. The actual 2015 draft is Apr 30-May 2, and the historical Jaguars rookie minicamp is May 8-10. These are dates, not player facts.
+
+**When each date becomes usable in the career:** the league's April 20 earliest start for returning-head-coach clubs and the draft dates are public from January 1, 2015 (and February 12, 2015), per the [2015 calendar sources](../../library/2015_historical_calendar.md). Jacksonville's own start, rookie minicamp and OTA dates are known inside the club from the date Caldwell's office files them, before March 30, 2015. The earliest public sources in the register are the NFL's May 15, 2015 listing and the Jaguars' May 18, 2015 schedule answer; neither is evidence of the first publication, and no earlier public announcement is used or invented. Those later publications are never treated as earlier dated club messages to Stone.
 
 **What must be absent from an official 2015 April Brief today:** a finished 2014 season assessment, new 2015 roster count, signed veteran arrivals, issued tender participation agreements, confirmed 2015 medical clearances, 2015 head-coach retention result, 2015 practice-session notes, 2015 draft choices, an achieved teaching goal, confirmed player development, or a completed Program Report. None has been established at the Oct 5 career date.
 
 **The last genuine present state:** Alex Stone remains Jacksonville head coach under the recorded four-year fully guaranteed 2013 agreement, without a fictional new contract. His club has finished only 2014 Week 5. The decisions for Week 6 against Tennessee remain open and have not been displaced. David Caldwell retains final authority over future contracts, acquisitions, draft and trades; Stone's staff authority and existing standing directions remain as actually recorded.
 
-**How this looks when April 2015 really arrives:** read the actually closed 2014 season, 2015 opening roster and medical records, Stone's employment and 2015 staff, current-season playbooks, filed club program schedule and open decisions as of that exact issuance date. Then produce the brief and ask Stone only for uncaptured choices. The program report stays unwritten as a career event until legal work has occurred and the two phase outputs have actually closed. Every individually resolved consequential event, including a rejection or failed pursuit, will have its own dated file before the overall report links it.
+**How this looks when April 2015 really arrives:** read the actually closed 2014 season, 2015 opening roster and medical records, Stone's employment and 2015 staff, current-season playbooks, the club's recorded schedule filing and open decisions as of that exact issuance date. Then issue the brief by April 10 and ask Stone only for uncaptured choices, with his plan due April 17. The Program Report stays unwritten as a career event until legal work has occurred and both phase outputs have actually closed. Every individually resolved consequential event, including a rejection or failed pursuit, will have its own dated file before the Program Report links it.

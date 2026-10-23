@@ -3,15 +3,17 @@
 **[Club] | Head Coach [name] | [date submitted]**  
 **For:** Phase One, [dates], and Phase Two, [dates]
 
+> AUTHORING NOTE (remove from the page): Stone answers this page once, by the date the Offseason Program Brief requests (April 17 for the April 20, 2015 start), in place or as an uploaded .md or .txt file with the same headings. It is kept as the record of his decision and never rewritten. An answer to an event inserted in the brief, or a later change of direction he gives, goes on this phase's My Responses page as a dated entry that applies going forward. The staff's phase plans are built after he answers and link this page.
+
 [My direction here builds on the instructions already in force. Anything I do not change remains as assigned. Staff can handle routine scheduling and legal teaching within these decisions. This is my plan for the work, not a declaration that anyone has completed it.]
 
 ## What I want settled by the end of these five weeks
 
-[Write the two or three football problems that matter most. Identify the actual call, assignment, technique or combination, not an outcome such as “better chemistry” or “elite pass protection.” Say which things must wait for the first opposed OTA work. It is fine to keep an established concept and to decline a proposed addition.]
+[Write the two or three football problems that matter most. Identify the actual call, assignment, technique or combination, not an outcome such as "better chemistry" or "elite pass protection." Say which things must wait for the first opposed OTA work. It is fine to keep an established concept and to decline a proposed addition.]
 
 **Offense.**
 
-[For example, decide what question the quarterback, center, backs and receivers must answer together in the meeting room. Which existing run or pass families take priority? If I want an installation considered, name the concept and the work it replaces; do not make a play callable merely by mentioning it. Name the review evidence I need.]
+[For example, decide what question the quarterback, center, backs and receivers must answer together in the meeting room. Which existing run or pass families take priority? If I want a concept taught, name it and the work it replaces. Naming a concept here schedules its teaching; every call in the active book can already be called in a game, and teaching decides only what is formally practiced and evaluated. Name the review evidence I need.]
 
 **Defense.**
 
@@ -19,13 +21,13 @@
 
 **Special teams.**
 
-[Which field-position, plus-territory, backed-up or end-game punt problems are worth teaching? What will Westhoff address in meetings, then as permitted separate-unit work? Separate snap and operation, kick and coverage rather than treating the play as one grade.]
+[Which field-position, plus-territory, backed-up or end-game punt problems are worth teaching? What will the special teams coordinator address in meetings, then as permitted separate-unit work? Separate snap and operation, kick and coverage rather than treating the play as one grade.]
 
 ## How I want the work distributed
 
 [Describe the relative time and opportunity to give the major units, instead of assigning a made-up number of snaps to an unconfirmed player. Name the relevant coaches and circumstances: e.g. separate quarterback/center/back protections; defensive front and secondary communication; punt snapping and operation once legally permitted. Leave genuine scheduling details to the coordinators within the club calendar and CBA.]
 
-**Phase One, the classroom and the performance staff's work.**
+**Phase One, the classroom and the strength and conditioning staff's work.**
 
 [State the board/film work I want, the questions the coaches must ask, and how they should check whether players can explain the answer in a different picture. Strength and conditioning and rehabilitation work are the respective staffs' responsibility. I am not scheduling position-coach field instruction, helmets, contact or team practice in these two weeks.]
 
@@ -39,19 +41,23 @@
 
 ## People, opportunities and the medical line
 
-[Give the staff principles for allocating legal work to the players on the *current* club list. Name a player only if his roster rights and relevant football evidence are already established. State what his first job is and whether a specific secondary look is worthwhile. An injury may permit classroom learning while restricting field work, but the clinicians set that boundary. A tendered or unsigned player participates only if the contract office verifies a lawful agreement.]
+[Give the staff principles for allocating legal work to the players on the *current* club list. Name a player only if his roster rights and relevant football evidence are already established. State what his first job is and whether a specific secondary look is worthwhile. An injury may permit classroom learning while restricting field work, but the clinicians set that boundary. A tendered or unsigned player, or one whose contract expired, takes part only after he signs a contract or the general manager's office executes a participation agreement; I may invite him.]
 
 **New arrivals and returning players.**
 
 [Identify how I want new players taught the club's words, not an automatic position battle. For returning players, ask for proof that an old answer transfers to a changed picture, not a fabricated upgrade.]
 
-**Cross-training.**
+**Cross-training and the defensive relay.**
 
-[If applicable, identify an actual player, secondary assignment, reason for the emergency or package competency, and the primary work that cannot be crowded out. No new depth-chart assignment is made here unless I expressly exercise that separate authority with supporting evidence.]
+[Adopt, change or decline the staff's proposed lists. For each player, identify the secondary assignment, the reason for the emergency or package competency, and the primary work that cannot be crowded out. A list takes effect only when written here; until then each player works his primary job only. No new depth-chart assignment is made here unless I expressly exercise that separate authority with supporting evidence.]
 
 **Participation and feedback.**
 
 [The program and classroom work are voluntary. I will not convert an absence, optional social event or medical restriction into a player evaluation. My staff may listen to football objections and correct unclear teaching, but no one is required to agree with the coach to earn work. State any adjustments to existing player-council or staff-conference methods.]
+
+**The spring dinners.**
+
+[Adopt or change the staff's proposed dinner calendar. They stay voluntary, with no attendance kept and no football attached.]
 
 ## Who runs it and what reaches my desk
 
@@ -67,11 +73,11 @@
 
 ## Decisions that belong elsewhere
 
-[Player contracts, acquisitions, trades and draft choices go to Caldwell, with my football recommendation only where requested. I choose assistant coaches within the established budget and decide my depth chart when that decision genuinely comes due. Medical decisions remain with the clinicians. The upcoming draft and any rookie minicamp are separate operations, so this plan does not select rookies or assign them results in advance.]
+[David Caldwell (or the general manager then in the job record) decides acquisitions, the draft, player contracts, claims and cuts, with my football recommendation where I give one. I choose assistant coaches within the established budget and decide my depth chart, roles and practice when those decisions genuinely come due. Medical decisions remain with the clinicians. The upcoming draft and any rookie minicamp are separate operations, so this plan does not select rookies or assign them results in advance; any rookie-minicamp choice for me arrives in a new edition of the brief after the draft.]
 
 ## Other matters brought to me during the program
 
-[If an actual trade call, contract discussion, staff request, injury-related decision or employment matter arrives, I will answer the specific issue in the existing shared response page, unless it is already covered by my standing instruction. The active briefing will carry that request. My answer does not substitute for the GM's act or the event's own dated result. Do not create an issue just to fill this section.]
+[If an actual trade call, contract discussion, staff request, injury-related decision or employment matter arrives, I will answer the specific issue on this phase's My Responses page, unless it is already covered by my standing instruction. The active briefing will carry that request. A later change to this plan also goes there, dated, and this page stays as written. My answer does not substitute for the GM's act or the event's own dated result. Do not create an issue just to fill this section.]
 
 ## Final direction
 
