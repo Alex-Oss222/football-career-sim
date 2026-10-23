@@ -21,7 +21,7 @@
 
 **The next look I want:** [Specify the meaningful rep context: neighboring players, quarterback, opposing group, contact level and situation. Or "No further comparison needed for this role."]
 
-**Conditions:** [Valid medical restriction, actual position versatility, or a role contingency. Do not order a doctor to clear anyone or Caldwell to sign a player.]
+**Conditions:** [Valid medical restriction, actual position versatility, or a role contingency. Do not order a doctor to clear anyone or the general manager to sign a player.]
 
 ### [Second offensive battle, if actually open]
 
@@ -64,7 +64,7 @@
 | [Defensive sub-package] | [Names or "unchanged"] | [ ] |
 | [Special teams] | [Names or "unchanged"] | [ ] |
 
-## What I want Caldwell to know
+## What I want the general manager to know
 
 [Only real football advice bearing on a pending personnel decision outside the cut deadlines: a specialist job that the current roster cannot cover twice, a trade-off between a backup lineman and a coverage player, or a medically unavailable starter whose roster position he controls. Recommendations for the cuts to 75 and 53 go on My Cut Recommendations. A recommendation does not make the transaction. If there is nothing new, write "No new roster recommendation."]
 

@@ -41,7 +41,7 @@
 
 ## People, opportunities and the medical line
 
-[Give the staff principles for allocating legal work to the players on the *current* club list. Name a player only if his roster rights and relevant football evidence are already established. State what his first job is and whether a specific secondary look is worthwhile. An injury may permit classroom learning while restricting field work, but the clinicians set that boundary. A tendered or unsigned player, or one whose contract expired, takes part only after he signs a contract or Caldwell's office executes a participation agreement; I may invite him.]
+[Give the staff principles for allocating legal work to the players on the *current* club list. Name a player only if his roster rights and relevant football evidence are already established. State what his first job is and whether a specific secondary look is worthwhile. An injury may permit classroom learning while restricting field work, but the clinicians set that boundary. A tendered or unsigned player, or one whose contract expired, takes part only after he signs a contract or the general manager's office executes a participation agreement; I may invite him.]
 
 **New arrivals and returning players.**
 
@@ -73,7 +73,7 @@
 
 ## Decisions that belong elsewhere
 
-[Caldwell decides acquisitions, the draft, player contracts, claims and cuts, with my football recommendation where I give one. I choose assistant coaches within the established budget and decide my depth chart, roles and practice when those decisions genuinely come due. Medical decisions remain with the clinicians. The upcoming draft and any rookie minicamp are separate operations, so this plan does not select rookies or assign them results in advance; any rookie-minicamp choice for me arrives in a new edition of the brief after the draft.]
+[David Caldwell (or the general manager then in the job record) decides acquisitions, the draft, player contracts, claims and cuts, with my football recommendation where I give one. I choose assistant coaches within the established budget and decide my depth chart, roles and practice when those decisions genuinely come due. Medical decisions remain with the clinicians. The upcoming draft and any rookie minicamp are separate operations, so this plan does not select rookies or assign them results in advance; any rookie-minicamp choice for me arrives in a new edition of the brief after the draft.]
 
 ## Other matters brought to me during the program
 

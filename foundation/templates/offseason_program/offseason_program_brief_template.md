@@ -33,9 +33,9 @@
 |---|---|---|
 | [Signed returning players in relevant groups] | [Signed; eligible to be invited] | [Previous assignments that can be reviewed, pending lawful participation] |
 | [Signed veteran arrivals, if any] | [Confirmed acquisition and date] | [Primary-language translation needed; no previous Jacksonville evaluation invented] |
-| [Tendered but unsigned / expired contract, if any] | [Exact contract status, and whether Caldwell's office has executed a participation agreement] | [Stone may invite him; he takes part in the program and its social events only after he signs a contract or the agreement. A catch-up plan is ready for the day he signs] |
+| [Tendered but unsigned / expired contract, if any] | [Exact contract status, and whether the general manager's office has executed a participation agreement] | [Stone may invite him; he takes part in the program and its social events only after he signs a contract or the agreement. A catch-up plan is ready for the day he signs] |
 | [Players under medical instructions] | [What qualified medical staff has actually communicated about participation] | [Allowed classroom, rehabilitation or field work only; no coach-issued medical clearance] |
-| [Unfilled roster roles or unsettled contracts] | [Actual status; Caldwell owns action] | [Plan around the players available now, with a revision if they change] |
+| [Unfilled roster roles or unsettled contracts] | [Actual status; the general manager owns action] | [Plan around the players available now, with a revision if they change] |
 
 **Not a compulsory camp.** Phase One and Phase Two participation, including meetings, is voluntary. The club cannot treat nonattendance as failed commitment, conditioning deficiency or a reason for an adverse football consequence. The available teaching group is not a proxy for who will be on the final roster. Where reliable participation details are not yet known, this brief says so.
 
@@ -47,7 +47,7 @@
 |---|---|---|
 | **Phase One: [first two weeks]** | Classroom film, formation and call language, assignment discussion; individual strength, conditioning and rehabilitation directed by the permitted staff | No position-coach field teaching or observation; no helmets; no team football practice. Only the limited CBA quarterback exception allows a football, without covered defenders or coach-run routes. |
 | **Phase Two: [next three weeks]** | Individual football instruction, alignment, technique, formation and separate-unit rehearsal, including an unopposed punt operation | No helmets, live contact, one-on-one opponent drills or offense-versus-defense work. A carded front or defender is a drawing, not opposition. |
-| **Draft: [real dates]** | Scouting and personnel decisions continue under Caldwell; draft matters come to you on the Scouting Department Report, not here | The draft does not authorize rookie participation in veteran field work before proper eligibility or create a reason to skip the veteran program rules. |
+| **Draft: [real dates]** | Scouting and personnel decisions continue under the general manager; draft matters come to you on the Scouting Department Report from its issue (April 29 in 2015); before then, here | The draft does not authorize rookie participation in veteran field work before proper eligibility or create a reason to skip the veteran program rules. |
 | **Rookie minicamp: [real dates]** | Separate rookie program with its own participant and eligibility checks; any choice it needs from you arrives in a new edition of this brief after the draft | Its work and outcomes remain in its own record, not in the veteran Phase Two count. |
 | **First OTA / Phase Three: [date when legitimately confirmed]** | First opportunity for the specified non-contact team offense-versus-defense work | Do not quietly insert these reps into the April program. The OTA plan has its own later decision and report. |
 

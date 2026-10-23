@@ -1,6 +1,7 @@
 # My Cut Recommendations
 
-**Alex Stone | Jacksonville Jaguars | [Season]**
+**Alex Stone | Jacksonville Jaguars | [Season]**  
+**Current depth chart:** [Link to the team depth chart page. It is linked, not restated here.]
 
 These are my football recommendations to [the general manager, named from the job record]. They are not a release notice, a signed contract, a waiver claim or a medical clearance. I keep the depth-chart and game-day decisions for the roster the club actually keeps; I make them on My Depth Calls and the Week 1 Game Plan, not on this page.
 

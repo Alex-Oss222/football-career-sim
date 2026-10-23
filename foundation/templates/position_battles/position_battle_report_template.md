@@ -87,7 +87,7 @@ The entire operation matters: the snap and exchange, protection, kick, coverage 
 
 **Special-teams coordinator's view, [name]:** [The card's stored judgment with its date, or "Not recorded."]  
 **Stone's depth authority:** [Name the decision required, if one exists]  
-**Caldwell's separate transaction authority:** [Only a genuinely pending release or signing; a competition does not execute a cut]
+**The general manager's separate transaction authority:** [Only a genuinely pending release or signing; a competition does not execute a cut]
 
 ## Comparisons that are not fair yet
 
@@ -99,7 +99,7 @@ The entire operation matters: the snap and exchange, protection, kick, coverage 
 |---|---|---|
 | [Practice-group rotation] | [What the scheduled work actually requires] | Alex Stone |
 | [Final assignment / depth role] | [Whether an evidence-based decision is necessary yet] | Alex Stone |
-| [Roster reduction, contract, signing, claim or waiver] | [Applicable dated deadline only; not an automatic follow-on] | David Caldwell, on Stone's recommendation |
+| [Roster reduction, contract, signing, claim or waiver] | [Applicable dated deadline only; not an automatic follow-on] | [David Caldwell (or the general manager then in the job record)], on Stone's recommendation |
 | [Medical participation limit] | [Next communicated reassessment] | Qualified medical staff |
 
 **Next event:** [Exact known preseason date, practice window or final reduction deadline. The calendar alone creates no completed event.]  

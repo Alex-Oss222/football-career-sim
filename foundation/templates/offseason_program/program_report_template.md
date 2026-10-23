@@ -5,9 +5,9 @@
 **Phase Two:** [scheduled dates]; actually conducted [dates or no completed work]  
 **Location:** [actual recorded facility or not recorded]
 
-> AUTHORING NOTE (remove from the report): Write this report once, after Phase Two closes, or as an explicitly partial report if the program ends early; there is no interim Program Report, and until Phase Two closes Phase One's training report is the interim record. This report is an index and short synthesis. The phase training reports own every practice observation, the player's permanent record owns any changed personnel view, and each concluded event's own result page owns that event. Link them; do not retell the sessions unit by unit, write a fresh player judgment or resolve anything here.
+> AUTHORING NOTE (remove from the report): Write this report once, after Phase Two closes, or as an explicitly partial report if the program ends early; there is no interim Program Report, and until Phase Two closes Phase One's training report is the interim record. This report is an index, built once. The phase training reports own every practice observation, the player's permanent record owns any changed personnel view, and each concluded event's own result page owns that event. Every line is a schedule fact, a decision, a status word with a link, or the phase report's own words shown or linked. Show its words, or link the section; do not summarize it in new words, retell the sessions unit by unit, write a fresh player judgment or resolve anything here.
 
-[Open with two or three sentences on what the available players and coaches actually worked through and what has not been tested, linking the two phase reports. This report records no future event, offseason improvement by assumption or outcome taken from another club's real season.]
+**Built from:** [Phase One training report], [Phase Two training report], [My Program Plan], [My Responses] and each event result linked below. This report records no future event, offseason improvement by assumption or outcome taken from another club's real season.
 
 ## Work completed and participation limits
 
@@ -22,14 +22,14 @@
 
 ## Plan priorities: where each stands
 
-[One row for each priority Stone set in My Program Plan, and for any later change he recorded on My Responses. Each row states its status in a few words and links the dated section of the phase report that holds the evidence. Keep the limit of each finding: a classroom answer is not an executed play, an unopposed correction is not protection against a live rush, a coherent alignment is not a won coverage matchup, and a snapper with a net is not a legal Phase One unit drill.]
+[One row for each priority Stone set in My Program Plan, and for any later change he recorded on My Responses. Each row states its status in one of the status words below and links the dated section of the phase report that holds the evidence; it does not describe the work in new words. Keep the limit of each finding: a classroom answer is not an executed play, an unopposed correction is not protection against a live rush, a coherent alignment is not a won coverage matchup, and a snapper with a net is not a legal Phase One unit drill.]
 
 | Priority from the plan | Unit and responsible coach | Where it stands | Evidence (phase report section) | What remains open | Next lawful opportunity |
 |---|---|---|---|---|---|
 | [The call, assignment or technique Stone named] | [Offense / defense / special teams; named coach] | [Taught in meetings / rehearsed on air / not reached] | [Link to the dated Phase One or Phase Two section] | [What no defender has yet tested] | [An allowed OTA period, without presuming a result] |
 | [Another priority] | [Unit; coach] | [Status] | [Link] | [Open question] | [Next opportunity] |
 
-**Strength, conditioning and rehabilitation.** [One or two sentences, linking the phase reports: only the strength and conditioning staff's documented activities and measurements and the medical staff's communicated participation limits. If nothing measurable was supplied, say that the program has no measured gain to report. The coaching staff does not declare injuries resolved or issue a projected return.]
+**Strength, conditioning and rehabilitation:** [Links to the phase report sections that hold the strength and conditioning staff's documented activities and measurements and the medical staff's communicated participation limits, for example each phase's control, medical and participation section. Where no measurement was supplied, the line reads "No measurement recorded" with the links. The coaching staff does not declare injuries resolved or issue a projected return.]
 
 **Onboarding and the spring dinners.** [Links to the phase report entries that record the welcome packages, the follow-up conversations and the dinners as held. No attendance is reported.]
 
@@ -45,12 +45,12 @@ Use this table only when a player's record received a dated, source-linked updat
 
 ## Coaching adjustments and unresolved football matters
 
-[Only adjustments supported by completed work, with the date and responsible coach, each linking the phase report where it is recorded. Examples include a revised protection word, a repeated bunch check, a cut concept that consumed too much teaching time, or a room that needs a slower progression. Do not insert fictional conversations or claim guaranteed effectiveness.]
+[Only adjustments the phase report records, with the date and responsible coach, each shown in the phase report's words or linked to its section. Examples include a revised protection word, a repeated bunch check, a cut concept that consumed too much teaching time, or a room that needs a slower progression. Do not describe them in new words, insert fictional conversations or claim guaranteed effectiveness.]
 
 | Follow-up | Owner | Evidence still needed | When it can next be checked |
 |---|---|---|---|
-| [Specific unresolved correction or assignment] | [Named coordinator/position coach] | [What is unobserved] | [Actually scheduled legal opportunity] |
-| [A second follow-up only if real] | [Actual owner] | [Bounded question] | [Known window or not scheduled] |
+| [The question the phase report carried forward, in its words or linked to its section] | [Named coordinator/position coach] | [What is unobserved] | [Actually scheduled legal opportunity] |
+| [A second carried question only if real] | [Actual owner] | [Bounded question] | [Known window or not scheduled] |
 
 **Head-coach decisions:** [List only decisions Stone actually made, with a link to My Program Plan or the dated entry on My Responses. Keep still-open choices open rather than filling them. If no further decision is required, say so.]
 
@@ -60,14 +60,14 @@ Use this table only when a player's record received a dated, source-linked updat
 
 | Dated matter | Final authority and disposition | Read its own result |
 |---|---|---|
-| [Date, player/coach/club and issue, if one exists] | [Caldwell / Stone / medical staff / outside party; settled status] | [Individual dated result] |
+| [Date, player/coach/club and issue, if one exists] | [General manager / head coach / medical staff / outside party; settled status] | [Individual dated result] |
 | [Another independently settled matter, if one exists] | [Actual final actor and status] | [Another individual dated result] |
 
 [If no such matter was resolved, write "No separate consequential matter was resolved during this window." If three negotiations closed, show three different links. A still-open negotiation may be linked as pending but is not counted as a completed result. Do not replay a staff hiring draw or a contract negotiation simply because the summary is being refreshed.]
 
 ## What carries into OTAs
 
-[Name the *specific* questions that only noncontact offense-versus-defense work in Phase Three can answer. The next OTA briefing inherits these questions and the actual participant list at its own issue date; it does not automatically inherit jobs, roster slots, health clearances or a claim that anyone improved. Distinguish a concept introduced in meetings, rehearsed on air, approved for opposed work and actually proven in that opposed work. Only the first three may be known now.]
+[The questions the Phase Two report carried into OTAs, shown in its words or linked to its section: the *specific* questions that only noncontact offense-versus-defense work in Phase Three can answer. The next OTA briefing inherits these questions and the actual participant list at its own issue date; it does not automatically inherit jobs, roster slots, health clearances or a claim that anyone improved. Distinguish a concept introduced in meetings, rehearsed on air, approved for opposed work and actually proven in that opposed work. Only the first three may be known now.]
 
 **Phase One account:** [Readable link to the actual detailed Phase One report].  
 **Phase Two account:** [Readable link to the actual detailed Phase Two report].  

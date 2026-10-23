@@ -92,7 +92,7 @@
 
 ## Standing instructions in force
 
-[Shown, not asked: the emergency practice lead and his limits; and the standing spring methods (defensive intent with TAKE, GIVE and ANSWER, injured-player learning, the cross-training rule, the punt families and separate grading of operation, kick and coverage while their coordinator holds the job, the consultation cadence and voluntary family events). If the emergency lead or his second has left the staff, ask the head coach for the succession below. The head coach changes an instruction by writing the new one on his page.]
+[Shown, not asked: the emergency practice lead and his limits; and the standing spring methods (defensive intent with TAKE, GIVE and ANSWER, injured-player learning, the cross-training rule, the punt families and separate grading of operation, kick and coverage while their coordinator holds the job, the consultation cadence and voluntary family events). If the emergency lead or his second has left the staff, ask the head coach for the succession below. The head coach changes an instruction by writing the new one on My Install Plan, or, once that page is answered, as a dated entry on this phase's My Responses page.]
 
 ## Who decides what
 

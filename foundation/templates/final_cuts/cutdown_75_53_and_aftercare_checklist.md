@@ -8,7 +8,7 @@ This is an internal acceptance checklist, not a request for the user to manage f
 - [ ] Actual players named and legally eligible; no future roster assumption and no 2014 count copied to 2015.
 - [ ] Medical assessments from the medical staff; the right injured-transaction route checked.
 - [ ] Count already at or under 75: a FOR YOUR INFORMATION line with the count, no cut, and the 75 section of My Cut Recommendations not requested.
-- [ ] Count over 75: the Roster Cutdown Report asks for the 75 section; no missing answer treated as assent; Caldwell follows Stone's lawful list except on a constraint written into the report before Stone answered.
+- [ ] Count over 75: the Roster Cutdown Report asks for the 75 section; no missing answer treated as assent; the general manager follows Stone's lawful list except on a constraint written into the report before Stone answered.
 - [ ] Each concluded player case has its own dated result in its owner's folder, linked from the cutdown index.
 - [ ] Count legally at or under 75 by the cutoff.
 - [ ] The September 3 game freezes only from that roster.
