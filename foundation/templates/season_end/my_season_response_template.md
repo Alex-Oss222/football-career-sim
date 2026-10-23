@@ -48,7 +48,7 @@
 
 ## Corrections to the briefing and questions for the club
 
-[Correct a material misunderstanding, name a question you want answered, or write “None.” A sourced factual correction can be considered before the club decides; restating a point in other words cannot change the evaluated facts. If the issue depends on facts the club must verify, identify those facts rather than inventing an answer.]
+[Correct a material misunderstanding, name a question you want answered, or write “None.” The club's decision is already drawn when this page opens: a sourced factual correction is answered and kept on record but cannot change it, since the draw's inputs (the club's wins, the coach's season with the club and recent playoffs) were checked against the closed games and the coach records before the draw. Restating a point in other words cannot change the evaluated facts. If the issue depends on facts the club must verify, identify those facts rather than inventing an answer.]
 
 ## Closing instruction
 
