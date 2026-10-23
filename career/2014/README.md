@@ -63,6 +63,7 @@ Projected dates require medical clearance. [Full injury report](Team_Operations/
 - **Fourth downs:** Fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt. [Week 5 report](Regular_Season/Games/Week_05/output.md)
 - **Other clubs' approaches:** You are not open to job offers or interviews with other clubs; another club's request and Shad Khan's answer reach you as news.
 - **Assistants' interviews elsewhere:** Grant an assistant's head-coach interview and a position coach's coordinator interview; refuse a move to the same title elsewhere; alike whatever the asking club, within the league's rules for the season.
+- **Practice schedule:** Each week as in Weeks 1 to 5: Tuesday the players' day off, practices on Wednesday, Thursday and Friday, and a walkthrough on Saturday; pads on the Wednesday of Weeks 7, 9, 13, 15 and 17, helmets only otherwise; Monday, November 24, 2014 an added day off, so November has the four days off the CBA requires, bye days not counted.
 
 ## Who calls what
 

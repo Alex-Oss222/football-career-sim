@@ -236,15 +236,19 @@ class BriefingTests(unittest.TestCase):
         every = current_job.instructions(self.wk.job)
         career = [i for i in every if i.get("subject") in current_job.CAREER_SUBJECTS]
         game = [i for i in every if i.get("subject") in current_job.SUBJECTS]
-        self.assertTrue(career and game)
+        # The standing practice instruction is not a game direction either.
+        practice = [i for i in every if i.get("subject") in current_job.PRACTICE_SUBJECTS]
+        self.assertTrue(career and game and practice)
         for item in career:
             self.assertNotIn("**%s" % render_career_views.SUBJECT_LABEL[item["subject"]], block)
+        self.assertNotIn("**Practice schedule", block)
         for item in game:
             self.assertIn("**%s" % render_career_views.SUBJECT_LABEL[item["subject"]], block)
         render_career_views.write(self.root)
         desk = self.wk.paths.desk.read_text(encoding="utf-8")
         for item in career:
             self.assertIn("**%s" % render_career_views.SUBJECT_LABEL[item["subject"]], desk)
+        self.assertIn("**Practice schedule:**", desk)
         # A career answer alone never makes the briefing out of date.
         self.assertFalse(any("a new briefing is due" in e for e in render_game_week.check(self.root)))
 
