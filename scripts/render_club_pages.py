@@ -187,8 +187,11 @@ class Context:
         return self.fixtures[game_key(receipt)]
 
     def next_game(self):
+        """Jacksonville's next game not yet closed: on game day, before the close, that day's game."""
+        closed = {game_key(r) for r in self.closed}
         ours = sorted((g for g in self.fixtures.values() if JAX in (g["away"], g["home"])
-                       and date.fromisoformat(g["date"]) > self.as_of), key=lambda g: g["date"])
+                       and date.fromisoformat(g["date"]) >= self.as_of and game_key(g) not in closed),
+                      key=lambda g: g["date"])
         return ours[0] if ours else None
 
 

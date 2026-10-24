@@ -1,13 +1,13 @@
 # Jacksonville 2014
 
-**October 5, 2014.** Last game: Week 5, lost to Pittsburgh 27-10 at home. Record: 3-2.
+**October 12, 2014.** Last game: Week 5, lost to Pittsburgh 27-10 at home. Record: 3-2.
 
 Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coach page](../Stone/README.md)
 
 ## Waiting on you
 
-1. **Week 6 game plan for Tennessee.** To settle: the menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work after his October 7 exam. Due before kickoff, Sunday, October 12, 1 p.m. ET; the practice work before the first practice, Tuesday, October 7. Still to come: Trawick's reassessment (October 7). [Game Week Briefing](Regular_Season/Games/Week_06/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_06/Game_Plan.md)
-2. **Week 6 inactives.** Due before kickoff, Sunday, October 12, 1 p.m. ET. Still to come: Christian Jones's reassessment and projected return (October 6); Trawick's reassessment (October 7); Poyer's projected return (October 9). [Game Week Briefing](Regular_Season/Games/Week_06/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_06/Game_Plan.md)
+1. **Week 6 game plan for Tennessee.** To settle: the menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work after his October 7 exam. Due before kickoff, Sunday, October 12, 1 p.m. ET. [Game Week Briefing](Regular_Season/Games/Week_06/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_06/Game_Plan.md)
+2. **Week 6 inactives.** Due before kickoff, Sunday, October 12, 1 p.m. ET. [Game Week Briefing](Regular_Season/Games/Week_06/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_06/Game_Plan.md)
 
 ## Next event
 
@@ -30,21 +30,12 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coac
 
 ## Medical and availability
 
-| Player | Status | Next medical date |
-|---|---|---|
-| [Christian Jones](Team_Operations/Team/Player_Cards/christian_jones.md) | [Out · upper extremity (minor)](Team_Operations/Medical/incidents/christian_jones_2014-10-05.md) | Review October 6, 2014; projected return October 6, 2014 |
-| [Brynden Trawick](Team_Operations/Team/Player_Cards/brynden_trawick.md) | [Out · lower extremity (minor)](Team_Operations/Medical/incidents/brynden_trawick_2014-10-05.md) | Review October 7, 2014; projected return October 11, 2014 |
-| [Jordan Poyer](Team_Operations/Team/Player_Cards/jordan_poyer.md) | [Independent hold · head/neck (short)](Team_Operations/Medical/incidents/jordan_poyer_2014-09-21.md) | Projected return October 9, 2014 |
+No active-roster medical instructions.
 
 Projected dates require medical clearance. [Full injury report](Team_Operations/Medical/current_injury_report.md)
 
 ## Coming up
 
-- October 6: Pittsburgh review and Tennessee introduction; Christian Jones's reassessment and projected return
-- October 7 to 11: Week 6 practice week; Trawick's reassessment October 7 and projected return October 11
-- October 7 and 8: Fall League Meeting
-- October 9: Poyer's projected return
-- October 12, 1 p.m.: Week 6, Jacksonville at Tennessee, LP Field
 - October 20: Lowery may begin practicing
 - October 28, 4 p.m.: Trading deadline
 - November 3: Lowery's earliest return to the active roster

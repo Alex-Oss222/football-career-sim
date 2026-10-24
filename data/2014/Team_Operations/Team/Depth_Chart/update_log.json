@@ -710,6 +710,21 @@
     "source": "[Week 5 game record](../../../Regular_Season/Games/Week_05/output.md); [medical history](../../Medical/medical_history.md#october-5-week-5-injuries-against-pittsburgh)",
     "change": "No order change and no Stone depth decision. Availability notes only: Brynden Trawick out, minor (October 5; not removed, 60 defensive snaps; projected return October 11, reassessment October 7); Christian Jones out, minor (October 5; not removed, 18 kicking-game snaps; projected return October 6, reassessment October 6). Neither was removed, so no Jacksonville substitution was recorded. The seven Week 5 inactives were applied as set; Nicks dressed with no snap recorded and Todd Davis played 18 kicking-game snaps. The Week 6 inactives and any order change are Stone's after the October 6 and 7 exams. Both JSON copies: availability notes and this row in the working copy; the released game input unchanged until Stone's Week 6 decision"
    }
+  },
+  {
+   "date": "October 6 to 11, 2014",
+   "recorded": "2014-10-11",
+   "event": "Tennessee practice week: availability notes",
+   "change": "No order change and no Stone depth decision. Availability notes only: Christian Jones cleared October 6, his projected date, at the reassessment his instruction named; Brynden Trawick reassessed October 7 with no change, out of the October 8 to 10 practices, and cleared October 11, his projected date; Jordan Poyer's independent medical hold released October 9, its projected date, full from the Thursday practice. No player on the 53 is under a medical instruction at the close of October 11. The Week 6 inactives and any order change are Stone's on his Week 6 Game Plan.",
+   "sources": [
+    {
+     "label": "Medical history",
+     "page": "career/2014/Team_Operations/Medical/medical_history.md#october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+    }
+   ],
+   "events": [
+    "2014-10-06-to-10-11-jones-trawick-cleared-poyer-released"
+   ]
   }
  ]
 }

@@ -121,6 +121,14 @@ OUTCOME = {
 }
 # Harrison retired as a free agent (rules C9): his retirement frees no place.
 CLUB = {"R14-0107": "FA"}
+# Applied rows of a Week 1 chart player whose source states another position
+# group than his chart label, reviewed as the same player (rules B4): the
+# position guard (`position_problems`) passes them. Keyed by research id and
+# naming no player (rules C5).
+POSITION_REVIEWED = {
+    "R14W6-098": "the Week 1 chart seats this gsis in a defensive-end slot (LDE2) under a TE label; the source "
+                "states DE, and nflverse players.csv holds one player of the name",
+}
 # Second-pass citations whose page title names a real injury are recorded
 # without the URL (rules C6); the URL stays in the pinned research list.
 OTHER_SOURCE = {"R14-0107": "Steelers.com news release of September 23, 2014, stating the September 5 announcement "
@@ -1075,8 +1083,11 @@ def position_problems(row, committed, ident):
     states a 2014 position group (a) that differs from the base player's
     when the gsis is on a Week 1 chart, or (b) for a name-only match, that a
     namesake in nflverse players.csv fits while the chosen identity does
-    not. Either stops the build until an IDENTITY fix names the player."""
+    not. Either stops the build until an IDENTITY fix names the player, or,
+    for (a), a POSITION_REVIEWED entry records the review."""
     if committed.get("outcome") != "APPLY" or not committed.get("uid"):
+        return []
+    if row.get("research_ref") in POSITION_REVIEWED:
         return []
     stated = group(row.get("src_pos") or "")
     if not stated:
