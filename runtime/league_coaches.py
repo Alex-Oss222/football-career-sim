@@ -405,7 +405,8 @@ def first_practice_day(season, week, root=ROOT, job=None):
 
 def practice_weeks_opened(season, root=ROOT):
     """The weeks whose practice week has opened: the week closed, its practice record written, or the
-    master date past the day of its first practice. A brief issued or an item opened for the week
+    master date on or after the day of its first practice (no session time is recorded, so a record
+    made on that day counts, whatever its hour). A brief issued or an item opened for the week
     does not count: both open at the rebuild that follows the previous week's check, and at the first
     run after step 5's merge they were already open before it."""
     paths = SeasonPaths(season, root)
@@ -419,7 +420,7 @@ def practice_weeks_opened(season, root=ROOT):
             weeks.add(week)
             continue
         try:
-            if today > first_practice_day(season, week, root, job):
+            if today >= first_practice_day(season, week, root, job):
                 weeks.add(week)
         except ValueError:
             continue

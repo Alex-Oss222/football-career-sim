@@ -311,15 +311,18 @@ class CheckTests(unittest.TestCase):
         errors = lc.coverage_errors(self.root, SEASON)
         self.assertEqual([int(re.match(r"Week (\d+)", e)[1]) for e in errors], missing)
         self.assertTrue(lc.validation_errors(self.root))
-        # So does the master date passing the day of its first practice, with no record written.
+        # So does the master date reaching the day of its first practice, with no record written: the
+        # day before does not, and a record made on that day counts whatever its hour (no session time
+        # is recorded), the evening record after practice included.
         practice.unlink()
         self.assertEqual(lc.coverage_errors(self.root, SEASON), [])
         first = lc.first_practice_day(SEASON, week + 1, self.root)
-        set_master(self.root, first, "after the 9 a.m. ET record of the Week %d preparation (test)" % (week + 1))
-        self.assertEqual(lc.coverage_errors(self.root, SEASON), [])          # that day is not yet past
-        set_master(self.root, first + timedelta(days=1), "after the 9 a.m. ET record of the Week %d preparation "
+        set_master(self.root, first - timedelta(days=1), "after the 9 a.m. ET record of the Week %d preparation "
                                                          "(test)" % (week + 1))
-        self.assertEqual(len(lc.coverage_errors(self.root, SEASON)), len(missing))
+        self.assertEqual(lc.coverage_errors(self.root, SEASON), [])
+        for hour in ("9 a.m.", "6:30 p.m."):
+            set_master(self.root, first, "after the %s ET record of the Week %d preparation (test)" % (hour, week + 1))
+            self.assertEqual(len(lc.coverage_errors(self.root, SEASON)), len(missing), hour)
         # And the practice-week commit: the record written and the clock moved to game day.
         game_day = min(date.fromisoformat(g["date"]) for g in paths.regular_games() if g["week"] == week + 1)
         practice.write_text("{}", encoding="utf-8")
@@ -617,7 +620,7 @@ class FirstPracticeTests(unittest.TestCase):
         self.assertGreater(first, span)
         self.assertEqual(lc.first_practice_day(SEASON, week, root), first)
         self.assertNotIn(week, lc.practice_weeks_opened(SEASON, root))
-        set_master(root, first + timedelta(days=1), "after the 9 a.m. ET record of the Week %d preparation (test)" % week)
+        set_master(root, first, "after the 9 a.m. ET record of the Week %d preparation (test)" % week)
         self.assertIn(week, lc.practice_weeks_opened(SEASON, root))
 
 
