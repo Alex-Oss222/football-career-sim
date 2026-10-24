@@ -155,12 +155,22 @@ class ClosedRecordTests(unittest.TestCase):
                                 for e in s["participation"]) for s in padded(3)))
 
     def test_nine_padded_used_two_left_and_three_for_the_last_six(self):
-        status = practices.padded_status(SEASON, self.start - 1, ROOT, self.found)
+        # Through Week 5, the count the Week 5 record and the defect register give.
+        status = practices.padded_status(SEASON, 5, ROOT, self.found)
         self.assertEqual((status["first"]["used"], status["first"]["left"]), (9, 2))
         self.assertEqual((status["last"]["used"], status["last"]["left"]), (0, 3))
         self.assertEqual((status["double_week"], status["double_week_used"]), (1, True))
         self.assertEqual([o["week"] for o in status["over"]], [2, 3, 4])
         self.assertEqual(status["by_week"], {1: 2, 2: 2, 3: 2, 4: 2, 5: 1})
+        # Week 6 closed before the log existed too: its record transcribes the week as its Game Report
+        # and the medical history state it, practices in helmets with no padded practice, so the nine
+        # stand and two are left for Weeks 7 to 11.
+        week6 = self.found[6]
+        self.assertEqual(week6["basis"], "closed_record")
+        self.assertEqual(practices.week_padded(week6), 0)
+        status = practices.padded_status(SEASON, 6, ROOT, self.found)
+        self.assertEqual((status["first"]["used"], status["first"]["left"]), (9, 2))
+        self.assertEqual([o["week"] for o in status["over"]], [2, 3, 4])
 
     def test_the_first_month_has_four_counted_days_off(self):
         months = practices.days_off(SEASON, ROOT, self.found)
