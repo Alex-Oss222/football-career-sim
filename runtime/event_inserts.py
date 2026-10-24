@@ -444,12 +444,32 @@ def reissue_reason(period, current_issue, route_now):
     return None
 
 
+def same_but_his_settlement(then, now, marker):
+    """Whether two issues of a brief have the same own sections but for the rows of what is owed by
+    the head coach that the later one shows set on his own Game Plan (its due line starting with
+    ``marker``): such a row may differ only in that last cell, which said when it was due before he
+    set it. Stone's own answers are never a change of situation (the plan-open comparison of
+    ``reissue_reason``)."""
+    earlier, later = own_sections(then).split("\n"), own_sections(now).split("\n")
+    if len(earlier) != len(later):
+        return False
+    for was, line in zip(earlier, later):
+        if was == line:
+            continue
+        cells, before = line.split("|"), was.split("|")
+        if not (line.startswith("| ") and len(cells) == len(before) > 3 and cells[:-2] == before[:-2]
+                and cells[-2].strip().startswith(marker)):
+            return False
+    return True
+
+
 def plan_issue_problems(wk, answered):
     """(problems, notes) of a Game Plan's "Briefing used" (scripts/check_game_plan.briefing_problems
     calls this; ``answered`` is {date, revision}): none when it names the current issue, or an earlier
-    one whose own sections equal the current issue's (the reissue only added or changed inserts),
-    which gives a note that his answers stand; otherwise the plan check's message, so a reissue whose
-    own sections changed still needs "Briefing used" updated."""
+    one whose own sections equal the current issue's (the reissue only added or changed inserts; the
+    rows the later issue shows set on his own Game Plan are compared as they were before he set them,
+    ``same_but_his_settlement``), which gives a note that his answers stand; otherwise the plan
+    check's message, so a reissue whose own sections changed still needs "Briefing used" updated."""
     from scripts import render_game_week as rgw
     from .game_plan import issue_label
     current = rgw.current_issue(wk)
@@ -466,7 +486,7 @@ def plan_issue_problems(wk, answered):
             now = wk.pages.briefing.read_text(encoding="utf-8")
         except OSError:
             then = now = None
-        if then is not None and own_sections(then) == own_sections(now):
+        if then is not None and same_but_his_settlement(then, now, rgw.SET_ON_PLAN):
             return [], [NOTE[:1].upper() + NOTE[1:]]
     return ["Briefing used: your page answers the briefing of %s; the current briefing is %s; read it and write it "
             "as its status line names it (your answers may stand)" % (issue_label(*mine), issue_label(*current))], []

@@ -383,6 +383,35 @@ class PlanCurrencyTests(unittest.TestCase):
         self.assertEqual((pages.plan.read_bytes(), pages.call_sheet.read_bytes(), pages.applied.read_bytes()), frozen)
         self.assertEqual(apply_game_plan.validation_errors(self.root), [])
         self.assertIn("## ACTION REQUIRED", pages.briefing.read_text(encoding="utf-8"))
+        # The reissue shows his settled items as set on his Game Plan; that is his own answer, so the
+        # applied page still checks against it, with the note (rehearsal r4 of step 5).
+        self.assertIn(render_game_week.SET_ON_PLAN, pages.briefing.read_text(encoding="utf-8"))
+        problems, notes, _ = self.case.check()
+        self.assertEqual([p for p in problems if p.startswith("Briefing used")], [])
+        self.assertIn(event_inserts.NOTE[:1].upper() + event_inserts.NOTE[1:], notes)
+
+
+class SettlementApartTests(unittest.TestCase):
+    """The rows of section 8 a later issue shows set on his Game Plan are compared as they were
+    before he set them; any other difference still counts."""
+
+    HEAD = "# Week 9 Game Week Briefing\n\n**Issued:** %s\n\n## 8. What is owed by the head coach\n\n"
+    ROW = "| Week 9 inactives | Who does not dress | %s |\n"
+
+    def page(self, issued, due, extra=""):
+        return self.HEAD % issued + self.ROW % due + extra
+
+    def test_only_his_settlement_is_set_apart(self):
+        then = self.page("October 29", "Before kickoff, Sunday, November 2, 1 p.m. ET; nothing still to come")
+        now = self.page("October 30", "%s, October 29; nothing still to come" % render_game_week.SET_ON_PLAN)
+        self.assertTrue(event_inserts.same_but_his_settlement(then, now, render_game_week.SET_ON_PLAN))
+        self.assertTrue(event_inserts.same_but_his_settlement(then, then, render_game_week.SET_ON_PLAN))
+        # A changed choice on a settled row, a due line changed without his settlement, and an added
+        # line are differences.
+        other = now.replace("Who does not dress", "Who sits")
+        later = self.page("October 30", "Before kickoff, Monday, November 3, 8:30 p.m. ET; nothing still to come")
+        for changed in (other, later, now + "| Week 9 game plan | The plan | Not set |\n"):
+            self.assertFalse(event_inserts.same_but_his_settlement(then, changed, render_game_week.SET_ON_PLAN))
 
 
 if __name__ == "__main__":
