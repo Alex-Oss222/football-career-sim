@@ -1,0 +1,79 @@
+{
+ "schema_version": 1,
+ "name": "Ryan Davis",
+ "player": "ryan_davis",
+ "listed": 23,
+ "position": "EDGE",
+ "roster_position": "DE",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2012-12-30",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "ryan_davis_2012-12-30",
+   "club": "Jacksonville Jaguars",
+   "through": 2014,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 495000,
+     "base": 495000,
+     "proration": 0,
+     "other_cap": 0,
+     "cash": 495000,
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Reserve/future, December 30, 2012",
+   "signed_text": "December 30, 2012",
+   "term_text": "2 / 2014",
+   "value_text": "$900,000",
+   "bonus": {
+    "text": "$0 signing bonus or proration"
+   },
+   "guarantee_text": "No remaining guaranteed base salary established in the recovered schedule",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "December 2012 futures deal totals $900,000 across $405,000 in 2013 and $495,000 in 2014, with no bonus. Later real contracts do not extend it.",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "library/2014_jaguars_original_contract_reconstruction.md"
+   ],
+   "schedule_from": "0152eae"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-08-30",
+   "source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+   "contract": "ryan_davis_2012-12-30",
+   "how": "waived",
+   "text": "Waived August 30, 2014 at the reduction to 53",
+   "notes": "December 2012 futures deal totals $900,000 across $405,000 in 2013 and $495,000 in 2014, with no bonus. Later real contracts do not extend it. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Reserve/future, December 30, 2012 ended.",
+   "sources": [
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
+    "library/2014_jaguars_original_contract_reconstruction.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
+   "availability": "No communicated restriction",
+   "plan": "Former player; departure recorded",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 0 (2012 mostly practice squad; active roughly October 5-23). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "schema_version": 1,
+ "name": "Andrew Hawkins",
+ "player": "andrew_hawkins",
+ "listed": 63,
+ "position": "WR",
+ "roster_position": "WR",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-03-18",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "andrew_hawkins_2014-03-18",
+   "club": "Jacksonville Jaguars",
+   "through": 2017,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 2800000,
+     "base": 1800000,
+     "proration": 1000000,
+     "other_cap": 0,
+     "cash": 5800000,
+     "guaranteed_base": 1800000,
+     "basis": "Branch contract, Entry 97 (March 2014 replay)"
+    },
+    "2015": {
+     "status": "known",
+     "cap": 6000000,
+     "base": 5000000,
+     "proration": 1000000,
+     "other_cap": 0,
+     "cash": 5000000,
+     "guaranteed_base": 2200000,
+     "basis": "Branch contract, Entry 97 (March 2014 replay)"
+    },
+    "2016": {
+     "status": "known",
+     "cap": 3400000,
+     "base": 2400000,
+     "proration": 1000000,
+     "other_cap": 0,
+     "cash": 2400000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 97 (March 2014 replay)"
+    },
+    "2017": {
+     "status": "known",
+     "cap": 3400000,
+     "base": 2400000,
+     "proration": 1000000,
+     "other_cap": 0,
+     "cash": 2400000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 97 (March 2014 replay)"
+    }
+   },
+   "type": "Veteran (restricted free agent; offer sheet not matched)",
+   "signed_text": "Offer sheet March 13, 2014; binding March 18 when Cincinnati declined to match",
+   "term_text": "4 / 2017",
+   "value_text": "$15,600,000",
+   "bonus": {
+    "text": "$4,000,000; $1,000,000; 4",
+    "amount": 4000000
+   },
+   "guarantee_text": "$8,000,000 fully guaranteed (signing bonus, 2014 base and $2,200,000 of the 2015 base)",
+   "basis": {
+    "text": "Executed branch terms (Entry 95)",
+    "source": "career/2014/Team_Operations/Finances/player_contracts/contracts.md"
+   },
+   "exposure_text": "Gross pre-June 1 exposure $5,200,000 before 2015; $2,000,000 before 2016; $1,000,000 before 2017",
+   "notes": "Branch record (Entry 97; March 2014 replay log). No draft-pick compensation to Cincinnati (original-round tender, undrafted); the historical Cleveland offer sheet does not occur",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/free_agency/signings.md",
+    "career/2014/free_agency/march_2014_replay_log.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2013: 3 (Cincinnati, 2011-2013)"
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "schema_version": 1,
+ "name": "Alterraun Verner",
+ "player": "alterraun_verner",
+ "listed": 60,
+ "position": "CB",
+ "roster_position": "CB",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-03-11",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "alterraun_verner_2014-03-11",
+   "club": "Jacksonville Jaguars",
+   "through": 2017,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 6000000,
+     "base": 5000000,
+     "proration": 1000000,
+     "other_cap": 0,
+     "cash": 9000000,
+     "guaranteed_base": 5000000,
+     "basis": "Branch contract, Entry 95 (March 2014 replay)"
+    },
+    "2015": {
+     "status": "known",
+     "cap": 7000000,
+     "base": 6000000,
+     "proration": 1000000,
+     "other_cap": 0,
+     "cash": 6000000,
+     "guaranteed_base": 6000000,
+     "basis": "Branch contract, Entry 95 (March 2014 replay)"
+    },
+    "2016": {
+     "status": "known",
+     "cap": 8000000,
+     "base": 5500000,
+     "proration": 1000000,
+     "other_cap": 1500000,
+     "cash": 7000000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 95 (March 2014 replay): $1,000,000 roster bonus and up to $500,000 active-game bonuses"
+    },
+    "2017": {
+     "status": "known",
+     "cap": 8000000,
+     "base": 5500000,
+     "proration": 1000000,
+     "other_cap": 1500000,
+     "cash": 7000000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 95 (March 2014 replay): $1,000,000 roster bonus and up to $500,000 active-game bonuses"
+    }
+   },
+   "type": "Veteran (branch free agent)",
+   "signed_text": "March 11, 2014, after 4 p.m. ET",
+   "term_text": "4 / 2017",
+   "value_text": "$29,000,000",
+   "bonus": {
+    "text": "$4,000,000; $1,000,000; 4",
+    "amount": 4000000
+   },
+   "guarantee_text": "$15,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base)",
+   "basis": {
+    "text": "Executed branch terms (Entry 95)",
+    "source": "career/2014/Team_Operations/Finances/player_contracts/contracts.md"
+   },
+   "exposure_text": "Gross pre-June 1 exposure $9,000,000 in 2015; $2,000,000 in 2016; $1,000,000 in 2017",
+   "notes": "Branch record (Entry 95; March 2014 replay log). The historical Tampa Bay signing does not occur",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/free_agency/signings.md",
+    "career/2014/free_agency/march_2014_replay_log.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2013: 4 (Tennessee, 2010-2013)"
+  }
+ ]
+}

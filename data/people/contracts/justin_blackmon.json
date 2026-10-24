@@ -1,0 +1,116 @@
+{
+ "schema_version": 1,
+ "name": "Justin Blackmon",
+ "player": "justin_blackmon",
+ "listed": 14,
+ "position": "WR",
+ "roster_position": "WR",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2012",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "justin_blackmon_2012",
+   "club": "Jacksonville Jaguars",
+   "through": 2015,
+   "years": {
+    "2014": {
+     "status": "approximate",
+     "cap": null,
+     "base": 2072910,
+     "proration": 2975818,
+     "other_cap": 0,
+     "cash": 3772910,
+     "approximate_cap": 5048728,
+     "estimate_note": "Original schedule before unresolved branch forfeiture credits: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Current guarantees and four-game branch forfeiture accounting remain unresolved. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
+     "deferred_bonus_cash": 1700000,
+     "guaranteed_base": 0
+    },
+    "2015": {
+     "status": "approximate",
+     "cap": null,
+     "base": 2914365,
+     "proration": 2975818,
+     "other_cap": 0,
+     "cash": 4304365,
+     "approximate_cap": 5890183,
+     "estimate_note": "Original schedule before unresolved branch forfeiture credits: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Current guarantees and four-game branch forfeiture accounting remain unresolved. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
+     "deferred_bonus_cash": 1390000,
+     "guaranteed_base": 0
+    },
+    "2016": {
+     "status": "option_unexercised",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
+    }
+   },
+   "type": "Rookie scale, 2012 pick #5",
+   "signed_text": "2012",
+   "term_text": "4 / 2015",
+   "value_text": "$18,512,010 (guaranteed at signing: $18,512,010)",
+   "bonus": {
+    "text": "$7,110,000 paid signing bonus plus deferred roster installments treated as signing bonus; original scheduled allocation $2,975,818 annually, before forfeiture reconciliation"
+   },
+   "guarantee_text": "Future guarantees void after the existing four-game branch suspension, applying the reported original contract clause. Gross scheduled salary and deferred bonus cash remain payable if retained.",
+   "guarantee_basis": "simulation reconstruction",
+   "basis": {
+    "text": "Includes adopted simulation amounts; see contract notes",
+    "source": "library/2014_jaguars_contract_completion.md"
+   },
+   "exposure_text": "$5,951,636 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Original gross schedule: 2014 base $2,072,910 and $1.7M deferred roster cash; 2015 base $2,914,365 and about $1.39M deferred cash. These guaranteed-at-signing bonuses were already treated as signing bonus for cap purposes; do not add them to cap twice. Later actual suspension/tolling does not apply. Entry 91 applies the original suspension clause to remove future guarantees and adopts the gross schedule without an additional bonus-recovery credit.",
+   "sources": [
+    "career/2014/offseason/contract_table.md",
+    "career/2014/offseason/contract_status_register.md",
+    "library/2014_jaguars_original_contract_reconstruction.md",
+    "library/2014_jaguars_contract_completion.md"
+   ],
+   "rookie": "drafted",
+   "schedule_from": "7a3ed6c"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-03-31",
+   "source": "career/2014/Team_Operations/Trades/completed_trades/shorts_blackmon_to_indianapolis_2014-03-31.md",
+   "contract": "justin_blackmon_2012",
+   "how": "traded",
+   "text": "Traded to Indianapolis, March 31, 2014",
+   "to": "Indianapolis Colts",
+   "dead_money": [
+    {
+     "year": 2014,
+     "amount": 5951636,
+     "status": "reconstructed",
+     "basis": "Pre-June 1 trade to Indianapolis, March 31, 2014 (Entry 104): the remaining bonus allocations of $2,975,818 for 2014 and $2,975,818 for 2015 accelerate into 2014. Indianapolis takes his 2014 and 2015 base salaries and deferred roster cash; his 2015 charge leaves Jacksonville.",
+     "line": 9
+    }
+   ],
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "library/2014_jaguars_original_contract_reconstruction.md",
+    "library/2014_jaguars_contract_completion.md"
+   ],
+   "as_written": {
+    "source": "career/2014/ledger.md"
+   }
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Traded to Indianapolis, March 31, 2014 (Entry 104)",
+   "availability": "No communicated restriction",
+   "plan": "Traded to Indianapolis (Entry 104)",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 1. 2013: Accrues in branch (on 53 for 12 games: Week 1 and Weeks 6-17; Weeks 2-5 on Reserve/Suspended)"
+  }
+ ]
+}

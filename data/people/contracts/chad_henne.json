@@ -1,0 +1,73 @@
+{
+ "schema_version": 1,
+ "name": "Chad Henne",
+ "player": "chad_henne",
+ "listed": 44,
+ "position": "QB",
+ "roster_position": "QB",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-04-04",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "chad_henne_2014-04-04",
+   "club": "Jacksonville Jaguars",
+   "through": 2015,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 1400000,
+     "base": 800000,
+     "proration": 600000,
+     "other_cap": 0,
+     "cash": 2000000,
+     "guaranteed_base": 800000,
+     "basis": "Branch contract, Entry 106: $600,000 bonus allocation, $800,000 guaranteed base"
+    },
+    "2015": {
+     "status": "known",
+     "cap": 2600000,
+     "base": 2000000,
+     "proration": 600000,
+     "other_cap": 0,
+     "cash": 2000000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 106: $600,000 bonus allocation, $2,000,000 base"
+    }
+   },
+   "type": "Veteran (branch re-signing)",
+   "signed_text": "April 4, 2014",
+   "term_text": "2 / 2015",
+   "value_text": "$4,000,000",
+   "bonus": {
+    "text": "$1,200,000 signing bonus; $600,000; 2"
+   },
+   "guarantee_text": "$2,000,000 (signing bonus and 2014 base)",
+   "basis": {
+    "text": "Branch re-signing, Entry 106 (negotiation record career/2014/free_agency/henne_negotiation_2014-04-04.md)",
+    "source": "career/2014/Team_Operations/Free_Agency/henne_negotiation_2014-04-04.md"
+   },
+   "exposure_text": "$600,000 remaining bonus if released before 2015",
+   "notes": "Branch record (Entry 106; negotiation record career/2014/free_agency/henne_negotiation_2014-04-04.md). Two years, $4.0M, $2.0M guaranteed, inside Stone's $2.5M-a-year ceiling. QB2 behind Cousins; no starting promise.",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 5 (2008-2011 Miami, 2012 Jacksonville; 4+ is Supported). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "schema_version": 1,
+ "name": "Brad Meester",
+ "player": "brad_meester",
+ "listed": 37,
+ "position": "C",
+ "roster_position": "C",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2013-03-12",
+   "source": "career/2013/offseason/free_agency/signings.md",
+   "contract": "brad_meester_2013-03-12",
+   "club": "Jacksonville Jaguars",
+   "through": 2013,
+   "years": {},
+   "type": "Veteran (branch re-signing)",
+   "signed_text": "March 12, 2013",
+   "term_text": "1 / 2013",
+   "value_text": "$1.50M",
+   "bonus": {
+    "text": "$0.50M; $0.50M; 0",
+    "amount": 500000
+   },
+   "guarantee_text": "None",
+   "basis": null,
+   "exposure_text": "Not applicable",
+   "notes": "Branch record (signings section 2)",
+   "sources": [
+    "career/2014/offseason/contract_table.md",
+    "career/2014/offseason/contract_status_register.md"
+   ],
+   "schedule_from": "bf1d2a0"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-03-11",
+   "source": "career/2014/League/personnel/retirements.md",
+   "contract": "brad_meester_2013-03-12",
+   "how": "retired",
+   "text": "Retired; contract expired at 4 p.m. March 11, 2014",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md"
+   ],
+   "as_written": {
+    "source": "career/2013/ledger.md"
+   }
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Retired; contract expired at 4 p.m. March 11, 2014 (Entries 79 and 94)",
+   "availability": "Retired (announced December 18, 2013, effective at the end of the 2013 season; Entry 79)",
+   "plan": "Retired; contract expired at 4 p.m. March 11, 2014 (Entries 79 and 94)",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 4+ (entered 2000; on Jacksonville's March 12, 2013 own-free-agent list as a veteran). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}
