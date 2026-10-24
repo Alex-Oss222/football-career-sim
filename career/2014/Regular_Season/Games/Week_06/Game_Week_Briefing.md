@@ -1,10 +1,10 @@
 # Week 6 Game Week Briefing: at Tennessee
 
-**Issued:** October 5, 2014, revision 3  
+**Issued:** October 12, 2014  
 **Game:** Jacksonville at Tennessee, Sunday, October 12, 2014, 1 p.m. ET, LP Field  
 **Prepared for:** Head Coach Alex Stone  
 **Football staff:** Mike Tice (offense), Romeo Crennel (defense), Mike Westhoff (special teams), the medical staff and pro personnel  
-**Status:** Revised: it replaces the briefing of October 5, 2014, revision 2.
+**Status:** Revised: it replaces the briefing of October 5, 2014, revision 3.
 
 ## 1. The game and what is at stake
 
@@ -37,11 +37,7 @@
 
 ## 3. Medical and game-day availability
 
-| Player | Status as of issue | Next medical decision / date | Football contingency |
-|---|---|---|---|
-| [Christian Jones](../../../Team_Operations/Medical/incidents/christian_jones_2014-10-05.md), LB | Out: upper extremity (minor); projected return October 6, 2014 | Reassessment, October 6 | Next in the chart's linebacker order: Todd Davis |
-| [Brynden Trawick](../../../Team_Operations/Medical/incidents/brynden_trawick_2014-10-05.md), S | Out: lower extremity (minor); projected return October 11, 2014 | Reassessment, October 7 | Next in the chart's defensive back order: A.J. Bouye |
-| [Jordan Poyer](../../../Team_Operations/Medical/incidents/jordan_poyer_2014-09-21.md), CB | Independent hold: head/neck (short); projected return October 9, 2014 | Not communicated | No one behind him in the chart's defensive back order |
+No player on the active roster is under a medical restriction or waiting on an exam.
 
 **Game-day numbers:** Who does not dress: 7 of the 53; on the medical staff's projections no one is out for the game, so your standing rule sits five healthy players and leaves 2 for you to name.
 
@@ -69,6 +65,7 @@
 | September 23 | Signed as a free agent | Chase Coffman | TE |
 | September 23 | Waived | T.J. Graham | WR |
 | September 24 | Signed to the practice squad | Brad Sorensen | QB |
+| October 11 | Promoted from the practice squad | Brett Brackett | TE |
 
 **Crennel's recommendation:** To come.
 
@@ -92,6 +89,7 @@
 | September 16 | Signed as a free agent | James Anderson | OLB |
 | September 16 | Signed to the practice squad | Justin Staples | LB |
 | September 17 | Released from the practice squad | Brandon Copeland | OLB |
+| October 8 | Signed as a free agent | Brandon Ghee | CB |
 
 **Tice's recommendation:** To come.
 
@@ -133,8 +131,8 @@
 
 | Decision | Choice required | Deadline / dependency |
 |---|---|---|
-| Week 6 game plan for Tennessee | The menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work after his October 7 exam. | Practice work before the first practice, Tuesday, October 7; the rest before kickoff, Sunday, October 12, 1 p.m. ET; after: Trawick's reassessment (October 7) |
-| Week 6 inactives | Who does not dress: 7 of the 53; on the medical staff's projections no one is out for the game, so your standing rule sits five healthy players and leaves 2 for you to name | Before kickoff, Sunday, October 12, 1 p.m. ET; after: Christian Jones's reassessment and projected return (October 6); Trawick's reassessment (October 7); Poyer's projected return (October 9) |
+| Week 6 game plan for Tennessee | The menu, including whether the Flea Flicker and TE Delay stay. | Before kickoff, Sunday, October 12, 1 p.m. ET; nothing still to come |
+| Week 6 inactives | Who does not dress: 7 of the 53; on the medical staff's projections no one is out for the game, so your standing rule sits five healthy players and leaves 2 for you to name | Before kickoff, Sunday, October 12, 1 p.m. ET; nothing still to come |
 
 Write your decisions on the [Game Plan](Game_Plan.md); the staff checks it and tells you what is missing before anything is set for the game.
 

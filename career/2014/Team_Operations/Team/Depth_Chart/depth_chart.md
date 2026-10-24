@@ -1,6 +1,6 @@
 # Jacksonville Jaguars depth chart
 
-As of October 5, 2014, after the Week 5 game against Pittsburgh (Pittsburgh 27, Jacksonville 10).
+As of October 12, 2014, after the Week 5 game against Pittsburgh (Pittsburgh 27, Jacksonville 10).
 
 This is Stone's current depth order, not a confirmed game-day lineup. Injuries do not change a starter or reserve assignment until Stone changes the chart.
 
@@ -45,11 +45,7 @@ The first defensive-line and linebacker groups, and the first four defensive bac
 
 ## Current medical limitations
 
-| Player | Status | Next medical date |
-|---|---|---|
-| [Christian Jones](../Player_Cards/christian_jones.md) | Out · upper extremity (minor) | Review October 6, 2014; projected return October 6, 2014 |
-| [Brynden Trawick](../Player_Cards/brynden_trawick.md) | Out · lower extremity (minor) | Review October 7, 2014; projected return October 11, 2014 |
-| [Jordan Poyer](../Player_Cards/jordan_poyer.md) | Independent hold · head/neck (short) | Projected return October 9, 2014 |
+No medical instructions on the 53-man roster.
 
 Medical clearance remains with the medical staff. [Full medical report](../../Medical/current_injury_report.md)
 
@@ -167,8 +163,6 @@ The order in each group remains Stone's current order. Reserve assignments that 
 | Punt returner | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) |
 
 ## Inactives
-
-Week 6 at Tennessee, October 12, 2014: not yet set. Stone selects the eligible inactives before the game.
 
 The prior game's inactives, for reference:
 

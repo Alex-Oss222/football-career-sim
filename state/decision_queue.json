@@ -24,7 +24,7 @@
     "by": "workflow",
     "event": "2014-10-05-week-5-vs-pittsburgh"
    },
-   "status": "OPEN",
+   "status": "RESOLVED",
    "waits_on": [
     {
      "what": "Trawick's reassessment",
@@ -60,7 +60,14 @@
     }
    ],
    "migrated_from": "state/05 JAX-2014-OCT05-STATE-111, section 8 row 'Week 6 inactives and game plan'; section 7 (Trawick's practice work); section 9 rows October 7 to 12; Week 5 output section 5 (Flea Flicker and TE Delay)",
-   "resolution": null
+   "resolution": {
+    "date": "2014-10-12",
+    "by": "user",
+    "record": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md"
+    },
+    "summary": "Stone set the game plan on his Week 6 Game Plan, checked and applied October 12, 2014"
+   }
   },
   {
    "id": "2014-w06-inactives",
@@ -76,7 +83,7 @@
     "by": "workflow",
     "event": "2014-10-05-week-5-vs-pittsburgh"
    },
-   "status": "OPEN",
+   "status": "RESOLVED",
    "waits_on": [
     {
      "what": "Christian Jones's reassessment and projected return",
@@ -128,7 +135,14 @@
     }
    ],
    "migrated_from": "state/05 JAX-2014-OCT05-STATE-111, section 8 row 'Week 6 inactives and game plan'; section 9 rows October 6 to 9",
-   "resolution": null
+   "resolution": {
+    "date": "2014-10-12",
+    "by": "user",
+    "record": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md"
+    },
+    "summary": "Stone set the inactives on his Week 6 Game Plan, checked and applied October 12, 2014"
+   }
   },
   {
    "id": "2014-practice-squad-vacancies",

@@ -140,6 +140,8 @@ def reserve(roster):
 def medical_status(row):
     """"Out · lower extremity (minor)", "Independent hold · head/neck (short)": the instruction,
     the injury and its severity as the roster record gives them."""
+    if not under_instruction(row):
+        return NO_RESTRICTION
     match = STATUS.match(row.get("availability") or "")
     if not match:
         return "Under medical instruction"

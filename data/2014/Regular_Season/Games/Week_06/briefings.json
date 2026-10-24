@@ -16,8 +16,14 @@
   {
    "date": "2014-10-05",
    "revision": 3,
-   "file": "Game_Week_Briefing.md",
+   "file": "Game_Week_Briefing_October_5_3.md",
    "sha256": "a15ad83dbd724a9d2aaa19adca63e481944921199f0dfec7e50af3ad5898bbbc"
+  },
+  {
+   "date": "2014-10-12",
+   "revision": 1,
+   "file": "Game_Week_Briefing.md",
+   "sha256": "138ee6f233e23e87e8de56a07ffdb19f52dd3ec835401e9cf8abb90b5deb96f6"
   }
  ]
 }

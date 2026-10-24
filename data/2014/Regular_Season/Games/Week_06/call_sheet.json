@@ -1,0 +1,951 @@
+{
+ "schema_version": 1,
+ "team": "Jacksonville Jaguars",
+ "event": "2014 regular season Week 6, Jacksonville at Tennessee, October 12, 2014",
+ "status": "EX_ANTE_CALL_SHEET_FROZEN",
+ "frozen": "2014-10-12, from Stone's Week 6 Game Plan after its check passed; before any draw",
+ "provenance": "Stone's Week 6 Game Plan (career/2014/Regular_Season/Games/Week_06/Game_Plan.md), checked by scripts/check_game_plan.py and applied by scripts/apply_game_plan.py on 2014-10-12: the calls, their situations and the opening calls, the decision rules and the prepared defensive responses as the page writes them, each defensive row citing the page's own line; the page's reasons are kept as his intent in the applied plan record, not here.",
+ "offensive_call_sheet": [
+  {
+   "name": "12 Ace, Power Right",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "tags": [
+    "opener",
+    "two-point folder"
+   ],
+   "opener": 1,
+   "opener_returns": [
+    5,
+    20
+   ],
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "backed up",
+    "low red zone",
+    "goal line",
+    "four minute",
+    "two-point"
+   ]
+  },
+  {
+   "name": "12 SHIFT Empty, Stick",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Empty (after shift)",
+   "motion": "SHIFT toward Empty",
+   "tags": [
+    "opener",
+    "shift",
+    "tight ends",
+    "two-point folder"
+   ],
+   "opener": 2,
+   "menus": [
+    "normal down",
+    "third-and-medium",
+    "two-minute",
+    "two-point"
+   ]
+  },
+  {
+   "name": "12 Wing, Outside Zone Left",
+   "family": "Outside Zone",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Wing Left",
+   "tags": [
+    "opener"
+   ],
+   "opener": 3,
+   "opener_returns": [
+    18
+   ],
+   "menus": [
+    "normal down",
+    "backed up",
+    "four minute"
+   ]
+  },
+  {
+   "name": "12 Trey, Y-Cross, SOLID",
+   "family": "Y-Cross",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey",
+   "protection": "SOLID",
+   "tags": [
+    "opener",
+    "tight ends",
+    "Kelce receiving Y"
+   ],
+   "opener": 4,
+   "opener_returns": [
+    11
+   ],
+   "menus": [
+    "normal down",
+    "2nd-and-long",
+    "third-and-medium",
+    "third-and-long",
+    "high red zone",
+    "two-minute",
+    "four minute"
+   ]
+  },
+  {
+   "name": "11 Doubles, Stick, SCAT",
+   "family": "Stick",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "SCAT",
+   "tags": [
+    "opener",
+    "pressure answer",
+    "Kelce receiving Y",
+    "Nicks X relief"
+   ],
+   "opener": 6,
+   "menus": [
+    "normal down",
+    "third-and-medium",
+    "backed up",
+    "two-minute"
+   ]
+  },
+  {
+   "name": "12 Wing, Boot Flood Right",
+   "family": "Boot Flood",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Wing Left",
+   "tags": [
+    "opener",
+    "movement pass",
+    "tight ends",
+    "two-point folder"
+   ],
+   "opener": 7,
+   "menus": [
+    "normal down",
+    "high red zone",
+    "sudden change",
+    "four minute",
+    "two-point"
+   ]
+  },
+  {
+   "name": "12 Ace, Counter Right",
+   "family": "Counter",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "tags": [
+    "opener",
+    "two-point folder"
+   ],
+   "opener": 8,
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "low red zone",
+    "goal line",
+    "four minute",
+    "two-point"
+   ]
+  },
+  {
+   "name": "11 Bunch, Mesh, HALF",
+   "family": "Mesh",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right",
+   "protection": "HALF",
+   "tags": [
+    "opener",
+    "Kelce receiving Y",
+    "two-point folder"
+   ],
+   "opener": 9,
+   "menus": [
+    "normal down",
+    "third-and-medium",
+    "low red zone",
+    "two-minute",
+    "two-point"
+   ]
+  },
+  {
+   "name": "11 Doubles, Inside Zone Right",
+   "family": "Inside Zone",
+   "type": "run",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "tags": [
+    "opener"
+   ],
+   "opener": 10,
+   "menus": [
+    "normal down",
+    "backed up",
+    "four minute"
+   ]
+  },
+  {
+   "name": "11 Trips, Inside Zone + Bubble",
+   "family": "Inside + Bubble",
+   "type": "mixed",
+   "personnel": "11",
+   "formation": "11 Trips Right",
+   "tags": [
+    "opener",
+    "access package"
+   ],
+   "opener": 12,
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "four minute"
+   ]
+  },
+  {
+   "name": "11 Doubles, RB Slow Screen",
+   "family": "RB Slow Screen",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "tags": [
+    "opener",
+    "screen",
+    "pressure answer"
+   ],
+   "opener": 13,
+   "menus": [
+    "opening sequence",
+    "2nd-and-long",
+    "third-and-long",
+    "two-minute",
+    "sudden change"
+   ]
+  },
+  {
+   "name": "12 Ace, Power Left",
+   "family": "Power",
+   "type": "run",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "tags": [
+    "opener"
+   ],
+   "opener": 14,
+   "menus": [
+    "normal down",
+    "third-and-short",
+    "backed up",
+    "high red zone",
+    "low red zone",
+    "goal line",
+    "four minute",
+    "sudden change"
+   ]
+  },
+  {
+   "name": "12 Ace, Power Pass / Post-Cross, MAX",
+   "family": "Power Pass",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "protection": "MAX",
+   "tags": [
+    "opener",
+    "conditional",
+    "shot"
+   ],
+   "opener": 15,
+   "menus": [
+    "normal down",
+    "high red zone",
+    "sudden change",
+    "final play of half"
+   ]
+  },
+  {
+   "name": "11 Doubles, Drive, HALF",
+   "family": "Drive",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "HALF",
+   "tags": [
+    "opener",
+    "Nicks X relief"
+   ],
+   "opener": 16,
+   "menus": [
+    "opening sequence",
+    "2nd-and-long",
+    "third-and-medium",
+    "third-and-long",
+    "two-minute",
+    "PRESS sequence"
+   ]
+  },
+  {
+   "name": "12 Wing, TE Delay",
+   "family": "TE Delay",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Wing",
+   "tags": [
+    "opener",
+    "screen",
+    "tight ends",
+    "Week 4 install"
+   ],
+   "opener": 17,
+   "menus": [
+    "opening sequence",
+    "2nd-and-long",
+    "high red zone",
+    "third-and-medium"
+   ]
+  },
+  {
+   "name": "11 Trey, Dagger, HALF",
+   "family": "Dagger",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Trey Right",
+   "protection": "HALF",
+   "tags": [
+    "opener",
+    "protection gate"
+   ],
+   "opener": 19,
+   "menus": [
+    "opening sequence",
+    "third-and-long",
+    "two-minute"
+   ]
+  },
+  {
+   "name": "11 Bunch, Snag",
+   "family": "Snag",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Bunch Right",
+   "tags": [
+    "red zone",
+    "two-point folder"
+   ],
+   "menus": [
+    "low red zone",
+    "two-point"
+   ]
+  },
+  {
+   "name": "12 Ace, Flea Flicker, MAX",
+   "family": "Flea Flicker",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Ace",
+   "protection": "MAX",
+   "target": [
+    "WR",
+    "TE"
+   ],
+   "tags": [
+    "special play",
+    "shot",
+    "Week 4 install"
+   ],
+   "menus": [
+    "normal down",
+    "sudden change"
+   ]
+  },
+  {
+   "name": "11 SHIFT Empty, Spacing, SCAT",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Empty (after shift)",
+   "motion": "SHIFT to Empty (back-to-empty)",
+   "protection": "SCAT",
+   "tags": [
+    "shift"
+   ],
+   "menus": [
+    "two-minute",
+    "PRESS sequence"
+   ]
+  },
+  {
+   "name": "12 Trey, TE Delay",
+   "family": "TE Delay",
+   "type": "pass",
+   "personnel": "12",
+   "formation": "12 Trey",
+   "tags": [
+    "screen",
+    "tight ends",
+    "Week 4 install"
+   ],
+   "menus": [
+    "2nd-and-long",
+    "high red zone"
+   ]
+  },
+  {
+   "name": "11 Doubles, Spacing, SCAT",
+   "family": "Spacing",
+   "type": "pass",
+   "personnel": "11",
+   "formation": "11 Doubles",
+   "protection": "SCAT",
+   "tags": [
+    "two-minute"
+   ],
+   "menus": [
+    "two-minute",
+    "PRESS sequence"
+   ]
+  }
+ ],
+ "decisions": {
+  "two_point": {
+   "id": "stone-two-point-rule-2014-week5",
+   "source": "Stone's standing two-point rule (user, October 17, 2026, answer \"Option 2 (Recommended)\"): kick, except go for two in the fourth quarter when the touchdown leaves Jacksonville down 2, up 1 or down 5.",
+   "rules": [
+    {
+     "id": "go-q4-down2-up1-down5",
+     "when": {
+      "period": [
+       4
+      ],
+      "diff_after_td": [
+       -5,
+       -2,
+       1
+      ]
+     },
+     "decision": "go"
+    }
+   ],
+   "otherwise": "kick"
+  },
+  "kickoff": {
+   "id": "stone-kickoff-rule-2014-week5",
+   "source": "Stone's standing kickoff rule (user, October 16, 2026): \"League practice (recommended). Onside when trailing by 1 to 16 with 2:00 or less left. Onside when trailing by 9 to 16 with 5:00 or less left. Deep otherwise.\"",
+   "rules": [
+    {
+     "id": "onside-trail-1-16-inside-2:00",
+     "when": {
+      "period": [
+       4
+      ],
+      "diff_after_score": {
+       "min": -16,
+       "max": -1
+      },
+      "game_seconds_max": 120
+     },
+     "decision": "onside"
+    },
+    {
+     "id": "onside-trail-9-16-inside-5:00",
+     "when": {
+      "period": [
+       4
+      ],
+      "diff_after_score": {
+       "min": -16,
+       "max": -9
+      },
+      "game_seconds_max": 300
+     },
+     "decision": "onside"
+    }
+   ],
+   "otherwise": "deep"
+  },
+  "fourth_down": {
+   "id": "stone-fourth-down-rule",
+   "source": "Stone's standing fourth-down rule (user, October 18, 2026, with his answers \"FG to 52 yards\", \"Go past midfield\" and \"Tice's first call\"): fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt. A kick is the line of scrimmage plus the bound fourth-down artifact's field-goal snap offset (library/data/2010_2014w4_fourth_down_decisions.json field_goal_offset, modal 18), so a 52-yard kick is the opponent's 34 and the field-goal line is the 34; past midfield is the opponent's 49 and in.",
+   "rules": [
+    {
+     "id": "go-fourth-and-2-or-less",
+     "when": {
+      "ydstogo": {
+       "max": 2
+      }
+     },
+     "decision": "go"
+    },
+    {
+     "id": "go-fourth-and-3-or-4-past-midfield",
+     "when": {
+      "ydstogo": {
+       "min": 3,
+       "max": 4
+      },
+      "los": {
+       "max": 49
+      }
+     },
+     "decision": "go"
+    },
+    {
+     "id": "field-goal-kick-52-or-less",
+     "when": {
+      "ydstogo": {
+       "min": 3
+      },
+      "los": {
+       "max": 34
+      }
+     },
+     "decision": "field_goal"
+    }
+   ],
+   "otherwise": "punt",
+   "prepared_calls": {
+    "third-and-short": "12 Ace, Power Right",
+    "third-and-medium": "12 SHIFT Empty, Stick",
+    "third-and-long": "12 Trey, Y-Cross, SOLID",
+    "goal-line": "12 Ace, Power Right",
+    "low-red-zone": "12 Ace, Power Right",
+    "high-red-zone": "12 Trey, Y-Cross, SOLID",
+    "backed-up": "12 Ace, Power Right",
+    "two-minute": "12 SHIFT Empty, Stick",
+    "press-sequence": "11 Doubles, Drive, HALF",
+    "four-minute": "12 Ace, Power Right",
+    "normal-down": "12 Ace, Power Right"
+   }
+  }
+ },
+ "defensive_call_sheet": {
+  "schema_version": 1,
+  "team": "Jacksonville Jaguars",
+  "caller": "Alex Stone",
+  "book": "career/playbook/alex_stone_2013_defensive_playbook_iteration_i.md",
+  "packet": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+  "rush_rule": {
+   "rule": "four unless Stone calls the five-man counter",
+   "source": {
+    "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+    "line": 85,
+    "text": "Four unless I call the five-man counter"
+   }
+  },
+  "practiced": {
+   "packages": [
+    "Dime"
+   ],
+   "fronts": [
+    "Under",
+    "Nickel Even"
+   ],
+   "coverages": [
+    "Quarters",
+    "6",
+    "1 Robber",
+    "3 Match",
+    "Fire 3"
+   ],
+   "pressures": [
+    "replace"
+   ],
+   "tags": [
+    "field",
+    "boundary"
+   ],
+   "sources": [
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 91,
+     "text": "Under, Y strength, Quarters or Cover 6"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 92,
+     "text": "Nickel Even, Quarters or Cover 6"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 93,
+     "text": "Under, 1 Robber or 3 Match"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 94,
+     "text": "Nickel Even, 1 Robber or Quarters"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 95,
+     "text": "Dime, Nickel Even, Quarters or Cover 6"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 96,
+     "text": "Under, 3 Match or Quarters"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 97,
+     "text": "Nickel Even, Quarters or Cover 6"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 98,
+     "text": "Under, Y strength, 1 Robber or 3 Match"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 99,
+     "text": "Under, Y strength, 3 Match"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 100,
+     "text": "Nickel Even, Quarters or Cover 6"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 101,
+     "text": "Under, Y strength, Quarters"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 102,
+     "text": "Nickel Even, Cover 6 or 3 Match"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 103,
+     "text": "Nickel Even, 1 Robber or Quarters"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 104,
+     "text": "Dime, Nickel Even, Quarters"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 105,
+     "text": "Nickel Even, Replace Field, Quarters"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 106,
+     "text": "Nickel Even, Replace Boundary, Cover 6"
+    },
+    {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 107,
+     "text": "Nickel Even, Fire 3"
+    }
+   ]
+  },
+  "rows": [
+   {
+    "id": "normal-down",
+    "kind": "situation",
+    "menu": "normal-down",
+    "call": {
+     "front": "Under",
+     "strength": "Y",
+     "coverage": [
+      "Quarters",
+      "6"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 91,
+     "text": "Under, Y strength, Quarters or Cover 6"
+    }
+   },
+   {
+    "id": "second-and-long",
+    "kind": "situation",
+    "menu": "second-and-long",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "Quarters",
+      "6"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 92,
+     "text": "Nickel Even, Quarters or Cover 6"
+    }
+   },
+   {
+    "id": "third-and-short",
+    "kind": "situation",
+    "menu": "third-and-short",
+    "call": {
+     "front": "Under",
+     "coverage": [
+      "1 Robber",
+      "3 Match"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 93,
+     "text": "Under, 1 Robber or 3 Match"
+    }
+   },
+   {
+    "id": "third-and-medium",
+    "kind": "situation",
+    "menu": "third-and-medium",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "1 Robber",
+      "Quarters"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 94,
+     "text": "Nickel Even, 1 Robber or Quarters"
+    }
+   },
+   {
+    "id": "third-and-long",
+    "kind": "situation",
+    "menu": "third-and-long",
+    "call": {
+     "package": "Dime",
+     "front": "Nickel Even",
+     "coverage": [
+      "Quarters",
+      "6"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 95,
+     "text": "Dime, Nickel Even, Quarters or Cover 6"
+    }
+   },
+   {
+    "id": "backed-up",
+    "kind": "situation",
+    "menu": "backed-up",
+    "call": {
+     "front": "Under",
+     "coverage": [
+      "3 Match",
+      "Quarters"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 96,
+     "text": "Under, 3 Match or Quarters"
+    }
+   },
+   {
+    "id": "high-red-zone",
+    "kind": "situation",
+    "menu": "high-red-zone",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "Quarters",
+      "6"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 97,
+     "text": "Nickel Even, Quarters or Cover 6"
+    }
+   },
+   {
+    "id": "low-red-zone",
+    "kind": "situation",
+    "menu": "low-red-zone",
+    "call": {
+     "front": "Under",
+     "strength": "Y",
+     "coverage": [
+      "1 Robber",
+      "3 Match"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 98,
+     "text": "Under, Y strength, 1 Robber or 3 Match"
+    }
+   },
+   {
+    "id": "goal-line",
+    "kind": "situation",
+    "menu": "goal-line",
+    "call": {
+     "front": "Under",
+     "strength": "Y",
+     "coverage": [
+      "3 Match"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 99,
+     "text": "Under, Y strength, 3 Match"
+    }
+   },
+   {
+    "id": "two-minute",
+    "kind": "situation",
+    "menu": "two-minute",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "Quarters",
+      "6"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 100,
+     "text": "Nickel Even, Quarters or Cover 6"
+    }
+   },
+   {
+    "id": "four-minute",
+    "kind": "situation",
+    "menu": "four-minute",
+    "call": {
+     "front": "Under",
+     "strength": "Y",
+     "coverage": [
+      "Quarters"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 101,
+     "text": "Under, Y strength, Quarters"
+    }
+   },
+   {
+    "id": "lead-late",
+    "kind": "situation",
+    "menu": "lead-late",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "6",
+      "3 Match"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 102,
+     "text": "Nickel Even, Cover 6 or 3 Match"
+    }
+   },
+   {
+    "id": "conditional-1",
+    "kind": "conditional",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "1 Robber",
+      "Quarters"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 103,
+     "text": "Nickel Even, 1 Robber or Quarters"
+    }
+   },
+   {
+    "id": "conditional-2",
+    "kind": "conditional",
+    "call": {
+     "package": "Dime",
+     "front": "Nickel Even",
+     "coverage": [
+      "Quarters"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 104,
+     "text": "Dime, Nickel Even, Quarters"
+    }
+   },
+   {
+    "id": "counter-1",
+    "kind": "counter",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "Quarters"
+     ],
+     "pressure": "replace",
+     "tags": [
+      "field"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 105,
+     "text": "Nickel Even, Replace Field, Quarters"
+    }
+   },
+   {
+    "id": "counter-2",
+    "kind": "counter",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "6"
+     ],
+     "pressure": "replace",
+     "tags": [
+      "boundary"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 106,
+     "text": "Nickel Even, Replace Boundary, Cover 6"
+    }
+   },
+   {
+    "id": "counter-3",
+    "kind": "counter",
+    "call": {
+     "front": "Nickel Even",
+     "coverage": [
+      "Fire 3"
+     ]
+    },
+    "source": {
+     "path": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+     "line": 107,
+     "text": "Nickel Even, Fire 3"
+    }
+   }
+  ]
+ }
+}

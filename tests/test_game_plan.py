@@ -556,6 +556,46 @@ def quiet(call, *args, **kwargs):
     return result, out.getvalue()
 
 
+def unapply(root, week):
+    """In a temporary copy, the open week as it stood before Stone's Game Plan was applied (once the
+    real week is applied, before its game): the chart's depth and role changes undone and the
+    previous week's inactives back on it, the apply's log entry removed, the week's items reopened,
+    and the call sheet, inactives and applied record removed. The real checkout is never touched."""
+    from scripts import apply_game_plan
+    pages = week_pages(SEASON, week, root)
+    if not pages.applied.is_file():
+        return
+    applied = json.loads(pages.applied.read_text(encoding="utf-8"))
+    paths = SeasonPaths(SEASON, root)
+    previous = next((json.loads(week_pages(SEASON, w, root).inactives.read_text(encoding="utf-8"))
+                     for w in range(week - 1, 0, -1) if week_pages(SEASON, w, root).inactives.is_file()), None)
+    working = paths.record("offseason/depth_chart_working.json")
+    for chart_path in [paths.depth_chart] + ([working] if working.is_file() else []):
+        chart = json.loads(chart_path.read_text(encoding="utf-8"))
+        apply_game_plan._restore(chart, applied)
+        if previous:
+            chart["game_day_inactives"] = {"week": previous["week"], "players": previous["players"],
+                                           "note": previous["note"]}
+        if "stone_role_decisions" in chart:
+            chart["stone_role_decisions"] = [d for d in chart["stone_role_decisions"]
+                                             if d.get("game_plan_week") != week]
+        apply_game_plan.write_like(chart_path, chart)
+    page = applied["page"]
+    log_path = paths.record("team/depth_chart/update_log.json")
+    log = json.loads(log_path.read_text(encoding="utf-8"))
+    log["entries"] = [e for e in log["entries"] if not any((s or {}).get("page") == page for s in e.get("sources") or ())]
+    apply_game_plan.write_like(log_path, log)
+    queue_path = root / "state/decision_queue.json"
+    queue = json.loads(queue_path.read_text(encoding="utf-8"))
+    for item in queue["items"]:
+        if item.get("status") == "RESOLVED" and ((item.get("resolution") or {}).get("record") or {}).get("path") == page:
+            item["status"] = "OPEN"
+            item.pop("resolution", None)
+    apply_game_plan.write_like(queue_path, queue)
+    for path in (pages.call_sheet, pages.applied, pages.inactives):
+        path.unlink(missing_ok=True)
+
+
 class OpenWeek(unittest.TestCase):
     """A temporary copy with the open week's pages issued, and the helpers the tests share."""
 
@@ -565,8 +605,9 @@ class OpenWeek(unittest.TestCase):
         wk = open_week(self.root)
         if wk.game is None:
             self.skipTest("no Jacksonville game is open")
-        # Every test here starts from the open week's blank page, whatever the real page holds:
-        # writing the pages builds the blank one only where the page is missing.
+        # Every test here starts from the open week's blank page, unapplied, whatever the real week
+        # holds: writing the pages builds the blank one only where the page is missing.
+        unapply(self.root, wk.game["week"])
         week_pages(SEASON, wk.game["week"], self.root).plan.unlink(missing_ok=True)
         quiet(render_game_week.write, self.root)
         self.week = wk.game["week"]

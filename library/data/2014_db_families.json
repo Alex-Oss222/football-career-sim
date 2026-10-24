@@ -138,6 +138,16 @@
    "weekly_label": "SS",
    "weekly_week": 4
   },
+  "00-0023316": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Raymond Ventrone",
+   "position": "SS",
+   "weekly_label": null,
+   "weekly_week": null
+  },
   "00-0023441": {
    "basis": "chart_slot",
    "chart_slot": "RCB2",
@@ -1188,6 +1198,16 @@
    "weekly_label": "SS",
    "weekly_week": 4
   },
+  "00-0027697": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Brandon Ghee",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
   "00-0027710": {
    "basis": "chart_slot",
    "chart_slot": "FS2",
@@ -1217,6 +1237,16 @@
    "position": "SS",
    "weekly_label": "SS",
    "weekly_week": 4
+  },
+  "00-0027735": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Dominique Franks",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
   },
   "00-0027736": {
    "basis": "chart_slot",
@@ -1628,6 +1658,16 @@
    "weekly_label": "CB",
    "weekly_week": 4
   },
+  "00-0028108": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Mistral Raymond",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
   "00-0028111": {
    "basis": "chart_slot",
    "chart_slot": "RCB1",
@@ -1737,6 +1777,16 @@
    "position": "SS",
    "weekly_label": "SS",
    "weekly_week": 4
+  },
+  "00-0028694": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "James Dockery",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
   },
   "00-0028750": {
    "basis": "rails_position",
@@ -2998,6 +3048,16 @@
    "weekly_label": "SS",
    "weekly_week": 1
   },
+  "00-0030682": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "safety",
+   "origin": "rails",
+   "player_id": "Shamiel Gary",
+   "position": "S",
+   "weekly_label": null,
+   "weekly_week": null
+  },
   "00-0030699": {
    "basis": "rails_position",
    "chart_slot": null,
@@ -3037,6 +3097,16 @@
    "position": "CB",
    "weekly_label": "CB",
    "weekly_week": 4
+  },
+  "00-0030734": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Tay Glover-Wright",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
   },
   "00-0030740": {
    "basis": "rails_position",
@@ -3137,6 +3207,16 @@
    "position": "CB",
    "weekly_label": "CB",
    "weekly_week": 4
+  },
+  "00-0030963": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Dashaun Phillips",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
   },
   "00-0030982": {
    "basis": "chart_slot",
@@ -3669,7 +3749,7 @@
   },
   "inseason_rails_manifest": {
    "path": "library/data/2014_inseason_rails/manifest.json",
-   "sha256": "a98b3d1a313236dd1e99bdc7159f18c354f69d8c81715d187f9a3f19e043b370"
+   "sha256": "4d2a953dc7bfdbb2d55dbfb545f3f6045486d5b92cd6df4fea633c721324380f"
   },
   "roster_weekly_2014w4.csv": {
    "scope": "2014 REG Weeks 1-4, the latest week per player",
@@ -3684,8 +3764,8 @@
  "verification": {
   "basis": {
    "chart_slot": 286,
-   "none": 14,
-   "rails_position": 52,
+   "none": 15,
+   "rails_position": 60,
    "weekly_roster": 27
   },
   "chart_and_weekly_disagree": [],

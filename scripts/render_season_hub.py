@@ -133,7 +133,12 @@ def calendar_page(ctx):
             cells.append(label)
         lines.append("| " + " | ".join(cells) + " |")
     lines += ["", "## Upcoming dates", "", "| Date | Event |", "|---|---|"]
-    next_games = [g for g in ctx.games if date.fromisoformat(g["date"]) > ctx.master][:5]
+    # The game on the master date stays upcoming until the clock says it was played
+    # (render_career_views.last_and_next reads the clock the same way).
+    after = re.search(r"after the Week (\d+) game", ctx.clock)
+    next_games = [g for g in ctx.games if date.fromisoformat(g["date"]) > ctx.master
+                  or (date.fromisoformat(g["date"]) == ctx.master
+                      and not (after and int(after[1]) == g["week"]))][:5]
     for g in next_games:
         when = date.fromisoformat(g["date"])
         other = g["away"] if g["home"] == CLUB else g["home"]

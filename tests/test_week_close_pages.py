@@ -163,7 +163,12 @@ class WeekClosePagesTests(unittest.TestCase):
         record = sorted(game_report.record_forms(played, JAX), key=len)[0]
         page = template_report(receipt, game, record, self.root)
         title, rest = page.split("\n", 1)
-        shell = "\n".join([title, "", "<!-- event-record: %s -->" % json.dumps(event, sort_keys=True), rest])
+        # A report opened before the game (the practice-week commit's preparation and game-day
+        # event lines) keeps those lines: the week index and the annual record already cite them.
+        opened = report.read_text(encoding="utf-8").splitlines() if report.is_file() else []
+        earlier = [line for line in opened if line.startswith("<!-- event-record: ")]
+        shell = "\n".join([title, ""] + earlier
+                           + ["<!-- event-record: %s -->" % json.dumps(event, sort_keys=True), rest])
         self.assertIn(game_report.EVENT_PLACEHOLDER, shell)
         report.parent.mkdir(parents=True, exist_ok=True)
         report.write_text(shell, encoding="utf-8")

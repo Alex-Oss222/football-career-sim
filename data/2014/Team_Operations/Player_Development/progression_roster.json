@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "season": 2014,
-  "as_of": "October 5, 2014, after the Week 5 game against Pittsburgh",
+  "as_of": "October 12, 2014, game day at Tennessee before kickoff",
   "roster_source": "data/2014/Team_Operations/Team/Roster/roster.json",
   "continuity_source": "data/2014/Team_Operations/Player_Development/2013_exit_player_index.json",
   "policy": "Roster controls eligibility. The exit index identifies Jacksonville 2013 continuity only. Regenerate after any transaction or draft addition before progression is resolved.",

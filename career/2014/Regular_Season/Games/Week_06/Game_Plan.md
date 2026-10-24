@@ -2,7 +2,7 @@
 
 **Head coach:** Alex Stone  
 **Game:** Jacksonville at Tennessee, Sunday, October 12, 2014, 1 p.m. ET, LP Field  
-**Briefing used:** October 5, 2014, revision 3  
+**Briefing used:** October 12, 2014  
 **Baseline:** Carry Week 5
 
 ## 1. What I want this game to look like
