@@ -305,7 +305,8 @@ class InsertTests(unittest.TestCase):
             self.assertEqual(render_game_week.check(self.root), [])
             self.assertEqual(self.issue(), [])
             from scripts import apply_game_plan, open_game_week
-            self.assertEqual(open_game_week.missing(self.root)[0], [])
+            # The bye's one item (Stone's My Adjustments, rebuild step 5, C3); no game week's items.
+            self.assertEqual([i["class"] for i in open_game_week.missing(self.root)[0]], ["bye_adjustments"])
             self.assertEqual(apply_game_plan.validation_errors(self.root), [])
             from scripts import rebuild_pages
             _, problems = rebuild_pages.rebuild(self.root, check=True)

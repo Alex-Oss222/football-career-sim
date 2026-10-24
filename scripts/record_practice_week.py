@@ -137,7 +137,16 @@ def answered_schedule(root, season, week):
 
 def applied_schedule(root, season, week):
     """(schedule or None, why not): the week's schedule, as his applied answer sets it, else as the
-    standing practice instruction covers it."""
+    standing practice instruction covers it. The bye's is his applied My Adjustments (its work and
+    the players' days off, runtime/bye_week.applied_schedule): until it is applied no player session
+    of the bye can be recorded as required work."""
+    root = Path(root).resolve()
+    if practices.is_bye(season, week, root):
+        from runtime import bye_week
+        schedule = bye_week.applied_schedule(season, week, root)
+        if schedule is None:
+            return None, "the bye's work and break are set on My Adjustments, which is not applied yet"
+        return schedule, None
     answered = answered_schedule(root, season, week)
     if answered is not None:
         return answered, None
