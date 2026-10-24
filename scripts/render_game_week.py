@@ -132,6 +132,8 @@ GAME_WEEK_DOMAINS = ("Medical diagnosis", "Medical clearance and return-to-parti
                      "Media policy, access, and official communications")
 # What an open item asks, when its question names no clauses to settle.
 SETTLE = {"weekly_game_plan": "the plan for the game", "game_day_inactives": "who does not dress"}
+# The due line of an item he settled on his Game Plan, in a briefing issued after he set it (section 8).
+SET_ON_PLAN = "Set on your Game Plan"
 # Stone's part in a decision someone else makes, in plain words.
 YOUR_PART = {"recommends": "you recommend", "consulted": "you are consulted", "responds": "you respond",
              "informs": "you supply information", "none": "you have no part", "decides_part": "you decide a part",
@@ -1136,7 +1138,7 @@ def asks_section(wk, page_rel, plan_open=False, issued=None):
                 due = "Practice work before the first practice, %s, %s; the rest %s" % (
                     practice.strftime("%A"), day(practice, False), kickoff[:1].lower() + kickoff[1:])
             if item["id"] in settled and not plan_open:
-                due = "Set on your Game Plan, %s" % day(item["resolution"]["date"], False)
+                due = "%s, %s" % (SET_ON_PLAN, day(item["resolution"]["date"], False))
             waits = []
             for w in decisions.waits_ahead(item, issued):
                 text = wk.views.football(w["what"].split(";")[0]) + (" (%s)" % day(w["date"], False)

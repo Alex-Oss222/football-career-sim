@@ -223,6 +223,21 @@ def defensive_record_errors(root, paths, regular, playoff):
     return errors
 
 
+MASTER_CLOSURE = 'State master date differs from latest closed event owner'
+
+
+def master_closure_error(line, master_date, through):
+    """Document 5's master date against the latest closed event's ``through`` date, or None: the same
+    date, except in the mid-week form (docs/run_week.md, step 4a). That form records an event raised,
+    answered or resolved between a week's opening and its game day: the clock moves to the time of
+    the record while the checkpoint moves only when a closed event line is written, so the latest
+    closure may be behind the clock, never ahead of it."""
+    from runtime.open_events import TIMED
+    if TIMED.match((line or '').strip()):
+        return None if through <= master_date else MASTER_CLOSURE
+    return None if through == master_date else MASTER_CLOSURE
+
+
 def validate(root=ROOT):
     root = Path(root).resolve()
     errors = []
@@ -327,8 +342,9 @@ def validate(root=ROOT):
         closed = [item['checkpoint'] for _, _, item in closed_records]
         require(bool(closed) and closed[-1] == checkpoint, 'State checkpoint differs from latest closed event owner')
         if closed_records:
-            require(date.fromisoformat(closed_records[-1][2]['through']) == current_date,
-                    'State master date differs from latest closed event owner')
+            mismatch = master_closure_error(master[1] if master else None, current_date,
+                                            date.fromisoformat(closed_records[-1][2]['through']))
+            require(mismatch is None, mismatch)
         version = re.search(r'\| Document 4 register version \| `([^`]+)`', register)[1]
         require(f'| Document 4 | `{version}`' in state, 'Document 5 names a stale Document 4 version')
         register_checkpoint = re.search(r'\| Last content-changing checkpoint \| `([^`]+)`', register)[1]
