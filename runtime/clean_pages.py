@@ -48,6 +48,23 @@ plan's "Pages written before Week 6" paragraph holds the rule and its audit.
 Such an entry holds the re-recorded bytes, not the bytes before Week 6. A
 page the player page builder writes is checked by its marker.
 
+The split rule (rebuild step 5). A history page may also be split into one
+page per part (the trade offer log into one page per call), and nothing else
+about its bytes changes. The map's "splits" holds, by the original's path,
+the original's digest and length as written before Week 6 (its entry leaves
+"pages"), each part (its path, in the original's folder so its relative
+links resolve; one title line written for it; the byte ranges of the
+original it is made of, in order; and the digest and length of the part's
+recorded bytes) and each section moved elsewhere (its byte range, its
+destination and its bytes). A part is its title line, a blank line, then
+those ranges exactly; while it keeps those bytes (or keeps them as an exact
+prefix, like any history page) only its title line, and anything after the
+recorded bytes, is checked. ``split_errors`` verifies each part against its
+ranges, that every byte of the original is in at least one part or in a
+moved section with its destination, that the parts and moved sections
+rebuild the original's recorded digest, and that each title line is clean;
+scripts/split_history_page.py writes the parts and the entry and re-pins.
+
 Folder map. ``folder_map_errors`` fails when a script or runtime module,
 other than the folder map itself (runtime/season_layout.py, runtime/seasons.py)
 and the frozen research builders (scripts/research/), writes a season folder
@@ -70,7 +87,7 @@ import ast
 import hashlib
 import json
 import re
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from urllib.parse import urlsplit
 
 from .events import EVENT_META
@@ -266,10 +283,13 @@ def history_pin_errors(root=ROOT):
 def checked_parts(root=ROOT):
     """(path, text, first line) for every page or part of a page the rule covers: built pages,
     pages newer than the history, the entries appended to a history page after its pre-Week-6
-    bytes, and history pages whose old bytes changed (the whole page)."""
+    bytes, history pages whose old bytes changed (the whole page), and the title line of each part
+    of a split history page (with anything after its recorded bytes, or the whole part once one of
+    its recorded bytes changed)."""
     from .player_pages import built_page
     root = Path(root)
     old, lengths = history(root), history_lengths(root)
+    parts = split_parts(root)
     out = []
     for path in sorted((root / "career").rglob("*.md")):
         rel = path.relative_to(root).as_posix()
@@ -277,6 +297,9 @@ def checked_parts(root=ROOT):
         text = data.decode("utf-8")
         if built_page(text):
             out.append((rel, text, 1))
+            continue
+        if rel in parts:
+            out += [(rel, segment, first) for segment, first in part_segments(data, parts[rel][1])]
             continue
         cut = unchecked_prefix(data, old.get(rel), lengths.get(rel))
         if cut == len(data):
@@ -289,16 +312,209 @@ def checked_parts(root=ROOT):
 def text_errors(rel, text, root=ROOT):
     """The clean-page problems ``clean_errors`` would report if the page at ``rel`` held ``text``:
     the whole page, or what follows its pre-Week-6 bytes for a history page that keeps them as an
-    exact prefix, or nothing for a history page left unchanged. A builder calls this before it
-    writes, so a page it would write unclean is refused, not written."""
+    exact prefix, or nothing for a history page left unchanged (for a part of a split history page,
+    its title line and what follows its recorded bytes). A builder calls this before it writes, so a
+    page it would write unclean is refused, not written."""
     from .player_pages import MARKERS, built_page
     root = Path(root)
     data = text.encode("utf-8")
+    part = None if built_page(text) else split_parts(root).get(rel)
+    if part is not None:
+        return [e for segment, first in part_segments(data, part[1])
+                for e in page_errors(rel, segment, MARKERS, root, first_line=first)]
     cut = 0 if built_page(text) else unchecked_prefix(data, history(root).get(rel), history_lengths(root).get(rel))
     if cut == len(data):
         return []
     head = data[:cut].decode("utf-8")
     return page_errors(rel, data[cut:].decode("utf-8"), MARKERS, root, first_line=head.count("\n") + 1)
+
+
+# ------------------------------------------------------------------ the split rule
+# A part's title line: one line, "# " and its words.
+SPLIT_TITLE = re.compile(r"# [^\s#][^\n]*")
+DIGEST = re.compile(r"[0-9a-f]{64}")
+
+
+def splits(root=ROOT):
+    """{original path: split entry} of the history pages split into parts (the map's "splits")."""
+    return dict(_history_data(root).get("splits", {}))
+
+
+def split_parts(root=ROOT):
+    """{part path: (original path, part entry)} of every part of every split."""
+    out = {}
+    for original, entry in splits(root).items():
+        for part in (entry.get("parts") if isinstance(entry, dict) else None) or ():
+            if isinstance(part, dict) and isinstance(part.get("path"), str):
+                out.setdefault(part["path"], (original, part))
+    return out
+
+
+def part_prefix(title):
+    """The bytes a part begins with: its title line and a blank line."""
+    return (title + "\n\n").encode("utf-8")
+
+
+def part_segments(data, part):
+    """(text, first line) of each checked piece of a split part's bytes: its title line and what
+    follows its recorded bytes while it keeps them as an exact prefix; the whole page once one of
+    them changed."""
+    cut = unchecked_prefix(data, part.get("sha256"), part.get("length"))
+    if cut == 0:
+        return [(data.decode("utf-8"), 1)]
+    end = data.find(b"\n") + 1 or len(data)
+    out = [(data[:end].decode("utf-8"), 1)]
+    if cut < len(data):
+        out.append((data[cut:].decode("utf-8"), data[:cut].count(b"\n") + 1))
+    return out
+
+
+def _ranges_ok(ranges, length):
+    """Whether ``ranges`` are [start, end] byte ranges of an original of ``length`` bytes, each
+    non-empty, in order and not overlapping."""
+    if not isinstance(ranges, list) or not ranges:
+        return False
+    last = 0
+    for pair in ranges:
+        if (not isinstance(pair, list) or len(pair) != 2 or any(type(v) is not int for v in pair)
+                or not last <= pair[0] < pair[1] <= length):
+            return False
+        last = pair[1]
+    return True
+
+
+def _assemble(root, original, entry, pages):
+    """(the original's bytes rebuilt from its intact parts and its moved sections, or None when they
+    no longer rebuild its recorded digest; the split's problems)."""
+    where = "Split of %s" % original
+    if not isinstance(entry, dict):
+        return None, ["%s: not a record" % where]
+    sha, length = entry.get("sha256"), entry.get("length")
+    if not (isinstance(sha, str) and DIGEST.fullmatch(sha)) or type(length) is not int or length <= 0:
+        return None, ["%s: the original's digest and length as written before Week 6 are missing" % where]
+    errors = []
+    if original in pages:
+        errors.append("%s: the original is still listed among the pages written before Week 6; its digest "
+                      "and length move into the split" % where)
+    folder = PurePosixPath(original).parent
+    buf, have = bytearray(length), bytearray(length)
+
+    def put(start, chunk, label):
+        for offset, byte in enumerate(chunk):
+            at = start + offset
+            if have[at] and buf[at] != byte:
+                errors.append("%s: %s disagrees with another part on byte %d of the original" % (where, label, at))
+                return
+            buf[at], have[at] = byte, 1
+
+    parts = entry.get("parts")
+    if not isinstance(parts, list) or not parts:
+        errors.append("%s: no parts" % where)
+        parts = []
+    for n, part in enumerate(parts, 1):
+        rel = part.get("path") if isinstance(part, dict) else None
+        if (not isinstance(rel, str) or not rel.endswith(".md") or rel == original
+                or PurePosixPath(rel).parent != folder):
+            errors.append("%s: part %d is not a page of its own in the original's folder (%s), where its links "
+                          "resolve" % (where, n, folder))
+            continue
+        title, ranges = part.get("title"), part.get("ranges")
+        if not isinstance(title, str) or not SPLIT_TITLE.fullmatch(title):
+            errors.append("%s: %s has no title line of one line beginning with a heading mark" % (where, rel))
+            continue
+        errors += page_errors(rel, title + "\n", root=root)
+        if not _ranges_ok(ranges, length):
+            errors.append("%s: %s's byte ranges are not ranges of the original's %d bytes, in order"
+                          % (where, rel, length))
+            continue
+        prefix = part_prefix(title)
+        size = len(prefix) + sum(end - start for start, end in ranges)
+        if part.get("length") != size or not (isinstance(part.get("sha256"), str)
+                                              and DIGEST.fullmatch(part["sha256"])):
+            errors.append("%s: %s's recorded digest and length are not those of its title line and ranges "
+                          "(%d bytes)" % (where, rel, size))
+            continue
+        path = Path(root) / rel
+        if not path.is_file():
+            errors.append("%s: %s is missing" % (where, rel))
+            continue
+        data = path.read_bytes()
+        if unchecked_prefix(data, part["sha256"], size) == 0 or not data.startswith(prefix):
+            errors.append("%s: %s no longer begins with its title line and the original's bytes as split; a "
+                          "part is history and is not edited" % (where, rel))
+            continue
+        at = len(prefix)
+        for start, end in ranges:
+            put(start, data[at:at + end - start], rel)
+            at += end - start
+    moved = entry.get("moved")
+    for n, section in enumerate(moved if isinstance(moved, list) else (), 1):
+        label = "moved section %d" % n
+        if not isinstance(section, dict):
+            errors.append("%s: %s is not a record" % (where, label))
+            continue
+        span, to, text = section.get("range"), section.get("to"), section.get("text")
+        if not _ranges_ok([span], length) or not isinstance(text, str) or not isinstance(to, str) or not to:
+            errors.append("%s: %s needs its byte range of the original, its destination and its bytes" % (where, label))
+            continue
+        chunk = text.encode("utf-8")
+        if len(chunk) != span[1] - span[0]:
+            errors.append("%s: %s's bytes are not its range's length" % (where, label))
+            continue
+        destination = Path(root) / to.split("#")[0]
+        if not destination.is_file():
+            errors.append("%s: %s's destination %s does not exist" % (where, label, to))
+        elif to.startswith("career/") and text not in destination.read_text(encoding="utf-8"):
+            # A destination page is built from the split record; a working document (docs/) takes the
+            # text as its editor words it.
+            errors.append("%s: %s's destination page %s does not hold it" % (where, label, to))
+        put(span[0], chunk, label)
+    gaps, start = [], None
+    for at in range(length + 1):
+        if at < length and not have[at]:
+            start = at if start is None else start
+        elif start is not None:
+            gaps.append((start, at))
+            start = None
+    if gaps:
+        errors.append("%s: bytes %s of the original are in no part and no moved section" % (
+            where, ", ".join("%d to %d" % gap for gap in gaps[:5])))
+        return None, errors
+    if digest(bytes(buf)) != sha:
+        errors.append("%s: its parts and moved sections no longer rebuild the original as written before Week 6"
+                      % where)
+        return None, errors
+    return bytes(buf), errors
+
+
+def rebuilt_original(original, root=ROOT):
+    """The bytes of a split page as written before Week 6, rebuilt from its parts and its moved
+    sections (None when they no longer rebuild it: ``split_errors`` says why)."""
+    data = _history_data(root)
+    entry = data.get("splits", {}).get(original)
+    if entry is None:
+        return None
+    return _assemble(root, original, entry, data.get("pages", {}))[0]
+
+
+def split_errors(root=ROOT):
+    """The split rule: each part is its title line, a blank line and its byte ranges of the original
+    in order, in the original's folder; every byte of the original is in at least one part or in a
+    moved section with its destination (a destination page under career/ holds the moved bytes);
+    the parts and moved sections rebuild the original's recorded digest; each title line is clean;
+    no page is a part of two splits."""
+    data = _history_data(root)
+    pages, errors, owner = data.get("pages", {}), [], {}
+    for original, entry in sorted(data.get("splits", {}).items()):
+        errors += _assemble(root, original, entry, pages)[1]
+        for part in (entry.get("parts") if isinstance(entry, dict) else None) or ():
+            rel = part.get("path") if isinstance(part, dict) else None
+            if not isinstance(rel, str):
+                continue
+            if rel in owner:
+                errors.append("Split of %s: %s is also a part of %s" % (original, rel, owner[rel]))
+            owner[rel] = original
+    return errors
 
 
 def checked_pages(root=ROOT):
