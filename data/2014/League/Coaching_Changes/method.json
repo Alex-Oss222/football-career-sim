@@ -10,7 +10,15 @@
   "in_world": "2014-10-05",
   "record": "docs/rebuild_plan.md#change-log",
   "design": "docs/season_end.md#how-the-club-decides",
-  "answer": "Option 1 of library/2014_jacksonville_employment_decision_research.md (section 1.7): every club, Jacksonville included, uses the same real 2002 to 2012 rates, at season's end and in the weekly in-season check. A drawn Jacksonville change is Khan and Caldwell's decision (Document 3 row 1), effective the day after the game; if it happens before step 6's pages exist, the career holds there until they do."
+  "answer": "Option 1 of library/2014_jacksonville_employment_decision_research.md (section 1.7): every club, Jacksonville included, uses the same real 2002 to 2012 rates, at season's end and in the weekly in-season check. A drawn Jacksonville change is Khan and Caldwell's decision (Document 3 row 1), effective the day after the game; if it happens before step 6's pages exist, the career holds there until they do.",
+  "confirmed": {
+   "user_words": "No playoff split (Recommended)",
+   "user_date": "2026-10-24",
+   "in_world": "2014-10-12",
+   "record": "docs/rebuild_plan.md#change-log",
+   "question": "The weekly in-season chance uses cells by the club's losses minus wins (0 or fewer, 1 to 2, 3 to 4, 5 or more) and the coach's first or later season with the club, smoothed with a prior weight of 75; the October 23 answer also named recent playoffs, but 2002 to 2012 hold only 17 in-season changes (6 at clubs with a recent playoff season, 10 at clubs without one, 1 in a coach's first season), too few to split.",
+   "answer": "The weekly table as built (modelling_choice): its cells and smoothing, with no split by recent playoffs, confirmed before the first draw. The October 23 words above stand for the method; the recent-playoff reading stays with the season-end draw."
+  }
  },
  "retroactive": {
   "user_words": "Yes, check them (Recommended)",
@@ -39,8 +47,8 @@
  "modelling_choice": {
   "cells": "the club's losses minus wins after its game (ties count neither): 0 or fewer, 1 to 2, 3 to 4, 5 or more; by the coach's season with the club: his first, or a later one",
   "smoothing": "each cell toward the overall per-game rate with a prior weight of 75 club-games (the January table's five club-seasons at fifteen at-risk games each); no cell merged",
-  "not_split": "recent playoffs: the seventeen in-season changes of 2002 to 2012 cannot support a third split (the library record shows the counts)",
-  "rule": "The career's labelled modelling choice, like the January factors: the user may change the cells and the smoothing before the first draw, never after."
+  "not_split": "recent playoffs: the seventeen in-season changes of 2002 to 2012 cannot support a third split (the library record shows the counts); the user confirmed no playoff split on October 24, 2026 (adopted.confirmed)",
+  "rule": "The career's labelled modelling choice, like the January factors: the user may change the cells and the smoothing before the first draw, never after. The user confirmed them as built on October 24, 2026 (adopted.confirmed)."
  },
  "inputs": {
   "record": "each club's wins, losses and ties after its game in the checked week, from the season's closed games only; its game number in the season",

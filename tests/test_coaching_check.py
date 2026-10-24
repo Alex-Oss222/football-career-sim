@@ -334,7 +334,10 @@ class CheckTests(unittest.TestCase):
         self.assertEqual(lc.validation_errors(self.root), [])
 
     def test_changes_take_effect_after_the_latest_closed_game_and_reach_the_pages_with_the_clock(self):
-        set_rates(self.root, {"1 to 2|first season": 1.0})
+        # One cell certain and every other cell 0, so which clubs change does not depend on the
+        # event's random stream (seeded by the packet, which carries the method's digest).
+        cells = lc.load_table(lc.load_method(SEASON, self.root), self.root)["rates"]
+        set_rates(self.root, {key: 1.0 if key == "1 to 2|first season" else 0.0 for key in cells})
         games = lc.closed_games(SEASON, self.root)
         first_week = min(lc.due_weeks(SEASON, self.root))
         expected = sorted(c for c, t in lc.tenures(lc.load_method(SEASON, self.root), self.root).items()
