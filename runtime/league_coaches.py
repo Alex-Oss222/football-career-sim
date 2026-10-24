@@ -394,6 +394,12 @@ def first_practice_day(season, week, root=ROOT, job=None):
             return date.fromisoformat(schedule["sessions"][0]["date"])
     except practices.NotCovered:
         pass
+    # A week the instruction does not set is asked on My Responses: once Stone's "Practice week"
+    # answer is applied, its first session is the week's first practice.
+    from scripts.record_practice_week import answered_schedule
+    answered = answered_schedule(root, season, week)
+    if answered and answered["sessions"]:
+        return min(date.fromisoformat(s["date"]) for s in answered["sessions"])
     return practices.week_span(season, week, root)[0]
 
 
