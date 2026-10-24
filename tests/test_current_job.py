@@ -242,8 +242,10 @@ class CurrentJobTests(unittest.TestCase):
         schedule = rule["schedule"]
         self.assertEqual(schedule["week"]["days_off"], [{"day": "Tuesday", "scope": "players"}])
         self.assertEqual([(s["day"], s["type"]) for s in schedule["week"]["sessions"]],
-                         [("Wednesday", "practice"), ("Thursday", "practice"), ("Friday", "practice"),
-                          ("Saturday", "walkthrough")])
+                         [("Monday", "walkthrough"), ("Wednesday", "practice"), ("Thursday", "practice"),
+                          ("Friday", "practice"), ("Saturday", "walkthrough")])
+        # The Monday walkthrough is the user's answer of October 24, 2026.
+        self.assertIn('"Monday walkthrough (Recommended)"', rule["given"]["note"])
         self.assertEqual([(p["week"], p["day"]) for p in schedule["equipment"]["pads"]],
                          [(w, "Wednesday") for w in (7, 9, 13, 15, 17)])
         self.assertEqual((schedule["equipment"]["padded"], schedule["equipment"]["otherwise"]),

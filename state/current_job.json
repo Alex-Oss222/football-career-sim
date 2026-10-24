@@ -985,9 +985,9 @@
      "given": {
       "user_date": "2026-10-23",
       "in_world": "2014-10-05",
-      "note": "the user's answer \"Spread the pads (Recommended)\" to how each week's practice schedule is set from Week 6; Stone may change it at any time"
+      "note": "the user's answer \"Spread the pads (Recommended)\" to how each week's practice schedule is set from Week 6; Stone may change it at any time; amended by the user's answer of October 24, 2026 (in the world, October 12, 2014), \"Monday walkthrough (Recommended)\", to the question what happens on Monday from Week 7: a Monday walkthrough, as in Weeks 1 to 5"
      },
-     "summary": "Each week as in Weeks 1 to 5: Tuesday the players' day off, practices on Wednesday, Thursday and Friday, and a walkthrough on Saturday; pads on the Wednesday of Weeks 7, 9, 13, 15 and 17, helmets only otherwise; Monday, November 24, 2014 an added day off, so November has the four days off the CBA requires, bye days not counted",
+     "summary": "Each week as in Weeks 1 to 5: a walkthrough on Monday, Tuesday the players' day off, practices on Wednesday, Thursday and Friday, and a walkthrough on Saturday; pads on the Wednesday of Weeks 7, 9, 13, 15 and 17, helmets only otherwise; Monday, November 24, 2014 an added day off in place of that week's walkthrough, so November has the four days off the CBA requires, bye days not counted",
      "schedule": {
       "season": 2014,
       "from_week": 6,
@@ -1000,6 +1000,10 @@
         }
        ],
        "sessions": [
+        {
+         "day": "Monday",
+         "type": "walkthrough"
+        },
         {
          "day": "Wednesday",
          "type": "practice"
