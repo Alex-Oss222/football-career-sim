@@ -52,6 +52,11 @@ class Case(unittest.TestCase):
         self.linebacker = first(data, "LB")
         self.quarterbacks = [r["name"] for r in data["players"] if r["position"] == "QB" and r["list"] == "active"]
         self.squad = [r["name"] for r in data["players"] if r["list"] == "practice_squad"]
+        # The promotion structure is the undrafted schedule, the minimum for no credited season, so a
+        # promotion picks a practice-squad player whose record holds none.
+        contracts = player_contracts.load_all(self.root)
+        self.credited = {r["name"]: player_contracts.credited_seasons(r) for r in contracts.values()}
+        self.promotable = [n for n in self.squad if self.credited.get(n) == 0]
 
     def close(self, injuries):
         self.week, self.game, self.receipt = srm.close_open_week(self.root, SEASON, injuries)
@@ -192,7 +197,7 @@ class DecisionTests(Case):
                                             answered)
         self.assertEqual(other, substance)
         # The general manager may decide otherwise: the record keeps Stone's substance, apart.
-        chosen = next(n for n in self.squad if n != thomas)
+        chosen = next(n for n in self.promotable if n != thomas)
         record = self.decision(answered, [self.reserve(self.corner), self.promote(chosen)])
         twin = copy.deepcopy(record)
         twin["recommendation"] = other
@@ -203,10 +208,26 @@ class DecisionTests(Case):
         self.assertEqual(stored["recommendation"], substance)
         self.assertEqual([m["player"] for m in stored["moves"]], [self.corner, chosen])
 
+    def test_a_promotion_below_his_minimum_is_refused(self):
+        """Richard Murphy holds a credited season: the promotion structure (the undrafted schedule) pays
+        below his minimum, so the promotion is refused and nothing is written."""
+        credited = next(n for n in self.squad if (self.credited.get(n) or 0) > 0)
+        answered = self.answer(self.event, "I recommend %s." % credited)
+        record = self.decision(answered, [self.reserve(self.corner), self.promote(credited)])
+        code, lines = self.place(record)
+        self.assertEqual(code, 0, lines)
+        before = player_contracts.load_all(self.root)
+        with self.assertRaises(tx.Refused) as caught:
+            apply_transaction.apply(self.root, SEASON, record["id"], rebuild=False, out=lambda *_: None)
+        self.assertIn("minimum", str(caught.exception))
+        self.assertIn("495,000", str(caught.exception))
+        self.assertEqual(player_contracts.load_all(self.root), before)
+        self.assertEqual(player_contracts.errors(self.root), [])
+
     def test_a_decision_without_its_preceding_criteria_is_refused(self):
         answered = self.answer(self.event, "I recommend %s." % self.squad[0])
         responses_at = [n for n, e in enumerate(answered["process"]) if e["kind"] == "response"][0]
-        record = self.decision(answered, [self.reserve(self.corner), self.promote(self.squad[0])],
+        record = self.decision(answered, [self.reserve(self.corner), self.promote(self.promotable[0])],
                                criteria=responses_at)
         code, lines = self.place(record)
         self.assertEqual(code, 1)
@@ -214,7 +235,7 @@ class DecisionTests(Case):
         self.assertEqual(tx.load(SEASON, self.root), [])
 
     def test_a_decision_while_stones_answer_is_due_is_refused(self):
-        record = self.decision(self.event, [self.reserve(self.corner), self.promote(self.squad[0])])
+        record = self.decision(self.event, [self.reserve(self.corner), self.promote(self.promotable[0])])
         self.clock(11)
         code, lines = self.place(record)
         self.assertEqual(code, 0, lines)
@@ -326,7 +347,7 @@ class DecisionTests(Case):
 
     def test_a_paused_game_records_nothing(self):
         answered = self.answer(self.event, "I recommend %s." % self.squad[0])
-        record = self.decision(answered, [self.reserve(self.corner), self.promote(self.squad[0])])
+        record = self.decision(answered, [self.reserve(self.corner), self.promote(self.promotable[0])])
         self.assertEqual(self.place(record)[0], 0)
         pause = self.paths.paused_game(self.next)
         pause.parent.mkdir(parents=True, exist_ok=True)
@@ -367,7 +388,7 @@ class DueTimeTests(Case):
         event = self.open_events()[0]
         self.event_source = event["raised"]["source"]["path"]
         due = open_events.parse_at(event["deadline"]["at"])
-        record = self.decision(event, [self.reserve(self.corner), self.promote(self.squad[0])],
+        record = self.decision(event, [self.reserve(self.corner), self.promote(self.promotable[0])],
                                hour=due.hour + 1, day=due.date())
         self.assertEqual(record["recommendation"], "none on file")
         result, out = self.apply(record)
@@ -411,8 +432,8 @@ class TwoEventTests(Case):
         self.event_source = events[0]["raised"]["source"]["path"]
         pages = []
         for n, (event, hour) in enumerate(zip(sorted(events, key=lambda e: e["subject"]), (10, 12))):
-            answered = self.answer(event, "I recommend %s." % self.squad[n], hour=hour)
-            record = self.decision(answered, [self.reserve(event["subject"]), self.promote(self.squad[n])],
+            answered = self.answer(event, "I recommend %s." % self.promotable[n], hour=hour)
+            record = self.decision(answered, [self.reserve(event["subject"]), self.promote(self.promotable[n])],
                                    hour=hour + 1)
             self.clock(hour + 1)
             result, out = self.apply(record)

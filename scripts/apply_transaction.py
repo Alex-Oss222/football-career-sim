@@ -35,7 +35,9 @@ is recorded on the event. Refused, with nothing written: a decision without its 
 decision while Stone's recommendation is still due; a new player with no gsis id or birth date on
 the birth-date registry; a player not legally available on the date; a release, waiver or trade
 (not built yet); an active roster above 53 or a practice squad above 10; a paused game; a time after
-the master date/time; a figure without a source. ``--check`` makes every check and writes nothing
+the master date/time; a figure without a source; a promotion or signing whose in-season contract
+pays below the league minimum for the credited seasons his contract record holds (the promotion
+structure is the undrafted schedule, for a player with none). ``--check`` makes every check and writes nothing
 (and draws nothing).
 """
 from __future__ import annotations
@@ -443,6 +445,9 @@ def contract_entries(plan, page_rel):
             weeks = sum(1 for _, paid in player_contracts.pay_weeks(season, root) if start <= paid < day)
             entry = {"kind": "contract_signed", "date": iso, "source": page_rel, "contract": "%s_%s" % (rid, iso),
                      "club": player_contracts.CLUB, "method": {"name": "promotion", "squad_weeks": weeks}}
+            below = player_contracts.minimum_problem(record, entry, root)
+            if below:
+                raise Refused("%s cannot be promoted on the in-season terms method: %s" % (name, below))
             years = player_contracts.computed_years(entry, root)
             last = max(int(y) for y in years)
             entry.update(through=last, years=years, type="Promotion structure (re-signed on promotion from the "
@@ -472,6 +477,9 @@ def contract_entries(plan, page_rel):
             entry = {"kind": "contract_signed", "date": iso, "source": page_rel, "contract": "%s_%s" % (rid, iso),
                      "club": player_contracts.CLUB,
                      "method": {"name": "in_season_minimum", "credited_seasons": terms["credited_seasons"]}}
+            below = player_contracts.minimum_problem(record, entry, root) if record else None
+            if below:
+                raise Refused("%s cannot be signed on the in-season terms method: %s" % (name, below))
             years = player_contracts.computed_years(entry, root)
             rate = player_contracts.minimum_salary(season, terms["credited_seasons"], root)
             entry.update(through=season, years=years, type="Veteran minimum (in-season signing, %s)" % tx.long_date(day),

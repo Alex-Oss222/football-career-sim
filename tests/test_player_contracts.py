@@ -256,6 +256,47 @@ class ValidationTests(unittest.TestCase):
         ball["years"]["2014"]["cash"] += 1
         self.assertTrue(any("in-season method" in e for e in pc.method_errors(records, ROOT)))
 
+    def test_credited_seasons_are_read_from_the_register_and_unresolved_stays_unknown(self):
+        self.assertEqual(pc.credited_seasons(self.records["richard_murphy"]), 1)
+        self.assertEqual(pc.credited_seasons(self.records["adrian_phillips"]), 0)
+        stated = {"credited_seasons": "Four to six (inferred; unverified)", "kind": "register",
+                  "date": "2014-09-08", "source": "x"}
+        record = {"entries": [stated]}
+        self.assertIsNone(pc.credited_seasons(record))
+        stated["credited_seasons"] = "Unresolved; verify Article 26 service separately from accrued seasons"
+        self.assertIsNone(pc.credited_seasons(record))
+        stated["credited_seasons"] = "4: Atlanta 2009, 2010 and late 2011"
+        self.assertEqual(pc.credited_seasons(record), 4)
+
+    def test_an_in_season_contract_below_his_minimum_fails(self):
+        """A promotion re-signs the undrafted schedule, the minimum for no credited season: on a player
+        with one credited season (Richard Murphy) it pays below his minimum and fails, as does an
+        in-season minimum for fewer credited seasons than his record holds."""
+        records = copy.deepcopy(self.records)
+        murphy = records["richard_murphy"]
+        squad = pc.contract_on(murphy, None, ROOT)
+        day = "2014-10-14"
+        weeks = sum(1 for _, paid in pc.pay_weeks(YEAR, ROOT) if date.fromisoformat(squad["start"]["date"]) <= paid
+                    < date.fromisoformat(day))
+        promoted = {"kind": "contract_signed", "date": day, "source": squad["start"]["source"],
+                    "contract": "richard_murphy_%s" % day, "club": pc.CLUB,
+                    "method": {"name": "promotion", "squad_weeks": weeks}}
+        promoted["years"] = pc.computed_years(promoted, ROOT)
+        promoted["through"] = max(int(y) for y in promoted["years"])
+        self.assertIn("495,000", pc.minimum_problem(murphy, promoted, ROOT))
+        murphy["entries"] += [{"kind": "contract_ended", "date": day, "source": squad["start"]["source"],
+                               "contract": squad["contract"], "how": "promoted", "text": "test promotion"}, promoted]
+        found = [e for e in pc.method_errors(records, ROOT) if "below the league minimum" in e]
+        self.assertEqual(len(found), 1, found)
+        # The in-season minimum for no credited season, on the same record, fails the same way.
+        signed = dict(promoted, method={"name": "in_season_minimum", "credited_seasons": 0})
+        self.assertIn("495,000", pc.minimum_problem(murphy, signed, ROOT))
+        self.assertIsNone(pc.minimum_problem(murphy, dict(signed, method={"name": "in_season_minimum",
+                                                                          "credited_seasons": 1}), ROOT))
+        # Phillips (no credited season) was promoted on September 8 at the structure, which is his minimum.
+        phillips = [e for e in self.records["adrian_phillips"]["entries"] if e.get("method")][0]
+        self.assertIsNone(pc.minimum_problem(self.records["adrian_phillips"], phillips, ROOT))
+
 
 class WriterTests(unittest.TestCase):
     """add_entry and the pages in a throwaway copy (test data only)."""

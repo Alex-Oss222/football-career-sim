@@ -386,6 +386,52 @@ def minimum_salary(season, credited, root=ROOT, terms=None):
     raise ValueError("no minimum salary for %s credited seasons in %s" % (credited, season))
 
 
+def credited_seasons(record, on=None):
+    """His credited seasons (Article 26) as the latest register entry on or before day ``on``
+    records them: a whole number when the entry states one ("0", "1 (2013 active season)", "1
+    through 2013, Article 26 reconstruction", "4: Atlanta ..."), or None when it is unresolved, a
+    range or a count in words."""
+    found = [e for e in entries(record, "register", on) if e.get("credited_seasons") is not None]
+    if not found:
+        return None
+    value = found[-1]["credited_seasons"]
+    if type(value) is int:
+        return value
+    text = str(value).strip()
+    m = re.match(r"(\d+)(?=$|[\s:(;,])", text)
+    if m is None or re.match(r"\d+\s*(?:to|-)\s*\d", text):
+        return None
+    return int(m.group(1))
+
+
+def minimum_problem(record, entry, root=ROOT, terms=None):
+    """The problem with an in-season contract ``entry`` (one naming the in-season method) against
+    the league minimum for the credited seasons ``record`` holds on its date, or None. The promotion
+    structure is the club's undrafted schedule, the minimum for a player with no credited season, so
+    it needs his credited seasons on the record; the in-season minimum is checked when they are."""
+    terms = method(root) if terms is None else terms
+    spec = entry["method"]
+    season = league_year(entry["date"])
+    credited = credited_seasons(record, entry["date"])
+    if spec["name"] == "promotion":
+        rate = int(terms["promotion"]["schedule"][str(season)])
+        if credited is None:
+            return ("his credited seasons are not resolved on his contract record, and the promotion structure is "
+                    "the minimum schedule for a player with none")
+    else:
+        rate = minimum_salary(season, int(spec["credited_seasons"]), root, terms)
+        if credited is None:
+            return None
+    floor = minimum_salary(season, credited, root, terms)
+    if rate < floor:
+        return ("his %d minimum for %d credited season%s is $%s, above the $%s the %s sets; the in-season terms "
+                "method sets no contract at his minimum" % (
+                    season, credited, "" if credited == 1 else "s", "{:,}".format(floor), "{:,}".format(rate),
+                    "promotion structure (the club's undrafted schedule)" if spec["name"] == "promotion"
+                    else "in-season minimum it names"))
+    return None
+
+
 def practice_squad_rate(season, root=ROOT, terms=None):
     terms = method(root) if terms is None else terms
     return _season(terms, season)["practice_squad_weekly"]["amount"]
@@ -724,6 +770,9 @@ def method_errors(records, root=ROOT, data=None):
                     want = computed_years(e, root, terms)
                     if (e.get("years") or {}) != want:
                         errors.append("%s: %s does not hold the in-season method's terms" % (rid, e["contract"]))
+                    below = minimum_problem(record, e, root, terms)
+                    if below:
+                        errors.append("%s: %s is below the league minimum: %s" % (rid, e["contract"], below))
                 elif e["kind"] == "practice_squad":
                     season = league_year(e["date"])
                     if e["weekly_rate"] != practice_squad_rate(season, root, terms):
