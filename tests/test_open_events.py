@@ -113,7 +113,25 @@ class OpenEventTests(unittest.TestCase):
         last, upcoming = views.last_and_next(ctx)
         self.assertEqual(upcoming["week"], self.week)
         self.assertLess(date.fromisoformat(last["date"]), self.tuesday)
-        self.assertFalse(any("Cannot parse master date/time" in e for e in validate(self.root)))
+        errors = validate(self.root)
+        self.assertFalse(any("Cannot parse master date/time" in e for e in errors))
+        # The mid-week record moves the clock without a closed event line (an event raised or answered),
+        # so the latest closure is behind it; the validator allows that in this form only (rehearsal r4).
+        from scripts.validate_repository import MASTER_CLOSURE
+        self.assertNotIn(MASTER_CLOSURE, errors)
+
+    def test_only_the_mid_week_form_runs_ahead_of_the_latest_closure(self):
+        from scripts.validate_repository import MASTER_CLOSURE, master_closure_error as error
+        midweek = "%s, after the 10:30 a.m. ET record of the Week %d preparation (a test record)" % (
+            se.long_date(self.tuesday), self.week)
+        game_day = "%s, after the game-day clock advance for Week %d" % (se.long_date(self.tuesday), self.week)
+        earlier = self.tuesday - timedelta(days=2)
+        self.assertIsNone(error(midweek, self.tuesday, earlier))
+        self.assertIsNone(error(midweek, self.tuesday, self.tuesday))
+        self.assertEqual(error(midweek, self.tuesday, self.tuesday + timedelta(days=1)), MASTER_CLOSURE)
+        self.assertIsNone(error(game_day, self.tuesday, self.tuesday))
+        self.assertEqual(error(game_day, self.tuesday, earlier), MASTER_CLOSURE)
+        self.assertEqual(error(None, self.tuesday, earlier), MASTER_CLOSURE)
 
     def test_an_event_raised_after_the_clock_fails(self):
         late = open_events.et(self.tuesday, 11)
