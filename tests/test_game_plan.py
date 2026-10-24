@@ -565,6 +565,9 @@ class OpenWeek(unittest.TestCase):
         wk = open_week(self.root)
         if wk.game is None:
             self.skipTest("no Jacksonville game is open")
+        # Every test here starts from the open week's blank page, whatever the real page holds:
+        # writing the pages builds the blank one only where the page is missing.
+        week_pages(SEASON, wk.game["week"], self.root).plan.unlink(missing_ok=True)
         quiet(render_game_week.write, self.root)
         self.week = wk.game["week"]
         self.pages = week_pages(SEASON, self.week, self.root)
