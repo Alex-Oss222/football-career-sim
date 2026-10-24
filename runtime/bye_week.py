@@ -716,28 +716,10 @@ def report_errors(season, week, root=ROOT, results=None):
 
 
 def result_link_errors(text, rel, root, results):
-    """Each result of the bye linked from the report and none of its words pasted. STUB until builder
-    A4's runtime/game_report.result_link_errors(report_text, results) is in the branch; then that one
-    function is called (the same rule for the Game Report and the Bye Week Report)."""
-    try:
-        from .game_report import result_link_errors as shared
-    except ImportError:
-        shared = None
-    if shared is not None:
-        return shared(text, results)
-    out = []
-    import os
-    for record in results:
-        page = (record.get("resolution") or {}).get("result_page")
-        if not page:
-            continue
-        target = os.path.relpath(Path(root) / page, (Path(root) / rel).parent).replace(os.sep, "/")
-        if "](%s" % target not in text:
-            out.append("the result %s is not linked" % open_events.title(record))
-        what = ((record.get("resolution") or {}).get("decision") or {}).get("text")
-        if what and len(what) > 40 and what in text:
-            out.append("the result %s is pasted, not linked" % open_events.title(record))
-    return out
+    """Each result of the bye linked from the report and none of its words pasted: the one rule the
+    Game Report keeps (runtime/game_report.result_link_errors), held to the report's own path."""
+    from .game_report import result_link_errors as shared
+    return shared(text, results, report_rel=rel, label="Bye Week Report")
 
 
 def validation_errors(root=ROOT):

@@ -21,7 +21,8 @@ sys.path.insert(0, str(ROOT / "tests"))
 from release_staging import copied_root  # noqa: E402
 import support_events as se  # noqa: E402
 from runtime import clean_pages, decision_queue, decisions, deadlines, open_events  # noqa: E402
-from runtime.events import EVENT_META  # noqa: E402
+from runtime.events import EVENT_META, annual_record_path  # noqa: E402
+from scripts import render_game_week, resolve_event  # noqa: E402
 from scripts import render_trade_pages as trades  # noqa: E402
 
 LOG_SEASON = 2014          # the season whose offer log, written before Week 6, was split
@@ -134,6 +135,10 @@ class TradeEventIndexTests(unittest.TestCase):
             path = self.root / rel
             before = path.read_bytes()
             self.addCleanup(path.write_bytes, before)
+        # The result writer also rebuilds Record.md and the open week's index.
+        for path in (annual_record_path(self.root, se.SEASON), render_game_week.Week(self.root).pages.readme):
+            if path.is_file():
+                self.addCleanup(path.write_bytes, path.read_bytes())
         for folder in open_events.stores(se.SEASON, self.root):
             self.addCleanup(self._clear, folder)
         folder = decisions.event_folder("trade_talks", se.SEASON, self.root)
@@ -174,12 +179,11 @@ class TradeEventIndexTests(unittest.TestCase):
         se.settle(self.root, record["queue_item"], "RESOLVED", {
             "date": self.tuesday.isoformat(), "by": "user", "record": {"path": record["raised"]["source"]["path"]},
             "summary": "A test answer."})
-        name = decisions.result_file("trade_talks", self.tuesday.isoformat(), "Test Club", self.root).name
-        page = se.result_page(self.root, record, name, self.tuesday)
-        open_events.resolve(se.SEASON, record["id"], {
-            "at": open_events.iso(open_events.et(self.tuesday, 10)), "outcome": "declined", "by": "caldwell",
-            "decision": {"text": "Declined the test call.", "author": "David Caldwell",
-                         "date": self.tuesday.isoformat(), "criteria": 0}, "result_page": page}, self.root)
+        resolve_event.resolve(self.root, se.SEASON, record["id"], "declined", "caldwell",
+                              open_events.iso(open_events.et(self.tuesday, 10)), "Declined the test call.", criteria=0)
+        page = open_events.get(se.SEASON, record["id"], self.root)["resolution"]["result_page"]
+        self.assertEqual(Path(page).name,
+                         "Trade_Result_%s_Test_Club.md" % self.tuesday.isoformat())
         self.assertEqual(open_events.validation_errors(self.root), [])
         text = self.index_text()
         calls, opened = text.split("## Open trade calls")

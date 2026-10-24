@@ -582,6 +582,38 @@ def add_entry(root, player_id, entry, record=None):
     return candidate
 
 
+def add_entries(root, player_id, entries, record=None):
+    """The contract entries of one move, appended together under every check ``add_entry`` makes,
+    judged on the whole set. One entry is ``add_entry``. A promotion's pair (the practice-squad
+    contract ended and the new contract signed the same day) goes in as one write, because its
+    ending is valid only with its new contract beside it; it needs his existing record. The caller
+    rebuilds the players block in the same commit (``write_players_block``). Returns the record."""
+    entries = list(entries)
+    if len(entries) == 1:
+        return add_entry(root, player_id, entries[0], record)
+    root = Path(root)
+    path = record_path(root, player_id)
+    if not path.is_file():
+        raise ValueError("%s has no contract record for a promotion to end" % player_id)
+    candidate = copy.deepcopy(load(player_id, root))
+    for entry in entries:
+        problems = entry_errors(entry, player_id)
+        if problems:
+            raise ValueError("; ".join(problems))
+        if candidate["entries"] and day(entry["date"]) < day(candidate["entries"][-1]["date"]):
+            raise ValueError("%s: an entry dated %s comes before his latest entry (%s)"
+                             % (player_id, entry["date"], candidate["entries"][-1]["date"]))
+        for source in _entry_sources(entry):
+            if not _resolves(root, source):
+                raise ValueError("%s: source %s does not resolve" % (player_id, source))
+        candidate["entries"].append(copy.deepcopy(entry))
+    problems = record_errors(player_id, candidate, root)
+    if problems:
+        raise ValueError("; ".join(problems))
+    path.write_text(dump(candidate), encoding="utf-8")
+    return candidate
+
+
 # ------------------------------------------------------------------ validation
 def _entry_sources(entry):
     out = [entry.get("source")] + list(entry.get("sources") or [])

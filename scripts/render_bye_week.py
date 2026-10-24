@@ -553,18 +553,9 @@ def adjustments_page(bye):
 
 def other_business(bye, page_rel):
     """The bye's other business (results resolved in it and events still open), the same function as
-    a game week's index (event_inserts.other_business, builder A4). STUB until A4 is in the branch: the
-    results of the bye, one link each."""
-    shared = getattr(event_inserts, "other_business", None)
-    if shared is not None:
-        return shared(bye.season, bye.period, page_rel, bye.root, open_now=not bye.closed, job=bye.job)
-    results, still = open_events.period_events(bye.season, bye.period, bye.root)
-    results = [r for r in results if open_events.known_to_stone(r, bye.job)]
-    if not results:
-        return []
-    rows = [[link(page_rel, r["resolution"]["result_page"], open_events.title(r)),
-             "Resolved %s" % open_events.at_text(open_events.parse_at(r["resolution"]["at"]))] for r in results]
-    return ["## Other business this week", ""] + table(["Matter", "When"], rows) + [""]
+    a game week's index (runtime/event_inserts.other_business)."""
+    return event_inserts.other_business(bye.season, bye.period, page_rel, bye.root, open_now=not bye.closed,
+                                        job=bye.job)
 
 
 def index_page(bye):

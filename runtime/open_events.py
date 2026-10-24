@@ -356,12 +356,8 @@ def open_period(season, root=ROOT):
 
 
 def active_bye(paths, root):
-    """STUB until builder C3's runtime/bye_week.py lands: the bye week while it is the open period
-    (``bye_week.active_bye(paths, root)``, the week or None). Without that module no bye is open."""
-    try:
-        from . import bye_week
-    except ImportError:
-        return None
+    """The bye week while it is the open period (runtime/bye_week.active_bye), or None."""
+    from . import bye_week
     found = bye_week.active_bye(paths, root)
     if found is None or found is False:
         return None

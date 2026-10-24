@@ -487,15 +487,10 @@ def rebuild(root, season):
 
 
 def bye_index(root):
-    """STUB until builder C3's bye pages land: the bye's index rebuilt by its own builder
-    (scripts/render_bye_week.write_index(root)), which lists the bye's results through
-    event_inserts.other_business; without it nothing is written."""
-    try:
-        from scripts import render_bye_week
-    except ImportError:
-        return []
-    writer = getattr(render_bye_week, "write_index", None)
-    return list(writer(root) or ()) if writer is not None else []
+    """The bye's index, rebuilt by its own builder (scripts/render_bye_week.write_index), which lists
+    the bye's results through event_inserts.other_business."""
+    from scripts import render_bye_week
+    return list(render_bye_week.write_index(root) or ())
 
 
 # ------------------------------------------------------------------ the built pages' check

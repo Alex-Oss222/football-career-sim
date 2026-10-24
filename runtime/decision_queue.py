@@ -182,14 +182,9 @@ def practice_item(item, holder=None):
 
 
 def _bye_closed(season, week, root):
-    """STUB until builder C3's runtime/bye_week.py lands: whether the bye week's own close is
-    recorded (``bye_week.bye_closed(paths, root)``). Without that module no bye has closed."""
-    try:
-        from . import bye_week
-    except ImportError:
-        return False
-    closed = getattr(bye_week, "bye_closed", None)
-    return bool(closed(SeasonPaths(season, root), root)) if closed is not None else False
+    """Whether the bye week's own close is recorded (runtime/bye_week.bye_closed)."""
+    from . import bye_week
+    return bool(bye_week.bye_closed(SeasonPaths(season, root), root, week=int(week)))
 
 
 def _withdrawal_problem(item, resolution, root, holder):

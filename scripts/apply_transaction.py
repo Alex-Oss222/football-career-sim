@@ -63,49 +63,12 @@ Refused = tx.Refused
 
 # ------------------------------------------------------------------ the resolution (A4)
 def resolve_result(root, season, event_id, by, at, decision, criteria, result):
-    """Resolve the event with its Transaction page through scripts/resolve_event.py --result (A4).
-    STUB (builder D, wave 2) until A4's resolve_event.py merges: the same steps A4 takes for an
-    adopted page, without the week index rebuild: Stone's open item withdrawn by the organization
-    when his recommendation's due time has passed unanswered (decided at the due time with no
-    recommendation on file), the event resolved through the store, and Record.md rebuilt. The lead
-    replaces this body with ``resolve_event.resolve(root, season, event_id, "executed", by, at,
-    decision, criteria=criteria, result=result)``."""
-    try:
-        from scripts import resolve_event
-    except ImportError:
-        resolve_event = None
-    if resolve_event is not None and hasattr(resolve_event, "resolve"):
-        return resolve_event.resolve(root, season, event_id, "executed", by, at, decision, criteria=criteria,
-                                     result=result)
-    record = open_events.get(season, event_id, root)
-    when = open_events.parse_at(at)
-    queue = decision_queue.load(root)
-    job = current_job.load(root)
-    for item in queue["items"]:
-        if item.get("id") == record.get("queue_item") and item.get("status") == "OPEN":
-            due = open_events.parse_at(item["deadline"]["at"]) if (item.get("deadline") or {}).get("at") else None
-            if record.get("response") is None and due is not None and when >= due:
-                own = open_events.path_of(record, root).relative_to(root).as_posix()
-                item["status"] = "WITHDRAWN"
-                item["resolution"] = {"date": when.date().isoformat(), "by": "organization",
-                                      "record": {"path": own}, "summary": open_events.DUE_TIME_SUMMARY}
-            else:
-                raise Refused("the event waits on %s (%s); it resolves once that is settled" % (
-                    item.get("title"), current_job.party_name(job, item.get("owner"))))
-    decision_queue.save(root, queue)
-    written = [open_events.resolve(season, event_id, {"at": open_events.iso(when), "outcome": "executed", "by": by,
-                                                      "decision": {"text": decision,
-                                                                   "author": current_job.party_name(job, by),
-                                                                   "date": when.date().isoformat(),
-                                                                   "criteria": criteria},
-                                                      "result_page": result}, root)]
-    from runtime.events import annual_record_path, load_events, render_record
-    path = annual_record_path(root, season)
-    text = render_record(season, load_events(root), root)
-    if path.read_text(encoding="utf-8") != text:
-        path.write_text(text, encoding="utf-8")
-        written.append(path)
-    return written
+    """Resolve the event with its Transaction page through scripts/resolve_event.py --result (A4):
+    Stone's open item withdrawn by the organization when his recommendation's due time has passed
+    unanswered, the event resolved through the store, Record.md and the open period's index rebuilt."""
+    from scripts import resolve_event
+    return resolve_event.resolve(root, season, event_id, "executed", by, at, decision, criteria=criteria,
+                                 result=result)
 
 
 # ------------------------------------------------------------------ files touched
@@ -563,35 +526,12 @@ def contract_entries(plan, page_rel):
 
 
 def add_entries(root, rid, entries, fields=None):
-    """A player's contract entries of one move, added together through the contract records' own
-    writer and checks (runtime/player_contracts.add_entry): one entry goes in by add_entry; a
-    promotion's pair (the practice-squad contract ended, the new contract signed the same day) goes in
-    as one write, because add_entry checks each entry alone and a promotion's ending is valid only
-    with its new contract beside it. Every check add_entry makes is made here on the whole set."""
-    if len(entries) == 1:
-        return player_contracts.add_entry(root, rid, entries[0], fields)
-    root = Path(root)
-    path = player_contracts.record_path(root, rid)
-    if not path.is_file():
-        raise Refused("%s has no contract record for a promotion to end" % rid)
-    current = player_contracts.load(rid, root)
-    candidate = copy.deepcopy(current)
-    for entry in entries:
-        problems = player_contracts.entry_errors(entry, rid)
-        if problems:
-            raise Refused("; ".join(problems))
-        if candidate["entries"] and player_contracts.day(entry["date"]) < player_contracts.day(
-                candidate["entries"][-1]["date"]):
-            raise Refused("%s: an entry dated %s comes before his latest entry" % (rid, entry["date"]))
-        for source in player_contracts._entry_sources(entry):
-            if not player_contracts._resolves(root, source):
-                raise Refused("%s: source %s does not resolve" % (rid, source))
-        candidate["entries"].append(copy.deepcopy(entry))
-    problems = player_contracts.record_errors(rid, candidate, root)
-    if problems:
-        raise Refused("; ".join(problems))
-    path.write_text(player_contracts.dump(candidate), encoding="utf-8")
-    return candidate
+    """A player's contract entries of one move, through the contract records' own writer and checks
+    (runtime/player_contracts.add_entries: one entry, or a promotion's pair in one write)."""
+    try:
+        return player_contracts.add_entries(root, rid, entries, fields)
+    except ValueError as exc:
+        raise Refused(str(exc)) from exc
 
 
 def player_id(plan, name):

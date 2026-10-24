@@ -288,19 +288,11 @@ def claim_period_end(requested):
 
 
 def veteran_waivers_from(season, root=ROOT):
-    """The first day a released vested veteran is subject to waivers (library W5; A5's
+    """The first day a released vested veteran is subject to waivers (library W5;
     runtime/deadlines.waivers_from, read from the season's league dates)."""
     from . import deadlines
-    reader = getattr(deadlines, "waivers_from", None)
-    if reader is not None:
-        found = reader(int(season), root)
-        return _day(found) if found else None
-    # STUB (builder D, wave 2) until A5's deadlines.waivers_from merges: the same record, read directly.
-    path = paths(season, root).league_dates
-    if not path.is_file():
-        return None
-    entry = next((d for d in _json(path).get("dates") or () if d.get("kind") == "veteran_waivers"), None)
-    return _day(entry["date"]) if entry and entry.get("date") else None
+    found = deadlines.waivers_from(int(season), root)
+    return _day(found) if found else None
 
 
 def _records(season, root, on):
