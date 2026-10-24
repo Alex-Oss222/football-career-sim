@@ -33,8 +33,11 @@ schedule and his standing instructions:
 The week is the next Jacksonville game not yet closed, unless --week names
 another; after the regular season it is the next playoff game the bracket has
 set (runtime/game_weeks.py), named for its round ("Wild Card game plan for
-Pittsburgh"); a bye week gets none, and nothing is opened twice (an item of the
-class for the week, open or settled, stays as it is). Each item is raised by
+Pittsburgh"); while a bye is the open period its one item is Stone's My
+Adjustments (class ``bye_adjustments``, holding only the bye's own close, its
+due time not set; rebuild step 5, C3), opened with the blank page it asks for,
+and the next game's items open only after the bye closes; nothing is opened
+twice (an item of the class for the week, open or settled, stays as it is). Each item is raised by
 the workflow on the master date, citing the last game's event when its
 result page carries one. Nothing is opened while a game is paused. Writing
 the briefing (scripts/render_game_week.py) runs this first, so the briefing
@@ -203,14 +206,53 @@ def practice_item_for(root, wk):
     return item
 
 
+BYE = "bye_adjustments"
+
+
+def bye_item_for(root, wk):
+    """The open bye's one item (rebuild step 5, C3): Stone's My Adjustments, holding only the bye's own
+    close, its due time not set (the bye's work dates are his own choice on the page it asks for)."""
+    from runtime import bye_week
+    from runtime.decisions import bye_pages
+    week = int(wk.period["bye"])
+    pages = bye_pages(wk.season, week, wk.root)
+    first, last = bye_week.dates(wk.season, week, wk.root)
+    before, _ = bye_week.around(wk.season, week, wk.root)
+    raised = {"date": wk.master.isoformat(), "by": "workflow"}
+    sources = []
+    if before is not None:
+        report = wk.paths.game_report(int(before["week"]))
+        if report.is_file():
+            sources.append({"path": report.relative_to(wk.root).as_posix()})
+    return {"id": bye_week.bye_item_id(wk.season, week), "title": "Week %d bye adjustments" % week, "class": BYE,
+            "owner": wk.job.get("holder"), "authority_rows": list(decision_queue.CLASSES[BYE].rows),
+            "question": "Stone's Week %d bye adjustments, %s %d to %s%d: what to keep, correct, test, remove or "
+                        "defer on offense, defense and special teams, the eligible role and depth decisions, and the "
+                        "bye's work and the players' four consecutive days off" % (
+                            week, first.strftime("%B"), first.day,
+                            "" if last.month == first.month else last.strftime("%B") + " ", last.day),
+            "raised": raised, "status": "OPEN", "waits_on": [], "deadline": None,
+            "blocks": [decision_queue.event("bye_close", wk.season, week)], "fallback": None, "can_continue": None,
+            "record": {"path": pages.adjustments.relative_to(wk.root).as_posix()}, "sources": sources,
+            "resolution": None}
+
+
 def missing(root=ROOT, week=None):
-    """The open week's items not yet in the queue (none for a bye, a closed week or a paused game)."""
+    """The open week's items not yet in the queue (none for a closed week or a paused game). While the
+    bye is the open period it is the bye's one adjustments item, and the next game's items wait for
+    the bye's close; a bye opens no game plan, inactives or practice item."""
     from scripts.render_career_views import paused_games
     from scripts.render_game_week import Week
     root = Path(root).resolve()
     if paused_games(root):
         return [], None
     wk = Week(root, week)
+    if wk.game is None and (wk.period or {}).get("bye") is not None:
+        from runtime import bye_week
+        queue = decision_queue.load(root)
+        if bye_week.bye_item(queue, wk.season, int(wk.period["bye"])) is not None:
+            return [], wk
+        return [bye_item_for(root, wk)], wk
     if wk.game is None or wk.closed:
         return [], wk
     queue = decision_queue.load(root)
@@ -230,6 +272,13 @@ def open_items(root=ROOT, week=None):
     path = root / QUEUE
     queue = json.loads(path.read_text(encoding="utf-8"))
     for item in new:
+        if item["class"] == BYE:
+            # The page the item asks for exists with it: a blank My Adjustments (scripts/render_bye_week.py).
+            from scripts import render_bye_week
+            bye = render_bye_week.Bye(root, int(wk.period["bye"]))
+            if not bye.pages.adjustments.is_file():
+                bye.pages.folder.mkdir(parents=True, exist_ok=True)
+                bye.pages.adjustments.write_text(render_bye_week.adjustments_page(bye), encoding="utf-8")
         if item["class"] == PRACTICE:
             from runtime import responses
             from runtime.decisions import PRACTICE_WEEK
