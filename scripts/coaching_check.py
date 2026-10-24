@@ -11,7 +11,8 @@ Method: the season's method.json in the data twin of the league's head-coach cha
 week is drawn by the same method, Jacksonville included; nothing the draw reads names the
 protagonist.
 
-``--close`` runs after the week's slate closes and before the next period opens. It draws every
+``--close`` runs after the week's slate closes and before the next week's practice week opens (the
+next week's brief and items open at the close, before it, and do not count). It draws every
 closed week still due through WEEK, in order, each as its own private event
 (``SEASON-week-NN-head-coach-check``, the January carousel's packet pattern through the private
 client's close_event): so the first run after the method's adoption draws the retroactive Weeks 1

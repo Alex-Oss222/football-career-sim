@@ -18,7 +18,7 @@
   "record": "docs/rebuild_plan.md#change-log",
   "weeks": [1, 2, 3, 4, 5],
   "due_before_check_of_week": 6,
-  "rule": "No club's Weeks 1 to 5 were checked, since they closed before this method existed. They are drawn once, in order, under this frozen method, before Week 6's check, all 32 clubs, Jacksonville included, each week its own private event. A club's draws stop at its first drawn change. A change drawn for a week already behind the club's latest closed game takes effect the day after that latest closed game; no closed week is rewritten. Until then the weeks are recorded here as due before Week 6's check, which is itself due before Week 7's period opens."
+  "rule": "No club's Weeks 1 to 5 were checked, since they closed before this method existed. They are drawn once, in order, under this frozen method, before Week 6's check, all 32 clubs, Jacksonville included, each week its own private event. A club's draws stop at its first drawn change. A change drawn for a week already behind the club's latest closed game takes effect the day after that latest closed game; no closed week is rewritten. Until then the weeks are recorded here as due before Week 6's check, which is itself due before Week 7's practice week opens (Week 7's brief and items open at Week 6's close, before the check, and do not count)."
  },
  "clubs": "Every club in the season's fixtures (all 32), Jacksonville included, by this one method. Nothing the method reads names the protagonist or his club.",
  "table": {
@@ -56,7 +56,7 @@
   "never_read": "No real 2014 result, firing or personnel record, no rails data and no library record but the rate table; the season's fixtures give only each closed game's date; no field names the protagonist."
  },
  "draw": {
-  "when": "Once per closed regular-season week, after the week's slate closes and before the next period opens (scripts/coaching_check.py WEEK --close), every week that has a club at risk, in week order; a second run of a week is refused, and a failed commit is never redrawn under the same event id",
+  "when": "Once per closed regular-season week, after the week's slate closes and before the next week's practice week opens (scripts/coaching_check.py WEEK --close; the next week's brief and items open at the close, before the check, and do not count), every week that has a club at risk, in week order; a second run of a week is refused, and a failed commit is never redrawn under the same event id",
   "event_id": "SEASON-week-NN-head-coach-check, one private event per week through the private client's close_event, the January carousel's packet pattern (procedure, event id, snapshot, method, table, code and inputs digests)",
   "at_risk": "a club that played in the week, in its games 1 to 15 (the table holds no rate for a club's last regular-season game: a change after it is the season-end draw's), not changed earlier in the season; a club on its bye has no line that week",
   "order": "the clubs at risk in alphabetical order of their names, one uniform number each from the event's random stream",

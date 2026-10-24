@@ -77,6 +77,23 @@ def close_next_week(root):
     return week
 
 
+def at_close_of(root, week):
+    """Put the copy at the close of ``week``: the weeks up to it closed (a synthetic close for any not
+    yet closed), the receipts and practice records of later weeks removed, and the master date on the
+    day of the week's last game. The next week's brief and items stay as the copy has them."""
+    paths = SeasonPaths(SEASON, root)
+    while max(lc.closed_weeks(SEASON, root)) < week:
+        close_next_week(root)
+    for receipt in paths.receipts.glob("*.json"):
+        if json.loads(receipt.read_text(encoding="utf-8")).get("week", 0) > week:
+            receipt.unlink()
+    for later in range(week + 1, 18):
+        paths.practice_log(later).unlink(missing_ok=True)
+    last = max(date.fromisoformat(g["date"]) for g in paths.regular_games() if g["week"] == week)
+    set_master(root, last, "after the week's last game (test)")
+    return week
+
+
 def set_master(root, day, words):
     path = root / "state/05_Current_Season_State.md"
     text = path.read_text(encoding="utf-8")
@@ -179,20 +196,25 @@ class HazardTableTests(unittest.TestCase):
 
 
 class BranchAsItStandsTests(unittest.TestCase):
-    def test_adopted_with_the_users_words_and_nothing_drawn(self):
+    def test_adopted_with_the_users_words_and_the_checks_made_in_order(self):
         log = (ROOT / "docs/rebuild_plan.md").read_text(encoding="utf-8")
         self.assertEqual(METHOD["status"], "adopted")
         self.assertIn('"%s"' % METHOD["adopted"]["user_words"], log)
         self.assertIn('"%s"' % METHOD["retroactive"]["user_words"], log)
         self.assertIn("%s:" % date.fromisoformat(METHOD["adopted"]["user_date"]).strftime("%B %d, %Y").replace(" 0", " "),
                       log)
-        self.assertEqual(lc.checks(SEASON, ROOT), {})
-        self.assertFalse(lc.folder(SEASON, ROOT).exists())
-        self.assertFalse(lc.stored_news(SEASON, ROOT))
-        # The retroactive weeks are closed and due, before the check of the week they precede.
+        # The retroactive weeks come first, before the check of the week they precede; the checks
+        # recorded on the branch and the weeks still due are the closed weeks at risk, in week order,
+        # the recorded ones first. Before the first check nothing is drawn, written or published.
         retro = METHOD["retroactive"]
-        self.assertEqual(lc.due_weeks(SEASON, ROOT), [w for w in retro["weeks"] if w in lc.closed_weeks(SEASON, ROOT)])
         self.assertEqual(retro["due_before_check_of_week"], max(retro["weeks"]) + 1)
+        done, due = sorted(lc.checks(SEASON, ROOT)), lc.due_weeks(SEASON, ROOT)
+        at_risk = lc.at_risk_weeks(SEASON, ROOT)
+        self.assertEqual(done + due, at_risk)
+        self.assertEqual(at_risk[:len(retro["weeks"])], retro["weeks"])
+        if not done:
+            self.assertFalse(lc.folder(SEASON, ROOT).exists())
+            self.assertFalse(lc.stored_news(SEASON, ROOT))
 
     def test_validation_and_coverage_pass(self):
         self.assertEqual(lc.validation_errors(ROOT), [])
@@ -223,14 +245,18 @@ class CheckTests(unittest.TestCase):
             return [r[0] for r in c.execute("SELECT event_id FROM events ORDER BY rowid")]
 
     def test_the_retroactive_weeks_are_drawn_once_in_order_one_event_each(self):
+        retro = lc.load_method(SEASON, self.root)["retroactive"]
+        at_close_of(self.root, retro["due_before_check_of_week"])
         due = lc.due_weeks(SEASON, self.root)
+        self.assertEqual(due, retro["weeks"] + [retro["due_before_check_of_week"]])
         before = tree_digest(SeasonPaths(SEASON, self.root).receipts)
         code, _ = self.run_close(max(due))
         self.assertEqual(code, 0)
         records = lc.checks(SEASON, self.root)
         self.assertEqual(sorted(records), due)
         self.assertEqual([records[w]["order"] for w in due], list(range(1, len(due) + 1)))
-        self.assertTrue(all(records[w]["retroactive"] for w in due))
+        # Weeks 1 to 5 are the retroactive draws; the week they precede is checked after them, its own.
+        self.assertEqual([w for w in due if records[w]["retroactive"]], retro["weeks"])
         self.assertEqual(self.closed_events(), [lc.event_id(SEASON, w) for w in due])
         self.assertEqual(len({records[w]["result_ref"] for w in due}), len(due))
         # A second run is refused and draws nothing; no closed game was rewritten.
@@ -263,17 +289,23 @@ class CheckTests(unittest.TestCase):
 
     def test_coverage_fails_once_a_later_period_opens_while_a_check_is_missing(self):
         retro = lc.load_method(SEASON, self.root)["retroactive"]
-        week = close_next_week(self.root)
-        self.assertEqual(week, retro["due_before_check_of_week"])
+        week = at_close_of(self.root, retro["due_before_check_of_week"])
+        paths = SeasonPaths(SEASON, self.root)
         self.assertEqual(lc.coverage_errors(self.root, SEASON), [])        # nothing after the week is open
         missing = lc.due_weeks(SEASON, self.root)
         self.assertEqual(missing, retro["weeks"] + [week])
         # The next week's items and brief open at the close, before the check: they do not count.
         add_item(self.root, {"id": "%d-w%02d-game-plan" % (SEASON, week + 1), "class": "weekly_game_plan",
                              "blocks": [{"kind": "week_inputs", "season": SEASON, "week": week + 1}]})
+        brief = paths.week_data(week + 1) / "briefings.json"
+        if not brief.is_file():
+            brief.parent.mkdir(parents=True, exist_ok=True)
+            brief.write_text('{"issues": []}\n', encoding="utf-8")
+        self.assertIn(week + 1, lc.opened_periods(SEASON, self.root))
         self.assertEqual(lc.coverage_errors(self.root, SEASON), [])
+        self.assertEqual(lc.validation_errors(self.root), [])
         # Its practice record does: every missing week, the retroactive ones included, fails.
-        practice = SeasonPaths(SEASON, self.root).practice_log(week + 1)
+        practice = paths.practice_log(week + 1)
         practice.parent.mkdir(parents=True, exist_ok=True)
         practice.write_text("{}", encoding="utf-8")
         errors = lc.coverage_errors(self.root, SEASON)
@@ -287,6 +319,11 @@ class CheckTests(unittest.TestCase):
         self.assertEqual(lc.coverage_errors(self.root, SEASON), [])          # that day is not yet past
         set_master(self.root, first + timedelta(days=1), "after the 9 a.m. ET record of the Week %d preparation "
                                                          "(test)" % (week + 1))
+        self.assertEqual(len(lc.coverage_errors(self.root, SEASON)), len(missing))
+        # And the practice-week commit: the record written and the clock moved to game day.
+        game_day = min(date.fromisoformat(g["date"]) for g in paths.regular_games() if g["week"] == week + 1)
+        practice.write_text("{}", encoding="utf-8")
+        set_master(self.root, game_day, "game day, before kickoff (test)")
         self.assertEqual(len(lc.coverage_errors(self.root, SEASON)), len(missing))
         # Once every check is made, in order, the open period passes.
         self.assertEqual(self.run_close(week)[0], 0)
@@ -491,6 +528,9 @@ class AnnualRecordHistoryTests(unittest.TestCase):
         paths = SeasonPaths(SEASON, root)
         record_md = paths.annual_record.read_bytes()
         set_rates(root, {key: 1.0 for key in lc.load_table(lc.load_method(SEASON, root), root)["rates"]})
+        # At the close of the last retroactive week, a club on its bye that week has its latest game
+        # among the weeks whose record lines were written before Week 6.
+        at_close_of(root, max(lc.load_method(SEASON, root)["retroactive"]["weeks"]))
         job = json.loads((root / "state/current_job.json").read_text(encoding="utf-8"))
         job["status"] = "BETWEEN_JOBS"               # no hold, so every club's change is published
         (root / "state/current_job.json").write_text(json.dumps(job, indent=1), encoding="utf-8")
