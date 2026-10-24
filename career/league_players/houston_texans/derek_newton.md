@@ -1,10 +1,10 @@
 # Derek Newton
 
-**Houston Texans · Offensive tackle · No. 75 · Age 26 · Last game October 9, 2014**
+**Houston Texans · Offensive tackle · No. 75 · Age 26 · Last game October 20, 2014**
 
 6' 6", 313 lb · Born November 16, 1987 · Arkansas State; Hinds CC · Drafted in 2011, seventh round, by Houston
 
-As of October 9, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Derek Newton](https://commons.wikimedia.org/wiki/Special:FilePath/Derek_Newton.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 9, 2014, after Week 6.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 3 (2014, through Week 6).
+**Sacks allowed:** 3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 26 | 75 | 6 | 6 | 381 | 3 | 29 |
+| 2014 (through Week 7) | Houston | 26 | 75 | 7 | 7 | 447 | 3 | 35 |
 | 2013 | Houston | 25 | 75 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 

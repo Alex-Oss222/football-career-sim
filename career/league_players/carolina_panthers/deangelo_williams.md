@@ -1,10 +1,10 @@
 # DeAngelo Williams
 
-**Carolina Panthers · Running back · No. 34 · Age 31 · Last game October 12, 2014**
+**Carolina Panthers · Running back · No. 34 · Age 31 · Last game October 19, 2014**
 
 5' 9", 215 lb · Born April 25, 1983 · Memphis · Drafted in 2006, first round, by Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![DeAngelo Williams](https://commons.wikimedia.org/wiki/Special:FilePath/DeAngelo_Williams.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 4.7 (2014, through Week 6).
+**Yards per carry:** 4.7 (2014, through Week 7).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 31 | 34 | 6 | 83 | 393 | 4.7 | 5 | 42 | 65.5 |
+| 2014 (through Week 7) | Carolina | 31 | 34 | 7 | 101 | 478 | 4.7 | 5 | 42 | 68.3 |
 | 2013 | Carolina | 30 | 34 | 16 | 321 | 1,648 | 5.1 | 11 | 59 | 103.0 |
-| Career |  |  |  | 22 | 404 | 2,041 | 5.1 | 16 | 59 | 92.8 |
+| Career |  |  |  | 23 | 422 | 2,126 | 5.0 | 16 | 59 | 92.4 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 31 | 34 | 30 | 17 | 173 | 10.2 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Carolina | 31 | 34 | 37 | 20 | 227 | 11.3 | 1 | 1 | 1 |
 | 2013 | Carolina | 30 | 34 | 62 | 45 | 482 | 10.7 | 4 | 7 | 7 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 31 | 34 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Carolina | 31 | 34 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Carolina | 30 | 34 | 1 | 26 | 26.0 | 0 | 0 | N/A |
 
 ### Playoffs

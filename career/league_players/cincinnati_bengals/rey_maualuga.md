@@ -1,10 +1,10 @@
 # Rey Maualuga
 
-**Cincinnati Bengals · Middle linebacker · No. 58 · Age 27 · Last game October 12, 2014**
+**Cincinnati Bengals · Middle linebacker · No. 58 · Age 27 · Last game October 19, 2014**
 
 6' 2", 255 lb · Born January 20, 1987 · USC · Drafted in 2009, second round, by Cincinnati
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Rey Maualuga](https://commons.wikimedia.org/wiki/Special:FilePath/Rey_Maualuga_Bengals.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting middle linebacker.
 
-**Tackles:** 32 (2014, through Week 6).
+**Tackles:** 33 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 27 | 58 | 5 | 32 | 26 | 6 | 1 | 1 | 2 |
+| 2014 (through Week 7) | Cincinnati | 27 | 58 | 6 | 33 | 27 | 6 | 1 | 2 | 3 |
 | 2013 | Cincinnati | 26 | 58 | 16 | 95 | 64 | 31 | 6 | 1 | 7 |
-| Career |  |  |  | 21 | 127 | 90 | 37 | 7 | 2 | 9 |
+| Career |  |  |  | 22 | 128 | 91 | 37 | 7 | 3 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 27 | 58 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Cincinnati | 27 | 58 | 0 | 0 | 3 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 26 | 58 | 1 | 2 | 6 | 0 | 0 | N/A |
 
 ### Playoffs

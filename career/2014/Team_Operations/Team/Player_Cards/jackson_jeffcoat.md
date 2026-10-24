@@ -4,7 +4,7 @@
 
 Born December 26, 1990 · Texas · Undrafted
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ## Staff assessment
 

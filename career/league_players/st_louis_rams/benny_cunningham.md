@@ -1,10 +1,10 @@
 # Benny Cunningham
 
-**St. Louis Rams · Running back · No. 36 · Age 24 · Last game October 13, 2014**
+**St. Louis Rams · Running back · No. 36 · Age 24 · Last game October 19, 2014**
 
 5' 10", 217 lb · Born July 7, 1990 · Middle Tennessee State
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Benny Cunningham](https://commons.wikimedia.org/wiki/Special:FilePath/Benny_Cunningham.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 5.3 (2014, through Week 6).
+**Yards per carry:** 4.5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 24 | 36 | 5 | 11 | 58 | 5.3 | 0 | 14 | 11.6 |
+| 2014 (through Week 7) | St. Louis | 24 | 36 | 6 | 13 | 59 | 4.5 | 0 | 14 | 9.8 |
 | 2013 | St. Louis | 23 | 36 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 |
-| Career |  |  |  | 21 | 11 | 58 | 5.3 | 0 | 14 | 2.8 |
+| Career |  |  |  | 22 | 13 | 59 | 4.5 | 0 | 14 | 2.7 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 24 | 36 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 7) | St. Louis | 24 | 36 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 | 2013 | St. Louis | 23 | 36 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 24 | 36 | 13 | 265 | 20.4 | 0 | 0 | N/A |
+| 2014 (through Week 7) | St. Louis | 24 | 36 | 16 | 333 | 20.8 | 0 | 0 | N/A |
 | 2013 | St. Louis | 23 | 36 | 46 | 1,018 | 22.1 | 0 | 0 | N/A |
 
 ### Playoffs

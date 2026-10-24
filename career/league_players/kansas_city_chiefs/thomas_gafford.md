@@ -1,10 +1,10 @@
 # Thomas Gafford
 
-**Kansas City Chiefs · Long snapper · No. 43 · Age 31 · Last game October 5, 2014**
+**Kansas City Chiefs · Long snapper · No. 43 · Age 31 · Last game October 19, 2014**
 
 6' 2", 250 lb · Born January 29, 1983 · Houston
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Thomas Gafford](https://commons.wikimedia.org/wiki/Special:FilePath/Thomas_Gafford.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 44 (2014, through Week 5).
+**Long snaps:** 54 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 31 | 43 | 5 | 44 | 44 | 0 | 0 |
+| 2014 (through Week 7) | Kansas City | 31 | 43 | 6 | 54 | 54 | 0 | 0 |
 | 2013 | Kansas City | 30 | 43 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 22 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

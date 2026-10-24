@@ -1,10 +1,10 @@
 # Donte Moncrief
 
-**Indianapolis Colts · Wide receiver · No. 10 · Age 21 · Last game October 9, 2014**
+**Indianapolis Colts · Wide receiver · No. 10 · Age 21 · Last game October 19, 2014**
 
 6' 2", 221 lb · Born August 6, 1993 · Mississippi
 
-As of October 9, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Donte Moncrief](https://commons.wikimedia.org/wiki/Special:FilePath/Donte_Moncrief.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 9, 2014, after Week 6.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 5.6 (2014, through Week 6).
+**Yards per target:** 5.8 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 21 | 10 | 6 | 19 | 11 | 106 | 9.6 | 0 | 27 | 17.7 | 57.9 |
+| 2014 (through Week 7) | Indianapolis | 21 | 10 | 7 | 21 | 12 | 122 | 10.2 | 0 | 27 | 17.4 | 57.1 |
 
 ### Playoffs
 

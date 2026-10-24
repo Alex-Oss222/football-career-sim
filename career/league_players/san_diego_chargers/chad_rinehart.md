@@ -1,10 +1,10 @@
 # Chad Rinehart
 
-**San Diego Chargers · Guard · No. 78 · Age 29 · Last game October 12, 2014**
+**San Diego Chargers · Guard · No. 78 · Age 29 · Last game October 19, 2014**
 
 6' 5", 321 lb · Born May 4, 1985 · Northern Iowa · Drafted in 2008, third round, by Washington
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Chad Rinehart](https://commons.wikimedia.org/wiki/Special:FilePath/Chad_Rinehart.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 3 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 29 | 78 | 6 | 6 | 381 | 3 | 26 |
+| 2014 (through Week 7) | San Diego | 29 | 78 | 7 | 7 | 460 | 4 | 32 |
 | 2013 | San Diego | 28 | 78 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

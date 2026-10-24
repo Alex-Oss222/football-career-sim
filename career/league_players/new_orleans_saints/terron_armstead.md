@@ -1,10 +1,10 @@
 # Terron Armstead
 
-**New Orleans Saints · Offensive tackle · No. 72 · Age 23 · Last game October 5, 2014**
+**New Orleans Saints · Offensive tackle · No. 72 · Age 23 · Last game October 19, 2014**
 
 6' 5", 304 lb · Born July 23, 1991 · University of Arkansas at Pine Bluff
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Terron Armstead](https://commons.wikimedia.org/wiki/Special:FilePath/Terron_Armstead_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 3 (2014, through Week 5).
+**Sacks allowed:** 3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 23 | 72 | 5 | 5 | 329 | 3 | 23 |
+| 2014 (through Week 7) | New Orleans | 23 | 72 | 6 | 6 | 399 | 3 | 28 |
 | 2013 | New Orleans | 22 | 72 | 16 | N/A | N/A | 2 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 

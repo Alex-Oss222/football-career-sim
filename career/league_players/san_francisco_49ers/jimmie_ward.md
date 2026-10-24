@@ -1,10 +1,10 @@
 # Jimmie Ward
 
-**San Francisco 49ers · Free safety · No. 25 · Age 23 · Last game October 13, 2014**
+**San Francisco 49ers · Free safety · No. 25 · Age 23 · Last game October 19, 2014**
 
 5' 11", 193 lb · Born July 18, 1991 · Northern Illinois
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jimmie Ward](https://commons.wikimedia.org/wiki/Special:FilePath/Jimmie_Ward.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Reserve free safety.
 
-**Passes defended:** 1 (2014, through Week 6).
+**Passes defended:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 23 | 25 | 6 | 2 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Francisco | 23 | 25 | 7 | 2 | 0 | 2 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 23 | 25 | 0 | 0 | 1 | 0 | 0 | 2 |
+| 2014 (through Week 7) | San Francisco | 23 | 25 | 0 | 0 | 1 | 0 | 0 | 2 |
 
 ### Playoffs
 

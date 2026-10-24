@@ -1,10 +1,10 @@
 # Jordan Tripp
 
-**Miami Dolphins · Linebacker · No. 57 · Age 23 · Last game October 12, 2014**
+**Miami Dolphins · Linebacker · No. 57 · Age 23 · Last game October 19, 2014**
 
 6' 3", 240 lb · Born April 3, 1991 · Montana
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jordan Tripp](https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Tripp.JPG?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 23 | 57 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 23 | 57 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 23 | 57 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Miami | 23 | 57 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Brandon Flowers
 
-**San Diego Chargers · Cornerback · No. 26 · Age 28 · Last game October 12, 2014**
+**San Diego Chargers · Cornerback · No. 26 · Age 28 · Last game October 19, 2014**
 
 5' 9", 187 lb · Born February 18, 1986 · Virginia Tech · Drafted in 2008, second round, by Kansas City
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Brandon Flowers](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Flowers_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 12 (2014, through Week 6).
+**Passes defended:** 14 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 28 | 26 | 6 | 45 | 27 | 18 | 3 | 1 | 1 |
+| 2014 (through Week 7) | San Diego | 28 | 26 | 7 | 51 | 31 | 20 | 3 | 1 | 1 |
 | 2013 | Kansas City | 27 | 24 | 16 | 70 | 50 | 20 | 3 | 1 | 2 |
-| Career |  |  |  | 22 | 115 | 77 | 38 | 6 | 2 | 3 |
+| Career |  |  |  | 23 | 121 | 81 | 40 | 6 | 2 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 28 | 26 | 3 | 2 | 12 | 0 | 1 | 0 |
+| 2014 (through Week 7) | San Diego | 28 | 26 | 4 | 10 | 14 | 0 | 1 | 0 |
 | 2013 | Kansas City | 27 | 24 | 2 | 33 | 9 | 0 | 0 | N/A |
 
 ### Playoffs

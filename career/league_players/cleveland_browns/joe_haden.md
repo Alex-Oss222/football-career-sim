@@ -1,10 +1,10 @@
 # Joe Haden
 
-**Cleveland Browns · Cornerback · No. 23 · Age 25 · Last game October 12, 2014**
+**Cleveland Browns · Cornerback · No. 23 · Age 25 · Last game October 19, 2014**
 
 5' 11", 195 lb · Born April 14, 1989 · Florida · Drafted in 2010, first round, by Cleveland
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Joe Haden](https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Haden_in_2019_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 3 (2014, through Week 6).
+**Passes defended:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 25 | 23 | 5 | 17 | 10 | 7 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Cleveland | 25 | 23 | 6 | 19 | 11 | 8 | 0 | 0 | 0 |
 | 2013 | Cleveland | 24 | 23 | 16 | 70 | 50 | 20 | 0 | 0 | 1 |
-| Career |  |  |  | 21 | 87 | 60 | 27 | 0 | 0 | 1 |
+| Career |  |  |  | 22 | 89 | 61 | 28 | 0 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 25 | 23 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Cleveland | 25 | 23 | 0 | 0 | 5 | 0 | 0 | 0 |
 | 2013 | Cleveland | 24 | 23 | 6 | 108 | 15 | 0 | 0 | N/A |
 
 ### Playoffs

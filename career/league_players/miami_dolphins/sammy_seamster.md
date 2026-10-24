@@ -1,10 +1,10 @@
 # Sammy Seamster
 
-**Miami Dolphins · Cornerback · No. 37 · Age 23 · Last game October 12, 2014**
+**Miami Dolphins · Cornerback · No. 37 · Age 23 · Last game October 19, 2014**
 
 6' 0", 205 lb · Born February 5, 1991 · Middle Tennessee State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
@@ -18,11 +18,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 23 | 37 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 23 | 37 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 23 | 37 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 23 | 37 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

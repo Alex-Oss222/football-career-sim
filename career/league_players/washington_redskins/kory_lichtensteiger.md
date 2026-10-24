@@ -1,10 +1,10 @@
 # Kory Lichtensteiger
 
-**Washington Redskins · Center · No. 78 · Age 29 · Last game October 12, 2014**
+**Washington Redskins · Center · No. 78 · Age 29 · Last game October 19, 2014**
 
 6' 2", 296 lb · Born March 22, 1985 · Bowling Green · Drafted in 2008, fourth round, by Denver
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Kory Lichtensteiger](https://commons.wikimedia.org/wiki/Special:FilePath/Kory_Lichtensteiger_2011.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 1 (2014, through Week 6).
+**Sacks allowed:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 29 | 78 | 6 | 6 | 387 | 1 | 23 |
+| 2014 (through Week 7) | Washington | 29 | 78 | 7 | 7 | 454 | 1 | 25 |
 | 2013 | Washington | 28 | 78 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

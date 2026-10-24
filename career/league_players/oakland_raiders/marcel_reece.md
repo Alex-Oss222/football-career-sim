@@ -1,10 +1,10 @@
 # Marcel Reece
 
-**Oakland Raiders · Fullback · No. 45 · Age 29 · Last game October 12, 2014**
+**Oakland Raiders · Fullback · No. 45 · Age 29 · Last game October 19, 2014**
 
 6' 1", 250 lb · Born June 23, 1985 · Washington; El Camino; Chaffey College
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Marcel Reece](https://commons.wikimedia.org/wiki/Special:FilePath/Marcel_Reece.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 2.0 (2014, through Week 6).
+**Yards per carry:** 2.0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 29 | 45 | 5 | 2 | 4 | 2.0 | 0 | 2 | 0.8 |
+| 2014 (through Week 7) | Oakland | 29 | 45 | 6 | 2 | 4 | 2.0 | 0 | 2 | 0.7 |
 | 2013 | Oakland | 28 | 45 | 16 | 5 | 2 | 0.4 | 0 | 4 | 0.1 |
-| Career |  |  |  | 21 | 7 | 6 | 0.9 | 0 | 4 | 0.3 |
+| Career |  |  |  | 22 | 7 | 6 | 0.9 | 0 | 4 | 0.3 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 29 | 45 | 6 | 6 | 59 | 9.8 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Oakland | 29 | 45 | 6 | 6 | 59 | 9.8 | 0 | 1 | 1 |
 | 2013 | Oakland | 28 | 45 | 12 | 8 | 83 | 10.4 | 0 | 0 | 0 |
 
 ### Playoffs

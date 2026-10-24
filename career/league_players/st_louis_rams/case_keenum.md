@@ -1,10 +1,10 @@
 # Case Keenum
 
-**St. Louis Rams · Quarterback · No. 17 · Age 26 · Last game October 13, 2014**
+**St. Louis Rams · Quarterback · No. 17 · Age 26 · Last game October 19, 2014**
 
 6' 1", 205 lb · Born February 17, 1988 · Houston
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Case Keenum](https://commons.wikimedia.org/wiki/Special:FilePath/Case_Keenum.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 26 | 17 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 7) | St. Louis | 26 | 17 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Houston | 25 | 7 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 21 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 22 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 26 | 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | St. Louis | 26 | 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Houston | 25 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

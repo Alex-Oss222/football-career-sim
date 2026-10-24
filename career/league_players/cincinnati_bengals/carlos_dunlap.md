@@ -1,10 +1,10 @@
 # Carlos Dunlap
 
-**Cincinnati Bengals · Outside linebacker · No. 96 · Age 25 · Last game October 12, 2014**
+**Cincinnati Bengals · Outside linebacker · No. 96 · Age 25 · Last game October 19, 2014**
 
 6' 6", 280 lb · Born February 28, 1989 · Florida · Drafted in 2010, second round, by Cincinnati
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Carlos Dunlap](https://commons.wikimedia.org/wiki/Special:FilePath/Kansas_City_Chiefs_host_military_appreciation_day_at_training_camp_%287378597%29_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive end.
 
-**Tackles:** 6 (2014, through Week 6).
+**Tackles:** 9 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 25 | 96 | 5 | 6 | 4 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Cincinnati | 25 | 96 | 6 | 9 | 6 | 3 | 1 | 1 | 1 |
 | 2013 | Cincinnati | 24 | 96 | 16 | 22 | 12 | 10 | 0 | 2 | 2 |
-| Career |  |  |  | 21 | 28 | 16 | 12 | 0 | 2 | 2 |
+| Career |  |  |  | 22 | 31 | 18 | 13 | 1 | 3 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 25 | 96 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Cincinnati | 25 | 96 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 24 | 96 | 0 | 0 | 0 | 2 | 2 | N/A |
 
 ### Playoffs

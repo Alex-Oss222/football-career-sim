@@ -1,10 +1,10 @@
 # Rich Ohrnberger
 
-**San Diego Chargers · Guard · No. 74 · Age 28 · Last game October 12, 2014**
+**San Diego Chargers · Guard · No. 74 · Age 28 · Last game October 19, 2014**
 
 6' 2", 300 lb · Born February 14, 1986 · Penn State · Drafted in 2009, fourth round, by New England
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Rich Ohrnberger](https://commons.wikimedia.org/wiki/Special:FilePath/Ohrnberger_08blueandwhite.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 28 | 74 | 6 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Diego | 28 | 74 | 7 | 0 | 0 | 0 | 0 |
 | 2013 | San Diego | 27 | 74 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

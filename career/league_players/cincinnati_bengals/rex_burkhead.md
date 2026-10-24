@@ -1,10 +1,10 @@
 # Rex Burkhead
 
-**Cincinnati Bengals · Running back · No. 33 · Age 24 · Last game October 12, 2014**
+**Cincinnati Bengals · Running back · No. 33 · Age 24 · Last game October 19, 2014**
 
 5' 10", 215 lb · Born July 2, 1990 · Nebraska
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Rex Burkhead](https://commons.wikimedia.org/wiki/Special:FilePath/Rex_Burkhead_2013.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 24 | 33 | 2 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2014 (through Week 7) | Cincinnati | 24 | 33 | 3 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 | 2013 | Cincinnati | 23 | 33 | 16 | 1 | 4 | 4.0 | 0 | 4 | 0.2 |
-| Career |  |  |  | 18 | 1 | 4 | 4.0 | 0 | 4 | 0.2 |
+| Career |  |  |  | 19 | 1 | 4 | 4.0 | 0 | 4 | 0.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 24 | 33 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 7) | Cincinnati | 24 | 33 | 2 | 1 | 19 | 19.0 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 23 | 33 | 1 | 1 | 21 | 21.0 | 0 | 0 | 0 |
 
 ### Playoffs

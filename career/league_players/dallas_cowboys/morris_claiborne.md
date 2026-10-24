@@ -1,10 +1,10 @@
 # Morris Claiborne
 
-**Dallas Cowboys · Cornerback · No. 24 · Age 24 · Last game October 12, 2014**
+**Dallas Cowboys · Cornerback · No. 24 · Age 24 · Last game October 19, 2014**
 
 5' 11", 192 lb · Born February 7, 1990 · LSU · Drafted in 2012, first round, by Dallas
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Morris Claiborne](https://commons.wikimedia.org/wiki/Special:FilePath/Morris_Claiborne.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 9 (2014, through Week 6).
+**Passes defended:** 9 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 24 | 24 | 6 | 53 | 33 | 20 | 2 | 0 | 0 |
+| 2014 (through Week 7) | Dallas | 24 | 24 | 7 | 64 | 38 | 26 | 3 | 0 | 0 |
 | 2013 | Dallas | 23 | 24 | 16 | 119 | 76 | 43 | 5 | 2 | 3 |
-| Career |  |  |  | 22 | 172 | 109 | 63 | 7 | 2 | 3 |
+| Career |  |  |  | 23 | 183 | 114 | 69 | 8 | 2 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 24 | 24 | 1 | 0 | 9 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Dallas | 24 | 24 | 1 | 0 | 9 | 0 | 0 | 0 |
 | 2013 | Dallas | 23 | 24 | 4 | 103 | 25 | 1 | 1 | N/A |
 
 ### Playoffs

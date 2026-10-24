@@ -1,10 +1,10 @@
 # Josh Hill
 
-**New Orleans Saints · Tight end · No. 89 · Age 24 · Last game October 5, 2014**
+**New Orleans Saints · Tight end · No. 89 · Age 24 · Last game October 19, 2014**
 
 6' 5", 250 lb · Born May 21, 1990 · Idaho State; Boise State
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Josh Hill](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Hill.png?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 24 | 89 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 7) | New Orleans | 24 | 89 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | New Orleans | 23 | 89 | 16 | 2 | 1 | 2 | 2.0 | 0 | 2 | 0.1 | 50.0 |
-| Career |  |  |  | 21 | 2 | 1 | 2 | 2.0 | 0 | 2 | 0.1 | 50.0 |
+| Career |  |  |  | 22 | 2 | 1 | 2 | 2.0 | 0 | 2 | 0.1 | 50.0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Ben Roethlisberger
 
-**Pittsburgh Steelers · Quarterback · No. 7 · Age 32 · Last game October 12, 2014**
+**Pittsburgh Steelers · Quarterback · No. 7 · Age 32 · Last game October 20, 2014**
 
 6' 5", 241 lb · Born March 2, 1982 · Miami (Ohio) · Drafted in 2004, first round, by Pittsburgh
 
-As of October 12, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Ben Roethlisberger](https://commons.wikimedia.org/wiki/Special:FilePath/Ben_Roethlisberger.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 85.8 (2014, through Week 6).
+**Passer rating:** 91.9 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 32 | 7 | 6 | 128 | 205 | 62.4 | 1,501 | 7.3 | 250.2 | 7 | 5 | 85.8 |
+| 2014 (through Week 7) | Pittsburgh | 32 | 7 | 7 | 150 | 243 | 61.7 | 1,858 | 7.6 | 265.4 | 11 | 5 | 91.9 |
 | 2013 | Pittsburgh | 31 | 7 | 16 | 360 | 570 | 63.2 | 4,027 | 7.1 | 251.7 | 26 | 11 | 91.3 |
-| Career |  |  |  | 22 | 488 | 775 | 63.0 | 5,528 | 7.1 | 251.3 | 33 | 16 | 89.9 |
+| Career |  |  |  | 23 | 510 | 813 | 62.7 | 5,885 | 7.2 | 255.9 | 37 | 16 | 91.5 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 32 | 7 | 13 | 78 | 19 | 92 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Pittsburgh | 32 | 7 | 14 | 81 | 24 | 111 | 1 | 0 | 0 |
 | 2013 | Pittsburgh | 31 | 7 | 30 | 185 | 44 | 171 | 2 | 1 | 1 |
 
 ### Playoffs

@@ -1,16 +1,18 @@
 # Louis Nix
 
-**Houston Texans · Nose tackle · No. 92 · Age 23 · Last game October 9, 2014**
+**Houston Texans · Nose tackle · No. 92 · Age 23 · Last game October 20, 2014**
 
 6' 2", 331 lb · Born July 31, 1991 · Notre Dame
 
-As of October 9, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Louis Nix](https://commons.wikimedia.org/wiki/Special:FilePath/Louis_Nix_2014.JPG?width=500)
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Louis_Nix_2014.JPG)).*
 
 **Current assignment:** Reserve nose tackle.
+
+**Sacks:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -22,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 23 | 92 | 6 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Houston | 23 | 92 | 7 | 1 | 1 | 0 | 0 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 23 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Houston | 23 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

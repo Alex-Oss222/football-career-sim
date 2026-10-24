@@ -172,6 +172,31 @@ class WeekPagesTests(unittest.TestCase):
         self.assertEqual(week_pages.severity_words({"severity": "long_term"}), "long term")
         self.assertEqual(week_pages.severity_words({"severity": "season_ending"}), "season ending")
 
+    def test_incident_participation_follows_the_restriction(self):
+        """An independent medical hold is no football work until it is released, never limited
+        work (the Week 7 Norwell and Talib pages read limited); an unknown restriction is refused."""
+        season = week_pages.Season(ROOT, SEASON)
+        game = next(g for g in season.fixtures if g["week"] == FIRST and JAX in (g["away"], g["home"]))
+        other = game["home"] if game["away"] == JAX else game["away"]
+        name = next(p["name"] for p in season.roster["players"] if p["list"] == "active")
+        expected = {"out": ("- Practice participation: out until reassessed", "None until reassessed"),
+                    "limited": ("- Practice participation: limited until reassessed", "Limited until reassessed"),
+                    "independent medical hold": (
+                        "- Practice participation: none until the independent medical process releases the hold",
+                        "None until the independent process releases the hold")}
+        for restriction, (line, work) in expected.items():
+            injury = {"team": JAX, "player": name, "injury_class": "head_neck", "severity": "short",
+                      "restriction": restriction, "return_days": 14, "reassessment_days": 4, "removed": True,
+                      "period": 1, "clock": "6:26"}
+            receipt = {"week": FIRST, "away": game["away"], "home": game["home"], "injuries": [injury],
+                       "final_score": {JAX: 31, other: 34}, "drives": []}
+            rel, text = week_pages.incident_page(season, receipt, injury)
+            self.assertIn(line + "\n", text, restriction)
+            self.assertIn("| %s |" % work, text, restriction)
+            self.assertEqual(clean_pages.page_errors(rel, text), [], rel)
+        with self.assertRaises(ValueError):
+            week_pages.participation({"restriction": "questionable"})
+
     def test_rebased_links_reach_the_same_file(self):
         out = week_pages.rebase("([record](../../Medical/incidents/x.md#a))",
                                 "career/2014/Team_Operations/Team/Roster/roster.md",

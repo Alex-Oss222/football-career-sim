@@ -1,10 +1,10 @@
 # Christian Ponder
 
-**Minnesota Vikings · Quarterback · No. 7 · Age 26 · Last game October 12, 2014**
+**Minnesota Vikings · Quarterback · No. 7 · Age 26 · Last game October 19, 2014**
 
 6' 2", 229 lb · Born February 25, 1988 · Florida State · Drafted in 2011, first round, by Minnesota
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Christian Ponder](https://commons.wikimedia.org/wiki/Special:FilePath/Christian_Ponder_close-up.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 26 | 7 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 7) | Minnesota | 26 | 7 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Minnesota | 25 | 7 | 16 | 354 | 547 | 64.7 | 3,608 | 6.6 | 225.5 | 24 | 9 | 91.3 |
-| Career |  |  |  | 22 | 354 | 547 | 64.7 | 3,608 | 6.6 | 164.0 | 24 | 9 | 91.3 |
+| Career |  |  |  | 23 | 354 | 547 | 64.7 | 3,608 | 6.6 | 156.9 | 24 | 9 | 91.3 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 26 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Minnesota | 26 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Minnesota | 25 | 7 | 31 | 222 | 42 | 156 | 0 | 1 | 1 |
 
 ### Playoffs

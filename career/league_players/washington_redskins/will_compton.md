@@ -1,10 +1,10 @@
 # Will Compton
 
-**Washington Redskins · Middle linebacker · No. 51 · Age 25 · Last game October 12, 2014**
+**Washington Redskins · Middle linebacker · No. 51 · Age 25 · Last game October 19, 2014**
 
 6' 1", 230 lb · Born September 19, 1989 · Nebraska
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Will Compton](https://commons.wikimedia.org/wiki/Special:FilePath/Will_Compton.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve middle linebacker.
 
-**Tackles:** 18 (2014, through Week 6).
+**Tackles:** 19 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 24 | 51 | 6 | 18 | 13 | 5 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Washington | 24 | 51 | 7 | 19 | 14 | 5 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 24 | 51 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Washington | 24 | 51 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

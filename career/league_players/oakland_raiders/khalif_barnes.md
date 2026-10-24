@@ -1,10 +1,10 @@
 # Khalif Barnes
 
-**Oakland Raiders · Offensive tackle · No. 69 · Age 32 · Last game October 12, 2014**
+**Oakland Raiders · Offensive tackle · No. 69 · Age 32 · Last game October 19, 2014**
 
 6' 6", 320 lb · Born April 21, 1982 · Washington · Drafted in 2005, second round, by Jacksonville
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Khalif Barnes](https://commons.wikimedia.org/wiki/Special:FilePath/Khalif_Barnes.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 0 (2014, through Week 6).
+**Sacks allowed:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 32 | 69 | 5 | 5 | 332 | 0 | 21 |
+| 2014 (through Week 7) | Oakland | 32 | 69 | 6 | 6 | 387 | 0 | 26 |
 | 2013 | Oakland | 31 | 69 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Tramaine Brock
 
-**San Francisco 49ers · Cornerback · No. 26 · Age 26 · Last game October 13, 2014**
+**San Francisco 49ers · Cornerback · No. 26 · Age 26 · Last game October 19, 2014**
 
 5' 10", 197 lb · Born August 20, 1988 · Belhaven College; Minnesota; Mississippi Gulf Coast CC
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Tramaine Brock](https://commons.wikimedia.org/wiki/Special:FilePath/Tramaine_Brock.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 9 (2014, through Week 6).
+**Passes defended:** 11 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 26 | 26 | 6 | 51 | 34 | 17 | 2 | 0 | 0 |
+| 2014 (through Week 7) | San Francisco | 26 | 26 | 7 | 59 | 41 | 18 | 3 | 0 | 0 |
 | 2013 | San Francisco | 25 | 26 | 7 | 1 | 0 | 1 | 1 | 0 | 0 |
-| Career |  |  |  | 13 | 52 | 34 | 18 | 3 | 0 | 0 |
+| Career |  |  |  | 14 | 60 | 41 | 19 | 4 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 26 | 26 | 2 | 23 | 9 | 1 | 1 | 0 |
+| 2014 (through Week 7) | San Francisco | 26 | 26 | 2 | 23 | 11 | 1 | 1 | 0 |
 | 2013 | San Francisco | 25 | 26 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

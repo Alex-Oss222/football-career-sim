@@ -1,10 +1,10 @@
 # Akiem Hicks
 
-**New Orleans Saints · Defensive tackle · No. 76 · Age 24 · Last game October 5, 2014**
+**New Orleans Saints · Defensive tackle · No. 76 · Age 24 · Last game October 19, 2014**
 
 6' 5", 324 lb · Born November 16, 1989 · Regina; Sacramento City · Drafted in 2012, third round, by New Orleans
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Akiem Hicks](https://commons.wikimedia.org/wiki/Special:FilePath/Akiem_Hicks.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 24 | 76 | 5 | 27 | 20 | 7 | 5 | 1 | 2 |
+| 2014 (through Week 7) | New Orleans | 24 | 76 | 6 | 32 | 25 | 7 | 5 | 1 | 2 |
 | 2013 | New Orleans | 23 | 76 | 16 | 43 | 31 | 12 | 3 | 4 | 7 |
-| Career |  |  |  | 21 | 70 | 51 | 19 | 8 | 5 | 9 |
+| Career |  |  |  | 22 | 75 | 56 | 19 | 8 | 5 | 9 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 24 | 76 | 0 | 0 | 1 | 1 | 1 | 0 |
+| 2014 (through Week 7) | New Orleans | 24 | 76 | 0 | 0 | 1 | 1 | 1 | 0 |
 | 2013 | New Orleans | 23 | 76 | 0 | 0 | 2 | 1 | 1 | N/A |
 
 ### Playoffs

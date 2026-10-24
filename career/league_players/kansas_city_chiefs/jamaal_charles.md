@@ -1,10 +1,10 @@
 # Jamaal Charles
 
-**Kansas City Chiefs · Running back · No. 25 · Age 27 · Last game October 5, 2014**
+**Kansas City Chiefs · Running back · No. 25 · Age 27 · Last game October 19, 2014**
 
 5' 11", 199 lb · Born December 27, 1986 · Texas · Drafted in 2008, third round, by Kansas City
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Jamaal Charles](https://commons.wikimedia.org/wiki/Special:FilePath/Jamaal_Charles.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 4.3 (2014, through Week 5).
+**Yards per carry:** 3.9 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 27 | 25 | 5 | 79 | 336 | 4.3 | 4 | 25 | 67.2 |
+| 2014 (through Week 7) | Kansas City | 27 | 25 | 6 | 93 | 363 | 3.9 | 5 | 25 | 60.5 |
 | 2013 | Kansas City | 26 | 25 | 16 | 282 | 1,556 | 5.5 | 13 | 80 | 97.2 |
-| Career |  |  |  | 21 | 361 | 1,892 | 5.2 | 17 | 80 | 90.1 |
+| Career |  |  |  | 22 | 375 | 1,919 | 5.1 | 18 | 80 | 87.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 27 | 25 | 20 | 13 | 108 | 8.3 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Kansas City | 27 | 25 | 27 | 18 | 166 | 9.2 | 1 | 0 | 0 |
 | 2013 | Kansas City | 26 | 25 | 68 | 46 | 658 | 14.3 | 4 | 4 | 4 |
 
 ### Playoffs

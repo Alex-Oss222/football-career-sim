@@ -1,10 +1,10 @@
 # Jay Prosch
 
-**Houston Texans · Fullback · No. 45 · Age 22 · Last game October 9, 2014**
+**Houston Texans · Fullback · No. 45 · Age 22 · Last game October 20, 2014**
 
 6' 1", 256 lb · Born August 21, 1992 · Auburn
 
-As of October 9, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Jay Prosch](https://commons.wikimedia.org/wiki/Special:FilePath/Jay_Prosch.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 9, 2014, after Week 6.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 1.0 (2014, through Week 6).
+**Yards per carry:** 1.0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 22 | 45 | 6 | 2 | 2 | 1.0 | 0 | 4 | 0.3 |
+| 2014 (through Week 7) | Houston | 22 | 45 | 7 | 2 | 2 | 1.0 | 0 | 4 | 0.3 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 22 | 45 | 2 | 1 | 2 | 2.0 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Houston | 22 | 45 | 3 | 1 | 2 | 2.0 | 0 | 1 | 1 |
 
 ### Playoffs
 

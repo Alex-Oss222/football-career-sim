@@ -1,10 +1,10 @@
 # Terrence Fede
 
-**Miami Dolphins · Defensive end · No. 78 · Age 22 · Last game October 12, 2014**
+**Miami Dolphins · Defensive end · No. 78 · Age 22 · Last game October 19, 2014**
 
 6' 3", 282 lb · Born November 19, 1991 · Marist
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Terrence Fede](https://commons.wikimedia.org/wiki/Special:FilePath/Terrence_Fede.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 22 | 78 | 2 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 22 | 78 | 3 | 2 | 1 | 1 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 22 | 78 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 22 | 78 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -4,7 +4,7 @@
 
 Born April 7, 1990 · Georgia Tech · Drafted in 2014, sixth round, by Jacksonville
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ## Staff assessment
 

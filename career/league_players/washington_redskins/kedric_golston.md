@@ -1,10 +1,10 @@
 # Kedric Golston
 
-**Washington Redskins · Nose tackle · No. 64 · Age 31 · Last game October 12, 2014**
+**Washington Redskins · Nose tackle · No. 64 · Age 31 · Last game October 19, 2014**
 
 6' 4", 318 lb · Born May 30, 1983 · Georgia · Drafted in 2006, sixth round, by Washington
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Kedric Golston](https://commons.wikimedia.org/wiki/Special:FilePath/Kedric_golston_2011.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 31 | 64 | 6 | 5 | 4 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Washington | 31 | 64 | 7 | 6 | 4 | 2 | 1 | 0 | 0 |
 | 2013 | Washington | 30 | 64 | 16 | 35 | 25 | 10 | 3 | 1 | 6 |
-| Career |  |  |  | 22 | 40 | 29 | 11 | 4 | 1 | 6 |
+| Career |  |  |  | 23 | 41 | 29 | 12 | 4 | 1 | 6 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 31 | 64 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Washington | 31 | 64 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Washington | 30 | 64 | 0 | 0 | 0 | 1 | 1 | N/A |
 
 ### Playoffs

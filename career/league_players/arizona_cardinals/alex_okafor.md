@@ -1,10 +1,10 @@
 # Alex Okafor
 
-**Arizona Cardinals · Defensive end · No. 57 · Age 23 · Last game October 12, 2014**
+**Arizona Cardinals · Defensive end · No. 57 · Age 23 · Last game October 19, 2014**
 
 6' 4", 260 lb · Born February 8, 1991 · Texas
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Alex Okafor](https://commons.wikimedia.org/wiki/Special:FilePath/Alex_Okafor.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve weakside linebacker.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 23 | 57 | 2 | 1 | 0 | 1 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Arizona | 23 | 57 | 3 | 3 | 2 | 1 | 1 | 0 | 1 |
 | 2013 | Arizona | 22 | 57 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 4 | 1 | 0 | 1 | 0 | 0 | 1 |
+| Career |  |  |  | 5 | 3 | 2 | 1 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 23 | 57 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Arizona | 23 | 57 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Arizona | 22 | 57 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

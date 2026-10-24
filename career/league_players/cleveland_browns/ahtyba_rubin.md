@@ -1,10 +1,10 @@
 # Ahtyba Rubin
 
-**Cleveland Browns · Nose tackle · No. 71 · Age 28 · Last game October 12, 2014**
+**Cleveland Browns · Nose tackle · No. 71 · Age 28 · Last game October 19, 2014**
 
 6' 2", 325 lb · Born July 25, 1986 · Iowa State; Trinity Valley CC · Drafted in 2008, sixth round, by Cleveland
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Ahtyba Rubin](https://commons.wikimedia.org/wiki/Special:FilePath/Ahtyba_Rubin.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting nose tackle.
 
-**Sacks:** 2 (2014, through Week 6).
+**Sacks:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 28 | 71 | 5 | 29 | 21 | 8 | 2 | 2 | 5 |
+| 2014 (through Week 7) | Cleveland | 28 | 71 | 6 | 33 | 25 | 8 | 3 | 2 | 5 |
 | 2013 | Cleveland | 27 | 71 | 16 | 114 | 79 | 35 | 11 | 7 | 19 |
-| Career |  |  |  | 21 | 143 | 100 | 43 | 13 | 9 | 24 |
+| Career |  |  |  | 22 | 147 | 104 | 43 | 14 | 9 | 24 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 28 | 71 | 0 | 0 | 2 | 1 | 1 | 0 |
+| 2014 (through Week 7) | Cleveland | 28 | 71 | 0 | 0 | 2 | 1 | 1 | 0 |
 | 2013 | Cleveland | 27 | 71 | 0 | 0 | 3 | 3 | 3 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # T.J. Carrie
 
-**Oakland Raiders · Cornerback · No. 38 · Age 24 · Last game October 12, 2014**
+**Oakland Raiders · Cornerback · No. 38 · Age 24 · Last game October 19, 2014**
 
 6' 0", 204 lb · Born July 28, 1990 · Ohio
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![T.J. Carrie](https://commons.wikimedia.org/wiki/Special:FilePath/T._J._Carrie.JPG?width=500)
 
@@ -22,15 +22,15 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 24 | 38 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Oakland | 24 | 38 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 24 | 38 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Oakland | 24 | 38 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 24 | 38 | 0 | 0 | N/A | 10 | 135 | 13.5 |
+| 2014 (through Week 7) | Oakland | 24 | 38 | 0 | 0 | N/A | 12 | 146 | 12.2 |
 
 ### Playoffs
 

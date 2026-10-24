@@ -1,10 +1,10 @@
 # Mike Daniels
 
-**Green Bay Packers · Defensive tackle · No. 76 · Age 25 · Last game October 12, 2014**
+**Green Bay Packers · Defensive tackle · No. 76 · Age 25 · Last game October 19, 2014**
 
 6' 0", 305 lb · Born May 5, 1989 · Iowa · Drafted in 2012, fourth round, by Green Bay
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Mike Daniels](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Daniels_American_Football_76_Dec_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 1 (2014, through Week 6).
+**Sacks:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 25 | 76 | 6 | 19 | 15 | 4 | 1 | 1 | 3 |
+| 2014 (through Week 7) | Green Bay | 25 | 76 | 7 | 25 | 19 | 6 | 1 | 2 | 4 |
 | 2013 | Green Bay | 24 | 76 | 15 | 42 | 34 | 8 | 6 | 2 | 6 |
-| Career |  |  |  | 21 | 61 | 49 | 12 | 7 | 3 | 9 |
+| Career |  |  |  | 22 | 67 | 53 | 14 | 7 | 4 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 25 | 76 | 0 | 0 | 1 | 1 | 1 | 0 |
+| 2014 (through Week 7) | Green Bay | 25 | 76 | 0 | 0 | 1 | 1 | 1 | 0 |
 | 2013 | Green Bay | 24 | 76 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

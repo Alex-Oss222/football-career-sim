@@ -1,10 +1,10 @@
 # Mackenzy Bernadeau
 
-**Dallas Cowboys · Guard · No. 73 · Age 28 · Last game October 12, 2014**
+**Dallas Cowboys · Guard · No. 73 · Age 28 · Last game October 19, 2014**
 
 6' 4", 325 lb · Born January 3, 1986 · Bentley College · Drafted in 2008, seventh round, by Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Mackenzy Bernadeau](https://commons.wikimedia.org/wiki/Special:FilePath/Mackenzy_Bernadeau.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 28 | 73 | 6 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 7) | Dallas | 28 | 73 | 7 | 0 | 0 | 0 | 2 |
 | 2013 | Dallas | 27 | 73 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 

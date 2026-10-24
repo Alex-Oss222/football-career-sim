@@ -1,10 +1,10 @@
 # John Kuhn
 
-**Green Bay Packers · Fullback · No. 30 · Age 32 · Last game October 12, 2014**
+**Green Bay Packers · Fullback · No. 30 · Age 32 · Last game October 19, 2014**
 
 6' 0", 250 lb · Born September 9, 1982 · University of Shippensburg
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![John Kuhn](https://commons.wikimedia.org/wiki/Special:FilePath/John_Kuhn.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 7.8 (2014, through Week 6).
+**Yards per carry:** 7.4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 31 | 30 | 6 | 4 | 31 | 7.8 | 0 | 12 | 5.2 |
+| 2014 (through Week 7) | Green Bay | 31 | 30 | 7 | 5 | 37 | 7.4 | 0 | 12 | 5.3 |
 | 2013 | Green Bay | 30 | 30 | 10 | 8 | 27 | 3.4 | 0 | 11 | 2.7 |
-| Career |  |  |  | 16 | 12 | 58 | 4.8 | 0 | 12 | 3.6 |
+| Career |  |  |  | 17 | 13 | 64 | 4.9 | 0 | 12 | 3.8 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 31 | 30 | 9 | 5 | 108 | 21.6 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Green Bay | 31 | 30 | 10 | 6 | 141 | 23.5 | 1 | 0 | 0 |
 | 2013 | Green Bay | 30 | 30 | 8 | 6 | 68 | 11.3 | 0 | 1 | 1 |
 
 ### Playoffs

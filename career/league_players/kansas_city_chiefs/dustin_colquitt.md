@@ -1,10 +1,10 @@
 # Dustin Colquitt
 
-**Kansas City Chiefs · Punter · No. 2 · Age 32 · Last game October 5, 2014**
+**Kansas City Chiefs · Punter · No. 2 · Age 32 · Last game October 19, 2014**
 
 6' 3", 210 lb · Born May 6, 1982 · Tennessee · Drafted in 2005, third round, by Kansas City
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Dustin Colquitt](https://commons.wikimedia.org/wiki/Special:FilePath/Chiefs_Punter_Dustin_Colquitt_Super_Bowl_54_Interview_%28cropped%29.png?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 42.1 (2014, through Week 5).
+**Net punting average:** 41.5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 32 | 2 | 5 | 27 | 1,275 | 47.2 | 42.1 | 9 | 1 | 61 |
+| 2014 (through Week 7) | Kansas City | 32 | 2 | 6 | 33 | 1,509 | 45.7 | 41.5 | 12 | 1 | 61 |
 | 2013 | Kansas City | 31 | 2 | 16 | 84 | 3,717 | 44.2 | 39.5 | 35 | 4 | 62 |
-| Career |  |  |  | 21 | 111 | 4,992 | 45.0 | 40.1 | 44 | 5 | 62 |
+| Career |  |  |  | 22 | 117 | 5,226 | 44.7 | 40.0 | 47 | 5 | 62 |
 
 ### Playoffs
 

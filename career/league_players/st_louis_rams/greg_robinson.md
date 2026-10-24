@@ -1,10 +1,10 @@
 # Greg Robinson
 
-**St. Louis Rams · Offensive tackle · No. 79 · Age 21 · Last game October 13, 2014**
+**St. Louis Rams · Offensive tackle · No. 79 · Age 21 · Last game October 19, 2014**
 
 6' 5", 332 lb · Born October 21, 1992 · Auburn
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Greg Robinson](https://commons.wikimedia.org/wiki/Special:FilePath/Greg_Robinson_%28offensive_tackle%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 2 (2014, through Week 6).
+**Sacks allowed:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 21 | 79 | 5 | 5 | 323 | 2 | 19 |
+| 2014 (through Week 7) | St. Louis | 21 | 79 | 6 | 6 | 384 | 2 | 25 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Devon Kennard
 
-**New York Giants · Outside linebacker · No. 59 · Age 23 · Last game October 12, 2014**
+**New York Giants · Outside linebacker · No. 59 · Age 23 · Last game October 19, 2014**
 
 6' 3", 251 lb · Born June 24, 1991 · Southern California
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Devon Kennard](https://commons.wikimedia.org/wiki/Special:FilePath/Devon_Kennard_%285648375174%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting strongside linebacker.
 
-**Tackles:** 17 (2014, through Week 6).
+**Tackles:** 17 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 23 | 59 | 6 | 17 | 11 | 6 | 0 | 2 | 3 |
+| 2014 (through Week 7) | N.Y. Giants | 23 | 59 | 7 | 17 | 11 | 6 | 0 | 2 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 23 | 59 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Giants | 23 | 59 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

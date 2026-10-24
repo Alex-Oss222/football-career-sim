@@ -1,10 +1,10 @@
 # Bernard Pollard
 
-**Tennessee Titans · Strong safety · No. 31 · Age 29 · Last game October 12, 2014**
+**Tennessee Titans · Strong safety · No. 31 · Age 29 · Last game October 19, 2014**
 
 6' 1", 226 lb · Born December 23, 1984 · Purdue · Drafted in 2006, second round, by Kansas City
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Bernard Pollard](https://commons.wikimedia.org/wiki/Special:FilePath/Bernard_Pollard_makes_a_face.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 3 (2014, through Week 6).
+**Passes defended:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 29 | 31 | 6 | 27 | 19 | 8 | 2 | 2 | 3 |
+| 2014 (through Week 7) | Tennessee | 29 | 31 | 7 | 30 | 21 | 9 | 2 | 2 | 3 |
 | 2013 | Tennessee | 28 | 31 | 16 | 108 | 72 | 36 | 4 | 2 | 2 |
-| Career |  |  |  | 22 | 135 | 91 | 44 | 6 | 4 | 5 |
+| Career |  |  |  | 23 | 138 | 93 | 45 | 6 | 4 | 5 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 29 | 31 | 3 | 41 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Tennessee | 29 | 31 | 3 | 41 | 4 | 0 | 1 | 0 |
 | 2013 | Tennessee | 28 | 31 | 5 | 93 | 25 | 1 | 1 | N/A |
 
 ### Playoffs

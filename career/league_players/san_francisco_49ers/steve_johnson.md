@@ -1,10 +1,10 @@
 # Steve Johnson
 
-**San Francisco 49ers · Wide receiver · No. 13 · Age 28 · Last game October 13, 2014**
+**San Francisco 49ers · Wide receiver · No. 13 · Age 28 · Last game October 19, 2014**
 
 6' 2", 207 lb · Born July 22, 1986 · Kentucky; Chabot College · Drafted in 2008, seventh round, by Buffalo
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Steve Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Stevie_Johnson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 9.3 (2014, through Week 6).
+**Yards per target:** 9.0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 28 | 13 | 6 | 26 | 18 | 243 | 13.5 | 2 | 35 | 40.5 | 69.2 |
+| 2014 (through Week 7) | San Francisco | 28 | 13 | 7 | 30 | 20 | 270 | 13.5 | 2 | 35 | 38.6 | 66.7 |
 | 2013 | Buffalo | 27 | 13 | 16 | 164 | 99 | 1,102 | 11.1 | 8 | 40 | 68.9 | 60.4 |
-| Career |  |  |  | 22 | 190 | 117 | 1,345 | 11.5 | 10 | 40 | 61.1 | 61.6 |
+| Career |  |  |  | 23 | 194 | 119 | 1,372 | 11.5 | 10 | 40 | 59.7 | 61.3 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 28 | 13 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Francisco | 28 | 13 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Buffalo | 27 | 13 | 2 | 36 | 1 | 1 | 1 |
 
 ### Playoffs

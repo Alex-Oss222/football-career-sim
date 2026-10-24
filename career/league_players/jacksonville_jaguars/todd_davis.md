@@ -4,13 +4,13 @@
 
 Born May 17, 1992 · Sacramento State · Undrafted
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ## Staff assessment
 
 Todd Davis is an undrafted rookie linebacker whose first game-day activation came against Pittsburgh, for additional linebacker and coverage-unit depth, and he has played 34 snaps on special teams. He was a productive inside linebacker at Sacramento State with a downhill style, and the staff sees value in him on the coverage units. Coverage range is the main question, and his college evidence came against FCS competition.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 12.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 19.*
 
 ## Contract
 
@@ -28,11 +28,11 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 22 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Jacksonville | 22 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Jacksonville | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

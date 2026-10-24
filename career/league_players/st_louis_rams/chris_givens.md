@@ -1,10 +1,10 @@
 # Chris Givens
 
-**St. Louis Rams · Wide receiver · No. 13 · Age 24 · Last game October 13, 2014**
+**St. Louis Rams · Wide receiver · No. 13 · Age 24 · Last game October 19, 2014**
 
 6' 0", 203 lb · Born December 6, 1989 · Wake Forest · Drafted in 2012, fourth round, by St. Louis
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
@@ -18,13 +18,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 24 | 13 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 7) | St. Louis | 24 | 13 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | St. Louis | 23 | 13 | 16 | 185 | 125 | 1,226 | 9.8 | 9 | 56 | 76.6 | 67.6 |
-| Career |  |  |  | 21 | 185 | 125 | 1,226 | 9.8 | 9 | 56 | 58.4 | 67.6 |
+| Career |  |  |  | 22 | 185 | 125 | 1,226 | 9.8 | 9 | 56 | 55.7 | 67.6 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 24 | 13 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | St. Louis | 24 | 13 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | St. Louis | 23 | 13 | 5 | 27 | 0 | 0 | 0 |
 
 ### Playoffs

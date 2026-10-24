@@ -1,10 +1,10 @@
 # Cam Thomas
 
-**Pittsburgh Steelers · Nose tackle · No. 96 · Age 27 · Last game October 12, 2014**
+**Pittsburgh Steelers · Nose tackle · No. 96 · Age 27 · Last game October 20, 2014**
 
 6' 4", 330 lb · Born December 12, 1986 · North Carolina · Drafted in 2010, fifth round, by San Diego
 
-As of October 12, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Cam Thomas](https://commons.wikimedia.org/wiki/Special:FilePath/Cam_Thomas.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 2 (2014, through Week 6).
+**Sacks:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 27 | 96 | 6 | 13 | 11 | 2 | 0 | 2 | 6 |
+| 2014 (through Week 7) | Pittsburgh | 27 | 96 | 7 | 16 | 14 | 2 | 2 | 2 | 6 |
 | 2013 | San Diego | 26 | 92 | 16 | 49 | 34 | 15 | 3 | 4 | 9 |
-| Career |  |  |  | 22 | 62 | 45 | 17 | 3 | 6 | 15 |
+| Career |  |  |  | 23 | 65 | 48 | 17 | 5 | 6 | 15 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 27 | 96 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Pittsburgh | 27 | 96 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | San Diego | 26 | 92 | 0 | 0 | 2 | 1 | 1 | N/A |
 
 ### Playoffs

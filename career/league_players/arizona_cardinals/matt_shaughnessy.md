@@ -1,10 +1,10 @@
 # Matt Shaughnessy
 
-**Arizona Cardinals · Defensive end · No. 91 · Age 28 · Last game October 12, 2014**
+**Arizona Cardinals · Defensive end · No. 91 · Age 28 · Last game October 19, 2014**
 
 6' 5", 285 lb · Born September 23, 1986 · Wisconsin · Drafted in 2009, third round, by Oakland
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Matt Shaughnessy](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Shaughnessy.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting strongside linebacker.
 
-**Sacks:** 1 (2014, through Week 6).
+**Sacks:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 27 | 91 | 5 | 34 | 24 | 10 | 6 | 1 | 3 |
+| 2014 (through Week 7) | Arizona | 27 | 91 | 6 | 39 | 27 | 12 | 7 | 2 | 4 |
 | 2013 | Arizona | 26 | 91 | 16 | 14 | 9 | 5 | 4 | 0 | 2 |
-| Career |  |  |  | 21 | 48 | 33 | 15 | 10 | 1 | 5 |
+| Career |  |  |  | 22 | 53 | 36 | 17 | 11 | 2 | 6 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 27 | 91 | 1 | 38 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Arizona | 27 | 91 | 1 | 38 | 2 | 0 | 0 | 0 |
 | 2013 | Arizona | 26 | 91 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

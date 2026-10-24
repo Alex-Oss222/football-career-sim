@@ -1,10 +1,10 @@
 # Jarvis Jones
 
-**Pittsburgh Steelers · Outside linebacker · No. 95 · Age 24 · Last game October 12, 2014**
+**Pittsburgh Steelers · Outside linebacker · No. 95 · Age 25 · Last game October 20, 2014**
 
 6' 2", 245 lb · Born October 13, 1989 · Georgia; USC
 
-As of October 12, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Jarvis Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Jarvis_Jones.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 16 (2014, through Week 6).
+**Tackles:** 17 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 24 | 95 | 6 | 16 | 10 | 6 | 2 | 1 | 2 |
+| 2014 (through Week 7) | Pittsburgh | 24 | 95 | 7 | 17 | 11 | 6 | 2 | 1 | 2 |
 | 2013 | Pittsburgh | 23 | 95 | 16 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 22 | 17 | 11 | 6 | 2 | 1 | 2 |
+| Career |  |  |  | 23 | 18 | 12 | 6 | 2 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 24 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Pittsburgh | 24 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Pittsburgh | 23 | 95 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

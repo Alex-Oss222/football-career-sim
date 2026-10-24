@@ -384,8 +384,10 @@ class RehearsalTests(Runner):
         self.assertNotIn(first["id"], page)
         self.assertIn(("action", first["id"]), [(i["section"], i.get("event")) for i in entry["inserts"]])
         self.assertIn("## %s" % open_events.title(first), self.pages.responses.read_text(encoding="utf-8"))
-        # Each head-coach change the clock has reached is news under FOR YOUR INFORMATION here.
-        news = [e["id"] for e in lc.stored_news(SEASON, root).values()]
+        # Each head-coach change resolved in this week's period is news under FOR YOUR INFORMATION
+        # here; one resolved before the week's first briefing went out in an earlier week's brief.
+        news = [e["id"] for e in lc.stored_news(SEASON, root).values()
+                if (e["resolution"].get("period") or e["period"]) == {"week": week}]
         self.assertEqual(sorted(i["event"] for i in entry["inserts"] if i["section"] == "fyi"), sorted(news))
         item = se.item(root, first["queue_item"])
         self.assertEqual((item["status"], item["blocks"]),

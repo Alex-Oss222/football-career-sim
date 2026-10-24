@@ -4,19 +4,19 @@
 
 5' 7", 210 lb · Born March 23, 1985 · UCLA · Drafted in 2006, second round, by Jacksonville
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Maurice Jones-Drew](https://commons.wikimedia.org/wiki/Special:FilePath/Maurice_Jones-Drew_ESPNWeekend2010-066.jpg?width=500)
 
 *Photo: Jeff Kern, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Maurice_Jones-Drew_ESPNWeekend2010-066.jpg)).*
 
-**Yards per carry:** 4.9 (2014, through Week 6).
+**Yards per carry:** 4.8 (2014, through Week 7).
 
 ## Staff assessment
 
-Maurice Jones-Drew has proven himself an NFL starting running back, carrying 282 times for 1,334 yards as Jacksonville's lead back in 2013 and 117 times for 569 yards so far in 2014. He is a compact, powerful and complete veteran runner who wins with his decisions on the run track, his balance through contact and his short-yardage finishing, and he adds useful protection work. His inside efficiency matters more than his open-field speed, and long speed and route detail are the least of his tools.
+Maurice Jones-Drew has proven himself an NFL starting running back, carrying 282 times for 1,334 yards as Jacksonville's lead back in 2013 and 120 times for 570 yards so far in 2014. He is a compact, powerful and complete veteran runner who wins with his decisions on the run track, his balance through contact and his short-yardage finishing, and he adds useful protection work. His inside efficiency matters more than his open-field speed, and long speed and route detail are the least of his tools.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 12.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 19.*
 
 ## Contract
 
@@ -33,18 +33,18 @@ Two-year contract through 2015.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 29 | N/A | 6 | 117 | 569 | 4.9 | 4 | 25 | 94.8 |
+| 2014 (through Week 7) | Jacksonville | 29 | N/A | 7 | 120 | 570 | 4.8 | 4 | 25 | 81.4 |
 | 2013 | Jacksonville | 28 | 32 | 16 | 282 | 1,334 | 4.7 | 8 | 35 | 83.4 |
-| With Jacksonville |  |  |  | 22 | 399 | 1,903 | 4.8 | 12 | 35 | 86.5 |
+| With Jacksonville |  |  |  | 23 | 402 | 1,904 | 4.7 | 12 | 35 | 82.8 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 29 | N/A | 29 | 18 | 165 | 9.2 | 1 | 2 | 1 |
+| 2014 (through Week 7) | Jacksonville | 29 | N/A | 29 | 18 | 165 | 9.2 | 1 | 2 | 1 |
 | 2013 | Jacksonville | 28 | 32 | 67 | 42 | 400 | 9.5 | 4 | 2 | 2 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 29 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Jacksonville | 29 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 28 | 32 | 1 | 18 | 18.0 | 2 | 31 | 15.5 |
 
 ### Playoffs

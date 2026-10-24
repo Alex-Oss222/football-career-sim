@@ -1,10 +1,10 @@
 # Dante Rosario
 
-**Chicago Bears · Tight end · No. 88 · Age 29 · Last game October 12, 2014**
+**Chicago Bears · Tight end · No. 88 · Age 29 · Last game October 19, 2014**
 
 6' 3", 242 lb · Born October 25, 1984 · Oregon · Drafted in 2007, fifth round, by Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Dante Rosario](https://commons.wikimedia.org/wiki/Special:FilePath/Dante_Rosario_Broncos.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 15.0 (2014, through Week 6).
+**Yards per target:** 14.8 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 29 | 88 | 6 | 4 | 4 | 60 | 15.0 | 0 | 30 | 10.0 | 100.0 |
+| 2014 (through Week 7) | Chicago | 29 | 88 | 7 | 5 | 5 | 74 | 14.8 | 0 | 30 | 10.6 | 100.0 |
 | 2013 | Chicago | 28 | 88 | 16 | 2 | 1 | 2 | 2.0 | 0 | 2 | 0.1 | 50.0 |
-| Career |  |  |  | 22 | 6 | 5 | 62 | 12.4 | 0 | 30 | 2.8 | 83.3 |
+| Career |  |  |  | 23 | 7 | 6 | 76 | 12.7 | 0 | 30 | 3.3 | 85.7 |
 
 ### Playoffs
 

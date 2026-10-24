@@ -1,10 +1,10 @@
 # Malcom Floyd
 
-**San Diego Chargers · Wide receiver · No. 80 · Age 33 · Last game October 12, 2014**
+**San Diego Chargers · Wide receiver · No. 80 · Age 33 · Last game October 19, 2014**
 
 6' 5", 225 lb · Born September 8, 1981 · Wyoming
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Malcom Floyd](https://commons.wikimedia.org/wiki/Special:FilePath/Malcom_Floyd.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 4.3 (2014, through Week 6).
+**Yards per target:** 4.3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 32 | 80 | 6 | 30 | 14 | 129 | 9.2 | 0 | 23 | 21.5 | 46.7 |
+| 2014 (through Week 7) | San Diego | 32 | 80 | 6 | 30 | 14 | 129 | 9.2 | 0 | 23 | 21.5 | 46.7 |
 | 2013 | San Diego | 31 | 80 | 14 | 148 | 88 | 1,210 | 13.8 | 10 | 80 | 86.4 | 59.5 |
 | Career |  |  |  | 20 | 178 | 102 | 1,339 | 13.1 | 10 | 80 | 67.0 | 57.3 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 32 | 80 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Diego | 32 | 80 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | San Diego | 31 | 80 | 6 | 27 | 0 | 1 | 1 |
 
 ### Playoffs

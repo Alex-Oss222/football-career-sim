@@ -1,10 +1,10 @@
 # Dan Connolly
 
-**New England Patriots · Guard · No. 63 · Age 32 · Last game October 12, 2014**
+**New England Patriots · Guard · No. 63 · Age 32 · Last game October 16, 2014**
 
 6' 4", 305 lb · Born September 2, 1982 · Southeast Missouri State
 
-As of October 12, 2014, after Week 6.
+As of October 16, 2014, after Week 7.
 
 ![Dan Connolly](https://commons.wikimedia.org/wiki/Special:FilePath/Dan_Connolly_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 3 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | New England | 32 | 63 | 6 | 6 | 364 | 3 | 48 |
+| 2014 (through Week 7) | New England | 32 | 63 | 7 | 7 | 427 | 4 | 54 |
 | 2013 | New England | 31 | 63 | 16 | N/A | N/A | 8 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 11 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 12 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Colin Cole
 
-**Carolina Panthers · Defensive tackle · No. 91 · Age 34 · Last game October 12, 2014**
+**Carolina Panthers · Defensive tackle · No. 91 · Age 34 · Last game October 19, 2014**
 
 6' 2", 330 lb · Born June 24, 1980 · Iowa
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Colin Cole](https://commons.wikimedia.org/wiki/Special:FilePath/ColinCole-8-16-08-49ers.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 1 (2014, through Week 6).
+**Sacks:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 34 | 91 | 6 | 10 | 5 | 5 | 2 | 1 | 2 |
+| 2014 (through Week 7) | Carolina | 34 | 91 | 7 | 11 | 6 | 5 | 2 | 1 | 4 |
 | 2013 | Carolina | 33 | 91 | 16 | 3 | 3 | 0 | 0 | 1 | 1 |
-| Career |  |  |  | 22 | 13 | 8 | 5 | 2 | 2 | 3 |
+| Career |  |  |  | 23 | 14 | 9 | 5 | 2 | 2 | 5 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 34 | 91 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Carolina | 34 | 91 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Carolina | 33 | 91 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

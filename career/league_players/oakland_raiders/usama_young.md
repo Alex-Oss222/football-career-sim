@@ -1,10 +1,10 @@
 # Usama Young
 
-**Oakland Raiders · Strong safety · No. 26 · Age 29 · Last game October 12, 2014**
+**Oakland Raiders · Strong safety · No. 26 · Age 29 · Last game October 19, 2014**
 
 5' 11", 195 lb · Born May 8, 1985 · Kent State · Drafted in 2007, third round, by New Orleans
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Usama Young](https://commons.wikimedia.org/wiki/Special:FilePath/Usama_Young_Saints_victory_parade_cropped.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve strong safety.
 
-**Passes defended:** 1 (2014, through Week 6).
+**Passes defended:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 29 | 26 | 5 | 4 | 3 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Oakland | 29 | 26 | 6 | 4 | 3 | 1 | 0 | 0 | 0 |
 | 2013 | Oakland | 28 | 26 | 16 | 39 | 21 | 18 | 1 | 0 | 1 |
-| Career |  |  |  | 21 | 43 | 24 | 19 | 1 | 0 | 1 |
+| Career |  |  |  | 22 | 43 | 24 | 19 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 29 | 26 | 0 | 0 | 1 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Oakland | 29 | 26 | 0 | 0 | 1 | 0 | 0 | 2 |
 | 2013 | Oakland | 28 | 26 | 1 | 1 | 5 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Reggie Walker
 
-**San Diego Chargers · Inside linebacker · No. 52 · Age 27 · Last game October 12, 2014**
+**San Diego Chargers · Inside linebacker · No. 52 · Age 27 · Last game October 19, 2014**
 
 6' 0", 244 lb · Born December 15, 1986 · Kansas State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Reggie Walker](https://commons.wikimedia.org/wiki/Special:FilePath/Reggie_Walker_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve inside linebacker.
 
-**Tackles:** 2 (2014, through Week 6).
+**Tackles:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 27 | 52 | 6 | 2 | 2 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Diego | 27 | 52 | 7 | 4 | 3 | 1 | 1 | 0 | 0 |
 | 2013 | San Diego | 26 | 52 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 8 | 2 | 2 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 9 | 4 | 3 | 1 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 27 | 52 | 0 | 0 | 0 | 0 | 0 | 4 |
+| 2014 (through Week 7) | San Diego | 27 | 52 | 0 | 0 | 0 | 0 | 0 | 4 |
 | 2013 | San Diego | 26 | 52 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

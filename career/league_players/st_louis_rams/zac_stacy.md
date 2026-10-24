@@ -1,10 +1,10 @@
 # Zac Stacy
 
-**St. Louis Rams · Running back · No. 30 · Age 23 · Last game October 13, 2014**
+**St. Louis Rams · Running back · No. 30 · Age 23 · Last game October 19, 2014**
 
 5' 9", 224 lb · Born April 9, 1991 · Vanderbilt
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Zac Stacy](https://commons.wikimedia.org/wiki/Special:FilePath/Zacstacy2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 4.6 (2014, through Week 6).
+**Yards per carry:** 4.6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 23 | 30 | 5 | 65 | 297 | 4.6 | 2 | 47 | 59.4 |
+| 2014 (through Week 7) | St. Louis | 23 | 30 | 6 | 79 | 362 | 4.6 | 3 | 47 | 60.3 |
 | 2013 | St. Louis | 22 | 30 | 16 | 88 | 438 | 5.0 | 1 | 31 | 27.4 |
-| Career |  |  |  | 21 | 153 | 735 | 4.8 | 3 | 47 | 35.0 |
+| Career |  |  |  | 22 | 167 | 800 | 4.8 | 4 | 47 | 36.4 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 23 | 30 | 24 | 18 | 276 | 15.3 | 3 | 3 | 3 |
+| 2014 (through Week 7) | St. Louis | 23 | 30 | 30 | 22 | 344 | 15.6 | 3 | 3 | 3 |
 | 2013 | St. Louis | 22 | 30 | 20 | 8 | 39 | 4.9 | 0 | 1 | 1 |
 
 ### Playoffs

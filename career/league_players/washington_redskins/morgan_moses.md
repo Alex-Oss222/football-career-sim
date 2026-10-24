@@ -1,10 +1,10 @@
 # Morgan Moses
 
-**Washington Redskins · Offensive tackle · No. 76 · Age 23 · Last game October 12, 2014**
+**Washington Redskins · Offensive tackle · No. 76 · Age 23 · Last game October 19, 2014**
 
 6' 6", 318 lb · Born March 3, 1991 · Virginia
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Morgan Moses](https://commons.wikimedia.org/wiki/Special:FilePath/Morgan_Moses_2014_09_25.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve left tackle.
 
-**Sacks allowed:** 4 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 23 | 76 | 6 | 1 | 114 | 4 | 23 |
+| 2014 (through Week 7) | Washington | 23 | 76 | 7 | 2 | 181 | 4 | 25 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Audie Cole
 
-**Minnesota Vikings · Middle linebacker · No. 57 · Age 25 · Last game October 12, 2014**
+**Minnesota Vikings · Middle linebacker · No. 57 · Age 25 · Last game October 19, 2014**
 
 6' 5", 239 lb · Born June 1, 1989 · N.C. State · Drafted in 2012, seventh round, by Minnesota
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Audie Cole](https://commons.wikimedia.org/wiki/Special:FilePath/Audie_Cole.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve middle linebacker.
 
-**Tackles:** 3 (2014, through Week 6).
+**Tackles:** 3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 25 | 57 | 6 | 3 | 2 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Minnesota | 25 | 57 | 7 | 3 | 2 | 1 | 1 | 0 | 0 |
 | 2013 | Minnesota | 24 | 57 | 13 | 3 | 1 | 2 | 0 | 0 | 0 |
-| Career |  |  |  | 19 | 6 | 3 | 3 | 1 | 0 | 0 |
+| Career |  |  |  | 20 | 6 | 3 | 3 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 25 | 57 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 7) | Minnesota | 25 | 57 | 0 | 0 | 0 | 0 | 0 | 3 |
 | 2013 | Minnesota | 24 | 57 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

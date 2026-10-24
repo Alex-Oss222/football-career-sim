@@ -1,10 +1,10 @@
 # Tony McDaniel
 
-**Seattle Seahawks · Defensive tackle · No. 99 · Age 29 · Last game October 12, 2014**
+**Seattle Seahawks · Defensive tackle · No. 99 · Age 29 · Last game October 19, 2014**
 
 6' 7", 305 lb · Born January 20, 1985 · Tennessee
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Tony McDaniel](https://commons.wikimedia.org/wiki/Special:FilePath/Tony_McDaniel.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Seattle | 29 | 99 | 5 | 9 | 6 | 3 | 2 | 0 | 1 |
+| 2014 (through Week 7) | Seattle | 29 | 99 | 6 | 11 | 7 | 4 | 3 | 0 | 1 |
 | 2013 | Seattle | 28 | 99 | 15 | 57 | 40 | 17 | 5 | 8 | 11 |
-| Career |  |  |  | 20 | 66 | 46 | 20 | 7 | 8 | 12 |
+| Career |  |  |  | 21 | 68 | 47 | 21 | 8 | 8 | 12 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Seattle | 29 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Seattle | 29 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Seattle | 28 | 99 | 0 | 0 | 2 | 2 | 2 | N/A |
 
 ### Playoffs

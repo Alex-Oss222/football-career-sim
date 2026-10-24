@@ -1,10 +1,10 @@
 # Will Allen
 
-**Pittsburgh Steelers · Free safety · No. 20 · Age 32 · Last game October 12, 2014**
+**Pittsburgh Steelers · Free safety · No. 20 · Age 32 · Last game October 20, 2014**
 
 6' 1", 200 lb · Born June 17, 1982 · Ohio State · Drafted in 2004, fourth round, by Tampa Bay
 
-As of October 12, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Will Allen](https://commons.wikimedia.org/wiki/Special:FilePath/Will_Allen_%28safety%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve free safety.
 
-**Passes defended:** 1 (2014, through Week 6).
+**Passes defended:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 32 | 20 | 6 | 14 | 9 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Pittsburgh | 32 | 20 | 7 | 14 | 9 | 5 | 0 | 0 | 0 |
 | 2013 | Dallas | 31 | N/A | 7 | 23 | 13 | 10 | 0 | 2 | 2 |
-| Career |  |  |  | 13 | 37 | 22 | 15 | 0 | 2 | 2 |
+| Career |  |  |  | 14 | 37 | 22 | 15 | 0 | 2 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 32 | 20 | 1 | 38 | 1 | 0 | 0 | 4 |
+| 2014 (through Week 7) | Pittsburgh | 32 | 20 | 1 | 38 | 1 | 0 | 0 | 6 |
 | 2013 | Dallas | 31 | N/A | 1 | 27 | 4 | 0 | 0 | N/A |
 
 ### Playoffs

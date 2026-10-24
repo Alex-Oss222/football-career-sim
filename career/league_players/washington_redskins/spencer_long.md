@@ -1,10 +1,10 @@
 # Spencer Long
 
-**Washington Redskins · Center · No. 60 · Age 23 · Last game October 12, 2014**
+**Washington Redskins · Center · No. 60 · Age 23 · Last game October 19, 2014**
 
 6' 5", 311 lb · Born November 8, 1990 · Nebraska
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Spencer Long](https://commons.wikimedia.org/wiki/Special:FilePath/Spencer_long.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 23 | 60 | 5 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Washington | 23 | 60 | 6 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

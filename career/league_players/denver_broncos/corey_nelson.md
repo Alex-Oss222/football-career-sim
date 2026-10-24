@@ -1,10 +1,10 @@
 # Corey Nelson
 
-**Denver Broncos · Inside linebacker · No. 52 · Age 22 · Last game October 12, 2014**
+**Denver Broncos · Inside linebacker · No. 52 · Age 22 · Last game October 19, 2014**
 
 6' 1", 226 lb · Born April 22, 1992 · Oklahoma
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Corey Nelson](https://commons.wikimedia.org/wiki/Special:FilePath/Corey_Nelson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve weakside linebacker.
 
-**Tackles:** 2 (2014, through Week 6).
+**Tackles:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 22 | 52 | 5 | 2 | 1 | 1 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Denver | 22 | 52 | 6 | 2 | 1 | 1 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 22 | 52 | 0 | 0 | 0 | 0 | 0 | 7 |
+| 2014 (through Week 7) | Denver | 22 | 52 | 0 | 0 | 0 | 1 | 0 | 8 |
 
 ### Playoffs
 

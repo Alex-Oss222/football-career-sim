@@ -1,10 +1,10 @@
 # Brandon Carr
 
-**Dallas Cowboys · Cornerback · No. 39 · Age 28 · Last game October 12, 2014**
+**Dallas Cowboys · Cornerback · No. 39 · Age 28 · Last game October 19, 2014**
 
 6' 0", 210 lb · Born May 19, 1986 · Grand Valley · Drafted in 2008, fifth round, by Kansas City
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Brandon Carr](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Carr.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 6 (2014, through Week 6).
+**Passes defended:** 6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 28 | 39 | 4 | 18 | 9 | 9 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Dallas | 28 | 39 | 5 | 22 | 12 | 10 | 0 | 0 | 0 |
 | 2013 | Dallas | 27 | 39 | 16 | 86 | 59 | 27 | 5 | 2 | 2 |
-| Career |  |  |  | 20 | 104 | 68 | 36 | 5 | 2 | 2 |
+| Career |  |  |  | 21 | 108 | 71 | 37 | 5 | 2 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 28 | 39 | 2 | 83 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Dallas | 28 | 39 | 2 | 83 | 6 | 0 | 0 | 0 |
 | 2013 | Dallas | 27 | 39 | 5 | 85 | 12 | 1 | 1 | N/A |
 
 ### Playoffs

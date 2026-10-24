@@ -1,10 +1,10 @@
 # Stephen Tulloch
 
-**Detroit Lions · Middle linebacker · No. 55 · Age 29 · Last game October 12, 2014**
+**Detroit Lions · Middle linebacker · No. 55 · Age 29 · Last game October 19, 2014**
 
 5' 11", 245 lb · Born January 1, 1985 · N.C. State · Drafted in 2006, fourth round, by Tennessee
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Stephen Tulloch](https://commons.wikimedia.org/wiki/Special:FilePath/Stephen_Tulloch.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting middle linebacker.
 
-**Tackles:** 27 (2014, through Week 6).
+**Tackles:** 27 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Detroit | 29 | 55 | 6 | 27 | 16 | 11 | 3 | 0 | 1 |
+| 2014 (through Week 7) | Detroit | 29 | 55 | 6 | 27 | 16 | 11 | 3 | 0 | 1 |
 | 2013 | Detroit | 28 | 55 | 16 | 150 | 107 | 43 | 7 | 4 | 10 |
 | Career |  |  |  | 22 | 177 | 123 | 54 | 10 | 4 | 11 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Detroit | 29 | 55 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Detroit | 29 | 55 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Detroit | 28 | 55 | 3 | 90 | 12 | 2 | 2 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Brian Dixon
 
-**New Orleans Saints · Cornerback · No. 20 · Age 24 · Last game October 5, 2014**
+**New Orleans Saints · Cornerback · No. 20 · Age 24 · Last game October 19, 2014**
 
 6' 0", 195 lb · Born April 26, 1990 · Northwest Missouri State
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Brian Dixon](https://commons.wikimedia.org/wiki/Special:FilePath/Brian_Dixon_%28American_football%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 3 (2014, through Week 5).
+**Passes defended:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 24 | 20 | 5 | 13 | 11 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 7) | New Orleans | 24 | 20 | 6 | 15 | 13 | 2 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 24 | 20 | 0 | 0 | 3 | 0 | 0 | 5 |
+| 2014 (through Week 7) | New Orleans | 24 | 20 | 0 | 0 | 4 | 0 | 0 | 5 |
 
 ### Playoffs
 

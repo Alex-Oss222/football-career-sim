@@ -1,10 +1,10 @@
 # Ronnie Hillman
 
-**Denver Broncos · Running back · No. 23 · Age 23 · Last game October 12, 2014**
+**Denver Broncos · Running back · No. 23 · Age 23 · Last game October 19, 2014**
 
 5' 10", 195 lb · Born September 14, 1991 · San Diego State · Drafted in 2012, third round, by Denver
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Ronnie Hillman](https://commons.wikimedia.org/wiki/Special:FilePath/Ronnie_Hillman.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 2.8 (2014, through Week 6).
+**Yards per carry:** 3.0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 22 | 23 | 5 | 19 | 53 | 2.8 | 3 | 10 | 10.6 |
+| 2014 (through Week 7) | Denver | 22 | 23 | 6 | 23 | 69 | 3.0 | 4 | 10 | 11.5 |
 | 2013 | Denver | 21 | 21 | 16 | 291 | 1,448 | 5.0 | 8 | 41 | 90.5 |
-| Career |  |  |  | 21 | 310 | 1,501 | 4.8 | 11 | 41 | 71.5 |
+| Career |  |  |  | 22 | 314 | 1,517 | 4.8 | 12 | 41 | 69.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 22 | 23 | 4 | 4 | 33 | 8.2 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Denver | 22 | 23 | 6 | 6 | 46 | 7.7 | 1 | 0 | 0 |
 | 2013 | Denver | 21 | 21 | 63 | 35 | 506 | 14.5 | 6 | 4 | 4 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 22 | 23 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Denver | 22 | 23 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Denver | 21 | 21 | 0 | 0 | N/A | 1 | 9 | 9.0 |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Josh LeRibeus
 
-**Washington Redskins · Guard · No. 67 · Age 25 · Last game October 12, 2014**
+**Washington Redskins · Guard · No. 67 · Age 25 · Last game October 19, 2014**
 
 6' 2", 315 lb · Born July 2, 1989 · SMU · Drafted in 2012, third round, by Washington
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Josh LeRibeus](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_leribeus.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 25 | 67 | 6 | 0 | 0 | 0 | 6 |
+| 2014 (through Week 7) | Washington | 25 | 67 | 7 | 0 | 0 | 0 | 8 |
 | 2013 | Washington | 24 | 67 | 16 | N/A | N/A | 2 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 2 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 

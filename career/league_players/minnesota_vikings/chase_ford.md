@@ -1,12 +1,12 @@
 # Chase Ford
 
-**Minnesota Vikings · Tight end · No. 86 · Age 24 · Last game October 12, 2014**
+**Minnesota Vikings · Tight end · No. 86 · Age 24 · Last game October 19, 2014**
 
 6' 6", 255 lb · Born July 19, 1990 · Miami; Kilgore
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
-**Yards per target:** 22.0 (2014, through Week 6).
+**Yards per target:** 22.0 (2014, through Week 7).
 
 ## Contract
 
@@ -18,11 +18,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 24 | 86 | 1 | 1 | 1 | 22 | 22.0 | 0 | 22 | 22.0 | 100.0 |
+| 2014 (through Week 7) | Minnesota | 24 | 86 | 2 | 1 | 1 | 22 | 22.0 | 0 | 22 | 11.0 | 100.0 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 24 | 86 | 0 | 0 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Minnesota | 24 | 86 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 

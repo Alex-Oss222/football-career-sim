@@ -4,7 +4,7 @@
 
 6' 2", 294 lb · Born February 23, 1987 · Auburn · Drafted in 2009, second round, by Tennessee
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Sen'Derrick Marks](https://commons.wikimedia.org/wiki/Special:FilePath/Sen%27Derrick_Marks_2014_Jaguars_training_camp_Cropped.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Staff assessment
 
@@ -37,13 +37,13 @@ Four-year contract through 2017.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 27 | 99 | 6 | 20 | 13 | 7 | 1 | 0 | 2 |
+| 2014 (through Week 7) | Jacksonville | 27 | 99 | 7 | 22 | 14 | 8 | 1 | 0 | 2 |
 | 2013 | Jacksonville | 26 | 99 | 16 | 90 | 56 | 34 | 8 | 8 | 15 |
-| With Jacksonville |  |  |  | 22 | 110 | 69 | 41 | 9 | 8 | 17 |
+| With Jacksonville |  |  |  | 23 | 112 | 70 | 42 | 9 | 8 | 17 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 27 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Jacksonville | 27 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 26 | 99 | 0 | 0 | 6 | 1 | 1 | N/A |
 
 ### Playoffs

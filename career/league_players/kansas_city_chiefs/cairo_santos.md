@@ -1,10 +1,10 @@
 # Cairo Santos
 
-**Kansas City Chiefs · Kicker · No. 5 · Age 22 · Last game October 5, 2014**
+**Kansas City Chiefs · Kicker · No. 5 · Age 22 · Last game October 19, 2014**
 
 5' 8", 175 lb · Born November 12, 1991 · Tulane
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Cairo Santos](https://commons.wikimedia.org/wiki/Special:FilePath/Cairo_santos_2015_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 77.8 (2014, through Week 5).
+**Field-goal percentage:** 81.8 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 22 | 5 | 5 | 7 | 9 | 77.8 | 40 | 8 | 8 | 100.0 | 29 |
+| 2014 (through Week 7) | Kansas City | 22 | 5 | 6 | 9 | 11 | 81.8 | 40 | 10 | 10 | 100.0 | 37 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 22 | 5 | 6-7 | 1-1 | 0-1 |
+| 2014 (through Week 7) | Kansas City | 22 | 5 | 8-9 | 1-1 | 0-1 |
 
 ### Playoffs
 

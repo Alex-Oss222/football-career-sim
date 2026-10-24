@@ -1,10 +1,10 @@
 # Marshall Newhouse
 
-**Cincinnati Bengals · Offensive tackle · No. 74 · Age 26 · Last game October 12, 2014**
+**Cincinnati Bengals · Offensive tackle · No. 74 · Age 26 · Last game October 19, 2014**
 
 6' 4", 328 lb · Born September 29, 1988 · TCU · Drafted in 2010, fifth round, by Green Bay
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Marshall Newhouse](https://commons.wikimedia.org/wiki/Special:FilePath/Marshall_Newhouse_%28cropped%29.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 25 | 74 | 5 | 0 | 0 | 0 | 22 |
+| 2014 (through Week 7) | Cincinnati | 25 | 74 | 6 | 0 | 0 | 0 | 27 |
 | 2013 | Green Bay | 24 | 74 | 9 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 14 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 15 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

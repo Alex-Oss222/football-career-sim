@@ -1,10 +1,10 @@
 # Walter Thurmond
 
-**New York Giants · Cornerback · No. 24 · Age 27 · Last game October 12, 2014**
+**New York Giants · Cornerback · No. 24 · Age 27 · Last game October 19, 2014**
 
 5' 11", 190 lb · Born August 12, 1987 · Oregon · Drafted in 2010, fourth round, by Seattle
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Walter Thurmond](https://commons.wikimedia.org/wiki/Special:FilePath/Walter_Thurmond.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 1 (2014, through Week 6).
+**Passes defended:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 27 | 24 | 6 | 10 | 7 | 3 | 0 | 0 | 1 |
+| 2014 (through Week 7) | N.Y. Giants | 27 | 24 | 7 | 13 | 10 | 3 | 0 | 0 | 1 |
 | 2013 | Seattle | 26 | 28 | 16 | 8 | 5 | 3 | 0 | 0 | 0 |
-| Career |  |  |  | 22 | 18 | 12 | 6 | 0 | 0 | 1 |
+| Career |  |  |  | 23 | 21 | 15 | 6 | 0 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 27 | 24 | 0 | 0 | 1 | 0 | 0 | 2 |
+| 2014 (through Week 7) | N.Y. Giants | 27 | 24 | 0 | 0 | 2 | 1 | 0 | 2 |
 | 2013 | Seattle | 26 | 28 | 0 | 0 | 0 | 2 | 2 | N/A |
 
 ### Playoffs

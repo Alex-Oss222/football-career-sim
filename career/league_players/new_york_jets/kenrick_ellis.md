@@ -1,10 +1,10 @@
 # Kenrick Ellis
 
-**New York Jets · Nose tackle · No. 93 · Age 26 · Last game October 12, 2014**
+**New York Jets · Nose tackle · No. 93 · Age 26 · Last game October 16, 2014**
 
 6' 4", 346 lb · Born December 10, 1987 · Hampton; South Carolina · Drafted in 2011, third round, by the New York Jets
 
-As of October 12, 2014, after Week 6.
+As of October 16, 2014, after Week 7.
 
 ![Kenrick Ellis](https://commons.wikimedia.org/wiki/Special:FilePath/Kenrick_Ellis.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve nose tackle.
 
-**Sacks:** 1 (2014, through Week 6).
+**Sacks:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Jets | 26 | 93 | 6 | 20 | 13 | 7 | 5 | 1 | 3 |
+| 2014 (through Week 7) | N.Y. Jets | 26 | 93 | 7 | 22 | 15 | 7 | 5 | 2 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Jets | 26 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Jets | 26 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

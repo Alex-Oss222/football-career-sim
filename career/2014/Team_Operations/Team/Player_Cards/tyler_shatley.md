@@ -4,7 +4,7 @@
 
 6' 3", 300 lb · Born May 5, 1991 · Clemson · Undrafted
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Tyler Shatley](https://commons.wikimedia.org/wiki/Special:FilePath/Tyler_Shatley_%28cropped%29.jpg?width=500)
 

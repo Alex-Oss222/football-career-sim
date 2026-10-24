@@ -2,8 +2,8 @@
  "team": "Jacksonville Jaguars",
  "season": 2014,
  "as_of": {
-  "date": "2014-10-12",
-  "event": "after the Week 6 game at Tennessee"
+  "date": "2014-10-19",
+  "event": "after the Week 7 game against Cleveland"
  },
  "practice_squad_places": 10,
  "active_limit": 53,
@@ -93,10 +93,10 @@
    "list": "active",
    "group": "Wide receivers",
    "status": "Active 53 (Rookie, drafted No. 38, May 9, 2014; rookie contract signed May 11, 2014)",
-   "availability": "No communicated restriction: cleared September 26, 2014, his projected date, from the September 21 lower-extremity injury (reassessed September 22 with no change); did not practice September 24 and 25; not inserted into the Friday practice; questionable on the September 26 report; full in the September 27 walkthrough ([medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed))",
+   "availability": "Out, minor: lower extremity, logged at 0:00 of the second quarter in the October 19 Week 7 game, not removed; projected return October 20, 2014; reassessment October 20 ([medical record](../../Medical/incidents/davante_adams_2014-10-19.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/davante_adams_2014-10-19.md"
    }
   },
   {
@@ -300,10 +300,10 @@
    "list": "active",
    "group": "Offensive line",
    "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
-   "availability": "No communicated restriction",
+   "availability": "Out, short: head/neck, logged at 6:26 of the first quarter in the October 19 Week 7 game, removed; projected return November 2, 2014; reassessment October 23 ([medical record](../../Medical/incidents/andrew_norwell_2014-10-19.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/andrew_norwell_2014-10-19.md"
    }
   },
   {
@@ -420,10 +420,10 @@
    "list": "active",
    "group": "Linebackers",
    "status": "Active 53",
-   "availability": "No communicated restriction",
+   "availability": "Out, short: lower extremity, logged at 10:27 of the second quarter in the October 19 Week 7 game, removed; projected return October 31, 2014; reassessment October 23 ([medical record](../../Medical/incidents/daryl_smith_2014-10-19.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/daryl_smith_2014-10-19.md"
    }
   },
   {
@@ -504,10 +504,10 @@
    "list": "active",
    "group": "Defensive backs",
    "status": "Active 53 (signed March 11, 2014)",
-   "availability": "No communicated restriction: independent medical hold from the September 21 head/neck injury released September 25, 2014, its projected date (reassessed September 22 with no change); did not practice September 24; full September 25 to 27 ([medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed))",
+   "availability": "Out, minor: head/neck, logged at 2:45 of the first quarter in the October 19 Week 7 game, removed; projected return October 22, 2014; reassessment October 20 ([medical record](../../Medical/incidents/aqib_talib_2014-10-19.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/aqib_talib_2014-10-19.md"
    }
   },
   {
@@ -552,10 +552,10 @@
    "list": "active",
    "group": "Defensive backs",
    "status": "Active 53 (signed March 11, 2014)",
-   "availability": "No communicated restriction",
+   "availability": "Limited, no projected absence: lower extremity, logged at 10:27 of the second quarter in the October 19 Week 7 game, not removed; no time lost projected; reassessment October 20 ([medical record](../../Medical/incidents/alterraun_verner_2014-10-19.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/alterraun_verner_2014-10-19.md"
    }
   },
   {

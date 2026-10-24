@@ -1,14 +1,14 @@
 # Marcus Martin
 
-**San Francisco 49ers · Center · No. 66 · Age 20 · Last game October 13, 2014**
+**San Francisco 49ers · Center · No. 66 · Age 20 · Last game October 19, 2014**
 
 6' 3", 321 lb · Born November 29, 1993 · Southern California
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve center.
 
-**Sacks allowed:** 0 (2014, through Week 6).
+**Sacks allowed:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -20,7 +20,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 20 | 66 | 1 | 0 | 23 | 0 | 7 |
+| 2014 (through Week 7) | San Francisco | 20 | 66 | 2 | 0 | 23 | 0 | 10 |
 
 ### Playoffs
 

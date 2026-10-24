@@ -68,6 +68,8 @@ IGNORED = (".git", ".sim_cache", "__pycache__", ".pytest_cache")
 WEEK_BOUND = ("defensive_calls", "defensive_call_stats", "decision_policies")
 # Jacksonville's fake injuries, in the game's own severity names, with days to return.
 SEVERITIES = (("multi_week", 24), ("long_term", 70))
+# The number the head-coach check draws in the rehearsal: above every chance in the rate table.
+NO_CHANGE = 0.999999
 
 
 def relabel(value, names):
@@ -106,20 +108,23 @@ def check_head_coaches(test, root, week, client):
     """The weekly head-coach check, as the close runs it after the week's slate closes and before the
     rebuild that opens the next week (docs/run_week.md, step 8): every week still due through
     ``week``, the retroactive Weeks 1 to 5 first, each drawn through the local test service. Test data:
-    the copy's rate table is zeroed first (its digest re-recorded in the copy's method), so no change
-    is drawn and the pages never depend on the draw."""
+    the close's random stream is replaced by a number no chance in the table reaches, so no change is
+    drawn and the pages never depend on the draw. The copy's method and rate table stay as recorded:
+    the season's checks already drawn are verified against them at every close, so a zeroed table in
+    the copy would refuse them (runtime/league_coaches.record_errors)."""
     from runtime import league_coaches
     from scripts import coaching_check
+
+    class NoChange:
+        def random(self):
+            return NO_CHANGE
+
     method = league_coaches.load_method(SEASON, root)
-    table_file = root / method["table"]["file"]
-    table = json.loads(table_file.read_text(encoding="utf-8"))
-    for row in table["rates"].values():
-        row["rate"] = 0.0
-    table_file.write_text(json.dumps(table, indent=1) + "\n", encoding="utf-8")
-    method["table"]["sha256"] = hashlib.sha256(table_file.read_bytes()).hexdigest()
-    league_coaches.method_path(SEASON, root).write_text(json.dumps(method, indent=1) + "\n", encoding="utf-8")
+    table = league_coaches.load_table(method, root)
+    test.assertLess(max(row["rate"] for row in table["rates"].values()), NO_CHANGE)
     test.assertTrue(league_coaches.due_weeks(SEASON, root, week))
-    test.assertEqual(coaching_check.close(SEASON, week, root, client, lambda *_: None), 0)
+    with patch.object(coaching_check, "stream", lambda ref, pkt: NoChange()):
+        test.assertEqual(coaching_check.close(SEASON, week, root, client, lambda *_: None), 0)
     test.assertEqual(league_coaches.due_weeks(SEASON, root, week), [])
     test.assertEqual(league_coaches.coverage_errors(root, SEASON), [])
 

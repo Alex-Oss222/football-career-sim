@@ -1,10 +1,10 @@
 # Arthur Jones
 
-**Indianapolis Colts · Defensive tackle · No. 97 · Age 28 · Last game October 9, 2014**
+**Indianapolis Colts · Defensive tackle · No. 97 · Age 28 · Last game October 19, 2014**
 
 6' 3", 337 lb · Born June 3, 1986 · Syracuse · Drafted in 2010, fifth round, by Baltimore
 
-As of October 9, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Arthur Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Arthur_Jones_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 9, 2014, after Week 6.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 28 | 97 | 4 | 12 | 5 | 7 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Indianapolis | 28 | 97 | 4 | 12 | 5 | 7 | 0 | 0 | 0 |
 | 2013 | Baltimore | 27 | 97 | 15 | 27 | 15 | 12 | 3 | 3 | 10 |
 | Career |  |  |  | 19 | 39 | 20 | 19 | 3 | 3 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 28 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Indianapolis | 28 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Baltimore | 27 | 97 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

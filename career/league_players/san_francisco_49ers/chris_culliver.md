@@ -1,10 +1,10 @@
 # Chris Culliver
 
-**San Francisco 49ers · Cornerback · No. 29 · Age 26 · Last game October 13, 2014**
+**San Francisco 49ers · Cornerback · No. 29 · Age 26 · Last game October 19, 2014**
 
 6' 0", 199 lb · Born August 17, 1988 · South Carolina · Drafted in 2011, third round, by San Francisco
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Chris Culliver](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Culliver_signs_autograph_in_2009.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 6 (2014, through Week 6).
+**Passes defended:** 6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 26 | 29 | 6 | 29 | 21 | 8 | 4 | 0 | 1 |
+| 2014 (through Week 7) | San Francisco | 26 | 29 | 7 | 41 | 29 | 12 | 5 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 26 | 29 | 1 | 0 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Francisco | 26 | 29 | 1 | 0 | 6 | 0 | 0 | 0 |
 
 ### Playoffs
 

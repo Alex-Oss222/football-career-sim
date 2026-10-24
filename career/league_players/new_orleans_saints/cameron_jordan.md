@@ -1,10 +1,10 @@
 # Cameron Jordan
 
-**New Orleans Saints · Defensive end · No. 94 · Age 25 · Last game October 5, 2014**
+**New Orleans Saints · Defensive end · No. 94 · Age 25 · Last game October 19, 2014**
 
 6' 4", 287 lb · Born July 10, 1989 · California · Drafted in 2011, first round, by New Orleans
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Cameron Jordan](https://commons.wikimedia.org/wiki/Special:FilePath/Cameron_Jordan.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 25 | 94 | 5 | 17 | 11 | 6 | 1 | 1 | 2 |
+| 2014 (through Week 7) | New Orleans | 25 | 94 | 6 | 19 | 12 | 7 | 2 | 1 | 2 |
 | 2013 | New Orleans | 24 | 94 | 16 | 78 | 54 | 24 | 11 | 8 | 15 |
-| Career |  |  |  | 21 | 95 | 65 | 30 | 12 | 9 | 17 |
+| Career |  |  |  | 22 | 97 | 66 | 31 | 13 | 9 | 17 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 25 | 94 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | New Orleans | 25 | 94 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | New Orleans | 24 | 94 | 0 | 0 | 6 | 0 | 0 | N/A |
 
 ### Playoffs

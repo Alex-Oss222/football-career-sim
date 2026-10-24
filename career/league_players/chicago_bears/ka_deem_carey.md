@@ -1,10 +1,10 @@
 # Ka'Deem Carey
 
-**Chicago Bears · Running back · No. 25 · Age 21 · Last game October 12, 2014**
+**Chicago Bears · Running back · No. 25 · Age 21 · Last game October 19, 2014**
 
 5' 10", 207 lb · Born October 30, 1992 · Arizona
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Ka'Deem Carey](https://commons.wikimedia.org/wiki/Special:FilePath/Ka%27Deem_Carey_%2815623059230%29_%281%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 4.2 (2014, through Week 6).
+**Yards per carry:** 3.9 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 21 | 25 | 6 | 5 | 21 | 4.2 | 0 | 12 | 3.5 |
+| 2014 (through Week 7) | Chicago | 21 | 25 | 7 | 7 | 27 | 3.9 | 0 | 12 | 3.9 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 21 | 25 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 7) | Chicago | 21 | 25 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 

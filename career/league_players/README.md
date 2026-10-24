@@ -1,6 +1,6 @@
 # League players
 
-Every player in the 2013 and 2014 game records, under the club of his latest game. Each page has his staff assessment where Jacksonville made one, his contract where Jacksonville holds it, his regular-season and playoff statistics by season, his awards and his transactions. Records through October 13, 2014.
+Every player in the 2013 and 2014 game records, under the club of his latest game. Each page has his staff assessment where Jacksonville made one, his contract where Jacksonville holds it, his regular-season and playoff statistics by season, his awards and his transactions. Records through October 20, 2014.
 
 ## AFC
 
@@ -22,12 +22,12 @@ Every player in the 2013 and 2014 game records, under the club of his latest gam
 
 - [Houston Texans](houston_texans/README.md) (62 players)
 - [Indianapolis Colts](indianapolis_colts/README.md) (65 players)
-- [Jacksonville Jaguars](jacksonville_jaguars/README.md) (68 players)
+- [Jacksonville Jaguars](jacksonville_jaguars/README.md) (69 players)
 - [Tennessee Titans](tennessee_titans/README.md) (64 players)
 
 ### AFC West
 
-- [Denver Broncos](denver_broncos/README.md) (64 players)
+- [Denver Broncos](denver_broncos/README.md) (65 players)
 - [Kansas City Chiefs](kansas_city_chiefs/README.md) (59 players)
 - [Oakland Raiders](oakland_raiders/README.md) (70 players)
 - [San Diego Chargers](san_diego_chargers/README.md) (60 players)
@@ -36,7 +36,7 @@ Every player in the 2013 and 2014 game records, under the club of his latest gam
 
 ### NFC East
 
-- [Dallas Cowboys](dallas_cowboys/README.md) (62 players)
+- [Dallas Cowboys](dallas_cowboys/README.md) (63 players)
 - [New York Giants](new_york_giants/README.md) (67 players)
 - [Philadelphia Eagles](philadelphia_eagles/README.md) (58 players)
 - [Washington Redskins](washington_redskins/README.md) (70 players)
@@ -51,15 +51,15 @@ Every player in the 2013 and 2014 game records, under the club of his latest gam
 ### NFC South
 
 - [Atlanta Falcons](atlanta_falcons/README.md) (72 players)
-- [Carolina Panthers](carolina_panthers/README.md) (64 players)
-- [New Orleans Saints](new_orleans_saints/README.md) (55 players)
+- [Carolina Panthers](carolina_panthers/README.md) (65 players)
+- [New Orleans Saints](new_orleans_saints/README.md) (56 players)
 - [Tampa Bay Buccaneers](tampa_bay_buccaneers/README.md) (65 players)
 
 ### NFC West
 
-- [Arizona Cardinals](arizona_cardinals/README.md) (63 players)
+- [Arizona Cardinals](arizona_cardinals/README.md) (64 players)
 - [St. Louis Rams](st_louis_rams/README.md) (63 players)
 - [San Francisco 49ers](san_francisco_49ers/README.md) (66 players)
-- [Seattle Seahawks](seattle_seahawks/README.md) (60 players)
+- [Seattle Seahawks](seattle_seahawks/README.md) (61 players)
 
 <!-- player-index -->

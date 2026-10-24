@@ -1,10 +1,10 @@
 # Kris Durham
 
-**Tennessee Titans · Wide receiver · No. 17 · Age 26 · Last game October 12, 2014**
+**Tennessee Titans · Wide receiver · No. 17 · Age 26 · Last game October 19, 2014**
 
 6' 6", 216 lb · Born March 17, 1988 · Georgia · Drafted in 2011, fourth round, by Seattle
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
@@ -18,9 +18,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 26 | 17 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 7) | Tennessee | 26 | 17 | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | Detroit | 25 | 18 | 16 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
-| Career |  |  |  | 22 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
+| Career |  |  |  | 23 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
 
 ### Playoffs
 

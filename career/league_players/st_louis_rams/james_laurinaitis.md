@@ -1,10 +1,10 @@
 # James Laurinaitis
 
-**St. Louis Rams · Middle linebacker · No. 55 · Age 27 · Last game October 13, 2014**
+**St. Louis Rams · Middle linebacker · No. 55 · Age 27 · Last game October 19, 2014**
 
 6' 2", 248 lb · Born December 3, 1986 · Ohio State · Drafted in 2009, second round, by St. Louis
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![James Laurinaitis](https://commons.wikimedia.org/wiki/Special:FilePath/James_Laurinaitis.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting middle linebacker.
 
-**Tackles:** 24 (2014, through Week 6).
+**Tackles:** 29 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 27 | 55 | 5 | 24 | 14 | 10 | 3 | 0 | 4 |
+| 2014 (through Week 7) | St. Louis | 27 | 55 | 6 | 29 | 16 | 13 | 4 | 0 | 4 |
 | 2013 | St. Louis | 26 | 55 | 16 | 151 | 102 | 49 | 16 | 7 | 9 |
-| Career |  |  |  | 21 | 175 | 116 | 59 | 19 | 7 | 13 |
+| Career |  |  |  | 22 | 180 | 118 | 62 | 20 | 7 | 13 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 27 | 55 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 7) | St. Louis | 27 | 55 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | St. Louis | 26 | 55 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

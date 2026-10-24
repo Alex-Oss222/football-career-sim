@@ -1,6 +1,6 @@
 # Cleveland Browns players
 
-AFC North. The players whose latest game on record was with the Cleveland Browns. G counts regular-season games with any club. Records through October 13, 2014.
+AFC North. The players whose latest game on record was with the Cleveland Browns. G counts regular-season games with any club. Records through October 20, 2014.
 
 [All clubs](../README.md)
 
@@ -8,19 +8,19 @@ AFC North. The players whose latest game on record was with the Cleveland Browns
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 6 | [Brian Hoyer](brian_hoyer.md) | QB | 5 | 16 |
-| 2 | [Johnny Manziel](johnny_manziel.md) | QB | 5 | 0 |
+| 6 | [Brian Hoyer](brian_hoyer.md) | QB | 6 | 16 |
+| 2 | [Johnny Manziel](johnny_manziel.md) | QB | 6 | 0 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 44 | [Ben Tate](ben_tate.md) | RB | 5 | 16 |
+| 44 | [Ben Tate](ben_tate.md) | RB | 6 | 16 |
 | N/A | [Chris Ogbonnaya](chris_ogbonnaya.md) | FB | 0 | 16 |
-| 41 | [Glenn Winston](glenn_winston.md) | RB | 5 | 0 |
-| 34 | [Isaiah Crowell](isaiah_crowell.md) | RB | 5 | 0 |
-| 48 | [Ray Agnew](ray_agnew.md) | FB | 5 | 0 |
-| 28 | [Terrance West](terrance_west.md) | RB | 2 | 0 |
+| 41 | [Glenn Winston](glenn_winston.md) | RB | 6 | 0 |
+| 34 | [Isaiah Crowell](isaiah_crowell.md) | RB | 6 | 0 |
+| 48 | [Ray Agnew](ray_agnew.md) | FB | 6 | 0 |
+| 28 | [Terrance West](terrance_west.md) | RB | 3 | 0 |
 
 ## Wide receivers
 
@@ -29,100 +29,100 @@ AFC North. The players whose latest game on record was with the Cleveland Browns
 | N/A | [Davone Bess](davone_bess.md) | WR | 0 | 16 |
 | N/A | [Greg Little](greg_little.md) | WR | 0 | 16 |
 | N/A | [Josh Cooper](josh_cooper.md) | WR | 0 | 16 |
-| N/A | [Josh Gordon](josh_gordon.md) | WR | 2 | 0 |
+| N/A | [Josh Gordon](josh_gordon.md) | WR | 3 | 0 |
 | 17 | [Laron Byrd](laron_byrd.md) | WR | 3 | 0 |
-| 15 | [Marlon Moore](marlon_moore.md) | WR | 2 | 16 |
-| N/A | [Marqise Lee](marqise_lee.md) | WR | 5 | 0 |
+| 15 | [Marlon Moore](marlon_moore.md) | WR | 3 | 16 |
+| N/A | [Marqise Lee](marqise_lee.md) | WR | 6 | 0 |
 | 19 | [Miles Austin](miles_austin.md) | WR | 1 | 16 |
-| N/A | [Rodney Smith](rodney_smith.md) | WR | 6 | 0 |
-| 11 | [Travis Benjamin](travis_benjamin.md) | WR | 5 | 16 |
+| N/A | [Rodney Smith](rodney_smith.md) | WR | 7 | 0 |
+| 11 | [Travis Benjamin](travis_benjamin.md) | WR | 6 | 16 |
 
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 82 | [Gary Barnidge](gary_barnidge.md) | TE | 5 | 16 |
+| 82 | [Gary Barnidge](gary_barnidge.md) | TE | 6 | 16 |
 | 89 | [Gerell Robinson](gerell_robinson.md) | TE | 2 | 0 |
-| 81 | [Jim Dray](jim_dray.md) | TE | 5 | 16 |
-| 84 | [Jordan Cameron](jordan_cameron.md) | TE | 5 | 16 |
+| 81 | [Jim Dray](jim_dray.md) | TE | 6 | 16 |
+| 84 | [Jordan Cameron](jordan_cameron.md) | TE | 6 | 16 |
 
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 55 | [Alex Mack](alex_mack.md) | C | 5 | 16 |
-| 73 | [Joe Thomas](joe_thomas.md) | T | 5 | 16 |
-| 77 | [John Greco](john_greco.md) | G | 5 | 16 |
+| 55 | [Alex Mack](alex_mack.md) | C | 6 | 16 |
+| 73 | [Joe Thomas](joe_thomas.md) | T | 6 | 16 |
+| 77 | [John Greco](john_greco.md) | G | 6 | 16 |
 | N/A | [Martin Wallace](martin_wallace.md) | T | 0 | 2 |
-| 72 | [Mitchell Schwartz](mitchell_schwartz.md) | T | 5 | 16 |
+| 72 | [Mitchell Schwartz](mitchell_schwartz.md) | T | 6 | 16 |
 | N/A | [Patrick Lewis](patrick_lewis.md) | C | 0 | 16 |
-| 74 | [Paul McQuistan](paul_mcquistan.md) | G | 4 | 16 |
+| 74 | [Paul McQuistan](paul_mcquistan.md) | G | 5 | 16 |
 | N/A | [Rashad Butler](rashad_butler.md) | T | 0 | 16 |
-| 62 | [Ryan Seymour](ryan_seymour.md) | G | 3 | 0 |
-| 69 | [Vinston Painter](vinston_painter.md) | T | 5 | 0 |
+| 62 | [Ryan Seymour](ryan_seymour.md) | G | 4 | 0 |
+| 69 | [Vinston Painter](vinston_painter.md) | T | 6 | 0 |
 
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 71 | [Ahtyba Rubin](ahtyba_rubin.md) | NT | 5 | 16 |
-| 95 | [Armonty Bryant](armonty_bryant.md) | DE | 5 | 16 |
-| 90 | [Billy Winn](billy_winn.md) | DE | 5 | 16 |
-| 92 | [Desmond Bryant](desmond_bryant.md) | DE | 4 | 16 |
-| 67 | [Ishmaa'ily Kitchen](ishmaa_ily_kitchen.md) | NT | 5 | 16 |
-| 93 | [John Hughes](john_hughes.md) | DT | 4 | 16 |
-| 98 | [Phillip Taylor](phillip_taylor.md) | DE | 5 | 16 |
+| 71 | [Ahtyba Rubin](ahtyba_rubin.md) | NT | 6 | 16 |
+| 95 | [Armonty Bryant](armonty_bryant.md) | DE | 6 | 16 |
+| 90 | [Billy Winn](billy_winn.md) | DE | 6 | 16 |
+| 92 | [Desmond Bryant](desmond_bryant.md) | DE | 5 | 16 |
+| 67 | [Ishmaa'ily Kitchen](ishmaa_ily_kitchen.md) | NT | 6 | 16 |
+| 93 | [John Hughes](john_hughes.md) | DT | 5 | 16 |
+| 98 | [Phillip Taylor](phillip_taylor.md) | DE | 6 | 16 |
 
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 51 | [Barkevious Mingo](barkevious_mingo.md) | OLB | 5 | 15 |
+| 51 | [Barkevious Mingo](barkevious_mingo.md) | OLB | 6 | 15 |
 | N/A | [Brandon Magee](brandon_magee.md) | ILB | 0 | 8 |
-| 58 | [Christian Kirksey](christian_kirksey.md) | OLB | 5 | 0 |
-| 53 | [Craig Robertson](craig_robertson.md) | ILB | 5 | 16 |
-| 52 | [Eric Martin](eric_martin.md) | OLB | 5 | 2 |
+| 58 | [Christian Kirksey](christian_kirksey.md) | OLB | 6 | 0 |
+| 53 | [Craig Robertson](craig_robertson.md) | ILB | 6 | 16 |
+| 52 | [Eric Martin](eric_martin.md) | OLB | 6 | 2 |
 | 97 | [Jabaal Sheard](jabaal_sheard.md) | OLB | 4 | 10 |
-| 56 | [Karlos Dansby](karlos_dansby.md) | ILB | 5 | 16 |
+| 56 | [Karlos Dansby](karlos_dansby.md) | ILB | 6 | 16 |
 | N/A | [Paul Hazel](paul_hazel.md) | OLB | 0 | 2 |
-| 99 | [Paul Kruger](paul_kruger.md) | OLB | 5 | 16 |
+| 99 | [Paul Kruger](paul_kruger.md) | OLB | 6 | 16 |
 | N/A | [Quentin Groves](quentin_groves.md) | OLB | 0 | 16 |
-| 59 | [Tank Carder](tank_carder.md) | ILB | 5 | 16 |
+| 59 | [Tank Carder](tank_carder.md) | ILB | 6 | 16 |
 
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
 | 38 | [Aaron Berry](aaron_berry.md) | CB | 1 | 0 |
-| 22 | [Buster Skrine](buster_skrine.md) | CB | 5 | 15 |
-| 31 | [Donte Whitner](donte_whitner.md) | SS | 5 | 16 |
-| 30 | [Jim Leonhard](jim_leonhard.md) | SS | 5 | 14 |
-| 23 | [Joe Haden](joe_haden.md) | CB | 5 | 16 |
+| 22 | [Buster Skrine](buster_skrine.md) | CB | 6 | 15 |
+| 31 | [Donte Whitner](donte_whitner.md) | SS | 6 | 16 |
+| 30 | [Jim Leonhard](jim_leonhard.md) | SS | 6 | 14 |
+| 23 | [Joe Haden](joe_haden.md) | CB | 6 | 16 |
 | 24 | [Johnson Bademosi](johnson_bademosi.md) | SS | 3 | 16 |
 | N/A | [Josh Aubrey](josh_aubrey.md) | SS | 0 | 16 |
-| 21 | [Justin Gilbert](justin_gilbert.md) | CB | 5 | 0 |
+| 21 | [Justin Gilbert](justin_gilbert.md) | CB | 6 | 0 |
 | 36 | [K'Waun Williams](k_waun_williams.md) | CB | 3 | 0 |
 | N/A | [Leon McFadden](leon_mcfadden.md) | CB | 0 | 16 |
-| 26 | [Pierre Desir](pierre_desir.md) | CB | 5 | 0 |
+| 26 | [Pierre Desir](pierre_desir.md) | CB | 6 | 0 |
 | 42 | [Robert Nelson](robert_nelson.md) | CB | 1 | 0 |
-| 39 | [Tashaun Gipson](tashaun_gipson.md) | FS | 5 | 16 |
+| 39 | [Tashaun Gipson](tashaun_gipson.md) | FS | 6 | 16 |
 
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 8 | [Billy Cundiff](billy_cundiff.md) | K | 5 | 16 |
+| 8 | [Billy Cundiff](billy_cundiff.md) | K | 6 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 5 | [Spencer Lanning](spencer_lanning.md) | P | 5 | 16 |
+| 5 | [Spencer Lanning](spencer_lanning.md) | P | 6 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 57 | [Christian Yount](christian_yount.md) | LS | 5 | 16 |
+| 57 | [Christian Yount](christian_yount.md) | LS | 6 | 16 |
 
 <!-- player-index -->

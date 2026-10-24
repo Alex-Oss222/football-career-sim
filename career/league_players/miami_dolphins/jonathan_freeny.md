@@ -1,10 +1,10 @@
 # Jonathan Freeny
 
-**Miami Dolphins · Linebacker · No. 56 · Age 25 · Last game October 12, 2014**
+**Miami Dolphins · Linebacker · No. 56 · Age 25 · Last game October 19, 2014**
 
 6' 2", 254 lb · Born June 15, 1989 · Rutgers
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jonathan Freeny](https://commons.wikimedia.org/wiki/Special:FilePath/Jonathan_Freeny.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve linebacker.
 
-**Tackles:** 6 (2014, through Week 6).
+**Tackles:** 7 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 25 | 56 | 5 | 6 | 2 | 4 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 25 | 56 | 6 | 7 | 2 | 5 | 1 | 0 | 0 |
 | 2013 | Miami | 24 | 56 | 16 | 11 | 7 | 4 | 1 | 1 | 1 |
-| Career |  |  |  | 21 | 17 | 9 | 8 | 2 | 1 | 1 |
+| Career |  |  |  | 22 | 18 | 9 | 9 | 2 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 25 | 56 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 25 | 56 | 0 | 0 | 0 | 0 | 0 | 1 |
 | 2013 | Miami | 24 | 56 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Lance Kendricks
 
-**St. Louis Rams · Tight end · No. 88 · Age 26 · Last game October 13, 2014**
+**St. Louis Rams · Tight end · No. 88 · Age 26 · Last game October 19, 2014**
 
 6' 3", 250 lb · Born January 30, 1988 · Wisconsin · Drafted in 2011, second round, by St. Louis
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Lance Kendricks](https://commons.wikimedia.org/wiki/Special:FilePath/Lance_Kendricks.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 6.1 (2014, through Week 6).
+**Yards per target:** 6.0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 26 | 88 | 5 | 37 | 17 | 226 | 13.3 | 1 | 49 | 45.2 | 45.9 |
+| 2014 (through Week 7) | St. Louis | 26 | 88 | 6 | 42 | 19 | 253 | 13.3 | 1 | 49 | 42.2 | 45.2 |
 | 2013 | St. Louis | 25 | 88 | 16 | 27 | 18 | 194 | 10.8 | 2 | 87 | 12.1 | 66.7 |
-| Career |  |  |  | 21 | 64 | 35 | 420 | 12.0 | 3 | 87 | 20.0 | 54.7 |
+| Career |  |  |  | 22 | 69 | 37 | 447 | 12.1 | 3 | 87 | 20.3 | 53.6 |
 
 ### Playoffs
 

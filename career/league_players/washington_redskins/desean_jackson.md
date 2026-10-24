@@ -1,10 +1,10 @@
 # DeSean Jackson
 
-**Washington Redskins · Wide receiver · No. 11 · Age 27 · Last game October 12, 2014**
+**Washington Redskins · Wide receiver · No. 11 · Age 27 · Last game October 19, 2014**
 
 5' 10", 178 lb · Born December 1, 1986 · California · Drafted in 2008, second round, by Philadelphia
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![DeSean Jackson](https://commons.wikimedia.org/wiki/Special:FilePath/DeSean_Jackson_November_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 6.9 (2014, through Week 6).
+**Yards per target:** 6.3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 27 | 11 | 6 | 47 | 29 | 324 | 11.2 | 1 | 49 | 54.0 | 61.7 |
+| 2014 (through Week 7) | Washington | 27 | 11 | 7 | 60 | 36 | 381 | 10.6 | 1 | 49 | 54.4 | 60.0 |
 | 2013 | Philadelphia | 26 | 10 | 16 | 182 | 116 | 1,344 | 11.6 | 8 | 53 | 84.0 | 63.7 |
-| Career |  |  |  | 22 | 229 | 145 | 1,668 | 11.5 | 9 | 53 | 75.8 | 63.3 |
+| Career |  |  |  | 23 | 242 | 152 | 1,725 | 11.3 | 9 | 53 | 75.0 | 62.8 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 27 | 11 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Washington | 27 | 11 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Philadelphia | 26 | 10 | 4 | 18 | 1 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 27 | 11 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Washington | 27 | 11 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Philadelphia | 26 | 10 | 0 | 0 | N/A | 32 | 319 | 10.0 |
 
 ### Playoffs

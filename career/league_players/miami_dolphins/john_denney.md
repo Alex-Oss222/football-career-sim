@@ -1,10 +1,10 @@
 # John Denney
 
-**Miami Dolphins · Long snapper · No. 92 · Age 35 · Last game October 12, 2014**
+**Miami Dolphins · Long snapper · No. 92 · Age 35 · Last game October 19, 2014**
 
 6' 5", 252 lb · Born December 13, 1978 · BYU; Ricks College
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![John Denney](https://commons.wikimedia.org/wiki/Special:FilePath/John_Denney_in_2011.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 48 (2014, through Week 6).
+**Long snaps:** 54 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 35 | 92 | 5 | 48 | 48 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 35 | 92 | 6 | 54 | 54 | 0 | 0 |
 | 2013 | Miami | 34 | 92 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 22 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

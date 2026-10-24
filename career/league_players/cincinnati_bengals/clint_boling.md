@@ -1,10 +1,10 @@
 # Clint Boling
 
-**Cincinnati Bengals · Guard · No. 65 · Age 25 · Last game October 12, 2014**
+**Cincinnati Bengals · Guard · No. 65 · Age 25 · Last game October 19, 2014**
 
 6' 5", 310 lb · Born May 9, 1989 · Georgia · Drafted in 2011, fourth round, by Cincinnati
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Clint Boling](https://commons.wikimedia.org/wiki/Special:FilePath/Clint_Boling_2013_02.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 1 (2014, through Week 6).
+**Sacks allowed:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 25 | 65 | 5 | 5 | 338 | 1 | 22 |
+| 2014 (through Week 7) | Cincinnati | 25 | 65 | 6 | 6 | 405 | 1 | 27 |
 | 2013 | Cincinnati | 24 | 65 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

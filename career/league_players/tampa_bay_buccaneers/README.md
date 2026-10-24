@@ -1,6 +1,6 @@
 # Tampa Bay Buccaneers players
 
-NFC South. The players whose latest game on record was with the Tampa Bay Buccaneers. G counts regular-season games with any club. Records through October 13, 2014.
+NFC South. The players whose latest game on record was with the Tampa Bay Buccaneers. G counts regular-season games with any club. Records through October 20, 2014.
 
 [All clubs](../README.md)
 

@@ -1,10 +1,10 @@
 # Jack Mewhort
 
-**Indianapolis Colts · Guard · No. 75 · Age 23 · Last game October 9, 2014**
+**Indianapolis Colts · Guard · No. 75 · Age 23 · Last game October 19, 2014**
 
 6' 6", 308 lb · Born August 30, 1991 · Ohio State
 
-As of October 9, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jack Mewhort](https://commons.wikimedia.org/wiki/Special:FilePath/Jack_Mewhort.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 9, 2014, after Week 6.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 0 (2014, through Week 6).
+**Sacks allowed:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 23 | 75 | 6 | 6 | 416 | 0 | 24 |
+| 2014 (through Week 7) | Indianapolis | 23 | 75 | 7 | 7 | 468 | 0 | 30 |
 
 ### Playoffs
 

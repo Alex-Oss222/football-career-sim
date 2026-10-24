@@ -1,10 +1,10 @@
 # Aaron Williams
 
-**Buffalo Bills · Strong safety · No. 23 · Age 24 · Last game October 12, 2014**
+**Buffalo Bills · Strong safety · No. 23 · Age 24 · Last game October 19, 2014**
 
 6' 0", 199 lb · Born April 23, 1990 · Texas · Drafted in 2011, second round, by Buffalo
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Aaron Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Williams_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting safety.
 
-**Passes defended:** 4 (2014, through Week 6).
+**Passes defended:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 24 | 23 | 6 | 40 | 26 | 14 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Buffalo | 24 | 23 | 7 | 42 | 27 | 15 | 0 | 0 | 1 |
 | 2013 | Buffalo | 23 | 23 | 14 | 46 | 34 | 12 | 2 | 0 | 0 |
-| Career |  |  |  | 20 | 86 | 60 | 26 | 2 | 0 | 1 |
+| Career |  |  |  | 21 | 88 | 61 | 27 | 2 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 24 | 23 | 2 | 21 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Buffalo | 24 | 23 | 2 | 21 | 4 | 0 | 0 | 0 |
 | 2013 | Buffalo | 23 | 23 | 2 | 63 | 15 | 1 | 1 | N/A |
 
 ### Playoffs

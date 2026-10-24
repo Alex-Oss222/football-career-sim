@@ -1,10 +1,10 @@
 # Bruce Miller
 
-**San Francisco 49ers · Fullback · No. 49 · Age 27 · Last game October 13, 2014**
+**San Francisco 49ers · Fullback · No. 49 · Age 27 · Last game October 19, 2014**
 
 6' 2", 248 lb · Born August 6, 1987 · UCF · Drafted in 2011, seventh round, by San Francisco
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Bruce Miller](https://commons.wikimedia.org/wiki/Special:FilePath/Bruce_Miller_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 1.3 (2014, through Week 6).
+**Yards per carry:** 4.4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 27 | 49 | 6 | 3 | 4 | 1.3 | 0 | 2 | 0.7 |
+| 2014 (through Week 7) | San Francisco | 27 | 49 | 7 | 5 | 22 | 4.4 | 0 | 11 | 3.1 |
 | 2013 | San Francisco | 26 | 49 | 16 | 8 | 23 | 2.9 | 0 | 10 | 1.4 |
-| Career |  |  |  | 22 | 11 | 27 | 2.5 | 0 | 10 | 1.2 |
+| Career |  |  |  | 23 | 13 | 45 | 3.5 | 0 | 11 | 2.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 27 | 49 | 4 | 2 | 25 | 12.5 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Francisco | 27 | 49 | 6 | 4 | 38 | 9.5 | 0 | 0 | 0 |
 | 2013 | San Francisco | 26 | 49 | 8 | 5 | 21 | 4.2 | 0 | 0 | 0 |
 
 ### Playoffs

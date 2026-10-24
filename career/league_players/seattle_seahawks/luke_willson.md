@@ -1,10 +1,10 @@
 # Luke Willson
 
-**Seattle Seahawks · Tight end · No. 82 · Age 24 · Last game October 12, 2014**
+**Seattle Seahawks · Tight end · No. 82 · Age 24 · Last game October 19, 2014**
 
 6' 5", 252 lb · Born January 15, 1990 · Rice
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Luke Willson](https://commons.wikimedia.org/wiki/Special:FilePath/Luke_Willson.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 3.8 (2014, through Week 6).
+**Yards per target:** 3.8 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Seattle | 24 | 82 | 5 | 5 | 5 | 19 | 3.8 | 1 | 9 | 3.8 | 100.0 |
+| 2014 (through Week 7) | Seattle | 24 | 82 | 6 | 5 | 5 | 19 | 3.8 | 1 | 9 | 3.2 | 100.0 |
 | 2013 | Seattle | 23 | 82 | 16 | 24 | 13 | 85 | 6.5 | 0 | 19 | 5.3 | 54.2 |
-| Career |  |  |  | 21 | 29 | 18 | 104 | 5.8 | 1 | 19 | 5.0 | 62.1 |
+| Career |  |  |  | 22 | 29 | 18 | 104 | 5.8 | 1 | 19 | 4.7 | 62.1 |
 
 ### Playoffs
 

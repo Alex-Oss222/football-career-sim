@@ -1,10 +1,10 @@
 # Ian Williams
 
-**San Francisco 49ers · Nose tackle · No. 93 · Age 25 · Last game October 13, 2014**
+**San Francisco 49ers · Nose tackle · No. 93 · Age 25 · Last game October 19, 2014**
 
 6' 1", 305 lb · Born August 31, 1989 · Notre Dame
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Ian Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Ian_Williams_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting nose tackle.
 
-**Sacks:** 6 (2014, through Week 6).
+**Sacks:** 6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 25 | 93 | 6 | 24 | 21 | 3 | 5 | 6 | 6 |
+| 2014 (through Week 7) | San Francisco | 25 | 93 | 7 | 26 | 21 | 5 | 6 | 6 | 6 |
 | 2013 | San Francisco | 24 | 93 | 16 | 49 | 37 | 12 | 4 | 7 | 8 |
-| Career |  |  |  | 22 | 73 | 58 | 15 | 9 | 13 | 14 |
+| Career |  |  |  | 23 | 75 | 58 | 17 | 10 | 13 | 14 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 25 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Francisco | 25 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | San Francisco | 24 | 93 | 0 | 0 | 1 | 1 | 1 | N/A |
 
 ### Playoffs

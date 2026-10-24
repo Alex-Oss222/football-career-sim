@@ -1,10 +1,10 @@
 # Vance McDonald
 
-**San Francisco 49ers · Tight end · No. 89 · Age 24 · Last game October 13, 2014**
+**San Francisco 49ers · Tight end · No. 89 · Age 24 · Last game October 19, 2014**
 
 6' 4", 267 lb · Born June 13, 1990 · Rice
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Vance McDonald](https://commons.wikimedia.org/wiki/Special:FilePath/Vance_McDonald.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 6.7 (2014, through Week 6).
+**Yards per target:** 6.9 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 24 | 89 | 6 | 12 | 7 | 80 | 11.4 | 0 | 22 | 13.3 | 58.3 |
+| 2014 (through Week 7) | San Francisco | 24 | 89 | 7 | 13 | 8 | 90 | 11.2 | 0 | 22 | 12.9 | 61.5 |
 | 2013 | San Francisco | 23 | 89 | 16 | 23 | 16 | 150 | 9.4 | 0 | 28 | 9.4 | 69.6 |
-| Career |  |  |  | 22 | 35 | 23 | 230 | 10.0 | 0 | 28 | 10.5 | 65.7 |
+| Career |  |  |  | 23 | 36 | 24 | 240 | 10.0 | 0 | 28 | 10.4 | 66.7 |
 
 ### Playoffs
 

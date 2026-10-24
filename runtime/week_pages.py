@@ -45,7 +45,7 @@ import re
 from datetime import date, timedelta
 from pathlib import Path
 
-from . import people, roster as roster_record, season_summary as summary
+from . import injury_model, people, roster as roster_record, season_summary as summary
 from .player_bios import master_date
 from .player_pages import club_short
 from .play_detail import DRIVE_SUMMARY_FIELDS
@@ -64,6 +64,13 @@ PERIODS = {1: "first", 2: "second", 3: "third", 4: "fourth"}
 CLASSES = {"head_neck": "head/neck", "upper_extremity": "upper extremity", "lower_extremity": "lower extremity",
            "trunk": "trunk"}
 RESTRICTIONS = {"out": "out", "limited": "limited"}
+# The practice participation and permitted work each restriction the game records allows, as the
+# incident page writes them: an independent medical hold is no football work until it is released,
+# as the hand-written holds of August and September 2014 read.
+PARTICIPATION = {"out": ("out until reassessed", "None until reassessed"),
+                 "limited": ("limited until reassessed", "Limited until reassessed"),
+                 injury_model.HOLD: ("none until the independent medical process releases the hold",
+                                     "None until the independent process releases the hold")}
 # Each injury severity the game records in football words, as the medical pages write them
 # ("Out, multi-week: lower extremity"). An unlisted one reads with its underscores as spaces.
 SEVERITIES = {"minor": "minor", "short": "short", "multi_week": "multi-week", "long_term": "long term"}
@@ -544,6 +551,15 @@ def clock_text(injury):
     return "at %s %s" % (injury.get("clock"), where)
 
 
+def participation(injury):
+    """(practice participation, permitted work) for the injury's restriction; a restriction the
+    table does not name is refused rather than written as limited work."""
+    restriction = injury.get("restriction") or "limited"
+    if restriction not in PARTICIPATION:
+        raise ValueError("no practice wording for the restriction %r" % restriction)
+    return PARTICIPATION[restriction]
+
+
 def words(value, table):
     """``value`` (a code the game records) in football words: from ``table``, else with its
     underscores as spaces."""
@@ -671,7 +687,7 @@ def incident_page(season, receipt, injury):
                                                               removed), "",
              "## Current medical information", "",
              "- Injury: %s; no clinical diagnosis recorded" % injury_words(injury),
-             "- Practice participation: %s until reassessed" % RESTRICTIONS.get(injury.get("restriction"), "limited"),
+             "- Practice participation: %s" % participation(injury)[0],
              "- Game designation: none issued; the next game's designation follows the league's injury-report rules",
              "- Roster designation: %s (%s)" % (status_text(row["status"]) if row.get("status") else "Not on the roster",
                                                 link(page, season.rel(season.paths.roster_page), "roster")),
@@ -685,7 +701,7 @@ def incident_page(season, receipt, injury):
     lines += table(["Date", "Communicated finding", "Permitted work", "Source"],
                    [[long_date(played), "%s; %s; %s" % (injury_words(injury).capitalize(), "removed" if injury.get("removed")
                                                          else "not removed", instruction_text(injury, played)),
-                     "None until reassessed" if injury.get("restriction") == "out" else "Limited until reassessed",
+                     participation(injury)[1],
                      link(page, season.rel(report), "Game report")]]) + [""]
     lines += ["## Football effect", "",
               "Practices and games missed are recorded here as they occur.", "",

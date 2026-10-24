@@ -1,10 +1,10 @@
 # Terrell Suggs
 
-**Baltimore Ravens · Outside linebacker · No. 55 · Age 32 · Last game October 12, 2014**
+**Baltimore Ravens · Outside linebacker · No. 55 · Age 32 · Last game October 19, 2014**
 
 6' 3", 260 lb · Born October 11, 1982 · Arizona State · Drafted in 2003, first round, by Baltimore
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Terrell Suggs](https://commons.wikimedia.org/wiki/Special:FilePath/Terrell_Suggs_2011_stadium_practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 52 (2014, through Week 6).
+**Tackles:** 65 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 31 | 55 | 6 | 52 | 42 | 10 | 4 | 7 | 7 |
+| 2014 (through Week 7) | Baltimore | 31 | 55 | 7 | 65 | 52 | 13 | 6 | 8 | 9 |
 | 2013 | Baltimore | 30 | 55 | 16 | 120 | 67 | 53 | 3 | 5 | 13 |
-| Career |  |  |  | 22 | 172 | 109 | 63 | 7 | 12 | 20 |
+| Career |  |  |  | 23 | 185 | 119 | 66 | 9 | 13 | 22 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 31 | 55 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Baltimore | 31 | 55 | 0 | 0 | 4 | 0 | 0 | 0 |
 | 2013 | Baltimore | 30 | 55 | 0 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs

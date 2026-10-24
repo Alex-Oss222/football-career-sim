@@ -1,10 +1,10 @@
 # Jermon Bushrod
 
-**Chicago Bears · Guard · No. 74 · Age 30 · Last game October 12, 2014**
+**Chicago Bears · Guard · No. 74 · Age 30 · Last game October 19, 2014**
 
 6' 5", 320 lb · Born August 19, 1984 · Towson State · Drafted in 2007, fourth round, by New Orleans
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jermon Bushrod](https://commons.wikimedia.org/wiki/Special:FilePath/Jermon_Bushrod.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 4 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 30 | 74 | 6 | 6 | 400 | 4 | 25 |
+| 2014 (through Week 7) | Chicago | 30 | 74 | 7 | 7 | 465 | 4 | 31 |
 | 2013 | Chicago | 29 | 74 | 13 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 19 | N/A | N/A | 10 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

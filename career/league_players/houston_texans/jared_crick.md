@@ -1,10 +1,10 @@
 # Jared Crick
 
-**Houston Texans · Defensive end · No. 93 · Age 25 · Last game October 9, 2014**
+**Houston Texans · Defensive end · No. 93 · Age 25 · Last game October 20, 2014**
 
 6' 4", 285 lb · Born August 21, 1989 · Nebraska · Drafted in 2012, fourth round, by Houston
 
-As of October 9, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Jared Crick](https://commons.wikimedia.org/wiki/Special:FilePath/Jared_Crick.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 9, 2014, after Week 6.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 1 (2014, through Week 6).
+**Sacks:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 25 | 93 | 6 | 25 | 17 | 8 | 2 | 1 | 4 |
+| 2014 (through Week 7) | Houston | 25 | 93 | 7 | 29 | 21 | 8 | 2 | 1 | 7 |
 | 2013 | Houston | 24 | 93 | 16 | 30 | 22 | 8 | 6 | 0 | 4 |
-| Career |  |  |  | 22 | 55 | 39 | 16 | 8 | 1 | 8 |
+| Career |  |  |  | 23 | 59 | 43 | 16 | 8 | 1 | 11 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 25 | 93 | 1 | 44 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Houston | 25 | 93 | 1 | 44 | 1 | 0 | 0 | 0 |
 | 2013 | Houston | 24 | 93 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

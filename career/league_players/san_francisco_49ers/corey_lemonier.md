@@ -1,10 +1,10 @@
 # Corey Lemonier
 
-**San Francisco 49ers · Outside linebacker · No. 96 · Age 22 · Last game October 13, 2014**
+**San Francisco 49ers · Outside linebacker · No. 96 · Age 22 · Last game October 19, 2014**
 
 6' 3", 255 lb · Born November 19, 1991 · Auburn
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Corey Lemonier](https://commons.wikimedia.org/wiki/Special:FilePath/Corey_Lemonier.JPG?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 22 | 96 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Francisco | 22 | 96 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | San Francisco | 21 | 96 | 16 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 18 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 19 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 22 | 96 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 7) | San Francisco | 22 | 96 | 0 | 0 | 0 | 0 | 0 | 2 |
 | 2013 | San Francisco | 21 | 96 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Taylor Gabriel
 
-**Jacksonville Jaguars · Wide receiver · Age 23 · Active roster**
+**Jacksonville Jaguars · Wide receiver · No. 18 · Age 23 · Active roster**
 
 5' 8", 167 lb · Born February 17, 1991 · Abilene Christian · Undrafted
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Taylor Gabriel](https://commons.wikimedia.org/wiki/Special:FilePath/Taylor_Gabriel.jpg?width=500)
 
@@ -30,7 +30,9 @@ Three-year contract through 2016.
 
 ### Regular season
 
-No regular-season games on record.
+| Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 7) | Jacksonville | 23 | 18 | 1 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

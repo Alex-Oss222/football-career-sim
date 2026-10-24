@@ -1,10 +1,10 @@
 # Tank Carder
 
-**Cleveland Browns · Inside linebacker · No. 59 · Age 25 · Last game October 12, 2014**
+**Cleveland Browns · Inside linebacker · No. 59 · Age 25 · Last game October 19, 2014**
 
 6' 2", 235 lb · Born January 18, 1989 · TCU · Drafted in 2012, fifth round, by Buffalo
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Tank Carder](https://commons.wikimedia.org/wiki/Special:FilePath/Tank_Carder.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve middle linebacker.
 
-**Tackles:** 1 (2014, through Week 6).
+**Tackles:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 25 | 59 | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Cleveland | 25 | 59 | 6 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | Cleveland | 24 | 59 | 16 | 6 | 3 | 3 | 1 | 0 | 0 |
-| Career |  |  |  | 21 | 7 | 4 | 3 | 1 | 0 | 0 |
+| Career |  |  |  | 22 | 7 | 4 | 3 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 25 | 59 | 0 | 0 | 0 | 0 | 0 | 5 |
+| 2014 (through Week 7) | Cleveland | 25 | 59 | 0 | 0 | 0 | 0 | 0 | 7 |
 | 2013 | Cleveland | 24 | 59 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

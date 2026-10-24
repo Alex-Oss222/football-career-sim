@@ -1,10 +1,10 @@
 # Robert Griffin
 
-**Washington Redskins · Quarterback · No. 10 · Age 24 · Last game October 12, 2014**
+**Washington Redskins · Quarterback · No. 10 · Age 24 · Last game October 19, 2014**
 
 6' 2", 222 lb · Born February 12, 1990 · Baylor · Drafted in 2012, first round, by Washington
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Robert Griffin](https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Griffin_III_2022.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 91.8 (2014, through Week 6).
+**Passer rating:** 92.5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 24 | 10 | 5 | 121 | 175 | 69.1 | 1,287 | 7.4 | 257.4 | 7 | 5 | 91.8 |
+| 2014 (through Week 7) | Washington | 24 | 10 | 6 | 140 | 213 | 65.7 | 1,600 | 7.5 | 266.7 | 9 | 5 | 92.5 |
 | 2013 | Washington | 23 | 10 | 16 | 384 | 586 | 65.5 | 3,920 | 6.7 | 245.0 | 20 | 14 | 86.0 |
-| Career |  |  |  | 21 | 505 | 761 | 66.4 | 5,207 | 6.8 | 248.0 | 27 | 19 | 87.3 |
+| Career |  |  |  | 22 | 524 | 799 | 65.6 | 5,520 | 6.9 | 250.9 | 29 | 19 | 87.7 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 24 | 10 | 15 | 112 | 9 | 23 | 0 | 3 | 3 |
+| 2014 (through Week 7) | Washington | 24 | 10 | 16 | 118 | 14 | 56 | 0 | 3 | 3 |
 | 2013 | Washington | 23 | 10 | 34 | 224 | 43 | 162 | 3 | 0 | 0 |
 
 ### Playoffs

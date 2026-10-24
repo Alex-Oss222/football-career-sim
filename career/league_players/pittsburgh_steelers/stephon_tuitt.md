@@ -1,10 +1,10 @@
 # Stephon Tuitt
 
-**Pittsburgh Steelers · Defensive end · No. 91 · Age 21 · Last game October 12, 2014**
+**Pittsburgh Steelers · Defensive end · No. 91 · Age 21 · Last game October 20, 2014**
 
 6' 5", 303 lb · Born May 23, 1993 · Notre Dame
 
-As of October 12, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Stephon Tuitt](https://commons.wikimedia.org/wiki/Special:FilePath/Stephon_Tuitt.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 21 | 91 | 6 | 5 | 3 | 2 | 1 | 0 | 3 |
+| 2014 (through Week 7) | Pittsburgh | 21 | 91 | 7 | 8 | 3 | 5 | 1 | 0 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 21 | 91 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Pittsburgh | 21 | 91 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

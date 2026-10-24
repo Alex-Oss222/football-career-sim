@@ -1,10 +1,10 @@
 # Chris Jones
 
-**New England Patriots · Defensive tackle · No. 94 · Age 24 · Last game October 12, 2014**
+**New England Patriots · Defensive tackle · No. 94 · Age 24 · Last game October 16, 2014**
 
 6' 1", 309 lb · Born July 12, 1990 · Bowling Green
 
-As of October 12, 2014, after Week 6.
+As of October 16, 2014, after Week 7.
 
 ![Chris Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Jones_at_2012_Military_Bowl.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | New England | 24 | 94 | 5 | 2 | 1 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 7) | New England | 24 | 94 | 6 | 3 | 1 | 2 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | New England | 24 | 94 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | New England | 24 | 94 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

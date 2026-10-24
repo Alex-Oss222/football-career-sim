@@ -1,10 +1,10 @@
 # Jacob Tamme
 
-**Denver Broncos · Tight end · No. 84 · Age 29 · Last game October 12, 2014**
+**Denver Broncos · Tight end · No. 84 · Age 29 · Last game October 19, 2014**
 
 6' 3", 230 lb · Born March 15, 1985 · Kentucky · Drafted in 2008, fourth round, by Indianapolis
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jacob Tamme](https://commons.wikimedia.org/wiki/Special:FilePath/Jacob_Tamme_2012.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 10.0 (2014, through Week 6).
+**Yards per target:** 10.0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 29 | 84 | 5 | 1 | 1 | 10 | 10.0 | 0 | 10 | 2.0 | 100.0 |
+| 2014 (through Week 7) | Denver | 29 | 84 | 6 | 1 | 1 | 10 | 10.0 | 0 | 10 | 1.7 | 100.0 |
 | 2013 | Denver | 28 | 84 | 16 | 13 | 3 | 54 | 18.0 | 0 | 33 | 3.4 | 23.1 |
-| Career |  |  |  | 21 | 14 | 4 | 64 | 16.0 | 0 | 33 | 3.0 | 28.6 |
+| Career |  |  |  | 22 | 14 | 4 | 64 | 16.0 | 0 | 33 | 2.9 | 28.6 |
 
 ### Playoffs
 

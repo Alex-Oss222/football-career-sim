@@ -1,10 +1,10 @@
 # Lance Louis
 
-**Indianapolis Colts · Guard · No. 60 · Age 29 · Last game October 9, 2014**
+**Indianapolis Colts · Guard · No. 60 · Age 29 · Last game October 19, 2014**
 
 6' 3", 330 lb · Born April 24, 1985 · San Diego State
 
-As of October 9, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Lance Louis](https://commons.wikimedia.org/wiki/Special:FilePath/Lance_Louis.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 29 | 60 | 2 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Indianapolis | 29 | 60 | 2 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Ryan Grant
 
-**Washington Redskins · Wide receiver · No. 14 · Age 23 · Last game October 12, 2014**
+**Washington Redskins · Wide receiver · No. 14 · Age 23 · Last game October 19, 2014**
 
 6' 0", 193 lb · Born December 19, 1990 · Tulane
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Ryan Grant](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_grant_redskins.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 14.7 (2014, through Week 6).
+**Yards per target:** 13.8 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 23 | 14 | 6 | 3 | 3 | 44 | 14.7 | 0 | 23 | 7.3 | 100.0 |
+| 2014 (through Week 7) | Washington | 23 | 14 | 7 | 4 | 4 | 55 | 13.8 | 0 | 23 | 7.9 | 100.0 |
 
 ### Playoffs
 

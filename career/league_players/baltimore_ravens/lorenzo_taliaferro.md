@@ -1,10 +1,10 @@
 # Lorenzo Taliaferro
 
-**Baltimore Ravens · Running back · No. 34 · Age 22 · Last game October 12, 2014**
+**Baltimore Ravens · Running back · No. 34 · Age 22 · Last game October 19, 2014**
 
 6' 0", 226 lb · Born December 23, 1991 · Coastal Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Lorenzo Taliaferro](https://commons.wikimedia.org/wiki/Special:FilePath/Lorenzo_Taliaferro.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 8.2 (2014, through Week 6).
+**Yards per carry:** 8.2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 22 | 34 | 6 | 4 | 33 | 8.2 | 0 | 17 | 5.5 |
+| 2014 (through Week 7) | Baltimore | 22 | 34 | 7 | 4 | 33 | 8.2 | 0 | 17 | 4.7 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 22 | 34 | 3 | 1 | 19 | 19.0 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Baltimore | 22 | 34 | 3 | 1 | 19 | 19.0 | 1 | 0 | 0 |
 
 ### Playoffs
 

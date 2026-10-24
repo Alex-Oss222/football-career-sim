@@ -1,10 +1,10 @@
 # Doug Free
 
-**Dallas Cowboys · Offensive tackle · No. 68 · Age 30 · Last game October 12, 2014**
+**Dallas Cowboys · Offensive tackle · No. 68 · Age 30 · Last game October 19, 2014**
 
 6' 6", 325 lb · Born January 16, 1984 · Northern Illinois · Drafted in 2007, fourth round, by Dallas
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Doug Free](https://commons.wikimedia.org/wiki/Special:FilePath/Doug_Free_cropped.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 3 (2014, through Week 6).
+**Sacks allowed:** 3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 30 | 68 | 6 | 6 | 355 | 3 | 21 |
+| 2014 (through Week 7) | Dallas | 30 | 68 | 7 | 7 | 408 | 3 | 27 |
 | 2013 | Dallas | 29 | 68 | 16 | N/A | N/A | 1 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

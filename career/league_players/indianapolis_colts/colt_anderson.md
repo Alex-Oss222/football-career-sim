@@ -1,10 +1,10 @@
 # Colt Anderson
 
-**Indianapolis Colts · Strong safety · No. 32 · Age 28 · Last game October 9, 2014**
+**Indianapolis Colts · Strong safety · No. 32 · Age 28 · Last game October 19, 2014**
 
 5' 10", 194 lb · Born October 25, 1985 · Montana
 
-As of October 9, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Colt Anderson](https://commons.wikimedia.org/wiki/Special:FilePath/Colt_Anderson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 9, 2014, after Week 6.
 
 **Current assignment:** Reserve strong safety.
 
-**Passes defended:** 0 (2014, through Week 6).
+**Passes defended:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 28 | 32 | 2 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Indianapolis | 28 | 32 | 3 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | Philadelphia | 27 | 30 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 28 | 32 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Indianapolis | 28 | 32 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Philadelphia | 27 | 30 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

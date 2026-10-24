@@ -1,10 +1,10 @@
 # Derrick Morgan
 
-**Tennessee Titans · Outside linebacker · No. 91 · Age 25 · Last game October 12, 2014**
+**Tennessee Titans · Outside linebacker · No. 91 · Age 25 · Last game October 19, 2014**
 
 6' 3", 261 lb · Born January 6, 1989 · Georgia Tech · Drafted in 2010, first round, by Tennessee
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Derrick Morgan](https://commons.wikimedia.org/wiki/Special:FilePath/Derrick_Morgan_2018_08-09.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 31 (2014, through Week 6).
+**Tackles:** 32 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 25 | 91 | 6 | 31 | 24 | 7 | 5 | 2 | 3 |
+| 2014 (through Week 7) | Tennessee | 25 | 91 | 7 | 32 | 24 | 8 | 5 | 2 | 3 |
 | 2013 | Tennessee | 24 | 91 | 16 | 86 | 66 | 20 | 5 | 9 | 23 |
-| Career |  |  |  | 22 | 117 | 90 | 27 | 10 | 11 | 26 |
+| Career |  |  |  | 23 | 118 | 90 | 28 | 10 | 11 | 26 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 25 | 91 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Tennessee | 25 | 91 | 0 | 0 | 1 | 1 | 0 | 0 |
 | 2013 | Tennessee | 24 | 91 | 0 | 0 | 2 | 2 | 2 | N/A |
 
 ### Playoffs

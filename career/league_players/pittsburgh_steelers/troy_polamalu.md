@@ -1,10 +1,10 @@
 # Troy Polamalu
 
-**Pittsburgh Steelers · Strong safety · No. 43 · Age 33 · Last game October 12, 2014**
+**Pittsburgh Steelers · Strong safety · No. 43 · Age 33 · Last game October 20, 2014**
 
 5' 10", 207 lb · Born April 19, 1981 · USC · Drafted in 2003, first round, by Pittsburgh
 
-As of October 12, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Troy Polamalu](https://commons.wikimedia.org/wiki/Special:FilePath/Polamalu_closeup2.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 5 (2014, through Week 6).
+**Passes defended:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 33 | 43 | 6 | 11 | 6 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Pittsburgh | 33 | 43 | 7 | 12 | 7 | 5 | 0 | 0 | 0 |
 | 2013 | Pittsburgh | 32 | 43 | 16 | 52 | 35 | 17 | 2 | 0 | 0 |
-| Career |  |  |  | 22 | 63 | 41 | 22 | 2 | 0 | 0 |
+| Career |  |  |  | 23 | 64 | 42 | 22 | 2 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 33 | 43 | 0 | 0 | 5 | 1 | 2 | 0 |
+| 2014 (through Week 7) | Pittsburgh | 33 | 43 | 0 | 0 | 5 | 1 | 2 | 0 |
 | 2013 | Pittsburgh | 32 | 43 | 5 | 19 | 14 | 1 | 1 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Corey Liuget
 
-**San Diego Chargers · Defensive tackle · No. 94 · Age 24 · Last game October 12, 2014**
+**San Diego Chargers · Defensive tackle · No. 94 · Age 24 · Last game October 19, 2014**
 
 6' 2", 300 lb · Born March 18, 1990 · Illinois · Drafted in 2011, first round, by San Diego
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Corey Liuget](https://commons.wikimedia.org/wiki/Special:FilePath/Corey_Liuget.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 3 (2014, through Week 6).
+**Sacks:** 3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 24 | 94 | 6 | 26 | 19 | 7 | 2 | 3 | 6 |
+| 2014 (through Week 7) | San Diego | 24 | 94 | 7 | 31 | 22 | 9 | 2 | 3 | 8 |
 | 2013 | San Diego | 23 | 94 | 16 | 91 | 59 | 32 | 8 | 5 | 16 |
-| Career |  |  |  | 22 | 117 | 78 | 39 | 10 | 8 | 22 |
+| Career |  |  |  | 23 | 122 | 81 | 41 | 10 | 8 | 24 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 24 | 94 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2014 (through Week 7) | San Diego | 24 | 94 | 0 | 0 | 0 | 2 | 1 | 0 |
 | 2013 | San Diego | 23 | 94 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

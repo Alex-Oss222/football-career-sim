@@ -1,10 +1,10 @@
 # Jay Bromley
 
-**New York Giants · Defensive tackle · No. 96 · Age 22 · Last game October 12, 2014**
+**New York Giants · Defensive tackle · No. 96 · Age 22 · Last game October 19, 2014**
 
 6' 3", 310 lb · Born May 28, 1992 · Syracuse
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jay Bromley](https://commons.wikimedia.org/wiki/Special:FilePath/Jay_Bromley_in_2017.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 22 | 96 | 6 | 4 | 3 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Giants | 22 | 96 | 7 | 5 | 3 | 2 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 22 | 96 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Giants | 22 | 96 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Playoffs
 

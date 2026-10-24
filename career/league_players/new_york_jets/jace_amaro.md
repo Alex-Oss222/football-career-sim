@@ -1,10 +1,10 @@
 # Jace Amaro
 
-**New York Jets · Tight end · No. 88 · Age 22 · Last game October 12, 2014**
+**New York Jets · Tight end · No. 88 · Age 22 · Last game October 16, 2014**
 
 6' 5", 265 lb · Born June 26, 1992 · Texas Tech
 
-As of October 12, 2014, after Week 6.
+As of October 16, 2014, after Week 7.
 
 ![Jace Amaro](https://commons.wikimedia.org/wiki/Special:FilePath/Jace_Amaro_%28131109-F-QP712-103%29_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 9.0 (2014, through Week 6).
+**Yards per target:** 6.8 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Jets | 22 | 88 | 6 | 3 | 2 | 27 | 13.5 | 1 | 15 | 4.5 | 66.7 |
+| 2014 (through Week 7) | N.Y. Jets | 22 | 88 | 7 | 5 | 4 | 34 | 8.5 | 1 | 15 | 4.9 | 80.0 |
 
 ### Playoffs
 

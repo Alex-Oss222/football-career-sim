@@ -1,10 +1,10 @@
 # Kraig Urbik
 
-**Buffalo Bills · Center · No. 60 · Age 29 · Last game October 12, 2014**
+**Buffalo Bills · Center · No. 60 · Age 29 · Last game October 19, 2014**
 
 6' 5", 324 lb · Born September 23, 1985 · Wisconsin · Drafted in 2009, third round, by Pittsburgh
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Kraig Urbik](https://commons.wikimedia.org/wiki/Special:FilePath/Kraig_Urbik.JPG?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 28 | 60 | 5 | 0 | 0 | 0 | 28 |
+| 2014 (through Week 7) | Buffalo | 28 | 60 | 6 | 0 | 0 | 0 | 33 |
 | 2013 | Buffalo | 27 | 60 | 16 | N/A | N/A | 2 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 2 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 

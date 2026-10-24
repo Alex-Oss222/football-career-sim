@@ -1,10 +1,10 @@
 # James Wright
 
-**Cincinnati Bengals · Wide receiver · No. 86 · Age 22 · Last game October 12, 2014**
+**Cincinnati Bengals · Wide receiver · No. 86 · Age 22 · Last game October 19, 2014**
 
 6' 1", 201 lb · Born December 31, 1991 · LSU
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
@@ -18,7 +18,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 22 | 86 | 4 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 7) | Cincinnati | 22 | 86 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

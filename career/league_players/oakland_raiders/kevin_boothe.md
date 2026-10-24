@@ -1,10 +1,10 @@
 # Kevin Boothe
 
-**Oakland Raiders · Center · No. 67 · Age 31 · Last game October 12, 2014**
+**Oakland Raiders · Center · No. 67 · Age 31 · Last game October 19, 2014**
 
 6' 5", 325 lb · Born July 5, 1983 · Cornell · Drafted in 2006, sixth round, by Oakland
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Kevin Boothe](https://commons.wikimedia.org/wiki/Special:FilePath/Kevin_Boothe.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 31 | 67 | 4 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Oakland | 31 | 67 | 4 | 0 | 0 | 0 | 0 |
 | 2013 | N.Y. Giants | 30 | 77 | 11 | N/A | N/A | 1 | N/A |
 | Career |  |  |  | 15 | N/A | N/A | 1 | N/A |
 

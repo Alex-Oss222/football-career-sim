@@ -4,7 +4,7 @@
 
 6' 5", 300 lb · Born April 18, 1987 · Virginia · Drafted in 2009, first round, by Jacksonville
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Eugene Monroe](https://commons.wikimedia.org/wiki/Special:FilePath/EugeneJ11.jpg?width=500)
 
@@ -12,13 +12,13 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 5 (2014, through Week 6).
+**Sacks allowed:** 7 (2014, through Week 7).
 
 ## Staff assessment
 
-Eugene Monroe has proven he is an NFL starting left tackle, and the staff views him as a strong one. He was Jacksonville's starting left tackle throughout 2013, active for all 16 regular-season games and both playoff games, and he has started six games in 2014. Pass protection is his best work: he sets and mirrors well, has a strong punch, recovers after losing leverage and has enough anchor against power. His drive blocking is solid rather than dominant, as is his work at the second level.
+Eugene Monroe has proven he is an NFL starting left tackle, and the staff views him as a strong one. He was Jacksonville's starting left tackle throughout 2013, active for all 16 regular-season games and both playoff games, and he has started seven games in 2014. Pass protection is his best work: he sets and mirrors well, has a strong punch, recovers after losing leverage and has enough anchor against power. His drive blocking is solid rather than dominant, as is his work at the second level.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 12.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 19.*
 
 ## Contract
 
@@ -38,9 +38,9 @@ Five-year contract through 2018.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 27 | 60 | 6 | 6 | 393 | 5 | 28 |
+| 2014 (through Week 7) | Jacksonville | 27 | 60 | 7 | 7 | 444 | 7 | 33 |
 | 2013 | Jacksonville | 26 | N/A | 16 | N/A | N/A | 2 | N/A |
-| With Jacksonville |  |  |  | 22 | N/A | N/A | 7 | N/A |
+| With Jacksonville |  |  |  | 23 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Emmanuel Sanders
 
-**Denver Broncos · Wide receiver · No. 10 · Age 27 · Last game October 12, 2014**
+**Denver Broncos · Wide receiver · No. 10 · Age 27 · Last game October 19, 2014**
 
 5' 11", 180 lb · Born March 17, 1987 · SMU · Drafted in 2010, third round, by Pittsburgh
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Emmanuel Sanders](https://commons.wikimedia.org/wiki/Special:FilePath/Emmanuel_Sanders.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 7.7 (2014, through Week 6).
+**Yards per target:** 7.4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 27 | 10 | 5 | 45 | 28 | 346 | 12.4 | 3 | 36 | 69.2 | 62.2 |
+| 2014 (through Week 7) | Denver | 27 | 10 | 6 | 49 | 31 | 362 | 11.7 | 3 | 36 | 60.3 | 63.3 |
 | 2013 | Pittsburgh | 26 | 88 | 16 | 146 | 95 | 1,145 | 12.1 | 8 | 62 | 71.6 | 65.1 |
-| Career |  |  |  | 21 | 191 | 123 | 1,491 | 12.1 | 11 | 62 | 71.0 | 64.4 |
+| Career |  |  |  | 22 | 195 | 126 | 1,507 | 12.0 | 11 | 62 | 68.5 | 64.6 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 27 | 10 | 1 | -5 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Denver | 27 | 10 | 2 | -6 | 0 | 1 | 1 |
 | 2013 | Pittsburgh | 26 | 88 | 2 | 25 | 1 | 2 | 2 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 27 | 10 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Denver | 27 | 10 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Pittsburgh | 26 | 88 | 0 | 0 | N/A | 3 | 27 | 9.0 |
 
 ### Playoffs

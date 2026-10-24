@@ -1,10 +1,10 @@
 # Josh Martin
 
-**Kansas City Chiefs · Outside linebacker · No. 95 · Age 22 · Last game October 5, 2014**
+**Kansas City Chiefs · Outside linebacker · No. 95 · Age 22 · Last game October 19, 2014**
 
 6' 3", 245 lb · Born November 7, 1991 · Columbia
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Josh Martin](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Martin.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve outside linebacker.
 
-**Tackles:** 2 (2014, through Week 5).
+**Tackles:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 22 | 95 | 5 | 2 | 1 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Kansas City | 22 | 95 | 6 | 2 | 1 | 1 | 0 | 0 | 0 |
 | 2013 | Kansas City | 21 | 95 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 8 | 2 | 1 | 1 | 0 | 0 | 0 |
+| Career |  |  |  | 9 | 2 | 1 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 22 | 95 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 7) | Kansas City | 22 | 95 | 0 | 0 | 0 | 0 | 0 | 2 |
 | 2013 | Kansas City | 21 | 95 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

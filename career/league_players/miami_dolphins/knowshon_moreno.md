@@ -1,10 +1,10 @@
 # Knowshon Moreno
 
-**Miami Dolphins · Running back · No. 28 · Age 27 · Last game October 12, 2014**
+**Miami Dolphins · Running back · No. 28 · Age 27 · Last game October 19, 2014**
 
 5' 11", 218 lb · Born July 16, 1987 · Georgia · Drafted in 2009, first round, by Denver
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Knowshon Moreno](https://commons.wikimedia.org/wiki/Special:FilePath/Knowshon-8602.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 5.7 (2014, through Week 6).
+**Yards per carry:** 5.4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 27 | 28 | 5 | 36 | 204 | 5.7 | 1 | 48 | 40.8 |
+| 2014 (through Week 7) | Miami | 27 | 28 | 6 | 41 | 222 | 5.4 | 2 | 48 | 37.0 |
 | 2013 | Denver | 26 | 27 | 16 | 19 | 89 | 4.7 | 0 | 15 | 5.6 |
-| Career |  |  |  | 21 | 55 | 293 | 5.3 | 1 | 48 | 14.0 |
+| Career |  |  |  | 22 | 60 | 311 | 5.2 | 2 | 48 | 14.1 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 27 | 28 | 10 | 6 | 64 | 10.7 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 27 | 28 | 10 | 6 | 64 | 10.7 | 1 | 0 | 0 |
 | 2013 | Denver | 26 | 27 | 1 | 1 | 9 | 9.0 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 27 | 28 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Miami | 27 | 28 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Denver | 26 | 27 | 2 | 32 | 16.0 | 1 | 2 | 2.0 |
 
 ### Playoffs

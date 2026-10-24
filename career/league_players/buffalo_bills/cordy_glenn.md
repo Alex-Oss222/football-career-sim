@@ -1,10 +1,10 @@
 # Cordy Glenn
 
-**Buffalo Bills · Offensive tackle · No. 77 · Age 25 · Last game October 12, 2014**
+**Buffalo Bills · Offensive tackle · No. 77 · Age 25 · Last game October 19, 2014**
 
 6' 6", 345 lb · Born September 18, 1989 · Georgia · Drafted in 2012, second round, by Buffalo
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Cordy Glenn](https://commons.wikimedia.org/wiki/Special:FilePath/Cordy_Glenn.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 1 (2014, through Week 6).
+**Sacks allowed:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 24 | 77 | 6 | 6 | 378 | 1 | 32 |
+| 2014 (through Week 7) | Buffalo | 24 | 77 | 7 | 7 | 457 | 1 | 37 |
 | 2013 | Buffalo | 23 | 77 | 16 | N/A | N/A | 1 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 2 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 

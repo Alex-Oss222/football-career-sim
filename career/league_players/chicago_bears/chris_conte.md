@@ -1,10 +1,10 @@
 # Chris Conte
 
-**Chicago Bears · Strong safety · No. 47 · Age 25 · Last game October 12, 2014**
+**Chicago Bears · Strong safety · No. 47 · Age 25 · Last game October 19, 2014**
 
 6' 2", 203 lb · Born February 23, 1989 · California · Drafted in 2011, third round, by Chicago
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Chris Conte](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Conte_%2815807903445%29_%281%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve strong safety.
 
-**Passes defended:** 0 (2014, through Week 6).
+**Passes defended:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 25 | 47 | 1 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Chicago | 25 | 47 | 2 | 1 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Chicago | 24 | 47 | 16 | 54 | 39 | 15 | 0 | 0 | 0 |
-| Career |  |  |  | 17 | 55 | 39 | 16 | 0 | 0 | 0 |
+| Career |  |  |  | 18 | 55 | 39 | 16 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 25 | 47 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Chicago | 25 | 47 | 0 | 0 | 0 | 0 | 0 | 2 |
 | 2013 | Chicago | 24 | 47 | 2 | 43 | 13 | 0 | 0 | N/A |
 
 ### Playoffs

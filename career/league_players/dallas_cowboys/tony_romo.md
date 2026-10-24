@@ -1,10 +1,10 @@
 # Tony Romo
 
-**Dallas Cowboys · Quarterback · No. 9 · Age 34 · Last game October 12, 2014**
+**Dallas Cowboys · Quarterback · No. 9 · Age 34 · Last game October 19, 2014**
 
 6' 2", 230 lb · Born April 21, 1980 · Eastern Illinois
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Tony Romo](https://commons.wikimedia.org/wiki/Special:FilePath/Tony_Romo_before_2008_Pro_Bowl_%28cropped%29.JPEG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 83.7 (2014, through Week 6).
+**Passer rating:** 86.5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 34 | 9 | 6 | 138 | 209 | 66.0 | 1,536 | 7.3 | 256.0 | 5 | 6 | 83.7 |
+| 2014 (through Week 7) | Dallas | 34 | 9 | 7 | 158 | 239 | 66.1 | 1,823 | 7.6 | 260.4 | 7 | 7 | 86.5 |
 | 2013 | Dallas | 33 | 9 | 16 | 344 | 551 | 62.4 | 3,888 | 7.1 | 243.0 | 26 | 12 | 90.2 |
-| Career |  |  |  | 22 | 482 | 760 | 63.4 | 5,424 | 7.1 | 246.5 | 31 | 18 | 88.4 |
+| Career |  |  |  | 23 | 502 | 790 | 63.5 | 5,711 | 7.2 | 248.3 | 33 | 19 | 89.1 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 34 | 9 | 13 | 91 | 19 | 46 | 1 | 2 | 2 |
+| 2014 (through Week 7) | Dallas | 34 | 9 | 13 | 91 | 21 | 56 | 1 | 2 | 2 |
 | 2013 | Dallas | 33 | 9 | 28 | 183 | 46 | 290 | 1 | 0 | 0 |
 
 ### Playoffs

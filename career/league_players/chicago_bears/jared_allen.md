@@ -1,10 +1,10 @@
 # Jared Allen
 
-**Chicago Bears · Defensive end · No. 69 · Age 32 · Last game October 12, 2014**
+**Chicago Bears · Defensive end · No. 69 · Age 32 · Last game October 19, 2014**
 
 6' 6", 270 lb · Born April 3, 1982 · Idaho State · Drafted in 2004, fourth round, by Kansas City
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jared Allen](https://commons.wikimedia.org/wiki/Special:FilePath/Jared_Allen_2009.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 10 (2014, through Week 6).
+**Sacks:** 11 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 32 | 69 | 6 | 43 | 37 | 6 | 6 | 10 | 15 |
+| 2014 (through Week 7) | Chicago | 32 | 69 | 7 | 51 | 44 | 7 | 6 | 11 | 16 |
 | 2013 | Minnesota | 31 | 69 | 16 | 89 | 63 | 26 | 8 | 9 | 17 |
-| Career |  |  |  | 22 | 132 | 100 | 32 | 14 | 19 | 32 |
+| Career |  |  |  | 23 | 140 | 107 | 33 | 14 | 20 | 33 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 32 | 69 | 0 | 0 | 4 | 1 | 1 | 0 |
+| 2014 (through Week 7) | Chicago | 32 | 69 | 0 | 0 | 4 | 1 | 1 | 0 |
 | 2013 | Minnesota | 31 | 69 | 0 | 0 | 7 | 1 | 1 | N/A |
 
 ### Playoffs

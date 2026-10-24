@@ -1,10 +1,10 @@
 # Charlie Johnson
 
-**Minnesota Vikings · Guard · No. 74 · Age 30 · Last game October 12, 2014**
+**Minnesota Vikings · Guard · No. 74 · Age 30 · Last game October 19, 2014**
 
 6' 4", 305 lb · Born May 2, 1984 · Oklahoma State · Drafted in 2006, sixth round, by Indianapolis
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Charlie Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Charlie_Johnson.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 4 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 30 | 74 | 6 | 6 | 377 | 4 | 17 |
+| 2014 (through Week 7) | Minnesota | 30 | 74 | 7 | 7 | 434 | 4 | 20 |
 | 2013 | Minnesota | 29 | 74 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

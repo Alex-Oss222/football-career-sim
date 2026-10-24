@@ -1,10 +1,10 @@
 # Ra'Shede Hageman
 
-**Atlanta Falcons · Defensive tackle · No. 77 · Age 24 · Last game October 12, 2014**
+**Atlanta Falcons · Defensive tackle · No. 77 · Age 24 · Last game October 19, 2014**
 
 6' 6", 318 lb · Born August 8, 1990 · Minnesota
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Ra'Shede Hageman](https://commons.wikimedia.org/wiki/Special:FilePath/2013-0427-RaSheedHageman1.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 1 (2014, through Week 6).
+**Sacks:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 24 | 77 | 6 | 2 | 1 | 1 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Atlanta | 24 | 77 | 7 | 2 | 1 | 1 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 24 | 77 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Atlanta | 24 | 77 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

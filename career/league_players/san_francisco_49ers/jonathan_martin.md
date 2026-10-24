@@ -1,10 +1,10 @@
 # Jonathan Martin
 
-**San Francisco 49ers · Offensive tackle · No. 71 · Age 25 · Last game October 13, 2014**
+**San Francisco 49ers · Offensive tackle · No. 71 · Age 25 · Last game October 19, 2014**
 
 6' 5", 312 lb · Born August 19, 1989 · Stanford · Drafted in 2012, second round, by Miami
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jonathan Martin](https://commons.wikimedia.org/wiki/Special:FilePath/Jonathan_Martin_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Reserve right tackle.
 
-**Sacks allowed:** 0 (2014, through Week 6).
+**Sacks allowed:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 25 | 71 | 3 | 1 | 74 | 0 | 6 |
+| 2014 (through Week 7) | San Francisco | 25 | 71 | 4 | 1 | 74 | 0 | 6 |
 | 2013 | Miami | 24 | 71 | 14 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 17 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 18 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

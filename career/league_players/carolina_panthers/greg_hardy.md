@@ -1,10 +1,10 @@
 # Greg Hardy
 
-**Carolina Panthers · Defensive end · No. 76 · Age 26 · Last game October 12, 2014**
+**Carolina Panthers · Defensive end · No. 76 · Age 26 · Last game October 19, 2014**
 
 6' 4", 275 lb · Born July 28, 1988 · Mississippi · Drafted in 2010, sixth round, by Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Greg Hardy](https://commons.wikimedia.org/wiki/Special:FilePath/Greg_hardy_2015.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 5 (2014, through Week 6).
+**Sacks:** 6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 26 | 76 | 6 | 36 | 23 | 13 | 4 | 5 | 5 |
+| 2014 (through Week 7) | Carolina | 26 | 76 | 7 | 42 | 28 | 14 | 5 | 6 | 6 |
 | 2013 | Carolina | 25 | 76 | 16 | 75 | 57 | 18 | 7 | 8 | 19 |
-| Career |  |  |  | 22 | 111 | 80 | 31 | 11 | 13 | 24 |
+| Career |  |  |  | 23 | 117 | 85 | 32 | 12 | 14 | 25 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 26 | 76 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Carolina | 26 | 76 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Carolina | 25 | 76 | 1 | 26 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

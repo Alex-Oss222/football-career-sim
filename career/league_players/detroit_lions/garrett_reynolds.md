@@ -1,10 +1,10 @@
 # Garrett Reynolds
 
-**Detroit Lions · Guard · No. 70 · Age 27 · Last game October 12, 2014**
+**Detroit Lions · Guard · No. 70 · Age 27 · Last game October 19, 2014**
 
 6' 7", 305 lb · Born July 1, 1987 · North Carolina · Drafted in 2009, fifth round, by Atlanta
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ## Contract
 
@@ -16,9 +16,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Detroit | 27 | 70 | 2 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Detroit | 27 | 70 | 3 | 0 | 0 | 0 | 0 |
 | 2013 | Atlanta | 26 | 75 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 18 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 19 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 

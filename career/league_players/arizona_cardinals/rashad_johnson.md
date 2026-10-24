@@ -1,10 +1,10 @@
 # Rashad Johnson
 
-**Arizona Cardinals · Free safety · No. 26 · Age 28 · Last game October 12, 2014**
+**Arizona Cardinals · Free safety · No. 26 · Age 28 · Last game October 19, 2014**
 
 5' 11", 204 lb · Born January 2, 1986 · Alabama · Drafted in 2009, third round, by Arizona
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Rashad Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Rashad_Johnson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve free safety.
 
-**Passes defended:** 0 (2014, through Week 6).
+**Passes defended:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 28 | 26 | 5 | 4 | 2 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Arizona | 28 | 26 | 6 | 4 | 2 | 2 | 0 | 0 | 0 |
 | 2013 | Arizona | 27 | 26 | 16 | 43 | 25 | 18 | 1 | 0 | 1 |
-| Career |  |  |  | 21 | 47 | 27 | 20 | 1 | 0 | 1 |
+| Career |  |  |  | 22 | 47 | 27 | 20 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 28 | 26 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 7) | Arizona | 28 | 26 | 0 | 0 | 0 | 0 | 0 | 2 |
 | 2013 | Arizona | 27 | 26 | 1 | 17 | 9 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,14 +1,14 @@
 # Dri Archer
 
-**Pittsburgh Steelers · Running back · No. 13 · Age 23 · Last game October 12, 2014**
+**Pittsburgh Steelers · Running back · No. 13 · Age 23 · Last game October 20, 2014**
 
 5' 8", 173 lb · Born August 9, 1991 · Kent State
 
-As of October 12, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 3.8 (2014, through Week 6).
+**Yards per carry:** 3.0 (2014, through Week 7).
 
 ## Contract
 
@@ -20,15 +20,15 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 23 | 13 | 6 | 6 | 23 | 3.8 | 0 | 15 | 3.8 |
+| 2014 (through Week 7) | Pittsburgh | 23 | 13 | 7 | 7 | 21 | 3.0 | 0 | 15 | 3.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 23 | 13 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Pittsburgh | 23 | 13 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 23 | 13 | 21 | 477 | 22.7 | 0 | 0 | N/A |
+| 2014 (through Week 7) | Pittsburgh | 23 | 13 | 23 | 515 | 22.4 | 0 | 0 | N/A |
 
 ### Playoffs
 

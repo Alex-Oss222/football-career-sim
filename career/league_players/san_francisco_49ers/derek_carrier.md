@@ -1,10 +1,10 @@
 # Derek Carrier
 
-**San Francisco 49ers · Tight end · No. 46 · Age 24 · Last game October 13, 2014**
+**San Francisco 49ers · Tight end · No. 46 · Age 24 · Last game October 19, 2014**
 
 6' 4", 241 lb · Born July 25, 1990 · Beloit College
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Derek Carrier](https://commons.wikimedia.org/wiki/Special:FilePath/Derek_Carrier.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 24 | 46 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 7) | San Francisco | 24 | 46 | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

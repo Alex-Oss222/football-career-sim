@@ -1,10 +1,10 @@
 # DeMarco Murray
 
-**Dallas Cowboys · Running back · No. 29 · Age 26 · Last game October 12, 2014**
+**Dallas Cowboys · Running back · No. 29 · Age 26 · Last game October 19, 2014**
 
 6' 0", 217 lb · Born February 12, 1988 · Oklahoma · Drafted in 2011, third round, by Dallas
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![DeMarco Murray](https://commons.wikimedia.org/wiki/Special:FilePath/Demarco_Murray_2012_cropped.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 3.8 (2014, through Week 6).
+**Yards per carry:** 3.9 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 26 | 29 | 6 | 69 | 265 | 3.8 | 2 | 38 | 44.2 |
+| 2014 (through Week 7) | Dallas | 26 | 29 | 7 | 85 | 335 | 3.9 | 3 | 38 | 47.9 |
 | 2013 | Dallas | 25 | 29 | 16 | 278 | 1,102 | 4.0 | 12 | 29 | 68.9 |
-| Career |  |  |  | 22 | 347 | 1,367 | 3.9 | 14 | 38 | 62.1 |
+| Career |  |  |  | 23 | 363 | 1,437 | 4.0 | 15 | 38 | 62.5 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 26 | 29 | 23 | 15 | 173 | 11.5 | 1 | 1 | 1 |
+| 2014 (through Week 7) | Dallas | 26 | 29 | 24 | 15 | 173 | 11.5 | 1 | 1 | 1 |
 | 2013 | Dallas | 25 | 29 | 78 | 47 | 637 | 13.6 | 5 | 2 | 2 |
 
 ### Playoffs

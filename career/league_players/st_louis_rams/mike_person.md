@@ -1,10 +1,10 @@
 # Mike Person
 
-**St. Louis Rams · Guard · No. 73 · Age 26 · Last game October 13, 2014**
+**St. Louis Rams · Guard · No. 73 · Age 26 · Last game October 19, 2014**
 
 6' 4", 299 lb · Born June 17, 1988 · Montana State · Drafted in 2011, seventh round, by San Francisco
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Mike Person](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Person.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Reserve right guard.
 
-**Sacks allowed:** 0 (2014, through Week 6).
+**Sacks allowed:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 26 | 73 | 4 | 0 | 40 | 0 | 2 |
+| 2014 (through Week 7) | St. Louis | 26 | 73 | 5 | 0 | 40 | 0 | 8 |
 | 2013 | Seattle | 25 | N/A | 4 | N/A | N/A | 1 | N/A |
-| Career |  |  |  | 8 | N/A | N/A | 1 | N/A |
+| Career |  |  |  | 9 | N/A | N/A | 1 | N/A |
 
 ### Playoffs
 

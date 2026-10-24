@@ -1,10 +1,10 @@
 # J.J. Wilcox
 
-**Dallas Cowboys · Free safety · No. 27 · Age 23 · Last game October 12, 2014**
+**Dallas Cowboys · Free safety · No. 27 · Age 23 · Last game October 19, 2014**
 
 6' 0", 212 lb · Born February 14, 1991 · Georgia Southern
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![J.J. Wilcox](https://commons.wikimedia.org/wiki/Special:FilePath/J.J._Wilcox.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 3 (2014, through Week 6).
+**Passes defended:** 3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 23 | 27 | 5 | 20 | 12 | 8 | 2 | 0 | 0 |
+| 2014 (through Week 7) | Dallas | 23 | 27 | 5 | 20 | 12 | 8 | 2 | 0 | 0 |
 | 2013 | Dallas | 22 | 27 | 16 | 12 | 3 | 9 | 0 | 0 | 0 |
 | Career |  |  |  | 21 | 32 | 15 | 17 | 2 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 23 | 27 | 1 | 9 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Dallas | 23 | 27 | 1 | 9 | 3 | 0 | 0 | 0 |
 | 2013 | Dallas | 22 | 27 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

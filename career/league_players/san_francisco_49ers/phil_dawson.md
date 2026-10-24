@@ -1,10 +1,10 @@
 # Phil Dawson
 
-**San Francisco 49ers · Kicker · No. 9 · Age 39 · Last game October 13, 2014**
+**San Francisco 49ers · Kicker · No. 9 · Age 39 · Last game October 19, 2014**
 
 5' 11", 200 lb · Born January 23, 1975 · Texas
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Phil Dawson](https://commons.wikimedia.org/wiki/Special:FilePath/Phil_Dawson_2014.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 42.9 (2014, through Week 6).
+**Field-goal percentage:** 42.9 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 39 | 9 | 6 | 6 | 14 | 42.9 | 48 | 16 | 16 | 100.0 | 34 |
+| 2014 (through Week 7) | San Francisco | 39 | 9 | 7 | 6 | 14 | 42.9 | 48 | 19 | 19 | 100.0 | 37 |
 | 2013 | San Francisco | 38 | 9 | 16 | 22 | 28 | 78.6 | N/A | 32 | 32 | 100.0 | 98 |
-| Career |  |  |  | 22 | 28 | 42 | 66.7 | N/A | 48 | 48 | 100.0 | 132 |
+| Career |  |  |  | 23 | 28 | 42 | 66.7 | N/A | 51 | 51 | 100.0 | 135 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 39 | 9 | 3-4 | 3-7 | 0-3 |
+| 2014 (through Week 7) | San Francisco | 39 | 9 | 3-4 | 3-7 | 0-3 |
 | 2013 | San Francisco | 38 | 9 | N/A | N/A | N/A |
 
 ### Playoffs

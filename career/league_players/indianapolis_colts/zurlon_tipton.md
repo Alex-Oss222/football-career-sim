@@ -1,12 +1,12 @@
 # Zurlon Tipton
 
-**Indianapolis Colts · Running back · No. 37 · Age 25 · Last game October 9, 2014**
+**Indianapolis Colts · Running back · No. 37 · Age 25 · Last game October 19, 2014**
 
 6' 0", 231 lb · Born April 27, 1989 · Central Michigan
 
-As of October 9, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
-**Yards per carry:** 5.5 (2014, through Week 6).
+**Yards per carry:** 5.5 (2014, through Week 7).
 
 ## Contract
 
@@ -18,11 +18,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 25 | 37 | 4 | 2 | 11 | 5.5 | 0 | 9 | 2.8 |
+| 2014 (through Week 7) | Indianapolis | 25 | 37 | 4 | 2 | 11 | 5.5 | 0 | 9 | 2.8 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 25 | 37 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 7) | Indianapolis | 25 | 37 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 

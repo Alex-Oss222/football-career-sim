@@ -4,7 +4,7 @@
 
 6' 1", 195 lb · Born November 12, 1991 · Miami · Undrafted
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Allen Hurns](https://commons.wikimedia.org/wiki/Special:FilePath/Allen_Hurns.jpg?width=500)
 
@@ -12,13 +12,13 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** First relief receiver.
 
-**Yards per target:** 8.7 (2014, through Week 6).
+**Yards per target:** 9.4 (2014, through Week 7).
 
 ## Staff assessment
 
-Allen Hurns is an undrafted rookie from Miami who has been active for six games, with five catches for 61 yards and four special-teams tackles. He is a tall outside receiver with body control along the boundary, and he was productive as a senior. On Stone's chart for the Pittsburgh game he was the first relief receiver and the second punt returner, behind Andrew Hawkins. His speed is average, and creating separation is his main limitation.
+Allen Hurns is an undrafted rookie from Miami who has been active for seven games, with six catches for 75 yards and four special-teams tackles. He is a tall outside receiver with body control along the boundary, and he was productive as a senior. On Stone's chart for the Pittsburgh game he was the first relief receiver and the second punt returner, behind Andrew Hawkins. His speed is average, and creating separation is his main limitation.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 12.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 19.*
 
 ## Contract
 
@@ -36,7 +36,7 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 22 | 88 | 6 | 7 | 5 | 61 | 12.2 | 0 | 32 | 10.2 | 71.4 |
+| 2014 (through Week 7) | Jacksonville | 22 | 88 | 7 | 8 | 6 | 75 | 12.5 | 0 | 32 | 10.7 | 75.0 |
 
 ### Playoffs
 

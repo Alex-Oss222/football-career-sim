@@ -1,10 +1,10 @@
 # Dan Herron
 
-**Indianapolis Colts · Running back · No. 36 · Age 25 · Last game October 9, 2014**
+**Indianapolis Colts · Running back · No. 36 · Age 25 · Last game October 19, 2014**
 
 5' 10", 212 lb · Born March 21, 1989 · Ohio State · Drafted in 2012, sixth round, by Cincinnati
 
-As of October 9, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Dan Herron](https://commons.wikimedia.org/wiki/Special:FilePath/Dan_Herron.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 9, 2014, after Week 6.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 5.5 (2014, through Week 6).
+**Yards per carry:** 4.7 (2014, through Week 7).
 
 ## Contract
 
@@ -24,15 +24,15 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 25 | 36 | 6 | 12 | 66 | 5.5 | 1 | 13 | 11.0 |
+| 2014 (through Week 7) | Indianapolis | 25 | 36 | 7 | 18 | 85 | 4.7 | 1 | 13 | 12.1 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 25 | 36 | 3 | 3 | 26 | 8.7 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Indianapolis | 25 | 36 | 5 | 3 | 26 | 8.7 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 25 | 36 | 17 | 397 | 23.4 | 0 | 0 | N/A |
+| 2014 (through Week 7) | Indianapolis | 25 | 36 | 22 | 544 | 24.7 | 0 | 0 | N/A |
 
 ### Playoffs
 

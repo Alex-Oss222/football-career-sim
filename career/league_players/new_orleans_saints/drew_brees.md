@@ -1,10 +1,10 @@
 # Drew Brees
 
-**New Orleans Saints · Quarterback · No. 9 · Age 35 · Last game October 5, 2014**
+**New Orleans Saints · Quarterback · No. 9 · Age 35 · Last game October 19, 2014**
 
 6' 0", 209 lb · Born January 15, 1979 · Purdue · Drafted in 2001, second round, by San Diego
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Drew Brees](https://commons.wikimedia.org/wiki/Special:FilePath/Drew_Brees_%2849396271982%29_%281%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 92.4 (2014, through Week 5).
+**Passer rating:** 96.1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 35 | 9 | 5 | 105 | 175 | 60.0 | 1,414 | 8.1 | 282.8 | 6 | 2 | 92.4 |
+| 2014 (through Week 7) | New Orleans | 35 | 9 | 6 | 128 | 208 | 61.5 | 1,714 | 8.2 | 285.7 | 9 | 3 | 96.1 |
 | 2013 | New Orleans | 34 | 9 | 9 | 207 | 317 | 65.3 | 2,158 | 6.8 | 239.8 | 11 | 12 | 80.7 |
-| Career |  |  |  | 14 | 312 | 492 | 63.4 | 3,572 | 7.3 | 255.1 | 17 | 14 | 84.8 |
+| Career |  |  |  | 15 | 335 | 525 | 63.8 | 3,872 | 7.4 | 258.1 | 20 | 15 | 86.8 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 35 | 9 | 9 | 53 | 19 | 71 | 1 | 3 | 3 |
+| 2014 (through Week 7) | New Orleans | 35 | 9 | 11 | 79 | 23 | 83 | 1 | 3 | 3 |
 | 2013 | New Orleans | 34 | 9 | 17 | 106 | 27 | 60 | 0 | 0 | 0 |
 
 ### Playoffs

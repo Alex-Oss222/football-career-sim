@@ -1,10 +1,10 @@
 # Landry Jones
 
-**Pittsburgh Steelers · Quarterback · No. 3 · Age 25 · Last game October 12, 2014**
+**Pittsburgh Steelers · Quarterback · No. 3 · Age 25 · Last game October 20, 2014**
 
 6' 3", 221 lb · Born April 4, 1989 · Oklahoma
 
-As of October 12, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Landry Jones](https://commons.wikimedia.org/wiki/Special:FilePath/OklahomaSooners-TulsaGoldenHurricane-2009-LandryJones-Throw.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 25 | 3 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 7) | Pittsburgh | 25 | 3 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Pittsburgh | 24 | 3 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 22 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 23 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 25 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Pittsburgh | 25 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Pittsburgh | 24 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Justin Tuck
 
-**Oakland Raiders · Defensive end · No. 91 · Age 31 · Last game October 12, 2014**
+**Oakland Raiders · Defensive end · No. 91 · Age 31 · Last game October 19, 2014**
 
 6' 5", 265 lb · Born March 29, 1983 · Notre Dame · Drafted in 2005, third round, by the New York Giants
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Justin Tuck](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Tuck_at_the_NY_Knicks_vs_Miami_Heat_%28May_2012%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 2 (2014, through Week 6).
+**Sacks:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 31 | 91 | 5 | 15 | 13 | 2 | 3 | 2 | 4 |
+| 2014 (through Week 7) | Oakland | 31 | 91 | 6 | 18 | 15 | 3 | 3 | 2 | 4 |
 | 2013 | N.Y. Giants | 30 | 91 | 12 | 46 | 32 | 14 | 4 | 4 | 7 |
-| Career |  |  |  | 17 | 61 | 45 | 16 | 7 | 6 | 11 |
+| Career |  |  |  | 18 | 64 | 47 | 17 | 7 | 6 | 11 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 31 | 91 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Oakland | 31 | 91 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | N.Y. Giants | 30 | 91 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

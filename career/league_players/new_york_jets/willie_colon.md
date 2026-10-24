@@ -1,10 +1,10 @@
 # Willie Colon
 
-**New York Jets · Guard · No. 66 · Age 31 · Last game October 12, 2014**
+**New York Jets · Guard · No. 66 · Age 31 · Last game October 16, 2014**
 
 6' 3", 315 lb · Born April 9, 1983 · Hofstra · Drafted in 2006, fourth round, by Pittsburgh
 
-As of October 12, 2014, after Week 6.
+As of October 16, 2014, after Week 7.
 
 ![Willie Colon](https://commons.wikimedia.org/wiki/Special:FilePath/Willie_Colon_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 4 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Jets | 31 | 66 | 6 | 6 | 384 | 4 | 23 |
+| 2014 (through Week 7) | N.Y. Jets | 31 | 66 | 7 | 7 | 450 | 4 | 29 |
 | 2013 | N.Y. Jets | 30 | 66 | 16 | N/A | N/A | 1 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Johnny Hekker
 
-**St. Louis Rams · Punter · No. 6 · Age 24 · Last game October 13, 2014**
+**St. Louis Rams · Punter · No. 6 · Age 24 · Last game October 19, 2014**
 
 6' 5", 236 lb · Born February 8, 1990 · Oregon State
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Johnny Hekker](https://commons.wikimedia.org/wiki/Special:FilePath/Johnny_Hekker.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 40.7 (2014, through Week 6).
+**Net punting average:** 41.3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 24 | 6 | 5 | 27 | 1,210 | 44.8 | 40.7 | 9 | 2 | 63 |
+| 2014 (through Week 7) | St. Louis | 24 | 6 | 6 | 30 | 1,362 | 45.4 | 41.3 | 10 | 2 | 63 |
 | 2013 | St. Louis | 23 | 6 | 16 | 77 | 3,498 | 45.4 | 40.2 | 25 | 1 | 66 |
-| Career |  |  |  | 21 | 104 | 4,708 | 45.3 | 40.4 | 34 | 3 | 66 |
+| Career |  |  |  | 22 | 107 | 4,860 | 45.4 | 40.5 | 35 | 3 | 66 |
 
 ### Playoffs
 

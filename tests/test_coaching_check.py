@@ -38,6 +38,7 @@ from local_private_service import local_service  # noqa: E402
 
 SEASON = lc._season(ROOT)
 METHOD = lc.load_method(SEASON, ROOT)
+JAX = "Jacksonville Jaguars"
 MASTER = re.compile(r"\| Master date/time \| [^|]* \|")
 
 
@@ -79,8 +80,11 @@ def close_next_week(root):
 
 def at_close_of(root, week):
     """Put the copy at the close of ``week``: the weeks up to it closed (a synthetic close for any not
-    yet closed), the receipts and practice records of later weeks removed, and the master date on the
-    day of the week's last game. The next week's brief and items stay as the copy has them."""
+    yet closed), the receipts and practice records of later weeks removed, and the master date where
+    the real close leaves it, on the day of Jacksonville's game (the week's last game in a week
+    Jacksonville does not play). The week's last game can be a Monday game on the day of the next
+    week's Monday walkthrough, which a master date on that day would count as the next practice week
+    opened. The next week's brief and items stay as the copy has them."""
     paths = SeasonPaths(SEASON, root)
     while max(lc.closed_weeks(SEASON, root)) < week:
         close_next_week(root)
@@ -89,9 +93,28 @@ def at_close_of(root, week):
             receipt.unlink()
     for later in range(week + 1, 18):
         paths.practice_log(later).unlink(missing_ok=True)
-    last = max(date.fromisoformat(g["date"]) for g in paths.regular_games() if g["week"] == week)
-    set_master(root, last, "after the week's last game (test)")
+    games = [g for g in paths.regular_games() if g["week"] == week]
+    ours = [g for g in games if JAX in (g["away"], g["home"])]
+    day = max(date.fromisoformat(g["date"]) for g in (ours or games))
+    set_master(root, day, "after the week's game (test)")
     return week
+
+
+def before_the_first_check(root):
+    """Put a full copy back before the season's first weekly check: the recorded checks, the change
+    pages and their index, the stored news and the annual record's change lines removed. The other
+    pages that link a change page keep their links; nothing the check reads follows them."""
+    for path in lc.data_folder(SEASON, root).glob("week_*.json"):
+        path.unlink()
+    for path in lc.folder(SEASON, root).glob("*.md"):
+        path.unlink()
+    for news in lc.stored_news(SEASON, root):
+        (lc.event_store(lc.KIND, SEASON, root) / ("%s.json" % news)).unlink()
+    record = SeasonPaths(SEASON, root).annual_record
+    folder = lc.folder(SEASON, root).relative_to(record.parent).as_posix()
+    lines = record.read_text(encoding="utf-8").splitlines(keepends=True)
+    record.write_text("".join(line for line in lines if "](%s/" % folder not in line), encoding="utf-8")
+    assert not lc.checks(SEASON, root) and not lc.stored_news(SEASON, root)
 
 
 def set_master(root, day, words):
@@ -190,8 +213,12 @@ class HazardTableTests(unittest.TestCase):
             if "games.csv" in str(file):
                 raise AssertionError("games.csv opened at run time")
             return real_open(file, *args, **kwargs)
+        # In a copy with no check recorded, so the plan has every closed week to draw.
+        tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
+        self.addCleanup(tmp.cleanup)
+        root = minimal_root(tmp.name)
         with patch("builtins.open", guarded), patch("io.open", guarded):
-            method, weeks = coaching_check.plan(SEASON, max(lc.closed_weeks(SEASON, ROOT)), ROOT)
+            method, weeks = coaching_check.plan(SEASON, max(lc.closed_weeks(SEASON, root)), root)
         self.assertTrue(weeks)
 
 
@@ -552,6 +579,7 @@ class AnnualRecordHistoryTests(unittest.TestCase):
         self.addCleanup(tmp.cleanup)
         root = Path(tmp.name) / "repo"
         shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns(".git", ".sim_cache", "__pycache__"), symlinks=True)
+        before_the_first_check(root)
         store, client = local_service(self, Path(tmp.name), "annual-record")
         paths = SeasonPaths(SEASON, root)
         record_md = paths.annual_record.read_bytes()

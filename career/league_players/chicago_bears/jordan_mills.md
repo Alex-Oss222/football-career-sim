@@ -1,10 +1,10 @@
 # Jordan Mills
 
-**Chicago Bears · Offensive tackle · No. 67 · Age 23 · Last game October 12, 2014**
+**Chicago Bears · Offensive tackle · No. 67 · Age 23 · Last game October 19, 2014**
 
 6' 5", 316 lb · Born December 24, 1990 · Louisiana Tech
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jordan Mills](https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Mills_bears.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 3 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 23 | 67 | 6 | 6 | 400 | 3 | 25 |
+| 2014 (through Week 7) | Chicago | 23 | 67 | 7 | 7 | 465 | 4 | 31 |
 | 2013 | Chicago | 22 | 67 | 16 | N/A | N/A | 9 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 12 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 13 | N/A |
 
 ### Playoffs
 

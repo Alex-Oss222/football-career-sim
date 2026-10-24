@@ -1,10 +1,10 @@
 # Andy Studebaker
 
-**Indianapolis Colts · Outside linebacker · No. 58 · Age 29 · Last game October 9, 2014**
+**Indianapolis Colts · Outside linebacker · No. 58 · Age 29 · Last game October 19, 2014**
 
 6' 3", 255 lb · Born September 16, 1985 · Wheaton College Illinois · Drafted in 2008, sixth round, by Philadelphia
 
-As of October 9, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Andy Studebaker](https://commons.wikimedia.org/wiki/Special:FilePath/Andy_Studebaker.JPG?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 28 | 58 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Indianapolis | 28 | 58 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 28 | 58 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Indianapolis | 28 | 58 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

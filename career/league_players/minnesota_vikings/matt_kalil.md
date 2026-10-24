@@ -1,10 +1,10 @@
 # Matt Kalil
 
-**Minnesota Vikings · Offensive tackle · No. 75 · Age 25 · Last game October 12, 2014**
+**Minnesota Vikings · Offensive tackle · No. 75 · Age 25 · Last game October 19, 2014**
 
 6' 7", 308 lb · Born July 6, 1989 · USC · Drafted in 2012, first round, by Minnesota
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Matt Kalil](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Kalil_USC.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 4 (2014, through Week 6).
+**Sacks allowed:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 25 | 75 | 6 | 6 | 377 | 4 | 17 |
+| 2014 (through Week 7) | Minnesota | 25 | 75 | 7 | 7 | 434 | 5 | 20 |
 | 2013 | Minnesota | 24 | 75 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 11 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 12 | N/A |
 
 ### Playoffs
 

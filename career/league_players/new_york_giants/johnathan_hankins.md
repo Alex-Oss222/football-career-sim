@@ -1,10 +1,10 @@
 # Johnathan Hankins
 
-**New York Giants · Defensive tackle · No. 95 · Age 22 · Last game October 12, 2014**
+**New York Giants · Defensive tackle · No. 95 · Age 22 · Last game October 19, 2014**
 
 6' 2", 320 lb · Born March 30, 1992 · Ohio State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Johnathan Hankins](https://commons.wikimedia.org/wiki/Special:FilePath/Johnathan_Hankins_2016.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 22 | 95 | 6 | 12 | 6 | 6 | 1 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Giants | 22 | 95 | 7 | 14 | 7 | 7 | 1 | 0 | 0 |
 | 2013 | N.Y. Giants | 21 | 96 | 15 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 21 | 12 | 6 | 6 | 1 | 0 | 0 |
+| Career |  |  |  | 22 | 14 | 7 | 7 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 22 | 95 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2014 (through Week 7) | N.Y. Giants | 22 | 95 | 0 | 0 | 0 | 1 | 1 | 0 |
 | 2013 | N.Y. Giants | 21 | 96 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

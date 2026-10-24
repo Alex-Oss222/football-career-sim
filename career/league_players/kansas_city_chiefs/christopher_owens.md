@@ -1,10 +1,10 @@
 # Christopher Owens
 
-**Kansas City Chiefs · Cornerback · No. 20 · Age 27 · Last game October 5, 2014**
+**Kansas City Chiefs · Cornerback · No. 20 · Age 27 · Last game October 19, 2014**
 
 5' 9", 180 lb · Born December 1, 1986 · San Jose State · Drafted in 2009, third round, by Atlanta
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Christopher Owens](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Owens_at_2013_Browns_training_camp.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 27 | 20 | 5 | 5 | 4 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Kansas City | 27 | 20 | 6 | 9 | 8 | 1 | 0 | 0 | 0 |
 | 2013 | Cleveland | 26 | N/A | 16 | 40 | 24 | 16 | 2 | 0 | 0 |
-| Career |  |  |  | 21 | 45 | 28 | 17 | 2 | 0 | 0 |
+| Career |  |  |  | 22 | 49 | 32 | 17 | 2 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 27 | 20 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 7) | Kansas City | 27 | 20 | 0 | 0 | 0 | 0 | 0 | 2 |
 | 2013 | Cleveland | 26 | N/A | 1 | 2 | 5 | 0 | 0 | N/A |
 
 ### Playoffs

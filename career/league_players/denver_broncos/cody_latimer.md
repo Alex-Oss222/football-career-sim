@@ -1,10 +1,10 @@
 # Cody Latimer
 
-**Denver Broncos · Wide receiver · No. 14 · Age 22 · Last game October 12, 2014**
+**Denver Broncos · Wide receiver · No. 14 · Age 22 · Last game October 19, 2014**
 
 6' 2", 215 lb · Born October 10, 1992 · Indiana
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Cody Latimer](https://commons.wikimedia.org/wiki/Special:FilePath/Cody_Latimer_2014.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 10.4 (2014, through Week 6).
+**Yards per target:** 10.4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,15 +24,15 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 21 | 14 | 5 | 8 | 4 | 83 | 20.8 | 0 | 52 | 16.6 | 50.0 |
+| 2014 (through Week 7) | Denver | 21 | 14 | 6 | 8 | 4 | 83 | 20.8 | 0 | 52 | 13.8 | 50.0 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 21 | 14 | 1 | -3 | 0 | 1 | 0 |
+| 2014 (through Week 7) | Denver | 21 | 14 | 1 | -3 | 0 | 1 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 21 | 14 | 0 | 0 | N/A | 3 | 27 | 9.0 |
+| 2014 (through Week 7) | Denver | 21 | 14 | 0 | 0 | N/A | 5 | 36 | 7.2 |
 
 ### Playoffs
 
