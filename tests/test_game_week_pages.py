@@ -55,7 +55,11 @@ class RegistryTests(unittest.TestCase):
             brief = re.sub(r"\s*\(.*\)$", "", row[1])
             self.assertIn((row[0], brief, row[2], row[3]), named)
         self.assertEqual(len(rows), len(decisions.REGISTRY))
-        self.assertEqual([d.kind for d in decisions.REGISTRY if d.implemented], ["game_week"])
+        self.assertEqual([d.kind for d in decisions.REGISTRY if d.implemented], ["game_week", "bye_week"])
+        # Step 5 built the injury replacement, trade talks (short of executing a trade) and the news of
+        # another club's head-coach change; the step 6 events wait.
+        self.assertEqual([e.kind for e in decisions.EVENTS + decisions.NEWS if e.implemented],
+                         ["injury_replacement", "trade_talks", "head_coach_change"])
         # The season's own page, apart from any week's My Responses page.
         self.assertEqual(decisions.BY_KIND["season_end"].page, "My Season Response")
         self.assertNotIn(decisions.RESPONSES, [d.page for d in decisions.REGISTRY])
@@ -72,12 +76,20 @@ class RegistryTests(unittest.TestCase):
         self.assertEqual({e.step for e in decisions.EVENTS if e.kind in ("injury_replacement", "trade_talks")}, {5})
         self.assertEqual({e.step for e in decisions.EVENTS if e.kind not in ("injury_replacement", "trade_talks")}, {6})
         self.assertFalse(set(decisions.EVENT_KIND) & set(decisions.BY_KIND))
-        # Every owner folder the plan names resolves through the folder map.
+        # News (an event decided outside Jacksonville) is a kind of its own, built in step 5.
+        self.assertFalse(set(decisions.NEWS_KIND) & (set(decisions.EVENT_KIND) | set(decisions.BY_KIND)))
+        self.assertEqual({e.step for e in decisions.NEWS}, {5})
+        # Every owner folder resolves through the folder map; one that an event uses, or that exists,
+        # is a folder the plan names (a news owner's folder comes with its first page).
         text = (ROOT / "docs/rebuild_plan.md").read_text(encoding="utf-8")
+        used = {e.owner for e in decisions.EVENTS}
+        self.assertTrue({e.owner for e in decisions.NEWS} <= set(decisions.OWNERS))
         for owner in decisions.OWNERS:
             folder = decisions.event_folder(decisions.Event("x", "x", "x", owner, "x", 5), 2014, ROOT)
-            self.assertTrue(folder.is_dir(), (owner, folder))
-            self.assertIn(folder.relative_to(ROOT / "career/2014").as_posix(), text)
+            self.assertTrue(folder.is_relative_to(ROOT / "career/2014"), (owner, folder))
+            if owner in used or folder.exists():
+                self.assertTrue(folder.is_dir(), (owner, folder))
+                self.assertIn(folder.relative_to(ROOT / "career/2014").as_posix(), text)
         self.assertEqual(decisions.week_pages(2014, 6, ROOT).responses.name, "My_Responses.md")
 
     def test_every_folder_resolves_through_the_map(self):
@@ -228,15 +240,19 @@ class BriefingTests(unittest.TestCase):
         every = current_job.instructions(self.wk.job)
         career = [i for i in every if i.get("subject") in current_job.CAREER_SUBJECTS]
         game = [i for i in every if i.get("subject") in current_job.SUBJECTS]
-        self.assertTrue(career and game)
+        # The standing practice instruction is not a game direction either.
+        practice = [i for i in every if i.get("subject") in current_job.PRACTICE_SUBJECTS]
+        self.assertTrue(career and game and practice)
         for item in career:
             self.assertNotIn("**%s" % render_career_views.SUBJECT_LABEL[item["subject"]], block)
+        self.assertNotIn("**Practice schedule", block)
         for item in game:
             self.assertIn("**%s" % render_career_views.SUBJECT_LABEL[item["subject"]], block)
         render_career_views.write(self.root)
         desk = self.wk.paths.desk.read_text(encoding="utf-8")
         for item in career:
             self.assertIn("**%s" % render_career_views.SUBJECT_LABEL[item["subject"]], desk)
+        self.assertIn("**Practice schedule:**", desk)
         # A career answer alone never makes the briefing out of date.
         self.assertFalse(any("a new briefing is due" in e for e in render_game_week.check(self.root)))
 

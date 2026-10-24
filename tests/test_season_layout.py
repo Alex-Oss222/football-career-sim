@@ -142,6 +142,88 @@ class SeasonLayoutTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'Multiple output folders'):
                 paths.week_folder(2)
 
+    def test_in_season_records_follow_the_folder_map(self):
+        # Rebuild step 5: the repository map names the in-season records and pages where the folder
+        # map places them, so neither can drift from the other.
+        from runtime import decisions, season_layout
+        mapping=json.loads((ROOT/'docs/repository_map.json').read_text())
+        records=mapping['in_season_records']
+        year=mapping['active_season']
+        paths=SeasonPaths(year,ROOT)
+        rel=lambda p: Path(p).relative_to(ROOT).as_posix()
+        owner=lambda name: decisions.Event('x','x','x',name,'x',5)
+        self.assertEqual(set(records['event_stores']), set(records['result_folders']))
+        for name, store in records['event_stores'].items():
+            self.assertEqual(rel(decisions.event_store(owner(name),year,ROOT)), store)
+            self.assertEqual(rel(decisions.event_folder(owner(name),year,ROOT)), records['result_folders'][name])
+        kinds={e.owner for e in decisions.EVENTS+decisions.NEWS if e.step==5}
+        self.assertEqual(kinds, set(records['event_stores']))
+        self.assertEqual(rel(decisions.event_folder(owner('free_agency'),year,ROOT)), records['signing_records'])
+        # The September 8 signing record is the precedent for the name.
+        self.assertTrue(paths.signing_record('alan_ball','2014-09-08').is_file())
+        self.assertEqual(rel(paths.signing_record('alan_ball','2014-09-08').parent), records['signing_records'])
+        with self.assertRaises(ValueError): paths.signing_record('Alan Ball','2014-09-08')
+        self.assertEqual(rel(paths.transactions), records['transactions'])
+        self.assertEqual(rel(paths.league_dates), records['league_dates'])
+        self.assertEqual(season_layout.PLAYER_CONTRACTS, records['player_contracts'])
+        self.assertEqual([rel(paths.record(p)) for p in ('finances/player_contracts/Player_Contracts.md',
+                                                        'finances/salary_cap/Salary_Cap.md')],
+                         records['contract_pages'])
+        # The new contract pages never collide with the old ones on a case-insensitive disk.
+        for page in records['contract_pages']:
+            folder=ROOT/Path(page).parent
+            self.assertFalse(any(p.name.lower()==Path(page).name.lower() and p.name!=Path(page).name
+                                 for p in folder.iterdir()), page)
+        self.assertEqual(rel(paths.record('trades/trade_offers.md').parent), records['trade_call_pages'])
+        self.assertEqual(rel(paths.coaching_changes), records['coaching_changes']['pages'])
+        self.assertEqual(rel(paths.data_for(paths.coaching_changes)), records['coaching_changes']['data'])
+        self.assertEqual(season_relative(year,'league/coaching_changes/README.md'),
+                         'League/Coaching_Changes/README.md')
+        week=decisions.week_pages(year,6,ROOT)
+        self.assertEqual([week.responses.name], records['week_pages'])
+        self.assertEqual([p.name for p in (week.practice_log,week.game_day_changes,week.responses_record)],
+                         records['week_records'])
+        self.assertEqual((week.practice_log,week.game_day_changes,week.responses_record),
+                         (paths.practice_log(6),paths.game_day_changes(6),paths.responses_record(week.folder)))
+        bye=records['bye_week']
+        club='Jacksonville Jaguars'
+        self.assertFalse([g for g in paths.regular_games() if g['week']==bye['week'] and club in (g['home'],g['away'])])
+        pages=decisions.bye_pages(year,bye['week'],ROOT)
+        self.assertEqual([rel(p) for p in (pages.readme,pages.review,pages.adjustments,pages.report,pages.responses)],
+                         bye['pages'])
+        self.assertEqual([rel(p) for p in (pages.briefings,pages.staff_review,pages.applied,pages.practice_log,
+                                           pages.responses_record)], bye['data'])
+
+    def test_result_file_names_and_reserved_headings(self):
+        from tempfile import TemporaryDirectory
+        from runtime import decisions
+        with TemporaryDirectory() as directory:
+            root=Path(directory)
+            first=decisions.result_file('trade_talks','2014-10-21','Club A',root)
+            self.assertEqual(first.relative_to(root).as_posix(),
+                             'career/2014/Team_Operations/Trades/Trade_Result_2014-10-21_Club_A.md')
+            first.parent.mkdir(parents=True)
+            first.write_text('')
+            self.assertEqual(decisions.result_file('trade_talks','2014-10-21','Club A',root).name,
+                             'Trade_Result_2014-10-21_Club_A_2.md')
+            self.assertEqual(decisions.result_file('injury_replacement','2014-10-14',"Ka'imi T.J. Smith",root).name,
+                             'Transaction_2014-10-14_Kaimi_TJ_Smith.md')
+            change=decisions.result_file('head_coach_change','2014-10-13','Club B',root)
+            self.assertEqual(change.relative_to(root).as_posix(),
+                             'career/2014/League/Coaching_Changes/Head_Coach_Change_2014-10-13_Club_B.md')
+            # A January date names its season: the postseason before or the offseason after.
+            with self.assertRaises(ValueError): decisions.result_file('trade_talks','2015-01-10','Club A',root)
+            self.assertEqual(decisions.result_file('trade_talks','2015-01-10','Club A',root,season=2014).parent,
+                             first.parent)
+            with self.assertRaises(ValueError): decisions.result_file('trade_talks','2014-10-21','  ',root)
+            with self.assertRaises(ValueError): decisions.result_file('no_such_kind','2014-10-21','Club A',root)
+        self.assertEqual(decisions.RESERVED_HEADINGS, ('Depth and inactives change','Practice week'))
+        self.assertEqual([decisions.game_day_change_heading(n) for n in (1,2,3)],
+                         ['Depth and inactives change','Depth and inactives change 2','Depth and inactives change 3'])
+        self.assertEqual([decisions.reserved_heading(h) for h in ('Practice week','Depth and inactives change 2',
+                                                                  'Depth and inactives change 1','Trade call')],
+                         ['Practice week','Depth and inactives change',None,None])
+
     def test_completed_trade_views_keep_both_sides_and_accounting(self):
         pages=trade_pages(ROOT,2014)
         self.assertEqual(len(pages), 1)

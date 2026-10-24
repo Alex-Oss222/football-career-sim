@@ -1,0 +1,49 @@
+{
+ "schema": "league-dates-v1",
+ "season": 2014,
+ "about": "The league's dated windows of the 2014 season that the career reads (runtime/deadlines.py): the trading deadline, shown under COMING UP in the briefs of the last Jacksonville game before it and in any brief issued after that game and before the deadline (coming_up last_game_before), and the date from which a released vested veteran is subject to waivers, which the transaction checks read and no brief shows. Each entry has its time (at, ET) or its day (date), who brings it to the head coach, the stored words of its notice, its verification status and its sources. A window is never an event: it holds nothing, opens no question and has no result.",
+ "dates": [
+  {
+   "key": "2014-trading-deadline",
+   "kind": "trading_deadline",
+   "title": "Trading deadline",
+   "at": "2014-10-28T16:00:00-04:00",
+   "date": null,
+   "brought_by": "caldwell",
+   "why": "The last time this season a trade can be made.",
+   "status": "Confirmed",
+   "sources": [
+    {
+     "path": "library/2014_playing_and_roster_rules.md",
+     "anchor": "5-2014-roster-rules-and-dates"
+    },
+    {
+     "path": "career/2014/Calendar.md",
+     "anchor": "october"
+    }
+   ],
+   "coming_up": "last_game_before"
+  },
+  {
+   "key": "2014-veteran-waivers",
+   "kind": "veteran_waivers",
+   "title": "Veteran releases subject to waivers",
+   "at": null,
+   "date": "2014-10-29",
+   "brought_by": "caldwell",
+   "why": "From this day a released veteran is subject to waivers for the rest of the season.",
+   "status": "Recorded in the 2014 calendar",
+   "sources": [
+    {
+     "path": "career/2014/Calendar.md",
+     "anchor": "october"
+    },
+    {
+     "path": "library/2014_nfl_calendar.md",
+     "anchor": "october"
+    }
+   ],
+   "coming_up": null
+  }
+ ]
+}

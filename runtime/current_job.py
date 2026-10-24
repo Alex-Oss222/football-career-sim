@@ -42,11 +42,15 @@ MECHANISMS = ("live", "sheet_rule", "not_live", "not_modelled")
 # delegation.game_management id, so the vocabularies cannot drift apart, and
 # the career answers (CAREER_SUBJECTS): Jacksonville's permission for its
 # assistants to interview elsewhere, and the holder's own answer to another
-# club's approach. A game-management decision takes only a game subject.
+# club's approach. A game-management decision takes only a game subject. The
+# week's practice schedule (PRACTICE_SUBJECTS, Document 3 row 11) is neither a
+# game direction nor a career answer: the Game Week Briefing lists only the
+# game's subjects, the desk and Document 5 every one.
 SUBJECTS = ("play_calling", "inactives", "fourth_down", "two_point", "kickoff", "timeouts_and_clock",
             "replay_challenge")
 CAREER_SUBJECTS = ("assistant_interview_permission", "outside_job_approach")
-ITEM_SUBJECTS = SUBJECTS + CAREER_SUBJECTS
+PRACTICE_SUBJECTS = ("practice_schedule",)
+ITEM_SUBJECTS = SUBJECTS + CAREER_SUBJECTS + PRACTICE_SUBJECTS
 REQUEST_STATUSES = ("OPEN", "MET", "WITHDRAWN")
 RECORD_KEYS = frozenset({"path", "anchor", "pointer"})
 # Keys holding ISO dates. A past-only key may never pass the master date; a
@@ -148,6 +152,74 @@ def instructions(job, status="IN_FORCE"):
     current = appointment(job) or {}
     return [i for i in current.get("standing_instructions") or ()
             if status is None or i.get("status") == status]
+
+
+def practice_instruction(job, season):
+    """The standing practice instruction in force for ``season`` (subject ``practice_schedule``), or
+    None. Its ``schedule`` holds the instruction's own words as data: from which week it applies,
+    the shape of a week before a game on ``week.game_day`` (the players' days off and each session's
+    day and type), which sessions are in pads (``equipment.pads``, by week and day; every other
+    session in ``equipment.otherwise``) and the dated days off it adds. It closes the week's
+    ``practice_plan`` question; the padded-practice and rest limits are the practice record's
+    check of each week's schedule (runtime/practices.py), not this record's."""
+    found = [i for i in instructions(job) if i.get("subject") == "practice_schedule"
+             and (i.get("schedule") or {}).get("season") == season]
+    return found[0] if len(found) == 1 else None
+
+
+def _practice_errors(item, label):
+    """The standing practice instruction's schedule, in the practice record's own words
+    (runtime/practices.py)."""
+    from .practices import DAY_OFF_SCOPES, EQUIPMENT, PADDED, SESSION_TYPES, WEEKDAYS
+    errors = []
+    schedule = item.get("schedule")
+    if not isinstance(schedule, dict):
+        return [label + "a practice instruction needs its schedule"]
+    if type(schedule.get("season")) is not int or type(schedule.get("from_week")) is not int \
+            or not 1 <= schedule["from_week"] <= 22:
+        errors.append(label + "the schedule needs an int season and an int from_week (1 to 22)")
+    week = schedule.get("week") or {}
+    if week.get("game_day") not in WEEKDAYS:
+        errors.append(label + "the week's game_day must be a weekday name")
+    sessions = week.get("sessions") or []
+    days_off = list(week.get("days_off") or [])
+    if not sessions:
+        errors.append(label + "the week names no session")
+    for session in sessions:
+        if session.get("day") not in WEEKDAYS or session.get("type") not in SESSION_TYPES:
+            errors.append(label + "session %r needs a weekday and a type (%s)" % (session, ", ".join(SESSION_TYPES)))
+    for off in days_off:
+        if off.get("day") not in WEEKDAYS or off.get("scope") not in DAY_OFF_SCOPES:
+            errors.append(label + "day off %r needs a weekday and a scope (%s)" % (off, ", ".join(DAY_OFF_SCOPES)))
+    session_days = {s.get("day") for s in sessions}
+    off_days = {o.get("day") for o in days_off}
+    if session_days & off_days or week.get("game_day") in session_days | off_days:
+        errors.append(label + "a day of the week is both a day off and a session day, or the game day")
+    equipment = schedule.get("equipment") or {}
+    if equipment.get("padded") != PADDED or equipment.get("otherwise") not in EQUIPMENT \
+            or equipment.get("otherwise") == PADDED:
+        errors.append(label + "equipment needs padded %s and an unpadded otherwise (%s)" % (PADDED, ", ".join(EQUIPMENT)))
+    practice_days = {s.get("day") for s in sessions if s.get("type") == "practice"}
+    first = schedule["from_week"] if type(schedule.get("from_week")) is int else 1
+    keys = [(p.get("week"), p.get("day")) for p in equipment.get("pads") or []]
+    if len(keys) != len(set(keys)):
+        errors.append(label + "a padded session is listed twice")
+    for number, day in keys:
+        if type(number) is not int or number < first or day not in practice_days:
+            errors.append(label + "padded session %r must be a practice day of a week the schedule covers"
+                          % ({"week": number, "day": day},))
+    given = (item.get("given") or {}).get("in_world")
+    for added in schedule.get("added_days_off") or []:
+        try:
+            on = date.fromisoformat(added.get("on"))
+        except (TypeError, ValueError):
+            errors.append(label + "added day off %r needs an ISO date" % (added,))
+            continue
+        if given and on < date.fromisoformat(given):
+            errors.append(label + "added day off %s is before the instruction was given" % added["on"])
+        if added.get("scope") not in DAY_OFF_SCOPES:
+            errors.append(label + "added day off %r needs a scope (%s)" % (added, ", ".join(DAY_OFF_SCOPES)))
+    return errors
 
 
 def _walk(node, where=""):
@@ -508,11 +580,17 @@ def _validation_errors(job, root, mapping, events, master, prefix):
                     queue_ids = set()
             if item["open_item"] not in queue_ids:
                 errors.append(label + "open_item %s is not a decision-queue item" % item["open_item"])
+        if item.get("subject") in PRACTICE_SUBJECTS:
+            errors.extend(_practice_errors(item, label))
         record = item.get("record") or {}
         if record.get("pointer") is not None and record_error(root, mapping, record) is None:
             target = pointed(root, mapping, record)
             if isinstance(target, dict) and "id" in target and target["id"] != item.get("id"):
                 errors.append(label + "the pointed rule's id is %s" % target["id"])
+    practice = [i for i in instructions(job) if i.get("subject") in PRACTICE_SUBJECTS]
+    seasons = [(i.get("schedule") or {}).get("season") for i in practice]
+    if len(seasons) != len(set(seasons)):
+        errors.append(prefix + "one practice instruction is in force for a season")
     # 8a. Game management and employer requests.
     decisions = ((current.get("delegation") or {}).get("game_management") or {}).get("decisions") or []
     seen = [d.get("id") for d in decisions]

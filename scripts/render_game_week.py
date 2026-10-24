@@ -62,6 +62,24 @@ decision items first (scripts/open_game_week.py), so the briefing lists them.
 Opening or building a page never moves time or creates an event; the week
 index carries the event line of the applied Game Plan from its record.
 
+The events inside the week (rebuild step 5: runtime/open_events.py) reach the
+briefing as inserts under its header lines, before section 1 (ACTION
+REQUIRED, FOR YOUR INFORMATION and COMING UP, runtime/event_inserts.py), each
+left out when it is empty, so a briefing with no inserts keeps its bytes. A
+briefing is rebuilt as of its own issue, from the events stamped before it.
+It is issued again only under the one reissue rule
+(event_inserts.reissue_reason): an answer the current issue does not show, a
+dated finding recorded after it that changes a choice still pending (a
+process entry that changes a pending answer, or its own sections rebuilt
+differing from it while the week's decisions are open), or an answer due
+before the next scheduled issue that it does not show; a change only to the
+news or the windows waits for the next scheduled issue. Each new issue
+records its time (``at``), its reason and the notices it carried, and each
+answer it first asks for gets its block on the week's My Responses page
+(runtime/responses.py) before the briefing links to it. While the
+bye is the open period (runtime/bye_week.active_bye) no game week is open:
+the next game's briefing and items wait for the bye's close.
+
 The season statistics, leaders and penalties are the statistics owner's
 (runtime/statbook.aggregate_receipts and the penalty split of
 scripts/render_season_stats.py: where a season's games were counted under two
@@ -97,7 +115,8 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from runtime import current_job, decisions, game_plan, roster as roster_record  # noqa: E402
+from runtime import current_job, decision_queue, decisions, event_inserts, game_plan, open_events  # noqa: E402
+from runtime import roster as roster_record  # noqa: E402
 from runtime.clean_pages import page_errors  # noqa: E402
 from runtime.player_pages import club_short  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
@@ -113,6 +132,8 @@ GAME_WEEK_DOMAINS = ("Medical diagnosis", "Medical clearance and return-to-parti
                      "Media policy, access, and official communications")
 # What an open item asks, when its question names no clauses to settle.
 SETTLE = {"weekly_game_plan": "the plan for the game", "game_day_inactives": "who does not dress"}
+# The due line of an item he settled on his Game Plan, in a briefing issued after he set it (section 8).
+SET_ON_PLAN = "Set on your Game Plan"
 # Stone's part in a decision someone else makes, in plain words.
 YOUR_PART = {"recommends": "you recommend", "consulted": "you are consulted", "responds": "you respond",
              "informs": "you supply information", "none": "you have no part", "decides_part": "you decide a part",
@@ -173,7 +194,15 @@ class Week:
         closed = {int(r["week"]) for r in self.receipts + self.post_receipts if JAX in (r["home"], r["away"])}
         games = self.cv.games
         self.waiting = None     # why no game is open (a playoff round awaiting results, the season over)
-        if week is None:
+        self.period = None      # the open period this Week is: {"week": N}, or {"bye": N} while the bye is open
+        bye = open_events.active_bye(self.paths, self.root) if week is None else None
+        if bye is not None:
+            # The bye is the open period (runtime/bye_week.active_bye): no game week is open, and the next
+            # game's briefing and items wait for the bye's close.
+            self.game = None
+            self.period = {"bye": int(bye)}
+            self.waiting = "the Week %d bye is open; the next game week opens when the bye closes" % int(bye)
+        elif week is None:
             open_games = [g for g in games if g["week"] not in closed]
             self.game = open_games[0] if open_games else None
             if self.game is None and games:
@@ -191,7 +220,10 @@ class Week:
                 raise ValueError("Jacksonville has no game in Week %d of %d" % (week, self.season))
         self.postseason = self.game is not None and self.game.get("game_type") == "postseason"
         self.closed = self.game is not None and self.game["week"] in closed
+        # The date a briefing is built as of (its issue date while one is built; today otherwise).
+        self.as_of = self.master
         if self.game is not None:
+            self.period = {"week": int(self.game["week"])}
             self.pages = decisions.week_pages(self.season, self.game["week"], self.root, postseason=self.postseason)
             self.opponent = self.game["home"] if self.game["away"] == JAX else self.game["away"]
 
@@ -200,14 +232,15 @@ class Week:
         from runtime import game_weeks
         return game_weeks.label(self.game)
 
-    def _receipts(self):
+    def _receipts(self, through=None):
+        """The closed regular-season games dated on or before ``through`` (by default the master date)."""
         folder = self.paths.receipts
         fixtures = {(g["week"], g["away"], g["home"]): g for g in self.paths.regular_games()}
         out = []
         for path in sorted(folder.glob("week_*.json")) if folder.is_dir() else ():
             r = json.loads(path.read_text(encoding="utf-8"))
             game = fixtures.get((int(r["week"]), r["away"], r["home"]))
-            if game is not None and date.fromisoformat(game["date"]) <= self.master:
+            if game is not None and date.fromisoformat(game["date"]) <= (through or self.master):
                 out.append(r)
         return out
 
@@ -752,7 +785,7 @@ def medical_rows(wk, page_rel, texts):
             unable.add(p["name"])
     rows = []
     for p in roster_record.players(data):
-        entry = summary.medical_entry(p, wk.master)
+        entry = summary.medical_entry(p, wk.as_of)
         if entry is None:
             continue
         if p.get("list") != "active" and not may_return(entry, game_day, wk.season):
@@ -767,7 +800,7 @@ def medical_rows(wk, page_rel, texts):
         if entry["projected"]:
             status += "; projected return %s" % day(entry["projected"])
         status += "".join("; %s" % (l[:1].lower() + l[1:]) for l in entry["limits"])
-        nxt = "; ".join("Reassessment, %s" % day(d, d.year != wk.master.year) for d in entry["reviews"]) \
+        nxt = "; ".join("Reassessment, %s" % day(d, d.year != wk.as_of.year) for d in entry["reviews"]) \
             or "Not communicated"
         contingency = ((texts.get("contingencies") or {}).get("rows") or {}).get(p["name"])
         replacement = None if contingency else chart_replacement(chart, p["name"], unable - {p["name"]})
@@ -1044,10 +1077,10 @@ def proposals_section(wk, texts):
 
 
 def first_practice(wk):
-    """The first day of the game's practice week, when it is still to come (the scheduled events,
-    runtime/season_summary.first_practice); else None."""
+    """The first day of the game's practice week, when it is still to come on the briefing's issue
+    date (the scheduled events, runtime/season_summary.first_practice); else None."""
     from runtime import season_summary as summary
-    return summary.first_practice(wk.cv.scheduled, wk.game["week"], wk.master)
+    return summary.first_practice(wk.cv.scheduled, wk.game["week"], wk.as_of)
 
 
 def plan_settled(wk):
@@ -1078,8 +1111,11 @@ def asks_section(wk, page_rel, plan_open=False, issued=None):
     issued = issued or wk.master
     holder = wk.job.get("holder")
     week = wk.game["week"]
-    items = [i for i in wk.views.ordered_items(wk.cv) if i.get("owner") == holder
-             and wk.views._week_of(i) == week]
+    # An event's item and the game-day change are inserts at the top of the briefing, not routine asks;
+    # the practice week asked on My Responses is one (builder C1), when it exists.
+    items = [i for i in wk.views.ordered_items(wk.cv) if i.get("owner") == holder and not i.get("event")
+             and not decision_queue.game_day_item(i, holder)
+             and (wk.views._week_of(i) == week or practice_ask(wk, i))]
     settled = {i["id"]: i for i in plan_settled(wk)}
     items = sorted(items + list(settled.values()), key=lambda i: (
         (i.get("deadline") or {}).get("date") is None, (i.get("deadline") or {}).get("date") or "", i.get("id") or ""))
@@ -1103,7 +1139,7 @@ def asks_section(wk, page_rel, plan_open=False, issued=None):
                 due = "Practice work before the first practice, %s, %s; the rest %s" % (
                     practice.strftime("%A"), day(practice, False), kickoff[:1].lower() + kickoff[1:])
             if item["id"] in settled and not plan_open:
-                due = "Set on your Game Plan, %s" % day(item["resolution"]["date"], False)
+                due = "%s, %s" % (SET_ON_PLAN, day(item["resolution"]["date"], False))
             waits = []
             for w in decisions.waits_ahead(item, issued):
                 text = wk.views.football(w["what"].split(";")[0]) + (" (%s)" % day(w["date"], False)
@@ -1119,11 +1155,21 @@ def asks_section(wk, page_rel, plan_open=False, issued=None):
         out += table(["Decision", "Choice required", "Deadline / dependency"], rows) + [""]
         out += ["Write your decisions on the %s; the staff checks it and tells you what is missing before "
                 "anything is set for the game." % link(page_rel, wk.rel(wk.pages.plan), "Game Plan"), ""]
+        if any(practice_ask(wk, i) for i in items):
+            out += ["Answer the practice week under its heading on %s." % link(
+                page_rel, wk.rel(wk.pages.responses), "My Responses", event_inserts.slug(decisions.PRACTICE_WEEK)), ""]
     out += ["**Standing directions:**", ""] + [wk.views.localize(l, page_rel) for l in wk.views._instructions(wk.cv, current_job.SUBJECTS)]
     out += ["", "**What the club, not Stone, decides:**", ""] + club_decides(wk) + [""]
     out += ["**If facts change:** The staff issues a new briefing, dated and, when it is the day's second or later, "
             "numbered as that day's revision; this one is kept as what you knew when you answered.", ""]
     return out
+
+
+def practice_ask(wk, item):
+    """Whether ``item`` is the week's practice week asked on its My Responses page (builder C1):
+    ``decision_queue.practice_item``, its record the week's My Responses page."""
+    return decision_queue.practice_item(item, wk.job.get("holder")) and \
+        (item.get("record") or {}).get("path") == wk.rel(wk.pages.responses)
 
 
 ASK_DATE = re.compile(r"\b(%s) (\d{1,2})(?:, (\d{4}))?\b" % MONTHS)
@@ -1195,14 +1241,47 @@ def links_line(wk, page_rel):
     return " · ".join(out)
 
 
-def briefing(wk, issued=None, plan_open=False, previous=None, revision=1):
+def issue_route(wk, issued, revision):
+    """The inserts of the briefing issued ``issued`` as the day's ``revision``-th issue, as of that
+    issue: a recorded issue's at its place and time (an entry written before step 5 at the start of
+    its date), a new one's as the next issue, at the clock's time when it is issued today."""
+    entries = issues(wk)
+    for n, entry in enumerate(entries, 1):
+        if entry.get("date") == issued.isoformat() and int(entry.get("revision", 0)) == revision:
+            route = open_events.route(wk.season, open_events.issued_at(entry), wk.period, wk.root, issue=n)
+            # A window is not an event: an issued briefing keeps the windows its issue recorded (an
+            # entry written before step 5 recorded none), so a window added later never changes it.
+            shown = {i.get("window") for i in entry.get("inserts") or () if i.get("section") == "coming_up"}
+            route.coming_up = [w for w in route.coming_up if w.key in shown]
+            return route
+    at = open_events.master_at(wk.root) if issued == wk.master else open_events.et(issued)
+    return open_events.route(wk.season, at, wk.period, wk.root, issue=len(entries) + 1)
+
+
+def briefing(wk, issued=None, plan_open=False, previous=None, revision=1, route=None):
     """The Game Week Briefing as of ``issued`` (by default today), the day's ``revision``-th issue;
-    ``previous`` is the issue (date, revision) of the briefing it replaces, if any (its status line)."""
+    ``previous`` is the issue (date, revision) of the briefing it replaces, if any (its status line).
+    The inserts are ``route``'s (by default as of this issue, ``issue_route``), under the header lines;
+    with none the page is the same bytes as before step 5."""
     page_rel = wk.rel(wk.pages.briefing)
     issued = issued or wk.master
+    route = route if route is not None else issue_route(wk, issued, revision)
     texts = staff_texts(wk)
     out = ["# %s Game Week Briefing: %s" % (wk.label(), wk.title_where()), ""]
     out += header_lines(wk, issued, previous, revision)
+    out += event_inserts.render(route, page_rel, issued)
+    # As of its own issue: the games dated after it (a Monday game closed with the slate, read by a
+    # later mid-week record) are not in an earlier issue, so rebuilding it never finds it stale.
+    wk.as_of, receipts = issued, wk.receipts
+    if issued < wk.master:
+        wk.receipts = wk._receipts(issued)
+    try:
+        return _sections(wk, out, texts, page_rel, plan_open, issued)
+    finally:
+        wk.as_of, wk.receipts = wk.master, receipts
+
+
+def _sections(wk, out, texts, page_rel, plan_open, issued):
     out += stakes_section(wk, texts)
     out += self_scout_section(wk, texts)
     out += availability_section(wk, page_rel, texts)
@@ -1223,7 +1302,11 @@ ISSUES_ABOUT = ("Every Game Week Briefing issued for the week, oldest first: the
                 "n-th issue of that day, so two issues the same day are told apart), its file in the week folder "
                 "(the latest is the current briefing, each earlier one kept as he saw it) and the sha256 of its "
                 "bytes as issued. Written only by scripts/render_game_week.py; validation holds each briefing to "
-                "its entry.")
+                "its entry. From rebuild step 5 a new entry also holds the time it went out (at, ET), why it was "
+                "issued again under the one reissue rule (reason; null for the week's first issue) and the notices "
+                "it carried at the top (inserts: each event, game-day item or window, its section, the sha256 of "
+                "its lines and an answer's due time); an entry written before then holds none of them and reads "
+                "as issued at the start of its date with no notice.")
 
 
 def issues_path(wk):
@@ -1310,6 +1393,7 @@ def issue_errors(wk):
             errors.append("%s: the briefing of %s is recorded after a later one" % (label, day(when)))
         if when > wk.master:
             errors.append("%s: a briefing is recorded as issued %s, after today (%s)" % (label, day(when), day(wk.master)))
+        errors += ["%s: the briefing issued %s %s" % (label, day(when), e) for e in step5_entry_errors(wk, entry)]
         previous = when
         if n == len(entries) - 1 and name != current.name:
             errors.append("%s: the latest issue (%s) is not the current Game Week Briefing" % (label, name))
@@ -1324,20 +1408,64 @@ def issue_errors(wk):
     return errors
 
 
-def overtaken(wk, old=None):
-    """Whether the situation has changed since the briefing ``old`` (by default the current one)
-    went out: its rebuild for its own issue date differs from it. Stone settling the week's own
-    items on his Game Plan is his answer to the briefing, not a change of situation, so it is also
-    compared as it was before he set them. False before the first briefing."""
+def items_open(wk):
+    """Whether the week's own decisions are open: an OPEN item of the week (held for its game, or due
+    for it), the week's game-day change, or an item of an event raised in the week."""
+    week = wk.game["week"]
+    events = {r["id"] for r in open_events.load(wk.season, wk.root) if r.get("period") == wk.period}
+    return any(i.get("status") == "OPEN" and (wk.views._week_of(i) == week or i.get("event") in events
+                                              or practice_ask(wk, i))
+               for i in wk.cv.queue["items"])
+
+
+def reissue_reason(wk, old=None):
+    """Why the week's briefing must be issued again now (event_inserts.reissue_reason, the one rule
+    for every brief), or None. The briefing's own sections are its rebuild for its own issue,
+    compared without the insert sections; Stone settling the week's own items on his Game Plan is his
+    answer to the briefing, not a change of situation, so it is also compared as it was before he set
+    them. None before the first briefing."""
     current = current_issue(wk)
     if current is None or not wk.pages.briefing.is_file():
-        return False
+        return None
     when, revision = current
     if old is None:
         old = wk.pages.briefing.read_text(encoding="utf-8")
     previous = previous_issue(wk)
-    return old != briefing(wk, when, previous=previous, revision=revision) and \
-        old != briefing(wk, when, plan_open=True, previous=previous, revision=revision)
+    mine = event_inserts.strip_inserts(old)
+    changed = mine != event_inserts.strip_inserts(briefing(wk, when, previous=previous, revision=revision)) and \
+        mine != event_inserts.strip_inserts(briefing(wk, when, plan_open=True, previous=previous, revision=revision))
+    entries = issues(wk)
+    now = open_events.route(wk.season, open_events.master_at(wk.root), wk.period, wk.root, issue=len(entries) + 1)
+    state = event_inserts.PeriodState(wk.season, wk.period, wk.root, own_changed=changed, items_open=items_open(wk),
+                                      next_issue_at=open_events.kickoff(wk.game) if wk.game.get("kickoff_et") else None)
+    return event_inserts.reissue_reason(state, entries[-1], now)
+
+
+def step5_entry_errors(wk, entry):
+    """An issue entry's step 5 fields, when it has them: its time on its date and on the clock, and its
+    notices (each an event, a game-day item or a window, with its section and digest)."""
+    errors = []
+    if "at" in entry:
+        try:
+            at = open_events.parse_at(entry["at"])
+            if at.date().isoformat() != entry["date"]:
+                errors.append("is recorded at %s, not on its date" % entry["at"])
+            elif not open_events.master_clock(wk.root).allows(at):
+                errors.append("is recorded at %s, after the master date/time" % entry["at"])
+        except ValueError as exc:
+            errors.append("has a malformed time: %s" % exc)
+    for notice in entry.get("inserts") or ():
+        keys = {k for k in ("event", "item", "window") if k in notice}
+        if len(keys) != 1 or notice.get("section") not in ("action", "fyi", "coming_up") or \
+                not isinstance(notice.get("sha256"), str):
+            errors.append("has a malformed notice %r" % (notice,))
+    return errors
+
+
+def overtaken(wk, old=None):
+    """Whether the briefing ``old`` (by default the current one) must be issued again: the one
+    reissue rule gives a reason (``reissue_reason``). False before the first briefing."""
+    return reissue_reason(wk, old) is not None
 
 
 def previous_issue(wk, new=False):
@@ -1503,6 +1631,20 @@ def earlier_briefings(wk):
     return [(wk.pages.folder / e["file"], issue_of(e)) for e in issues(wk)[:-1]]
 
 
+PRACTICE_HEADING = "## Practice week"
+
+
+def practice_lines(wk):
+    """The week's practice and rest table under its heading, for a regular-season week whose record
+    is ``recorded`` (runtime/practices.render_table gives none for a closed record or a week not
+    set); else nothing."""
+    if wk.postseason:
+        return []
+    from runtime import practices
+    table_text = practices.render_table(practices.load(wk.season, int(wk.game["week"]), wk.root))
+    return [PRACTICE_HEADING, "", table_text.rstrip("\n"), ""] if table_text else []
+
+
 def index_page(wk):
     page_rel = wk.rel(wk.pages.readme)
     week = wk.game["week"]
@@ -1531,6 +1673,12 @@ def index_page(wk):
     if earlier:
         out += ["Earlier briefings, as they went out: " + "; ".join(
             link(page_rel, wk.rel(p), label_of(issue)) for p, issue in earlier) + ".", ""]
+    # Rebuild step 5, each left out when empty, so a week without them keeps its bytes: the week's
+    # practice and rest table, only for a recorded week (runtime/practices.render_table); and the
+    # week's other business, the result of each event resolved in it and, while it is open, the
+    # events still open (event_inserts.other_business).
+    out += practice_lines(wk)
+    out += event_inserts.other_business(wk.season, wk.period, page_rel, wk.root, open_now=not wk.closed, job=wk.job)
     applied = game_plan.applied_record(wk.pages.applied)
     if applied is not None and applied.get("event"):
         out += [game_plan.event_line(applied), ""]
@@ -1568,7 +1716,8 @@ def write(root=ROOT, week=None):
     problems = issue_errors(wk) if (entries or wk.pages.briefing.is_file()) else []
     if problems:
         raise ValueError("; ".join(problems))
-    if not entries or overtaken(wk):
+    reason = reissue_reason(wk) if entries else None
+    if not entries or reason is not None:
         if entries:
             # The briefing it replaces is kept beside it, named for its issue: its date, and from the
             # second issue of a day its revision (Game_Week_Briefing_October_5_2.md).
@@ -1581,10 +1730,18 @@ def write(root=ROOT, week=None):
             entries[-1]["file"] = target.name
             written.append(target)
         revision = 1 + sum(1 for e in entries if e["date"] == wk.master.isoformat())
-        wk.pages.briefing.write_text(briefing(wk, previous=previous_issue(wk, new=True), revision=revision),
-                                     encoding="utf-8")
+        at = open_events.master_at(wk.root)
+        route = open_events.route(wk.season, at, wk.period, wk.root, issue=len(entries) + 1)
+        # Each answer this issue first asks for gets its block on the week's My Responses page before
+        # the briefing links to it (runtime/responses.py).
+        from runtime import responses
+        if responses.ensure_blocks(route, wk.root):
+            written += [wk.pages.responses, wk.pages.responses_record]
+        wk.pages.briefing.write_text(briefing(wk, previous=previous_issue(wk, new=True), revision=revision,
+                                              route=route), encoding="utf-8")
         entries.append({"date": wk.master.isoformat(), "revision": revision, "file": wk.pages.briefing.name,
-                        "sha256": sha256(wk.pages.briefing)})
+                        "sha256": sha256(wk.pages.briefing), "at": open_events.iso(at), "reason": reason,
+                        "inserts": event_inserts.issue_inserts(route, wk.rel(wk.pages.briefing))})
         written += [wk.pages.briefing, save_issues(wk, entries)]
     if not wk.pages.plan.is_file():
         wk.pages.plan.write_text(plan_page(wk), encoding="utf-8")
@@ -1669,7 +1826,8 @@ def check(root=ROOT, week=None):
 def _check(root, week):
     wk = Week(root, week)
     if wk.game is None:
-        return []
+        # While the bye is open every week with pages is still checked; nothing is due for a game.
+        return validation_errors(root) if (wk.period or {}).get("bye") else []
     errors = validation_errors(root) if week is None else week_errors(wk)
     label = wk.label()
     if wk.closed:

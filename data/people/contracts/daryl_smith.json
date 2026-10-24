@@ -1,0 +1,63 @@
+{
+ "schema_version": 1,
+ "name": "Daryl Smith",
+ "player": "daryl_smith",
+ "listed": 3,
+ "position": "LB",
+ "roster_position": "LB",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2013-03-12",
+   "source": "career/2013/offseason/free_agency/signings.md",
+   "contract": "daryl_smith_2013-03-12",
+   "club": "Jacksonville Jaguars",
+   "through": 2014,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 3500000,
+     "base": 3000000,
+     "proration": 500000,
+     "cash": 3000000,
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Veteran (branch re-signing)",
+   "signed_text": "March 12, 2013",
+   "term_text": "2 / 2014",
+   "value_text": "$6.00M",
+   "bonus": {
+    "text": "$1.00M; $0.50M; 1",
+    "amount": 1000000
+   },
+   "guarantee_text": "None beyond the signing bonus (2014 base not guaranteed)",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$500,000 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Branch record (signings sections 2 and 5)",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2013/offseason/free_agency/signings.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: Not status-determining (entered 2004). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

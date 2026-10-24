@@ -135,9 +135,16 @@ def page_digest(text):
 
 
 class Plan:
-    """A week's Game Plan and what checking it reads."""
+    """A week's Game Plan and what checking it reads.
 
-    def __init__(self, root, season, week):
+    By default the page's own choices against the game depth chart on file. A change after the plan
+    is applied (scripts/change_game_day.py) checks its own choices the same way: ``chart`` is the
+    chart the change is layered on (the chart as applied, with any earlier change of the week),
+    ``choices`` the change's inactives and depth lines in the Game Plan's own forms (parsed as the
+    page's are), and ``inactives`` the inactive list to read when the choices name none (the list as
+    it stands). With none of them given the checks give exactly the answers they always have."""
+
+    def __init__(self, root, season, week, chart=None, inactives=None, choices=None):
         self.root = Path(root).resolve()
         self.season, self.week = season, week
         self.paths = SeasonPaths(season, self.root)
@@ -153,9 +160,15 @@ class Plan:
             self.game, self.unset = None, str(exc)
         self.pages = week_pages(season, week, self.root, postseason=self.postseason)
         self.roster = roster_record.load(self.paths.roster)
-        self.chart = json.loads(self.paths.depth_chart.read_text(encoding="utf-8"))
+        self.chart = copy.deepcopy(chart) if chart is not None else \
+            json.loads(self.paths.depth_chart.read_text(encoding="utf-8"))
         self.text = self.pages.plan.read_text(encoding="utf-8") if self.pages.plan.is_file() else None
-        self.choices, self.problems = (game_plan.parse(self.text) if self.text is not None else ({}, []))
+        if choices is None:
+            self.choices, self.problems = (game_plan.parse(self.text) if self.text is not None else ({}, []))
+        else:
+            self.choices, self.problems = copy.deepcopy(dict(choices)), []
+        if inactives is not None and self.choices.get("inactives") is None:
+            self.choices["inactives"] = {"players": list(inactives), "reasons": {}}
         self.applied = applied_record(self.season, self.week, self.root)
         self.notes = []
         self.changed_since_applied = None
@@ -513,16 +526,17 @@ def briefing_problems(plan):
     when = plan.choices.get("briefing")
     if when is None:
         return []
+    # The one reissue rule decides (runtime/event_inserts.py): an issue that only added or changed the
+    # inserts at the top leaves an earlier "Briefing used" standing, with a note.
+    from runtime import event_inserts
     from scripts import render_game_week
     try:
-        current = render_game_week.current_issue(render_game_week.Week(plan.root, plan.week))
+        wk = render_game_week.Week(plan.root, plan.week)
+        problems, notes = event_inserts.plan_issue_problems(wk, when)
     except (OSError, ValueError):
         return []
-    if current is not None and (when["date"], when["revision"]) != current:
-        return ["Briefing used: your page answers the briefing of %s; the current briefing is %s; read it and "
-                "write it as its status line names it (your answers may stand)"
-                % (game_plan.issue_label(when["date"], when["revision"]), game_plan.issue_label(*current))]
-    return []
+    plan.notes += [n for n in notes if n not in plan.notes]
+    return problems
 
 
 def caller_problems(plan):

@@ -13,15 +13,15 @@ Player use varies with the personnel package. The starting line and the X, H and
 | Position | Player | Assignment |
 |---|---|---|
 | QB | [Kirk Cousins](../Player_Cards/kirk_cousins.md) | Chad Henne is QB2 |
-| RB | [C.J. Anderson](../Player_Cards/c_j_anderson.md) | Maurice Jones-Drew and Jonathan Grimes follow |
+| RB | [Maurice Jones-Drew](../Player_Cards/maurice_jones_drew.md) | C.J. Anderson and Jonathan Grimes follow |
 | FB | [Montell Owens](../Player_Cards/montell_owens.md) | For fullback packages |
 | X | [Davante Adams](../Player_Cards/davante_adams.md) | X (WR1) |
 | H | [Adam Thielen](../Player_Cards/adam_thielen.md) | H |
 | Z | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) | Z |
-| TE | [Travis Kelce](../Player_Cards/travis_kelce.md) | Additional tight ends follow in the group order |
+| TE | [Marcedes Lewis](../Player_Cards/marcedes_lewis.md) | Additional tight ends follow in the group order |
 | LT | [Eugene Monroe](../Player_Cards/eugene_monroe.md) |  |
 | LG | [Joel Bitonio](../Player_Cards/joel_bitonio.md) |  |
-| C | [Corey Linsley](../Player_Cards/corey_linsley.md) |  |
+| C | [Mike Brewster](../Player_Cards/mike_brewster.md) |  |
 | RG | [Trai Turner](../Player_Cards/trai_turner.md) |  |
 | RT | [Lane Johnson](../Player_Cards/lane_johnson.md) |  |
 
@@ -31,8 +31,8 @@ The first defensive-line and linebacker groups, and the first four defensive bac
 
 | Unit | First group |
 |---|---|
-| Defensive line | [Jeremy Mincey](../Player_Cards/jeremy_mincey.md), [Aaron Donald](../Player_Cards/aaron_donald.md), [Sen'Derrick Marks](../Player_Cards/sen_derrick_marks.md), [Andre Branch](../Player_Cards/andre_branch.md) |
-| Linebackers | [Daryl Smith](../Player_Cards/daryl_smith.md), [Paul Posluszny](../Player_Cards/paul_posluszny.md), [Telvin Smith](../Player_Cards/telvin_smith.md) |
+| Defensive line | [Jeremy Mincey](../Player_Cards/jeremy_mincey.md), [Sen'Derrick Marks](../Player_Cards/sen_derrick_marks.md), [Roy Miller](../Player_Cards/roy_miller.md), [Andre Branch](../Player_Cards/andre_branch.md) |
+| Linebackers | [Daryl Smith](../Player_Cards/daryl_smith.md), [Paul Posluszny](../Player_Cards/paul_posluszny.md), [Julian Stanford](../Player_Cards/julian_stanford.md) |
 | Defensive backs | [Aqib Talib](../Player_Cards/aqib_talib.md), [Alterraun Verner](../Player_Cards/alterraun_verner.md), [Bacarri Rambo](../Player_Cards/bacarri_rambo.md), [Brynden Trawick](../Player_Cards/brynden_trawick.md) |
 
 ## Situational defensive roles
@@ -69,8 +69,8 @@ The order in each group remains Stone's current order. Reserve assignments that 
 
 | Order | Player | Pos | Role |
 |---:|---|---|---|
-| 1 | [C.J. Anderson](../Player_Cards/c_j_anderson.md) | RB |  |
-| 2 | [Maurice Jones-Drew](../Player_Cards/maurice_jones_drew.md) | RB |  |
+| 1 | [Maurice Jones-Drew](../Player_Cards/maurice_jones_drew.md) | RB |  |
+| 2 | [C.J. Anderson](../Player_Cards/c_j_anderson.md) | RB |  |
 | 3 | [Jonathan Grimes](../Player_Cards/jonathan_grimes.md) | RB |  |
 
 #### Fullback
@@ -87,15 +87,15 @@ The order in each group remains Stone's current order. Reserve assignments that 
 | 2 | [Adam Thielen](../Player_Cards/adam_thielen.md) | WR | H |
 | 3 | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) | WR | Z |
 | 4 | [Allen Hurns](../Player_Cards/allen_hurns.md) | WR | First general receiver relief |
-| 5 | [Taylor Gabriel](../Player_Cards/taylor_gabriel.md) | WR | Fifth receiver |
-| 6 | [Hakeem Nicks](../Player_Cards/hakeem_nicks.md) | WR | X relief (sixth receiver) |
+| 5 | [Hakeem Nicks](../Player_Cards/hakeem_nicks.md) | WR | X relief (fifth receiver) |
+| 6 | [Taylor Gabriel](../Player_Cards/taylor_gabriel.md) | WR | Sixth receiver |
 
 #### Tight ends
 
 | Order | Player | Pos | Role |
 |---:|---|---|---|
-| 1 | [Travis Kelce](../Player_Cards/travis_kelce.md) | TE |  |
-| 2 | [Marcedes Lewis](../Player_Cards/marcedes_lewis.md) | TE |  |
+| 1 | [Marcedes Lewis](../Player_Cards/marcedes_lewis.md) | TE |  |
+| 2 | [Travis Kelce](../Player_Cards/travis_kelce.md) | TE |  |
 | 3 | [Marcel Jensen](../Player_Cards/marcel_jensen.md) | TE |  |
 | 4 | [Gator Hoskins](../Player_Cards/gator_hoskins.md) | TE |  |
 
@@ -105,13 +105,13 @@ The order in each group remains Stone's current order. Reserve assignments that 
 |---:|---|---|---|
 | 1 | [Eugene Monroe](../Player_Cards/eugene_monroe.md) | OT |  |
 | 2 | [Joel Bitonio](../Player_Cards/joel_bitonio.md) | OT | Left guard |
-| 3 | [Corey Linsley](../Player_Cards/corey_linsley.md) | C |  |
+| 3 | [Mike Brewster](../Player_Cards/mike_brewster.md) | C |  |
 | 4 | [Trai Turner](../Player_Cards/trai_turner.md) | G | Right guard |
 | 5 | [Lane Johnson](../Player_Cards/lane_johnson.md) | OT |  |
-| 6 | [Andrew Norwell](../Player_Cards/andrew_norwell.md) | G | First interior relief |
-| 7 | [Cornelius Lucas](../Player_Cards/cornelius_lucas.md) | OT |  |
-| 8 | [Mike Brewster](../Player_Cards/mike_brewster.md) | C |  |
-| 9 | [Charles Leno Jr.](../Player_Cards/charles_leno_jr.md) | OT |  |
+| 6 | [Cornelius Lucas](../Player_Cards/cornelius_lucas.md) | OT |  |
+| 7 | [Charles Leno Jr.](../Player_Cards/charles_leno_jr.md) | OT |  |
+| 8 | [Andrew Norwell](../Player_Cards/andrew_norwell.md) | G |  |
+| 9 | [Corey Linsley](../Player_Cards/corey_linsley.md) | C |  |
 
 ### Defense
 
@@ -120,12 +120,12 @@ The order in each group remains Stone's current order. Reserve assignments that 
 | Order | Player | Pos | Role |
 |---:|---|---|---|
 | 1 | [Jeremy Mincey](../Player_Cards/jeremy_mincey.md) | DE | Edge 1 |
-| 2 | [Aaron Donald](../Player_Cards/aaron_donald.md) | DT |  |
-| 3 | [Sen'Derrick Marks](../Player_Cards/sen_derrick_marks.md) | DT |  |
+| 2 | [Sen'Derrick Marks](../Player_Cards/sen_derrick_marks.md) | DT |  |
+| 3 | [Roy Miller](../Player_Cards/roy_miller.md) | DT |  |
 | 4 | [Andre Branch](../Player_Cards/andre_branch.md) | DE |  |
-| 5 | [Roy Miller](../Player_Cards/roy_miller.md) | DT |  |
-| 6 | [C.J. Mosley](../Player_Cards/c_j_mosley.md) | DT |  |
-| 7 | [Daniel Te'o-Nesheim](../Player_Cards/daniel_te_o_nesheim.md) | DE |  |
+| 5 | [C.J. Mosley](../Player_Cards/c_j_mosley.md) | DT |  |
+| 6 | [Daniel Te'o-Nesheim](../Player_Cards/daniel_te_o_nesheim.md) | DE |  |
+| 7 | [Aaron Donald](../Player_Cards/aaron_donald.md) | DT |  |
 | 8 | [Kasim Edebali](../Player_Cards/kasim_edebali.md) | DE |  |
 
 #### Linebackers
@@ -134,9 +134,9 @@ The order in each group remains Stone's current order. Reserve assignments that 
 |---:|---|---|---|
 | 1 | [Daryl Smith](../Player_Cards/daryl_smith.md) | LB |  |
 | 2 | [Paul Posluszny](../Player_Cards/paul_posluszny.md) | LB |  |
-| 3 | [Telvin Smith](../Player_Cards/telvin_smith.md) | LB |  |
+| 3 | [Julian Stanford](../Player_Cards/julian_stanford.md) | LB |  |
 | 4 | [Sio Moore](../Player_Cards/sio_moore.md) | LB |  |
-| 5 | [Julian Stanford](../Player_Cards/julian_stanford.md) | LB |  |
+| 5 | [Telvin Smith](../Player_Cards/telvin_smith.md) | LB |  |
 | 6 | [Christian Jones](../Player_Cards/christian_jones.md) | LB |  |
 | 7 | [Todd Davis](../Player_Cards/todd_davis.md) | LB |  |
 

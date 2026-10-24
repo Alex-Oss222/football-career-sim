@@ -1,0 +1,106 @@
+{
+ "schema_version": 1,
+ "name": "Eugene Monroe",
+ "player": "eugene_monroe",
+ "listed": 46,
+ "position": "OT",
+ "roster_position": "OT",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-03-11",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "eugene_monroe_2014-03-11",
+   "club": "Jacksonville Jaguars",
+   "through": 2018,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 5600000,
+     "base": 4000000,
+     "proration": 1600000,
+     "other_cap": 0,
+     "cash": 12000000,
+     "guaranteed_base": 4000000,
+     "basis": "Branch contract, Entry 95 (March 2014 replay)"
+    },
+    "2015": {
+     "status": "known",
+     "cap": 9600000,
+     "base": 8000000,
+     "proration": 1600000,
+     "other_cap": 0,
+     "cash": 8000000,
+     "guaranteed_base": 8000000,
+     "basis": "Branch contract, Entry 95 (March 2014 replay)"
+    },
+    "2016": {
+     "status": "known",
+     "cap": 9100000,
+     "base": 6500000,
+     "proration": 1600000,
+     "other_cap": 1000000,
+     "cash": 7500000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 95 (March 2014 replay): $500,000 roster bonus and up to $500,000 active-game bonuses"
+    },
+    "2017": {
+     "status": "known",
+     "cap": 9100000,
+     "base": 6500000,
+     "proration": 1600000,
+     "other_cap": 1000000,
+     "cash": 7500000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 95 (March 2014 replay): $500,000 roster bonus and up to $500,000 active-game bonuses"
+    },
+    "2018": {
+     "status": "known",
+     "cap": 9100000,
+     "base": 6500000,
+     "proration": 1600000,
+     "other_cap": 1000000,
+     "cash": 7500000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 95 (March 2014 replay): $500,000 roster bonus and up to $500,000 active-game bonuses"
+    }
+   },
+   "type": "Veteran (branch re-signing; replaced the franchise tender)",
+   "signed_text": "March 11, 2014",
+   "term_text": "5 / 2018",
+   "value_text": "$42,500,000",
+   "bonus": {
+    "text": "$8,000,000; $1,600,000; 5",
+    "amount": 8000000
+   },
+   "guarantee_text": "$20,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base)",
+   "guarantee_basis": "simulation reconstruction",
+   "basis": {
+    "text": "Executed branch terms (Entry 95)",
+    "source": "career/2014/Team_Operations/Finances/player_contracts/contracts.md"
+   },
+   "exposure_text": "Gross pre-June 1 exposure $20,000,000 before 2014 salary is earned; $14,400,000 in 2015; $4,800,000 in 2016",
+   "notes": "Branch record (Entry 95; March 2014 replay log). Replaces the $11,654,000 tender once; 2016-2018 cap budgets include the full $500,000 active-game bonuses",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/free_agency/signings.md",
+    "career/2014/free_agency/march_2014_replay_log.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 4 (2009-2012). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

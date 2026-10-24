@@ -1,0 +1,74 @@
+{
+ "schema_version": 1,
+ "name": "Marcedes Lewis",
+ "player": "marcedes_lewis",
+ "listed": 16,
+ "position": "TE",
+ "roster_position": "TE",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2011",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "marcedes_lewis_2011",
+   "club": "Jacksonville Jaguars",
+   "through": 2015,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 8250000,
+     "base": 6700000,
+     "proration": 1400000,
+     "other_cap": 150000,
+     "cash": 6850000,
+     "guaranteed_base": 0
+    },
+    "2015": {
+     "status": "known",
+     "cap": 8200000,
+     "base": 6650000,
+     "proration": 1400000,
+     "other_cap": 150000,
+     "cash": 6800000,
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Veteran, 2011",
+   "signed_text": "2011",
+   "term_text": "5 / 2015",
+   "value_text": "$34,000,000",
+   "bonus": {
+    "text": "$7,000,000 signing bonus; $1,400,000 annually through 2015"
+   },
+   "guarantee_text": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
+   "guarantee_basis": "simulation reconstruction",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$2,800,000 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Original 2011 contract carried through 2015. The 2015 salary reduction in real history is excluded; the original $6.65M base remains. Workout bonus continues at $150,000.",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "library/2014_jaguars_original_contract_reconstruction.md",
+    "library/2014_jaguars_contract_completion.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 4+ (entered 2006). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

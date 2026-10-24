@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Render the Jaguars' rolling twelve-year financial horizon from sourced and adopted simulation contract schedules."""
+"""Render the Jaguars' rolling twelve-year financial horizon from sourced and adopted simulation contract schedules.
+
+The player rows, the dead-money table and the date come from the permanent contract records
+(runtime/player_contracts.py: ``rows()``, ``dead_money()``, ``as_of()``); the club-level facts
+(league caps, team years, draft picks, the year span) from the contract inputs. ``render`` reads the
+records, never the inputs' built ``players`` block."""
 import argparse
 from collections import Counter
 from datetime import date
@@ -240,28 +245,8 @@ def validate(data, root=ROOT):
     expected={row['name'] for row in roster_record.load(source_path(data['current_roster'],root))['players']}
     current_names={p['name'] for p in players if not p.get('former_player')}
     if current_names!=expected: raise ValueError('Tracker coverage differs from current active, retired and future roster')
-    source=source_path(data['current_contract_table'],root).read_text()
-    asof=display_date(data['as_of'])
-    if f'**As of:** {asof}' not in source: raise ValueError('Contract table checkpoint changed; reconcile the tracker')
-    contracts={x[0]:x for x in md_rows(source) if x[0] in expected and len(x) in (9,15)}
-    if set(contracts)!=expected: raise ValueError('Contract table coverage differs from tracker')
-    current=str(data['start_year'])
-    for p in players:
-        if p.get('former_player'): continue
-        row=contracts[p['name']]; y=p['years'][current]
-        if len(row)==15:
-            amount=exact_amount(row[10])
-            if amount is not None and (y['status'] not in {'known','approximate'} or working_charge(y)!=amount): raise ValueError('Current charge differs from contract table: '+p['name'])
-            if amount is None and y['status'] in {'known','approximate'}: raise ValueError('Tracker invents an exact current charge: '+p['name'])
-            if y['status']=='approximate' and exact_amount(row[10].removeprefix('About '))!=y['approximate_cap']:
-                raise ValueError('Current estimate differs from contract table: '+p['name'])
-        elif len(row)!=9: raise ValueError('Contract table layout changed; review parser')
-        else:
-            expected='tender' if 'Franchise player' in row[6] or row[6].startswith('Tendered') else ('unknown' if row[6].startswith('Unresolved:') else 'pending')
-            if p['control']!=expected: raise ValueError('Contract status differs from current table: '+p['name'])
-            if expected=='tender':
-                match=re.search(r'2014 tender: \*\*\$(\d[\d,]*)',row[7])
-                if not match or y['status']!='tender' or y['cap']!=int(match[1].replace(',','')): raise ValueError('Tender mismatch')
+    # The earlier cross-check against the contract table page went with rebuild step 5: the rows are
+    # built from the contract records (runtime/player_contracts.py), which carry their own validation.
     return years
 
 def cap_cell(row):
@@ -634,8 +619,13 @@ def render_organization(data, years, root):
                                                for s, names in sorted(ending.items())])
     return out.rstrip() + '\n'
 
-def render(data,root=ROOT):
+def render(data,root=ROOT,on=None):
+    """{path: text} of the six cap views, from the contract records (as they stood on day ``on``;
+    None: as they stand) and the club-level facts of ``data`` (the contract inputs); ``data`` itself
+    is not changed."""
+    from runtime import player_contracts
     from runtime.season_layout import rebase_markdown
+    data=player_contracts.tracker_inputs(data,root,on)
     years=validate(data,root)
     outputs = {
         OUTPUT: rebase_markdown(reader_words(render_main(data,years)), 'career/finances/jaguars_cap.md', OUTPUT),
@@ -675,7 +665,8 @@ def main():
             (ROOT/path).parent.mkdir(parents=True, exist_ok=True)
             (ROOT/path).write_text(content)
     if stale:print('STALE: '+', '.join(stale));return 1
-    print(('PASS: ' if args.check else 'WROTE: ')+str(len(data['players']))+'-player source reconciliation and twelve-year cap/detail views')
+    from runtime import player_contracts
+    print(('PASS: ' if args.check else 'WROTE: ')+str(len(player_contracts.rows(ROOT)))+'-player source reconciliation and twelve-year cap/detail views')
     return 0
 
 if __name__=='__main__':sys.exit(main())

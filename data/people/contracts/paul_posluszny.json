@@ -1,0 +1,83 @@
+{
+ "schema_version": 1,
+ "name": "Paul Posluszny",
+ "player": "paul_posluszny",
+ "listed": 29,
+ "position": "LB",
+ "roster_position": "LB",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2011",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "paul_posluszny_2011",
+   "club": "Jacksonville Jaguars",
+   "through": 2016,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 9500000,
+     "base": 7450000,
+     "proration": 2000000,
+     "other_cap": 50000,
+     "cash": 7500000,
+     "guaranteed_base": 0
+    },
+    "2015": {
+     "status": "known",
+     "cap": 9500000,
+     "base": 7450000,
+     "proration": 2000000,
+     "other_cap": 50000,
+     "cash": 7500000,
+     "guaranteed_base": 0
+    },
+    "2016": {
+     "status": "known",
+     "cap": 7500000,
+     "base": 7450000,
+     "proration": 0,
+     "other_cap": 50000,
+     "cash": 7500000,
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Veteran, 2011",
+   "signed_text": "2011",
+   "term_text": "6 / 2016",
+   "value_text": "$45,000,000",
+   "bonus": {
+    "text": "$10,000,000 signing bonus; $2,000,000 annually through 2015; $0 in 2016"
+   },
+   "guarantee_text": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
+   "guarantee_basis": "simulation reconstruction",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$4,000,000 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Original six-year contract retained. The $10M signing bonus is allocated over five years, 2011 to 2015: no 2016 proration. Original salary remains $7.45M with $50,000 workout bonus; the later real extension is excluded.",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "library/2014_jaguars_original_contract_reconstruction.md",
+    "library/2014_jaguars_contract_completion.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract; independent medical hold, projected return April 5, 2014",
+   "availability": "Out, head/neck, independent medical hold (Week 13); projected return April 5, 2014",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 4+ (entered 2007). 2013: Accrues in branch (on 53 for 16 games; out from Week 13 on independent medical hold, never moved to a reserve list)"
+  }
+ ]
+}
