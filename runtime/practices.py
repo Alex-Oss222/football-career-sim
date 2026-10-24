@@ -36,6 +36,7 @@ import datetime as dt
 import hashlib
 import json
 from pathlib import Path
+import re
 
 from .seasons import SeasonPaths
 
@@ -539,6 +540,179 @@ def schedule_from_instruction(instruction, season, week, root=ROOT, games=None):
     out.sort(key=lambda d: d["date"])
     return {"sessions": sessions, "days_off": out, "source": {"instruction": instruction.get("id")},
             "sha256": schedule_digest(schedule)}
+
+
+# ------------------------------------------------------------------ Stone's answer ("Practice week")
+# While no standing practice instruction sets a week, its schedule is Stone's answer under the
+# reserved heading "Practice week" on the week's My Responses page: one line a day, the day, a colon
+# and the day's work, as "Tuesday: day off", "Wednesday: practice in helmets and shoulder pads",
+# "Saturday: walkthrough in helmets", "Monday: film for the quarterbacks"; a second session that day
+# follows on its own line or after a semicolon without a day. A weekday that falls twice in the week
+# takes its date ("Friday, December 26: ..."). ``compile_answer`` reads only these words: the same
+# schedule in other words compiles to the same record, and anything it cannot read is named back to
+# him, never guessed.
+ANSWER_FORM = ("one line a day: the day, a colon and the day's work, as \"Tuesday: day off\", \"Wednesday: practice "
+               "in helmets and shoulder pads\" or \"Saturday: walkthrough in helmets\"")
+MONTH_NAMES = ("January", "February", "March", "April", "May", "June", "July", "August", "September", "October",
+               "November", "December")
+_DAY_LINE = re.compile(r"^(?:[-*]\s+)?(%s)(?:,?\s+(%s)\s+(\d{1,2})(?:,\s*\d{4})?)?\s*[:\u2013\u2014]\s*(.*)$"
+                       % ("|".join(WEEKDAYS), "|".join(MONTH_NAMES)), re.I)
+_DAY_OFF = re.compile(r"^(?:the\s+)?(?:(players'?|team'?s?)\s+)?(?:day\s+)?off$", re.I)
+SESSION_WORDS = (("walkthrough", ("walk-through", "walk through", "walkthrough")),
+                 ("conditioning", ("conditioning",)),
+                 ("treatment", ("treatment", "rehabilitation", "rehab")),
+                 ("meeting", ("meetings", "meeting")),
+                 ("film", ("film study", "film session", "film")),
+                 ("practice", ("practice",)))
+# Equipment, read in this order so "no helmets" and "helmets and shoulder pads" are not read as helmets.
+EQUIPMENT_WORDS_IN = (("none", ("no helmets", "without helmets", "no equipment")),
+                      (PADDED, ("helmets and shoulder pads", "shoulder pads and helmets", "full pads", "shoulder pads",
+                                "shells", "pads", "padded")),
+                      ("helmets", ("helmets only", "helmets", "helmet")))
+ATTENDEE_WORDS = (("quarterbacks", ("the quarterbacks", "quarterbacks")),
+                  ("injured", ("the injured players", "injured players", "the injured", "injured")))
+VOLUNTARY_WORDS = ("voluntary", "optional")
+FILLER = frozenset({"in", "with", "a", "an", "the", "for", "only", "all", "players", "player", "session", "sessions",
+                    "team", "at", "full", "required", "and", "of", "by", "our", "whole", "squad", "on", "field"})
+
+
+def _take(text, groups):
+    """(value, rest) of the first group whose words are in ``text`` (whole words), or (None, text)."""
+    for value, words in groups:
+        for word in words:
+            pattern = re.compile(r"(?<![\w'-])%s(?![\w'-])" % re.escape(word), re.I)
+            if pattern.search(text):
+                return value, pattern.sub(" ", text, count=1)
+    return None, text
+
+
+def _session_from(words, day, problems):
+    """One session from a day's words, or None with the problem named."""
+    text = re.sub(r"\([^()]*\)", " ", words)            # a note in parentheses is his, not the schedule's
+    kind, rest = _take(text, SESSION_WORDS)
+    if kind is None:
+        problems.append("%s: write the day's work (practice, walkthrough, meeting, film, conditioning or treatment) "
+                        "or day off (%r)" % (long_day(day), words.strip()))
+        return None
+    equipment, rest = _take(rest, EQUIPMENT_WORDS_IN)
+    attendees, rest = _take(rest, ATTENDEE_WORDS)
+    voluntary, rest = _take(rest, (("voluntary", VOLUNTARY_WORDS),))
+    left = [w for w in re.findall(r"[\w'-]+", rest) if w.lower() not in FILLER]
+    if left:
+        problems.append("%s: %r is not part of a session I can record (the work, what the players wear, who "
+                        "attends, voluntary); write it as %s" % (long_day(day), " ".join(left), ANSWER_FORM))
+        return None
+    if equipment is None:
+        if kind in ("practice", "walkthrough", "conditioning"):
+            problems.append("%s: say what the players wear for the %s: helmets and shoulder pads, helmets, or no "
+                            "helmets" % (long_day(day), WORK_WORDS[kind]))
+            return None
+        equipment = "none"
+    if attendees is None:
+        attendees = "injured" if kind == "treatment" else "team"
+    return {"date": day.isoformat(), "type": kind, "required": voluntary is None, "attendees": attendees,
+            "equipment": equipment}
+
+
+def compile_answer(text, season, week, root=ROOT, games=None):
+    """(schedule, problems): Stone's "Practice week" answer read into the week's schedule
+    ({"sessions": [...], "days_off": [...]}, in this module's words, sorted by date, so the same
+    schedule in other words gives the same record), every day inside the week; or the problems in
+    football words. Nothing defaults but the equipment of a meeting, film or treatment (none), who
+    attends (the team; the injured players for treatment) and that a session is required unless
+    he writes voluntary."""
+    games = fixtures(season, root) if games is None else games
+    first, last = week_span(season, week, root, games)
+    span = _days(first, last)
+    name = "the Week %d bye" % week if is_bye(season, week, root, games) else "the Week %d practice week" % week
+    problems, sessions, offs, day = [], [], [], None
+    # One day a line, or several after semicolons; a full stop before a weekday also starts a new day.
+    lines = re.split(r"\n|;|\.\s+(?=(?:%s)\b)" % "|".join(WEEKDAYS), text or "", flags=re.I)
+    chunks = [c.strip() for c in lines]
+    for chunk in [c for c in chunks if c]:
+        m = _DAY_LINE.match(chunk)
+        if m:
+            weekday = m[1].capitalize()
+            if m[2]:
+                try:
+                    dated = dt.date(first.year if m[2].capitalize() != "January" or first.month == 1 else first.year + 1,
+                                    MONTH_NAMES.index(m[2].capitalize()) + 1, int(m[3]))
+                except ValueError:
+                    problems.append("%s %s is not a date" % (m[2], m[3]))
+                    day = None
+                    continue
+                if dated.strftime("%A") != weekday:
+                    problems.append("%s is a %s, not a %s" % (long_day(dated).split(", ", 1)[1], dated.strftime("%A"),
+                                                            weekday))
+                    day = None
+                    continue
+                if dated not in span:
+                    problems.append("%s is outside %s (%s); set it inside the week" % (
+                        long_day(dated), name, _span_words(first, last)))
+                    day = None
+                    continue
+                day = dated
+            else:
+                found = [d for d in span if d.strftime("%A") == weekday]
+                if not found:
+                    problems.append("%s is not a day of %s (%s); set it inside the week" % (
+                        weekday, name, _span_words(first, last)))
+                    day = None
+                    continue
+                if len(found) > 1:
+                    problems.append("%s falls twice in %s (%s); write its date, as \"%s: ...\"" % (
+                        weekday, name, " and ".join(long_day(d).split(", ", 1)[1] for d in found), long_day(found[-1])))
+                    day = None
+                    continue
+                day = found[0]
+            words = m[4].strip().rstrip(".")
+        elif day is None:
+            problems.append("%r does not start with a day; write %s" % (chunk, ANSWER_FORM))
+            continue
+        else:
+            words = chunk.rstrip(".")
+        if not words:
+            problems.append("%s: write the day's work or day off" % long_day(day))
+            continue
+        off = _DAY_OFF.match(words.strip())
+        if off:
+            scope = "team" if off[1] and off[1].lower().startswith("team") else "players"
+            if any(o["date"] == day.isoformat() for o in offs):
+                problems.append("%s is a day off twice" % long_day(day))
+                continue
+            offs.append({"date": day.isoformat(), "scope": scope, "players": "all", "exceptions": []})
+            continue
+        session = _session_from(words, day, problems)
+        if session is not None:
+            sessions.append(session)
+    if not sessions and not offs and not problems:
+        problems.append("Name each day's work or day off for %s: %s" % (name, ANSWER_FORM))
+    order = {k: n for n, k in enumerate(SESSION_TYPES)}
+    sessions.sort(key=lambda s: (s["date"], order[s["type"]], s["attendees"] if isinstance(s["attendees"], str)
+                                 else ",".join(s["attendees"]), s["equipment"], not s["required"]))
+    offs.sort(key=lambda d: d["date"])
+    return {"sessions": sessions, "days_off": offs}, problems
+
+
+def schedule_from_answer(compiled, page, heading):
+    """The week's schedule as Stone's applied answer sets it: its sessions and days off, where it was
+    given (``source``: his page and the heading) and the digest of the compiled schedule."""
+    return {"sessions": [dict(s) for s in compiled["sessions"]], "days_off": [dict(d) for d in compiled["days_off"]],
+            "source": {"page": page, "heading": heading},
+            "sha256": schedule_digest({"sessions": compiled["sessions"], "days_off": compiled["days_off"]})}
+
+
+def schedule_lines(schedule):
+    """The schedule in words, one line a day in date order ("Wednesday, October 15: practice, helmets")."""
+    dated = [(off["date"], 0, "%s: the players' day off" % long_day(off["date"])) for off in schedule["days_off"]]
+    for s in schedule["sessions"]:
+        words = "%s, %s" % (TYPE_WORDS[s["type"]].lower(), EQUIPMENT_WORDS[s["equipment"]].lower())
+        if s.get("attendees") not in (None, "team"):
+            words += ", " + _who(s["attendees"]).lower()
+        if not s.get("required", True):
+            words += ", voluntary"
+        dated.append((s["date"], 1, "%s: %s" % (long_day(s["date"]), words)))
+    return [text for _, _, text in sorted(dated)]
 
 
 # ------------------------------------------------------------------ validation

@@ -17,7 +17,18 @@ schedule and his standing instructions:
   instruction covers the inactives (his healthy-inactive rule), the item says
   why it is still his (``standing_not_applied``): the rule covers the healthy
   inactives only, and who is out for the game is known only as the week goes
-  on; his Game Plan may answer it with "Standing rule".
+  on; his Game Plan may answer it with "Standing rule";
+- the week's practice schedule (class ``practice_plan``, rebuild step 5, C1),
+  only when no standing practice instruction covers the week (none is in
+  force, the instruction does not set a week like it, as a Thursday game, or
+  its schedule for the week does not pass the padded-practice and rest
+  limits: scripts/record_practice_week.cover). It is owned by Stone, due
+  before the first day of the practice week, holds nothing, and its record is
+  a blank block under the reserved heading "Practice week" on the week's My
+  Responses page, appended with the item (runtime/responses.append_block); an
+  instruction in force that does not cover the week is named on the item with
+  why. The regular season only: the postseason's practice rule (one padded
+  practice a week) is not built.
 
 The week is the next Jacksonville game not yet closed, unless --week names
 another; after the regular season it is the next playoff game the bracket has
@@ -146,7 +157,50 @@ def items_for(root, wk):
     inactives.update({"fallback": None, "can_continue": None,
                       "record": {"path": wk.paths.record("depth_chart.md").relative_to(wk.root).as_posix()},
                       "sources": [dict(s) for s in sources], "resolution": None})
-    return [plan, inactives]
+    practice = practice_item_for(root, wk)
+    return [plan, inactives] + ([practice] if practice else [])
+
+
+PRACTICE = "practice_plan"
+
+
+def practice_item_for(root, wk):
+    """The week's practice ask, when no standing practice instruction covers it (rebuild step 5, C1),
+    or None. The regular season only."""
+    from runtime import open_events, practices
+    from runtime.decision_queue import PRACTICE_ANCHOR
+    from runtime import season_summary as summary
+    from scripts import record_practice_week
+    if wk.postseason:
+        return None
+    season, week = wk.season, int(wk.game["week"])
+    schedule, why = record_practice_week.cover(root, season, week)
+    if schedule is not None:
+        return None
+    holder = wk.job.get("holder")
+    first, _ = practices.week_span(season, week, wk.root)
+    listed = summary.first_practice(wk.cv.scheduled, week, wk.master)
+    start = listed or first
+    name = wk.label()
+    pages = week_pages(season, week, wk.root, postseason=wk.postseason)
+    item = {"id": "%d-w%02d-practice-week" % (season, week), "title": "%s practice week" % name,
+            "class": PRACTICE, "subject": "practice_schedule", "owner": holder,
+            "authority_rows": list(decision_queue.CLASSES[PRACTICE].rows),
+            "question": "Stone's %s practice schedule: each day's work, what the players wear and who attends, and "
+                        "the players' days off, checked against the padded-practice and rest limits before any session"
+                        % name,
+            "raised": {"date": wk.master.isoformat(), "by": "workflow"}, "status": "OPEN", "waits_on": [],
+            "deadline": {"date": start.isoformat(), "at": open_events.iso(open_events.et(start)),
+                         "label": "before the %s practice week, which may begin %s, %s"
+                                  % (name, start.strftime("%A"), _day(start))},
+            "blocks": [], "fallback": None, "can_continue": None,
+            "record": {"path": pages.responses.relative_to(wk.root).as_posix(), "anchor": PRACTICE_ANCHOR},
+            "sources": [{"path": wk.paths.record("calendar.md").relative_to(wk.root).as_posix()}],
+            "resolution": None}
+    in_force = current_job.practice_instruction(wk.job, season)
+    if in_force is not None:
+        item["standing_not_applied"] = [{"instruction": in_force["id"], "reason": why}]
+    return item
 
 
 def missing(root=ROOT, week=None):
@@ -166,14 +220,20 @@ def missing(root=ROOT, week=None):
 
 
 def open_items(root=ROOT, week=None):
-    """Open the week's missing items; returns their ids."""
+    """Open the week's missing items; returns their ids. A practice ask's blank "Practice week" block
+    is appended to the week's My Responses page with it (runtime/responses.append_block)."""
     from scripts.apply_game_plan import write_like
     root = Path(root).resolve()
-    new, _ = missing(root, week)
+    new, wk = missing(root, week)
     if not new:
         return []
     path = root / QUEUE
     queue = json.loads(path.read_text(encoding="utf-8"))
+    for item in new:
+        if item["class"] == PRACTICE:
+            from runtime import responses
+            from runtime.decisions import PRACTICE_WEEK
+            responses.append_block({"week": int(wk.game["week"])}, PRACTICE_WEEK, item, root, wk.season)
     queue["items"] += new
     write_like(path, queue)
     return [i["id"] for i in new]

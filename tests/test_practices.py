@@ -26,6 +26,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import unittest.mock
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -499,6 +500,234 @@ class CopyTests(unittest.TestCase):
             paths.practice_log(w).write_bytes(data)
         self.assertEqual(with_records, without)
         self.assertEqual(with_records, with_other)
+
+
+
+# ------------------------------------------------------------------ Stone's "Practice week" answer (C1, wave 2)
+def answer_text(week, padded_days=("Wednesday",), wording=0):
+    """His answer for a Sunday-game week in one of two wordings: Tuesday off, practices Wednesday to
+    Friday (pads on ``padded_days``), a Saturday walkthrough."""
+    lines = []
+    for day in ("Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"):
+        if day == "Tuesday":
+            lines.append("Tuesday: day off" if wording == 0 else "- Tuesday: the players' day off.")
+        elif day == "Saturday":
+            lines.append("Saturday: walkthrough in helmets" if wording == 0 else "- Saturday: helmets walk-through.")
+        else:
+            gear = ("helmets and shoulder pads" if wording == 0 else "shells") if day in padded_days else \
+                ("helmets" if wording == 0 else "helmets only")
+            lines.append("%s: practice in %s" % (day, gear) if wording == 0 else "- %s: %s practice." % (day, gear))
+    return "\n".join(lines)
+
+
+class AnswerTests(unittest.TestCase):
+    """The answer is read only from his words, and checked against the limits before any session."""
+
+    def test_two_wordings_of_one_schedule_compile_to_the_same_bytes(self):
+        week = practices.log_start(SEASON, ROOT)
+        one, problems = practices.compile_answer(answer_text(week, wording=0), SEASON, week, ROOT)
+        self.assertEqual(problems, [])
+        two, problems = practices.compile_answer(answer_text(week, wording=1), SEASON, week, ROOT)
+        self.assertEqual(problems, [])
+        self.assertEqual(json.dumps(one, sort_keys=True), json.dumps(two, sort_keys=True))
+        self.assertEqual([s["equipment"] for s in one["sessions"]], [PAD, HELMETS, HELMETS, HELMETS])
+        self.assertEqual([d["date"] for d in one["days_off"]],
+                         [d["date"] for d in from_instruction(week)["days_off"]])
+        lines = practices.schedule_lines(one)
+        self.assertEqual(len(lines), 5)
+        self.assertEqual(page_errors("career/x.md", "\n".join(lines)), [])
+
+    def test_what_it_cannot_read_is_named_back_never_guessed(self):
+        week = practices.log_start(SEASON, ROOT)
+        cases = [("Wednesday: practice", "say what the players wear"),
+                 ("Wednesday: practice in pads working the red zone", "is not part of a session I can record"),
+                 ("Sunday: practice in helmets", "is not a day of the Week %d practice week" % week),
+                 ("practice in helmets", "does not start with a day"),
+                 ("", "Name each day's work or day off")]
+        for text, words in cases:
+            with self.subTest(text=text):
+                schedule, problems = practices.compile_answer(text, SEASON, week, ROOT)
+                self.assertTrue(any(words in p for p in problems), problems)
+        # A weekday that falls twice in a week (the week after a Thursday game) takes its date.
+        ours = club_weeks()
+        after = next(w for w, g in sorted(ours.items()) if w - 1 in ours and ours[w - 1]["weekday"] == "Thursday")
+        first, last = practices.week_span(SEASON, after, ROOT)
+        twice = next(d for d in (first + dt.timedelta(days=n) for n in range((last - first).days + 1))
+                     if d + dt.timedelta(days=7) <= last)
+        weekday = twice.strftime("%A")
+        _, problems = practices.compile_answer("%s: practice in helmets" % weekday, SEASON, after, ROOT)
+        self.assertTrue(any("falls twice" in p for p in problems), problems)
+        dated = "%s, %s %d: practice in helmets" % (weekday, twice.strftime("%B"), twice.day)
+        schedule, problems = practices.compile_answer(dated, SEASON, after, ROOT)
+        self.assertEqual(problems, [])
+        self.assertEqual(schedule["sessions"][0]["date"], twice.isoformat())
+
+    def test_a_second_padded_day_is_refused_when_the_answer_is_checked(self):
+        week = practices.log_start(SEASON, ROOT)
+        schedule, problems = practices.compile_answer(answer_text(week, ("Wednesday", "Thursday")), SEASON, week, ROOT)
+        self.assertEqual(problems, [])
+        problems = practices.check_schedule(SEASON, week, schedule["sessions"], schedule["days_off"], ROOT)
+        status = practices.padded_status(SEASON, week - 1, ROOT)
+        self.assertTrue(any("second padded practice" in p and "Week %d" % status["double_week"] in p for p in problems),
+                        problems)
+
+    def test_the_instruction_covers_a_week_only_when_its_schedule_passes(self):
+        from scripts import record_practice_week as rpw
+        week = practices.log_start(SEASON, ROOT)
+        schedule, why = rpw.cover(ROOT, SEASON, week)
+        self.assertIsNotNone(schedule, why)
+        self.assertEqual(schedule["sha256"], from_instruction(week)["sha256"])
+        schedule, why = rpw.cover(ROOT, SEASON, other_day_week())
+        self.assertIsNone(schedule)
+        self.assertIn(club_weeks()[other_day_week()]["weekday"], why)
+        # A padded day of the instruction with the count unknown (a week before it not recorded) is refused,
+        # so the week is asked, never assumed.
+        padded = min(p["week"] for p in instruction()["schedule"]["equipment"]["pads"] if p["week"] > week)
+        if any(w not in practices.records(SEASON, ROOT) for w in range(week, padded)):
+            schedule, why = rpw.cover(ROOT, SEASON, padded)
+            self.assertIsNone(schedule)
+            self.assertIn("not all on record", why)
+        with unittest.mock.patch.object(current_job, "practice_instruction", return_value=None):
+            schedule, why = rpw.cover(ROOT, SEASON, week)
+        self.assertIsNone(schedule)
+        self.assertIn("No standing practice instruction is in force", why)
+
+    def test_the_week_the_instruction_does_not_set_opens_a_practice_item_that_holds_nothing(self):
+        from scripts import open_game_week
+        from scripts.render_game_week import Week
+        from runtime import decision_queue
+        wk = Week(ROOT, other_day_week())
+        item = open_game_week.practice_item_for(ROOT, wk)
+        self.assertEqual((item["class"], item["owner"], item["status"], item["blocks"]),
+                         ("practice_plan", "stone", "OPEN", []))
+        self.assertTrue(decision_queue.practice_item(item, "stone"))
+        self.assertEqual(item["record"]["anchor"], decision_queue.PRACTICE_ANCHOR)
+        first, _ = practices.week_span(SEASON, other_day_week(), ROOT)
+        self.assertEqual(item["deadline"]["date"], first.isoformat())
+        self.assertEqual([s["instruction"] for s in item["standing_not_applied"]], [instruction()["id"]])
+        # The week the instruction covers opens none.
+        self.assertIsNone(open_game_week.practice_item_for(ROOT, Week(ROOT, practices.log_start(SEASON, ROOT))))
+
+
+class AskTests(unittest.TestCase):
+    """In a temporary copy: the open week's instruction is given two pads in the week, so it no longer
+    covers it; the week's opening asks the practice week on My Responses, the briefing is issued again,
+    Stone's answer is checked before any session, applied, and the week recorded against it."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
+        self.addCleanup(self.tmp.cleanup)
+        self.root = Path(self.tmp.name) / "repo"
+        shutil.copytree(ROOT, self.root, ignore=shutil.ignore_patterns(*IGNORED), symlinks=True)
+
+    def test_the_practice_week_is_asked_answered_checked_applied_and_recorded(self):
+        import contextlib
+        import io
+        from runtime import decision_queue, responses
+        from runtime.decisions import PRACTICE_WEEK, week_pages
+        from scripts import record_practice_week as rpw, render_game_week
+        week = practices.log_start(SEASON, self.root)
+        wk = render_game_week.Week(self.root)
+        if wk.game is None or wk.game["week"] != week:
+            self.skipTest("the open week is not the practice log's first week")
+        pages = week_pages(SEASON, week, self.root)
+        # The instruction no longer covers the open week: two padded practices, the double week long used.
+        path = self.root / current_job.JOB
+        job = json.loads(path.read_text(encoding="utf-8"))
+        rule = next(i for i in current_job.instructions(job) if i["subject"] == "practice_schedule")
+        rule["schedule"]["equipment"]["pads"] += [{"week": week, "day": "Wednesday"}, {"week": week, "day": "Thursday"}]
+        path.write_text(json.dumps(job, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        issued = len(json.loads((pages.data / "briefings.json").read_text(encoding="utf-8"))["issued"])
+        with contextlib.redirect_stdout(io.StringIO()):
+            render_game_week.write(self.root)
+        queue = decision_queue.load(self.root)
+        item = rpw.practice_item(self.root, SEASON, week, queue)
+        self.assertIsNotNone(item)
+        self.assertEqual((item["status"], item["blocks"]), ("OPEN", []))
+        self.assertIn("does not pass the practice limits", item["standing_not_applied"][0]["reason"])
+        # The blank block, bound to the item; the briefing issued again, its section 8 asking it.
+        block = rpw.read_block(self.root, SEASON, {"week": week}, PRACTICE_WEEK)
+        self.assertEqual(block.answer, "")
+        binding = rpw.reserved_binding(self.root, SEASON, {"week": week}, PRACTICE_WEEK)
+        self.assertEqual((binding["item"], binding["reserved"], binding["applied"]), (item["id"], PRACTICE_WEEK, None))
+        entries = json.loads((pages.data / "briefings.json").read_text(encoding="utf-8"))["issued"]
+        self.assertEqual(len(entries), issued + 1)
+        self.assertTrue(entries[-1]["reason"].startswith("b:"), entries[-1]["reason"])
+        brief = pages.briefing.read_text(encoding="utf-8")
+        self.assertIn("Week %d practice week" % week, brief)
+        self.assertIn("Answer the practice week under its heading on [My Responses]", brief)
+        holds = decision_queue.blocking_errors([decision_queue.event("week_inputs", SEASON, week)], self.root)
+        self.assertFalse(any(item["id"] in line for line in holds))
+        # Unanswered: nothing is set and the runner cannot record a schedule nobody gave.
+        self.assertEqual(rpw.answer(self.root, SEASON, week)[0], "WAITING")
+        held = self.root / "held.json"
+        held.write_text(json.dumps({"source": {"page": "x"}, "sessions": [], "days_off": []}), encoding="utf-8")
+        problems, _, written = rpw.record(self.root, SEASON, week, held)
+        self.assertTrue(problems and "the runner cannot record a schedule nobody gave" in problems[0], problems)
+
+        def answer_with(text):
+            current = pages.responses.read_text(encoding="utf-8")
+            old = rpw.read_block(self.root, SEASON, {"week": week}, PRACTICE_WEEK)
+            pages.responses.write_text(current.replace(old.text, old.text.replace(
+                "**My answer:**\n", "**My answer:** %s\n" % text, 1), 1), encoding="utf-8")
+        # A second padded day in the week is refused when the answer is checked, and nothing is written.
+        answer_with(answer_text(week, ("Wednesday", "Thursday")).replace("\n", "; "))
+        before = {p: p.read_bytes() for p in (pages.responses, pages.responses_record, self.root / decision_queue.QUEUE)}
+        status, problems, _, written = rpw.answer(self.root, SEASON, week)
+        self.assertEqual((status, written), ("REFUSED", []))
+        self.assertTrue(any("second padded practice" in p for p in problems), problems)
+        self.assertEqual({p: p.read_bytes() for p in before}, before)
+        # His answer names one padded practice, the season's tenth, and the day off.
+        text = pages.responses.read_text(encoding="utf-8")
+        pages.responses.write_text(text.replace(answer_text(week, ("Wednesday", "Thursday")).replace("\n", "; "),
+                                                answer_text(week).replace("\n", "; ")), encoding="utf-8")
+        status, problems, lines, written = rpw.answer(self.root, SEASON, week, check=True)
+        self.assertEqual((status, problems, written), ("CHECKED", [], []))
+        status, problems, lines, written = rpw.answer(self.root, SEASON, week)
+        self.assertEqual((status, problems), ("SET", []))
+        self.assertEqual(len(lines), 5)
+        settled = rpw.practice_item(self.root, SEASON, week)
+        self.assertEqual((settled["status"], settled["resolution"]["by"], settled["resolution"]["record"]["anchor"]),
+                         ("RESOLVED", "user", decision_queue.PRACTICE_ANCHOR))
+        frozen = rpw.read_block(self.root, SEASON, {"week": week}, PRACTICE_WEEK)
+        from runtime.player_bios import master_date
+        on = master_date(self.root)
+        self.assertEqual(frozen.fields["Date answered"], "%s %d, %d" % (on.strftime("%B"), on.day, on.year))
+        binding = rpw.reserved_binding(self.root, SEASON, {"week": week}, PRACTICE_WEEK)
+        self.assertEqual(binding["applied"]["sha256"], frozen.sha256)
+        self.assertEqual(responses.validation_errors(self.root), [])
+        from runtime import current_job as cj, events
+        from runtime.events import repository_map
+        mapping = repository_map(self.root)
+        queue_errors = decision_queue.validation_errors(self.root, mapping, events.load_events(self.root, mapping), on,
+                                                        cj.load(self.root))
+        self.assertEqual([e for e in queue_errors if item["id"] in e], [])
+        # Answered once: running it again writes nothing; an upload that changes the applied block is refused.
+        self.assertEqual(rpw.answer(self.root, SEASON, week)[3], [])
+        upload = self.root / "upload.md"
+        upload.write_text(pages.responses.read_text(encoding="utf-8").replace("helmets and shoulder pads", "helmets"),
+                          encoding="utf-8")
+        with self.assertRaises(ValueError):
+            rpw.place_upload(self.root, SEASON, {"week": week}, upload)
+        # The practice-week commit records what was held against his schedule, the clock at game day.
+        schedule, _ = rpw.applied_schedule(self.root, SEASON, week)
+        self.assertEqual(schedule["source"]["heading"], PRACTICE_WEEK)
+        game_day = dt.date.fromisoformat(club_weeks()[week]["date"])
+        state = self.root / "state/05_Current_Season_State.md"
+        state.write_text(re.sub(r"(\| Master date/time \| )[A-Za-z]+ \d{1,2}, \d{4}[^|]*\|",
+                                r"\g<1>%s %d, %d, after the game-day clock advance for Week %d |"
+                                % (game_day.strftime("%B"), game_day.day, game_day.year, week),
+                                state.read_text(encoding="utf-8"), count=1), encoding="utf-8")
+        held.write_text(json.dumps({"source": {"page": pages.readme.relative_to(self.root).as_posix()},
+                                    "sessions": [dict(s, participation_recorded=False) for s in schedule["sessions"]],
+                                    "days_off": schedule["days_off"], "gaps": ["Participation was not recorded"]}),
+                        encoding="utf-8")
+        problems, notes, written = rpw.record(self.root, SEASON, week, held)
+        self.assertEqual(problems, [])
+        record = json.loads(written.read_text(encoding="utf-8"))
+        self.assertEqual(record["schedule"]["sha256"], schedule["sha256"])
+        status = practices.padded_status(SEASON, week, self.root)
+        self.assertEqual((status["first"]["used"], status["first"]["left"]), (10, 1))
 
 
 if __name__ == "__main__":
