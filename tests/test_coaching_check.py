@@ -548,6 +548,57 @@ class AnnualRecordHistoryTests(unittest.TestCase):
         self.assertEqual(paths.annual_record.read_bytes(), record_md)
 
 
+class FirstPracticeTests(unittest.TestCase):
+    """In a full copy with no standing practice instruction: the open week is asked on My Responses, and
+    once Stone's "Practice week" answer is applied its first session, not the first day of the week's
+    span, is the week's first practice, so the checks due before it fail nothing until that day passes."""
+
+    def test_a_week_asked_on_my_responses_opens_at_his_first_session(self):
+        import contextlib
+        import io
+        from runtime import current_job, practices
+        from runtime.decisions import PRACTICE_WEEK, week_pages
+        from scripts import record_practice_week as rpw, render_game_week
+        sys.path.insert(0, str(ROOT / "tests"))
+        import support_events as se
+        from test_practices import answer_text
+        tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
+        self.addCleanup(tmp.cleanup)
+        root = Path(tmp.name) / "repo"
+        shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns(".git", ".sim_cache", "__pycache__"), symlinks=True)
+        game = se.open_game(root)
+        if game is None:
+            self.skipTest("every regular-season game has closed")
+        week = int(game["week"])
+        path = root / current_job.JOB
+        job = json.loads(path.read_text(encoding="utf-8"))
+        for rule in current_job.instructions(job):
+            if rule["subject"] == "practice_schedule":
+                rule["status"] = "WITHDRAWN"
+        path.write_text(json.dumps(job, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        with contextlib.redirect_stdout(io.StringIO()):
+            render_game_week.write(root)
+        if rpw.practice_item(root, SEASON, week) is None:
+            self.skipTest("the open week's practice is not asked")
+        span = practices.week_span(SEASON, week, root)[0]
+        self.assertEqual(lc.first_practice_day(SEASON, week, root), span)
+        pages = week_pages(SEASON, week, root)
+        block = rpw.read_block(root, SEASON, {"week": week}, PRACTICE_WEEK)
+        pages.responses.write_text(pages.responses.read_text(encoding="utf-8").replace(block.text, block.text.replace(
+            "**My answer:**\n", "**My answer:** %s\n" % answer_text(week).replace("\n", "; "), 1), 1), encoding="utf-8")
+        tuesday = se.tuesday_before(game)
+        se.midweek(root, tuesday, 9, 0, week)
+        status, problems, _, _ = rpw.answer(root, SEASON, week)
+        self.assertEqual((status, problems), ("SET", []))
+        schedule, _ = rpw.applied_schedule(root, SEASON, week)
+        first = min(date.fromisoformat(s["date"]) for s in schedule["sessions"])
+        self.assertGreater(first, span)
+        self.assertEqual(lc.first_practice_day(SEASON, week, root), first)
+        self.assertNotIn(week, lc.practice_weeks_opened(SEASON, root))
+        set_master(root, first + timedelta(days=1), "after the 9 a.m. ET record of the Week %d preparation (test)" % week)
+        self.assertIn(week, lc.practice_weeks_opened(SEASON, root))
+
+
 def _rel_in(root, path):
     return Path(path).resolve().relative_to(Path(root).resolve()).as_posix()
 

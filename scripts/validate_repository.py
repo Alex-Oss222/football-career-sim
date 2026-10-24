@@ -238,6 +238,15 @@ def master_closure_error(line, master_date, through):
     return None if through == master_date else MASTER_CLOSURE
 
 
+def clock_matches(line, through, current_date):
+    """Whether Document 5's master date/time ``line`` (its date ``current_date``) agrees with the
+    latest closed event's ``through`` date (``master_closure_error`` decides): the same date, or, for a
+    mid-week record (docs/run_week.md, step 4a: "<date>, after the 10:30 a.m. ET record of ..."), a
+    later one. A mid-week record that closes nothing (a raise, an answer, a process entry) leaves the
+    checkpoint at the latest closed event, before the clock."""
+    return master_closure_error(line, current_date, through) is None
+
+
 def validate(root=ROOT):
     root = Path(root).resolve()
     errors = []

@@ -18,11 +18,15 @@ from release_staging import copied_root  # noqa: E402
 import support_events as se  # noqa: E402
 from runtime import current_job, decision_queue, open_events  # noqa: E402
 from runtime.decision_queue import event  # noqa: E402
-from runtime.events import load_events, repository_map  # noqa: E402
+from runtime.events import closures, load_events, repository_map  # noqa: E402
 from runtime.player_bios import master_date  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
 
 SEASON = se.SEASON
+
+
+def load_closures(root):
+    return closures(load_events(root))
 
 
 def reference_holds(item, ev):
@@ -119,6 +123,9 @@ class OpenEventTests(unittest.TestCase):
         # so the latest closure is behind it; the validator allows that in this form only (rehearsal r4).
         from scripts.validate_repository import MASTER_CLOSURE
         self.assertNotIn(MASTER_CLOSURE, errors)
+        # A mid-week record that closes nothing leaves the checkpoint at the latest closed event,
+        # before the clock: the copy's latest closure is the game before the open week.
+        self.assertLess(date.fromisoformat(load_closures(self.root)[-1][2]["through"]), self.tuesday)
 
     def test_only_the_mid_week_form_runs_ahead_of_the_latest_closure(self):
         from scripts.validate_repository import MASTER_CLOSURE, master_closure_error as error
@@ -132,6 +139,20 @@ class OpenEventTests(unittest.TestCase):
         self.assertIsNone(error(game_day, self.tuesday, self.tuesday))
         self.assertEqual(error(game_day, self.tuesday, earlier), MASTER_CLOSURE)
         self.assertEqual(error(None, self.tuesday, earlier), MASTER_CLOSURE)
+
+    def test_only_a_mid_week_record_runs_ahead_of_the_latest_closed_event(self):
+        from scripts.validate_repository import clock_matches
+        closed = self.tuesday - timedelta(days=2)
+        midweek = "%s, after the 10:30 a.m. ET record of the Week %d preparation (a test record)" % (
+            se.long_date(self.tuesday), self.week)
+        self.assertTrue(clock_matches(midweek, closed, self.tuesday))
+        self.assertTrue(clock_matches(midweek, self.tuesday, self.tuesday))
+        self.assertFalse(clock_matches(midweek, self.tuesday + timedelta(days=1), self.tuesday))
+        for line in ("%s, after the game-day clock advance for Week %d" % (se.long_date(self.tuesday), self.week),
+                     "%s, after the Week %d game (a test score)" % (se.long_date(self.tuesday), self.week),
+                     "%s, a line with no time" % se.long_date(self.tuesday)):
+            self.assertTrue(clock_matches(line, self.tuesday, self.tuesday), line)
+            self.assertFalse(clock_matches(line, closed, self.tuesday), line)
 
     def test_an_event_raised_after_the_clock_fails(self):
         late = open_events.et(self.tuesday, 11)
