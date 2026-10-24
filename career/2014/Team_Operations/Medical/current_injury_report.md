@@ -1,6 +1,6 @@
 # Jacksonville injury report
 
-As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Tennessee 10). The medical staff control participation and return clearance.
+As of October 19, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Tennessee 10). The medical staff control participation and return clearance.
 
 [Medical history](medical_history.md) · [Roster](../Team/Roster/roster.md) · [Depth chart](../Team/Depth_Chart/depth_chart.md) · [Medical records](README.md) · [Head coach's desk](../../README.md)
 
@@ -8,8 +8,8 @@ As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Ten
 
 | Player | Pos | Status | Next medical date |
 |---|---|---|---|
-| [Joel Bitonio](../Team/Player_Cards/joel_bitonio.md) | OT | [Out · lower extremity (short)](incidents/joel_bitonio_2014-10-12.md) | Review October 15, 2014; projected return October 22, 2014 |
-| [A.J. Bouye](../Team/Player_Cards/a_j_bouye.md) | CB | [Out · lower extremity (short)](incidents/a_j_bouye_2014-10-12.md) | Review October 15, 2014; projected return October 22, 2014 |
+| [Joel Bitonio](../Team/Player_Cards/joel_bitonio.md) | OT | [Out · lower extremity (short)](incidents/joel_bitonio_2014-10-12.md) | Projected return October 22, 2014 |
+| [A.J. Bouye](../Team/Player_Cards/a_j_bouye.md) | CB | [Out · lower extremity (short)](incidents/a_j_bouye_2014-10-12.md) | Projected return October 22, 2014 |
 
 ## Reserve lists
 

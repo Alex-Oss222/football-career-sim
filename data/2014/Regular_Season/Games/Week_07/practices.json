@@ -1,0 +1,159 @@
+{
+ "schema": "practice-week-v1",
+ "season": 2014,
+ "week": 7,
+ "kind": "game",
+ "basis": "recorded",
+ "schedule": {
+  "source": {
+   "instruction": "stone-practice-schedule-2014"
+  },
+  "sha256": "535a6f1c77e2cc8bcf581700498c5f3673619c8017a493df8664320088713ad8"
+ },
+ "source": {
+  "page": "career/2014/Regular_Season/Games/Week_07/README.md"
+ },
+ "sessions": [
+  {
+   "date": "2014-10-13",
+   "type": "walkthrough",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": []
+  },
+  {
+   "date": "2014-10-15",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets_and_shoulder_pads",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Joel Bitonio",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-13-to-18-bitonio-and-bouye-reassessed-no-change"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_07/README.md"
+     }
+    },
+    {
+     "player": "A.J. Bouye",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-13-to-18-bitonio-and-bouye-reassessed-no-change"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_07/README.md"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-16",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Joel Bitonio",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-13-to-18-bitonio-and-bouye-reassessed-no-change"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_07/README.md"
+     }
+    },
+    {
+     "player": "A.J. Bouye",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-13-to-18-bitonio-and-bouye-reassessed-no-change"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_07/README.md"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-17",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Joel Bitonio",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-13-to-18-bitonio-and-bouye-reassessed-no-change"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_07/README.md"
+     }
+    },
+    {
+     "player": "A.J. Bouye",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-13-to-18-bitonio-and-bouye-reassessed-no-change"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_07/README.md"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-18",
+   "type": "walkthrough",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": []
+  }
+ ],
+ "days_off": [
+  {
+   "players": "all",
+   "exceptions": [],
+   "date": "2014-10-14",
+   "scope": "players"
+  }
+ ],
+ "gaps": [
+  "Participation was not recorded session by session; only the medical staff's communicated limitations are recorded"
+ ]
+}

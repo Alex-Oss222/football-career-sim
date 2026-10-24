@@ -2,7 +2,7 @@
 
 **Head coach:** Alex Stone  
 **Game:** Cleveland at Jacksonville, Sunday, October 19, 2014, 1 p.m. ET, EverBank Field  
-**Briefing used:** October 12, 2014  
+**Briefing used:** October 19, 2014  
 **Baseline:** Carry Week 6
 
 ## 1. What I want this game to look like

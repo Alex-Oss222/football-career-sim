@@ -1,13 +1,13 @@
 # Jacksonville 2014
 
-**October 12, 2014.** Last game: Week 6, beat Tennessee 24-10 away. Record: 4-2.
+**October 19, 2014.** Last game: Week 6, beat Tennessee 24-10 away. Record: 4-2.
 
 Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coach page](../Stone/README.md)
 
 ## Waiting on you
 
-1. **Week 7 game plan for Cleveland.** Due before kickoff, Sunday, October 19, 1 p.m. ET; the practice work before the first practice, Wednesday, October 15. [Game Week Briefing](Regular_Season/Games/Week_07/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_07/Game_Plan.md)
-2. **Week 7 inactives.** Due before kickoff, Sunday, October 19, 1 p.m. ET. Still to come: A.J. Bouye's reassessment (October 15); Joel Bitonio's reassessment (October 15). [Game Week Briefing](Regular_Season/Games/Week_07/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_07/Game_Plan.md)
+1. **Week 7 game plan for Cleveland.** Due before kickoff, Sunday, October 19, 1 p.m. ET. [Game Week Briefing](Regular_Season/Games/Week_07/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_07/Game_Plan.md)
+2. **Week 7 inactives.** Due before kickoff, Sunday, October 19, 1 p.m. ET. [Game Week Briefing](Regular_Season/Games/Week_07/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_07/Game_Plan.md)
 
 ## Next event
 
@@ -32,8 +32,8 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coac
 
 | Player | Status | Next medical date |
 |---|---|---|
-| [Joel Bitonio](Team_Operations/Team/Player_Cards/joel_bitonio.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md) | Review October 15, 2014; projected return October 22, 2014 |
-| [A.J. Bouye](Team_Operations/Team/Player_Cards/a_j_bouye.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md) | Review October 15, 2014; projected return October 22, 2014 |
+| [Joel Bitonio](Team_Operations/Team/Player_Cards/joel_bitonio.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md) | Projected return October 22, 2014 |
+| [A.J. Bouye](Team_Operations/Team/Player_Cards/a_j_bouye.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md) | Projected return October 22, 2014 |
 
 Projected dates require medical clearance. [Full injury report](Team_Operations/Medical/current_injury_report.md)
 

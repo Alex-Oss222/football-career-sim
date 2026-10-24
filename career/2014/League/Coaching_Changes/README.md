@@ -4,7 +4,9 @@ Every club's head coach, Jacksonville's included, is checked in the same way aft
 
 ## Changes
 
-No club has changed its head coach this season.
+| Date | Club | Head coach | Record at the change | Takes over |
+|---|---|---|---|---|
+| October 13, 2014 | [Carolina Panthers](Head_Coach_Change_2014-10-13_Carolina_Panthers.md) | Ron Rivera | 2-4 | An interim head coach from the club's staff |
 
 ## Weeks checked
 

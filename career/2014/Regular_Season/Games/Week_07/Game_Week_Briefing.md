@@ -1,10 +1,38 @@
 # Week 7 Game Week Briefing: Cleveland
 
-**Issued:** October 12, 2014  
+**Issued:** October 19, 2014  
 **Game:** Cleveland at Jacksonville, Sunday, October 19, 2014, 1 p.m. ET, EverBank Field  
 **Prepared for:** Head Coach Alex Stone  
 **Football staff:** Mike Tice (offense), Romeo Crennel (defense), Mike Westhoff (special teams), the medical staff and pro personnel  
-**Status:** Initial briefing.
+**Status:** Revised: it replaces the briefing of October 12, 2014.
+
+## FOR YOUR INFORMATION
+
+> **Carolina Panthers changes its head coach: completed** | Monday, October 13
+>
+> **Known fact:** The club changed its head coach; an interim head coach from its staff takes over. Decided by Carolina Panthers.
+>
+> **Football consequence:** To come.
+>
+> **Record:** [Head Coach Change: Carolina Panthers](../../../League/Coaching_Changes/Head_Coach_Change_2014-10-13_Carolina_Panthers.md)
+
+## COMING UP
+
+> **Dwight Lowery's practice window** | Monday, October 20
+>
+> **Why it matters:** Eligibility: the medical communication sets no practice before October 20.
+>
+> **Current state:** Reserve/Injured, designated for return (placed September 8, 2014).
+>
+> **Action now:** No answer is required.
+
+> **Dwight Lowery's return window** | Monday, November 3
+>
+> **Why it matters:** Eligibility: the medical communication sets no return before November 3.
+>
+> **Current state:** Reserve/Injured, designated for return (placed September 8, 2014).
+>
+> **Action now:** No answer is required.
 
 ## 1. The game and what is at stake
 
@@ -39,8 +67,8 @@
 
 | Player | Status as of issue | Next medical decision / date | Football contingency |
 |---|---|---|---|
-| [Joel Bitonio](../../../Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md), OT | Out: lower extremity (short); projected return October 22, 2014 | Reassessment, October 15 | By the chart and the Week 6 game-day list: Andrew Norwell at left guard |
-| [A.J. Bouye](../../../Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md), CB | Out: lower extremity (short); projected return October 22, 2014 | Reassessment, October 15 | By the chart and the Week 6 game-day list: Alan Ball at nickel |
+| [Joel Bitonio](../../../Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md), OT | Out: lower extremity (short); projected return October 22, 2014 | Not communicated | By the chart and the Week 6 game-day list: Andrew Norwell at left guard |
+| [A.J. Bouye](../../../Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md), CB | Out: lower extremity (short); projected return October 22, 2014 | Not communicated | By the chart and the Week 6 game-day list: Alan Ball at nickel |
 
 **Game-day numbers:** Who does not dress: 7 of the 53; on the medical staff's projections 2 are out for the game, so your standing rule sits the other five and settles the list.
 
@@ -76,6 +104,10 @@
 | October 3 | Waived | LaRon Byrd | WR |
 | October 3 | Claimed off waivers | Rodney Smith | WR |
 | October 10 | Signed to the practice squad | Braxston Cave | C |
+| October 15 | Released from the practice squad | Lee Doss | WR |
+| October 16 | Signed to the practice squad | Kevin Cone | WR |
+| October 17 | Promoted from the practice squad | Ryan Seymour | G |
+| October 18 | Waived | Gerell Robinson | TE |
 
 **Crennel's recommendation:** To come.
 
@@ -99,6 +131,10 @@
 | September 10 | Released from the practice squad | Justin Staples | LB |
 | September 17 | Signed to the practice squad | Allen Bradford | LB |
 | October 8 | Signed to the practice squad | A.J. Pataiali'i | DT |
+| October 14 | Signed as a free agent | Sione Fua | DT |
+| October 17 | Signed to the practice squad | Christian Tupou | DT |
+| October 18 | Waived | Isaiah Trufant | DB |
+| October 18 | Promoted from the practice squad | Jacobbi McDaniel | DT |
 
 **Tice's recommendation:** To come.
 
@@ -141,8 +177,8 @@
 
 | Decision | Choice required | Deadline / dependency |
 |---|---|---|
-| Week 7 game plan for Cleveland | The plan for the game | Practice work before the first practice, Wednesday, October 15; the rest before kickoff, Sunday, October 19, 1 p.m. ET; nothing still to come |
-| Week 7 inactives | Who does not dress: 7 of the 53; on the medical staff's projections 2 are out for the game, so your standing rule sits the other five and settles the list | Before kickoff, Sunday, October 19, 1 p.m. ET; after: A.J. Bouye's reassessment (October 15); Joel Bitonio's reassessment (October 15) |
+| Week 7 game plan for Cleveland | The plan for the game | Before kickoff, Sunday, October 19, 1 p.m. ET; nothing still to come |
+| Week 7 inactives | Who does not dress: 7 of the 53; on the medical staff's projections 2 are out for the game, so your standing rule sits the other five and settles the list | Before kickoff, Sunday, October 19, 1 p.m. ET; nothing still to come |
 
 Write your decisions on the [Game Plan](Game_Plan.md); the staff checks it and tells you what is missing before anything is set for the game.
 

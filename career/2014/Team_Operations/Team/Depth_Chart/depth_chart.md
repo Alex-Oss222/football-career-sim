@@ -1,6 +1,6 @@
 # Jacksonville Jaguars depth chart
 
-As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Tennessee 10).
+As of October 19, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Tennessee 10).
 
 This is Stone's current depth order, not a confirmed game-day lineup. Injuries do not change a starter or reserve assignment until Stone changes the chart.
 
@@ -47,8 +47,8 @@ The first defensive-line and linebacker groups, and the first four defensive bac
 
 | Player | Status | Next medical date |
 |---|---|---|
-| [Joel Bitonio](../Player_Cards/joel_bitonio.md) | Out · lower extremity (short) | Review October 15, 2014; projected return October 22, 2014 |
-| [A.J. Bouye](../Player_Cards/a_j_bouye.md) | Out · lower extremity (short) | Review October 15, 2014; projected return October 22, 2014 |
+| [Joel Bitonio](../Player_Cards/joel_bitonio.md) | Out · lower extremity (short) | Projected return October 22, 2014 |
+| [A.J. Bouye](../Player_Cards/a_j_bouye.md) | Out · lower extremity (short) | Projected return October 22, 2014 |
 
 Medical clearance remains with the medical staff. [Full medical report](../../Medical/current_injury_report.md)
 

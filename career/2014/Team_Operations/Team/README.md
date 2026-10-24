@@ -1,6 +1,6 @@
 # Jacksonville Jaguars
 
-As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Tennessee 10).
+As of October 19, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Tennessee 10).
 
 Head coach Alex Stone. Employed by the Jacksonville Jaguars; employment decided by Shad Khan, owner, and David Caldwell, general manager.
 

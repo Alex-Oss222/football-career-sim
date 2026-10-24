@@ -7,8 +7,8 @@ Dates and appointments for the football year. Times are Eastern. Scheduled work 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   | 1 | 2 | 3 | 4 | 5 [vs Pittsburgh Steelers](Regular_Season/Games/Week_05/README.md) |
-| 6 | 7 | 8 | 9 | 10 | 11 | **12 [at Tennessee Titans](Regular_Season/Games/Week_06/README.md)** |
-| 13 | 14 | 15 | 16 | 17 | 18 | 19 [vs Cleveland Browns](Regular_Season/Games/Week_07/README.md) |
+| 6 | 7 | 8 | 9 | 10 | 11 | 12 [at Tennessee Titans](Regular_Season/Games/Week_06/README.md) |
+| 13 | 14 | 15 | 16 | 17 | 18 | **19 [vs Cleveland Browns](Regular_Season/Games/Week_07/README.md)** |
 | 20 | 21 | 22 | 23 | 24 | 25 | 26 [vs Miami Dolphins](Regular_Season/Games/Week_08/README.md) |
 | 27 | 28 | 29 | 30 | 31 |   |   |
 

@@ -1,11 +1,36 @@
 {
- "about": "Every Game Week Briefing issued for the week, oldest first: the day it went out, its revision (the n-th issue of that day, so two issues the same day are told apart), its file in the week folder (the latest is the current briefing, each earlier one kept as he saw it) and the sha256 of its bytes as issued. Written only by scripts/render_game_week.py; validation holds each briefing to its entry.",
+ "about": "Every Game Week Briefing issued for the week, oldest first: the day it went out, its revision (the n-th issue of that day, so two issues the same day are told apart), its file in the week folder (the latest is the current briefing, each earlier one kept as he saw it) and the sha256 of its bytes as issued. Written only by scripts/render_game_week.py; validation holds each briefing to its entry. From rebuild step 5 a new entry also holds the time it went out (at, ET), why it was issued again under the one reissue rule (reason; null for the week's first issue) and the notices it carried at the top (inserts: each event, game-day item or window, its section, the sha256 of its lines and an answer's due time); an entry written before then holds none of them and reads as issued at the start of its date with no notice.",
  "issued": [
   {
    "date": "2014-10-12",
    "revision": 1,
-   "file": "Game_Week_Briefing.md",
+   "file": "Game_Week_Briefing_October_12.md",
    "sha256": "c816075f3c2b0f8114334e7da7edc218f42b03602280e22bede3aeb4b3cf3573"
+  },
+  {
+   "date": "2014-10-19",
+   "revision": 1,
+   "file": "Game_Week_Briefing.md",
+   "sha256": "35c8cc95646c6ea237ec7320fc76cfe5151026a06851da51d174adab04c212dc",
+   "at": "2014-10-19T00:00:00-04:00",
+   "reason": "b: the briefing's own sections changed while the week's decisions are open",
+   "inserts": [
+    {
+     "event": "2014-10-13-head-coach-change-carolina-panthers",
+     "section": "fyi",
+     "sha256": "2dcb6c0b22871b89532ea77d230e5d51000658e8ff7544b1963cf28271b619b1"
+    },
+    {
+     "window": "dwight-lowery-practice-2014-10-20",
+     "section": "coming_up",
+     "sha256": "e285c6844fc7e467d4826c83739ee2222ec2123091f26051ac94ddaa4b6beb17"
+    },
+    {
+     "window": "dwight-lowery-return-2014-11-03",
+     "section": "coming_up",
+     "sha256": "120fe6e0af4843d7d72d9bf749b917f014899fffe780a184611c4a15ae1646e4"
+    }
+   ]
   }
  ]
 }
