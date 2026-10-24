@@ -609,23 +609,54 @@ def staff_members(ctx):
 
 
 def contract_status(terms):
+    """The season it runs through, its guarantee and, when the record holds one, the day it ends;
+    an end completed from other contracts is marked completed (``completed_ends`` says from what)."""
     if terms is None:
         return "Not recorded"
     through = coaches.through_season(terms)
-    return "Through %d; %s" % (through, coaches.guarantee_text(terms).lower())
+    text = "Through %d; %s" % (through, coaches.guarantee_text(terms).lower())
+    end = (terms.get("end") or {}).get("text")
+    if end and terms.get("last_season") is None:
+        text += "; ends %s%s" % (end[:1].lower() + end[1:], " (completed)" if "end" in terms["reconstructed"] else "")
+    return text
+
+
+def completed_ends(ctx, page, members):
+    """One line for each way the staff's completed end dates were completed, naming the research."""
+    by_basis = {}
+    for record, terms in members:
+        if terms is None or terms.get("last_season") is not None or not (terms.get("end") or {}).get("text"):
+            continue
+        if "end" not in terms["reconstructed"]:
+            continue
+        basis = terms["reconstructed"]["end"] or {}
+        by_basis.setdefault((basis.get("from") or "comparable contracts of the time", basis.get("source")), []).append(
+            record["name"])
+    lines = []
+    for (source, research), names in by_basis.items():
+        cite = " (%s)" % link(ctx, page, research, SOURCE_LABELS.get(research) or heading(ctx.root / research)) \
+            if research else ""
+        lines.append("An end marked completed is not a signed term: it was completed from %s%s." % (source, cite)
+                     if len(by_basis) == 1 else
+                     "The ends marked completed for %s are not signed terms: they were completed from %s%s."
+                     % (join(names), source, cite))
+    return lines
 
 
 def staff_page(ctx):
     page = rel(ctx, ctx.paths.staff_page)
     out = ["# Coaching staff", "", "**%s · %d**" % (ctx.club, ctx.season), "", as_of(ctx), ""]
-    rows = []
+    rows, members = [], []
     for slug, record in staff_members(ctx):
         title, unit = coaches.job(record, ctx.club)
         hire = coaches.hired(record, ctx.club)
         terms = coaches.current_contract(record, ctx.club, ctx.today)
+        members.append((record, terms))
         name = link(ctx, page, COACH_PAGE, record["name"]) if slug == ctx.holder else record["name"]
         rows.append((name, title, UNIT_NAMES.get(unit, unit), coaches.date_text(hire), contract_status(terms)))
     out += ["## Who coaches what", ""] + table(["Coach", "Job", "Unit", "Since", "Contract"], rows)
+    for line in completed_ends(ctx, page, members):
+        out += ["", line]
     out += ["", "Salaries are on the %s." % link(ctx, page, PAYROLL, "coaching payroll"), ""]
     # Who calls what.
     out += ["## Who calls what", ""]

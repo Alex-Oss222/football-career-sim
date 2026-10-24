@@ -8,19 +8,21 @@ As of October 5, 2014, after Week 5.
 
 | Coach | Job | Unit | Since | Contract |
 |---|---|---|---|---|
-| [Alex Stone](../../../Stone/README.md) | Head coach | Team | January 15, 2013 | Through 2016; guaranteed |
+| [Alex Stone](../../../Stone/README.md) | Head coach | Team | January 15, 2013 | Through 2016; guaranteed; ends the later of January 31, 2017 or the day after Jacksonville's last game of the 2016 season (completed) |
 | Mike Tice | Offensive coordinator | Offense | Late January 2013 | Through 2015; guaranteed |
-| Jeremy Bates | Quarterbacks coach | Offense | Late January 2013 | Through 2014; guaranteed |
-| Darryl Drake | Wide receivers coach | Offense | Late January 2013 | Through 2014; guaranteed |
-| Charlie Skalaski | Offensive assistant / assistant quarterbacks | Offense | Late January 2013 | Through 2014; guaranteed |
-| Tim Spencer | Running backs coach | Offense | Late January 2013 | Through 2014; guaranteed |
-| George Yarno | Offensive line / run-game coach | Offense | Late January 2013 | Through 2014; guaranteed |
-| John Zernhelt | Tight ends coach | Offense | Late January 2013 | Through 2014; guaranteed |
+| Jeremy Bates | Quarterbacks coach | Offense | Late January 2013 | Through 2014; guaranteed; ends the later of January 31, 2015 or the day after Jacksonville's last game of the 2014 season (completed) |
+| Darryl Drake | Wide receivers coach | Offense | Late January 2013 | Through 2014; guaranteed; ends the later of January 31, 2015 or the day after Jacksonville's last game of the 2014 season (completed) |
+| Charlie Skalaski | Offensive assistant / assistant quarterbacks | Offense | Late January 2013 | Through 2014; guaranteed; ends the later of January 31, 2015 or the day after Jacksonville's last game of the 2014 season (completed) |
+| Tim Spencer | Running backs coach | Offense | Late January 2013 | Through 2014; guaranteed; ends the later of January 31, 2015 or the day after Jacksonville's last game of the 2014 season (completed) |
+| George Yarno | Offensive line / run-game coach | Offense | Late January 2013 | Through 2014; guaranteed; ends the later of January 31, 2015 or the day after Jacksonville's last game of the 2014 season (completed) |
+| John Zernhelt | Tight ends coach | Offense | Late January 2013 | Through 2014; guaranteed; ends the later of January 31, 2015 or the day after Jacksonville's last game of the 2014 season (completed) |
 | Romeo Crennel | Defensive coordinator | Defense | Late January 2013 | Through 2015; guaranteed |
-| Frank Bush | Linebackers coach | Defense | Late January 2013 | Through 2014; guaranteed |
-| Tony Oden | Defensive backs coach | Defense | Late January 2013 | Through 2014; guaranteed |
-| Anthony Pleasant | Defensive line coach | Defense | Late January 2013 | Through 2014; guaranteed |
+| Frank Bush | Linebackers coach | Defense | Late January 2013 | Through 2014; guaranteed; ends the later of January 31, 2015 or the day after Jacksonville's last game of the 2014 season (completed) |
+| Tony Oden | Defensive backs coach | Defense | Late January 2013 | Through 2014; guaranteed; ends the later of January 31, 2015 or the day after Jacksonville's last game of the 2014 season (completed) |
+| Anthony Pleasant | Defensive line coach | Defense | Late January 2013 | Through 2014; guaranteed; ends the later of January 31, 2015 or the day after Jacksonville's last game of the 2014 season (completed) |
 | Mike Westhoff | Special teams coordinator | Special teams | February 11, 2014 | Through 2015; 2014 guaranteed; 2015 not |
+
+An end marked completed is not a signed term: it was completed from the wording of Jacksonville's own 2010 assistant contracts ([head-coach contracts, 2005 to 2014](../../../../library/nfl_head_coach_contracts_2005_2014.md)).
 
 Salaries are on the [coaching payroll](../../../finances/coaching_and_organization/coaching_payroll.md).
 

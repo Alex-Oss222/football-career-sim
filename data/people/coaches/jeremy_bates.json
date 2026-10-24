@@ -37,6 +37,37 @@
     "for_cause": "Cause is limited to a material employment breach; poor results, a losing season or a football disagreement are not cause"
    },
    "source": "career/2014/Team_Operations/Staff/coaching_staff.md"
+  },
+  {
+   "in_world": "2013-01",
+   "label": "Late January 2013",
+   "recorded": "2026-10-23",
+   "kind": "contract_amended",
+   "contract": "jax-2013",
+   "reconstruction": true,
+   "delegation": {
+    "user_date": "2026-10-20",
+    "words": "two the saasisnt at some point needs to resign this year this if i remeber correcty is there last year",
+    "context": "given while answering when the assistants' contracts end: 2014 is the last season of this contract, and its end date is completed from the wording of Jacksonville's own assistant contracts"
+   },
+   "terms": {
+    "end": {
+     "value": {
+      "date": "2015-01-31",
+      "or_later": "the day after Jacksonville's last game of the 2014 season",
+      "text": "The later of January 31, 2015 or the day after Jacksonville's last game of the 2014 season"
+     },
+     "basis": {
+      "text": "The wording of Jacksonville's 2010 assistant extensions",
+      "from": "the wording of Jacksonville's own 2010 assistant contracts",
+      "rows": [
+       "C73"
+      ],
+      "source": "library/nfl_head_coach_contracts_2005_2014.md"
+     }
+    }
+   },
+   "source": "library/nfl_head_coach_contracts_2005_2014.md"
   }
  ]
 }

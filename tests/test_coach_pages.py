@@ -330,6 +330,25 @@ class CoachPageTests(unittest.TestCase):
         self.assertIn("- %s" % title, text.split("## Open jobs", 1)[1].split("\n## ", 1)[0])
         self.assertNotIn("| %s |" % record["name"], text.split("## Who coaches what", 1)[1].split("\n## ", 1)[0])
 
+    def test_the_staff_page_shows_each_end_and_marks_a_completed_one(self):
+        ctx = pages.context(self.root)
+        text = pages.build(self.root)[self.paths.staff_page.relative_to(self.root).as_posix()]
+        section = text.split("## Who coaches what", 1)[1].split("\n## ", 1)[0]
+        completed = False
+        for slug, record in pages.staff_members(ctx):
+            terms = coaches.current_contract(record, ctx.club, ctx.today)
+            row = next(l for l in section.split("\n")
+                       if l.startswith("| %s |" % record["name"]) or l.startswith("| [%s]" % record["name"]))
+            end = (terms.get("end") or {}).get("text")
+            if not end:
+                self.assertNotIn("; ends ", row)
+                continue
+            self.assertIn("; ends " + end[:1].lower() + end[1:], row)
+            self.assertEqual("(completed)" in row, "end" in terms["reconstructed"])
+            completed = completed or "end" in terms["reconstructed"]
+        if completed:
+            self.assertRegex(section, r"(An end marked completed is not a signed term|are not signed terms)")
+
     def test_both_pages_carry_the_same_terms_line(self):
         ctx = pages.context(self.root)
         terms = current_job.contract_terms(ctx.job, self.root)
