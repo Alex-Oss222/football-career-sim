@@ -165,6 +165,9 @@ class Week6LeaguePagesTests(unittest.TestCase):
         self.assertEqual(sum(JAX in r["team_stats"] for r in written), 1)
         fake_awards(root, paths, week)
         settle_the_rest(root, paths, week)
+        # The week's practice record, as the practice-week commit writes it before the game.
+        from test_week_close_pages import record_practice
+        record_practice(self, root, week)
 
         pages = self.rebuild(week)
 
