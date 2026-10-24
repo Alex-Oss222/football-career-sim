@@ -1,10 +1,10 @@
 # Marquis Flowers
 
-**Cincinnati Bengals · Middle linebacker · No. 53 · Age 22 · Last game October 5, 2014**
+**Cincinnati Bengals · Middle linebacker · No. 53 · Age 22 · Last game October 12, 2014**
 
 6' 2", 240 lb · Born February 16, 1992 · Arizona
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Marquis Flowers](https://commons.wikimedia.org/wiki/Special:FilePath/Marquis_Flowers.JPG?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 22 | 53 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Cincinnati | 22 | 53 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 22 | 53 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Cincinnati | 22 | 53 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

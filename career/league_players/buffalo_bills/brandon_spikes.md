@@ -1,10 +1,10 @@
 # Brandon Spikes
 
-**Buffalo Bills · Middle linebacker · No. 51 · Age 27 · Last game October 5, 2014**
+**Buffalo Bills · Middle linebacker · No. 51 · Age 27 · Last game October 12, 2014**
 
 6' 2", 255 lb · Born September 3, 1987 · Florida · Drafted in 2010, second round, by New England
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Brandon Spikes](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Spikes.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting middle linebacker.
 
-**Tackles:** 57 (2014, through Week 5).
+**Tackles:** 65 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 27 | 51 | 5 | 57 | 41 | 16 | 3 | 1 | 3 |
+| 2014 (through Week 6) | Buffalo | 27 | 51 | 6 | 65 | 46 | 19 | 3 | 1 | 3 |
 | 2013 | New England | 26 | 55 | 16 | 108 | 81 | 27 | 6 | 5 | 10 |
-| Career |  |  |  | 21 | 165 | 122 | 43 | 9 | 6 | 13 |
+| Career |  |  |  | 22 | 173 | 127 | 46 | 9 | 6 | 13 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 27 | 51 | 1 | 0 | 3 | 1 | 1 | 0 |
+| 2014 (through Week 6) | Buffalo | 27 | 51 | 1 | 0 | 3 | 1 | 1 | 0 |
 | 2013 | New England | 26 | 55 | 0 | 0 | 5 | 0 | 0 | N/A |
 
 ### Playoffs

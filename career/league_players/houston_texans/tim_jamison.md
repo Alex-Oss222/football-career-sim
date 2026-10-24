@@ -1,10 +1,10 @@
 # Tim Jamison
 
-**Houston Texans · Defensive end · No. 96 · Age 28 · Last game October 5, 2014**
+**Houston Texans · Defensive end · No. 96 · Age 28 · Last game October 9, 2014**
 
 6' 3", 287 lb · Born February 26, 1986 · Michigan
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Tim Jamison](https://commons.wikimedia.org/wiki/Special:FilePath/Tim_Jamison.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 28 | 96 | 5 | 6 | 4 | 2 | 0 | 1 | 1 |
+| 2014 (through Week 6) | Houston | 28 | 96 | 6 | 6 | 4 | 2 | 0 | 1 | 1 |
 | 2013 | Houston | 27 | 96 | 16 | 18 | 13 | 5 | 1 | 0 | 1 |
-| Career |  |  |  | 21 | 24 | 17 | 7 | 1 | 1 | 2 |
+| Career |  |  |  | 22 | 24 | 17 | 7 | 1 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 28 | 96 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Houston | 28 | 96 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Houston | 27 | 96 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

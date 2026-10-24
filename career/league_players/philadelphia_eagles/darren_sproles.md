@@ -1,10 +1,10 @@
 # Darren Sproles
 
-**Philadelphia Eagles · Running back · No. 43 · Age 31 · Last game October 5, 2014**
+**Philadelphia Eagles · Running back · No. 43 · Age 31 · Last game October 12, 2014**
 
 5' 6", 190 lb · Born June 20, 1983 · Kansas State · Drafted in 2005, fourth round, by San Diego
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Darren Sproles](https://commons.wikimedia.org/wiki/Special:FilePath/Darren_Sproles.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 3.2 (2014, through Week 5).
+**Yards per carry:** 3.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 31 | 43 | 5 | 40 | 129 | 3.2 | 2 | 20 | 25.8 |
+| 2014 (through Week 6) | Philadelphia | 31 | 43 | 6 | 42 | 128 | 3.0 | 2 | 20 | 21.3 |
 | 2013 | New Orleans | 30 | 43 | 14 | 2 | 2 | 1.0 | 0 | 4 | 0.1 |
-| Career |  |  |  | 19 | 42 | 131 | 3.1 | 2 | 20 | 6.9 |
+| Career |  |  |  | 20 | 44 | 130 | 3.0 | 2 | 20 | 6.5 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 31 | 43 | 10 | 7 | 52 | 7.4 | 0 | 1 | 1 |
+| 2014 (through Week 6) | Philadelphia | 31 | 43 | 10 | 7 | 52 | 7.4 | 0 | 1 | 1 |
 | 2013 | New Orleans | 30 | 43 | 2 | 2 | 19 | 9.5 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 31 | 43 | 0 | 0 | N/A | 13 | 152 | 11.7 |
+| 2014 (through Week 6) | Philadelphia | 31 | 43 | 0 | 0 | N/A | 14 | 163 | 11.6 |
 | 2013 | New Orleans | 30 | 43 | 34 | 788 | 23.2 | 38 | 460 | 12.1 |
 
 ### Playoffs

@@ -1,10 +1,12 @@
-# Vincent Brown
+# Chase Ford
 
-**San Diego Chargers · Wide receiver · Age 24 · Last game December 29, 2013**
+**Minnesota Vikings · Tight end · No. 86 · Age 24 · Last game October 12, 2014**
 
-5' 11", 190 lb · Born January 25, 1989 · San Diego State · Drafted in 2011, third round, by San Diego
+6' 6", 255 lb · Born July 19, 1990 · Miami; Kilgore
 
-As of December 29, 2013, after Week 17.
+As of October 12, 2014, after Week 6.
+
+**Yards per target:** 22.0 (2014, through Week 6).
 
 ## Contract
 
@@ -16,11 +18,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego | 24 | 86 | 16 | 26 | 18 | 287 | 15.9 | 1 | 42 | 17.9 | 69.2 |
+| 2014 (through Week 6) | Minnesota | 24 | 86 | 1 | 1 | 1 | 22 | 22.0 | 0 | 22 | 22.0 | 100.0 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | San Diego | 24 | 86 | 1 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Minnesota | 24 | 86 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 
@@ -32,8 +34,6 @@ None.
 
 ## Transactions
 
-| Date | Transaction |
-|---|---|
-| 2011 | Drafted by San Diego in the third round |
+None on record.
 
 <!-- player-page -->

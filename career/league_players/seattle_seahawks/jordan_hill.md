@@ -1,10 +1,10 @@
 # Jordan Hill
 
-**Seattle Seahawks · Defensive tackle · No. 97 · Age 23 · Last game October 6, 2014**
+**Seattle Seahawks · Defensive tackle · No. 97 · Age 23 · Last game October 12, 2014**
 
 6' 1", 303 lb · Born February 8, 1991 · Penn State
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jordan Hill](https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Hill_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 5).
+**Sacks:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Seattle | 23 | 97 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Seattle | 23 | 97 | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | Seattle | 22 | 97 | 12 | 17 | 10 | 7 | 1 | 0 | 2 |
-| Career |  |  |  | 16 | 18 | 11 | 7 | 1 | 0 | 2 |
+| Career |  |  |  | 17 | 18 | 11 | 7 | 1 | 0 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Seattle | 23 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Seattle | 23 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Seattle | 22 | 97 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

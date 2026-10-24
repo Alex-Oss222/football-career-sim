@@ -3,7 +3,7 @@
  "season": 2014,
  "as_of": {
   "date": "2014-10-12",
-  "event": "game day at Tennessee before kickoff"
+  "event": "after the Week 6 game at Tennessee"
  },
  "practice_squad_places": 10,
  "active_limit": 53,
@@ -228,10 +228,10 @@
    "list": "active",
    "group": "Offensive line",
    "status": "Active 53 (Rookie, drafted No. 26, May 8, 2014; rookie contract signed May 11, 2014)",
-   "availability": "No communicated restriction",
+   "availability": "Out, short: lower extremity, logged at 1:13 of the fourth quarter in the October 12 Week 6 game, not removed; projected return October 22, 2014; reassessment October 15 ([medical record](../../Medical/incidents/joel_bitonio_2014-10-12.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md"
    }
   },
   {
@@ -564,10 +564,10 @@
    "list": "active",
    "group": "Defensive backs",
    "status": "Active 53",
-   "availability": "No communicated restriction (cleared August 31, 2014, his projected date, from the August 28 lower-extremity injury; reassessed August 29 with no change; [medical history](../../Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements))",
+   "availability": "Out, short: lower extremity, logged at 13:26 of the third quarter in the October 12 Week 6 game, removed; projected return October 22, 2014; reassessment October 15 ([medical record](../../Medical/incidents/a_j_bouye_2014-10-12.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md"
    }
   },
   {

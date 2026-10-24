@@ -1,10 +1,10 @@
 # Cody Parkey
 
-**Philadelphia Eagles · Kicker · No. 1 · Age 22 · Last game October 5, 2014**
+**Philadelphia Eagles · Kicker · No. 1 · Age 22 · Last game October 12, 2014**
 
 6' 0", 193 lb · Born February 19, 1992 · Auburn
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Cody Parkey](https://commons.wikimedia.org/wiki/Special:FilePath/Cody_Parkey.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 93.3 (2014, through Week 5).
+**Field-goal percentage:** 84.2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 22 | 1 | 5 | 14 | 15 | 93.3 | 51 | 11 | 11 | 100.0 | 53 |
+| 2014 (through Week 6) | Philadelphia | 22 | 1 | 6 | 16 | 19 | 84.2 | 51 | 14 | 14 | 100.0 | 62 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 22 | 1 | 5-5 | 6-7 | 3-3 |
+| 2014 (through Week 6) | Philadelphia | 22 | 1 | 6-6 | 7-10 | 3-3 |
 
 ### Playoffs
 

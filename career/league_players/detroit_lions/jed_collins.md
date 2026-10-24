@@ -1,10 +1,10 @@
 # Jed Collins
 
-**Detroit Lions · Fullback · No. 45 · Age 28 · Last game October 5, 2014**
+**Detroit Lions · Fullback · No. 45 · Age 28 · Last game October 12, 2014**
 
 6' 1", 252 lb · Born March 3, 1986 · Washington State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jed Collins](https://commons.wikimedia.org/wiki/Special:FilePath/Jed_Collins.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 2.7 (2014, through Week 5).
+**Yards per carry:** 2.7 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 28 | 45 | 5 | 6 | 16 | 2.7 | 0 | 5 | 3.2 |
+| 2014 (through Week 6) | Detroit | 28 | 45 | 6 | 6 | 16 | 2.7 | 0 | 5 | 2.7 |
 | 2013 | New Orleans | 27 | 45 | 16 | 7 | 25 | 3.6 | 0 | 6 | 1.6 |
-| Career |  |  |  | 21 | 13 | 41 | 3.2 | 0 | 6 | 2.0 |
+| Career |  |  |  | 22 | 13 | 41 | 3.2 | 0 | 6 | 1.9 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 28 | 45 | 12 | 10 | 112 | 11.2 | 0 | 1 | 0 |
+| 2014 (through Week 6) | Detroit | 28 | 45 | 12 | 10 | 112 | 11.2 | 0 | 1 | 0 |
 | 2013 | New Orleans | 27 | 45 | 13 | 9 | 107 | 11.9 | 1 | 0 | 0 |
 
 ### Playoffs

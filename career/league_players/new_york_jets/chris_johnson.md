@@ -1,10 +1,10 @@
 # Chris Johnson
 
-**New York Jets · Running back · No. 21 · Age 29 · Last game October 5, 2014**
+**New York Jets · Running back · No. 21 · Age 29 · Last game October 12, 2014**
 
 5' 11", 203 lb · Born September 23, 1985 · East Carolina · Drafted in 2008, first round, by Tennessee
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Chris Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Johnson_sitting_on_his_helmet.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 5.4 (2014, through Week 5).
+**Yards per carry:** 5.3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 28 | 21 | 5 | 27 | 146 | 5.4 | 1 | 27 | 29.2 |
+| 2014 (through Week 6) | N.Y. Jets | 28 | 21 | 6 | 29 | 154 | 5.3 | 2 | 27 | 25.7 |
 | 2013 | Tennessee | 27 | 28 | 16 | 261 | 1,196 | 4.6 | 9 | 52 | 74.8 |
-| Career |  |  |  | 21 | 288 | 1,342 | 4.7 | 10 | 52 | 63.9 |
+| Career |  |  |  | 22 | 290 | 1,350 | 4.7 | 11 | 52 | 61.4 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 28 | 21 | 9 | 6 | 107 | 17.8 | 0 | 1 | 1 |
+| 2014 (through Week 6) | N.Y. Jets | 28 | 21 | 9 | 6 | 107 | 17.8 | 0 | 1 | 1 |
 | 2013 | Tennessee | 27 | 28 | 68 | 38 | 511 | 13.4 | 4 | 1 | 1 |
 
 ### Playoffs

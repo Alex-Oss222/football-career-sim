@@ -1,14 +1,14 @@
 # Russell Shepard
 
-**Tampa Bay Buccaneers · Wide receiver · No. 89 · Age 24 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Wide receiver · No. 89 · Age 24 · Last game October 12, 2014**
 
 6' 1", 195 lb · Born September 17, 1990 · LSU
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 5.4 (2014, through Week 5).
+**Yards per target:** 7.1 (2014, through Week 6).
 
 ## Contract
 
@@ -20,13 +20,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 23 | 89 | 5 | 9 | 5 | 49 | 9.8 | 0 | 29 | 9.8 | 55.6 |
+| 2014 (through Week 6) | Tampa Bay | 23 | 89 | 6 | 13 | 7 | 92 | 13.1 | 0 | 29 | 15.3 | 53.8 |
 | 2013 | Tampa Bay | 22 | 89 | 16 | 2 | 1 | 11 | 11.0 | 0 | 11 | 0.7 | 50.0 |
-| Career |  |  |  | 21 | 11 | 6 | 60 | 10.0 | 0 | 29 | 2.9 | 54.5 |
+| Career |  |  |  | 22 | 15 | 8 | 103 | 12.9 | 0 | 29 | 4.7 | 53.3 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 23 | 89 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | Tampa Bay | 23 | 89 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Tampa Bay | 22 | 89 | 8 | 154 | 19.2 | 1 | 10 | 10.0 |
 
 ### Playoffs

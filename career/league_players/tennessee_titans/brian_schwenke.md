@@ -1,10 +1,10 @@
 # Brian Schwenke
 
-**Tennessee Titans · Center · No. 62 · Age 23 · Last game October 5, 2014**
+**Tennessee Titans · Center · No. 62 · Age 23 · Last game October 12, 2014**
 
 6' 3", 318 lb · Born March 22, 1991 · California
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Brian Schwenke](https://commons.wikimedia.org/wiki/Special:FilePath/Brian_Schwenke.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 1 (2014, through Week 5).
+**Sacks allowed:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 23 | 62 | 5 | 5 | 323 | 1 | 23 |
+| 2014 (through Week 6) | Tennessee | 23 | 62 | 6 | 6 | 377 | 1 | 25 |
 | 2013 | Tennessee | 22 | 62 | 2 | N/A | N/A | 0 | N/A |
-| Career |  |  |  | 7 | N/A | N/A | 1 | N/A |
+| Career |  |  |  | 8 | N/A | N/A | 1 | N/A |
 
 ### Playoffs
 

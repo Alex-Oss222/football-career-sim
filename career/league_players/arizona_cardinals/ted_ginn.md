@@ -1,10 +1,10 @@
 # Ted Ginn
 
-**Arizona Cardinals · Wide receiver · No. 19 · Age 29 · Last game October 5, 2014**
+**Arizona Cardinals · Wide receiver · No. 19 · Age 29 · Last game October 12, 2014**
 
 5' 11", 185 lb · Born April 12, 1985 · Ohio State · Drafted in 2007, first round, by Miami
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Ted Ginn](https://commons.wikimedia.org/wiki/Special:FilePath/Ted_Ginn%2C_Jr._2014.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 9.2 (2014, through Week 5).
+**Yards per target:** 9.1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 29 | 19 | 4 | 6 | 5 | 55 | 11.0 | 1 | 22 | 13.8 | 83.3 |
+| 2014 (through Week 6) | Arizona | 29 | 19 | 5 | 7 | 6 | 64 | 10.7 | 1 | 22 | 12.8 | 85.7 |
 | 2013 | Carolina | 28 | 19 | 15 | 3 | 2 | 8 | 4.0 | 1 | 8 | 0.5 | 66.7 |
-| Career |  |  |  | 19 | 9 | 7 | 63 | 9.0 | 2 | 22 | 3.3 | 77.8 |
+| Career |  |  |  | 20 | 10 | 8 | 72 | 9.0 | 2 | 22 | 3.6 | 80.0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 29 | 19 | 9 | 213 | 23.7 | 7 | 60 | 8.6 |
+| 2014 (through Week 6) | Arizona | 29 | 19 | 11 | 253 | 23.0 | 10 | 101 | 10.1 |
 | 2013 | Carolina | 28 | 19 | 36 | 855 | 23.8 | 30 | 251 | 8.4 |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Terrance Williams
 
-**Dallas Cowboys · Wide receiver · No. 83 · Age 25 · Last game October 5, 2014**
+**Dallas Cowboys · Wide receiver · No. 83 · Age 25 · Last game October 12, 2014**
 
 6' 2", 208 lb · Born September 18, 1989 · Baylor
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Terrance Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Terrance_Williams_at_Joint_Base_San_Antonio-Randolph_150707-F-IJ798-093_%28cropped%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 8.5 (2014, through Week 5).
+**Yards per target:** 8.1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 24 | 83 | 5 | 46 | 32 | 389 | 12.2 | 1 | 46 | 77.8 | 69.6 |
+| 2014 (through Week 6) | Dallas | 24 | 83 | 6 | 52 | 35 | 420 | 12.0 | 1 | 46 | 70.0 | 67.3 |
 | 2013 | Dallas | 23 | 83 | 16 | 14 | 9 | 103 | 11.4 | 0 | 26 | 6.4 | 64.3 |
-| Career |  |  |  | 21 | 60 | 41 | 492 | 12.0 | 1 | 46 | 23.4 | 68.3 |
+| Career |  |  |  | 22 | 66 | 44 | 523 | 11.9 | 1 | 46 | 23.8 | 66.7 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 24 | 83 | 1 | 9 | 0 | 2 | 2 |
+| 2014 (through Week 6) | Dallas | 24 | 83 | 1 | 9 | 0 | 2 | 2 |
 | 2013 | Dallas | 23 | 83 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

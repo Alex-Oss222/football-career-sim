@@ -1,10 +1,10 @@
 # Chris Polk
 
-**Philadelphia Eagles · Running back · No. 32 · Age 24 · Last game October 5, 2014**
+**Philadelphia Eagles · Running back · No. 32 · Age 24 · Last game October 12, 2014**
 
 5' 11", 222 lb · Born December 16, 1989 · Washington
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Chris Polk](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Polk_UW.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 7.0 (2014, through Week 5).
+**Yards per carry:** 6.1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 24 | 32 | 5 | 7 | 49 | 7.0 | 0 | 18 | 9.8 |
+| 2014 (through Week 6) | Philadelphia | 24 | 32 | 6 | 8 | 49 | 6.1 | 0 | 18 | 8.2 |
 | 2013 | Philadelphia | 23 | 32 | 16 | 19 | 96 | 5.1 | 1 | 17 | 6.0 |
-| Career |  |  |  | 21 | 26 | 145 | 5.6 | 1 | 18 | 6.9 |
+| Career |  |  |  | 22 | 27 | 145 | 5.4 | 1 | 18 | 6.6 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 24 | 32 | 2 | 1 | 6 | 6.0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Philadelphia | 24 | 32 | 2 | 1 | 6 | 6.0 | 0 | 0 | 0 |
 | 2013 | Philadelphia | 23 | 32 | 4 | 3 | 36 | 12.0 | 0 | 0 | 0 |
 
 ### Playoffs

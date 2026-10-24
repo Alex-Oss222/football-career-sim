@@ -1,10 +1,10 @@
 # John Brown
 
-**Arizona Cardinals · Wide receiver · No. 12 · Age 24 · Last game October 5, 2014**
+**Arizona Cardinals · Wide receiver · No. 12 · Age 24 · Last game October 12, 2014**
 
 5' 10", 179 lb · Born April 3, 1990 · Pittsburg State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![John Brown](https://commons.wikimedia.org/wiki/Special:FilePath/John_Brown_%28wide_receiver%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 11.6 (2014, through Week 5).
+**Yards per target:** 10.4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 24 | 12 | 4 | 15 | 12 | 174 | 14.5 | 1 | 80 | 43.5 | 80.0 |
+| 2014 (through Week 6) | Arizona | 24 | 12 | 5 | 18 | 14 | 188 | 13.4 | 1 | 80 | 37.6 | 77.8 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 24 | 12 | 1 | 7 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Arizona | 24 | 12 | 1 | 7 | 0 | 0 | 0 |
 
 ### Playoffs
 

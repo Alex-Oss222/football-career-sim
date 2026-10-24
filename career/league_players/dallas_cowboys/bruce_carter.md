@@ -1,10 +1,10 @@
 # Bruce Carter
 
-**Dallas Cowboys · Inside linebacker · No. 54 · Age 26 · Last game October 5, 2014**
+**Dallas Cowboys · Inside linebacker · No. 54 · Age 26 · Last game October 12, 2014**
 
 6' 2", 240 lb · Born February 19, 1988 · North Carolina · Drafted in 2011, second round, by Dallas
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Bruce Carter](https://commons.wikimedia.org/wiki/Special:FilePath/Bruce_Carter_%2845674483812%29_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting strongside linebacker.
 
-**Tackles:** 23 (2014, through Week 5).
+**Tackles:** 30 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 26 | 54 | 5 | 23 | 16 | 7 | 2 | 0 | 0 |
+| 2014 (through Week 6) | Dallas | 26 | 54 | 6 | 30 | 21 | 9 | 2 | 0 | 0 |
 | 2013 | Dallas | 25 | 54 | 16 | 94 | 64 | 30 | 3 | 2 | 5 |
-| Career |  |  |  | 21 | 117 | 80 | 37 | 5 | 2 | 5 |
+| Career |  |  |  | 22 | 124 | 85 | 39 | 5 | 2 | 5 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 26 | 54 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 2014 (through Week 6) | Dallas | 26 | 54 | 0 | 0 | 0 | 0 | 1 | 0 |
 | 2013 | Dallas | 25 | 54 | 0 | 0 | 6 | 2 | 2 | N/A |
 
 ### Playoffs

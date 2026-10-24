@@ -1,10 +1,10 @@
 # Sam Acho
 
-**Arizona Cardinals · Outside linebacker · No. 94 · Age 26 · Last game October 5, 2014**
+**Arizona Cardinals · Outside linebacker · No. 94 · Age 26 · Last game October 12, 2014**
 
 6' 3", 257 lb · Born September 6, 1988 · Texas · Drafted in 2011, fourth round, by Arizona
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Sam Acho](https://commons.wikimedia.org/wiki/Special:FilePath/Sam_Acho_2012.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve strongside linebacker.
 
-**Tackles:** 2 (2014, through Week 5).
+**Tackles:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 25 | 94 | 4 | 2 | 2 | 0 | 0 | 1 | 1 |
+| 2014 (through Week 6) | Arizona | 25 | 94 | 5 | 4 | 4 | 0 | 0 | 2 | 2 |
 | 2013 | Arizona | 24 | 94 | 16 | 51 | 36 | 15 | 7 | 3 | 5 |
-| Career |  |  |  | 20 | 53 | 38 | 15 | 7 | 4 | 6 |
+| Career |  |  |  | 21 | 55 | 40 | 15 | 7 | 5 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 25 | 94 | 0 | 0 | 0 | 0 | 0 | 5 |
+| 2014 (through Week 6) | Arizona | 25 | 94 | 0 | 0 | 0 | 0 | 0 | 5 |
 | 2013 | Arizona | 24 | 94 | 0 | 0 | 3 | 1 | 1 | N/A |
 
 ### Playoffs

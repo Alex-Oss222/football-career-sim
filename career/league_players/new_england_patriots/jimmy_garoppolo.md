@@ -1,10 +1,10 @@
 # Jimmy Garoppolo
 
-**New England Patriots · Quarterback · No. 10 · Age 22 · Last game October 5, 2014**
+**New England Patriots · Quarterback · No. 10 · Age 22 · Last game October 12, 2014**
 
 6' 2", 225 lb · Born November 2, 1991 · Eastern Illinois
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jimmy Garoppolo](https://commons.wikimedia.org/wiki/Special:FilePath/2018_Jimmy_Garoppolo_%28cropped%29.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 22 | 10 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 6) | New England | 22 | 10 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 22 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | New England | 22 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Troy Niklas
 
-**Arizona Cardinals · Tight end · No. 87 · Age 22 · Last game October 5, 2014**
+**Arizona Cardinals · Tight end · No. 87 · Age 22 · Last game October 12, 2014**
 
 6' 6", 270 lb · Born September 18, 1992 · Notre Dame
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Troy Niklas](https://commons.wikimedia.org/wiki/Special:FilePath/Troy_Niklas.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 21 | 87 | 4 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 6) | Arizona | 21 | 87 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

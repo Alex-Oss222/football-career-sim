@@ -1,10 +1,10 @@
 # Calvin Pace
 
-**New York Jets · Outside linebacker · No. 97 · Age 33 · Last game October 5, 2014**
+**New York Jets · Outside linebacker · No. 97 · Age 33 · Last game October 12, 2014**
 
 6' 4", 265 lb · Born October 28, 1980 · Wake Forest · Drafted in 2003, first round, by Arizona
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Calvin Pace](https://commons.wikimedia.org/wiki/Special:FilePath/Calvin_Pace_2011.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 22 (2014, through Week 5).
+**Tackles:** 23 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 33 | 97 | 5 | 22 | 14 | 8 | 1 | 0 | 2 |
+| 2014 (through Week 6) | N.Y. Jets | 33 | 97 | 6 | 23 | 14 | 9 | 2 | 0 | 2 |
 | 2013 | N.Y. Jets | 32 | 97 | 16 | 114 | 76 | 38 | 8 | 6 | 12 |
-| Career |  |  |  | 21 | 136 | 90 | 46 | 9 | 6 | 14 |
+| Career |  |  |  | 22 | 137 | 90 | 47 | 10 | 6 | 14 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 33 | 97 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2014 (through Week 6) | N.Y. Jets | 33 | 97 | 0 | 0 | 0 | 1 | 1 | 0 |
 | 2013 | N.Y. Jets | 32 | 97 | 0 | 0 | 2 | 2 | 2 | N/A |
 
 ### Playoffs

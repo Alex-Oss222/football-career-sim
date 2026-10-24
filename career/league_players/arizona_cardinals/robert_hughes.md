@@ -1,10 +1,10 @@
 # Robert Hughes
 
-**Arizona Cardinals · Running back · No. 39 · Age 25 · Last game October 5, 2014**
+**Arizona Cardinals · Running back · No. 39 · Age 25 · Last game October 12, 2014**
 
 5' 11", 235 lb · Born June 21, 1989 · Notre Dame
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Robert Hughes](https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Hughes_%28American_football%29.JPG?width=500)
 
@@ -20,11 +20,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 25 | 39 | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2014 (through Week 6) | Arizona | 25 | 39 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 25 | 39 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 6) | Arizona | 25 | 39 | 1 | 1 | 53 | 53.0 | 0 | 0 | 0 |
 
 ### Playoffs
 

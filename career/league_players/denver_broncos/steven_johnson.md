@@ -1,10 +1,10 @@
 # Steven Johnson
 
-**Denver Broncos · Middle linebacker · No. 53 · Age 26 · Last game October 5, 2014**
+**Denver Broncos · Middle linebacker · No. 53 · Age 26 · Last game October 12, 2014**
 
 6' 1", 237 lb · Born March 28, 1988 · Kansas
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Steven Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Steven_Johnson_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve middle linebacker.
 
-**Tackles:** 17 (2014, through Week 5).
+**Tackles:** 18 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 26 | 53 | 4 | 17 | 13 | 4 | 1 | 0 | 0 |
+| 2014 (through Week 6) | Denver | 26 | 53 | 5 | 18 | 13 | 5 | 1 | 0 | 1 |
 | 2013 | Denver | 25 | 53 | 16 | 5 | 3 | 2 | 0 | 0 | 1 |
-| Career |  |  |  | 20 | 22 | 16 | 6 | 1 | 0 | 1 |
+| Career |  |  |  | 21 | 23 | 16 | 7 | 1 | 0 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 26 | 53 | 0 | 0 | 1 | 1 | 1 | 0 |
+| 2014 (through Week 6) | Denver | 26 | 53 | 0 | 0 | 1 | 1 | 1 | 0 |
 | 2013 | Denver | 25 | 53 | 0 | 0 | 0 | 1 | 1 | N/A |
 
 ### Playoffs

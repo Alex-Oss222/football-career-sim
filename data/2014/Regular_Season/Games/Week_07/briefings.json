@@ -1,0 +1,11 @@
+{
+ "about": "Every Game Week Briefing issued for the week, oldest first: the day it went out, its revision (the n-th issue of that day, so two issues the same day are told apart), its file in the week folder (the latest is the current briefing, each earlier one kept as he saw it) and the sha256 of its bytes as issued. Written only by scripts/render_game_week.py; validation holds each briefing to its entry.",
+ "issued": [
+  {
+   "date": "2014-10-12",
+   "revision": 1,
+   "file": "Game_Week_Briefing.md",
+   "sha256": "c816075f3c2b0f8114334e7da7edc218f42b03602280e22bede3aeb4b3cf3573"
+  }
+ ]
+}

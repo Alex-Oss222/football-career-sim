@@ -1,10 +1,10 @@
 # Leodis McKelvin
 
-**Buffalo Bills · Cornerback · No. 21 · Age 29 · Last game October 5, 2014**
+**Buffalo Bills · Cornerback · No. 21 · Age 29 · Last game October 12, 2014**
 
 5' 10", 185 lb · Born September 1, 1985 · Troy · Drafted in 2008, first round, by Buffalo
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Leodis McKelvin](https://commons.wikimedia.org/wiki/Special:FilePath/Leodis_McKelvin.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 6 (2014, through Week 5).
+**Passes defended:** 7 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 29 | 21 | 5 | 20 | 14 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Buffalo | 29 | 21 | 6 | 26 | 17 | 9 | 0 | 0 | 0 |
 | 2013 | Buffalo | 28 | 21 | 16 | 50 | 30 | 20 | 1 | 1 | 1 |
-| Career |  |  |  | 21 | 70 | 44 | 26 | 1 | 1 | 1 |
+| Career |  |  |  | 22 | 76 | 47 | 29 | 1 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 29 | 21 | 1 | 17 | 6 | 1 | 1 | 0 |
+| 2014 (through Week 6) | Buffalo | 29 | 21 | 1 | 17 | 7 | 1 | 1 | 0 |
 | 2013 | Buffalo | 28 | 21 | 1 | 4 | 7 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 29 | 21 | 0 | 0 | N/A | 11 | 103 | 9.4 |
+| 2014 (through Week 6) | Buffalo | 29 | 21 | 0 | 0 | N/A | 13 | 109 | 8.4 |
 | 2013 | Buffalo | 28 | 21 | 0 | 0 | N/A | 32 | 330 | 10.3 |
 
 ### Playoffs

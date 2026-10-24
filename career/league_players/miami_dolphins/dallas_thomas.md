@@ -1,10 +1,10 @@
 # Dallas Thomas
 
-**Miami Dolphins · Guard · No. 63 · Age 24 · Last game September 28, 2014**
+**Miami Dolphins · Guard · No. 63 · Age 24 · Last game October 12, 2014**
 
 6' 5", 315 lb · Born October 30, 1989 · Tennessee
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Dallas Thomas](https://commons.wikimedia.org/wiki/Special:FilePath/Dallas_Thomas.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 24 | 63 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 24 | 63 | 3 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 23 | 70 | 16 | N/A | N/A | 4 | N/A |
 | Career |  |  |  | 19 | N/A | N/A | 4 | N/A |
 

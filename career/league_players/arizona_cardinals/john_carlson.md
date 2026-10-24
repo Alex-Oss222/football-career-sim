@@ -1,10 +1,10 @@
 # John Carlson
 
-**Arizona Cardinals · Tight end · No. 89 · Age 30 · Last game October 5, 2014**
+**Arizona Cardinals · Tight end · No. 89 · Age 30 · Last game October 12, 2014**
 
 6' 5", 248 lb · Born May 12, 1984 · Notre Dame · Drafted in 2008, second round, by Seattle
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![John Carlson](https://commons.wikimedia.org/wiki/Special:FilePath/John_Carlson_2013.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 16.8 (2014, through Week 5).
+**Yards per target:** 16.8 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 30 | 89 | 4 | 4 | 2 | 67 | 33.5 | 0 | 45 | 16.8 | 50.0 |
+| 2014 (through Week 6) | Arizona | 30 | 89 | 5 | 4 | 2 | 67 | 33.5 | 0 | 45 | 13.4 | 50.0 |
 | 2013 | Minnesota | 29 | 89 | 16 | 20 | 16 | 154 | 9.6 | 2 | 25 | 9.6 | 80.0 |
-| Career |  |  |  | 20 | 24 | 18 | 221 | 12.3 | 2 | 45 | 11.1 | 75.0 |
+| Career |  |  |  | 21 | 24 | 18 | 221 | 12.3 | 2 | 45 | 10.5 | 75.0 |
 
 ### Playoffs
 

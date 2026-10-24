@@ -1,6 +1,6 @@
 # Kansas City Chiefs players
 
-AFC West. The players whose latest game on record was with the Kansas City Chiefs. G counts regular-season games with any club. Records through October 6, 2014.
+AFC West. The players whose latest game on record was with the Kansas City Chiefs. G counts regular-season games with any club. Records through October 13, 2014.
 
 [All clubs](../README.md)
 

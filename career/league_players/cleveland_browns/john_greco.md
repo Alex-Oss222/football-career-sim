@@ -1,10 +1,10 @@
 # John Greco
 
-**Cleveland Browns · Guard · No. 77 · Age 29 · Last game October 5, 2014**
+**Cleveland Browns · Guard · No. 77 · Age 29 · Last game October 12, 2014**
 
 6' 4", 318 lb · Born March 24, 1985 · Toledo · Drafted in 2008, third round, by St. Louis
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![John Greco](https://commons.wikimedia.org/wiki/Special:FilePath/John_Greco.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 29 | 77 | 4 | 4 | 288 | 2 | 25 |
+| 2014 (through Week 6) | Cleveland | 29 | 77 | 5 | 5 | 363 | 2 | 32 |
 | 2013 | Cleveland | 28 | 77 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 20 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

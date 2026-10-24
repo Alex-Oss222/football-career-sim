@@ -1,10 +1,10 @@
 # Chandler Catanzaro
 
-**Arizona Cardinals · Kicker · No. 7 · Age 23 · Last game October 5, 2014**
+**Arizona Cardinals · Kicker · No. 7 · Age 23 · Last game October 12, 2014**
 
 6' 1", 200 lb · Born February 26, 1991 · Clemson
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Chandler Catanzaro](https://commons.wikimedia.org/wiki/Special:FilePath/Chandler_Catanzaro.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 75.0 (2014, through Week 5).
+**Field-goal percentage:** 80.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 23 | 7 | 4 | 6 | 8 | 75.0 | 41 | 10 | 10 | 100.0 | 28 |
+| 2014 (through Week 6) | Arizona | 23 | 7 | 5 | 12 | 15 | 80.0 | 48 | 10 | 10 | 100.0 | 46 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 23 | 7 | 4-5 | 2-3 | 0-0 |
+| 2014 (through Week 6) | Arizona | 23 | 7 | 7-8 | 5-7 | 0-0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Donnie Jones
 
-**Philadelphia Eagles · Punter · No. 8 · Age 34 · Last game October 5, 2014**
+**Philadelphia Eagles · Punter · No. 8 · Age 34 · Last game October 12, 2014**
 
 6' 2", 221 lb · Born July 5, 1980 · LSU · Drafted in 2004, seventh round, by Seattle
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Donnie Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Donnie_Jones.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 40.7 (2014, through Week 5).
+**Net punting average:** 41.2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 34 | 8 | 5 | 33 | 1,440 | 43.6 | 40.7 | 10 | 0 | 67 |
+| 2014 (through Week 6) | Philadelphia | 34 | 8 | 6 | 36 | 1,587 | 44.1 | 41.2 | 10 | 0 | 67 |
 | 2013 | Philadelphia | 33 | 8 | 16 | 70 | 3,081 | 44.0 | 39.9 | 32 | 1 | 57 |
-| Career |  |  |  | 21 | 103 | 4,521 | 43.9 | 40.1 | 42 | 1 | 67 |
+| Career |  |  |  | 22 | 106 | 4,668 | 44.0 | 40.3 | 42 | 1 | 67 |
 
 ### Playoffs
 

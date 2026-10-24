@@ -1,14 +1,14 @@
 # Zach Moore
 
-**New England Patriots · Defensive end · No. 90 · Age 24 · Last game October 5, 2014**
+**New England Patriots · Defensive end · No. 90 · Age 24 · Last game October 12, 2014**
 
 6' 6", 275 lb · Born September 5, 1990 · Concordia-St. Paul
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 0 (2014, through Week 5).
+**Sacks:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -20,11 +20,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 23 | 90 | 5 | 8 | 7 | 1 | 2 | 0 | 2 |
+| 2014 (through Week 6) | New England | 23 | 90 | 6 | 10 | 8 | 2 | 2 | 0 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 23 | 90 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | New England | 23 | 90 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

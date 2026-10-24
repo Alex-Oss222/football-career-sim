@@ -1,10 +1,10 @@
 # Patrick Murray
 
-**Tampa Bay Buccaneers · Kicker · No. 7 · Age 23 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Kicker · No. 7 · Age 23 · Last game October 12, 2014**
 
 5' 7", 160 lb · Born June 22, 1991 · Fordham
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Patrick Murray](https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_Murray_field_goal_vs._Redskins_Cropped.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 91.7 (2014, through Week 5).
+**Field-goal percentage:** 84.6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 23 | 7 | 5 | 11 | 12 | 91.7 | 56 | 11 | 11 | 100.0 | 44 |
+| 2014 (through Week 6) | Tampa Bay | 23 | 7 | 6 | 11 | 13 | 84.6 | 56 | 16 | 16 | 100.0 | 49 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 23 | 7 | 9-10 | 1-1 | 1-1 |
+| 2014 (through Week 6) | Tampa Bay | 23 | 7 | 9-10 | 1-1 | 1-2 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Michael Wilhoite
 
-**San Francisco 49ers · Inside linebacker · No. 57 · Age 27 · Last game October 5, 2014**
+**San Francisco 49ers · Inside linebacker · No. 57 · Age 27 · Last game October 13, 2014**
 
 6' 0", 240 lb · Born December 7, 1986 · Washburn
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Michael Wilhoite](https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Wilhoite_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting inside linebacker.
 
-**Tackles:** 15 (2014, through Week 5).
+**Tackles:** 19 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 27 | 57 | 5 | 15 | 8 | 7 | 1 | 1 | 1 |
+| 2014 (through Week 6) | San Francisco | 27 | 57 | 6 | 19 | 12 | 7 | 1 | 1 | 1 |
 | 2013 | San Francisco | 26 | 57 | 16 | 1 | 0 | 1 | 0 | 0 | 0 |
-| Career |  |  |  | 21 | 16 | 8 | 8 | 1 | 1 | 1 |
+| Career |  |  |  | 22 | 20 | 12 | 8 | 1 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 27 | 57 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | San Francisco | 27 | 57 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | San Francisco | 26 | 57 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

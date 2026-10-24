@@ -1,10 +1,10 @@
 # Erik Walden
 
-**Indianapolis Colts · Outside linebacker · No. 93 · Age 29 · Last game October 5, 2014**
+**Indianapolis Colts · Outside linebacker · No. 93 · Age 29 · Last game October 9, 2014**
 
 6' 2", 250 lb · Born August 21, 1985 · Middle Tennessee State · Drafted in 2008, sixth round, by Dallas
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Erik Walden](https://commons.wikimedia.org/wiki/Special:FilePath/Erik_Walden_2016.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting strongside linebacker.
 
-**Tackles:** 6 (2014, through Week 5).
+**Tackles:** 7 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 29 | 93 | 5 | 6 | 5 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Indianapolis | 29 | 93 | 6 | 7 | 6 | 1 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 28 | 93 | 16 | 76 | 46 | 30 | 2 | 4 | 5 |
-| Career |  |  |  | 21 | 82 | 51 | 31 | 2 | 4 | 5 |
+| Career |  |  |  | 22 | 83 | 52 | 31 | 2 | 4 | 5 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 29 | 93 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Indianapolis | 29 | 93 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 28 | 93 | 0 | 0 | 2 | 1 | 1 | N/A |
 
 ### Playoffs

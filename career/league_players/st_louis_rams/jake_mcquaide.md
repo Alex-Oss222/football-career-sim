@@ -1,10 +1,10 @@
 # Jake McQuaide
 
-**St. Louis Rams · Long snapper · No. 44 · Age 26 · Last game October 5, 2014**
+**St. Louis Rams · Long snapper · No. 44 · Age 26 · Last game October 13, 2014**
 
 6' 2", 244 lb · Born December 7, 1987 · Ohio State
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Jake McQuaide](https://commons.wikimedia.org/wiki/Special:FilePath/Jacob_McQuaide.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 40 (2014, through Week 5).
+**Long snaps:** 46 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 26 | 44 | 4 | 40 | 40 | 0 | 0 |
+| 2014 (through Week 6) | St. Louis | 26 | 44 | 5 | 46 | 46 | 0 | 0 |
 | 2013 | St. Louis | 25 | 44 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 20 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

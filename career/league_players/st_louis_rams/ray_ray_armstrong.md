@@ -1,18 +1,16 @@
 # Ray-Ray Armstrong
 
-**St. Louis Rams · Outside linebacker · No. 50 · Age 23 · Last game October 5, 2014**
+**St. Louis Rams · Outside linebacker · No. 50 · Age 23 · Last game October 13, 2014**
 
 6' 3", 234 lb · Born March 5, 1991 · Miami; Faulkner
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Ray-Ray Armstrong](https://commons.wikimedia.org/wiki/Special:FilePath/Ray-Ray_Armstrong.JPG?width=500)
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Ray-Ray_Armstrong.JPG)).*
 
-**Current assignment:** Reserve outside linebacker.
-
-**Tackles:** 5 (2014, through Week 5).
+**Tackles:** 5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 23 | 50 | 4 | 5 | 3 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | St. Louis | 23 | 50 | 4 | 5 | 3 | 2 | 0 | 0 | 0 |
 | 2013 | St. Louis | 22 | 50 | 16 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Career |  |  |  | 20 | 5 | 3 | 2 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 23 | 50 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | St. Louis | 23 | 50 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | St. Louis | 22 | 50 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

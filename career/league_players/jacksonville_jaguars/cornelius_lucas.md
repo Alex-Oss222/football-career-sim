@@ -4,7 +4,7 @@
 
 6' 9", 325 lb · Born July 18, 1991 · Kansas State · Undrafted
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Cornelius Lucas](https://commons.wikimedia.org/wiki/Special:FilePath/Cornelius_Lucas_WFT_2021_training_camp_%28cropped%29.jpg?width=500)
 
@@ -12,9 +12,9 @@ As of October 5, 2014, after Week 5.
 
 ## Staff assessment
 
-Cornelius Lucas is a rookie tackle who has been active for five regular-season games, with 23 snaps on special teams. He is a very large tackle with long arms and enough strength for the position. His set is still raw, and he falls short on bend, foot speed and change of direction; in camp his set landmark held against the rookie rushers, though Andre Branch beat him around the edge once.
+Cornelius Lucas is a rookie tackle who has been active for six regular-season games, with 28 snaps on special teams. He is a very large tackle with long arms and enough strength for the position. His set is still raw, and he falls short on bend, foot speed and change of direction; in camp his set landmark held against the rookie rushers, though Andre Branch beat him around the edge once.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 12.*
 
 ## Contract
 
@@ -32,7 +32,7 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 23 | 77 | 5 | 0 | 0 | 0 | 23 |
+| 2014 (through Week 6) | Jacksonville | 23 | 77 | 6 | 0 | 0 | 0 | 28 |
 
 ### Playoffs
 

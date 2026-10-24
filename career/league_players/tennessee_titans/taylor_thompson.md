@@ -1,10 +1,10 @@
 # Taylor Thompson
 
-**Tennessee Titans · Tight end · No. 84 · Age 24 · Last game October 5, 2014**
+**Tennessee Titans · Tight end · No. 84 · Age 24 · Last game October 12, 2014**
 
 6' 6", 268 lb · Born October 19, 1989 · SMU · Drafted in 2012, fifth round, by Tennessee
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Taylor Thompson](https://commons.wikimedia.org/wiki/Special:FilePath/Taylor_Thompson_%28American_football%29.JPG?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 24 | 84 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 6) | Tennessee | 24 | 84 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | Tennessee | 23 | 84 | 16 | 27 | 17 | 166 | 9.8 | 0 | 45 | 10.4 | 63.0 |
-| Career |  |  |  | 21 | 27 | 17 | 166 | 9.8 | 0 | 45 | 7.9 | 63.0 |
+| Career |  |  |  | 22 | 27 | 17 | 166 | 9.8 | 0 | 45 | 7.5 | 63.0 |
 
 ### Playoffs
 

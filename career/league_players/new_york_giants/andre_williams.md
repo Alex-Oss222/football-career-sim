@@ -1,10 +1,10 @@
 # Andre Williams
 
-**New York Giants · Running back · No. 44 · Age 22 · Last game October 5, 2014**
+**New York Giants · Running back · No. 44 · Age 22 · Last game October 12, 2014**
 
 5' 11", 230 lb · Born August 28, 1992 · Boston College
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Andre Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Williams_%28American_football%29_2012.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 4.2 (2014, through Week 5).
+**Yards per carry:** 4.2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Giants | 22 | 44 | 5 | 19 | 80 | 4.2 | 0 | 14 | 16.0 |
+| 2014 (through Week 6) | N.Y. Giants | 22 | 44 | 5 | 19 | 80 | 4.2 | 0 | 14 | 16.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Giants | 22 | 44 | 7 | 3 | 51 | 17.0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | N.Y. Giants | 22 | 44 | 7 | 3 | 51 | 17.0 | 0 | 0 | 0 |
 
 ### Playoffs
 

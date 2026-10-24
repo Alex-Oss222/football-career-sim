@@ -1,10 +1,10 @@
 # Josh Sitton
 
-**Green Bay Packers · Guard · No. 71 · Age 28 · Last game October 2, 2014**
+**Green Bay Packers · Guard · No. 71 · Age 28 · Last game October 12, 2014**
 
 6' 3", 318 lb · Born June 16, 1986 · UCF · Drafted in 2008, fourth round, by Green Bay
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Josh Sitton](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Sitton_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 3 (2014, through Week 5).
+**Sacks allowed:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 28 | 71 | 5 | 5 | 324 | 3 | 24 |
+| 2014 (through Week 6) | Green Bay | 28 | 71 | 6 | 6 | 373 | 4 | 27 |
 | 2013 | Green Bay | 27 | 71 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

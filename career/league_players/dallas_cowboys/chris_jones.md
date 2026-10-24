@@ -1,10 +1,10 @@
 # Chris Jones
 
-**Dallas Cowboys · Punter · No. 6 · Age 25 · Last game October 5, 2014**
+**Dallas Cowboys · Punter · No. 6 · Age 25 · Last game October 12, 2014**
 
 6' 0", 205 lb · Born July 21, 1989 · Carson Newman
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Chris Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Jones_%28punter%29_2017.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 41.5 (2014, through Week 5).
+**Net punting average:** 42.2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 25 | 6 | 5 | 24 | 1,146 | 47.8 | 41.5 | 10 | 3 | 69 |
+| 2014 (through Week 6) | Dallas | 25 | 6 | 6 | 27 | 1,322 | 49.0 | 42.2 | 10 | 4 | 70 |
 | 2013 | Dallas | 24 | 6 | 16 | 78 | 3,538 | 45.4 | 40.5 | 35 | 3 | 66 |
-| Career |  |  |  | 21 | 102 | 4,684 | 45.9 | 40.7 | 45 | 6 | 69 |
+| Career |  |  |  | 22 | 105 | 4,860 | 46.3 | 40.9 | 45 | 7 | 70 |
 
 ### Playoffs
 

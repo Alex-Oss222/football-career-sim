@@ -1,10 +1,10 @@
 # Trey Burton
 
-**Philadelphia Eagles · Tight end · No. 47 · Age 22 · Last game October 5, 2014**
+**Philadelphia Eagles · Tight end · No. 47 · Age 22 · Last game October 12, 2014**
 
 6' 3", 235 lb · Born October 29, 1991 · Florida
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Trey Burton](https://commons.wikimedia.org/wiki/Special:FilePath/Trey_Burton.JPG?width=500)
 
@@ -20,7 +20,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 22 | 47 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 6) | Philadelphia | 22 | 47 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

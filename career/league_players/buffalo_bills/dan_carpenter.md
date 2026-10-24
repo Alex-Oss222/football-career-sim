@@ -1,10 +1,10 @@
 # Dan Carpenter
 
-**Buffalo Bills · Kicker · No. 2 · Age 28 · Last game October 5, 2014**
+**Buffalo Bills · Kicker · No. 2 · Age 28 · Last game October 12, 2014**
 
 6' 2", 228 lb · Born November 25, 1985 · Montana
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Dan Carpenter](https://commons.wikimedia.org/wiki/Special:FilePath/Dan_Carpenter1.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 83.3 (2014, through Week 5).
+**Field-goal percentage:** 84.6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 28 | 2 | 5 | 10 | 12 | 83.3 | 52 | 15 | 15 | 100.0 | 45 |
+| 2014 (through Week 6) | Buffalo | 28 | 2 | 6 | 11 | 13 | 84.6 | 52 | 19 | 19 | 100.0 | 52 |
 | 2013 | Buffalo | 27 | 2 | 16 | 30 | 34 | 88.2 | N/A | 41 | 41 | 100.0 | 131 |
-| Career |  |  |  | 21 | 40 | 46 | 87.0 | N/A | 56 | 56 | 100.0 | 176 |
+| Career |  |  |  | 22 | 41 | 47 | 87.2 | N/A | 60 | 60 | 100.0 | 183 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 28 | 2 | 5-5 | 3-3 | 2-4 |
+| 2014 (through Week 6) | Buffalo | 28 | 2 | 6-6 | 3-3 | 2-4 |
 | 2013 | Buffalo | 27 | 2 | N/A | N/A | N/A |
 
 ### Playoffs

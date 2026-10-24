@@ -4,7 +4,7 @@
 
 6' 4", 280 lb · Born December 14, 1983 · Florida; Butler County JC · Drafted in 2006, sixth round, by New England
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jeremy Mincey](https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy_Mincey.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 2 (2014, through Week 5).
+**Sacks:** 3 (2014, through Week 6).
 
 ## Staff assessment
 
@@ -35,13 +35,13 @@ Four-year contract through 2015.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 30 | 92 | 5 | 33 | 23 | 10 | 2 | 2 | 4 |
+| 2014 (through Week 6) | Jacksonville | 30 | 92 | 6 | 40 | 27 | 13 | 3 | 3 | 6 |
 | 2013 | Jacksonville | 29 | N/A | 16 | 15 | 12 | 3 | 3 | 1 | 3 |
-| With Jacksonville |  |  |  | 21 | 48 | 35 | 13 | 5 | 3 | 7 |
+| With Jacksonville |  |  |  | 22 | 55 | 39 | 16 | 6 | 4 | 9 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 30 | 92 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2014 (through Week 6) | Jacksonville | 30 | 92 | 0 | 0 | 0 | 1 | 1 | 0 |
 | 2013 | Jacksonville | 29 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

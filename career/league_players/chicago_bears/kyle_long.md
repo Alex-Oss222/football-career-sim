@@ -1,10 +1,10 @@
 # Kyle Long
 
-**Chicago Bears · Guard · No. 75 · Age 25 · Last game October 5, 2014**
+**Chicago Bears · Guard · No. 75 · Age 25 · Last game October 12, 2014**
 
 6' 6", 313 lb · Born December 5, 1988 · Oregon; Saddleback Community College; Florida State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Kyle Long](https://commons.wikimedia.org/wiki/Special:FilePath/Kyle_long.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 25 | 75 | 5 | 5 | 343 | 2 | 23 |
+| 2014 (through Week 6) | Chicago | 25 | 75 | 6 | 6 | 400 | 2 | 25 |
 | 2013 | Chicago | 24 | 75 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

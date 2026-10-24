@@ -1,10 +1,10 @@
 # Anthony Dixon
 
-**Buffalo Bills · Running back · No. 26 · Age 27 · Last game October 5, 2014**
+**Buffalo Bills · Running back · No. 26 · Age 27 · Last game October 12, 2014**
 
 6' 1", 233 lb · Born September 24, 1987 · Mississippi State · Drafted in 2010, sixth round, by San Francisco
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Anthony Dixon](https://commons.wikimedia.org/wiki/Special:FilePath/Anthony_Dixon_Coach_Mooch_Battle_of_the_Bay_Charity_Bocce_2026_01.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 26 | 26 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2014 (through Week 6) | Buffalo | 26 | 26 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 | 2013 | San Francisco | 25 | 24 | 16 | 1 | 7 | 7.0 | 0 | 7 | 0.4 |
-| Career |  |  |  | 21 | 1 | 7 | 7.0 | 0 | 7 | 0.3 |
+| Career |  |  |  | 22 | 1 | 7 | 7.0 | 0 | 7 | 0.3 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 26 | 26 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 6) | Buffalo | 26 | 26 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 | 2013 | San Francisco | 25 | 24 | 1 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs

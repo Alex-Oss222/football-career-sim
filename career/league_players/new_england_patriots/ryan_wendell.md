@@ -1,10 +1,10 @@
 # Ryan Wendell
 
-**New England Patriots · Center · No. 62 · Age 28 · Last game October 5, 2014**
+**New England Patriots · Center · No. 62 · Age 28 · Last game October 12, 2014**
 
 6' 2", 300 lb · Born March 4, 1986 · Fresno State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Ryan Wendell](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Wendell.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 1 (2014, through Week 5).
+**Sacks allowed:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 28 | 62 | 5 | 5 | 310 | 1 | 24 |
+| 2014 (through Week 6) | New England | 28 | 62 | 6 | 6 | 364 | 2 | 30 |
 | 2013 | New England | 27 | 62 | 16 | N/A | N/A | 8 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

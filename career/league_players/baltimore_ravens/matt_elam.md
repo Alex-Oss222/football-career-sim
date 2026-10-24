@@ -1,10 +1,10 @@
 # Matt Elam
 
-**Baltimore Ravens · Strong safety · No. 26 · Age 23 · Last game October 5, 2014**
+**Baltimore Ravens · Strong safety · No. 26 · Age 23 · Last game October 12, 2014**
 
 5' 10", 200 lb · Born September 21, 1991 · Florida
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Matt Elam](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_elam_ravens.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 2 (2014, through Week 5).
+**Passes defended:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 22 | 26 | 4 | 13 | 10 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Baltimore | 22 | 26 | 4 | 13 | 10 | 3 | 0 | 0 | 0 |
 | 2013 | Baltimore | 21 | 26 | 12 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Career |  |  |  | 16 | 13 | 10 | 3 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 22 | 26 | 1 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Baltimore | 22 | 26 | 1 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Baltimore | 21 | 26 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

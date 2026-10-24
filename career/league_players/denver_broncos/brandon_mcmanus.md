@@ -1,10 +1,10 @@
 # Brandon McManus
 
-**Denver Broncos · Kicker · No. 8 · Age 23 · Last game October 5, 2014**
+**Denver Broncos · Kicker · No. 8 · Age 23 · Last game October 12, 2014**
 
 6' 3", 201 lb · Born July 25, 1991 · Temple
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Brandon McManus](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_McManus.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 100.0 (2014, through Week 5).
+**Field-goal percentage:** 100.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 23 | 8 | 4 | 7 | 7 | 100.0 | 47 | 13 | 13 | 100.0 | 34 |
+| 2014 (through Week 6) | Denver | 23 | 8 | 5 | 10 | 10 | 100.0 | 47 | 15 | 15 | 100.0 | 45 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 23 | 8 | 5-5 | 2-2 | 0-0 |
+| 2014 (through Week 6) | Denver | 23 | 8 | 8-8 | 2-2 | 0-0 |
 
 ### Playoffs
 

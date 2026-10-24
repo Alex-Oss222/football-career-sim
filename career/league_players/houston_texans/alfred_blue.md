@@ -1,10 +1,10 @@
 # Alfred Blue
 
-**Houston Texans · Running back · No. 28 · Age 23 · Last game October 5, 2014**
+**Houston Texans · Running back · No. 28 · Age 23 · Last game October 9, 2014**
 
 6' 2", 223 lb · Born April 27, 1991 · LSU
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Alfred Blue](https://commons.wikimedia.org/wiki/Special:FilePath/Alfred_Blue.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 4.2 (2014, through Week 5).
+**Yards per carry:** 4.8 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 23 | 28 | 5 | 6 | 25 | 4.2 | 0 | 10 | 5.0 |
+| 2014 (through Week 6) | Houston | 23 | 28 | 6 | 14 | 67 | 4.8 | 0 | 16 | 11.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 23 | 28 | 2 | 2 | 11 | 5.5 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Houston | 23 | 28 | 2 | 2 | 11 | 5.5 | 0 | 0 | 0 |
 
 ### Playoffs
 

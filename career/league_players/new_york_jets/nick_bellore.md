@@ -1,10 +1,10 @@
 # Nick Bellore
 
-**New York Jets · Inside linebacker · No. 54 · Age 25 · Last game October 5, 2014**
+**New York Jets · Inside linebacker · No. 54 · Age 25 · Last game October 12, 2014**
 
 6' 1", 250 lb · Born May 12, 1989 · Central Michigan
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Nick Bellore](https://commons.wikimedia.org/wiki/Special:FilePath/Nick_Bellore.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve middle linebacker.
 
-**Tackles:** 3 (2014, through Week 5).
+**Tackles:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 25 | 54 | 5 | 3 | 2 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | N.Y. Jets | 25 | 54 | 6 | 4 | 2 | 2 | 0 | 0 | 0 |
 | 2013 | N.Y. Jets | 24 | 54 | 16 | 3 | 3 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 21 | 6 | 5 | 1 | 0 | 0 | 0 |
+| Career |  |  |  | 22 | 7 | 5 | 2 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 25 | 54 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 6) | N.Y. Jets | 25 | 54 | 0 | 0 | 0 | 0 | 0 | 1 |
 | 2013 | N.Y. Jets | 24 | 54 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

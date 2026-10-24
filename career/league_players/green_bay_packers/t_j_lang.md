@@ -1,10 +1,10 @@
 # T.J. Lang
 
-**Green Bay Packers · Guard · No. 70 · Age 27 · Last game October 2, 2014**
+**Green Bay Packers · Guard · No. 70 · Age 27 · Last game October 12, 2014**
 
 6' 4", 318 lb · Born September 20, 1987 · Eastern Michigan · Drafted in 2009, fourth round, by Green Bay
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![T.J. Lang](https://commons.wikimedia.org/wiki/Special:FilePath/TJ_Lang_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 3 (2014, through Week 5).
+**Sacks allowed:** 3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 26 | 70 | 5 | 5 | 324 | 3 | 46 |
+| 2014 (through Week 6) | Green Bay | 26 | 70 | 6 | 6 | 373 | 3 | 49 |
 | 2013 | Green Bay | 25 | 70 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

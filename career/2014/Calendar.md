@@ -16,11 +16,11 @@ Dates and appointments for the football year. Times are Eastern. Scheduled work 
 
 | Date | Event |
 |---|---|
-| Oct 12 | [Week 6 at Tennessee Titans](Regular_Season/Games/Week_06/README.md) |
 | Oct 19 | [Week 7 vs Cleveland Browns](Regular_Season/Games/Week_07/README.md) |
 | Oct 26 | [Week 8 vs Miami Dolphins](Regular_Season/Games/Week_08/README.md) |
 | Nov 2 | [Week 9 at Cincinnati Bengals](Regular_Season/Games/Week_09/README.md) |
 | Nov 9 | [Week 10 vs Dallas Cowboys](Regular_Season/Games/Week_10/README.md) |
+| Nov 23 | [Week 12 at Indianapolis Colts](Regular_Season/Games/Week_12/README.md) |
 
 ## Full-year dates
 

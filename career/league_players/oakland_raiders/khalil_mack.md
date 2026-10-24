@@ -1,10 +1,10 @@
 # Khalil Mack
 
-**Oakland Raiders · Defensive end · No. 52 · Age 23 · Last game September 28, 2014**
+**Oakland Raiders · Defensive end · No. 52 · Age 23 · Last game October 12, 2014**
 
 6' 3", 252 lb · Born February 22, 1991 · Buffalo
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Khalil Mack](https://commons.wikimedia.org/wiki/Special:FilePath/Khalil_Mack_Bears_2019_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting strongside linebacker.
 
-**Sacks:** 2 (2014, through Week 4).
+**Sacks:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 23 | 52 | 4 | 15 | 11 | 4 | 1 | 2 | 4 |
+| 2014 (through Week 6) | Oakland | 23 | 52 | 5 | 22 | 15 | 7 | 3 | 2 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 23 | 52 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Oakland | 23 | 52 | 0 | 0 | 4 | 0 | 0 | 0 |
 
 ### Playoffs
 

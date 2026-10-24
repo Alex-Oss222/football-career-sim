@@ -1,10 +1,10 @@
 # Ben Jacobs
 
-**Carolina Panthers · Middle linebacker · No. 53 · Age 26 · Last game October 5, 2014**
+**Carolina Panthers · Middle linebacker · No. 53 · Age 26 · Last game October 12, 2014**
 
 6' 4", 245 lb · Born April 17, 1988 · Fresno State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Ben Jacobs](https://commons.wikimedia.org/wiki/Special:FilePath/Ben_Jacobs_%2845324571861%29_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve middle linebacker.
 
-**Tackles:** 10 (2014, through Week 5).
+**Tackles:** 12 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 26 | 53 | 5 | 10 | 6 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Carolina | 26 | 53 | 6 | 12 | 7 | 5 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 26 | 53 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Carolina | 26 | 53 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

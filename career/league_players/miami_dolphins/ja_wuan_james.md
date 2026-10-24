@@ -1,10 +1,10 @@
 # Ja'Wuan James
 
-**Miami Dolphins · Offensive tackle · No. 70 · Age 22 · Last game September 28, 2014**
+**Miami Dolphins · Offensive tackle · No. 70 · Age 22 · Last game October 12, 2014**
 
 6' 6", 315 lb · Born June 3, 1992 · Tennessee
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Ja'Wuan James](https://commons.wikimedia.org/wiki/Special:FilePath/Ja%27Wuan_James.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 2 (2014, through Week 4).
+**Sacks allowed:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 22 | 70 | 4 | 4 | 277 | 2 | 18 |
+| 2014 (through Week 6) | Miami | 22 | 70 | 5 | 5 | 346 | 2 | 26 |
 
 ### Playoffs
 

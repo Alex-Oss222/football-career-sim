@@ -1,10 +1,10 @@
 # Mario Addison
 
-**Carolina Panthers · Defensive end · No. 97 · Age 27 · Last game October 5, 2014**
+**Carolina Panthers · Defensive end · No. 97 · Age 27 · Last game October 12, 2014**
 
 6' 3", 260 lb · Born September 6, 1987 · Troy; Booneville JC (MS)
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Mario Addison](https://commons.wikimedia.org/wiki/Special:FilePath/Mario_addison_panthers.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 26 | 97 | 5 | 2 | 2 | 0 | 0 | 1 | 1 |
+| 2014 (through Week 6) | Carolina | 26 | 97 | 6 | 3 | 3 | 0 | 0 | 1 | 1 |
 | 2013 | Carolina | 25 | 97 | 16 | 6 | 5 | 1 | 2 | 0 | 0 |
-| Career |  |  |  | 21 | 8 | 7 | 1 | 2 | 1 | 1 |
+| Career |  |  |  | 22 | 9 | 8 | 1 | 2 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 26 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Carolina | 26 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Carolina | 25 | 97 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

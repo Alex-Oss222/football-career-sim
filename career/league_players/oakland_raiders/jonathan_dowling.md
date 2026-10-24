@@ -1,10 +1,10 @@
 # Jonathan Dowling
 
-**Oakland Raiders · Free safety · No. 41 · Age 22 · Last game September 28, 2014**
+**Oakland Raiders · Free safety · No. 41 · Age 22 · Last game October 12, 2014**
 
 6' 3", 190 lb · Born December 8, 1991 · Western Kentucky; Florida
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Jonathan Dowling](https://commons.wikimedia.org/wiki/Special:FilePath/Jonathan_Dowling.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 22 | 41 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Oakland | 22 | 41 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 22 | 41 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Oakland | 22 | 41 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

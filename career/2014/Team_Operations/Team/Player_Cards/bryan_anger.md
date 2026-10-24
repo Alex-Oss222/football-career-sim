@@ -1,10 +1,10 @@
 # Bryan Anger
 
-**Jacksonville Jaguars · Punter · No. 19 · Age 25 · Active roster**
+**Jacksonville Jaguars · Punter · No. 19 · Age 26 · Active roster**
 
 6' 3", 202 lb · Born October 6, 1988 · California · Drafted in 2012, third round, by Jacksonville
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Bryan Anger](https://commons.wikimedia.org/wiki/Special:FilePath/Bryan_Anger_punts_at_2008_Emerald_Bowl.JPG?width=500)
 
@@ -12,13 +12,13 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 37.9 (2014, through Week 5).
+**Net punting average:** 37.7 (2014, through Week 6).
 
 ## Staff assessment
 
-Bryan Anger has been a viable NFL starting punter for Jacksonville. He was active for all 16 regular-season games in 2013, punting 69 times, and he has 25 punts in five games in 2014. His best weapon is a strong leg for distance, with useful hang time and operation, and in camp he put the recorded situational punts to the side the staff called for. Directional punting and control in plus territory are less developed than his leg.
+Bryan Anger has been a viable NFL starting punter for Jacksonville. He was active for all 16 regular-season games in 2013, punting 69 times, and he has 29 punts in six games in 2014. His best weapon is a strong leg for distance, with useful hang time and operation, and in camp he put the recorded situational punts to the side the staff called for. Directional punting and control in plus territory are less developed than his leg.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 12.*
 
 ## Contract
 
@@ -35,9 +35,9 @@ Four-year contract through 2015.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 25 | 19 | 5 | 25 | 1,139 | 45.6 | 37.9 | 10 | 3 | 62 |
+| 2014 (through Week 6) | Jacksonville | 25 | 19 | 6 | 29 | 1,290 | 44.5 | 37.7 | 12 | 3 | 62 |
 | 2013 | Jacksonville | 24 | 19 | 16 | 69 | 3,116 | 45.2 | 39.5 | 27 | 5 | 68 |
-| With Jacksonville |  |  |  | 21 | 94 | 4,255 | 45.3 | 39.1 | 37 | 8 | 68 |
+| With Jacksonville |  |  |  | 22 | 98 | 4,406 | 45.0 | 39.0 | 39 | 8 | 68 |
 
 ### Playoffs
 

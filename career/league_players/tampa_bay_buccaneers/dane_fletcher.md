@@ -1,10 +1,10 @@
 # Dane Fletcher
 
-**Tampa Bay Buccaneers · Middle linebacker · No. 50 · Age 28 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Middle linebacker · No. 50 · Age 28 · Last game October 12, 2014**
 
 6' 2", 245 lb · Born September 14, 1986 · Montana State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Dane Fletcher](https://commons.wikimedia.org/wiki/Special:FilePath/Dane_Fletcher.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve middle linebacker.
 
-**Tackles:** 8 (2014, through Week 5).
+**Tackles:** 13 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 27 | 50 | 5 | 8 | 6 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 27 | 50 | 6 | 13 | 9 | 4 | 1 | 1 | 1 |
 | 2013 | New England | 26 | 52 | 16 | 24 | 12 | 12 | 1 | 1 | 1 |
-| Career |  |  |  | 21 | 32 | 18 | 14 | 1 | 1 | 1 |
+| Career |  |  |  | 22 | 37 | 21 | 16 | 2 | 2 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 27 | 50 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 27 | 50 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | New England | 26 | 52 | 1 | 33 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

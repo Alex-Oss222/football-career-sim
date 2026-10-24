@@ -1,10 +1,10 @@
 # Kyle Fuller
 
-**Chicago Bears · Cornerback · No. 23 · Age 22 · Last game October 5, 2014**
+**Chicago Bears · Cornerback · No. 23 · Age 22 · Last game October 12, 2014**
 
 5' 11", 190 lb · Born February 16, 1992 · Virginia Tech
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Kyle Fuller](https://commons.wikimedia.org/wiki/Special:FilePath/Kyle_Fuller_Bears.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 1 (2014, through Week 5).
+**Passes defended:** 3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 22 | 23 | 5 | 5 | 3 | 2 | 1 | 0 | 0 |
+| 2014 (through Week 6) | Chicago | 22 | 23 | 6 | 14 | 8 | 6 | 2 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 22 | 23 | 0 | 0 | 1 | 0 | 0 | 2 |
+| 2014 (through Week 6) | Chicago | 22 | 23 | 0 | 0 | 3 | 0 | 0 | 2 |
 
 ### Playoffs
 

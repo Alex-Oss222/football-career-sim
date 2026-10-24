@@ -1,10 +1,10 @@
 # Bishop Sankey
 
-**Tennessee Titans · Running back · No. 20 · Age 22 · Last game October 5, 2014**
+**Tennessee Titans · Running back · No. 20 · Age 22 · Last game October 12, 2014**
 
 5' 10", 209 lb · Born September 15, 1992 · Washington
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Bishop Sankey](https://commons.wikimedia.org/wiki/Special:FilePath/Bishop_sankey.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 10.8 (2014, through Week 5).
+**Yards per carry:** 8.6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 21 | 20 | 5 | 4 | 43 | 10.8 | 0 | 23 | 8.6 |
+| 2014 (through Week 6) | Tennessee | 21 | 20 | 6 | 5 | 43 | 8.6 | 0 | 23 | 7.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 21 | 20 | 2 | 2 | 12 | 6.0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tennessee | 21 | 20 | 2 | 2 | 12 | 6.0 | 0 | 0 | 0 |
 
 ### Playoffs
 

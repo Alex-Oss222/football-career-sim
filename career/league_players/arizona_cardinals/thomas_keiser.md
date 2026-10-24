@@ -1,10 +1,10 @@
 # Thomas Keiser
 
-**Arizona Cardinals · Outside linebacker · No. 53 · Age 25 · Last game October 5, 2014**
+**Arizona Cardinals · Outside linebacker · No. 53 · Age 25 · Last game October 12, 2014**
 
 6' 4", 260 lb · Born March 28, 1989 · Stanford
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Thomas Keiser](https://commons.wikimedia.org/wiki/Special:FilePath/Thomas_Keiser_Carolina_Panthers_2011.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 25 | 53 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Arizona | 25 | 53 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 25 | 53 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 6) | Arizona | 25 | 53 | 0 | 0 | 0 | 0 | 0 | 2 |
 
 ### Playoffs
 

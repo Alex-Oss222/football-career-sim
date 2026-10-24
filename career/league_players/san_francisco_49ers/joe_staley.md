@@ -1,10 +1,10 @@
 # Joe Staley
 
-**San Francisco 49ers · Offensive tackle · No. 74 · Age 30 · Last game October 5, 2014**
+**San Francisco 49ers · Offensive tackle · No. 74 · Age 30 · Last game October 13, 2014**
 
 6' 5", 315 lb · Born August 30, 1984 · Central Michigan · Drafted in 2007, first round, by San Francisco
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Joe Staley](https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Staley.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 4 (2014, through Week 5).
+**Sacks allowed:** 5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 30 | 74 | 5 | 5 | 324 | 4 | 23 |
+| 2014 (through Week 6) | San Francisco | 30 | 74 | 6 | 6 | 374 | 5 | 28 |
 | 2013 | San Francisco | 29 | 74 | 16 | N/A | N/A | 11 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 15 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 16 | N/A |
 
 ### Playoffs
 

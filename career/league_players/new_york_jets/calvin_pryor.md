@@ -1,10 +1,10 @@
 # Calvin Pryor
 
-**New York Jets · Safety · No. 25 · Age 22 · Last game October 5, 2014**
+**New York Jets · Safety · No. 25 · Age 22 · Last game October 12, 2014**
 
 5' 11", 207 lb · Born July 2, 1992 · Louisville
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Calvin Pryor](https://commons.wikimedia.org/wiki/Special:FilePath/Calvin_Pryor.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting safety.
 
-**Passes defended:** 4 (2014, through Week 5).
+**Passes defended:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 22 | 25 | 5 | 32 | 20 | 12 | 1 | 1 | 3 |
+| 2014 (through Week 6) | N.Y. Jets | 22 | 25 | 6 | 33 | 20 | 13 | 1 | 1 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 22 | 25 | 0 | 0 | 4 | 1 | 1 | 0 |
+| 2014 (through Week 6) | N.Y. Jets | 22 | 25 | 0 | 0 | 4 | 1 | 1 | 0 |
 
 ### Playoffs
 

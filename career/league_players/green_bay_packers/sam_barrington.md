@@ -1,14 +1,14 @@
 # Sam Barrington
 
-**Green Bay Packers · Inside linebacker · No. 58 · Age 23 · Last game October 2, 2014**
+**Green Bay Packers · Inside linebacker · No. 58 · Age 24 · Last game October 12, 2014**
 
 6' 1", 240 lb · Born October 5, 1990 · University of South Florida
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve linebacker.
 
-**Tackles:** 1 (2014, through Week 5).
+**Tackles:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -20,13 +20,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 23 | 58 | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Green Bay | 23 | 58 | 6 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | Green Bay | 22 | 58 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 7 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 8 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 23 | 58 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Green Bay | 23 | 58 | 0 | 0 | 0 | 0 | 0 | 1 |
 | 2013 | Green Bay | 22 | 58 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

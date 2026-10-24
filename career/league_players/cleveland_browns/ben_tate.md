@@ -1,10 +1,10 @@
 # Ben Tate
 
-**Cleveland Browns · Running back · No. 44 · Age 26 · Last game October 5, 2014**
+**Cleveland Browns · Running back · No. 44 · Age 26 · Last game October 12, 2014**
 
 5' 10", 220 lb · Born August 21, 1988 · Auburn · Drafted in 2010, second round, by Houston
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Ben Tate](https://commons.wikimedia.org/wiki/Special:FilePath/Ben_Tate.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 4.3 (2014, through Week 5).
+**Yards per carry:** 4.4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 26 | 44 | 4 | 73 | 316 | 4.3 | 1 | 23 | 79.0 |
+| 2014 (through Week 6) | Cleveland | 26 | 44 | 5 | 93 | 412 | 4.4 | 2 | 24 | 82.4 |
 | 2013 | Houston | 25 | 44 | 16 | 63 | 302 | 4.8 | 2 | 31 | 18.9 |
-| Career |  |  |  | 20 | 136 | 618 | 4.5 | 3 | 31 | 30.9 |
+| Career |  |  |  | 21 | 156 | 714 | 4.6 | 4 | 31 | 34.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 26 | 44 | 22 | 14 | 132 | 9.4 | 0 | 2 | 2 |
+| 2014 (through Week 6) | Cleveland | 26 | 44 | 27 | 16 | 145 | 9.1 | 0 | 2 | 2 |
 | 2013 | Houston | 25 | 44 | 21 | 17 | 124 | 7.3 | 2 | 1 | 1 |
 
 ### Playoffs

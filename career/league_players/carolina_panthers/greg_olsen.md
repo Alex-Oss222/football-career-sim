@@ -1,10 +1,10 @@
 # Greg Olsen
 
-**Carolina Panthers · Tight end · No. 88 · Age 29 · Last game October 5, 2014**
+**Carolina Panthers · Tight end · No. 88 · Age 29 · Last game October 12, 2014**
 
 6' 5", 253 lb · Born March 11, 1985 · Miami; Notre Dame · Drafted in 2007, first round, by Chicago
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Greg Olsen](https://commons.wikimedia.org/wiki/Special:FilePath/Greg_olsen_2019.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 6.1 (2014, through Week 5).
+**Yards per target:** 6.2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 29 | 88 | 5 | 32 | 18 | 194 | 10.8 | 1 | 31 | 38.8 | 56.2 |
+| 2014 (through Week 6) | Carolina | 29 | 88 | 6 | 36 | 21 | 223 | 10.6 | 2 | 31 | 37.2 | 58.3 |
 | 2013 | Carolina | 28 | 88 | 16 | 109 | 57 | 597 | 10.5 | 3 | 49 | 37.3 | 52.3 |
-| Career |  |  |  | 21 | 141 | 75 | 791 | 10.5 | 4 | 49 | 37.7 | 53.2 |
+| Career |  |  |  | 22 | 145 | 78 | 820 | 10.5 | 5 | 49 | 37.3 | 53.8 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 29 | 88 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Carolina | 29 | 88 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Carolina | 28 | 88 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs

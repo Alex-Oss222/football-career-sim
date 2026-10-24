@@ -1,10 +1,10 @@
 # Bilal Powell
 
-**New York Jets · Running back · No. 29 · Age 25 · Last game October 5, 2014**
+**New York Jets · Running back · No. 29 · Age 25 · Last game October 12, 2014**
 
 5' 10", 204 lb · Born October 27, 1988 · Louisville · Drafted in 2011, fourth round, by the New York Jets
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Bilal Powell](https://commons.wikimedia.org/wiki/Special:FilePath/Bilal_Powell_2017.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 5.4 (2014, through Week 5).
+**Yards per carry:** 4.4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 25 | 29 | 5 | 8 | 43 | 5.4 | 0 | 11 | 8.6 |
+| 2014 (through Week 6) | N.Y. Jets | 25 | 29 | 6 | 10 | 44 | 4.4 | 0 | 11 | 7.3 |
 | 2013 | N.Y. Jets | 24 | 29 | 12 | 228 | 1,106 | 4.9 | 7 | 46 | 92.2 |
-| Career |  |  |  | 17 | 236 | 1,149 | 4.9 | 7 | 46 | 67.6 |
+| Career |  |  |  | 18 | 238 | 1,150 | 4.8 | 7 | 46 | 63.9 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 25 | 29 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | N.Y. Jets | 25 | 29 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0 |
 | 2013 | N.Y. Jets | 24 | 29 | 67 | 37 | 383 | 10.4 | 2 | 4 | 4 |
 
 ### Playoffs

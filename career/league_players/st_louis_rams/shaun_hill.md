@@ -1,10 +1,10 @@
 # Shaun Hill
 
-**St. Louis Rams · Quarterback · No. 14 · Age 34 · Last game October 5, 2014**
+**St. Louis Rams · Quarterback · No. 14 · Age 34 · Last game October 13, 2014**
 
 6' 3", 220 lb · Born January 9, 1980 · Maryland; Hutchinson CC
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Shaun Hill](https://commons.wikimedia.org/wiki/Special:FilePath/Shaun_Hill_2014_Cropped.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 81.7 (2014, through Week 5).
+**Passer rating:** 77.6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 34 | 14 | 4 | 94 | 150 | 62.7 | 1,067 | 7.1 | 266.8 | 4 | 4 | 81.7 |
+| 2014 (through Week 6) | St. Louis | 34 | 14 | 5 | 111 | 183 | 60.7 | 1,316 | 7.2 | 263.2 | 6 | 7 | 77.6 |
 | 2013 | Detroit | 33 | 14 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 20 | 94 | 150 | 62.7 | 1,067 | 7.1 | 53.4 | 4 | 4 | 81.7 |
+| Career |  |  |  | 21 | 111 | 183 | 60.7 | 1,316 | 7.2 | 62.7 | 6 | 7 | 77.6 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 34 | 14 | 12 | 78 | 13 | 41 | 1 | 0 | 0 |
+| 2014 (through Week 6) | St. Louis | 34 | 14 | 14 | 89 | 13 | 41 | 1 | 0 | 0 |
 | 2013 | Detroit | 33 | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

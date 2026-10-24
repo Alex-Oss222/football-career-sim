@@ -1,10 +1,10 @@
 # Pat Sims
 
-**Oakland Raiders · Nose tackle · No. 90 · Age 28 · Last game September 28, 2014**
+**Oakland Raiders · Nose tackle · No. 90 · Age 28 · Last game October 12, 2014**
 
 6' 2", 310 lb · Born November 29, 1985 · Auburn · Drafted in 2008, third round, by Cincinnati
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Pat Sims](https://commons.wikimedia.org/wiki/Special:FilePath/Pat_Sims.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting nose tackle.
 
-**Sacks:** 0 (2014, through Week 4).
+**Sacks:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 28 | 90 | 4 | 10 | 6 | 4 | 0 | 0 | 3 |
+| 2014 (through Week 6) | Oakland | 28 | 90 | 5 | 14 | 10 | 4 | 0 | 0 | 3 |
 | 2013 | Oakland | 27 | 90 | 16 | 48 | 38 | 10 | 5 | 6 | 9 |
-| Career |  |  |  | 20 | 58 | 44 | 14 | 5 | 6 | 12 |
+| Career |  |  |  | 21 | 62 | 48 | 14 | 5 | 6 | 12 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 28 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Oakland | 28 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Oakland | 27 | 90 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

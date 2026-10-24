@@ -1,10 +1,10 @@
 # Cameron Heyward
 
-**Pittsburgh Steelers · Defensive tackle · No. 97 · Age 25 · Last game October 5, 2014**
+**Pittsburgh Steelers · Defensive tackle · No. 97 · Age 25 · Last game October 12, 2014**
 
 6' 5", 288 lb · Born May 6, 1989 · Ohio State · Drafted in 2011, first round, by Pittsburgh
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Cameron Heyward](https://commons.wikimedia.org/wiki/Special:FilePath/Cameron_Heyward.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 2 (2014, through Week 5).
+**Sacks:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 25 | 97 | 5 | 15 | 12 | 3 | 1 | 2 | 4 |
+| 2014 (through Week 6) | Pittsburgh | 25 | 97 | 6 | 21 | 17 | 4 | 1 | 2 | 4 |
 | 2013 | Pittsburgh | 24 | 97 | 16 | 34 | 23 | 11 | 4 | 2 | 4 |
-| Career |  |  |  | 21 | 49 | 35 | 14 | 5 | 4 | 8 |
+| Career |  |  |  | 22 | 55 | 40 | 15 | 5 | 4 | 8 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 25 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Pittsburgh | 25 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Pittsburgh | 24 | 97 | 0 | 0 | 0 | 1 | 1 | N/A |
 
 ### Playoffs

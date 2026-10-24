@@ -1,10 +1,10 @@
 # Daniel Kilgore
 
-**San Francisco 49ers · Center · No. 67 · Age 26 · Last game October 5, 2014**
+**San Francisco 49ers · Center · No. 67 · Age 26 · Last game October 13, 2014**
 
 6' 3", 308 lb · Born December 18, 1987 · Appalachian State · Drafted in 2011, fifth round, by San Francisco
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Daniel Kilgore](https://commons.wikimedia.org/wiki/Special:FilePath/Daniel_Kilgore_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 26 | 67 | 5 | 5 | 324 | 2 | 23 |
+| 2014 (through Week 6) | San Francisco | 26 | 67 | 6 | 6 | 397 | 3 | 30 |
 | 2013 | San Francisco | 25 | 67 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

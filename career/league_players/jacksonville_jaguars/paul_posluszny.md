@@ -1,10 +1,10 @@
 # Paul Posluszny
 
-**Jacksonville Jaguars · Linebacker · No. 51 · Age 29 · Active roster**
+**Jacksonville Jaguars · Linebacker · No. 51 · Age 30 · Active roster**
 
 6' 2", 242 lb · Born October 10, 1984 · Penn State · Drafted in 2007, second round, by Buffalo
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Paul Posluszny](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Posluszny_2014_Pro_Bowl.jpg?width=500)
 
@@ -12,13 +12,13 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting linebacker.
 
-**Tackles:** 31 (2014, through Week 5).
+**Tackles:** 35 (2014, through Week 6).
 
 ## Staff assessment
 
-Paul Posluszny has been a viable NFL starter at middle linebacker for Jacksonville, dressing for 11 regular-season games in 2013 and five so far in 2014. He reads the run well, sets the fits, communicates the front and finishes tackles inside. He is stronger working downhill than in isolated man coverage, and his recovery range is limited.
+Paul Posluszny has been a viable NFL starter at middle linebacker for Jacksonville, dressing for 11 regular-season games in 2013 and six so far in 2014. He reads the run well, sets the fits, communicates the front and finishes tackles inside. He is stronger working downhill than in isolated man coverage, and his recovery range is limited.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 5.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 12.*
 
 ## Contract
 
@@ -36,13 +36,13 @@ Six-year contract through 2016.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 29 | 51 | 5 | 31 | 20 | 11 | 2 | 2 | 2 |
+| 2014 (through Week 6) | Jacksonville | 29 | 51 | 6 | 35 | 23 | 12 | 2 | 3 | 4 |
 | 2013 | Jacksonville | 28 | 51 | 11 | 101 | 72 | 29 | 9 | 3 | 6 |
-| With Jacksonville |  |  |  | 16 | 132 | 92 | 40 | 11 | 5 | 8 |
+| With Jacksonville |  |  |  | 17 | 136 | 95 | 41 | 11 | 6 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 29 | 51 | 1 | 21 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Jacksonville | 29 | 51 | 1 | 21 | 1 | 1 | 0 | 0 |
 | 2013 | Jacksonville | 28 | 51 | 1 | 13 | 8 | 0 | 0 | N/A |
 
 ### Playoffs

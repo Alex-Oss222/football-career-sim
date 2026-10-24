@@ -1,10 +1,10 @@
 # Nick Hardwick
 
-**San Diego Chargers · Center · No. 61 · Age 33 · Last game October 5, 2014**
+**San Diego Chargers · Center · No. 61 · Age 33 · Last game October 12, 2014**
 
 6' 4", 305 lb · Born September 2, 1981 · Purdue · Drafted in 2004, third round, by San Diego
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Nick Hardwick](https://commons.wikimedia.org/wiki/Special:FilePath/Nick_Hardwick_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Diego | 33 | 61 | 5 | 5 | 316 | 2 | 19 |
+| 2014 (through Week 6) | San Diego | 33 | 61 | 6 | 6 | 381 | 2 | 26 |
 | 2013 | San Diego | 32 | 61 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Hugh Thornton
 
-**Indianapolis Colts · Guard · No. 69 · Age 23 · Last game October 5, 2014**
+**Indianapolis Colts · Guard · No. 69 · Age 23 · Last game October 9, 2014**
 
 6' 3", 336 lb · Born June 28, 1991 · Illinois
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Hugh Thornton](https://commons.wikimedia.org/wiki/Special:FilePath/Hugh_Thornton_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 3 (2014, through Week 5).
+**Sacks allowed:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 23 | 69 | 5 | 5 | 360 | 3 | 24 |
+| 2014 (through Week 6) | Indianapolis | 23 | 69 | 6 | 6 | 416 | 4 | 24 |
 | 2013 | Indianapolis | 22 | 69 | 3 | N/A | N/A | 0 | N/A |
-| Career |  |  |  | 8 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 9 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

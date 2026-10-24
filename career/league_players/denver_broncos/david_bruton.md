@@ -1,10 +1,10 @@
 # David Bruton
 
-**Denver Broncos · Free safety · No. 30 · Age 27 · Last game October 5, 2014**
+**Denver Broncos · Free safety · No. 30 · Age 27 · Last game October 12, 2014**
 
 6' 2", 217 lb · Born July 23, 1987 · Notre Dame · Drafted in 2009, fourth round, by Denver
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![David Bruton](https://commons.wikimedia.org/wiki/Special:FilePath/David_Bruton_%28American_football%29_2010.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve free safety.
 
-**Passes defended:** 2 (2014, through Week 5).
+**Passes defended:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 27 | 30 | 4 | 8 | 5 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Denver | 27 | 30 | 5 | 10 | 5 | 5 | 0 | 0 | 0 |
 | 2013 | Denver | 26 | 30 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 8 | 9 | 6 | 3 | 0 | 0 | 0 |
+| Career |  |  |  | 9 | 11 | 6 | 5 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 27 | 30 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Denver | 27 | 30 | 0 | 0 | 2 | 0 | 0 | 1 |
 | 2013 | Denver | 26 | 30 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

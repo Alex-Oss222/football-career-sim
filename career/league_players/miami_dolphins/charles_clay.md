@@ -1,10 +1,10 @@
 # Charles Clay
 
-**Miami Dolphins · Tight end · No. 42 · Age 25 · Last game September 28, 2014**
+**Miami Dolphins · Tight end · No. 42 · Age 25 · Last game October 12, 2014**
 
 6' 3", 255 lb · Born February 13, 1989 · Tulsa · Drafted in 2011, sixth round, by Miami
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Charles Clay](https://commons.wikimedia.org/wiki/Special:FilePath/Charles_Clay.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 10.0 (2014, through Week 4).
+**Yards per target:** 9.5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 25 | 42 | 4 | 23 | 15 | 231 | 15.4 | 2 | 50 | 57.8 | 65.2 |
+| 2014 (through Week 6) | Miami | 25 | 42 | 5 | 27 | 18 | 256 | 14.2 | 2 | 50 | 51.2 | 66.7 |
 | 2013 | Miami | 24 | 42 | 16 | 96 | 55 | 652 | 11.9 | 3 | 51 | 40.8 | 57.3 |
-| Career |  |  |  | 20 | 119 | 70 | 883 | 12.6 | 5 | 51 | 44.1 | 58.8 |
+| Career |  |  |  | 21 | 123 | 73 | 908 | 12.4 | 5 | 51 | 43.2 | 59.3 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 25 | 42 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 25 | 42 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 24 | 42 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs

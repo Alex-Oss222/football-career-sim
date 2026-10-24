@@ -1,10 +1,10 @@
 # Niles Paul
 
-**Washington Redskins · Tight end · No. 84 · Age 25 · Last game October 6, 2014**
+**Washington Redskins · Tight end · No. 84 · Age 25 · Last game October 12, 2014**
 
 6' 1", 241 lb · Born August 9, 1989 · Nebraska · Drafted in 2011, fifth round, by Washington
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Niles Paul](https://commons.wikimedia.org/wiki/Special:FilePath/Niles_Paul.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 8.8 (2014, through Week 5).
+**Yards per target:** 8.2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 25 | 84 | 5 | 4 | 2 | 35 | 17.5 | 0 | 21 | 7.0 | 50.0 |
+| 2014 (through Week 6) | Washington | 25 | 84 | 6 | 6 | 4 | 49 | 12.2 | 0 | 21 | 8.2 | 66.7 |
 | 2013 | Washington | 24 | 84 | 16 | 9 | 6 | 42 | 7.0 | 1 | 22 | 2.6 | 66.7 |
-| Career |  |  |  | 21 | 13 | 8 | 77 | 9.6 | 1 | 22 | 3.7 | 61.5 |
+| Career |  |  |  | 22 | 15 | 10 | 91 | 9.1 | 1 | 22 | 4.1 | 66.7 |
 
 ### Playoffs
 

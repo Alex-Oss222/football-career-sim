@@ -1,10 +1,10 @@
 # Patrick DiMarco
 
-**Atlanta Falcons · Fullback · No. 42 · Age 25 · Last game October 5, 2014**
+**Atlanta Falcons · Fullback · No. 42 · Age 25 · Last game October 12, 2014**
 
 6' 1", 234 lb · Born April 30, 1989 · South Carolina
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Patrick DiMarco](https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_DiMarco_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 6.5 (2014, through Week 5).
+**Yards per carry:** 5.3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Atlanta | 25 | 42 | 5 | 2 | 13 | 6.5 | 0 | 13 | 2.6 |
+| 2014 (through Week 6) | Atlanta | 25 | 42 | 6 | 3 | 16 | 5.3 | 0 | 13 | 2.7 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Atlanta | 25 | 42 | 1 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 6) | Atlanta | 25 | 42 | 1 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 

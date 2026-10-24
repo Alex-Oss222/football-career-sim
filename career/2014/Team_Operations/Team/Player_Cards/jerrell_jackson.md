@@ -4,7 +4,7 @@
 
 6' 0", 192 lb · Born February 6, 1990 · Missouri
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ## Staff assessment
 

@@ -1,10 +1,10 @@
 # Vince Williams
 
-**Pittsburgh Steelers · Inside linebacker · No. 98 · Age 24 · Last game October 5, 2014**
+**Pittsburgh Steelers · Inside linebacker · No. 98 · Age 24 · Last game October 12, 2014**
 
 6' 1", 250 lb · Born December 27, 1989 · Florida State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Vince Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Vince_Williams_American_Football_98_leaving_field_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve inside linebacker.
 
-**Tackles:** 1 (2014, through Week 5).
+**Tackles:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 24 | 98 | 5 | 1 | 0 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 6) | Pittsburgh | 24 | 98 | 6 | 1 | 0 | 1 | 1 | 0 | 0 |
 | 2013 | Pittsburgh | 23 | 98 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 7 | 1 | 0 | 1 | 1 | 0 | 0 |
+| Career |  |  |  | 8 | 1 | 0 | 1 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 24 | 98 | 0 | 0 | 0 | 0 | 0 | 5 |
+| 2014 (through Week 6) | Pittsburgh | 24 | 98 | 0 | 0 | 0 | 0 | 0 | 7 |
 | 2013 | Pittsburgh | 23 | 98 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Tyler Eifert
 
-**Cincinnati Bengals · Tight end · No. 85 · Age 24 · Last game October 5, 2014**
+**Cincinnati Bengals · Tight end · No. 85 · Age 24 · Last game October 12, 2014**
 
 6' 6", 250 lb · Born September 8, 1990 · Notre Dame
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Tyler Eifert](https://commons.wikimedia.org/wiki/Special:FilePath/TylerEifert.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 0.0 (2014, through Week 5).
+**Yards per target:** 0.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 23 | 85 | 4 | 2 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
+| 2014 (through Week 6) | Cincinnati | 23 | 85 | 5 | 2 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
 | 2013 | Cincinnati | 22 | 85 | 16 | 3 | 1 | 8 | 8.0 | 0 | 8 | 0.5 | 33.3 |
-| Career |  |  |  | 20 | 5 | 1 | 8 | 8.0 | 0 | 8 | 0.4 | 20.0 |
+| Career |  |  |  | 21 | 5 | 1 | 8 | 8.0 | 0 | 8 | 0.4 | 20.0 |
 
 ### Playoffs
 

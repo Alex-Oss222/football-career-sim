@@ -1,10 +1,10 @@
 # Chris Hairston
 
-**Buffalo Bills · Offensive tackle · No. 75 · Age 25 · Last game October 5, 2014**
+**Buffalo Bills · Offensive tackle · No. 75 · Age 25 · Last game October 12, 2014**
 
 6' 6", 330 lb · Born April 26, 1989 · Clemson · Drafted in 2011, fourth round, by Buffalo
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Chris Hairston](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Hairston.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve left tackle.
 
-**Sacks allowed:** 6 (2014, through Week 5).
+**Sacks allowed:** 6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 25 | 75 | 5 | 5 | 306 | 6 | 27 |
+| 2014 (through Week 6) | Buffalo | 25 | 75 | 6 | 6 | 378 | 6 | 32 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Justin Pugh
 
-**New York Giants · Guard · No. 67 · Age 24 · Last game October 5, 2014**
+**New York Giants · Guard · No. 67 · Age 24 · Last game October 12, 2014**
 
 6' 4", 301 lb · Born August 15, 1990 · Syracuse
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Justin Pugh](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Pugh.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 7 (2014, through Week 5).
+**Sacks allowed:** 8 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Giants | 24 | 67 | 5 | 5 | 288 | 7 | 22 |
+| 2014 (through Week 6) | N.Y. Giants | 24 | 67 | 6 | 6 | 342 | 8 | 27 |
 | 2013 | N.Y. Giants | 23 | 72 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 14 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 15 | N/A |
 
 ### Playoffs
 

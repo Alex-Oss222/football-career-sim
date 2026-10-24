@@ -1,10 +1,10 @@
 # Geno Atkins
 
-**Cincinnati Bengals · Defensive tackle · No. 97 · Age 26 · Last game October 5, 2014**
+**Cincinnati Bengals · Defensive tackle · No. 97 · Age 26 · Last game October 12, 2014**
 
 6' 1", 303 lb · Born March 28, 1988 · Georgia · Drafted in 2010, fourth round, by Cincinnati
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Geno Atkins](https://commons.wikimedia.org/wiki/Special:FilePath/Geno_Atkins.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 26 | 97 | 4 | 9 | 6 | 3 | 2 | 1 | 1 |
+| 2014 (through Week 6) | Cincinnati | 26 | 97 | 5 | 10 | 6 | 4 | 2 | 1 | 2 |
 | 2013 | Cincinnati | 25 | 97 | 16 | 99 | 64 | 35 | 14 | 4 | 11 |
-| Career |  |  |  | 20 | 108 | 70 | 38 | 16 | 5 | 12 |
+| Career |  |  |  | 21 | 109 | 70 | 39 | 16 | 5 | 13 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 26 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Cincinnati | 26 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 25 | 97 | 0 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs

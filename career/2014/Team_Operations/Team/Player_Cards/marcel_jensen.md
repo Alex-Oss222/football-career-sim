@@ -4,15 +4,15 @@
 
 6' 6", 270 lb · Born February 12, 1990 · Fresno State · Undrafted
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
-**Yards per target:** 10.0 (2014, through Week 5).
+**Yards per target:** 10.0 (2014, through Week 6).
 
 ## Staff assessment
 
-Marcel Jensen is a rookie tight end from Fresno State with no established NFL standing, and he has been active for five games for Jacksonville in 2014. He is a big, strong tight end with the size for attached blocking, and in camp he was assignment-correct in that work, with a mixed finish. Receiving is his main limitation, with modest production in a pass-heavy college offense, and his speed and change of direction are below an NFL starter's standard.
+Marcel Jensen is a rookie tight end from Fresno State with no established NFL standing, and he has been active for six games for Jacksonville in 2014. He is a big, strong tight end with the size for attached blocking, and in camp he was assignment-correct in that work, with a mixed finish. Receiving is his main limitation, with modest production in a pass-heavy college offense, and his speed and change of direction are below an NFL starter's standard.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 12.*
 
 ## Contract
 
@@ -30,7 +30,7 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 24 | 87 | 5 | 1 | 1 | 10 | 10.0 | 0 | 10 | 2.0 | 100.0 |
+| 2014 (through Week 6) | Jacksonville | 24 | 87 | 6 | 1 | 1 | 10 | 10.0 | 0 | 10 | 1.7 | 100.0 |
 
 ### Playoffs
 

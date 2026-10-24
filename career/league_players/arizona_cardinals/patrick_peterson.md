@@ -1,10 +1,10 @@
 # Patrick Peterson
 
-**Arizona Cardinals · Cornerback · No. 21 · Age 24 · Last game October 5, 2014**
+**Arizona Cardinals · Cornerback · No. 21 · Age 24 · Last game October 12, 2014**
 
 6' 1", 219 lb · Born July 11, 1990 · LSU · Drafted in 2011, first round, by Arizona
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Patrick Peterson](https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_Peterson_2022.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 4 (2014, through Week 5).
+**Passes defended:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 24 | 21 | 4 | 18 | 11 | 7 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Arizona | 24 | 21 | 5 | 25 | 17 | 8 | 0 | 0 | 0 |
 | 2013 | Arizona | 23 | 21 | 16 | 99 | 70 | 29 | 8 | 0 | 0 |
-| Career |  |  |  | 20 | 117 | 81 | 36 | 8 | 0 | 0 |
+| Career |  |  |  | 21 | 124 | 87 | 37 | 8 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 24 | 21 | 0 | 0 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Arizona | 24 | 21 | 0 | 0 | 4 | 0 | 0 | 0 |
 | 2013 | Arizona | 23 | 21 | 4 | 114 | 11 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 24 | 21 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | Arizona | 24 | 21 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Arizona | 23 | 21 | 0 | 0 | N/A | 28 | 232 | 8.3 |
 
 ### Playoffs

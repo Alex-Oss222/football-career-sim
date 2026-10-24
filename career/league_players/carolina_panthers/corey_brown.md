@@ -1,10 +1,10 @@
 # Corey Brown
 
-**Carolina Panthers · Wide receiver · No. 16 · Age 22 · Last game October 5, 2014**
+**Carolina Panthers · Wide receiver · No. 16 · Age 22 · Last game October 12, 2014**
 
 5' 11", 180 lb · Born December 16, 1991 · Ohio State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Corey Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Philly_Corey_Brown_2016-08-11_crop.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 10.7 (2014, through Week 5).
+**Yards per target:** 10.7 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 22 | 16 | 5 | 7 | 5 | 75 | 15.0 | 0 | 29 | 15.0 | 71.4 |
+| 2014 (through Week 6) | Carolina | 22 | 16 | 6 | 7 | 5 | 75 | 15.0 | 0 | 29 | 12.5 | 71.4 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 22 | 16 | 12 | 274 | 22.8 | 10 | 110 | 11.0 |
+| 2014 (through Week 6) | Carolina | 22 | 16 | 15 | 356 | 23.7 | 14 | 197 | 14.1 |
 
 ### Playoffs
 
@@ -36,7 +36,7 @@ No playoff games on record.
 
 ## Awards
 
-None.
+- NFC Special Teams Player of the Week (2014, Week 6)
 
 ## Transactions
 

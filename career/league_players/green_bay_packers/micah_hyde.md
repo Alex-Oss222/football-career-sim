@@ -1,10 +1,10 @@
 # Micah Hyde
 
-**Green Bay Packers · Free safety · No. 33 · Age 23 · Last game October 2, 2014**
+**Green Bay Packers · Free safety · No. 33 · Age 23 · Last game October 12, 2014**
 
 6' 0", 197 lb · Born December 31, 1990 · Iowa
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Micah Hyde](https://commons.wikimedia.org/wiki/Special:FilePath/Micah_Hyde_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 6 (2014, through Week 5).
+**Passes defended:** 7 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 23 | 33 | 5 | 38 | 25 | 13 | 2 | 0 | 0 |
+| 2014 (through Week 6) | Green Bay | 23 | 33 | 6 | 40 | 26 | 14 | 2 | 0 | 0 |
 | 2013 | Green Bay | 22 | 33 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 7 | 38 | 25 | 13 | 2 | 0 | 0 |
+| Career |  |  |  | 8 | 40 | 26 | 14 | 2 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 23 | 33 | 1 | 5 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Green Bay | 23 | 33 | 1 | 5 | 7 | 0 | 0 | 0 |
 | 2013 | Green Bay | 22 | 33 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

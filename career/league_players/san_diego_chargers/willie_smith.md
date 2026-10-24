@@ -1,10 +1,10 @@
 # Willie Smith
 
-**San Diego Chargers · Offensive tackle · No. 69 · Age 27 · Last game October 5, 2014**
+**San Diego Chargers · Offensive tackle · No. 69 · Age 27 · Last game October 12, 2014**
 
 6' 5", 310 lb · Born November 13, 1986 · East Carolina
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Willie Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Willie_smith_redskins.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Diego | 27 | 69 | 5 | 0 | 0 | 0 | 19 |
+| 2014 (through Week 6) | San Diego | 27 | 69 | 6 | 0 | 0 | 0 | 26 |
 
 ### Playoffs
 

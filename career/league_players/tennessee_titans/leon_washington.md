@@ -1,10 +1,10 @@
 # Leon Washington
 
-**Tennessee Titans · Running back · No. 29 · Age 32 · Last game October 5, 2014**
+**Tennessee Titans · Running back · No. 29 · Age 32 · Last game October 12, 2014**
 
 5' 8", 192 lb · Born August 29, 1982 · Florida State · Drafted in 2006, fourth round, by the New York Jets
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Leon Washington](https://commons.wikimedia.org/wiki/Special:FilePath/Leon_Washington.jpg?width=500)
 
@@ -22,18 +22,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 32 | 29 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2014 (through Week 6) | Tennessee | 32 | 29 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 | 2013 | New England | 31 | N/A | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 |
-| Career |  |  |  | 21 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| Career |  |  |  | 22 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 32 | 29 | 2 | 1 | 33 | 33.0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tennessee | 32 | 29 | 2 | 1 | 33 | 33.0 | 0 | 0 | 0 |
 | 2013 | New England | 31 | N/A | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 32 | 29 | 16 | 415 | 25.9 | 0 | 0 | N/A |
+| 2014 (through Week 6) | Tennessee | 32 | 29 | 19 | 468 | 24.6 | 0 | 0 | N/A |
 | 2013 | New England | 31 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs
