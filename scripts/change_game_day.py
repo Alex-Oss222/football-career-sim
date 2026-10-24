@@ -63,7 +63,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from runtime import decision_queue, decisions, game_plan  # noqa: E402
+from runtime import decision_queue, decisions, game_plan, responses  # noqa: E402
 from runtime import roster as roster_record  # noqa: E402
 from runtime.week_pages import kickoff  # noqa: E402
 from scripts.apply_game_plan import log_change, long_date, opponent_words, write_charts, write_like  # noqa: E402
@@ -72,16 +72,10 @@ from scripts.check_game_plan import (Plan, changed_chart, closed_for_changes, de
 
 CLASS = "depth_and_roles"
 ET = ZoneInfo("America/New_York")
-RESPONSES_PAGE = decisions.file_name(decisions.RESPONSES)
-# The same rule as builder A1's runtime/decision_queue.game_day_item, which the lead switches this to
-# at integration: a depth_and_roles item of the holder, bound to no event, whose record is the
-# change's block on the week's My Responses page.
-GAME_DAY_ANCHOR = re.compile(r"^depth-and-inactives-change(?:-[2-9]|-[1-9][0-9]+)?$")
 CHANGES_ABOUT = ("Stone's depth or inactives changes of the week made on My Responses after its Game Plan was "
                  "applied, in order: each change's heading and queue item, its block's digest, the inactives before "
                  "and after, the depth changes and the chart's changes in words. Written only by "
                  "scripts/change_game_day.py; the call sheet, the applied plan record and the Game Plan never change.")
-FIELDS = ("My answer", "My football or professional reason", "Conditions or instructions", "Date answered")
 
 
 def anchor(heading):
@@ -89,17 +83,9 @@ def anchor(heading):
     return re.sub(r"[^\w\- ]", "", heading.lower()).replace(" ", "-")
 
 
-def is_game_day_item(item, holder=None):
-    record = item.get("record") or {}
-    return (item.get("class") == CLASS and item.get("event") is None
-            and (holder is None or item.get("owner") == holder)
-            and str(record.get("path", "")).endswith("/" + RESPONSES_PAGE)
-            and bool(GAME_DAY_ANCHOR.match(str(record.get("anchor") or ""))))
-
-
 def week_items(queue, season, week, holder):
     """The week's game-day change items, open or settled, in order."""
-    return [i for i in queue["items"] if is_game_day_item(i, holder)
+    return [i for i in queue["items"] if decision_queue.game_day_item(i, holder)
             and ((i.get("deadline") or {}).get("before") or {}).get("season") == season
             and ((i.get("deadline") or {}).get("before") or {}).get("week") == week]
 
@@ -114,27 +100,7 @@ def kickoff_at(game):
 def append_block(period, heading, item, root, season):
     """A blank block under ``heading`` on the period's My Responses page, bound to ``item``, through
     the one writer of that page (runtime/responses.append_block, builder A3)."""
-    try:
-        from runtime import responses
-    except ImportError:
-        return _stub_append_block(period, heading, root, season)
     return responses.append_block(period, heading, item, root, season)
-
-
-def _stub_append_block(period, heading, root, season):
-    """STUB (rebuild step 5, builder C, wave 1): runtime/responses.py (builder A3) is not on this
-    branch. Until it is, the block is appended here in the template's form (the heading and its four
-    lines, the earlier bytes kept as a prefix), with no binding record; the lead deletes this stub
-    when A3 merges and responses.append_block becomes the only writer."""
-    (kind, week), = period.items()
-    page = decisions.week_pages(season, week, root).responses
-    text = page.read_text(encoding="utf-8") if page.is_file() else "# Week %d My Responses\n\n" % week
-    if not text.endswith("\n\n"):
-        text += "\n" if text.endswith("\n") else "\n\n"
-    block = "\n".join(["## %s" % heading, ""] + sum((["**%s:**" % f, ""] for f in FIELDS), [])) + "\n"
-    page.parent.mkdir(parents=True, exist_ok=True)
-    page.write_text(text + block, encoding="utf-8")
-    return page
 
 
 # ------------------------------------------------------------------ what the week needs
@@ -367,7 +333,7 @@ def validation_errors(root=ROOT):
             item = queue.get(change.get("item"))
             if change.get("heading") != decisions.game_day_change_heading(n) or change.get("n") != n:
                 errors.append("%s %d: the heading is not %r" % (label, n, decisions.game_day_change_heading(n)))
-            if item is None or not is_game_day_item(item) or item.get("status") != "RESOLVED" or \
+            if item is None or not decision_queue.game_day_item(item) or item.get("status") != "RESOLVED" or \
                     (item.get("resolution") or {}).get("by") != "user" or \
                     (item.get("resolution") or {}).get("record") != {"path": change.get("page"),
                                                                      "anchor": change.get("anchor")}:

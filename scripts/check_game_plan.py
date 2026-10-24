@@ -526,29 +526,17 @@ def briefing_problems(plan):
     when = plan.choices.get("briefing")
     if when is None:
         return []
+    # The one reissue rule decides (runtime/event_inserts.py): an issue that only added or changed the
+    # inserts at the top leaves an earlier "Briefing used" standing, with a note.
+    from runtime import event_inserts
     from scripts import render_game_week
     try:
-        from runtime import event_inserts
-    except ImportError:
-        # STUB (rebuild step 5, builder C, wave 1): runtime/event_inserts.py (builder A2) is not on this
-        # branch. Once it is, its one reissue rule decides: an issue that only added or changed the
-        # inserts at the top leaves an earlier "Briefing used" standing, with a note. The lead removes
-        # this fallback at integration.
-        event_inserts = None
-    try:
         wk = render_game_week.Week(plan.root, plan.week)
-        if event_inserts is not None:
-            problems, notes = event_inserts.plan_issue_problems(wk, when)
-            plan.notes += [n for n in notes if n not in plan.notes]
-            return problems
-        current = render_game_week.current_issue(wk)
+        problems, notes = event_inserts.plan_issue_problems(wk, when)
     except (OSError, ValueError):
         return []
-    if current is not None and (when["date"], when["revision"]) != current:
-        return ["Briefing used: your page answers the briefing of %s; the current briefing is %s; read it and "
-                "write it as its status line names it (your answers may stand)"
-                % (game_plan.issue_label(when["date"], when["revision"]), game_plan.issue_label(*current))]
-    return []
+    plan.notes += [n for n in notes if n not in plan.notes]
+    return problems
 
 
 def caller_problems(plan):
