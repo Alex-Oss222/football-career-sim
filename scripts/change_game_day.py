@@ -2,6 +2,7 @@
 """Depth or inactives after the Game Plan is set (rebuild step 5, C2).
 
   python scripts/change_game_day.py WEEK --season YEAR --needed [--root PATH]
+  python scripts/change_game_day.py WEEK --season YEAR [--file PAGE] [--root PATH]
   python scripts/change_game_day.py WEEK --season YEAR --check [--root PATH]
 
 Once a week's Game Plan is applied its call sheet is frozen, but the week can
@@ -26,8 +27,25 @@ that block when the week has none). A change already open is not opened twice.
 Nothing opens before the plan is applied (the Game Plan itself sets the list),
 or once the week's inputs are built, the game is paused or played.
 
---check exits 1 while a change is open and unanswered (the runner applies it
-before building the inputs), and 0 otherwise.
+Stone answers in the block's "My answer" line, one line each, in the Game
+Plan's own forms: "Inactives: ..." (the players by name, or "Standing rule"
+with the others he names) and "Depth/role changes: ..." (a role and its
+player, or a group's new order, separated by semicolons); a line left out
+keeps the inactives as they stand, or the depth unchanged. The default mode
+reads each open change's block: an empty block leaves the change open; an
+answered one is checked (``block_choices``, then the Game Plan's checks as
+``record_change`` runs them) and, once it passes, written by ``record_change``,
+its "Date answered" line filled with the master date (the runner's only edit
+to his page) and the block frozen by its digest in the week's responses record
+(``applied``: its sha256, date and the change it commits to), which validation
+holds it to. With --file his page (a .md or .txt file with the same headings)
+is placed first, refused with nothing written when it changes an applied block
+or carries a reserved heading the week has not asked
+(scripts/record_practice_week.place_upload).
+
+--check writes nothing: it exits 1 while a change is open (the runner applies
+it before building the inputs), naming whether its block is unanswered, ready
+to apply or refused and why, and 0 otherwise.
 
 ``record_change`` is the writer: from the change's own choices (the inactives
 and depth in the Game Plan's forms) it runs the Game Plan's checks
@@ -43,9 +61,8 @@ and the week's game-day change record (``game_day_changes.json``), and resolves
 the item by the user with the block as its record. It never touches the call
 sheet, the applied plan record or the Game Plan; the Game Plan is not applied
 again once a change is recorded (scripts/apply_game_plan.apply). "Carry Week
-N" on a later Game Plan carries the list as it stood at the game. Reading the
-block from My Responses comes with the My Responses page (step 5, builder C,
-second wave). Nothing here moves the clock or creates an event.
+N" on a later Game Plan carries the list as it stood at the game. Nothing here
+moves the clock or creates an event.
 """
 from __future__ import annotations
 
@@ -226,28 +243,26 @@ def roster_move(chart, leaving=(), joining=None):
     return chart
 
 
-def record_change(root, season, week, choices, item_id=None, block_sha256=None, rebuild=True):
-    """Write Stone's change of the week's inactives or depth (``choices``: "inactives" and "depth" in
-    the Game Plan's parsed forms; an inactive line left out keeps the list as it stands) after the
-    Game Plan's checks pass against the chart as applied; returns (problems, paths written)."""
+def change_problems(root, season, week, choices, item_id=None):
+    """(problems, context): the Game Plan's checks of a change (``choices``) against the chart as
+    applied, the inactives as they stand and the frozen sheet, without writing; ``context`` carries
+    what the writer needs once they pass."""
     root = Path(root).resolve()
     refused = closed_for_changes(root, season, week)
     if refused:
-        return [refused], []
+        return [refused], None
     base = Plan(root, season, week)
     if base.game is None:
-        return ["%s: Jacksonville has no game" % base.label()], []
+        return ["%s: Jacksonville has no game" % base.label()], None
     if base.applied is None:
-        return ["%s: the Game Plan is not applied yet; change the Game Plan itself" % base.label()], []
-    queue_path = root / decision_queue.QUEUE
-    queue = json.loads(queue_path.read_text(encoding="utf-8"))
+        return ["%s: the Game Plan is not applied yet; change the Game Plan itself" % base.label()], None
+    queue = decision_queue.load(root)
     holder = base.job.get("holder")
     mine = week_items(queue, season, week, holder)
     still = [i for i in mine if i.get("status") == "OPEN" and (item_id is None or i["id"] == item_id)]
     if not still:
         return ["%s: no depth and inactives change is open for the week; it opens when the medical staff or a "
-                "roster move makes one needed" % base.label()], []
-    item = still[0]
+                "roster move makes one needed" % base.label()], None
     before = current_inactives(base)
     plan = Plan(root, season, week, inactives=before, choices=choices)
     listed, moved = inactive_problems(plan), depth_problems(plan)
@@ -256,8 +271,21 @@ def record_change(root, season, week, choices, item_id=None, block_sha256=None, 
         problems += role_problems(plan)
     sheet = json.loads(plan.pages.call_sheet.read_text(encoding="utf-8"))
     problems += offense_problems(plan, sheet)
+    return problems, {"plan": plan, "item": still[0], "mine": mine, "before": before}
+
+
+def record_change(root, season, week, choices, item_id=None, block_sha256=None, rebuild=True):
+    """Write Stone's change of the week's inactives or depth (``choices``: "inactives" and "depth" in
+    the Game Plan's parsed forms; an inactive line left out keeps the list as it stands) after the
+    Game Plan's checks pass against the chart as applied; returns (problems, paths written)."""
+    root = Path(root).resolve()
+    problems, context = change_problems(root, season, week, choices, item_id)
     if problems:
         return problems, []
+    plan, item, mine, before = context["plan"], context["item"], context["mine"], context["before"]
+    queue_path = root / decision_queue.QUEUE
+    queue = json.loads(queue_path.read_text(encoding="utf-8"))
+    item = next(i for i in queue["items"] if i.get("id") == item["id"])
     players = plan.inactives()
     depth = choices.get("depth") if isinstance(choices.get("depth"), dict) else {}
     _, changes = changed_chart(plan.chart, depth)
@@ -310,6 +338,126 @@ def record_change(root, season, week, choices, item_id=None, block_sha256=None, 
     return problems, written
 
 
+# ------------------------------------------------------------------ his block on My Responses
+CHANGE_KIND = "game_day_change"
+BLOCK_LINES = {"inactives": ("inactives", "Inactives"), "depth/role changes": ("depth", "Depth/role changes"),
+               "depth and role changes": ("depth", "Depth/role changes")}
+BLOCK_FORM = ("one line each in the Game Plan's forms: \"Inactives: \" and the players by name (or \"Standing rule\" "
+              "with the others you name), and \"Depth/role changes: \" and a role and its player (Kick returner: "
+              "name) or a group's new order (Wide receivers order: names), separated by semicolons")
+
+
+def block_choices(text):
+    """(choices, problems): a change's own lines from his block's answer, read by the Game Plan's own
+    readers (runtime/game_plan.py): ``inactives`` when he writes an "Inactives:" line, ``depth``
+    ("none" when he writes no "Depth/role changes:" line)."""
+    choices, problems = {}, []
+    lines = [l.strip() for l in (text or "").split("\n")]
+    for n, line in enumerate(lines, 1):
+        line = re.sub(r"^[-*]\s+", "", line).strip()
+        if not line:
+            continue
+        label, sep, value = line.partition(":")
+        found = BLOCK_LINES.get(label.strip().lower()) if sep else None
+        if found is None:
+            problems.append("%r is not a line the change takes; write %s" % (line[:80], BLOCK_FORM))
+            continue
+        key, name = found
+        if key in choices:
+            problems.append("%s: the line appears twice; write it once" % name)
+            continue
+        if not value.strip():
+            problems.append("%s: the line is empty; leave it out to keep it as it stands" % name)
+            continue
+        field = game_plan.Field(key, n, value.strip(), name)
+        read = game_plan.READERS[key if key == "depth" else "inactives"](key, field, problems)
+        if key == "inactives" and isinstance(read, dict) and "same_as" in read:
+            problems.append("Inactives: Carry Week N belongs on a Game Plan; name the inactives for this game")
+            continue
+        if read is not None:
+            choices[key] = read
+    if not choices and not problems:
+        problems.append("Write the change, %s" % BLOCK_FORM)
+    choices.setdefault("depth", "none")
+    return choices, problems
+
+
+def item_heading(item, mine):
+    """The block heading of a game-day change item (its record's anchor)."""
+    return next(h for h in [decisions.game_day_change_heading(n) for n in range(1, len(mine) + 2)]
+                if anchor(h) == item["record"]["anchor"])
+
+
+def read_answers(root, season, week):
+    """[(item, heading, block, choices, problems)] of the week's open changes, in order: each open
+    item's block read and checked (an empty block has no choices and no problems)."""
+    from scripts import record_practice_week as rpw
+    root = Path(root).resolve()
+    plan = Plan(root, season, week)
+    queue = decision_queue.load(root)
+    mine = week_items(queue, season, week, plan.job.get("holder"))
+    out = []
+    for item in [i for i in mine if i.get("status") == "OPEN"]:
+        heading = item_heading(item, mine)
+        block = rpw.read_block(root, season, {"week": week}, heading)
+        if block is None:
+            out.append((item, heading, None, None, ["%s: the block is missing from the week's My Responses page"
+                                                    % heading]))
+            continue
+        if not block.answer:
+            out.append((item, heading, block, None, []))
+            continue
+        choices, problems = block_choices(block.answer)
+        problems = ["%s: %s" % (heading, p) for p in problems]
+        problems += [p for p in [rpw.date_problem(block, plan.master)] if p]
+        problems += rpw.clean_problems(root, season, {"week": week}, block)
+        if not problems:
+            checked, _ = change_problems(root, season, week, choices, item["id"])
+            problems += ["%s: %s" % (heading, p) for p in checked]
+        out.append((item, heading, block, choices, problems))
+    return out
+
+
+def apply_answers(root, season, week, rebuild=True):
+    """(problems, notes, written): every answered open change of the week checked and, when all pass,
+    written (``record_change``) and its block frozen. With any problem nothing is written."""
+    from scripts import record_practice_week as rpw
+    from scripts.render_career_views import paused_games
+    root = Path(root).resolve()
+    if paused_games(root):
+        return ["A Jacksonville game is paused; nothing is recorded until it is finished"], [], []
+    answers = read_answers(root, season, week)
+    problems = [p for *_, found in answers for p in found]
+    if problems:
+        return problems, [], []
+    notes = ["%s: still open; no answer yet" % heading for item, heading, block, choices, _ in answers
+             if choices is None]
+    written = []
+    master = Plan(root, season, week).master
+    for item, heading, block, choices, _ in answers:
+        if choices is None:
+            continue
+        expected = hashlib.sha256(rpw.filled(block, master).encode("utf-8")).hexdigest()
+        found, paths = record_change(root, season, week, choices, item_id=item["id"], block_sha256=expected,
+                                     rebuild=False)
+        if found:
+            return found, notes, written
+        written += paths
+        change = changes_record(Plan(root, season, week))["changes"][-1]
+        frozen = rpw.freeze_block(root, season, {"week": week}, block,
+                                  {"kind": CHANGE_KIND, "inactives": change["inactives"]["after"],
+                                   "depth": change["depth"]}, master)
+        if frozen.sha256 != expected:
+            raise ValueError("%s: the frozen block's digest differs from the one recorded" % heading)
+        from runtime import responses
+        pages = responses.pages_of(season, {"week": week}, root)
+        written += [pages.responses, pages.responses_record]
+    if written and rebuild:
+        from scripts.apply_game_plan import rebuild as rebuild_pages
+        problems = rebuild_pages(root, week)
+    return problems, notes, written
+
+
 def validation_errors(root=ROOT):
     """Every recorded game-day change held to its records: each change's queue item a game-day item of
     its week, resolved by the user with the change's block as its record; the week's inactives record
@@ -339,6 +487,14 @@ def validation_errors(root=ROOT):
                                                                      "anchor": change.get("anchor")}:
                 errors.append("%s %d: its queue item is not the week's change resolved by Stone on its block"
                               % (label, n))
+        from runtime import responses
+        bound = {b.get("heading"): b for b in responses.record_of(season, {"week": week}, root).get("blocks") or ()}
+        for n, change in enumerate(changes, 1):
+            digest = change.get("block_sha256")
+            applied = (bound.get(change.get("heading")) or {}).get("applied") or {}
+            if digest is not None and applied.get("sha256") != digest:
+                errors.append("%s %d: the block it was written from is not the one frozen on My Responses"
+                              % (label, n))
         inactives = game_plan.applied_record(pages.inactives) or {}
         if changes and (inactives.get("players") != changes[-1]["inactives"]["after"]
                         or "as_set" not in inactives
@@ -367,6 +523,7 @@ def main(argv=None):
     parser.add_argument("--season", type=int, required=True)
     parser.add_argument("--needed", action="store_true")
     parser.add_argument("--check", action="store_true")
+    parser.add_argument("--file", type=Path)
     parser.add_argument("--root", type=Path, default=ROOT)
     args = parser.parse_args(argv)
     if args.needed:
@@ -374,14 +531,35 @@ def main(argv=None):
         print(message)
         return 0
     if args.check:
-        still = open_changes(args.root, args.season, args.week)
-        for item in still:
-            print("- open: %s, due before the Week %d inputs are built" % (item["title"], args.week))
-        print("GAME-DAY CHANGE: %s" % ("OPEN" if still else "NONE OPEN"))
-        return 1 if still else 0
-    print("GAME-DAY CHANGE: the change is read from its My Responses block, which comes with the My Responses page "
-          "(rebuild step 5, builder C, second wave); nothing was written")
-    return 2
+        answers = read_answers(args.root, args.season, args.week)
+        for item, heading, block, choices, problems in answers:
+            state = ("unanswered" if choices is None and not problems else "refused" if problems
+                     else "answered, ready to apply")
+            print("- open: %s, due before the Week %d inputs are built; %s" % (item["title"], args.week, state))
+            for problem in problems:
+                print("  - %s" % problem)
+        print("GAME-DAY CHANGE: %s" % ("OPEN" if answers else "NONE OPEN"))
+        return 1 if answers else 0
+    if args.file is not None:
+        from scripts import record_practice_week as rpw
+        try:
+            rpw.place_upload(args.root, args.season, {"week": args.week}, args.file)
+        except (OSError, ValueError) as exc:
+            print("GAME-DAY CHANGE: UPLOAD REFUSED")
+            print("- %s" % exc)
+            return 1
+    problems, notes, written = apply_answers(args.root, args.season, args.week)
+    for note in notes:
+        print("  note: %s" % note)
+    if problems:
+        print("GAME-DAY CHANGE: NOT RECORDED")
+        for problem in problems:
+            print("- %s" % problem)
+        return 1
+    for path in written:
+        print("wrote %s" % Path(path).resolve().relative_to(Path(args.root).resolve()).as_posix())
+    print("GAME-DAY CHANGE: %s" % ("RECORDED" if written else "NOTHING TO RECORD"))
+    return 0
 
 
 if __name__ == "__main__":
