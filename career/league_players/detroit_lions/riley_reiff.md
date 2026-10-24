@@ -1,10 +1,10 @@
 # Riley Reiff
 
-**Detroit Lions · Offensive tackle · No. 71 · Age 25 · Last game October 5, 2014**
+**Detroit Lions · Offensive tackle · No. 71 · Age 25 · Last game October 12, 2014**
 
 6' 6", 313 lb · Born December 1, 1988 · Iowa · Drafted in 2012, first round, by Detroit
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Riley Reiff](https://commons.wikimedia.org/wiki/Special:FilePath/Detroit_Lions_offensive_tackle_Riley_Reiff.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 5 (2014, through Week 5).
+**Sacks allowed:** 6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 25 | 71 | 2 | 2 | 93 | 5 | 5 |
+| 2014 (through Week 6) | Detroit | 25 | 71 | 3 | 3 | 153 | 6 | 9 |
 | 2013 | Detroit | 24 | 71 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 18 | N/A | N/A | 12 | N/A |
+| Career |  |  |  | 19 | N/A | N/A | 13 | N/A |
 
 ### Playoffs
 

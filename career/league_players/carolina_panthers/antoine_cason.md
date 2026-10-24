@@ -1,10 +1,10 @@
 # Antoine Cason
 
-**Carolina Panthers · Cornerback · No. 20 · Age 28 · Last game October 5, 2014**
+**Carolina Panthers · Cornerback · No. 20 · Age 28 · Last game October 12, 2014**
 
 6' 1", 195 lb · Born July 9, 1986 · Arizona · Drafted in 2008, first round, by San Diego
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Antoine Cason](https://commons.wikimedia.org/wiki/Special:FilePath/Antoine_Cason.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 6 (2014, through Week 5).
+**Passes defended:** 6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 28 | 20 | 5 | 31 | 21 | 10 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Carolina | 28 | 20 | 6 | 36 | 25 | 11 | 0 | 0 | 0 |
 | 2013 | Arizona | 27 | 20 | 16 | 38 | 27 | 11 | 1 | 0 | 1 |
-| Career |  |  |  | 21 | 69 | 48 | 21 | 1 | 0 | 1 |
+| Career |  |  |  | 22 | 74 | 52 | 22 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 28 | 20 | 0 | 0 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Carolina | 28 | 20 | 0 | 0 | 6 | 0 | 0 | 0 |
 | 2013 | Arizona | 27 | 20 | 4 | 77 | 7 | 1 | 1 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Dezmen Southward
 
-**Atlanta Falcons · Safety · No. 41 · Age 24 · Last game October 5, 2014**
+**Atlanta Falcons · Safety · No. 41 · Age 24 · Last game October 12, 2014**
 
 6' 1", 210 lb · Born October 1, 1990 · Wisconsin
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Dezmen Southward](https://commons.wikimedia.org/wiki/Special:FilePath/Dezmen_Southward_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve safety.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Atlanta | 23 | 41 | 5 | 2 | 1 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Atlanta | 23 | 41 | 6 | 2 | 1 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Atlanta | 23 | 41 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Atlanta | 23 | 41 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

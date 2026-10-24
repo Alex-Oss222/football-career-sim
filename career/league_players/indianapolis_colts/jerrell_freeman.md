@@ -1,10 +1,10 @@
 # Jerrell Freeman
 
-**Indianapolis Colts · Inside linebacker · No. 50 · Age 28 · Last game October 5, 2014**
+**Indianapolis Colts · Inside linebacker · No. 50 · Age 28 · Last game October 9, 2014**
 
 6' 0", 240 lb · Born May 1, 1986 · Mary Hardin-Baylor
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Jerrell Freeman](https://commons.wikimedia.org/wiki/Special:FilePath/JerrellFreemanRiders.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting weakside linebacker.
 
-**Tackles:** 37 (2014, through Week 5).
+**Tackles:** 46 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 28 | 50 | 5 | 37 | 23 | 14 | 1 | 0 | 2 |
+| 2014 (through Week 6) | Indianapolis | 28 | 50 | 6 | 46 | 30 | 16 | 1 | 0 | 2 |
 | 2013 | Indianapolis | 27 | 50 | 16 | 145 | 95 | 50 | 11 | 9 | 15 |
-| Career |  |  |  | 21 | 182 | 118 | 64 | 12 | 9 | 17 |
+| Career |  |  |  | 22 | 191 | 125 | 66 | 12 | 9 | 17 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 28 | 50 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Indianapolis | 28 | 50 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 27 | 50 | 2 | 6 | 7 | 1 | 1 | N/A |
 
 ### Playoffs

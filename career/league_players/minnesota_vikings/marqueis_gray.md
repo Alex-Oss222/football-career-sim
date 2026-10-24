@@ -1,10 +1,10 @@
 # MarQueis Gray
 
-**Minnesota Vikings · Tight end · No. 87 · Age 24 · Last game October 2, 2014**
+**Minnesota Vikings · Tight end · No. 87 · Age 24 · Last game October 12, 2014**
 
 6' 4", 242 lb · Born November 7, 1989 · Minnesota
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![MarQueis Gray](https://commons.wikimedia.org/wiki/Special:FilePath/MarQueis_Gray.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 1.0 (2014, through Week 5).
+**Yards per target:** 0.5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 24 | 87 | 5 | 1 | 1 | 1 | 1.0 | 0 | 1 | 0.2 | 100.0 |
+| 2014 (through Week 6) | Minnesota | 24 | 87 | 6 | 2 | 1 | 1 | 1.0 | 0 | 1 | 0.2 | 50.0 |
 | 2013 | Cleveland | 23 | 47 | 16 | 4 | 2 | 11 | 5.5 | 0 | 8 | 0.7 | 50.0 |
-| Career |  |  |  | 21 | 5 | 3 | 12 | 4.0 | 0 | 8 | 0.6 | 60.0 |
+| Career |  |  |  | 22 | 6 | 3 | 12 | 4.0 | 0 | 8 | 0.5 | 50.0 |
 
 ### Playoffs
 

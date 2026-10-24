@@ -1,10 +1,10 @@
 # Ricky Jean Francois
 
-**Indianapolis Colts · Defensive end · No. 99 · Age 27 · Last game October 5, 2014**
+**Indianapolis Colts · Defensive end · No. 99 · Age 27 · Last game October 9, 2014**
 
 6' 3", 297 lb · Born November 23, 1986 · LSU · Drafted in 2009, seventh round, by San Francisco
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Ricky Jean Francois](https://commons.wikimedia.org/wiki/Special:FilePath/Ricky_Jean-Francois.JPG?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 27 | 99 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Indianapolis | 27 | 99 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 26 | 99 | 16 | 47 | 35 | 12 | 3 | 4 | 11 |
-| Career |  |  |  | 21 | 47 | 35 | 12 | 3 | 4 | 11 |
+| Career |  |  |  | 22 | 47 | 35 | 12 | 3 | 4 | 11 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 27 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Indianapolis | 27 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 26 | 99 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

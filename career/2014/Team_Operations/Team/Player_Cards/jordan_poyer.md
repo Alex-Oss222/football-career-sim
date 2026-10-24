@@ -4,13 +4,13 @@
 
 6' 0", 191 lb · Born April 25, 1991 · Oregon State · Drafted in 2013, No. 64 overall, by Jacksonville
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jordan Poyer](https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Poyer_2021_%28cropped%29.jpg?width=500)
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jordan_Poyer_2021_(cropped).jpg)).*
 
-**Passes defended:** 2 (2014, through Week 5).
+**Passes defended:** 2 (2014, through Week 6).
 
 ## Staff assessment
 
@@ -34,18 +34,18 @@ Four-year contract through 2016.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 23 | 33 | 3 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Jacksonville | 23 | 33 | 3 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 22 | N/A | 16 | 35 | 19 | 16 | 0 | 0 | 0 |
 | With Jacksonville |  |  |  | 19 | 36 | 20 | 16 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 23 | 33 | 0 | 0 | 2 | 0 | 0 | 2 |
+| 2014 (through Week 6) | Jacksonville | 23 | 33 | 0 | 0 | 2 | 0 | 0 | 2 |
 | 2013 | Jacksonville | 22 | N/A | 1 | 2 | 7 | 1 | 1 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 23 | 33 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | Jacksonville | 23 | 33 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 22 | N/A | 1 | 12 | 12.0 | 2 | 24 | 12.0 |
 
 ### Playoffs

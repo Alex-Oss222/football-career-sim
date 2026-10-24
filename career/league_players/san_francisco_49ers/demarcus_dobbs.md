@@ -1,10 +1,10 @@
 # Demarcus Dobbs
 
-**San Francisco 49ers · Defensive end · No. 83 · Age 26 · Last game October 5, 2014**
+**San Francisco 49ers · Defensive end · No. 83 · Age 26 · Last game October 13, 2014**
 
 6' 2", 282 lb · Born November 30, 1987 · Georgia
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Demarcus Dobbs](https://commons.wikimedia.org/wiki/Special:FilePath/Demarcus_Dobbs.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 26 | 83 | 5 | 4 | 3 | 1 | 1 | 1 | 1 |
+| 2014 (through Week 6) | San Francisco | 26 | 83 | 6 | 5 | 3 | 2 | 1 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 26 | 83 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | San Francisco | 26 | 83 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

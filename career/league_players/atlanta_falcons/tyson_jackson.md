@@ -1,10 +1,10 @@
 # Tyson Jackson
 
-**Atlanta Falcons · Defensive tackle · No. 99 · Age 28 · Last game October 5, 2014**
+**Atlanta Falcons · Defensive tackle · No. 99 · Age 28 · Last game October 12, 2014**
 
 6' 4", 296 lb · Born June 6, 1986 · LSU · Drafted in 2009, first round, by Kansas City
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Tyson Jackson](https://commons.wikimedia.org/wiki/Special:FilePath/Tyson_Jackson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Atlanta | 28 | 99 | 5 | 7 | 7 | 0 | 0 | 1 | 2 |
+| 2014 (through Week 6) | Atlanta | 28 | 99 | 6 | 7 | 7 | 0 | 0 | 1 | 2 |
 | 2013 | Kansas City | 27 | 94 | 16 | 66 | 46 | 20 | 10 | 6 | 12 |
-| Career |  |  |  | 21 | 73 | 53 | 20 | 10 | 7 | 14 |
+| Career |  |  |  | 22 | 73 | 53 | 20 | 10 | 7 | 14 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Atlanta | 28 | 99 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2014 (through Week 6) | Atlanta | 28 | 99 | 0 | 0 | 0 | 1 | 1 | 0 |
 | 2013 | Kansas City | 27 | 94 | 0 | 0 | 2 | 2 | 2 | N/A |
 
 ### Playoffs

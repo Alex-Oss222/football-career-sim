@@ -1,10 +1,10 @@
 # Kyle Nelson
 
-**San Francisco 49ers · Long snapper · No. 86 · Age 28 · Last game October 5, 2014**
+**San Francisco 49ers · Long snapper · No. 86 · Age 28 · Last game October 13, 2014**
 
 6' 2", 240 lb · Born October 3, 1986 · New Mexico State
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Kyle Nelson](https://commons.wikimedia.org/wiki/Special:FilePath/Kyle_Nelson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 42 (2014, through Week 5).
+**Long snaps:** 51 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 27 | 86 | 5 | 42 | 42 | 0 | 0 |
+| 2014 (through Week 6) | San Francisco | 27 | 86 | 6 | 51 | 51 | 0 | 0 |
 
 ### Playoffs
 

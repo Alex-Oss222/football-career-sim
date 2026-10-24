@@ -1,10 +1,10 @@
 # Daniel Fells
 
-**New York Giants · Tight end · No. 85 · Age 31 · Last game October 5, 2014**
+**New York Giants · Tight end · No. 85 · Age 31 · Last game October 12, 2014**
 
 6' 4", 260 lb · Born September 23, 1983 · California-Davis
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Daniel Fells](https://commons.wikimedia.org/wiki/Special:FilePath/Daniel_Fells.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 4.2 (2014, through Week 5).
+**Yards per target:** 6.1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Giants | 30 | 85 | 5 | 4 | 1 | 17 | 17.0 | 1 | 17 | 3.4 | 25.0 |
+| 2014 (through Week 6) | N.Y. Giants | 30 | 85 | 6 | 8 | 5 | 49 | 9.8 | 2 | 17 | 8.2 | 62.5 |
 
 ### Playoffs
 

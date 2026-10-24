@@ -1,10 +1,10 @@
 # Quinton Patton
 
-**San Francisco 49ers · Wide receiver · No. 11 · Age 24 · Last game October 5, 2014**
+**San Francisco 49ers · Wide receiver · No. 11 · Age 24 · Last game October 13, 2014**
 
 6' 0", 204 lb · Born August 9, 1990 · Louisiana Tech; Coffeyville CC
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Quinton Patton](https://commons.wikimedia.org/wiki/Special:FilePath/Quinton_Patton_49ers.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 24 | 11 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 6) | San Francisco | 24 | 11 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | San Francisco | 23 | 11 | 16 | 16 | 16 | 158 | 9.9 | 1 | 33 | 9.9 | 100.0 |
-| Career |  |  |  | 21 | 16 | 16 | 158 | 9.9 | 1 | 33 | 7.5 | 100.0 |
+| Career |  |  |  | 22 | 16 | 16 | 158 | 9.9 | 1 | 33 | 7.2 | 100.0 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 24 | 11 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | San Francisco | 24 | 11 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | San Francisco | 23 | 11 | 2 | 21 | 0 | 0 | 0 |
 
 ### Playoffs

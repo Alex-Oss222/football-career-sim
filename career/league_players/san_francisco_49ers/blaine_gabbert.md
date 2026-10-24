@@ -1,10 +1,10 @@
 # Blaine Gabbert
 
-**San Francisco 49ers · Quarterback · No. 2 · Age 24 · Last game October 5, 2014**
+**San Francisco 49ers · Quarterback · No. 2 · Age 24 · Last game October 13, 2014**
 
 6' 4", 235 lb · Born October 15, 1989 · Missouri · Drafted in 2011, first round, by Jacksonville
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Blaine Gabbert](https://commons.wikimedia.org/wiki/Special:FilePath/Blaine_Gabbert.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 24 | 2 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 6) | San Francisco | 24 | 2 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Green Bay | 23 | N/A | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 21 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 22 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 24 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | San Francisco | 24 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Green Bay | 23 | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

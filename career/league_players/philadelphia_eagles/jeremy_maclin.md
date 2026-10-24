@@ -1,10 +1,10 @@
 # Jeremy Maclin
 
-**Philadelphia Eagles · Wide receiver · No. 18 · Age 26 · Last game October 5, 2014**
+**Philadelphia Eagles · Wide receiver · No. 18 · Age 26 · Last game October 12, 2014**
 
 6' 0", 198 lb · Born May 11, 1988 · Missouri · Drafted in 2009, first round, by Philadelphia
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jeremy Maclin](https://commons.wikimedia.org/wiki/Special:FilePath/Maclin_crop.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 8.9 (2014, through Week 5).
+**Yards per target:** 8.3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 26 | 18 | 5 | 34 | 21 | 304 | 14.5 | 3 | 81 | 60.8 | 61.8 |
+| 2014 (through Week 6) | Philadelphia | 26 | 18 | 6 | 41 | 26 | 339 | 13.0 | 3 | 81 | 56.5 | 63.4 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 26 | 18 | 1 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Philadelphia | 26 | 18 | 1 | 2 | 0 | 0 | 0 |
 
 ### Playoffs
 

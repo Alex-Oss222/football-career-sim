@@ -1,10 +1,10 @@
 # Alex Smith
 
-**Cincinnati Bengals · Tight end · No. 81 · Age 32 · Last game October 5, 2014**
+**Cincinnati Bengals · Tight end · No. 81 · Age 32 · Last game October 12, 2014**
 
 6' 4", 250 lb · Born May 22, 1982 · Stanford · Drafted in 2005, third round, by Tampa Bay
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Alex Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Alex_Smith_tight_end.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 0.0 (2014, through Week 5).
+**Yards per target:** 0.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 32 | 81 | 4 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
+| 2014 (through Week 6) | Cincinnati | 32 | 81 | 5 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
 | 2013 | Cincinnati | 31 | 81 | 16 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
-| Career |  |  |  | 20 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
+| Career |  |  |  | 21 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Byron Maxwell
 
-**Seattle Seahawks · Cornerback · No. 41 · Age 26 · Last game October 6, 2014**
+**Seattle Seahawks · Cornerback · No. 41 · Age 26 · Last game October 12, 2014**
 
 6' 1", 207 lb · Born February 23, 1988 · Clemson · Drafted in 2011, sixth round, by Seattle
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Byron Maxwell](https://commons.wikimedia.org/wiki/Special:FilePath/Byron_Maxwell_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 2 (2014, through Week 5).
+**Passes defended:** 3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Seattle | 26 | 41 | 4 | 15 | 12 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Seattle | 26 | 41 | 5 | 21 | 15 | 6 | 0 | 0 | 0 |
 | 2013 | Seattle | 25 | 41 | 11 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 15 | 16 | 13 | 3 | 0 | 0 | 0 |
+| Career |  |  |  | 16 | 22 | 16 | 6 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Seattle | 26 | 41 | 1 | 3 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Seattle | 26 | 41 | 1 | 3 | 3 | 0 | 1 | 0 |
 | 2013 | Seattle | 25 | 41 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

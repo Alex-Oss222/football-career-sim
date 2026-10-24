@@ -1,14 +1,14 @@
 # Cameron Lawrence
 
-**Dallas Cowboys · Outside linebacker · No. 53 · Age 23 · Last game October 5, 2014**
+**Dallas Cowboys · Outside linebacker · No. 53 · Age 23 · Last game October 12, 2014**
 
 6' 2", 238 lb · Born January 20, 1991 · Mississippi State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve strongside linebacker.
 
-**Tackles:** 1 (2014, through Week 5).
+**Tackles:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -20,11 +20,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 23 | 53 | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Dallas | 23 | 53 | 6 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 23 | 53 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 6) | Dallas | 23 | 53 | 0 | 0 | 0 | 0 | 0 | 3 |
 
 ### Playoffs
 

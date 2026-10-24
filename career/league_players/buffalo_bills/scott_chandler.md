@@ -1,10 +1,10 @@
 # Scott Chandler
 
-**Buffalo Bills · Tight end · No. 84 · Age 29 · Last game October 5, 2014**
+**Buffalo Bills · Tight end · No. 84 · Age 29 · Last game October 12, 2014**
 
 6' 7", 260 lb · Born July 23, 1985 · Iowa · Drafted in 2007, fourth round, by San Diego
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Scott Chandler](https://commons.wikimedia.org/wiki/Special:FilePath/Scott_Chandler_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 7.2 (2014, through Week 5).
+**Yards per target:** 7.6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 29 | 84 | 5 | 23 | 14 | 165 | 11.8 | 1 | 38 | 33.0 | 60.9 |
+| 2014 (through Week 6) | Buffalo | 29 | 84 | 6 | 28 | 17 | 212 | 12.5 | 2 | 38 | 35.3 | 60.7 |
 | 2013 | Buffalo | 28 | 84 | 16 | 99 | 74 | 705 | 9.5 | 7 | 50 | 44.1 | 74.7 |
-| Career |  |  |  | 21 | 122 | 88 | 870 | 9.9 | 8 | 50 | 41.4 | 72.1 |
+| Career |  |  |  | 22 | 127 | 91 | 917 | 10.1 | 9 | 50 | 41.7 | 71.7 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 29 | 84 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Buffalo | 29 | 84 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Buffalo | 28 | 84 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs

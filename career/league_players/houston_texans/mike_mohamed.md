@@ -1,10 +1,10 @@
 # Mike Mohamed
 
-**Houston Texans · Inside linebacker · No. 54 · Age 26 · Last game October 5, 2014**
+**Houston Texans · Inside linebacker · No. 54 · Age 26 · Last game October 9, 2014**
 
 6' 3", 238 lb · Born March 11, 1988 · California · Drafted in 2011, sixth round, by Denver
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Mike Mohamed](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Mohamed.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting weakside linebacker.
 
-**Tackles:** 37 (2014, through Week 5).
+**Tackles:** 46 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 26 | 54 | 5 | 37 | 27 | 10 | 1 | 1 | 3 |
+| 2014 (through Week 6) | Houston | 26 | 54 | 6 | 46 | 34 | 12 | 2 | 2 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 26 | 54 | 1 | 20 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Houston | 26 | 54 | 1 | 20 | 3 | 0 | 0 | 0 |
 
 ### Playoffs
 

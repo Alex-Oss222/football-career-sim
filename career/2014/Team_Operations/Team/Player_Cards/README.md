@@ -2,7 +2,7 @@
 
 Every player Jacksonville controls, by position, and the players who left after their 2014 staff assessment. Each page has the staff assessment, the contract where one is established, the statistics, the awards and the transactions.
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ## Current players
 

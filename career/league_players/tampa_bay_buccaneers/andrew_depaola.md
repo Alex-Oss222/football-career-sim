@@ -1,10 +1,10 @@
 # Andrew DePaola
 
-**Tampa Bay Buccaneers · Long snapper · No. 48 · Age 27 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Long snapper · No. 48 · Age 27 · Last game October 12, 2014**
 
 6' 2", 230 lb · Born July 28, 1987 · Rutgers
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Andrew DePaola](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_DePaola_2016_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 44 (2014, through Week 5).
+**Long snaps:** 54 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 27 | 48 | 5 | 44 | 44 | 0 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 27 | 48 | 6 | 54 | 54 | 0 | 0 |
 
 ### Playoffs
 

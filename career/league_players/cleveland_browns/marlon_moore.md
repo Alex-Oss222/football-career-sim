@@ -1,12 +1,12 @@
 # Marlon Moore
 
-**Cleveland Browns · Wide receiver · No. 15 · Age 27 · Last game October 5, 2014**
+**Cleveland Browns · Wide receiver · No. 15 · Age 27 · Last game October 12, 2014**
 
 6' 0", 190 lb · Born September 3, 1987 · Fresno State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
-**Yards per target:** 14.0 (2014, through Week 5).
+**Yards per target:** 5.8 (2014, through Week 6).
 
 ## Contract
 
@@ -18,9 +18,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 27 | 15 | 1 | 1 | 1 | 14 | 14.0 | 0 | 14 | 14.0 | 100.0 |
+| 2014 (through Week 6) | Cleveland | 27 | 15 | 2 | 4 | 2 | 23 | 11.5 | 0 | 14 | 11.5 | 50.0 |
 | 2013 | San Francisco | 26 | N/A | 16 | 50 | 29 | 321 | 11.1 | 6 | 48 | 20.1 | 58.0 |
-| Career |  |  |  | 17 | 51 | 30 | 335 | 11.2 | 6 | 48 | 19.7 | 58.8 |
+| Career |  |  |  | 18 | 54 | 31 | 344 | 11.1 | 6 | 48 | 19.1 | 57.4 |
 
 ### Playoffs
 

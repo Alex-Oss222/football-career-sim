@@ -1,10 +1,10 @@
 # Richard Marshall
 
-**San Diego Chargers · Cornerback · No. 31 · Age 29 · Last game October 5, 2014**
+**San Diego Chargers · Cornerback · No. 31 · Age 29 · Last game October 12, 2014**
 
 5' 11", 198 lb · Born December 12, 1984 · Fresno State · Drafted in 2006, second round, by Carolina
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Richard Marshall](https://commons.wikimedia.org/wiki/Special:FilePath/Richard_Marshall_%28defensive_back%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Diego | 29 | 31 | 5 | 4 | 2 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | San Diego | 29 | 31 | 6 | 5 | 3 | 2 | 0 | 0 | 0 |
 | 2013 | San Diego | 28 | 31 | 16 | 13 | 5 | 8 | 0 | 0 | 0 |
-| Career |  |  |  | 21 | 17 | 7 | 10 | 0 | 0 | 0 |
+| Career |  |  |  | 22 | 18 | 8 | 10 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Diego | 29 | 31 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 6) | San Diego | 29 | 31 | 0 | 0 | 0 | 0 | 0 | 2 |
 | 2013 | San Diego | 28 | 31 | 3 | 29 | 6 | 0 | 0 | N/A |
 
 ### Playoffs

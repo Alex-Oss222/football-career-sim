@@ -1,10 +1,10 @@
 # Allen Barbre
 
-**Philadelphia Eagles · Guard · No. 76 · Age 30 · Last game October 5, 2014**
+**Philadelphia Eagles · Guard · No. 76 · Age 30 · Last game October 12, 2014**
 
 6' 4", 310 lb · Born June 22, 1984 · Missouri Southern · Drafted in 2007, fourth round, by Green Bay
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Allen Barbre](https://commons.wikimedia.org/wiki/Special:FilePath/Allen_Barbre_2012.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 0 (2014, through Week 5).
+**Sacks allowed:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 30 | 76 | 5 | 2 | 126 | 0 | 26 |
+| 2014 (through Week 6) | Philadelphia | 30 | 76 | 6 | 3 | 203 | 0 | 33 |
 | 2013 | Philadelphia | 29 | 76 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Clay Matthews
 
-**Green Bay Packers · Outside linebacker · No. 52 · Age 28 · Last game October 2, 2014**
+**Green Bay Packers · Outside linebacker · No. 52 · Age 28 · Last game October 12, 2014**
 
 6' 3", 255 lb · Born May 14, 1986 · USC · Drafted in 2009, first round, by Green Bay
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Clay Matthews](https://commons.wikimedia.org/wiki/Special:FilePath/Clay_Matthews_III.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 40 (2014, through Week 5).
+**Tackles:** 55 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 28 | 52 | 5 | 40 | 24 | 16 | 6 | 2 | 2 |
+| 2014 (through Week 6) | Green Bay | 28 | 52 | 6 | 55 | 30 | 25 | 6 | 2 | 2 |
 | 2013 | Green Bay | 27 | 52 | 16 | 66 | 47 | 19 | 2 | 4 | 7 |
-| Career |  |  |  | 21 | 106 | 71 | 35 | 8 | 6 | 9 |
+| Career |  |  |  | 22 | 121 | 77 | 44 | 8 | 6 | 9 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 28 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Green Bay | 28 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Green Bay | 27 | 52 | 1 | 2 | 5 | 0 | 0 | N/A |
 
 ### Playoffs

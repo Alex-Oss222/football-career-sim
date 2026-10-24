@@ -1,10 +1,10 @@
 # Armonty Bryant
 
-**Cleveland Browns · Defensive end · No. 95 · Age 24 · Last game October 5, 2014**
+**Cleveland Browns · Defensive end · No. 95 · Age 24 · Last game October 12, 2014**
 
 6' 4", 265 lb · Born May 20, 1990 · East Central; Cisco Junior College; Abilene Christian
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Armonty Bryant](https://commons.wikimedia.org/wiki/Special:FilePath/Armonty_Bryant_cropped_Cleveland_Browns_New_Uniform_Unveiling_%2816534284023%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 2 (2014, through Week 5).
+**Sacks:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 24 | 95 | 4 | 12 | 10 | 2 | 1 | 2 | 5 |
+| 2014 (through Week 6) | Cleveland | 24 | 95 | 5 | 14 | 11 | 3 | 1 | 2 | 5 |
 | 2013 | Cleveland | 23 | 95 | 16 | 3 | 1 | 2 | 1 | 0 | 1 |
-| Career |  |  |  | 20 | 15 | 11 | 4 | 2 | 2 | 6 |
+| Career |  |  |  | 21 | 17 | 12 | 5 | 2 | 2 | 6 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 24 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Cleveland | 24 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cleveland | 23 | 95 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

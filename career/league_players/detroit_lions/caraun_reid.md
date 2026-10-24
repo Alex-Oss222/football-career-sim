@@ -1,10 +1,10 @@
 # Caraun Reid
 
-**Detroit Lions · Defensive tackle · No. 97 · Age 22 · Last game October 5, 2014**
+**Detroit Lions · Defensive tackle · No. 97 · Age 22 · Last game October 12, 2014**
 
 6' 2", 305 lb · Born November 23, 1991 · Princeton
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Caraun Reid](https://commons.wikimedia.org/wiki/Special:FilePath/Caraun_Reid.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 5).
+**Sacks:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 22 | 97 | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Detroit | 22 | 97 | 6 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 22 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Detroit | 22 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

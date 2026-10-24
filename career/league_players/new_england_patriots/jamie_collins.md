@@ -1,10 +1,10 @@
 # Jamie Collins
 
-**New England Patriots · Linebacker · No. 91 · Age 24 · Last game October 5, 2014**
+**New England Patriots · Linebacker · No. 91 · Age 24 · Last game October 12, 2014**
 
 6' 3", 250 lb · Born October 20, 1989 · Southern Mississippi
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jamie Collins](https://commons.wikimedia.org/wiki/Special:FilePath/Jamie_Collins_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting linebacker.
 
-**Tackles:** 36 (2014, through Week 5).
+**Tackles:** 42 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 24 | 91 | 5 | 36 | 29 | 7 | 3 | 3 | 3 |
+| 2014 (through Week 6) | New England | 24 | 91 | 6 | 42 | 32 | 10 | 4 | 3 | 3 |
 | 2013 | New England | 23 | 91 | 16 | 8 | 7 | 1 | 0 | 0 | 2 |
-| Career |  |  |  | 21 | 44 | 36 | 8 | 3 | 3 | 5 |
+| Career |  |  |  | 22 | 50 | 39 | 11 | 4 | 3 | 5 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 24 | 91 | 1 | 32 | 3 | 1 | 1 | 0 |
+| 2014 (through Week 6) | New England | 24 | 91 | 1 | 32 | 3 | 2 | 1 | 0 |
 | 2013 | New England | 23 | 91 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

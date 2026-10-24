@@ -1,10 +1,10 @@
 # Vladimir Ducasse
 
-**Minnesota Vikings · Guard · No. 62 · Age 26 · Last game October 2, 2014**
+**Minnesota Vikings · Guard · No. 62 · Age 26 · Last game October 12, 2014**
 
 6' 5", 325 lb · Born October 15, 1987 · UMass Amherst · Drafted in 2010, second round, by the New York Jets
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Vladimir Ducasse](https://commons.wikimedia.org/wiki/Special:FilePath/Vladimir_Ducasse_%2843569461024%29_%28cropped%29.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 26 | 62 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Minnesota | 26 | 62 | 4 | 0 | 0 | 0 | 0 |
 | 2013 | N.Y. Jets | 25 | 62 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 19 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

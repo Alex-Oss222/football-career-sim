@@ -1,10 +1,10 @@
 # Antrel Rolle
 
-**New York Giants · Strong safety · No. 26 · Age 31 · Last game October 5, 2014**
+**New York Giants · Strong safety · No. 26 · Age 31 · Last game October 12, 2014**
 
 6' 0", 206 lb · Born December 16, 1982 · Miami · Drafted in 2005, first round, by Arizona
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Antrel Rolle](https://commons.wikimedia.org/wiki/Special:FilePath/Antrel_Rolle_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 5 (2014, through Week 5).
+**Passes defended:** 5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Giants | 31 | 26 | 5 | 27 | 16 | 11 | 2 | 0 | 0 |
+| 2014 (through Week 6) | N.Y. Giants | 31 | 26 | 6 | 33 | 18 | 15 | 2 | 0 | 0 |
 | 2013 | N.Y. Giants | 30 | 26 | 16 | 117 | 80 | 37 | 5 | 1 | 1 |
-| Career |  |  |  | 21 | 144 | 96 | 48 | 7 | 1 | 1 |
+| Career |  |  |  | 22 | 150 | 98 | 52 | 7 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Giants | 31 | 26 | 0 | 0 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 6) | N.Y. Giants | 31 | 26 | 0 | 0 | 5 | 0 | 0 | 0 |
 | 2013 | N.Y. Giants | 30 | 26 | 7 | 136 | 17 | 1 | 1 | N/A |
 
 ### Playoffs

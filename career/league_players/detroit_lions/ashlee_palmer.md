@@ -1,10 +1,10 @@
 # Ashlee Palmer
 
-**Detroit Lions · Outside linebacker · No. 58 · Age 28 · Last game October 5, 2014**
+**Detroit Lions · Outside linebacker · No. 58 · Age 28 · Last game October 12, 2014**
 
 6' 1", 238 lb · Born April 7, 1986 · Mississippi; Compton Community College
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Ashlee Palmer](https://commons.wikimedia.org/wiki/Special:FilePath/Ashlee_Palmer.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve outside linebacker.
 
-**Tackles:** 1 (2014, through Week 5).
+**Tackles:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 28 | 58 | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Detroit | 28 | 58 | 6 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | Detroit | 27 | 58 | 16 | 65 | 45 | 20 | 1 | 2 | 8 |
-| Career |  |  |  | 21 | 66 | 46 | 20 | 1 | 2 | 8 |
+| Career |  |  |  | 22 | 66 | 46 | 20 | 1 | 2 | 8 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 28 | 58 | 0 | 0 | 0 | 0 | 0 | 4 |
+| 2014 (through Week 6) | Detroit | 28 | 58 | 0 | 0 | 0 | 0 | 0 | 4 |
 | 2013 | Detroit | 27 | 58 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

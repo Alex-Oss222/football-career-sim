@@ -1,10 +1,10 @@
 # Stacy McGee
 
-**Oakland Raiders · Defensive tackle · No. 92 · Age 24 · Last game September 28, 2014**
+**Oakland Raiders · Defensive tackle · No. 92 · Age 24 · Last game October 12, 2014**
 
 6' 3", 310 lb · Born January 17, 1990 · Oklahoma
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Stacy McGee](https://commons.wikimedia.org/wiki/Special:FilePath/Stacy_McGee.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 4).
+**Sacks:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 24 | 92 | 4 | 2 | 1 | 1 | 1 | 0 | 1 |
+| 2014 (through Week 6) | Oakland | 24 | 92 | 5 | 3 | 1 | 2 | 1 | 0 | 1 |
 | 2013 | Oakland | 23 | 92 | 16 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 20 | 3 | 2 | 1 | 1 | 0 | 1 |
+| Career |  |  |  | 21 | 4 | 2 | 2 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 24 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Oakland | 24 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Oakland | 23 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

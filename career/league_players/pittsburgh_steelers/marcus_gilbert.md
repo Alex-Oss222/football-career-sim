@@ -1,10 +1,10 @@
 # Marcus Gilbert
 
-**Pittsburgh Steelers · Offensive tackle · No. 77 · Age 26 · Last game October 5, 2014**
+**Pittsburgh Steelers · Offensive tackle · No. 77 · Age 26 · Last game October 12, 2014**
 
 6' 6", 330 lb · Born February 15, 1988 · Florida · Drafted in 2011, second round, by Pittsburgh
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Marcus Gilbert](https://commons.wikimedia.org/wiki/Special:FilePath/Marcus_Gilbert_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 3 (2014, through Week 5).
+**Sacks allowed:** 5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 26 | 77 | 5 | 5 | 326 | 3 | 28 |
+| 2014 (through Week 6) | Pittsburgh | 26 | 77 | 6 | 6 | 385 | 5 | 34 |
 | 2013 | Pittsburgh | 25 | 77 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

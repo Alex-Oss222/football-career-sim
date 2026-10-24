@@ -4,19 +4,19 @@
 
 5' 11", 190 lb · Born March 2, 1990 · West Alabama · Drafted in 2014, seventh round, by Jacksonville
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Malcolm Butler](https://commons.wikimedia.org/wiki/Special:FilePath/Malcolm_Butler_%28American_football%29.JPG?width=500)
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Malcolm_Butler_(American_football).JPG)).*
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 6).
 
 ## Staff assessment
 
 Malcolm Butler is a rookie corner from a Division II program who has played in two games for Jacksonville. His strengths are his ball skills, change of direction and competitive press style, with kick-return experience in college, and in camp the correction of a late press transition held on the next rep. The jump from Division II competition is his biggest question, and his strength and technique are below an NFL starter's level.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 12.*
 
 ## Contract
 
@@ -35,11 +35,11 @@ Four-year contract through 2017.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 24 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Jacksonville | 24 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 24 | N/A | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Jacksonville | 24 | N/A | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Arthur Moats
 
-**Pittsburgh Steelers · Outside linebacker · No. 55 · Age 26 · Last game October 5, 2014**
+**Pittsburgh Steelers · Outside linebacker · No. 55 · Age 26 · Last game October 12, 2014**
 
 6' 2", 250 lb · Born March 14, 1988 · James Madison · Drafted in 2010, sixth round, by Buffalo
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Arthur Moats](https://commons.wikimedia.org/wiki/Special:FilePath/Arthur_Moats.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve outside linebacker.
 
-**Tackles:** 1 (2014, through Week 5).
+**Tackles:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 26 | 55 | 5 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Pittsburgh | 26 | 55 | 6 | 1 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Buffalo | 25 | 52 | 16 | 31 | 17 | 14 | 1 | 0 | 0 |
-| Career |  |  |  | 21 | 32 | 17 | 15 | 1 | 0 | 0 |
+| Career |  |  |  | 22 | 32 | 17 | 15 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 26 | 55 | 0 | 0 | 0 | 0 | 0 | 3 |
+| 2014 (through Week 6) | Pittsburgh | 26 | 55 | 0 | 0 | 0 | 0 | 0 | 3 |
 | 2013 | Buffalo | 25 | 52 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

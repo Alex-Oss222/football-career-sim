@@ -1,10 +1,10 @@
 # Leonard Johnson
 
-**Tampa Bay Buccaneers · Cornerback · No. 29 · Age 24 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Cornerback · No. 29 · Age 24 · Last game October 12, 2014**
 
 5' 10", 202 lb · Born March 30, 1990 · Iowa State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Leonard Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Leonard_Johnson_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting nickel cornerback.
 
-**Passes defended:** 4 (2014, through Week 5).
+**Passes defended:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 24 | 29 | 5 | 15 | 12 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 24 | 29 | 6 | 16 | 13 | 3 | 0 | 0 | 0 |
 | 2013 | Tampa Bay | 23 | 29 | 16 | 61 | 48 | 13 | 3 | 0 | 0 |
-| Career |  |  |  | 21 | 76 | 60 | 16 | 3 | 0 | 0 |
+| Career |  |  |  | 22 | 77 | 61 | 16 | 3 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 24 | 29 | 1 | 20 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 24 | 29 | 1 | 20 | 4 | 0 | 0 | 0 |
 | 2013 | Tampa Bay | 23 | 29 | 2 | 28 | 7 | 1 | 1 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 24 | 29 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | Tampa Bay | 24 | 29 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Tampa Bay | 23 | 29 | 2 | 38 | 19.0 | 7 | 69 | 9.9 |
 
 ### Playoffs

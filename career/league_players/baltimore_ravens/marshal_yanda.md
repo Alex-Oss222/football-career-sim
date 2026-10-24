@@ -1,10 +1,10 @@
 # Marshal Yanda
 
-**Baltimore Ravens · Guard · No. 73 · Age 30 · Last game October 5, 2014**
+**Baltimore Ravens · Guard · No. 73 · Age 30 · Last game October 12, 2014**
 
 6' 3", 305 lb · Born September 15, 1984 · Iowa; North Iowa Area Community College · Drafted in 2007, third round, by Baltimore
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Marshal Yanda](https://commons.wikimedia.org/wiki/Special:FilePath/Marshal_Yanda_Navy_Stadium_2012_Practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 29 | 73 | 5 | 5 | 331 | 2 | 32 |
+| 2014 (through Week 6) | Baltimore | 29 | 73 | 6 | 6 | 414 | 4 | 36 |
 | 2013 | Baltimore | 28 | 73 | 15 | N/A | N/A | 2 | N/A |
-| Career |  |  |  | 20 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

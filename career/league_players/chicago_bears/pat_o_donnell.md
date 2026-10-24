@@ -1,10 +1,10 @@
 # Pat O'Donnell
 
-**Chicago Bears · Punter · No. 16 · Age 23 · Last game October 5, 2014**
+**Chicago Bears · Punter · No. 16 · Age 23 · Last game October 12, 2014**
 
 6' 4", 220 lb · Born February 22, 1991 · Miami
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Pat O'Donnell](https://commons.wikimedia.org/wiki/Special:FilePath/Pat_O%27Donnell_bears_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 41.6 (2014, through Week 5).
+**Net punting average:** 42.2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 23 | 16 | 5 | 23 | 1,066 | 46.3 | 41.6 | 9 | 2 | 63 |
+| 2014 (through Week 6) | Chicago | 23 | 16 | 6 | 26 | 1,219 | 46.9 | 42.2 | 10 | 2 | 63 |
 
 ### Playoffs
 

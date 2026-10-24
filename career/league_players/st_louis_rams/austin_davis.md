@@ -1,10 +1,10 @@
 # Austin Davis
 
-**St. Louis Rams · Quarterback · No. 9 · Age 25 · Last game October 5, 2014**
+**St. Louis Rams · Quarterback · No. 9 · Age 25 · Last game October 13, 2014**
 
 6' 2", 221 lb · Born June 2, 1989 · Southern Mississippi
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Austin Davis](https://commons.wikimedia.org/wiki/Special:FilePath/Austindavis8-6-2013rams.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 25 | 9 | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 6) | St. Louis | 25 | 9 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 25 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | St. Louis | 25 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

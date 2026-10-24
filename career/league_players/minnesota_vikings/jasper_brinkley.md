@@ -1,10 +1,10 @@
 # Jasper Brinkley
 
-**Minnesota Vikings · Middle linebacker · No. 54 · Age 29 · Last game October 2, 2014**
+**Minnesota Vikings · Middle linebacker · No. 54 · Age 29 · Last game October 12, 2014**
 
 6' 1", 252 lb · Born July 12, 1985 · South Carolina; Georgia Military · Drafted in 2009, fifth round, by Minnesota
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jasper Brinkley](https://commons.wikimedia.org/wiki/Special:FilePath/Jasper_Brinkley_2016.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Starting middle linebacker.
 
-**Tackles:** 38 (2014, through Week 5).
+**Tackles:** 43 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 29 | 54 | 5 | 38 | 24 | 14 | 0 | 1 | 1 |
+| 2014 (through Week 6) | Minnesota | 29 | 54 | 6 | 43 | 28 | 15 | 0 | 1 | 1 |
 | 2013 | Arizona | 28 | 52 | 16 | 107 | 73 | 34 | 9 | 3 | 8 |
-| Career |  |  |  | 21 | 145 | 97 | 48 | 9 | 4 | 9 |
+| Career |  |  |  | 22 | 150 | 101 | 49 | 9 | 4 | 9 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 29 | 54 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 6) | Minnesota | 29 | 54 | 0 | 0 | 1 | 1 | 0 | 0 |
 | 2013 | Arizona | 28 | 52 | 1 | 4 | 5 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Trenton Robinson
 
-**Washington Redskins · Free safety · No. 34 · Age 24 · Last game October 6, 2014**
+**Washington Redskins · Free safety · No. 34 · Age 24 · Last game October 12, 2014**
 
 5' 9", 195 lb · Born February 16, 1990 · Michigan State · Drafted in 2012, sixth round, by San Francisco
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Trenton Robinson](https://commons.wikimedia.org/wiki/Special:FilePath/Trenton_Robinson.JPG?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 24 | 34 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Washington | 24 | 34 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 24 | 34 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Washington | 24 | 34 | 0 | 0 | 0 | 0 | 0 | 2 |
 
 ### Playoffs
 

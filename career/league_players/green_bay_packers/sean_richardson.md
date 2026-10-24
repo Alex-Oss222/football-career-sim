@@ -1,10 +1,10 @@
 # Sean Richardson
 
-**Green Bay Packers · Strong safety · No. 28 · Age 24 · Last game October 2, 2014**
+**Green Bay Packers · Strong safety · No. 28 · Age 24 · Last game October 12, 2014**
 
 6' 2", 216 lb · Born January 21, 1990 · Vanderbilt
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Sean Richardson](https://commons.wikimedia.org/wiki/Special:FilePath/Sean_Richardson_%28American_football%29_2015.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Reserve strong safety.
 
-**Passes defended:** 2 (2014, through Week 5).
+**Passes defended:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 24 | 28 | 5 | 6 | 3 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Green Bay | 24 | 28 | 6 | 6 | 3 | 3 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 24 | 28 | 1 | 0 | 2 | 0 | 0 | 3 |
+| 2014 (through Week 6) | Green Bay | 24 | 28 | 1 | 0 | 2 | 0 | 0 | 3 |
 
 ### Playoffs
 

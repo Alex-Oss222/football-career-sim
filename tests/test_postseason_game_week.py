@@ -43,6 +43,7 @@ from runtime import clean_pages, game_plan, game_report, game_weeks  # noqa: E40
 from runtime.decisions import week_pages  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
 from runtime.week_inputs import receipt_name  # noqa: E402
+from test_game_plan import role_cover  # noqa: E402
 
 JAX, PIT = "Jacksonville Jaguars", "Pittsburgh Steelers"
 SEASON, WILD_CARD, DIVISIONAL = 2014, 18, 19
@@ -110,16 +111,17 @@ class PostseasonGameWeekTests(unittest.TestCase):
             depth += 1
         return out
 
-    def exams_held(self):
+    def exams_held(self, week=None):
         """The exams the week's items wait on, held: each dated wait moved to the day before today (the
         clock stays), and the briefing re-issued for the changed situation (tests/test_game_plan.py)."""
+        week = WILD_CARD if week is None else week
         from runtime.player_bios import master_date
         from scripts import render_game_week
         path = self.root / "state/decision_queue.json"
         queue = json.loads(path.read_text(encoding="utf-8"))
         before = (master_date(self.root) - timedelta(days=1)).isoformat()
         for item in queue["items"]:
-            if any(b.get("week") == WILD_CARD for b in item.get("blocks") or ()):
+            if any(b.get("week") == week for b in item.get("blocks") or ()):
                 for wait in item.get("waits_on") or ():
                     if wait.get("date"):
                         wait["date"] = before
@@ -208,7 +210,8 @@ class PostseasonGameWeekTests(unittest.TestCase):
         answers = {
             "baseline": "Carry Week 5", "attack": "Their linebackers in space against our tight ends.",
             "protect": "A cutback behind an overrun.", "change_course": "A safety rotating late to the second tight end.",
-            "inactives": ", ".join(players), "depth": "No change", "contingency": "None",
+            "inactives": ", ".join(players), "depth": "; ".join(role_cover(root, players)) or "No change",
+            "contingency": "None",
             "coverage_units": "No change", "offense_caller": "No change", "base_personnel": "Twelve personnel leads.",
             "learn": "Who travels with the second tight end.", "opening_approach": "As in Week 5.",
             "opening": "Carry Week 5 opening", "third_down": "No change", "backed_up": "No change",
@@ -366,10 +369,12 @@ class PostseasonGameWeekTests(unittest.TestCase):
         pages = week_pages(SEASON, week, root)
         self.assertEqual(pages.folder, self.paths.week_folder(week, postseason=True))
         plan = check_game_plan.Plan(root, SEASON, week)
+        inactive = self.inactives(plan)
         answers = {
             "baseline": "Carry Week %d" % carry, "attack": "Their linebackers in space against our tight ends.",
             "protect": "A cutback behind an overrun.", "change_course": "A safety rotating late.",
-            "inactives": ", ".join(self.inactives(plan)), "depth": "No change", "contingency": "None",
+            "inactives": ", ".join(inactive), "depth": "; ".join(role_cover(root, inactive)) or "No change",
+            "contingency": "None",
             "coverage_units": "No change", "offense_caller": "No change", "base_personnel": "Twelve personnel leads.",
             "learn": "Who travels with the second tight end.", "opening_approach": "As before.",
             "opening": "Carry Week %d opening" % carry, "third_down": "Carry Week %d" % carry, "backed_up": "No change",
@@ -386,6 +391,11 @@ class PostseasonGameWeekTests(unittest.TestCase):
         title = pages.plan.read_text(encoding="utf-8").splitlines()[0][2:]
         pages.plan.write_text(game_plan.render(title, facts, answers), encoding="utf-8")
         self.assertEqual(check_game_plan.check(root, SEASON, week)[0], [])
+        # Exams a real game left before this round (Week 6's reassessments) are held first; he answers
+        # the briefing re-issued after them with the same choices.
+        self.exams_held(week)
+        facts = render_game_week.plan_facts(render_game_week.Week(root, week))
+        pages.plan.write_text(game_plan.render(title, facts, answers), encoding="utf-8")
         problems, written = quiet(apply_game_plan.apply, root, SEASON, week, rebuild_pages=False)
         self.assertEqual(problems, [])
         sheet_path = self.paths.call_sheet(week, postseason=True)

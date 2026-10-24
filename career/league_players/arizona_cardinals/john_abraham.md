@@ -1,10 +1,10 @@
 # John Abraham
 
-**Arizona Cardinals · Outside linebacker · No. 55 · Age 36 · Last game October 5, 2014**
+**Arizona Cardinals · Outside linebacker · No. 55 · Age 36 · Last game October 12, 2014**
 
 6' 4", 263 lb · Born May 6, 1978 · South Carolina · Drafted in 2000, first round, by the New York Jets
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![John Abraham](https://commons.wikimedia.org/wiki/Special:FilePath/John_Abraham_at_Commander%2C_Fleet_Activities_Sasebo_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting weakside linebacker.
 
-**Tackles:** 14 (2014, through Week 5).
+**Tackles:** 15 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 36 | 55 | 4 | 14 | 9 | 5 | 0 | 1 | 1 |
+| 2014 (through Week 6) | Arizona | 36 | 55 | 5 | 15 | 10 | 5 | 0 | 1 | 1 |
 | 2013 | Arizona | 35 | 55 | 14 | 2 | 2 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 18 | 16 | 11 | 5 | 0 | 1 | 1 |
+| Career |  |  |  | 19 | 17 | 12 | 5 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 36 | 55 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 2014 (through Week 6) | Arizona | 36 | 55 | 0 | 0 | 1 | 1 | 0 | 0 |
 | 2013 | Arizona | 35 | 55 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

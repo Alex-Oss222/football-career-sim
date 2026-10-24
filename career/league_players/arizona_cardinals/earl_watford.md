@@ -1,10 +1,10 @@
 # Earl Watford
 
-**Arizona Cardinals · Guard · No. 78 · Age 24 · Last game October 5, 2014**
+**Arizona Cardinals · Guard · No. 78 · Age 24 · Last game October 12, 2014**
 
 6' 4", 295 lb · Born June 24, 1990 · James Madison
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Earl Watford](https://commons.wikimedia.org/wiki/Special:FilePath/Earl_Watford.JPG?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 24 | 78 | 4 | 0 | 0 | 0 | 4 |
+| 2014 (through Week 6) | Arizona | 24 | 78 | 5 | 0 | 0 | 0 | 11 |
 | 2013 | Arizona | 23 | 78 | 2 | N/A | N/A | 0 | N/A |
-| Career |  |  |  | 6 | N/A | N/A | 0 | N/A |
+| Career |  |  |  | 7 | N/A | N/A | 0 | N/A |
 
 ### Playoffs
 

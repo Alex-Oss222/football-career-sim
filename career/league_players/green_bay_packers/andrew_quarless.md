@@ -1,10 +1,10 @@
 # Andrew Quarless
 
-**Green Bay Packers · Tight end · No. 81 · Age 25 · Last game October 2, 2014**
+**Green Bay Packers · Tight end · No. 81 · Age 26 · Last game October 12, 2014**
 
 6' 4", 252 lb · Born October 6, 1988 · Penn State · Drafted in 2010, fifth round, by Green Bay
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Andrew Quarless](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_Quarless.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 5.0 (2014, through Week 5).
+**Yards per target:** 5.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 25 | 81 | 5 | 1 | 1 | 5 | 5.0 | 0 | 5 | 1.0 | 100.0 |
+| 2014 (through Week 6) | Green Bay | 25 | 81 | 6 | 1 | 1 | 5 | 5.0 | 0 | 5 | 0.8 | 100.0 |
 | 2013 | Green Bay | 24 | 81 | 16 | 26 | 19 | 162 | 8.5 | 0 | 27 | 10.1 | 73.1 |
-| Career |  |  |  | 21 | 27 | 20 | 167 | 8.3 | 0 | 27 | 8.0 | 74.1 |
+| Career |  |  |  | 22 | 27 | 20 | 167 | 8.3 | 0 | 27 | 7.6 | 74.1 |
 
 ### Playoffs
 

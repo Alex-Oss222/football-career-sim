@@ -1,10 +1,10 @@
 # Albert McClellan
 
-**Baltimore Ravens · Inside linebacker · No. 50 · Age 28 · Last game October 5, 2014**
+**Baltimore Ravens · Inside linebacker · No. 50 · Age 28 · Last game October 12, 2014**
 
 6' 2", 248 lb · Born June 4, 1986 · Marshall
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Albert McClellan](https://commons.wikimedia.org/wiki/Special:FilePath/Albert_McClellan_Navy_Stadium_2012_Practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve inside linebacker.
 
-**Tackles:** 3 (2014, through Week 5).
+**Tackles:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 28 | 50 | 5 | 3 | 1 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Baltimore | 28 | 50 | 6 | 4 | 2 | 2 | 0 | 0 | 0 |
 | 2013 | Baltimore | 27 | 50 | 16 | 61 | 39 | 22 | 5 | 1 | 3 |
-| Career |  |  |  | 21 | 64 | 40 | 24 | 5 | 1 | 3 |
+| Career |  |  |  | 22 | 65 | 41 | 24 | 5 | 1 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 28 | 50 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Baltimore | 28 | 50 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Baltimore | 27 | 50 | 0 | 0 | 1 | 2 | 2 | N/A |
 
 ### Playoffs

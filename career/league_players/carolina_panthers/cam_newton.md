@@ -1,10 +1,10 @@
 # Cam Newton
 
-**Carolina Panthers · Quarterback · No. 1 · Age 25 · Last game October 5, 2014**
+**Carolina Panthers · Quarterback · No. 1 · Age 25 · Last game October 12, 2014**
 
 6' 5", 245 lb · Born May 11, 1989 · Auburn; Blinn College; Florida · Drafted in 2011, first round, by Carolina
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Cam Newton](https://commons.wikimedia.org/wiki/Special:FilePath/Cam_Newton_-_Carolina_Panthers.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 80.3 (2014, through Week 5).
+**Passer rating:** 84.5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 25 | 1 | 5 | 108 | 173 | 62.4 | 1,309 | 7.6 | 261.8 | 6 | 7 | 80.3 |
+| 2014 (through Week 6) | Carolina | 25 | 1 | 6 | 137 | 216 | 63.4 | 1,595 | 7.4 | 265.8 | 8 | 7 | 84.5 |
 | 2013 | Carolina | 24 | 1 | 14 | 307 | 480 | 64.0 | 3,654 | 7.6 | 261.0 | 20 | 9 | 93.2 |
-| Career |  |  |  | 19 | 415 | 653 | 63.6 | 4,963 | 7.6 | 261.2 | 26 | 16 | 89.8 |
+| Career |  |  |  | 20 | 444 | 696 | 63.8 | 5,249 | 7.5 | 262.4 | 28 | 16 | 90.5 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 25 | 1 | 13 | 100 | 18 | 50 | 1 | 1 | 1 |
+| 2014 (through Week 6) | Carolina | 25 | 1 | 16 | 106 | 25 | 58 | 1 | 2 | 1 |
 | 2013 | Carolina | 24 | 1 | 41 | 250 | 42 | 172 | 0 | 2 | 2 |
 
 ### Playoffs

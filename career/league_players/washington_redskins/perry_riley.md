@@ -1,10 +1,10 @@
 # Perry Riley
 
-**Washington Redskins · Inside linebacker · No. 56 · Age 26 · Last game October 6, 2014**
+**Washington Redskins · Inside linebacker · No. 56 · Age 26 · Last game October 12, 2014**
 
 6' 0", 238 lb · Born May 3, 1988 · LSU · Drafted in 2010, fourth round, by Washington
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Perry Riley](https://commons.wikimedia.org/wiki/Special:FilePath/Perry_riley_redskins.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Starting linebacker.
 
-**Tackles:** 34 (2014, through Week 5).
+**Tackles:** 41 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 26 | 56 | 5 | 34 | 19 | 15 | 2 | 1 | 1 |
+| 2014 (through Week 6) | Washington | 26 | 56 | 6 | 41 | 25 | 16 | 3 | 1 | 2 |
 | 2013 | Washington | 25 | 56 | 16 | 120 | 84 | 36 | 11 | 8 | 12 |
-| Career |  |  |  | 21 | 154 | 103 | 51 | 13 | 9 | 13 |
+| Career |  |  |  | 22 | 161 | 109 | 52 | 14 | 9 | 14 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 26 | 56 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Washington | 26 | 56 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Washington | 25 | 56 | 0 | 0 | 7 | 1 | 1 | N/A |
 
 ### Playoffs

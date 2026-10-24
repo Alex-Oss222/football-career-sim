@@ -1,10 +1,10 @@
 # Scott Wells
 
-**St. Louis Rams · Center · No. 63 · Age 33 · Last game October 5, 2014**
+**St. Louis Rams · Center · No. 63 · Age 33 · Last game October 13, 2014**
 
 6' 2", 302 lb · Born January 7, 1981 · Tennessee · Drafted in 2004, seventh round, by Green Bay
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Scott Wells](https://commons.wikimedia.org/wiki/Special:FilePath/Scottwells2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 33 | 63 | 4 | 4 | 266 | 2 | 16 |
+| 2014 (through Week 6) | St. Louis | 33 | 63 | 5 | 5 | 323 | 2 | 19 |
 | 2013 | St. Louis | 32 | 63 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 20 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 

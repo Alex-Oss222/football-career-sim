@@ -1,10 +1,10 @@
 # Breno Giacomini
 
-**New York Jets · Offensive tackle · No. 68 · Age 29 · Last game October 5, 2014**
+**New York Jets · Offensive tackle · No. 68 · Age 29 · Last game October 12, 2014**
 
 6' 7", 318 lb · Born September 27, 1985 · Louisville · Drafted in 2008, fifth round, by Green Bay
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Breno Giacomini](https://commons.wikimedia.org/wiki/Special:FilePath/Breno_Giacomini.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 3 (2014, through Week 5).
+**Sacks allowed:** 3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 28 | 68 | 5 | 5 | 317 | 3 | 20 |
+| 2014 (through Week 6) | N.Y. Jets | 28 | 68 | 6 | 6 | 384 | 3 | 23 |
 | 2013 | Seattle | 27 | 68 | 13 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 18 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 19 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

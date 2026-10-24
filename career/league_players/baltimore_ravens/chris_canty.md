@@ -1,10 +1,10 @@
 # Chris Canty
 
-**Baltimore Ravens · Defensive end · No. 99 · Age 31 · Last game October 5, 2014**
+**Baltimore Ravens · Defensive end · No. 99 · Age 31 · Last game October 12, 2014**
 
 6' 7", 317 lb · Born November 10, 1982 · Virginia · Drafted in 2005, fourth round, by Dallas
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Chris Canty](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_canty_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 0 (2014, through Week 5).
+**Sacks:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 31 | 99 | 5 | 8 | 5 | 3 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Baltimore | 31 | 99 | 6 | 10 | 6 | 4 | 0 | 0 | 1 |
 | 2013 | Baltimore | 30 | 99 | 16 | 34 | 21 | 13 | 6 | 5 | 9 |
-| Career |  |  |  | 21 | 42 | 26 | 16 | 6 | 5 | 10 |
+| Career |  |  |  | 22 | 44 | 27 | 17 | 6 | 5 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 31 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Baltimore | 31 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Baltimore | 30 | 99 | 0 | 0 | 1 | 2 | 2 | N/A |
 
 ### Playoffs

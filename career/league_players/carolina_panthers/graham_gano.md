@@ -1,10 +1,10 @@
 # Graham Gano
 
-**Carolina Panthers · Kicker · No. 9 · Age 27 · Last game October 5, 2014**
+**Carolina Panthers · Kicker · No. 9 · Age 27 · Last game October 12, 2014**
 
 6' 2", 205 lb · Born April 9, 1987 · Florida State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Graham Gano](https://commons.wikimedia.org/wiki/Special:FilePath/Graham_gano.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 100.0 (2014, through Week 5).
+**Field-goal percentage:** 90.9 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 27 | 9 | 5 | 8 | 8 | 100.0 | 51 | 13 | 13 | 100.0 | 37 |
+| 2014 (through Week 6) | Carolina | 27 | 9 | 6 | 10 | 11 | 90.9 | 51 | 16 | 16 | 100.0 | 46 |
 | 2013 | Carolina | 26 | 9 | 16 | 33 | 36 | 91.7 | N/A | 36 | 36 | 100.0 | 135 |
-| Career |  |  |  | 21 | 41 | 44 | 93.2 | N/A | 49 | 49 | 100.0 | 172 |
+| Career |  |  |  | 22 | 43 | 47 | 91.5 | N/A | 52 | 52 | 100.0 | 181 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 27 | 9 | 4-4 | 3-3 | 1-1 |
+| 2014 (through Week 6) | Carolina | 27 | 9 | 5-6 | 4-4 | 1-1 |
 | 2013 | Carolina | 26 | 9 | N/A | N/A | N/A |
 
 ### Playoffs

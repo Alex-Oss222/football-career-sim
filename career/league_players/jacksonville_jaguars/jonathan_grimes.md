@@ -4,9 +4,9 @@
 
 5' 10", 209 lb · Born December 21, 1989 · William & Mary · Undrafted
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
-**Yards per carry:** 2.6 (2014, through Week 5).
+**Yards per carry:** 2.6 (2014, through Week 6).
 
 ## Staff assessment
 
@@ -28,18 +28,18 @@ Three-year contract through 2014.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 24 | 41 | 3 | 5 | 13 | 2.6 | 0 | 5 | 4.3 |
+| 2014 (through Week 6) | Jacksonville | 24 | 41 | 3 | 5 | 13 | 2.6 | 0 | 5 | 4.3 |
 | 2013 | Jacksonville | 23 | N/A | 16 | 88 | 453 | 5.1 | 4 | 18 | 28.3 |
 | With Jacksonville |  |  |  | 19 | 93 | 466 | 5.0 | 4 | 18 | 24.5 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 24 | 41 | 1 | 1 | 20 | 20.0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Jacksonville | 24 | 41 | 1 | 1 | 20 | 20.0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 23 | N/A | 15 | 8 | 130 | 16.2 | 1 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 24 | 41 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | Jacksonville | 24 | 41 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 23 | N/A | 2 | 49 | 24.5 | 1 | 19 | 19.0 |
 
 ### Playoffs

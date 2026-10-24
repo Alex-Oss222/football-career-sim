@@ -737,6 +737,25 @@
      "page": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md"
     }
    ]
+  },
+  {
+   "date": "October 12, 2014",
+   "recorded": "2014-10-12",
+   "event": "Week 6 at Tennessee: availability notes",
+   "change": "No order change and no Stone depth decision. Availability notes only: A.J. Bouye out, short (October 12; lower extremity, logged at 13:26 of the third quarter and removed after 24 defensive snaps and 11 kicking-game snaps, Alan Ball taking his nickel place by the chart's order; projected return October 22, reassessment October 15); Joel Bitonio out, short (October 12; lower extremity, logged at 1:13 of the fourth quarter after Jacksonville's last series, not removed, all 61 offensive snaps; projected return October 22, reassessment October 15). The seven Week 6 inactives were applied as set. The Week 7 inactives, the nickel and any order change are Stone's on his Week 7 Game Plan after the October 15 reassessments.",
+   "sources": [
+    {
+     "label": "Week 6 Game Report",
+     "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md"
+    },
+    {
+     "label": "medical history",
+     "page": "career/2014/Team_Operations/Medical/medical_history.md#october-12-week-6-injuries-at-tennessee"
+    }
+   ],
+   "events": [
+    "2014-10-12-week-6-at-tennessee"
+   ]
   }
  ]
 }

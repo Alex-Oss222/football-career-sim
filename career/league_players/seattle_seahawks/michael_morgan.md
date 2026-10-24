@@ -1,10 +1,10 @@
 # Michael Morgan
 
-**Seattle Seahawks · Outside linebacker · No. 57 · Age 26 · Last game October 6, 2014**
+**Seattle Seahawks · Outside linebacker · No. 57 · Age 26 · Last game October 12, 2014**
 
 6' 3", 226 lb · Born January 16, 1988 · USC
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Michael Morgan](https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Morgan_2014.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Seattle | 26 | 57 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Seattle | 26 | 57 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Seattle | 25 | 57 | 16 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 20 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 21 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Seattle | 26 | 57 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 6) | Seattle | 26 | 57 | 0 | 0 | 0 | 0 | 0 | 3 |
 | 2013 | Seattle | 25 | 57 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

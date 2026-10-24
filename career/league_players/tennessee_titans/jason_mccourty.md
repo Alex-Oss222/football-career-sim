@@ -1,10 +1,10 @@
 # Jason McCourty
 
-**Tennessee Titans · Cornerback · No. 30 · Age 27 · Last game October 5, 2014**
+**Tennessee Titans · Cornerback · No. 30 · Age 27 · Last game October 12, 2014**
 
 6' 0", 193 lb · Born August 13, 1987 · Rutgers · Drafted in 2009, sixth round, by Tennessee
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jason McCourty](https://commons.wikimedia.org/wiki/Special:FilePath/Jason_McCourty_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 2 (2014, through Week 5).
+**Passes defended:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 27 | 30 | 5 | 28 | 22 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tennessee | 27 | 30 | 6 | 31 | 23 | 8 | 0 | 0 | 0 |
 | 2013 | Tennessee | 26 | 30 | 16 | 91 | 60 | 31 | 3 | 0 | 1 |
-| Career |  |  |  | 21 | 119 | 82 | 37 | 3 | 0 | 1 |
+| Career |  |  |  | 22 | 122 | 83 | 39 | 3 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 27 | 30 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tennessee | 27 | 30 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Tennessee | 26 | 30 | 6 | 106 | 9 | 1 | 1 | N/A |
 
 ### Playoffs

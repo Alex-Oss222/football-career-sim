@@ -1,10 +1,10 @@
 # Le'Veon Bell
 
-**Pittsburgh Steelers · Running back · No. 26 · Age 22 · Last game October 5, 2014**
+**Pittsburgh Steelers · Running back · No. 26 · Age 22 · Last game October 12, 2014**
 
 6' 1", 244 lb · Born February 18, 1992 · Michigan State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Le'Veon Bell](https://commons.wikimedia.org/wiki/Special:FilePath/LeVeon_Bell_26_practicing_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 6.9 (2014, through Week 5).
+**Yards per carry:** 6.6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 22 | 26 | 5 | 101 | 696 | 6.9 | 9 | 93 | 139.2 |
+| 2014 (through Week 6) | Pittsburgh | 22 | 26 | 6 | 109 | 724 | 6.6 | 10 | 93 | 120.7 |
 | 2013 | Pittsburgh | 21 | 26 | 14 | 0 | 0 | N/A | 0 | N/A | 0.0 |
-| Career |  |  |  | 19 | 101 | 696 | 6.9 | 9 | 93 | 36.6 |
+| Career |  |  |  | 20 | 109 | 724 | 6.6 | 10 | 93 | 36.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 22 | 26 | 22 | 18 | 247 | 13.7 | 2 | 1 | 1 |
+| 2014 (through Week 6) | Pittsburgh | 22 | 26 | 26 | 22 | 309 | 14.0 | 2 | 1 | 1 |
 | 2013 | Pittsburgh | 21 | 26 | 1 | 1 | 8 | 8.0 | 0 | 0 | 0 |
 
 ### Playoffs

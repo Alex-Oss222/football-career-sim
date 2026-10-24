@@ -1,10 +1,10 @@
 # LeSean McCoy
 
-**Philadelphia Eagles · Running back · No. 25 · Age 26 · Last game October 5, 2014**
+**Philadelphia Eagles · Running back · No. 25 · Age 26 · Last game October 12, 2014**
 
 5' 11", 208 lb · Born July 12, 1988 · Pittsburgh · Drafted in 2009, second round, by Philadelphia
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![LeSean McCoy](https://commons.wikimedia.org/wiki/Special:FilePath/LesSean_McCoy_December_2015.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 4.1 (2014, through Week 5).
+**Yards per carry:** 4.2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 26 | 25 | 5 | 81 | 332 | 4.1 | 1 | 23 | 66.4 |
+| 2014 (through Week 6) | Philadelphia | 26 | 25 | 6 | 101 | 423 | 4.2 | 2 | 23 | 70.5 |
 | 2013 | Philadelphia | 25 | 25 | 16 | 283 | 1,473 | 5.2 | 10 | 54 | 92.1 |
-| Career |  |  |  | 21 | 364 | 1,805 | 5.0 | 11 | 54 | 86.0 |
+| Career |  |  |  | 22 | 384 | 1,896 | 4.9 | 12 | 54 | 86.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 26 | 25 | 23 | 15 | 201 | 13.4 | 1 | 0 | 0 |
+| 2014 (through Week 6) | Philadelphia | 26 | 25 | 28 | 19 | 218 | 11.5 | 1 | 0 | 0 |
 | 2013 | Philadelphia | 25 | 25 | 68 | 44 | 451 | 10.2 | 2 | 1 | 1 |
 
 ### Playoffs

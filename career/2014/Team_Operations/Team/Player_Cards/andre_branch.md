@@ -4,7 +4,7 @@
 
 6' 5", 265 lb · Born July 14, 1989 · Clemson · Drafted in 2012, second round, by Jacksonville
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Andre Branch](https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Branch_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 6).
 
 ## Staff assessment
 
@@ -35,13 +35,13 @@ Four-year contract through 2015.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 25 | 90 | 5 | 9 | 6 | 3 | 1 | 1 | 1 |
+| 2014 (through Week 6) | Jacksonville | 25 | 90 | 6 | 9 | 6 | 3 | 1 | 1 | 1 |
 | 2013 | Jacksonville | 24 | 90 | 16 | 4 | 2 | 2 | 0 | 0 | 1 |
-| With Jacksonville |  |  |  | 21 | 13 | 8 | 5 | 1 | 1 | 2 |
+| With Jacksonville |  |  |  | 22 | 13 | 8 | 5 | 1 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 25 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Jacksonville | 25 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 24 | 90 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

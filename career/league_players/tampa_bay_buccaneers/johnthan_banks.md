@@ -1,10 +1,10 @@
 # Johnthan Banks
 
-**Tampa Bay Buccaneers · Cornerback · No. 27 · Age 25 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Cornerback · No. 27 · Age 25 · Last game October 12, 2014**
 
 6' 2", 185 lb · Born October 3, 1989 · Mississippi State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Johnthan Banks](https://commons.wikimedia.org/wiki/Special:FilePath/Johnthan_Banks.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 2 (2014, through Week 5).
+**Passes defended:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 24 | 27 | 5 | 12 | 7 | 5 | 1 | 1 | 1 |
+| 2014 (through Week 6) | Tampa Bay | 24 | 27 | 6 | 19 | 11 | 8 | 2 | 1 | 1 |
 | 2013 | Tampa Bay | 23 | 27 | 16 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 21 | 13 | 8 | 5 | 1 | 1 | 1 |
+| Career |  |  |  | 22 | 20 | 12 | 8 | 2 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 24 | 27 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 24 | 27 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Tampa Bay | 23 | 27 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 24 | 27 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | Tampa Bay | 24 | 27 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Tampa Bay | 23 | 27 | 3 | 97 | 32.3 | 2 | 21 | 10.5 |
 
 ### Playoffs

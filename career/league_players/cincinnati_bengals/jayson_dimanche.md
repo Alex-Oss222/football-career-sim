@@ -1,14 +1,14 @@
 # Jayson DiManche
 
-**Cincinnati Bengals · Outside linebacker · No. 51 · Age 24 · Last game October 5, 2014**
+**Cincinnati Bengals · Outside linebacker · No. 51 · Age 24 · Last game October 12, 2014**
 
 6' 1", 244 lb · Born September 22, 1990 · Southern Illinois
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve strongside linebacker.
 
-**Tackles:** 3 (2014, through Week 5).
+**Tackles:** 3 (2014, through Week 6).
 
 ## Contract
 
@@ -20,13 +20,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 23 | 51 | 4 | 3 | 2 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Cincinnati | 23 | 51 | 5 | 3 | 2 | 1 | 0 | 0 | 1 |
 | 2013 | Cincinnati | 22 | 51 | 16 | 2 | 1 | 1 | 0 | 0 | 0 |
-| Career |  |  |  | 20 | 5 | 3 | 2 | 0 | 0 | 0 |
+| Career |  |  |  | 21 | 5 | 3 | 2 | 0 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 23 | 51 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Cincinnati | 23 | 51 | 0 | 0 | 0 | 0 | 0 | 1 |
 | 2013 | Cincinnati | 22 | 51 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

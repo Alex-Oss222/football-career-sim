@@ -1,10 +1,10 @@
 # Taylor Lewan
 
-**Tennessee Titans · Offensive tackle · No. 77 · Age 23 · Last game October 5, 2014**
+**Tennessee Titans · Offensive tackle · No. 77 · Age 23 · Last game October 12, 2014**
 
 6' 7", 309 lb · Born July 22, 1991 · Michigan
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Taylor Lewan](https://commons.wikimedia.org/wiki/Special:FilePath/Taylor_Lewan_%282012-09-15%29.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 23 | 77 | 5 | 0 | 0 | 0 | 23 |
+| 2014 (through Week 6) | Tennessee | 23 | 77 | 6 | 0 | 0 | 0 | 25 |
 
 ### Playoffs
 

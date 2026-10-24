@@ -1,10 +1,10 @@
 # Jonotthan Harrison
 
-**Indianapolis Colts · Center · No. 72 · Age 23 · Last game October 5, 2014**
+**Indianapolis Colts · Center · No. 72 · Age 23 · Last game October 9, 2014**
 
 6' 4", 308 lb · Born August 25, 1991 · Florida
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Jonotthan Harrison](https://commons.wikimedia.org/wiki/Special:FilePath/Jonotthan_Harrison.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve center.
 
-**Sacks allowed:** 0 (2014, through Week 5).
+**Sacks allowed:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 23 | 72 | 3 | 0 | 47 | 0 | 11 |
+| 2014 (through Week 6) | Indianapolis | 23 | 72 | 4 | 0 | 47 | 0 | 11 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Brandon Pettigrew
 
-**Detroit Lions · Tight end · No. 87 · Age 29 · Last game October 5, 2014**
+**Detroit Lions · Tight end · No. 87 · Age 29 · Last game October 12, 2014**
 
 6' 5", 275 lb · Born February 23, 1985 · Oklahoma State · Drafted in 2009, first round, by Detroit
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Brandon Pettigrew](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Pettigrew_2011.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 7.9 (2014, through Week 5).
+**Yards per target:** 7.8 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 29 | 87 | 5 | 35 | 24 | 277 | 11.5 | 2 | 48 | 55.4 | 68.6 |
+| 2014 (through Week 6) | Detroit | 29 | 87 | 6 | 39 | 26 | 304 | 11.7 | 3 | 48 | 50.7 | 66.7 |
 | 2013 | Detroit | 28 | 87 | 16 | 92 | 62 | 428 | 6.9 | 2 | 24 | 26.8 | 67.4 |
-| Career |  |  |  | 21 | 127 | 86 | 705 | 8.2 | 4 | 48 | 33.6 | 67.7 |
+| Career |  |  |  | 22 | 131 | 88 | 732 | 8.3 | 5 | 48 | 33.3 | 67.2 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 29 | 87 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Detroit | 29 | 87 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Detroit | 28 | 87 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs

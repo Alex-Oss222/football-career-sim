@@ -1,10 +1,10 @@
 # Rob Ninkovich
 
-**New England Patriots · Defensive end · No. 50 · Age 30 · Last game October 5, 2014**
+**New England Patriots · Defensive end · No. 50 · Age 30 · Last game October 12, 2014**
 
 6' 2", 260 lb · Born February 1, 1984 · Purdue; Joliet Junior College · Drafted in 2006, fifth round, by New Orleans
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Rob Ninkovich](https://commons.wikimedia.org/wiki/Special:FilePath/Rob_Ninkovich_2011.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 3 (2014, through Week 5).
+**Sacks:** 3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 30 | 50 | 5 | 36 | 29 | 7 | 5 | 3 | 9 |
+| 2014 (through Week 6) | New England | 30 | 50 | 6 | 38 | 30 | 8 | 5 | 3 | 9 |
 | 2013 | New England | 29 | 50 | 16 | 90 | 73 | 17 | 6 | 12 | 17 |
-| Career |  |  |  | 21 | 126 | 102 | 24 | 11 | 15 | 26 |
+| Career |  |  |  | 22 | 128 | 103 | 25 | 11 | 15 | 26 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 30 | 50 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | New England | 30 | 50 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | New England | 29 | 50 | 0 | 0 | 4 | 1 | 1 | N/A |
 
 ### Playoffs

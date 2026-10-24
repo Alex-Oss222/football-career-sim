@@ -1,10 +1,10 @@
 # Stedman Bailey
 
-**St. Louis Rams · Wide receiver · No. 12 · Age 23 · Last game October 5, 2014**
+**St. Louis Rams · Wide receiver · No. 12 · Age 23 · Last game October 13, 2014**
 
 5' 10", 194 lb · Born November 11, 1990 · West Virginia
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ## Contract
 
@@ -16,9 +16,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 23 | 12 | 1 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 6) | St. Louis | 23 | 12 | 2 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | St. Louis | 22 | 12 | 16 | 60 | 39 | 397 | 10.2 | 3 | 30 | 24.8 | 65.0 |
-| Career |  |  |  | 17 | 60 | 39 | 397 | 10.2 | 3 | 30 | 23.4 | 65.0 |
+| Career |  |  |  | 18 | 60 | 39 | 397 | 10.2 | 3 | 30 | 22.1 | 65.0 |
 
 ### Playoffs
 

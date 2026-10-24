@@ -1,10 +1,10 @@
 # Wesley Woodyard
 
-**Tennessee Titans · Inside linebacker · No. 59 · Age 28 · Last game October 5, 2014**
+**Tennessee Titans · Inside linebacker · No. 59 · Age 28 · Last game October 12, 2014**
 
 6' 0", 233 lb · Born July 21, 1986 · Kentucky
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Wesley Woodyard](https://commons.wikimedia.org/wiki/Special:FilePath/Wesley_Woodyard_2012.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting inside linebacker.
 
-**Tackles:** 34 (2014, through Week 5).
+**Tackles:** 41 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 28 | 59 | 5 | 34 | 25 | 9 | 5 | 1 | 3 |
+| 2014 (through Week 6) | Tennessee | 28 | 59 | 6 | 41 | 30 | 11 | 5 | 2 | 4 |
 | 2013 | Denver | 27 | 52 | 16 | 148 | 102 | 46 | 12 | 6 | 11 |
-| Career |  |  |  | 21 | 182 | 127 | 55 | 17 | 7 | 14 |
+| Career |  |  |  | 22 | 189 | 132 | 57 | 17 | 8 | 15 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 28 | 59 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tennessee | 28 | 59 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Denver | 27 | 52 | 1 | 4 | 3 | 1 | 1 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Virgil Green
 
-**Denver Broncos · Tight end · No. 85 · Age 26 · Last game October 5, 2014**
+**Denver Broncos · Tight end · No. 85 · Age 26 · Last game October 12, 2014**
 
 6' 5", 255 lb · Born August 3, 1988 · Nevada · Drafted in 2011, seventh round, by Denver
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Virgil Green](https://commons.wikimedia.org/wiki/Special:FilePath/Virgil_Green.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 3.7 (2014, through Week 5).
+**Yards per target:** 3.7 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 26 | 85 | 4 | 6 | 2 | 22 | 11.0 | 0 | 14 | 5.5 | 33.3 |
+| 2014 (through Week 6) | Denver | 26 | 85 | 5 | 6 | 2 | 22 | 11.0 | 0 | 14 | 4.4 | 33.3 |
 | 2013 | Denver | 25 | 85 | 16 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
-| Career |  |  |  | 20 | 6 | 2 | 22 | 11.0 | 0 | 14 | 1.1 | 33.3 |
+| Career |  |  |  | 21 | 6 | 2 | 22 | 11.0 | 0 | 14 | 1.0 | 33.3 |
 
 ### Playoffs
 

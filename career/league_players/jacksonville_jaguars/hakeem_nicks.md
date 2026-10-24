@@ -4,7 +4,7 @@
 
 6' 1", 208 lb · Born January 14, 1988 · North Carolina · Drafted in 2009, first round, by the New York Giants
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Hakeem Nicks](https://commons.wikimedia.org/wiki/Special:FilePath/Hakeem_Nicks.JPG?width=500)
 
@@ -32,13 +32,13 @@ One-year contract through 2014.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 26 | 14 | 2 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 6) | Jacksonville | 26 | 14 | 3 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | N.Y. Giants | 25 | 88 | 16 | 77 | 48 | 586 | 12.2 | 7 | 56 | 36.6 | 62.3 |
-| Career |  |  |  | 18 | 77 | 48 | 586 | 12.2 | 7 | 56 | 32.6 | 62.3 |
+| Career |  |  |  | 19 | 77 | 48 | 586 | 12.2 | 7 | 56 | 30.8 | 62.3 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 26 | 14 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Jacksonville | 26 | 14 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | N.Y. Giants | 25 | 88 | 1 | 1 | 0 | 1 | 1 |
 
 ### Playoffs

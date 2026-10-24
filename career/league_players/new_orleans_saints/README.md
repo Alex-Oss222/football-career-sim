@@ -1,6 +1,6 @@
 # New Orleans Saints players
 
-NFC South. The players whose latest game on record was with the New Orleans Saints. G counts regular-season games with any club. Records through October 6, 2014.
+NFC South. The players whose latest game on record was with the New Orleans Saints. G counts regular-season games with any club. Records through October 13, 2014.
 
 [All clubs](../README.md)
 

@@ -1,10 +1,10 @@
 # James Casey
 
-**Philadelphia Eagles · Tight end · No. 85 · Age 30 · Last game October 5, 2014**
+**Philadelphia Eagles · Tight end · No. 85 · Age 30 · Last game October 12, 2014**
 
 6' 3", 240 lb · Born September 22, 1984 · Rice · Drafted in 2009, fifth round, by Houston
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![James Casey](https://commons.wikimedia.org/wiki/Special:FilePath/James_Casey_-_Houston_Texans.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 29 | 85 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 6) | Philadelphia | 29 | 85 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | Philadelphia | 28 | 85 | 16 | 22 | 15 | 204 | 13.6 | 1 | 46 | 12.8 | 68.2 |
-| Career |  |  |  | 21 | 22 | 15 | 204 | 13.6 | 1 | 46 | 9.7 | 68.2 |
+| Career |  |  |  | 22 | 22 | 15 | 204 | 13.6 | 1 | 46 | 9.3 | 68.2 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Orleans Darkwa
 
-**Miami Dolphins · Running back · No. 32 · Age 22 · Last game September 28, 2014**
+**Miami Dolphins · Running back · No. 32 · Age 22 · Last game October 12, 2014**
 
 6' 0", 215 lb · Born February 28, 1992 · Tulane
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Orleans Darkwa](https://commons.wikimedia.org/wiki/Special:FilePath/Orleans_Darkwa_2017.jpg?width=500)
 
@@ -20,11 +20,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 22 | 32 | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2014 (through Week 6) | Miami | 22 | 32 | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 22 | 32 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 22 | 32 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 

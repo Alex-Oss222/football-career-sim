@@ -1,10 +1,10 @@
 # Nick Sundberg
 
-**Washington Redskins · Long snapper · No. 57 · Age 27 · Last game October 6, 2014**
+**Washington Redskins · Long snapper · No. 57 · Age 27 · Last game October 12, 2014**
 
 6' 0", 264 lb · Born July 29, 1987 · California
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Nick Sundberg](https://commons.wikimedia.org/wiki/Special:FilePath/Nick_sundberg.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 48 (2014, through Week 5).
+**Long snaps:** 56 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 27 | 57 | 5 | 48 | 48 | 0 | 0 |
+| 2014 (through Week 6) | Washington | 27 | 57 | 6 | 56 | 56 | 0 | 0 |
 | 2013 | Washington | 26 | 57 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 22 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

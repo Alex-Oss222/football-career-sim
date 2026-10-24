@@ -1,10 +1,10 @@
 # Ryan Kerrigan
 
-**Washington Redskins · Defensive end · No. 91 · Age 26 · Last game October 6, 2014**
+**Washington Redskins · Defensive end · No. 91 · Age 26 · Last game October 12, 2014**
 
 6' 4", 260 lb · Born August 16, 1988 · Purdue · Drafted in 2011, first round, by Washington
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Ryan Kerrigan](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Kerrigan.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Starting outside linebacker.
 
-**Sacks:** 8 (2014, through Week 5).
+**Sacks:** 9 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 26 | 91 | 5 | 35 | 27 | 8 | 4 | 8 | 14 |
+| 2014 (through Week 6) | Washington | 26 | 91 | 6 | 43 | 32 | 11 | 5 | 9 | 16 |
 | 2013 | Washington | 25 | 91 | 16 | 80 | 53 | 27 | 5 | 5 | 12 |
-| Career |  |  |  | 21 | 115 | 80 | 35 | 9 | 13 | 26 |
+| Career |  |  |  | 22 | 123 | 85 | 38 | 10 | 14 | 28 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 26 | 91 | 0 | 0 | 1 | 1 | 1 | 0 |
+| 2014 (through Week 6) | Washington | 26 | 91 | 0 | 0 | 1 | 1 | 1 | 0 |
 | 2013 | Washington | 25 | 91 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

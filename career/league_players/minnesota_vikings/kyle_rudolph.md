@@ -1,10 +1,10 @@
 # Kyle Rudolph
 
-**Minnesota Vikings · Tight end · No. 82 · Age 24 · Last game October 2, 2014**
+**Minnesota Vikings · Tight end · No. 82 · Age 24 · Last game October 12, 2014**
 
 6' 6", 259 lb · Born November 9, 1989 · Notre Dame · Drafted in 2011, second round, by Minnesota
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Kyle Rudolph](https://commons.wikimedia.org/wiki/Special:FilePath/Kyle_Rudolph_Pro_Bowl_%28cropped%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 5.4 (2014, through Week 5).
+**Yards per target:** 5.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 24 | 82 | 5 | 23 | 16 | 125 | 7.8 | 0 | 22 | 25.0 | 69.6 |
+| 2014 (through Week 6) | Minnesota | 24 | 82 | 6 | 28 | 18 | 141 | 7.8 | 0 | 22 | 23.5 | 64.3 |
 | 2013 | Minnesota | 23 | 82 | 16 | 88 | 60 | 603 | 10.1 | 5 | 56 | 37.7 | 68.2 |
-| Career |  |  |  | 21 | 111 | 76 | 728 | 9.6 | 5 | 56 | 34.7 | 68.5 |
+| Career |  |  |  | 22 | 116 | 78 | 744 | 9.5 | 5 | 56 | 33.8 | 67.2 |
 
 ### Playoffs
 

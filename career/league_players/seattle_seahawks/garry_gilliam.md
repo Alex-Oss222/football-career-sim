@@ -1,10 +1,10 @@
 # Garry Gilliam
 
-**Seattle Seahawks · Offensive tackle · No. 79 · Age 23 · Last game October 6, 2014**
+**Seattle Seahawks · Offensive tackle · No. 79 · Age 23 · Last game October 12, 2014**
 
 6' 5", 306 lb · Born November 26, 1990 · Penn State
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Garry Gilliam](https://commons.wikimedia.org/wiki/Special:FilePath/Garry_Gilliam_%2852087267209%29_%28cropped%29.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Seattle | 23 | 79 | 4 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Seattle | 23 | 79 | 5 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

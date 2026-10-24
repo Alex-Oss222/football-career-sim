@@ -1,10 +1,10 @@
 # Larry Warford
 
-**Detroit Lions · Guard · No. 75 · Age 23 · Last game October 5, 2014**
+**Detroit Lions · Guard · No. 75 · Age 23 · Last game October 12, 2014**
 
 6' 3", 330 lb · Born June 18, 1991 · Kentucky
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Larry Warford](https://commons.wikimedia.org/wiki/Special:FilePath/Larry_Warford.png?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 1 (2014, through Week 5).
+**Sacks allowed:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 23 | 75 | 5 | 5 | 334 | 1 | 24 |
+| 2014 (through Week 6) | Detroit | 23 | 75 | 6 | 6 | 394 | 1 | 28 |
 | 2013 | Detroit | 22 | 75 | 14 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 19 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

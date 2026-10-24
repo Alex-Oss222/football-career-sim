@@ -527,17 +527,24 @@ def open_week(root):
     return Week(root)
 
 
+def out_for_game(root, week):
+    """The active-roster players out on the week's game day, as the roster record's notes read."""
+    from runtime.week_inputs import roster_available
+    from datetime import date
+    paths = SeasonPaths(SEASON, root)
+    active = roster_record.players(roster_record.load(paths.roster), ("active",))
+    game = next(g for g in paths.regular_games() if g["week"] == week and "Jacksonville Jaguars" in (g["away"], g["home"]))
+    return [p["name"] for p in active if not roster_available(p["availability"], date.fromisoformat(game["date"]), SEASON)]
+
+
 def needed_inactives(root, week):
     """A legal inactive list from the stored facts: every player out on game day, then the deepest
     reserve of the largest groups."""
-    from runtime.week_inputs import roster_available
-    from datetime import date
     paths = SeasonPaths(SEASON, root)
     roster = roster_record.load(paths.roster)
     chart = json.loads(paths.depth_chart.read_text(encoding="utf-8"))
     active = roster_record.players(roster, ("active",))
-    game = next(g for g in paths.regular_games() if g["week"] == week and "Jacksonville Jaguars" in (g["away"], g["home"]))
-    out = [p["name"] for p in active if not roster_available(p["availability"], date.fromisoformat(game["date"]), SEASON)]
+    out = out_for_game(root, week)
     groups = sorted(chart["depth"].items(), key=lambda kv: -len(kv[1]))
     depth = 1
     while len(out) < len(active) - RULES.active_limit:
@@ -548,6 +555,24 @@ def needed_inactives(root, week):
                     out.append(name)
         depth += 1
     return out
+
+
+def role_cover(root, inactive):
+    """The depth lines a complete page needs when a game role's holder does not dress (a real game
+    can leave one out, as Week 6 left the nickel): each such role goes to the next player of its group
+    after the holder, in chart order, who dresses and holds no role."""
+    from scripts.check_game_plan import ROLE_GROUP
+    chart = json.loads(SeasonPaths(SEASON, root).depth_chart.read_text(encoding="utf-8"))
+    roles = chart.get("roles") or {}
+    lines = []
+    for label, role in game_plan.ROLES.items():
+        holder = next((p for p, held in roles.items() if role in (held or ())), None)
+        if holder is None or holder not in inactive or role not in ROLE_GROUP:
+            continue
+        order = chart["depth"][ROLE_GROUP[role]]
+        after = order[order.index(holder) + 1:] if holder in order else order
+        lines.append("%s: %s" % (label, next(p for p in after if p not in inactive and p not in roles)))
+    return lines
 
 
 def quiet(call, *args, **kwargs):
@@ -620,11 +645,13 @@ class OpenWeek(unittest.TestCase):
 
     def answers(self, **over):
         """A complete page for the open week: the previous week carried, the standing rules, the
-        inactives named from the stored facts."""
+        inactives named from the stored facts, and any game role whose holder does not dress given to
+        a player who does (unless the test's own depth line names that role)."""
+        inactive = needed_inactives(self.root, self.week)
         answers = {
             "baseline": "Carry Week %d" % self.previous, "attack": "Their linebackers in space against our tight ends.",
             "protect": "A cutback behind an overrun.", "change_course": "A safety rotating late to the second tight end.",
-            "inactives": ", ".join(needed_inactives(self.root, self.week)), "depth": "No change",
+            "inactives": ", ".join(inactive), "depth": "No change",
             "contingency": "Reissue after the examinations.", "coverage_units": "No change",
             "offense_caller": "No change", "base_personnel": "Twelve personnel leads.",
             "learn": "Who travels with the second tight end.", "opening_approach": "As last week, with changes below.",
@@ -639,6 +666,9 @@ class OpenWeek(unittest.TestCase):
             "staff": "None", "public": "No new statement", "open_decisions": "None", "ready": "The exams of the week.",
             "practice": [["Third down", "Tice with the offense", "Third and medium", "The Saturday walkthrough"]]}
         answers.update(over)
+        cover = [line for line in role_cover(self.root, inactive) if line.split(":")[0] + ":" not in answers["depth"]]
+        if cover:
+            answers["depth"] = "; ".join(([] if answers["depth"] == "No change" else [answers["depth"]]) + cover)
         return answers
 
     def write(self, answers):
@@ -1103,7 +1133,10 @@ class GuardTests(OpenWeek):
         needed = len(roster_record.players(self.roster(), ("active",))) - RULES.active_limit
         chart = self.chart()
         active = {q["name"] for q in roster_record.players(self.roster(), ("active",))}
-        out = [p for p in chart["depth"]["DB"] + chart["depth"]["LB"] if p in active][:needed + 1]
+        # Players a real game already left out count toward the list; the rest are made out here.
+        already = out_for_game(self.root, self.week)
+        out = already + [p for p in chart["depth"]["DB"] + chart["depth"]["LB"]
+                         if p in active and p not in already][:needed + 1 - len(already)]
         self.set_availability(out, self.out_note())
         self.write(self.answers(inactives=", ".join(out)))
         self.assertEqual(inactive_problems(Plan(self.root, SEASON, self.week)), [])

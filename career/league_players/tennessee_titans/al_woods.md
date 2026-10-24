@@ -1,10 +1,10 @@
 # Al Woods
 
-**Tennessee Titans · Nose tackle · No. 96 · Age 27 · Last game October 5, 2014**
+**Tennessee Titans · Nose tackle · No. 96 · Age 27 · Last game October 12, 2014**
 
 6' 4", 307 lb · Born March 25, 1987 · LSU · Drafted in 2010, fourth round, by New Orleans
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Al Woods](https://commons.wikimedia.org/wiki/Special:FilePath/Al_Woods_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve nose tackle.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 27 | 96 | 5 | 3 | 2 | 1 | 1 | 1 | 1 |
+| 2014 (through Week 6) | Tennessee | 27 | 96 | 6 | 3 | 2 | 1 | 1 | 1 | 2 |
 | 2013 | Pittsburgh | 26 | 65 | 16 | 23 | 15 | 8 | 2 | 2 | 5 |
-| Career |  |  |  | 21 | 26 | 17 | 9 | 3 | 3 | 6 |
+| Career |  |  |  | 22 | 26 | 17 | 9 | 3 | 3 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 27 | 96 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tennessee | 27 | 96 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Pittsburgh | 26 | 65 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

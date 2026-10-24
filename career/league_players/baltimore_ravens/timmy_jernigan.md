@@ -1,10 +1,10 @@
 # Timmy Jernigan
 
-**Baltimore Ravens · Defensive tackle · No. 97 · Age 22 · Last game October 5, 2014**
+**Baltimore Ravens · Defensive tackle · No. 97 · Age 22 · Last game October 12, 2014**
 
 6' 2", 300 lb · Born September 24, 1992 · Florida State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Timmy Jernigan](https://commons.wikimedia.org/wiki/Special:FilePath/Timmy_Jernigan.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 5).
+**Sacks:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 21 | 97 | 5 | 11 | 6 | 5 | 2 | 0 | 3 |
+| 2014 (through Week 6) | Baltimore | 21 | 97 | 6 | 11 | 6 | 5 | 2 | 0 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 21 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Baltimore | 21 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

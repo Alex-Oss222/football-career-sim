@@ -1,10 +1,10 @@
 # Dwight Bentley
 
-**Detroit Lions · Cornerback · No. 28 · Age 25 · Last game October 5, 2014**
+**Detroit Lions · Cornerback · No. 28 · Age 25 · Last game October 12, 2014**
 
 5' 10", 188 lb · Born May 16, 1989 · Louisiana-Lafayette; Dodge City CC · Drafted in 2012, third round, by Detroit
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Dwight Bentley](https://commons.wikimedia.org/wiki/Special:FilePath/Detroit_Lions_cornerback_Bill_Bentley_2.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 1 (2014, through Week 5).
+**Passes defended:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 25 | 28 | 2 | 3 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Detroit | 25 | 28 | 3 | 5 | 4 | 1 | 0 | 0 | 0 |
 | 2013 | Detroit | 24 | 28 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 4 | 3 | 3 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 5 | 5 | 4 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 25 | 28 | 0 | 0 | 1 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Detroit | 25 | 28 | 0 | 0 | 1 | 0 | 0 | 1 |
 | 2013 | Detroit | 24 | 28 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # DeAngelo Tyson
 
-**Baltimore Ravens · Defensive end · No. 93 · Age 25 · Last game October 5, 2014**
+**Baltimore Ravens · Defensive end · No. 93 · Age 25 · Last game October 12, 2014**
 
 6' 2", 315 lb · Born April 12, 1989 · Georgia · Drafted in 2012, seventh round, by Baltimore
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![DeAngelo Tyson](https://commons.wikimedia.org/wiki/Special:FilePath/DeAngelo_Tyson_Navy_Stadium_2012_Practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 2 (2014, through Week 5).
+**Sacks:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 25 | 93 | 5 | 13 | 11 | 2 | 2 | 2 | 3 |
+| 2014 (through Week 6) | Baltimore | 25 | 93 | 6 | 15 | 12 | 3 | 2 | 2 | 3 |
 | 2013 | Baltimore | 24 | 93 | 2 | 1 | 0 | 1 | 0 | 0 | 0 |
-| Career |  |  |  | 7 | 14 | 11 | 3 | 2 | 2 | 3 |
+| Career |  |  |  | 8 | 16 | 12 | 4 | 2 | 2 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 25 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Baltimore | 25 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Baltimore | 24 | 93 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

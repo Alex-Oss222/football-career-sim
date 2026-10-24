@@ -1,10 +1,10 @@
 # Clint Gresham
 
-**Seattle Seahawks · Long snapper · No. 49 · Age 28 · Last game October 6, 2014**
+**Seattle Seahawks · Long snapper · No. 49 · Age 28 · Last game October 12, 2014**
 
 6' 3", 240 lb · Born August 24, 1986 · TCU; Oklahoma
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Clint Gresham](https://commons.wikimedia.org/wiki/Special:FilePath/Clint_Gresham_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 41 (2014, through Week 5).
+**Long snaps:** 51 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Seattle | 28 | 49 | 4 | 41 | 41 | 0 | 0 |
+| 2014 (through Week 6) | Seattle | 28 | 49 | 5 | 51 | 51 | 0 | 0 |
 | 2013 | Seattle | 27 | 49 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 20 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

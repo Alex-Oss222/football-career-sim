@@ -1,10 +1,10 @@
 # Sam Martin
 
-**Detroit Lions · Punter · No. 6 · Age 24 · Last game October 5, 2014**
+**Detroit Lions · Punter · No. 6 · Age 24 · Last game October 12, 2014**
 
 6' 1", 210 lb · Born February 27, 1990 · Appalachian State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Sam Martin](https://commons.wikimedia.org/wiki/Special:FilePath/Sam_Martin_%2851651272550%29_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 40.4 (2014, through Week 5).
+**Net punting average:** 40.4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 24 | 6 | 5 | 24 | 1,125 | 46.9 | 40.4 | 5 | 1 | 58 |
+| 2014 (through Week 6) | Detroit | 24 | 6 | 6 | 28 | 1,307 | 46.7 | 40.4 | 7 | 2 | 60 |
 | 2013 | Detroit | 23 | 6 | 16 | 71 | 3,256 | 45.9 | 40.2 | 20 | 1 | 58 |
-| Career |  |  |  | 21 | 95 | 4,381 | 46.1 | 40.3 | 25 | 2 | 58 |
+| Career |  |  |  | 22 | 99 | 4,563 | 46.1 | 40.3 | 27 | 3 | 60 |
 
 ### Playoffs
 

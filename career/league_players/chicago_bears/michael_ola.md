@@ -1,10 +1,10 @@
 # Michael Ola
 
-**Chicago Bears · Offensive tackle · No. 70 · Age 26 · Last game October 5, 2014**
+**Chicago Bears · Offensive tackle · No. 70 · Age 26 · Last game October 12, 2014**
 
 6' 4", 312 lb · Born April 19, 1988 · Hampton
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve right guard.
 
@@ -18,7 +18,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 26 | 70 | 5 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Chicago | 26 | 70 | 6 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

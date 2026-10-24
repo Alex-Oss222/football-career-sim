@@ -1,10 +1,10 @@
 # Dane Sanzenbacher
 
-**Cincinnati Bengals · Wide receiver · No. 11 · Age 25 · Last game October 5, 2014**
+**Cincinnati Bengals · Wide receiver · No. 11 · Age 25 · Last game October 12, 2014**
 
 5' 11", 184 lb · Born October 13, 1988 · Ohio State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Dane Sanzenbacher](https://commons.wikimedia.org/wiki/Special:FilePath/Dane_Sanzenbacher.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 5.5 (2014, through Week 5).
+**Yards per target:** 5.6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 25 | 11 | 4 | 11 | 7 | 61 | 8.7 | 0 | 24 | 15.2 | 63.6 |
+| 2014 (through Week 6) | Cincinnati | 25 | 11 | 5 | 12 | 8 | 67 | 8.4 | 0 | 24 | 13.4 | 66.7 |
 | 2013 | Cincinnati | 24 | 11 | 16 | 3 | 3 | 18 | 6.0 | 1 | 8 | 1.1 | 100.0 |
-| Career |  |  |  | 20 | 14 | 10 | 79 | 7.9 | 1 | 24 | 4.0 | 71.4 |
+| Career |  |  |  | 21 | 15 | 11 | 85 | 7.7 | 1 | 24 | 4.0 | 73.3 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 25 | 11 | 1 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Cincinnati | 25 | 11 | 1 | 4 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 24 | 11 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

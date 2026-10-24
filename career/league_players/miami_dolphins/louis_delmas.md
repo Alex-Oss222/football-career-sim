@@ -1,10 +1,10 @@
 # Louis Delmas
 
-**Miami Dolphins · Safety · No. 25 · Age 27 · Last game September 28, 2014**
+**Miami Dolphins · Safety · No. 25 · Age 27 · Last game October 12, 2014**
 
 5' 11", 210 lb · Born April 12, 1987 · Western Michigan · Drafted in 2009, second round, by Detroit
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Louis Delmas](https://commons.wikimedia.org/wiki/Special:FilePath/Louis_Delmas.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting safety.
 
-**Passes defended:** 3 (2014, through Week 4).
+**Passes defended:** 5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 27 | 25 | 4 | 19 | 11 | 8 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 27 | 25 | 5 | 21 | 12 | 9 | 0 | 0 | 0 |
 | 2013 | Detroit | 26 | 26 | 16 | 50 | 29 | 21 | 1 | 0 | 1 |
-| Career |  |  |  | 20 | 69 | 40 | 29 | 1 | 0 | 1 |
+| Career |  |  |  | 21 | 71 | 41 | 30 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 27 | 25 | 1 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 27 | 25 | 2 | 52 | 5 | 0 | 0 | 0 |
 | 2013 | Detroit | 26 | 26 | 2 | 20 | 9 | 0 | 0 | N/A |
 
 ### Playoffs

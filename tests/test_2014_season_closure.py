@@ -96,6 +96,42 @@ def accept_release(root):
                                  "game_day_inactives": []}), encoding="utf-8")
 
 
+RECORD_LINE = re.compile(r"^(\s*\*\*Record after game:\*\*\s*)\d{1,2}-\d{1,2}(?:-\d{1,2})?(?![\d-])", re.M)
+
+
+def restate_records(paths):
+    """Each closed Game Report's record after the game, restated in the copy from its own receipts.
+
+    The synthetic slate replaces the real Week 1 result, and Jacksonville's record after every
+    later game counts it. A closed Game Report (from 2014 Week 6, runtime.seasons.GAME_REPORT_FROM)
+    names that record in section 7's "Record after game" line, written against the real Week 1;
+    here that line alone names Jacksonville's record over the copy's receipts through the report's
+    week, tallied from the final scores. The rest of each report is the real one. Returns the
+    reports rewritten."""
+    own = [r for r in render_season_stats.load_receipts(paths.receipts) if JAX in (r["away"], r["home"])]
+    first = seasons.GAME_REPORT_FROM
+    changed = []
+    for receipt in own:
+        week = int(receipt["week"])
+        report = paths.game_report(week)
+        if (SEASON, week) < first or not report.is_file():
+            continue
+        results = []
+        for game in own:
+            if int(game["week"]) <= week:
+                other = game["home"] if game["away"] == JAX else game["away"]
+                margin = game["final_score"][JAX] - game["final_score"][other]
+                results.append((margin > 0) - (margin < 0))
+        won, lost, tied = results.count(1), results.count(-1), results.count(0)
+        record = "%d-%d-%d" % (won, lost, tied) if tied else "%d-%d" % (won, lost)
+        text = report.read_text(encoding="utf-8")
+        restated = RECORD_LINE.sub(lambda m: m.group(1) + record, text, count=1)
+        if restated != text:
+            report.write_text(restated, encoding="utf-8")
+            changed.append(report)
+    return changed
+
+
 class SeasonClosure2014Tests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
@@ -108,7 +144,8 @@ class SeasonClosure2014Tests(unittest.TestCase):
         # and drawn. The synthetic slate is a Week 1 of its own: it overwrites
         # the real Week 1 receipts and redraws the Week 1 awards from scratch,
         # while every later real week (receipts, outputs and awards) stays in
-        # the copy exactly as the real season closed it.
+        # the copy exactly as the real season closed it, but for the record
+        # after the game its Game Report names (restate_records).
         results = self.paths.awards_data / "results.json"
         if results.exists():
             drawn = json.loads(results.read_text(encoding="utf-8"))
@@ -248,6 +285,10 @@ class SeasonClosure2014Tests(unittest.TestCase):
         for page in (sorted(folder.glob("week_*.md")) if folder.is_dir() else []):
             week = int(page.stem.split("_")[1])
             render_inseason_rails.write(SEASON, week, root, [r for r in closed if int(r["week"]) < week])
+
+        # The closed Game Reports name Jacksonville's record after the game,
+        # which counts the Week 1 result: the copy's reports name the copy's.
+        restate_records(paths)
 
         # The synthetic slate is a Week 1, so the pages it rewrote that were
         # written before Week 6 stay history in the copy (rebuild rule 1); a

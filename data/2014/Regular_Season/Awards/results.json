@@ -880,5 +880,152 @@
     "winner_index": 0
    }
   }
+ },
+ "week-6": {
+  "kind": "week",
+  "key": "6",
+  "label": "Week 6",
+  "order": 6,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2014-award-week06-afc-offense-v1-2014",
+    "packet_sha256": "60f4d4a3f2a7ac736d1f6668ada28356aecdd7d4960b16b176fc970d99d737a2",
+    "result_ref": "30686b4cac3b3813ee8436f1148f1bc211f221c342286c6946dec2ea596e6b8c",
+    "shortlist": [
+     {
+      "player": "Kyle Orton",
+      "team": "Buffalo Bills",
+      "score": 28.78
+     },
+     {
+      "player": "Stevan Ridley",
+      "team": "New England Patriots",
+      "score": 27.8
+     },
+     {
+      "player": "Ryan Mathews",
+      "team": "San Diego Chargers",
+      "score": 26.4
+     }
+    ],
+    "winner_index": 2
+   },
+   "AFC-defense": {
+    "event_id": "2014-award-week06-afc-defense-v1-2014",
+    "packet_sha256": "3a57b628b238adabbdfe9ec966307a17179afa628e24fa78e242654689cb3478",
+    "result_ref": "e52c56cb0c2bb8de9ba95826dfcaff20d16f2b653c3dc11a1e62ad59124507d4",
+    "shortlist": [
+     {
+      "player": "Barkevious Mingo",
+      "team": "Cleveland Browns",
+      "score": 18.5
+     },
+     {
+      "player": "Derrick Morgan",
+      "team": "Tennessee Titans",
+      "score": 18.0
+     },
+     {
+      "player": "Duron Harmon",
+      "team": "New England Patriots",
+      "score": 17.5
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2014-award-week06-afc-special_teams-v1-2014",
+    "packet_sha256": "d01f96536a2b9d0c67bd7a417e6ea7692bb11305f54a6d08fb9349cc5ace4223",
+    "result_ref": "8b2fb801c6e97be5a1066b299c7e6c92886ee2d004faf59c086b77e7c419e6cc",
+    "shortlist": [
+     {
+      "player": "Saalim Hakim",
+      "team": "New York Jets",
+      "score": 16.5
+     },
+     {
+      "player": "Billy Cundiff",
+      "team": "Cleveland Browns",
+      "score": 15.0
+     },
+     {
+      "player": "Caleb Sturgis",
+      "team": "Miami Dolphins",
+      "score": 14.0
+     }
+    ],
+    "winner_index": 1
+   },
+   "NFC-offense": {
+    "event_id": "2014-award-week06-nfc-offense-v1-2014",
+    "packet_sha256": "98ac68bc5c073e9100264bc9c0c56ac08998919952625234eb2894f034477e23",
+    "result_ref": "9ac5da3087ec31102e99228cff41ac6c78d474cd721137a92497a57a4c91399e",
+    "shortlist": [
+     {
+      "player": "Colin Kaepernick",
+      "team": "San Francisco 49ers",
+      "score": 28.12
+     },
+     {
+      "player": "Devonta Freeman",
+      "team": "Atlanta Falcons",
+      "score": 25.6
+     },
+     {
+      "player": "Marshawn Lynch",
+      "team": "Seattle Seahawks",
+      "score": 25.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2014-award-week06-nfc-defense-v1-2014",
+    "packet_sha256": "90f3f384d186c849eeeb92a774748d7db81a797ff87ab9b70f14c83338e41ee2",
+    "result_ref": "0ce82e94140cffbb827134a124face0063ac6206bb42798b4d635e5093e047ab",
+    "shortlist": [
+     {
+      "player": "Ndamukong Suh",
+      "team": "Detroit Lions",
+      "score": 20.0
+     },
+     {
+      "player": "Bobby Wagner",
+      "team": "Seattle Seahawks",
+      "score": 17.5
+     },
+     {
+      "player": "Prince Amukamara",
+      "team": "New York Giants",
+      "score": 17.5
+     }
+    ],
+    "winner_index": 2
+   },
+   "NFC-special_teams": {
+    "event_id": "2014-award-week06-nfc-special_teams-v1-2014",
+    "packet_sha256": "98e9cf29220ffd078cec4bae5a1f67539b29b82e595312eab18d0ca86fbb7b05",
+    "result_ref": "25fcce528eace5495764c562017d974ce37ecf4d6881d56b3d04a93dfe383eac",
+    "shortlist": [
+     {
+      "player": "Chandler Catanzaro",
+      "team": "Arizona Cardinals",
+      "score": 17.0
+     },
+     {
+      "player": "Corey Brown",
+      "team": "Carolina Panthers",
+      "score": 16.9
+     },
+     {
+      "player": "Tress Way",
+      "team": "Washington Redskins",
+      "score": 14.25
+     }
+    ],
+    "winner_index": 1
+   }
+  }
  }
 }

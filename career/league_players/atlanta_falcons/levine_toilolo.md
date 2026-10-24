@@ -1,10 +1,10 @@
 # Levine Toilolo
 
-**Atlanta Falcons · Tight end · No. 80 · Age 23 · Last game October 5, 2014**
+**Atlanta Falcons · Tight end · No. 80 · Age 23 · Last game October 12, 2014**
 
 6' 8", 265 lb · Born July 30, 1991 · Stanford
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Levine Toilolo](https://commons.wikimedia.org/wiki/Special:FilePath/Levine_Toilolo_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 7.6 (2014, through Week 5).
+**Yards per target:** 7.6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Atlanta | 23 | 80 | 5 | 32 | 17 | 242 | 14.2 | 3 | 43 | 48.4 | 53.1 |
+| 2014 (through Week 6) | Atlanta | 23 | 80 | 6 | 32 | 17 | 242 | 14.2 | 3 | 43 | 40.3 | 53.1 |
 | 2013 | Atlanta | 22 | 80 | 16 | 5 | 5 | 38 | 7.6 | 0 | 15 | 2.4 | 100.0 |
-| Career |  |  |  | 21 | 37 | 22 | 280 | 12.7 | 3 | 43 | 13.3 | 59.5 |
+| Career |  |  |  | 22 | 37 | 22 | 280 | 12.7 | 3 | 43 | 12.7 | 59.5 |
 
 ### Playoffs
 

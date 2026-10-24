@@ -4,7 +4,7 @@
 
 5' 8", 167 lb · Born February 17, 1991 · Abilene Christian · Undrafted
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Taylor Gabriel](https://commons.wikimedia.org/wiki/Special:FilePath/Taylor_Gabriel.jpg?width=500)
 

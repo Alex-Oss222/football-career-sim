@@ -1,10 +1,10 @@
 # Logan Mankins
 
-**Tampa Bay Buccaneers · Guard · No. 70 · Age 32 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Guard · No. 70 · Age 32 · Last game October 12, 2014**
 
 6' 4", 308 lb · Born March 10, 1982 · Fresno State · Drafted in 2005, first round, by New England
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Logan Mankins](https://commons.wikimedia.org/wiki/Special:FilePath/Logan_Mankins.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 1 (2014, through Week 5).
+**Sacks allowed:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 32 | 70 | 5 | 5 | 328 | 1 | 23 |
+| 2014 (through Week 6) | Tampa Bay | 32 | 70 | 6 | 6 | 375 | 1 | 29 |
 | 2013 | New England | 31 | 70 | 15 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 20 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

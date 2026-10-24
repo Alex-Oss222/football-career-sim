@@ -1,10 +1,10 @@
 # Corbin Bryant
 
-**Buffalo Bills · Defensive tackle · No. 97 · Age 26 · Last game October 5, 2014**
+**Buffalo Bills · Defensive tackle · No. 97 · Age 26 · Last game October 12, 2014**
 
 6' 4", 300 lb · Born January 4, 1988 · Northwestern
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Corbin Bryant](https://commons.wikimedia.org/wiki/Special:FilePath/Corbin_Bryant.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 5).
+**Sacks:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 26 | 97 | 5 | 3 | 1 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Buffalo | 26 | 97 | 6 | 3 | 1 | 2 | 0 | 0 | 0 |
 | 2013 | Buffalo | 25 | 97 | 7 | 2 | 1 | 1 | 0 | 0 | 0 |
-| Career |  |  |  | 12 | 5 | 2 | 3 | 0 | 0 | 0 |
+| Career |  |  |  | 13 | 5 | 2 | 3 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 26 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Buffalo | 26 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Buffalo | 25 | 97 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Dallas Reynolds
 
-**New York Giants · Center · No. 61 · Age 30 · Last game October 5, 2014**
+**New York Giants · Center · No. 61 · Age 30 · Last game October 12, 2014**
 
 6' 4", 320 lb · Born April 23, 1984 · BYU
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve left guard.
 
@@ -18,7 +18,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Giants | 30 | 61 | 5 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | N.Y. Giants | 30 | 61 | 6 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

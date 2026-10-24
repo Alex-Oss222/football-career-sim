@@ -1,10 +1,10 @@
 # Denarius Moore
 
-**Oakland Raiders · Wide receiver · No. 17 · Age 25 · Last game September 28, 2014**
+**Oakland Raiders · Wide receiver · No. 17 · Age 25 · Last game October 12, 2014**
 
 6' 0", 190 lb · Born December 9, 1988 · Tennessee · Drafted in 2011, fifth round, by Oakland
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Denarius Moore](https://commons.wikimedia.org/wiki/Special:FilePath/Denarius_Moore.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 4.7 (2014, through Week 4).
+**Yards per target:** 4.1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 25 | 17 | 4 | 21 | 8 | 98 | 12.2 | 2 | 34 | 24.5 | 38.1 |
+| 2014 (through Week 6) | Oakland | 25 | 17 | 5 | 24 | 10 | 99 | 9.9 | 2 | 34 | 19.8 | 41.7 |
 | 2013 | Oakland | 24 | 17 | 16 | 173 | 110 | 1,171 | 10.6 | 6 | 66 | 73.2 | 63.6 |
-| Career |  |  |  | 20 | 194 | 118 | 1,269 | 10.8 | 8 | 66 | 63.5 | 60.8 |
+| Career |  |  |  | 21 | 197 | 120 | 1,270 | 10.6 | 8 | 66 | 60.5 | 60.9 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 25 | 17 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Oakland | 25 | 17 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Oakland | 24 | 17 | 1 | 9 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 25 | 17 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | Oakland | 25 | 17 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Oakland | 24 | 17 | 0 | 0 | N/A | 5 | 55 | 11.0 |
 
 ### Playoffs

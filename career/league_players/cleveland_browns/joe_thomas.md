@@ -1,10 +1,10 @@
 # Joe Thomas
 
-**Cleveland Browns · Offensive tackle · No. 73 · Age 29 · Last game October 5, 2014**
+**Cleveland Browns · Offensive tackle · No. 73 · Age 29 · Last game October 12, 2014**
 
 6' 6", 312 lb · Born December 4, 1984 · Wisconsin · Drafted in 2007, first round, by Cleveland
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Joe Thomas](https://commons.wikimedia.org/wiki/Special:FilePath/Joe-Thomas_March-2010.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 1 (2014, through Week 5).
+**Sacks allowed:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 29 | 73 | 4 | 4 | 288 | 1 | 25 |
+| 2014 (through Week 6) | Cleveland | 29 | 73 | 5 | 5 | 363 | 1 | 32 |
 | 2013 | Cleveland | 28 | 73 | 16 | N/A | N/A | 2 | N/A |
-| Career |  |  |  | 20 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 

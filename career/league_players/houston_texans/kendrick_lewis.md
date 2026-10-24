@@ -1,10 +1,10 @@
 # Kendrick Lewis
 
-**Houston Texans · Free safety · No. 21 · Age 26 · Last game October 5, 2014**
+**Houston Texans · Free safety · No. 21 · Age 26 · Last game October 9, 2014**
 
 6' 0", 198 lb · Born June 16, 1988 · Mississippi · Drafted in 2010, fifth round, by Kansas City
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Kendrick Lewis](https://commons.wikimedia.org/wiki/Special:FilePath/Kendrick_Lewis_2014.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 7 (2014, through Week 5).
+**Passes defended:** 8 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 26 | 21 | 5 | 37 | 24 | 13 | 2 | 0 | 0 |
+| 2014 (through Week 6) | Houston | 26 | 21 | 6 | 41 | 27 | 14 | 2 | 0 | 0 |
 | 2013 | Kansas City | 25 | 23 | 16 | 45 | 26 | 19 | 4 | 0 | 0 |
-| Career |  |  |  | 21 | 82 | 50 | 32 | 6 | 0 | 0 |
+| Career |  |  |  | 22 | 86 | 53 | 33 | 6 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 26 | 21 | 1 | 0 | 7 | 1 | 1 | 0 |
+| 2014 (through Week 6) | Houston | 26 | 21 | 2 | 32 | 8 | 1 | 1 | 0 |
 | 2013 | Kansas City | 25 | 23 | 1 | 4 | 6 | 1 | 1 | N/A |
 
 ### Playoffs

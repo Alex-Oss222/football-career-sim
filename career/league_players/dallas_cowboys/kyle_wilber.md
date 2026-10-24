@@ -1,10 +1,10 @@
 # Kyle Wilber
 
-**Dallas Cowboys · Outside linebacker · No. 51 · Age 25 · Last game October 5, 2014**
+**Dallas Cowboys · Outside linebacker · No. 51 · Age 25 · Last game October 12, 2014**
 
 6' 4", 245 lb · Born April 26, 1989 · Wake Forest · Drafted in 2012, fourth round, by Dallas
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Kyle Wilber](https://commons.wikimedia.org/wiki/Special:FilePath/Kyle_Wilber.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve strongside linebacker.
 
-**Tackles:** 8 (2014, through Week 5).
+**Tackles:** 11 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 25 | 51 | 5 | 8 | 4 | 4 | 1 | 0 | 0 |
+| 2014 (through Week 6) | Dallas | 25 | 51 | 6 | 11 | 6 | 5 | 2 | 0 | 0 |
 | 2013 | Dallas | 24 | 51 | 16 | 2 | 1 | 1 | 1 | 0 | 0 |
-| Career |  |  |  | 21 | 10 | 5 | 5 | 2 | 0 | 0 |
+| Career |  |  |  | 22 | 13 | 7 | 6 | 3 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 25 | 51 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Dallas | 25 | 51 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Dallas | 24 | 51 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,6 +1,6 @@
 # Jacksonville Jaguars roster
 
-As of October 12, 2014, after the Week 5 game against Pittsburgh (Pittsburgh 27, Jacksonville 10).
+As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Tennessee 10).
 
 | Active roster | Reserve lists | Practice squad | Open places |
 |---|---:|---|---|
@@ -54,7 +54,7 @@ As of October 12, 2014, after the Week 5 game against Pittsburgh (Pittsburgh 27,
 | Player | # | Pos | Age | Status | Availability |
 |---|---:|---|---:|---|---|
 | [Eugene Monroe](../Player_Cards/eugene_monroe.md) | 60 | OT | 27 | Active roster | No communicated restriction |
-| [Joel Bitonio](../Player_Cards/joel_bitonio.md) | 75 | OT | 23 | Active roster | No communicated restriction |
+| [Joel Bitonio](../Player_Cards/joel_bitonio.md) | 75 | OT | 23 | Active roster | Out, short: lower extremity, logged at 1:13 of the fourth quarter in the October 12 Week 6 game, not removed; projected return October 22, 2014; reassessment October 15 ([medical record](../../Medical/incidents/joel_bitonio_2014-10-12.md)) |
 | [Mike Brewster](../Player_Cards/mike_brewster.md) |  | C | 25 | Active roster | No communicated restriction |
 | [Trai Turner](../Player_Cards/trai_turner.md) | 70 | G | 21 | Active roster | No communicated restriction |
 | [Lane Johnson](../Player_Cards/lane_johnson.md) |  | OT | 24 | Active roster | No communicated restriction: cleared September 17, 2014, his projected date, from the September 14 lower-extremity injury (reassessed September 15 with no change) ([medical record](../../Medical/incidents/lane_johnson_2014-09-14.md)) |
@@ -97,7 +97,7 @@ As of October 12, 2014, after the Week 5 game against Pittsburgh (Pittsburgh 27,
 | [Brynden Trawick](../Player_Cards/brynden_trawick.md) | 28 | S | 24 | Active roster | No communicated restriction: cleared October 11, 2014, his projected date, from the October 5 lower-extremity injury (reassessed October 7 with no change); did not practice October 8 to 10; full in the October 11 walkthrough ([medical record](../../Medical/incidents/brynden_trawick_2014-10-05.md)) |
 | [Jordan Poyer](../Player_Cards/jordan_poyer.md) | 33 | CB | 23 | Active roster | No communicated restriction: independent medical hold from the September 21 head/neck injury released October 9, 2014, its projected date (reassessed September 27 with no change); did not practice October 8; full October 9 to 11 ([medical record](../../Medical/incidents/jordan_poyer_2014-09-21.md)); earlier cleared August 26 from the August 22 upper-extremity injury |
 | [Alterraun Verner](../Player_Cards/alterraun_verner.md) |  | CB | 25 | Active roster | No communicated restriction |
-| [A.J. Bouye](../Player_Cards/a_j_bouye.md) |  | CB | 23 | Active roster | No communicated restriction (cleared August 31, 2014, his projected date, from the August 28 lower-extremity injury; reassessed August 29 with no change; [medical history](../../Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements)) |
+| [A.J. Bouye](../Player_Cards/a_j_bouye.md) |  | CB | 23 | Active roster | Out, short: lower extremity, logged at 13:26 of the third quarter in the October 12 Week 6 game, removed; projected return October 22, 2014; reassessment October 15 ([medical record](../../Medical/incidents/a_j_bouye_2014-10-12.md)) |
 | [Malcolm Butler](../Player_Cards/malcolm_butler.md) |  | CB | 24 | Active roster | No communicated restriction: independent medical hold from the September 21 head/neck injury released October 2, 2014, its projected date (reassessed September 24 with no change); did not practice October 1; full October 2 to 4 in approved preparation work only ([medical record](../../Medical/incidents/malcolm_butler_2014-09-21.md)) |
 | [Chris Prosinski](../Player_Cards/chris_prosinski.md) | 42 | S | 27 | Active roster | No communicated restriction |
 | [Adrian Phillips](../Player_Cards/adrian_phillips.md) |  | S | 22 | Active roster | No communicated restriction: cleared September 29, 2014, his projected date, from the September 28 lower-extremity injury, at the reassessment its instruction named; full September 29 to October 4 ([medical record](../../Medical/incidents/adrian_phillips_2014-09-28.md)) |

@@ -236,3 +236,14 @@ Projected returns are the engine's generated fields under the branch's standard 
 - **Jerrell Jackson, WR: cleared October 9, his projected date, on reserve/injured.** Nothing was communicated after his August 21 reassessment, so his instruction cleared on its projected date under the same method. He is on reserve/injured for the season and not designated for return, so the clearance has no roster or practice effect.
 
 The Tennessee practice week (the October 6 Pittsburgh review and Tennessee introduction, the players' day off October 7, the October 8, 9 and 10 practices in helmets with no padded practice in the week, and the October 11 walkthrough before the team travelled to Nashville) produced no injury and no new restriction; the program has no injury draw for practices, and only communicated instructions are recorded. No reassessment was communicated in the week for the four players on reserve/injured (Mike Harris, Dwight Lowery, Jerrell Jackson and Cameron Brate), and Jackson's projected date passed within it, as above; Lowery's designation for return allows no practice before October 20. The seven practice-squad players carry no communicated restriction. No player on the 53 is under a medical instruction at the close of October 11, and no instruction requires a roster decision.
+
+<!-- event-record: {"date": "2014-10-12", "follows": "2014-10-12-week-6-at-tennessee", "id": "2014-10-12-week-6-injuries-at-tennessee", "status": "closed", "summary": "Two Jacksonville players were injured in the Week 6 game at Tennessee (Jacksonville 24, Tennessee 10): A.J. Bouye (lower extremity, short; removed; out, projected return October 22, reassessment October 15) and Joel Bitonio (lower extremity, short; not removed; out, projected return October 22, reassessment October 15)."} -->
+
+## October 12: Week 6 injuries at Tennessee
+
+Two Jacksonville players were injured in the [Week 6 game at Tennessee](../../Regular_Season/Games/Week_06/Game_Report.md) (Jacksonville 24, Tennessee 10), each with its own incident record:
+
+- [A.J. Bouye](incidents/a_j_bouye_2014-10-12.md), CB: lower extremity, short; injured at 13:26 of the third quarter, removed; out, projected return October 22 (10 days), reassessment October 15.
+- [Joel Bitonio](incidents/joel_bitonio_2014-10-12.md), OT: lower extremity, short; injured at 1:13 of the fourth quarter, not removed; out, projected return October 22 (10 days), reassessment October 15.
+
+A projected return is the medical staff's projection, not a clearance. No other Jacksonville injury was recorded in the game.

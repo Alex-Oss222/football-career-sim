@@ -1,10 +1,10 @@
 # Brock Vereen
 
-**Chicago Bears · Free safety · No. 45 · Age 22 · Last game October 5, 2014**
+**Chicago Bears · Free safety · No. 45 · Age 22 · Last game October 12, 2014**
 
 5' 11", 199 lb · Born August 17, 1992 · Minnesota
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Brock Vereen](https://commons.wikimedia.org/wiki/Special:FilePath/Brock_vereen_bears_2015.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve free safety.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 22 | 45 | 5 | 3 | 2 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Chicago | 22 | 45 | 6 | 6 | 3 | 3 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 22 | 45 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 6) | Chicago | 22 | 45 | 0 | 0 | 0 | 0 | 0 | 2 |
 
 ### Playoffs
 

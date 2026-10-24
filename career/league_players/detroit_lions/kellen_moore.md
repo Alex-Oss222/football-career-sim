@@ -1,10 +1,10 @@
 # Kellen Moore
 
-**Detroit Lions · Quarterback · No. 17 · Age 26 · Last game October 5, 2014**
+**Detroit Lions · Quarterback · No. 17 · Age 26 · Last game October 12, 2014**
 
 6' 0", 200 lb · Born July 5, 1988 · Boise State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Kellen Moore](https://commons.wikimedia.org/wiki/Special:FilePath/Kellen_Moore_in_2012.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 26 | 17 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 6) | Detroit | 26 | 17 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Detroit | 25 | 17 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 21 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 22 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Detroit | 26 | 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Detroit | 26 | 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Detroit | 25 | 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

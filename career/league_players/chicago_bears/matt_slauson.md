@@ -1,10 +1,10 @@
 # Matt Slauson
 
-**Chicago Bears · Guard · No. 68 · Age 28 · Last game October 5, 2014**
+**Chicago Bears · Guard · No. 68 · Age 28 · Last game October 12, 2014**
 
 6' 5", 315 lb · Born February 18, 1986 · Nebraska · Drafted in 2009, sixth round, by the New York Jets
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Matt Slauson](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Slauson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 3 (2014, through Week 5).
+**Sacks allowed:** 3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 28 | 68 | 5 | 5 | 343 | 3 | 23 |
+| 2014 (through Week 6) | Chicago | 28 | 68 | 6 | 6 | 400 | 3 | 25 |
 | 2013 | Chicago | 27 | 68 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

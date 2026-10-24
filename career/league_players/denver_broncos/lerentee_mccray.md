@@ -1,10 +1,10 @@
 # Lerentee McCray
 
-**Denver Broncos · Defensive end · No. 55 · Age 24 · Last game October 5, 2014**
+**Denver Broncos · Defensive end · No. 55 · Age 24 · Last game October 12, 2014**
 
 6' 2", 249 lb · Born August 26, 1990 · Florida
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Lerentee McCray](https://commons.wikimedia.org/wiki/Special:FilePath/Lerentee_McCray.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve strongside linebacker.
 
-**Sacks:** 0 (2014, through Week 5).
+**Sacks:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 24 | 55 | 4 | 6 | 5 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Denver | 24 | 55 | 5 | 6 | 5 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 24 | 55 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Denver | 24 | 55 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

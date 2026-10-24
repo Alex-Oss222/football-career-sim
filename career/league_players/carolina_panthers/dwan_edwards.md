@@ -1,10 +1,10 @@
 # Dwan Edwards
 
-**Carolina Panthers · Defensive tackle · No. 92 · Age 33 · Last game October 5, 2014**
+**Carolina Panthers · Defensive tackle · No. 92 · Age 33 · Last game October 12, 2014**
 
 6' 3", 305 lb · Born May 16, 1981 · Oregon State · Drafted in 2004, second round, by Baltimore
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Dwan Edwards](https://commons.wikimedia.org/wiki/Special:FilePath/Dwan_Edwards.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 33 | 92 | 5 | 11 | 9 | 2 | 4 | 1 | 1 |
+| 2014 (through Week 6) | Carolina | 33 | 92 | 6 | 12 | 10 | 2 | 4 | 1 | 1 |
 | 2013 | Carolina | 32 | 92 | 16 | 70 | 48 | 22 | 9 | 9 | 17 |
-| Career |  |  |  | 21 | 81 | 57 | 24 | 13 | 10 | 18 |
+| Career |  |  |  | 22 | 82 | 58 | 24 | 13 | 10 | 18 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 33 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Carolina | 33 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Carolina | 32 | 92 | 0 | 0 | 3 | 3 | 3 | N/A |
 
 ### Playoffs

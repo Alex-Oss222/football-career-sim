@@ -1,10 +1,10 @@
 # J.D. Walton
 
-**New York Giants · Center · No. 55 · Age 27 · Last game October 5, 2014**
+**New York Giants · Center · No. 55 · Age 27 · Last game October 12, 2014**
 
 6' 3", 305 lb · Born March 24, 1987 · Baylor; Arizona State · Drafted in 2010, third round, by Denver
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![J.D. Walton](https://commons.wikimedia.org/wiki/Special:FilePath/J._D._Walton_2011.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 1 (2014, through Week 5).
+**Sacks allowed:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Giants | 27 | 55 | 5 | 5 | 288 | 1 | 22 |
+| 2014 (through Week 6) | N.Y. Giants | 27 | 55 | 6 | 6 | 342 | 2 | 27 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Amini Silatolu
 
-**Carolina Panthers · Guard · No. 66 · Age 26 · Last game October 5, 2014**
+**Carolina Panthers · Guard · No. 66 · Age 26 · Last game October 12, 2014**
 
 6' 4", 315 lb · Born September 16, 1988 · Midwestern State; San Joaquin Delta College · Drafted in 2012, second round, by Carolina
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Amini Silatolu](https://commons.wikimedia.org/wiki/Special:FilePath/Amini_Silatolu_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 3 (2014, through Week 5).
+**Sacks allowed:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Carolina | 25 | 66 | 5 | 5 | 307 | 3 | 21 |
+| 2014 (through Week 6) | Carolina | 25 | 66 | 6 | 6 | 378 | 4 | 27 |
 | 2013 | Carolina | 24 | 66 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

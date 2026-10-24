@@ -1,10 +1,10 @@
 # Jonathan Casillas
 
-**Tampa Bay Buccaneers · Outside linebacker · No. 52 · Age 27 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Outside linebacker · No. 52 · Age 27 · Last game October 12, 2014**
 
 6' 1", 227 lb · Born June 3, 1987 · Wisconsin
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jonathan Casillas](https://commons.wikimedia.org/wiki/Special:FilePath/Jonathan_Casillas_Saints_parade.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting strongside linebacker.
 
-**Tackles:** 40 (2014, through Week 5).
+**Tackles:** 51 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 27 | 52 | 5 | 40 | 30 | 10 | 4 | 0 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 27 | 52 | 6 | 51 | 38 | 13 | 4 | 0 | 0 |
 | 2013 | Tampa Bay | 26 | 52 | 16 | 26 | 17 | 9 | 1 | 2 | 2 |
-| Career |  |  |  | 21 | 66 | 47 | 19 | 5 | 2 | 2 |
+| Career |  |  |  | 22 | 77 | 55 | 22 | 5 | 2 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 27 | 52 | 0 | 0 | 3 | 0 | 1 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 27 | 52 | 0 | 0 | 3 | 0 | 1 | 0 |
 | 2013 | Tampa Bay | 26 | 52 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Antonio Brown
 
-**Pittsburgh Steelers · Wide receiver · No. 84 · Age 26 · Last game October 5, 2014**
+**Pittsburgh Steelers · Wide receiver · No. 84 · Age 26 · Last game October 12, 2014**
 
 5' 10", 186 lb · Born July 10, 1988 · Central Michigan · Drafted in 2010, sixth round, by Pittsburgh
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Antonio Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Antonio_Brown_2015.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 5.6 (2014, through Week 5).
+**Yards per target:** 7.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 26 | 84 | 5 | 29 | 19 | 161 | 8.5 | 1 | 21 | 32.2 | 65.5 |
+| 2014 (through Week 6) | Pittsburgh | 26 | 84 | 6 | 42 | 28 | 294 | 10.5 | 2 | 46 | 49.0 | 66.7 |
 | 2013 | Pittsburgh | 25 | 84 | 5 | 48 | 32 | 289 | 9.0 | 2 | 29 | 57.8 | 66.7 |
-| Career |  |  |  | 10 | 77 | 51 | 450 | 8.8 | 3 | 29 | 45.0 | 66.2 |
+| Career |  |  |  | 11 | 90 | 60 | 583 | 9.7 | 4 | 46 | 53.0 | 66.7 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 6) | Pittsburgh | 26 | 84 | 0 | 0 | 0 | 2 | 2 |
+| 2013 | Pittsburgh | 25 | 84 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 26 | 84 | 0 | 0 | N/A | 2 | 8 | 4.0 |
+| 2014 (through Week 6) | Pittsburgh | 26 | 84 | 0 | 0 | N/A | 4 | 23 | 5.8 |
 | 2013 | Pittsburgh | 25 | 84 | 0 | 0 | N/A | 11 | 127 | 11.5 |
 
 ### Playoffs
