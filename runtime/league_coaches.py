@@ -406,7 +406,8 @@ def first_practice_day(season, week, root=ROOT, job=None):
 def practice_weeks_opened(season, root=ROOT):
     """The weeks whose practice week has opened: the week closed, its practice record written, or the
     master date past the day of its first practice. A brief issued or an item opened for the week
-    does not count: both open at the previous week's close, before that week's check is drawn."""
+    does not count: both open at the rebuild that follows the previous week's check, and at the first
+    run after step 5's merge they were already open before it."""
     paths = SeasonPaths(season, root)
     weeks = set(closed_weeks(season, root))
     today = master_date(root)
@@ -428,8 +429,9 @@ def practice_weeks_opened(season, root=ROOT):
 def coverage_errors(root=ROOT, season=None):
     """Every closed week's check is recorded before the practice week it must precede opens (the
     next week's; for the retroactive Weeks 1 to 5, Week 7's, since they come before Week 6's check),
-    and the checks were made in week order. The next week's brief and items open at the close,
-    before the check runs, so they do not count (``practice_weeks_opened``). Nothing is due while the
+    and the checks were made in week order. The next week's brief and items do not count, whether
+    they open after the check (the rebuild that follows it) or were already open before it, as at the
+    first run after step 5's merge (``practice_weeks_opened``). Nothing is due while the
     method is not adopted."""
     root = Path(root)
     season = _season(root) if season is None else season

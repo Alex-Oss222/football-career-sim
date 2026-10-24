@@ -56,7 +56,7 @@
   "never_read": "No real 2014 result, firing or personnel record, no rails data and no library record but the rate table; the season's fixtures give only each closed game's date; no field names the protagonist."
  },
  "draw": {
-  "when": "Once per closed regular-season week, after the week's slate closes and before the next week's practice week opens (scripts/coaching_check.py WEEK --close; the next week's brief and items open at the close, before the check, and do not count), every week that has a club at risk, in week order; a second run of a week is refused, and a failed commit is never redrawn under the same event id",
+  "when": "Once per closed regular-season week, after the week's slate closes and before the rebuild that opens the next week (scripts/coaching_check.py WEEK --close; docs/run_week.md step 8), and in any case before the next week's practice week opens; when the next week's brief and items are already open, as at the first run after step 5's merge, they do not count. Every week that has a club at risk, in week order; a second run of a week is refused, and a failed commit is never redrawn under the same event id",
   "event_id": "SEASON-week-NN-head-coach-check, one private event per week through the private client's close_event, the January carousel's packet pattern (procedure, event id, snapshot, method, table, code and inputs digests)",
   "at_risk": "a club that played in the week, in its games 1 to 15 (the table holds no rate for a club's last regular-season game: a change after it is the season-end draw's), not changed earlier in the season; a club on its bye has no line that week",
   "order": "the clubs at risk in alphabetical order of their names, one uniform number each from the event's random stream",
