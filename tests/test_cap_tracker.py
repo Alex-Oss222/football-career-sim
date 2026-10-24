@@ -11,7 +11,13 @@ from scripts.render_jaguars_cap_tracker import (
 
 class CapTrackerTests(unittest.TestCase):
     def setUp(self):
+        # The club-level contract inputs with the player rows and their date from the contract
+        # records, as the inputs held them before the records became their one owner (render reads
+        # the records itself, so it is given the inputs alone).
+        from runtime import player_contracts
         self.data = json.loads((ROOT / INPUT).read_text())
+        self.data['players'] = player_contracts.rows(ROOT)
+        self.data['as_of'] = player_contracts.as_of(ROOT)
 
     def player(self, name):
         return next(p for p in self.data['players'] if p['name'] == name)
@@ -97,7 +103,7 @@ class CapTrackerTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'Carryover working estimate'):
             validate(self.data)
 
-    def test_present_dataset_matches_roster_and_current_contract_table(self):
+    def test_present_dataset_matches_roster(self):
         self.assertEqual(validate(self.data), [str(y) for y in range(2014, 2026)])
 
     def test_readable_horizon_and_separate_organization_payroll(self):
@@ -165,8 +171,11 @@ class CapTrackerTests(unittest.TestCase):
         p=self.player('Justin Blackmon')
         self.assertTrue(p.get('former_player'))
         self.assertEqual([p['years'][y]['status'] for y in ['2014','2015']], ['not_committed','not_committed'])
-        dead=[d['amount'] for d in self.data['dead_money'] if d['player']=='Justin Blackmon']
+        from runtime import player_contracts
+        dead=[d['amount'] for d in player_contracts.dead_money(ROOT) if d['player']=='Justin Blackmon']
         self.assertEqual(dead, [2*2975818])
+        # The charge lives on his contract record's trade ending, not in the inputs' club-level rows.
+        self.assertNotIn('Justin Blackmon', [d['player'] for d in self.data['dead_money']])
 
     def test_every_signed_2014_deal_is_priced_and_estimates_stay_separate(self):
         current=[p for p in self.data['players'] if p['control'] in {'signed','future'}]
@@ -194,12 +203,17 @@ class CapTrackerTests(unittest.TestCase):
         self.assertEqual(working_charge(self.player('Jonathan Grimes')['years']['2014']),570000)
         self.assertTrue(all(r['status']!='term_unknown' for p in self.data['players'] for r in p['years'].values()))
 
-    def test_estimated_current_charge_must_match_the_owner_table(self):
+    def test_the_views_are_built_from_the_contract_records_not_a_copy(self):
+        # The contract records own the player rows (rebuild step 5); an edit to a copy of the rows
+        # changes no cap view.
+        before=render(copy.deepcopy(self.data))
         row=self.player('Jeremy Mincey')['years']['2014']
         row['base']+=1000
         row['approximate_cap']+=1000
-        with self.assertRaisesRegex(ValueError,'Current charge differs'):
-            validate(self.data)
+        self.assertEqual(render(self.data), before)
+        from runtime import player_contracts
+        self.assertEqual(self.data['players'][0], player_contracts.rows(ROOT)[0])
+        self.assertNotEqual(self.data['players'], player_contracts.rows(ROOT))
 
     def test_covered_years_cannot_revert_to_placeholders(self):
         self.player('Kirk Cousins')['years']['2015'] = {

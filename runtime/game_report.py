@@ -503,3 +503,54 @@ def validation_errors(root=ROOT, seasons=None):
                                          " (python scripts/freeze_pregame.py %d --season %d at the game-day commit)"
                                          % (week, year))
     return errors
+
+
+# ------------------------------------------------------------------ the week's results (rebuild step 5)
+REPORT_LINK = re.compile(r"\]\(\s*<?([^)\s>]+)>?(?:\s+\"[^\"]*\")?\s*\)")
+# A stored text shorter than this many words is too common to call a copy when it recurs.
+COPIED_WORDS = 6
+
+
+def _plain(text):
+    return re.sub(r"\s+", " ", str(text)).strip().lower()
+
+
+def result_link_errors(report_text, results, report_rel=None, label="Game Report"):
+    """F15 (docs/event_inserts.md, section A.5): the week's report links each separate result and
+    never pastes one. ``results`` are the period's resolved event records, passed in (the lead's
+    validation passes runtime/open_events.period_events; this module reads no event store): each
+    names its page (``resolution.result_page``), which the report must link, and its "What happened"
+    texts (the summary, each process entry and the decision), none of which the report may copy.
+    With ``report_rel`` (the report's repository path) a link must resolve to the result page itself;
+    without it, a link to a page of the same file name counts. Every result stays its own page: a
+    combined summary is not a substitute."""
+    import posixpath
+    from urllib.parse import unquote
+    errors = []
+    targets = set()
+    for dest in REPORT_LINK.findall(report_text):
+        path = unquote(dest.split("#", 1)[0])
+        if not path or "://" in path:
+            continue
+        if report_rel is not None:
+            targets.add(posixpath.normpath(posixpath.join(posixpath.dirname(report_rel), path)))
+        else:
+            targets.add(posixpath.basename(path))
+    plain = _plain(report_text)
+    for record in results or ():
+        res = record.get("resolution") or {}
+        page = res.get("result_page")
+        if not page:
+            continue
+        wanted = posixpath.normpath(page) if report_rel is not None else posixpath.basename(page)
+        if wanted not in targets:
+            errors.append("%s: the result for %s (%s) is not linked; the report links each result, never "
+                          "replaces it" % (label, record.get("subject"), page))
+        texts = [(record.get("summary") or {}).get("text"), (res.get("decision") or {}).get("text")]
+        texts += [e.get("what") for e in record.get("process") or ()]
+        for text in texts:
+            if text and len(str(text).split()) >= COPIED_WORDS and _plain(text).rstrip(".") in plain:
+                errors.append("%s: copies the result for %s (%r); link the result page instead of pasting it"
+                              % (label, record.get("subject"), str(text)))
+                break
+    return errors

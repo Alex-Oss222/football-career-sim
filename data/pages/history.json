@@ -1,5 +1,5 @@
 {
- "scope": "Every Markdown page under career/ written before 2014 Week 6 (the close of Week 5, October 5, 2014), by path, with the sha256 digest of its bytes as it stood before Week 6 (recorded with rebuild step 3a, October 19, 2026, after that step's rebuild of the age views for the canon birth-date change). These pages are history under rebuild rule 1: a page is exempt from the clean-page check only while its bytes match its digest. \"lengths\" holds the length in bytes of each page as it stood before Week 6 (recorded with rebuild step 3b, October 19, 2026, from the same bytes, every page still matching its digest): an append-only page whose current bytes begin with exactly those bytes is checked only on the entries that follow them. A page rewritten from Week 6 on is checked like a new page; a page the player page builder writes is checked by its marker. An entry may be re-recorded after its page changed only in link destinations because a page it links to moved (docs/rebuild_plan.md, \"Pages written before Week 6\", the rule of October 19, 2026); its digest and length then hold the re-recorded bytes, and a moved page's entry moves to its new path.",
+ "scope": "Every Markdown page under career/ written before 2014 Week 6 (the close of Week 5, October 5, 2014), by path, with the sha256 digest of its bytes as it stood before Week 6 (recorded with rebuild step 3a, October 19, 2026, after that step's rebuild of the age views for the canon birth-date change). These pages are history under rebuild rule 1: a page is exempt from the clean-page check only while its bytes match its digest. \"lengths\" holds the length in bytes of each page as it stood before Week 6 (recorded with rebuild step 3b, October 19, 2026, from the same bytes, every page still matching its digest): an append-only page whose current bytes begin with exactly those bytes is checked only on the entries that follow them. A page rewritten from Week 6 on is checked like a new page; a page the player page builder writes is checked by its marker. An entry may be re-recorded after its page changed only in link destinations because a page it links to moved (docs/rebuild_plan.md, \"Pages written before Week 6\", the rule of October 19, 2026); its digest and length then hold the re-recorded bytes, and a moved page's entry moves to its new path. A page may also be split into one page per part (the split rule of rebuild step 5, recorded with part B2, October 24, 2026): \"splits\" holds, by the original's path, its digest and length as written before Week 6 (its entry leaves \"pages\"), each part's path (in the original's folder), its one title line, the byte ranges of the original it is made of in order, and the digest and length of its bytes, and each section moved elsewhere with its byte range, its destination and its bytes, so the parts and the moved sections rebuild the original. A part is exempt on its ranges while it keeps those bytes; its title line, and anything after its recorded bytes, is checked like a new page.",
  "through": "2014-10-05",
  "pages": {
   "career/2013/README.md": "49670df88dede92a673693c99a69e85ad2bbe8bf6cae90274c964de6431c4815",
@@ -546,7 +546,6 @@
   "career/2014/Team_Operations/Trades/supporting_records/trade_sheets_2014-03-24.md": "53497ab465897cc4033ed3d60fa6193f505b15e254a0e1c7f8524ad61804c718",
   "career/2014/Team_Operations/Trades/targets_and_offers/README.md": "ea76a6327a535850c953dcff871ecfbdb5ac6beae4c04089c972d06f703873e9",
   "career/2014/Team_Operations/Trades/targets_and_offers/package_i_negotiation_2014-03-20.md": "84d95aa92c6df4e6c30031ea92cf2c41488127261982417ec16995d42ba04572",
-  "career/2014/Team_Operations/Trades/targets_and_offers/trade_offers.md": "58216a4c27a797ceca53d534885325943841890fc5c4b7868b54111f1d04ed8c",
   "career/2014/Team_Operations/Trades/targets_and_offers/trade_targets.md": "eb6e2fcdce780b630da9694f5957ae857e56336323f05e9529c3270b7312e1c0",
   "career/2014/Training_Camp_and_Preseason/Position_Battles/Defense/Edge/Edge_1.md": "3299348cc87434a2947f1688af1e5253171778b206040b51f491f3d1bbfce808",
   "career/2014/Training_Camp_and_Preseason/Position_Battles/Defense/Edge/README.md": "a30308769995d1da8a4bc4da7f47c3a55eb6c835ffd3e905ee64ea6883fe48f3",
@@ -1166,7 +1165,6 @@
   "career/2014/Team_Operations/Trades/supporting_records/trade_sheets_2014-03-24.md": 17623,
   "career/2014/Team_Operations/Trades/targets_and_offers/README.md": 163,
   "career/2014/Team_Operations/Trades/targets_and_offers/package_i_negotiation_2014-03-20.md": 3513,
-  "career/2014/Team_Operations/Trades/targets_and_offers/trade_offers.md": 9119,
   "career/2014/Team_Operations/Trades/targets_and_offers/trade_targets.md": 5831,
   "career/2014/Training_Camp_and_Preseason/Position_Battles/Defense/Edge/Edge_1.md": 16470,
   "career/2014/Training_Camp_and_Preseason/Position_Battles/Defense/Edge/README.md": 209,
@@ -1240,5 +1238,163 @@
   "career/playbook/alex_stone_2025_2026_mature_system_multiple_conflict_defense.md": 40779,
   "career/playbook/alex_stone_2025_2026_mature_system_multiple_stress_offense.md": 148218,
   "career/player_profiles/README.md": 2742
+ },
+ "splits": {
+  "career/2014/Team_Operations/Trades/targets_and_offers/trade_offers.md": {
+   "sha256": "58216a4c27a797ceca53d534885325943841890fc5c4b7868b54111f1d04ed8c",
+   "length": 9119,
+   "recorded": "2026-10-24",
+   "why": "One page per trade call (rebuild step 5, part B2): from Week 6 each club's call is its own event, so the offer log written before Week 6 is split into its eight calls, and the page at its path becomes their built index.",
+   "parts": [
+    {
+     "path": "career/2014/Team_Operations/Trades/targets_and_offers/nwaneri_to_arizona_2014-03-11.md",
+     "title": "# Trade call: Arizona for No. 38, March 11 to 20, 2014",
+     "ranges": [
+      [
+       546,
+       1777
+      ],
+      [
+       3095,
+       3497
+      ]
+     ],
+     "sha256": "61ef8e0226d5f05c36bb3de742a891063bc7dd19e95617ad4de34d05495b5255",
+     "length": 1689
+    },
+    {
+     "path": "career/2014/Team_Operations/Trades/targets_and_offers/nwaneri_to_san_francisco_2014-03-11.md",
+     "title": "# Trade call: San Francisco for Nwaneri, March 11 to 18, 2014",
+     "ranges": [
+      [
+       1777,
+       2382
+      ]
+     ],
+     "sha256": "49b55fdad7a51700ae083f9b0c97da82cd59fa4644af5efb29b012ddb37dec13",
+     "length": 668
+    },
+    {
+     "path": "career/2014/Team_Operations/Trades/targets_and_offers/babin_to_miami_2014-03-11.md",
+     "title": "# Trade call: Miami for Babin, March 11 to 24, 2014",
+     "ranges": [
+      [
+       2382,
+       3095
+      ],
+      [
+       3497,
+       4061
+      ]
+     ],
+     "sha256": "945620964fdb1b92f597c0c8184f4811d7b46f303e8d55892074346dc82e5aa7",
+     "length": 1330
+    },
+    {
+     "path": "career/2014/Team_Operations/Trades/targets_and_offers/alualu_to_houston_2014-03-24.md",
+     "title": "# Trade call: Houston for Alualu, March 24, 2014",
+     "ranges": [
+      [
+       3497,
+       3875
+      ],
+      [
+       4061,
+       4177
+      ]
+     ],
+     "sha256": "444d5a24b31c32058bacac7ab2fe6f754d99144883036ebbd09f9d6ae28b865a",
+     "length": 544
+    },
+    {
+     "path": "career/2014/Team_Operations/Trades/targets_and_offers/allen_to_arizona_2014-03-24.md",
+     "title": "# Trade call: Arizona for Allen, March 24 to April 7, 2014",
+     "ranges": [
+      [
+       3497,
+       3875
+      ],
+      [
+       4177,
+       4750
+      ],
+      [
+       5102,
+       5103
+      ],
+      [
+       6955,
+       7330
+      ]
+     ],
+     "sha256": "4738d407be023fcb07a7b6fe0035de1a42367b731612c0872791a2060e577fa6",
+     "length": 1387
+    },
+    {
+     "path": "career/2014/Team_Operations/Trades/targets_and_offers/shorts_blackmon_to_indianapolis_2014-03-31.md",
+     "title": "# Trade call: Indianapolis for Shorts and Blackmon, March 31, 2014 (Seattle and Carolina called the same day)",
+     "ranges": [
+      [
+       5103,
+       6239
+      ]
+     ],
+     "sha256": "dc558390a1842e20412a728bf9b19d670a90599b9bf86aa5ba561ae275e68c24",
+     "length": 1247
+    },
+    {
+     "path": "career/2014/Team_Operations/Trades/targets_and_offers/colts_picks_to_washington_2014-03-31.md",
+     "title": "# Trade call: Washington for the Colts picks, March 31, 2014",
+     "ranges": [
+      [
+       6239,
+       6955
+      ]
+     ],
+     "sha256": "632b060a3cef0a2b5db62c6548a134db6bd41a252c73c3814cc8d47f9c19498f",
+     "length": 778
+    },
+    {
+     "path": "career/2014/Team_Operations/Trades/targets_and_offers/rackley_to_seattle_2014-05-11.md",
+     "title": "# Trade call: Seattle for Rackley, March 24 to May 12, 2014 (six clubs called on May 11)",
+     "ranges": [
+      [
+       3497,
+       3875
+      ],
+      [
+       4750,
+       5103
+      ],
+      [
+       7330,
+       8224
+      ]
+     ],
+     "sha256": "55905326ae13a1cff78cfc5db4d6f82d1ded3e00586150237f745ae6ff2ba5de",
+     "length": 1715
+    }
+   ],
+   "moved": [
+    {
+     "range": [
+      0,
+      546
+     ],
+     "to": "career/2014/Team_Operations/Trades/targets_and_offers/trade_offers.md",
+     "what": "The log's title line and opening paragraph: the opening of the built index of the calls at the same path.",
+     "text": "# Jacksonville 2014 trade offer log\n\nDated record of every actual trade communication, in order. The plan and each trade's current status are in [trade targets](trade_targets.md); finished deals are in [completed trades](../completed_trades/trades.md). The trade window opened March 11, 2014 at 4 p.m. ET. The earlier conditional Shorts-and-Blackmon trade with Seattle (triggered only if Edelman signed) and the Minnesota trade-up to No. 31 were never offered; Stone's March 31 instruction started a new Shorts-and-Blackmon trade, logged below.\n\n"
+    },
+    {
+     "range": [
+      8224,
+      9119
+     ],
+     "to": "docs/update_workflow.md",
+     "what": "Adding an entry: how a trade communication is recorded, now part of the working rules for trade calls.",
+     "text": "## Adding an entry\n\nRecord each new communication once, dated, with:\n\n- simulation date and time, the trade, initiating club, actual counterparty and authority;\n- exact players and picks by year, round and original club, with verified control and encumbrances;\n- offered terms, any counter, acceptance conditions, physical and medical disclosure, cash or guarantee obligations and expiry;\n- status: inquiry, offered, countered, agreed in principle, awaiting conditions, declined, withdrawn, expired or processed;\n- next action and responsible party, then the completed-trade and dated-record links once processed.\n\nA counter adds to the entry without erasing earlier terms. Agreed in principle does not change control. A return outside the [authorized terms](trade_targets.md) is a new decision for Stone and Caldwell, not an invented answer. Close still-open entries when their window expires.\n"
+    }
+   ]
+  }
  }
 }

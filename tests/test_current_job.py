@@ -7,7 +7,7 @@ sheet a test writes goes into the active season's folders. The parity test
 writes its own value-form Document 3 rows, so it holds whether Document 3
 carries the values or pointers to the job record.
 """
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 import json
 from pathlib import Path
 import re
@@ -221,6 +221,77 @@ class CurrentJobTests(unittest.TestCase):
         self.current(job)["delegation"]["game_management"]["decisions"][0]["id"] = "fourth-down"
         self.assertTrue(any("game-management decision id fourth-down must be one of" in e
                             for e in self.errors_with(job)))
+
+    def test_the_standing_practice_instruction_is_the_users_answer(self):
+        # The user's answer of October 23, 2026, "Spread the pads (Recommended)", recorded in the
+        # rebuild plan's change log and stored as data the practice week is built from.
+        rule = current_job.practice_instruction(self.job, self.season)
+        self.assertIsNotNone(rule)
+        self.assertEqual((rule["status"], rule["closes"], rule["record"]),
+                         ("IN_FORCE", ["practice_plan"], {"path": "docs/rebuild_plan.md", "anchor": "change-log"}))
+        self.assertIsNone(current_job.practice_instruction(self.job, self.season + 1))
+        log = (ROOT / "docs/rebuild_plan.md").read_text(encoding="utf-8").split("## Change log", 1)[1]
+        entry = re.search(r"^- (\w+ \d+, \d{4}): the user answered four multiple-choice questions.*?(?=^- |\Z)",
+                          log, re.M | re.S)
+        self.assertIn('Practice, "Spread the pads (Recommended)"', entry[0])
+        self.assertEqual(datetime.strptime(entry[1], "%B %d, %Y").date().isoformat(), rule["given"]["user_date"])
+        # A practice schedule is neither a game direction nor a career answer.
+        self.assertEqual(rule["subject"], "practice_schedule")
+        self.assertNotIn(rule["subject"], current_job.SUBJECTS + current_job.CAREER_SUBJECTS)
+        self.assertIn(rule["subject"], current_job.ITEM_SUBJECTS)
+        schedule = rule["schedule"]
+        self.assertEqual(schedule["week"]["days_off"], [{"day": "Tuesday", "scope": "players"}])
+        self.assertEqual([(s["day"], s["type"]) for s in schedule["week"]["sessions"]],
+                         [("Wednesday", "practice"), ("Thursday", "practice"), ("Friday", "practice"),
+                          ("Saturday", "walkthrough")])
+        self.assertEqual([(p["week"], p["day"]) for p in schedule["equipment"]["pads"]],
+                         [(w, "Wednesday") for w in (7, 9, 13, 15, 17)])
+        self.assertEqual((schedule["equipment"]["padded"], schedule["equipment"]["otherwise"]),
+                         ("helmets_and_shoulder_pads", "helmets"))
+        # The shape is the Weeks 1 to 5 week, each before a Sunday game, and it applies after them.
+        club = self.current(self.job)["employer"]["club"]
+        games = {g["week"]: g for g in SeasonPaths(self.season, self.root).regular_games()
+                 if club in (g["away"], g["home"])}
+        first = schedule["from_week"]
+        self.assertTrue(all(games[w]["weekday"] == schedule["week"]["game_day"] for w in range(1, first)))
+        self.assertTrue(all(p["week"] in games for p in schedule["equipment"]["pads"]))
+        # The added day off is a Monday and gives November the four days off, bye days not counted:
+        # the bye is the week after the last game before it.
+        added = [date.fromisoformat(a["on"]) for a in schedule["added_days_off"]]
+        self.assertEqual([d.strftime("%A") for d in added], ["Monday"])
+        bye = next(w for w in range(first, max(games)) if w not in games)
+        before = date.fromisoformat(games[bye - 1]["date"])
+        bye_days = {before + timedelta(days=n) for n in range(1, 8)}
+        month = added[0].replace(day=1)
+        days = [month + timedelta(days=n) for n in range(31) if (month + timedelta(days=n)).month == month.month]
+        off = [d for d in days if d.strftime("%A") == "Tuesday" and d not in bye_days] + \
+              [d for d in added if d.month == month.month]
+        self.assertEqual(len(off), 4)
+
+    def test_a_practice_instruction_is_checked_in_the_records_words(self):
+        def errors(change):
+            job = json.loads(json.dumps(self.job))
+            rule = next(i for i in self.current(job)["standing_instructions"] if i["subject"] == "practice_schedule")
+            change(rule, job)
+            return [e for e in self.errors_with(job) if "practice" in e]
+        self.assertEqual(errors(lambda rule, job: None), [])
+        cases = [
+            (lambda r, j: r["schedule"]["week"]["sessions"][0].update(day="Wensday"), "needs a weekday and a type"),
+            (lambda r, j: r["schedule"]["week"]["sessions"][0].update(type="scrimmage"), "needs a weekday and a type"),
+            (lambda r, j: r["schedule"]["week"]["days_off"][0].update(day="Wednesday"), "both a day off and a session"),
+            (lambda r, j: r["schedule"]["equipment"].update(otherwise="helmets_and_shoulder_pads"), "unpadded otherwise"),
+            (lambda r, j: r["schedule"]["equipment"]["pads"].append({"week": 7, "day": "Wednesday"}), "listed twice"),
+            (lambda r, j: r["schedule"]["equipment"]["pads"].append({"week": 8, "day": "Saturday"}), "practice day"),
+            (lambda r, j: r["schedule"]["equipment"]["pads"].append({"week": 1, "day": "Wednesday"}), "practice day"),
+            (lambda r, j: r["schedule"]["added_days_off"][0].update(on="2014-10-01"), "before the instruction"),
+            (lambda r, j: r["schedule"]["added_days_off"][0].update(on="November 24"), "needs an ISO date"),
+            (lambda r, j: r.pop("schedule"), "needs its schedule"),
+            (lambda r, j: self.current(j)["standing_instructions"].append(dict(json.loads(json.dumps(r)), id="second")),
+             "one practice instruction is in force"),
+        ]
+        for change, message in cases:
+            with self.subTest(message=message):
+                self.assertTrue(any(message in e for e in errors(change)), errors(change))
 
     def test_call_sheet_caller_parity(self):
         week, on = self.club_week()

@@ -1,0 +1,73 @@
+{
+ "schema_version": "inseason-hc-change-2014-v1",
+ "procedure": "inseason-hc-change-2014-v1",
+ "season": 2014,
+ "about": "The weekly check for head-coach changes at every club in season: one method for all 32 clubs, Jacksonville included, drawn after each closed week of the regular season. Read by runtime/league_coaches.py and scripts/coaching_check.py; the record of each week's check is week_NN.json beside this file. Written before the first draw; from the first draw on, this file and the rate table are frozen (each week's record carries their sha256, and validation holds them to it).",
+ "status": "adopted",
+ "adopted": {
+  "user_words": "One draw for all 32 (Recommended)",
+  "user_date": "2026-10-23",
+  "in_world": "2014-10-05",
+  "record": "docs/rebuild_plan.md#change-log",
+  "design": "docs/season_end.md#how-the-club-decides",
+  "answer": "Option 1 of library/2014_jacksonville_employment_decision_research.md (section 1.7): every club, Jacksonville included, uses the same real 2002 to 2012 rates, at season's end and in the weekly in-season check. A drawn Jacksonville change is Khan and Caldwell's decision (Document 3 row 1), effective the day after the game; if it happens before step 6's pages exist, the career holds there until they do."
+ },
+ "retroactive": {
+  "user_words": "Yes, check them (Recommended)",
+  "user_date": "2026-10-23",
+  "record": "docs/rebuild_plan.md#change-log",
+  "weeks": [1, 2, 3, 4, 5],
+  "due_before_check_of_week": 6,
+  "rule": "No club's Weeks 1 to 5 were checked, since they closed before this method existed. They are drawn once, in order, under this frozen method, before Week 6's check, all 32 clubs, Jacksonville included, each week its own private event. A club's draws stop at its first drawn change. A change drawn for a week already behind the club's latest closed game takes effect the day after that latest closed game; no closed week is rewritten. Until then the weeks are recorded here as due before Week 6's check, which is itself due before Week 7's practice week opens (Week 7's brief and items open at Week 6's close, before the check, and do not count)."
+ },
+ "clubs": "Every club in the season's fixtures (all 32), Jacksonville included, by this one method. Nothing the method reads names the protagonist or his club.",
+ "table": {
+  "file": "library/data/2012_hc_inseason_hazard.json",
+  "sha256": "59b759dd51926b4139985e9d04ed3442277f6abfbab3957f99de3d47475fb047",
+  "record": "library/2014_inseason_head_coach_changes.md",
+  "builder": "scripts/research/build_hc_inseason_hazard.py",
+  "verifier": "scripts/research/verify_hc_inseason_hazard.py",
+  "source": {
+   "repository": "nflverse/nfldata",
+   "file": "data/games.csv",
+   "commit": "04a6ffcccc8a58451f45cd282c0f14766aaa3479",
+   "url": "https://raw.githubusercontent.com/nflverse/nfldata/04a6ffcccc8a58451f45cd282c0f14766aaa3479/data/games.csv",
+   "sha256": "c14c7de28c9eb7027699b9b316f7276ea03e34a077c8ae65010f15a44a6780d1"
+  },
+  "use": "The sourced in-season rate (two passes) the designs require before the weekly check may generate a change (docs/season_end.md, section C, item 3; docs/event_inserts.md, section D). Nothing at run time opens games.csv: the check reads only this committed table."
+ },
+ "modelling_choice": {
+  "cells": "the club's losses minus wins after its game (ties count neither): 0 or fewer, 1 to 2, 3 to 4, 5 or more; by the coach's season with the club: his first, or a later one",
+  "smoothing": "each cell toward the overall per-game rate with a prior weight of 75 club-games (the January table's five club-seasons at fifteen at-risk games each); no cell merged",
+  "not_split": "recent playoffs: the seventeen in-season changes of 2002 to 2012 cannot support a third split (the library record shows the counts)",
+  "rule": "The career's labelled modelling choice, like the January factors: the user may change the cells and the smoothing before the first draw, never after."
+ },
+ "inputs": {
+  "record": "each club's wins, losses and ties after its game in the checked week, from the season's closed games only; its game number in the season",
+  "tenure": "first season when the club's head coach changed in the January head-coach changes of the same league year (the January carousel and its deferred draws, january_changes below), otherwise a later season; after an in-season change the club is not drawn again that season",
+  "january_changes": [
+   "data/2014/Early_Offseason/staff_changes/carousel_results.json",
+   "data/2014/Early_Offseason/staff_changes/carousel_deferred_results.json"
+  ],
+  "january_retained": {
+   "Jacksonville Jaguars": "The one club the January carousel did not draw: its head coach was kept by its own January 15, 2014 review (career/2013/season_review/owner_and_gm_review.md; the carousel method's scope, data/2014/Early_Offseason/staff_changes/carousel_method.json), so it changed no head coach in January, as each club the carousel kept."
+  },
+  "coach_names": "A name is a label on the records and pages only, never an input: the club's 2013 head coach as the January carousel names him (its source, the base-rate file's 2013 table, names each club's real 2013 opening-day coach, some of them hired after the January 15, 2013 divergence: research section 1.8, item 5), the January hire for a club that changed (Alan Lowry for Atlanta; an unnamed outside hire otherwise), and the job record's holder for the club he coaches. Settled with the method, before the first draw: no cell or chance reads a coach's identity or his count of seasons, only whether his club changed head coaches in January, so no real post-divergence hire changes any chance. The season-end draw's own settlement (step 6) is separate.",
+  "never_read": "No real 2014 result, firing or personnel record, no rails data and no library record but the rate table; the season's fixtures give only each closed game's date; no field names the protagonist."
+ },
+ "draw": {
+  "when": "Once per closed regular-season week, after the week's slate closes and before the rebuild that opens the next week (scripts/coaching_check.py WEEK --close; docs/run_week.md step 8), and in any case before the next week's practice week opens; when the next week's brief and items are already open, as at the first run after step 5's merge, they do not count. Every week that has a club at risk, in week order; a second run of a week is refused, and a failed commit is never redrawn under the same event id",
+  "event_id": "SEASON-week-NN-head-coach-check, one private event per week through the private client's close_event, the January carousel's packet pattern (procedure, event id, snapshot, method, table, code and inputs digests)",
+  "at_risk": "a club that played in the week, in its games 1 to 15 (the table holds no rate for a club's last regular-season game: a change after it is the season-end draw's), not changed earlier in the season; a club on its bye has no line that week",
+  "order": "the clubs at risk in alphabetical order of their names, one uniform number each from the event's random stream",
+  "chance": "the rate of the club's cell in the table; the club changes its head coach when its number falls below the chance",
+  "head_coaches_only": true
+ },
+ "effect": {
+  "date": "the day after the club's latest closed regular-season game when the week is drawn: the day after its game in a week drawn on time, and for a week already behind the club's latest closed game the day after that latest game; no closed week is rewritten",
+  "successor": "an interim head coach from its staff, unnamed: which real assistant took over is later knowledge",
+  "other_clubs": "a dated page in the season's head-coach changes folder, with its event-record line, and a head-coach-change news event for Stone (FOR YOUR INFORMATION in the next brief), both written once the master clock reaches the effective date (scripts/coaching_check.py --effective at each clock move)",
+  "jacksonville": "a change at the club the job holder coaches is Khan and Caldwell's decision, effective the day after the game, written as the Club Decision (step 6); while step 6's pages do not exist the check records the draw and the career holds there with a plain message"
+ },
+ "season_end": "The table's january_conditional block is the January rate conditional on no in-season change, for step 6's season-end draw only, so a club changed in season is not counted twice."
+}

@@ -1,0 +1,64 @@
+{
+ "schema_version": 1,
+ "name": "Mike Brewster",
+ "player": "mike_brewster",
+ "listed": 20,
+ "position": "C",
+ "roster_position": "C",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2012",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "mike_brewster_2012",
+   "club": "Jacksonville Jaguars",
+   "through": 2014,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 573334,
+     "base": 570000,
+     "proration": 3334,
+     "other_cap": 0,
+     "cash": 570000,
+     "guaranteed_base": 0
+    }
+   },
+   "type": "UDFA, 2012 (Jacksonville)",
+   "signed_text": "2012",
+   "term_text": "3 / 2014",
+   "value_text": "$1,450,000",
+   "bonus": {
+    "text": "$10,000 signing bonus; final 2014 allocation $3,334"
+   },
+   "guarantee_text": "No remaining guaranteed base salary established in the recovered schedule",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$3,334 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Three-year $1,450,000 deal reconstructed as $390,000/$480,000/$570,000 bases plus $10,000 bonus. Final bonus year carries the $1 rounding remainder.",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "library/2014_jaguars_original_contract_reconstruction.md"
+   ],
+   "rookie": "undrafted"
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 1 (2012: 12 games, 7 starts, then Reserve/Injured). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

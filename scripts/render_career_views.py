@@ -26,7 +26,14 @@ the full-year dates, which the calendar page keeps as written) are built here
 too. The injury report and the statistics index have their own builders
 (scripts/render_week_pages.py, scripts/render_season_stats.py).
 The staff register's phase-control table is no longer written: the Staff page
-(scripts/render_coach_pages.py) shows who calls what. Writing is refused while
+(scripts/render_coach_pages.py) shows who calls what. From rebuild step 5 the
+desk lists every OPEN item owned by the head coach whatever the phase, an
+event's answer due at its own time ("Due Tuesday, October 14, 4 p.m. ET"),
+never "before kickoff" unless it holds the game, an overdue one marked so, and
+each linked to the page he answers it on (its block on the period's My
+Responses page, or the bye's My Adjustments) and the brief that carries it;
+news and windows are never waiting on him, and "Coming up" adds the windows a
+brief issued now would show (runtime/deadlines.py), each once. Writing is refused while
 a Jacksonville game is paused; --check is read-only and exits 1 on a stale,
 malformed, unclean or unrenderable view.
 """
@@ -643,8 +650,9 @@ def render_desk(ctx):
     for when, what in ctx.scheduled:
         what = football(ctx.show("Document 5 section 9 event", what))
         if what:
-            events.append("- %s: %s" % (ctx.show("Document 5 section 9 date", when), what))
-    out += (events or ["Nothing else is scheduled."]) + [""]
+            events.append((_first_day(ctx, when), "- %s: %s" % (ctx.show("Document 5 section 9 date", when), what)))
+    events = _with_windows(ctx, events)
+    out += ([line for _, line in events] or ["Nothing else is scheduled."]) + [""]
     out += ["## With others", ""] + _with_others(ctx, [i for i in items if i.get("owner") != holder]) + [""]
     out += ["## Standing instructions", ""] + _instructions(ctx) + [""]
     out += ["## Who calls what", ""] + _callers(ctx) + ["", link(ctx, "Coaching staff", rel(ctx, ctx.paths.staff_page)), ""]
@@ -718,9 +726,85 @@ def _week_of(item):
     return None
 
 
+# ---- what is waiting, and the windows coming up (rebuild step 5, A6) ------------
+
+def _first_day(ctx, cell):
+    """The first day a Document 5 section 9 date cell names ("October 7 to 11" is October 7), or None."""
+    found = summary.MONTH_DAY.match(str(cell))
+    return summary.date_on(found[1], ctx.master) if found else None
+
+
+def _with_windows(ctx, events):
+    """The scheduled events with the COMING UP windows of a brief issued now (runtime/deadlines.py:
+    the trading deadline in its briefs, each player's eligibility windows) placed among them by day.
+    A window the schedule already names on its day (the player's surname, or the deadline) is not
+    shown twice. A window is never something waiting on him."""
+    from runtime import deadlines, open_events
+    at = open_events.master_at(ctx.root)
+    out = list(events)
+    for window in deadlines.coming_up(ctx.season, at, ctx.root):
+        when = open_events.parse_at(window["at"]) if window.get("at") else None
+        day_ = when.date() if when else date.fromisoformat(window["date"])
+        word = "deadline" if window["key"].endswith("deadline") else window["title"].split("'")[0].split()[-1]
+        if any(on == day_ and word.lower() in line.lower() for on, line in events):
+            continue
+        cell = day(day_, False) + (", " + kickoff("%02d:%02d" % (when.hour, when.minute))[:-3] if when else "")
+        line = "- %s: %s. %s" % (cell, ctx.show("COMING UP window title", window["title"]),
+                                ctx.show("COMING UP window why", window["why"]))
+        place = next((n for n, (on, _) in enumerate(out) if on is not None and on > day_), len(out))
+        out.insert(place, (day_, line))
+    return out
+
+
+def _safe_link(ctx, label, record):
+    """``link``, or None when the page or its heading is not there yet."""
+    try:
+        return link(ctx, label, record)
+    except ValueError:
+        return None
+
+
+ANSWER_LABELS = {"My_Responses.md": "My Responses", "My_Adjustments.md": "My Adjustments"}
+BRIEF_LABELS = (("Game_Week_Briefing.md", "Game Week Briefing"), ("Bye_Week_Review.md", "Bye Week Review"))
+
+
+def _answer_links(ctx, item):
+    """The page on which he answers ``item`` (its block on the period's My Responses page, or the
+    bye's My Adjustments) and the brief that carries it (the Game Week Briefing or the Bye Week
+    Review), when the item is answered on a page of its period; else []."""
+    from runtime import open_events
+    record = item.get("record") or {}
+    if item.get("event"):
+        from runtime import event_inserts, responses
+        event = open_events.get(ctx.season, item["event"], ctx.root)
+        if event is None or (event.get("period") or {}).get("phase"):
+            return []
+        try:
+            pages = responses.pages_of(ctx.season, event["period"], ctx.root)
+        except (ValueError, KeyError):
+            return []
+        bound = next((b for b in responses.record_of(ctx.season, event["period"], ctx.root).get("blocks") or ()
+                      if item["id"] in (b.get("item"), b.get("event"))), None)
+        if bound is None:
+            return []
+        record = {"path": rel(ctx, pages.responses), "anchor": event_inserts.slug(bound["heading"])}
+    name = Path(str(record.get("path", ""))).name
+    if name not in ANSWER_LABELS:
+        return []
+    folder = (ctx.root / record["path"]).parent
+    links = [_safe_link(ctx, ANSWER_LABELS[name], record)]
+    for file_name, label in BRIEF_LABELS:
+        if (folder / file_name).is_file():
+            links.append(_safe_link(ctx, label, rel(ctx, folder / file_name)))
+    return [l for l in links if l]
+
+
 def _waiting(ctx, items):
+    from runtime import open_events
     lines = []
     games = {g["week"]: g for g in ctx.games}
+    clock = open_events.master_clock(ctx.root)
+    overdue = {i.get("id") for i in decision_queue.overdue_items(ctx.queue, clock.at)}
     for n, item in enumerate(items, 1):
         field = "decision_queue.%s." % item["id"]
         line = "%d. **%s.**" % (n, ctx.show(field + "title", item["title"]).rstrip("."))
@@ -740,8 +824,15 @@ def _waiting(ctx, items):
             # The plan's practice work is needed before the week's first practice.
             line += ("; the practice work before the first practice, %s, %s." % (
                 practice.strftime("%A"), day(practice.isoformat(), False)) if practice else ".")
+        elif (item.get("deadline") or {}).get("at"):
+            # An answer that does not hold the game is due at its own time, never "before kickoff".
+            line += " Due %s." % open_events.at_text(open_events.parse_at(item["deadline"]["at"]))
         elif deadline:
             line += " Due by %s." % day(deadline, False)
+        elif item.get("event"):
+            line += " No due time is set."
+        if item.get("id") in overdue:
+            line += " Overdue since %s." % open_events.at_text(open_events.parse_at(item["deadline"]["at"]))
         waits = []
         from runtime.decisions import waits_ahead
         for wait in waits_ahead(item, ctx.master):     # an exam already held is not still to come
@@ -751,8 +842,11 @@ def _waiting(ctx, items):
                 waits.append(text)
         if waits:
             line += " Still to come: %s." % "; ".join(waits)
-        decision_pages = _decision_pages(ctx, week) if week is not None else []
-        if decision_pages:
+        answers = _answer_links(ctx, item)
+        decision_pages = _decision_pages(ctx, week) if week is not None and not answers else []
+        if answers:
+            line += " " + " · ".join(answers)
+        elif decision_pages:
             line += " " + " · ".join(decision_pages)
         elif week is not None and (ctx.paths.week_folder(week) / "README.md").is_file():
             line += " " + _week_readme(ctx, week, "Week %d" % week)

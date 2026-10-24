@@ -46,9 +46,11 @@ Every `record` is `{"path", "anchor"?, "pointer"?}`: a repository-relative path 
 | `delegation.play_calling` | Dated intervals per phase: `caller`, `prepares`, optional `transmits`, `transmits_what`, `front_declaration`, `interim`, `instructed`, `from` (inclusive), `to` (the handover date, exclusive) and `stone_retains` |
 | `delegation.game_management` | The retained game decisions, each with an `id` from the subject vocabulary below and a `mechanism`: `live` (a pause), `sheet_rule` (the frozen call sheet), `not_live` (set by the game model) or `not_modelled` |
 | `delegation.relay`, `delegation.emergency` | Who carries what on game day; the emergency practice leads, their limits and the game-day caller (null: not appointed) |
-| `standing_instructions` | `id`, `subject`, `status` (`IN_FORCE`, `RECORDED`, `SUPERSEDED`, `WITHDRAWN`), the queue classes it `closes`, `summary`, optional `applies`, `given` or `effective`, and its record |
+| `standing_instructions` | `id`, `subject`, `status` (`IN_FORCE`, `RECORDED`, `SUPERSEDED`, `WITHDRAWN`), the queue classes it `closes`, `summary`, optional `applies`, `given` or `effective`, and its record; the practice instruction also has its `schedule` (below) |
 
-A `subject`, on an instruction or a queue item, is one of `ITEM_SUBJECTS` in `runtime/current_job.py`: `play_calling`, `inactives`, the game-management ids (`fourth_down`, `two_point`, `kickoff`, `timeouts_and_clock`, `replay_challenge`) and the two career answers in `CAREER_SUBJECTS` (`assistant_interview_permission`, Jacksonville's permission for an assistant to interview elsewhere, and `outside_job_approach`, the holder's own answer to another club's approach). A game-management decision takes only a game subject. Validation refuses any other, so an item cannot escape an instruction's coverage by a spelling.
+A `subject`, on an instruction or a queue item, is one of `ITEM_SUBJECTS` in `runtime/current_job.py`: `play_calling`, `inactives`, the game-management ids (`fourth_down`, `two_point`, `kickoff`, `timeouts_and_clock`, `replay_challenge`), the two career answers in `CAREER_SUBJECTS` (`assistant_interview_permission`, Jacksonville's permission for an assistant to interview elsewhere, and `outside_job_approach`, the holder's own answer to another club's approach), and the week's practice schedule in `PRACTICE_SUBJECTS` (`practice_schedule`, Document 3 row 11). A game-management decision takes only a game subject, and the Game Week Briefing lists only the game's standing instructions; the desk and Document 5 list every one. Validation refuses any other, so an item cannot escape an instruction's coverage by a spelling.
+
+The standing practice instruction (`current_job.practice_instruction`, one in force a season; the user's answer of October 23, 2026, recorded in the [rebuild plan's change log](rebuild_plan.md#change-log)) closes the week's `practice_plan` question. Its `schedule` is the instruction's own words as data, in the practice record's vocabulary (`runtime/practices.py`): the `season` and the `from_week` it applies from; the `week` shape before a game on its `game_day` (the players' `days_off` and each session's `day` and `type`); the `equipment` (`pads` by week and day, in `padded`, every other session in `otherwise`); and the `added_days_off` by date. Validation holds it to that vocabulary; the padded-practice and rest limits are the practice record's check of each week's schedule (rebuild step 5), not this record's.
 
 ### The decision queue
 
@@ -61,7 +63,8 @@ A `subject`, on an instruction or a queue item, is one of `ITEM_SUBJECTS` in `ru
 | `raised` | `date`, `by` (`user`, `workflow`, `staff`, `organization`, `medical`), optional closed `event` |
 | `status`, `resolution` | `OPEN`, `RESOLVED` or `WITHDRAWN`; a settled item's `resolution` is `{date, by, record, summary, event?, standing_instruction?}`: `by` is `user`, `standing_instruction`, `organization`, `medical` or `staff`, the optional `event` is a closed event, and `standing_instruction` is the instruction's id when `by` is `standing_instruction` |
 | `waits_on` | What the decision waits for, whose it is (null when the record names no one) and the date when one is recorded |
-| `deadline`, `blocks` | The deadline with its label and the event it must precede; the events the item holds (section 4) |
+| `deadline`, `blocks` | The deadline with its label, its exact time when one is sourced (`at`, an ISO datetime with its ET offset, on `date`) and the event it must precede; the events the item holds (section 4) |
+| `event` | The in-season event the item carries (an open-event record, `runtime/open_events.py`), or absent; the event names the item that carries Stone's answer back (`queue_item`) |
 | `standing_not_applied` | An in-force instruction that would cover the item, with the recorded reason it does not |
 | `fallback`, `can_continue` | What happens if the item stays open, and what can continue meanwhile; neither is filled without a source |
 | `record`, `sources`, `migrated_from` | The record the item points to, its sources, and where an item migrated from Document 5 came from |
@@ -75,7 +78,7 @@ Each item has one class. The class fixes the default owner, the Document 3 rows 
 |---|---|---|---|---|---|
 | `weekly_game_plan` | the job holder (Stone) | 9, 10, 11, 12, 13, 14 | `week_inputs`, `week_close` | no | no |
 | `game_day_inactives` | the job holder (Stone) | 8 | `week_inputs`, `week_close` | yes | no |
-| `depth_and_roles` | the job holder (Stone) | 9, 10 | `week_inputs`, `week_close`, `season_stage`, `season_opening` | yes | no |
+| `depth_and_roles` | the job holder (Stone) | 9, 10 | `week_inputs`, `week_close`, `season_stage`, `season_opening`, `event_resolution` | yes | no |
 | `game_management_rule` | the job holder (Stone) | 12, 13, 14 | `call_sheet_part` | yes | no |
 | `play_calling_delegation` | the job holder (Stone) | 12, 13, 14 | nothing | yes | yes |
 | `emergency_succession` | the job holder (Stone) | 2, 12, 13, 14 | nothing | yes | yes |
@@ -83,12 +86,13 @@ Each item has one class. The class fixes the default owner, the Document 3 rows 
 | `practice_plan` | the job holder (Stone) | 11 | nothing | yes | no |
 | `discipline` | the job holder (Stone) | 18 | nothing | no | no |
 | `media_statement` | the job holder (Stone) | 19 | nothing | no | no |
-| `personnel_recommendation` | the job holder (Stone) | 3, 4, 7, 20 | nothing | no | no |
-| `quarterback_consultation` | the job holder (Stone) | 3a | nothing | no | no |
+| `personnel_recommendation` | the job holder (Stone) | 3, 4, 7, 20 | `week_inputs`, `week_close`, `event_resolution` | no | no |
+| `quarterback_consultation` | the job holder (Stone) | 3a | `week_inputs`, `week_close`, `event_resolution` | no | no |
 | `employment_response` | the job holder (Stone) | 1 | nothing | no | no |
 | `outside_job_approach` | the job holder (Stone) | 1a | nothing | yes | no |
-| `staff_permission` | the job holder (Stone) | 2 | nothing | yes | no |
-| `personnel_transaction` | David Caldwell | 3, 5, 7, 20 | nothing | no | no |
+| `staff_permission` | the job holder (Stone) | 2 | `event_resolution` | yes | no |
+| `bye_adjustments` | the job holder (Stone) | 9, 10, 11 | `bye_close` | no | no |
+| `personnel_transaction` | David Caldwell | 3, 5, 7, 20 | `week_inputs`, `week_close`, `event_resolution` | no | no |
 | `medical_status` | Team medical staff | 15, 16, 17 | nothing | no | no |
 | `staff_work` | Jacksonville coaching staff | none | nothing | no | no |
 
@@ -104,8 +108,14 @@ Generated from `CLASSES` in `runtime/decision_queue.py` by `python scripts/rende
 | `call_sheet_part` | season, week, part (`offensive_call_sheet`, `defensive_call_sheet`, `decisions.two_point`, `decisions.kickoff`, `decisions.fourth_down`) | |
 | `season_stage` | season | `season_opening` of the same season |
 | `season_opening` | season | |
+| `event_resolution` | season, event (the open-event id) | |
+| `bye_close` | season, week (a week in which Jacksonville does not play) | |
 
-An item holds an event when it is `OPEN` and one of its blocks, or an event a block implies, equals it. No block may name a week in which Jacksonville does not play: a bye has no plan, sheet or inactives.
+An item holds an event when it is `OPEN` and one of its blocks, or an event a block implies, equals it. No `week_inputs`, `week_close` or `call_sheet_part` block may name a week in which Jacksonville does not play: a bye has no plan, sheet or inactives. A `bye_close` block is the reverse: it names only a week in which Jacksonville does not play, only the bye's own `bye_adjustments` item carries it, and it holds the bye's own close (`scripts/close_bye_week.py`), never that week's inputs or close, so the other clubs' games of the bye week close while Stone's bye answers are open.
+
+The hold follows the event, never the clock (rebuild step 5). An item that carries an event holds that event's resolution (`event_resolution`). It may also hold the inputs and the close of a week only when its answer is needed to play that week: its `deadline.before` is that week's `week_inputs`, and its event is an injury replacement whose facts record, with their source, that the active roster cannot dress a legal team for that game (`open_events.LEGAL_TEAM_FACT`). A trade call never holds the game, whatever its due time, and neither does any other event. An item of `personnel_recommendation`, `quarterback_consultation` or `personnel_transaction` that carries no event holds no week, as before step 5. An `OPEN` item past its `deadline.at` is overdue (`decision_queue.overdue_items`): it is reported, never resolved and never an error by itself, and an overdue trade item still holds nothing but its event.
+
+Another side's act may end the holder's event item: the item is `WITHDRAWN` by `organization` or `medical` only when the event's process holds a sourced entry of kind `withdrawn_by_other_side`, `other_side_deadline_passed` or `medical`, stamped before the withdrawal, which the item's resolution record names (the event's record and `/process/N`), and the summary says the question ended without his answer; the event then resolves `withdrawn`, `ended_without_agreement` or `no_move`. When an injury replacement's due time has passed with Stone's recommendation unanswered, Caldwell may decide under rows 3, 5 and 7: the item is `WITHDRAWN` by `organization` with the summary "decided at the due time with no recommendation on file", never `RESOLVED`, and the result page says no recommendation was given. Letting an answer lapse stays the user's only.
 
 | Script | Events checked | Refusal |
 |---|---|---|
@@ -142,6 +152,8 @@ It also keeps two rows after Document 4's in Document 5's manifest, naming the g
 
 The job and decision blocks read the two state files, the coach record, the master date, the dated events and the published fixture list. The coach's desk continues to show the coach-owned decisions from the current decision record. Its season performance, standings, player production and medical sections are derived from the completed games and the roster's current medical communication (`scripts/render_season_hub.py`, through `runtime/season_summary.py`, which gives the statistics index and the injury report the same words). The calendar is assembled from the recorded dates and the same fixtures, keeping the complete historical year below the current month. None of these pages stores an independent game result, injury clearance or depth decision.
 
+From rebuild step 5 "Waiting on you" lists every OPEN item owned by the head coach, whatever the phase and whether or not it has a week: an event's answer, the practice week, a game-day depth or inactives change and the bye's adjustments among them. An answer that does not hold the game is due at its own time ("Due Tuesday, October 14, 4 p.m. ET"), never "before kickoff"; an item past its due time says "Overdue since ..." and stays open; each links the page he answers it on (its block on the period's My Responses page, or the bye's My Adjustments) and the brief that carries it. News and windows are never waiting on him. "Coming up" adds the windows a brief issued now would show (`runtime/deadlines.py`), each once.
+
 Links are relative to each reader page and must resolve. The head coach's desk and the calendar are checked for reader-friendly football prose. The voice check rejects internal process wording before writing. The coach's desk remains available only for the head-coach role; the other roles are defined separately.
 
 `--check` is read-only. It reports a stale block or desk, a missing or duplicated marker, a desk block in any README and anything that stops the render, and exits 1. Repository validation runs the same check. Writing is refused while any regular-season, postseason or preseason Jacksonville game is paused.
@@ -149,10 +161,11 @@ Links are relative to each reader page and must resolve. The head coach's desk a
 ## 7. Cadence
 
 - Open and resolve items in the commit that closes the event that raised or settled them.
-- When a week closes, open the next items for the next week in which Jacksonville plays, never a bye: the weekly game plan and, unless a standing instruction covers them, the game-day inactives. An open item that still holds a closed week is a validation error. An item on a call-sheet part the closed week's sheet did not freeze held nothing, so the closing commit moves that block to the next week in which Jacksonville plays; that is bookkeeping, not a settlement. Any other open item is resolved or withdrawn in the closing commit by whoever may settle it, and never by the workflow when it is the holder's (below).
+- When a week closes, open the next items for the next week in which Jacksonville plays: the weekly game plan, the game-day inactives (unless a standing instruction covers them) and, while no standing practice instruction covers the week, the practice week asked on My Responses. When the closed week is the last game before a bye, the bye opens instead: its one `bye_adjustments` item (Stone's My Adjustments, holding only the bye's own close) and its pages; the next game week's items open only after the bye's close event is recorded. An open item that still holds a closed week is a validation error. An item on a call-sheet part the closed week's sheet did not freeze held nothing, so the closing commit moves that block to the next week in which Jacksonville plays; that is bookkeeping, not a settlement. Any other open item is resolved or withdrawn in the closing commit by whoever may settle it, and never by the workflow when it is the holder's (below).
 - An `IN_FORCE` instruction may answer a live pause or close an item; a `RECORDED` one never does.
 - Never edit either file, or Document 5, while a game is paused: the paused game's packet carries Document 5's digest, so any edit makes the same `--continue` impossible.
 - The holder's items are resolved only `by: "user"` or by a standing instruction. The workflow never settles his decision.
+- An event's item is settled in the commit that records the event's answer or end: by the user when he answers on My Responses, or withdrawn by the organization or the medical staff only after another side's sourced act or an injury replacement's unanswered due time (section 4).
 - Every change moves Document 5's digest, so it needs the merged-main private snapshot advance before the next close.
 
 ## 8. Visibility

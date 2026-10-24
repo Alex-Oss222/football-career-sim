@@ -165,6 +165,13 @@ class Week6LeaguePagesTests(unittest.TestCase):
         self.assertEqual(sum(JAX in r["team_stats"] for r in written), 1)
         fake_awards(root, paths, week)
         settle_the_rest(root, paths, week)
+        # The week's practice record, as the practice-week commit writes it before the game.
+        from test_week_close_pages import check_head_coaches, record_practice
+        record_practice(self, root, week)
+        # The weekly head-coach check, after the slate closes and before the rebuild opens the next week.
+        from local_private_service import local_service
+        _, client = local_service(self, Path(self.tmp.name) / "private", "week-league-pages")
+        check_head_coaches(self, root, week, client)
 
         pages = self.rebuild(week)
 

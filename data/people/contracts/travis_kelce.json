@@ -1,0 +1,86 @@
+{
+ "schema_version": 1,
+ "name": "Travis Kelce",
+ "player": "travis_kelce",
+ "listed": 5,
+ "position": "TE",
+ "roster_position": "TE",
+ "draft_pick": "#33",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2013-05-02",
+   "source": "career/2013/offseason/draft/draftees.md",
+   "contract": "travis_kelce_2013-05-02",
+   "club": "Jacksonville Jaguars",
+   "through": 2016,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 1242978,
+     "base": 653596,
+     "proration": 589382,
+     "cash": 653596,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 653596
+    },
+    "2015": {
+     "status": "known",
+     "cap": 1491574,
+     "base": 902192,
+     "proration": 589382,
+     "cash": 902192,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 500000
+    },
+    "2016": {
+     "status": "known",
+     "cap": 1740170,
+     "base": 1150788,
+     "proration": 589382,
+     "cash": 1150788,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Rookie scale, pick #33",
+   "signed_text": "May 2, 2013",
+   "term_text": "4 / 2016",
+   "value_text": "$5,469,104",
+   "bonus": {
+    "text": "$2,357,528; $589,382; 3",
+    "amount": 2357528
+   },
+   "guarantee_text": "Remaining salary guarantee $1,153,596: $653,596 in 2014 and $500,000 in 2015. Adopted from the original pick-33 comparator.",
+   "guarantee_basis": "simulation reconstruction",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$2,921,742 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Branch record (draftees); base derived",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2013/offseason/draft/draftees.md",
+    "library/2014_jaguars_contract_completion.md"
+   ],
+   "rookie": "drafted"
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "1 (2013 active season)",
+   "accrued_seasons": "Through 2012: 0. 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

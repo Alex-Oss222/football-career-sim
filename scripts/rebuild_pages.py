@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Rebuild every built page of a season, in order, from the stored facts (rebuild step 4).
+"""Rebuild every built page of a season, in order, from the stored facts (rebuild steps 4 and 5).
 
   python scripts/rebuild_pages.py [--season YEAR] [--check] [--root PATH]
 
@@ -14,35 +14,56 @@ built before a page or file it links to or reads:
  3. team tracker         scripts/render_team_tracker.py
  4. award pages          scripts/render_award_pages.py    (the recorded award results;
                                                            nothing is drawn)
- 5. player pages         scripts/render_player_pages.py   (reads the award results)
- 6. player ages          scripts/render_player_ages.py
- 7. club pages           scripts/render_club_pages.py     (team, roster, depth chart
+ 5. contract pages       scripts/render_contract_pages.py (the contract and cap pages
+                                                           from the permanent contract
+                                                           records)
+ 6. player pages         scripts/render_player_pages.py   (reads the award results and
+                                                           the contract records)
+ 7. player ages          scripts/render_player_ages.py
+ 8. club pages           scripts/render_club_pages.py     (team, roster, depth chart
                                                            and its change history)
- 8. coach pages          scripts/render_coach_pages.py    (Coach page, Contract and
+ 9. coach pages          scripts/render_coach_pages.py    (Coach page, Contract and
                                                            jobs, Staff page)
- 9. cap views            scripts/render_jaguars_cap_tracker.py
-10. box scores           scripts/render_box_score.py      (each game page's marked
+10. cap views            scripts/render_jaguars_cap_tracker.py
+11. event results        scripts/resolve_event.py         (each resolved event's result
+                                                           page built from its record;
+                                                           an adopted Transaction or
+                                                           head-coach change page is its
+                                                           own builder's)
+12. roster moves         runtime/transactions.py          (each applied move's
+                                                           Transaction page and signing
+                                                           records)
+13. box scores           scripts/render_box_score.py      (each game page's marked
                                                            block, only where stale; a
                                                            Game Report's last, its
                                                            markers named once its
                                                            game has closed)
-11. game-week pages      scripts/render_game_week.py      (each played week's index;
-                                                           the open week's decision
-                                                           items, briefing, Game Plan
-                                                           and index)
-12. week pages           scripts/render_week_pages.py     (Games and league-results
+14. game-week pages      scripts/render_game_week.py      (each played week's index,
+                                                           with its other business and
+                                                           a recorded week's practice
+                                                           table; the open week's
+                                                           decision items, briefing,
+                                                           Game Plan and index)
+15. bye pages            scripts/render_bye_week.py       (while the bye is open: its
+                                                           item, the Bye Week Review,
+                                                           My Adjustments and its index)
+16. week pages           scripts/render_week_pages.py     (Games and league-results
                                                            indexes, week pages, the
                                                            injury report, the medical
                                                            history's game entries)
-13. in-season rails      scripts/render_inseason_rails.py (pages from Week 6 and any
+17. in-season rails      scripts/render_inseason_rails.py (pages from Week 6 and any
                                                            missing week; earlier pages
                                                            are history)
-14. desk and career views scripts/render_career_views.py  (the desk with its season
+18. trade pages          scripts/render_trade_pages.py    (the folder navigation and the
+                                                           offer log's index of calls)
+19. head-coach changes   scripts/render_coaching_changes.py (the league's index and change
+                                                           pages; a new change page comes
+                                                           only from coaching_check.py)
+20. desk and career views scripts/render_career_views.py  (the desk with its season
                                                            summary, the calendar, the
                                                            Document 5 blocks)
-15. trade pages          scripts/render_trade_pages.py
-16. preseason statistics scripts/render_preseason_stats.py
-17. annual record        scripts/render_annual_record.py  (Record.md, last: it reads
+21. preseason statistics scripts/render_preseason_stats.py
+22. annual record        scripts/render_annual_record.py  (Record.md, last: it reads
                                                            the event lines the others
                                                            add)
 
@@ -149,6 +170,14 @@ def award_pages(run):
         run.put(path, preserve_event_comments(text, previous))
 
 
+def contract_pages(run):
+    from scripts import render_contract_pages
+    if run.check:
+        run.problems += render_contract_pages.check(run.root, run.year)
+        return
+    run.written += render_contract_pages.write(run.root, run.year)
+
+
 def player_pages(run):
     from runtime import player_pages as builder
     if run.check:
@@ -190,6 +219,20 @@ def cap_views(run):
         run.put(path, text)
 
 
+def event_results(run):
+    """Each result page scripts/resolve_event.py built, from its event's record."""
+    from scripts import resolve_event
+    for path, text in resolve_event.built_pages(run.root, run.year):
+        run.put(path, text)
+
+
+def roster_moves(run):
+    """Each applied roster move's Transaction page and signing records, from their records."""
+    from runtime import transactions
+    for path, text in transactions.built_pages(run.year, run.root).items():
+        run.put(path, text)
+
+
 def box_scores(run):
     from runtime.seasons import GAME_OUTPUT, GAME_REPORT
     from scripts.render_box_score import fill, is_report, named, stale_blocks
@@ -222,6 +265,15 @@ def game_week_pages(run):
             continue        # a week before the Game Week pages keeps its index as written
         run.written += [run.rel(p) for p in render_game_week.write_index(run.root, week)]
     run.written += [run.rel(p) for p in render_game_week.write(run.root)]
+
+
+def bye_pages(run):
+    from scripts import render_bye_week
+    if run.check:
+        run.problems += render_bye_week.check(run.root)
+        return
+    run.written += [run.rel(p) for p in render_bye_week.write(run.root)]
+    run.written += [run.rel(p) for p in render_bye_week.write_index(run.root)]
 
 
 def week_pages(run):
@@ -276,8 +328,19 @@ def career_views(run):
 
 def trade_pages(run):
     from scripts import render_trade_pages
-    for path, text in render_trade_pages.render(run.root, run.year).items():
+    for path, text in render_trade_pages.pages(run.root, run.year).items():
         run.put(path, text)
+
+
+def coaching_pages(run):
+    from scripts import render_coaching_changes
+    if run.check:
+        run.problems += render_coaching_changes.check(run.root, run.year)
+        return
+    try:
+        run.written += [run.rel(p) for p in render_coaching_changes.write(run.root, run.year)]
+    except ValueError as exc:
+        run.problems.append("Head-coach pages not written: %s" % exc)
 
 
 def preseason_statistics(run):
@@ -302,10 +365,12 @@ def annual_record(run):
 
 
 STEPS = (("standings", standings), ("statistics", statistics), ("team tracker", team_tracker),
-         ("award pages", award_pages), ("player pages", player_pages), ("player ages", player_ages),
-         ("club pages", club_pages), ("coach pages", coach_pages), ("cap views", cap_views),
-         ("box scores", box_scores), ("game-week pages", game_week_pages), ("week pages", week_pages),
-         ("in-season rails", rails_pages), ("desk and career views", career_views), ("trade pages", trade_pages),
+         ("award pages", award_pages), ("contract pages", contract_pages), ("player pages", player_pages),
+         ("player ages", player_ages), ("club pages", club_pages), ("coach pages", coach_pages),
+         ("cap views", cap_views), ("event results", event_results), ("roster moves", roster_moves),
+         ("box scores", box_scores), ("game-week pages", game_week_pages), ("bye pages", bye_pages),
+         ("week pages", week_pages), ("in-season rails", rails_pages), ("trade pages", trade_pages),
+         ("head-coach changes", coaching_pages), ("desk and career views", career_views),
          ("preseason statistics", preseason_statistics), ("annual record", annual_record))
 
 

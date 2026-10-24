@@ -1,0 +1,87 @@
+{
+ "schema_version": 1,
+ "name": "Todd Davis",
+ "player": "todd_davis",
+ "listed": 81,
+ "position": "LB",
+ "roster_position": "LB",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-05-10",
+   "source": "career/2014/Draft/udfa_signings.md",
+   "contract": "todd_davis_2014-05-10",
+   "club": "Jacksonville Jaguars",
+   "through": 2016,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 420000,
+     "base": 420000,
+     "proration": 0,
+     "cash": 420000,
+     "other_cap": 0,
+     "guaranteed_base": 0,
+     "basis": "Executed three-year undrafted minimum schedule"
+    },
+    "2015": {
+     "status": "known",
+     "cap": 510000,
+     "base": 510000,
+     "proration": 0,
+     "cash": 510000,
+     "other_cap": 0,
+     "guaranteed_base": 0,
+     "basis": "Executed three-year undrafted minimum schedule"
+    },
+    "2016": {
+     "status": "known",
+     "cap": 600000,
+     "base": 600000,
+     "proration": 0,
+     "cash": 600000,
+     "other_cap": 0,
+     "guaranteed_base": 0,
+     "basis": "Executed three-year undrafted minimum schedule"
+    }
+   },
+   "type": "UDFA minimum",
+   "signed_text": "May 10, 2014",
+   "term_text": "3 / 2016",
+   "value_text": "$1,530,000",
+   "bonus": {
+    "text": "$0; $0; 0",
+    "amount": 0
+   },
+   "guarantee_text": "$0",
+   "guarantee_basis": "Branch contract",
+   "basis": {
+    "text": "Executed branch terms",
+    "source": "career/2014/Team_Operations/Finances/player_contracts/contracts.md"
+   },
+   "exposure_text": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Branch record (Entry 108): undrafted signing after Round 7, May 10, 2014. Standard three-year undrafted minimum contract ($420,000, $510,000, $600,000), no signing bonus, as in the 2013 precedent. Not the player's real contract",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/draft/udfa_signings.md"
+   ],
+   "rookie": "undrafted"
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "0",
+   "accrued_seasons": "0 (2014 rookie)"
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "schema_version": 1,
+ "name": "Allen Reisner",
+ "player": "allen_reisner",
+ "listed": 53,
+ "position": "TE",
+ "roster_position": "TE",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2011",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "allen_reisner_2011",
+   "club": "Minnesota Vikings",
+   "through": 2013,
+   "years": {},
+   "type": "UDFA (Minnesota, 2011), carried by waiver claim",
+   "signed_text": "See expiring-contract description",
+   "term_text": "2013",
+   "value_text": "Unresolved",
+   "bonus": {
+    "text": "Not established for a new contract"
+   },
+   "guarantee_text": "No new signed 2014 guarantee established",
+   "basis": null,
+   "exposure_text": "Unresolved; do not treat pending contract status as a release",
+   "notes": "Final year Supported (register)",
+   "sources": [
+    "career/2014/offseason/contract_table.md",
+    "career/2014/offseason/contract_status_register.md"
+   ],
+   "rookie": "undrafted",
+   "schedule_from": "bf1d2a0"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-03-11",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "allen_reisner_2011",
+   "how": "expired",
+   "text": "Not tendered; contract expired at 4 p.m. March 11, 2014; unrestricted free agent",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md"
+   ],
+   "as_written": {
+    "source": "career/2013/ledger.md"
+   }
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94)",
+   "availability": "No communicated restriction",
+   "plan": "Not tendered; unrestricted free agent at 4 p.m. March 11, 2014 (Entry 94)",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 2 (2011: Minnesota active roster through October 4 and again from November 26, about ten games; 2012: Minnesota and Jacksonville). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

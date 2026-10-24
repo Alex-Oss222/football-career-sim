@@ -7,7 +7,7 @@ unplayed Jacksonville week, then the first unplayed postseason round) and
 dates from the master date, so the tests hold at any later clock. The desk
 is the whole of the active season's README, a clean page.
 """
-from datetime import date
+from datetime import date, timedelta
 import json
 from pathlib import Path
 import re
@@ -340,6 +340,141 @@ class CareerViewTests(unittest.TestCase):
         text = self.rendered("docs/career_layer.md")
         for name in decision_queue.CLASSES:
             self.assertIn("| `%s` |" % name, text)
+
+    # ---- rebuild step 5, A6: every pending answer, whatever the phase
+    def event_item(self, ident, due, **changes):
+        """An OPEN event item of the holder (a trade answer), due at ``due`` (a datetime)."""
+        from runtime import open_events
+        event_id = "%s-%s" % (self.master.isoformat(), ident)
+        item = self.item(id=event_id, title="Test trade call")
+        item.update({"class": "personnel_recommendation", "authority_rows": ["3"], "event": event_id,
+                     "question": "Your football answer on a test trade call.",
+                     "deadline": {"date": due.date().isoformat(), "at": open_events.iso(due),
+                                  "label": "The other club's deadline"},
+                     "blocks": [event("event_resolution", self.season, event=event_id)]})
+        item.update(changes)
+        return item
+
+    def test_an_answer_due_on_tuesday_is_not_due_before_kickoff(self):
+        from runtime import open_events
+        game = next(g for g in club_games(self.root) if g["week"] == self.week)
+        due = open_events.et(date.fromisoformat(game["date"]), 16) + timedelta(days=2)
+        self.with_items(self.event_item("test-desk-call", due))
+        line = next(l for l in self.section("Waiting on you").splitlines() if "Test trade call" in l)
+        self.assertIn("Due %s." % open_events.at_text(due), line)
+        self.assertNotIn("before kickoff", line)
+        self.assertNotIn("Overdue", line)
+        self.assertEqual(page_errors(self.readme.relative_to(self.root).as_posix(), self.desk(), (), self.root), [])
+
+    def test_an_overdue_item_says_so(self):
+        from runtime import open_events
+        due = open_events.master_at(self.root) - timedelta(hours=1)
+        self.with_items(self.event_item("test-desk-overdue", due))
+        line = next(l for l in self.section("Waiting on you").splitlines() if "Test trade call" in l)
+        self.assertIn("Overdue since %s." % open_events.at_text(due), line)
+        # Overdue is said, never settled: the item is still open.
+        self.assertEqual(next(i for i in decision_queue.load(self.root)["items"] if i["id"].endswith("overdue"))["status"],
+                         "OPEN")
+
+    def test_a_bye_item_is_listed_with_its_pages(self):
+        from runtime import decisions
+        played = {g["week"] for g in club_games(self.root)}
+        bye = next((w for w in range(self.week, 18) if w not in played), None)
+        if bye is None:
+            self.skipTest("no bye remains")
+        pages = decisions.bye_pages(self.season, bye, self.root)
+        self.write(pages.adjustments.relative_to(self.root), "# Week %d bye My Adjustments\n" % bye)
+        self.write(pages.review.relative_to(self.root), "# Week %d Bye Week Review\n" % bye)
+        self.with_items(self.item(id="test-desk-bye", title="Test bye adjustments", **{
+            "class": "bye_adjustments", "authority_rows": ["9"], "question": "Your adjustments for the bye.",
+            "blocks": [event("bye_close", self.season, bye)],
+            "record": {"path": pages.adjustments.relative_to(self.root).as_posix()}}))
+        line = next(l for l in self.section("Waiting on you").splitlines() if "Test bye adjustments" in l)
+        self.assertIn("[My Adjustments](", line)
+        self.assertIn("[Bye Week Review](", line)
+        self.assertNotIn("before kickoff", line)
+
+    def test_windows_are_coming_up_never_waiting(self):
+        from runtime import deadlines, open_events
+        windows = deadlines.coming_up(self.season, open_events.master_at(self.root), self.root)
+        if not windows:
+            self.skipTest("no window is coming up at the clock")
+        waiting, coming = self.section("Waiting on you"), self.section("Coming up")
+        for window in windows:
+            self.assertNotIn(window["title"], waiting)
+        # A window the schedule does not name is added on its day; one it names is not shown twice.
+        state = (self.root / STATE).read_text(encoding="utf-8")
+        surnames = {w["title"].split("'")[0].split()[-1] for w in windows if not w["key"].endswith("deadline")}
+        kept = "\n".join(l for l in state.splitlines()
+                         if not (l.startswith("| ") and any(n in l for n in surnames) and "Scheduled" in l))
+        self.write(STATE, kept)
+        coming = self.section("Coming up")
+        for window in windows:
+            if not window["key"].endswith("deadline"):
+                self.assertEqual(coming.count(window["title"]), 1, coming)
+        self.assertEqual(page_errors(self.readme.relative_to(self.root).as_posix(), self.desk(), (), self.root), [])
+
+
+class DeskEventTests(unittest.TestCase):
+    """An event's item links its My Responses block and its brief; a notice that needs no answer is
+    never waiting. Events are test data in a throwaway copy (support_events)."""
+
+    def setUp(self):
+        import shutil
+        import tempfile
+        from release_staging import IGNORED
+        import support_events as se
+        self.se = se
+        tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
+        self.addCleanup(tmp.cleanup)
+        self.root = Path(tmp.name) / "repo"
+        shutil.copytree(ROOT, self.root, ignore=shutil.ignore_patterns(*IGNORED), symlinks=True)
+        for record in self.root.glob("career/**/paused_game.json"):
+            record.unlink()
+        self.game = se.open_game(self.root)
+        if self.game is None:
+            self.skipTest("every regular-season game has closed")
+        self.tuesday = se.tuesday_before(self.game)
+        se.midweek(self.root, self.tuesday, 10, 30, int(self.game["week"]))
+        self.season = se.SEASON
+
+    def test_an_event_item_links_its_block_and_its_brief(self):
+        import contextlib
+        import io
+        from runtime import open_events
+        from scripts import render_game_week
+        se = self.se
+        due = open_events.et(self.tuesday + timedelta(days=1), 16)
+        record = se.trade_call(self.root, "test-desk-event", open_events.et(self.tuesday, 9), due)
+        open_events.raise_event(record, self.root)
+        news_source = se.source_page(self.root, "head_coach_change")
+        news = {"schema": open_events.SCHEMA, "id": "%s-test-desk-news" % self.tuesday.isoformat(),
+                "kind": "head_coach_change", "season": self.season, "subject": "Other Test Club",
+                "raised": {"at": open_events.iso(open_events.et(self.tuesday, 9, 30)), "by": "communications_staff",
+                           "source": {"path": news_source}},
+                "known_to": ["stone"], "authority": {"rows": ["1"], "decides": open_events.OTHER_CLUB},
+                "stone_part": "none", "summary": {"text": "A test notice of another club's coaching change.",
+                                                  "author": "Team communications staff",
+                                                  "date": self.tuesday.isoformat()},
+                "staff_position": None, "consequence": None, "facts": [], "options": [], "deadline": None,
+                "state": "open", "process": [], "queue_item": None, "response": None, "resolution": None}
+        open_events.raise_event(news, self.root)
+        with contextlib.redirect_stdout(io.StringIO()):
+            render_game_week.write(self.root)
+        desk = views.render(self.root)[SeasonPaths(self.season, self.root).desk]
+        waiting = desk.split("## Waiting on you\n", 1)[1].split("\n## ", 1)[0]
+        line = next(l for l in waiting.splitlines() if "Trade call from Test Club" in l)
+        self.assertIn("Due %s." % open_events.at_text(due), line)
+        self.assertNotIn("before kickoff", line)
+        self.assertIn("[My Responses](Regular_Season/Games/Week_%02d/My_Responses.md#trade-call-from-test-club)"
+                      % int(self.game["week"]), line)
+        self.assertIn("[Game Week Briefing](Regular_Season/Games/Week_%02d/Game_Week_Briefing.md)"
+                      % int(self.game["week"]), line)
+        # The news needs no answer: it is never waiting on him.
+        self.assertNotIn("Other Test Club", waiting)
+        self.assertNotIn(record["id"], desk)
+        self.assertEqual(page_errors(SeasonPaths(self.season, self.root).desk.relative_to(self.root).as_posix(), desk,
+                                     (), self.root), [])
 
 
 if __name__ == "__main__":

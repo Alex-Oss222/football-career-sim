@@ -1,0 +1,569 @@
+{
+ "schema_version": "hc-inseason-hazard-v1",
+ "source": {
+  "repository": "nflverse/nfldata",
+  "file": "data/games.csv",
+  "commit": "04a6ffcccc8a58451f45cd282c0f14766aaa3479",
+  "committed": "2026-09-28T19:45:13+00:00",
+  "url": "https://raw.githubusercontent.com/nflverse/nfldata/04a6ffcccc8a58451f45cd282c0f14766aaa3479/data/games.csv",
+  "sha256": "c14c7de28c9eb7027699b9b316f7276ea03e34a077c8ae65010f15a44a6780d1",
+  "january_url": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+  "found": "The January 2014 base-rate builder recorded this sha256 and nfldata's moving master URL, with no copy in the repository. On October 23, 2026 the nfldata commits that changed data/games.csv from September 21 to 29, 2026 were listed, and the file was hashed at those before the January builder was committed (September 28, 2026, 20:26:45 UTC), newest first: the second, commit 04a6ffcc (19:45:13 UTC, current until the next change at 20:15:15 UTC), has the recorded digest, and the commit-pinned URL returns the same bytes."
+ },
+ "window": "regular seasons 2002-2012, each club's games 1 to 15 (game 16 has no later regular-season game) up to and including its first change; 1999-2001 read only to count a coach's seasons with the club back; no row after 2012 is read",
+ "games_at_risk": {
+  "first": 1,
+  "last": 15
+ },
+ "event": "the coach who coached the club's game k does not coach game k+1 or any later regular-season game that season: an interim who finishes the season counts; a stand-in for a coach who returns does not (the season's opening coach coached a later game)",
+ "left_out": [
+  "New Orleans 2012 (the suspension season), as in the January data"
+ ],
+ "cells": {
+  "margin": "the club's losses minus wins after game k, ties counting neither: 0 or fewer, 1 to 2, 3 to 4, 5 or more",
+  "tenure": "the coach's season with the club: his first (he did not open the club's season before) or a later one; consecutive seasons he opened for the club, counted back to 1999 as the January builder counts them"
+ },
+ "smoothing": "rate = (changes + 75 * overall) / (club-games + 75)",
+ "prior_weight": 75,
+ "prior_weight_basis": "the January table's prior of 5 club-seasons at fifteen at-risk games a club-season",
+ "merge_rule": "a cell with fewer at-risk club-games than the prior weight is merged into the cell of the next band toward 0 or fewer with the same tenure; none is that small, so none is merged",
+ "merged": [],
+ "modelling_choice": "The cells, the prior weight and the merge rule are the career's labelled modelling choice, like the January factors; the user may change them before the first weekly draw, never after.",
+ "club_seasons": 351,
+ "overall": {
+  "changes": 17,
+  "club_games": 5177,
+  "rate": 0.003284
+ },
+ "rates": {
+  "0 or fewer|first season": {
+   "changes": 0,
+   "club_games": 466,
+   "raw_rate": 0.0,
+   "rate": 0.000455
+  },
+  "0 or fewer|later season": {
+   "changes": 0,
+   "club_games": 2473,
+   "raw_rate": 0.0,
+   "rate": 9.7e-05
+  },
+  "1 to 2|first season": {
+   "changes": 0,
+   "club_games": 265,
+   "raw_rate": 0.0,
+   "rate": 0.000724
+  },
+  "1 to 2|later season": {
+   "changes": 2,
+   "club_games": 830,
+   "raw_rate": 0.00241,
+   "rate": 0.002482
+  },
+  "3 to 4|first season": {
+   "changes": 0,
+   "club_games": 171,
+   "raw_rate": 0.0,
+   "rate": 0.001001
+  },
+  "3 to 4|later season": {
+   "changes": 6,
+   "club_games": 433,
+   "raw_rate": 0.013857,
+   "rate": 0.012296
+  },
+  "5 or more|first season": {
+   "changes": 1,
+   "club_games": 190,
+   "raw_rate": 0.005263,
+   "rate": 0.004703
+  },
+  "5 or more|later season": {
+   "changes": 8,
+   "club_games": 349,
+   "raw_rate": 0.022923,
+   "rate": 0.019449
+  }
+ },
+ "changes": [
+  {
+   "club": "ATL",
+   "season": 2003,
+   "game": 13,
+   "week": 14,
+   "coach": "Dan Reeves",
+   "successor": "Wade Phillips",
+   "wins": 3,
+   "losses": 10,
+   "ties": 0,
+   "seasons_with_club": 5,
+   "cell": "5 or more|later season"
+  },
+  {
+   "club": "ATL",
+   "season": 2007,
+   "game": 12,
+   "week": 13,
+   "coach": "Bobby Petrino",
+   "successor": "Emmitt Thomas",
+   "wins": 3,
+   "losses": 9,
+   "ties": 0,
+   "seasons_with_club": 1,
+   "cell": "5 or more|first season"
+  },
+  {
+   "club": "BUF",
+   "season": 2009,
+   "game": 9,
+   "week": 10,
+   "coach": "Dick Jauron",
+   "successor": "Perry Fewell",
+   "wins": 3,
+   "losses": 6,
+   "ties": 0,
+   "seasons_with_club": 4,
+   "cell": "3 to 4|later season"
+  },
+  {
+   "club": "CLE",
+   "season": 2004,
+   "game": 11,
+   "week": 12,
+   "coach": "Butch Davis",
+   "successor": "Terry Robiskie",
+   "wins": 3,
+   "losses": 8,
+   "ties": 0,
+   "seasons_with_club": 4,
+   "cell": "5 or more|later season"
+  },
+  {
+   "club": "DAL",
+   "season": 2010,
+   "game": 8,
+   "week": 9,
+   "coach": "Wade Phillips",
+   "successor": "Jason Garrett",
+   "wins": 1,
+   "losses": 7,
+   "ties": 0,
+   "seasons_with_club": 4,
+   "cell": "5 or more|later season"
+  },
+  {
+   "club": "DEN",
+   "season": 2010,
+   "game": 12,
+   "week": 13,
+   "coach": "Josh McDaniels",
+   "successor": "Eric Studesville",
+   "wins": 3,
+   "losses": 9,
+   "ties": 0,
+   "seasons_with_club": 2,
+   "cell": "5 or more|later season"
+  },
+  {
+   "club": "DET",
+   "season": 2005,
+   "game": 11,
+   "week": 12,
+   "coach": "Steve Mariucci",
+   "successor": "Dick Jauron",
+   "wins": 4,
+   "losses": 7,
+   "ties": 0,
+   "seasons_with_club": 3,
+   "cell": "3 to 4|later season"
+  },
+  {
+   "club": "JAX",
+   "season": 2011,
+   "game": 11,
+   "week": 12,
+   "coach": "Jack Del Rio",
+   "successor": "Mel Tucker",
+   "wins": 3,
+   "losses": 8,
+   "ties": 0,
+   "seasons_with_club": 9,
+   "cell": "5 or more|later season"
+  },
+  {
+   "club": "KC",
+   "season": 2011,
+   "game": 13,
+   "week": 14,
+   "coach": "Todd Haley",
+   "successor": "Romeo Crennel",
+   "wins": 5,
+   "losses": 8,
+   "ties": 0,
+   "seasons_with_club": 3,
+   "cell": "3 to 4|later season"
+  },
+  {
+   "club": "LA",
+   "season": 2005,
+   "game": 5,
+   "week": 5,
+   "coach": "Mike Martz",
+   "successor": "Joe Vitt",
+   "wins": 2,
+   "losses": 3,
+   "ties": 0,
+   "seasons_with_club": 6,
+   "cell": "1 to 2|later season"
+  },
+  {
+   "club": "LA",
+   "season": 2008,
+   "game": 4,
+   "week": 4,
+   "coach": "Scott Linehan",
+   "successor": "Jim Haslett",
+   "wins": 0,
+   "losses": 4,
+   "ties": 0,
+   "seasons_with_club": 3,
+   "cell": "3 to 4|later season"
+  },
+  {
+   "club": "LV",
+   "season": 2008,
+   "game": 4,
+   "week": 4,
+   "coach": "Lane Kiffin",
+   "successor": "Tom Cable",
+   "wins": 1,
+   "losses": 3,
+   "ties": 0,
+   "seasons_with_club": 2,
+   "cell": "1 to 2|later season"
+  },
+  {
+   "club": "MIA",
+   "season": 2004,
+   "game": 9,
+   "week": 9,
+   "coach": "Dave Wannstedt",
+   "successor": "Jim Bates",
+   "wins": 1,
+   "losses": 8,
+   "ties": 0,
+   "seasons_with_club": 5,
+   "cell": "5 or more|later season"
+  },
+  {
+   "club": "MIA",
+   "season": 2011,
+   "game": 13,
+   "week": 14,
+   "coach": "Tony Sparano",
+   "successor": "Todd Bowles",
+   "wins": 4,
+   "losses": 9,
+   "ties": 0,
+   "seasons_with_club": 4,
+   "cell": "5 or more|later season"
+  },
+  {
+   "club": "MIN",
+   "season": 2010,
+   "game": 10,
+   "week": 11,
+   "coach": "Brad Childress",
+   "successor": "Leslie Frazier",
+   "wins": 3,
+   "losses": 7,
+   "ties": 0,
+   "seasons_with_club": 5,
+   "cell": "3 to 4|later season"
+  },
+  {
+   "club": "SF",
+   "season": 2008,
+   "game": 7,
+   "week": 7,
+   "coach": "Mike Nolan",
+   "successor": "Mike Singletary",
+   "wins": 2,
+   "losses": 5,
+   "ties": 0,
+   "seasons_with_club": 4,
+   "cell": "3 to 4|later season"
+  },
+  {
+   "club": "SF",
+   "season": 2010,
+   "game": 15,
+   "week": 16,
+   "coach": "Mike Singletary",
+   "successor": "Jim Tomsula",
+   "wins": 5,
+   "losses": 10,
+   "ties": 0,
+   "seasons_with_club": 2,
+   "cell": "5 or more|later season"
+  }
+ ],
+ "january_conditional": {
+  "use": "Step 6's season-end draw only: the chance a club whose head coach was not changed in season changes him by the next season's opener. The weekly check never reads it.",
+  "definition": "The January table (library/data/2012_hc_change_base_rates.json) with the club-seasons that had an in-season change taken out of their cells and of the overall rate, smoothed as the January builder smooths: rate = (changed + 5 * overall) / (seasons + 5), a split cell toward its parent cell.",
+  "january_sha256": "58ba80eb9dff3950f4bbe4481ad04dd4498794d6656e4779a463d3f73cb0a183",
+  "club_seasons": 334,
+  "changed": 56,
+  "overall_rate": 0.1677,
+  "cells": {
+   "0-4|1st season": {
+    "changed": 4,
+    "seasons": 16,
+    "removed": 1,
+    "raw_rate": 0.25,
+    "rate": 0.2304
+   },
+   "0-4|2nd-3rd": {
+    "changed": 12,
+    "seasons": 17,
+    "removed": 2,
+    "raw_rate": 0.7059,
+    "rate": 0.5836
+   },
+   "0-4|2nd-3rd|no recent playoffs": {
+    "changed": 7,
+    "seasons": 10,
+    "removed": 2,
+    "raw_rate": 0.7,
+    "rate": 0.6612,
+    "smoothed_toward": "parent cell"
+   },
+   "0-4|2nd-3rd|recent playoffs": {
+    "changed": 5,
+    "seasons": 7,
+    "removed": 0,
+    "raw_rate": 0.7143,
+    "rate": 0.6598,
+    "smoothed_toward": "parent cell"
+   },
+   "0-4|4th+": {
+    "changed": 9,
+    "seasons": 15,
+    "removed": 2,
+    "raw_rate": 0.6,
+    "rate": 0.4919
+   },
+   "0-4|4th+|no recent playoffs": {
+    "changed": 3,
+    "seasons": 4,
+    "removed": 1,
+    "raw_rate": 0.75,
+    "rate": 0.6066,
+    "smoothed_toward": "parent cell"
+   },
+   "0-4|4th+|recent playoffs": {
+    "changed": 6,
+    "seasons": 11,
+    "removed": 1,
+    "raw_rate": 0.5455,
+    "rate": 0.5287,
+    "smoothed_toward": "parent cell"
+   },
+   "11+|4th+": {
+    "changed": 0,
+    "seasons": 1,
+    "removed": 0,
+    "raw_rate": 0.0,
+    "rate": 0.1397
+   },
+   "11+|4th+|recent playoffs": {
+    "changed": 0,
+    "seasons": 1,
+    "removed": 0,
+    "raw_rate": 0.0,
+    "rate": 0.1164,
+    "smoothed_toward": "parent cell"
+   },
+   "5-6|1st season": {
+    "changed": 1,
+    "seasons": 16,
+    "removed": 0,
+    "raw_rate": 0.0625,
+    "rate": 0.0875
+   },
+   "5-6|2nd-3rd": {
+    "changed": 9,
+    "seasons": 24,
+    "removed": 3,
+    "raw_rate": 0.375,
+    "rate": 0.3393
+   },
+   "5-6|2nd-3rd|no recent playoffs": {
+    "changed": 9,
+    "seasons": 18,
+    "removed": 3,
+    "raw_rate": 0.5,
+    "rate": 0.4651,
+    "smoothed_toward": "parent cell"
+   },
+   "5-6|2nd-3rd|recent playoffs": {
+    "changed": 0,
+    "seasons": 6,
+    "removed": 0,
+    "raw_rate": 0.0,
+    "rate": 0.1542,
+    "smoothed_toward": "parent cell"
+   },
+   "5-6|4th+": {
+    "changed": 4,
+    "seasons": 12,
+    "removed": 7,
+    "raw_rate": 0.3333,
+    "rate": 0.2846
+   },
+   "5-6|4th+|no recent playoffs": {
+    "changed": 2,
+    "seasons": 3,
+    "removed": 3,
+    "raw_rate": 0.6667,
+    "rate": 0.4279,
+    "smoothed_toward": "parent cell"
+   },
+   "5-6|4th+|recent playoffs": {
+    "changed": 2,
+    "seasons": 9,
+    "removed": 4,
+    "raw_rate": 0.2222,
+    "rate": 0.2445,
+    "smoothed_toward": "parent cell"
+   },
+   "7-8|1st season": {
+    "changed": 1,
+    "seasons": 17,
+    "removed": 0,
+    "raw_rate": 0.0588,
+    "rate": 0.0836
+   },
+   "7-8|2nd-3rd": {
+    "changed": 2,
+    "seasons": 26,
+    "removed": 1,
+    "raw_rate": 0.0769,
+    "rate": 0.0916
+   },
+   "7-8|2nd-3rd|no recent playoffs": {
+    "changed": 1,
+    "seasons": 15,
+    "removed": 0,
+    "raw_rate": 0.0667,
+    "rate": 0.0729,
+    "smoothed_toward": "parent cell"
+   },
+   "7-8|2nd-3rd|recent playoffs": {
+    "changed": 1,
+    "seasons": 11,
+    "removed": 1,
+    "raw_rate": 0.0909,
+    "rate": 0.0911,
+    "smoothed_toward": "parent cell"
+   },
+   "7-8|4th+": {
+    "changed": 4,
+    "seasons": 29,
+    "removed": 1,
+    "raw_rate": 0.1379,
+    "rate": 0.1423
+   },
+   "7-8|4th+|no recent playoffs": {
+    "changed": 2,
+    "seasons": 8,
+    "removed": 1,
+    "raw_rate": 0.25,
+    "rate": 0.2086,
+    "smoothed_toward": "parent cell"
+   },
+   "7-8|4th+|recent playoffs": {
+    "changed": 2,
+    "seasons": 21,
+    "removed": 0,
+    "raw_rate": 0.0952,
+    "rate": 0.1043,
+    "smoothed_toward": "parent cell"
+   },
+   "9-10|1st season": {
+    "changed": 0,
+    "seasons": 3,
+    "removed": 0,
+    "raw_rate": 0.0,
+    "rate": 0.1048
+   },
+   "9-10|2nd-3rd": {
+    "changed": 1,
+    "seasons": 12,
+    "removed": 0,
+    "raw_rate": 0.0833,
+    "rate": 0.1081
+   },
+   "9-10|2nd-3rd|no recent playoffs": {
+    "changed": 0,
+    "seasons": 4,
+    "removed": 0,
+    "raw_rate": 0.0,
+    "rate": 0.0601,
+    "smoothed_toward": "parent cell"
+   },
+   "9-10|2nd-3rd|recent playoffs": {
+    "changed": 1,
+    "seasons": 8,
+    "removed": 0,
+    "raw_rate": 0.125,
+    "rate": 0.1185,
+    "smoothed_toward": "parent cell"
+   },
+   "9-10|4th+": {
+    "changed": 4,
+    "seasons": 14,
+    "removed": 0,
+    "raw_rate": 0.2857,
+    "rate": 0.2546
+   },
+   "9-10|4th+|no recent playoffs": {
+    "changed": 0,
+    "seasons": 1,
+    "removed": 0,
+    "raw_rate": 0.0,
+    "rate": 0.2122,
+    "smoothed_toward": "parent cell"
+   },
+   "9-10|4th+|recent playoffs": {
+    "changed": 4,
+    "seasons": 13,
+    "removed": 0,
+    "raw_rate": 0.3077,
+    "rate": 0.2929,
+    "smoothed_toward": "parent cell"
+   },
+   "playoffs|1st season": {
+    "changed": 0,
+    "seasons": 20,
+    "removed": 0,
+    "raw_rate": 0.0,
+    "rate": 0.0335
+   },
+   "playoffs|2nd-3rd": {
+    "changed": 0,
+    "seasons": 36,
+    "removed": 0,
+    "raw_rate": 0.0,
+    "rate": 0.0204
+   },
+   "playoffs|4th+": {
+    "changed": 5,
+    "seasons": 76,
+    "removed": 0,
+    "raw_rate": 0.0658,
+    "rate": 0.0721
+   }
+  }
+ }
+}

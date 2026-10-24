@@ -112,6 +112,8 @@ SEASON_MOVES = {
     'postseason': 'Postseason',
     'season_review/player_assessments': 'Season_Review/Player_Assessments',
     'season_review': 'Season_Review',
+    # Rebuild step 5: the league's head-coach changes in season (the weekly check at every club).
+    'league/coaching_changes': 'League/Coaching_Changes',
     'league': 'League',
     'supporting_records': 'Supporting_Records',
     'calendar.md': 'Calendar.md',
@@ -192,7 +194,7 @@ PAGE_HISTORY = DATA_ROOT + '/pages/history.json'
 # The sha256 of the page history map's bytes. The map exempts the pages it lists, so it is pinned:
 # validation fails when the map changes unless this pin changes in the same commit
 # (runtime/clean_pages.history_pin_errors).
-PAGE_HISTORY_SHA256 = '57ba83ee8240bdd27122641208fc763c6ee140fc654f42ae1d6af23b60480c3b'
+PAGE_HISTORY_SHA256 = '85f089f2d3cd9aa16eb06c06627fcca0ccd726fd38fd7e92f68643c62266130d'
 # The research registries the player pages read through (one owner each).
 BIRTH_DATE_REGISTRY = 'library/data/player_birth_dates.json'
 BIRTH_DATE_CORRECTIONS = 'library/data/player_birth_date_corrections.json'
@@ -201,6 +203,18 @@ PHOTO_REGISTRY = 'library/data/player_photos.json'
 # cap views read: stored once in the data area, outside every season (rebuild step 3b).
 FINANCE_DATA = DATA_ROOT + '/finances'
 PLAYER_FINANCES = FINANCE_DATA + '/financial_inputs.json'
+# Rebuild step 5 (in-season decisions). One permanent contract record per player, named by the
+# player record's id (data/people/players/<id>.json), beside the people records.
+PLAYER_CONTRACTS = PEOPLE_ROOT + '/contracts'
+# An event owner's open-event records sit in the data-area twin of its owner folder, in this folder,
+# one file per event (SeasonPaths.event_store).
+EVENT_STORE = 'events'
+# The file names of the in-season records, found through SeasonPaths and runtime/decisions.py.
+LEAGUE_DATES = 'league_dates.json'          # the trade deadline and other league dates
+TRANSACTIONS = 'transactions'               # the roster moves' transaction records
+PRACTICE_LOG = 'practices.json'             # a week's practice and rest record, byes included
+GAME_DAY_CHANGES = 'game_day_changes.json'  # a week's depth or inactives change after the Game Plan
+RESPONSES_RECORD = 'responses.json'         # a My Responses page's binding and apply record
 
 
 def is_system_file(relative):

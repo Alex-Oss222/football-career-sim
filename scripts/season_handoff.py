@@ -11,7 +11,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from runtime import decision_queue
 from runtime.seasons import SeasonPaths
-from runtime.season_layout import (ASSISTANT_COACH_PAGES, COACH_RECORDS, PLAYER_FINANCES, STONE_COACH_SHEET,
+from runtime.season_layout import (ASSISTANT_COACH_PAGES, COACH_RECORDS, PLAYER_CONTRACTS, PLAYER_FINANCES,
+                                    STONE_COACH_SHEET,
                                     STONE_PROFILE, STONE_REVIEWS, opening_guides)
 from runtime.events import EVENT_META, resolve_path
 
@@ -19,9 +20,10 @@ TEAM_GATES = ('team_season_closed', 'exit_interviews', 'roster_and_medical',
               'player_contracts_and_cap', 'staff_contracts', 'draft_assets',
               'development_and_open_decisions')
 HISTORY_GATES = ('league_statistics', 'awards_and_history')
-# The staff carry is the coach records folder (data/people/coaches): permanent records that grow by
-# dated entries across seasons, so they carry into the successor without a copy.
-DIRECTORY_SOURCES = {'player_cards', 'final_assessments', 'staff'}
+# The staff carry is the coach records folder (data/people/coaches) and the player finances carry the
+# player contract records folder (data/people/contracts): permanent records that grow by dated entries
+# across seasons, so they carry into the successor without a copy.
+DIRECTORY_SOURCES = {'player_cards', 'final_assessments', 'staff', 'player_finances'}
 REQUIRED_CARRY_SOURCES = {'roster', 'staff', 'depth_chart', 'cap', 'calendar',
                           'record', 'player_ages', 'player_contracts', 'contract_status',
                           'player_finances', 'organization_finances', 'draft_assets',
@@ -169,7 +171,7 @@ def prepare(root, year):
     sources.update(roster=paths.roster.relative_to(root).as_posix(), staff=COACH_RECORDS,
                    player_contracts=relative('offseason/contract_table.md'),
                    contract_status=relative('offseason/contract_status_register.md'),
-                   player_finances=PLAYER_FINANCES,
+                   player_finances=PLAYER_CONTRACTS,
                    organization_finances='career/finances/coaching_and_organization/coaching_payroll.md',
                    draft_assets=relative('draft/pick_ownership.json'),
                    medical_and_roles='state/04_Roster_and_Staff_Register.md',

@@ -40,7 +40,12 @@ exactly the records the game path already reads, and the record of the apply:
 Applying again (a revised page, before the game is built) first undoes the
 earlier apply's depth changes, replaces its update-log entry and its record,
 so the log and the record always describe the plan against the chart as it
-stood before it. Stone's page stays as the record of his decision and is
+stood before it. Once Stone has changed the depth or inactives on My Responses
+after the apply (scripts/change_game_day.py) the page is not applied again:
+the change was made against the plan as applied. The chart writers
+(``chart_paths``, ``write_charts``, ``log_change``) are the one way the two
+chart copies and the update log are written, here, by a game-day change, a bye
+adjustment and a roster transaction. Stone's page stays as the record of his decision and is
 never written. Every built page is rebuilt afterwards (scripts/
 rebuild_pages.py), so no view that reads the chart is left stale. The Game
 Week Briefing is not reissued for the plan's own settlement. Nothing is
@@ -207,6 +212,38 @@ def event_for(plan, sheet, players, changes):
     return event
 
 
+def chart_paths(paths):
+    """The depth chart's two copies (the chart writers' interface): the game chart the build reads and,
+    when the season keeps one, the working chart beside it."""
+    working = paths.record("offseason/depth_chart_working.json")
+    return [paths.depth_chart] + ([working] if working.is_file() else [])
+
+
+def write_charts(paths, change):
+    """Write one change to both copies of the depth chart, each in the layout it already has: ``change``
+    takes a copy of a chart and whether it is the working copy, and returns the chart to write. The one
+    writer of the charts for the Game Plan's apply, a game-day change (scripts/change_game_day.py), a
+    bye adjustment and a roster transaction; returns the paths written."""
+    written = []
+    for chart_path in chart_paths(paths):
+        chart = change(json.loads(chart_path.read_text(encoding="utf-8")), chart_path != paths.depth_chart)
+        write_like(chart_path, chart)
+        written.append(chart_path)
+    return written
+
+
+def log_change(paths, entry, replaces=None):
+    """Append one dated entry to the depth chart's update log (the one dated log of chart changes),
+    first dropping the entries ``replaces`` (a function of an entry) matches; returns its path."""
+    log_path = paths.record("team/depth_chart/update_log.json")
+    log = json.loads(log_path.read_text(encoding="utf-8"))
+    if replaces is not None:
+        log["entries"] = [e for e in log["entries"] if not replaces(e)]
+    log["entries"].append(entry)
+    write_like(log_path, log)
+    return log_path
+
+
 def apply_records(plan, sheet, players, resolve_queue=True):
     """Write the call sheet, the chart's inactives and depth changes with their log entry, the applied
     plan record, and settle the queue items; returns the paths written."""
@@ -218,20 +255,19 @@ def apply_records(plan, sheet, players, resolve_queue=True):
     page = plan.rel(plan.pages.plan)
     earlier = plan.applied or {}
     depth = plan.choices.get("depth") if isinstance(plan.choices.get("depth"), dict) else {}
-    working_path = plan.paths.record("offseason/depth_chart_working.json")
     game = json.loads(plan.paths.depth_chart.read_text(encoding="utf-8"))
     _restore(game, earlier)
     after, changes = changed_chart(game, depth)
     before = _before(game, after)
     cleared = cleared_labels(plan, game, after)
-    for chart_path in [plan.paths.depth_chart] + ([working_path] if working_path.is_file() else []):
-        chart = json.loads(chart_path.read_text(encoding="utf-8"))
+
+    def change(chart, working):
         _restore(chart, earlier)
         chart, _ = changed_chart(chart, depth)
         if players is not None:
             chart["game_day_inactives"] = {"week": plan.week, "players": list(players),
                                            "note": inactive_note(plan, players)}
-        if chart_path == working_path:
+        if working:
             decisions = [d for d in chart.get("stone_role_decisions", ())
                          if d.get("game_plan_week") != plan.week]
             if cleared:
@@ -242,20 +278,16 @@ def apply_records(plan, sheet, players, resolve_queue=True):
                                                  "Game Plan" % plan.label()} for p in cleared]})
             if decisions or "stone_role_decisions" in chart:
                 chart["stone_role_decisions"] = decisions
-        write_like(chart_path, chart)
-        written.append(chart_path)
-    log_path = plan.paths.record("team/depth_chart/update_log.json")
-    log = json.loads(log_path.read_text(encoding="utf-8"))
+        return chart
+    written += write_charts(plan.paths, change)
     change = "%s inactives: %s." % (plan.label(), ", ".join(players)) if players is not None else ""
     shown = changes + ["the earlier label of %s cleared" % p for p in cleared]
     change += (" " + "; ".join(shown) + ".") if shown else " No order or role change."
-    log["entries"] = [e for e in log["entries"] if not (e.get("event") == log_event(plan) and any(
-        (s or {}).get("page") == page for s in e.get("sources") or ()))]
-    log["entries"].append({"date": long_date(plan.master), "recorded": plan.master.isoformat(),
-                           "event": log_event(plan), "change": change.strip(),
-                           "sources": [{"label": "%s Game Plan" % plan.label(), "page": page}]})
-    write_like(log_path, log)
-    written.append(log_path)
+    written.append(log_change(plan.paths, {
+        "date": long_date(plan.master), "recorded": plan.master.isoformat(), "event": log_event(plan),
+        "change": change.strip(), "sources": [{"label": "%s Game Plan" % plan.label(), "page": page}]},
+        replaces=lambda e: e.get("event") == log_event(plan) and any(
+            (s or {}).get("page") == page for s in e.get("sources") or ())))
     if players is not None:
         plan.pages.inactives.write_text(json.dumps({
             "season": plan.season, "week": plan.week, "set": plan.master.isoformat(), "players": list(players),
@@ -328,9 +360,33 @@ def waiting(plan):
     return out
 
 
+def changed_on_game_day(root, season, week):
+    """The depth or inactives changes Stone made on My Responses after the week's Game Plan was applied
+    (scripts/change_game_day.py, the week's ``game_day_changes.json``); [] when none."""
+    from runtime import game_weeks
+    from runtime.decisions import week_pages
+    from runtime.seasons import SeasonPaths
+    postseason = game_weeks.is_postseason(SeasonPaths(season, Path(root).resolve()), week)
+    path = week_pages(season, week, Path(root).resolve(), postseason=postseason).game_day_changes
+    if not path.is_file():
+        return []
+    return list(json.loads(path.read_text(encoding="utf-8")).get("changes") or [])
+
+
 def apply(root, season, week, rebuild_pages=True, report=None):
     """Check the week's page and apply it; ``report`` (a dict) is told when nothing is set because
-    an item still waits on an exam (``waiting``)."""
+    an item still waits on an exam (``waiting``). A week with a game-day change recorded is not
+    applied again: the change was made against the plan as applied."""
+    changed = changed_on_game_day(root, season, week)
+    if changed:
+        from runtime import game_weeks
+        from runtime.seasons import SeasonPaths
+        name = (game_weeks.round_name(week) if game_weeks.is_postseason(SeasonPaths(season, Path(root).resolve()), week)
+                else "Week %d" % week)
+        when = sorted({c["date"] for c in changed})
+        return ["%s: Stone changed the depth or inactives on My Responses after the Game Plan was applied (%s); the "
+                "plan stays as it was set, and a further change is made there"
+                % (name, ", ".join(long_date(date.fromisoformat(d)) for d in when))], []
     problems, notes, plan = check(root, season, week)
     if problems:
         return problems, []

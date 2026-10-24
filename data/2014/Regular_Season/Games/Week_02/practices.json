@@ -1,0 +1,292 @@
+{
+ "schema": "practice-week-v1",
+ "season": 2014,
+ "week": 2,
+ "kind": "game",
+ "basis": "closed_record",
+ "schedule": null,
+ "source": {
+  "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+  "anchor": "1-week-setup-and-game-preparation"
+ },
+ "padded_count_basis": {
+  "text": "The Week 5 record counts Wednesday, October 1 as the season's ninth padded practice, and the defect register counts two in each of Weeks 1 to 4, on the Wednesday and the Thursday; no other session of this week was a padded practice",
+  "sources": [
+   {
+    "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+    "anchor": "1-week-setup-and-game-preparation"
+   },
+   {
+    "page": "runtime/defect_register.md",
+    "anchor": "display-and-records-no-result-change"
+   }
+  ]
+ },
+ "sessions": [
+  {
+   "date": "2014-09-08",
+   "type": "walkthrough",
+   "required": true,
+   "attendees": "team",
+   "equipment": null,
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": []
+  },
+  {
+   "date": "2014-09-10",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets_and_shoulder_pads",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Maurice Jones-Drew",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Hakeem Nicks",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-3-and-4-hoskins-and-nicks-reassessed"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Gator Hoskins",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-3-and-4-hoskins-and-nicks-reassessed"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Alan Ball",
+     "status": "full",
+     "basis": null,
+     "medical": null,
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Adrian Phillips",
+     "status": "full",
+     "basis": null,
+     "medical": null,
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-09-11",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets_and_shoulder_pads",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Maurice Jones-Drew",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Hakeem Nicks",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-3-and-4-hoskins-and-nicks-reassessed"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Gator Hoskins",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-3-and-4-hoskins-and-nicks-reassessed"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Alan Ball",
+     "status": "full",
+     "basis": null,
+     "medical": null,
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Adrian Phillips",
+     "status": "full",
+     "basis": null,
+     "medical": null,
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-09-12",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Maurice Jones-Drew",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Hakeem Nicks",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-3-and-4-hoskins-and-nicks-reassessed"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Gator Hoskins",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-3-and-4-hoskins-and-nicks-reassessed"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Alan Ball",
+     "status": "full",
+     "basis": null,
+     "medical": null,
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Adrian Phillips",
+     "status": "full",
+     "basis": null,
+     "medical": null,
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-09-13",
+   "type": "walkthrough",
+   "required": true,
+   "attendees": "team",
+   "equipment": null,
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Maurice Jones-Drew",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-8-to-12-jones-drew-reassessed-and-cleared-harris-and-lowery-to-reserveinjured"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    }
+   ]
+  }
+ ],
+ "days_off": [
+  {
+   "date": "2014-09-09",
+   "scope": "players",
+   "players": "all",
+   "exceptions": [],
+   "source": {
+    "page": "career/2014/Regular_Season/Games/Week_02/output.md",
+    "anchor": "1-week-setup-and-game-preparation"
+   }
+  }
+ ],
+ "gaps": [
+  "The record names the players who did not practice, were limited or took part in full under a named condition, and states that no other player was limited or held out; it gives no other player's participation session by session",
+  "The equipment of the Monday, September 8 and Saturday, September 13 walkthroughs is not stated"
+ ]
+}

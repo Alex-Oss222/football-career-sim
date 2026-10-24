@@ -85,6 +85,45 @@ def ours_first(games):
     return sorted(games, key=lambda g: (JAX not in (g["away"], g["home"]), g["away"]))
 
 
+def record_practice(test, root, week):
+    """The week's practice and rest record, as the practice-week commit writes it once the master date
+    is at game day (docs/run_week.md, step 5): the schedule Stone's standing practice instruction sets
+    for the week, held as set, its participation not recorded session by session (test data only)."""
+    from runtime import decisions, practices
+    from scripts import record_practice_week
+    schedule, why = record_practice_week.applied_schedule(root, SEASON, week)
+    test.assertIsNotNone(schedule, why)
+    page = decisions.week_pages(SEASON, week, root).briefing
+    held = {"source": {"page": page.relative_to(root).as_posix()},
+            "sessions": [dict(s, participation_recorded=False) for s in schedule["sessions"]],
+            "days_off": schedule["days_off"]}
+    record = record_practice_week.held_record(SEASON, week, held, schedule, root)
+    test.assertEqual(practices.record_errors(record, root, schedule=schedule), [])
+    practices.write(record, root)
+
+
+def check_head_coaches(test, root, week, client):
+    """The weekly head-coach check, as the close runs it after the week's slate closes and before the
+    rebuild that opens the next week (docs/run_week.md, step 8): every week still due through
+    ``week``, the retroactive Weeks 1 to 5 first, each drawn through the local test service. Test data:
+    the copy's rate table is zeroed first (its digest re-recorded in the copy's method), so no change
+    is drawn and the pages never depend on the draw."""
+    from runtime import league_coaches
+    from scripts import coaching_check
+    method = league_coaches.load_method(SEASON, root)
+    table_file = root / method["table"]["file"]
+    table = json.loads(table_file.read_text(encoding="utf-8"))
+    for row in table["rates"].values():
+        row["rate"] = 0.0
+    table_file.write_text(json.dumps(table, indent=1) + "\n", encoding="utf-8")
+    method["table"]["sha256"] = hashlib.sha256(table_file.read_bytes()).hexdigest()
+    league_coaches.method_path(SEASON, root).write_text(json.dumps(method, indent=1) + "\n", encoding="utf-8")
+    test.assertTrue(league_coaches.due_weeks(SEASON, root, week))
+    test.assertEqual(coaching_check.close(SEASON, week, root, client, lambda *_: None), 0)
+    test.assertEqual(league_coaches.due_weeks(SEASON, root, week), [])
+    test.assertEqual(league_coaches.coverage_errors(root, SEASON), [])
+
+
 class WeekClosePagesTests(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
@@ -217,11 +256,13 @@ class WeekClosePagesTests(unittest.TestCase):
         root, paths = self.root, self.paths
         receipt = self.fake_week()
         self.played = self.move_clock(receipt)
+        record_practice(self, self.root, WEEK)
         report = self.write_report(receipt)
         self.settle_week(report)
         snapshot = hashlib.sha256((root / "state/05_Current_Season_State.md").read_bytes()).hexdigest()
         _, client = local_service(self, root / "private", "week-close-pages", snapshot=snapshot)
         self.draw_awards(client)
+        check_head_coaches(self, root, WEEK, client)
         self.assertEqual(clean_pages.page_errors(report.relative_to(root).as_posix(),
                                                  report.read_text(encoding="utf-8")), [])
 

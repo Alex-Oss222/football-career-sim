@@ -1,0 +1,105 @@
+{
+ "schema_version": 1,
+ "name": "Aqib Talib",
+ "player": "aqib_talib",
+ "listed": 61,
+ "position": "CB",
+ "roster_position": "CB",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-03-11",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "aqib_talib_2014-03-11",
+   "club": "Jacksonville Jaguars",
+   "through": 2018,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 7800000,
+     "base": 6500000,
+     "proration": 1300000,
+     "other_cap": 0,
+     "cash": 13000000,
+     "guaranteed_base": 6500000,
+     "basis": "Branch contract, Entry 96 (March 2014 replay)"
+    },
+    "2015": {
+     "status": "known",
+     "cap": 9800000,
+     "base": 8500000,
+     "proration": 1300000,
+     "other_cap": 0,
+     "cash": 8500000,
+     "guaranteed_base": 8500000,
+     "basis": "Branch contract, Entry 96 (March 2014 replay)"
+    },
+    "2016": {
+     "status": "known",
+     "cap": 9300000,
+     "base": 6000000,
+     "proration": 1300000,
+     "other_cap": 2000000,
+     "cash": 8000000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 96 (March 2014 replay): $1,000,000 roster bonus and up to $1,000,000 active-game bonuses"
+    },
+    "2017": {
+     "status": "known",
+     "cap": 9800000,
+     "base": 6500000,
+     "proration": 1300000,
+     "other_cap": 2000000,
+     "cash": 8500000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 96 (March 2014 replay): $1,000,000 roster bonus and up to $1,000,000 active-game bonuses"
+    },
+    "2018": {
+     "status": "known",
+     "cap": 9800000,
+     "base": 6500000,
+     "proration": 1300000,
+     "other_cap": 2000000,
+     "cash": 8500000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 96 (March 2014 replay): $1,000,000 roster bonus and up to $1,000,000 active-game bonuses"
+    }
+   },
+   "type": "Veteran (branch free agent)",
+   "signed_text": "March 11, 2014, after 4 p.m. ET",
+   "term_text": "5 / 2018",
+   "value_text": "$46,500,000",
+   "bonus": {
+    "text": "$6,500,000; $1,300,000; 5",
+    "amount": 6500000
+   },
+   "guarantee_text": "$21,500,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base)",
+   "basis": {
+    "text": "Executed branch terms (Entry 95)",
+    "source": "career/2014/Team_Operations/Finances/player_contracts/contracts.md"
+   },
+   "exposure_text": "Gross pre-June 1 exposure $13,700,000 in 2015; $3,900,000 in 2016; $2,600,000 in 2017; $1,300,000 in 2018",
+   "notes": "Branch record (Entry 96; March 2014 replay log). The historical Denver signing does not occur",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/free_agency/signings.md",
+    "career/2014/free_agency/march_2014_replay_log.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2013: 6 (Tampa Bay and New England, 2008-2013)"
+  }
+ ]
+}

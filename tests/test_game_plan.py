@@ -1433,14 +1433,15 @@ class OffensiveWordsTests(unittest.TestCase):
 
 
 class MasterDateTests(unittest.TestCase):
-    """docs/run_week.md's two master-date forms read alike under every reader of the line."""
+    """docs/run_week.md's three master-date forms (game day, after the game and the mid-week record of
+    rebuild step 5) read alike under every reader of the line."""
 
     def test_the_documented_forms_parse(self):
         from datetime import datetime
         text = (ROOT / "docs/run_week.md").read_text(encoding="utf-8")
         forms = re.findall(r"`(\| Master date/time \| [^`]+\|)`", text)
-        self.assertEqual(len(forms), 2)
-        for form, played in zip(forms, (False, True)):
+        self.assertEqual(len(forms), 3)
+        for form, played in zip(forms, (False, True, False)):
             cell = re.search(r"\| Master date/time \| (.*?) \|", form)[1]
             by_bios = datetime.strptime(re.match(r"[A-Za-z]+ \d{1,2}, \d{4}", cell)[0], "%B %d, %Y").date()
             by_validator = datetime.strptime(cell.split(", after")[0], "%B %d, %Y").date()

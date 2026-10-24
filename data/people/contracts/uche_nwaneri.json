@@ -1,0 +1,106 @@
+{
+ "schema_version": 1,
+ "name": "Uche Nwaneri",
+ "player": "uche_nwaneri",
+ "listed": 18,
+ "position": "OG",
+ "roster_position": "G",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2010",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "uche_nwaneri_2010",
+   "club": "Jacksonville Jaguars",
+   "through": 2015,
+   "years": {
+    "2014": {
+     "status": "approximate",
+     "cap": null,
+     "base": 3775000,
+     "proration": 1094500,
+     "other_cap": 1025000,
+     "cash": 4800000,
+     "approximate_cap": 5894500,
+     "estimate_note": "2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
+     "guaranteed_base": 0
+    },
+    "2015": {
+     "status": "approximate",
+     "cap": null,
+     "base": 3775000,
+     "proration": 1094500,
+     "other_cap": 1025000,
+     "cash": 4800000,
+     "approximate_cap": 5894500,
+     "estimate_note": "2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Veteran extension, 2010",
+   "signed_text": "2010",
+   "term_text": "5 / 2015",
+   "value_text": "$24,000,000",
+   "bonus": {
+    "text": "$1,094,500 annual allocation in 2014 and 2015; original paid-bonus composition not fully recovered"
+   },
+   "guarantee_text": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
+   "guarantee_basis": "simulation reconstruction",
+   "basis": {
+    "text": "Includes adopted simulation amounts; see contract notes",
+    "source": "library/2014_jaguars_contract_completion.md"
+   },
+   "exposure_text": "$2,189,000 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "2014 estimate: verified $3.775M base and $1M roster bonus plus carried $25,000 workout and $1,094,500 allocation. Original 2015 cash schedule remains missing; budget the same $4.8M cash and $5,894,500 charge as 2014 until replaced. That flat 2015 allowance is an estimate, not a recovered salary.",
+   "sources": [
+    "career/2014/offseason/contract_table.md",
+    "career/2014/offseason/contract_status_register.md",
+    "library/2014_jaguars_original_contract_reconstruction.md",
+    "library/2014_jaguars_contract_completion.md"
+   ],
+   "schedule_from": "c103fc7"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-03-20",
+   "source": "career/2014/Team_Operations/Trades/completed_trades/nwaneri_to_arizona_2014-03-20.md",
+   "contract": "uche_nwaneri_2010",
+   "how": "traded",
+   "text": "Traded to Arizona, March 20, 2014",
+   "to": "Arizona Cardinals",
+   "dead_money": [
+    {
+     "year": 2014,
+     "amount": 2189000,
+     "status": "reconstructed",
+     "basis": "Pre-June 1 trade to Arizona, March 20, 2014 (Entry 99): the 2014 and 2015 bonus allocations of $1,094,500 each accelerate into 2014. His $1,000,000 March 25 roster bonus passes to Arizona.",
+     "line": 5
+    }
+   ],
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "library/2014_jaguars_original_contract_reconstruction.md",
+    "library/2014_jaguars_contract_completion.md"
+   ],
+   "as_written": {
+    "source": "career/2013/ledger.md"
+   }
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Traded to Arizona, March 20, 2014 (package I, Entry 99)",
+   "availability": "No communicated restriction",
+   "plan": "Traded to Arizona (Entry 99)",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 4+ (entered 2007). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}
