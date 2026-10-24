@@ -1,0 +1,78 @@
+{
+ "schema_version": 1,
+ "name": "Jerrell Jackson",
+ "player": "jerrell_jackson",
+ "listed": 40,
+ "position": "WR",
+ "roster_position": "WR",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-02-03",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "jerrell_jackson_2014-02-03",
+   "club": "Jacksonville Jaguars",
+   "through": 2015,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 420000,
+     "base": 420000,
+     "proration": 0,
+     "other_cap": 0,
+     "cash": 420000,
+     "guaranteed_base": 0
+    },
+    "2015": {
+     "status": "approximate",
+     "cap": null,
+     "base": 510000,
+     "proration": 0,
+     "other_cap": 0,
+     "cash": 510000,
+     "approximate_cap": 510000,
+     "estimate_note": "Adopted two-year futures term; 2015 CBA minimum after one additional credited active season. No extension is assumed. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Reserve/future",
+   "signed_text": "February 3, 2014",
+   "term_text": "2 / 2015 (simulation reconstruction)",
+   "value_text": "$930,000",
+   "bonus": {
+    "text": "$0; $0; 0",
+    "amount": 0
+   },
+   "guarantee_text": "No remaining guaranteed base salary established in the recovered schedule",
+   "basis": {
+    "text": "Includes adopted simulation amounts; see contract notes",
+    "source": "library/2014_jaguars_contract_completion.md"
+   },
+   "exposure_text": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Promoted December 24, 2012 for the finale only; 2013 branch practice squad adds no credited season. Entry 91 completes the already-signed deal as two years, 2014-2015, without a bonus or guarantee. The second-year salary is the 2015 minimum with one further credited active season.",
+   "sources": [
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/free_agency/signings.md",
+    "library/2014_jaguars_contract_completion.md",
+    "library/2014_jaguars_original_contract_reconstruction.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract (reserve/future contract effective March 11, 2014); reserve/injured from August 31, 2014 (waived with the injured designation August 30, unclaimed); the contract continues",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "0 through 2013, Article 26 reconstruction; see original-contract research",
+   "accrued_seasons": "No 2013 accrual from practice-squad service"
+  }
+ ]
+}

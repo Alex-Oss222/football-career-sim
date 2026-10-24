@@ -1,0 +1,87 @@
+{
+ "schema_version": 1,
+ "name": "C.J. Wilson",
+ "player": "c_j_wilson",
+ "listed": 48,
+ "position": "EDGE",
+ "roster_position": "DE",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-03-28",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "c_j_wilson_2014-03-28",
+   "club": "Jacksonville Jaguars",
+   "through": 2014,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 795000,
+     "base": 730000,
+     "proration": 65000,
+     "other_cap": 0,
+     "cash": 795000,
+     "guaranteed_base": 0,
+     "basis": "Branch one-year minimum plus $65,000 signing bonus, Entry 103"
+    }
+   },
+   "type": "Veteran minimum (branch re-signing)",
+   "signed_text": "March 28, 2014",
+   "term_text": "1 / 2014",
+   "value_text": "$795,000",
+   "bonus": {
+    "text": "$65,000 signing bonus; $65,000; 1"
+   },
+   "guarantee_text": "$65,000 (signing bonus)",
+   "basis": {
+    "text": "Branch minimum re-signing, Entry 103 (negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md)",
+    "source": "career/2014/Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md"
+   },
+   "exposure_text": "$65,000 if released",
+   "notes": "Branch record (Entry 103; negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md"
+   ],
+   "schedule_from": "0152eae"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-08-30",
+   "source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+   "contract": "c_j_wilson_2014-03-28",
+   "how": "released",
+   "text": "Released August 30, 2014 at the reduction to 53",
+   "dead_money": [
+    {
+     "year": 2014,
+     "amount": 65000,
+     "status": "reconstructed",
+     "basis": "Released August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction",
+     "line": 15
+    }
+   ],
+   "notes": "Branch record (Entry 103; negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). $730,000 minimum for four credited seasons plus a $65,000 signing bonus. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified. Released August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Veteran minimum (branch re-signing) ended. Dead money: the 2014 bonus allocation of $65,000 stays in 2014 and the later allocations of $0 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).",
+   "sources": [
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Released August 30, 2014 at the reduction to 53 (vested veteran, not subject to waivers)",
+   "availability": "No communicated restriction",
+   "plan": "Former player; departure recorded",
+   "credited_seasons": "Four to six (inferred from his real 2014 $730,000 minimum base, Over The Cap data; unverified)",
+   "accrued_seasons": "Through 2012: 3 (2010-2012 with Green Bay). 2013: Accrues in branch (on 53 for 16 games; injured Week 2, never moved to a reserve list)"
+  }
+ ]
+}

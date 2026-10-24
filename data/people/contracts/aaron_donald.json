@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "name": "Aaron Donald",
+ "player": "aaron_donald",
+ "listed": 65,
+ "position": "IDL",
+ "roster_position": "DT",
+ "draft_pick": "#13",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-05-11",
+   "source": "career/2014/Draft/draftees.md",
+   "contract": "aaron_donald_2014-05-11",
+   "club": "Jacksonville Jaguars",
+   "through": 2017,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 2399125,
+     "base": 420000,
+     "proration": 1979125,
+     "cash": 8336500,
+     "other_cap": 0,
+     "guaranteed_base": 420000,
+     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 13: Aaron Donald, 10,136,500 total, 10,136,500 guaranteed); minimum-scale base, signing bonus allocated over four years"
+    },
+    "2015": {
+     "status": "known",
+     "cap": 2489125,
+     "base": 510000,
+     "proration": 1979125,
+     "cash": 510000,
+     "other_cap": 0,
+     "guaranteed_base": 510000,
+     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 13: Aaron Donald, 10,136,500 total, 10,136,500 guaranteed); minimum-scale base, signing bonus allocated over four years"
+    },
+    "2016": {
+     "status": "known",
+     "cap": 2579125,
+     "base": 600000,
+     "proration": 1979125,
+     "cash": 600000,
+     "other_cap": 0,
+     "guaranteed_base": 600000,
+     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 13: Aaron Donald, 10,136,500 total, 10,136,500 guaranteed); minimum-scale base, signing bonus allocated over four years"
+    },
+    "2017": {
+     "status": "known",
+     "cap": 2669125,
+     "base": 690000,
+     "proration": 1979125,
+     "cash": 690000,
+     "other_cap": 0,
+     "guaranteed_base": 690000,
+     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 13: Aaron Donald, 10,136,500 total, 10,136,500 guaranteed); minimum-scale base, signing bonus allocated over four years"
+    }
+   },
+   "type": "Rookie scale, pick #13",
+   "signed_text": "May 11, 2014",
+   "term_text": "4 / 2017 + first-round club option",
+   "value_text": "$10,136,500",
+   "bonus": {
+    "text": "$7,916,500; $1,979,125; 4",
+    "amount": 7916500
+   },
+   "guarantee_text": "Fully guaranteed: the signing bonus and all four base salaries",
+   "guarantee_basis": "Slot reconstruction from the same-slot 2014 contract",
+   "basis": {
+    "text": "Slot reconstruction from the same-slot 2014 contract",
+    "source": "career/2014/Draft/draftees.md"
+   },
+   "exposure_text": "$10,136,500 gross exposure under the slot reconstruction, before any later earned payment or recorded credit",
+   "notes": "Branch record (Entry 108): selected May 8, 2014 at No. 13; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 13 (Aaron Donald, St. Louis) in the nflverse/OTC historical contracts file, $10,136,500 total and $10,136,500 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years. The first-round fifth-year option for 2018 is unexercised and not booked. Not the player's real contract",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/draft/draftees.md"
+   ],
+   "rookie": "drafted"
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "0",
+   "accrued_seasons": "0 (2014 rookie)"
+  }
+ ]
+}

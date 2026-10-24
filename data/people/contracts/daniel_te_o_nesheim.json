@@ -1,0 +1,85 @@
+{
+ "schema_version": 1,
+ "name": "Daniel Te'o-Nesheim",
+ "player": "daniel_te_o_nesheim",
+ "listed": 64,
+ "position": "EDGE",
+ "roster_position": "DE",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-03-18",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "daniel_te_o_nesheim_2014-03-18",
+   "club": "Jacksonville Jaguars",
+   "through": 2016,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 3000000,
+     "base": 1500000,
+     "proration": 1000000,
+     "other_cap": 500000,
+     "cash": 5000000,
+     "guaranteed_base": 1500000,
+     "basis": "Branch contract, Entry 98 (March 2014 replay): up to $500,000 active-game bonuses"
+    },
+    "2015": {
+     "status": "known",
+     "cap": 3000000,
+     "base": 1500000,
+     "proration": 1000000,
+     "other_cap": 500000,
+     "cash": 2000000,
+     "guaranteed_base": 1500000,
+     "basis": "Branch contract, Entry 98 (March 2014 replay): up to $500,000 active-game bonuses"
+    },
+    "2016": {
+     "status": "known",
+     "cap": 7500000,
+     "base": 5000000,
+     "proration": 1000000,
+     "other_cap": 1500000,
+     "cash": 6500000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 98 (March 2014 replay): $1,000,000 roster bonus and up to $500,000 active-game bonuses"
+    }
+   },
+   "type": "Veteran (branch free agent)",
+   "signed_text": "March 18, 2014",
+   "term_text": "3 / 2016",
+   "value_text": "$13,500,000 (maximum)",
+   "bonus": {
+    "text": "$3,000,000; $1,000,000; 3",
+    "amount": 3000000
+   },
+   "guarantee_text": "$6,000,000 fully guaranteed at signing (signing bonus plus 2014 and 2015 base)",
+   "basis": {
+    "text": "Executed branch terms (Entry 95)",
+    "source": "career/2014/Team_Operations/Finances/player_contracts/contracts.md"
+   },
+   "exposure_text": "Gross exposure $6,000,000 before 2014 salary is earned; $1,000,000 before the 2016 roster bonus",
+   "notes": "Branch record (Entry 98; negotiation record career/2014/free_agency/teo_nesheim_negotiation_2014-03-18.md). Active-game bonuses reserved in full",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/free_agency/signings.md",
+    "career/2014/free_agency/teo_nesheim_negotiation_2014-03-18.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2013: 4 (Philadelphia and Tampa Bay, 2010-2013)"
+  }
+ ]
+}

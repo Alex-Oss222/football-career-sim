@@ -1,0 +1,390 @@
+{
+ "schema": "practice-week-v1",
+ "season": 2014,
+ "week": 5,
+ "kind": "game",
+ "basis": "closed_record",
+ "schedule": null,
+ "source": {
+  "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+  "anchor": "1-week-setup-and-game-preparation"
+ },
+ "padded_count_basis": {
+  "text": "The Week 5 record counts Wednesday, October 1 as the season's ninth padded practice and its Thursday in helmets only; no other session of this week was a padded practice",
+  "sources": [
+   {
+    "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+    "anchor": "1-week-setup-and-game-preparation"
+   },
+   {
+    "page": "runtime/defect_register.md",
+    "anchor": "display-and-records-no-result-change"
+   }
+  ]
+ },
+ "sessions": [
+  {
+   "date": "2014-09-29",
+   "type": "walkthrough",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Paul Posluszny",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Julian Stanford",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Adrian Phillips",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-01",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets_and_shoulder_pads",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Paul Posluszny",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Malcolm Butler",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Jordan Poyer",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Julian Stanford",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Adrian Phillips",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-02",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Paul Posluszny",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Malcolm Butler",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Jordan Poyer",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Julian Stanford",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Adrian Phillips",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-03",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Paul Posluszny",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Malcolm Butler",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Jordan Poyer",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Julian Stanford",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Adrian Phillips",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-04",
+   "type": "walkthrough",
+   "required": true,
+   "attendees": "team",
+   "equipment": null,
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Paul Posluszny",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Malcolm Butler",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Julian Stanford",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    },
+    {
+     "player": "Adrian Phillips",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "september-29-to-october-4-stanford-phillips-butler-and-posluszny-cleared-poyer-held"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+      "anchor": "1-week-setup-and-game-preparation"
+     }
+    }
+   ]
+  }
+ ],
+ "days_off": [
+  {
+   "date": "2014-09-30",
+   "scope": "players",
+   "players": "all",
+   "exceptions": [],
+   "source": {
+    "page": "career/2014/Regular_Season/Games/Week_05/output.md",
+    "anchor": "1-week-setup-and-game-preparation"
+   }
+  }
+ ],
+ "gaps": [
+  "The record names the players who did not practice, were limited or took part in full under a named condition, and states that no other player was limited or held out; it gives no other player's participation session by session",
+  "The equipment of the Saturday, October 4 walkthrough is not stated",
+  "Jordan Poyer's part in the two walkthroughs is not stated"
+ ]
+}

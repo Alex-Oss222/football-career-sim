@@ -1,8 +1,6 @@
 {
  "team": "Jacksonville Jaguars",
  "as_of": "2014-09-08",
- "checkpoint": "2014-09-08-harris-lowery-reserve-injured-phillips-promoted",
- "prepared": "2026-10-02",
  "start_year": 2014,
  "end_year": 2025,
  "current_contract_table": "career/2014/finances/player_contracts/contracts.md",
@@ -11032,13 +11030,6 @@
  ],
  "dead_money": [
   {
-   "player": "Tyler Bray",
-   "year": 2014,
-   "amount": 51675,
-   "status": "reconstructed",
-   "basis": "Original $68,900 rookie bonus less $17,225 charged in 2013; August 31 waiver shifts $51,675 to 2014. Separate from the new futures salary."
-  },
-  {
    "player": "Brandon Marshall",
    "year": 2014,
    "amount": 0,
@@ -11058,228 +11049,6 @@
    "amount": 0,
    "status": "simulation",
    "basis": "December 2012 practice-squad promotion modeled as a short minimum contract with no new bonus. August 2013 waiver leaves no future bonus charge."
-  },
-  {
-   "player": "Uche Nwaneri",
-   "year": 2014,
-   "amount": 2189000,
-   "status": "reconstructed",
-   "basis": "Pre-June 1 trade to Arizona, March 20, 2014 (Entry 99): the 2014 and 2015 bonus allocations of $1,094,500 each accelerate into 2014. His $1,000,000 March 25 roster bonus passes to Arizona."
-  },
-  {
-   "player": "Tyson Alualu",
-   "year": 2014,
-   "amount": 1542500,
-   "status": "reconstructed",
-   "basis": "Pre-June 1 trade to Houston, March 24, 2014 (Entry 102): the final $1,542,500 original bonus allocation stays with Jacksonville in 2014. Houston takes his $2,571,500 base and $150,000 other components."
-  },
-  {
-   "player": "Jason Babin",
-   "year": 2014,
-   "amount": 0,
-   "status": "reconstructed",
-   "basis": "Trade to Miami, March 24, 2014 (Entry 102): no Jacksonville bonus proration on the claimed Philadelphia contract, so no dead money. Miami takes the 2014 and 2015 schedules."
-  },
-  {
-   "player": "Cecil Shorts",
-   "year": 2014,
-   "amount": 110845,
-   "status": "reconstructed",
-   "basis": "Pre-June 1 trade to Indianapolis, March 31, 2014 (Entry 104): his final $110,845 original bonus allocation stays with Jacksonville in 2014. Indianapolis takes his $1,431,000 base."
-  },
-  {
-   "player": "Justin Blackmon",
-   "year": 2014,
-   "amount": 5951636,
-   "status": "reconstructed",
-   "basis": "Pre-June 1 trade to Indianapolis, March 31, 2014 (Entry 104): the remaining bonus allocations of $2,975,818 for 2014 and $2,975,818 for 2015 accelerate into 2014. Indianapolis takes his 2014 and 2015 base salaries and deferred roster cash; his 2015 charge leaves Jacksonville."
-  },
-  {
-   "player": "Russell Allen",
-   "year": 2014,
-   "amount": 416668,
-   "status": "reconstructed",
-   "basis": "Pre-June 1 trade to Arizona, April 7, 2014 (Entry 106): his final $416,668 original bonus allocation stays with Jacksonville in 2014. Arizona takes his $1,975,000 base and $25,000 workout bonus."
-  },
-  {
-   "player": "Will Rackley",
-   "year": 2014,
-   "amount": 154868,
-   "status": "reconstructed",
-   "basis": "Pre-June 1 trade to Seattle, May 12, 2014 (Entry 110): his final $154,868 original bonus allocation stays with Jacksonville in 2014. Seattle takes his $1,431,000 base. No 2015 year."
-  },
-  {
-   "player": "Matt Feiler",
-   "year": 2014,
-   "amount": 5000,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
-  },
-  {
-   "player": "Tyler Shatley",
-   "year": 2014,
-   "amount": 5000,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
-  },
-  {
-   "player": "Tyler Larsen",
-   "year": 2014,
-   "amount": 5000,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
-  },
-  {
-   "player": "C.J. Wilson",
-   "year": 2014,
-   "amount": 65000,
-   "status": "reconstructed",
-   "basis": "Released August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
-  },
-  {
-   "player": "Lavar Edwards",
-   "year": 2014,
-   "amount": 53403,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
-  },
-  {
-   "player": "Jeris Pendleton",
-   "year": 2014,
-   "amount": 12848,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
-  },
-  {
-   "player": "Jemea Thomas",
-   "year": 2014,
-   "amount": 23513,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction"
-  },
-  {
-   "player": "Matt Feiler",
-   "year": 2015,
-   "amount": 10000,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
-  },
-  {
-   "player": "Tyler Shatley",
-   "year": 2015,
-   "amount": 10000,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
-  },
-  {
-   "player": "Tyler Larsen",
-   "year": 2015,
-   "amount": 10000,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
-  },
-  {
-   "player": "Lavar Edwards",
-   "year": 2015,
-   "amount": 106806,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
-  },
-  {
-   "player": "Jeris Pendleton",
-   "year": 2015,
-   "amount": 12848,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
-  },
-  {
-   "player": "Jemea Thomas",
-   "year": 2015,
-   "amount": 70539,
-   "status": "reconstructed",
-   "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction"
-  }
- ],
- "amendments": [
-  {
-   "date": "2014-02-28",
-   "source": "career/2013/ledger.md",
-   "description": "Entry 91 adopts complete existing-contract schedules and guarantee assumptions; no new signing or time advance."
-  },
-  {
-   "date": "2014-03-11",
-   "source": "career/2013/ledger.md",
-   "description": "Entry 94: league year opened March 11, 4 p.m. ET. Te'o-Nesheim and Cain signed; Bradfield, Clemons, Brown and Pasztor tendered; futures effective; Monroe plays on the unsigned tender; eight pending free agents and Meester left control."
-  },
-  {
-   "date": "2014-03-11",
-   "source": "career/2013/ledger.md",
-   "description": "Entry 95: chat-resolved free-agency replay supersedes the first-pass draws. Monroe (5 years, $42.5M, $20M guaranteed), Marks (4 years, $26M, $12.5M) and Verner (4 years, $29M, $15M) signed; Te'o-Nesheim and Cain first-pass signings removed pending their replay entries."
-  },
-  {
-   "date": "2014-03-12",
-   "source": "career/2013/ledger.md",
-   "description": "Entry 96: Talib signed in the replay (5 years, $46.5M, $21.5M guaranteed); Tate declined Jacksonville and signed with Detroit (March 12). Top-51 displacement and the $504,000 offseason-workout charge are carried in the worksheet, not in these scheduled obligations."
-  },
-  {
-   "date": "2014-03-18",
-   "source": "career/2013/ledger.md",
-   "description": "Entry 97: Nicks signed March 14 (1 year, up to $5M, $4.5M guaranteed); Hawkins's offer sheet signed March 13 and Cincinnati declined to match March 18 (4 years, $15.6M, $8M guaranteed); Edelman returned to New England."
-  },
-  {
-   "date": "2014-03-18",
-   "source": "career/2013/ledger.md",
-   "description": "Entry 98: Te'o-Nesheim signed in the replay (3 years, up to $13.5M, $6.0M guaranteed; 2014 cap $3.0M)."
-  },
-  {
-   "date": "2014-03-20",
-   "source": "career/2013/ledger.md",
-   "description": "Entry 99: Cain re-signed (1 year, $855,000 minimum); Nwaneri traded to Arizona in package I with the 2015 first, 2015 fourth and 2016 fifth for No. 38 (pre-June 1 trade: $2,189,000 of bonus proration accelerates into 2014)."
-  },
-  {
-   "date": "2014-03-31",
-   "source": "career/2014/ledger.md",
-   "description": "Entry 104: Shorts and Blackmon traded to Indianapolis for the Colts' 2014 third (No. 82) and sixth (No. 194). Pre-June 1 trade: Shorts's $110,845 and Blackmon's $5,951,636 of bonus allocation stay as 2014 dead money; Blackmon's 2015 charge leaves."
-  },
-  {
-   "date": "2014-03-31",
-   "source": "career/2014/ledger.md",
-   "description": "Entry 105: the Colts' 2014 third (No. 82) and sixth (No. 194) traded to Washington for Jacksonville's original 2015 second. No players move and no cap figure changes."
-  },
-  {
-   "date": "2014-04-04",
-   "source": "career/2014/ledger.md",
-   "description": "Entry 106: Henne re-signed (two years, $4.0M, $2.0M guaranteed; 2014 charge $1,400,000, 2015 charge $2,600,000)."
-  },
-  {
-   "date": "2014-04-07",
-   "source": "career/2014/ledger.md",
-   "description": "Entry 106: Allen trade with Arizona closed after Posluszny's April 5 clearance and Allen's April 7 physical; Arizona's 2015 fourth to Jacksonville. Pre-June 1 trade: Allen's $416,668 bonus allocation stays as 2014 dead money."
-  },
-  {
-   "date": "2014-05-11",
-   "source": "career/2014/ledger.md",
-   "description": "Entry 108: nine draft selections (May 8 to 10) signed May 11 on slot reconstructions from the same-slot 2014 contracts; 17 undrafted rookies signed May 10 on three-year minimum contracts (five linemen with $15,000 bonuses). Entry 109: clock May 11."
-  },
-  {
-   "date": "2014-05-12",
-   "source": "career/2014/ledger.md",
-   "description": "Entry 110: Rackley traded to Seattle for Seattle's own unconditional 2015 seventh-round pick after the May 11 calls; physical passed and processed May 12. Pre-June 1 trade: his $154,868 bonus allocation stays as 2014 dead money and his $1,431,000 base leaves. Clock May 12."
-  },
-  {
-   "date": "2014-08-30",
-   "source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-   "description": "Reduction to 53: 17 players waived and two vested veterans (Cain, C.J. Wilson) released; Brate and Jackson waived with the injured designation; the four qualifying offers (Bradfield, Clemons, Brown, Pasztor) withdrawn and the $3,066,000 tender charge removed; dead money of $169,764 added for 2014 and $220,193 for 2015 from the adopted bonus schedules (post-June 1 treatment, labelled reconstructions)."
-  },
-  {
-   "date": "2014-08-31",
-   "source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-   "description": "Waivers cleared; Brate and Jackson to reserve/injured (contracts continue); eight practice-squad contracts signed at the $6,300 weekly minimum (library F6), carried as a $107,100 working estimate each for 17 weeks; two practice-squad places open."
-  },
-  {
-   "date": "2014-09-08",
-   "source": "career/2014/00_Team_Operations/Team/Roster/transactions_2014-09-08.md",
-   "description": "Harris to ordinary reserve/injured and Lowery to reserve/injured designated for return (contracts continue, charges unchanged under the full count); Adrian Phillips promoted from the practice squad on a three-year minimum contract ($401,594 2014 charge with his one practice-squad week; $510,000 and $600,000 later); Alan Ball signed for one year at the $855,000 rate, $804,706 for sixteen pay weeks (labelled reconstruction); seven practice-squad estimates remain, three places open."
   }
  ],
  "scenarios": [],
@@ -11425,5 +11194,77 @@
    "sources": []
   }
  },
- "financial_policy": "Use researched original schedules first. User-authorized simulation reconstructions fill missing existing-contract terms and remain fixed until a sourced correction or branch amendment. Blank annual cells mean the deal does not cover that year; they are not zero-dollar contracts."
+ "financial_policy": "Use researched original schedules first. User-authorized simulation reconstructions fill missing existing-contract terms and remain fixed until a sourced correction or branch amendment. Blank annual cells mean the deal does not cover that year; they are not zero-dollar contracts.",
+ "in_season_terms": {
+  "about": "The in-season terms method: stored once here, its terms computed by the contract records (runtime/player_contracts.py), never typed. A contract signed or re-signed during the regular season earns its yearly rate for the pay weeks left on the fixtures; a practice-squad contract pays the weekly rate for the weeks on the squad, carried as a full-season working estimate; a promoted practice-squad player re-signs the promotion structure. The proration and the promotion structure are labelled reconstructions.",
+  "seasons": {
+   "2014": {
+    "minimum_salary": {
+     "by_credited_seasons": [
+      [
+       0,
+       0,
+       420000
+      ],
+      [
+       1,
+       1,
+       495000
+      ],
+      [
+       2,
+       2,
+       570000
+      ],
+      [
+       3,
+       3,
+       645000
+      ],
+      [
+       4,
+       6,
+       730000
+      ],
+      [
+       7,
+       9,
+       855000
+      ],
+      [
+       10,
+       null,
+       955000
+      ]
+     ],
+     "source": "library/2014_league_calendar_and_financial_rules.md",
+     "label": "Confirmed: the 2011 agreement, Article 26 section 1, the 2014 column (library section 2a)"
+    },
+    "practice_squad_weekly": {
+     "amount": 6300,
+     "source": "library/2014_league_calendar_and_financial_rules.md",
+     "label": "Confirmed: the 2014 practice-squad minimum (library row F6)"
+    },
+    "full_count_from": {
+     "date": "2014-09-03",
+     "source": "library/2014_league_calendar_and_financial_rules.md",
+     "text": "Full salary-cap compliance is due September 3 at 4 p.m. ET; from it every contract counts, the practice squad included (library row F3, corrected; the career calendar row of September 3)"
+    }
+   }
+  },
+  "proration": {
+   "text": "A contract signed during the regular season is earned and charged for the pay weeks left: the yearly rate times the weeks left over the season's weeks, rounded to the dollar. A pay week is the week of a regular-season game on the fixtures (Jacksonville's game, or for its bye the week's last game), counted when its game falls on or after the signing date. A labelled reconstruction: the standard player contract pays the base in equal weekly installments, and no league proration rule is on file.",
+   "source": "career/2014/Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md"
+  },
+  "promotion": {
+   "text": "A practice-squad player promoted on a new contract re-signs the structure of the club's 2014 undrafted contract (the three-year minimum schedule of May 10, 2014, no signing bonus, no guarantee): its first year earned for the pay weeks left, plus the weeks he was paid on the squad. An adopted reconstruction, used for Adrian Phillips on September 8, 2014.",
+   "schedule": {
+    "2014": 420000,
+    "2015": 510000,
+    "2016": 600000
+   },
+   "source": "career/2014/Draft/udfa_signings.md",
+   "applied": "career/2014/Team_Operations/Team/Roster/transactions_2014-09-08.md"
+  }
+ }
 }

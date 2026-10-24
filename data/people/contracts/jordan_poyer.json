@@ -1,0 +1,86 @@
+{
+ "schema_version": 1,
+ "name": "Jordan Poyer",
+ "player": "jordan_poyer",
+ "listed": 6,
+ "position": "CB",
+ "roster_position": "CB",
+ "draft_pick": "#64",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2013-05-02",
+   "source": "career/2013/offseason/draft/draftees.md",
+   "contract": "jordan_poyer_2013-05-02",
+   "club": "Jacksonville Jaguars",
+   "through": 2016,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 711794,
+     "base": 544000,
+     "proration": 167794,
+     "cash": 544000,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 0
+    },
+    "2015": {
+     "status": "known",
+     "cap": 825794,
+     "base": 658000,
+     "proration": 167794,
+     "cash": 658000,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 0
+    },
+    "2016": {
+     "status": "known",
+     "cap": 990294,
+     "base": 822500,
+     "proration": 167794,
+     "cash": 822500,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Rookie scale, pick #64",
+   "signed_text": "May 2, 2013",
+   "term_text": "4 / 2016",
+   "value_text": "$3,100,676",
+   "bonus": {
+    "text": "$671,176; $167,794; 3",
+    "amount": 671176
+   },
+   "guarantee_text": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
+   "guarantee_basis": "simulation reconstruction",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$503,382 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Branch record (draftees); base derived",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2013/offseason/draft/draftees.md",
+    "library/2014_jaguars_contract_completion.md"
+   ],
+   "rookie": "drafted"
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "1 (2013 active season)",
+   "accrued_seasons": "Through 2012: 0. 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}
