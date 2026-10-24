@@ -161,6 +161,17 @@ def _added_commits(root, rel):
         rel, rev = source, added[-1] + '^'
 
 
+def clock_matches(line, through, current_date):
+    """Whether Document 5's master date/time ``line`` (its date ``current_date``) agrees with the
+    latest closed event's ``through`` date: the same date, or, for a mid-week record (docs/run_week.md,
+    step 4a: "<date>, after the 10:30 a.m. ET record of ..."), a later one. A mid-week record moves
+    the clock to the time of an event raised, answered or resolved inside the week; one that closes
+    nothing (a raise, an answer, a process entry) leaves the checkpoint at the latest closed event,
+    before the clock. Every other form of the line is the latest closed event's date."""
+    from runtime.open_events import TIMED
+    return through == current_date or (TIMED.match(line.strip()) is not None and through < current_date)
+
+
 def freeze_order_errors(root, sheet_rel, receipt_rel, what='the call sheet'):
     """Kernel 2014.6 W1a: the call sheet's freeze commit (the last commit
     that changed it, with no uncommitted change since) precedes the commit
@@ -327,7 +338,8 @@ def validate(root=ROOT):
         closed = [item['checkpoint'] for _, _, item in closed_records]
         require(bool(closed) and closed[-1] == checkpoint, 'State checkpoint differs from latest closed event owner')
         if closed_records:
-            require(date.fromisoformat(closed_records[-1][2]['through']) == current_date,
+            require(clock_matches(master[1] if master else '', date.fromisoformat(closed_records[-1][2]['through']),
+                                  current_date),
                     'State master date differs from latest closed event owner')
         version = re.search(r'\| Document 4 register version \| `([^`]+)`', register)[1]
         require(f'| Document 4 | `{version}`' in state, 'Document 5 names a stale Document 4 version')
