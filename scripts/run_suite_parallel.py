@@ -3,7 +3,7 @@
 and prove the run covered the same tests as `python -m unittest discover -s tests`.
 
 Usage:
-    python scripts/run_suite_parallel.py [REPO_DIR] [--jobs N] [--out LOG_DIR]
+    python scripts/run_suite_parallel.py [REPO_DIR] [--jobs N] [--out LOG_DIR] [--shard I/N]
 
 - Discovers the suite exactly as `discover -s tests` does and records its test
   count.
@@ -22,6 +22,12 @@ Usage:
   summed test count equals the discovered count. Exit code 0 on OK, 1
   otherwise. The verbose log of every failed module is printed; all logs stay in
   LOG_DIR.
+- `--shard I/N` runs only shard I of N (CI runs the N shards on separate
+  machines). The modules are split by longest first onto the least-loaded
+  shard, by the durations committed in tests/suite_durations.json (a module
+  not in it counts its file size in kilobytes as seconds), so every module
+  falls in exactly one shard. A shard's count check is the discovered count of
+  its own modules.
 - When git and the checkout's .git are both present, any change to
   `git status` across the run is reported as a warning. Without them (inside
   the engine image build) the check is skipped with a note.
@@ -64,6 +70,39 @@ def discovered_count(repo):
 def test_modules(repo):
     return sorted(f[:-3] for f in os.listdir(os.path.join(repo, "tests"))
                   if f.startswith("test_") and f.endswith(".py"))
+
+
+COMMITTED_DURATIONS = os.path.join("tests", "suite_durations.json")
+
+
+def parse_shard(text):
+    """'I/N' -> (I, N), with 1 <= I <= N."""
+    m = re.fullmatch(r"(\d+)/(\d+)", text or "")
+    if not m or not 1 <= int(m.group(1)) <= int(m.group(2)):
+        raise ValueError("--shard takes I/N with 1 <= I <= N, got %r" % text)
+    return int(m.group(1)), int(m.group(2))
+
+
+def shard_modules(mods, weights, index, count):
+    """The modules of shard `index` (1-based) of `count`: longest first onto the least-loaded shard."""
+    load = [0.0] * count
+    owner = {}
+    for m in sorted(mods, key=lambda m: (-weights[m], m)):
+        i = min(range(count), key=lambda k: (load[k], k))
+        load[i] += weights[m]
+        owner[m] = i + 1
+    return sorted(m for m in mods if owner[m] == index)
+
+
+def modules_count(repo, mods):
+    """Tests in these modules, loaded as `discover -s tests` loads them."""
+    code = ("import sys, unittest; sys.path[:0] = ['tests', '.']; l = unittest.TestLoader(); "
+            "print(sum(l.loadTestsFromName(m).countTestCases() for m in sys.argv[1:]))")
+    out = subprocess.run([sys.executable, "-c", code] + list(mods), cwd=repo,
+                         capture_output=True, text=True)
+    if out.returncode != 0:
+        raise SystemExit("loading the shard failed:\n" + out.stderr[-4000:])
+    return int(out.stdout.strip().splitlines()[-1])
 
 
 def run_module(repo, mod, log_dir, suffix=""):
@@ -130,6 +169,7 @@ def main(argv=None):
     ap.add_argument("--out", default=None, help="log directory (default: a new temp directory)")
     ap.add_argument("--durations", default=None,
                     help="durations file (default: per-checkout file in the system temp directory)")
+    ap.add_argument("--shard", default=None, help="I/N: run shard I of N only")
     ap.add_argument("--only", nargs="*", default=None,
                     help="testing the runner: these modules only (no count check)")
     a = ap.parse_args(argv)
@@ -143,10 +183,19 @@ def main(argv=None):
     before = git_status(repo)
     expected = discovered_count(repo)
     mods = test_modules(repo)
+    size = {m: os.path.getsize(os.path.join(repo, "tests", m + ".py")) for m in mods}
+    if a.shard:
+        try:
+            index, count = parse_shard(a.shard)
+        except ValueError as exc:
+            ap.error(str(exc))
+        committed = load_durations(os.path.join(repo, COMMITTED_DURATIONS))
+        weights = {m: float(committed.get(m, size[m] / 1000.0)) for m in mods}
+        mods = shard_modules(mods, weights, index, count)
+        expected = modules_count(repo, mods)
     if a.only:
         mods = [m for m in mods if m in a.only]
     prev = load_durations(durations)
-    size = {m: os.path.getsize(os.path.join(repo, "tests", m + ".py")) for m in mods}
     mods.sort(key=lambda m: (-prev.get(m, size[m] / 1000.0), m))
     t0 = time.time()
     with ThreadPoolExecutor(max_workers=jobs) as ex:
@@ -161,6 +210,8 @@ def main(argv=None):
     interference = sorted(m for m in rerun if rerun[m]["ok"])
     save_durations(durations, prev, results)
     after = git_status(repo) if before is not None else None
+    if a.shard:
+        print("shard %s: %d of %d modules" % (a.shard, len(mods), len(test_modules(repo))))
     print("modules: %d, jobs: %d, wall: %.0f s" % (len(mods), jobs, wall))
     print("tests run: %d, discovered: %d" % (total, expected))
     for r in sorted(results, key=lambda r: -r["seconds"])[:8]:

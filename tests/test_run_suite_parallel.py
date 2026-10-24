@@ -97,10 +97,11 @@ class SyntheticCheckout:
         self.logs = Path(base) / "logs"
         self.durations = Path(base) / "durations.json"
 
-    def run(self, jobs=2):
+    def run(self, jobs=2, shard=None):
         env = {k: v for k, v in os.environ.items() if k != "PYTHONPATH"}
+        extra = ["--shard", shard] if shard else []
         p = subprocess.run([sys.executable, str(SCRIPT), str(self.path), "--jobs", str(jobs),
-                            "--out", str(self.logs), "--durations", str(self.durations)],
+                            "--out", str(self.logs), "--durations", str(self.durations)] + extra,
                            cwd=self.path, env=env, capture_output=True, text=True, timeout=120)
         return p.returncode, p.stdout + p.stderr
 
@@ -172,7 +173,37 @@ class RunnerRuns(unittest.TestCase):
         self.assertIn("VERDICT: OK", out)
 
 
+    def test_the_shards_together_run_every_module_once_with_their_own_counts(self):
+        modules = {"test_synth_pass": PASSING, "test_synth_skip": SKIPPING}
+        checkout = SyntheticCheckout(self.base, modules, extra={
+            "tests/suite_durations.json": '{"test_synth_pass": 10, "test_synth_skip": 5}'})
+        seen = []
+        for shard in ("1/2", "2/2"):
+            rc, out = checkout.run(shard=shard)
+            self.assertEqual(rc, 0, out)
+            self.assertIn("shard %s: 1 of 2 modules" % shard, out)
+            self.assertIn("tests run: 2, discovered: 2", out)
+            self.assertIn("VERDICT: OK", out)
+            seen += [m for m in modules if (checkout.logs / (m + ".log")).exists() and m not in seen]
+        self.assertEqual(sorted(seen), sorted(modules))
+
+
 class RunnerLogic(unittest.TestCase):
+    def test_shards_split_longest_first_and_cover_every_module_once(self):
+        weights = {"a": 10.0, "b": 9.0, "c": 4.0, "d": 3.0, "e": 1.0}
+        parts = [runner.shard_modules(list(weights), weights, i, 3) for i in (1, 2, 3)]
+        self.assertEqual(parts, [["a"], ["b"], ["c", "d", "e"]])
+        self.assertEqual(sorted(sum(parts, [])), sorted(weights))
+        self.assertEqual(runner.parse_shard("2/4"), (2, 4))
+        for bad in ("0/4", "5/4", "2", "a/b", ""):
+            with self.assertRaises(ValueError):
+                runner.parse_shard(bad)
+
+    def test_the_committed_durations_name_only_real_test_modules(self):
+        committed = json.loads((ROOT / "tests" / "suite_durations.json").read_text())
+        modules = set(runner.test_modules(str(ROOT)))
+        self.assertTrue(set(committed) <= modules, sorted(set(committed) - modules))
+
     def test_verdict_needs_every_module_and_the_discovered_count(self):
         good = {"a": {"ran": 2, "ok": True}, "b": {"ran": 1, "ok": True}}
         self.assertEqual(runner.verdict(good, 3), (True, 3, []))
