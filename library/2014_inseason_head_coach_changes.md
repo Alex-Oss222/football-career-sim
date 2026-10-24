@@ -6,7 +6,7 @@
 
 **Hindsight boundary.** The career diverged on January 15, 2013. Every outcome counted here is a change during a real regular season from 2002 to 2012; the last counted change came in the 2011 season. No row after 2012 is read, and no 2013 or 2014 change, real or branch, enters the table. The one exception is inherited, not added: the block written for step 6 (the January table conditional on no in-season change) is derived from the January table, which reads its 2012 club-seasons' outcomes from the September 2013 openers ([employment research](2014_jacksonville_employment_decision_research.md), section 1.8, item 4); this record takes no new post-boundary reading.
 
-**Status.** Built October 23 to 24, 2026 for rebuild step 5 (part D2), in two passes. Adopted as the weekly check's rate by the user's answer of October 23, 2026, "One draw for all 32 (Recommended)" ([rebuild plan change log](../docs/rebuild_plan.md#change-log)). The cells, the smoothing and the merge rule are the career's labelled modelling choice, like the January factors: the user may change them before the first weekly draw, never after (the [method](../data/2014/League/Coaching_Changes/method.json) records the table's sha256, and every week's check record carries it).
+**Status.** Built October 23 to 24, 2026 for rebuild step 5 (part D2), in two passes. Adopted as the weekly check's rate by the user's answer of October 23, 2026, "One draw for all 32 (Recommended)" ([rebuild plan change log](../docs/rebuild_plan.md#change-log)). The cells, the smoothing and the merge rule are the career's labelled modelling choice, like the January factors: the user may change them before the first weekly draw, never after (the [method](../data/2014/League/Coaching_Changes/method.json) records the table's sha256, and every week's check record carries it). The user confirmed them as built, with no split by recent playoffs, on October 24, 2026, verbatim: "No playoff split (Recommended)" (the method's `adopted.confirmed`; [rebuild plan change log](../docs/rebuild_plan.md#change-log)).
 
 **Labels.** As in the [employment research](2014_jacksonville_employment_decision_research.md): **Confirmed** is a repository fact re-read and recomputed with separate code; **Modelling choice** is the career's own labelled choice, not a fact found; **Inherited** is a reading taken over from an earlier record with that record's own label.
 
@@ -29,7 +29,7 @@
 - **Cells (Modelling choice).** The club's losses minus wins after game k, ties counting neither: 0 or fewer, 1 to 2, 3 to 4, 5 or more; by the coach's season with the club: his first (he did not open the club's previous season) or a later one, counted as the January builder counts seasons (consecutive seasons he opened, back to 1999; 1999 to 2001 are read only for this count).
 - **Smoothing (Modelling choice).** Each cell toward the overall per-game rate: rate = (changes + 75 × overall) / (club-games + 75). The prior weight of 75 club-games is the January table's prior of five club-seasons at fifteen at-risk games a club-season.
 - **Merge rule (Modelling choice).** A cell with fewer at-risk club-games than the prior weight would be merged into the next band toward 0 or fewer with the same tenure, with the reason recorded. The smallest cell has 171 club-games, so none is merged.
-- **Not split by recent playoffs (Modelling choice).** The January table also splits by whether the club reached the playoffs in either of the two seasons before. Of the seventeen in-season changes, 6 came at clubs with such a season, 10 at clubs without one, and 1 in a coach's first season (pass 2's listing below); a third split of eight cells holding seventeen changes was not made.
+- **Not split by recent playoffs (Modelling choice).** The January table also splits by whether the club reached the playoffs in either of the two seasons before. Of the seventeen in-season changes, 6 came at clubs with such a season, 10 at clubs without one, and 1 in a coach's first season (pass 2's listing below); a third split of eight cells holding seventeen changes was not made. The user confirmed this on October 24, 2026 ("No playoff split (Recommended)").
 
 ## The table
 
@@ -110,7 +110,7 @@ The other eighteen cells keep their counts; their smoothed rates move a little w
 
 ## Honest limits
 
-- **Seventeen events.** The first-season cells hold one change in 1,092 club-games; their rates come mostly from the smoothing. The cells are a labelled choice the user may change before the first draw.
+- **Seventeen events.** The first-season cells hold one change in 1,092 club-games; their rates come mostly from the smoothing. The cells are a labelled choice the user may change before the first draw; the user confirmed them as built on October 24, 2026.
 - **No cause is modelled.** The table counts a coach who did not coach again that season. Whether the club fired him, he resigned or he fell ill is not in the file and not used.
 - **Per game, not per week.** A club is at risk once per game it plays; a bye week carries no risk, as the weekly check draws no club on its bye.
 - **No contract, owner or market input.** As the January table, the draw reads only the record and the coach's season with the club ([employment research](2014_jacksonville_employment_decision_research.md), section 1.8, item 2).
