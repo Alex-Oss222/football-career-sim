@@ -1373,6 +1373,17 @@ class SocketWiringTests(unittest.TestCase):
     and a patched slope moves the drawn probability the declared way."""
 
     SEEDS = 3
+    # The sample grows, one seed at a time, until both kinds of call site have been reached:
+    # the inputs follow the live roster record, so which draws a fixed sample makes moves
+    # whenever a medical record changes (Poyer's October 9 release did).
+    MAX_SEEDS = 12
+
+    @classmethod
+    def reached(cls, calls):
+        turnover_pairs = {tuple(v) for unit in ("interception", "fumble_lost")
+                          for v in ART["non_offensive"][unit]["los_bins"].values()}
+        return (any(c[0] == "blocked" for c in calls)
+                and any(c[0] == "return" and c[1] in turnover_pairs and c[2]["returner"] == 0.0 for c in calls))
 
     @classmethod
     def setUpClass(cls):
@@ -1385,6 +1396,9 @@ class SocketWiringTests(unittest.TestCase):
         cls.jax, cls.sd = clubs["Jacksonville Jaguars"], clubs["San Diego Chargers"]
         cls.terms = strength.parameters(PROFILE_2014_6.strength).terms
         cls.base_games, cls.calls, cls.receipts = cls.games()
+        while not cls.reached(cls.calls) and cls.SEEDS < cls.MAX_SEEDS:
+            cls.SEEDS += 1
+            cls.base_games, cls.calls, cls.receipts = cls.games()
 
     @classmethod
     def games(cls, sockets=None):
