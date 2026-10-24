@@ -74,7 +74,9 @@ process entry that changes a pending answer, or its own sections rebuilt
 differing from it while the week's decisions are open), or an answer due
 before the next scheduled issue that it does not show; a change only to the
 news or the windows waits for the next scheduled issue. Each new issue
-records its time (``at``), its reason and the notices it carried. While the
+records its time (``at``), its reason and the notices it carried, and each
+answer it first asks for gets its block on the week's My Responses page
+(runtime/responses.py) before the briefing links to it. While the
 bye is the open period (runtime/bye_week.active_bye) no game week is open:
 the next game's briefing and items wait for the bye's close.
 
@@ -1632,6 +1634,11 @@ def write(root=ROOT, week=None):
         revision = 1 + sum(1 for e in entries if e["date"] == wk.master.isoformat())
         at = open_events.master_at(wk.root)
         route = open_events.route(wk.season, at, wk.period, wk.root, issue=len(entries) + 1)
+        # Each answer this issue first asks for gets its block on the week's My Responses page before
+        # the briefing links to it (runtime/responses.py).
+        from runtime import responses
+        if responses.ensure_blocks(route, wk.root):
+            written += [wk.pages.responses, wk.pages.responses_record]
         wk.pages.briefing.write_text(briefing(wk, previous=previous_issue(wk, new=True), revision=revision,
                                               route=route), encoding="utf-8")
         entries.append({"date": wk.master.isoformat(), "revision": revision, "file": wk.pages.briefing.name,
