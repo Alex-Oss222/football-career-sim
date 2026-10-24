@@ -425,6 +425,25 @@ class CheckTests(unittest.TestCase):
         add_item(self.root, {"id": "%d-w%02d-game-plan" % (SEASON, records[due[0]]["opened_through"] + 1), "blocks": []})
         self.assertEqual(lc.hold_errors(self.root, SEASON), [message])
 
+    def test_the_hold_does_not_lift_when_step_6_flags_the_season_end(self):
+        """A drawn change at the job holder's club stays held, with no page or news, when the season-end
+        decision is marked built: it is the Club Decision's, never an ordinary other club's change."""
+        import dataclasses
+        from runtime import decisions
+        set_rates(self.root, {key: 1.0 for key in lc.load_table(lc.load_method(SEASON, self.root), self.root)["rates"]})
+        due = lc.due_weeks(SEASON, self.root)
+        code, _ = self.run_close(max(due))
+        self.assertEqual(code, coaching_check.HELD)
+        club = lc.holder_club(self.root)
+        message = lc.career_hold(SEASON, self.root)
+        flag = decisions.BY_KIND["season_end"]
+        with patch.dict(decisions.BY_KIND, {"season_end": dataclasses.replace(flag, implemented=True)}):
+            self.assertEqual([r["club"] for _, r in lc.held_changes(SEASON, self.root)], [club])
+            self.assertEqual(lc.career_hold(SEASON, self.root), message)
+            far = date(SEASON + 1, 3, 1)
+            self.assertNotIn(club, [r["club"] for _, r in lc.effective_changes(SEASON, self.root, far)])
+            self.assertFalse([p for p in lc.pages(SEASON, self.root, far) if club.split()[-1] in p.name])
+
     def test_the_label_swap(self):
         method = lc.load_method(SEASON, self.root)
         week = max(lc.closed_weeks(SEASON, self.root))

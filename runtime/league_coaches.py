@@ -33,7 +33,7 @@ import re
 
 from . import current_job, decision_queue
 from .open_events import raise_event, resolve as resolve_event
-from .decisions import BY_KIND, NEWS_KIND, event_folder, event_store, file_name, name_part
+from .decisions import NEWS_KIND, event_folder, event_store, file_name, name_part
 from .events import EVENT_META
 from .packets import canonical
 from .player_bios import master_date
@@ -464,9 +464,10 @@ def _season(root):
 
 # ------------------------------------------------------------------ the held career
 def held_changes(season, root=ROOT):
-    """The drawn changes at the club the job holder coaches, while step 6's pages do not exist."""
-    if BY_KIND["season_end"].implemented:
-        return []
+    """The drawn changes at the club the job holder coaches. Such a change is Khan and Caldwell's
+    decision, written as the Club Decision (step 6), never an ordinary other club's change: it is
+    held here, with no page or news, whatever the registry's flags say, until step 6's Club
+    Decision writer takes it over by name."""
     club = holder_club(root)
     return [(record["week"], row) for record in checks(season, root).values() for row in record["clubs"]
             if row["changed"] and row["club"] == club]
