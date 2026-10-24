@@ -230,14 +230,15 @@ class Week:
         from runtime import game_weeks
         return game_weeks.label(self.game)
 
-    def _receipts(self):
+    def _receipts(self, through=None):
+        """The closed regular-season games dated on or before ``through`` (by default the master date)."""
         folder = self.paths.receipts
         fixtures = {(g["week"], g["away"], g["home"]): g for g in self.paths.regular_games()}
         out = []
         for path in sorted(folder.glob("week_*.json")) if folder.is_dir() else ():
             r = json.loads(path.read_text(encoding="utf-8"))
             game = fixtures.get((int(r["week"]), r["away"], r["home"]))
-            if game is not None and date.fromisoformat(game["date"]) <= self.master:
+            if game is not None and date.fromisoformat(game["date"]) <= (through or self.master):
                 out.append(r)
         return out
 
@@ -1267,11 +1268,15 @@ def briefing(wk, issued=None, plan_open=False, previous=None, revision=1, route=
     out = ["# %s Game Week Briefing: %s" % (wk.label(), wk.title_where()), ""]
     out += header_lines(wk, issued, previous, revision)
     out += event_inserts.render(route, page_rel, issued)
-    wk.as_of = issued
+    # As of its own issue: the games dated after it (a Monday game closed with the slate, read by a
+    # later mid-week record) are not in an earlier issue, so rebuilding it never finds it stale.
+    wk.as_of, receipts = issued, wk.receipts
+    if issued < wk.master:
+        wk.receipts = wk._receipts(issued)
     try:
         return _sections(wk, out, texts, page_rel, plan_open, issued)
     finally:
-        wk.as_of = wk.master
+        wk.as_of, wk.receipts = wk.master, receipts
 
 
 def _sections(wk, out, texts, page_rel, plan_open, issued):

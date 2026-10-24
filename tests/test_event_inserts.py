@@ -277,6 +277,28 @@ class InsertTests(unittest.TestCase):
             self.assertFalse(record["id"] in page)
         self.assertEqual(page_errors(self.wk().rel(self.wk().pages.briefing), page, root=self.root), [])
 
+    def test_an_earlier_issue_reads_only_the_games_dated_by_it(self):
+        # The open week's issue rebuilt on its Tuesday: a game dated after the issue that closed with the
+        # slate (a Monday game) is not in it, so a later mid-week record never finds the issue stale.
+        wk = self.wk()
+        when, revision = render_game_week.current_issue(wk)
+        dated = {(g["week"], g["away"], g["home"]): date.fromisoformat(g["date"]) for g in wk.paths.regular_games()}
+        day = lambda r: dated[(int(r["week"]), r["away"], r["home"])]
+        if not any(day(r) > when for r in wk.receipts):
+            self.skipTest("no closed game is dated after the open week's issue")
+        seen, sections = [], render_game_week._sections
+
+        def spy(wk_, *args, **kwargs):
+            seen.append(list(wk_.receipts))
+            return sections(wk_, *args, **kwargs)
+        held = list(wk.receipts)
+        with mock.patch.object(render_game_week, "_sections", spy):
+            rebuilt = render_game_week.briefing(wk, when, previous=render_game_week.previous_issue(wk), revision=revision)
+        self.assertTrue(seen and all(day(r) <= when for r in seen[0]))
+        self.assertEqual(wk.receipts, held)
+        self.assertEqual(rebuilt, wk.pages.briefing.read_text(encoding="utf-8"))
+        self.assertIsNone(render_game_week.reissue_reason(wk))
+
     def test_an_issued_brief_is_rebuilt_as_of_its_own_issue(self):
         first = self.call("test-call-first")
         self.issue()
