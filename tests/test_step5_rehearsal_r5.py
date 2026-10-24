@@ -335,7 +335,8 @@ class Rehearsal:
         report.write_text(shell, encoding="utf-8")
         frozen = decisions.week_pages(SEASON, week, self.root).pregame
         frozen.parent.mkdir(parents=True, exist_ok=True)
-        frozen.write_text(json.dumps(game_report.pregame_record(shell, played), indent=1) + "\n", encoding="utf-8")
+        frozen.write_text(json.dumps(game_report.pregame_record(shell, played, game, self.root), indent=1) + "\n",
+                          encoding="utf-8")
         return report
 
     def settle_week(self, week, report, played):

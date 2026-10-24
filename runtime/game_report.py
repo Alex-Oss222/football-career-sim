@@ -1,17 +1,25 @@
 """The Game Report's layout and its agreement with the closed game (game week version 2, Phase A).
 
 From 2014 Week 6 every played game's result page, playoff games included, is
-the Game Report (runtime.seasons.SeasonPaths.game_report), written from the
-Game Report template (``TEMPLATE``; docs/game_week_v2.md, section 6). The
-guidance for writing it is docs/game_output_workflow.md, and for its media
-docs/head_coach_media_method.md. 2014 Weeks 1 to 5 keep their output.md as
-written, in the layout of foundation/templates/regular_season_output_template.md.
+the Game Report (runtime.seasons.SeasonPaths.game_report). The guidance for
+writing it is docs/game_output_workflow.md. 2014 Weeks 1 to 5 keep their
+output.md as written, in the layout of
+foundation/templates/regular_season_output_template.md.
 
-Layout. The report's sections are the template's level-two headings, in the
-template's order: Coach record, sections 1 to 7, Full game statistics. A
-report opened before the game carries some of them in that order (its
-preparation and pregame media); once the game has closed it carries every one.
-No other level-two heading appears and none twice.
+Layout, chosen per game (``layout``). From 2014 Week 7, every postseason game
+included, the report is written from the Game Report template (``TEMPLATE``;
+docs/game_week_v2.md, section 6) and its sections are the template's
+level-two headings in its order: Coach record, sections 1 to 5, Full game
+statistics, with no media sections and a short football review, by the user's
+decision of October 24, 2026, verbatim: "Dropping the researched media sections
+i like the full stats so trimming the unit review". 2014 Week 6's report, the
+one Game Report before Week 7 (runtime.seasons.GAME_REPORT_FROM), keeps the
+layout it was written in, frozen here (``WEEK_6_LAYOUT``): Coach record,
+sections 1 to 7 with the pregame media in section 2 and the postgame media in
+section 4 (docs/head_coach_media_method.md), Full game statistics. A report
+opened before the game carries some of its layout's sections in that order (its
+pregame sections); once the game has closed it carries every one. No other
+level-two heading appears and none twice.
 
 The statistics last. Once the game has closed, the report holds exactly one
 box-score block (the two markers scripts/render_box_score.py fills, ``BLOCK``),
@@ -27,19 +35,20 @@ Reconciled with the closed game. The header's round line names the game
 the final score with the winner first (each club by its full name, its place or
 its nickname), the "Final score by quarter" table is the game book's line score
 (the periods scored in, as render_box_score.py --line-score prints it), an
-Overtime subheading appears exactly when overtime was played, and section 7's
-"Record after game" names Jacksonville's record after the game (a playoff
-game's may add the postseason record). The box score itself is checked against
-the closed game by scripts/render_box_score.stale_blocks.
+Overtime subheading appears exactly when overtime was played, and the final
+record section's "Record after game" names Jacksonville's record after the game
+(a playoff game's may add the postseason record). The box score itself is
+checked against the closed game by scripts/render_box_score.stale_blocks.
 
-The story's figures (``story_errors``). Every score written in section 3 (the
-game) is one the game actually stood at, either way round, from 0-0 through
-the scoring summary to the final (a touchdown's score before its try
-included), or a club's record before or after the game; and wherever the
-report says a club of the game won, beat, defeated, lost or fell by a score,
-that is the final score and that club the winner or the loser. The rest of the
-football account (whether each told play matches the game book) is the
-editorial review's to establish (docs/game_output_workflow.md, section 5).
+The story's figures (``story_errors``). Every score written in the game story
+(the layout's "The game" section, ``Layout.story``) is one the game actually
+stood at, either way round, from 0-0 through the scoring summary to the final
+(a touchdown's score before its try included), or a club's record before or
+after the game; and wherever the report says a club of the game won, beat,
+defeated, lost or fell by a score, that is the final score and that club the
+winner or the loser. The rest of the football account (whether each told play
+matches the game book) is the editorial review's to establish
+(docs/game_output_workflow.md, section 5).
 
 No figures twice (``table_errors``). The only tables before the full game
 statistics are the coach record's, the line score and the after-action
@@ -47,16 +56,20 @@ injuries table in the template's columns: a statistics table in the story is
 refused, as the statistics are the appendix's.
 
 Pregame frozen (``pregame_errors``). At the game-day commit, before kickoff,
-scripts/freeze_pregame.py records the sha256 of sections 1 and 2 in the week's
-data folder (runtime/decisions.WeekPages.pregame). Once the game has closed the
-record must exist, and sections 1 and 2 must be as it froze them: the
-preparation and the pregame media are never rewritten with the result known.
+scripts/freeze_pregame.py records the sha256 of the layout's pregame sections,
+the numbered sections before the game story (``Layout.pregame``: section 1, the
+preparation, from 2014 Week 7; sections 1 and 2, the preparation and the
+pregame media, in Week 6), in the week's data folder
+(runtime/decisions.WeekPages.pregame). Once the game has closed the record must
+exist and hold the layout's pregame sections, each as it froze it: the pregame
+sections are never rewritten with the result known.
 """
 from __future__ import annotations
 
 import hashlib
 import json
 import re
+from dataclasses import dataclass
 from pathlib import Path
 
 from .seasons import GAME_REPORT_FROM, SeasonPaths
@@ -77,8 +90,14 @@ BLOCK = re.compile(
 H2 = re.compile(r"^## (.+?)\s*$", re.M)
 FINAL = re.compile(r"^\*\*Final: (.+?) (\d+), (.+?) (\d+)\*\*\s*$")
 RECORD_TOKEN = re.compile(r"(?<![\d-])\d{1,2}-\d{1,2}(?:-\d{1,2})?(?![\d-])")
-STORY = "3. The game"
-PREGAME = ("1. Preparation and final game-day decisions", "2. Pregame media")
+# The Game Report's layout as 2014 Week 6's report was written, frozen: the template's layout until the
+# user's decision of October 24, 2026 shortened the template from Week 7 (``TEMPLATE_FROM``).
+WEEK_6_LAYOUT = ("Coach record", "1. Preparation and final game-day decisions", "2. Pregame media", "3. The game",
+                 "4. Postgame media", "5. Football review and next week's work", "6. After-action report",
+                 "7. Final record and next game", STATISTICS)
+# The first regular-season game in the template's layout, (season, week); every postseason game is in it.
+TEMPLATE_FROM = (2014, 7)
+MEDIA = ("pregame media", "postgame media")
 # The tables a report carries before its statistics: the coach record's (any), the line score and the
 # after-action injuries table in the template's columns.
 INJURIES = "Injuries and availability changes"
@@ -89,9 +108,45 @@ RESULT = re.compile(r"\b(?P<verb>won|beat|defeated|lost|fell)\b(?: to)?(?P<objec
 
 
 def sections(root=ROOT):
-    """The report's level-two headings, in the template's order."""
+    """The template's level-two headings, in its order."""
     text = (Path(root) / TEMPLATE).read_text(encoding="utf-8")
     return [h.strip() for h in H2.findall(text)]
+
+
+@dataclass(frozen=True)
+class Layout:
+    """A Game Report layout: its level-two headings, in order."""
+    sections: tuple
+
+    @property
+    def story(self):
+        """The game story's heading ("2. The game", or "3. The game" in Week 6's layout)."""
+        return next(h for h in self.sections if h.endswith(". The game"))
+
+    @property
+    def pregame(self):
+        """The pregame sections, frozen before kickoff: the numbered sections before the story."""
+        return tuple(h for h in self.sections[:self.sections.index(self.story)] if re.match(r"\d+\. ", h))
+
+    @property
+    def final_record(self):
+        """The section that carries the "Record after game" line."""
+        return next(h for h in self.sections if h.endswith(". Final record and next game"))
+
+
+def season_of(game):
+    """The game's season: the first part of its id (runtime/week_inputs.event_id)."""
+    return int(game.get("season") or str(game["game_id"]).split("-", 1)[0])
+
+
+def layout(game=None, root=ROOT):
+    """The Game Report's layout for ``game`` (a fixture): the template's from 2014 Week 7
+    (``TEMPLATE_FROM``), every postseason game included; ``WEEK_6_LAYOUT`` for a regular-season game
+    before it. With no game, the template's."""
+    if game is not None and game.get("game_type") != "postseason" and \
+            (season_of(game), int(game["week"])) < TEMPLATE_FROM:
+        return Layout(WEEK_6_LAYOUT)
+    return Layout(tuple(sections(root)))
 
 
 def is_placeholder(match):
@@ -152,14 +207,18 @@ def _table(lines):
 
 
 def report_errors(text, receipt=None, game=None, club=JAX, root=ROOT, label="Game Report"):
-    """The Game Report's problems: its layout, and once the game has closed (``receipt``, with
-    ``game`` its fixture) the statistics last and the result reconciled with the game book."""
+    """The Game Report's problems: its layout (``game``'s, ``layout``), and once the game has closed
+    (``receipt``) the statistics last and the result reconciled with the game book."""
     errors = []
-    order = sections(root)
+    order = list(layout(game, root).sections)
     found = [h.strip() for h in H2.findall(text)]
     for heading in found:
         if heading not in order:
-            errors.append("%s: '## %s' is not a section of the Game Report (%s)" % (label, heading, "; ".join(order)))
+            why = ""
+            if tuple(order) != WEEK_6_LAYOUT and re.sub(r"^\d+\.\s*", "", heading).lower() in MEDIA:
+                why = "; from 2014 Week 7 the Game Report has no media sections (the user's decision of October 24, 2026)"
+            errors.append("%s: '## %s' is not a section of the Game Report (%s)%s"
+                          % (label, heading, "; ".join(order), why))
     known = [h for h in found if h in order]
     for heading in sorted({h for h in known if known.count(h) > 1}):
         errors.append("%s: '## %s' appears twice" % (label, heading))
@@ -266,7 +325,7 @@ def _record_errors(text, receipt, game, club, root, label):
         return []
     line = next((l for l in text.splitlines() if l.strip().startswith(RECORD)), None)
     if line is None:
-        return ["%s: section 7 needs its '%s' line" % (label, RECORD)]
+        return ["%s: '## %s' needs its '%s' line" % (label, layout(game, root).final_record, RECORD)]
     from . import game_weeks
     paths = SeasonPaths(int(receipt["season"]), root)
     week = int(game["week"])
@@ -367,15 +426,15 @@ def _section_lines(text, heading):
 
 
 def story_errors(text, receipt, game=None, root=ROOT, label="Game Report"):
-    """The story's figures against the game book: every score in section 3 one the game stood at (or
-    a club's record), and every "won/beat/defeated/lost/fell" by a score, anywhere in the report's
-    prose, the final score with the right club as winner or loser."""
+    """The story's figures against the game book: every score in the game story (``game``'s layout)
+    one the game stood at (or a club's record), and every "won/beat/defeated/lost/fell" by a score,
+    anywhere in the report's prose, the final score with the right club as winner or loser."""
     errors = []
     stood = scores_stood(receipt)
     records = _records(receipt, game, root)
     final = receipt["final_score"]
     clubs = [receipt["away"], receipt["home"]]
-    story = [l for l in _section_lines(text, STORY) if not l.strip().startswith("|")]
+    story = [l for l in _section_lines(text, layout(game, root).story) if not l.strip().startswith("|")]
     for token in RECORD_TOKEN.findall("\n".join(story)):
         parts = tuple(int(p) for p in token.split("-"))
         if token in records:
@@ -415,52 +474,63 @@ def _last_club(text, clubs):
 
 
 # ---------------------------------------------------------------- the pregame sections, frozen
-def pregame_sections(text):
-    """{heading: its text} of the report's sections 1 and 2, each from its heading to the next."""
+def pregame_sections(text, headings):
+    """{heading: its text} of the report's sections named in ``headings``, each from its heading to the
+    next."""
     out, current, lines = {}, None, []
     for line in text.splitlines():
         m = re.match(r"^## (.+?)\s*$", line)
         if m:
-            if current in PREGAME:
+            if current in headings:
                 out[current] = "\n".join(lines).rstrip("\n")
             current, lines = m.group(1).strip(), [line]
             continue
         lines.append(line)
-    if current in PREGAME:
+    if current in headings:
         out[current] = "\n".join(lines).rstrip("\n")
     return out
 
 
-def pregame_digests(text):
-    return {h: hashlib.sha256(body.encode("utf-8")).hexdigest() for h, body in pregame_sections(text).items()}
+def pregame_digests(text, headings):
+    return {h: hashlib.sha256(body.encode("utf-8")).hexdigest() for h, body in pregame_sections(text, headings).items()}
 
 
-PREGAME_ABOUT = ("The Game Report's preparation and pregame media as they stood before kickoff: each section's heading "
-                 "and the sha256 of its text, frozen at the game-day commit by scripts/freeze_pregame.py. Validation "
-                 "holds the report's sections 1 and 2 to it once the game has closed.")
+PREGAME_ABOUT = ("The Game Report's pregame sections (the numbered sections before the game story) as they stood "
+                 "before kickoff: each section's heading and the sha256 of its text, frozen at the game-day commit by "
+                 "scripts/freeze_pregame.py. Validation holds the report's pregame sections to it once the game has "
+                 "closed.")
 
 
-def pregame_record(text, day):
-    """The pregame freeze record of a report opened before the game (its sections 1 and 2)."""
-    digests = pregame_digests(text)
-    missing = [h for h in PREGAME if h not in digests]
+def pregame_record(text, day, game=None, root=ROOT):
+    """The pregame freeze record of a report opened before ``game``: its layout's pregame sections
+    (``Layout.pregame``)."""
+    headings = layout(game, root).pregame
+    digests = pregame_digests(text, headings)
+    missing = [h for h in headings if h not in digests]
     if missing:
         raise ValueError("the Game Report has no '## %s' to freeze" % missing[0])
-    return {"about": PREGAME_ABOUT, "frozen": day.isoformat(), "sections": {h: digests[h] for h in PREGAME}}
+    return {"about": PREGAME_ABOUT, "frozen": day.isoformat(), "sections": {h: digests[h] for h in headings}}
 
 
-def pregame_errors(text, record, closed, label="Game Report", hint=""):
-    """Sections 1 and 2 against the pregame freeze record; once the game has closed the record must
-    exist."""
+def pregame_errors(text, record, closed, label="Game Report", hint="", game=None, root=ROOT):
+    """The pregame sections against the pregame freeze record; once the game has closed the record
+    must exist. With ``game``, the record holds exactly its layout's pregame sections."""
     if record is None:
         return (["%s: the game has been played, but its pregame sections were never frozen before kickoff%s"
                  % (label, hint)] if closed else [])
-    digests = pregame_digests(text)
+    frozen = record.get("sections") or {}
     errors = []
-    for heading, digest in (record.get("sections") or {}).items():
+    if game is not None:
+        wanted = layout(game, root).pregame
+        if sorted(frozen) != sorted(wanted):
+            errors.append("%s: the pregame freeze record holds %s; this game's pregame sections are %s"
+                          % (label, "; ".join("'## %s'" % h for h in frozen) or "no section",
+                             "; ".join("'## %s'" % h for h in wanted)))
+    digests = pregame_digests(text, tuple(frozen))
+    for heading, digest in frozen.items():
         if digests.get(heading) != digest:
-            errors.append("%s: '## %s' differs from the section frozen before kickoff on %s; the preparation and "
-                          "the pregame media stay as they stood before the game" % (label, heading, record.get("frozen")))
+            errors.append("%s: '## %s' differs from the section frozen before kickoff on %s; the pregame sections "
+                          "stay as they stood before the game" % (label, heading, record.get("frozen")))
     return errors
 
 
@@ -501,7 +571,7 @@ def validation_errors(root=ROOT, seasons=None):
                 record = json.loads(frozen.read_text(encoding="utf-8")) if frozen.is_file() else None
                 errors += pregame_errors(text, record, receipt is not None, rel,
                                          " (python scripts/freeze_pregame.py %d --season %d at the game-day commit)"
-                                         % (week, year))
+                                         % (week, year), game=game, root=root)
     return errors
 
 

@@ -20,11 +20,7 @@ No practice week is recorded for this game. What is recorded is the Game Plan as
 **Plan in force:** The Week 5 offense and defense, carried unchanged ([Game Plan](Game_Plan.md)).  
 **Game-day availability:** No changes from the approved game-day unit.
 
-## 2. Pregame media
-
-No pregame media session was recorded.
-
-## 3. The game
+## 2. The game
 
 Pittsburgh won by 17 and ended Jacksonville's season with what it did after four Jacksonville turnovers: a field goal and two touchdowns, 17 points in all. Jacksonville gained 360 yards, did not allow a sack and led 10-6 early in the third quarter, but three interceptions and a late fumble left it with no way back.
 
@@ -55,18 +51,14 @@ Pittsburgh needed four plays from the Jacksonville 42: Ben Roethlisberger found 
 
 Fourth downs were Stone's live calls. At fourth-and-1 on the Pittsburgh 2, with Jacksonville ahead 7-6, the sideline took a timeout, a delay-of-game penalty followed, and Scobee kicked. The game book records the timeout, the penalty and the kick, and no reason for any of them. Pittsburgh faced fourth-and-1 on its next touchdown drive and went for it, and Bell's 24-yard run kept the drive alive. The record holds no pre-snap call or defensive look for the three interceptions or the fumble, so nothing here explains why each one happened.
 
-## 4. Postgame media
-
-No postgame media session was recorded.
-
-## 5. Football review and next week's work
+## 3. Football review and next week's work
 
 **Offense:** The offense moved the ball, 360 yards with no sack allowed, and gave it away four times, three of them on throws. Two of the three interceptions came on second-and-8.  
 **Defense:** Smith's forced fumble at the Pittsburgh 17 was the defense's one takeaway. Bell ran 18 times for 115 yards, and the fourth-and-1 conversion and the eleven-play drive late in the game are the two run-defense sequences to review.  
 **Special teams and game management:** Scobee missed from 46 and made the 25-yarder after the delay of game.  
 **What changes for the next game:** There is no next game. The interceptions, the run fits on the fourth-and-1 and the late drive, and the fourth-down process at the 2 go to the season review.
 
-## 6. After-action report
+## 4. After-action report
 
 ### Injuries and availability changes
 
@@ -77,13 +69,15 @@ No postgame media session was recorded.
 
 ### Players who stood out
 
-Maurice Jones-Drew ran 24 times for 110 yards and scored Jacksonville's touchdown, and lost the fumble at the Pittsburgh 20. Daryl Smith forced and recovered Miller's fumble. Davante Adams's 64-yard catch set up the touchdown. For Pittsburgh, Ivan Taylor intercepted two passes and Bell's fourth-and-1 run started the go-ahead drive.
+Maurice Jones-Drew ran 24 times for 110 yards and scored Jacksonville's touchdown, and lost the fumble at the Pittsburgh 20.  
+Daryl Smith forced and recovered Heath Miller's fumble at the Pittsburgh 17.  
+Ivan Taylor intercepted Kirk Cousins twice for Pittsburgh, the second on the possession after Le'Veon Bell's go-ahead touchdown.
 
 ### Role or transaction consequences
 
 No changes.
 
-## 7. Final record and next game
+## 5. Final record and next game
 
 **Record after game:** 2-0 in the regular season, 0-1 in the playoffs.  
 **Standing / playoff result:** Eliminated in the Wild Card round.  

@@ -326,7 +326,8 @@ class WeekPages:
     def pregame(self):
         """The Game Report's pregame sections as they stood at the game-day commit (``sections``: each
         heading and the sha256 of its text; ``frozen``, the day), written by scripts/freeze_pregame.py
-        before kickoff; validation holds the report's sections 1 and 2 to it (runtime/game_report.py)."""
+        before kickoff; validation holds the report's pregame sections to it, section 1 from 2014 Week 7
+        and sections 1 and 2 in Week 6 (runtime/game_report.Layout.pregame)."""
         return self.data / "pregame.json"
 
     def earlier_briefing(self, label):

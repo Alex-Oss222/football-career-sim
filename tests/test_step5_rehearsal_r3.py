@@ -533,7 +533,8 @@ class RehearsalTests(Runner):
         self.assertEqual(problems, [])
         self.assertTrue(written.is_file())
         self.assertEqual(practices.padded_status(SEASON, week, root)["first"]["used"], used + self.padded)
-        # The Game Report opened with its preparation and pregame media, frozen, and its two event lines.
+        # The Game Report opened with its preparation (the template's one pregame section), frozen, and its
+        # two event lines.
         sequence = max(item["sequence"] for _, _, item in ev_mod.closures(ev_mod.load_events(root))) + 1
         prep = {"closure": {"checkpoint": "Canonical update - %s - Week %d preparation closed (%s)" % (
                     se.long_date(saturday), week, TEST), "sequence": sequence, "through": saturday.isoformat()},
@@ -596,12 +597,15 @@ class RehearsalTests(Runner):
         self.assertEqual(still, [])
         ours = [r for r in game_weeks.regular_receipts(self.paths) if CLUB in (r["away"], r["home"])]
         record = sorted(game_report.record_forms(ours, CLUB), key=len)[0]
-        page = template_report(receipt, game_weeks.club_game(self.paths, week, CLUB), record, root)
-        for heading in game_report.PREGAME:
+        fixture = game_weeks.club_game(self.paths, week, CLUB)
+        layout = game_report.layout(fixture, root)
+        page = template_report(receipt, fixture, record, root)
+        for heading in layout.pregame:
             page = page.replace(section(page, heading), section(opened, heading), 1)
         links = ["[%s](%s)" % (open_events.title(r), os.path.relpath(root / r["resolution"]["result_page"],
                                                                      self.pages.folder)) for r in results]
-        page = page.replace("## 7. ", "The week's other business: %s.\n\n## 7. " % "; ".join(links), 1)
+        final = "## %s" % layout.final_record
+        page = page.replace(final, "The week's other business: %s.\n\n%s" % ("; ".join(links), final), 1)
         sequence = max(item["sequence"] for _, _, item in ev_mod.closures(ev_mod.load_events(root))) + 1
         checkpoint = "Canonical update - %s - Week %d closed" % (wpages.long_date(played), week)
         event = {"date": played.isoformat(), "id": "%s-week-%d-game" % (played.isoformat(), week), "status": "closed",
@@ -612,7 +616,7 @@ class RehearsalTests(Runner):
         text = "\n".join([title, ""] + earlier + ["<!-- event-record: %s -->" % json.dumps(event, sort_keys=True), rest])
         self.pages.report.write_text(text, encoding="utf-8")
         self.assertEqual(game_report.pregame_errors(text, json.loads(self.pages.pregame.read_text(encoding="utf-8")),
-                                                    True), [])
+                                                    True, game=fixture, root=root), [])
         self.assertEqual(game_report.result_link_errors(text, results, self.pages.report.relative_to(root).as_posix()), [])
         self.checkpoint(checkpoint)
         snapshot = hashlib.sha256((root / STATE).read_bytes()).hexdigest()
@@ -909,9 +913,9 @@ def section(text, heading):
 
 
 def opened_report(root, game, week, lines, names):
-    """The Game Report as the practice-week commit opens it: the header, the week's two event lines,
-    its preparation (test data) and the pregame media section, no session having been recorded; the
-    other sections stay the template's prompts until the game is played."""
+    """The Game Report as the practice-week commit opens it, in the template's layout: the header, the
+    week's two event lines and its preparation (test data), the one pregame section; the other sections
+    stay the template's prompts until the game is played."""
     template = (Path(root) / game_report.TEMPLATE).read_text(encoding="utf-8")
     _, rest = template.split("\n## Coach record", 1)
     when = date.fromisoformat(game["date"])
@@ -926,10 +930,9 @@ def opened_report(root, game, week, lines, names):
              "Plan](Game_Plan.md).  \n**Game-day availability:** As the Game Plan sets it.\n\n") % (
         ("%s did not practice under their medical instructions." % " and ".join(names)) if names else
         "No player was under a medical instruction.", week)
-    second = "## 2. Pregame media\n\nNo pregame media session was recorded.\n\n"
-    after = rest.split("\n## 3. The game", 1)[1]
-    return "\n".join(header) + "\n## Coach record" + rest.split("\n## 1.", 1)[0] + "\n" + first + second + \
-        "## 3. The game" + after
+    story = "## %s" % game_report.layout(game, root).story
+    after = rest.split("\n" + story, 1)[1]
+    return "\n".join(header) + "\n## Coach record" + rest.split("\n## 1.", 1)[0] + "\n" + first + story + after
 
 
 def week_digests(root, week):

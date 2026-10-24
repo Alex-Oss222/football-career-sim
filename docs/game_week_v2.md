@@ -95,6 +95,8 @@ No mechanism may change the game because the author writes confidently, uses a l
 
 ## 6. Game Report editorial contract
 
+**October 24, 2026.** By the user's decision of that day, verbatim: "Dropping the researched media sections i like the full stats so trimming the unit review", the Game Report from 2014 Week 7, every postseason game included, has no pregame or postgame media sections and a short football review (four lines of one or two sentences each), and keeps the full game statistics last exactly as before: Coach record, sections 1 to 5, then Full game statistics, the after-action report now section 4 ([the template](../foundation/templates/game_week/game_report_template.md), [docs/game_output_workflow.md](game_output_workflow.md)). The press bullets below apply only to 2014 Week 6's report, which keeps its seven sections as written, and the bullet against word quotas gives way to the football review's short form (about 150 words; Week 6's ran 603); the rest of this contract stands.
+
 - The main game section must read as a football account. Tell the action in order and use **particular** sequences, not one mechanical paragraph per drive. Quiet quarters may be short. Avoid declaring fake emotional turning points.
 - Every named play with a supposed reason must pass: `Was that call actually chosen pre-snap? Was its reason established then? Does the evidence contain the opponent look?` If not, restrict the claim to what is recorded.
 - A story may report `Jones-Drew gained 15 on a third-and-16 screen`, and separately note the pregame plan permitted the screen against a credible rush. It may **not** claim the defense rushed six or the coach read a linebacker blitz without that evidence.
