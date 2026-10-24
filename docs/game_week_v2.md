@@ -50,6 +50,12 @@
 | An alleged coverage, missed block, audible or causal tactical answer | Pre-snap call/execution record, charted evidence, or actual staff film finding | State only the level of cause the evidence supports |
 | Public/community narrative | Recorded consequential plays, score and public events | A readable story of a particular game, without fabricated fans or journalist quotes |
 
+### The briefing's inserts and the week index (rebuild step 5)
+
+The event inserts (ACTION REQUIRED, FOR YOUR INFORMATION, COMING UP) sit under the header lines, before section 1, each left out when empty (rebuild step 5, `runtime/event_inserts.py`). Section 8 lists the week's own asks only: an event's item and the game-day change are inserts, and the practice week asked on My Responses (while no standing practice instruction covers the week) is a routine ask of the week, with a line that it is answered there.
+
+From rebuild step 5 the index adds, each left out when empty so a week without them keeps its bytes: the week's practice and rest table under "Practice week", only for a week whose practice record is recorded (`runtime/practices.render_table`); and "Other business this week" (`runtime/event_inserts.other_business`): one link to the result page of each event resolved in the week and, while the week is open, each event still open with its due time. A closed week lists its results only, so its index never changes after the week; an open week's index changes only when an event is raised or resolved, and `raise_event.py` and `resolve_event.py` rebuild it then.
+
 ## 4. Page compiler contract
 
 The user-facing `Game_Plan.md` must be editable in place, uploadable with exactly the same headings, and accepted in chat. It should **not** expose internal `Opener`, `Returns`, `Family`, `Type`, `Tags`, positional database keys, or defensive parser fields. Instead, adapt natural-football entries to the existing executable schema.

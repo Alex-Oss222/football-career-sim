@@ -17,8 +17,17 @@ A script that talks to the private Engine State service needs `ENGINE_RUNTIME_UR
 
 | Command | What it does |
 |---|---|
+| `python scripts/record_practice_week.py WEEK --season YEAR --schedule [--upload PAGE] [--check]` | The week's practice schedule: from Stone's standing practice instruction where it covers the week, otherwise his "Practice week" answer on My Responses, checked against the padded-practice and rest limits before any session and, once it passes, recorded (writes nothing with `--check`) |
+| `python scripts/record_practice_week.py WEEK --season YEAR [--file HELD.json] [--check]` | The week's practice and rest record, against its applied schedule, in the practice-week commit; without `--file` a week no schedule was given for is recorded as not set |
+| `python scripts/change_game_day.py WEEK --season YEAR --needed` | After a medical entry or transaction recorded once the Game Plan is applied: opens Stone's depth and inactives change (a block on My Responses) when the week needs one; the build holds on it |
+| `python scripts/change_game_day.py WEEK --season YEAR [--file PAGE]` | Applies Stone's answered depth and inactives change from his My Responses block, checked as the Game Plan is, before the inputs are built |
+| `python scripts/change_game_day.py WEEK --season YEAR --check` | Exits 1 while the week's change is open, naming it unanswered, ready or refused |
 | `python scripts/build_week_inputs.py WEEK --season YEAR` | Builds, freezes and gates the week's TeamInput package from Stone's frozen call sheet |
 | `python scripts/close_week.py WEEK --season YEAR --close [--continue ANSWER.json]` | Closes every game of the week once through the production runner, writes the receipts and regenerates the statbook and standings |
+| `python scripts/injury_events.py WEEK --season YEAR [--check]` (also `--return PLAYER`, `--recommend PLAYER --source PAGE`) | Opens the injury replacement events after the week's close, from stored facts only |
+| `python scripts/apply_transaction.py --file DECISION.json --season YEAR [--check]` / `ID --season YEAR [--check]` | Places, then applies, the general manager's roster decision: the single writer of the roster, contracts, player records, charts, Transaction page and signing records; a claim is decided when its period ends, a section 4 pursuit by one private draw at the real signing date |
+| `python scripts/coaching_check.py WEEK --season YEAR [--close]` | The weekly head-coach check for every club: dry run (each club's chance), or with `--close` one private event per due week, in week order (the retroactive Weeks 1 to 5 first) |
+| `python scripts/coaching_check.py --season YEAR --effective` | Writes the dated page and news of each drawn head-coach change the clock has reached |
 | `python scripts/render_box_score.py [EVENT_ID] --season YEAR [--team TEAM] [--write OUTPUT_MD] [--line-score] [--preseason]` | Box score from a closed-game receipt, written into the marked block of a game output |
 | `python scripts/render_standings.py YEAR [--through-week N]` | Standings from the receipts |
 | `python scripts/render_season_stats.py YEAR --team TEAM` | The season statistics views from the receipts |
@@ -36,6 +45,15 @@ A script that talks to the private Engine State service needs `ENGINE_RUNTIME_UR
 | `python scripts/render_player_ages.py [--check]` | The register's birth-date and age columns and the player ages page, as of Document 5's master date |
 | `python scripts/advance_private_snapshot.py CHECKPOINT` | From merged `main` only: advances the private snapshot to the current Document 5 digest |
 
+## The bye week
+
+| Command | What it does |
+|---|---|
+| `python scripts/render_bye_week.py [--check] [--frame]` | While the bye is open: opens Stone's bye item, issues the Bye Week Review, writes the blank My Adjustments and the bye's index; `--frame` prints the report's fixed parts |
+| `python scripts/check_bye_adjustments.py WEEK --season YEAR [--file PAGE]` | Checks My Adjustments in the bye-week design's messages; with `--file` places an uploaded page that passes |
+| `python scripts/apply_bye_adjustments.py WEEK --season YEAR` | Records the applied adjustments, settles the item, applies the immediate role or depth changes |
+| `python scripts/close_bye_week.py WEEK --season YEAR [--check]` | Closes the bye on its Sunday once the adjustments, the week's slate, the practice record and the report are in |
+
 ## Preseason
 
 | Command | What it does |
@@ -49,8 +67,15 @@ A script that talks to the private Engine State service needs `ENGINE_RUNTIME_UR
 |---|---|
 | `python scripts/render_annual_record.py YEAR [--root PATH] [--check]` | The one-line annual `Record.md` from each event owner's metadata |
 | `python scripts/render_career_views.py [--check]` | The career views (Document 5 and the head coach's desk, the active season's README) from the current-job record and the decision queue; writing is refused while a Jacksonville game is paused |
-| `python scripts/render_trade_pages.py YEAR [--check]` | Trade navigation from the completed-trade index |
-| `python scripts/render_jaguars_cap_tracker.py [--check]` | The twelve-year financial horizon and the player cap views from the contract inputs (`data/finances/financial_inputs.json`) |
+| `python scripts/raise_event.py --season YEAR --file EVENT.json [--check]` | Records an event inside a week or phase (an injury replacement, a trade call, another club's head-coach change) from its sourced record, in its owner's event store, and opens Stone's queue item when his part needs his answer; refused without a source page, for a time after the master date/time, for an id already used and while a game is paused; the open period's index, which lists the events still open, is rebuilt at once; `--check` writes nothing |
+| `python scripts/check_responses.py WEEK --season YEAR [--file PATH]` | Checks the week's (or the bye's) My Responses page in football words: each block's notice is open and needs his part, the names are on the roster or the coach records, the dates against the due time, "None needed" for a notice a standing instruction or someone else answers, "Leave this open until <date>" only before the due time; `--file` places an uploaded .md or .txt page, refused with nothing written for an unbound heading, a change to a recorded answer or an answer for a settled question, and never touches the Game Plan |
+| `python scripts/apply_responses.py WEEK --season YEAR` | Records each answered block: fills its empty "Date answered" line with the master date, freezes it by its digest, compiles what it commits to, settles its queue item by the user and stores the response on the event (answered, never executed); a change is a new block headed "Revised: <title>"; running it twice changes nothing |
+| `python scripts/resolve_event.py ID --season YEAR --outcome OUTCOME --by PARTY --at DATETIME --decision TEXT [--criteria N] [--result PAGE] [--closure] [--check]` | Resolves an event and writes its one dated result page in its owner's folder (a second of the same kind, date and subject is numbered `_2`), built from the event's record in the result template's fields with one event-record line (`--closure` gives it its closure for a mid-week record), then rebuilds Record.md and the open period's index at once. An outcome that makes a change (executed, accepted) and a news event's result are adopted with `--result`. Refuses executing or accepting a trade call, a time after the master date/time, a paused game, a decision by another party without its criteria recorded before Stone's answer, unclean words, lapsing without his permission, and anything while an open item holds the event, except the other side's ending of the question and an injury replacement's unanswered due time, which withdraw his item; all or nothing. `--check` with an ID writes nothing; `--check` alone holds every built result page to its record |
+| `python scripts/render_trade_pages.py YEAR [--check]` | Trade navigation from the completed-trade index, and the offer log's index of calls (`trade_offers.md`): each call page written before Week 6 with its completed record, the trade calls recorded as events with their results, the open calls with their due times, and the trade deadline while the briefs show it |
+| `python scripts/split_history_page.py PLAN.json --recorded YYYY-MM-DD [--check]` | Splits a page written before 2014 Week 6 into one page per part under the split rule: writes the parts and the page history map's split entry and re-pins the map; `--check` reproduces an applied split and writes nothing |
+| `python scripts/render_jaguars_cap_tracker.py [--check]` | The twelve-year financial horizon and the player cap views from the permanent contract records (`runtime/player_contracts.rows()`) and the club-level contract inputs (`data/finances/financial_inputs.json`) |
+| `python scripts/render_contract_pages.py [--season YEAR] [--check] [--root PATH]` | The season's contract and cap pages (`Player_Contracts.md`, `Salary_Cap.md`, the built part of the dated cap changes, the `player_contracts` and `salary_cap` folder READMEs) from the permanent contract records (`data/people/contracts`) |
+| `python scripts/render_coaching_changes.py --season YEAR [--check]` | Rebuilds the league's head-coach changes pages from their records |
 | `python scripts/render_draft_order.py [--check]` | The 2014 draft order from the closed receipts |
 | `python scripts/render_2014_opponents.py [--check]` | The undated 2014 opponent matrix |
 | `python scripts/resolve_compensatory_picks.py [--check]` | The branch 2014 compensatory picks (deterministic) |
@@ -127,6 +152,8 @@ Research tools only; the runtime never downloads anything. Each builder's artifa
 | `build_2013_honours_evidence.py SOURCE_DIR PACKAGE...` | `career/2013/awards/season_honours_evidence.json`; needs the frozen 2013 weekly packages from `.sim_cache`, so a fresh session cannot rerun it | [2013 awards](../career/2013/awards/README.md) |
 | `build_2014_compensatory_inputs.py` | `data/2014/Draft/compensatory/inputs.json` | [compensatory picks](../career/2014/Draft/compensatory/README.md) |
 | `build_hc_change_base_rates.py GAMES_CSV` | `library/data/2012_hc_change_base_rates.json` | [staff changes](../career/2014/Early_Offseason/staff_changes/README.md) |
+| `build_hc_inseason_hazard.py [--file GAMES_CSV] [--check]` | `library/data/2012_hc_inseason_hazard.json` (pass 1: fetches nfldata `games.csv` at commit `04a6ffcc`, or reads a local copy, and refuses any other sha256) | [in-season head-coach changes](../library/2014_inseason_head_coach_changes.md) |
+| `verify_hc_inseason_hazard.py GAMES_CSV` | None (pass 2, separate code: prints the change list against the January table, every rate recomputed) | [in-season head-coach changes](../library/2014_inseason_head_coach_changes.md) |
 | `build_defense_2006_2013.py RAW_DIR OUT_DIR`; `write_defense_2006_2013_dictionary.py OUT_DIR` | 2006-2013 defensive datasets | [defensive data](../library/2006_2013_defense_data.md) |
 
 Specification and acceptance tools: `pre_build_specification.py [--check]` and `fourth_down_specification.py [--check]` print or verify the pinned digests of the frozen 2014.6 specifications; `acceptance_2014_6.py --block BLOCK ...` and `seed_sweep.py [--block BLOCK] ...` run the committed acceptance and seed sweeps; `release_preconditions_2014_6.py [--season YEAR] [--week N] [--journal LISTING.json] [--release] [--json]` checks the 2014.6 release preconditions read-only. `league_base_2010_2014.py` and `player_state_study.py` are modules used by the builders, not commands.
