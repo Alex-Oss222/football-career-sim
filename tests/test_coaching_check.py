@@ -28,7 +28,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from runtime import clean_pages, league_coaches as lc  # noqa: E402
+from runtime import clean_pages, league_coaches as lc, open_events  # noqa: E402
 from runtime.player_bios import master_date  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
 from runtime.week_inputs import receipt_name  # noqa: E402
@@ -268,20 +268,25 @@ class CheckTests(unittest.TestCase):
         self.assertEqual(lc.coverage_errors(self.root, SEASON), [])        # nothing after the week is open
         missing = lc.due_weeks(SEASON, self.root)
         self.assertEqual(missing, retro["weeks"] + [week])
-        # The next week's items open: every missing week, the retroactive ones included, fails.
+        # The next week's items and brief open at the close, before the check: they do not count.
         add_item(self.root, {"id": "%d-w%02d-game-plan" % (SEASON, week + 1), "class": "weekly_game_plan",
                              "blocks": [{"kind": "week_inputs", "season": SEASON, "week": week + 1}]})
-        errors = lc.coverage_errors(self.root, SEASON)
-        self.assertEqual([int(re.match(r"Week (\d+)", e)[1]) for e in errors], missing)
-        self.assertTrue(lc.validation_errors(self.root))
-        # So does the next week's practice record alone.
-        queue = json.loads((self.root / "state/decision_queue.json").read_text(encoding="utf-8"))
-        queue["items"] = queue["items"][:-1]
-        (self.root / "state/decision_queue.json").write_text(json.dumps(queue, indent=1), encoding="utf-8")
         self.assertEqual(lc.coverage_errors(self.root, SEASON), [])
+        # Its practice record does: every missing week, the retroactive ones included, fails.
         practice = SeasonPaths(SEASON, self.root).practice_log(week + 1)
         practice.parent.mkdir(parents=True, exist_ok=True)
         practice.write_text("{}", encoding="utf-8")
+        errors = lc.coverage_errors(self.root, SEASON)
+        self.assertEqual([int(re.match(r"Week (\d+)", e)[1]) for e in errors], missing)
+        self.assertTrue(lc.validation_errors(self.root))
+        # So does the master date passing the day of its first practice, with no record written.
+        practice.unlink()
+        self.assertEqual(lc.coverage_errors(self.root, SEASON), [])
+        first = lc.first_practice_day(SEASON, week + 1, self.root)
+        set_master(self.root, first, "after the 9 a.m. ET record of the Week %d preparation (test)" % (week + 1))
+        self.assertEqual(lc.coverage_errors(self.root, SEASON), [])          # that day is not yet past
+        set_master(self.root, first + timedelta(days=1), "after the 9 a.m. ET record of the Week %d preparation "
+                                                         "(test)" % (week + 1))
         self.assertEqual(len(lc.coverage_errors(self.root, SEASON)), len(missing))
         # Once every check is made, in order, the open period passes.
         self.assertEqual(self.run_close(week)[0], 0)
@@ -337,6 +342,10 @@ class CheckTests(unittest.TestCase):
             self.assertEqual(event["process"][0]["kind"], "criteria")
             self.assertEqual(event["resolution"]["decision"]["criteria"], 0)
             self.assertIsNone(event["queue_item"])
+            # Raised and resolved through the event store's own writers, stamped with the open period.
+            self.assertEqual(event["period"], open_events.open_period(SEASON, self.root))
+            self.assertEqual(event["resolution"]["period"], event["period"])
+        self.assertEqual(open_events.validation_errors(self.root), [])
         record_md = (SeasonPaths(SEASON, self.root).annual_record).read_text(encoding="utf-8")
         for club in everyone:
             self.assertIn("The %s made a change at head coach" % club, record_md)

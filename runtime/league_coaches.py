@@ -32,6 +32,7 @@ from pathlib import Path
 import re
 
 from . import current_job, decision_queue
+from .open_events import raise_event, resolve as resolve_event
 from .decisions import BY_KIND, NEWS_KIND, event_folder, event_store, file_name, name_part
 from .events import EVENT_META
 from .packets import canonical
@@ -380,23 +381,63 @@ def opened_periods(season, root=ROOT):
     return weeks
 
 
+def first_practice_day(season, week, root=ROOT, job=None):
+    """The day of Week ``week``'s first practice: the first session the standing practice
+    instruction sets for the week, or, for a week it does not set (the bye, a Thursday game, a week
+    before it applies), the first day of the week's practice span (runtime/practices.week_span)."""
+    from . import practices
+    job = current_job.load(root) if job is None else job
+    try:
+        schedule = practices.schedule_from_instruction(current_job.practice_instruction(job, season), season, week,
+                                                       root)
+        if schedule["sessions"]:
+            return date.fromisoformat(schedule["sessions"][0]["date"])
+    except practices.NotCovered:
+        pass
+    return practices.week_span(season, week, root)[0]
+
+
+def practice_weeks_opened(season, root=ROOT):
+    """The weeks whose practice week has opened: the week closed, its practice record written, or the
+    master date past the day of its first practice. A brief issued or an item opened for the week
+    does not count: both open at the previous week's close, before that week's check is drawn."""
+    paths = SeasonPaths(season, root)
+    weeks = set(closed_weeks(season, root))
+    today = master_date(root)
+    job = current_job.load(root)
+    for week in sorted({g["week"] for g in paths.regular_games()}):
+        if week in weeks:
+            continue
+        if paths.practice_log(week).is_file():
+            weeks.add(week)
+            continue
+        try:
+            if today > first_practice_day(season, week, root, job):
+                weeks.add(week)
+        except ValueError:
+            continue
+    return weeks
+
+
 def coverage_errors(root=ROOT, season=None):
-    """Every closed week's check is recorded before the period it must precede opens (the next
-    week's; for the retroactive Weeks 1 to 5, Week 7's, since they come before Week 6's check), and
-    the checks were made in week order. Nothing is due while the method is not adopted."""
+    """Every closed week's check is recorded before the practice week it must precede opens (the
+    next week's; for the retroactive Weeks 1 to 5, Week 7's, since they come before Week 6's check),
+    and the checks were made in week order. The next week's brief and items open at the close,
+    before the check runs, so they do not count (``practice_weeks_opened``). Nothing is due while the
+    method is not adopted."""
     root = Path(root)
     season = _season(root) if season is None else season
     method = load_method(season, root)
     if not adopted(method):
         return []
     done = checks(season, root)
-    opened = opened_periods(season, root)
+    opened = practice_weeks_opened(season, root)
     latest = max(opened) if opened else 0
     errors = []
     due = at_risk_weeks(season, root, method)
     for week in due:
         if week not in done and latest >= due_point(method, week):
-            errors.append("Week %d's head-coach check is missing, and Week %d's period has opened; "
+            errors.append("Week %d's head-coach check is missing, and Week %d's practice week has opened; "
                           "scripts/coaching_check.py %d --season %d --close draws every week due, in order"
                           % (week, latest, max(due), season))
     order = [done[w]["order"] for w in sorted(done)]
@@ -612,7 +653,7 @@ def news_event(season, record, row, root=ROOT):
         "raised": {"at": at, "by": "communications_staff",
                    "source": {"path": _rel(root, folder(season, root) / INDEX), "anchor": "changes"}},
         "known_to": ["stone", "khan", "caldwell"],
-        "authority": {"rows": [], "decides": "other_club"}, "stone_part": "none",
+        "authority": {"rows": ["1"], "decides": "other_club"}, "stone_part": "none",
         "summary": {"text": summary(row), "author": "communications_staff", "date": row["effective"]},
         "staff_position": None, "consequence": None, "facts": facts, "options": [], "deadline": None,
         "state": "open",
@@ -641,36 +682,6 @@ def et_datetime(day):
     return datetime(day.year, day.month, day.day).isoformat() + offset
 
 
-# ---- STUB (builder D, wave 1): A1's runtime/open_events.py is not in this branch yet. These two stand
-# in for its fixed interface, open_events.raise_event(record, root) and open_events.resolve(season,
-# id, resolution, root); the lead replaces the two assignments below with the real functions
-# ("from .open_events import raise_event, resolve as resolve_event") when A1 merges. They write the
-# record to its owner's event store and nothing else: the issue stamps are left None for A1 to set,
-# and a news event opens no queue item.
-def _stub_raise_event(record, root):
-    store = event_store(record["kind"], record["season"], root)
-    path = store / (record["id"] + ".json")
-    if path.exists():
-        raise ValueError("event already recorded: %s" % record["id"])
-    record = dict(record, period=None, raised=dict(record["raised"], after_issue=None),
-                  process=[dict(p, after_issue=None) for p in record["process"]])
-    store.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(record, indent=1) + "\n", encoding="utf-8")
-    return record
-
-
-def _stub_resolve(season, event_id_, resolution, root):
-    path = event_store(KIND, season, root) / (event_id_ + ".json")
-    record = _json(path)
-    if record.get("state") == "resolved":
-        raise ValueError("event already resolved: %s" % event_id_)
-    record.update(state="resolved", resolution=dict(resolution, after_issue=None, period=None))
-    path.write_text(json.dumps(record, indent=1) + "\n", encoding="utf-8")
-    return record
-
-
-raise_event = _stub_raise_event        # STUB: from .open_events import raise_event
-resolve_event = _stub_resolve          # STUB: from .open_events import resolve as resolve_event
 
 
 def stored_news(season, root=ROOT):

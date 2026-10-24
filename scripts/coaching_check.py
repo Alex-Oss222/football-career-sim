@@ -47,6 +47,7 @@ if str(ROOT) not in sys.path:
 from runtime import league_coaches as lc  # noqa: E402
 from runtime.clean_pages import text_errors  # noqa: E402
 from runtime.events import EVENT_META, Event, annual_record_path, load_events, render_record, validate_event  # noqa: E402
+from runtime.open_events import Refused as EventRefused, prepare as prepare_event  # noqa: E402
 from runtime.packets import canonical  # noqa: E402
 
 HELD = 3
@@ -120,13 +121,32 @@ def publish(season, root=ROOT, out=print):
            if not lc.page_path(season, row, root).is_file()]
     record_path, record_text = annual_record(season, root, {lc.page_path(season, row, root): pages[lc.page_path(
         season, row, root)] for _, row in new}) if new else (None, None)
+    news = [lc.news_event(season, record, row, root) + (row,) for record, row in new]
+    # Each news record names the folder's index as its source page, so the index is written first and
+    # put back as it was if any news record is refused; then the news is raised open (its id is not
+    # yet on a page), then the change pages are written, then each news event resolves with its page
+    # (runtime/open_events: raise_event, then the result page, then resolve).
+    index = lc.folder(season, root) / lc.INDEX
+    before = index.read_bytes() if index.is_file() else None
+    if index in pages and before != pages[index].encode("utf-8"):
+        index.parent.mkdir(parents=True, exist_ok=True)
+        index.write_text(pages[index], encoding="utf-8")
+    try:
+        for event, _, _ in news:
+            prepare_event(event, root)        # every news record checked before any is raised
+    except EventRefused:
+        if before is None:
+            index.unlink(missing_ok=True)
+        else:
+            index.write_bytes(before)
+        raise
+    for event, _, _ in news:
+        lc.raise_event(event, root)
     for path, text in pages.items():
         if not path.is_file() or path.read_text(encoding="utf-8") != text:
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(text, encoding="utf-8")
-    for record, row in new:
-        event, resolution = lc.news_event(season, record, row, root)
-        lc.raise_event(event, root)
+    for event, resolution, row in news:
         lc.resolve_event(season, event["id"], resolution, root)
         out("%s: head-coach change effective %s; page and news written" % (row["club"], row["effective"]))
     if new and (not record_path.is_file() or record_path.read_text(encoding="utf-8") != record_text):
@@ -239,7 +259,7 @@ def main(argv=None, client=None, root=ROOT, out=print):
         if not weeks:
             out("Nothing is due through Week %d" % args.week)
         return 0
-    except Refused as exc:
+    except (Refused, EventRefused) as exc:
         out("HEAD-COACH CHECK REFUSED: %s" % exc)
         return HELD if lc.career_hold(args.season, root) else 1
 
