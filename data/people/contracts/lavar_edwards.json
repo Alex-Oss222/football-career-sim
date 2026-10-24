@@ -1,0 +1,119 @@
+{
+ "schema_version": 1,
+ "name": "Lavar Edwards",
+ "player": "lavar_edwards",
+ "listed": 8,
+ "position": "EDGE",
+ "roster_position": "DE",
+ "draft_pick": "#135",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2013-05-02",
+   "source": "career/2013/offseason/draft/draftees.md",
+   "contract": "lavar_edwards_2013-05-02",
+   "club": "Jacksonville Jaguars",
+   "through": 2016,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 548403,
+     "base": 495000,
+     "proration": 53403,
+     "cash": 495000,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 0
+    },
+    "2015": {
+     "status": "known",
+     "cap": 638403,
+     "base": 585000,
+     "proration": 53403,
+     "cash": 585000,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 0
+    },
+    "2016": {
+     "status": "known",
+     "cap": 728403,
+     "base": 675000,
+     "proration": 53403,
+     "cash": 675000,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Rookie scale, pick #135",
+   "signed_text": "May 2, 2013",
+   "term_text": "4 / 2016",
+   "value_text": "$2,373,612",
+   "bonus": {
+    "text": "$213,612; $53,403; 3",
+    "amount": 213612
+   },
+   "guarantee_text": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
+   "guarantee_basis": "simulation reconstruction",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$160,209 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Branch record (draftees); base derived",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2013/offseason/draft/draftees.md",
+    "library/2014_jaguars_contract_completion.md"
+   ],
+   "rookie": "drafted",
+   "schedule_from": "0152eae"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-08-30",
+   "source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+   "contract": "lavar_edwards_2013-05-02",
+   "how": "waived",
+   "text": "Waived August 30, 2014 at the reduction to 53",
+   "dead_money": [
+    {
+     "year": 2014,
+     "amount": 53403,
+     "status": "reconstructed",
+     "basis": "Waived August 30, 2014 at the reduction to 53 (post-June 1): the 2014 allocation of the signing bonus in the adopted schedule stays in 2014; a labelled simulation reconstruction",
+     "line": 16
+    },
+    {
+     "year": 2015,
+     "amount": 106806,
+     "status": "reconstructed",
+     "basis": "Waived August 30, 2014 (post-June 1): the remaining signing-bonus allocations after 2014 in the adopted schedule accelerate into 2015; a labelled simulation reconstruction",
+     "line": 22
+    }
+   ],
+   "notes": "Branch record (draftees); base derived Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Rookie scale, pick #135 ended. Dead money: the 2014 bonus allocation of $53,403 stays in 2014 and the later allocations of $106,806 accelerate into 2015 (the post-June 1 treatment, a labelled reconstruction; the library does not record the rule).",
+   "sources": [
+    "career/2013/offseason/draft/draftees.md",
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
+    "library/2014_jaguars_contract_completion.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
+   "availability": "No communicated restriction",
+   "plan": "Former player; departure recorded",
+   "credited_seasons": "1 (2013 active season)",
+   "accrued_seasons": "Through 2012: 0. 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

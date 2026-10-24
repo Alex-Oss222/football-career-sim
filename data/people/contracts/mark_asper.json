@@ -1,0 +1,89 @@
+{
+ "schema_version": 1,
+ "name": "Mark Asper",
+ "player": "mark_asper",
+ "listed": 17,
+ "position": "OG",
+ "roster_position": "G",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2012",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "mark_asper_2012",
+   "club": "Buffalo Bills",
+   "through": 2015,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 570000,
+     "base": 570000,
+     "proration": 0,
+     "other_cap": 0,
+     "cash": 570000,
+     "guaranteed_base": 0
+    },
+    "2015": {
+     "status": "known",
+     "cap": 660000,
+     "base": 660000,
+     "proration": 0,
+     "other_cap": 0,
+     "cash": 660000,
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Rookie (Buffalo, 2012 sixth round), carried by waiver claims",
+   "signed_text": "2012",
+   "term_text": "4 / 2015",
+   "value_text": "$2,213,452 original four-year deal",
+   "bonus": {
+    "text": "$113,452 original Buffalo bonus; Jacksonville proration $0"
+   },
+   "guarantee_text": "No remaining guaranteed base salary established in the recovered schedule",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$0 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Original 2012 four-year rookie deal continued through waiver claims. Buffalo keeps the $113,452 bonus; Jacksonville carries the remaining scheduled salaries. Conditional escalators require branch evidence.",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "library/2014_jaguars_original_contract_reconstruction.md"
+   ],
+   "rookie": "drafted",
+   "schedule_from": "0152eae"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-08-30",
+   "source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+   "contract": "mark_asper_2012",
+   "how": "waived",
+   "text": "Waived August 30, 2014 at the reduction to 53",
+   "notes": "Original 2012 four-year rookie deal continued through waiver claims. Buffalo keeps the $113,452 bonus; Jacksonville carries the remaining scheduled salaries. Conditional escalators require branch evidence. Waived August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Rookie (Buffalo, 2012 sixth round), carried by waiver claims ended.",
+   "sources": [
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
+    "library/2014_jaguars_original_contract_reconstruction.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Waived August 30, 2014 at the reduction to 53; cleared waivers August 31",
+   "availability": "No communicated restriction",
+   "plan": "Former player; departure recorded",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: Unresolved (not status-determining). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

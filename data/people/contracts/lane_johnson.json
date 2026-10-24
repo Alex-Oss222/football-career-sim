@@ -1,0 +1,93 @@
+{
+ "schema_version": 1,
+ "name": "Lane Johnson",
+ "player": "lane_johnson",
+ "listed": 4,
+ "position": "OT",
+ "roster_position": "OT",
+ "draft_pick": "#2",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2013-05-02",
+   "source": "career/2013/offseason/draft/draftees.md",
+   "contract": "lane_johnson_2013-05-02",
+   "club": "Jacksonville Jaguars",
+   "through": 2016,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 4818545,
+     "base": 1368709,
+     "proration": 3449836,
+     "cash": 1368709,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 1368709
+    },
+    "2015": {
+     "status": "known",
+     "cap": 5782254,
+     "base": 2332418,
+     "proration": 3449836,
+     "cash": 2332418,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 2332418
+    },
+    "2016": {
+     "status": "known",
+     "cap": 6745963,
+     "base": 3296127,
+     "proration": 3449836,
+     "cash": 3296127,
+     "basis": "Executed rookie schedule; base derived as scheduled cap less signing-bonus proration; excludes any untriggered escalator",
+     "guaranteed_base": 3296127
+    },
+    "2017": {
+     "status": "option_unexercised",
+     "cap": null,
+     "base": null,
+     "proration": null,
+     "cash": null
+    }
+   },
+   "type": "Rookie scale, pick #2, plus first-round fifth-year club option",
+   "signed_text": "May 2, 2013",
+   "term_text": "4 / 2016 (option year not exercised)",
+   "value_text": "$21,201,598",
+   "bonus": {
+    "text": "$13,799,344; $3,449,836; 3",
+    "amount": 13799344
+   },
+   "guarantee_text": "Full remaining salary guaranteed: $6,997,254. Adopted from the original pick-2 comparator; signing bonus already paid.",
+   "guarantee_basis": "simulation reconstruction",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$17,346,762 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Branch record (draftees); 2014 base derived as cap charge minus proration",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2013/offseason/draft/draftees.md",
+    "library/2014_jaguars_contract_completion.md"
+   ],
+   "rookie": "drafted"
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "1 (2013 active season)",
+   "accrued_seasons": "Through 2012: 0. 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "schema_version": 1,
+ "name": "Maurice Jones-Drew",
+ "player": "maurice_jones_drew",
+ "listed": 45,
+ "position": "RB",
+ "roster_position": "RB",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-03-28",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "maurice_jones_drew_2014-03-28",
+   "club": "Jacksonville Jaguars",
+   "through": 2015,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 2600000,
+     "base": 1750000,
+     "proration": 750000,
+     "other_cap": 100000,
+     "cash": 3350000,
+     "guaranteed_base": 1750000,
+     "basis": "Branch contract, Entry 103: $750,000 bonus allocation, $1,750,000 guaranteed base, $100,000 workout bonus"
+    },
+    "2015": {
+     "status": "known",
+     "cap": 4400000,
+     "base": 3550000,
+     "proration": 750000,
+     "other_cap": 100000,
+     "cash": 3650000,
+     "guaranteed_base": 0,
+     "basis": "Branch contract, Entry 103: $750,000 bonus allocation, $3,550,000 base, $100,000 workout bonus"
+    }
+   },
+   "type": "Veteran (branch re-signing)",
+   "signed_text": "March 28, 2014",
+   "term_text": "2 / 2015",
+   "value_text": "$7,000,000",
+   "bonus": {
+    "text": "$1,500,000 signing bonus; $750,000; 2"
+   },
+   "guarantee_text": "$3,250,000 (signing bonus and 2014 base)",
+   "basis": {
+    "text": "Branch re-signing, Entry 103 (negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md)",
+    "source": "career/2014/Team_Operations/Free_Agency/jones_drew_and_wilson_negotiation_2014-03-28.md"
+   },
+   "exposure_text": "$750,000 remaining bonus if released before 2015",
+   "notes": "Branch record (Entry 103; negotiation record career/2014/free_agency/jones_drew_and_wilson_negotiation_2014-03-28.md). Two years, $7.0M, $3.25M guaranteed, inside Stone's two-year, $8.5M, $3.5M ceiling.",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 7 (2006-2012; 2012 on Reserve/Injured, which is full pay). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

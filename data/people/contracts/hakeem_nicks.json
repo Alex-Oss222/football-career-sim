@@ -1,0 +1,65 @@
+{
+ "schema_version": 1,
+ "name": "Hakeem Nicks",
+ "player": "hakeem_nicks",
+ "listed": 62,
+ "position": "WR",
+ "roster_position": "WR",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-03-14",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "hakeem_nicks_2014-03-14",
+   "club": "Jacksonville Jaguars",
+   "through": 2014,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 5000000,
+     "base": 2500000,
+     "proration": 2000000,
+     "other_cap": 500000,
+     "cash": 5000000,
+     "guaranteed_base": 2500000,
+     "basis": "Branch contract, Entry 97 (March 2014 replay): up to $500,000 active-game bonuses"
+    }
+   },
+   "type": "Veteran (branch free agent)",
+   "signed_text": "March 14, 2014",
+   "term_text": "1 / 2014",
+   "value_text": "$5,000,000 (maximum)",
+   "bonus": {
+    "text": "$2,000,000; $2,000,000; 1",
+    "amount": 2000000
+   },
+   "guarantee_text": "$4,500,000 fully guaranteed at signing (signing bonus plus 2014 base)",
+   "basis": {
+    "text": "Executed branch terms (Entry 95)",
+    "source": "career/2014/Team_Operations/Finances/player_contracts/contracts.md"
+   },
+   "exposure_text": "Gross exposure $4,500,000 before 2014 salary is earned",
+   "notes": "Branch record (Entry 97; March 2014 replay log). Cap budget reserves the full $500,000 active-game bonuses; the historical Indianapolis signing does not occur",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/free_agency/signings.md",
+    "career/2014/free_agency/march_2014_replay_log.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2013: 5 (Giants, 2009-2013)"
+  }
+ ]
+}

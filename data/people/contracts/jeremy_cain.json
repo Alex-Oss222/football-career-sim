@@ -1,0 +1,81 @@
+{
+ "schema_version": 1,
+ "name": "Jeremy Cain",
+ "player": "jeremy_cain",
+ "listed": 51,
+ "position": "LS",
+ "roster_position": "LS",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-03-19",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "jeremy_cain_2014-03-19",
+   "club": "Jacksonville Jaguars",
+   "through": 2014,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 855000,
+     "base": 855000,
+     "proration": 0,
+     "other_cap": 0,
+     "cash": 855000,
+     "guaranteed_base": 0,
+     "basis": "Branch one-year minimum, Entry 99"
+    }
+   },
+   "type": "Veteran minimum (branch re-signing)",
+   "signed_text": "March 19, 2014",
+   "term_text": "1 / 2014",
+   "value_text": "$855,000",
+   "bonus": {
+    "text": "$0; $0; 0",
+    "amount": 0
+   },
+   "guarantee_text": "$0",
+   "basis": {
+    "text": "Executed branch terms (Entry 99)",
+    "source": "career/2014/Team_Operations/Finances/player_contracts/contracts.md"
+   },
+   "exposure_text": "$0 gross exposure under adopted terms",
+   "notes": "Branch record (Entry 99; negotiation record career/2014/free_agency/cain_negotiation_2014-03-19.md). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his real September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/free_agency/signings.md",
+    "career/2014/free_agency/cain_negotiation_2014-03-19.md"
+   ],
+   "schedule_from": "0152eae"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-08-30",
+   "source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+   "contract": "jeremy_cain_2014-03-19",
+   "how": "released",
+   "text": "Released August 30, 2014 at the reduction to 53",
+   "notes": "Branch record (Entry 99; negotiation record career/2014/free_agency/cain_negotiation_2014-03-19.md). $855,000 is the 2014 minimum for seven to nine credited seasons, inferred from his real September 2014 Chicago figure (single source). Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified Released August 30, 2014 at the reduction to 53 (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the Veteran minimum (branch re-signing) ended.",
+   "sources": [
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/free_agency/cain_negotiation_2014-03-19.md",
+    "career/2014/free_agency/signings.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Released August 30, 2014 at the reduction to 53 (vested veteran, not subject to waivers)",
+   "availability": "No communicated restriction",
+   "plan": "Former player; departure recorded",
+   "credited_seasons": "Seven to nine (inferred; unverified)",
+   "accrued_seasons": "Through 2012: 4+ (entered 2004; Jacksonville long snapper through 2012). 2013: Accrues in branch (on 53 for 16 games); at least 5 accrued"
+  }
+ ]
+}

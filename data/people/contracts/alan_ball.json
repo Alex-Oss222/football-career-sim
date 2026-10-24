@@ -1,0 +1,107 @@
+{
+ "schema_version": 1,
+ "name": "Alan Ball",
+ "player": "alan_ball",
+ "listed": 49,
+ "position": "CB",
+ "roster_position": "CB",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2013-03-12",
+   "source": "career/2013/offseason/free_agency/signings.md",
+   "contract": "alan_ball_2013-03-12",
+   "club": "Jacksonville Jaguars",
+   "through": 2013,
+   "years": {},
+   "type": "Veteran (branch signing), March 12, 2013",
+   "signed_text": "See expiring-contract description",
+   "term_text": "2013",
+   "value_text": "$1.00M (1 year)",
+   "bonus": {
+    "text": "Not established for a new contract"
+   },
+   "guarantee_text": "No new signed 2014 guarantee established",
+   "basis": null,
+   "exposure_text": "Unresolved; do not treat pending contract status as a release",
+   "notes": "Branch record",
+   "sources": [
+    "career/2014/offseason/contract_table.md",
+    "career/2014/offseason/contract_status_register.md"
+   ],
+   "schedule_from": "bf1d2a0"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-03-11",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "alan_ball_2013-03-12",
+   "how": "expired",
+   "text": "Contract expired at 4 p.m. March 11, 2014; unrestricted free agent",
+   "as_written": {
+    "source": "career/2013/ledger.md"
+   }
+  },
+  {
+   "kind": "contract_signed",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md",
+   "contract": "alan_ball_2014-09-08",
+   "club": "Jacksonville Jaguars",
+   "through": 2014,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 804706,
+     "base": 804706,
+     "proration": 0,
+     "other_cap": 0,
+     "cash": 804706,
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Veteran minimum (branch signing, September 8, 2014)",
+   "signed_text": "September 8, 2014",
+   "term_text": "1 / 2014",
+   "value_text": "$804,706 earned and charged (the $855,000 rate for sixteen of seventeen pay weeks)",
+   "bonus": {
+    "text": "$0; $0; 0",
+    "amount": 0
+   },
+   "guarantee_text": "$0",
+   "guarantee_basis": "Branch contract",
+   "basis": {
+    "text": "Executed branch terms; the 16/17 weekly proration is a labelled reconstruction",
+    "source": "career/2014/Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md"
+   },
+   "exposure_text": "$0 gross exposure",
+   "notes": "Branch record (career/2014/00_Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md). The $855,000 rate is the 2014 minimum for seven to nine credited seasons (library section 2a, Confirmed); his credited count of seven is inferred from his 2007 entry and unverified. Earned and charged for the sixteen remaining regular-season pay weeks, 16/17 of $855,000 = $804,706, a labelled reconstruction (the standard player contract pays the base in equal weekly installments; the library records no proration rule). No signing bonus, no guarantee. Counted in full: the minimum-salary benefit is not applied while his eligibility is unverified.",
+   "sources": [
+    "career/2014/00_Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md",
+    "career/2014/00_Team_Operations/Team/Roster/transactions_2014-09-08.md",
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md"
+   ],
+   "method": {
+    "name": "in_season_minimum",
+    "credited_seasons": 7,
+    "credited_basis": "Seven, inferred from his 2007 entry; unverified"
+   }
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract (signed September 8, 2014 as an unrestricted free agent after a current physical)",
+   "availability": "No communicated restriction (club physical September 8, 2014)",
+   "plan": "Reserve outside cornerback; no role promise",
+   "credited_seasons": "Seven (inferred from his 2007 entry; unverified)",
+   "accrued_seasons": "Through 2012: 4+ (entered 2007). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

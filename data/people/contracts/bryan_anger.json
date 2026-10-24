@@ -1,0 +1,73 @@
+{
+ "schema_version": 1,
+ "name": "Bryan Anger",
+ "player": "bryan_anger",
+ "listed": 35,
+ "position": "P",
+ "roster_position": "P",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2012",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "bryan_anger_2012",
+   "club": "Jacksonville Jaguars",
+   "through": 2015,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 770523,
+     "base": 584898,
+     "proration": 165625,
+     "other_cap": 20000,
+     "cash": 604898,
+     "guaranteed_base": 0
+    },
+    "2015": {
+     "status": "known",
+     "cap": 875480,
+     "base": 689855,
+     "proration": 165625,
+     "other_cap": 20000,
+     "cash": 709855,
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Rookie, 2012 third round",
+   "signed_text": "2012",
+   "term_text": "4 / 2015",
+   "value_text": "$2,877,166",
+   "bonus": {
+    "text": "$662,500 signing bonus; $165,625 annually through 2015"
+   },
+   "guarantee_text": "No remaining guaranteed base salary established in the recovered schedule",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$331,250 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Original 2012 rookie schedule, including $20,000 annual workout bonus.",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "library/2014_jaguars_original_contract_reconstruction.md"
+   ],
+   "rookie": "drafted"
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 1. 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

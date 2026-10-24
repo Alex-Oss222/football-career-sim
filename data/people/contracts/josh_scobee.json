@@ -1,0 +1,74 @@
+{
+ "schema_version": 1,
+ "name": "Josh Scobee",
+ "player": "josh_scobee",
+ "listed": 34,
+ "position": "K",
+ "roster_position": "K",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2012-07-16",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "josh_scobee_2012-07-16",
+   "club": "Jacksonville Jaguars",
+   "through": 2015,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 4187500,
+     "base": 3225000,
+     "proration": 937500,
+     "other_cap": 25000,
+     "cash": 3250000,
+     "guaranteed_base": 0
+    },
+    "2015": {
+     "status": "known",
+     "cap": 4387500,
+     "base": 3425000,
+     "proration": 937500,
+     "other_cap": 25000,
+     "cash": 3450000,
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Veteran, agreed July 16, 2012 after the franchise tag",
+   "signed_text": "July 16, 2012",
+   "term_text": "4 / 2015",
+   "value_text": "$13.8M to $14.2M reported range ($4,750,000 reported guarantee)",
+   "bonus": {
+    "text": "$3,750,000 signing bonus; $937,500 annually through 2015"
+   },
+   "guarantee_text": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
+   "guarantee_basis": "simulation reconstruction",
+   "basis": {
+    "text": "Executed branch terms / researched original schedule",
+    "source": "library/2014_jaguars_original_contract_reconstruction.md"
+   },
+   "exposure_text": "$1,875,000 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Original 2012 deal retained through 2015, including $25,000 annual workout bonus. The $3.425M 2015 salary is the original contract's figure.",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "library/2014_jaguars_original_contract_reconstruction.md",
+    "library/2014_jaguars_contract_completion.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 4+ (entered 2004). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}
