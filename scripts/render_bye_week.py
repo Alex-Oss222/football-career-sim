@@ -577,8 +577,12 @@ def index_page(bye):
                  "Applied %s" % day(applied["date"]) if applied else
                  "Waiting on you" if bye.pages.adjustments.is_file() else "To come"])
     if bye.pages.responses.is_file():
+        # Waiting on him while a question of an event raised in the bye is still open on the page.
+        events = {r["id"] for r in open_events.load(bye.season, bye.root) if r.get("period") == bye.period}
+        waiting = any(i.get("status") == "OPEN" and i.get("event") in events for i in bye.cv.queue["items"])
         rows.append([link(page_rel, bye.rel(bye.pages.responses), "My Responses"),
-                     "Your answers to the notices at the top of the review", "Open"])
+                     "Your answers to the notices at the top of the review",
+                     "Waiting on you" if waiting else "No answer waiting"])
     report = bye.pages.report
     rows.append([link(page_rel, bye.rel(report), "Bye Week Report") if report.is_file() else "Bye Week Report",
                  "What the staff did in the bye: the work held, the players' time off and what changed",
