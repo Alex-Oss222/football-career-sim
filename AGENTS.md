@@ -273,6 +273,8 @@ Those are implementation steps owned by Codex inside the one week task. Report a
 
 ### Completion report
 
+**Score first** (user decision, October 24, 2026, "Score first"): report the final score and box score as soon as the week's close finishes, before the report and merge; the week is canon only once it merges, and a failed merge aborts it under the public/private transaction boundary whatever result was shown.
+
 Return only the useful week result and closure summary: protagonist score/result, major football evidence and Stone decisions, injuries/availability, updated record/standings, stat/receipt coverage, validation/readiness, PR/merge information, and confirmation that the next week was not simulated.
 
 
