@@ -85,6 +85,13 @@ class InsertTests(unittest.TestCase):
     def issue(self):
         return quiet(render_game_week.write, self.root)
 
+    def no_issue(self):
+        """A write that issues no briefing: at most the week's index changes (its other business, A4)."""
+        wk = self.wk()
+        written = self.issue()
+        self.assertEqual([p for p in written if p != wk.pages.readme], [])
+        return written
+
     def page(self):
         return self.wk().pages.briefing.read_text(encoding="utf-8")
 
@@ -164,7 +171,7 @@ class InsertTests(unittest.TestCase):
         record = self.news("test-coach-change", 9)
         self.assertEqual(open_events.validation_errors(self.root), [])
         self.assertIsNone(render_game_week.reissue_reason(self.wk()))
-        self.assertEqual(self.issue(), [])
+        self.no_issue()
         # The notice waits for the next scheduled issue.
         nxt = open_events.route(SEASON, open_events.et(self.tuesday, 11), {"week": self.week + 1}, self.root, issue=1)
         self.assertEqual([n.key for n in nxt.fyi], [record["id"]])
@@ -189,7 +196,7 @@ class InsertTests(unittest.TestCase):
                                                        "criteria": None}, "result_page": page}, self.root)
         # An ended question is news: no reissue of this week's briefing, which keeps what it showed.
         self.assertIsNone(render_game_week.reissue_reason(self.wk()))
-        self.assertEqual(self.issue(), [])
+        self.no_issue()
         at = open_events.et(self.wednesday, 11)
         first = open_events.route(SEASON, at, {"week": self.week + 1}, self.root, issue=1)
         second = open_events.route(SEASON, at, {"week": self.week + 1}, self.root, issue=2)
@@ -274,6 +281,8 @@ class InsertTests(unittest.TestCase):
         when, revision = render_game_week.current_issue(wk)
         rebuilt = render_game_week.briefing(wk, when, previous=render_game_week.previous_issue(wk), revision=revision)
         self.assertEqual(rebuilt, page)
+        # The new call is on the week's index at once (its other business); the briefing stays as issued.
+        quiet(render_game_week.write_index, self.root)
         self.assertEqual(render_game_week.validation_errors(self.root), [])
         self.assertEqual(render_game_week.reissue_reason(wk)[:2], "a:")
         self.assertIn(first["id"], [i.get("event") for i in render_game_week.issues(wk)[-1]["inserts"]])

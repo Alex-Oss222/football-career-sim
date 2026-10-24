@@ -13,7 +13,9 @@ terms, never a grade; a figure needs its source), the due time when one is sourc
 any process entries already on record. The store stamps the open period and its latest issue, writes
 the record to its owner's event store and, when Stone's part needs his answer, opens its item in the
 decision queue (an injury replacement that leaves the active roster unable to dress a legal team for
-the next game also opens the general manager's transaction item, and both hold that game).
+the next game also opens the general manager's transaction item, and both hold that game). The open
+period's index, which lists the events still open, is rebuilt at once; the brief that must show a
+new answer is issued again by scripts/render_game_week.py under the one reissue rule.
 
 Refused, with nothing written: a record without a source page, a time after the master date/time,
 an id already used, a record that breaks a rule of the store, and anything while a game is paused.
@@ -69,9 +71,25 @@ def main(argv=None):
         print("EVENT NOT RECORDED: %s" % exc)
         return 1
     root = Path(args.root).resolve()
+    try:
+        written += rebuild_index(root)
+    except (OSError, ValueError, KeyError) as exc:
+        print("note: the open period's index was not rebuilt (%s); run python scripts/render_game_week.py" % exc)
     for path in written:
         print("wrote %s" % Path(path).resolve().relative_to(root).as_posix())
     return 0
+
+
+def rebuild_index(root):
+    """The open period's index, which lists the events still open (its "Other business this week"):
+    a game week's by scripts/render_game_week.write_index, the bye's by its own builder."""
+    from scripts import render_game_week, resolve_event
+    wk = render_game_week.Week(root)
+    if wk.game is not None:
+        return render_game_week.write_index(root)
+    if (wk.period or {}).get("bye"):
+        return resolve_event.bye_index(root)
+    return []
 
 
 if __name__ == "__main__":

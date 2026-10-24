@@ -1553,6 +1553,20 @@ def earlier_briefings(wk):
     return [(wk.pages.folder / e["file"], issue_of(e)) for e in issues(wk)[:-1]]
 
 
+PRACTICE_HEADING = "## Practice week"
+
+
+def practice_lines(wk):
+    """The week's practice and rest table under its heading, for a regular-season week whose record
+    is ``recorded`` (runtime/practices.render_table gives none for a closed record or a week not
+    set); else nothing."""
+    if wk.postseason:
+        return []
+    from runtime import practices
+    table_text = practices.render_table(practices.load(wk.season, int(wk.game["week"]), wk.root))
+    return [PRACTICE_HEADING, "", table_text.rstrip("\n"), ""] if table_text else []
+
+
 def index_page(wk):
     page_rel = wk.rel(wk.pages.readme)
     week = wk.game["week"]
@@ -1581,6 +1595,12 @@ def index_page(wk):
     if earlier:
         out += ["Earlier briefings, as they went out: " + "; ".join(
             link(page_rel, wk.rel(p), label_of(issue)) for p, issue in earlier) + ".", ""]
+    # Rebuild step 5, each left out when empty, so a week without them keeps its bytes: the week's
+    # practice and rest table, only for a recorded week (runtime/practices.render_table); and the
+    # week's other business, the result of each event resolved in it and, while it is open, the
+    # events still open (event_inserts.other_business).
+    out += practice_lines(wk)
+    out += event_inserts.other_business(wk.season, wk.period, page_rel, wk.root, open_now=not wk.closed, job=wk.job)
     applied = game_plan.applied_record(wk.pages.applied)
     if applied is not None and applied.get("event"):
         out += [game_plan.event_line(applied), ""]

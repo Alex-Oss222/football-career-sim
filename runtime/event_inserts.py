@@ -237,6 +237,81 @@ def coming_up_lines(notice, route, page_rel, job):
 BUILDERS = {"action": action_lines, "fyi": fyi_lines, "coming_up": coming_up_lines}
 
 
+# ------------------------------------------------------------------ results and the period's index
+# What an event is called inside a sentence (the result's one line in Record.md and the index).
+NOUNS = {"trade_talks": "the trade call from %s", "injury_replacement": "the roster question for %s",
+         "head_coach_change": "the head-coach change at %s"}
+# The sentence of a resolution, by its outcome: who decided it, or what happened to it.
+OUTCOME_SENTENCE = {"executed": "{who} completed {noun}", "no_move": "{who} made no move on {noun}",
+                    "accepted": "{who} accepted {noun}", "rejected": "{who} rejected {noun}",
+                    "declined": "{who} declined {noun}", "withdrawn": "{Noun} was withdrawn",
+                    "lapsed": "{Noun} lapsed at its due time",
+                    "ended_without_agreement": "{Noun} ended without agreement"}
+OTHER_BUSINESS = "## Other business this week"
+
+
+def decider(record, job, party=None):
+    """The name of who decided (or decides) an event: the club for a decision outside Jacksonville."""
+    pid = party if party is not None else (record.get("resolution") or {}).get("by") or record["authority"]["decides"]
+    return record["subject"] if pid == open_events.OTHER_CLUB else current_job.party_name(job, pid)
+
+
+def noun(record):
+    return NOUNS.get(record["kind"], "the matter of %s") % record["subject"]
+
+
+def outcome_sentence(record, job):
+    """The one sentence of a resolved event ("David Caldwell declined the trade call from the Test
+    Club."), as Record.md and the period's index say it."""
+    res = record["resolution"]
+    thing = noun(record)
+    text = OUTCOME_SENTENCE[res["outcome"]].format(who=decider(record, job), noun=thing,
+                                                   Noun=thing[:1].upper() + thing[1:])
+    return text[:1].upper() + text[1:] + "."
+
+
+def other_business(season, period, page_rel, root, open_now=True, job=None):
+    """The period index's "Other business this week" (rebuild step 5, A4), left out when empty: each
+    result whose resolution's period is ``period`` (open_events.period_events), one link each, by its
+    resolution time; and, while the period is the open one (``open_now``), every event still open
+    that is known to Stone, with its due time. A closed period lists its results only, so its index
+    never changes once the period has closed; an open period's index changes only when an event is
+    raised or resolved. Only events known to Stone reach his pages."""
+    root = Path(root)
+    job = current_job.load(root) if job is None else job
+    results, _ = open_events.period_events(season, period, root)
+    results = [r for r in results if open_events.known_to_stone(r, job)]
+    still = []
+    if open_now:
+        order = open_events.period_order(period)
+        still = [r for r in open_events.load(season, root) if r.get("resolution") is None
+                 and open_events.known_to_stone(r, job) and open_events.period_order(r["period"]) <= order]
+        still.sort(key=lambda r: (r.get("deadline") is None, (r.get("deadline") or {}).get("at") or "", r["id"]))
+    if not results and not still:
+        return []
+    rows = []
+    for record in results:
+        res = record["resolution"]
+        page = _record_link(page_rel, root, {"path": res["result_page"]}, open_events.title(record))
+        rows.append([page or open_events.title(record), outcome_sentence(record, job).rstrip("."),
+                     "Resolved %s" % open_events.at_text(open_events.parse_at(res["at"]))])
+    route = open_events.Route(season=season, period=dict(period), root=root)
+    answers = responses_page(route)
+    for record in still:
+        label = open_events.title(record)
+        heading = answer_heading(route, record["id"], None)
+        if heading is not None and answers is not None and answers.is_file():
+            label = _link(page_rel, answers.relative_to(root).as_posix(), label, slug(heading))
+        # Its row stands from its raising to its resolution: its process and his answer are on the brief
+        # and on My Responses, so a recorded entry never makes the index stale.
+        due = record.get("deadline")
+        rows.append([label, "Open", "Due %s" % open_events.at_text(open_events.parse_at(due["at"])) if due
+                     else "No due time is set"])
+    lines = [OTHER_BUSINESS, "", "| Matter | Where it stands | When |", "|---|---|---|"]
+    lines += ["| %s |" % " | ".join(str(c).replace("|", "/") for c in row) for row in rows]
+    return lines + [""]
+
+
 def notice_lines(notice, route, page_rel, job=None):
     job = current_job.load(route.root) if job is None else job
     return _quote(BUILDERS[notice.section](notice, route, page_rel, job))
