@@ -10,6 +10,8 @@ As of October 12, 2014, after Week 6.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andrew_Norwell_2022.jpg)).*
 
+**Current assignment:** Starting left guard.
+
 ## Staff assessment
 
 Andrew Norwell is an undrafted rookie guard who has been active for six regular-season games. A three-year college starter at guard, he has a strong upper body and a physical finish, and in camp he carried a combination block with Mike Brewster to the linebacker and handled the protection calls at both guard spots. He is a limited athlete, short on lateral movement and speed.

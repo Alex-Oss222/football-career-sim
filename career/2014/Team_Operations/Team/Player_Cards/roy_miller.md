@@ -10,8 +10,6 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Roy_Miller_(American_football).JPG)).*
 
-**Current assignment:** Starting defensive tackle.
-
 **Sacks:** 1 (2014, through Week 6).
 
 ## Staff assessment

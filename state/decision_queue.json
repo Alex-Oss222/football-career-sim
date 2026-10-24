@@ -231,7 +231,7 @@
     "by": "workflow",
     "event": "2014-10-12-week-6-at-tennessee"
    },
-   "status": "OPEN",
+   "status": "RESOLVED",
    "waits_on": [],
    "deadline": {
     "date": "2014-10-19",
@@ -259,7 +259,14 @@
      "path": "career/2014/Regular_Season/Games/Week_06/Game_Report.md"
     }
    ],
-   "resolution": null
+   "resolution": {
+    "date": "2014-10-19",
+    "by": "user",
+    "record": {
+     "path": "career/2014/Regular_Season/Games/Week_07/Game_Plan.md"
+    },
+    "summary": "Stone set the game plan on his Week 7 Game Plan, checked and applied October 19, 2014"
+   }
   },
   {
    "id": "2014-w07-inactives",
@@ -275,7 +282,7 @@
     "by": "workflow",
     "event": "2014-10-12-week-6-at-tennessee"
    },
-   "status": "OPEN",
+   "status": "RESOLVED",
    "waits_on": [
     {
      "what": "A.J. Bouye's reassessment",
@@ -320,7 +327,14 @@
      "path": "career/2014/Regular_Season/Games/Week_06/Game_Report.md"
     }
    ],
-   "resolution": null
+   "resolution": {
+    "date": "2014-10-19",
+    "by": "user",
+    "record": {
+     "path": "career/2014/Regular_Season/Games/Week_07/Game_Plan.md"
+    },
+    "summary": "Stone set the inactives on his Week 7 Game Plan, checked and applied October 19, 2014"
+   }
   }
  ]
 }

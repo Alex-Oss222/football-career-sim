@@ -10,8 +10,6 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Taylor_Gabriel.jpg)).*
 
-**Current assignment:** Sixth receiver.
-
 ## Staff assessment
 
 Taylor Gabriel is a rookie receiver and returner from Abilene Christian who was sixth in the receiver order for the Pittsburgh game and, as in the first four weeks, inactive on game day. He is a small, fast receiver and returner with quick change of direction, burst and run-after-catch ability. His size and strength limit him outside and at the catch point, and his technique is below an NFL starter's standard.

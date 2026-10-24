@@ -10,6 +10,8 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Corey_Linsley.jpg)).*
 
+**Current assignment:** Starting center.
+
 ## Staff assessment
 
 Corey Linsley is a rookie center with rare weight-room strength for the position, a strong anchor and a full college season of making the line calls in a power conference. In camp he worked in the relief pairing with Chad Henne, made the protection point on time with him on every recorded rep and recovered after losing leverage to C.J. Mosley. His athletic marks are modest, his arms are short, and reach blocks and movement to the second level are his weakest areas.

@@ -6,8 +6,6 @@
 
 As of October 12, 2014, after Week 6.
 
-**Current assignment:** Starting center.
-
 **Sacks allowed:** 1 (2014, through Week 6).
 
 ## Staff assessment

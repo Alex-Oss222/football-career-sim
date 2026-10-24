@@ -10,6 +10,8 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Atlanta Falcons, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Aaron_Donald_2014_combine.jpg)).*
 
+**Current assignment:** Starting defensive tackle.
+
 ## Staff assessment
 
 Aaron Donald is a rookie defensive tackle who has been active for six games in his first NFL season. He is undersized but explosive, with a first step and hand quickness that beat blockers before they set; in camp his first step beat Trai Turner on a one-on-one rep. His anchor against double teams is below a starter's standard and holding his gap on early downs is still unproven at his size; in camp the Mike Brewster and Trai Turner double team moved him off the strong A-gap, and he split it only once.

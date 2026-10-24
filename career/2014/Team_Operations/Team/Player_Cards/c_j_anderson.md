@@ -10,6 +10,8 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:C._J._Anderson_2014.JPG)).*
 
+**Current assignment:** Starting running back.
+
 **Yards per carry:** 4.6 (2014, through Week 6).
 
 ## Staff assessment

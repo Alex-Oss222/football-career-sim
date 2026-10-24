@@ -10,6 +10,8 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Adam Schultz, Public domain ([source](https://commons.wikimedia.org/wiki/File:Travis_Kelce_in_the_Oval_Office_of_the_White_House_on_June_5,_2023_-_P20230605AS-0902_(cropped).jpg)).*
 
+**Current assignment:** Starting tight end.
+
 **Yards per target:** 12.0 (2014, through Week 6).
 
 ## Staff assessment

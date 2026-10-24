@@ -10,6 +10,8 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Jacksonville Sheriff's Office, Public domain ([source](https://commons.wikimedia.org/wiki/File:Telvin_Smith.png)).*
 
+**Current assignment:** Starting linebacker.
+
 **Tackles:** 3 (2014, through Week 6).
 
 ## Staff assessment

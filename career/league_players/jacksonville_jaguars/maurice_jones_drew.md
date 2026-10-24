@@ -10,8 +10,6 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Jeff Kern, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Maurice_Jones-Drew_ESPNWeekend2010-066.jpg)).*
 
-**Current assignment:** Starting running back.
-
 **Yards per carry:** 4.9 (2014, through Week 6).
 
 ## Staff assessment

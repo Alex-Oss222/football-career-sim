@@ -19,13 +19,13 @@ The current order, first listed first; Stone owns it. Dates and roles are on the
 | Group | Order |
 |---|---|
 | QB | Kirk Cousins / Chad Henne |
-| RB | Maurice Jones-Drew / C.J. Anderson / Jonathan Grimes |
+| RB | C.J. Anderson / Maurice Jones-Drew / Jonathan Grimes |
 | FB | Montell Owens |
-| WR | Davante Adams / Adam Thielen / Andrew Hawkins / Allen Hurns / Hakeem Nicks / Taylor Gabriel |
-| TE | Marcedes Lewis / Travis Kelce / Marcel Jensen / Gator Hoskins |
-| OL | Eugene Monroe / Joel Bitonio / Mike Brewster / Trai Turner / Lane Johnson / Cornelius Lucas / Charles Leno Jr. / Andrew Norwell / Corey Linsley |
-| DL | Jeremy Mincey / Sen'Derrick Marks / Roy Miller / Andre Branch / C.J. Mosley / Daniel Te'o-Nesheim / Aaron Donald / Kasim Edebali |
-| LB | Daryl Smith / Paul Posluszny / Julian Stanford / Sio Moore / Telvin Smith / Christian Jones / Todd Davis |
+| WR | Davante Adams / Adam Thielen / Andrew Hawkins / Allen Hurns / Taylor Gabriel / Hakeem Nicks |
+| TE | Travis Kelce / Marcedes Lewis / Marcel Jensen / Gator Hoskins |
+| OL | Eugene Monroe / Andrew Norwell / Corey Linsley / Trai Turner / Lane Johnson / Cornelius Lucas / Mike Brewster / Charles Leno Jr. / Joel Bitonio |
+| DL | Jeremy Mincey / Aaron Donald / Sen'Derrick Marks / Andre Branch / Roy Miller / C.J. Mosley / Daniel Te'o-Nesheim / Kasim Edebali |
+| LB | Daryl Smith / Paul Posluszny / Telvin Smith / Sio Moore / Julian Stanford / Christian Jones / Todd Davis |
 | DB | Aqib Talib / Alterraun Verner / Bacarri Rambo / Brynden Trawick / A.J. Bouye / Chris Prosinski / Adrian Phillips / Alan Ball / Malcolm Butler / Jordan Poyer |
 | K | Josh Scobee |
 | P | Bryan Anger |

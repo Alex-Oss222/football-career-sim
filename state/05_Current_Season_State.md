@@ -18,7 +18,7 @@ This document states what is true now and what comes next. The [2014 record](../
 | Document 3 | `3723e1bd3589fe47b9070001ad6dfb5189f335cb` | Active foundation source |
 | Document 4 | `JAX-2014-OCT19-REGISTER-92` | Roster, staff, medical and role register |
 | Current job record | `b6ab3b1c2709e7f8631f011289222ac9c31a5ed9` | [Job, authority and delegation](current_job.json) |
-| Decision queue | `22a9bd9a94ba6c2ae40c2aa9ffd461d6b7b0a0eb` | [Open and resolved decisions](decision_queue.json) |
+| Decision queue | `fe40a9e4f43ef947e6260ef9216ff6b918dc22e9` | [Open and resolved decisions](decision_queue.json) |
 | Document 6 | [Event records and handoff protocol](../foundation/06_Event_Records_and_Handoff.md) | Latest closed game and latest closed event of any kind: [Week 6 at Tennessee](../career/2014/Regular_Season/Games/Week_06/Game_Report.md), October 12, 2014 (Jacksonville 24, Tennessee 10); before it, Week 6 game day (technical) and the Tennessee preparation, closed October 11 |
 
 ## 1. Master clock and competition position
@@ -172,8 +172,6 @@ Execution and observable effort remain separate: protection losses were techniqu
 <!-- decision-queue:begin -->
 | Decision | Owner | Needed | Holds | Waiting on | Record |
 |---|---|---|---|---|---|
-| Week 7 game plan for Cleveland | Alex Stone | before the Week 7 call sheet is frozen and the Week 7 inputs are built; kickoff October 19, 1 p.m. ET | the Week 7 game | nothing | [record](../career/2014/Regular_Season/Games/Week_07/README.md) |
-| Week 7 inactives | Alex Stone | before the Week 7 inputs are built | the Week 7 game | A.J. Bouye's reassessment (October 15); Joel Bitonio's reassessment (October 15) | [record](../career/2014/Team_Operations/Team/Depth_Chart/depth_chart.md) |
 | Individual film packets: preparation and coach approval | Jacksonville coaching staff | no deadline | nothing | cause review and comparison clips for the Cousins packet; the cut-up video, not yet supplied | [record](../career/2014/Team_Operations/Film/player_queue.md) |
 | Three open practice-squad places | David Caldwell | no deadline | nothing | nothing | [record](../career/2014/Team_Operations/Team/Roster/roster.md) |
 

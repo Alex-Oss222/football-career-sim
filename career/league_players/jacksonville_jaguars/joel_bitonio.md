@@ -10,8 +10,6 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Joel_Bitonio_(51372881330)_(cropped).jpg)).*
 
-**Current assignment:** Starting left guard.
-
 **Sacks allowed:** 1 (2014, through Week 6).
 
 ## Staff assessment

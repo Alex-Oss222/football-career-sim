@@ -10,8 +10,6 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Hakeem_Nicks.JPG)).*
 
-**Current assignment:** Fifth receiver and X relief.
-
 ## Staff assessment
 
 Hakeem Nicks competed with Davante Adams for the X job in his first Jacksonville camp until a lower-extremity injury in the final preseason game kept him out until he was cleared in September. For the Pittsburgh game Stone kept Adams at X and made Nicks the fifth receiver and the X relief. He is a physical outside receiver who wins with his hands, strength at the catch point, ball tracking and route timing. He gives more on contested catches than in sudden separation or long speed, and in camp he won leverage against Aqib Talib with his hands on some reps and was re-routed by him on others.

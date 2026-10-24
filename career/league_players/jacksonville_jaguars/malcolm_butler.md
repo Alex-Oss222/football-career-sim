@@ -10,6 +10,8 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Malcolm_Butler_(American_football).JPG)).*
 
+**Current assignment:** Reserve outside cornerback.
+
 **Passes defended:** 0 (2014, through Week 6).
 
 ## Staff assessment

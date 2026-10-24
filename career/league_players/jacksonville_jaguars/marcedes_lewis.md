@@ -10,8 +10,6 @@ As of October 12, 2014, after Week 6.
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Marcedes_Lewis_2014.jpg)).*
 
-**Current assignment:** Starting tight end.
-
 **Yards per target:** 6.9 (2014, through Week 6).
 
 ## Staff assessment
