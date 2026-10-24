@@ -257,16 +257,18 @@ class PostseasonGameWeekTests(unittest.TestCase):
         self.assertIn("Set for the game", pages.readme.read_text(encoding="utf-8"))
         self.assertEqual(render_game_week.check(root, WILD_CARD), [])
 
-        # Game day: the Game Report opened with its preparation and pregame media, frozen before kickoff.
+        # Game day: the Game Report opened with its preparation (the template's layout: a playoff game
+        # has no media sections), frozen before kickoff.
         from scripts import freeze_pregame
         report = FIXTURE.read_text(encoding="utf-8")
         head, *sections = report.split("\n## ")
         head = re.sub(r"^\*\*Final: .*\n", "", head + "\n", flags=re.M).rstrip("\n")
-        pregame = "\n## ".join([head] + [part for part in sections if part.startswith(("1. ", "2. "))]) + "\n"
+        pregame = "\n## ".join([head] + [part for part in sections if part.startswith("1. ")]) + "\n"
         pages.report.write_text(pregame, encoding="utf-8")
         self.assertEqual(freeze_pregame.freeze(root, SEASON, WILD_CARD), pages.pregame)
         frozen = json.loads(pages.pregame.read_text(encoding="utf-8"))
-        self.assertEqual(sorted(frozen["sections"]), sorted(game_report.PREGAME))
+        self.assertEqual(list(frozen["sections"]), ["1. Preparation and final game-day decisions"])
+        self.assertEqual(game_report.layout(game).pregame, tuple(frozen["sections"]))
         self.assertEqual(game_report.validation_errors(root), [])
 
         # Close and report: the Game Report in the round's folder, its box score named and filled last.
@@ -287,9 +289,9 @@ class PostseasonGameWeekTests(unittest.TestCase):
         self.assertNotIn(game_report.EVENT_PLACEHOLDER, text)
         self.assertEqual(game_report.report_errors(text, receipt, game, root=root), [])
         self.assertEqual(game_report.validation_errors(root), [])
-        # The pregame media rewritten once the result is known is refused.
-        changed = text.replace("No pregame media session was recorded.",
-                               "No pregame media session was recorded; the staff expected a long afternoon.", 1)
+        # The preparation rewritten once the result is known is refused.
+        changed = text.replace("No practice week is recorded for this game.",
+                               "No practice week is recorded for this game; the staff expected a long afternoon.", 1)
         self.assertNotEqual(changed, text)
         pages.report.write_text(changed, encoding="utf-8")
         self.assertTrue(any("differs from the section frozen before kickoff" in e

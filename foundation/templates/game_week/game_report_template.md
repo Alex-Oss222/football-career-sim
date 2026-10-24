@@ -17,17 +17,7 @@
 **Plan in force:** [The one or two opponent-specific ideas that shaped the game, with a link to the Game Plan.]  
 **Game-day availability:** [Only the changes that affected participation or assignments, or: No changes from the approved game-day unit.]
 
-## 2. Pregame media
-
-[The documented pregame session, as it stood before kickoff, or: No pregame media session was recorded.]
-
-**Reporter:** [A question from public information available by the session date.]
-
-**Stone:** [His spoken answer from an approved view or his actual words.]
-
-[Further questions and follow-ups only while there is something worth asking.]
-
-## 3. The game
+## 2. The game
 
 [The result, how it turned, and the names and sequences by which someone who watched it would remember it.]
 
@@ -62,26 +52,16 @@
 
 [For each decision that mattered: the situation and what was known before the snap, the prepared instruction or recorded call, the reason stated in the plan or the staff record, and what happened. Where the reason or the defensive look is not recorded, say only what is.]
 
-## 4. Postgame media
+## 3. Football review and next week's work
 
-[The postgame session, from what was known when it was held, or: No postgame media session was recorded.]
+[Four lines, one or two sentences each: the one finding that mattered, from the play-by-play. Say once, not in every line, what waits on the film. About 150 words in all; Week 6's review ran 603. Do not retell the quarters or repeat the statistics.]
 
-**Reporter:** [A question about a material event of this game.]
+**Offense:** [One or two sentences: the offensive finding that mattered, with the concept, players and situation where established, an unsuccessful call kept apart from an execution error.]  
+**Defense:** [One or two sentences: the defensive finding that mattered. A written menu is not proof of the front or coverage played.]  
+**Special teams and game management:** [One or two sentences: the kicking, field position, fourth-down, timeout, challenge or operational decision that mattered.]  
+**What changes for the next game:** [One or two sentences: the correction or proposed change, the coach responsible and the next chance to verify it, or: No change.]
 
-**Stone:** [An answer to that question.]
-
-**Reporter:** [A follow-up to what he just said, if one follows.]
-
-**Stone:** [His answer to the follow-up.]
-
-## 5. Football review and next week's work
-
-**Offense:** [The meaningful offensive finding: the concept, players and situation where established, an unsuccessful call kept apart from an execution error.]  
-**Defense:** [The meaningful defensive finding. A written menu is not proof of the front or coverage played.]  
-**Special teams and game management:** [Material kicking, field position, fourth-down, timeout, challenge and operational decisions.]  
-**What changes for the next game:** [The correction or proposed change, the coach responsible and the next chance to verify it, or: No change.]
-
-## 6. After-action report
+## 4. After-action report
 
 ### Injuries and availability changes
 
@@ -93,13 +73,13 @@
 
 ### Players who stood out
 
-[Players whose work stood out, each with the play or performance that earned it, opponents included; or: No separate player selection recorded.]
+[Up to three players, opponents included, one line each: the player and the play or performance that earned it; or: No separate player selection recorded.]
 
 ### Role or transaction consequences
 
 [An ordered depth or rotation change, a completed front-office move or a new role question the game raised, with a link to its page; or: No changes.]
 
-## 7. Final record and next game
+## 5. Final record and next game
 
 **Record after game:** [W-L, or W-L-T].  
 **Standing / playoff result:** [The division and conference position, or advanced or eliminated.]  

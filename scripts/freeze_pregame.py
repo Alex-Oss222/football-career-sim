@@ -4,18 +4,19 @@
   python scripts/freeze_pregame.py WEEK --season YEAR [--root PATH]
 
 At the game-day commit (docs/run_week.md, step 5), once the Game Report is
-opened with its sections 1 and 2 (the preparation and the pregame media),
-this records the sha256 of each in the week's data folder
-(runtime/decisions.WeekPages.pregame, ``pregame.json``) with the day. Once the
-game has closed, validation holds the report's sections 1 and 2 to the record
-(runtime/game_report.pregame_errors), and requires it: the pregame media is
-written and frozen from pregame knowledge, never rewritten with the result
-known (docs/game_week_v2.md, sections 3 and 6).
+opened with its pregame sections (runtime/game_report.Layout.pregame: from
+2014 Week 7 section 1, the preparation; in Week 6 sections 1 and 2, the
+preparation and the pregame media), this records the sha256 of each in the
+week's data folder (runtime/decisions.WeekPages.pregame, ``pregame.json``) with
+the day. Once the game has closed, validation holds the report's pregame
+sections to the record (runtime/game_report.pregame_errors), and requires it:
+they are written and frozen from pregame knowledge, never rewritten with the
+result known (docs/game_week_v2.md, sections 3 and 6).
 
 It refuses, writing nothing, a week whose Jacksonville game has been played or
-is paused, a report that already gives a final score, and a report without
-both pregame sections. Run again before kickoff, it replaces the record with
-the sections as they stand. Nothing here moves the clock, plays a game or
+is paused, a report that already gives a final score or is not in the game's
+layout, and a report without its pregame sections. Run again before kickoff, it
+replaces the record with the sections as they stand. Nothing here moves the clock, plays a game or
 writes a page.
 """
 from __future__ import annotations
@@ -60,7 +61,7 @@ def freeze(root, season, week):
     problems = game_report.report_errors(text, None, game, root=root, label=name)
     if problems:
         raise ValueError("; ".join(problems))
-    record = game_report.pregame_record(text, master_date(root))
+    record = game_report.pregame_record(text, master_date(root), game, root=root)
     pages.pregame.parent.mkdir(parents=True, exist_ok=True)
     pages.pregame.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     return pages.pregame

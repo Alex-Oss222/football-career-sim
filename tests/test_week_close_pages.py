@@ -223,12 +223,13 @@ class WeekClosePagesTests(unittest.TestCase):
         self.assertIn(game_report.EVENT_PLACEHOLDER, shell)
         report.parent.mkdir(parents=True, exist_ok=True)
         report.write_text(shell, encoding="utf-8")
-        # Its preparation and pregame media as the game-day commit froze them before kickoff
-        # (scripts/freeze_pregame.py; the synthetic close writes the report after the game).
+        # Its pregame sections (from Week 7 the preparation alone) as the game-day commit froze them
+        # before kickoff (scripts/freeze_pregame.py; the synthetic close writes the report after the game).
         from runtime import decisions
         frozen = decisions.week_pages(SEASON, WEEK, self.root).pregame
         frozen.parent.mkdir(parents=True, exist_ok=True)
-        frozen.write_text(json.dumps(game_report.pregame_record(shell, self.played), indent=1) + "\n", encoding="utf-8")
+        record = game_report.pregame_record(shell, self.played, game, self.root)
+        frozen.write_text(json.dumps(record, indent=1) + "\n", encoding="utf-8")
         return report
 
     def settle_week(self, report):

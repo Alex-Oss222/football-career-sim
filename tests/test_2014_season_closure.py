@@ -104,9 +104,9 @@ def restate_records(paths):
 
     The synthetic slate replaces the real Week 1 result, and Jacksonville's record after every
     later game counts it. A closed Game Report (from 2014 Week 6, runtime.seasons.GAME_REPORT_FROM)
-    names that record in section 7's "Record after game" line, written against the real Week 1;
-    here that line alone names Jacksonville's record over the copy's receipts through the report's
-    week, tallied from the final scores. The rest of each report is the real one. Returns the
+    names that record in its "Record after game" line (its final record section), written against
+    the real Week 1; here that line alone names Jacksonville's record over the copy's receipts
+    through the report's week, tallied from the final scores. The rest of each report is the real one. Returns the
     reports rewritten."""
     own = [r for r in render_season_stats.load_receipts(paths.receipts) if JAX in (r["away"], r["home"])]
     first = seasons.GAME_REPORT_FROM
