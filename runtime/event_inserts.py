@@ -227,7 +227,8 @@ def fyi_lines(notice, route, page_rel, job):
 def coming_up_lines(notice, route, page_rel, job):
     """One COMING UP window (runtime/deadlines.coming_up)."""
     w = notice.window
-    when = open_events.at_text(open_events.parse_at(w["at"])) if w.get("at") else "Date not set"
+    when = (open_events.at_text(open_events.parse_at(w["at"])) if w.get("at")
+            else _day(w["date"]) if w.get("date") else "Date not set")
     return ["**%s** | %s" % (w["title"], when), "",
             "**Why it matters:** %s" % w["why"], "",
             "**Current state:** %s" % w["state"], "",
