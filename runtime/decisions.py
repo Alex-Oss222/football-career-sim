@@ -127,7 +127,7 @@ OWNERS = {
 
 EVENTS = (
     Event("injury_replacement", "Injury replacement in season", "Transaction", "roster",
-          "The general manager and the medical staff", 5),
+          "The general manager and the medical staff", 5, implemented=True),
     Event("trade_talks", "Trade talks", "Trade Result", "trades", "The general manager", 5),
     Event("extension", "Stone's contract extension", "New Contract or Unchanged", "stone", "The club", 6),
     # Shad Khan alone answers another club's request (Document 3 row 1a); Stone is not open to job offers,
