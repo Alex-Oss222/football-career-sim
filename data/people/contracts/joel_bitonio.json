@@ -1,0 +1,98 @@
+{
+ "schema_version": 1,
+ "name": "Joel Bitonio",
+ "player": "joel_bitonio",
+ "listed": 66,
+ "position": "OT",
+ "roster_position": "OT",
+ "draft_pick": "#26",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2014-05-11",
+   "source": "career/2014/Draft/draftees.md",
+   "contract": "joel_bitonio_2014-05-11",
+   "club": "Jacksonville Jaguars",
+   "through": 2017,
+   "years": {
+    "2014": {
+     "status": "known",
+     "cap": 1814775,
+     "base": 420000,
+     "proration": 1394775,
+     "cash": 5999102,
+     "other_cap": 0,
+     "guaranteed_base": 420000,
+     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 26: Marcus Smith, 7,799,102 total, 6,315,587 guaranteed); minimum-scale base, signing bonus allocated over four years"
+    },
+    "2015": {
+     "status": "known",
+     "cap": 1904775,
+     "base": 510000,
+     "proration": 1394775,
+     "cash": 510000,
+     "other_cap": 0,
+     "guaranteed_base": 316485,
+     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 26: Marcus Smith, 7,799,102 total, 6,315,587 guaranteed); minimum-scale base, signing bonus allocated over four years"
+    },
+    "2016": {
+     "status": "known",
+     "cap": 1994775,
+     "base": 600000,
+     "proration": 1394775,
+     "cash": 600000,
+     "other_cap": 0,
+     "guaranteed_base": 0,
+     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 26: Marcus Smith, 7,799,102 total, 6,315,587 guaranteed); minimum-scale base, signing bonus allocated over four years"
+    },
+    "2017": {
+     "status": "known",
+     "cap": 2084777,
+     "base": 690000,
+     "proration": 1394777,
+     "cash": 690000,
+     "other_cap": 0,
+     "guaranteed_base": 0,
+     "basis": "Slot reconstruction from the same-slot 2014 contract (pick 26: Marcus Smith, 7,799,102 total, 6,315,587 guaranteed); minimum-scale base, signing bonus allocated over four years"
+    }
+   },
+   "type": "Rookie scale, pick #26",
+   "signed_text": "May 11, 2014",
+   "term_text": "4 / 2017 + first-round club option",
+   "value_text": "$7,799,102",
+   "bonus": {
+    "text": "$5,579,102; $1,394,775; 4",
+    "amount": 5579102
+   },
+   "guarantee_text": "Signing bonus plus $736,485 of base salary guaranteed ($420,000 in 2014, $316,485 in 2015)",
+   "guarantee_basis": "Slot reconstruction from the same-slot 2014 contract",
+   "basis": {
+    "text": "Slot reconstruction from the same-slot 2014 contract",
+    "source": "career/2014/Draft/draftees.md"
+   },
+   "exposure_text": "$6,315,587 gross exposure under the slot reconstruction, before any later earned payment or recorded credit",
+   "notes": "Branch record (Entry 108): selected May 8, 2014 at No. 26; signed May 11, 2014. Slot reconstruction from the same-slot 2014 contract: pick 26 (Marcus Smith, Philadelphia) in the nflverse/OTC historical contracts file, $7,799,102 total and $6,315,587 guaranteed under the 2012 to 2014 rookie freeze. Bases are the minimum scale ($420,000, $510,000, $600,000, $690,000); the signing bonus is the remainder, prorated over four years, odd dollars in 2017. The first-round fifth-year option for 2018 is unexercised and not booked. Not the player's real contract",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/draft/draftees.md"
+   ],
+   "rookie": "drafted"
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Under contract",
+   "availability": "No communicated restriction",
+   "plan": "No new transaction decision in this tracker",
+   "credited_seasons": "0",
+   "accrued_seasons": "0 (2014 rookie)"
+  }
+ ]
+}

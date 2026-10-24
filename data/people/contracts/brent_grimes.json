@@ -1,0 +1,65 @@
+{
+ "schema_version": 1,
+ "name": "Brent Grimes",
+ "player": "brent_grimes",
+ "listed": 50,
+ "position": "CB",
+ "roster_position": "CB",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2013-03-12",
+   "source": "career/2013/offseason/free_agency/signings.md",
+   "contract": "brent_grimes_2013-03-12",
+   "club": "Jacksonville Jaguars",
+   "through": 2013,
+   "years": {},
+   "type": "Veteran (branch signing), March 12, 2013, fully guaranteed",
+   "signed_text": "See expiring-contract description",
+   "term_text": "2013",
+   "value_text": "$5.50M (1 year)",
+   "bonus": {
+    "text": "Not established for a new contract"
+   },
+   "guarantee_text": "No new signed 2014 guarantee established",
+   "basis": null,
+   "exposure_text": "Unresolved; do not treat pending contract status as a release",
+   "notes": "Branch record",
+   "sources": [
+    "career/2014/offseason/contract_table.md",
+    "career/2014/offseason/contract_status_register.md"
+   ],
+   "schedule_from": "bf1d2a0"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-03-11",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "brent_grimes_2013-03-12",
+   "how": "expired",
+   "text": "Contract expired at 4 p.m. March 11, 2014; unrestricted free agent",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md"
+   ],
+   "as_written": {
+    "source": "career/2013/ledger.md"
+   }
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Unrestricted free agent at 4 p.m. March 11, 2014; the corner contingency makes him Jacksonville's fallback, resolution rule open (Entry 94)",
+   "availability": "No communicated restriction",
+   "plan": "Unrestricted free agent at 4 p.m. March 11, 2014; the corner contingency makes him Jacksonville's fallback, resolution rule open (Entry 94)",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 4+ (entered 2006; played 2012 under an Atlanta franchise-tag contract and signed from outside as a free agent in March 2013). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}

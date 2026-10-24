@@ -1,0 +1,79 @@
+{
+ "schema_version": 1,
+ "name": "Toney Clemons",
+ "player": "toney_clemons",
+ "listed": 55,
+ "position": "WR",
+ "roster_position": "WR",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "tender",
+   "date": "2014-03-11",
+   "source": "career/2014/Team_Operations/Free_Agency/signings.md",
+   "contract": "toney_clemons_2014-03-11",
+   "club": "Jacksonville Jaguars",
+   "through": 2014,
+   "years": {
+    "2014": {
+     "status": "tender",
+     "cap": 570000,
+     "base": 570000,
+     "proration": 0,
+     "cash": 570000,
+     "guaranteed_base": 0,
+     "other_cap": 0
+    }
+   },
+   "type": "Veteran minimum, late November 2012 (2 years)",
+   "signed_text": "See expiring-contract description",
+   "term_text": "1 / 2014 (unsigned tender)",
+   "value_text": "$570,000 tender",
+   "bonus": {
+    "text": "Not established for a new contract"
+   },
+   "guarantee_text": "Unsigned tender; $0 guaranteed before signing",
+   "basis": {
+    "text": "Unsigned tender (Entry 94)",
+    "source": "career/2014/Team_Operations/Free_Agency/signings.md"
+   },
+   "exposure_text": "Unresolved; do not treat pending contract status as a release",
+   "notes": "Two credited seasons (2012: four games on the 53; 2013) is a branch inference from the register",
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/free_agency/signings.md"
+   ],
+   "schedule_from": "0152eae"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-08-30",
+   "source": "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+   "contract": "toney_clemons_2014-03-11",
+   "how": "tender_withdrawn",
+   "text": "Qualifying offer withdrawn August 30, 2014 and rights renounced",
+   "notes": "Two credited seasons (2012: four games on the 53; 2013) is a branch inference from the register Tender withdrawn August 30, 2014 and rights renounced (career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md); the $570,000 tender charge leaves.",
+   "sources": [
+    "career/2014/04_Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/free_agency/signings.md"
+   ]
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Qualifying offer withdrawn August 30, 2014 and rights renounced; free agent",
+   "availability": "No communicated restriction",
+   "plan": "Former player; tender withdrawn",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 0 (joined Jacksonville's 53 in late November 2012; 4 games). 2013: Accrues in branch (on 53 for 16 games); 1 total"
+  }
+ ]
+}

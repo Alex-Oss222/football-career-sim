@@ -1,0 +1,95 @@
+{
+ "schema_version": 1,
+ "name": "Russell Allen",
+ "player": "russell_allen",
+ "listed": 28,
+ "position": "LB",
+ "roster_position": "LB",
+ "converted": {
+  "date": "2026-10-24",
+  "from": "ef1ad55",
+  "text": "Converted from the players block, amendments and dead money of the contract inputs; a contract that had ended takes its schedule and texts from the inputs as they stood before the ending (schedule_from)."
+ },
+ "entries": [
+  {
+   "kind": "contract_signed",
+   "date": "2012",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "contract": "russell_allen_2012",
+   "club": "Jacksonville Jaguars",
+   "through": 2014,
+   "years": {
+    "2014": {
+     "status": "approximate",
+     "cap": null,
+     "base": 1975000,
+     "proration": 416668,
+     "other_cap": 25000,
+     "cash": 2000000,
+     "approximate_cap": 2416668,
+     "estimate_note": "Planning base $1.975M matches the earlier memo and recovered contract notes. Add $25,000 workout and final $416,668 bonus allocation. Any incentive charge is separate: the prior $1M other-bonus entry cannot be copied without the branch earning test. No later retirement or real release is executed here. Fixed working amount adopted in Entry 91; revise only through a recorded correction or contract event.",
+     "guaranteed_base": 0
+    }
+   },
+   "type": "Veteran, 2012",
+   "signed_text": "2012",
+   "term_text": "3 / 2014",
+   "value_text": "$6,000,000",
+   "bonus": {
+    "text": "$1,250,000 signing bonus; final 2014 allocation $416,668"
+   },
+   "guarantee_text": "Adopted simulation treatment: $0 additional unpaid salary guarantee in the remaining years; original signing-bonus allocations remain on the cap.",
+   "guarantee_basis": "simulation reconstruction",
+   "basis": {
+    "text": "Includes adopted simulation amounts; see contract notes",
+    "source": "library/2014_jaguars_contract_completion.md"
+   },
+   "exposure_text": "$416,668 gross exposure under adopted terms, before any later earned payment or recorded credit",
+   "notes": "Planning base $1.975M matches the earlier memo and recovered contract notes. Add $25,000 workout and final $416,668 bonus allocation. Any incentive charge is separate: the prior $1M other-bonus entry cannot be copied without the branch earning test. No later retirement or real release is executed here.",
+   "sources": [
+    "career/2014/offseason/contract_table.md",
+    "career/2014/offseason/contract_status_register.md",
+    "library/2014_jaguars_original_contract_reconstruction.md",
+    "library/2014_jaguars_contract_completion.md"
+   ],
+   "schedule_from": "8ee8c07"
+  },
+  {
+   "kind": "contract_ended",
+   "date": "2014-04-07",
+   "source": "career/2014/Team_Operations/Trades/completed_trades/allen_to_arizona_2014-04-07.md",
+   "contract": "russell_allen_2012",
+   "how": "traded",
+   "text": "Traded to Arizona, April 7, 2014",
+   "to": "Arizona Cardinals",
+   "dead_money": [
+    {
+     "year": 2014,
+     "amount": 416668,
+     "status": "reconstructed",
+     "basis": "Pre-June 1 trade to Arizona, April 7, 2014 (Entry 106): his final $416,668 original bonus allocation stays with Jacksonville in 2014. Arizona takes his $1,975,000 base and $25,000 workout bonus.",
+     "line": 10
+    }
+   ],
+   "sources": [
+    "career/2014/finances/player_contracts/contracts.md",
+    "career/2014/finances/player_contracts/contract_status.md",
+    "library/2014_jaguars_original_contract_reconstruction.md",
+    "library/2014_jaguars_contract_completion.md"
+   ],
+   "as_written": {
+    "source": "career/2014/ledger.md"
+   }
+  },
+  {
+   "kind": "register",
+   "date": "2014-09-08",
+   "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
+   "status": "Traded to Arizona, April 7, 2014 (Entry 106); his real retirement dated April 22, 2014 now applies at Arizona",
+   "availability": "No communicated restriction",
+   "plan": "Traded to Arizona (Entry 106)",
+   "credited_seasons": "Unresolved; verify Article 26 service separately from accrued seasons",
+   "accrued_seasons": "Through 2012: 4 (2009-2012). 2013: Accrues in branch (on 53 for 16 games)"
+  }
+ ]
+}
