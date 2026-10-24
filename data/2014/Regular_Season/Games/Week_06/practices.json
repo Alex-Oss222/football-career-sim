@@ -1,0 +1,275 @@
+{
+ "schema": "practice-week-v1",
+ "season": 2014,
+ "week": 6,
+ "kind": "game",
+ "basis": "closed_record",
+ "schedule": null,
+ "source": {
+  "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+  "anchor": "1-preparation-and-final-game-day-decisions"
+ },
+ "padded_count_basis": {
+  "text": "The Week 6 record states that the week had no padded practice: the Wednesday, Thursday and Friday practices were in helmets",
+  "sources": [
+   {
+    "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+    "anchor": "1-preparation-and-final-game-day-decisions"
+   },
+   {
+    "page": "career/2014/Team_Operations/Medical/medical_history.md",
+    "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+   }
+  ]
+ },
+ "sessions": [
+  {
+   "date": "2014-10-06",
+   "type": "meeting",
+   "required": true,
+   "attendees": "team",
+   "equipment": null,
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Christian Jones",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-08",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Christian Jones",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    },
+    {
+     "player": "Brynden Trawick",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    },
+    {
+     "player": "Jordan Poyer",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-09",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Christian Jones",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    },
+    {
+     "player": "Brynden Trawick",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    },
+    {
+     "player": "Jordan Poyer",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-10",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Christian Jones",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    },
+    {
+     "player": "Brynden Trawick",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    },
+    {
+     "player": "Jordan Poyer",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-11",
+   "type": "walkthrough",
+   "required": true,
+   "attendees": "team",
+   "equipment": null,
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Christian Jones",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    },
+    {
+     "player": "Brynden Trawick",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    },
+    {
+     "player": "Jordan Poyer",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-6-to-11-christian-jones-and-trawick-cleared-poyer-released"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+      "anchor": "1-preparation-and-final-game-day-decisions"
+     }
+    }
+   ]
+  }
+ ],
+ "days_off": [
+  {
+   "date": "2014-10-07",
+   "scope": "players",
+   "players": "all",
+   "exceptions": [],
+   "source": {
+    "page": "career/2014/Regular_Season/Games/Week_06/Game_Report.md",
+    "anchor": "1-preparation-and-final-game-day-decisions"
+   }
+  }
+ ],
+ "gaps": [
+  "The record names the three players under a medical instruction at the start of the week and their part in the sessions, and states that the week produced no injury and no new restriction; it gives no other player's participation session by session",
+  "The record names Monday, October 6 the Pittsburgh review and the Tennessee introduction; it does not state the session's form or equipment",
+  "The equipment of the Saturday, October 11 walkthrough is not stated",
+  "Brynden Trawick's and Jordan Poyer's part in the Monday review is not stated",
+  "Brynden Trawick was reassessed by the medical staff on Tuesday, October 7, the players' day off; the record states no other work that day"
+ ]
+}
