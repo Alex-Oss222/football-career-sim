@@ -15,9 +15,9 @@ Player use varies with the personnel package. The starting line and the X, H and
 | QB | [Kirk Cousins](../Player_Cards/kirk_cousins.md) | Chad Henne is QB2 |
 | RB | [C.J. Anderson](../Player_Cards/c_j_anderson.md) | Maurice Jones-Drew and Jonathan Grimes follow |
 | FB | [Montell Owens](../Player_Cards/montell_owens.md) | For fullback packages |
-| X | [Allen Hurns](../Player_Cards/allen_hurns.md) | X (WR1) |
-| H | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) | H |
-| Z | [Davante Adams](../Player_Cards/davante_adams.md) | Z |
+| X | [Davante Adams](../Player_Cards/davante_adams.md) | X (WR1) |
+| H | [Adam Thielen](../Player_Cards/adam_thielen.md) | H |
+| Z | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) | Z |
 | TE | [Travis Kelce](../Player_Cards/travis_kelce.md) | Additional tight ends follow in the group order |
 | LT | [Eugene Monroe](../Player_Cards/eugene_monroe.md) |  |
 | LG | [Joel Bitonio](../Player_Cards/joel_bitonio.md) |  |
@@ -83,12 +83,12 @@ The order in each group remains Stone's current order. Reserve assignments that 
 
 | Order | Player | Pos | Role |
 |---:|---|---|---|
-| 1 | [Allen Hurns](../Player_Cards/allen_hurns.md) | WR | X (WR1) |
-| 2 | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) | WR | H |
-| 3 | [Davante Adams](../Player_Cards/davante_adams.md) | WR | Z |
-| 4 | [Taylor Gabriel](../Player_Cards/taylor_gabriel.md) | WR | First general receiver relief |
-| 5 | [Hakeem Nicks](../Player_Cards/hakeem_nicks.md) | WR | X relief (fifth receiver) |
-| 6 | [Adam Thielen](../Player_Cards/adam_thielen.md) | WR | Sixth receiver |
+| 1 | [Davante Adams](../Player_Cards/davante_adams.md) | WR | X (WR1) |
+| 2 | [Adam Thielen](../Player_Cards/adam_thielen.md) | WR | H |
+| 3 | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) | WR | Z |
+| 4 | [Allen Hurns](../Player_Cards/allen_hurns.md) | WR | First general receiver relief |
+| 5 | [Taylor Gabriel](../Player_Cards/taylor_gabriel.md) | WR | Fifth receiver |
+| 6 | [Hakeem Nicks](../Player_Cards/hakeem_nicks.md) | WR | X relief (sixth receiver) |
 
 #### Tight ends
 
