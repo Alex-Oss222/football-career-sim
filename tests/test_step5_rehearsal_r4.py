@@ -331,6 +331,11 @@ class GameDayChangeRehearsal(OpenWeek):
         self.assertIn(call["queue_item"], [i["id"] for i in decision_queue.overdue_items(
             decision_queue.load(self.root), open_events.master_at(self.root))])
         self.assertFalse((SeasonPaths(SEASON, self.root).cache(self.week, "inputs")).exists())
+        # The desk lists both answers he owes, the call as overdue (A6).
+        waiting = self.desk_waiting()
+        self.assertIn(item["title"].rstrip("."), waiting)
+        call_line = next(l for l in waiting.splitlines() if open_events.title(call) in l)
+        self.assertIn("Overdue since", call_line)
 
         # 5. His change on My Responses, in the Game Plan's line form: the player who is out sits in
         #    place of the last healthy inactive as set.
@@ -357,6 +362,7 @@ class GameDayChangeRehearsal(OpenWeek):
         self.assertEqual(responses.validation_errors(self.root), [])
         self.rebuild()
         self.assertIsNone(self.reissue_reason(), "his answer is not a change of situation")
+        self.assertNotIn(item["title"].rstrip("."), self.desk_waiting())
         from scripts import render_game_week
         self.assertEqual(render_game_week.issue_errors(self.wk()), [])
 
@@ -385,6 +391,11 @@ class GameDayChangeRehearsal(OpenWeek):
         self.assert_validates()
         self.assertEqual({p: digest(ROOT / p) for p in real}, real)
         self.assertEqual(sorted(p.name for p in SeasonPaths(SEASON, ROOT).receipts.glob("*.json")), real_receipts)
+
+    def desk_waiting(self):
+        """The desk's "Waiting on you" list (scripts/render_career_views.py)."""
+        desk = (SeasonPaths(SEASON, self.root).career / "README.md").read_text(encoding="utf-8")
+        return desk.split("## Waiting on you", 1)[1].split("\n## ", 1)[0]
 
     def reissue_reason(self):
         from scripts import render_game_week
