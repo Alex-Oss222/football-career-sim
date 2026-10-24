@@ -194,7 +194,7 @@ PAGE_HISTORY = DATA_ROOT + '/pages/history.json'
 # The sha256 of the page history map's bytes. The map exempts the pages it lists, so it is pinned:
 # validation fails when the map changes unless this pin changes in the same commit
 # (runtime/clean_pages.history_pin_errors).
-PAGE_HISTORY_SHA256 = '57ba83ee8240bdd27122641208fc763c6ee140fc654f42ae1d6af23b60480c3b'
+PAGE_HISTORY_SHA256 = '85f089f2d3cd9aa16eb06c06627fcca0ccd726fd38fd7e92f68643c62266130d'
 # The research registries the player pages read through (one owner each).
 BIRTH_DATE_REGISTRY = 'library/data/player_birth_dates.json'
 BIRTH_DATE_CORRECTIONS = 'library/data/player_birth_date_corrections.json'
