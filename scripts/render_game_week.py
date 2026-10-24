@@ -1179,7 +1179,12 @@ def issue_route(wk, issued, revision):
     entries = issues(wk)
     for n, entry in enumerate(entries, 1):
         if entry.get("date") == issued.isoformat() and int(entry.get("revision", 0)) == revision:
-            return open_events.route(wk.season, open_events.issued_at(entry), wk.period, wk.root, issue=n)
+            route = open_events.route(wk.season, open_events.issued_at(entry), wk.period, wk.root, issue=n)
+            # A window is not an event: an issued briefing keeps the windows its issue recorded (an
+            # entry written before step 5 recorded none), so a window added later never changes it.
+            shown = {i.get("window") for i in entry.get("inserts") or () if i.get("section") == "coming_up"}
+            route.coming_up = [w for w in route.coming_up if w.key in shown]
+            return route
     at = open_events.master_at(wk.root) if issued == wk.master else open_events.et(issued)
     return open_events.route(wk.season, at, wk.period, wk.root, issue=len(entries) + 1)
 

@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tests"))
 from release_staging import IGNORED  # noqa: E402
 import support_events as se  # noqa: E402
-from runtime import decision_queue, event_inserts, open_events  # noqa: E402
+from runtime import deadlines, decision_queue, event_inserts, open_events  # noqa: E402
 from runtime.clean_pages import page_errors  # noqa: E402
 from scripts import render_game_week  # noqa: E402
 
@@ -116,8 +116,11 @@ class InsertTests(unittest.TestCase):
         self.assertEqual(latest["date"], self.tuesday.isoformat())
         self.assertEqual(latest["at"], open_events.iso(open_events.et(self.tuesday, 10, 30)))
         self.assertTrue(latest["reason"].startswith("a:"))
-        self.assertEqual([(i.get("event"), i["section"], i["due"]) for i in latest["inserts"]],
+        self.assertEqual([(i.get("event"), i["section"], i["due"]) for i in latest["inserts"] if i["section"] == "action"],
                          [(record["id"], "action", open_events.iso(due))])
+        # Any window recorded is one the windows give for the issue (A5), never an answer.
+        self.assertEqual([i["window"] for i in latest["inserts"] if i["section"] == "coming_up"],
+                         [w["key"] for w in deadlines.coming_up(SEASON, open_events.et(self.tuesday, 10, 30), self.root)])
         page = self.page()
         self.assertIn("## ACTION REQUIRED\n\n**One decision needs your answer.**", page)
         self.assertIn("**Response due: Wednesday, %s %d, 4 p.m. ET**" % (self.wednesday.strftime("%B"),
@@ -258,7 +261,10 @@ class InsertTests(unittest.TestCase):
         self.assertIn("No deadline is set; no answer is never a yes or a no.", page)
         sections = [page.index(h) for h in event_inserts.HEADINGS if h in page]
         self.assertEqual(sections, sorted(sections))
-        self.assertEqual(len(sections), 2)
+        # ACTION REQUIRED and FOR YOUR INFORMATION, and COMING UP after them when a window is due (A5).
+        windows = deadlines.coming_up(SEASON, open_events.parse_at(render_game_week.issues(self.wk())[-1]["at"]),
+                                      self.root)
+        self.assertEqual(len(sections), 2 + bool(windows))
         entries = render_game_week.issues(self.wk())[-1]["inserts"]
         self.assertEqual([i.get("event") for i in entries if i["section"] == "action"],
                          [early["id"], late["id"], undated["id"]])
