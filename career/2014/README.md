@@ -6,8 +6,7 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coac
 
 ## Waiting on you
 
-1. **Week 6 game plan for Tennessee.** To settle: the menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work after his October 7 exam. Due before kickoff, Sunday, October 12, 1 p.m. ET. [Game Week Briefing](Regular_Season/Games/Week_06/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_06/Game_Plan.md)
-2. **Week 6 inactives.** Due before kickoff, Sunday, October 12, 1 p.m. ET. [Game Week Briefing](Regular_Season/Games/Week_06/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_06/Game_Plan.md)
+Nothing is waiting on you.
 
 ## Next event
 

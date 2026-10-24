@@ -18,7 +18,7 @@ This document states what is true now and what comes next. The [2014 record](../
 | Document 3 | `3723e1bd3589fe47b9070001ad6dfb5189f335cb` | Active foundation source |
 | Document 4 | `JAX-2014-OCT12-REGISTER-90` | Roster, staff, medical and role register |
 | Current job record | `579943a4eeda14a90965d0ed866dbf431e7fd89c` | [Job, authority and delegation](current_job.json) |
-| Decision queue | `b62b51641451ac5100656ca8601b77af265edf35` | [Open and resolved decisions](decision_queue.json) |
+| Decision queue | `c9e884a71725c0ca8a284c86222d5cd0b2a535c5` | [Open and resolved decisions](decision_queue.json) |
 | Document 6 | [Event records and handoff protocol](../foundation/06_Event_Records_and_Handoff.md) | Latest closed game: [Week 5 against Pittsburgh](../career/2014/Regular_Season/Games/Week_05/output.md), October 5, 2014 (Pittsburgh 27, Jacksonville 10); latest closed event of any kind: [Week 6 game day](../career/2014/Regular_Season/Games/Week_06/README.md), October 12, 2014 (technical), after the Tennessee preparation closed October 11 |
 
 ## 1. Master clock and competition position
@@ -167,8 +167,6 @@ Execution and observable effort remain separate: protection losses were techniqu
 <!-- decision-queue:begin -->
 | Decision | Owner | Needed | Holds | Waiting on | Record |
 |---|---|---|---|---|---|
-| Week 6 game plan for Tennessee | Alex Stone | before the Week 6 call sheet is frozen and the Week 6 inputs are built; kickoff October 12, 1 p.m. ET | the Week 6 game | Trawick's reassessment (October 7) | [record](../career/2014/Regular_Season/Games/Week_06/README.md) |
-| Week 6 inactives | Alex Stone | before the Week 6 inputs are built | the Week 6 game | Christian Jones's reassessment and projected return (October 6); Trawick's reassessment (October 7); Poyer's projected return; the independent process releases the hold (October 9) | [record](../career/2014/Team_Operations/Team/Depth_Chart/depth_chart.md) |
 | Individual film packets: preparation and coach approval | Jacksonville coaching staff | no deadline | nothing | cause review and comparison clips for the Cousins packet; the cut-up video, not yet supplied | [record](../career/2014/Team_Operations/Film/player_queue.md) |
 | Three open practice-squad places | David Caldwell | no deadline | nothing | nothing | [record](../career/2014/Team_Operations/Team/Roster/roster.md) |
 

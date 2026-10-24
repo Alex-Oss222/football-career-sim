@@ -1,0 +1,818 @@
+{
+ "season": 2014,
+ "week": 6,
+ "applied": "2014-10-12",
+ "page": "career/2014/Regular_Season/Games/Week_06/Game_Plan.md",
+ "page_sha256": "fd1702f19fabf6b9ae125b848d1c1e37057fa9275ac91c9370bd8a6f1b6cdb81",
+ "call_sheet_sha256": "4fc97d42832f0193a23b73ff5ee200e2340525530250c15856b4071762b472b3",
+ "before": {
+  "orders": {},
+  "roles": {}
+ },
+ "set": {
+  "orders": {},
+  "roles": {}
+ },
+ "labels_cleared": [],
+ "source_map": {
+  "calls": {
+   "12 Ace, Power Right": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 0
+     }
+    },
+    {
+     "page": 42,
+     "text": "12 Ace, Power Right"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 SHIFT Empty, Stick": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 1
+     }
+    },
+    {
+     "page": 48,
+     "text": "12 SHIFT Empty, Stick"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Wing, Outside Zone Left": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 4
+     }
+    },
+    {
+     "page": 44,
+     "text": "12 Wing, Outside Zone Left"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Trey, Y-Cross, SOLID": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 2
+     }
+    },
+    {
+     "page": 49,
+     "text": "12 Trey, Y-Cross, SOLID"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Doubles, Stick, SCAT": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 8
+     }
+    },
+    {
+     "page": 51,
+     "text": "11 Doubles, Stick, SCAT"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Wing, Boot Flood Right": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 5
+     }
+    },
+    {
+     "page": 45,
+     "text": "12 Wing, Boot Flood Right"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Ace, Counter Right": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 6
+     }
+    },
+    {
+     "page": 43,
+     "text": "12 Ace, Counter Right"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Bunch, Mesh, HALF": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 3
+     }
+    },
+    {
+     "page": 50,
+     "text": "11 Bunch, Mesh, HALF"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Doubles, Inside Zone Right": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 14
+     }
+    },
+    {
+     "page": 46,
+     "text": "11 Doubles, Inside Zone Right"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Trips, Inside Zone + Bubble": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 15
+     }
+    },
+    {
+     "page": 47,
+     "text": "11 Trips, Inside Zone + Bubble"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Doubles, RB Slow Screen": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 9
+     }
+    },
+    {
+     "page": 52,
+     "text": "11 Doubles, RB Slow Screen"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Ace, Power Left": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 10
+     }
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Ace, Power Pass / Post-Cross, MAX": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 16
+     }
+    },
+    {
+     "page": 53,
+     "text": "12 Ace, Power Pass / Post-Cross, MAX"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Doubles, Drive, HALF": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 7
+     }
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Wing, TE Delay": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 12
+     }
+    },
+    {
+     "page": 55,
+     "text": "12 Wing, TE Delay"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Trey, Dagger, HALF": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 17
+     }
+    },
+    {
+     "page": 54,
+     "text": "11 Trey, Dagger, HALF"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Bunch, Snag": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 20
+     }
+    },
+    {
+     "page": 56,
+     "text": "11 Bunch, Snag"
+    }
+   ],
+   "12 Ace, Flea Flicker, MAX": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 11
+     }
+    },
+    {
+     "page": 57,
+     "text": "12 Ace, Flea Flicker, MAX"
+    }
+   ],
+   "11 SHIFT Empty, Spacing, SCAT": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 13
+     }
+    }
+   ],
+   "12 Trey, TE Delay": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 18
+     }
+    }
+   ],
+   "11 Doubles, Spacing, SCAT": [
+    {
+     "carried": {
+      "week": 5,
+      "call": 19
+     }
+    }
+   ]
+  },
+  "defense": {
+   "normal-down": {
+    "page": 91,
+    "text": "normal downs | Under, Y strength, Quarters or Cover 6"
+   },
+   "second-and-long": {
+    "page": 92,
+    "text": "second and long | Nickel Even, Quarters or Cover 6"
+   },
+   "third-and-short": {
+    "page": 93,
+    "text": "third and short | Under, 1 Robber or 3 Match"
+   },
+   "third-and-medium": {
+    "page": 94,
+    "text": "third and medium | Nickel Even, 1 Robber or Quarters"
+   },
+   "third-and-long": {
+    "page": 95,
+    "text": "third and long | Dime, Nickel Even, Quarters or Cover 6"
+   },
+   "backed-up": {
+    "page": 96,
+    "text": "backed up | Under, 3 Match or Quarters"
+   },
+   "high-red-zone": {
+    "page": 97,
+    "text": "high red zone | Nickel Even, Quarters or Cover 6"
+   },
+   "low-red-zone": {
+    "page": 98,
+    "text": "low red zone | Under, Y strength, 1 Robber or 3 Match"
+   },
+   "goal-line": {
+    "page": 99,
+    "text": "goal line | Under, Y strength, 3 Match"
+   },
+   "two-minute": {
+    "page": 100,
+    "text": "two-minute | Nickel Even, Quarters or Cover 6"
+   },
+   "four-minute": {
+    "page": 101,
+    "text": "four-minute | Under, Y strength, Quarters"
+   },
+   "lead-late": {
+    "page": 102,
+    "text": "late lead | Nickel Even, Cover 6 or 3 Match"
+   },
+   "conditional-1": {
+    "page": 103,
+    "text": "If Wright aligns inside | Nickel Even, 1 Robber or Quarters"
+   },
+   "conditional-2": {
+    "page": 104,
+    "text": "If they go empty | Dime, Nickel Even, Quarters"
+   },
+   "counter-1": {
+    "page": 105,
+    "text": "Counter to a verified field-side protection slide | Nickel Even, Replace Field, Quarters"
+   },
+   "counter-2": {
+    "page": 106,
+    "text": "Counter to a verified boundary-side protection slide | Nickel Even, Replace Boundary, Cover 6"
+   },
+   "counter-3": {
+    "page": 107,
+    "text": "Counter to quick game on a favorable third down | Nickel Even, Fire 3"
+   }
+  },
+  "decisions": {
+   "two_point": {
+    "standing": true
+   },
+   "kickoff": {
+    "standing": true
+   },
+   "fourth_down": {
+    "standing": true
+   }
+  }
+ },
+ "intent": {
+  "lines": {
+   "head_coach": {
+    "line": 3,
+    "text": "Alex Stone",
+    "label": "Head coach"
+   },
+   "game": {
+    "line": 4,
+    "text": "Jacksonville at Tennessee, Sunday, October 12, 2014, 1 p.m. ET, LP Field",
+    "label": "Game"
+   },
+   "attack": {
+    "line": 10,
+    "text": "Make Tennessee defend the same 12-personnel surface several ways. Run Jones-Drew at the actual box count, shift Lewis and Kelce to expose the linebackers' coverage rules, then pair Outside Zone with Boot Flood and Power with Counter and Power Pass. Test whether Woodyard and Brown widen, whether Pollard inserts against the run, and whether Morgan or Wimbley chases the backside. Those are questions to answer on the field, not assumed tendencies.",
+    "label": "The matchup I am attacking"
+   },
+   "protect": {
+    "line": 12,
+    "text": "Another game of giveaways and empty trips inside the 30. Pittsburgh got four turnovers and 17 points from them. Protect the ball, give Cousins a defined pressure answer, finish drives, and do not give Locker an open escape lane or Greene an unaccounted cutback. No cheap yards from kick-cover penalties.",
+    "label": "What I must not give them"
+   },
+   "change_course": {
+    "line": 14,
+    "text": "If Tennessee packs the run surface, detach a tight end, use Stick or Y-Cross and move the launch point only when the edge is secured. If its linebackers sit on the crossers, work the run and perimeter count. If interior penetration wrecks the mesh point, get to quick throws and protected passes. On defense, if our fits or replacement-pressure exchanges fail, play the clean Under or Nickel Even four-man answer immediately. Medical availability overrides every package.",
+    "label": "What would make me change course"
+   },
+   "contingency": {
+    "line": 22,
+    "text": "Reissue after examination. If Christian Jones is not cleared, Todd Davis takes the eligible linebacker and coverage work. If Brynden Trawick is not cleared, Chris Prosinski practices the deep-safety assignment, Adrian Phillips the supporting safety and kicking roles, and Bouye stays at nickel; recheck the full 46 before naming a new starter. If Jordan Poyer's independent hold remains, he stays inactive. No projected return counts as a clearance.",
+    "label": "If Jones, Trawick or Poyer cannot dress"
+   },
+   "coverage_units": {
+    "line": 24,
+    "text": "Westhoff keeps Hawkins as both returners and Hurns prepared for punt-return relief. Todd Davis, Phillips and Prosinski rehearse the coverage and safety substitutions, with Trawick withheld until medical permission. If Trawick cannot dress, rebuild the seven inactives and the punt, kickoff, dime and emergency-safety groups; do not leave a safety job or kicking lane unmanned. Nicks remains Adams's prepared X relief, not a new starter.",
+    "label": "Special coverage and substitution consequences"
+   },
+   "base_personnel": {
+    "line": 30,
+    "text": "Start from 12 and 11, not a fixed run-pass quota. Jones-Drew leads the backs; Anderson relieves him for a prepared series or protection job, with the same credible run-pass menu. Lewis is the established Y and Kelce the movable second tight end and prepared receiving Y. Adams stays at X, Thielen at H, Hawkins at Z; Hurns is general relief and Nicks takes his rehearsed X-relief series. The Monroe-Bitonio-Brewster-Turner-Johnson line stays together. Make Tennessee defend shifts without signaling the ball's destination.",
+    "label": "Base personnel and roles"
+   },
+   "learn": {
+    "line": 32,
+    "text": "Who follows the tight ends when 12 shifts toward Empty; how Woodyard, Brown and Pollard fit Power and Outside Zone; whether the backside edge chases Boot; how the front handles a screen release and whether a safety sits on the dig. Bates records the pressure count and Cousins's immediate answer on every shifted look.",
+    "label": "The first things I want to learn"
+   },
+   "opening_approach": {
+    "line": 34,
+    "text": "Show the run surface, change the picture with the same people, and return to it once we know the adjustment. Start with secure handoffs and defined reads, then use complementary play-action or the screen only when the defense earns it. A short-yardage, backed-up or scoring situation interrupts this order; an unused idea remains available. No mandatory shot and no target quota.",
+    "label": "Opening approach"
+   },
+   "third_down": {
+    "line": 61,
+    "text": "On 1 or 2, Power or the counted Trips run-bubble; on 3 to 5, SCAT Stick or properly protected Mesh; on 6-plus, SOLID Y-Cross, Drive or protected Dagger. Slow Screen is a rush answer, not a surrender throw short of the marker. Cousins identifies the hot defender and the actual line to gain.",
+    "label": "Third down"
+   },
+   "backed_up": {
+    "line": 63,
+    "text": "Inside Zone, Outside Zone, Power and SCAT Stick. No Flea Flicker, long-developing shift or uncovered edge. Win field position without donating the ball.",
+    "label": "Backed up"
+   },
+   "red_zone": {
+    "line": 65,
+    "text": "High: Y-Cross, controlled run and gated Boot or Power Pass. Low: Counter, Power, Bunch Mesh and Snag by leverage; no forced crosser. Goal line: Power Right or Left and Counter first; a pass only from a taught protection and eligible-receiver count. Review the Week 5 grounding and delay before the snap, not after the series.",
+    "label": "High red zone, low red zone, goal line"
+   },
+   "two_minute": {
+    "line": 67,
+    "text": "Keep the current 11 group, work Stick, Spacing, Drive, Mesh and Y-Cross through the practiced PRESS procedure. Skalaski gives Cousins the clock and timeouts; get the next call ready on an inbounds completion. A protected shot needs both the field position and clock.",
+    "label": "Two-minute / hurry-up"
+   },
+   "four_minute": {
+    "line": 69,
+    "text": "Jones-Drew's Power, Counter and Outside Zone are the base; retain Y-Cross or a gated Boot when Tennessee crowds them. First downs end games. Discuss an inbounds completion, sack and opponent timeouts before the series, then use the clock deliberately.",
+    "label": "Four-minute / protect a lead"
+   },
+   "sudden_change": {
+    "line": 71,
+    "text": "Start with a secure base call unless the safety or rush has already shown the exact shot trigger. Power Pass and Boot come before the Flea Flicker. Never confuse getting the ball after a turnover with permission for a gadget.",
+    "label": "Sudden change / shot opportunities"
+   },
+   "front": {
+    "line": 81,
+    "text": "Under against credible tight-end and downhill run surfaces, Nickel Even when the spacing warrants it. Use the established first-unit four-man front. Daryl Smith makes the front declaration; Posluszny and the fit linebacker key Greene's path, the puller and the backside cutback. The force defender keeps outside leverage and the plus-one fitter arrives from the correct side. Do not let a pass look erase the run fit.",
+    "label": "Base front and run fits"
+   },
+   "coverage": {
+    "line": 83,
+    "text": "Show two-high, play Quarters or Cover 6 by distribution, and use 1 Robber against a real crossing/dig picture. Four rushers with disciplined edges are the default against Locker. We want him to hold the ball to confirm the picture, not escape a vacant lane. Bouye carries Wright's inside release when Wright aligns in his nickel area; Talib and Verner keep their outside jobs. Match Walker's seam and crossing release by rule, not by assigning one linebacker two routes. Replacement rush attacks a verified slide/back scan, never a guessed weakness.",
+    "label": "Coverage and rush approach"
+   },
+   "discover": {
+    "line": 87,
+    "text": "Does Schwenke point the pressure when we mug the interior, and which way does Greene scan? Where does Locker launch and attempt to escape when the edges hold? Who takes Wright when he moves inside, and how does the offense distribute Walker after motion?",
+    "label": "What we need to discover early"
+   },
+   "matchups": {
+    "line": 109,
+    "text": "No change. Bouye has the nickel area, Talib and Verner remain outside, Rambo and medically eligible Trawick remain the first safeties, and Prosinski is the sixth defensive back. Daryl Smith owns the front call. Westhoff and Crennel must reconcile any Trawick or Jones absence before dime and the coverage units are approved.",
+    "label": "Individual matchups / roles changed"
+   },
+   "kicking": {
+    "line": 115,
+    "text": "Hawkins returns kicks and punts; Hurns is prepared for punt relief. Scobee, Anger and Kreiter keep the operation. Westhoff checks punt protection, vice, directional placement, lane integrity and the hands unit with the proposed 46. No loose leverage or unnecessary penalty chasing a return. Rebuild each coverage group if Trawick or Jones cannot dress.",
+    "label": "Return, coverage and operation instructions"
+   },
+   "endgame": {
+    "line": 123,
+    "text": "Skalaski gives me actual down, distance, field-goal distance, score, clock, timeouts and challenge status before the choice. Apply the fourth-down rule only after the fourth-down distance and spot are known. Check with the booth before spending a challenge, and leave automatic or final-two-minute reviews to the officials. Cousins and I set the clock goal before two-minute and four-minute possessions. No timeout to rescue an unprepared substitution unless it prevents a worse outcome.",
+    "label": "Timeouts, challenges and endgame"
+   },
+   "participation": {
+    "line": 137,
+    "text": "Reissue after exam. Until the October 7 reassessment and any later clearance, Prosinski takes Trawick's deep-safety teaching work and Phillips rehearses the next safety and coverage duties; Trawick receives only medical-approved work. Todd Davis prepares Jones's linebacker and coverage contingency. Poyer's independent hold remains controlling until released.",
+    "label": "If a medical assessment changes participation"
+   },
+   "tradeoff": {
+    "line": 139,
+    "text": "No new Throwback Screen, Halfback Pass, WR Pass or extra motion family this week. Cut optional gadget and peripheral shot repetitions before taking time from ball security, protections, defensive fits or Westhoff's replacement units. Tuesday is off; Wednesday through Friday are helmets, with Saturday walkthrough and no pads in Week 6.",
+    "label": "What leaves the practice menu to make room"
+   },
+   "staff": {
+    "line": 143,
+    "text": "Tice owns the offensive installation and next-call information; Bates brings the quarterback's trusted pressure answers; Crennel prepares and transmits my defensive call, with Daryl Smith declaring the front; Westhoff owns kicking operation; Skalaski handles the clock, fourth-down and challenge relay. I call offense and defense. Give me the actual look, the player's assignment, the adjustment and the cost in practice time. Keep correction direct, test it again and let Cousins challenge a call he cannot see. No invented opponent tendency percentages and no play kept only because its drawing looks good.",
+    "label": "Staff instructions"
+   },
+   "public": {
+    "line": 145,
+    "text": "We moved the ball against Pittsburgh but gave it away four times and failed to finish too many drives. That starts with me. Tennessee is a division opponent; we need to protect the football, tackle and execute the situations we practice.",
+    "label": "Public position, if I am adding one"
+   },
+   "open_decisions": {
+    "line": 147,
+    "text": "The final seven inactives and emergency safety/coverage grouping require Jones's October 6 reassessment, Trawick's October 7 reassessment and Poyer's projected October 9 independent-hold release. If any medical result differs, I will reissue the lineup and the affected packages before the game.",
+    "label": "Other open decisions"
+   },
+   "ready": {
+    "line": 149,
+    "text": "All three medical decisions are communicated, the final eligible 46 and role replacements are confirmed, the protected shot and pressure checks are reduced, and Westhoff signs off on Saturday's operation and Sunday availability. No game result or completed practice is assumed here.",
+    "label": "Ready to lock after"
+   }
+  },
+  "calls": [
+   {
+    "line": 42,
+    "call": "12 Ace, Power Right",
+    "reason": "Jones-Drew presses the downhill track; find the extra fitter and force Tennessee to declare its run support.",
+    "condition": "Lewis secures the edge; check the puller and ball security. Change the point if the fit wins cleanly."
+   },
+   {
+    "line": 43,
+    "call": "12 Ace, Counter Right",
+    "reason": "Punish pursuit that beats the first Power track.",
+    "condition": "Pullers must account for penetration; Anderson enters only in a rehearsed job."
+   },
+   {
+    "line": 44,
+    "call": "12 Wing, Outside Zone Left",
+    "reason": "Stretch the front and read the backside pursuit that sets up Boot.",
+    "condition": "Jones-Drew presses the landmark; never abandon backside cutback control."
+   },
+   {
+    "line": 45,
+    "call": "12 Wing, Boot Flood Right",
+    "reason": "Three levels behind a credible Outside Zone look; test the edge defender's chase.",
+    "condition": "Lewis and the backside edge must secure Cousins's movement. If the end sits, stay with the run or quick pass."
+   },
+   {
+    "line": 46,
+    "call": "11 Doubles, Inside Zone Right",
+    "reason": "Attack a light box or a front widening with the tight-end movement.",
+    "condition": "Brewster identifies the first linebacker; do not run into unchecked interior penetration."
+   },
+   {
+    "line": 47,
+    "call": "11 Trips, Inside Zone + Bubble",
+    "reason": "Read the box and perimeter number without letting the defense dictate a free extra hitter.",
+    "condition": "Bubble only on the taught count and blocking angle; the run is the answer when the count stays inside."
+   },
+   {
+    "line": 48,
+    "call": "12 SHIFT Empty, Stick",
+    "reason": "Reveal whether the defense travels or bumps with the tight ends, then take the leverage throw.",
+    "condition": "Cousins identifies the extra rusher before the shift finishes. Abort the shift if the protection is late."
+   },
+   {
+    "line": 49,
+    "call": "12 Trey, Y-Cross, SOLID",
+    "reason": "Work the intermediate space behind the linebacker; Lewis and Kelce have the rehearsed receiving-Y exchange.",
+    "condition": "SOLID first. Read the actual coverage, not a predetermined tight-end target; restore Lewis's established job if the exchange fails."
+   },
+   {
+    "line": 50,
+    "call": "11 Bunch, Mesh, HALF",
+    "reason": "A man-coverage answer with a legal crossing exchange; zone requires the taught settle.",
+    "condition": "Verify HALF's backside count and route spacing. After the Pittsburgh mistakes, no late forced throw into the crosser."
+   },
+   {
+    "line": 51,
+    "call": "11 Doubles, Stick, SCAT",
+    "reason": "Quick leverage and a declared hot answer when a fifth threat shows.",
+    "condition": "Know the unblocked rusher; take the immediate throw or checkdown rather than holding it."
+   },
+   {
+    "line": 52,
+    "call": "11 Doubles, RB Slow Screen",
+    "reason": "Counter a genuine upfield rush and exploit the space it vacates.",
+    "condition": "Spencer and Yarno verify the release count; do not call against a defender sitting on the back."
+   },
+   {
+    "line": 53,
+    "call": "12 Ace, Power Pass / Post-Cross, MAX",
+    "reason": "Attack a safety who actually drives on Power while maintaining a deep-to-intermediate answer.",
+    "condition": "MAX protection. No shot without the run-fit trigger or when the clock makes the protected development unsafe."
+   },
+   {
+    "line": 54,
+    "call": "11 Trey, Dagger, HALF",
+    "reason": "Clear the safety with the vertical and work the dig at the sticks.",
+    "condition": "HALF scan first; convert to the shorter protected answer when a six-man rush threatens the launch point."
+   },
+   {
+    "line": 55,
+    "call": "12 Wing, TE Delay",
+    "reason": "Lewis sells his block, then releases behind an overcommitted rush.",
+    "condition": "Keep the practiced release and escort. If his defender stays, Cousins comes off it."
+   },
+   {
+    "line": 56,
+    "call": "11 Bunch, Snag",
+    "reason": "Compact-space leverage answer when the defense protects the goal line inside.",
+    "condition": "Stay in its scoring-area role; no illegal rub or blind throw."
+   },
+   {
+    "line": 57,
+    "call": "12 Ace, Flea Flicker, MAX",
+    "reason": "A conditional reward only if repeated Power has pulled a safety downhill.",
+    "condition": "Jones-Drew and Cousins use the retained exchange, MAX protection and covered-shot exit. No trigger or unsettled exchange means no call."
+   }
+  ],
+  "responses": [
+   {
+    "line": 91,
+    "reason": "Fit Greene first, then match the verticals without declaring the final shell early.",
+    "counter": "Nickel Even if they spread the run surface and the fitter has a clean check."
+   },
+   {
+    "line": 92,
+    "reason": "Run remains possible; protect the seam and curl while retaining force.",
+    "counter": "Under if their big personnel are still a credible run threat."
+   },
+   {
+    "line": 93,
+    "reason": "Defend the line to gain and the boot or quick crosser off the run.",
+    "counter": "No loose edge and no dime against a credible downhill run."
+   },
+   {
+    "line": 94,
+    "reason": "Disrupt inside releases to Wright and Walker while keeping the sticks in view.",
+    "counter": "If bunch defeats the exchange, simplify to 3 Match."
+   },
+   {
+    "line": 95,
+    "reason": "Keep six defensive backs on the field against an actual pass picture; four rush with contained lanes.",
+    "counter": "Retain Nickel if substitution or communication is not clean; screen and draw fit stays owned."
+   },
+   {
+    "line": 96,
+    "reason": "Challenge the run surface with a four-man rush, avoid an easy escape outside.",
+    "counter": "Do not spend a risky fifth rusher just for field position."
+   },
+   {
+    "line": 97,
+    "reason": "Match Walker's seam and Wright's break without surrendering the perimeter fit.",
+    "counter": "Under if the tight ends attach and run becomes the primary threat."
+   },
+   {
+    "line": 98,
+    "reason": "Compress the windows and keep the immediate flat and quarterback exit covered.",
+    "counter": "Remove disguise if communication slows near the goal line."
+   },
+   {
+    "line": 99,
+    "reason": "Stop Greene's interior track with force and a designated extra fitter.",
+    "counter": "Check every eligible tight end before treating it as a pure run."
+   },
+   {
+    "line": 100,
+    "reason": "Protect deep and sideline access while contesting the sticks.",
+    "counter": "Stay in current personnel if tempo prevents a legal change."
+   },
+   {
+    "line": 101,
+    "reason": "Make Greene earn successive clean fits; tackle inbounds.",
+    "counter": "Nickel if they throw from spread spacing."
+   },
+   {
+    "line": 102,
+    "reason": "Keep the ball in front and tackle inbounds without gifting free first downs.",
+    "counter": "If they reach field-goal range in a tight game, contest routes at the sticks."
+   },
+   {
+    "line": 103,
+    "reason": "Give Bouye an inside leverage plan and a declared cross/vertical exchange.",
+    "counter": "Do not force the nickel job if Wright moves outside; reset the count."
+   },
+   {
+    "line": 104,
+    "reason": "Count all five receivers and challenge the protection without losing the hot lane.",
+    "counter": "Keep Nickel if tempo prevents dime, and call the simple current-personnel match."
+   },
+   {
+    "line": 105,
+    "reason": "Exchange the field edge for Bouye as fourth rusher and cover the quick answer.",
+    "counter": "Return to base four if the edge drop, slot exchange or run fit fails."
+   },
+   {
+    "line": 106,
+    "reason": "Change the fourth rusher without losing boundary contain or the hot/curl defender.",
+    "counter": "Return to base four if Walker or the back becomes unowned."
+   },
+   {
+    "line": 107,
+    "reason": "Use the taught five-man counter only when the immediate throw and coverage behind it are named.",
+    "counter": "One failed hot coverage or missed contain ends the call."
+   }
+  ],
+  "practice": [
+   {
+    "line": 129,
+    "priority": "Secure the ball and define the read",
+    "who": "Bates, Spencer, Cousins, Jones-Drew, Anderson, receivers",
+    "situation": "Pitched pressure looks, catch-to-tuck, mesh point, red zone and sudden change after four Week 5 turnovers",
+    "ready": "Correct pressure declaration, no unprotected exchange, secure finish and the covered-throw exit on an unprompted rep"
+   },
+   {
+    "line": 130,
+    "priority": "Outside Zone to Boot and TE Delay",
+    "who": "Tice, Yarno, Zernhelt, Lewis, Kelce, Jones-Drew, Cousins",
+    "situation": "Same 12-personnel look against chase, sit and rotation; high red zone",
+    "ready": "Run track and blocking surface remain credible, edge protection and TE release are correct with either defender reaction"
+   },
+   {
+    "line": 131,
+    "priority": "Power, Counter, Power Pass and conditional Flea Flicker",
+    "who": "Tice, Yarno, Spencer, Bates, Jones-Drew, Cousins, line",
+    "situation": "Pollard inserting against Power, downhill linebackers and a safety who stays deep",
+    "ready": "Puller fits, clean exchange, MAX count, shot trigger and covered-shot exit are all identified; no trigger means the gadget is withheld"
+   },
+   {
+    "line": 132,
+    "priority": "Third down, tight-end roles and protection",
+    "who": "Bates, Drake, Zernhelt, Cousins, Kelce, Lewis, Adams, Thielen, Hawkins, Nicks in X relief",
+    "situation": "Bunch Mesh against man/zone, SCAT hot, SOLID Y-Cross, Dagger against an extra threat",
+    "ready": "Route spacing, sticks, hot throw and Kelce/Lewis jobs survive a second look without a reminder; Nicks owns only his rehearsed relief assignment"
+   },
+   {
+    "line": 133,
+    "priority": "Greene fits and Locker contain",
+    "who": "Crennel, Pleasant, Bush, first front and linebackers",
+    "situation": "Under and Nickel Even versus inside run, cutback, puller, boot and quarterback escape",
+    "ready": "Force, cutback, extra fitter and all four rush lanes remain assigned through a changed formation"
+   },
+   {
+    "line": 134,
+    "priority": "Wright, Walker, dime and replacement rush",
+    "who": "Crennel, Oden, Pleasant, Bush, Bouye, Rambo, Prosinski, Phillips, eligible Trawick",
+    "situation": "Motion, 3x1, Empty, hot throw and the two Replace calls",
+    "ready": "One coverage declaration, correct nickel/slot exchange and four actual rushers; Prosinski takes Trawick's safety repetitions until an exam permits his return"
+   },
+   {
+    "line": 135,
+    "priority": "Kicking operation and emergency replacements",
+    "who": "Westhoff, Hawkins, Hurns, Davis, Phillips, Prosinski, Scobee, Anger, Kreiter",
+    "situation": "Punt vice, kickoff fits, field goal, hands, onside and missing-safety coverage",
+    "ready": "Every dressed player has one named job and the unit resets legally after a late scratch"
+   }
+  ],
+  "special_plays": [
+   {
+    "call": "12 Ace, Flea Flicker, MAX",
+    "reason": ""
+   },
+   {
+    "call": "12 Wing, TE Delay",
+    "reason": ""
+   },
+   {
+    "call": "12 Trey, TE Delay",
+    "reason": ""
+   }
+  ],
+  "not_available": [],
+  "known": "2014-10-12"
+ },
+ "event": {
+  "id": "2014-10-12-week-6-game-plan-set",
+  "date": "2014-10-12",
+  "season": 2014,
+  "status": "closed",
+  "summary": "Stone set his Week 6 Game Plan at Tennessee: the call sheet frozen with 21 offensive calls and 17 defensive calls, fourth downs his standing rule, two-point tries his standing rule, kickoffs his standing rule; the 7 inactives Jordan Poyer, Malcolm Butler, Jonathan Grimes, Corey Linsley, Kasim Edebali, Taylor Gabriel, Gator Hoskins; no depth chart change.",
+  "follows": "2014-10-12-week-6-game-day"
+ }
+}

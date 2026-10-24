@@ -164,8 +164,6 @@ The order in each group remains Stone's current order. Reserve assignments that 
 
 ## Inactives
 
-Week 6 at Tennessee, October 12, 2014: not yet set. Stone selects the eligible inactives before the game.
-
 The prior game's inactives, for reference:
 
 | Player | Position |
