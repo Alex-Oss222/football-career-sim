@@ -477,6 +477,34 @@ class FlowTests(ByeCopy):
         self.assertEqual({p: digest(p) for p in earlier_byes}, earlier_byes)
 
 
+class ResponsesIndexTests(ByeCopy):
+    def test_the_index_says_whether_my_responses_waits_on_him(self):
+        """The bye's My Responses row is waiting on him while a question of an event raised in the bye
+        is open, and no longer once it is settled (rehearsal r5: it said "Open" for good)."""
+        from scripts import raise_event, render_bye_week
+        self.write_pages()
+        se.set_clock(self.root, "%s, after the 10 a.m. ET record of the Week %d bye (a test record)" % (
+            se.long_date(self.first), BYE))
+        record = se.injury_replacement(self.root, "test-roster-question", open_events.et(self.first, 9), self.after,
+                                       short=False)
+        upload = self.root.parent / "test_roster_question.json"
+        upload.write_text(json.dumps(record), encoding="utf-8")
+        self.assertEqual(quiet(raise_event.main, ["--season", str(SEASON), "--file", str(upload),
+                                                  "--root", str(self.root)])[0], 0)
+        self.write_pages()
+        bye = self.bye()
+        self.assertTrue(bye.pages.responses.is_file())
+        row = lambda: next(l for l in bye.pages.readme.read_text(encoding="utf-8").splitlines()
+                           if l.startswith("| [My Responses]"))
+        self.assertTrue(row().endswith("| Waiting on you |"), row())
+        item = open_events.get(SEASON, record["id"], self.root)["queue_item"]
+        se.settle(self.root, item, "RESOLVED", {"date": self.first.isoformat(), "by": "user",
+                                                "summary": "Answered on My Responses (test data)."})
+        render_bye_week.write_index(self.root)
+        self.assertTrue(row().endswith("| No answer waiting |"), row())
+        self.assertEqual(render_bye_week.check(self.root), [])
+
+
 class OpeningTests(ByeCopy):
     def test_the_week_6_to_10_openings_are_unchanged_apart_from_the_practice_item(self):
         import unittest.mock
