@@ -172,6 +172,82 @@ class GameDayChangeTests(OpenWeek):
         done = subprocess.run([sys.executable, "-c", code], cwd=self.root, capture_output=True, text=True)
         return "" if done.returncode == 0 else done.stderr.strip().splitlines()[-1]
 
+    def answer(self, heading, text):
+        """His answer written on the week's My Responses page, in the block under ``heading``."""
+        from scripts import record_practice_week as rpw
+        page = self.pages.responses
+        block = rpw.read_block(self.root, SEASON, {"week": self.week}, heading)
+        lines = block.text.split("\n")
+        start = lines.index("**My answer:**" if "**My answer:**" in lines else
+                            next(l for l in lines if l.startswith("**My answer:**")))
+        end = next(n for n in range(start + 1, len(lines)) if lines[n].startswith("**My football"))
+        new = "\n".join(lines[:start] + ["**My answer:**"] + text.split("\n") + [""] + lines[end:])
+        page.write_text(page.read_text(encoding="utf-8").replace(block.text, new, 1), encoding="utf-8")
+
+    def test_his_block_on_my_responses_moves_the_inactives_and_is_frozen(self):
+        from runtime import responses
+        from scripts import change_game_day as cgd, record_practice_week as rpw
+        self.applied_week()
+        player = self.dressed_player()
+        self.set_availability([player], self.out_note())
+        item, _ = cgd.open_item(self.root, SEASON, self.week)
+        heading = "Depth and inactives change"
+        frozen = {p: digest(p) for p in (self.pages.call_sheet, self.pages.applied, self.pages.plan)}
+        args = [str(self.week), "--season", str(SEASON), "--root", str(self.root)]
+        # Unanswered: the change stays open, --check says so and the apply writes nothing.
+        code, out = quiet(cgd.main, args + ["--check"])
+        self.assertEqual(code, 1)
+        self.assertIn("unanswered", out)
+        problems, notes, written = cgd.apply_answers(self.root, SEASON, self.week, rebuild=False)
+        self.assertEqual((problems, written), ([], []))
+        self.assertTrue(notes and "still open" in notes[0], notes)
+        before = json.loads(self.pages.inactives.read_text(encoding="utf-8"))["players"]
+        # An answer that dresses the player who is out, or a line the change does not take, is refused.
+        for text, words in (("Inactives: %s" % ", ".join(before), "%s is out" % player),
+                            ("Bring up a linebacker", "is not a line the change takes")):
+            with self.subTest(words=words):
+                self.answer(heading, text)
+                page = self.pages.responses.read_bytes()
+                problems, _, written = cgd.apply_answers(self.root, SEASON, self.week, rebuild=False)
+                self.assertTrue(any(words in p for p in problems), problems)
+                self.assertEqual((written, self.pages.responses.read_bytes()), ([], page))
+        # His change, in the Game Plan's own line form: the player who is out sits in place of the last
+        # healthy inactive.
+        after = [player if p == before[-1] else p for p in before]
+        self.answer(heading, "Inactives: %s\nDepth/role changes: No change" % ", ".join(after))
+        code, out = quiet(cgd.main, args + ["--check"])
+        self.assertEqual(code, 1)
+        self.assertIn("ready to apply", out)
+        problems, notes, written = cgd.apply_answers(self.root, SEASON, self.week, rebuild=False)
+        self.assertEqual(problems, [])
+        self.assertEqual(json.loads(self.pages.inactives.read_text(encoding="utf-8"))["players"], after)
+        self.assertEqual({p: digest(p) for p in frozen}, frozen)
+        block = rpw.read_block(self.root, SEASON, {"week": self.week}, heading)
+        from runtime.player_bios import master_date
+        on = master_date(self.root)
+        self.assertEqual(block.fields["Date answered"], "%s %d, %d" % (on.strftime("%B"), on.day, on.year))
+        binding = rpw.reserved_binding(self.root, SEASON, {"week": self.week}, heading)
+        change = json.loads(self.pages.game_day_changes.read_text(encoding="utf-8"))["changes"][-1]
+        self.assertEqual(binding["applied"]["sha256"], block.sha256)
+        self.assertEqual(change["block_sha256"], block.sha256)
+        self.assertEqual((binding["applied"]["substance"]["kind"], binding["applied"]["substance"]["inactives"]),
+                         (cgd.CHANGE_KIND, after))
+        self.assertEqual(responses.validation_errors(self.root), [])
+        self.assertEqual(cgd.validation_errors(self.root), [])
+        self.assertEqual(quiet(cgd.main, args + ["--check"])[0], 0)
+        self.assertEqual(cgd.apply_answers(self.root, SEASON, self.week, rebuild=False)[2], [])
+        # An upload that changes the frozen block is refused, and nothing is written.
+        upload = self.root / "upload.md"
+        upload.write_text(self.pages.responses.read_text(encoding="utf-8").replace(after[-1], before[-1]),
+                          encoding="utf-8")
+        page = self.pages.responses.read_bytes()
+        code, out = quiet(cgd.main, args + ["--file", str(upload)])
+        self.assertEqual(code, 1)
+        self.assertIn("stays as written", out)
+        self.assertEqual(self.pages.responses.read_bytes(), page)
+        # The week's inputs build from the changed chart.
+        self.assertEqual(self.build_errors(), "")
+
     def test_a_change_is_refused_once_built_paused_or_played(self):
         from scripts import change_game_day as cgd
         self.applied_week()
