@@ -399,9 +399,12 @@ class PageTests(unittest.TestCase):
         self.assertGreater(len(exact), 20)
         for figure in exact:
             self.assertIn(figure, text, figure)
-        # "about $12.63M to $13.30M" with the carryover estimate: the page gives the exact range.
-        low, high = re.search(r"\$([\d,]+) to \$([\d,]+) \|\n\n## On the reserve lists", text).groups()
-        self.assertEqual(["%.2f" % (int(v.replace(",", "")) / 1e6) for v in (low, high)], ["12.63", "13.30"])
+        # "about $12.63M to $13.30M" with the carryover estimate: the estimate is approximate, so the page
+        # gives it and the range built on it in the worksheet's rounded form, never to the dollar.
+        self.assertIn("about $12.63M to $13.30M with it", section)
+        self.assertIn("(about $5.33 million to $6.00 million), not certified | about $12.63 million to $13.30 million |",
+                      text)
+        self.assertNotIn("$12,631,314", text)
 
     def test_the_contract_page_lists_every_player_and_the_update_log(self):
         text = self.built[self.paths["contracts"]]

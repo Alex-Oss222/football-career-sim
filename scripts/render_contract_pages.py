@@ -62,6 +62,13 @@ def money(value):
     return "" if value is None else ("-$%s" % format(abs(value), ",") if value < 0 else "$%s" % format(value, ","))
 
 
+def about_millions(value):
+    """An approximate amount in the rounded form its source gives it ("about $5.33M"), written out
+    as "$5.33 million" for the page."""
+    from decimal import ROUND_HALF_UP, Decimal
+    return "$%s million" % (Decimal(value) / Decimal(1000000)).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)
+
+
 def change(value):
     return "No change" if not value else ("+" + money(value) if value > 0 else money(value))
 
@@ -351,9 +358,12 @@ def position_rows(pos, data):
             y, money(pos.cap)), money(pos.difference())])
         estimate = data["team_years"][y].get("carryover_working_estimate")
         if estimate:
-            rows.append(["With the carryover estimate from the year before (%s to %s), not certified" % (
-                money(estimate["low"]), money(estimate["high"])),
-                "%s to %s" % (money(pos.difference() + estimate["low"]), money(pos.difference() + estimate["high"]))])
+            # The estimate is approximate ("about" in its basis), so it and the range built on it are
+            # given in the worksheet's rounded form, never to the dollar.
+            rows.append(["With the carryover estimate from the year before (about %s to %s), not certified" % (
+                about_millions(estimate["low"]), about_millions(estimate["high"])),
+                "about %s to %s" % (about_millions(pos.difference() + estimate["low"]),
+                                    about_millions(pos.difference() + estimate["high"]))])
     return rows
 
 

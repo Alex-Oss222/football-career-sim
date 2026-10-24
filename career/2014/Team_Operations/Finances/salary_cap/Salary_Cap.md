@@ -16,7 +16,7 @@ As of September 8, 2014, the latest contract change. Whole US dollars. The 2014 
 | Offseason workout charge | $504,000 |
 | Working total | $125,698,686 |
 | Difference against the 2014 league cap of $133,000,000, before the carryover estimate and reserves | $7,301,314 |
-| With the carryover estimate from the year before ($5,330,000 to $6,000,000), not certified | $12,631,314 to $13,301,314 |
+| With the carryover estimate from the year before (about $5.33 million to $6.00 million), not certified | about $12.63 million to $13.30 million |
 
 ## On the reserve lists
 
