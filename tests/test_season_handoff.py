@@ -5,7 +5,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from runtime.season_layout import COACH_RECORDS
+from runtime.season_layout import COACH_RECORDS, PLAYER_CONTRACTS
 from runtime.seasons import SeasonPaths
 import support_roster_record
 from scripts.season_handoff import (
@@ -33,7 +33,7 @@ class HandoffTests(unittest.TestCase):
                  'player_contracts':'contracts.md','contract_status':'status.md','cap':'cap.md',
                  'development':'development.md','decisions':'decisions.md',
                  'calendar':'calendar_source.md','record':'record_source.md','player_ages':'ages.md',
-                 'player_finances':'finance.json','organization_finances':'organization.md',
+                 'organization_finances':'organization.md',
                  'draft_assets':'draft_assets.json','medical_and_roles':'medical.md','checkpoint':'checkpoint.md'}
         sources={}
         for key,name in files.items():
@@ -49,6 +49,11 @@ class HandoffTests(unittest.TestCase):
         coach.parent.mkdir(parents=True, exist_ok=True)
         coach.write_text('{"name": "Sample Coach"}')
         sources['staff'] = COACH_RECORDS
+        # The player finances carry as the contract records folder (runtime/player_contracts.py).
+        contracts = root/PLAYER_CONTRACTS/'sample.json'
+        contracts.parent.mkdir(parents=True, exist_ok=True)
+        contracts.write_text('{"name": "Sample"}')
+        sources['player_finances'] = PLAYER_CONTRACTS
         target=root/'career'/str(year+1)
         target.mkdir(parents=True,exist_ok=True)
         SeasonPaths(year+1, root).calendar.write_text('Synthetic historical-calendar test fixture')

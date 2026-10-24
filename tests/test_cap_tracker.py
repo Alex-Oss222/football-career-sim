@@ -11,7 +11,13 @@ from scripts.render_jaguars_cap_tracker import (
 
 class CapTrackerTests(unittest.TestCase):
     def setUp(self):
+        # The club-level contract inputs with the player rows and their date from the contract
+        # records, as the inputs held them before the records became their one owner (render reads
+        # the records itself, so it is given the inputs alone).
+        from runtime import player_contracts
         self.data = json.loads((ROOT / INPUT).read_text())
+        self.data['players'] = player_contracts.rows(ROOT)
+        self.data['as_of'] = player_contracts.as_of(ROOT)
 
     def player(self, name):
         return next(p for p in self.data['players'] if p['name'] == name)
@@ -197,9 +203,9 @@ class CapTrackerTests(unittest.TestCase):
         self.assertEqual(working_charge(self.player('Jonathan Grimes')['years']['2014']),570000)
         self.assertTrue(all(r['status']!='term_unknown' for p in self.data['players'] for r in p['years'].values()))
 
-    def test_the_views_are_built_from_the_contract_records_not_the_players_block(self):
-        # The players block is a built copy of the records' rows (rebuild step 5); an edit to the copy
-        # alone changes no cap view, and the contract records' validation reports the stale copy.
+    def test_the_views_are_built_from_the_contract_records_not_a_copy(self):
+        # The contract records own the player rows (rebuild step 5); an edit to a copy of the rows
+        # changes no cap view.
         before=render(copy.deepcopy(self.data))
         row=self.player('Jeremy Mincey')['years']['2014']
         row['base']+=1000

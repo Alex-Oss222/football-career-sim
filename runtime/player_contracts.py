@@ -36,12 +36,11 @@ kind allows (ENTRY_KEYS). A date is as precise as its source (YYYY-MM-DD, YYYY-M
   (``status``, ``availability``, ``plan``, ``credited_seasons``, ``accrued_seasons``).
 
 A labelled reconstruction stays labelled in its own words; an unknown figure is not stored, never
-filled. ``rows(root, on)`` builds the player rows the cap views and the player pages read, in the
-shape the contract inputs' ``players`` block has always had; until the readers switch to
-``rows()``, that block is a built copy (``write_players_block``) that nobody edits by hand, and
-``errors`` fails when it differs. The club-level facts (league caps, team years, draft picks, the
-financial policy, the year span, the in-season terms method and the three dead-money rows that
-belong to no player record) stay in the contract inputs.
+filled. ``rows(root, on)`` builds the player rows the cap views, the player pages and the season
+handoff read, in the shape the contract inputs' ``players`` block had before the records replaced
+it (the block is gone: these records are the one owner). The club-level facts (league caps, team
+years, draft picks, the financial policy, the year span, the in-season terms method and the three
+dead-money rows that belong to no player record) stay in the contract inputs.
 
 The in-season terms method (``in_season_terms`` in the contract inputs) is stored once and its
 terms are computed, never typed: the league minimum by credited seasons, the weekly proration over
@@ -132,8 +131,8 @@ def load_all(root=ROOT):
 
 
 def inputs(root=ROOT):
-    """The contract inputs (data/finances/financial_inputs.json): the club-level facts, the in-season
-    terms method and, until the readers switch, the built ``players`` block."""
+    """The contract inputs (data/finances/financial_inputs.json): the club-level facts and the
+    in-season terms method."""
     return json.loads((Path(root) / PLAYER_FINANCES).read_text(encoding="utf-8"))
 
 
@@ -363,29 +362,6 @@ def tracker_inputs(data, root=ROOT, on=None):
     return full
 
 
-def players_block(root=ROOT):
-    """The contract inputs with their built ``players`` block and date (the text the inputs file
-    should hold)."""
-    data = inputs(root)
-    data["as_of"] = as_of(root) or data.get("as_of")
-    # A row whose content is unchanged keeps the stored dict (its key order), so a rebuild after one
-    # new entry changes only that player's row in the file.
-    stored = {r.get("name"): r for r in data.get("players") or ()}
-    data["players"] = [stored[r["name"]] if stored.get(r["name"]) == r else r for r in rows(root, years=horizon(data))]
-    return json.dumps(data, indent=1, ensure_ascii=False) + "\n"
-
-
-def write_players_block(root=ROOT):
-    """Rebuild the ``players`` block (every writer of a contract entry calls this in the same commit).
-    Returns True when the file changed."""
-    path = Path(root) / PLAYER_FINANCES
-    text = players_block(root)
-    if path.read_text(encoding="utf-8") == text:
-        return False
-    path.write_text(text, encoding="utf-8")
-    return True
-
-
 # ------------------------------------------------------------------ the in-season terms method
 def method(root=ROOT, data=None):
     """The stored in-season terms method of the contract inputs."""
@@ -545,8 +521,8 @@ def add_entry(root, player_id, entry, record=None):
     new player's record is created from ``record`` ({position, roster_position} and an optional
     draft_pick), its name taken from his permanent player record and its line the next in the
     register. Refuses an entry that breaks the schema, comes before the record's latest entry, or
-    cites a source that does not resolve. The caller rebuilds the players block in the same commit
-    (``write_players_block``). Returns the record as written."""
+    cites a source that does not resolve. The caller rebuilds the contract pages in the same commit
+    (scripts/render_contract_pages.py). Returns the record as written."""
     root = Path(root)
     problems = entry_errors(entry, player_id)
     if problems:
@@ -587,7 +563,8 @@ def add_entries(root, player_id, entries, record=None):
     judged on the whole set. One entry is ``add_entry``. A promotion's pair (the practice-squad
     contract ended and the new contract signed the same day) goes in as one write, because its
     ending is valid only with its new contract beside it; it needs his existing record. The caller
-    rebuilds the players block in the same commit (``write_players_block``). Returns the record."""
+    rebuilds the contract pages in the same commit (scripts/render_contract_pages.py). Returns the
+    record."""
     entries = list(entries)
     if len(entries) == 1:
         return add_entry(root, player_id, entries[0], record)
@@ -762,8 +739,8 @@ def errors(root=ROOT):
     """Every problem with the contract records (scripts/validate_repository.py wires this): each
     record's schema, dates, sources, terms and charges; one open contract for every player the
     roster record lists, and only for them; no rookie contract amended before it may be
-    renegotiated; the in-season method's terms; the dead-money lines; no entry after the master
-    date; and the inputs' players block and date equal to ``rows()``."""
+    renegotiated; the in-season method's terms; the dead-money lines; and no entry after the master
+    date."""
     root = Path(root)
     out = []
     try:
@@ -809,10 +786,6 @@ def errors(root=ROOT):
             for e in record["entries"]:
                 if day(e["date"]) > master:
                     out.append("%s: an entry dated %s is after the master date" % (rid, e["date"]))
-    if data.get("players") != rows(root, records=records, years=horizon(data)):
-        out.append("The players block of %s differs from the contract records; rebuild it" % PLAYER_FINANCES)
-    if data.get("as_of") != as_of(root, records):
-        out.append("The date of %s differs from the latest contract entry; rebuild it" % PLAYER_FINANCES)
     return out
 
 

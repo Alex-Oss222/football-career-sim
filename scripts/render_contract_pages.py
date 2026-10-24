@@ -19,13 +19,10 @@ roster record's lists. The pages, under the season's Team_Operations/Finances fo
   none);
 - the player_contracts and salary_cap folder READMEs, the current pages first and the earlier
   pages (contracts.md, contract_status.md, cap_worksheet.md) listed as history: those keep their
-  bytes, so every inbound anchor keeps resolving;
-- and the contract inputs' ``players`` block and date (data/finances/financial_inputs.json), a
-  built copy of ``rows()`` until the player page and the season handoff read the records.
+  bytes, so every inbound anchor keeps resolving.
 
 Write mode writes only what differs from its build and refuses a page that would break the
-clean-page rule. ``--check`` writes nothing and exits 1 when a page or the block is missing,
-stale or unclean.
+clean-page rule. ``--check`` writes nothing and exits 1 when a page is missing, stale or unclean.
 """
 from __future__ import annotations
 
@@ -40,7 +37,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from runtime import player_contracts as pc  # noqa: E402
-from runtime.season_layout import PAGE_HISTORY, PLAYER_FINANCES, repository_relative  # noqa: E402
+from runtime.season_layout import PAGE_HISTORY, repository_relative  # noqa: E402
 from runtime.seasons import CLEAN_SEASON, SeasonPaths, active_season  # noqa: E402
 
 DETAILS = "career/finances/player_contracts/contract_details.md"
@@ -552,8 +549,7 @@ def render(root=ROOT, year=None):
            paths["cap"]: cap_page(records, data, year, root, paths),
            paths["changes"]: changes_page(records, data, year, root, paths),
            paths["contracts_readme"]: contracts_readme(year, paths),
-           paths["cap_readme"]: cap_readme(year, paths),
-           PLAYER_FINANCES: pc.players_block(root)}
+           paths["cap_readme"]: cap_readme(year, paths)}
     return out
 
 
@@ -573,7 +569,7 @@ def check(root=ROOT, year=None):
     for rel, text in built.items():
         path = root / rel
         if not path.is_file() or path.read_text(encoding="utf-8") != text:
-            out.append("Contract page or players block missing or stale: %s; run the contract page builder" % rel)
+            out.append("Contract page missing or stale: %s; run the contract page builder" % rel)
         out += problems(root, rel, text)
     return out
 

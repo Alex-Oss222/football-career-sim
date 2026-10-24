@@ -55,7 +55,11 @@ class RegistryTests(unittest.TestCase):
             brief = re.sub(r"\s*\(.*\)$", "", row[1])
             self.assertIn((row[0], brief, row[2], row[3]), named)
         self.assertEqual(len(rows), len(decisions.REGISTRY))
-        self.assertEqual([d.kind for d in decisions.REGISTRY if d.implemented], ["game_week"])
+        self.assertEqual([d.kind for d in decisions.REGISTRY if d.implemented], ["game_week", "bye_week"])
+        # Step 5 built the injury replacement, trade talks (short of executing a trade) and the news of
+        # another club's head-coach change; the step 6 events wait.
+        self.assertEqual([e.kind for e in decisions.EVENTS + decisions.NEWS if e.implemented],
+                         ["injury_replacement", "trade_talks", "head_coach_change"])
         # The season's own page, apart from any week's My Responses page.
         self.assertEqual(decisions.BY_KIND["season_end"].page, "My Season Response")
         self.assertNotIn(decisions.RESPONSES, [d.page for d in decisions.REGISTRY])

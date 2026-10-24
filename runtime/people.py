@@ -57,7 +57,7 @@ OWNERS = {
     "number_rule": "the number rule of the league player cards (runtime/player_cards.py)",
     "game_records": "the closed game records, read through the statbook rules (runtime/player_cards.py)",
     "roster": "the current Jacksonville roster (position and status)",
-    "player_contracts": "the Jacksonville contract inputs (salary by year)",
+    "player_contracts": "the permanent player contract records (data/people/contracts, runtime/player_contracts.rows)",
     "award_results": "the award results of each season's awards data (runtime/player_cards.award_entries)",
     "game_depth_chart": "Jacksonville's game depth chart and Stone's dated role decisions on the working chart "
                         "(runtime/assignments.py)",

@@ -252,7 +252,7 @@ class DecisionTests(Case):
         self.assertTrue(control.controlled(registry[self.corner]["gsis_id"], self.monday))
         from scripts.check_week_input_exclusivity import controlled_players_from_roster
         self.assertIn(thomas, controlled_players_from_roster(self.paths.roster))
-        # The contract records, the players block and the chart with its log.
+        # The contract records and the chart with its log.
         self.assertEqual(player_contracts.errors(self.root), [])
         current = player_contracts.contract_on(player_contracts.load(people.slugify(thomas), self.root))
         self.assertEqual(current["start"]["method"]["name"], "promotion")

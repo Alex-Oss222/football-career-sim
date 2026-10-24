@@ -141,6 +141,23 @@ class WeekClosePagesTests(unittest.TestCase):
         roster.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
         return played
 
+    def record_practice(self):
+        """The week's practice and rest record, as the practice-week commit writes it once the master
+        date is at game day (docs/run_week.md, step 5): the schedule Stone's standing practice
+        instruction sets for the week, held as set, its participation not recorded session by session
+        (test data only)."""
+        from runtime import decisions, practices
+        from scripts import record_practice_week
+        schedule, why = record_practice_week.applied_schedule(self.root, SEASON, WEEK)
+        self.assertIsNotNone(schedule, why)
+        page = decisions.week_pages(SEASON, WEEK, self.root).briefing
+        held = {"source": {"page": page.relative_to(self.root).as_posix()},
+                "sessions": [dict(s, participation_recorded=False) for s in schedule["sessions"]],
+                "days_off": schedule["days_off"]}
+        record = record_practice_week.held_record(SEASON, WEEK, held, schedule, self.root)
+        self.assertEqual(practices.record_errors(record, self.root, schedule=schedule), [])
+        practices.write(record, self.root)
+
     def write_report(self, receipt):
         """The week's Game Report in the Game Report template's layout (tests/test_game_report.py
         template_report): its sections, the event line, the header, line score and record of the game,
@@ -200,6 +217,7 @@ class WeekClosePagesTests(unittest.TestCase):
         root, paths = self.root, self.paths
         receipt = self.fake_week()
         self.played = self.move_clock(receipt)
+        self.record_practice()
         report = self.write_report(receipt)
         self.settle_week(report)
         snapshot = hashlib.sha256((root / "state/05_Current_Season_State.md").read_bytes()).hexdigest()

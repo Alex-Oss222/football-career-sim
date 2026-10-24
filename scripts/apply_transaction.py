@@ -716,7 +716,6 @@ def apply(root, season, tid, client=None, check=False, rebuild=True, out=print):
         for rid in dict.fromkeys(rid for rid, _, _, _ in entries):
             add_entries(root, rid, [e for r, e, _, _ in entries if r == rid],
                         next((f for r, _, f, _ in entries if r == rid and f), None))
-        player_contracts.write_players_block(root)
         write_charts(plan.paths, lambda chart, working: roster_move(chart, leaving, joining))
         log_change(plan.paths, {
             "date": tx.long_date(plan.effective), "recorded": plan.effective.isoformat(),

@@ -14,9 +14,11 @@ on that week's or phase's one My Responses page, and each resolved event gets
 its own dated result page in its owner's folder, linked from the week or phase
 index and never pasted into the weekly report. News decided outside
 Jacksonville (another club's head-coach change, ``NEWS``) reaches him only as
-FOR YOUR INFORMATION and gets its dated result page the same way. Only the game
-week is built so far (``implemented``); the build steps that fill in the rest
-are named beside them. Nothing here reads or writes a record: the registries
+FOR YOUR INFORMATION and gets its dated result page the same way. What is
+built so far is marked ``implemented`` (the game week in step 4; the bye week,
+the injury replacement, trade talks short of executing a trade, and another
+club's head-coach change in step 5); the build steps that fill in the rest are
+named beside them. Nothing here reads or writes a record: the registries
 and the page paths are data (``result_file`` only looks whether a file name is
 taken), and opening a page never moves time or creates an event.
 
@@ -67,7 +69,7 @@ REGISTRY = (
     Decision("game_week", "Every game week", "Game Week Briefing", "Game Plan", "Game Report", "week",
              "The coaching staff: the coordinators, with the medical update and the pro scouting report", 4, True),
     Decision("bye_week", "Bye week", "Bye Week Review", "My Adjustments", "Bye Week Report", "week",
-             "The coaching staff", 5),
+             "The coaching staff", 5, True),
     # The season's own page, apart from any week's My Responses page (the user's answer of October 20,
     # 2026: "Keep them separate, and give the season one a different name").
     Decision("season_end", "Season ends", "Season Review Briefing", "My Season Response", "Club Decision", "season_review",
@@ -128,7 +130,10 @@ OWNERS = {
 EVENTS = (
     Event("injury_replacement", "Injury replacement in season", "Transaction", "roster",
           "The general manager and the medical staff", 5, implemented=True),
-    Event("trade_talks", "Trade talks", "Trade Result", "trades", "The general manager", 5),
+    # Built for receiving, answering and every outcome but execution: scripts/resolve_event.py refuses
+    # "executed" (and "accepted") on a trade call, the agreed terms stay on the event and the
+    # execution is put to the user (docs/rebuild_plan.md, step 5, "Not built").
+    Event("trade_talks", "Trade talks", "Trade Result", "trades", "The general manager", 5, implemented=True),
     Event("extension", "Stone's contract extension", "New Contract or Unchanged", "stone", "The club", 6),
     # Shad Khan alone answers another club's request (Document 3 row 1a); Stone is not open to job offers,
     # so the call reaches him as news, and the result is Khan's decision (no permission is an interview).
@@ -148,7 +153,7 @@ EVENT_KIND = {e.kind: e for e in EVENTS}
 # event, and never an answer of his.
 NEWS = (
     Event("head_coach_change", "Another club changes its head coach in season", "Head Coach Change",
-          "league_coaches", "The club", 5),
+          "league_coaches", "The club", 5, implemented=True),
 )
 NEWS_KIND = {e.kind: e for e in NEWS}
 # The week's or phase's one answer page for the events inserted in its brief.

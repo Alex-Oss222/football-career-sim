@@ -52,7 +52,7 @@
     "player_ages": "career/2014/Team_Operations/Team/Roster/player_ages.md",
     "player_contracts": "career/2014/Team_Operations/Finances/player_contracts/contracts.md",
     "contract_status": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
-    "player_finances": "data/finances/financial_inputs.json",
+    "player_finances": "data/people/contracts",
     "organization_finances": "career/finances/coaching_and_organization/coaching_payroll.md",
     "draft_assets": "data/2014/Draft/pick_ownership.json",
     "medical_and_roles": "state/04_Roster_and_Staff_Register.md",

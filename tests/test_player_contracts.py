@@ -127,12 +127,12 @@ class ConversionTests(unittest.TestCase):
         basis = {(e.get("basis") or {}).get("source") for r in records.values() for e in r["entries"]}
         self.assertIn("library/2014_jaguars_contract_completion.md", basis)
 
-    def test_the_players_block_is_a_built_copy_of_rows(self):
+    def test_the_inputs_hold_only_the_club_level_facts(self):
+        # The records are the one owner of the players' contracts: the inputs keep no copy of them.
         data = pc.inputs(ROOT)
-        self.assertEqual(data["players"], pc.rows(ROOT))
-        self.assertEqual(data["as_of"], pc.as_of(ROOT))
-        self.assertNotIn("amendments", data)
-        self.assertEqual(pc.players_block(ROOT), (ROOT / PLAYER_FINANCES).read_text(encoding="utf-8"))
+        for key in ("players", "as_of", "amendments"):
+            self.assertNotIn(key, data)
+        self.assertEqual(json.loads((ROOT / PLAYER_FINANCES).read_text(encoding="utf-8")), data)
 
     def test_the_records_validate(self):
         self.assertEqual(pc.errors(ROOT), [])
@@ -258,7 +258,7 @@ class ValidationTests(unittest.TestCase):
 
 
 class WriterTests(unittest.TestCase):
-    """add_entry, the players block and the pages in a throwaway copy (test data only)."""
+    """add_entry and the pages in a throwaway copy (test data only)."""
 
     @classmethod
     def setUpClass(cls):
@@ -274,24 +274,24 @@ class WriterTests(unittest.TestCase):
         from runtime.player_bios import master_date
         return master_date(self.root)
 
-    def test_an_entry_without_the_block_rebuilt_fails_and_with_it_passes(self):
+    def test_an_entry_leaves_the_pages_stale_until_they_are_rebuilt(self):
         paths = pages.page_paths(YEAR, self.root)
         record = pc.record_path(self.root, "roy_miller").relative_to(self.root).as_posix()
         self.restore(record, PLAYER_FINANCES, *paths.values(), *cap.render(pc.inputs(self.root), self.root))
+        inputs_before = (self.root / PLAYER_FINANCES).read_bytes()
         on = self.master().isoformat()
         pc.add_entry(self.root, "roy_miller", {"kind": "register", "date": on,
                                                "source": "career/2014/Team_Operations/Finances/player_contracts/contract_status.md",
                                                "plan": "Test data: a register note"})
-        self.assertTrue(any("players block" in e for e in pc.errors(self.root)))
-        self.assertTrue(any("players block" in p for p in pages.check(self.root, YEAR)))
-        self.assertTrue(pc.write_players_block(self.root))
-        self.assertFalse(any("players block" in e for e in pc.errors(self.root)))
+        self.assertEqual(pc.errors(self.root), [])
+        self.assertTrue(any("missing or stale" in p for p in pages.check(self.root, YEAR)))
         pages.write(self.root, YEAR)
         self.assertEqual(pages.check(self.root, YEAR), [])
         self.assertEqual(pc.as_of(self.root), on)
-        # One row changed in the file: the others keep their stored bytes.
-        rows = pc.inputs(self.root)["players"]
-        self.assertEqual(next(r for r in rows if r["name"] == "Roy Miller")["plan"], "Test data: a register note")
+        # The entry reaches the rows every reader takes; the club-level inputs are untouched.
+        self.assertEqual(next(r for r in pc.rows(self.root) if r["name"] == "Roy Miller")["plan"],
+                         "Test data: a register note")
+        self.assertEqual((self.root / PLAYER_FINANCES).read_bytes(), inputs_before)
 
     def test_add_entry_refuses_an_earlier_date_and_a_bad_source(self):
         with self.assertRaisesRegex(ValueError, "comes before"):

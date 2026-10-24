@@ -665,7 +665,8 @@ def main():
             (ROOT/path).parent.mkdir(parents=True, exist_ok=True)
             (ROOT/path).write_text(content)
     if stale:print('STALE: '+', '.join(stale));return 1
-    print(('PASS: ' if args.check else 'WROTE: ')+str(len(data['players']))+'-player source reconciliation and twelve-year cap/detail views')
+    from runtime import player_contracts
+    print(('PASS: ' if args.check else 'WROTE: ')+str(len(player_contracts.rows(ROOT)))+'-player source reconciliation and twelve-year cap/detail views')
     return 0
 
 if __name__=='__main__':sys.exit(main())

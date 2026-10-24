@@ -55,7 +55,7 @@ from urllib.parse import unquote, urlsplit
 from . import assignments, people, player_bios, player_cards
 from . import roster as roster_record
 from .league import DIVISION_OF, DIVISIONS
-from .season_layout import LEAGUE_PLAYER_PAGES, PHOTO_REGISTRY, PLAYER_FINANCES, PLAYER_RECORDS
+from .season_layout import LEAGUE_PLAYER_PAGES, PHOTO_REGISTRY, PLAYER_RECORDS
 from .seasons import SeasonPaths, active_season
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -273,8 +273,8 @@ class Context:
         self.by_gsis = {p["gsis"]: p for p in self.data["players"] if p["gsis"]}
         self.by_key = {p["key"]: p for p in self.data["players"]}
         self.roster = roster_rows(self.paths.roster)
-        self.finances = {p["name"]: p for p in json.loads(
-            (root / PLAYER_FINANCES).read_text(encoding="utf-8"))["players"]}
+        from . import player_contracts
+        self.finances = {p["name"]: p for p in player_contracts.rows(root)}
         self.league = {p["player_id"]: p for p in league_database(root, self.active) if p.get("player_id")}
         photos = json.loads((root / PHOTO_REGISTRY).read_text(encoding="utf-8"))
         self.photos = photos.get("players", {})

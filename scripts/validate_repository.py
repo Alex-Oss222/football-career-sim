@@ -374,6 +374,21 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError, NotImplementedError) as exc:
         errors.append(f'Invalid current job or decision queue: {exc}')
 
+    # The events inside a week or phase (rebuild step 5, docs/event_inserts.md): the open-event store
+    # against its schema, the clock and the queue (runtime/open_events.py); every applied My Responses
+    # block held to its digest (runtime/responses.py); the season's league dates (runtime/deadlines.py);
+    # and every result page scripts/resolve_event.py built, against its event's record. An open event
+    # or an overdue item is never an error here.
+    try:
+        from runtime import deadlines, open_events, responses
+        from scripts import resolve_event
+        errors.extend(open_events.validation_errors(root))
+        errors.extend(responses.validation_errors(root))
+        errors.extend(deadlines.validation_errors(root))
+        errors.extend(resolve_event.check(root, int(mapping['active_season'])))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid in-season events: {exc}')
+
     # Age views must advance with the canonical calendar, including birthdays
     # during a season and January postseason dates in the next calendar year.
     try:
@@ -436,6 +451,19 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid club pages or cap views: {exc}')
 
+    # The permanent player contract records (rebuild step 5, B1): each record's schema, dates and
+    # sources, its charges and terms, one open contract for every player on the roster record and
+    # only for them, no rookie contract amended before it may be renegotiated, the in-season terms
+    # method, the dead-money lines and no entry after the master date; then the contract and cap
+    # pages built from them.
+    try:
+        from runtime import player_contracts
+        errors.extend(player_contracts.errors(root))
+        from scripts.render_contract_pages import check as check_contract_pages
+        errors.extend(check_contract_pages(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid player contract records or pages: {exc}')
+
     # The open game week's pages (scripts/render_game_week.py, rebuild step 4): once its Game Week
     # Briefing is issued, the week index is current, the Game Plan sits beside the briefing and the
     # staff read is well formed. A dated briefing the situation has overtaken is re-issued by the
@@ -455,6 +483,34 @@ def validate(root=ROOT):
     except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
         errors.append(f'Invalid applied Game Plans: {exc}')
 
+    # The practice and rest records (runtime/practices.py): every record valid, and every closed
+    # Jacksonville week from the log's first week with its record (rebuild step 5, C1).
+    try:
+        from runtime import practices
+        from runtime.seasons import active_season
+        errors.extend(practices.validation_errors(active_season(root), root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid practice records: {exc}')
+
+    # Stone's depth or inactives changes after the Game Plan (scripts/change_game_day.py): each held to
+    # its resolved item, its frozen block on My Responses and the week's inactives record (rebuild
+    # step 5, C2).
+    try:
+        from scripts.change_game_day import validation_errors as game_day_change_errors
+        errors.extend(game_day_change_errors(root))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid game-day changes: {exc}')
+
+    # The bye week (runtime/bye_week.py, scripts/render_bye_week.py): an applied My Adjustments held to
+    # its digest, a closed bye's Bye Week Report (bye_week.report_errors) and practice record, and the
+    # bye's pages against their records (rebuild step 5, C3).
+    try:
+        from runtime import bye_week
+        from scripts import render_bye_week
+        errors.extend(dict.fromkeys(bye_week.validation_errors(root) + render_bye_week.check(root)))
+    except (OSError, ValueError, KeyError, IndexError, TypeError) as exc:
+        errors.append(f'Invalid bye week records: {exc}')
+
     # The result-side week pages (scripts/render_week_pages.py: the Games and league-results
     # indexes, the league-results week pages from Week 6, the injury report, the medical
     # history's game entries and the incident records they open) are built from the closed
@@ -470,8 +526,9 @@ def validate(root=ROOT):
     # rule 2): no script or runtime module writes a season folder or a year
     # into a path itself.
     try:
-        from runtime.clean_pages import clean_errors, folder_map_errors, history_pin_errors
-        for label, found in (('Clean pages', clean_errors(root)), ('Page history', history_pin_errors(root)),
+        from runtime.clean_pages import clean_errors, folder_map_errors, history_pin_errors, split_errors
+        for label, found in (('Clean pages', clean_errors(root)),
+                             ('Page history', history_pin_errors(root) + split_errors(root)),
                              ('Folder map', folder_map_errors(root))):
             errors.extend(found[:20])
             if len(found) > 20:
@@ -624,6 +681,14 @@ def validate(root=ROOT):
                 continue
             for game, report, receipt in game_report.report_games(paths):
                 post = game.get('game_type') == 'postseason'
+                # The week's results (rebuild step 5, F15): each linked from the closed game's report,
+                # none pasted; the period's results are passed in from the event store.
+                if receipt is not None and report.is_file():
+                    from runtime import open_events
+                    results, _ = open_events.period_events(year, {'week': int(game['week'])}, root)
+                    report_rel = report.relative_to(root).as_posix()
+                    errors.extend(game_report.result_link_errors(report.read_text(encoding='utf-8'), results,
+                                                                 report_rel, label=report_rel))
                 frozen = week_pages(year, int(game['week']), root, postseason=post).pregame
                 if receipt is None or not frozen.is_file():
                     continue
@@ -776,6 +841,26 @@ def validate(root=ROOT):
         errors.extend(db_families_errors(2014, root))
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append('2014 in-season rails invalid: ' + str(exc))
+
+    # Rebuild step 5 (D2): the league's head-coach changes in season (runtime/league_coaches.py):
+    # the method and its frozen rate table, each week's check against the closed games, the
+    # coverage of the closed weeks once a later week's practice week has opened (the retroactive
+    # Weeks 1 to 5 due before Week 6's check), the pages and news the clock has reached, and the
+    # hold on a drawn Jacksonville change.
+    try:
+        from runtime import league_coaches
+        errors.extend(league_coaches.validation_errors(root))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('League head-coach records invalid: ' + str(exc))
+
+    # Rebuild step 5 (D1): the in-season roster moves (runtime/transactions.py): each transaction
+    # record against its event, an applied move's event resolved with its Transaction page, a lost
+    # claim with its award, a lost draw with its draw, every built page present, clean and current.
+    try:
+        from runtime import transactions
+        errors.extend(transactions.validation_errors(root))
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        errors.append('Roster move records invalid: ' + str(exc))
 
     try:
         from scripts.render_trade_pages import check as check_trade_pages
