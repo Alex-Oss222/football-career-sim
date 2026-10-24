@@ -28,3 +28,13 @@ Jones played 18 of the 26 kicking-game snaps and no defensive snap, with no tack
 ## Sources
 
 [Week 5 game record](../../../Regular_Season/Games/Week_05/output.md) · [public receipt](../../../../../data/2014/Regular_Season/Statistics/records/game_receipts/week_05_pittsburgh_steelers_at_jacksonville_jaguars.json) · [opening player card](../../Team/Player_Cards/christian_jones.md) · [roster](../../Team/Roster/roster.md) · [medical history](../medical_history.md#october-5-week-5-injuries-against-pittsburgh)
+
+## Updates from October 6, 2014
+
+| Date | Communicated finding | Permitted work | Source |
+|---|---|---|---|
+| October 6, 2014 | Reassessed on the day the instruction named; nothing else communicated, so he cleared on his projected return date | Full from October 6: the Pittsburgh review and Tennessee introduction, the October 8, 9 and 10 practices and the October 11 walkthrough | [Medical history](../medical_history.md#october-6-to-11-christian-jones-and-trawick-cleared-poyer-released) |
+
+**Current medical information, from October 6, 2014:** no communicated restriction; cleared October 6, 2014, the medical staff's projected date; not on the league's Week 6 report; no further medical review set.
+
+**Football effect, from October 6, 2014:** He missed no session of the Tennessee practice week. A clearance restores no role by itself; his Week 6 linebacker and coverage work is Stone's on his Game Plan.

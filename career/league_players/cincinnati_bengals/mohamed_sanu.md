@@ -1,10 +1,10 @@
 # Mohamed Sanu
 
-**Cincinnati Bengals · Wide receiver · No. 12 · Age 25 · Last game October 5, 2014**
+**Cincinnati Bengals · Wide receiver · No. 12 · Age 25 · Last game October 12, 2014**
 
 6' 2", 210 lb · Born August 22, 1989 · Rutgers · Drafted in 2012, third round, by Cincinnati
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Mohamed Sanu](https://commons.wikimedia.org/wiki/Special:FilePath/Mohamed_Sanu_Bengals_2012.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 7.7 (2014, through Week 5).
+**Yards per target:** 6.5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 25 | 12 | 4 | 47 | 27 | 360 | 13.3 | 1 | 45 | 90.0 | 57.4 |
+| 2014 (through Week 6) | Cincinnati | 25 | 12 | 5 | 57 | 31 | 371 | 12.0 | 1 | 45 | 74.2 | 54.4 |
 | 2013 | Cincinnati | 24 | 12 | 10 | 64 | 41 | 611 | 14.9 | 3 | 47 | 61.1 | 64.1 |
-| Career |  |  |  | 14 | 111 | 68 | 971 | 14.3 | 4 | 47 | 69.4 | 61.3 |
+| Career |  |  |  | 15 | 121 | 72 | 982 | 13.6 | 4 | 47 | 65.5 | 59.5 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 25 | 12 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Cincinnati | 25 | 12 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 24 | 12 | 1 | 7 | 0 | 0 | 0 |
 
 ### Playoffs

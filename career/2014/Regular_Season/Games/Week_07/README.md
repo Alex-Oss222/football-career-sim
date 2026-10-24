@@ -1,9 +1,11 @@
-# Week 7 — Cleveland (October 19, 2014)
+# Week 7: Cleveland
+
+Sunday, October 19, 2014, 1 p.m. ET, EverBank Field.
+
+| Page | What it holds | Status |
+|---|---|---|
+| [Game Week Briefing](Game_Week_Briefing.md) | The coaching staff's brief: the game and its stakes, our last game, availability, both sides of the opponent, the kicking game, the staff's proposals and what is owed by you | Issued October 12, 2014 |
+| [Game Plan](Game_Plan.md) | Your decisions for the game: what you want it to look like, availability, the offense, the defense, the kicking game and game decisions, practice and your directions | Waiting on you |
+| Game Report | What happened and what changed | After the game |
 
 [All weeks](../README.md) · [Regular-season statistics](../../Statistics/README.md) · [Week 7 awards](../../Awards/week_07/README.md)
-
-The game has not been played. Its plan, call sheet, report and box score belong here when the week is prepared and closed.
-
-Scheduled kickoff (Eastern Time): 1 p.m. The [calendar](../../../Calendar.md) controls dated amendments and the permitted preparation. Review the [current roster](../../../Team_Operations/Team/Roster/roster.md), [depth chart](../../../Team_Operations/Team/Depth_Chart/depth_chart.md), medical instructions and game-readiness requirements before execution.
-
-After a closed game, link its actual public receipt and refresh season statistics, player cards and standings. No result or player performance is supplied by this schedule folder.

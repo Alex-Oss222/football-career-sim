@@ -1,10 +1,10 @@
 # James Hanna
 
-**Dallas Cowboys · Tight end · No. 84 · Age 25 · Last game October 5, 2014**
+**Dallas Cowboys · Tight end · No. 84 · Age 25 · Last game October 12, 2014**
 
 6' 4", 260 lb · Born July 14, 1989 · Oklahoma · Drafted in 2012, sixth round, by Dallas
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![James Hanna](https://commons.wikimedia.org/wiki/Special:FilePath/James_Hanna.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 6.2 (2014, through Week 5).
+**Yards per target:** 6.2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 25 | 84 | 5 | 6 | 5 | 37 | 7.4 | 0 | 18 | 7.4 | 83.3 |
+| 2014 (through Week 6) | Dallas | 25 | 84 | 6 | 6 | 5 | 37 | 7.4 | 0 | 18 | 6.2 | 83.3 |
 | 2013 | Dallas | 24 | 84 | 16 | 23 | 15 | 241 | 16.1 | 2 | 67 | 15.1 | 65.2 |
-| Career |  |  |  | 21 | 29 | 20 | 278 | 13.9 | 2 | 67 | 13.2 | 69.0 |
+| Career |  |  |  | 22 | 29 | 20 | 278 | 13.9 | 2 | 67 | 12.6 | 69.0 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 25 | 84 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Dallas | 25 | 84 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Dallas | 24 | 84 | 1 | 1 | 0 | 0 | 0 |
 
 ### Playoffs

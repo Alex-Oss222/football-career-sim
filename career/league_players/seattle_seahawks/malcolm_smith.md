@@ -1,10 +1,10 @@
 # Malcolm Smith
 
-**Seattle Seahawks · Outside linebacker · No. 53 · Age 25 · Last game October 6, 2014**
+**Seattle Seahawks · Outside linebacker · No. 53 · Age 25 · Last game October 12, 2014**
 
 6' 0", 226 lb · Born July 5, 1989 · USC · Drafted in 2011, seventh round, by Seattle
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Malcolm Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Malcolm_Smith_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 23 (2014, through Week 5).
+**Tackles:** 25 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Seattle | 25 | 53 | 4 | 23 | 15 | 8 | 2 | 1 | 1 |
+| 2014 (through Week 6) | Seattle | 25 | 53 | 5 | 25 | 17 | 8 | 2 | 1 | 1 |
 | 2013 | Seattle | 24 | 53 | 16 | 36 | 20 | 16 | 1 | 0 | 2 |
-| Career |  |  |  | 20 | 59 | 35 | 24 | 3 | 1 | 3 |
+| Career |  |  |  | 21 | 61 | 37 | 24 | 3 | 1 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Seattle | 25 | 53 | 1 | 0 | 2 | 1 | 0 | 0 |
+| 2014 (through Week 6) | Seattle | 25 | 53 | 1 | 0 | 2 | 1 | 1 | 0 |
 | 2013 | Seattle | 24 | 53 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

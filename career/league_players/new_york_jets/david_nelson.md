@@ -1,10 +1,10 @@
 # David Nelson
 
-**New York Jets · Wide receiver · No. 86 · Age 27 · Last game October 5, 2014**
+**New York Jets · Wide receiver · No. 86 · Age 27 · Last game October 12, 2014**
 
 6' 5", 215 lb · Born November 7, 1986 · Florida
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![David Nelson](https://commons.wikimedia.org/wiki/Special:FilePath/David_Nelson_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 11.0 (2014, through Week 5).
+**Yards per target:** 11.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 27 | 86 | 5 | 4 | 4 | 44 | 11.0 | 0 | 29 | 8.8 | 100.0 |
+| 2014 (through Week 6) | N.Y. Jets | 27 | 86 | 6 | 4 | 4 | 44 | 11.0 | 0 | 29 | 7.3 | 100.0 |
 
 ### Playoffs
 

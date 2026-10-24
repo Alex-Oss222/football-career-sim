@@ -1,10 +1,10 @@
 # T.Y. Hilton
 
-**Indianapolis Colts · Wide receiver · No. 13 · Age 24 · Last game October 5, 2014**
+**Indianapolis Colts · Wide receiver · No. 13 · Age 24 · Last game October 9, 2014**
 
 5' 9", 178 lb · Born November 14, 1989 · Florida International · Drafted in 2012, third round, by Indianapolis
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![T.Y. Hilton](https://commons.wikimedia.org/wiki/Special:FilePath/T.Y._Hilton_-_2008_Shula_Bowl.png?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 7.2 (2014, through Week 5).
+**Yards per target:** 7.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 24 | 13 | 5 | 65 | 41 | 469 | 11.4 | 3 | 30 | 93.8 | 63.1 |
+| 2014 (through Week 6) | Indianapolis | 24 | 13 | 6 | 72 | 46 | 503 | 10.9 | 3 | 30 | 83.8 | 63.9 |
 | 2013 | Indianapolis | 23 | 13 | 16 | 58 | 35 | 381 | 10.9 | 4 | 29 | 23.8 | 60.3 |
-| Career |  |  |  | 21 | 123 | 76 | 850 | 11.2 | 7 | 30 | 40.5 | 61.8 |
+| Career |  |  |  | 22 | 130 | 81 | 884 | 10.9 | 7 | 30 | 40.2 | 62.3 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 24 | 13 | 2 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Indianapolis | 24 | 13 | 2 | 5 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 23 | 13 | 0 | 0 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 24 | 13 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | Indianapolis | 24 | 13 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Indianapolis | 23 | 13 | 0 | 0 | N/A | 43 | 329 | 7.7 |
 
 ### Playoffs

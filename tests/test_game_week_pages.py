@@ -381,6 +381,28 @@ class BriefingFactsTests(unittest.TestCase):
         self.assertIn(["Penalties", "10 for 63 yards", "7 for 69 yards"], rows)
         self.assertIn(["Points", "30", "30"], render_game_week.team_rows(games, "A")[0])
 
+    def test_the_contingency_is_who_takes_his_place_not_the_next_name(self):
+        # Week 6 review: the next name in the group's list can be another starter (the center after
+        # the left guard) or a safety after the nickel; the default names who the game's own rules put
+        # in his slot or seat, with the chart and its last game-day list as they stand.
+        chart = {"depth": {"OL": ["LT1", "LG1", "C1", "RG1", "RT1", "T2", "G2", "C2"],
+                           "DB": ["CB1", "CB2", "S1", "S2", "NB", "S3", "OR", "CB3"],
+                           "WR": ["X", "Z"]},
+                 "positions": {"LT1": "OT", "LG1": "OT", "C1": "C", "RG1": "G", "RT1": "OT", "T2": "OT",
+                               "G2": "G", "C2": "C", "CB1": "CB", "CB2": "CB", "S1": "S", "S2": "S",
+                               "NB": "CB", "S3": "S", "OR": "CB", "CB3": "CB", "X": "WR", "Z": "WR"},
+                 "roles": {"NB": ["nickel"], "OR": ["outside_reserve"]}}
+        replace = render_game_week.chart_replacement
+        self.assertEqual(replace(chart, "LG1", set()), ("G2", "left guard"))
+        self.assertEqual(replace(chart, "C1", set()), ("C2", "center"))
+        self.assertEqual(replace(chart, "NB", {"CB3"}), ("OR", "nickel"))
+        self.assertEqual(replace(chart, "NB", set()), ("CB3", "nickel"))
+        self.assertEqual(replace(chart, "CB1", set()), ("OR", "outside corner"))
+        self.assertEqual(replace(chart, "S1", set()), ("S3", "safety"))
+        # A reserve holds no slot or seat, and another group keeps the next name in its order.
+        self.assertIsNone(replace(chart, "T2", set()))
+        self.assertIsNone(replace(chart, "X", set()))
+
     def test_players_tied_for_a_lead_each_have_a_row(self):
         games = [receipt("e1", 1, "B", "A", {"A": 10, "B": 7},
                          {"A": {"players": {"Mincey": player("DE", sacks=2, tackles=5),

@@ -1,10 +1,10 @@
 # Jason Kelce
 
-**Philadelphia Eagles · Center · No. 62 · Age 26 · Last game October 5, 2014**
+**Philadelphia Eagles · Center · No. 62 · Age 26 · Last game October 12, 2014**
 
 6' 3", 295 lb · Born November 5, 1987 · Cincinnati · Drafted in 2011, sixth round, by Philadelphia
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jason Kelce](https://commons.wikimedia.org/wiki/Special:FilePath/JasonKelce.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 26 | 62 | 4 | 4 | 285 | 2 | 19 |
+| 2014 (through Week 6) | Philadelphia | 26 | 62 | 5 | 5 | 329 | 3 | 22 |
 | 2013 | Philadelphia | 25 | 62 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 20 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

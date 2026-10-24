@@ -1,10 +1,10 @@
 # Chris Clark
 
-**Denver Broncos · Offensive tackle · No. 75 · Age 29 · Last game October 5, 2014**
+**Denver Broncos · Offensive tackle · No. 75 · Age 29 · Last game October 12, 2014**
 
 6' 5", 305 lb · Born October 1, 1985 · Southern Mississippi
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Chris Clark](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Clark_%28American_football%29_2012.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 0 (2014, through Week 5).
+**Sacks allowed:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 28 | 75 | 4 | 4 | 199 | 0 | 16 |
+| 2014 (through Week 6) | Denver | 28 | 75 | 5 | 5 | 262 | 0 | 21 |
 | 2013 | Denver | 27 | 75 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 20 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 

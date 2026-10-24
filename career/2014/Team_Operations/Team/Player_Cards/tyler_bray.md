@@ -4,7 +4,7 @@
 
 6' 6", 215 lb · Born December 27, 1991 · Tennessee · Drafted in 2013, No. 208 overall, by Jacksonville
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ## Staff assessment
 

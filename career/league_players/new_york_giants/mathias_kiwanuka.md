@@ -1,10 +1,10 @@
 # Mathias Kiwanuka
 
-**New York Giants · Defensive end · No. 94 · Age 31 · Last game October 5, 2014**
+**New York Giants · Defensive end · No. 94 · Age 31 · Last game October 12, 2014**
 
 6' 5", 267 lb · Born March 8, 1983 · Boston College · Drafted in 2006, first round, by the New York Giants
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Mathias Kiwanuka](https://commons.wikimedia.org/wiki/Special:FilePath/Mathias_Kiwanuka_in_Uganda_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 4 (2014, through Week 5).
+**Sacks:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Giants | 31 | 94 | 5 | 20 | 19 | 1 | 2 | 4 | 4 |
+| 2014 (through Week 6) | N.Y. Giants | 31 | 94 | 6 | 25 | 22 | 3 | 3 | 4 | 4 |
 | 2013 | N.Y. Giants | 30 | 94 | 16 | 51 | 34 | 17 | 1 | 4 | 5 |
-| Career |  |  |  | 21 | 71 | 53 | 18 | 3 | 8 | 9 |
+| Career |  |  |  | 22 | 76 | 56 | 20 | 4 | 8 | 9 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Giants | 31 | 94 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | N.Y. Giants | 31 | 94 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | N.Y. Giants | 30 | 94 | 1 | 0 | 4 | 1 | 1 | N/A |
 
 ### Playoffs

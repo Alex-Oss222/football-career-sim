@@ -1,10 +1,10 @@
 # Logan Thomas
 
-**Arizona Cardinals · Quarterback · No. 6 · Age 23 · Last game October 5, 2014**
+**Arizona Cardinals · Quarterback · No. 6 · Age 23 · Last game October 12, 2014**
 
 6' 6", 250 lb · Born July 1, 1991 · Virginia Tech
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Logan Thomas](https://commons.wikimedia.org/wiki/Special:FilePath/WFT_TE_Logan_Thomas.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 23 | 6 | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 6) | Arizona | 23 | 6 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 23 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Arizona | 23 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

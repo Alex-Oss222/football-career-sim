@@ -1,10 +1,10 @@
 # Jason Verrett
 
-**San Diego Chargers · Cornerback · No. 22 · Age 23 · Last game October 5, 2014**
+**San Diego Chargers · Cornerback · No. 22 · Age 23 · Last game October 12, 2014**
 
 5' 9", 178 lb · Born June 18, 1991 · Texas Christian
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jason Verrett](https://commons.wikimedia.org/wiki/Special:FilePath/Jason_Verrett.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Diego | 23 | 22 | 5 | 13 | 10 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 6) | San Diego | 23 | 22 | 6 | 15 | 11 | 4 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Diego | 23 | 22 | 0 | 0 | 0 | 0 | 1 | 1 |
+| 2014 (through Week 6) | San Diego | 23 | 22 | 0 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 

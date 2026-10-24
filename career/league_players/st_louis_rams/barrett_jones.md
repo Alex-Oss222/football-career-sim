@@ -10,6 +10,8 @@ As of December 29, 2013, after Week 17.
 
 *Photo: Matthew Tosh, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Barrett_Jones_2011.jpg)).*
 
+**Current assignment:** Reserve center.
+
 ## Contract
 
 Contract not established.

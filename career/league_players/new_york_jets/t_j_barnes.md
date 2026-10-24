@@ -1,10 +1,10 @@
 # T.J. Barnes
 
-**New York Jets · Offensive tackle · No. 99 · Age 24 · Last game October 5, 2014**
+**New York Jets · Offensive tackle · No. 99 · Age 24 · Last game October 12, 2014**
 
 6' 7", 364 lb · Born June 14, 1990 · Georgia Tech
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![T.J. Barnes](https://commons.wikimedia.org/wiki/Special:FilePath/TJ_Barnes_%284024925022%29_%28cropped%29.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 24 | 99 | 4 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | N.Y. Jets | 24 | 99 | 4 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

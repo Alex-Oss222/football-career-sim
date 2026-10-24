@@ -1,10 +1,10 @@
 # Tress Way
 
-**Washington Redskins · Punter · No. 5 · Age 24 · Last game October 6, 2014**
+**Washington Redskins · Punter · No. 5 · Age 24 · Last game October 12, 2014**
 
 6' 1", 215 lb · Born April 18, 1990 · Oklahoma
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Tress Way](https://commons.wikimedia.org/wiki/Special:FilePath/Tress_Way_%2815171046507%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 36.7 (2014, through Week 5).
+**Net punting average:** 37.9 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 24 | 5 | 5 | 27 | 1,200 | 44.4 | 36.7 | 5 | 2 | 65 |
+| 2014 (through Week 6) | Washington | 24 | 5 | 6 | 33 | 1,523 | 46.2 | 37.9 | 6 | 3 | 65 |
 
 ### Playoffs
 

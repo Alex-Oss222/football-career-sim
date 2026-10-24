@@ -30,3 +30,13 @@ Poyer played 36 defensive snaps at the nickel and 13 on the kicking game with no
 ## Sources
 
 [Week 3 game record](../../../Regular_Season/Games/Week_03/output.md) · [public receipt](../../../../../data/2014/Regular_Season/Statistics/records/game_receipts/week_03_indianapolis_colts_at_jacksonville_jaguars.json) · [opening player card](../../Team/Player_Cards/jordan_poyer.md) · [roster](../../Team/Roster/roster.md) · [medical history](../medical_history.md#september-21-week-3-injuries-against-indianapolis)
+
+## Updates from October 5, 2014
+
+| Date | Communicated finding | Permitted work | Source |
+|---|---|---|---|
+| October 9, 2014 | Released by the independent process on the projected date; nothing further communicated after the September 27 reassessment | Full from October 9 with no communicated limitation, in the Thursday and Friday practices and the October 11 walkthrough; did not practice before the release (a non-participant Wednesday and full Thursday and Friday on the league's report, with no game designation) | [Medical history](../medical_history.md#october-6-to-11-christian-jones-and-trawick-cleared-poyer-released) |
+
+**Current medical information, from October 9, 2014:** no communicated restriction; the independent medical hold was released October 9, 2014, its projected date; no further medical review set.
+
+**Football effect, from October 5, 2014:** He took no part in the Tennessee week before the release and practiced in full after it. His Week 6 game-day status is Stone's decision on his Game Plan, not a medical instruction.

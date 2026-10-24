@@ -1,10 +1,10 @@
 # Johnathan Joseph
 
-**Houston Texans · Cornerback · No. 24 · Age 30 · Last game October 5, 2014**
+**Houston Texans · Cornerback · No. 24 · Age 30 · Last game October 9, 2014**
 
 5' 11", 188 lb · Born April 16, 1984 · South Carolina; Coffeyville CC · Drafted in 2006, first round, by Cincinnati
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Johnathan Joseph](https://commons.wikimedia.org/wiki/Special:FilePath/Johnathan_Joseph_Bengals.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 4 (2014, through Week 5).
+**Passes defended:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 30 | 24 | 5 | 30 | 25 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Houston | 30 | 24 | 6 | 37 | 30 | 7 | 1 | 0 | 0 |
 | 2013 | Houston | 29 | 24 | 16 | 101 | 61 | 40 | 1 | 1 | 1 |
-| Career |  |  |  | 21 | 131 | 86 | 45 | 1 | 1 | 1 |
+| Career |  |  |  | 22 | 138 | 91 | 47 | 2 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 30 | 24 | 1 | 21 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Houston | 30 | 24 | 1 | 21 | 4 | 0 | 0 | 0 |
 | 2013 | Houston | 29 | 24 | 5 | 83 | 14 | 1 | 1 | N/A |
 
 ### Playoffs

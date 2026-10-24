@@ -4,7 +4,7 @@
 
 6' 3", 230 lb · Born July 2, 1985 · Michigan · Drafted in 2008, second round, by Miami
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Chad Henne](https://commons.wikimedia.org/wiki/Special:FilePath/Chad_Henne_2014_%28cropped%29.jpg?width=500)
 
@@ -33,13 +33,13 @@ Two-year contract through 2015.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 29 | 7 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 6) | Jacksonville | 29 | 7 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Jacksonville | 28 | 7 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| With Jacksonville |  |  |  | 21 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| With Jacksonville |  |  |  | 22 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 29 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Jacksonville | 29 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 28 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

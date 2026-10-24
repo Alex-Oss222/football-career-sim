@@ -1,10 +1,10 @@
 # Jake Locker
 
-**Tennessee Titans · Quarterback · No. 10 · Age 26 · Last game October 5, 2014**
+**Tennessee Titans · Quarterback · No. 10 · Age 26 · Last game October 12, 2014**
 
 6' 3", 223 lb · Born June 15, 1988 · Washington · Drafted in 2011, first round, by Tennessee
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jake Locker](https://commons.wikimedia.org/wiki/Special:FilePath/Jake_Locker.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 81.4 (2014, through Week 5).
+**Passer rating:** 76.5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 26 | 10 | 4 | 91 | 151 | 60.3 | 995 | 6.6 | 248.8 | 7 | 5 | 81.4 |
+| 2014 (through Week 6) | Tennessee | 26 | 10 | 5 | 111 | 182 | 61.0 | 1,172 | 6.4 | 234.4 | 7 | 7 | 76.5 |
 | 2013 | Tennessee | 25 | 10 | 16 | 389 | 600 | 64.8 | 3,928 | 6.5 | 245.5 | 25 | 18 | 84.8 |
-| Career |  |  |  | 20 | 480 | 751 | 63.9 | 4,923 | 6.6 | 246.2 | 32 | 23 | 84.1 |
+| Career |  |  |  | 21 | 500 | 782 | 63.9 | 5,100 | 6.5 | 242.9 | 32 | 25 | 82.9 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 26 | 10 | 9 | 59 | 9 | 42 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tennessee | 26 | 10 | 11 | 77 | 9 | 42 | 0 | 0 | 0 |
 | 2013 | Tennessee | 25 | 10 | 30 | 175 | 42 | 188 | 1 | 0 | 0 |
 
 ### Playoffs

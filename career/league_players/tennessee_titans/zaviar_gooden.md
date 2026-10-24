@@ -1,10 +1,10 @@
 # Zaviar Gooden
 
-**Tennessee Titans · Inside linebacker · No. 50 · Age 24 · Last game October 5, 2014**
+**Tennessee Titans · Inside linebacker · No. 50 · Age 24 · Last game October 12, 2014**
 
 6' 1", 231 lb · Born August 31, 1990 · Missouri
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Zaviar Gooden](https://commons.wikimedia.org/wiki/Special:FilePath/Zaviar_Gooden.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve inside linebacker.
 
-**Tackles:** 2 (2014, through Week 5).
+**Tackles:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 24 | 50 | 5 | 2 | 1 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tennessee | 24 | 50 | 6 | 2 | 1 | 1 | 0 | 0 | 0 |
 | 2013 | Tennessee | 23 | 50 | 15 | 3 | 1 | 2 | 0 | 0 | 0 |
-| Career |  |  |  | 20 | 5 | 2 | 3 | 0 | 0 | 0 |
+| Career |  |  |  | 21 | 5 | 2 | 3 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 24 | 50 | 0 | 0 | 0 | 0 | 0 | 7 |
+| 2014 (through Week 6) | Tennessee | 24 | 50 | 0 | 0 | 0 | 0 | 0 | 7 |
 | 2013 | Tennessee | 23 | 50 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Sammie Lee Hill
 
-**Tennessee Titans · Nose tackle · No. 94 · Age 27 · Last game October 5, 2014**
+**Tennessee Titans · Nose tackle · No. 94 · Age 27 · Last game October 12, 2014**
 
 6' 4", 328 lb · Born November 8, 1986 · Stillman College · Drafted in 2009, fourth round, by Detroit
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Sammie Lee Hill](https://commons.wikimedia.org/wiki/Special:FilePath/Sammie_Hill.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting nose tackle.
 
-**Sacks:** 2 (2014, through Week 5).
+**Sacks:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 27 | 94 | 5 | 17 | 12 | 5 | 0 | 2 | 6 |
+| 2014 (through Week 6) | Tennessee | 27 | 94 | 6 | 22 | 16 | 6 | 1 | 4 | 8 |
 | 2013 | Tennessee | 26 | 94 | 16 | 29 | 25 | 4 | 1 | 1 | 3 |
-| Career |  |  |  | 21 | 46 | 37 | 9 | 1 | 3 | 9 |
+| Career |  |  |  | 22 | 51 | 41 | 10 | 2 | 5 | 11 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 27 | 94 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tennessee | 27 | 94 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Tennessee | 26 | 94 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -28,3 +28,14 @@ Trawick played all 60 defensive snaps at safety next to Rambo and five on the ki
 ## Sources
 
 [Week 5 game record](../../../Regular_Season/Games/Week_05/output.md) · [public receipt](../../../../../data/2014/Regular_Season/Statistics/records/game_receipts/week_05_pittsburgh_steelers_at_jacksonville_jaguars.json) · [opening player card](../../Team/Player_Cards/brynden_trawick.md) · [roster](../../Team/Roster/roster.md) · [medical history](../medical_history.md#october-5-week-5-injuries-against-pittsburgh)
+
+## Updates from October 6, 2014
+
+| Date | Communicated finding | Permitted work | Source |
+|---|---|---|---|
+| October 7, 2014 | Reassessed on the day the instruction named; no change: out, projected return October 11, no further reassessment date | None (did not practice October 8, 9 and 10; a non-participant Wednesday through Friday on the league's report, questionable for the game on the Friday report) | [Medical history](../medical_history.md#october-6-to-11-christian-jones-and-trawick-cleared-poyer-released) |
+| October 11, 2014 | Cleared on his projected return date; nothing else communicated after the October 7 reassessment | Full from October 11 (the Saturday walkthrough) | [Medical history](../medical_history.md#october-6-to-11-christian-jones-and-trawick-cleared-poyer-released) |
+
+**Current medical information, from October 11, 2014:** no communicated restriction; cleared October 11, 2014, the medical staff's projected date; no further medical review set.
+
+**Football effect, from October 6, 2014:** He missed the Wednesday, Thursday and Friday practices of the Tennessee week; under Stone's Week 6 Game Plan Chris Prosinski took his deep-safety teaching work and Adrian Phillips the next safety and coverage duties while he was out. A clearance restores no role by itself; the Week 6 safety pairing and the coverage groups are Stone's on his Game Plan.

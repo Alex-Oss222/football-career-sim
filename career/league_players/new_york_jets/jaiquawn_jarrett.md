@@ -1,10 +1,10 @@
 # Jaiquawn Jarrett
 
-**New York Jets · Safety · No. 37 · Age 25 · Last game October 5, 2014**
+**New York Jets · Safety · No. 37 · Age 25 · Last game October 12, 2014**
 
 6' 0", 196 lb · Born September 21, 1989 · Temple · Drafted in 2011, second round, by Philadelphia
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jaiquawn Jarrett](https://commons.wikimedia.org/wiki/Special:FilePath/Jaiquawn_Jarrett_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve safety.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 24 | 37 | 5 | 3 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | N.Y. Jets | 24 | 37 | 6 | 3 | 3 | 0 | 0 | 0 | 0 |
 | 2013 | N.Y. Jets | 23 | 37 | 15 | 4 | 2 | 2 | 0 | 0 | 0 |
-| Career |  |  |  | 20 | 7 | 5 | 2 | 0 | 0 | 0 |
+| Career |  |  |  | 21 | 7 | 5 | 2 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 24 | 37 | 0 | 0 | 0 | 0 | 0 | 8 |
+| 2014 (through Week 6) | N.Y. Jets | 24 | 37 | 0 | 0 | 0 | 0 | 0 | 9 |
 | 2013 | N.Y. Jets | 23 | 37 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

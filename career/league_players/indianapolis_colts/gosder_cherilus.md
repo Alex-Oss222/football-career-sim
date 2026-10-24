@@ -1,10 +1,10 @@
 # Gosder Cherilus
 
-**Indianapolis Colts · Offensive tackle · No. 78 · Age 30 · Last game October 5, 2014**
+**Indianapolis Colts · Offensive tackle · No. 78 · Age 30 · Last game October 9, 2014**
 
 6' 7", 316 lb · Born June 28, 1984 · Boston College · Drafted in 2008, first round, by Detroit
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Gosder Cherilus](https://commons.wikimedia.org/wiki/Special:FilePath/Gosder_Cherilus.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 30 | 78 | 5 | 5 | 360 | 2 | 24 |
+| 2014 (through Week 6) | Indianapolis | 30 | 78 | 6 | 6 | 416 | 4 | 24 |
 | 2013 | Indianapolis | 29 | 78 | 16 | N/A | N/A | 1 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 

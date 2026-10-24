@@ -1,10 +1,10 @@
 # Brock Osweiler
 
-**Denver Broncos · Quarterback · No. 17 · Age 23 · Last game October 5, 2014**
+**Denver Broncos · Quarterback · No. 17 · Age 23 · Last game October 12, 2014**
 
 6' 8", 240 lb · Born November 22, 1990 · Arizona State · Drafted in 2012, second round, by Denver
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Brock Osweiler](https://commons.wikimedia.org/wiki/Special:FilePath/Brock_Osweiler_2017_Browns%27_training_camp.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 23 | 17 | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 6) | Denver | 23 | 17 | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Denver | 22 | 17 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 20 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 21 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 23 | 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Denver | 23 | 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Denver | 22 | 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

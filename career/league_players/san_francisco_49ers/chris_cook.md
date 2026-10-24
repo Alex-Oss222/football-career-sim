@@ -1,10 +1,10 @@
 # Chris Cook
 
-**San Francisco 49ers · Cornerback · No. 22 · Age 27 · Last game October 5, 2014**
+**San Francisco 49ers · Cornerback · No. 22 · Age 27 · Last game October 13, 2014**
 
 6' 2", 212 lb · Born February 15, 1987 · Virginia · Drafted in 2010, second round, by Minnesota
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Chris Cook](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Cook_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 1 (2014, through Week 5).
+**Passes defended:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 27 | 22 | 5 | 2 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | San Francisco | 27 | 22 | 6 | 3 | 1 | 2 | 0 | 0 | 0 |
 | 2013 | Minnesota | 26 | 20 | 16 | 47 | 30 | 17 | 2 | 0 | 0 |
-| Career |  |  |  | 21 | 49 | 30 | 19 | 2 | 0 | 0 |
+| Career |  |  |  | 22 | 50 | 31 | 19 | 2 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 27 | 22 | 0 | 0 | 1 | 0 | 0 | 1 |
+| 2014 (through Week 6) | San Francisco | 27 | 22 | 0 | 0 | 1 | 0 | 0 | 1 |
 | 2013 | Minnesota | 26 | 20 | 2 | 49 | 6 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 27 | 22 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | San Francisco | 27 | 22 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Minnesota | 26 | 20 | 0 | 0 | N/A | 4 | 34 | 8.5 |
 
 ### Playoffs

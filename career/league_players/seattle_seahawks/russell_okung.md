@@ -1,10 +1,10 @@
 # Russell Okung
 
-**Seattle Seahawks · Offensive tackle · No. 76 · Age 25 · Last game October 6, 2014**
+**Seattle Seahawks · Offensive tackle · No. 76 · Age 26 · Last game October 12, 2014**
 
 6' 5", 310 lb · Born October 7, 1988 · Oklahoma State · Drafted in 2010, first round, by Seattle
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Russell Okung](https://commons.wikimedia.org/wiki/Special:FilePath/Russell_Okung.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 4 (2014, through Week 5).
+**Sacks allowed:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Seattle | 25 | 76 | 4 | 4 | 273 | 4 | 20 |
+| 2014 (through Week 6) | Seattle | 25 | 76 | 5 | 5 | 344 | 4 | 28 |
 | 2013 | Seattle | 24 | 76 | 15 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 19 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

@@ -4,7 +4,7 @@
 
 6' 3", 301 lb · Born July 27, 1991 · Ohio State · Drafted in 2014, fifth round, by Jacksonville
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Corey Linsley](https://commons.wikimedia.org/wiki/Special:FilePath/Corey_Linsley.jpg?width=500)
 

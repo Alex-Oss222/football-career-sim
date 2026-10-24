@@ -1,10 +1,10 @@
 # D'Qwell Jackson
 
-**Indianapolis Colts · Middle linebacker · No. 52 · Age 31 · Last game October 5, 2014**
+**Indianapolis Colts · Middle linebacker · No. 52 · Age 31 · Last game October 9, 2014**
 
 6' 0", 240 lb · Born September 26, 1983 · Maryland · Drafted in 2006, second round, by Cleveland
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![D'Qwell Jackson](https://commons.wikimedia.org/wiki/Special:FilePath/D%27Qwell_Jackson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting middle linebacker.
 
-**Tackles:** 37 (2014, through Week 5).
+**Tackles:** 38 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 30 | 52 | 5 | 37 | 26 | 11 | 5 | 1 | 2 |
+| 2014 (through Week 6) | Indianapolis | 30 | 52 | 6 | 38 | 26 | 12 | 5 | 1 | 2 |
 | 2013 | Cleveland | 29 | 52 | 16 | 155 | 104 | 51 | 7 | 4 | 8 |
-| Career |  |  |  | 21 | 192 | 130 | 62 | 12 | 5 | 10 |
+| Career |  |  |  | 22 | 193 | 130 | 63 | 12 | 5 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 30 | 52 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Indianapolis | 30 | 52 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Cleveland | 29 | 52 | 1 | 0 | 5 | 2 | 2 | N/A |
 
 ### Playoffs

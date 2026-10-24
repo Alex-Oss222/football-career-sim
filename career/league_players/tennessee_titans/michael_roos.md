@@ -1,10 +1,10 @@
 # Michael Roos
 
-**Tennessee Titans · Offensive tackle · No. 71 · Age 32 · Last game October 5, 2014**
+**Tennessee Titans · Offensive tackle · No. 71 · Age 32 · Last game October 12, 2014**
 
 6' 7", 313 lb · Born October 5, 1982 · Eastern Washington · Drafted in 2005, second round, by Tennessee
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Michael Roos](https://commons.wikimedia.org/wiki/Special:FilePath/Michael-Roos-TitansvsPackers-Nov-2-08.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 5 (2014, through Week 5).
+**Sacks allowed:** 5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 31 | 71 | 5 | 5 | 323 | 5 | 23 |
+| 2014 (through Week 6) | Tennessee | 31 | 71 | 6 | 6 | 377 | 5 | 25 |
 | 2013 | Tennessee | 30 | 71 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

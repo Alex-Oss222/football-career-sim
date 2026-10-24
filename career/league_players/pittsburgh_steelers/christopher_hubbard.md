@@ -1,10 +1,10 @@
 # Christopher Hubbard
 
-**Pittsburgh Steelers · Offensive tackle · No. 74 · Age 23 · Last game October 5, 2014**
+**Pittsburgh Steelers · Offensive tackle · No. 74 · Age 23 · Last game October 12, 2014**
 
 6' 4", 286 lb · Born April 23, 1991 · UAB
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Christopher Hubbard](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Hubbard.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 23 | 74 | 5 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Pittsburgh | 23 | 74 | 6 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

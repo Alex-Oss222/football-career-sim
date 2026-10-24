@@ -1,6 +1,6 @@
 # San Diego Chargers players
 
-AFC West. The players whose latest game on record was with the San Diego Chargers. G counts regular-season games with any club. Records through October 6, 2014.
+AFC West. The players whose latest game on record was with the San Diego Chargers. G counts regular-season games with any club. Records through October 13, 2014.
 
 [All clubs](../README.md)
 
@@ -9,66 +9,65 @@ AFC West. The players whose latest game on record was with the San Diego Charger
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
 | N/A | [Brad Sorensen](brad_sorensen.md) | QB | 0 | 16 |
-| 10 | [Kellen Clemens](kellen_clemens.md) | QB | 5 | 16 |
-| 17 | [Philip Rivers](philip_rivers.md) | QB | 5 | 16 |
+| 10 | [Kellen Clemens](kellen_clemens.md) | QB | 6 | 16 |
+| 17 | [Philip Rivers](philip_rivers.md) | QB | 6 | 16 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 43 | [Branden Oliver](branden_oliver.md) | RB | 5 | 0 |
-| 39 | [Danny Woodhead](danny_woodhead.md) | RB | 5 | 16 |
-| 34 | [Donald Brown](donald_brown.md) | RB | 5 | 16 |
+| 43 | [Branden Oliver](branden_oliver.md) | RB | 6 | 0 |
+| 39 | [Danny Woodhead](danny_woodhead.md) | RB | 6 | 16 |
+| 34 | [Donald Brown](donald_brown.md) | RB | 6 | 16 |
 | N/A | [Le'Ron McClain](le_ron_mcclain.md) | FB | 0 | 16 |
-| 24 | [Ryan Mathews](ryan_mathews.md) | RB | 3 | 16 |
+| 24 | [Ryan Mathews](ryan_mathews.md) | RB | 4 | 16 |
 
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 15 | [Dontrelle Inman](dontrelle_inman.md) | WR | 5 | 0 |
-| 11 | [Eddie Royal](eddie_royal.md) | WR | 5 | 16 |
-| 13 | [Keenan Allen](keenan_allen.md) | WR | 5 | 16 |
-| 80 | [Malcom Floyd](malcom_floyd.md) | WR | 5 | 14 |
-| 16 | [Seyi Ajirotutu](seyi_ajirotutu.md) | WR | 5 | 16 |
-| N/A | [Vincent Brown](vincent_brown.md) | WR | 0 | 16 |
+| 15 | [Dontrelle Inman](dontrelle_inman.md) | WR | 6 | 0 |
+| 11 | [Eddie Royal](eddie_royal.md) | WR | 6 | 16 |
+| 13 | [Keenan Allen](keenan_allen.md) | WR | 6 | 16 |
+| 80 | [Malcom Floyd](malcom_floyd.md) | WR | 6 | 14 |
+| 16 | [Seyi Ajirotutu](seyi_ajirotutu.md) | WR | 6 | 16 |
 
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 85 | [Antonio Gates](antonio_gates.md) | TE | 5 | 16 |
-| 88 | [David Johnson](david_johnson.md) | TE | 5 | 16 |
-| 83 | [John Phillips](john_phillips.md) | TE | 5 | 16 |
-| 89 | [Ladarius Green](ladarius_green.md) | TE | 5 | 16 |
+| 85 | [Antonio Gates](antonio_gates.md) | TE | 6 | 16 |
+| 88 | [David Johnson](david_johnson.md) | TE | 6 | 16 |
+| 83 | [John Phillips](john_phillips.md) | TE | 6 | 16 |
+| 89 | [Ladarius Green](ladarius_green.md) | TE | 6 | 16 |
 
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 78 | [Chad Rinehart](chad_rinehart.md) | G | 5 | 16 |
-| 65 | [Chris Watt](chris_watt.md) | C | 2 | 0 |
-| 76 | [D.J. Fluker](d_j_fluker.md) | G | 5 | 16 |
+| 78 | [Chad Rinehart](chad_rinehart.md) | G | 6 | 16 |
+| 65 | [Chris Watt](chris_watt.md) | C | 3 | 0 |
+| 76 | [D.J. Fluker](d_j_fluker.md) | G | 6 | 16 |
 | N/A | [Jeromey Clary](jeromey_clary.md) | G | 0 | 16 |
-| 63 | [Johnnie Troutman](johnnie_troutman.md) | G | 5 | 16 |
-| 77 | [King Dunlap](king_dunlap.md) | T | 5 | 16 |
+| 63 | [Johnnie Troutman](johnnie_troutman.md) | G | 6 | 16 |
+| 77 | [King Dunlap](king_dunlap.md) | T | 6 | 16 |
 | N/A | [Mike Harris](mike_harris.md) | G | 0 | 2 |
-| 61 | [Nick Hardwick](nick_hardwick.md) | C | 5 | 16 |
-| 74 | [Rich Ohrnberger](rich_ohrnberger.md) | G | 5 | 16 |
-| 69 | [Willie Smith](willie_smith.md) | T | 5 | 0 |
+| 61 | [Nick Hardwick](nick_hardwick.md) | C | 6 | 16 |
+| 74 | [Rich Ohrnberger](rich_ohrnberger.md) | G | 6 | 16 |
+| 69 | [Willie Smith](willie_smith.md) | T | 6 | 0 |
 
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 94 | [Corey Liuget](corey_liuget.md) | DT | 5 | 16 |
+| 94 | [Corey Liuget](corey_liuget.md) | DT | 6 | 16 |
 | N/A | [Drake Nevis](drake_nevis.md) | DT | 0 | 16 |
-| 91 | [Kendall Reyes](kendall_reyes.md) | DE | 5 | 16 |
+| 91 | [Kendall Reyes](kendall_reyes.md) | DE | 6 | 16 |
 | N/A | [Kwame Geathers](kwame_geathers.md) | DT | 0 | 16 |
-| 90 | [Ricardo Mathews](ricardo_mathews.md) | DT | 5 | 16 |
-| 92 | [Ryan Carrethers](ryan_carrethers.md) | DT | 5 | 0 |
-| 98 | [Sean Lissemore](sean_lissemore.md) | DT | 5 | 16 |
-| 72 | [Tenny Palepoi](tenny_palepoi.md) | DT | 5 | 0 |
+| 90 | [Ricardo Mathews](ricardo_mathews.md) | DT | 6 | 16 |
+| 92 | [Ryan Carrethers](ryan_carrethers.md) | DT | 6 | 0 |
+| 98 | [Sean Lissemore](sean_lissemore.md) | DT | 6 | 16 |
+| 72 | [Tenny Palepoi](tenny_palepoi.md) | DT | 6 | 0 |
 
 ## Linebackers
 
@@ -76,48 +75,48 @@ AFC West. The players whose latest game on record was with the San Diego Charger
 |---|---|---|---:|---:|
 | 59 | [Andrew Gachkar](andrew_gachkar.md) | ILB | 0 | 16 |
 | N/A | [Bront Bird](bront_bird.md) | ILB | 0 | 16 |
-| 56 | [Donald Butler](donald_butler.md) | ILB | 5 | 16 |
+| 56 | [Donald Butler](donald_butler.md) | ILB | 6 | 16 |
 | 93 | [Dwight Freeney](dwight_freeney.md) | OLB | 0 | 16 |
-| 96 | [Jarret Johnson](jarret_johnson.md) | OLB | 5 | 16 |
-| 53 | [Kavell Conner](kavell_conner.md) | ILB | 5 | 15 |
-| 50 | [Manti Te'o](manti_te_o.md) | ILB | 5 | 0 |
-| 54 | [Melvin Ingram](melvin_ingram.md) | OLB | 5 | 0 |
-| 52 | [Reggie Walker](reggie_walker.md) | ILB | 5 | 2 |
+| 96 | [Jarret Johnson](jarret_johnson.md) | OLB | 6 | 16 |
+| 53 | [Kavell Conner](kavell_conner.md) | ILB | 6 | 15 |
+| 50 | [Manti Te'o](manti_te_o.md) | ILB | 6 | 0 |
+| 54 | [Melvin Ingram](melvin_ingram.md) | OLB | 6 | 0 |
+| 52 | [Reggie Walker](reggie_walker.md) | ILB | 6 | 2 |
 | N/A | [Terrell Manning](terrell_manning.md) | ILB | 0 | 16 |
-| 58 | [Tourek Williams](tourek_williams.md) | OLB | 5 | 1 |
+| 58 | [Tourek Williams](tourek_williams.md) | OLB | 6 | 1 |
 
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 26 | [Brandon Flowers](brandon_flowers.md) | CB | 5 | 16 |
+| 26 | [Brandon Flowers](brandon_flowers.md) | CB | 6 | 16 |
 | N/A | [Brandon Taylor](brandon_taylor.md) | SS | 0 | 2 |
-| 25 | [Darrell Stuckey](darrell_stuckey.md) | FS | 5 | 4 |
+| 25 | [Darrell Stuckey](darrell_stuckey.md) | FS | 6 | 4 |
 | N/A | [Derek Cox](derek_cox.md) | CB | 0 | 16 |
-| 32 | [Eric Weddle](eric_weddle.md) | FS | 5 | 16 |
+| 32 | [Eric Weddle](eric_weddle.md) | FS | 6 | 16 |
 | 37 | [Jahleel Addae](jahleel_addae.md) | SS | 1 | 2 |
-| 22 | [Jason Verrett](jason_verrett.md) | CB | 5 | 0 |
+| 22 | [Jason Verrett](jason_verrett.md) | CB | 6 | 0 |
 | N/A | [Johnny Patrick](johnny_patrick.md) | CB | 0 | 16 |
-| 38 | [Marcus Gilchrist](marcus_gilchrist.md) | SS | 5 | 16 |
-| 31 | [Richard Marshall](richard_marshall.md) | CB | 5 | 16 |
-| 29 | [Shareece Wright](shareece_wright.md) | CB | 5 | 16 |
+| 38 | [Marcus Gilchrist](marcus_gilchrist.md) | SS | 6 | 16 |
+| 31 | [Richard Marshall](richard_marshall.md) | CB | 6 | 16 |
+| 29 | [Shareece Wright](shareece_wright.md) | CB | 6 | 16 |
 
 ## Kickers
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 9 | [Nick Novak](nick_novak.md) | K | 5 | 16 |
+| 9 | [Nick Novak](nick_novak.md) | K | 6 | 16 |
 
 ## Punters
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 5 | [Mike Scifres](mike_scifres.md) | P | 5 | 16 |
+| 5 | [Mike Scifres](mike_scifres.md) | P | 6 | 16 |
 
 ## Long snappers
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 47 | [Mike Windt](mike_windt.md) | LS | 5 | 16 |
+| 47 | [Mike Windt](mike_windt.md) | LS | 6 | 16 |
 
 <!-- player-index -->

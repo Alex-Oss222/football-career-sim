@@ -1,10 +1,10 @@
 # Jason Babin
 
-**Miami Dolphins · Defensive end · Age 34 · Last game September 28, 2014**
+**Miami Dolphins · Defensive end · Age 34 · Last game October 12, 2014**
 
 6' 3", 267 lb · Born May 24, 1980 · Western Michigan · Drafted in 2004, first round, by Houston
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Jason Babin](https://commons.wikimedia.org/wiki/Special:FilePath/Jason_Babin.jpg?width=500)
 
@@ -26,13 +26,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 34 | N/A | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 34 | N/A | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 33 | 58 | 16 | 52 | 35 | 17 | 6 | 3 | 7 |
 | Career |  |  |  | 19 | 52 | 35 | 17 | 6 | 3 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 34 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 34 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 33 | 58 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

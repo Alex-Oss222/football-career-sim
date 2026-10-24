@@ -1,10 +1,10 @@
 # Tavon Austin
 
-**St. Louis Rams · Wide receiver · No. 11 · Age 24 · Last game October 5, 2014**
+**St. Louis Rams · Wide receiver · No. 11 · Age 24 · Last game October 13, 2014**
 
 5' 8", 176 lb · Born March 15, 1990 · West Virginia
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Tavon Austin](https://commons.wikimedia.org/wiki/Special:FilePath/Tavon2013-8-15.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 8.9 (2014, through Week 5).
+**Yards per target:** 8.7 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 24 | 11 | 4 | 45 | 28 | 402 | 14.4 | 1 | 49 | 100.5 | 62.2 |
+| 2014 (through Week 6) | St. Louis | 24 | 11 | 5 | 51 | 32 | 445 | 13.9 | 1 | 49 | 89.0 | 62.7 |
 | 2013 | St. Louis | 23 | 11 | 16 | 16 | 12 | 166 | 13.8 | 1 | 56 | 10.4 | 75.0 |
-| Career |  |  |  | 20 | 61 | 40 | 568 | 14.2 | 2 | 56 | 28.4 | 65.6 |
+| Career |  |  |  | 21 | 67 | 44 | 611 | 13.9 | 2 | 56 | 29.1 | 65.7 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 24 | 11 | 1 | 6 | 0 | 1 | 1 |
+| 2014 (through Week 6) | St. Louis | 24 | 11 | 2 | 16 | 0 | 1 | 1 |
 | 2013 | St. Louis | 23 | 11 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 24 | 11 | 0 | 0 | N/A | 12 | 125 | 10.4 |
+| 2014 (through Week 6) | St. Louis | 24 | 11 | 0 | 0 | N/A | 12 | 125 | 10.4 |
 | 2013 | St. Louis | 23 | 11 | 0 | 0 | N/A | 55 | 615 | 11.2 |
 
 ### Playoffs

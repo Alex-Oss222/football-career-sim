@@ -1,10 +1,10 @@
 # Rolando McClain
 
-**Dallas Cowboys · Middle linebacker · No. 55 · Age 25 · Last game October 5, 2014**
+**Dallas Cowboys · Middle linebacker · No. 55 · Age 25 · Last game October 12, 2014**
 
 6' 4", 259 lb · Born July 14, 1989 · Alabama · Drafted in 2010, first round, by Oakland
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Rolando McClain](https://commons.wikimedia.org/wiki/Special:FilePath/Rolando_McClain.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting middle linebacker.
 
-**Tackles:** 14 (2014, through Week 5).
+**Tackles:** 16 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 25 | 55 | 5 | 14 | 12 | 2 | 1 | 0 | 1 |
+| 2014 (through Week 6) | Dallas | 25 | 55 | 6 | 16 | 13 | 3 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 25 | 55 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Dallas | 25 | 55 | 0 | 0 | 2 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -1,6 +1,6 @@
 # Player ages
 
-As of October 5, 2014. Ages count completed birthdays.
+As of October 12, 2014. Ages count completed birthdays.
 
 Birth dates and their evidence: [verification notes](../../../../../library/2013_player_birth_dates.md).
 
@@ -94,7 +94,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Peter Konz | C | 1989-12-20 | 24 | 2014 Week 1 roster |
 | Gabe Carimi | T | 1988-06-13 | 26 | 2014 Week 1 roster |
 | Kroy Biermann | DE | 1985-09-12 | 29 | 2014 Week 1 roster |
-| Jonathan Babineaux | DE | 1981-10-12 | 32 | 2014 Week 1 roster |
+| Jonathan Babineaux | DE | 1981-10-12 | 33 | 2014 Week 1 roster |
 | Paul Soliai | DT | 1983-12-30 | 30 | 2014 Week 1 roster |
 | Tyson Jackson | DT | 1986-06-06 | 28 | 2014 Week 1 roster |
 | Osi Umenyiora | DE | 1981-11-16 | 32 | 2014 Week 1 roster |
@@ -155,7 +155,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Chris Canty | DE | 1982-11-10 | 31 | 2014 Week 1 roster |
 | DeAngelo Tyson | DE | 1989-04-12 | 25 | 2014 Week 1 roster |
 | Timmy Jernigan | DT | 1992-09-24 | 22 | 2014 Week 1 roster |
-| Terrell Suggs | OLB | 1982-10-11 | 31 | 2014 Week 1 roster |
+| Terrell Suggs | OLB | 1982-10-11 | 32 | 2014 Week 1 roster |
 | C.J. Mosley (BAL) | ILB | 1992-06-19 | 22 | 2014 Week 1 roster |
 | Courtney Upshaw | OLB | 1989-12-13 | 24 | 2014 Week 1 roster |
 | Albert McClellan | ILB | 1986-06-04 | 28 | 2014 Week 1 roster |
@@ -167,7 +167,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Darian Stewart | FS | 1988-08-04 | 26 | 2014 Week 1 roster |
 | Asa Jackson | CB | 1989-12-02 | 24 | 2014 Week 1 roster |
 | Matt Elam | SS | 1991-09-21 | 23 | 2014 Week 1 roster |
-| Lardarius Webb | FS | 1985-10-12 | 28 | 2014 Week 1 roster |
+| Lardarius Webb | FS | 1985-10-12 | 29 | 2014 Week 1 roster |
 | Chykie Brown | CB | 1986-12-26 | 27 | 2014 Week 1 roster |
 | Jeromy Miles | FS | 1987-07-20 | 27 | 2014 Week 1 roster |
 | Anthony Levine | SS | 1987-03-27 | 27 | 2014 Week 1 roster |
@@ -250,7 +250,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Corey Brown | WR | 1991-12-16 | 22 | 2014 Week 1 roster |
 | Greg Olsen | TE | 1985-03-11 | 29 | 2014 Week 1 roster |
 | Ed Dickson | TE | 1987-07-25 | 27 | 2014 Week 1 roster |
-| Brandon Williams (CAR) | TE | 1987-10-12 | 26 | 2014 Week 1 roster |
+| Brandon Williams (CAR) | TE | 1987-10-12 | 27 | 2014 Week 1 roster |
 | Richie Brockel | TE | 1986-07-24 | 28 | 2014 Week 1 roster |
 | Byron Bell | G | 1989-01-17 | 25 | 2014 Week 1 roster |
 | Amini Silatolu | G | 1988-09-16 | 26 | 2014 Week 1 roster |
@@ -354,7 +354,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Jason Campbell | QB | 1981-12-31 | 32 | 2014 Week 1 roster |
 | Giovani Bernard | RB | 1991-11-22 | 22 | 2014 Week 1 roster |
 | Jeremy Hill | RB | 1992-10-20 | 21 | 2014 Week 1 roster |
-| Cedric Peerman | RB | 1986-10-10 | 27 | 2014 Week 1 roster |
+| Cedric Peerman | RB | 1986-10-10 | 28 | 2014 Week 1 roster |
 | Rex Burkhead | RB | 1990-07-02 | 24 | 2014 Week 1 roster |
 | Mohamed Sanu | WR | 1989-08-22 | 25 | 2014 Week 1 roster |
 | A.J. Green | WR | 1988-07-31 | 26 | 2014 Week 1 roster |
@@ -398,7 +398,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Taylor Mays | FS | 1988-02-07 | 26 | 2014 Week 1 roster |
 | Dre Kirkpatrick | CB | 1989-10-26 | 24 | 2014 Week 1 roster |
 | Shawn Williams | SS | 1991-05-13 | 23 | 2014 Week 1 roster |
-| Darqueze Dennard | CB | 1991-10-10 | 22 | 2014 Week 1 roster |
+| Darqueze Dennard | CB | 1991-10-10 | 23 | 2014 Week 1 roster |
 | Mike Nugent | K | 1982-03-02 | 32 | 2014 Week 1 roster |
 | Kevin Huber | P | 1985-07-16 | 29 | 2014 Week 1 roster |
 | Clark Harris | LS | 1984-07-10 | 30 | 2014 Week 1 roster |
@@ -426,7 +426,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Mitchell Schwartz | T | 1989-06-08 | 25 | 2014 Week 1 roster |
 | Ryan Seymour | G | 1990-02-07 | 24 | 2014 Week 1 roster |
 | Paul McQuistan | G | 1983-04-30 | 31 | 2014 Week 1 roster |
-| Vinston Painter | T | 1989-10-11 | 24 | 2014 Week 1 roster |
+| Vinston Painter | T | 1989-10-11 | 25 | 2014 Week 1 roster |
 | Ahtyba Rubin | NT | 1986-07-25 | 28 | 2014 Week 1 roster |
 | Armonty Bryant | DE | 1990-05-20 | 24 | 2014 Week 1 roster |
 | Phillip Taylor | DE | 1988-04-07 | 26 | 2014 Week 1 roster |
@@ -485,7 +485,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Mackenzy Bernadeau | G | 1986-01-03 | 28 | 2014 Week 1 roster |
 | Donald Hawkins | T | 1992-04-22 | 22 | 2014 Week 1 roster |
 | Darrion Weems | T | 1988-09-04 | 26 | 2014 Week 1 roster |
-| Henry Melton | DT | 1986-10-11 | 27 | 2014 Week 1 roster |
+| Henry Melton | DT | 1986-10-11 | 28 | 2014 Week 1 roster |
 | Nick Hayden | DT | 1986-02-04 | 28 | 2014 Week 1 roster |
 | George Selvie | DE | 1987-03-06 | 27 | 2014 Week 1 roster |
 | Davon Coleman | DT | 1991-01-11 | 23 | 2014 Week 1 roster |
@@ -525,7 +525,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Emmanuel Sanders | WR | 1987-03-17 | 27 | 2014 Week 1 roster |
 | Demaryius Thomas | WR | 1987-12-25 | 26 | 2014 Week 1 roster |
 | Andre Caldwell | WR | 1985-04-15 | 29 | 2014 Week 1 roster |
-| Cody Latimer | WR | 1992-10-10 | 21 | 2014 Week 1 roster |
+| Cody Latimer | WR | 1992-10-10 | 22 | 2014 Week 1 roster |
 | Nathan Palmer | WR | 1989-04-14 | 25 | 2014 Week 1 roster |
 | Isaiah Burse | WR | 1991-12-08 | 22 | 2014 Week 1 roster |
 | Julius Thomas | TE | 1988-06-27 | 26 | 2014 Week 1 roster |
@@ -641,7 +641,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Jeff Janis | WR | 1991-06-24 | 23 | 2014 Week 1 roster |
 | Richard Rodgers | TE | 1992-01-22 | 22 | 2014 Week 1 roster |
 | Brandon Bostick | TE | 1989-05-03 | 25 | 2014 Week 1 roster |
-| Andrew Quarless | TE | 1988-10-06 | 25 | 2014 Week 1 roster |
+| Andrew Quarless | TE | 1988-10-06 | 26 | 2014 Week 1 roster |
 | Ryan Taylor | TE | 1987-11-16 | 26 | 2014 Week 1 roster |
 | David Bakhtiari | T | 1991-09-30 | 23 | 2014 Week 1 roster |
 | Josh Sitton | G | 1986-06-16 | 28 | 2014 Week 1 roster |
@@ -660,7 +660,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Clay Matthews | OLB | 1986-05-14 | 28 | 2014 Week 1 roster |
 | Brad Jones | MLB | 1986-04-01 | 28 | 2014 Week 1 roster |
 | Nick Perry | OLB | 1990-04-12 | 24 | 2014 Week 1 roster |
-| Jamari Lattimore | MLB | 1988-10-06 | 25 | 2014 Week 1 roster |
+| Jamari Lattimore | MLB | 1988-10-06 | 26 | 2014 Week 1 roster |
 | Sam Barrington | ILB | 1990-10-05 | 24 | 2014 Week 1 roster |
 | Mike Neal | OLB | 1987-06-26 | 27 | 2014 Week 1 roster |
 | Carl Bradford | ILB | 1992-08-15 | 22 | 2014 Week 1 roster |
@@ -815,12 +815,12 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Marcel Jensen | TE | 1990-02-12 | 24 | Active roster |
 | Gator Hoskins | TE | 1991-12-19 | 22 | Active roster |
 | Eugene Monroe | OT | 1987-04-18 | 27 | Active roster |
-| Joel Bitonio | OT | 1991-10-11 | 22 | Active roster |
+| Joel Bitonio | OT | 1991-10-11 | 23 | Active roster |
 | Mike Brewster | C | 1989-07-27 | 25 | Active roster |
 | Trai Turner | G | 1993-06-14 | 21 | Active roster |
 | Lane Johnson | OT | 1990-05-08 | 24 | Active roster |
 | Cornelius Lucas | OT | 1991-07-18 | 23 | Active roster |
-| Charles Leno Jr. | OT | 1991-10-09 | 22 | Active roster |
+| Charles Leno Jr. | OT | 1991-10-09 | 23 | Active roster |
 | Andrew Norwell | G | 1991-10-25 | 22 | Active roster |
 | Corey Linsley | C | 1991-07-27 | 23 | Active roster |
 | Jeremy Mincey | DE | 1983-12-14 | 30 | Active roster |
@@ -832,7 +832,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Aaron Donald | DT | 1991-05-23 | 23 | Active roster |
 | Kasim Edebali | DE | 1989-08-17 | 25 | Active roster |
 | Daryl Smith | LB | 1982-03-14 | 32 | Active roster |
-| Paul Posluszny | LB | 1984-10-10 | 29 | Active roster |
+| Paul Posluszny | LB | 1984-10-10 | 30 | Active roster |
 | Julian Stanford | LB | 1990-09-02 | 24 | Active roster |
 | Sio Moore | LB | 1990-05-02 | 24 | Active roster |
 | Telvin Smith | LB | 1991-04-11 | 23 | Active roster |
@@ -849,7 +849,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Adrian Phillips | S | 1992-03-28 | 22 | Active roster |
 | Alan Ball | CB | 1985-03-29 | 29 | Active roster |
 | Josh Scobee | K | 1982-06-23 | 32 | Active roster |
-| Bryan Anger | P | 1988-10-06 | 25 | Active roster |
+| Bryan Anger | P | 1988-10-06 | 26 | Active roster |
 | Casey Kreiter | LS | 1990-08-13 | 24 | Active roster |
 | Cameron Brate | TE | 1991-07-03 | 23 | Reserve/injured |
 | Jerrell Jackson | WR | 1990-02-06 | 24 | Reserve/injured |
@@ -868,7 +868,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Player | Pos | DOB | Age | Listed on |
 |---|---|---|---:|---|
 | Alex Smith (KC) | QB | 1984-05-07 | 30 | 2014 Week 1 roster |
-| Chase Daniel | QB | 1986-10-07 | 27 | 2014 Week 1 roster |
+| Chase Daniel | QB | 1986-10-07 | 28 | 2014 Week 1 roster |
 | Aaron Murray | QB | 1990-11-10 | 23 | 2014 Week 1 roster |
 | Jamaal Charles | RB | 1986-12-27 | 27 | 2014 Week 1 roster |
 | Joe McKnight | RB | 1988-04-16 | 26 | 2014 Week 1 roster |
@@ -936,7 +936,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Mike Wallace | WR | 1986-08-01 | 28 | 2014 Week 1 roster |
 | Brian Hartline | WR | 1986-11-22 | 27 | 2014 Week 1 roster |
 | Jarvis Landry | WR | 1992-11-28 | 21 | 2014 Week 1 roster |
-| Rishard Matthews | WR | 1989-10-12 | 24 | 2014 Week 1 roster |
+| Rishard Matthews | WR | 1989-10-12 | 25 | 2014 Week 1 roster |
 | Charles Clay | TE | 1989-02-13 | 25 | 2014 Week 1 roster |
 | Dion Sims | TE | 1991-02-18 | 23 | 2014 Week 1 roster |
 | Branden Albert | T | 1984-11-04 | 29 | 2014 Week 1 roster |
@@ -949,7 +949,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Mike Pouncey | C | 1989-07-24 | 25 | 2014 Week 1 roster |
 | Dallas Thomas | G | 1989-10-30 | 24 | 2014 Week 1 roster |
 | Jason Fox | T | 1988-05-02 | 26 | 2014 Week 1 roster |
-| Olivier Vernon | DE | 1990-10-07 | 23 | 2014 Week 1 roster |
+| Olivier Vernon | DE | 1990-10-07 | 24 | 2014 Week 1 roster |
 | Earl Mitchell | DT | 1987-09-25 | 27 | 2014 Week 1 roster |
 | Cameron Wake | DE | 1982-01-30 | 32 | 2014 Week 1 roster |
 | Randy Starks | DT | 1983-12-14 | 30 | 2014 Week 1 roster |
@@ -1010,7 +1010,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Sharrif Floyd | DT | 1991-05-28 | 23 | 2014 Week 1 roster |
 | Brian Robison | DE | 1983-04-27 | 31 | 2014 Week 1 roster |
 | Everson Griffen | DE | 1987-12-22 | 26 | 2014 Week 1 roster |
-| Linval Joseph | NT | 1988-10-10 | 25 | 2014 Week 1 roster |
+| Linval Joseph | NT | 1988-10-10 | 26 | 2014 Week 1 roster |
 | Tom Johnson | DT | 1984-08-30 | 30 | 2014 Week 1 roster |
 | Shamar Stephen | NT | 1991-02-25 | 23 | 2014 Week 1 roster |
 | Scott Crichton | DE | 1991-10-30 | 22 | 2014 Week 1 roster |
@@ -1133,7 +1133,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Kyle Knox | ILB | 1989-03-10 | 25 | 2014 Week 1 roster |
 | Patrick Robinson | CB | 1987-09-07 | 27 | 2014 Week 1 roster |
 | Keenan Lewis | CB | 1986-05-17 | 28 | 2014 Week 1 roster |
-| Jairus Byrd | FS | 1986-10-07 | 27 | 2014 Week 1 roster |
+| Jairus Byrd | FS | 1986-10-07 | 28 | 2014 Week 1 roster |
 | Kenny Vaccaro | SS | 1991-02-15 | 23 | 2014 Week 1 roster |
 | Brian Dixon | CB | 1990-04-26 | 24 | 2014 Week 1 roster |
 | Corey White | CB | 1990-05-09 | 24 | 2014 Week 1 roster |
@@ -1204,7 +1204,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 
 | Player | Pos | DOB | Age | Listed on |
 |---|---|---|---:|---|
-| Geno Smith | QB | 1990-10-10 | 23 | 2014 Week 1 roster |
+| Geno Smith | QB | 1990-10-10 | 24 | 2014 Week 1 roster |
 | Michael Vick | QB | 1980-06-26 | 34 | 2014 Week 1 roster |
 | Chris Ivory | RB | 1988-03-22 | 26 | 2014 Week 1 roster |
 | Chris Johnson | RB | 1985-09-23 | 29 | 2014 Week 1 roster |
@@ -1288,7 +1288,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Kaluka Maiava | MLB | 1986-12-27 | 27 | 2014 Week 1 roster |
 | Benson Mayowa | OLB | 1991-08-03 | 23 | 2014 Week 1 roster |
 | Tarell Brown | CB | 1985-01-06 | 29 | 2014 Week 1 roster |
-| Charles Woodson | FS | 1976-10-07 | 37 | 2014 Week 1 roster |
+| Charles Woodson | FS | 1976-10-07 | 38 | 2014 Week 1 roster |
 | Carlos Rogers | CB | 1981-07-02 | 33 | 2014 Week 1 roster |
 | Tyvon Branch | SS | 1986-12-11 | 27 | 2014 Week 1 roster |
 | Usama Young | SS | 1985-05-08 | 29 | 2014 Week 1 roster |
@@ -1424,7 +1424,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 |---|---|---|---:|---|
 | Philip Rivers | QB | 1981-12-08 | 32 | 2014 Week 1 roster |
 | Kellen Clemens | QB | 1983-06-06 | 31 | 2014 Week 1 roster |
-| Ryan Mathews | RB | 1987-10-10 | 26 | 2014 Week 1 roster |
+| Ryan Mathews | RB | 1987-10-10 | 27 | 2014 Week 1 roster |
 | Danny Woodhead | RB | 1985-01-25 | 29 | 2014 Week 1 roster |
 | Donald Brown | RB | 1987-04-11 | 27 | 2014 Week 1 roster |
 | Branden Oliver | RB | 1991-05-07 | 23 | 2014 Week 1 roster |
@@ -1473,7 +1473,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Chris Davis | CB | 1990-11-04 | 23 | 2014 Week 1 roster |
 | Steve Williams | CB | 1991-03-07 | 23 | 2014 Week 1 roster |
 | Nick Novak | K | 1981-08-21 | 33 | 2014 Week 1 roster |
-| Mike Scifres | P | 1980-10-08 | 33 | 2014 Week 1 roster |
+| Mike Scifres | P | 1980-10-08 | 34 | 2014 Week 1 roster |
 | Mike Windt | LS | 1986-05-29 | 28 | 2014 Week 1 roster |
 
 ## San Francisco 49ers
@@ -1500,7 +1500,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Mike Iupati | G | 1987-05-12 | 27 | 2014 Week 1 roster |
 | Daniel Kilgore | C | 1987-12-18 | 26 | 2014 Week 1 roster |
 | Joe Looney | C | 1990-08-31 | 24 | 2014 Week 1 roster |
-| Anthony Davis | T | 1989-10-11 | 24 | 2014 Week 1 roster |
+| Anthony Davis | T | 1989-10-11 | 25 | 2014 Week 1 roster |
 | Marcus Martin | C | 1993-11-29 | 20 | 2014 Week 1 roster |
 | Dillon Farrell | G | 1990-09-07 | 24 | 2014 Week 1 roster |
 | Jonathan Martin | T | 1989-08-19 | 25 | 2014 Week 1 roster |
@@ -1555,7 +1555,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Luke Willson | TE | 1990-01-15 | 24 | 2014 Week 1 roster |
 | Greg Scruggs | TE | 1990-08-17 | 24 | 2014 Week 1 roster |
 | Cooper Helfet | TE | 1989-06-02 | 25 | 2014 Week 1 roster |
-| Russell Okung | T | 1988-10-07 | 25 | 2014 Week 1 roster |
+| Russell Okung | T | 1988-10-07 | 26 | 2014 Week 1 roster |
 | James Carpenter | G | 1989-03-22 | 25 | 2014 Week 1 roster |
 | Max Unger | C | 1986-04-14 | 28 | 2014 Week 1 roster |
 | J.R. Sweezy | G | 1989-04-08 | 25 | 2014 Week 1 roster |
@@ -1563,7 +1563,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Alvin Bailey | G | 1991-08-26 | 23 | 2014 Week 1 roster |
 | Garry Gilliam | T | 1990-11-26 | 23 | 2014 Week 1 roster |
 | Stephen Schilling | G | 1988-07-21 | 26 | 2014 Week 1 roster |
-| Will Rackley | G | 1989-10-11 | 24 | 2014 Week 1 roster |
+| Will Rackley | G | 1989-10-11 | 25 | 2014 Week 1 roster |
 | Cliff Avril | DE | 1986-04-08 | 28 | 2014 Week 1 roster |
 | Michael Bennett | DE | 1985-11-13 | 28 | 2014 Week 1 roster |
 | Brandon Mebane | NT | 1985-01-15 | 29 | 2014 Week 1 roster |
@@ -1574,10 +1574,10 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Malcolm Smith | OLB | 1989-07-05 | 25 | 2014 Week 1 roster |
 | Bobby Wagner | MLB | 1990-06-27 | 24 | 2014 Week 1 roster |
 | Bruce Irvin | OLB | 1987-11-01 | 26 | 2014 Week 1 roster |
-| Brock Coyle | MLB | 1990-10-12 | 23 | 2014 Week 1 roster |
+| Brock Coyle | MLB | 1990-10-12 | 24 | 2014 Week 1 roster |
 | Michael Morgan | OLB | 1988-01-16 | 26 | 2014 Week 1 roster |
 | O'Brien Schofield | LB | 1987-04-03 | 27 | 2014 Week 1 roster |
-| Kevin Pierre-Louis | OLB | 1991-10-07 | 22 | 2014 Week 1 roster |
+| Kevin Pierre-Louis | OLB | 1991-10-07 | 23 | 2014 Week 1 roster |
 | Cassius Marsh | OLB | 1992-07-07 | 22 | 2014 Week 1 roster |
 | Richard Sherman | CB | 1988-03-30 | 26 | 2014 Week 1 roster |
 | Earl Thomas | FS | 1989-05-07 | 25 | 2014 Week 1 roster |
@@ -1671,7 +1671,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Logan Mankins | G | 1982-03-10 | 32 | 2014 Week 1 roster |
 | Evan Smith | C | 1986-07-19 | 28 | 2014 Week 1 roster |
 | Patrick Omameh | G | 1989-12-29 | 24 | 2014 Week 1 roster |
-| Demar Dotson | T | 1985-10-11 | 28 | 2014 Week 1 roster |
+| Demar Dotson | T | 1985-10-11 | 29 | 2014 Week 1 roster |
 | Kevin Pamphile | G | 1990-11-27 | 23 | 2014 Week 1 roster |
 | Kadeem Edwards | G | 1991-01-24 | 23 | 2014 Week 1 roster |
 | Garrett Gilkey | C | 1990-07-09 | 24 | 2014 Week 1 roster |
@@ -1791,7 +1791,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Spencer Long | C | 1990-11-08 | 23 | 2014 Week 1 roster |
 | Tom Compton | T | 1989-05-10 | 25 | 2014 Week 1 roster |
 | Ryan Kerrigan | DE | 1988-08-16 | 26 | 2014 Week 1 roster |
-| Chris Baker | DT | 1987-10-08 | 26 | 2014 Week 1 roster |
+| Chris Baker | DT | 1987-10-08 | 27 | 2014 Week 1 roster |
 | Barry Cofield | NT | 1984-03-19 | 30 | 2014 Week 1 roster |
 | Jason Hatcher | DE | 1982-07-13 | 32 | 2014 Week 1 roster |
 | Kedric Golston | NT | 1983-05-30 | 31 | 2014 Week 1 roster |
@@ -1807,7 +1807,7 @@ Jacksonville lists every player the club controls, the practice squad included. 
 | Adam Hayward | ILB | 1984-06-23 | 30 | 2014 Week 1 roster |
 | Akeem Jordan | MLB | 1985-08-17 | 29 | 2014 Week 1 roster |
 | DeAngelo Hall | FS | 1983-11-19 | 30 | 2014 Week 1 roster |
-| Ryan Clark | FS | 1979-10-12 | 34 | 2014 Week 1 roster |
+| Ryan Clark | FS | 1979-10-12 | 35 | 2014 Week 1 roster |
 | David Amerson | CB | 1991-12-08 | 22 | 2014 Week 1 roster |
 | Bashaud Breeland | CB | 1992-01-30 | 22 | 2014 Week 1 roster |
 | Josh Evans | SS | 1991-06-05 | 23 | 2014 Week 1 roster |

@@ -1,10 +1,10 @@
 # Bradley Sowell
 
-**Arizona Cardinals · Tight end · No. 79 · Age 25 · Last game October 5, 2014**
+**Arizona Cardinals · Tight end · No. 79 · Age 25 · Last game October 12, 2014**
 
 6' 7", 315 lb · Born June 6, 1989 · Mississippi
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Bradley Sowell](https://commons.wikimedia.org/wiki/Special:FilePath/Bradley_Sowell.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve right tackle.
 
-**Yards per target:** 4.0 (2014, through Week 5).
+**Yards per target:** 4.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 25 | 79 | 4 | 1 | 1 | 4 | 4.0 | 0 | 4 | 1.0 | 100.0 |
+| 2014 (through Week 6) | Arizona | 25 | 79 | 5 | 1 | 1 | 4 | 4.0 | 0 | 4 | 0.8 | 100.0 |
 | 2013 | Arizona | 24 | 79 | 16 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
-| Career |  |  |  | 20 | 1 | 1 | 4 | 4.0 | 0 | 4 | 0.2 | 100.0 |
+| Career |  |  |  | 21 | 1 | 1 | 4 | 4.0 | 0 | 4 | 0.2 | 100.0 |
 
 ### Playoffs
 

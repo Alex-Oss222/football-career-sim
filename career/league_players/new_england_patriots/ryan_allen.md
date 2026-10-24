@@ -1,10 +1,10 @@
 # Ryan Allen
 
-**New England Patriots · Punter · No. 6 · Age 24 · Last game October 5, 2014**
+**New England Patriots · Punter · No. 6 · Age 24 · Last game October 12, 2014**
 
 6' 2", 215 lb · Born February 28, 1990 · Louisiana Tech; Oregon State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Ryan Allen](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Allen_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 42.7 (2014, through Week 5).
+**Net punting average:** 42.7 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 24 | 6 | 5 | 23 | 1,105 | 48.0 | 42.7 | 11 | 0 | 63 |
+| 2014 (through Week 6) | New England | 24 | 6 | 6 | 28 | 1,324 | 47.3 | 42.7 | 12 | 0 | 63 |
 | 2013 | New England | 23 | 6 | 16 | 76 | 3,462 | 45.6 | 40.2 | 28 | 2 | 59 |
-| Career |  |  |  | 21 | 99 | 4,567 | 46.1 | 40.8 | 39 | 2 | 63 |
+| Career |  |  |  | 22 | 104 | 4,786 | 46.0 | 40.9 | 40 | 2 | 63 |
 
 ### Playoffs
 

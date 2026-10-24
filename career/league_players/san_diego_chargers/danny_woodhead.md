@@ -1,10 +1,10 @@
 # Danny Woodhead
 
-**San Diego Chargers · Running back · No. 39 · Age 29 · Last game October 5, 2014**
+**San Diego Chargers · Running back · No. 39 · Age 29 · Last game October 12, 2014**
 
 5' 8", 200 lb · Born January 25, 1985 · Chadron State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Danny Woodhead](https://commons.wikimedia.org/wiki/Special:FilePath/Danny_Woodhead_2011.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 5.0 (2014, through Week 5).
+**Yards per carry:** 5.1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,14 +24,19 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Diego | 29 | 39 | 5 | 59 | 297 | 5.0 | 2 | 41 | 59.4 |
+| 2014 (through Week 6) | San Diego | 29 | 39 | 6 | 68 | 345 | 5.1 | 2 | 41 | 57.5 |
 | 2013 | San Diego | 28 | 39 | 16 | 1 | 9 | 9.0 | 0 | 9 | 0.6 |
-| Career |  |  |  | 21 | 60 | 306 | 5.1 | 2 | 41 | 14.6 |
+| Career |  |  |  | 22 | 69 | 354 | 5.1 | 2 | 41 | 16.1 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Diego | 29 | 39 | 9 | 8 | 122 | 15.2 | 1 | 1 | 1 |
+| 2014 (through Week 6) | San Diego | 29 | 39 | 9 | 8 | 122 | 15.2 | 1 | 1 | 1 |
 | 2013 | San Diego | 28 | 39 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+
+| Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
+|---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 6) | San Diego | 29 | 39 | 0 | 0 | N/A | 2 | 23 | 11.5 |
+| 2013 | San Diego | 28 | 39 | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs
 

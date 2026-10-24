@@ -1,10 +1,10 @@
 # Luke Stocker
 
-**Tampa Bay Buccaneers · Tight end · No. 88 · Age 26 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Tight end · No. 88 · Age 26 · Last game October 12, 2014**
 
 6' 5", 253 lb · Born July 17, 1988 · Tennessee · Drafted in 2011, fourth round, by Tampa Bay
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Luke Stocker](https://commons.wikimedia.org/wiki/Special:FilePath/Luke_Stocker.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 26 | 88 | 5 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 6) | Tampa Bay | 26 | 88 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | Tampa Bay | 25 | 88 | 16 | 91 | 53 | 612 | 11.5 | 2 | 44 | 38.2 | 58.2 |
-| Career |  |  |  | 21 | 91 | 53 | 612 | 11.5 | 2 | 44 | 29.1 | 58.2 |
+| Career |  |  |  | 22 | 91 | 53 | 612 | 11.5 | 2 | 44 | 27.8 | 58.2 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 26 | 88 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 26 | 88 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Tampa Bay | 25 | 88 | 1 | 5 | 0 | 0 | 0 |
 
 ### Playoffs

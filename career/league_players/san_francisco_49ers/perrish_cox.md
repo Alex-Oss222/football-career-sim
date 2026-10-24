@@ -1,10 +1,10 @@
 # Perrish Cox
 
-**San Francisco 49ers · Cornerback · No. 20 · Age 27 · Last game October 5, 2014**
+**San Francisco 49ers · Cornerback · No. 20 · Age 27 · Last game October 13, 2014**
 
 6' 0", 190 lb · Born January 10, 1987 · Oklahoma State · Drafted in 2010, fifth round, by Denver
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Perrish Cox](https://commons.wikimedia.org/wiki/Special:FilePath/Perrish_Cox.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 27 | 20 | 5 | 12 | 7 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 6) | San Francisco | 27 | 20 | 6 | 16 | 10 | 6 | 0 | 0 | 0 |
 | 2013 | San Francisco | 26 | 20 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 7 | 12 | 7 | 5 | 0 | 0 | 0 |
+| Career |  |  |  | 8 | 16 | 10 | 6 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 27 | 20 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 6) | San Francisco | 27 | 20 | 1 | 0 | 1 | 1 | 0 | 2 |
 | 2013 | San Francisco | 26 | 20 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

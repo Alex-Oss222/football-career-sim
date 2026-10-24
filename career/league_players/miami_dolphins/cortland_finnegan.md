@@ -1,10 +1,10 @@
 # Cortland Finnegan
 
-**Miami Dolphins · Cornerback · No. 24 · Age 30 · Last game September 28, 2014**
+**Miami Dolphins · Cornerback · No. 24 · Age 30 · Last game October 12, 2014**
 
 5' 10", 190 lb · Born February 2, 1984 · Samford · Drafted in 2006, seventh round, by Tennessee
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Cortland Finnegan](https://commons.wikimedia.org/wiki/Special:FilePath/Cortland_Finnegan_Pro_Bowl_cropped.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 1 (2014, through Week 4).
+**Passes defended:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 30 | 24 | 4 | 19 | 9 | 10 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 30 | 24 | 5 | 27 | 14 | 13 | 0 | 1 | 1 |
 | 2013 | St. Louis | 29 | 31 | 16 | 110 | 76 | 34 | 4 | 2 | 2 |
-| Career |  |  |  | 20 | 129 | 85 | 44 | 4 | 2 | 2 |
+| Career |  |  |  | 21 | 137 | 90 | 47 | 4 | 3 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 30 | 24 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 30 | 24 | 1 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | St. Louis | 29 | 31 | 3 | 32 | 22 | 1 | 1 | N/A |
 
 ### Playoffs

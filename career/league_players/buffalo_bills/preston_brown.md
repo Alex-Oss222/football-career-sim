@@ -1,10 +1,10 @@
 # Preston Brown
 
-**Buffalo Bills · Middle linebacker · No. 52 · Age 21 · Last game October 5, 2014**
+**Buffalo Bills · Middle linebacker · No. 52 · Age 21 · Last game October 12, 2014**
 
 6' 1", 251 lb · Born October 27, 1992 · Louisville
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Preston Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Preston_Brown_%28linebacker%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting strongside linebacker.
 
-**Tackles:** 37 (2014, through Week 5).
+**Tackles:** 40 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 21 | 52 | 5 | 37 | 27 | 10 | 4 | 2 | 4 |
+| 2014 (through Week 6) | Buffalo | 21 | 52 | 6 | 40 | 29 | 11 | 4 | 2 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 21 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Buffalo | 21 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Kendall Langford
 
-**St. Louis Rams · Defensive end · No. 98 · Age 28 · Last game October 5, 2014**
+**St. Louis Rams · Defensive end · No. 98 · Age 28 · Last game October 13, 2014**
 
 6' 6", 313 lb · Born January 27, 1986 · Hampton · Drafted in 2008, third round, by Miami
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Kendall Langford](https://commons.wikimedia.org/wiki/Special:FilePath/Kendall_Langford.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 28 | 98 | 4 | 15 | 13 | 2 | 2 | 1 | 2 |
+| 2014 (through Week 6) | St. Louis | 28 | 98 | 5 | 17 | 13 | 4 | 2 | 1 | 2 |
 | 2013 | St. Louis | 27 | 98 | 16 | 55 | 34 | 21 | 5 | 4 | 6 |
-| Career |  |  |  | 20 | 70 | 47 | 23 | 7 | 5 | 8 |
+| Career |  |  |  | 21 | 72 | 47 | 25 | 7 | 5 | 8 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 28 | 98 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | St. Louis | 28 | 98 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | St. Louis | 27 | 98 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

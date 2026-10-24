@@ -1,10 +1,10 @@
 # Ropati Pitoitua
 
-**Tennessee Titans · Defensive end · No. 92 · Age 29 · Last game October 5, 2014**
+**Tennessee Titans · Defensive end · No. 92 · Age 29 · Last game October 12, 2014**
 
 6' 8", 298 lb · Born April 6, 1985 · Washington State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Ropati Pitoitua](https://commons.wikimedia.org/wiki/Special:FilePath/Ropati_Pipotuia_perseason_Jets-v-Eagles%2C_Sep_2009_-_65.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 29 | 92 | 5 | 26 | 19 | 7 | 2 | 1 | 2 |
+| 2014 (through Week 6) | Tennessee | 29 | 92 | 6 | 30 | 22 | 8 | 3 | 2 | 3 |
 | 2013 | Tennessee | 28 | 92 | 16 | 48 | 33 | 15 | 7 | 3 | 4 |
-| Career |  |  |  | 21 | 74 | 52 | 22 | 9 | 4 | 6 |
+| Career |  |  |  | 22 | 78 | 55 | 23 | 10 | 5 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tennessee | 29 | 92 | 0 | 0 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tennessee | 29 | 92 | 0 | 0 | 5 | 0 | 0 | 0 |
 | 2013 | Tennessee | 28 | 92 | 0 | 0 | 1 | 1 | 1 | N/A |
 
 ### Playoffs

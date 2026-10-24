@@ -1,10 +1,10 @@
 # Jon Bostic
 
-**Chicago Bears · Middle linebacker · No. 57 · Age 23 · Last game October 5, 2014**
+**Chicago Bears · Middle linebacker · No. 57 · Age 23 · Last game October 12, 2014**
 
 6' 1", 245 lb · Born May 5, 1991 · Florida
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jon Bostic](https://commons.wikimedia.org/wiki/Special:FilePath/Jon_Bostic_Jaguars_at_Commanders_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve middle linebacker.
 
-**Tackles:** 2 (2014, through Week 5).
+**Tackles:** 3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 23 | 57 | 5 | 2 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Chicago | 23 | 57 | 6 | 3 | 1 | 2 | 0 | 0 | 0 |
 | 2013 | Chicago | 22 | 57 | 6 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 11 | 3 | 1 | 2 | 0 | 0 | 0 |
+| Career |  |  |  | 12 | 4 | 2 | 2 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 23 | 57 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 6) | Chicago | 23 | 57 | 0 | 0 | 0 | 0 | 0 | 2 |
 | 2013 | Chicago | 22 | 57 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

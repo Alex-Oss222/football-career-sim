@@ -1,10 +1,10 @@
 # Jonathan Cooper
 
-**Arizona Cardinals · Guard · No. 61 · Age 24 · Last game October 5, 2014**
+**Arizona Cardinals · Guard · No. 61 · Age 24 · Last game October 12, 2014**
 
 6' 2", 312 lb · Born January 19, 1990 · North Carolina
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jonathan Cooper](https://commons.wikimedia.org/wiki/Special:FilePath/Jonathan_Cooper.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 24 | 61 | 4 | 0 | 0 | 0 | 14 |
+| 2014 (through Week 6) | Arizona | 24 | 61 | 4 | 0 | 0 | 0 | 14 |
 
 ### Playoffs
 

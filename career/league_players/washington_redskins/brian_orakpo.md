@@ -1,10 +1,10 @@
 # Brian Orakpo
 
-**Washington Redskins · Outside linebacker · No. 98 · Age 28 · Last game October 6, 2014**
+**Washington Redskins · Outside linebacker · No. 98 · Age 28 · Last game October 12, 2014**
 
 6' 4", 257 lb · Born July 31, 1986 · Texas · Drafted in 2009, first round, by Washington
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Brian Orakpo](https://commons.wikimedia.org/wiki/Special:FilePath/Brian-Orakpo-UT-vs-A%26M-11-27-08_%282%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 0 (2014, through Week 5).
+**Tackles:** 7 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 28 | 98 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Washington | 28 | 98 | 2 | 7 | 5 | 2 | 0 | 1 | 1 |
 | 2013 | Washington | 27 | 98 | 16 | 83 | 59 | 24 | 5 | 2 | 3 |
-| Career |  |  |  | 17 | 83 | 59 | 24 | 5 | 2 | 3 |
+| Career |  |  |  | 18 | 90 | 64 | 26 | 5 | 3 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 28 | 98 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Washington | 28 | 98 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Washington | 27 | 98 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

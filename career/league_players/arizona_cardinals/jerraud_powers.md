@@ -1,10 +1,10 @@
 # Jerraud Powers
 
-**Arizona Cardinals · Cornerback · No. 25 · Age 27 · Last game October 5, 2014**
+**Arizona Cardinals · Cornerback · No. 25 · Age 27 · Last game October 12, 2014**
 
 5' 10", 187 lb · Born July 19, 1987 · Auburn · Drafted in 2009, third round, by Indianapolis
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jerraud Powers](https://commons.wikimedia.org/wiki/Special:FilePath/Jerraud_Powers.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 2 (2014, through Week 5).
+**Passes defended:** 3 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 27 | 25 | 3 | 7 | 6 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Arizona | 27 | 25 | 4 | 9 | 8 | 1 | 0 | 0 | 0 |
 | 2013 | Arizona | 26 | 25 | 16 | 77 | 55 | 22 | 2 | 0 | 0 |
-| Career |  |  |  | 19 | 84 | 61 | 23 | 2 | 0 | 0 |
+| Career |  |  |  | 20 | 86 | 63 | 23 | 2 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Arizona | 27 | 25 | 1 | 20 | 2 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Arizona | 27 | 25 | 1 | 20 | 3 | 0 | 0 | 2 |
 | 2013 | Arizona | 26 | 25 | 0 | 0 | 8 | 2 | 2 | N/A |
 
 ### Playoffs

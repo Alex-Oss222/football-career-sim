@@ -4,7 +4,7 @@
 
 6' 3", 320 lb · Born June 14, 1993 · Louisiana State · Drafted in 2014, third round, by Jacksonville
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Trai Turner](https://commons.wikimedia.org/wiki/Special:FilePath/Trai_Turner.jpg?width=500)
 
@@ -12,13 +12,13 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 3 (2014, through Week 6).
 
 ## Staff assessment
 
-Trai Turner is a rookie guard who has started five games on Jacksonville's line. He plays with a powerful base, a strong anchor and short-area quickness, and in camp he held his anchor against C.J. Mosley and C.J. Wilson. His technique is raw: hand placement, pass-set discipline and exchanges with the linemen beside him still need coaching, and late hands cost him one camp rep against Aaron Donald, though he held the repeat.
+Trai Turner is a rookie guard who has started six games on Jacksonville's line. He plays with a powerful base, a strong anchor and short-area quickness, and in camp he held his anchor against C.J. Mosley and C.J. Wilson. His technique is raw: hand placement, pass-set discipline and exchanges with the linemen beside him still need coaching, and late hands cost him one camp rep against Aaron Donald, though he held the repeat.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 5.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 12.*
 
 ## Contract
 
@@ -37,7 +37,7 @@ Four-year contract through 2017.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Jacksonville | 21 | 70 | 5 | 5 | 332 | 2 | 23 |
+| 2014 (through Week 6) | Jacksonville | 21 | 70 | 6 | 6 | 393 | 3 | 28 |
 
 ### Playoffs
 

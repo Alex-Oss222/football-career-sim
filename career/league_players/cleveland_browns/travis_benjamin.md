@@ -1,10 +1,10 @@
 # Travis Benjamin
 
-**Cleveland Browns · Wide receiver · No. 11 · Age 24 · Last game October 5, 2014**
+**Cleveland Browns · Wide receiver · No. 11 · Age 24 · Last game October 12, 2014**
 
 5' 10", 175 lb · Born December 29, 1989 · Miami · Drafted in 2012, fourth round, by Cleveland
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Travis Benjamin](https://commons.wikimedia.org/wiki/Special:FilePath/Travis_Benjamin.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 10.5 (2014, through Week 5).
+**Yards per target:** 9.6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 24 | 11 | 4 | 22 | 19 | 230 | 12.1 | 2 | 47 | 57.5 | 86.4 |
+| 2014 (through Week 6) | Cleveland | 24 | 11 | 5 | 27 | 22 | 259 | 11.8 | 2 | 47 | 51.8 | 81.5 |
 | 2013 | Cleveland | 23 | 80 | 16 | 63 | 36 | 319 | 8.9 | 2 | 43 | 19.9 | 57.1 |
-| Career |  |  |  | 20 | 85 | 55 | 549 | 10.0 | 4 | 47 | 27.4 | 64.7 |
+| Career |  |  |  | 21 | 90 | 58 | 578 | 10.0 | 4 | 47 | 27.5 | 64.4 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 24 | 11 | 1 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Cleveland | 24 | 11 | 1 | 4 | 0 | 0 | 0 |
 | 2013 | Cleveland | 23 | 80 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 24 | 11 | 10 | 252 | 25.2 | 19 | 153 | 8.1 |
+| 2014 (through Week 6) | Cleveland | 24 | 11 | 13 | 337 | 25.9 | 20 | 161 | 8.1 |
 | 2013 | Cleveland | 23 | 80 | 0 | 0 | N/A | 32 | 356 | 11.1 |
 
 ### Playoffs

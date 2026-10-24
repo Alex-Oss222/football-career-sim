@@ -1,10 +1,10 @@
 # Shawn Lauvao
 
-**Washington Redskins · Guard · No. 77 · Age 26 · Last game October 6, 2014**
+**Washington Redskins · Guard · No. 77 · Age 26 · Last game October 12, 2014**
 
 6' 3", 315 lb · Born October 26, 1987 · Arizona State · Drafted in 2010, third round, by Cleveland
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Shawn Lauvao](https://commons.wikimedia.org/wiki/Special:FilePath/Shawn_Lauvao.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 6, 2014, after Week 5.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 1 (2014, through Week 5).
+**Sacks allowed:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 26 | 77 | 5 | 5 | 342 | 1 | 21 |
+| 2014 (through Week 6) | Washington | 26 | 77 | 6 | 6 | 387 | 2 | 23 |
 
 ### Playoffs
 

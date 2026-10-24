@@ -1,10 +1,10 @@
 # Henry Melton
 
-**Dallas Cowboys · Defensive tackle · No. 69 · Age 27 · Last game October 5, 2014**
+**Dallas Cowboys · Defensive tackle · No. 69 · Age 28 · Last game October 12, 2014**
 
 6' 3", 290 lb · Born October 11, 1986 · Texas · Drafted in 2009, fourth round, by Chicago
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Henry Melton](https://commons.wikimedia.org/wiki/Special:FilePath/Melton_Quinnan_123.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 6 (2014, through Week 5).
+**Sacks:** 6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 27 | 69 | 5 | 36 | 26 | 10 | 3 | 6 | 8 |
+| 2014 (through Week 6) | Dallas | 27 | 69 | 6 | 42 | 30 | 12 | 4 | 6 | 8 |
 | 2013 | Chicago | 26 | 69 | 16 | 102 | 66 | 36 | 5 | 7 | 14 |
-| Career |  |  |  | 21 | 138 | 92 | 46 | 8 | 13 | 22 |
+| Career |  |  |  | 22 | 144 | 96 | 48 | 9 | 13 | 22 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 27 | 69 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Dallas | 27 | 69 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Chicago | 26 | 69 | 0 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs

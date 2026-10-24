@@ -1,10 +1,10 @@
 # Chris Long
 
-**St. Louis Rams · Defensive end · No. 91 · Age 29 · Last game October 5, 2014**
+**St. Louis Rams · Defensive end · No. 91 · Age 29 · Last game October 13, 2014**
 
 6' 3", 268 lb · Born March 28, 1985 · Virginia · Drafted in 2008, first round, by St. Louis
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Chris Long](https://commons.wikimedia.org/wiki/Special:FilePath/Chrislongrams2013a.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 29 | 91 | 4 | 11 | 9 | 2 | 0 | 1 | 5 |
+| 2014 (through Week 6) | St. Louis | 29 | 91 | 5 | 19 | 14 | 5 | 1 | 2 | 6 |
 | 2013 | St. Louis | 28 | 91 | 16 | 78 | 49 | 29 | 5 | 6 | 13 |
-| Career |  |  |  | 20 | 89 | 58 | 31 | 5 | 7 | 18 |
+| Career |  |  |  | 21 | 97 | 63 | 34 | 6 | 8 | 19 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 29 | 91 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | St. Louis | 29 | 91 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | St. Louis | 28 | 91 | 0 | 0 | 1 | 1 | 1 | N/A |
 
 ### Playoffs

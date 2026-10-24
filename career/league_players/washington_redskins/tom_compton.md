@@ -1,10 +1,10 @@
 # Tom Compton
 
-**Washington Redskins · Offensive tackle · No. 68 · Age 25 · Last game October 6, 2014**
+**Washington Redskins · Offensive tackle · No. 68 · Age 25 · Last game October 12, 2014**
 
 6' 5", 308 lb · Born May 10, 1989 · South Dakota · Drafted in 2012, sixth round, by Washington
 
-As of October 6, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Tom Compton](https://commons.wikimedia.org/wiki/Special:FilePath/Tom_Compton.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Washington | 25 | 68 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Washington | 25 | 68 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | Washington | 24 | 68 | 16 | N/A | N/A | 7 | N/A |
 | Career |  |  |  | 17 | N/A | N/A | 7 | N/A |
 

@@ -1,10 +1,10 @@
 # Dennis Pitta
 
-**Baltimore Ravens · Tight end · No. 88 · Age 29 · Last game October 5, 2014**
+**Baltimore Ravens · Tight end · No. 88 · Age 29 · Last game October 12, 2014**
 
 6' 4", 245 lb · Born June 29, 1985 · BYU · Drafted in 2010, fourth round, by Baltimore
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Dennis Pitta](https://commons.wikimedia.org/wiki/Special:FilePath/Dennis_Pitta_2011_stadium_practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 7.2 (2014, through Week 5).
+**Yards per target:** 8.4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 29 | 88 | 4 | 25 | 16 | 180 | 11.2 | 2 | 26 | 45.0 | 64.0 |
+| 2014 (through Week 6) | Baltimore | 29 | 88 | 5 | 33 | 22 | 278 | 12.6 | 2 | 26 | 55.6 | 66.7 |
 
 ### Playoffs
 

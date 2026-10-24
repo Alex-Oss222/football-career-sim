@@ -1,10 +1,10 @@
 # Crockett Gillmore
 
-**Baltimore Ravens · Tight end · No. 80 · Age 22 · Last game October 5, 2014**
+**Baltimore Ravens · Tight end · No. 80 · Age 22 · Last game October 12, 2014**
 
 6' 6", 251 lb · Born November 16, 1991 · Colorado State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Crockett Gillmore](https://commons.wikimedia.org/wiki/Special:FilePath/Crockett_Gillmore.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 19.0 (2014, through Week 5).
+**Yards per target:** 19.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 22 | 80 | 5 | 1 | 1 | 19 | 19.0 | 0 | 19 | 3.8 | 100.0 |
+| 2014 (through Week 6) | Baltimore | 22 | 80 | 6 | 1 | 1 | 19 | 19.0 | 0 | 19 | 3.2 | 100.0 |
 
 ### Playoffs
 

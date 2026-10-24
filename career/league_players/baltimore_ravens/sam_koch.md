@@ -1,10 +1,10 @@
 # Sam Koch
 
-**Baltimore Ravens · Punter · No. 4 · Age 32 · Last game October 5, 2014**
+**Baltimore Ravens · Punter · No. 4 · Age 32 · Last game October 12, 2014**
 
 6' 1", 222 lb · Born August 13, 1982 · Nebraska · Drafted in 2006, sixth round, by Baltimore
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Sam Koch](https://commons.wikimedia.org/wiki/Special:FilePath/Sam_Koch.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 43.2 (2014, through Week 5).
+**Net punting average:** 43.8 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Baltimore | 32 | 4 | 5 | 20 | 1,007 | 50.4 | 43.2 | 8 | 1 | 60 |
+| 2014 (through Week 6) | Baltimore | 32 | 4 | 6 | 21 | 1,065 | 50.7 | 43.8 | 8 | 1 | 60 |
 | 2013 | Baltimore | 31 | 4 | 16 | 88 | 3,835 | 43.6 | 38.5 | 32 | 2 | 59 |
-| Career |  |  |  | 21 | 108 | 4,842 | 44.8 | 39.4 | 40 | 3 | 60 |
+| Career |  |  |  | 22 | 109 | 4,900 | 45.0 | 39.6 | 40 | 3 | 60 |
 
 ### Playoffs
 

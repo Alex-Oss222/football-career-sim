@@ -1,16 +1,16 @@
 # Marqise Lee
 
-**Cleveland Browns · Wide receiver · Age 22 · Last game October 5, 2014**
+**Cleveland Browns · Wide receiver · Age 22 · Last game October 12, 2014**
 
 6' 0", 192 lb · Born November 25, 1991 · Southern California
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Marqise Lee](https://commons.wikimedia.org/wiki/Special:FilePath/Marqise_Lee_2014_Jaguars_training_camp_%282%29_Cropped.jpg?width=500)
 
 *Photo: Melissa Hillier, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Marqise_Lee_2014_Jaguars_training_camp_(2)_Cropped.jpg)).*
 
-**Yards per target:** 6.9 (2014, through Week 5).
+**Yards per target:** 6.4 (2014, through Week 6).
 
 ## Contract
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 22 | N/A | 4 | 52 | 31 | 361 | 11.6 | 2 | 35 | 90.2 | 59.6 |
+| 2014 (through Week 6) | Cleveland | 22 | N/A | 5 | 70 | 41 | 447 | 10.9 | 2 | 35 | 89.4 | 58.6 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 22 | N/A | 2 | 11 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Cleveland | 22 | N/A | 2 | 11 | 0 | 0 | 0 |
 
 ### Playoffs
 

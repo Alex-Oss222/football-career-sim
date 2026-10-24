@@ -1,10 +1,10 @@
 # Vincent Rey
 
-**Cincinnati Bengals · Middle linebacker · No. 57 · Age 27 · Last game October 5, 2014**
+**Cincinnati Bengals · Middle linebacker · No. 57 · Age 27 · Last game October 12, 2014**
 
 6' 0", 255 lb · Born September 6, 1987 · Duke
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Vincent Rey](https://commons.wikimedia.org/wiki/Special:FilePath/Vincent_Rey.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 26 | 57 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Cincinnati | 26 | 57 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 25 | 57 | 16 | 10 | 5 | 5 | 0 | 0 | 1 |
-| Career |  |  |  | 20 | 10 | 5 | 5 | 0 | 0 | 1 |
+| Career |  |  |  | 21 | 10 | 5 | 5 | 0 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 26 | 57 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Cincinnati | 26 | 57 | 0 | 0 | 0 | 0 | 0 | 1 |
 | 2013 | Cincinnati | 25 | 57 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

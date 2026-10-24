@@ -1,10 +1,10 @@
 # C.J. Spiller
 
-**Buffalo Bills · Running back · No. 28 · Age 27 · Last game October 5, 2014**
+**Buffalo Bills · Running back · No. 28 · Age 27 · Last game October 12, 2014**
 
 5' 11", 200 lb · Born August 5, 1987 · Clemson · Drafted in 2010, first round, by Buffalo
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![C.J. Spiller](https://commons.wikimedia.org/wiki/Special:FilePath/C.J._Spiller_2015.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 5.3 (2014, through Week 5).
+**Yards per carry:** 5.4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 27 | 28 | 5 | 87 | 463 | 5.3 | 3 | 33 | 92.6 |
+| 2014 (through Week 6) | Buffalo | 27 | 28 | 6 | 102 | 551 | 5.4 | 3 | 33 | 91.8 |
 | 2013 | Buffalo | 26 | 28 | 15 | 275 | 1,340 | 4.9 | 7 | 30 | 89.3 |
-| Career |  |  |  | 20 | 362 | 1,803 | 5.0 | 10 | 33 | 90.2 |
+| Career |  |  |  | 21 | 377 | 1,891 | 5.0 | 10 | 33 | 90.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 27 | 28 | 23 | 15 | 209 | 13.9 | 2 | 1 | 1 |
+| 2014 (through Week 6) | Buffalo | 27 | 28 | 30 | 21 | 245 | 11.7 | 3 | 2 | 1 |
 | 2013 | Buffalo | 26 | 28 | 65 | 43 | 477 | 11.1 | 2 | 3 | 3 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 27 | 28 | 16 | 381 | 23.8 | 0 | 0 | N/A |
+| 2014 (through Week 6) | Buffalo | 27 | 28 | 19 | 448 | 23.6 | 0 | 0 | N/A |
 | 2013 | Buffalo | 26 | 28 | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs

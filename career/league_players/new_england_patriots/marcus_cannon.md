@@ -1,10 +1,10 @@
 # Marcus Cannon
 
-**New England Patriots · Offensive tackle · No. 61 · Age 26 · Last game October 5, 2014**
+**New England Patriots · Offensive tackle · No. 61 · Age 26 · Last game October 12, 2014**
 
 6' 5", 335 lb · Born May 6, 1988 · TCU; Trinity Valley CC · Drafted in 2011, fifth round, by New England
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Marcus Cannon](https://commons.wikimedia.org/wiki/Special:FilePath/Marcus_Cannon.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 26 | 61 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | New England | 26 | 61 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | New England | 25 | 61 | 16 | N/A | N/A | 8 | N/A |
 | Career |  |  |  | 17 | N/A | N/A | 8 | N/A |
 

@@ -1,10 +1,10 @@
 # Julio Jones
 
-**Atlanta Falcons · Wide receiver · No. 11 · Age 25 · Last game October 5, 2014**
+**Atlanta Falcons · Wide receiver · No. 11 · Age 25 · Last game October 12, 2014**
 
 6' 3", 220 lb · Born February 8, 1989 · Alabama · Drafted in 2011, first round, by Atlanta
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Julio Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Julio_Jones_2018.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 8.9 (2014, through Week 5).
+**Yards per target:** 8.4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Atlanta | 25 | 11 | 5 | 46 | 30 | 410 | 13.7 | 5 | 56 | 82.0 | 65.2 |
+| 2014 (through Week 6) | Atlanta | 25 | 11 | 6 | 64 | 41 | 535 | 13.0 | 5 | 56 | 89.2 | 64.1 |
 | 2013 | Atlanta | 24 | 11 | 16 | 109 | 76 | 730 | 9.6 | 3 | 36 | 45.6 | 69.7 |
-| Career |  |  |  | 21 | 155 | 106 | 1,140 | 10.8 | 8 | 56 | 54.3 | 68.4 |
+| Career |  |  |  | 22 | 173 | 117 | 1,265 | 10.8 | 8 | 56 | 57.5 | 67.6 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Atlanta | 25 | 11 | 1 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Atlanta | 25 | 11 | 1 | 4 | 0 | 0 | 0 |
 | 2013 | Atlanta | 24 | 11 | 3 | 13 | 0 | 0 | 0 |
 
 ### Playoffs

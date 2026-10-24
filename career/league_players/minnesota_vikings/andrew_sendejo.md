@@ -1,10 +1,10 @@
 # Andrew Sendejo
 
-**Minnesota Vikings · Free safety · No. 34 · Age 27 · Last game October 2, 2014**
+**Minnesota Vikings · Free safety · No. 34 · Age 27 · Last game October 12, 2014**
 
 6' 1", 200 lb · Born September 9, 1987 · Rice
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Andrew Sendejo](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_Sendejo.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Reserve free safety.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 26 | 34 | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Minnesota | 26 | 34 | 6 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | Minnesota | 25 | 34 | 16 | 7 | 4 | 3 | 1 | 0 | 0 |
-| Career |  |  |  | 21 | 8 | 5 | 3 | 1 | 0 | 0 |
+| Career |  |  |  | 22 | 8 | 5 | 3 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 26 | 34 | 0 | 0 | 0 | 0 | 0 | 6 |
+| 2014 (through Week 6) | Minnesota | 26 | 34 | 0 | 0 | 0 | 0 | 0 | 7 |
 | 2013 | Minnesota | 25 | 34 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

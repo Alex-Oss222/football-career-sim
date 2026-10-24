@@ -1,10 +1,10 @@
 # T.J. McDonald
 
-**St. Louis Rams · Strong safety · No. 25 · Age 23 · Last game October 5, 2014**
+**St. Louis Rams · Strong safety · No. 25 · Age 23 · Last game October 13, 2014**
 
 6' 2", 217 lb · Born January 26, 1991 · USC
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![T.J. McDonald](https://commons.wikimedia.org/wiki/Special:FilePath/T.J._McDonald.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 2 (2014, through Week 5).
+**Passes defended:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 23 | 25 | 4 | 22 | 14 | 8 | 0 | 0 | 0 |
+| 2014 (through Week 6) | St. Louis | 23 | 25 | 5 | 26 | 17 | 9 | 0 | 0 | 0 |
 | 2013 | St. Louis | 22 | 25 | 16 | 50 | 31 | 19 | 1 | 0 | 0 |
-| Career |  |  |  | 20 | 72 | 45 | 27 | 1 | 0 | 0 |
+| Career |  |  |  | 21 | 76 | 48 | 28 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | St. Louis | 23 | 25 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | St. Louis | 23 | 25 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | St. Louis | 22 | 25 | 0 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Corey Wootton
 
-**Minnesota Vikings · Defensive end · No. 99 · Age 27 · Last game October 2, 2014**
+**Minnesota Vikings · Defensive end · No. 99 · Age 27 · Last game October 12, 2014**
 
 6' 6", 270 lb · Born June 22, 1987 · Northwestern · Drafted in 2010, fourth round, by Chicago
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Corey Wootton](https://commons.wikimedia.org/wiki/Special:FilePath/Corey_Wootton.JPG?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 27 | 99 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Minnesota | 27 | 99 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Chicago | 26 | 98 | 16 | 44 | 27 | 17 | 7 | 3 | 10 |
 | Career |  |  |  | 20 | 44 | 27 | 17 | 7 | 3 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 27 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Minnesota | 27 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Chicago | 26 | 98 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Ryan Clady
 
-**Denver Broncos · Offensive tackle · No. 78 · Age 28 · Last game October 5, 2014**
+**Denver Broncos · Offensive tackle · No. 78 · Age 28 · Last game October 12, 2014**
 
 6' 6", 315 lb · Born September 6, 1986 · Boise State · Drafted in 2008, first round, by Denver
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Ryan Clady](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Clady.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 0 (2014, through Week 5).
+**Sacks allowed:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 27 | 78 | 4 | 4 | 231 | 0 | 20 |
+| 2014 (through Week 6) | Denver | 27 | 78 | 5 | 5 | 294 | 0 | 25 |
 | 2013 | Denver | 26 | 78 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 20 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Vincent Jackson
 
-**Tampa Bay Buccaneers · Wide receiver · No. 83 · Age 31 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Wide receiver · No. 83 · Age 31 · Last game October 12, 2014**
 
 6' 5", 230 lb · Born January 14, 1983 · Northern Colorado · Drafted in 2005, second round, by San Diego
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Vincent Jackson](https://commons.wikimedia.org/wiki/Special:FilePath/Vincent_Jackson_2012.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 6.9 (2014, through Week 5).
+**Yards per target:** 6.9 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 31 | 83 | 5 | 35 | 23 | 243 | 10.6 | 5 | 27 | 48.6 | 65.7 |
+| 2014 (through Week 6) | Tampa Bay | 31 | 83 | 6 | 36 | 24 | 247 | 10.3 | 6 | 27 | 41.2 | 66.7 |
 | 2013 | Tampa Bay | 30 | 83 | 16 | 135 | 88 | 821 | 9.3 | 4 | 43 | 51.3 | 65.2 |
-| Career |  |  |  | 21 | 170 | 111 | 1,064 | 9.6 | 9 | 43 | 50.7 | 65.3 |
+| Career |  |  |  | 22 | 171 | 112 | 1,068 | 9.5 | 10 | 43 | 48.5 | 65.5 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 31 | 83 | 2 | 11 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 31 | 83 | 2 | 11 | 0 | 0 | 0 |
 | 2013 | Tampa Bay | 30 | 83 | 2 | 1 | 0 | 2 | 2 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 31 | 83 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | Tampa Bay | 31 | 83 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Tampa Bay | 30 | 83 | 3 | 85 | 28.3 | 0 | 0 | N/A |
 
 ### Playoffs

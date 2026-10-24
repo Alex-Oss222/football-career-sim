@@ -1,10 +1,10 @@
 # Ivan Taylor
 
-**Pittsburgh Steelers · Cornerback · No. 24 · Age 34 · Last game October 5, 2014**
+**Pittsburgh Steelers · Cornerback · No. 24 · Age 34 · Last game October 12, 2014**
 
 6' 2", 195 lb · Born May 5, 1980 · Louisiana-Lafayette · Drafted in 2003, fourth round, by Pittsburgh
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Ivan Taylor](https://commons.wikimedia.org/wiki/Special:FilePath/Ike_Taylor.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 4 (2014, through Week 5).
+**Passes defended:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 34 | 24 | 5 | 24 | 15 | 9 | 1 | 0 | 1 |
+| 2014 (through Week 6) | Pittsburgh | 34 | 24 | 6 | 30 | 18 | 12 | 1 | 0 | 1 |
 | 2013 | Pittsburgh | 33 | 24 | 16 | 72 | 44 | 28 | 3 | 0 | 0 |
-| Career |  |  |  | 21 | 96 | 59 | 37 | 4 | 0 | 1 |
+| Career |  |  |  | 22 | 102 | 62 | 40 | 4 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 34 | 24 | 2 | 15 | 4 | 1 | 1 | 0 |
+| 2014 (through Week 6) | Pittsburgh | 34 | 24 | 2 | 15 | 4 | 1 | 1 | 0 |
 | 2013 | Pittsburgh | 33 | 24 | 0 | 0 | 9 | 0 | 0 | N/A |
 
 ### Playoffs

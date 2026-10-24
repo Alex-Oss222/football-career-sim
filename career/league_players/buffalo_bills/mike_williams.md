@@ -1,10 +1,10 @@
 # Mike Williams
 
-**Buffalo Bills · Wide receiver · No. 19 · Age 27 · Last game October 5, 2014**
+**Buffalo Bills · Wide receiver · No. 19 · Age 27 · Last game October 12, 2014**
 
 6' 2", 212 lb · Born May 18, 1987 · Syracuse · Drafted in 2010, fourth round, by Tampa Bay
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Mike Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Williams_%28wide_receiver%2C_born_1987%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 5.7 (2014, through Week 5).
+**Yards per target:** 6.4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 27 | 19 | 5 | 22 | 16 | 126 | 7.9 | 0 | 20 | 25.2 | 72.7 |
+| 2014 (through Week 6) | Buffalo | 27 | 19 | 6 | 25 | 18 | 160 | 8.9 | 0 | 26 | 26.7 | 72.0 |
 | 2013 | Tampa Bay | 26 | 19 | 16 | 100 | 65 | 873 | 13.4 | 6 | 80 | 54.6 | 65.0 |
-| Career |  |  |  | 21 | 122 | 81 | 999 | 12.3 | 6 | 80 | 47.6 | 66.4 |
+| Career |  |  |  | 22 | 125 | 83 | 1,033 | 12.4 | 6 | 80 | 47.0 | 66.4 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 27 | 19 | 0 | 0 | 0 | 1 | 1 |
+| 2014 (through Week 6) | Buffalo | 27 | 19 | 0 | 0 | 0 | 1 | 1 |
 | 2013 | Tampa Bay | 26 | 19 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Buffalo | 27 | 19 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | Buffalo | 27 | 19 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Tampa Bay | 26 | 19 | 3 | 74 | 24.7 | 2 | 29 | 14.5 |
 
 ### Playoffs

@@ -707,17 +707,79 @@ def may_return(entry, game_day, year):
     return False
 
 
+SEAT_WORDS = {"LT": "left tackle", "LG": "left guard", "C": "center", "RG": "right guard", "RT": "right tackle",
+              "CB": "outside corner", "S": "safety", "NB": "nickel"}
+# The instructions under which a player cannot play this week.
+CANNOT_PLAY = ("Out", "Independent hold")
+
+
+def chart_replacement(chart, name, unable):
+    """(player, seat words) who takes ``name``'s place if he cannot play, by the rules the game applies
+    to the chart as it stands (runtime.usage, runtime.participation): a starting lineman's slot goes to
+    the lineman who then completes the protection front, a seated defensive back's seat to whoever the
+    seats then put in it. ``unable`` are the others who cannot play (the chart's last game-day list and
+    the players out). None for any other group, or when he holds no such slot or seat."""
+    from runtime import participation, usage
+    from runtime.player_evidence import PlayerInput
+    group = next((g for g, order in (chart.get("depth") or {}).items() if name in order), None)
+    if group not in ("OL", "DB"):
+        return None
+    order = chart["depth"][group]
+    players = [PlayerInput(player_id=p, position=chart["positions"][p], roles=tuple(chart["roles"].get(p, ())),
+                           depth=rank) for rank, p in enumerate(order, 1) if p == name or p not in unable]
+    rest = [p for p in players if p.player_id != name]
+    if group == "OL":
+        unit = lambda men: [(s, p.player_id) for s, p in usage.protection_front(men).items()]
+    else:
+        # The first unit's five seats: the two outside corners, the two safeties and the nickel.
+        unit = lambda men: [(s, p.player_id) for s, p in participation.db_seats(men)
+                            if s in ("CB1", "CB2", "S1", "S2", "NB1")]
+    before = {pid for _, pid in unit(players)}
+    entering = [(s, pid) for s, pid in unit(rest) if pid not in before]
+    if name not in before or not entering:
+        return None
+    seat, pid = entering[0]
+    return pid, SEAT_WORDS[seat.rstrip("0123456789")]
+
+
+def situation_chart(wk):
+    """The depth chart as the week's Game Plan found it: the week's own applied depth and role changes
+    undone (scripts/apply_game_plan._restore) and, while its game-day list is the week's own, the list
+    it replaced (the latest earlier week's as set). Stone's page is his answer to the briefing, not a
+    change of the situation it reports, so applying it never overtakes the briefing he answered."""
+    chart = json.loads(wk.paths.depth_chart.read_text(encoding="utf-8"))
+    week = wk.game["week"]
+    applied = game_plan.applied_record(wk.pages.applied)
+    if applied is not None:
+        from scripts.apply_game_plan import _restore
+        _restore(chart, applied)
+    if (chart.get("game_day_inactives") or {}).get("week") == week:
+        earlier = next((r for r in (game_plan.applied_record(decisions.week_pages(wk.season, w, wk.root).inactives)
+                                    for w in range(week - 1, 0, -1)) if r is not None), None)
+        chart["game_day_inactives"] = {"week": earlier.get("week"), "players": list(earlier.get("players") or []),
+                                       "note": earlier.get("note")} if earlier else {}
+    return chart
+
+
 def medical_rows(wk, page_rel, texts):
     """One row per active-roster player under a medical restriction or with an exam still to come
     (and a reserve-list player only when he may practise or return before the game): his status as
     the medical staff communicated it, the next medical decision, and the football contingency (the
-    staff's, else the next player in his group's order on the chart)."""
+    staff's; else, for a starting lineman or defensive back, who takes his place by the chart and its
+    last game-day list as the game applies them; else the next player in his group's order on the
+    chart), all on the chart as the week's Game Plan found it (``situation_chart``)."""
     from runtime import season_summary as summary
     data = roster_record.load(wk.paths.roster)
     roster_page = wk.rel(wk.paths.roster_page)
     game_day = date.fromisoformat(wk.game["date"])
-    chart = json.loads(wk.paths.depth_chart.read_text(encoding="utf-8"))
+    chart = situation_chart(wk)
     groups = {p: g for g, order in (chart.get("depth") or {}).items() for p in order}
+    last_list = chart.get("game_day_inactives") or {}
+    unable = set(last_list.get("players") or ())
+    for p in roster_record.players(data):
+        entry = summary.medical_entry(p, wk.master)
+        if entry is not None and entry["instruction"] in CANNOT_PLAY:
+            unable.add(p["name"])
     rows = []
     for p in roster_record.players(data):
         entry = summary.medical_entry(p, wk.as_of)
@@ -738,6 +800,10 @@ def medical_rows(wk, page_rel, texts):
         nxt = "; ".join("Reassessment, %s" % day(d, d.year != wk.as_of.year) for d in entry["reviews"]) \
             or "Not communicated"
         contingency = ((texts.get("contingencies") or {}).get("rows") or {}).get(p["name"])
+        replacement = None if contingency else chart_replacement(chart, p["name"], unable - {p["name"]})
+        if replacement:
+            contingency = "By the chart%s: %s at %s" % (
+                " and the Week %d game-day list" % last_list["week"] if last_list.get("week") else "", *replacement)
         if not contingency:
             group = groups.get(p["name"])
             order = (chart.get("depth") or {}).get(group) or []

@@ -1,10 +1,10 @@
 # Damon Harrison
 
-**New York Jets · Nose tackle · No. 94 · Age 25 · Last game October 5, 2014**
+**New York Jets · Nose tackle · No. 94 · Age 25 · Last game October 12, 2014**
 
 6' 4", 350 lb · Born November 29, 1988 · William Penn
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Damon Harrison](https://commons.wikimedia.org/wiki/Special:FilePath/Damon_Harrison_2016.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting nose tackle.
 
-**Sacks:** 2 (2014, through Week 5).
+**Sacks:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 25 | 94 | 5 | 29 | 18 | 11 | 2 | 2 | 6 |
+| 2014 (through Week 6) | N.Y. Jets | 25 | 94 | 6 | 32 | 21 | 11 | 2 | 2 | 6 |
 | 2013 | N.Y. Jets | 24 | 94 | 16 | 81 | 59 | 22 | 11 | 4 | 9 |
-| Career |  |  |  | 21 | 110 | 77 | 33 | 13 | 6 | 15 |
+| Career |  |  |  | 22 | 113 | 80 | 33 | 13 | 6 | 15 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 25 | 94 | 1 | 32 | 2 | 4 | 3 | 0 |
+| 2014 (through Week 6) | N.Y. Jets | 25 | 94 | 1 | 32 | 2 | 4 | 3 | 0 |
 | 2013 | N.Y. Jets | 24 | 94 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

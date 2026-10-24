@@ -1,10 +1,10 @@
 # Duron Harmon
 
-**New England Patriots · Safety · No. 30 · Age 23 · Last game October 5, 2014**
+**New England Patriots · Safety · No. 30 · Age 23 · Last game October 12, 2014**
 
 6' 1", 205 lb · Born January 24, 1991 · Rutgers
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Duron Harmon](https://commons.wikimedia.org/wiki/Special:FilePath/Duron_Harmon.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting safety.
 
-**Passes defended:** 7 (2014, through Week 5).
+**Passes defended:** 9 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 23 | 30 | 5 | 25 | 20 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 6) | New England | 23 | 30 | 6 | 32 | 23 | 9 | 0 | 0 | 0 |
 | 2013 | New England | 22 | 30 | 2 | 2 | 1 | 1 | 0 | 0 | 0 |
-| Career |  |  |  | 7 | 27 | 21 | 6 | 0 | 0 | 0 |
+| Career |  |  |  | 8 | 34 | 24 | 10 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 23 | 30 | 2 | 34 | 7 | 0 | 0 | 0 |
+| 2014 (through Week 6) | New England | 23 | 30 | 3 | 79 | 9 | 0 | 0 | 0 |
 | 2013 | New England | 22 | 30 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

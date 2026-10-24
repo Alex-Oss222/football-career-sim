@@ -1,10 +1,10 @@
 # Whitney Mercilus
 
-**Houston Texans · Defensive end · No. 59 · Age 24 · Last game October 5, 2014**
+**Houston Texans · Defensive end · No. 59 · Age 24 · Last game October 9, 2014**
 
 6' 4", 258 lb · Born July 21, 1990 · Illinois · Drafted in 2012, first round, by Houston
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Whitney Mercilus](https://commons.wikimedia.org/wiki/Special:FilePath/Whitney_Mercilus.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 1 (2014, through Week 5).
+**Sacks:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 24 | 59 | 5 | 7 | 4 | 3 | 1 | 1 | 3 |
+| 2014 (through Week 6) | Houston | 24 | 59 | 6 | 8 | 5 | 3 | 1 | 2 | 4 |
 | 2013 | Houston | 23 | 59 | 16 | 37 | 23 | 14 | 3 | 1 | 5 |
-| Career |  |  |  | 21 | 44 | 27 | 17 | 4 | 2 | 8 |
+| Career |  |  |  | 22 | 45 | 28 | 17 | 4 | 3 | 9 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 24 | 59 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Houston | 24 | 59 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Houston | 23 | 59 | 0 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs

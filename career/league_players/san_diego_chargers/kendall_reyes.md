@@ -1,10 +1,10 @@
 # Kendall Reyes
 
-**San Diego Chargers · Defensive end · No. 91 · Age 25 · Last game October 5, 2014**
+**San Diego Chargers · Defensive end · No. 91 · Age 25 · Last game October 12, 2014**
 
 6' 4", 300 lb · Born September 26, 1989 · Connecticut · Drafted in 2012, second round, by San Diego
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Kendall Reyes](https://commons.wikimedia.org/wiki/Special:FilePath/Kendall_Reyes.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 5 (2014, through Week 5).
+**Sacks:** 6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Diego | 24 | 91 | 5 | 24 | 18 | 6 | 1 | 5 | 8 |
+| 2014 (through Week 6) | San Diego | 24 | 91 | 6 | 28 | 22 | 6 | 2 | 6 | 10 |
 | 2013 | San Diego | 23 | 91 | 16 | 64 | 44 | 20 | 4 | 7 | 17 |
-| Career |  |  |  | 21 | 88 | 62 | 26 | 5 | 12 | 25 |
+| Career |  |  |  | 22 | 92 | 66 | 26 | 6 | 13 | 27 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Diego | 24 | 91 | 0 | 0 | 1 | 1 | 1 | 0 |
+| 2014 (through Week 6) | San Diego | 24 | 91 | 0 | 0 | 1 | 1 | 1 | 0 |
 | 2013 | San Diego | 23 | 91 | 1 | 27 | 5 | 1 | 1 | N/A |
 
 ### Playoffs

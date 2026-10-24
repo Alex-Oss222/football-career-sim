@@ -2,7 +2,7 @@
 
 [Statistics](../README.md)
 
-**Through Week 5.** Every closed game is counted (76 games).
+**Through Week 6.** Every closed game is counted (91 games).
 
 - [Jaguars player statistics](team_player_stats.md): the club's players by position
 - [Team statistics](team_stats.md): every club's offense, defense and special teams, per game

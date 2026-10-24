@@ -1,10 +1,10 @@
 # Jordan Devey
 
-**New England Patriots · Center · No. 65 · Age 26 · Last game October 5, 2014**
+**New England Patriots · Center · No. 65 · Age 26 · Last game October 12, 2014**
 
 6' 6", 317 lb · Born January 11, 1988 · Memphis
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jordan Devey](https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Devey.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve left guard.
 
-**Sacks allowed:** 0 (2014, through Week 5).
+**Sacks allowed:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 26 | 65 | 5 | 1 | 110 | 0 | 24 |
+| 2014 (through Week 6) | New England | 26 | 65 | 6 | 1 | 110 | 0 | 30 |
 
 ### Playoffs
 

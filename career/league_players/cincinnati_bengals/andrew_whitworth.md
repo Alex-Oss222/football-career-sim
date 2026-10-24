@@ -1,10 +1,10 @@
 # Andrew Whitworth
 
-**Cincinnati Bengals · Offensive tackle · No. 77 · Age 32 · Last game October 5, 2014**
+**Cincinnati Bengals · Offensive tackle · No. 77 · Age 32 · Last game October 12, 2014**
 
 6' 7", 330 lb · Born December 12, 1981 · LSU · Drafted in 2006, second round, by Cincinnati
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Andrew Whitworth](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_Whitworth.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 5 (2014, through Week 5).
+**Sacks allowed:** 6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 32 | 77 | 4 | 4 | 285 | 5 | 18 |
+| 2014 (through Week 6) | Cincinnati | 32 | 77 | 5 | 5 | 338 | 6 | 22 |
 | 2013 | Cincinnati | 31 | 77 | 15 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 19 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Andy Dalton
 
-**Cincinnati Bengals · Quarterback · No. 14 · Age 26 · Last game October 5, 2014**
+**Cincinnati Bengals · Quarterback · No. 14 · Age 26 · Last game October 12, 2014**
 
 6' 2", 220 lb · Born October 29, 1987 · TCU · Drafted in 2011, second round, by Cincinnati
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Andy Dalton](https://commons.wikimedia.org/wiki/Special:FilePath/Andy_Dalton_pass%28CROP%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 67.7 (2014, through Week 5).
+**Passer rating:** 72.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 26 | 14 | 4 | 87 | 149 | 58.4 | 1,046 | 7.0 | 261.5 | 2 | 6 | 67.7 |
+| 2014 (through Week 6) | Cincinnati | 26 | 14 | 5 | 106 | 177 | 59.9 | 1,231 | 7.0 | 246.2 | 4 | 7 | 72.0 |
 | 2013 | Cincinnati | 25 | 14 | 16 | 388 | 619 | 62.7 | 4,370 | 7.1 | 273.1 | 28 | 15 | 88.7 |
-| Career |  |  |  | 20 | 475 | 768 | 61.8 | 5,416 | 7.1 | 270.8 | 30 | 21 | 84.6 |
+| Career |  |  |  | 21 | 494 | 796 | 62.1 | 5,601 | 7.0 | 266.7 | 32 | 22 | 85.0 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 26 | 14 | 11 | 70 | 8 | 39 | 3 | 1 | 1 |
+| 2014 (through Week 6) | Cincinnati | 26 | 14 | 14 | 99 | 10 | 37 | 3 | 1 | 1 |
 | 2013 | Cincinnati | 25 | 14 | 34 | 216 | 49 | 208 | 1 | 1 | 1 |
 
 ### Playoffs

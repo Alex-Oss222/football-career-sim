@@ -1,10 +1,10 @@
 # Quinton Carter
 
-**Denver Broncos · Strong safety · No. 38 · Age 26 · Last game October 5, 2014**
+**Denver Broncos · Strong safety · No. 38 · Age 26 · Last game October 12, 2014**
 
 6' 1", 200 lb · Born July 20, 1988 · Oklahoma · Drafted in 2011, fourth round, by Denver
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Quinton Carter](https://commons.wikimedia.org/wiki/Special:FilePath/Quinton_Carter.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve strong safety.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 26 | 38 | 4 | 2 | 1 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Denver | 26 | 38 | 5 | 2 | 1 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 26 | 38 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 6) | Denver | 26 | 38 | 0 | 0 | 0 | 0 | 0 | 3 |
 
 ### Playoffs
 

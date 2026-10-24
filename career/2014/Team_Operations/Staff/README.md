@@ -2,7 +2,7 @@
 
 **Jacksonville Jaguars · 2014**
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ## Who coaches what
 

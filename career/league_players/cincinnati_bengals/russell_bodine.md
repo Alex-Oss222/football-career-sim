@@ -1,10 +1,10 @@
 # Russell Bodine
 
-**Cincinnati Bengals · Center · No. 61 · Age 22 · Last game October 5, 2014**
+**Cincinnati Bengals · Center · No. 61 · Age 22 · Last game October 12, 2014**
 
 6' 3", 306 lb · Born June 30, 1992 · North Carolina
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Russell Bodine](https://commons.wikimedia.org/wiki/Special:FilePath/Russell_Bodine_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 1 (2014, through Week 5).
+**Sacks allowed:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 22 | 61 | 4 | 4 | 285 | 1 | 18 |
+| 2014 (through Week 6) | Cincinnati | 22 | 61 | 5 | 5 | 338 | 1 | 22 |
 
 ### Playoffs
 

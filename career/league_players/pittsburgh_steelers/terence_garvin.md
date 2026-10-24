@@ -1,10 +1,10 @@
 # Terence Garvin
 
-**Pittsburgh Steelers · Outside linebacker · No. 57 · Age 23 · Last game October 5, 2014**
+**Pittsburgh Steelers · Outside linebacker · No. 57 · Age 23 · Last game October 12, 2014**
 
 6' 3", 221 lb · Born January 1, 1991 · West Virginia
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Terence Garvin](https://commons.wikimedia.org/wiki/Special:FilePath/Terence_Garvin.JPG?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 23 | 57 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Pittsburgh | 23 | 57 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Pittsburgh | 22 | 57 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Career |  |  |  | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Pittsburgh | 23 | 57 | 0 | 0 | 0 | 0 | 0 | 4 |
+| 2014 (through Week 6) | Pittsburgh | 23 | 57 | 0 | 0 | 0 | 0 | 0 | 4 |
 | 2013 | Pittsburgh | 22 | 57 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

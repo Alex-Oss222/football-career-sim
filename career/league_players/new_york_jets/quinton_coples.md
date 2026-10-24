@@ -1,10 +1,10 @@
 # Quinton Coples
 
-**New York Jets · Outside linebacker · No. 98 · Age 24 · Last game October 5, 2014**
+**New York Jets · Outside linebacker · No. 98 · Age 24 · Last game October 12, 2014**
 
 6' 6", 290 lb · Born June 22, 1990 · North Carolina · Drafted in 2012, first round, by the New York Jets
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Quinton Coples](https://commons.wikimedia.org/wiki/Special:FilePath/Quinton_Coples.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 10 (2014, through Week 5).
+**Tackles:** 11 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 24 | 98 | 5 | 10 | 5 | 5 | 1 | 1 | 1 |
+| 2014 (through Week 6) | N.Y. Jets | 24 | 98 | 6 | 11 | 6 | 5 | 1 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 24 | 98 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | N.Y. Jets | 24 | 98 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Playoffs
 

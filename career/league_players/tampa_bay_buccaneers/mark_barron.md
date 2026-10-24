@@ -1,10 +1,10 @@
 # Mark Barron
 
-**Tampa Bay Buccaneers · Strong safety · No. 23 · Age 24 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Strong safety · No. 23 · Age 24 · Last game October 12, 2014**
 
 6' 2", 213 lb · Born October 27, 1989 · Alabama · Drafted in 2012, first round, by Tampa Bay
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Mark Barron](https://commons.wikimedia.org/wiki/Special:FilePath/Mark_Barron.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 6 (2014, through Week 5).
+**Passes defended:** 8 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 24 | 23 | 5 | 30 | 24 | 6 | 1 | 0 | 1 |
+| 2014 (through Week 6) | Tampa Bay | 24 | 23 | 6 | 34 | 25 | 9 | 2 | 0 | 1 |
 | 2013 | Tampa Bay | 23 | 23 | 16 | 114 | 84 | 30 | 2 | 1 | 2 |
-| Career |  |  |  | 21 | 144 | 108 | 36 | 3 | 1 | 3 |
+| Career |  |  |  | 22 | 148 | 109 | 39 | 4 | 1 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 24 | 23 | 2 | 6 | 6 | 1 | 1 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 24 | 23 | 3 | 6 | 8 | 1 | 1 | 0 |
 | 2013 | Tampa Bay | 23 | 23 | 5 | 84 | 27 | 1 | 1 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Josh Morgan
 
-**Chicago Bears · Wide receiver · No. 19 · Age 29 · Last game October 5, 2014**
+**Chicago Bears · Wide receiver · No. 19 · Age 29 · Last game October 12, 2014**
 
 6' 1", 220 lb · Born June 20, 1985 · Virginia Tech · Drafted in 2008, sixth round, by San Francisco
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Josh Morgan](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Morgan_at_49ers_training_camp_2010-08-09_1.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 13.0 (2014, through Week 5).
+**Yards per target:** 6.5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 29 | 19 | 5 | 2 | 1 | 26 | 26.0 | 0 | 26 | 5.2 | 50.0 |
+| 2014 (through Week 6) | Chicago | 29 | 19 | 6 | 4 | 1 | 26 | 26.0 | 0 | 26 | 4.3 | 25.0 |
 | 2013 | Washington | 28 | 15 | 16 | 151 | 93 | 927 | 10.0 | 4 | 50 | 57.9 | 61.6 |
-| Career |  |  |  | 21 | 153 | 94 | 953 | 10.1 | 4 | 50 | 45.4 | 61.4 |
+| Career |  |  |  | 22 | 155 | 94 | 953 | 10.1 | 4 | 50 | 43.3 | 60.6 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 29 | 19 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Chicago | 29 | 19 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Washington | 28 | 15 | 6 | 33 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Chicago | 29 | 19 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 6) | Chicago | 29 | 19 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Washington | 28 | 15 | 0 | 0 | N/A | 1 | 7 | 7.0 |
 
 ### Playoffs

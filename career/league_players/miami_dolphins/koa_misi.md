@@ -1,10 +1,10 @@
 # Koa Misi
 
-**Miami Dolphins · Linebacker · No. 55 · Age 27 · Last game September 28, 2014**
+**Miami Dolphins · Linebacker · No. 55 · Age 27 · Last game October 12, 2014**
 
 6' 3", 254 lb · Born January 17, 1987 · Utah; Santa Rosa · Drafted in 2010, second round, by Miami
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Koa Misi](https://commons.wikimedia.org/wiki/Special:FilePath/Koa_Misi_in_2012.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting linebacker.
 
-**Tackles:** 16 (2014, through Week 4).
+**Tackles:** 21 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 27 | 55 | 2 | 16 | 11 | 5 | 5 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 27 | 55 | 3 | 21 | 13 | 8 | 6 | 0 | 0 |
 | 2013 | Miami | 26 | 55 | 16 | 57 | 31 | 26 | 5 | 3 | 7 |
-| Career |  |  |  | 18 | 73 | 42 | 31 | 10 | 3 | 7 |
+| Career |  |  |  | 19 | 78 | 44 | 34 | 11 | 3 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 27 | 55 | 0 | 0 | 3 | 1 | 1 | 0 |
+| 2014 (through Week 6) | Miami | 27 | 55 | 0 | 0 | 3 | 1 | 1 | 0 |
 | 2013 | Miami | 26 | 55 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

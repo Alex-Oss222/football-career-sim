@@ -1,10 +1,10 @@
 # David Yankey
 
-**Minnesota Vikings · Guard · No. 66 · Age 22 · Last game October 2, 2014**
+**Minnesota Vikings · Guard · No. 66 · Age 22 · Last game October 12, 2014**
 
 6' 6", 315 lb · Born January 18, 1992 · Stanford
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![David Yankey](https://commons.wikimedia.org/wiki/Special:FilePath/David_Yankey_ASU_at_Stanford_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Reserve left guard.
 
-**Sacks allowed:** 0 (2014, through Week 5).
+**Sacks allowed:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 22 | 66 | 5 | 1 | 130 | 0 | 14 |
+| 2014 (through Week 6) | Minnesota | 22 | 66 | 6 | 2 | 196 | 0 | 17 |
 
 ### Playoffs
 

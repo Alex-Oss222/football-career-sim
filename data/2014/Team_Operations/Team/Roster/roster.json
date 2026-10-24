@@ -2,8 +2,8 @@
  "team": "Jacksonville Jaguars",
  "season": 2014,
  "as_of": {
-  "date": "2014-10-05",
-  "event": "after the Week 5 game against Pittsburgh"
+  "date": "2014-10-12",
+  "event": "after the Week 6 game at Tennessee"
  },
  "practice_squad_places": 10,
  "active_limit": 53,
@@ -228,10 +228,10 @@
    "list": "active",
    "group": "Offensive line",
    "status": "Active 53 (Rookie, drafted No. 26, May 8, 2014; rookie contract signed May 11, 2014)",
-   "availability": "No communicated restriction",
+   "availability": "Out, short: lower extremity, logged at 1:13 of the fourth quarter in the October 12 Week 6 game, not removed; projected return October 22, 2014; reassessment October 15 ([medical record](../../Medical/incidents/joel_bitonio_2014-10-12.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md"
    }
   },
   {
@@ -480,7 +480,7 @@
    "list": "active",
    "group": "Linebackers",
    "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
-   "availability": "Out, minor: upper extremity, logged at 10:35 of the second quarter of the October 5 Week 5 game, not removed (18 kicking-game snaps); projected return October 6, 2014; reassessment October 6 ([medical record](../../Medical/incidents/christian_jones_2014-10-05.md))",
+   "availability": "No communicated restriction: cleared October 6, 2014, his projected date, from the October 5 upper-extremity injury, at the reassessment its instruction named; full October 6 to 11 ([medical record](../../Medical/incidents/christian_jones_2014-10-05.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/incidents/christian_jones_2014-10-05.md"
@@ -528,7 +528,7 @@
    "list": "active",
    "group": "Defensive backs",
    "status": "Active 53",
-   "availability": "Out, minor: lower extremity, logged at 2:28 of the fourth quarter of the October 5 Week 5 game, not removed (all 60 defensive snaps); projected return October 11, 2014; reassessment October 7 ([medical record](../../Medical/incidents/brynden_trawick_2014-10-05.md))",
+   "availability": "No communicated restriction: cleared October 11, 2014, his projected date, from the October 5 lower-extremity injury (reassessed October 7 with no change); did not practice October 8 to 10; full in the October 11 walkthrough ([medical record](../../Medical/incidents/brynden_trawick_2014-10-05.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/incidents/brynden_trawick_2014-10-05.md"
@@ -540,7 +540,7 @@
    "list": "active",
    "group": "Defensive backs",
    "status": "Active 53",
-   "availability": "Independent medical hold, short: head/neck, logged at 5:19 of the third quarter of the September 21 Week 3 game, removed after 36 defensive snaps; reassessed September 27 with no change; no reassessment communicated September 29 to October 4; projected return October 9, 2014; out on the September 26 and October 3 reports ([medical record](../../Medical/incidents/jordan_poyer_2014-09-21.md)); earlier cleared August 26 from the August 22 upper-extremity injury",
+   "availability": "No communicated restriction: independent medical hold from the September 21 head/neck injury released October 9, 2014, its projected date (reassessed September 27 with no change); did not practice October 8; full October 9 to 11 ([medical record](../../Medical/incidents/jordan_poyer_2014-09-21.md)); earlier cleared August 26 from the August 22 upper-extremity injury",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/incidents/jordan_poyer_2014-09-21.md"
@@ -564,10 +564,10 @@
    "list": "active",
    "group": "Defensive backs",
    "status": "Active 53",
-   "availability": "No communicated restriction (cleared August 31, 2014, his projected date, from the August 28 lower-extremity injury; reassessed August 29 with no change; [medical history](../../Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements))",
+   "availability": "Out, short: lower extremity, logged at 13:26 of the third quarter in the October 12 Week 6 game, removed; projected return October 22, 2014; reassessment October 15 ([medical record](../../Medical/incidents/a_j_bouye_2014-10-12.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md"
    }
   },
   {
@@ -672,7 +672,7 @@
    "list": "reserve",
    "group": null,
    "status": "Reserve/Injured (placed August 31, 2014)",
-   "availability": "Out, multi-week: lower extremity, removed from the August 14 preseason game; projected return October 9, 2014; reassessed August 21 with no change; on reserve/injured for the season, not designated for return ([medical history](../../Medical/medical_history.md#august-29-to-31-reassessments-bouyes-clearance-and-the-reserve-placements))",
+   "availability": "No communicated restriction: cleared October 9, 2014, his projected date, from the lower-extremity injury of the August 14 preseason game (reassessed August 21 with no change); on reserve/injured for the season, not designated for return ([medical history](../../Medical/medical_history.md#october-6-to-11-christian-jones-and-trawick-cleared-poyer-released))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/medical_history.md"

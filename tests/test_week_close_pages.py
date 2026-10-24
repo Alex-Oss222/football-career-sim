@@ -13,10 +13,11 @@ desk and the calendar, and the annual record). Every page must then pass the
 clean-page check and repository validation of the copy must add no error to
 the real checkout's; no rewritten page is re-recorded as history.
 
-The fake result: the copy's first post-history week (the first Game Report
-week) is closed by relabelling the copy's previous week's closed games onto
-that week's fixtures, game for game, Jacksonville's on Jacksonville's: the
-same scores and statistics, now in the new week. Jacksonville's injuries are
+The fake result: the copy's first Game Report week whose games have not
+closed (the first Game Report week until it really closed, then the next one)
+is closed by relabelling the copy's previous week's closed games onto that
+week's fixtures, game for game, Jacksonville's on Jacksonville's: the same
+scores and statistics, now in the new week. Jacksonville's injuries are
 recorded as a multi-week and a long-term injury, the severities whose names
 the game records with an underscore. The master date and the roster record
 move to the new game day, as the week's close moves them, with each newly
@@ -49,7 +50,18 @@ from local_private_service import local_service  # noqa: E402
 from test_game_report import template_report  # noqa: E402
 
 JAX = "Jacksonville Jaguars"
-SEASON, WEEK = GAME_REPORT_FROM
+SEASON, FIRST_REPORT_WEEK = GAME_REPORT_FROM
+
+
+def open_report_week(root=ROOT):
+    """The week this test closes in its copy: the first Game Report week whose games have not closed
+    in the real checkout."""
+    paths = SeasonPaths(SEASON, root)
+    weeks = sorted({g["week"] for g in paths.regular_games() if g["week"] >= FIRST_REPORT_WEEK})
+    return next(w for w in weeks if not list(paths.receipts.glob("week_%02d_*.json" % w)))
+
+
+WEEK = open_report_week()
 IGNORED = (".git", ".sim_cache", "__pycache__", ".pytest_cache")
 # The receipt fields tied to the week a game was played under: the defensive call record names that
 # week's committed sheet, and the decision policies its standing rules.
@@ -180,7 +192,12 @@ class WeekClosePagesTests(unittest.TestCase):
         record = sorted(game_report.record_forms(played, JAX), key=len)[0]
         page = template_report(receipt, game, record, self.root)
         title, rest = page.split("\n", 1)
-        shell = "\n".join([title, "", "<!-- event-record: %s -->" % json.dumps(event, sort_keys=True), rest])
+        # A report opened before the game (the practice-week commit's preparation and game-day
+        # event lines) keeps those lines: the week index and the annual record already cite them.
+        opened = report.read_text(encoding="utf-8").splitlines() if report.is_file() else []
+        earlier = [line for line in opened if line.startswith("<!-- event-record: ")]
+        shell = "\n".join([title, ""] + earlier
+                           + ["<!-- event-record: %s -->" % json.dumps(event, sort_keys=True), rest])
         self.assertIn(game_report.EVENT_PLACEHOLDER, shell)
         report.parent.mkdir(parents=True, exist_ok=True)
         report.write_text(shell, encoding="utf-8")

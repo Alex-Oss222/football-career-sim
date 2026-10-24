@@ -1,10 +1,10 @@
 # Donald Penn
 
-**Oakland Raiders · Offensive tackle · No. 72 · Age 31 · Last game September 28, 2014**
+**Oakland Raiders · Offensive tackle · No. 72 · Age 31 · Last game October 12, 2014**
 
 6' 4", 340 lb · Born April 27, 1983 · Utah State
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Donald Penn](https://commons.wikimedia.org/wiki/Special:FilePath/Donald_Penn.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 7 (2014, through Week 4).
+**Sacks allowed:** 7 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 31 | 72 | 4 | 4 | 282 | 7 | 20 |
+| 2014 (through Week 6) | Oakland | 31 | 72 | 5 | 5 | 332 | 7 | 21 |
 | 2013 | Tampa Bay | 30 | 70 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 20 | N/A | N/A | 12 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 12 | N/A |
 
 ### Playoffs
 

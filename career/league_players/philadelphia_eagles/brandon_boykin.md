@@ -1,10 +1,10 @@
 # Brandon Boykin
 
-**Philadelphia Eagles · Cornerback · No. 22 · Age 24 · Last game October 5, 2014**
+**Philadelphia Eagles · Cornerback · No. 22 · Age 24 · Last game October 12, 2014**
 
 5' 10", 185 lb · Born July 13, 1990 · Georgia · Drafted in 2012, fourth round, by Philadelphia
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Brandon Boykin](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Boykin.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 24 | 22 | 5 | 4 | 3 | 1 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Philadelphia | 24 | 22 | 6 | 4 | 3 | 1 | 0 | 0 | 1 |
 | 2013 | Philadelphia | 23 | 22 | 16 | 25 | 16 | 9 | 2 | 1 | 1 |
-| Career |  |  |  | 21 | 29 | 19 | 10 | 2 | 1 | 2 |
+| Career |  |  |  | 22 | 29 | 19 | 10 | 2 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 24 | 22 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Philadelphia | 24 | 22 | 0 | 0 | 0 | 0 | 0 | 1 |
 | 2013 | Philadelphia | 23 | 22 | 0 | 0 | 1 | 1 | 1 | N/A |
 
 ### Playoffs

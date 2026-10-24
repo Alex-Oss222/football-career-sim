@@ -1,6 +1,6 @@
 # Jacksonville Jaguars
 
-As of October 5, 2014, after the Week 5 game against Pittsburgh (Pittsburgh 27, Jacksonville 10).
+As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Tennessee 10).
 
 Head coach Alex Stone. Employed by the Jacksonville Jaguars; employment decided by Shad Khan, owner, and David Caldwell, general manager.
 
@@ -13,17 +13,18 @@ Head coach Alex Stone. Employed by the Jacksonville Jaguars; employment decided 
 | 3 | September 21 | vs. Indianapolis | W 38-34 | 3-0 |
 | 4 | September 28 | at San Diego | L 20-21 | 3-1 |
 | 5 | October 5 | vs. Pittsburgh | L 10-27 | 3-2 |
+| 6 | October 12 | at Tennessee | W 24-10 | 4-2 |
 
-Next: Week 6 at Tennessee, October 12, 2014.
+Next: Week 7 against Cleveland, October 19, 2014.
 
 ## AFC South
 
 | Team | W | L | T | Pct | PF | PA |
 |---|---:|---:|---:|---:|---:|---:|
-| Jacksonville Jaguars | 3 | 2 | 0 | .600 | 115 | 109 |
-| Houston Texans | 3 | 2 | 0 | .600 | 122 | 126 |
-| Indianapolis Colts | 2 | 3 | 0 | .400 | 122 | 134 |
-| Tennessee Titans | 1 | 4 | 0 | .200 | 106 | 113 |
+| Houston Texans | 4 | 2 | 0 | .667 | 138 | 126 |
+| Jacksonville Jaguars | 4 | 2 | 0 | .667 | 139 | 119 |
+| Indianapolis Colts | 2 | 4 | 0 | .333 | 122 | 150 |
+| Tennessee Titans | 1 | 5 | 0 | .167 | 116 | 137 |
 
 [League standings](../../Regular_Season/standings.md)
 

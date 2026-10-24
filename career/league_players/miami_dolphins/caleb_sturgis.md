@@ -1,10 +1,10 @@
 # Caleb Sturgis
 
-**Miami Dolphins · Kicker · No. 9 · Age 25 · Last game September 28, 2014**
+**Miami Dolphins · Kicker · No. 9 · Age 25 · Last game October 12, 2014**
 
 5' 9", 190 lb · Born August 9, 1989 · Florida
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Caleb Sturgis](https://commons.wikimedia.org/wiki/Special:FilePath/Caleb_Sturgis.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 87.5 (2014, through Week 4).
+**Field-goal percentage:** 84.6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 25 | 9 | 4 | 7 | 8 | 87.5 | 46 | 10 | 10 | 100.0 | 31 |
+| 2014 (through Week 6) | Miami | 25 | 9 | 5 | 11 | 13 | 84.6 | 46 | 13 | 13 | 100.0 | 46 |
 | 2013 | Miami | 24 | 9 | 16 | 20 | 29 | 69.0 | N/A | 32 | 32 | 100.0 | 92 |
-| Career |  |  |  | 20 | 27 | 37 | 73.0 | N/A | 42 | 42 | 100.0 | 123 |
+| Career |  |  |  | 21 | 31 | 42 | 73.8 | N/A | 45 | 45 | 100.0 | 138 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 25 | 9 | 6-6 | 1-1 | 0-1 |
+| 2014 (through Week 6) | Miami | 25 | 9 | 9-10 | 2-2 | 0-1 |
 | 2013 | Miami | 24 | 9 | N/A | N/A | N/A |
 
 ### Playoffs

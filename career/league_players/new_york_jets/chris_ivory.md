@@ -1,10 +1,10 @@
 # Chris Ivory
 
-**New York Jets · Running back · No. 33 · Age 26 · Last game October 5, 2014**
+**New York Jets · Running back · No. 33 · Age 26 · Last game October 12, 2014**
 
 6' 0", 222 lb · Born March 22, 1988 · Tiffin; Washington State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Chris Ivory](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_ivory_jets2015.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 3.8 (2014, through Week 5).
+**Yards per carry:** 3.5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 26 | 33 | 5 | 83 | 315 | 3.8 | 2 | 15 | 63.0 |
+| 2014 (through Week 6) | N.Y. Jets | 26 | 33 | 6 | 96 | 338 | 3.5 | 2 | 16 | 56.3 |
 | 2013 | N.Y. Jets | 25 | 33 | 16 | 127 | 703 | 5.5 | 6 | 95 | 43.9 |
-| Career |  |  |  | 21 | 210 | 1,018 | 4.8 | 8 | 95 | 48.5 |
+| Career |  |  |  | 22 | 223 | 1,041 | 4.7 | 8 | 95 | 47.3 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | N.Y. Jets | 26 | 33 | 19 | 12 | 148 | 12.3 | 0 | 1 | 1 |
+| 2014 (through Week 6) | N.Y. Jets | 26 | 33 | 27 | 16 | 202 | 12.6 | 0 | 1 | 1 |
 | 2013 | N.Y. Jets | 25 | 33 | 46 | 31 | 264 | 8.5 | 0 | 1 | 1 |
 
 ### Playoffs

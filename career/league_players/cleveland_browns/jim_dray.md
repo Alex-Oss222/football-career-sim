@@ -1,10 +1,10 @@
 # Jim Dray
 
-**Cleveland Browns · Tight end · No. 81 · Age 27 · Last game October 5, 2014**
+**Cleveland Browns · Tight end · No. 81 · Age 27 · Last game October 12, 2014**
 
 6' 5", 255 lb · Born December 31, 1986 · Stanford · Drafted in 2010, seventh round, by Arizona
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jim Dray](https://commons.wikimedia.org/wiki/Special:FilePath/Jim_Dray_%2814999409536%29_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 0.0 (2014, through Week 5).
+**Yards per target:** 3.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cleveland | 27 | 81 | 4 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
+| 2014 (through Week 6) | Cleveland | 27 | 81 | 5 | 2 | 1 | 6 | 6.0 | 0 | 6 | 1.2 | 50.0 |
 | 2013 | Arizona | 26 | 81 | 16 | 36 | 24 | 243 | 10.1 | 2 | 28 | 15.2 | 66.7 |
-| Career |  |  |  | 20 | 37 | 24 | 243 | 10.1 | 2 | 28 | 12.2 | 64.9 |
+| Career |  |  |  | 21 | 38 | 25 | 249 | 10.0 | 2 | 28 | 11.9 | 65.8 |
 
 ### Playoffs
 

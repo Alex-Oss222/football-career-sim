@@ -29,3 +29,13 @@ Jackson is out for the remainder of the preseason on the engine's projection and
 ## Sources
 
 [Preseason game 2 output](../../../Training_Camp_and_Preseason/Preseason_Games/Game_02/output.md) · [public receipt](../../../../../data/2014/Training_Camp_and_Preseason/Preseason_Games/statistics/records/game_receipts/preseason_02_jacksonville_jaguars_at_chicago_bears.json) · [opening player card](../../Team/Player_Cards/jerrell_jackson.md) · [roster](../../Team/Roster/roster.md) · [medical history](../medical_history.md#august-14-preseason-game-2-injuries)
+
+## Updates from October 6, 2014
+
+| Date | Communicated finding | Permitted work | Source |
+|---|---|---|---|
+| October 9, 2014 | Cleared on his projected return date; nothing communicated after the August 21 reassessment | None on the club's practice field: on reserve/injured for the season, not designated for return | [Medical history](../medical_history.md#october-6-to-11-christian-jones-and-trawick-cleared-poyer-released) |
+
+**Current medical information, from October 9, 2014:** no communicated restriction; cleared October 9, 2014, the medical staff's projected date; no further medical review set.
+
+**Football effect, from October 9, 2014:** none. He stays on reserve/injured for the 2014 season, not designated for return, so the clearance does not return him to the 53 or to practice.

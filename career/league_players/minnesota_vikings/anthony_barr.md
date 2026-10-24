@@ -1,10 +1,10 @@
 # Anthony Barr
 
-**Minnesota Vikings · Outside linebacker · No. 55 · Age 22 · Last game October 2, 2014**
+**Minnesota Vikings · Outside linebacker · No. 55 · Age 22 · Last game October 12, 2014**
 
 6' 5", 255 lb · Born March 18, 1992 · UCLA
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Anthony Barr](https://commons.wikimedia.org/wiki/Special:FilePath/Anthony_Barr_2011.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Starting strongside linebacker.
 
-**Tackles:** 20 (2014, through Week 5).
+**Tackles:** 21 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 22 | 55 | 5 | 20 | 12 | 8 | 1 | 0 | 1 |
+| 2014 (through Week 6) | Minnesota | 22 | 55 | 6 | 21 | 13 | 8 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Minnesota | 22 | 55 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Minnesota | 22 | 55 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Playoffs
 

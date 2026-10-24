@@ -1,10 +1,10 @@
 # Ryan Schraeder
 
-**Atlanta Falcons · Offensive tackle · No. 73 · Age 26 · Last game October 5, 2014**
+**Atlanta Falcons · Offensive tackle · No. 73 · Age 26 · Last game October 12, 2014**
 
 6' 7", 300 lb · Born May 4, 1988 · Valdosta State; Butler County JC
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Ryan Schraeder](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Schraeder_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve left tackle.
 
-**Sacks allowed:** 0 (2014, through Week 5).
+**Sacks allowed:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Atlanta | 26 | 73 | 5 | 1 | 69 | 0 | 26 |
+| 2014 (through Week 6) | Atlanta | 26 | 73 | 6 | 1 | 82 | 0 | 30 |
 | 2013 | Atlanta | 25 | 73 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 

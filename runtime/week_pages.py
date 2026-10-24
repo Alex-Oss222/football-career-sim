@@ -600,6 +600,19 @@ def game_phrase(season, receipt):
     return "the Week %d game %s" % (int(receipt["week"]), opponent_text(game).replace("vs.", "against"))
 
 
+def game_closure(report, played):
+    """The id of the closed event a week's Game Report carries for the game played on ``played``
+    (its closure runs through that day), or None (no report, or none closed that day)."""
+    if not report.is_file():
+        return None
+    found = None
+    for match in re.finditer(r"<!-- event-record: (\{.*?\}) -->", report.read_text(encoding="utf-8")):
+        data = json.loads(match.group(1))
+        if (data.get("closure") or {}).get("through") == played.isoformat() and data.get("kind", "football") == "football":
+            found = data["id"]
+    return found
+
+
 def history_entry(season, receipt):
     """The medical history's entry for one Jacksonville game's injuries, or None without one."""
     injuries = ours_injured(receipt)
@@ -619,6 +632,11 @@ def history_entry(season, receipt):
         played.isoformat(), int(receipt["week"]), people.slugify(where).replace("_", "-")),
         "status": "closed", "summary": summary}
     report = season.paths.game_report(int(receipt["week"]))
+    # A Game Report (from 2014 Week 6) carries the game's closed event: the injuries follow it in
+    # the annual record, after the day's earlier records (the applied Game Plan among them).
+    game_event = game_closure(report, played)
+    if game_event:
+        event["follows"] = game_event
     game_link = link(page, season.rel(report), phrase[4:])
     lines = ["<!-- event-record: %s -->" % json.dumps(event, sort_keys=True), "",
              "## %s: Week %d injuries %s" % (month_day(played), int(receipt["week"]), where), "",

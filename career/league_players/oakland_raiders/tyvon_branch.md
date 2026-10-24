@@ -1,10 +1,10 @@
 # Tyvon Branch
 
-**Oakland Raiders · Strong safety · No. 33 · Age 27 · Last game September 28, 2014**
+**Oakland Raiders · Strong safety · No. 33 · Age 27 · Last game October 12, 2014**
 
 6' 0", 210 lb · Born December 11, 1986 · Connecticut · Drafted in 2008, fourth round, by Oakland
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Tyvon Branch](https://commons.wikimedia.org/wiki/Special:FilePath/Tyvon_Branch.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 2 (2014, through Week 4).
+**Passes defended:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 27 | 33 | 4 | 14 | 9 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Oakland | 27 | 33 | 5 | 14 | 9 | 5 | 0 | 0 | 0 |
 | 2013 | Oakland | 26 | 33 | 16 | 126 | 84 | 42 | 3 | 0 | 0 |
-| Career |  |  |  | 20 | 140 | 93 | 47 | 3 | 0 | 0 |
+| Career |  |  |  | 21 | 140 | 93 | 47 | 3 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Oakland | 27 | 33 | 1 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Oakland | 27 | 33 | 1 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Oakland | 26 | 33 | 1 | 0 | 26 | 1 | 1 | N/A |
 
 ### Playoffs

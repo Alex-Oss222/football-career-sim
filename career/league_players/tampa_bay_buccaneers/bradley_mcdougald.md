@@ -1,10 +1,10 @@
 # Bradley McDougald
 
-**Tampa Bay Buccaneers · Strong safety · No. 30 · Age 23 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Strong safety · No. 30 · Age 23 · Last game October 12, 2014**
 
 6' 1", 209 lb · Born November 15, 1990 · Kansas
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Bradley McDougald](https://commons.wikimedia.org/wiki/Special:FilePath/Bradley_McDougald_2018.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve strong safety.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 23 | 30 | 4 | 8 | 2 | 6 | 1 | 0 | 1 |
+| 2014 (through Week 6) | Tampa Bay | 23 | 30 | 5 | 14 | 5 | 9 | 1 | 0 | 1 |
 | 2013 | Kansas City | 22 | N/A | 2 | 1 | 0 | 1 | 0 | 0 | 0 |
-| Career |  |  |  | 6 | 9 | 2 | 7 | 1 | 0 | 1 |
+| Career |  |  |  | 7 | 15 | 5 | 10 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 23 | 30 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 6) | Tampa Bay | 23 | 30 | 1 | 58 | 1 | 0 | 0 | 2 |
 | 2013 | Kansas City | 22 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

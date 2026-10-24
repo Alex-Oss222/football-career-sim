@@ -1,10 +1,10 @@
 # Reggie Nelson
 
-**Cincinnati Bengals · Free safety · No. 20 · Age 31 · Last game October 5, 2014**
+**Cincinnati Bengals · Free safety · No. 20 · Age 31 · Last game October 12, 2014**
 
 5' 11", 210 lb · Born September 21, 1983 · Florida; Coffeyville CC · Drafted in 2007, first round, by Jacksonville
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Reggie Nelson](https://commons.wikimedia.org/wiki/Special:FilePath/Reggie_Nelson.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 6 (2014, through Week 5).
+**Passes defended:** 7 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 30 | 20 | 4 | 17 | 13 | 4 | 1 | 0 | 0 |
+| 2014 (through Week 6) | Cincinnati | 30 | 20 | 5 | 21 | 16 | 5 | 2 | 0 | 0 |
 | 2013 | Cincinnati | 29 | 20 | 16 | 122 | 82 | 40 | 8 | 2 | 3 |
-| Career |  |  |  | 20 | 139 | 95 | 44 | 9 | 2 | 3 |
+| Career |  |  |  | 21 | 143 | 98 | 45 | 10 | 2 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 30 | 20 | 3 | 19 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Cincinnati | 30 | 20 | 3 | 19 | 7 | 1 | 1 | 0 |
 | 2013 | Cincinnati | 29 | 20 | 2 | 29 | 14 | 0 | 0 | N/A |
 
 ### Playoffs

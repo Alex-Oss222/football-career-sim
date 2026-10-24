@@ -1,21 +1,21 @@
 # Jacksonville 2014
 
-**October 5, 2014.** Last game: Week 5, lost to Pittsburgh 27-10 at home. Record: 3-2.
+**October 12, 2014.** Last game: Week 6, beat Tennessee 24-10 away. Record: 4-2.
 
 Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coach page](../Stone/README.md)
 
 ## Waiting on you
 
-1. **Week 6 game plan for Tennessee.** To settle: the menu, including whether the Flea Flicker and TE Delay stay, and who takes Trawick's practice work after his October 7 exam. Due before kickoff, Sunday, October 12, 1 p.m. ET; the practice work before the first practice, Tuesday, October 7. Still to come: Trawick's reassessment (October 7). [Game Week Briefing](Regular_Season/Games/Week_06/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_06/Game_Plan.md)
-2. **Week 6 inactives.** Due before kickoff, Sunday, October 12, 1 p.m. ET. Still to come: Christian Jones's reassessment and projected return (October 6); Trawick's reassessment (October 7); Poyer's projected return (October 9). [Game Week Briefing](Regular_Season/Games/Week_06/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_06/Game_Plan.md)
+1. **Week 7 game plan for Cleveland.** Due before kickoff, Sunday, October 19, 1 p.m. ET; the practice work before the first practice, Wednesday, October 15. [Game Week Briefing](Regular_Season/Games/Week_07/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_07/Game_Plan.md)
+2. **Week 7 inactives.** Due before kickoff, Sunday, October 19, 1 p.m. ET. Still to come: A.J. Bouye's reassessment (October 15); Joel Bitonio's reassessment (October 15). [Game Week Briefing](Regular_Season/Games/Week_07/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_07/Game_Plan.md)
 
 ## Next event
 
-**Next game:** Week 6, Jacksonville at Tennessee, Sunday, October 12, 1 p.m. ET, LP Field. [Week 6](Regular_Season/Games/Week_06/README.md)
+**Next game:** Week 7, Cleveland at Jacksonville, Sunday, October 19, 1 p.m. ET, EverBank Field. [Week 7](Regular_Season/Games/Week_07/README.md)
 
 ## Season at a glance
 
-**3-2 · 1st AFC South · AFC position 4.** 115 scored · 109 allowed · +6 differential. 23.0 points per game · 41.4% on third down · 46.3% allowed.
+**4-2 · 2nd AFC South · AFC position 8.** 139 scored · 119 allowed · +20 differential. 23.2 points per game · 41.0% on third down · 43.0% allowed.
 
 [Season statistics](Regular_Season/Statistics/README.md) · [Division standings](Regular_Season/standings.md)
 
@@ -23,29 +23,28 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coac
 
 | Category | Player | Through the last game |
 |---|---|---|
-| Passing | [Kirk Cousins](Team_Operations/Team/Player_Cards/kirk_cousins.md) | 1,213 pass yds · 9 TD, 7 INT |
-| Rushing | [Maurice Jones-Drew](Team_Operations/Team/Player_Cards/maurice_jones_drew.md) | 461 rush yds · 2 TD |
-| Receiving | [Davante Adams](Team_Operations/Team/Player_Cards/davante_adams.md) | 369 rec yds · 30 catches, 2 TD |
-| Tackling | [Daryl Smith](Team_Operations/Team/Player_Cards/daryl_smith.md) | 48 tackles · 1 sack |
+| Passing | [Kirk Cousins](Team_Operations/Team/Player_Cards/kirk_cousins.md) | 1,444 pass yds · 10 TD, 8 INT |
+| Rushing | [Maurice Jones-Drew](Team_Operations/Team/Player_Cards/maurice_jones_drew.md) | 569 rush yds · 4 TD |
+| Receiving | [Davante Adams](Team_Operations/Team/Player_Cards/davante_adams.md) | 421 rec yds · 34 catches, 3 TD |
+| Tackling | [Daryl Smith](Team_Operations/Team/Player_Cards/daryl_smith.md) | 56 tackles · 1 sack |
 
 ## Medical and availability
 
 | Player | Status | Next medical date |
 |---|---|---|
-| [Christian Jones](Team_Operations/Team/Player_Cards/christian_jones.md) | [Out · upper extremity (minor)](Team_Operations/Medical/incidents/christian_jones_2014-10-05.md) | Review October 6, 2014; projected return October 6, 2014 |
-| [Brynden Trawick](Team_Operations/Team/Player_Cards/brynden_trawick.md) | [Out · lower extremity (minor)](Team_Operations/Medical/incidents/brynden_trawick_2014-10-05.md) | Review October 7, 2014; projected return October 11, 2014 |
-| [Jordan Poyer](Team_Operations/Team/Player_Cards/jordan_poyer.md) | [Independent hold · head/neck (short)](Team_Operations/Medical/incidents/jordan_poyer_2014-09-21.md) | Projected return October 9, 2014 |
+| [Joel Bitonio](Team_Operations/Team/Player_Cards/joel_bitonio.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md) | Review October 15, 2014; projected return October 22, 2014 |
+| [A.J. Bouye](Team_Operations/Team/Player_Cards/a_j_bouye.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md) | Review October 15, 2014; projected return October 22, 2014 |
 
 Projected dates require medical clearance. [Full injury report](Team_Operations/Medical/current_injury_report.md)
 
 ## Coming up
 
-- October 6: Pittsburgh review and Tennessee introduction; Christian Jones's reassessment and projected return
-- October 7 to 11: Week 6 practice week; Trawick's reassessment October 7 and projected return October 11
-- October 7 and 8: Fall League Meeting
-- October 9: Poyer's projected return
-- October 12, 1 p.m.: Week 6, Jacksonville at Tennessee, LP Field
+- October 13: Tennessee review and Cleveland introduction
+- October 14: The players' day off; the applicable Reserve/PUP and Reserve/NFI practice-return period opens
+- October 15 to 18: Week 7 practice week under Stone's standing practice instruction; Bouye's and Bitonio's reassessments October 15
+- October 19, 1 p.m.: Week 7, Cleveland at Jacksonville, EverBank Field
 - October 20: Lowery may begin practicing
+- October 22: Bouye's and Bitonio's projected returns
 - October 28, 4 p.m.: Trading deadline
 - November 3: Lowery's earliest return to the active roster
 

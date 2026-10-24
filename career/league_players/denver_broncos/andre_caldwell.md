@@ -1,10 +1,10 @@
 # Andre Caldwell
 
-**Denver Broncos · Wide receiver · No. 12 · Age 29 · Last game October 5, 2014**
+**Denver Broncos · Wide receiver · No. 12 · Age 29 · Last game October 12, 2014**
 
 6' 0", 200 lb · Born April 15, 1985 · Florida · Drafted in 2008, third round, by Cincinnati
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Andre Caldwell](https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Caldwell_2012.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 7.6 (2014, through Week 5).
+**Yards per target:** 9.5 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 29 | 12 | 4 | 14 | 11 | 107 | 9.7 | 1 | 20 | 26.8 | 78.6 |
+| 2014 (through Week 6) | Denver | 29 | 12 | 5 | 19 | 16 | 180 | 11.2 | 1 | 22 | 36.0 | 84.2 |
 | 2013 | Denver | 28 | 12 | 16 | 16 | 13 | 157 | 12.1 | 0 | 49 | 9.8 | 81.2 |
-| Career |  |  |  | 20 | 30 | 24 | 264 | 11.0 | 1 | 49 | 13.2 | 80.0 |
+| Career |  |  |  | 21 | 35 | 29 | 337 | 11.6 | 1 | 49 | 16.0 | 82.9 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 29 | 12 | 13 | 393 | 30.2 | 0 | 0 | N/A |
+| 2014 (through Week 6) | Denver | 29 | 12 | 14 | 416 | 29.7 | 0 | 0 | N/A |
 | 2013 | Denver | 28 | 12 | 1 | 14 | 14.0 | 0 | 0 | N/A |
 
 ### Playoffs

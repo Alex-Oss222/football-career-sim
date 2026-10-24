@@ -1,10 +1,10 @@
 # Casey Hayward
 
-**Green Bay Packers · Cornerback · No. 29 · Age 25 · Last game October 2, 2014**
+**Green Bay Packers · Cornerback · No. 29 · Age 25 · Last game October 12, 2014**
 
 5' 11", 192 lb · Born September 9, 1989 · Vanderbilt · Drafted in 2012, second round, by Green Bay
 
-As of October 2, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Casey Hayward](https://commons.wikimedia.org/wiki/Special:FilePath/Casey_Hayward_2016.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 2, 2014, after Week 5.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 1 (2014, through Week 5).
+**Passes defended:** 1 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 24 | 29 | 5 | 5 | 2 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Green Bay | 24 | 29 | 6 | 6 | 3 | 3 | 0 | 0 | 0 |
 | 2013 | Green Bay | 23 | 29 | 13 | 31 | 21 | 10 | 0 | 0 | 0 |
-| Career |  |  |  | 18 | 36 | 23 | 13 | 0 | 0 | 0 |
+| Career |  |  |  | 19 | 37 | 24 | 13 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Green Bay | 24 | 29 | 0 | 0 | 1 | 0 | 0 | 1 |
+| 2014 (through Week 6) | Green Bay | 24 | 29 | 0 | 0 | 1 | 0 | 0 | 1 |
 | 2013 | Green Bay | 23 | 29 | 3 | -6 | 5 | 0 | 0 | N/A |
 
 ### Playoffs

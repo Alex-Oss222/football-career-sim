@@ -1,10 +1,10 @@
 # Mychal Kendricks
 
-**Philadelphia Eagles · Inside linebacker · No. 95 · Age 24 · Last game October 5, 2014**
+**Philadelphia Eagles · Inside linebacker · No. 95 · Age 24 · Last game October 12, 2014**
 
 6' 0", 240 lb · Born September 28, 1990 · California · Drafted in 2012, second round, by Philadelphia
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Mychal Kendricks](https://commons.wikimedia.org/wiki/Special:FilePath/Mychal_Kendricks_in_2010.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting inside linebacker.
 
-**Tackles:** 20 (2014, through Week 5).
+**Tackles:** 25 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 23 | 95 | 5 | 20 | 14 | 6 | 1 | 0 | 3 |
+| 2014 (through Week 6) | Philadelphia | 23 | 95 | 6 | 25 | 17 | 8 | 1 | 0 | 3 |
 | 2013 | Philadelphia | 22 | 95 | 16 | 111 | 79 | 32 | 9 | 2 | 11 |
-| Career |  |  |  | 21 | 131 | 93 | 38 | 10 | 2 | 14 |
+| Career |  |  |  | 22 | 136 | 96 | 40 | 10 | 2 | 14 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Philadelphia | 23 | 95 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 2014 (through Week 6) | Philadelphia | 23 | 95 | 0 | 0 | 0 | 0 | 1 | 0 |
 | 2013 | Philadelphia | 22 | 95 | 1 | 8 | 3 | 1 | 1 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Mike Iupati
 
-**San Francisco 49ers · Guard · No. 77 · Age 27 · Last game October 5, 2014**
+**San Francisco 49ers · Guard · No. 77 · Age 27 · Last game October 13, 2014**
 
 6' 5", 331 lb · Born May 12, 1987 · Idaho · Drafted in 2010, first round, by San Francisco
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Mike Iupati](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Iupati_at_49ers_training_camp_2010-08-09_3.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 0 (2014, through Week 5).
+**Sacks allowed:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 27 | 77 | 5 | 5 | 324 | 0 | 23 |
+| 2014 (through Week 6) | San Francisco | 27 | 77 | 6 | 6 | 397 | 0 | 30 |
 | 2013 | San Francisco | 26 | 77 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 

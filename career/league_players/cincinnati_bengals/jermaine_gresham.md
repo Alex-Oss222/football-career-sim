@@ -1,10 +1,10 @@
 # Jermaine Gresham
 
-**Cincinnati Bengals · Tight end · No. 84 · Age 26 · Last game October 5, 2014**
+**Cincinnati Bengals · Tight end · No. 84 · Age 26 · Last game October 12, 2014**
 
 6' 5", 260 lb · Born June 16, 1988 · Oklahoma · Drafted in 2010, first round, by Cincinnati
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Jermaine Gresham](https://commons.wikimedia.org/wiki/Special:FilePath/Jermaine_Gresham_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 10.8 (2014, through Week 5).
+**Yards per target:** 9.8 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Cincinnati | 26 | 84 | 4 | 21 | 13 | 226 | 17.4 | 1 | 61 | 56.5 | 61.9 |
+| 2014 (through Week 6) | Cincinnati | 26 | 84 | 5 | 25 | 16 | 245 | 15.3 | 2 | 61 | 49.0 | 64.0 |
 | 2013 | Cincinnati | 25 | 84 | 16 | 121 | 71 | 649 | 9.1 | 4 | 33 | 40.6 | 58.7 |
-| Career |  |  |  | 20 | 142 | 84 | 875 | 10.4 | 5 | 61 | 43.8 | 59.2 |
+| Career |  |  |  | 21 | 146 | 87 | 894 | 10.3 | 6 | 61 | 42.6 | 59.6 |
 
 ### Playoffs
 

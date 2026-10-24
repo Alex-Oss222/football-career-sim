@@ -1,10 +1,10 @@
 # Devin Street
 
-**Dallas Cowboys · Wide receiver · No. 15 · Age 23 · Last game October 5, 2014**
+**Dallas Cowboys · Wide receiver · No. 15 · Age 23 · Last game October 12, 2014**
 
 6' 3", 200 lb · Born March 30, 1991 · Pittsburgh
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Devin Street](https://commons.wikimedia.org/wiki/Special:FilePath/Devin_Street_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 8.0 (2014, through Week 5).
+**Yards per target:** 8.0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Dallas | 23 | 15 | 5 | 1 | 1 | 8 | 8.0 | 0 | 8 | 1.6 | 100.0 |
+| 2014 (through Week 6) | Dallas | 23 | 15 | 6 | 1 | 1 | 8 | 8.0 | 0 | 8 | 1.3 | 100.0 |
 
 ### Playoffs
 

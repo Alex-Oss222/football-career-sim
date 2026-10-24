@@ -1,14 +1,14 @@
 # Dominique Easley
 
-**New England Patriots · Outside linebacker · No. 74 · Age 22 · Last game October 5, 2014**
+**New England Patriots · Outside linebacker · No. 74 · Age 22 · Last game October 12, 2014**
 
 6' 2", 290 lb · Born April 28, 1992 · Florida
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive end.
 
-**Tackles:** 9 (2014, through Week 5).
+**Tackles:** 12 (2014, through Week 6).
 
 ## Contract
 
@@ -20,11 +20,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 22 | 74 | 5 | 9 | 7 | 2 | 2 | 0 | 1 |
+| 2014 (through Week 6) | New England | 22 | 74 | 6 | 12 | 10 | 2 | 2 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 22 | 74 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | New England | 22 | 74 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

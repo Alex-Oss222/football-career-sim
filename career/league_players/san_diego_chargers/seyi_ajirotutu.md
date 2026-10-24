@@ -1,10 +1,10 @@
 # Seyi Ajirotutu
 
-**San Diego Chargers · Wide receiver · No. 16 · Age 27 · Last game October 5, 2014**
+**San Diego Chargers · Wide receiver · No. 16 · Age 27 · Last game October 12, 2014**
 
 6' 3", 215 lb · Born June 12, 1987 · Fresno State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Seyi Ajirotutu](https://commons.wikimedia.org/wiki/Special:FilePath/Seyi_Ajirotutu.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 13.6 (2014, through Week 5).
+**Yards per target:** 9.6 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Diego | 27 | 16 | 5 | 7 | 5 | 95 | 19.0 | 1 | 40 | 19.0 | 71.4 |
+| 2014 (through Week 6) | San Diego | 27 | 16 | 6 | 11 | 8 | 106 | 13.2 | 2 | 40 | 17.7 | 72.7 |
 | 2013 | San Diego | 26 | 16 | 16 | 6 | 2 | 2 | 1.0 | 1 | 3 | 0.1 | 33.3 |
-| Career |  |  |  | 21 | 13 | 7 | 97 | 13.9 | 2 | 40 | 4.6 | 53.8 |
+| Career |  |  |  | 22 | 17 | 10 | 108 | 10.8 | 3 | 40 | 4.9 | 58.8 |
 
 ### Playoffs
 

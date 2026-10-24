@@ -1,10 +1,10 @@
 # Quinton Dial
 
-**San Francisco 49ers · Nose tackle · No. 92 · Age 24 · Last game October 5, 2014**
+**San Francisco 49ers · Nose tackle · No. 92 · Age 24 · Last game October 13, 2014**
 
 6' 5", 318 lb · Born July 21, 1990 · Alabama; East Mississippi JC
 
-As of October 5, 2014, after Week 5.
+As of October 13, 2014, after Week 6.
 
 ![Quinton Dial](https://commons.wikimedia.org/wiki/Special:FilePath/Quinton_Dial.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve nose tackle.
 
-**Sacks:** 0 (2014, through Week 5).
+**Sacks:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 24 | 92 | 5 | 3 | 2 | 1 | 0 | 0 | 2 |
+| 2014 (through Week 6) | San Francisco | 24 | 92 | 6 | 3 | 2 | 1 | 0 | 0 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | San Francisco | 24 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | San Francisco | 24 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

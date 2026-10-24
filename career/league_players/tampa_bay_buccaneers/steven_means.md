@@ -1,10 +1,10 @@
 # Steven Means
 
-**Tampa Bay Buccaneers · Outside linebacker · No. 96 · Age 24 · Last game October 5, 2014**
+**Tampa Bay Buccaneers · Outside linebacker · No. 96 · Age 24 · Last game October 12, 2014**
 
 6' 3", 260 lb · Born September 16, 1990 · Buffalo
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Steven Means](https://commons.wikimedia.org/wiki/Special:FilePath/Steven_Means.jpg?width=500)
 
@@ -20,13 +20,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 23 | 96 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Tampa Bay | 23 | 96 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Tampa Bay | 22 | 96 | 16 | 1 | 0 | 1 | 0 | 0 | 0 |
 | Career |  |  |  | 20 | 1 | 0 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Tampa Bay | 23 | 96 | 0 | 0 | 0 | 0 | 0 | 3 |
+| 2014 (through Week 6) | Tampa Bay | 23 | 96 | 0 | 0 | 0 | 0 | 0 | 3 |
 | 2013 | Tampa Bay | 22 | 96 | 1 | 26 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Jadeveon Clowney
 
-**Houston Texans · Outside linebacker · No. 90 · Age 21 · Last game October 5, 2014**
+**Houston Texans · Outside linebacker · No. 90 · Age 21 · Last game October 9, 2014**
 
 6' 5", 266 lb · Born February 14, 1993 · South Carolina
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Jadeveon Clowney](https://commons.wikimedia.org/wiki/Special:FilePath/Jadeveon_Clowney_%2851372079098%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 8 (2014, through Week 5).
+**Tackles:** 10 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 21 | 90 | 5 | 8 | 7 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Houston | 21 | 90 | 6 | 10 | 9 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 21 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Houston | 21 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Playoffs
 

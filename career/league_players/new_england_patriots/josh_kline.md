@@ -1,10 +1,10 @@
 # Josh Kline
 
-**New England Patriots · Guard · No. 67 · Age 24 · Last game October 5, 2014**
+**New England Patriots · Guard · No. 67 · Age 24 · Last game October 12, 2014**
 
 6' 3", 295 lb · Born December 29, 1989 · Kent State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Josh Kline](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Kline.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New England | 24 | 67 | 4 | 4 | 200 | 2 | 16 |
+| 2014 (through Week 6) | New England | 24 | 67 | 5 | 5 | 254 | 2 | 22 |
 | 2013 | New England | 23 | 67 | 2 | N/A | N/A | 1 | N/A |
-| Career |  |  |  | 6 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 7 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 

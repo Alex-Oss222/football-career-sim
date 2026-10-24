@@ -1,10 +1,10 @@
 # Olivier Vernon
 
-**Miami Dolphins · Defensive end · No. 50 · Age 23 · Last game September 28, 2014**
+**Miami Dolphins · Defensive end · No. 50 · Age 24 · Last game October 12, 2014**
 
 6' 2", 268 lb · Born October 7, 1990 · Miami · Drafted in 2012, third round, by Miami
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Olivier Vernon](https://commons.wikimedia.org/wiki/Special:FilePath/Olivier_Vernon.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 4 (2014, through Week 4).
+**Sacks:** 4 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 23 | 50 | 4 | 19 | 13 | 6 | 0 | 4 | 6 |
+| 2014 (through Week 6) | Miami | 23 | 50 | 5 | 27 | 17 | 10 | 1 | 4 | 6 |
 | 2013 | Miami | 22 | 50 | 16 | 67 | 42 | 25 | 5 | 4 | 14 |
-| Career |  |  |  | 20 | 86 | 55 | 31 | 5 | 8 | 20 |
+| Career |  |  |  | 21 | 94 | 59 | 35 | 6 | 8 | 20 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 23 | 50 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 23 | 50 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Miami | 22 | 50 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

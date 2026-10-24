@@ -1,10 +1,10 @@
 # Damien Williams
 
-**Miami Dolphins · Running back · No. 34 · Age 22 · Last game September 28, 2014**
+**Miami Dolphins · Running back · No. 34 · Age 22 · Last game October 12, 2014**
 
 5' 11", 221 lb · Born April 3, 1992 · Oklahoma
 
-As of September 28, 2014, after Week 4.
+As of October 12, 2014, after Week 6.
 
 ![Damien Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Damien_Williams_%28running_back%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of September 28, 2014, after Week 4.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 3.1 (2014, through Week 4).
+**Yards per carry:** 2.8 (2014, through Week 6).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 22 | 34 | 4 | 9 | 28 | 3.1 | 0 | 8 | 7.0 |
+| 2014 (through Week 6) | Miami | 22 | 34 | 5 | 10 | 28 | 2.8 | 0 | 8 | 5.6 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 4) | Miami | 22 | 34 | 1 | 1 | 9 | 9.0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Miami | 22 | 34 | 1 | 1 | 9 | 9.0 | 0 | 0 | 0 |
 
 ### Playoffs
 

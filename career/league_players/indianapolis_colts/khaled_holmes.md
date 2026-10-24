@@ -1,10 +1,10 @@
 # Khaled Holmes
 
-**Indianapolis Colts · Center · No. 62 · Age 24 · Last game October 5, 2014**
+**Indianapolis Colts · Center · No. 62 · Age 24 · Last game October 9, 2014**
 
 6' 3", 309 lb · Born January 19, 1990 · USC
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Khaled Holmes](https://commons.wikimedia.org/wiki/Special:FilePath/2012-1103-USC-HolmesKhaled_cropped.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 2 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 24 | 62 | 5 | 5 | 313 | 2 | 22 |
+| 2014 (through Week 6) | Indianapolis | 24 | 62 | 6 | 6 | 369 | 2 | 22 |
 | 2013 | Indianapolis | 23 | 62 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

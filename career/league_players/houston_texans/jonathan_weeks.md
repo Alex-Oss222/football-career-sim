@@ -1,10 +1,10 @@
 # Jonathan Weeks
 
-**Houston Texans · Long snapper · No. 46 · Age 28 · Last game October 5, 2014**
+**Houston Texans · Long snapper · No. 46 · Age 28 · Last game October 9, 2014**
 
 5' 10", 246 lb · Born February 17, 1986 · Baylor
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Jonathan Weeks](https://commons.wikimedia.org/wiki/Special:FilePath/Jon_Weeks.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 47 (2014, through Week 5).
+**Long snaps:** 56 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Houston | 28 | 46 | 5 | 47 | 47 | 0 | 0 |
+| 2014 (through Week 6) | Houston | 28 | 46 | 6 | 56 | 56 | 0 | 0 |
 | 2013 | Houston | 27 | 46 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 22 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

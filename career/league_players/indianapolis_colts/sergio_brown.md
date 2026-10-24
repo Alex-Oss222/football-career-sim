@@ -1,10 +1,10 @@
 # Sergio Brown
 
-**Indianapolis Colts · Free safety · No. 38 · Age 26 · Last game October 5, 2014**
+**Indianapolis Colts · Free safety · No. 38 · Age 26 · Last game October 9, 2014**
 
 6' 2", 217 lb · Born May 22, 1988 · Notre Dame
 
-As of October 5, 2014, after Week 5.
+As of October 9, 2014, after Week 6.
 
 ![Sergio Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Sergio_Brown.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve free safety.
 
-**Passes defended:** 0 (2014, through Week 5).
+**Passes defended:** 0 (2014, through Week 6).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 26 | 38 | 1 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Indianapolis | 26 | 38 | 2 | 2 | 2 | 0 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 25 | 38 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 3 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 4 | 2 | 2 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Indianapolis | 26 | 38 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 6) | Indianapolis | 26 | 38 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 25 | 38 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

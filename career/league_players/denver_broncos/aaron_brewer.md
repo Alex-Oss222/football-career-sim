@@ -1,10 +1,10 @@
 # Aaron Brewer
 
-**Denver Broncos · Long snapper · No. 46 · Age 24 · Last game October 5, 2014**
+**Denver Broncos · Long snapper · No. 46 · Age 24 · Last game October 12, 2014**
 
 6' 5", 230 lb · Born July 5, 1990 · San Diego State
 
-As of October 5, 2014, after Week 5.
+As of October 12, 2014, after Week 6.
 
 ![Aaron Brewer](https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Brewer.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 38 (2014, through Week 5).
+**Long snaps:** 50 (2014, through Week 6).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Denver | 24 | 46 | 4 | 38 | 38 | 0 | 0 |
+| 2014 (through Week 6) | Denver | 24 | 46 | 5 | 50 | 50 | 0 | 0 |
 | 2013 | Denver | 23 | 46 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 20 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 21 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 
