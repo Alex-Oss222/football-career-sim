@@ -615,6 +615,18 @@ class WaiverTests(Case):
         self.assertEqual((stored["award"]["claimed_by"], stored["award"]["jacksonville"]), (behind[-1], True))
         self.assertEqual(open_events.validation_errors(self.root), [])
 
+    def test_the_claim_words_hold_only_the_stored_award(self):
+        """The market line names the one club that really claimed him, or none; never every club."""
+        end = "2014-10-21T16:00:00-04:00"
+        none = tx.claim_words({"claimed_by": None, "order": "no other club claimed him", "at": end})
+        self.assertEqual(none, "Claimed on waivers: no other club claimed him before the claim period ended "
+                               "October 21, 2014.")
+        won = tx.claim_words({"claimed_by": "Test Club", "order": "the worse record claims first", "at": end,
+                              "jacksonville": True})
+        self.assertIn("ahead of the Test Club, the club that claimed him", won)
+        self.assertIn("(the worse record claims first)", won)
+        self.assertNotIn("every club", won + none)
+
     def test_a_section_4_pursuit_waits_for_the_real_signing_and_is_drawn_against_it(self):
         self.add_rows([self.row(1, "released", self.waiver_club, self.player, self.monday - timedelta(days=3))],
                       self.monday)

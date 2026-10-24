@@ -1017,6 +1017,17 @@ def page_text(record, event, root=ROOT):
     return "\n".join(lines)
 
 
+def claim_words(award):
+    """A waiver claim's market line, from the stored award only: the one club that really claimed him,
+    or none (the claims that failed are not on the record, library W6)."""
+    end = award.get("at")
+    when = long_date(open_events.parse_at(end).date()) if end else "the end of the claim period"
+    if not award.get("claimed_by"):
+        return "Claimed on waivers: no other club claimed him before the claim period ended %s." % when
+    return ("Claimed on waivers: Jacksonville stood ahead of the %s, the club that claimed him, in the waiver order on "
+            "%s (%s)." % (award["claimed_by"], when, str(award.get("order") or "").rstrip(".")))
+
+
 def signing_text(record, move, root):
     """The signing record of a player Jacksonville signs from outside the club (no event line), built
     from the applied transaction record."""
@@ -1032,8 +1043,9 @@ def signing_text(record, move, root):
                              "and no market draw."),
            "section_4": "Pursued under the league method (section 4): the draw was made at the date he signed with a "
                         "club, against that contract, and Jacksonville's offer won it.",
-           "waiver_claim": "Claimed on waivers: Jacksonville stood ahead of every club that claimed him in the waiver "
-                           "order on the day the claim period ended."}[move["via"]]
+           "waiver_claim": None}[move["via"]]
+    if move["via"] == "waiver_claim":
+        how = claim_words(record.get("award") or {})
     lines = ["# %s: signed %s" % (move["player"], long_date(at.date())), "",
              "**Decision.** %s decided the signing (Document 3 rows 3 and 5); the roster move is the %s." % (
                  current_job.party_name(job, record["decided_by"]), _link(page_rel, result_rel, "transaction")),
