@@ -482,8 +482,10 @@ def career_hold(season, root=ROOT):
     when = date.fromisoformat(row["effective"])
     return ("The Week %d head-coach check drew a change at %s, effective %s %d, %d. It is Shad Khan and David "
             "Caldwell's decision (Document 3, row 1), written as the Club Decision, whose pages are built in step 6 "
-            "of the rebuild plan; the career holds here until they exist. Nothing further is opened, played or "
-            "drawn." % (week, row["club"], when.strftime("%B"), when.day, when.year))
+            "of the rebuild plan; the career holds here until they exist. No further head-coach check is drawn, and "
+            "once a later week opens or the master date moves past the day of this check, repository validation and "
+            "the game readiness check fail on this hold, so no game is played." % (
+                week, row["club"], when.strftime("%B"), when.day, when.year))
 
 
 def hold_errors(root=ROOT, season=None):

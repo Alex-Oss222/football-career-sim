@@ -412,6 +412,9 @@ class CheckTests(unittest.TestCase):
         message = lc.career_hold(SEASON, self.root)
         self.assertIn("Khan", message)
         self.assertIn("step 6", message)
+        # It says what holds: the check refuses, and validation (so readiness) fails from the next move.
+        self.assertIn("validation", message)
+        self.assertNotIn("Nothing further is opened", message)
         self.assertEqual(lines[-1], message)
         # Nothing further: another run and the clock-move step are refused; the club gets no page or news.
         with self.assertRaises(coaching_check.Refused):
