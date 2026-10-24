@@ -165,6 +165,22 @@ def game_day_item(item, holder=None):
             and bool(GAME_DAY_ANCHOR.match(str(record.get("anchor") or ""))))
 
 
+# The record of builder C1's practice ask: the "Practice week" block on the week's My Responses page.
+PRACTICE_ANCHOR = "practice-week"
+
+
+def practice_item(item, holder=None):
+    """Whether ``item`` is the week's practice week asked on My Responses (builder C1, while no
+    standing practice instruction is in force): a ``practice_plan`` item of the holder, bound to no
+    event, whose record is that block. It is a routine ask of the week (the briefing's section 8),
+    not an insert."""
+    record = item.get("record") or {}
+    return (item.get("class") == "practice_plan" and item.get("event") is None
+            and (holder is None or item.get("owner") == holder)
+            and str(record.get("path", "")).endswith("/" + RESPONSES_PAGE)
+            and record.get("anchor") == PRACTICE_ANCHOR)
+
+
 def _bye_closed(season, week, root):
     """STUB until builder C3's runtime/bye_week.py lands: whether the bye week's own close is
     recorded (``bye_week.bye_closed(paths, root)``). Without that module no bye has closed."""

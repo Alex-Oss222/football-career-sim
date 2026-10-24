@@ -622,8 +622,8 @@ def record_errors(record, root, mapping=None, job=None, clock=None, issues_=None
             if previous is not None and at < previous:
                 say("%s is earlier than the entry before it (the process is appended in order)" % where)
             previous = at
-            if entry["kind"] == "response":
-                response_at = (n, at)
+            if entry["kind"] == "response" and response_at is None:
+                response_at = (n, at)       # his first answer: the criteria come before it
         except ValueError as exc:
             say("%s at: %s" % (where, exc))
         if not _party(job, entry["by"], other_club=True):
@@ -989,9 +989,14 @@ class Notice:
 
 @dataclass
 class Route:
+    """The inserts of one issue of a period's brief (``route``)."""
     action: list = field(default_factory=list)
     fyi: list = field(default_factory=list)
     coming_up: list = field(default_factory=list)
+    season: int | None = None
+    period: dict | None = None
+    root: Path | None = None
+    index: int | None = None           # the issue's place in the period's record (1 for the first)
 
     def notices(self):
         return self.action + self.fyi + self.coming_up
@@ -1052,7 +1057,7 @@ def route(season, issued_at, period, root=ROOT, issue=None):
     index = issue_index(season, period, issued_at, root, issue)
     key = period_order(period) + (index,)
     before = issues_.previous(period, index)
-    out = Route()
+    out = Route(season=season, period=dict(period), root=root, index=index)
     for record in load(season, root):
         if not known_to_stone(record, job) or stamp_key(record, issues_) >= key:
             continue
