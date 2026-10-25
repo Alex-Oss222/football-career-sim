@@ -1,10 +1,10 @@
 # Harrison Smith
 
-**Minnesota Vikings · Free safety · No. 22 · Age 25 · Last game October 19, 2014**
+**Minnesota Vikings · Free safety · No. 22 · Age 25 · Last game October 26, 2014**
 
 6' 2", 214 lb · Born February 2, 1989 · Notre Dame · Drafted in 2012, first round, by Minnesota
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Harrison Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Harrison_Smith_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 5 (2014, through Week 7).
+**Passes defended:** 5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 25 | 22 | 7 | 40 | 27 | 13 | 2 | 0 | 0 |
+| 2014 (through Week 8) | Minnesota | 25 | 22 | 8 | 43 | 29 | 14 | 2 | 0 | 0 |
 | 2013 | Minnesota | 24 | 22 | 16 | 139 | 96 | 43 | 4 | 0 | 1 |
-| Career |  |  |  | 23 | 179 | 123 | 56 | 6 | 0 | 1 |
+| Career |  |  |  | 24 | 182 | 125 | 57 | 6 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 25 | 22 | 0 | 0 | 5 | 1 | 1 | 0 |
+| 2014 (through Week 8) | Minnesota | 25 | 22 | 0 | 0 | 5 | 1 | 1 | 0 |
 | 2013 | Minnesota | 24 | 22 | 2 | 69 | 12 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Brett Kern
 
-**Tennessee Titans · Punter · No. 6 · Age 28 · Last game October 19, 2014**
+**Tennessee Titans · Punter · No. 6 · Age 28 · Last game October 26, 2014**
 
 6' 2", 214 lb · Born February 17, 1986 · Toledo
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brett Kern](https://commons.wikimedia.org/wiki/Special:FilePath/Brett_Kern_Titan_2021.png?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 28 | 6 | 7 | 29 | 1,409 | 48.6 | N/A | 4 | 1 | 66 |
+| 2014 (through Week 8) | Tennessee | 28 | 6 | 7 | 29 | 1,409 | 48.6 | N/A | 4 | 1 | 66 |
 | 2013 | Tennessee | 27 | 6 | 16 | 81 | 3,692 | 45.6 | 38.7 | 30 | 4 | 71 |
 | Career |  |  |  | 23 | 110 | 5,101 | 46.4 | N/A | 34 | 5 | 71 |
 

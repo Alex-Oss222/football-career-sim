@@ -1,10 +1,10 @@
 # Zach Miller
 
-**Seattle Seahawks · Tight end · No. 86 · Age 28 · Last game October 19, 2014**
+**Seattle Seahawks · Tight end · No. 86 · Age 28 · Last game October 26, 2014**
 
 6' 5", 255 lb · Born December 11, 1985 · Arizona State · Drafted in 2007, second round, by Oakland
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Zach Miller](https://commons.wikimedia.org/wiki/Special:FilePath/Zach_Miller_at_2012_Seahawks_training_camp.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 6.3 (2014, through Week 7).
+**Yards per target:** 6.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 28 | 86 | 6 | 36 | 20 | 227 | 11.3 | 0 | 28 | 37.8 | 55.6 |
+| 2014 (through Week 8) | Seattle | 28 | 86 | 7 | 39 | 22 | 235 | 10.7 | 0 | 28 | 33.6 | 56.4 |
 | 2013 | Seattle | 27 | 86 | 16 | 98 | 61 | 702 | 11.5 | 3 | 54 | 43.9 | 62.2 |
-| Career |  |  |  | 22 | 134 | 81 | 929 | 11.5 | 3 | 54 | 42.2 | 60.4 |
+| Career |  |  |  | 23 | 137 | 83 | 937 | 11.3 | 3 | 54 | 40.7 | 60.6 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 28 | 86 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Seattle | 28 | 86 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Seattle | 27 | 86 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs

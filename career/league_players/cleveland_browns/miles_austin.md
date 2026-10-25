@@ -1,10 +1,10 @@
 # Miles Austin
 
-**Cleveland Browns · Wide receiver · No. 19 · Age 30 · Last game October 19, 2014**
+**Cleveland Browns · Wide receiver · No. 19 · Age 30 · Last game October 26, 2014**
 
 6' 2", 215 lb · Born June 30, 1984 · Monmouth
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Miles Austin](https://commons.wikimedia.org/wiki/Special:FilePath/Miles_Austin.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 0.5 (2014, through Week 7).
+**Yards per target:** 0.2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 30 | 19 | 1 | 2 | 1 | 1 | 1.0 | 0 | 1 | 1.0 | 50.0 |
+| 2014 (through Week 8) | Cleveland | 30 | 19 | 2 | 5 | 1 | 1 | 1.0 | 0 | 1 | 0.5 | 20.0 |
 | 2013 | Dallas | 29 | 19 | 16 | 109 | 71 | 962 | 13.5 | 6 | 68 | 60.1 | 65.1 |
-| Career |  |  |  | 17 | 111 | 72 | 963 | 13.4 | 6 | 68 | 56.6 | 64.9 |
+| Career |  |  |  | 18 | 114 | 72 | 963 | 13.4 | 6 | 68 | 53.5 | 63.2 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 30 | 19 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 30 | 19 | 1 | 8 | 0 | 0 | 0 |
 | 2013 | Dallas | 29 | 19 | 2 | 15 | 0 | 1 | 1 |
 
 ### Playoffs

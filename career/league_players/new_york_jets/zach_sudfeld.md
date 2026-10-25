@@ -1,10 +1,10 @@
 # Zach Sudfeld
 
-**New York Jets · Tight end · No. 44 · Age 25 · Last game October 16, 2014**
+**New York Jets · Tight end · No. 44 · Age 25 · Last game October 26, 2014**
 
 6' 7", 260 lb · Born April 18, 1989 · Nevada
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Zach Sudfeld](https://commons.wikimedia.org/wiki/Special:FilePath/Zach_Sudfeld.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 25 | 44 | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | N.Y. Jets | 25 | 44 | 8 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | New England | 24 | N/A | 14 | 3 | 2 | -1 | -0.5 | 0 | 2 | -0.1 | 66.7 |
-| Career |  |  |  | 21 | 3 | 2 | -1 | -0.5 | 0 | 2 | -0.0 | 66.7 |
+| Career |  |  |  | 22 | 3 | 2 | -1 | -0.5 | 0 | 2 | -0.0 | 66.7 |
 
 ### Playoffs
 

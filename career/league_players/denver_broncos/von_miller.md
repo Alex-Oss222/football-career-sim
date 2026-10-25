@@ -1,10 +1,10 @@
 # Von Miller
 
-**Denver Broncos · Outside linebacker · No. 58 · Age 25 · Last game October 19, 2014**
+**Denver Broncos · Outside linebacker · No. 58 · Age 25 · Last game October 23, 2014**
 
 6' 3", 250 lb · Born March 26, 1989 · Texas A&M · Drafted in 2011, first round, by Denver
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Von Miller](https://commons.wikimedia.org/wiki/Special:FilePath/Commanders_Training_Camp_-_54752497153.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting strongside linebacker.
 
-**Tackles:** 38 (2014, through Week 7).
+**Tackles:** 41 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 25 | 58 | 6 | 38 | 23 | 15 | 3 | 1 | 2 |
+| 2014 (through Week 8) | Denver | 25 | 58 | 7 | 41 | 23 | 18 | 3 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 25 | 58 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 25 | 58 | 0 | 0 | 2 | 0 | 0 | 0 |
 
 ### Playoffs
 

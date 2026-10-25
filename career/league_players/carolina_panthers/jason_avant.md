@@ -1,10 +1,10 @@
 # Jason Avant
 
-**Carolina Panthers · Wide receiver · No. 81 · Age 31 · Last game October 19, 2014**
+**Carolina Panthers · Wide receiver · No. 81 · Age 31 · Last game October 26, 2014**
 
 6' 0", 210 lb · Born April 20, 1983 · Michigan · Drafted in 2006, fourth round, by Philadelphia
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jason Avant](https://commons.wikimedia.org/wiki/Special:FilePath/Jason_Avant.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 6.2 (2014, through Week 7).
+**Yards per target:** 6.2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 31 | 81 | 7 | 29 | 21 | 180 | 8.6 | 0 | 38 | 25.7 | 72.4 |
+| 2014 (through Week 8) | Carolina | 31 | 81 | 8 | 31 | 22 | 193 | 8.8 | 0 | 38 | 24.1 | 71.0 |
 | 2013 | Philadelphia | 30 | 81 | 16 | 25 | 14 | 99 | 7.1 | 1 | 13 | 6.2 | 56.0 |
-| Career |  |  |  | 23 | 54 | 35 | 279 | 8.0 | 1 | 38 | 12.1 | 64.8 |
+| Career |  |  |  | 24 | 56 | 36 | 292 | 8.1 | 1 | 38 | 12.2 | 64.3 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 31 | 81 | 1 | 20 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Carolina | 31 | 81 | 1 | 20 | 0 | 0 | 0 |
 | 2013 | Philadelphia | 30 | 81 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

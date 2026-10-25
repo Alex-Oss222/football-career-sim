@@ -1,10 +1,10 @@
 # Alec Ogletree
 
-**St. Louis Rams · Inside linebacker · No. 52 · Age 23 · Last game October 19, 2014**
+**St. Louis Rams · Inside linebacker · No. 52 · Age 23 · Last game October 26, 2014**
 
 6' 2", 245 lb · Born September 25, 1991 · Georgia
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Alec Ogletree](https://commons.wikimedia.org/wiki/Special:FilePath/AlecOgletree2013rams.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 58 (2014, through Week 7).
+**Tackles:** 70 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 22 | 52 | 6 | 58 | 37 | 21 | 2 | 2 | 5 |
+| 2014 (through Week 8) | St. Louis | 22 | 52 | 7 | 70 | 46 | 24 | 2 | 2 | 5 |
 | 2013 | St. Louis | 21 | 52 | 15 | 18 | 14 | 4 | 1 | 1 | 1 |
-| Career |  |  |  | 21 | 76 | 51 | 25 | 3 | 3 | 6 |
+| Career |  |  |  | 22 | 88 | 60 | 28 | 3 | 3 | 6 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 22 | 52 | 1 | 24 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | St. Louis | 22 | 52 | 1 | 24 | 3 | 0 | 0 | 0 |
 | 2013 | St. Louis | 21 | 52 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

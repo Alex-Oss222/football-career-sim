@@ -1,10 +1,10 @@
 # Uche Nwaneri
 
-**Arizona Cardinals · Guard · Age 30 · Last game October 19, 2014**
+**Arizona Cardinals · Guard · Age 30 · Last game October 26, 2014**
 
 6' 3", 310 lb · Born March 20, 1984 · Purdue · Drafted in 2007, fifth round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ## Staff assessment
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 30 | N/A | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Arizona | 30 | N/A | 2 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 29 | 77 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 17 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 18 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

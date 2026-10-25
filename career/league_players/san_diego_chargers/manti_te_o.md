@@ -1,10 +1,10 @@
 # Manti Te'o
 
-**San Diego Chargers · Inside linebacker · No. 50 · Age 23 · Last game October 19, 2014**
+**San Diego Chargers · Inside linebacker · No. 50 · Age 23 · Last game October 23, 2014**
 
 6' 1", 241 lb · Born January 26, 1991 · Notre Dame
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Manti Te'o](https://commons.wikimedia.org/wiki/Special:FilePath/Mantiteo2010.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting inside linebacker.
 
-**Tackles:** 73 (2014, through Week 7).
+**Tackles:** 82 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 23 | 50 | 7 | 73 | 43 | 30 | 4 | 6 | 11 |
+| 2014 (through Week 8) | San Diego | 23 | 50 | 8 | 82 | 47 | 35 | 6 | 6 | 12 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 23 | 50 | 0 | 0 | 4 | 2 | 1 | 0 |
+| 2014 (through Week 8) | San Diego | 23 | 50 | 0 | 0 | 4 | 2 | 1 | 0 |
 
 ### Playoffs
 

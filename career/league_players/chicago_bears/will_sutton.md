@@ -1,10 +1,10 @@
 # Will Sutton
 
-**Chicago Bears · Defensive tackle · No. 93 · Age 23 · Last game October 19, 2014**
+**Chicago Bears · Defensive tackle · No. 93 · Age 23 · Last game October 26, 2014**
 
 6' 0", 303 lb · Born October 3, 1991 · Arizona State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Will Sutton](https://commons.wikimedia.org/wiki/Special:FilePath/Will_Sutton_bears2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 22 | 93 | 7 | 5 | 5 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 8) | Chicago | 22 | 93 | 8 | 7 | 6 | 1 | 0 | 1 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 22 | 93 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 22 | 93 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Playoffs
 

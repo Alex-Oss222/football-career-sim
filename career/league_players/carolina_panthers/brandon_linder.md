@@ -1,16 +1,16 @@
 # Brandon Linder
 
-**Carolina Panthers · Guard · Age 22 · Last game October 19, 2014**
+**Carolina Panthers · Guard · Age 22 · Last game October 26, 2014**
 
 6' 6", 311 lb · Born January 25, 1992 · Miami
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brandon Linder](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Linder.png?width=500)
 
 *Photo: Tennessee Titans, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brandon_Linder.png)).*
 
-**Sacks allowed:** 4 (2014, through Week 7).
+**Sacks allowed:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 22 | N/A | 7 | 7 | 445 | 4 | 32 |
+| 2014 (through Week 8) | Carolina | 22 | N/A | 8 | 8 | 516 | 4 | 38 |
 
 ### Playoffs
 

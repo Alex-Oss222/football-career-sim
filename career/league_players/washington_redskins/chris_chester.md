@@ -1,10 +1,10 @@
 # Chris Chester
 
-**Washington Redskins · Guard · No. 66 · Age 31 · Last game October 19, 2014**
+**Washington Redskins · Guard · No. 66 · Age 31 · Last game October 27, 2014**
 
 6' 3", 303 lb · Born January 12, 1983 · Oklahoma · Drafted in 2006, second round, by Baltimore
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Chris Chester](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_chester_redskins.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 2 (2014, through Week 7).
+**Sacks allowed:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 31 | 66 | 7 | 7 | 454 | 2 | 25 |
+| 2014 (through Week 8) | Washington | 31 | 66 | 8 | 8 | 517 | 2 | 30 |
 | 2013 | Washington | 30 | 66 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

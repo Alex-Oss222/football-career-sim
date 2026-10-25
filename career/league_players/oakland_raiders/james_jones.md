@@ -1,10 +1,10 @@
 # James Jones
 
-**Oakland Raiders · Wide receiver · No. 89 · Age 30 · Last game October 19, 2014**
+**Oakland Raiders · Wide receiver · No. 89 · Age 30 · Last game October 26, 2014**
 
 6' 1", 200 lb · Born March 31, 1984 · San Jose State · Drafted in 2007, third round, by Green Bay
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![James Jones](https://commons.wikimedia.org/wiki/Special:FilePath/James_Jones_%28wide_receiver%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 7.3 (2014, through Week 7).
+**Yards per target:** 6.9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 30 | 89 | 6 | 42 | 32 | 305 | 9.5 | 3 | 32 | 50.8 | 76.2 |
+| 2014 (through Week 8) | Oakland | 30 | 89 | 7 | 49 | 36 | 339 | 9.4 | 3 | 32 | 48.4 | 73.5 |
 | 2013 | Green Bay | 29 | 89 | 16 | 63 | 36 | 381 | 10.6 | 2 | 52 | 23.8 | 57.1 |
-| Career |  |  |  | 22 | 105 | 68 | 686 | 10.1 | 5 | 52 | 31.2 | 64.8 |
+| Career |  |  |  | 23 | 112 | 72 | 720 | 10.0 | 5 | 52 | 31.3 | 64.3 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 30 | 89 | 2 | 39 | 1 | 1 | 1 |
+| 2014 (through Week 8) | Oakland | 30 | 89 | 2 | 39 | 1 | 1 | 1 |
 | 2013 | Green Bay | 29 | 89 | 1 | 1 | 0 | 0 | 0 |
 
 ### Playoffs

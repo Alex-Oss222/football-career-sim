@@ -1,10 +1,10 @@
 # Joseph Fauria
 
-**Detroit Lions · Tight end · No. 80 · Age 24 · Last game October 19, 2014**
+**Detroit Lions · Tight end · No. 80 · Age 24 · Last game October 26, 2014**
 
 6' 7", 267 lb · Born January 16, 1990 · UCLA; Notre Dame
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Joseph Fauria](https://commons.wikimedia.org/wiki/Special:FilePath/Joseph_Fauria.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 3.6 (2014, through Week 7).
+**Yards per target:** 3.2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 24 | 80 | 7 | 8 | 3 | 29 | 9.7 | 0 | 13 | 4.1 | 37.5 |
+| 2014 (through Week 8) | Detroit | 24 | 80 | 8 | 9 | 3 | 29 | 9.7 | 0 | 13 | 3.6 | 33.3 |
 | 2013 | Detroit | 23 | 80 | 16 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
-| Career |  |  |  | 23 | 9 | 3 | 29 | 9.7 | 0 | 13 | 1.3 | 33.3 |
+| Career |  |  |  | 24 | 10 | 3 | 29 | 9.7 | 0 | 13 | 1.2 | 30.0 |
 
 ### Playoffs
 

@@ -1,14 +1,14 @@
 # Jeff Cumberland
 
-**New York Jets · Tight end · No. 85 · Age 27 · Last game October 16, 2014**
+**New York Jets · Tight end · No. 85 · Age 27 · Last game October 26, 2014**
 
 6' 4", 260 lb · Born May 2, 1987 · Illinois
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 5.5 (2014, through Week 7).
+**Yards per target:** 5.1 (2014, through Week 8).
 
 ## Contract
 
@@ -20,13 +20,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 27 | 85 | 7 | 36 | 17 | 199 | 11.7 | 2 | 37 | 28.4 | 47.2 |
+| 2014 (through Week 8) | N.Y. Jets | 27 | 85 | 8 | 42 | 18 | 213 | 11.8 | 2 | 37 | 26.6 | 42.9 |
 | 2013 | N.Y. Jets | 26 | 87 | 16 | 102 | 65 | 751 | 11.6 | 6 | 51 | 46.9 | 63.7 |
-| Career |  |  |  | 23 | 138 | 82 | 950 | 11.6 | 8 | 51 | 41.3 | 59.4 |
+| Career |  |  |  | 24 | 144 | 83 | 964 | 11.6 | 8 | 51 | 40.2 | 57.6 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 27 | 85 | 2 | -1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | N.Y. Jets | 27 | 85 | 2 | -1 | 0 | 0 | 0 |
 | 2013 | N.Y. Jets | 26 | 87 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs

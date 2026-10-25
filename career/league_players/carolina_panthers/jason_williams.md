@@ -1,10 +1,10 @@
 # Jason Williams
 
-**Carolina Panthers · Outside linebacker · No. 54 · Age 28 · Last game October 19, 2014**
+**Carolina Panthers · Outside linebacker · No. 54 · Age 28 · Last game October 26, 2014**
 
 6' 1", 245 lb · Born April 23, 1986 · Western Illinois · Drafted in 2009, third round, by Dallas
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jason Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Jason_Williams_panthers2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve weakside linebacker.
 
-**Tackles:** 2 (2014, through Week 7).
+**Tackles:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 28 | 54 | 7 | 2 | 2 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Carolina | 28 | 54 | 8 | 2 | 2 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 28 | 54 | 0 | 0 | 1 | 0 | 0 | 2 |
+| 2014 (through Week 8) | Carolina | 28 | 54 | 0 | 0 | 1 | 0 | 0 | 2 |
 
 ### Playoffs
 

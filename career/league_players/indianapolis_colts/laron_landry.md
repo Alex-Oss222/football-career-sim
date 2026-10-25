@@ -1,10 +1,10 @@
 # LaRon Landry
 
-**Indianapolis Colts · Free safety · No. 30 · Age 30 · Last game October 19, 2014**
+**Indianapolis Colts · Free safety · No. 30 · Age 30 · Last game October 26, 2014**
 
 6' 0", 226 lb · Born October 14, 1984 · LSU · Drafted in 2007, first round, by Washington
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![LaRon Landry](https://commons.wikimedia.org/wiki/Special:FilePath/Laron_landry_2011.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 3 (2014, through Week 7).
+**Passes defended:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 29 | 30 | 7 | 19 | 13 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 29 | 30 | 8 | 23 | 16 | 7 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 28 | 30 | 16 | 79 | 53 | 26 | 1 | 1 | 2 |
-| Career |  |  |  | 23 | 98 | 66 | 32 | 1 | 1 | 2 |
+| Career |  |  |  | 24 | 102 | 69 | 33 | 1 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 29 | 30 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 29 | 30 | 0 | 0 | 4 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 28 | 30 | 3 | 89 | 12 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1174,5 +1174,152 @@
     "winner_index": 0
    }
   }
+ },
+ "week-8": {
+  "kind": "week",
+  "key": "8",
+  "label": "Week 8",
+  "order": 8,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2014-award-week08-afc-offense-v1-2014",
+    "packet_sha256": "5b91a76574d0d8ed4086b009b14ebae5c3ef828573f4577cd9d80049f969620d",
+    "result_ref": "41ddfed087cefff4682f6b9e819f6a3b93e6ae65eeeaf4ff09776f3928e1dce3",
+    "shortlist": [
+     {
+      "player": "Donnie Avery",
+      "team": "Kansas City Chiefs",
+      "score": 30.9
+     },
+     {
+      "player": "Jeremy Hill",
+      "team": "Cincinnati Bengals",
+      "score": 28.4
+     },
+     {
+      "player": "Darren McFadden",
+      "team": "Oakland Raiders",
+      "score": 25.8
+     }
+    ],
+    "winner_index": 1
+   },
+   "AFC-defense": {
+    "event_id": "2014-award-week08-afc-defense-v1-2014",
+    "packet_sha256": "c15dea5f69b953f755fa0004d6ec6b7cecd7ed17884fef7befd3a1426671bb2d",
+    "result_ref": "08cbd1f7be4157432b958f9cfe56e900ab5537955a9e700cd770cc7e08814275",
+    "shortlist": [
+     {
+      "player": "Khalil Mack",
+      "team": "Oakland Raiders",
+      "score": 34.0
+     },
+     {
+      "player": "Telvin Smith",
+      "team": "Jacksonville Jaguars",
+      "score": 31.2
+     },
+     {
+      "player": "Barkevious Mingo",
+      "team": "Cleveland Browns",
+      "score": 26.5
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2014-award-week08-afc-special_teams-v1-2014",
+    "packet_sha256": "36df175a50169df44c2e05fd3781a764c8282192c601391cb91570a23cc767e3",
+    "result_ref": "06b7fdd07349b15eb280f49ba04e0aa0cdc2f1c640fb0a20714eb8eed2d82d02",
+    "shortlist": [
+     {
+      "player": "Nick Novak",
+      "team": "San Diego Chargers",
+      "score": 16.0
+     },
+     {
+      "player": "Sebastian Janikowski",
+      "team": "Oakland Raiders",
+      "score": 15.0
+     },
+     {
+      "player": "Andre Caldwell",
+      "team": "Denver Broncos",
+      "score": 13.1
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2014-award-week08-nfc-offense-v1-2014",
+    "packet_sha256": "4d13ee728824c5fe5e649a3e71dc58782a8c5ebac24c70ec1e720c6db5070497",
+    "result_ref": "8d59060b4497999a93b2f79cb9433bd02d963a70da7c58109226c4832a5a0db4",
+    "shortlist": [
+     {
+      "player": "Jonathan Dwyer",
+      "team": "Arizona Cardinals",
+      "score": 34.5
+     },
+     {
+      "player": "Drew Brees",
+      "team": "New Orleans Saints",
+      "score": 30.36
+     },
+     {
+      "player": "Julio Jones",
+      "team": "Atlanta Falcons",
+      "score": 28.3
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-defense": {
+    "event_id": "2014-award-week08-nfc-defense-v1-2014",
+    "packet_sha256": "3dc2bb402f88d0b501b6aa8525dcfc52ad7c421dc5bf251ad4f12113dd77bbf2",
+    "result_ref": "93c04819f6447cb40e10281fd216a53ec86a19e64435c61fcc161c6c7f76a77c",
+    "shortlist": [
+     {
+      "player": "Janoris Jenkins",
+      "team": "St. Louis Rams",
+      "score": 22.6
+     },
+     {
+      "player": "Thomas Davis",
+      "team": "Carolina Panthers",
+      "score": 22.0
+     },
+     {
+      "player": "A.J. Hawk",
+      "team": "Green Bay Packers",
+      "score": 19.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2014-award-week08-nfc-special_teams-v1-2014",
+    "packet_sha256": "a080fb439496aaa4532692285d5c41be599c7257d11ac5c24f2aeb433d21b969",
+    "result_ref": "71daf93e3242f3fe4743519023d5a4c5a560d189152b239f9bfdba1a74a586bc",
+    "shortlist": [
+     {
+      "player": "Sam Martin",
+      "team": "Detroit Lions",
+      "score": 18.0
+     },
+     {
+      "player": "Greg Zuerlein",
+      "team": "St. Louis Rams",
+      "score": 15.0
+     },
+     {
+      "player": "Graham Gano",
+      "team": "Carolina Panthers",
+      "score": 14.0
+     }
+    ],
+    "winner_index": 0
+   }
+  }
  }
 }

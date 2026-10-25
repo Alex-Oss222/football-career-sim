@@ -1,10 +1,10 @@
 # Jaye Howard
 
-**Kansas City Chiefs · Defensive end · No. 96 · Age 25 · Last game October 19, 2014**
+**Kansas City Chiefs · Defensive end · No. 96 · Age 25 · Last game October 26, 2014**
 
 6' 3", 301 lb · Born December 20, 1988 · Florida · Drafted in 2012, fourth round, by Seattle
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jaye Howard](https://commons.wikimedia.org/wiki/Special:FilePath/Jaye_Howard_2014.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 2 (2014, through Week 7).
+**Sacks:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 25 | 96 | 6 | 7 | 5 | 2 | 2 | 2 | 2 |
+| 2014 (through Week 8) | Kansas City | 25 | 96 | 7 | 7 | 5 | 2 | 2 | 2 | 2 |
 | 2013 | Kansas City | 24 | 96 | 16 | 12 | 7 | 5 | 3 | 0 | 1 |
-| Career |  |  |  | 22 | 19 | 12 | 7 | 5 | 2 | 3 |
+| Career |  |  |  | 23 | 19 | 12 | 7 | 5 | 2 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 25 | 96 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Kansas City | 25 | 96 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Kansas City | 24 | 96 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

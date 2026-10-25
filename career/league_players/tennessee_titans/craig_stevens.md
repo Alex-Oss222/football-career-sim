@@ -1,10 +1,10 @@
 # Craig Stevens
 
-**Tennessee Titans · Tight end · No. 88 · Age 30 · Last game October 19, 2014**
+**Tennessee Titans · Tight end · No. 88 · Age 30 · Last game October 26, 2014**
 
 6' 3", 263 lb · Born September 1, 1984 · California · Drafted in 2008, third round, by Tennessee
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Craig Stevens](https://commons.wikimedia.org/wiki/Special:FilePath/Craig_Stevens_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 9.2 (2014, through Week 7).
+**Yards per target:** 9.1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 30 | 88 | 7 | 12 | 9 | 110 | 12.2 | 1 | 25 | 15.7 | 75.0 |
+| 2014 (through Week 8) | Tennessee | 30 | 88 | 8 | 13 | 10 | 118 | 11.8 | 2 | 25 | 14.8 | 76.9 |
 | 2013 | Tennessee | 29 | 88 | 16 | 93 | 61 | 473 | 7.8 | 3 | 30 | 29.6 | 65.6 |
-| Career |  |  |  | 23 | 105 | 70 | 583 | 8.3 | 4 | 30 | 25.3 | 66.7 |
+| Career |  |  |  | 24 | 106 | 71 | 591 | 8.3 | 5 | 30 | 24.6 | 67.0 |
 
 ### Playoffs
 

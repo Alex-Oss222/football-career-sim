@@ -1,16 +1,16 @@
 # Tony Fiammetta
 
-**Chicago Bears · Fullback · No. 43 · Age 28 · Last game October 19, 2014**
+**Chicago Bears · Fullback · No. 43 · Age 28 · Last game October 26, 2014**
 
 6' 0", 250 lb · Born August 22, 1986 · Syracuse · Drafted in 2009, fourth round, by Carolina
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Tony Fiammetta](https://commons.wikimedia.org/wiki/Special:FilePath/Tony_Fiammetta.jpg?width=500)
 
 *Photo: original: Jim Larrison derivative: Diddykong1130, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Tony_Fiammetta.jpg)).*
 
-**Yards per carry:** 5.0 (2014, through Week 7).
+**Yards per carry:** 5.0 (2014, through Week 8).
 
 ## Contract
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 28 | 43 | 7 | 2 | 10 | 5.0 | 0 | 6 | 1.4 |
+| 2014 (through Week 8) | Chicago | 28 | 43 | 8 | 2 | 10 | 5.0 | 0 | 6 | 1.2 |
 | 2013 | Chicago | 27 | 43 | 16 | 8 | 44 | 5.5 | 0 | 14 | 2.8 |
-| Career |  |  |  | 23 | 10 | 54 | 5.4 | 0 | 14 | 2.3 |
+| Career |  |  |  | 24 | 10 | 54 | 5.4 | 0 | 14 | 2.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 28 | 43 | 3 | 2 | 14 | 7.0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 28 | 43 | 3 | 2 | 14 | 7.0 | 0 | 0 | 0 |
 | 2013 | Chicago | 27 | 43 | 12 | 9 | 182 | 20.2 | 1 | 0 | 0 |
 
 ### Playoffs

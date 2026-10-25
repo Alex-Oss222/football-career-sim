@@ -1,10 +1,10 @@
 # Brandon Marshall
 
-**Chicago Bears · Wide receiver · No. 15 · Age 30 · Last game October 19, 2014**
+**Chicago Bears · Wide receiver · No. 15 · Age 30 · Last game October 26, 2014**
 
 6' 4", 230 lb · Born March 23, 1984 · UCF · Drafted in 2006, fourth round, by Denver
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brandon Marshall](https://commons.wikimedia.org/wiki/Special:FilePath/Miami_Dolphins_wide_receiver_Brandon_Marshall_practices_during_pregame_warm_up_for_the_National_Football_League%27s_2012_Pro_Bowl_game_at_Aloha_Stadium_in_Honolulu_Jan_120129-M-DX861-041_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 6.2 (2014, through Week 7).
+**Yards per target:** 6.2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 30 | 15 | 5 | 59 | 38 | 364 | 9.6 | 3 | 32 | 72.8 | 64.4 |
+| 2014 (through Week 8) | Chicago | 30 | 15 | 5 | 59 | 38 | 364 | 9.6 | 3 | 32 | 72.8 | 64.4 |
 | 2013 | Chicago | 29 | 15 | 16 | 182 | 116 | 1,413 | 12.2 | 6 | 93 | 88.3 | 63.7 |
 | Career |  |  |  | 21 | 241 | 154 | 1,777 | 11.5 | 9 | 93 | 84.6 | 63.9 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 30 | 15 | 1 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 30 | 15 | 1 | 5 | 0 | 0 | 0 |
 | 2013 | Chicago | 29 | 15 | 4 | 34 | 0 | 1 | 1 |
 
 ### Playoffs

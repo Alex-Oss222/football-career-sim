@@ -1,10 +1,10 @@
 # Casey Matthews
 
-**Philadelphia Eagles · Inside linebacker · No. 50 · Age 25 · Last game October 12, 2014**
+**Philadelphia Eagles · Inside linebacker · No. 50 · Age 25 · Last game October 26, 2014**
 
 6' 1", 245 lb · Born January 16, 1989 · Oregon · Drafted in 2011, fourth round, by Philadelphia
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Casey Matthews](https://commons.wikimedia.org/wiki/Special:FilePath/Casey_Matthews_at_the_Los_Angeles_Memorial_Coliseum_Saturday_October_30%2C_2010.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve inside linebacker.
 
-**Tackles:** 4 (2014, through Week 6).
+**Tackles:** 5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 25 | 50 | 6 | 4 | 2 | 2 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Philadelphia | 25 | 50 | 7 | 5 | 3 | 2 | 0 | 1 | 1 |
 | 2013 | Philadelphia | 24 | 50 | 16 | 11 | 8 | 3 | 0 | 0 | 0 |
-| Career |  |  |  | 22 | 15 | 10 | 5 | 0 | 1 | 1 |
+| Career |  |  |  | 23 | 16 | 11 | 5 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 25 | 50 | 0 | 0 | 0 | 0 | 0 | 4 |
+| 2014 (through Week 8) | Philadelphia | 25 | 50 | 0 | 0 | 0 | 0 | 0 | 4 |
 | 2013 | Philadelphia | 24 | 50 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

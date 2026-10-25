@@ -1,10 +1,10 @@
 # Rhett Ellison
 
-**Minnesota Vikings · Tight end · No. 85 · Age 26 · Last game October 19, 2014**
+**Minnesota Vikings · Tight end · No. 85 · Age 26 · Last game October 26, 2014**
 
 6' 5", 250 lb · Born October 3, 1988 · USC · Drafted in 2012, fourth round, by Minnesota
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Rhett Ellison](https://commons.wikimedia.org/wiki/Special:FilePath/Rhett_Ellison_2012-12-30.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 9.7 (2014, through Week 7).
+**Yards per target:** 9.3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 25 | 85 | 7 | 11 | 8 | 107 | 13.4 | 2 | 34 | 15.3 | 72.7 |
+| 2014 (through Week 8) | Minnesota | 25 | 85 | 8 | 14 | 11 | 130 | 11.8 | 2 | 34 | 16.2 | 78.6 |
 | 2013 | Minnesota | 24 | 40 | 16 | 1 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
-| Career |  |  |  | 23 | 12 | 8 | 107 | 13.4 | 2 | 34 | 4.7 | 66.7 |
+| Career |  |  |  | 24 | 15 | 11 | 130 | 11.8 | 2 | 34 | 5.4 | 73.3 |
 
 ### Playoffs
 

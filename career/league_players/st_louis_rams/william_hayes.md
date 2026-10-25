@@ -1,10 +1,10 @@
 # William Hayes
 
-**St. Louis Rams · Defensive end · No. 95 · Age 29 · Last game October 19, 2014**
+**St. Louis Rams · Defensive end · No. 95 · Age 29 · Last game October 26, 2014**
 
 6' 3", 278 lb · Born May 2, 1985 · Winston Salem State University · Drafted in 2008, fourth round, by Tennessee
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![William Hayes](https://commons.wikimedia.org/wiki/Special:FilePath/William_Hayes_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 2 (2014, through Week 7).
+**Sacks:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 29 | 95 | 6 | 5 | 3 | 2 | 0 | 2 | 2 |
+| 2014 (through Week 8) | St. Louis | 29 | 95 | 7 | 5 | 3 | 2 | 0 | 2 | 2 |
 | 2013 | St. Louis | 28 | 95 | 16 | 29 | 23 | 6 | 1 | 4 | 8 |
-| Career |  |  |  | 22 | 34 | 26 | 8 | 1 | 6 | 10 |
+| Career |  |  |  | 23 | 34 | 26 | 8 | 1 | 6 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 29 | 95 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | St. Louis | 29 | 95 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | St. Louis | 28 | 95 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

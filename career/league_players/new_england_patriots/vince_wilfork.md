@@ -1,10 +1,10 @@
 # Vince Wilfork
 
-**New England Patriots · Defensive tackle · No. 75 · Age 32 · Last game October 16, 2014**
+**New England Patriots · Defensive tackle · No. 75 · Age 32 · Last game October 26, 2014**
 
 6' 2", 325 lb · Born November 4, 1981 · Miami · Drafted in 2004, first round, by New England
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Vince Wilfork](https://commons.wikimedia.org/wiki/Special:FilePath/Vince-Wilfork_8-28-09_Patriots-vs-Redskins.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 1 (2014, through Week 7).
+**Sacks:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 32 | 75 | 7 | 12 | 8 | 4 | 0 | 1 | 6 |
+| 2014 (through Week 8) | New England | 32 | 75 | 8 | 18 | 11 | 7 | 0 | 2 | 8 |
 | 2013 | New England | 31 | 75 | 16 | 58 | 44 | 14 | 6 | 4 | 10 |
-| Career |  |  |  | 23 | 70 | 52 | 18 | 6 | 5 | 16 |
+| Career |  |  |  | 24 | 76 | 55 | 21 | 6 | 6 | 18 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 32 | 75 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 32 | 75 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | New England | 31 | 75 | 0 | 0 | 4 | 1 | 1 | N/A |
 
 ### Playoffs

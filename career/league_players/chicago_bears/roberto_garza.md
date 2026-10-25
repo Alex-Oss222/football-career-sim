@@ -1,10 +1,10 @@
 # Roberto Garza
 
-**Chicago Bears · Center · No. 63 · Age 35 · Last game October 19, 2014**
+**Chicago Bears · Center · No. 63 · Age 35 · Last game October 26, 2014**
 
 6' 2", 310 lb · Born March 26, 1979 · Texas A&M University-Kingsville · Drafted in 2001, fourth round, by Atlanta
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Roberto Garza](https://commons.wikimedia.org/wiki/Special:FilePath/Roberto_Garza.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 1 (2014, through Week 7).
+**Sacks allowed:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 35 | 63 | 7 | 7 | 460 | 1 | 31 |
+| 2014 (through Week 8) | Chicago | 35 | 63 | 8 | 8 | 523 | 2 | 34 |
 | 2013 | Chicago | 34 | 63 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

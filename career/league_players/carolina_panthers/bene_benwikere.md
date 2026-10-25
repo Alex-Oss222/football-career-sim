@@ -1,10 +1,10 @@
 # Bene' Benwikere
 
-**Carolina Panthers · Cornerback · No. 25 · Age 23 · Last game October 19, 2014**
+**Carolina Panthers · Cornerback · No. 25 · Age 23 · Last game October 26, 2014**
 
 5' 11", 195 lb · Born September 3, 1991 · San Jose State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Bene' Benwikere](https://commons.wikimedia.org/wiki/Special:FilePath/Bene_Benwikere_2012_Military_Bowl.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 0 (2014, through Week 7).
+**Passes defended:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 23 | 25 | 7 | 12 | 8 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Carolina | 23 | 25 | 8 | 14 | 9 | 5 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 23 | 25 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 8) | Carolina | 23 | 25 | 0 | 0 | 1 | 0 | 0 | 2 |
 
 ### Playoffs
 

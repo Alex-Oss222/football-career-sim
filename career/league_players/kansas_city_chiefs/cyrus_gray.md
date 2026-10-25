@@ -1,10 +1,10 @@
 # Cyrus Gray
 
-**Kansas City Chiefs · Running back · No. 32 · Age 24 · Last game October 19, 2014**
+**Kansas City Chiefs · Running back · No. 32 · Age 24 · Last game October 26, 2014**
 
 5' 10", 206 lb · Born November 18, 1989 · Texas A&M · Drafted in 2012, sixth round, by Kansas City
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Cyrus Gray](https://commons.wikimedia.org/wiki/Special:FilePath/Cyrus_Gray.JPG?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 24 | 32 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2014 (through Week 8) | Kansas City | 24 | 32 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 | 2013 | Kansas City | 23 | 32 | 15 | 23 | 157 | 6.8 | 0 | 43 | 10.5 |
-| Career |  |  |  | 21 | 23 | 157 | 6.8 | 0 | 43 | 7.5 |
+| Career |  |  |  | 22 | 23 | 157 | 6.8 | 0 | 43 | 7.1 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 24 | 32 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 8) | Kansas City | 24 | 32 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 | 2013 | Kansas City | 23 | 32 | 5 | 2 | 22 | 11.0 | 0 | 0 | 0 |
 
 ### Playoffs

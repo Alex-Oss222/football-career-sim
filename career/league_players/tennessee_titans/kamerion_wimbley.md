@@ -1,10 +1,10 @@
 # Kamerion Wimbley
 
-**Tennessee Titans · Outside linebacker · No. 95 · Age 31 · Last game October 19, 2014**
+**Tennessee Titans · Outside linebacker · No. 95 · Age 31 · Last game October 26, 2014**
 
 6' 4", 258 lb · Born October 13, 1983 · Florida State · Drafted in 2006, first round, by Cleveland
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Kamerion Wimbley](https://commons.wikimedia.org/wiki/Special:FilePath/Kamerion_Wimbley.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 16 (2014, through Week 7).
+**Tackles:** 18 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 30 | 95 | 7 | 16 | 11 | 5 | 3 | 1 | 1 |
+| 2014 (through Week 8) | Tennessee | 30 | 95 | 8 | 18 | 13 | 5 | 3 | 1 | 1 |
 | 2013 | Tennessee | 29 | 95 | 16 | 9 | 8 | 1 | 0 | 0 | 0 |
-| Career |  |  |  | 23 | 25 | 19 | 6 | 3 | 1 | 1 |
+| Career |  |  |  | 24 | 27 | 21 | 6 | 3 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 30 | 95 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2014 (through Week 8) | Tennessee | 30 | 95 | 0 | 0 | 0 | 1 | 1 | 0 |
 | 2013 | Tennessee | 29 | 95 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

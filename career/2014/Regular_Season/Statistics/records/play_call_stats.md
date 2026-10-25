@@ -1,34 +1,34 @@
 # 2014 Jacksonville Jaguars snaps by call-sheet label
 
-**Through:** Week 7.
+**Through:** Week 8.
 **Coverage:** complete for this club's closed games.
 
 Each snap in the play-by-play is matched after the play to a call on that week's sheet that fits its ball carrier or target. The counts show where the snaps fell, not which call was made or how well a call worked. Generic, kneel, spike and scramble rows are separate; a quarterback scramble counts under the pass label it carries. Y/P is yards per snap; 20+ counts gains of 20 yards or more; NEG counts snaps that lost yardage.
 
 | Call | Family | SNAPS | RUNS | DB | CMP | ATT | CMP% | YDS | Y/P | 20+ | NEG | TD | TO | SCK |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 12 Ace, Power Right | Power | 44 | 44 | 0 | 0 | 0 | — | 192 | 4.4 | 1 | 7 | 1 | 1 | 0 |
-| 12 Ace, Power Left | Power | 41 | 41 | 0 | 0 | 0 | — | 166 | 4.0 | 0 | 3 | 2 | 0 | 0 |
-| 12 Trey, Y-Cross, SOLID | Y-Cross | 33 | 1 | 32 | 18 | 30 | 60.0 | 257 | 7.8 | 3 | 3 | 0 | 0 | 2 |
-| 11 Trips, Inside Zone + Bubble | Inside + Bubble | 31 | 19 | 12 | 7 | 12 | 58.3 | 221 | 7.1 | 3 | 2 | 0 | 1 | 0 |
-| 11 Bunch, Mesh, HALF | Mesh | 27 | 1 | 26 | 18 | 26 | 69.2 | 270 | 10.0 | 5 | 1 | 3 | 1 | 0 |
-| 11 Doubles, Inside Zone Right | Inside Zone | 23 | 23 | 0 | 0 | 0 | — | 79 | 3.4 | 0 | 5 | 0 | 0 | 0 |
-| 12 Ace, Counter Right | Counter | 23 | 23 | 0 | 0 | 0 | — | 116 | 5.0 | 1 | 0 | 2 | 0 | 0 |
-| 12 Wing, Outside Zone Left | Outside Zone | 22 | 22 | 0 | 0 | 0 | — | 127 | 5.8 | 2 | 3 | 1 | 0 | 0 |
-| 11 Doubles, Drive, HALF | Drive | 21 | 2 | 19 | 7 | 18 | 38.9 | 20 | 1.0 | 0 | 2 | 0 | 1 | 1 |
-| Generic Run | Generic Run | 20 | 20 | 0 | 0 | 0 | — | 81 | 4.0 | 1 | 2 | 0 | 0 | 0 |
-| 11 Trey, Dagger, HALF | Dagger | 17 | 0 | 17 | 14 | 17 | 82.4 | 132 | 7.8 | 1 | 3 | 0 | 1 | 0 |
-| 12 SHIFT Empty, Stick | Stick | 17 | 1 | 16 | 6 | 16 | 37.5 | 79 | 4.6 | 1 | 0 | 0 | 1 | 0 |
-| 11 Doubles, Stick, SCAT | Stick | 16 | 1 | 15 | 8 | 13 | 61.5 | 141 | 8.8 | 3 | 2 | 0 | 0 | 2 |
-| 12 Ace, Power Pass / Post-Cross, MAX | Power Pass | 15 | 0 | 15 | 9 | 14 | 64.3 | 205 | 13.7 | 3 | 2 | 3 | 0 | 1 |
-| 12 Wing, Boot Flood Right | Boot Flood | 15 | 1 | 14 | 10 | 13 | 76.9 | 120 | 8.0 | 3 | 1 | 3 | 0 | 1 |
+| 12 Ace, Power Right | Power | 51 | 51 | 0 | 0 | 0 | — | 208 | 4.1 | 1 | 8 | 1 | 1 | 0 |
+| 12 Ace, Power Left | Power | 43 | 43 | 0 | 0 | 0 | — | 177 | 4.1 | 0 | 3 | 2 | 0 | 0 |
+| 12 Trey, Y-Cross, SOLID | Y-Cross | 39 | 1 | 38 | 20 | 36 | 55.6 | 289 | 7.4 | 4 | 3 | 0 | 0 | 2 |
+| 11 Trips, Inside Zone + Bubble | Inside + Bubble | 35 | 20 | 15 | 8 | 14 | 57.1 | 236 | 6.7 | 3 | 3 | 0 | 1 | 1 |
+| 11 Bunch, Mesh, HALF | Mesh | 32 | 2 | 30 | 19 | 30 | 63.3 | 270 | 8.4 | 5 | 2 | 4 | 1 | 0 |
+| 12 Ace, Counter Right | Counter | 30 | 30 | 0 | 0 | 0 | — | 154 | 5.1 | 1 | 0 | 2 | 0 | 0 |
+| 11 Doubles, Inside Zone Right | Inside Zone | 27 | 27 | 0 | 0 | 0 | — | 95 | 3.5 | 0 | 5 | 0 | 0 | 0 |
+| Generic Run | Generic Run | 25 | 25 | 0 | 0 | 0 | — | 102 | 4.1 | 1 | 2 | 1 | 0 | 0 |
+| 11 Doubles, Drive, HALF | Drive | 24 | 2 | 22 | 8 | 21 | 38.1 | 31 | 1.3 | 0 | 2 | 0 | 1 | 1 |
+| 12 Wing, Outside Zone Left | Outside Zone | 24 | 24 | 0 | 0 | 0 | — | 145 | 6.0 | 2 | 3 | 1 | 0 | 0 |
+| 11 Doubles, Stick, SCAT | Stick | 20 | 1 | 19 | 12 | 17 | 70.6 | 235 | 11.8 | 5 | 2 | 0 | 0 | 2 |
+| 11 Trey, Dagger, HALF | Dagger | 20 | 0 | 20 | 16 | 20 | 80.0 | 148 | 7.4 | 1 | 3 | 0 | 2 | 0 |
+| 12 SHIFT Empty, Stick | Stick | 19 | 1 | 18 | 8 | 18 | 44.4 | 121 | 6.4 | 2 | 0 | 0 | 1 | 0 |
+| 12 Ace, Power Pass / Post-Cross, MAX | Power Pass | 18 | 0 | 18 | 10 | 17 | 58.8 | 212 | 11.8 | 3 | 2 | 3 | 0 | 1 |
+| 12 Wing, Boot Flood Right | Boot Flood | 18 | 1 | 17 | 10 | 16 | 62.5 | 120 | 6.7 | 3 | 1 | 3 | 0 | 1 |
+| Generic Pass | Generic Pass | 14 | 0 | 14 | 8 | 14 | 57.1 | 99 | 7.1 | 2 | 0 | 0 | 3 | 0 |
 | 11 Bunch, Snag | Snag | 12 | 0 | 12 | 7 | 11 | 63.6 | 16 | 1.3 | 0 | 2 | 2 | 0 | 1 |
 | 11 SHIFT Empty, Spacing, SCAT | Spacing | 10 | 1 | 9 | 4 | 8 | 50.0 | 29 | 2.9 | 0 | 2 | 0 | 0 | 1 |
 | 11 Trey, Stick | Stick | 10 | 1 | 9 | 7 | 8 | 87.5 | 47 | 4.7 | 1 | 1 | 0 | 0 | 1 |
-| Generic Pass | Generic Pass | 10 | 0 | 10 | 6 | 10 | 60.0 | 72 | 7.2 | 2 | 0 | 0 | 2 | 0 |
+| 11 Doubles, Spacing, SCAT | Spacing | 9 | 0 | 9 | 5 | 8 | 62.5 | 83 | 9.2 | 1 | 1 | 1 | 2 | 1 |
+| 11 Doubles, RB Slow Screen | RB Slow Screen | 8 | 1 | 7 | 4 | 5 | 80.0 | 29 | 3.6 | 0 | 3 | 1 | 0 | 2 |
 | 12 Trey, Y-Cross, HALF | Y-Cross | 8 | 1 | 7 | 4 | 6 | 66.7 | 4 | 0.5 | 0 | 2 | 0 | 1 | 1 |
-| 11 Doubles, Spacing, SCAT | Spacing | 7 | 0 | 7 | 4 | 6 | 66.7 | 24 | 3.4 | 0 | 1 | 1 | 2 | 1 |
-| 11 Doubles, RB Slow Screen | RB Slow Screen | 5 | 1 | 4 | 1 | 2 | 50.0 | 12 | 2.4 | 0 | 2 | 1 | 0 | 2 |
 | 11 Trey, Y-Cross, SOLID | Y-Cross | 4 | 0 | 4 | 2 | 4 | 50.0 | 7 | 1.8 | 0 | 0 | 0 | 0 | 0 |
 | 12 Wing, TE Delay | TE Delay | 4 | 2 | 2 | 0 | 2 | 0.0 | 3 | 0.8 | 0 | 0 | 0 | 0 | 0 |
 | Victory (kneel) | Victory (kneel) | 4 | 4 | 0 | 0 | 0 | — | -4 | -1.0 | 0 | 4 | 0 | 0 | 0 |
@@ -75,3 +75,16 @@ Each defensive snap is listed under the row of Stone's defensive call sheet for 
 | 7 | third and short | Bear, 1 Robber or 3 Match | 4 |
 | 7 | two-minute | Dime, Nickel Even, Quarters or Cover 6 | 4 |
 | 7 | other snaps | | 1 |
+| 8 | backed up | Under, 3 Match or Quarters | 1 |
+| 8 | four-minute | Under, Quarters | 0 |
+| 8 | goal line | Bear, 1 Robber | 2 |
+| 8 | high red zone | Nickel Even, 1 Robber or Quarters | 5 |
+| 8 | leading late | Dime, Cover 6 or 3 Match | 0 |
+| 8 | low red zone | Under, 3 Match or 1 Robber | 3 |
+| 8 | normal downs | Under, Quarters or Cover 6 | 33 |
+| 8 | second and long | Nickel Even, 3 Match or Quarters | 10 |
+| 8 | third and long | Dime, Nickel Even, Quarters or Cover 6 | 8 |
+| 8 | third and medium | Nickel Even, 1 Robber or 3 Match | 5 |
+| 8 | third and short | Bear, 1 Robber or 3 Match | 3 |
+| 8 | two-minute | Nickel Even, Quarters or Cover 6 | 4 |
+| 8 | other snaps | | 0 |

@@ -4,7 +4,7 @@
 
 6' 1", 205 lb · Born February 13, 1986 · Kansas · Drafted in 2008, first round, by Tampa Bay
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Aqib Talib](https://commons.wikimedia.org/wiki/Special:FilePath/Aqib_Talib_2014.JPG?width=500)
 
@@ -12,13 +12,13 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 7 (2014, through Week 7).
+**Passes defended:** 9 (2014, through Week 8).
 
 ## Staff assessment
 
-Aqib Talib has played outside in his first season with Jacksonville, with seven passes defended in seven games, including the interception of Andrew Luck's third-and-long throw against Indianapolis. He is a physical outside corner whose best tools are press coverage, ball skills and play at the catch point, and the staff's starting view is that he can challenge bigger receivers. Technique consistency still matters to that matchup, and in camp he re-routed Hakeem Nicks on some press reps and lost others to Nicks's hands. His tackling, block defeat and penalty discipline trail his coverage.
+Aqib Talib has played outside in his first season with Jacksonville, with nine passes defended in eight games, including the interception of Andrew Luck's third-and-long throw against Indianapolis. He is a physical outside corner whose best tools are press coverage, ball skills and play at the catch point, and the staff's starting view is that he can challenge bigger receivers. Technique consistency still matters to that matchup, and in camp he re-routed Hakeem Nicks on some press reps and lost others to Nicks's hands. His tackling, block defeat and penalty discipline trail his coverage.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -38,13 +38,13 @@ Five-year contract through 2018.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 28 | N/A | 7 | 42 | 32 | 10 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Jacksonville | 28 | N/A | 8 | 49 | 36 | 13 | 1 | 0 | 0 |
 | 2013 | New England | 27 | 31 | 16 | 81 | 55 | 26 | 2 | 0 | 0 |
-| Career |  |  |  | 23 | 123 | 87 | 36 | 3 | 0 | 0 |
+| Career |  |  |  | 24 | 130 | 91 | 39 | 3 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 28 | N/A | 3 | 19 | 7 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Jacksonville | 28 | N/A | 3 | 19 | 9 | 2 | 0 | 0 |
 | 2013 | New England | 27 | 31 | 3 | 48 | 13 | 1 | 1 | N/A |
 
 ### Playoffs

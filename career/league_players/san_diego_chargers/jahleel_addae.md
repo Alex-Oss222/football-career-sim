@@ -1,10 +1,10 @@
 # Jahleel Addae
 
-**San Diego Chargers · Strong safety · No. 37 · Age 24 · Last game October 19, 2014**
+**San Diego Chargers · Strong safety · No. 37 · Age 24 · Last game October 23, 2014**
 
 5' 10", 195 lb · Born January 24, 1990 · Central Michigan
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Jahleel Addae](https://commons.wikimedia.org/wiki/Special:FilePath/Jahleel_Addae.JPG?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 24 | 37 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | San Diego | 24 | 37 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | San Diego | 23 | 37 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Career |  |  |  | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 24 | 37 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | San Diego | 24 | 37 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | San Diego | 23 | 37 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

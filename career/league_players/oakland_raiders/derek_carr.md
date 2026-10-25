@@ -1,10 +1,10 @@
 # Derek Carr
 
-**Oakland Raiders · Quarterback · No. 4 · Age 23 · Last game October 19, 2014**
+**Oakland Raiders · Quarterback · No. 4 · Age 23 · Last game October 26, 2014**
 
 6' 3", 214 lb · Born March 28, 1991 · Fresno State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Derek Carr](https://commons.wikimedia.org/wiki/Special:FilePath/Derek_Carr_WFT_at_Raiders_-_51735347857_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 94.2 (2014, through Week 7).
+**Passer rating:** 100.6 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 23 | 4 | 6 | 140 | 207 | 67.6 | 1,494 | 7.2 | 249.0 | 11 | 6 | 94.2 |
+| 2014 (through Week 8) | Oakland | 23 | 4 | 7 | 163 | 236 | 69.1 | 1,719 | 7.3 | 245.6 | 15 | 6 | 100.6 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 23 | 4 | 21 | 149 | 23 | 100 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Oakland | 23 | 4 | 25 | 191 | 25 | 106 | 0 | 2 | 2 |
 
 ### Playoffs
 

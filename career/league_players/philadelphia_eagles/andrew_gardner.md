@@ -1,10 +1,10 @@
 # Andrew Gardner
 
-**Philadelphia Eagles · Guard · No. 66 · Age 28 · Last game October 12, 2014**
+**Philadelphia Eagles · Guard · No. 66 · Age 28 · Last game October 26, 2014**
 
 6' 6", 308 lb · Born April 4, 1986 · Georgia Tech · Drafted in 2009, sixth round, by Miami
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Andrew Gardner](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_Gardner.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve left tackle.
 
-**Sacks allowed:** 0 (2014, through Week 6).
+**Sacks allowed:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 28 | 66 | 6 | 0 | 71 | 0 | 20 |
+| 2014 (through Week 8) | Philadelphia | 28 | 66 | 7 | 0 | 71 | 0 | 21 |
 | 2013 | Houston | 27 | 66 | 2 | N/A | N/A | 1 | N/A |
-| Career |  |  |  | 8 | N/A | N/A | 1 | N/A |
+| Career |  |  |  | 9 | N/A | N/A | 1 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Everson Griffen
 
-**Minnesota Vikings · Defensive end · No. 97 · Age 26 · Last game October 19, 2014**
+**Minnesota Vikings · Defensive end · No. 97 · Age 26 · Last game October 26, 2014**
 
 6' 3", 273 lb · Born December 22, 1987 · USC · Drafted in 2010, fourth round, by Minnesota
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Everson Griffen](https://commons.wikimedia.org/wiki/Special:FilePath/Everson_Griffen.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 2 (2014, through Week 7).
+**Sacks:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 26 | 97 | 7 | 12 | 7 | 5 | 1 | 2 | 4 |
+| 2014 (through Week 8) | Minnesota | 26 | 97 | 8 | 20 | 14 | 6 | 3 | 2 | 4 |
 | 2013 | Minnesota | 25 | 97 | 16 | 18 | 11 | 7 | 1 | 1 | 2 |
-| Career |  |  |  | 23 | 30 | 18 | 12 | 2 | 3 | 6 |
+| Career |  |  |  | 24 | 38 | 25 | 13 | 4 | 3 | 6 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 26 | 97 | 0 | 0 | 0 | 0 | 1 | 0 |
+| 2014 (through Week 8) | Minnesota | 26 | 97 | 0 | 0 | 0 | 0 | 1 | 0 |
 | 2013 | Minnesota | 25 | 97 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

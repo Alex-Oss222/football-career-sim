@@ -1,10 +1,10 @@
 # Alex Bayer
 
-**St. Louis Rams · Tight end · No. 82 · Age 23 · Last game October 19, 2014**
+**St. Louis Rams · Tight end · No. 82 · Age 23 · Last game October 26, 2014**
 
 6' 4", 258 lb · Born November 8, 1990 · Bowling Green
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Alex Bayer](https://commons.wikimedia.org/wiki/Special:FilePath/Alex_Bayer_%288334388522%29_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 5.0 (2014, through Week 7).
+**Yards per target:** 5.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 23 | 82 | 6 | 1 | 1 | 5 | 5.0 | 0 | 5 | 0.8 | 100.0 |
+| 2014 (through Week 8) | St. Louis | 23 | 82 | 7 | 1 | 1 | 5 | 5.0 | 0 | 5 | 0.7 | 100.0 |
 
 ### Playoffs
 

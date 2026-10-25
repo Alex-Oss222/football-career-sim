@@ -4,13 +4,13 @@
 
 6' 2", 310 lb · Born July 9, 1987 · Texas · Drafted in 2009, third round, by Tampa Bay
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Roy Miller](https://commons.wikimedia.org/wiki/Special:FilePath/Roy_Miller_%28American_football%29.JPG?width=500)
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Roy_Miller_(American_football).JPG)).*
 
-**Sacks:** 1 (2014, through Week 7).
+**Sacks:** 1 (2014, through Week 8).
 
 ## Staff assessment
 
@@ -32,13 +32,13 @@ Two-year contract through 2014.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 27 | 97 | 7 | 13 | 6 | 7 | 3 | 1 | 3 |
+| 2014 (through Week 8) | Jacksonville | 27 | 97 | 8 | 13 | 6 | 7 | 3 | 1 | 3 |
 | 2013 | Jacksonville | 26 | 97 | 16 | 49 | 30 | 19 | 4 | 1 | 7 |
-| With Jacksonville |  |  |  | 23 | 62 | 36 | 26 | 7 | 2 | 10 |
+| With Jacksonville |  |  |  | 24 | 62 | 36 | 26 | 7 | 2 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 27 | 97 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2014 (through Week 8) | Jacksonville | 27 | 97 | 0 | 0 | 0 | 1 | 1 | 0 |
 | 2013 | Jacksonville | 26 | 97 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

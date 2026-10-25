@@ -1,10 +1,10 @@
 # Paul McQuistan
 
-**Cleveland Browns · Guard · No. 74 · Age 31 · Last game October 19, 2014**
+**Cleveland Browns · Guard · No. 74 · Age 31 · Last game October 26, 2014**
 
 6' 6", 315 lb · Born April 30, 1983 · Weber State · Drafted in 2006, third round, by Oakland
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Paul McQuistan](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_McQuistan_2013.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 31 | 74 | 5 | 0 | 0 | 0 | 30 |
+| 2014 (through Week 8) | Cleveland | 31 | 74 | 6 | 0 | 0 | 0 | 33 |
 | 2013 | Seattle | 30 | 67 | 16 | N/A | N/A | 9 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

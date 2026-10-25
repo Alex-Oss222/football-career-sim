@@ -1,10 +1,10 @@
 # Jason Peters
 
-**Philadelphia Eagles · Offensive tackle · No. 71 · Age 32 · Last game October 12, 2014**
+**Philadelphia Eagles · Offensive tackle · No. 71 · Age 32 · Last game October 26, 2014**
 
 6' 4", 328 lb · Born January 22, 1982 · Arkansas
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Jason Peters](https://commons.wikimedia.org/wiki/Special:FilePath/Jason_peters_2016.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 3 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 32 | 71 | 6 | 6 | 423 | 3 | 33 |
+| 2014 (through Week 8) | Philadelphia | 32 | 71 | 7 | 7 | 474 | 4 | 34 |
 | 2013 | Philadelphia | 31 | 71 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

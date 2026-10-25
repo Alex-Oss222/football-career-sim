@@ -1,10 +1,10 @@
 # Aaron Berry
 
-**Cleveland Browns · Cornerback · No. 38 · Age 26 · Last game October 19, 2014**
+**Cleveland Browns · Cornerback · No. 38 · Age 26 · Last game October 26, 2014**
 
 5' 9", 190 lb · Born June 25, 1988 · Pittsburgh
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Aaron Berry](https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Berry.JPG?width=500)
 
@@ -20,11 +20,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 26 | 38 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 26 | 38 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 26 | 38 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 26 | 38 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

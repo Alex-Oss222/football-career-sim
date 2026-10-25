@@ -1,10 +1,10 @@
 # Mike Pollak
 
-**Cincinnati Bengals · Guard · No. 67 · Age 29 · Last game October 19, 2014**
+**Cincinnati Bengals · Guard · No. 67 · Age 29 · Last game October 26, 2014**
 
 6' 3", 300 lb · Born February 16, 1985 · Arizona State · Drafted in 2008, second round, by Indianapolis
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Mike Pollak](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Pollak_2013.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 29 | 67 | 6 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cincinnati | 29 | 67 | 7 | 0 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 28 | 67 | 11 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 17 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 18 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

@@ -4,17 +4,17 @@
 
 Born August 13, 1990 · Iowa · Undrafted
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 66 (2014, through Week 7).
+**Long snaps:** 76 (2014, through Week 8).
 
 ## Staff assessment
 
-Casey Kreiter, a rookie long snapper from Iowa signed to compete with Jeremy Cain, has handled 66 long snaps in seven games in 2014. He arrived after four seasons of Big Ten snapping with technique and snap accuracy as his best tools, and in camp he kept the punt operation clean against a controlled rush. Athleticism, speed and change of direction are his main limitations, and the staff judged every part of his game below an NFL starter's standard when he signed.
+Casey Kreiter, a rookie long snapper from Iowa signed to compete with Jeremy Cain, has handled 76 long snaps in eight games in 2014. He arrived after four seasons of Big Ten snapping with technique and snap accuracy as his best tools, and in camp he kept the punt operation clean against a controlled rush. Athleticism, speed and change of direction are his main limitations, and the staff judged every part of his game below an NFL starter's standard when he signed.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -32,7 +32,7 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 24 | N/A | 7 | 66 | 66 | 0 | 0 |
+| 2014 (through Week 8) | Jacksonville | 24 | N/A | 8 | 76 | 76 | 0 | 0 |
 
 ### Playoffs
 

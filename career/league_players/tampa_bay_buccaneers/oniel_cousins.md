@@ -1,10 +1,10 @@
 # Oniel Cousins
 
-**Tampa Bay Buccaneers · Offensive tackle · No. 75 · Age 30 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Offensive tackle · No. 75 · Age 30 · Last game October 26, 2014**
 
 6' 4", 315 lb · Born June 29, 1984 · Texas-El Paso · Drafted in 2008, third round, by Baltimore
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Oniel Cousins](https://commons.wikimedia.org/wiki/Special:FilePath/Oniel_Cousins_2011_stadium_practice.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 30 | 75 | 2 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 30 | 75 | 2 | 0 | 0 | 0 | 0 |
 | 2013 | Cleveland | 29 | 75 | 16 | N/A | N/A | 4 | N/A |
 | Career |  |  |  | 18 | N/A | N/A | 4 | N/A |
 

@@ -1,10 +1,10 @@
 # Greg Salas
 
-**New York Jets · Wide receiver · No. 17 · Age 26 · Last game October 16, 2014**
+**New York Jets · Wide receiver · No. 17 · Age 26 · Last game October 26, 2014**
 
 6' 2", 210 lb · Born August 25, 1988 · Hawaii · Drafted in 2011, fourth round, by St. Louis
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Greg Salas](https://commons.wikimedia.org/wiki/Special:FilePath/Greg_Salas.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 7.3 (2014, through Week 7).
+**Yards per target:** 7.9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 26 | 17 | 7 | 26 | 15 | 191 | 12.7 | 5 | 22 | 27.3 | 57.7 |
+| 2014 (through Week 8) | N.Y. Jets | 26 | 17 | 8 | 27 | 16 | 212 | 13.2 | 5 | 22 | 26.5 | 59.3 |
 
 ### Playoffs
 

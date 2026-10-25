@@ -1,16 +1,16 @@
 # Rodney Smith
 
-**Cleveland Browns · Wide receiver · Age 24 · Last game October 19, 2014**
+**Cleveland Browns · Wide receiver · Age 24 · Last game October 26, 2014**
 
 6' 5", 220 lb · Born March 11, 1990 · Florida State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Rodney Smith](https://commons.wikimedia.org/wiki/Special:FilePath/81%2C_Rodney_Smith%2C_Aug_2%2C_2018.jpg?width=500)
 
 *Photo: Cmm3, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) ([source](https://commons.wikimedia.org/wiki/File:81,_Rodney_Smith,_Aug_2,_2018.jpg)).*
 
-**Yards per target:** 3.7 (2014, through Week 7).
+**Yards per target:** 3.7 (2014, through Week 8).
 
 ## Contract
 
@@ -22,15 +22,15 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota, Cleveland | 24 | N/A | 7 | 18 | 10 | 66 | 6.6 | 1 | 18 | 9.4 | 55.6 |
+| 2014 (through Week 8) | Minnesota, Cleveland | 24 | N/A | 8 | 18 | 10 | 66 | 6.6 | 1 | 18 | 8.2 | 55.6 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota, Cleveland | 24 | N/A | 0 | 0 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Minnesota, Cleveland | 24 | N/A | 0 | 0 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota, Cleveland | 24 | N/A | 0 | 0 | N/A | 5 | 8 | 1.6 |
+| 2014 (through Week 8) | Minnesota, Cleveland | 24 | N/A | 0 | 0 | N/A | 5 | 8 | 1.6 |
 
 ### Playoffs
 

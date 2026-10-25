@@ -1,10 +1,10 @@
 # Shonn Greene
 
-**Tennessee Titans · Running back · No. 23 · Age 29 · Last game October 19, 2014**
+**Tennessee Titans · Running back · No. 23 · Age 29 · Last game October 26, 2014**
 
 5' 11", 233 lb · Born August 21, 1985 · Iowa; Kirkwood Community College · Drafted in 2009, third round, by the New York Jets
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Shonn Greene](https://commons.wikimedia.org/wiki/Special:FilePath/Shonn_Greene_2011.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 5.4 (2014, through Week 7).
+**Yards per carry:** 5.5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 29 | 23 | 7 | 121 | 652 | 5.4 | 6 | 36 | 93.1 |
+| 2014 (through Week 8) | Tennessee | 29 | 23 | 8 | 135 | 743 | 5.5 | 7 | 36 | 92.9 |
 | 2013 | Tennessee | 28 | 23 | 16 | 82 | 327 | 4.0 | 0 | 18 | 20.4 |
-| Career |  |  |  | 23 | 203 | 979 | 4.8 | 6 | 36 | 42.6 |
+| Career |  |  |  | 24 | 217 | 1,070 | 4.9 | 7 | 36 | 44.6 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 29 | 23 | 22 | 13 | 139 | 10.7 | 0 | 4 | 3 |
+| 2014 (through Week 8) | Tennessee | 29 | 23 | 25 | 14 | 147 | 10.5 | 0 | 4 | 3 |
 | 2013 | Tennessee | 28 | 23 | 25 | 17 | 180 | 10.6 | 2 | 1 | 1 |
 
 ### Playoffs

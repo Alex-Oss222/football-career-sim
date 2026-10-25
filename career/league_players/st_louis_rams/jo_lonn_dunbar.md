@@ -1,10 +1,10 @@
 # Jo-Lonn Dunbar
 
-**St. Louis Rams · Outside linebacker · No. 58 · Age 29 · Last game October 19, 2014**
+**St. Louis Rams · Outside linebacker · No. 58 · Age 29 · Last game October 26, 2014**
 
 6' 0", 235 lb · Born March 13, 1985 · Boston College
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jo-Lonn Dunbar](https://commons.wikimedia.org/wiki/Special:FilePath/Jo-Lonn_Dunbar_Saints_victory_parade.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 29 (2014, through Week 7).
+**Tackles:** 33 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 29 | 58 | 6 | 29 | 20 | 9 | 1 | 1 | 2 |
+| 2014 (through Week 8) | St. Louis | 29 | 58 | 7 | 33 | 22 | 11 | 1 | 2 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 29 | 58 | 1 | 15 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | St. Louis | 29 | 58 | 1 | 15 | 2 | 0 | 0 | 0 |
 
 ### Playoffs
 

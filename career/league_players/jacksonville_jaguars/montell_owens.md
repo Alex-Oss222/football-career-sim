@@ -4,11 +4,11 @@
 
 5' 10", 225 lb · Born May 4, 1984 · Maine
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 **Current assignment:** Fullback.
 
-**Yards per carry:** 2.8 (2014, through Week 7).
+**Yards per carry:** 3.3 (2014, through Week 8).
 
 ## Staff assessment
 
@@ -31,13 +31,13 @@ Under contract through 2015.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 30 | N/A | 7 | 5 | 14 | 2.8 | 0 | 8 | 2.0 |
+| 2014 (through Week 8) | Jacksonville | 30 | N/A | 8 | 7 | 23 | 3.3 | 1 | 8 | 2.9 |
 | 2013 | Jacksonville | 29 | N/A | 16 | 15 | 63 | 4.2 | 0 | 13 | 3.9 |
-| With Jacksonville |  |  |  | 23 | 20 | 77 | 3.9 | 0 | 13 | 3.3 |
+| With Jacksonville |  |  |  | 24 | 22 | 86 | 3.9 | 1 | 13 | 3.6 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 30 | N/A | 9 | 5 | 52 | 10.4 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Jacksonville | 30 | N/A | 11 | 5 | 52 | 10.4 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 29 | N/A | 15 | 8 | 132 | 16.5 | 0 | 0 | 0 |
 
 ### Playoffs

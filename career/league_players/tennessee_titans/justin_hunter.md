@@ -1,10 +1,10 @@
 # Justin Hunter
 
-**Tennessee Titans · Wide receiver · No. 15 · Age 23 · Last game October 19, 2014**
+**Tennessee Titans · Wide receiver · No. 15 · Age 23 · Last game October 26, 2014**
 
 6' 4", 203 lb · Born May 20, 1991 · Tennessee
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Justin Hunter](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Hunter_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 6.6 (2014, through Week 7).
+**Yards per target:** 7.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 23 | 15 | 7 | 28 | 19 | 184 | 9.7 | 0 | 30 | 26.3 | 67.9 |
+| 2014 (through Week 8) | Tennessee | 23 | 15 | 8 | 35 | 24 | 245 | 10.2 | 1 | 30 | 30.6 | 68.6 |
 | 2013 | Tennessee | 22 | 15 | 16 | 1 | 1 | 19 | 19.0 | 0 | 19 | 1.2 | 100.0 |
-| Career |  |  |  | 23 | 29 | 20 | 203 | 10.2 | 0 | 30 | 8.8 | 69.0 |
+| Career |  |  |  | 24 | 36 | 25 | 264 | 10.6 | 1 | 30 | 11.0 | 69.4 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Brandon Fusco
 
-**Minnesota Vikings · Guard · No. 63 · Age 26 · Last game October 19, 2014**
+**Minnesota Vikings · Guard · No. 63 · Age 26 · Last game October 26, 2014**
 
 6' 4", 306 lb · Born July 26, 1988 · Slippery Rock · Drafted in 2011, sixth round, by Minnesota
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brandon Fusco](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Fusco.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 0 (2014, through Week 7).
+**Sacks allowed:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 26 | 63 | 5 | 5 | 288 | 0 | 14 |
+| 2014 (through Week 8) | Minnesota | 26 | 63 | 5 | 5 | 288 | 0 | 14 |
 | 2013 | Minnesota | 25 | 63 | 16 | N/A | N/A | 3 | N/A |
 | Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
 

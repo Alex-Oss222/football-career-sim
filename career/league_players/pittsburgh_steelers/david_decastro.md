@@ -1,10 +1,10 @@
 # David DeCastro
 
-**Pittsburgh Steelers · Guard · No. 66 · Age 24 · Last game October 20, 2014**
+**Pittsburgh Steelers · Guard · No. 66 · Age 24 · Last game October 26, 2014**
 
 6' 5", 316 lb · Born January 11, 1990 · Stanford · Drafted in 2012, first round, by Pittsburgh
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![David DeCastro](https://commons.wikimedia.org/wiki/Special:FilePath/David_DeCastro_66_lined_up_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 0 (2014, through Week 7).
+**Sacks allowed:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 24 | 66 | 7 | 7 | 447 | 0 | 41 |
+| 2014 (through Week 8) | Pittsburgh | 24 | 66 | 8 | 8 | 508 | 0 | 45 |
 | 2013 | Pittsburgh | 23 | 66 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

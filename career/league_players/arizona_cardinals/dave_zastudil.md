@@ -1,10 +1,10 @@
 # Dave Zastudil
 
-**Arizona Cardinals · Punter · No. 9 · Age 35 · Last game October 19, 2014**
+**Arizona Cardinals · Punter · No. 9 · Age 36 · Last game October 26, 2014**
 
 6' 3", 220 lb · Born October 26, 1978 · Ohio · Drafted in 2002, fourth round, by Baltimore
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Dave Zastudil](https://commons.wikimedia.org/wiki/Special:FilePath/Dave_Zastudil_2014.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 36.2 (2014, through Week 7).
+**Net punting average:** 37.3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 35 | 9 | 6 | 20 | 868 | 43.4 | 36.2 | 8 | 0 | 61 |
+| 2014 (through Week 8) | Arizona | 35 | 9 | 7 | 24 | 1,066 | 44.4 | 37.3 | 10 | 1 | 61 |
 | 2013 | Arizona | 34 | 9 | 16 | 80 | 3,634 | 45.4 | 39.1 | 33 | 4 | 65 |
-| Career |  |  |  | 22 | 100 | 4,502 | 45.0 | 38.5 | 41 | 4 | 65 |
+| Career |  |  |  | 23 | 104 | 4,700 | 45.2 | 38.7 | 43 | 5 | 65 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # James Stone
 
-**Atlanta Falcons · Center · No. 62 · Age 22 · Last game October 19, 2014**
+**Atlanta Falcons · Center · No. 62 · Age 22 · Last game October 26, 2014**
 
 6' 3", 291 lb · Born April 26, 1992 · Tennessee
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![James Stone](https://commons.wikimedia.org/wiki/Special:FilePath/James_Stone_%28American_football%29_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve left guard.
 
-**Sacks allowed:** 1 (2014, through Week 7).
+**Sacks allowed:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 22 | 62 | 7 | 0 | 21 | 1 | 10 |
+| 2014 (through Week 8) | Atlanta | 22 | 62 | 8 | 1 | 78 | 1 | 16 |
 
 ### Playoffs
 

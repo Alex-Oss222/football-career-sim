@@ -1,10 +1,10 @@
 # Donald Butler
 
-**San Diego Chargers · Inside linebacker · No. 56 · Age 26 · Last game October 19, 2014**
+**San Diego Chargers · Inside linebacker · No. 56 · Age 26 · Last game October 23, 2014**
 
 6' 1", 242 lb · Born October 17, 1988 · Washington · Drafted in 2010, third round, by San Diego
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Donald Butler](https://commons.wikimedia.org/wiki/Special:FilePath/Donald_Butler_2011.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting inside linebacker.
 
-**Tackles:** 19 (2014, through Week 7).
+**Tackles:** 21 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 25 | 56 | 7 | 19 | 12 | 7 | 2 | 0 | 0 |
+| 2014 (through Week 8) | San Diego | 25 | 56 | 8 | 21 | 12 | 9 | 2 | 0 | 0 |
 | 2013 | San Diego | 24 | 56 | 16 | 153 | 99 | 54 | 8 | 3 | 9 |
-| Career |  |  |  | 23 | 172 | 111 | 61 | 10 | 3 | 9 |
+| Career |  |  |  | 24 | 174 | 111 | 63 | 10 | 3 | 9 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 25 | 56 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | San Diego | 25 | 56 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | San Diego | 24 | 56 | 0 | 0 | 9 | 1 | 1 | N/A |
 
 ### Playoffs

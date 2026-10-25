@@ -1,6 +1,6 @@
 # Jacksonville Jaguars depth chart
 
-As of October 26, 2014, after the Week 7 game against Cleveland (Cleveland 34, Jacksonville 31).
+As of October 26, 2014, after the Week 8 game against Miami (Miami 29, Jacksonville 23).
 
 This is Stone's current depth order, not a confirmed game-day lineup. Injuries do not change a starter or reserve assignment until Stone changes the chart.
 
@@ -47,8 +47,11 @@ The first defensive-line and linebacker groups, and the first four defensive bac
 
 | Player | Status | Next medical date |
 |---|---|---|
+| [Travis Kelce](../Player_Cards/travis_kelce.md) | Out · lower extremity (minor) | Review October 27, 2014; projected return October 31, 2014 |
 | [Andrew Norwell](../Player_Cards/andrew_norwell.md) | Independent hold · head/neck (short) | Projected return November 2, 2014 |
+| [Corey Linsley](../Player_Cards/corey_linsley.md) | Independent hold · head/neck (minor) | Review October 27, 2014; projected return October 31, 2014 |
 | [Daryl Smith](../Player_Cards/daryl_smith.md) | Out · lower extremity (short) | Projected return October 31, 2014 |
+| [Alan Ball](../Player_Cards/alan_ball.md) | Out · lower extremity (minor) | Review October 27, 2014; projected return October 29, 2014 |
 
 Medical clearance remains with the medical staff. [Full medical report](../../Medical/current_injury_report.md)
 
@@ -166,6 +169,8 @@ The order in each group remains Stone's current order. Reserve assignments that 
 | Punt returner | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) |
 
 ## Inactives
+
+Week 9 at Cincinnati, November 2, 2014: not yet set. Stone selects the eligible inactives before the game.
 
 The prior game's inactives, for reference:
 

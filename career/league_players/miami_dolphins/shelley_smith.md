@@ -1,10 +1,10 @@
 # Shelley Smith
 
-**Miami Dolphins · Guard · No. 66 · Age 27 · Last game October 19, 2014**
+**Miami Dolphins · Guard · No. 66 · Age 27 · Last game October 26, 2014**
 
 6' 4", 310 lb · Born May 21, 1987 · Colorado State · Drafted in 2010, sixth round, by Houston
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Shelley Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Shelley_Smith_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 0 (2014, through Week 7).
+**Sacks allowed:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 27 | 66 | 6 | 6 | 399 | 0 | 28 |
+| 2014 (through Week 8) | Miami | 27 | 66 | 7 | 7 | 473 | 1 | 35 |
 | 2013 | St. Louis | 26 | 66 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Glover Quin
 
-**Detroit Lions · Free safety · No. 27 · Age 28 · Last game October 19, 2014**
+**Detroit Lions · Free safety · No. 27 · Age 28 · Last game October 26, 2014**
 
 6' 0", 206 lb · Born January 15, 1986 · New Mexico; Southwest Mississippi JC · Drafted in 2009, fourth round, by Houston
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Glover Quin](https://commons.wikimedia.org/wiki/Special:FilePath/Glover_Quin.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 3 (2014, through Week 7).
+**Passes defended:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 28 | 27 | 7 | 35 | 26 | 9 | 4 | 0 | 1 |
+| 2014 (through Week 8) | Detroit | 28 | 27 | 8 | 37 | 26 | 11 | 5 | 0 | 1 |
 | 2013 | Detroit | 27 | 27 | 16 | 98 | 67 | 31 | 3 | 0 | 2 |
-| Career |  |  |  | 23 | 133 | 93 | 40 | 7 | 0 | 3 |
+| Career |  |  |  | 24 | 135 | 93 | 42 | 8 | 0 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 28 | 27 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Detroit | 28 | 27 | 0 | 0 | 3 | 0 | 0 | 0 |
 | 2013 | Detroit | 27 | 27 | 6 | 55 | 20 | 2 | 2 | N/A |
 
 ### Playoffs

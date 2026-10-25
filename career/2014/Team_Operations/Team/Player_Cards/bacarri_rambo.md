@@ -4,7 +4,7 @@
 
 6' 0", 211 lb · Born June 27, 1990 · Georgia · Drafted in 2013, No. 169 overall, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Bacarri Rambo](https://commons.wikimedia.org/wiki/Special:FilePath/Bacarri_Rambo.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting safety.
 
-**Passes defended:** 4 (2014, through Week 7).
+**Passes defended:** 4 (2014, through Week 8).
 
 ## Staff assessment
 
@@ -36,18 +36,18 @@ Four-year contract through 2016.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 24 | 24 | 7 | 31 | 19 | 12 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Jacksonville | 24 | 24 | 8 | 36 | 22 | 14 | 1 | 0 | 0 |
 | 2013 | Jacksonville | 23 | N/A | 16 | 51 | 30 | 21 | 3 | 0 | 0 |
-| With Jacksonville |  |  |  | 23 | 82 | 49 | 33 | 4 | 0 | 0 |
+| With Jacksonville |  |  |  | 24 | 87 | 52 | 35 | 4 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 24 | 24 | 1 | 1 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Jacksonville | 24 | 24 | 1 | 1 | 4 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 23 | N/A | 0 | 0 | 3 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 24 | 24 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Jacksonville | 24 | 24 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 23 | N/A | 3 | 71 | 23.7 | 2 | 12 | 6.0 |
 
 ### Playoffs

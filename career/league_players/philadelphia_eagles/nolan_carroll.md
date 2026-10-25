@@ -1,10 +1,10 @@
 # Nolan Carroll
 
-**Philadelphia Eagles · Cornerback · No. 23 · Age 27 · Last game October 12, 2014**
+**Philadelphia Eagles · Cornerback · No. 23 · Age 27 · Last game October 26, 2014**
 
 6' 1", 205 lb · Born January 18, 1987 · Maryland · Drafted in 2010, fifth round, by Miami
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Nolan Carroll](https://commons.wikimedia.org/wiki/Special:FilePath/Nolan_Carroll.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 1 (2014, through Week 6).
+**Passes defended:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 27 | 23 | 6 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Philadelphia | 27 | 23 | 7 | 2 | 1 | 1 | 0 | 0 | 0 |
 | 2013 | Miami | 26 | 28 | 16 | 28 | 15 | 13 | 0 | 0 | 0 |
-| Career |  |  |  | 22 | 29 | 15 | 14 | 0 | 0 | 0 |
+| Career |  |  |  | 23 | 30 | 16 | 14 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 27 | 23 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Philadelphia | 27 | 23 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Miami | 26 | 28 | 4 | 71 | 11 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 27 | 23 | 18 | 415 | 23.1 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Philadelphia | 27 | 23 | 21 | 458 | 21.8 | 0 | 0 | N/A |
 | 2013 | Miami | 26 | 28 | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs

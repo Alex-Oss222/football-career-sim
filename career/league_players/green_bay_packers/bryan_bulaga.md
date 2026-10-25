@@ -1,10 +1,10 @@
 # Bryan Bulaga
 
-**Green Bay Packers · Offensive tackle · No. 75 · Age 25 · Last game October 19, 2014**
+**Green Bay Packers · Offensive tackle · No. 75 · Age 25 · Last game October 26, 2014**
 
 6' 5", 314 lb · Born March 21, 1989 · Iowa · Drafted in 2010, first round, by Green Bay
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Bryan Bulaga](https://commons.wikimedia.org/wiki/Special:FilePath/Bulaga_blocking.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 4 (2014, through Week 7).
+**Sacks allowed:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Green Bay | 25 | 75 | 7 | 7 | 442 | 4 | 36 |
+| 2014 (through Week 8) | Green Bay | 25 | 75 | 8 | 8 | 509 | 4 | 42 |
 
 ### Playoffs
 

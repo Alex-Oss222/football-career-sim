@@ -1,10 +1,10 @@
 # Mario Harvey
 
-**Indianapolis Colts · Fullback · No. 48 · Age 27 · Last game October 19, 2014**
+**Indianapolis Colts · Fullback · No. 48 · Age 27 · Last game October 26, 2014**
 
 6' 0", 264 lb · Born August 10, 1987 · Marshall
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Mario Harvey](https://commons.wikimedia.org/wiki/Special:FilePath/Mario_Harvey.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 1.3 (2014, through Week 7).
+**Yards per carry:** 1.3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 27 | 48 | 7 | 3 | 4 | 1.3 | 0 | 3 | 0.6 |
+| 2014 (through Week 8) | Indianapolis | 27 | 48 | 8 | 3 | 4 | 1.3 | 0 | 3 | 0.5 |
 | 2013 | Indianapolis | 26 | 54 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 |
-| Career |  |  |  | 23 | 3 | 4 | 1.3 | 0 | 3 | 0.2 |
+| Career |  |  |  | 24 | 3 | 4 | 1.3 | 0 | 3 | 0.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 27 | 48 | 5 | 1 | 22 | 22.0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 27 | 48 | 5 | 1 | 22 | 22.0 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 26 | 54 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs

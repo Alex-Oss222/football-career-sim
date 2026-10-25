@@ -1,10 +1,10 @@
 # James Hurst
 
-**Baltimore Ravens · Offensive tackle · No. 74 · Age 22 · Last game October 19, 2014**
+**Baltimore Ravens · Offensive tackle · No. 74 · Age 22 · Last game October 26, 2014**
 
 6' 5", 308 lb · Born December 17, 1991 · North Carolina
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![James Hurst](https://commons.wikimedia.org/wiki/Special:FilePath/James_Hurst_%28American_football%29_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve left tackle.
 
-**Sacks allowed:** 7 (2014, through Week 7).
+**Sacks allowed:** 7 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Baltimore | 22 | 74 | 7 | 7 | 485 | 7 | 41 |
+| 2014 (through Week 8) | Baltimore | 22 | 74 | 8 | 8 | 542 | 7 | 45 |
 
 ### Playoffs
 

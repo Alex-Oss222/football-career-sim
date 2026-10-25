@@ -1,10 +1,10 @@
 # Marcus Easley
 
-**Buffalo Bills · Wide receiver · No. 81 · Age 26 · Last game October 19, 2014**
+**Buffalo Bills · Wide receiver · No. 81 · Age 26 · Last game October 26, 2014**
 
 6' 2", 217 lb · Born November 2, 1987 · Connecticut · Drafted in 2010, fourth round, by Buffalo
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Marcus Easley](https://commons.wikimedia.org/wiki/Special:FilePath/Marcus_Easley.JPG?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 26 | 81 | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | Buffalo | 26 | 81 | 8 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | Buffalo | 25 | 81 | 16 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0.0 | 100.0 |
-| Career |  |  |  | 23 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0.0 | 100.0 |
+| Career |  |  |  | 24 | 1 | 1 | 0 | 0.0 | 0 | 0 | 0.0 | 100.0 |
 
 ### Playoffs
 

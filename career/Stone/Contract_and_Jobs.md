@@ -2,7 +2,7 @@
 
 **Alex Stone · Head coach, Jacksonville Jaguars**
 
-As of October 26, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 [Coach page](README.md)
 

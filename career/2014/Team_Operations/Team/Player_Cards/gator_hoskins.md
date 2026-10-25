@@ -4,7 +4,7 @@
 
 6' 1", 248 lb · Born December 19, 1991 · Marshall · Undrafted
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Gator Hoskins](https://commons.wikimedia.org/wiki/Special:FilePath/Gator_Hoskins.JPG?width=500)
 
@@ -12,9 +12,9 @@ As of October 19, 2014, after Week 7.
 
 ## Staff assessment
 
-Gator Hoskins is a rookie H-back from Marshall with no established NFL standing, and as the fourth tight end he has been active for two of Jacksonville's regular-season games in 2014. He came with receiving production at Marshall and the profile of a tight end who can move around the formation, and in camp he was assignment-correct in his attached work, with a mixed finish. Blocking is his main limitation and is still unproven, and his strength and technique are his other weak areas.
+Gator Hoskins is a rookie H-back from Marshall with no established NFL standing, and as the fourth tight end he has been active for three of Jacksonville's regular-season games in 2014. He came with receiving production at Marshall and the profile of a tight end who can move around the formation, and in camp he was assignment-correct in his attached work, with a mixed finish. Blocking is his main limitation and is still unproven, and his strength and technique are his other weak areas.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -32,7 +32,7 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 22 | N/A | 2 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | Jacksonville | 22 | N/A | 3 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

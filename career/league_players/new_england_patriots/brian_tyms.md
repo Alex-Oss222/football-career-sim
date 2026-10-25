@@ -1,10 +1,10 @@
 # Brian Tyms
 
-**New England Patriots · Wide receiver · Age 25 · Last game October 16, 2014**
+**New England Patriots · Wide receiver · Age 25 · Last game October 26, 2014**
 
 6' 3", 204 lb · Born February 21, 1989 · Florida A&M; Tallahassee CC
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ## Contract
 
@@ -16,7 +16,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 25 | N/A | 3 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | New England | 25 | N/A | 4 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

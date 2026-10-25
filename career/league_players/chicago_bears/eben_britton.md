@@ -1,10 +1,10 @@
 # Eben Britton
 
-**Chicago Bears · Offensive tackle · No. 62 · Age 27 · Last game October 19, 2014**
+**Chicago Bears · Offensive tackle · No. 62 · Age 27 · Last game October 26, 2014**
 
 6' 6", 308 lb · Born October 14, 1987 · Arizona · Drafted in 2009, second round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ## Contract
 
@@ -16,9 +16,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 26 | 62 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 26 | 62 | 4 | 0 | 0 | 0 | 0 |
 | 2013 | Chicago | 25 | 62 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 19 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Barry Church
 
-**Dallas Cowboys · Strong safety · No. 42 · Age 26 · Last game October 19, 2014**
+**Dallas Cowboys · Strong safety · No. 42 · Age 26 · Last game October 27, 2014**
 
 6' 2", 218 lb · Born February 11, 1988 · Toledo
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Barry Church](https://commons.wikimedia.org/wiki/Special:FilePath/Barry_Church.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 5 (2014, through Week 7).
+**Passes defended:** 5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 26 | 42 | 7 | 28 | 21 | 7 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Dallas | 26 | 42 | 8 | 31 | 24 | 7 | 1 | 0 | 0 |
 | 2013 | Dallas | 25 | 42 | 16 | 50 | 33 | 17 | 1 | 0 | 1 |
-| Career |  |  |  | 23 | 78 | 54 | 24 | 2 | 0 | 1 |
+| Career |  |  |  | 24 | 81 | 57 | 24 | 2 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 26 | 42 | 1 | 40 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Dallas | 26 | 42 | 1 | 40 | 5 | 0 | 0 | 0 |
 | 2013 | Dallas | 25 | 42 | 3 | 23 | 11 | 0 | 0 | N/A |
 
 ### Playoffs

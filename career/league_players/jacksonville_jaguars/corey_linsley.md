@@ -4,7 +4,7 @@
 
 6' 3", 301 lb · Born July 27, 1991 · Ohio State · Drafted in 2014, fifth round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Corey Linsley](https://commons.wikimedia.org/wiki/Special:FilePath/Corey_Linsley.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 0 (2014, through Week 7).
+**Sacks allowed:** 1 (2014, through Week 8).
 
 ## Staff assessment
 
@@ -37,7 +37,7 @@ Four-year contract through 2017.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 23 | 63 | 1 | 1 | 51 | 0 | 5 |
+| 2014 (through Week 8) | Jacksonville | 23 | 63 | 2 | 2 | 117 | 1 | 10 |
 
 ### Playoffs
 

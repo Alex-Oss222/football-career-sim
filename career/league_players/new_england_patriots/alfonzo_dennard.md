@@ -1,10 +1,10 @@
 # Alfonzo Dennard
 
-**New England Patriots · Cornerback · No. 37 · Age 25 · Last game October 16, 2014**
+**New England Patriots · Cornerback · No. 37 · Age 25 · Last game October 26, 2014**
 
 5' 10", 200 lb · Born September 9, 1989 · Nebraska · Drafted in 2012, seventh round, by New England
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Alfonzo Dennard](https://commons.wikimedia.org/wiki/Special:FilePath/Alfonzo_Dennard.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 7 (2014, through Week 7).
+**Passes defended:** 8 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 24 | 37 | 7 | 19 | 13 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 24 | 37 | 8 | 21 | 13 | 8 | 0 | 0 | 0 |
 | 2013 | New England | 23 | 37 | 16 | 75 | 49 | 26 | 3 | 0 | 0 |
-| Career |  |  |  | 23 | 94 | 62 | 32 | 3 | 0 | 0 |
+| Career |  |  |  | 24 | 96 | 62 | 34 | 3 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 24 | 37 | 1 | 39 | 7 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 24 | 37 | 2 | 39 | 8 | 0 | 0 | 0 |
 | 2013 | New England | 23 | 37 | 2 | 31 | 13 | 0 | 0 | N/A |
 
 ### Playoffs

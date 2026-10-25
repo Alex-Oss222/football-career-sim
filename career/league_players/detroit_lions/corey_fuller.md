@@ -1,10 +1,10 @@
 # Corey Fuller
 
-**Detroit Lions · Wide receiver · No. 10 · Age 24 · Last game October 19, 2014**
+**Detroit Lions · Wide receiver · No. 10 · Age 24 · Last game October 26, 2014**
 
 6' 2", 200 lb · Born June 23, 1990 · Virginia Tech; Kansas
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Corey Fuller](https://commons.wikimedia.org/wiki/Special:FilePath/Corey_fuller_vt.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 15.6 (2014, through Week 7).
+**Yards per target:** 13.3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 24 | 10 | 7 | 11 | 7 | 172 | 24.6 | 1 | 84 | 24.6 | 63.6 |
+| 2014 (through Week 8) | Detroit | 24 | 10 | 8 | 15 | 10 | 199 | 19.9 | 2 | 84 | 24.9 | 66.7 |
+
+| Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 8) | Detroit | 24 | 10 | 0 | 0 | 0 | 1 | 0 |
 
 ### Playoffs
 

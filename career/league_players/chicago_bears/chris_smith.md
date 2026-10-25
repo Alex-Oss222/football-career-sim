@@ -1,10 +1,10 @@
 # Chris Smith
 
-**Chicago Bears · Outside linebacker · Age 22 · Last game October 19, 2014**
+**Chicago Bears · Outside linebacker · Age 22 · Last game October 26, 2014**
 
 6' 1", 266 lb · Born February 11, 1992 · Arkansas
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Chris Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Smith_%28defensive_end%29.JPG?width=500)
 
@@ -20,11 +20,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 22 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 22 | N/A | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

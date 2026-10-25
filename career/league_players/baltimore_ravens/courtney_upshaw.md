@@ -1,10 +1,10 @@
 # Courtney Upshaw
 
-**Baltimore Ravens · Outside linebacker · No. 91 · Age 24 · Last game October 19, 2014**
+**Baltimore Ravens · Outside linebacker · No. 91 · Age 24 · Last game October 26, 2014**
 
 6' 2", 272 lb · Born December 13, 1989 · Alabama · Drafted in 2012, second round, by Baltimore
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Courtney Upshaw](https://commons.wikimedia.org/wiki/Special:FilePath/Courtney_Upshaw_Navy_Stadium_2012_Practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 20 (2014, through Week 7).
+**Tackles:** 23 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Baltimore | 24 | 91 | 7 | 20 | 12 | 8 | 1 | 0 | 2 |
+| 2014 (through Week 8) | Baltimore | 24 | 91 | 8 | 23 | 12 | 11 | 1 | 0 | 2 |
 | 2013 | Baltimore | 23 | 91 | 16 | 93 | 69 | 24 | 6 | 6 | 17 |
-| Career |  |  |  | 23 | 113 | 81 | 32 | 7 | 6 | 19 |
+| Career |  |  |  | 24 | 116 | 81 | 35 | 7 | 6 | 19 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Baltimore | 24 | 91 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Baltimore | 24 | 91 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Baltimore | 23 | 91 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

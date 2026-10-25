@@ -1,10 +1,10 @@
 # Branden Albert
 
-**Miami Dolphins · Offensive tackle · No. 71 · Age 29 · Last game October 19, 2014**
+**Miami Dolphins · Offensive tackle · No. 71 · Age 29 · Last game October 26, 2014**
 
 6' 5", 310 lb · Born November 4, 1984 · Virginia · Drafted in 2008, first round, by Kansas City
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Branden Albert](https://commons.wikimedia.org/wiki/Special:FilePath/Branden_Albert.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 2 (2014, through Week 7).
+**Sacks allowed:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 29 | 71 | 6 | 6 | 399 | 2 | 28 |
+| 2014 (through Week 8) | Miami | 29 | 71 | 7 | 7 | 473 | 2 | 35 |
 | 2013 | Kansas City | 28 | 76 | 16 | N/A | N/A | 1 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 

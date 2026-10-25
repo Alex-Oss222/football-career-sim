@@ -1,10 +1,10 @@
 # Lamar Miller
 
-**Miami Dolphins · Running back · No. 26 · Age 23 · Last game October 19, 2014**
+**Miami Dolphins · Running back · No. 26 · Age 23 · Last game October 26, 2014**
 
 5' 10", 224 lb · Born April 25, 1991 · Miami · Drafted in 2012, fourth round, by Miami
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Lamar Miller](https://commons.wikimedia.org/wiki/Special:FilePath/Lamar_Miller_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 4.8 (2014, through Week 7).
+**Yards per carry:** 4.6 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 23 | 26 | 6 | 105 | 504 | 4.8 | 4 | 60 | 84.0 |
+| 2014 (through Week 8) | Miami | 23 | 26 | 7 | 128 | 585 | 4.6 | 4 | 60 | 83.6 |
 | 2013 | Miami | 22 | 26 | 16 | 280 | 1,224 | 4.4 | 7 | 30 | 76.5 |
-| Career |  |  |  | 22 | 385 | 1,728 | 4.5 | 11 | 60 | 78.5 |
+| Career |  |  |  | 23 | 408 | 1,809 | 4.4 | 11 | 60 | 78.7 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 23 | 26 | 19 | 8 | 67 | 8.4 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Miami | 23 | 26 | 24 | 12 | 132 | 11.0 | 1 | 0 | 0 |
 | 2013 | Miami | 22 | 26 | 66 | 41 | 325 | 7.9 | 1 | 5 | 5 |
 
 ### Playoffs

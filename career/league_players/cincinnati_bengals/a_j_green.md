@@ -1,10 +1,10 @@
 # A.J. Green
 
-**Cincinnati Bengals · Wide receiver · No. 18 · Age 26 · Last game October 19, 2014**
+**Cincinnati Bengals · Wide receiver · No. 18 · Age 26 · Last game October 26, 2014**
 
 6' 4", 207 lb · Born July 31, 1988 · Georgia · Drafted in 2011, first round, by Cincinnati
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![A.J. Green](https://commons.wikimedia.org/wiki/Special:FilePath/A._J._Green_2020.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 6.8 (2014, through Week 7).
+**Yards per target:** 7.1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 26 | 18 | 6 | 47 | 32 | 318 | 9.9 | 0 | 27 | 53.0 | 68.1 |
+| 2014 (through Week 8) | Cincinnati | 26 | 18 | 7 | 54 | 37 | 383 | 10.4 | 0 | 27 | 54.7 | 68.5 |
 | 2013 | Cincinnati | 25 | 18 | 16 | 185 | 118 | 1,363 | 11.6 | 6 | 53 | 85.2 | 63.8 |
-| Career |  |  |  | 22 | 232 | 150 | 1,681 | 11.2 | 6 | 53 | 76.4 | 64.7 |
+| Career |  |  |  | 23 | 239 | 155 | 1,746 | 11.3 | 6 | 53 | 75.9 | 64.9 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 26 | 18 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cincinnati | 26 | 18 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 25 | 18 | 5 | 14 | 0 | 0 | 0 |
 
 ### Playoffs

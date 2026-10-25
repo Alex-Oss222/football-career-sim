@@ -1,10 +1,10 @@
 # Justin Blackmon
 
-**Indianapolis Colts · Wide receiver · Age 24 · Last game October 19, 2014**
+**Indianapolis Colts · Wide receiver · Age 24 · Last game October 26, 2014**
 
 6' 1", 210 lb · Born January 9, 1990 · Oklahoma State · Drafted in 2012, first round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ## Staff assessment
 
@@ -22,18 +22,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 24 | N/A | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | Indianapolis | 24 | N/A | 8 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | Jacksonville | 23 | 14 | 10 | 53 | 32 | 271 | 8.5 | 0 | 29 | 27.1 | 60.4 |
-| Career |  |  |  | 17 | 53 | 32 | 271 | 8.5 | 0 | 29 | 15.9 | 60.4 |
+| Career |  |  |  | 18 | 53 | 32 | 271 | 8.5 | 0 | 29 | 15.1 | 60.4 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 24 | N/A | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 24 | N/A | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 23 | 14 | 1 | 2 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 24 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Indianapolis | 24 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 23 | 14 | 2 | 59 | 29.5 | 1 | 4 | 4.0 |
 
 ### Playoffs

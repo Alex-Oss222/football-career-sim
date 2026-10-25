@@ -1,10 +1,10 @@
 # Isa Abdul-Quddus
 
-**Detroit Lions · Strong safety · No. 42 · Age 25 · Last game October 19, 2014**
+**Detroit Lions · Strong safety · No. 42 · Age 25 · Last game October 26, 2014**
 
 6' 1", 200 lb · Born August 3, 1989 · Fordham
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Isa Abdul-Quddus](https://commons.wikimedia.org/wiki/Special:FilePath/Isa_Abdul-Quddus_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve strong safety.
 
-**Passes defended:** 2 (2014, through Week 7).
+**Passes defended:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 25 | 42 | 6 | 3 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Detroit | 25 | 42 | 6 | 3 | 3 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 25 | 42 | 0 | 0 | 2 | 0 | 0 | 2 |
+| 2014 (through Week 8) | Detroit | 25 | 42 | 0 | 0 | 2 | 0 | 0 | 2 |
 
 ### Playoffs
 

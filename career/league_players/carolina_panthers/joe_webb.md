@@ -1,10 +1,10 @@
 # Joe Webb
 
-**Carolina Panthers · Quarterback · No. 14 · Age 27 · Last game October 19, 2014**
+**Carolina Panthers · Quarterback · No. 14 · Age 27 · Last game October 26, 2014**
 
 6' 4", 230 lb · Born November 14, 1986 · UAB · Drafted in 2010, sixth round, by Minnesota
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Joe Webb](https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Webb_at_Vikings_training_camp_2011_%28cropped%29.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 27 | 14 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Carolina | 27 | 14 | 8 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Minnesota | 26 | 14 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 23 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 24 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 27 | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Carolina | 27 | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Minnesota | 26 | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

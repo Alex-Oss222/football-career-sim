@@ -1,10 +1,10 @@
 # Craig Robertson
 
-**Cleveland Browns · Inside linebacker · No. 53 · Age 26 · Last game October 19, 2014**
+**Cleveland Browns · Inside linebacker · No. 53 · Age 26 · Last game October 26, 2014**
 
 6' 1", 234 lb · Born February 11, 1988 · North Texas
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Craig Robertson](https://commons.wikimedia.org/wiki/Special:FilePath/Craig_Robertson_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting weakside linebacker.
 
-**Tackles:** 18 (2014, through Week 7).
+**Tackles:** 24 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 26 | 53 | 6 | 18 | 11 | 7 | 1 | 1 | 1 |
+| 2014 (through Week 8) | Cleveland | 26 | 53 | 7 | 24 | 16 | 8 | 2 | 1 | 1 |
 | 2013 | Cleveland | 25 | 53 | 16 | 102 | 66 | 36 | 4 | 5 | 8 |
-| Career |  |  |  | 22 | 120 | 77 | 43 | 5 | 6 | 9 |
+| Career |  |  |  | 23 | 126 | 82 | 44 | 6 | 6 | 9 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 26 | 53 | 1 | 14 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 26 | 53 | 1 | 14 | 3 | 0 | 0 | 0 |
 | 2013 | Cleveland | 25 | 53 | 1 | 12 | 6 | 0 | 0 | N/A |
 
 ### Playoffs

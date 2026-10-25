@@ -1,10 +1,10 @@
 # Jon Asamoah
 
-**Atlanta Falcons · Guard · No. 75 · Age 26 · Last game October 19, 2014**
+**Atlanta Falcons · Guard · No. 75 · Age 26 · Last game October 26, 2014**
 
 6' 4", 305 lb · Born July 21, 1988 · Illinois · Drafted in 2010, third round, by Kansas City
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jon Asamoah](https://commons.wikimedia.org/wiki/Special:FilePath/Jon_Asamoah.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 26 | 75 | 6 | 6 | 398 | 3 | 30 |
+| 2014 (through Week 8) | Atlanta | 26 | 75 | 7 | 7 | 455 | 4 | 36 |
 | 2013 | Kansas City | 25 | 73 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

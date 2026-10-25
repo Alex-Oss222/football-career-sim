@@ -4,7 +4,7 @@
 
 Born September 21, 1963, Miami, Florida · Tight end, University of Miami, 1982 to 1985 · Tight end, San Diego Chargers, 1986 to 1995
 
-As of October 26, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Alex Stone](photos/alex_stone.webp)
 
@@ -12,7 +12,7 @@ As of October 26, 2014, after Week 7.
 
 | Current season | Career regular season | Career playoffs | Division standing |
 |---|---|---|---|
-| 4-3 | 26-13 | 2-2 | Second in the AFC South after Week 7 |
+| 4-4 | 26-14 | 2-2 | First in the AFC South after Week 8 |
 
 [Coaching philosophy](Coaching_Profile.md) · [Ownership review](Performance_Reviews.md) · [Current season](../2014/README.md)
 
@@ -40,10 +40,10 @@ Regular season and playoffs; preseason games are not counted.
 
 | Season | Team | Job | Regular season | Pct | Division finish | Playoffs |
 |---|---|---|---:|---:|---|---|
-| 2014 (through Week 7) | Jacksonville | Head coach | 4-3 | .571 | Second in the AFC South after Week 7 | Season in progress |
+| 2014 (through Week 8) | Jacksonville | Head coach | 4-4 | .500 | First in the AFC South after Week 8 | Season in progress |
 | 2013 | Jacksonville | Head coach | 10-6 | .625 | Second in the AFC South | Won the Wild Card game at Kansas City, 38-14; lost the Divisional game at Tennessee, 20-13 |
 | 2012 | New Orleans | Interim head coach | 12-4 | .750 | Second in the NFC South | Won the Wild Card game; lost in the Divisional round |
-| Career |  |  | 26-13 | .667 |  | 2-2 in the playoffs |
+| Career |  |  | 26-14 | .650 |  | 2-2 in the playoffs |
 
 ## Awards
 

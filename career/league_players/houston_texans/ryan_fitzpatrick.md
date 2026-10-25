@@ -1,10 +1,10 @@
 # Ryan Fitzpatrick
 
-**Houston Texans · Quarterback · No. 14 · Age 31 · Last game October 20, 2014**
+**Houston Texans · Quarterback · No. 14 · Age 31 · Last game October 26, 2014**
 
 6' 2", 223 lb · Born November 24, 1982 · Harvard · Drafted in 2005, seventh round, by St. Louis
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Ryan Fitzpatrick](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Fitzpatrick_2021_-_2_%28cropped%29_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 93.2 (2014, through Week 7).
+**Passer rating:** 95.4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 31 | 14 | 7 | 139 | 217 | 64.1 | 1,647 | 7.6 | 235.3 | 14 | 8 | 93.2 |
+| 2014 (through Week 8) | Houston | 31 | 14 | 8 | 172 | 263 | 65.4 | 2,069 | 7.9 | 258.6 | 16 | 9 | 95.4 |
 | 2013 | Tennessee | 30 | 4 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 23 | 139 | 217 | 64.1 | 1,647 | 7.6 | 71.6 | 14 | 8 | 93.2 |
+| Career |  |  |  | 24 | 172 | 263 | 65.4 | 2,069 | 7.9 | 86.2 | 16 | 9 | 95.4 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 31 | 14 | 11 | 71 | 29 | 127 | 1 | 3 | 1 |
+| 2014 (through Week 8) | Houston | 31 | 14 | 13 | 83 | 31 | 149 | 1 | 4 | 1 |
 | 2013 | Tennessee | 30 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

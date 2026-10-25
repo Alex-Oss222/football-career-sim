@@ -4,15 +4,15 @@
 
 Born March 28, 1992 · Texas · Undrafted
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
-**Passes defended:** 0 (2014, through Week 7).
+**Passes defended:** 0 (2014, through Week 8).
 
 ## Staff assessment
 
-Adrian Phillips is an undrafted rookie safety who moved from the practice squad to the active roster after Dwight Lowery went to reserve/injured, and he has been active for six games. He has a physical tackling style and coverage-unit experience from Texas. Range on the back end is the question.
+Adrian Phillips is an undrafted rookie safety who moved from the practice squad to the active roster after Dwight Lowery went to reserve/injured, and he has been active for seven games. He has a physical tackling style and coverage-unit experience from Texas. Range on the back end is the question.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -30,11 +30,11 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 22 | N/A | 6 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Jacksonville | 22 | N/A | 7 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Jacksonville | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

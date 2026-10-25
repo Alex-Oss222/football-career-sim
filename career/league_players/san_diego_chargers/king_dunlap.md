@@ -1,10 +1,10 @@
 # King Dunlap
 
-**San Diego Chargers · Offensive tackle · No. 77 · Age 29 · Last game October 19, 2014**
+**San Diego Chargers · Offensive tackle · No. 77 · Age 29 · Last game October 23, 2014**
 
 6' 9", 330 lb · Born September 14, 1985 · Auburn · Drafted in 2008, seventh round, by Philadelphia
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![King Dunlap](https://commons.wikimedia.org/wiki/Special:FilePath/King-Dunlap_August-2010.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 9 (2014, through Week 7).
+**Sacks allowed:** 9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 28 | 77 | 7 | 7 | 460 | 9 | 32 |
+| 2014 (through Week 8) | San Diego | 28 | 77 | 8 | 8 | 536 | 9 | 40 |
 | 2013 | San Diego | 27 | 77 | 16 | N/A | N/A | 2 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 11 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 11 | N/A |
 
 ### Playoffs
 

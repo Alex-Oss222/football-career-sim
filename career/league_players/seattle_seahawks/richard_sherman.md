@@ -1,10 +1,10 @@
 # Richard Sherman
 
-**Seattle Seahawks · Cornerback · No. 25 · Age 26 · Last game October 19, 2014**
+**Seattle Seahawks · Cornerback · No. 25 · Age 26 · Last game October 26, 2014**
 
 6' 3", 195 lb · Born March 30, 1988 · Stanford · Drafted in 2011, fifth round, by Seattle
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Richard Sherman](https://commons.wikimedia.org/wiki/Special:FilePath/Richard_Sherman_TNF_DEC2023_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 6 (2014, through Week 7).
+**Passes defended:** 6 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 26 | 25 | 5 | 40 | 25 | 15 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Seattle | 26 | 25 | 6 | 48 | 32 | 16 | 0 | 0 | 0 |
 | 2013 | Seattle | 25 | 25 | 16 | 78 | 51 | 27 | 1 | 0 | 1 |
-| Career |  |  |  | 21 | 118 | 76 | 42 | 1 | 0 | 1 |
+| Career |  |  |  | 22 | 126 | 83 | 43 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 26 | 25 | 1 | 34 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Seattle | 26 | 25 | 1 | 34 | 6 | 0 | 0 | 0 |
 | 2013 | Seattle | 25 | 25 | 4 | 6 | 13 | 0 | 0 | N/A |
 
 ### Playoffs

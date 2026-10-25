@@ -1,10 +1,10 @@
 # George Selvie
 
-**Dallas Cowboys · Defensive end · No. 99 · Age 27 · Last game October 19, 2014**
+**Dallas Cowboys · Defensive end · No. 99 · Age 27 · Last game October 27, 2014**
 
 6' 4", 270 lb · Born March 6, 1987 · University of South Florida · Drafted in 2010, seventh round, by St. Louis
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![George Selvie](https://commons.wikimedia.org/wiki/Special:FilePath/George_Selvie.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 3 (2014, through Week 7).
+**Sacks:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 27 | 99 | 7 | 21 | 15 | 6 | 3 | 3 | 5 |
+| 2014 (through Week 8) | Dallas | 27 | 99 | 8 | 22 | 16 | 6 | 4 | 3 | 5 |
 | 2013 | Dallas | 26 | 99 | 16 | 15 | 12 | 3 | 0 | 1 | 2 |
-| Career |  |  |  | 23 | 36 | 27 | 9 | 3 | 4 | 7 |
+| Career |  |  |  | 24 | 37 | 28 | 9 | 4 | 4 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 27 | 99 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Dallas | 27 | 99 | 0 | 0 | 1 | 1 | 0 | 0 |
 | 2013 | Dallas | 26 | 99 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

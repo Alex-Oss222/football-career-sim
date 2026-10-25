@@ -1,10 +1,10 @@
 # Brandon Gibson
 
-**Miami Dolphins · Wide receiver · No. 10 · Age 27 · Last game October 19, 2014**
+**Miami Dolphins · Wide receiver · No. 10 · Age 27 · Last game October 26, 2014**
 
 6' 0", 210 lb · Born August 13, 1987 · Washington State · Drafted in 2009, sixth round, by Philadelphia
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brandon Gibson](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Gibson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 8.6 (2014, through Week 7).
+**Yards per target:** 9.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 27 | 10 | 6 | 66 | 43 | 568 | 13.2 | 3 | 35 | 94.7 | 65.2 |
+| 2014 (through Week 8) | Miami | 27 | 10 | 7 | 76 | 52 | 681 | 13.1 | 3 | 35 | 97.3 | 68.4 |
 | 2013 | Miami | 26 | 10 | 16 | 72 | 44 | 568 | 12.9 | 6 | 75 | 35.5 | 61.1 |
-| Career |  |  |  | 22 | 138 | 87 | 1,136 | 13.1 | 9 | 75 | 51.6 | 63.0 |
+| Career |  |  |  | 23 | 148 | 96 | 1,249 | 13.0 | 9 | 75 | 54.3 | 64.9 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 27 | 10 | 2 | -5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Miami | 27 | 10 | 2 | -5 | 0 | 1 | 0 |
 | 2013 | Miami | 26 | 10 | 2 | 4 | 0 | 1 | 1 |
 
 ### Playoffs

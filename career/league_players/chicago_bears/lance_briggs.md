@@ -1,10 +1,10 @@
 # Lance Briggs
 
-**Chicago Bears · Outside linebacker · No. 55 · Age 33 · Last game October 19, 2014**
+**Chicago Bears · Outside linebacker · No. 55 · Age 33 · Last game October 26, 2014**
 
 6' 1", 244 lb · Born November 12, 1980 · Arizona · Drafted in 2003, third round, by Chicago
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Lance Briggs](https://commons.wikimedia.org/wiki/Special:FilePath/Lance_Briggs.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting weakside linebacker.
 
-**Tackles:** 39 (2014, through Week 7).
+**Tackles:** 43 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 33 | 55 | 6 | 39 | 23 | 16 | 4 | 0 | 1 |
+| 2014 (through Week 8) | Chicago | 33 | 55 | 7 | 43 | 26 | 17 | 5 | 0 | 3 |
 | 2013 | Chicago | 32 | 55 | 16 | 150 | 102 | 48 | 8 | 7 | 13 |
-| Career |  |  |  | 22 | 189 | 125 | 64 | 12 | 7 | 14 |
+| Career |  |  |  | 23 | 193 | 128 | 65 | 13 | 7 | 16 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 33 | 55 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 33 | 55 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Chicago | 32 | 55 | 3 | 23 | 7 | 0 | 0 | N/A |
 
 ### Playoffs

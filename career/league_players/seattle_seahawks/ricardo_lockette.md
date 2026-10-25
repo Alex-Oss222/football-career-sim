@@ -1,10 +1,10 @@
 # Ricardo Lockette
 
-**Seattle Seahawks · Wide receiver · No. 83 · Age 28 · Last game October 19, 2014**
+**Seattle Seahawks · Wide receiver · No. 83 · Age 28 · Last game October 26, 2014**
 
 6' 2", 211 lb · Born May 21, 1986 · Fort Valley State College; Wallace State CC AL (J.C.)
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Ricardo Lockette](https://commons.wikimedia.org/wiki/Special:FilePath/Ricardo_Lockette.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 13.1 (2014, through Week 7).
+**Yards per target:** 12.2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 28 | 83 | 6 | 14 | 10 | 183 | 18.3 | 0 | 48 | 30.5 | 71.4 |
+| 2014 (through Week 8) | Seattle | 28 | 83 | 7 | 16 | 11 | 195 | 17.7 | 0 | 48 | 27.9 | 68.8 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 28 | 83 | 1 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Seattle | 28 | 83 | 2 | 8 | 0 | 0 | 0 |
 
 ### Playoffs
 

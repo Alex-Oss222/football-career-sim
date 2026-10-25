@@ -1,10 +1,10 @@
 # Anthony Sherman
 
-**Kansas City Chiefs · Fullback · No. 42 · Age 25 · Last game October 19, 2014**
+**Kansas City Chiefs · Fullback · No. 42 · Age 25 · Last game October 26, 2014**
 
 5' 10", 242 lb · Born December 11, 1988 · Connecticut · Drafted in 2011, fifth round, by Arizona
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Anthony Sherman](https://commons.wikimedia.org/wiki/Special:FilePath/Anthony_Sherman_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 2.0 (2014, through Week 7).
+**Yards per carry:** 2.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 25 | 42 | 6 | 3 | 6 | 2.0 | 0 | 6 | 1.0 |
+| 2014 (through Week 8) | Kansas City | 25 | 42 | 7 | 3 | 6 | 2.0 | 0 | 6 | 0.9 |
 | 2013 | Kansas City | 24 | 42 | 16 | 7 | 39 | 5.6 | 0 | 13 | 2.4 |
-| Career |  |  |  | 22 | 10 | 45 | 4.5 | 0 | 13 | 2.0 |
+| Career |  |  |  | 23 | 10 | 45 | 4.5 | 0 | 13 | 2.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 25 | 42 | 2 | 2 | 25 | 12.5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Kansas City | 25 | 42 | 2 | 2 | 25 | 12.5 | 0 | 0 | 0 |
 | 2013 | Kansas City | 24 | 42 | 15 | 11 | 133 | 12.1 | 1 | 0 | 0 |
 
 ### Playoffs

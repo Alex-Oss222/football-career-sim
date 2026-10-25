@@ -1,10 +1,10 @@
 # Montee Ball
 
-**Denver Broncos · Running back · No. 28 · Age 23 · Last game October 19, 2014**
+**Denver Broncos · Running back · No. 28 · Age 23 · Last game October 23, 2014**
 
 5' 10", 215 lb · Born December 5, 1990 · Wisconsin
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Montee Ball](https://commons.wikimedia.org/wiki/Special:FilePath/Montee_Ball.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 4.7 (2014, through Week 7).
+**Yards per carry:** 5.3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 23 | 28 | 6 | 107 | 500 | 4.7 | 6 | 23 | 83.3 |
+| 2014 (through Week 8) | Denver | 23 | 28 | 7 | 129 | 682 | 5.3 | 6 | 55 | 97.4 |
 | 2013 | Denver | 22 | 28 | 16 | 72 | 338 | 4.7 | 1 | 20 | 21.1 |
-| Career |  |  |  | 22 | 179 | 838 | 4.7 | 7 | 23 | 38.1 |
+| Career |  |  |  | 23 | 201 | 1,020 | 5.1 | 7 | 55 | 44.3 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 23 | 28 | 20 | 14 | 175 | 12.5 | 0 | 1 | 0 |
+| 2014 (through Week 8) | Denver | 23 | 28 | 22 | 16 | 186 | 11.6 | 0 | 2 | 1 |
 | 2013 | Denver | 22 | 28 | 15 | 12 | 108 | 9.0 | 2 | 0 | 0 |
 
 ### Playoffs

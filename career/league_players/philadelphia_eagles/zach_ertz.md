@@ -1,10 +1,10 @@
 # Zach Ertz
 
-**Philadelphia Eagles · Tight end · No. 86 · Age 23 · Last game October 12, 2014**
+**Philadelphia Eagles · Tight end · No. 86 · Age 23 · Last game October 26, 2014**
 
 6' 5", 250 lb · Born November 10, 1990 · Stanford
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Zach Ertz](https://commons.wikimedia.org/wiki/Special:FilePath/2025_Zach_Ertz_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 13.7 (2014, through Week 6).
+**Yards per target:** 13.9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 23 | 86 | 6 | 13 | 13 | 178 | 13.7 | 0 | 43 | 29.7 | 100.0 |
+| 2014 (through Week 8) | Philadelphia | 23 | 86 | 7 | 15 | 15 | 209 | 13.9 | 0 | 43 | 29.9 | 100.0 |
 | 2013 | Philadelphia | 22 | 86 | 16 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
-| Career |  |  |  | 22 | 13 | 13 | 178 | 13.7 | 0 | 43 | 8.1 | 100.0 |
+| Career |  |  |  | 23 | 15 | 15 | 209 | 13.9 | 0 | 43 | 9.1 | 100.0 |
 
 ### Playoffs
 

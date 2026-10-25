@@ -1,10 +1,10 @@
 # Peyton Manning
 
-**Denver Broncos · Quarterback · No. 18 · Age 38 · Last game October 19, 2014**
+**Denver Broncos · Quarterback · No. 18 · Age 38 · Last game October 23, 2014**
 
 6' 5", 230 lb · Born March 24, 1976 · Tennessee · Drafted in 1998, first round, by Indianapolis
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Peyton Manning](https://commons.wikimedia.org/wiki/Special:FilePath/Peyton_Manning_%2851665689271%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 100.1 (2014, through Week 7).
+**Passer rating:** 100.1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 38 | 18 | 6 | 132 | 197 | 67.0 | 1,533 | 7.8 | 255.5 | 7 | 1 | 100.1 |
+| 2014 (through Week 8) | Denver | 38 | 18 | 6 | 132 | 197 | 67.0 | 1,533 | 7.8 | 255.5 | 7 | 1 | 100.1 |
 | 2013 | Denver | 37 | 18 | 16 | 359 | 562 | 63.9 | 3,846 | 6.8 | 240.4 | 27 | 12 | 90.9 |
 | Career |  |  |  | 22 | 491 | 759 | 64.7 | 5,379 | 7.1 | 244.5 | 34 | 13 | 93.3 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 38 | 18 | 6 | 43 | 19 | 44 | 0 | 1 | 0 |
+| 2014 (through Week 8) | Denver | 38 | 18 | 6 | 43 | 19 | 44 | 0 | 1 | 0 |
 | 2013 | Denver | 37 | 18 | 29 | 193 | 35 | 121 | 1 | 2 | 2 |
 
 ### Playoffs

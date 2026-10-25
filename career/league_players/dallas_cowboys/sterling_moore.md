@@ -1,10 +1,10 @@
 # Sterling Moore
 
-**Dallas Cowboys · Cornerback · No. 26 · Age 24 · Last game October 19, 2014**
+**Dallas Cowboys · Cornerback · No. 26 · Age 24 · Last game October 27, 2014**
 
 5' 10", 202 lb · Born February 3, 1990 · SMU; Laney College
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Sterling Moore](https://commons.wikimedia.org/wiki/Special:FilePath/Sterling_Moore.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 2 (2014, through Week 7).
+**Passes defended:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 24 | 26 | 7 | 11 | 8 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Dallas | 24 | 26 | 8 | 11 | 8 | 3 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 24 | 26 | 1 | 70 | 2 | 0 | 0 | 4 |
+| 2014 (through Week 8) | Dallas | 24 | 26 | 1 | 70 | 2 | 0 | 0 | 5 |
 
 ### Playoffs
 

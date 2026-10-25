@@ -1,10 +1,10 @@
 # Matt Overton
 
-**Indianapolis Colts · Long snapper · No. 45 · Age 29 · Last game October 19, 2014**
+**Indianapolis Colts · Long snapper · No. 45 · Age 29 · Last game October 26, 2014**
 
 6' 1", 242 lb · Born July 6, 1985 · Western Washington University; Diablo Valley College
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Matt Overton](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Overton.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 59 (2014, through Week 7).
+**Long snaps:** 65 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 29 | 45 | 7 | 59 | 59 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 29 | 45 | 8 | 65 | 65 | 0 | 0 |
 | 2013 | Indianapolis | 28 | 45 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 24 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

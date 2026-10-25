@@ -1,10 +1,10 @@
 # Loucheiz Purifoy
 
-**Indianapolis Colts · Cornerback · No. 23 · Age 21 · Last game October 19, 2014**
+**Indianapolis Colts · Cornerback · No. 23 · Age 21 · Last game October 26, 2014**
 
 5' 11", 188 lb · Born December 16, 1992 · Florida
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Loucheiz Purifoy](https://commons.wikimedia.org/wiki/Special:FilePath/Loucheiz_Purifoy.JPG?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 21 | 23 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 21 | 23 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 21 | 23 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Indianapolis | 21 | 23 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

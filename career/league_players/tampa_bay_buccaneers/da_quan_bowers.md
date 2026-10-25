@@ -1,10 +1,10 @@
 # Da'Quan Bowers
 
-**Tampa Bay Buccaneers · Defensive tackle · No. 91 · Age 24 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Defensive tackle · No. 91 · Age 24 · Last game October 26, 2014**
 
 6' 4", 288 lb · Born February 23, 1990 · Clemson · Drafted in 2011, second round, by Tampa Bay
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Da'Quan Bowers](https://commons.wikimedia.org/wiki/Special:FilePath/Da%27Quan_Bowers.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 1 (2014, through Week 6).
+**Sacks:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 24 | 91 | 5 | 7 | 5 | 2 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Tampa Bay | 24 | 91 | 6 | 10 | 7 | 3 | 1 | 1 | 2 |
 | 2013 | Tampa Bay | 23 | 91 | 9 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 14 | 7 | 5 | 2 | 0 | 1 | 1 |
+| Career |  |  |  | 15 | 10 | 7 | 3 | 1 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 24 | 91 | 0 | 0 | 0 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 24 | 91 | 0 | 0 | 0 | 1 | 0 | 0 |
 | 2013 | Tampa Bay | 23 | 91 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

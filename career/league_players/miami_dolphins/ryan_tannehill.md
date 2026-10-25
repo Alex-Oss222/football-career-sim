@@ -1,10 +1,10 @@
 # Ryan Tannehill
 
-**Miami Dolphins · Quarterback · No. 17 · Age 26 · Last game October 19, 2014**
+**Miami Dolphins · Quarterback · No. 17 · Age 26 · Last game October 26, 2014**
 
 6' 4", 220 lb · Born July 27, 1988 · Texas A&M · Drafted in 2012, first round, by Miami
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Ryan Tannehill](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Tannehill_vs_Iowa_State_2011.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 79.7 (2014, through Week 7).
+**Passer rating:** 84.5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 26 | 17 | 6 | 134 | 215 | 62.3 | 1,463 | 6.8 | 243.8 | 7 | 7 | 79.7 |
+| 2014 (through Week 8) | Miami | 26 | 17 | 7 | 159 | 251 | 63.3 | 1,784 | 7.1 | 254.9 | 10 | 8 | 84.5 |
 | 2013 | Miami | 25 | 17 | 16 | 339 | 560 | 60.5 | 3,591 | 6.4 | 224.4 | 23 | 21 | 77.3 |
-| Career |  |  |  | 22 | 473 | 775 | 61.0 | 5,054 | 6.5 | 229.7 | 30 | 28 | 78.0 |
+| Career |  |  |  | 23 | 498 | 811 | 61.4 | 5,375 | 6.6 | 233.7 | 33 | 29 | 79.5 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 26 | 17 | 9 | 61 | 16 | 45 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Miami | 26 | 17 | 12 | 80 | 18 | 64 | 0 | 0 | 0 |
 | 2013 | Miami | 25 | 17 | 29 | 185 | 43 | 129 | 0 | 0 | 0 |
 
 ### Playoffs

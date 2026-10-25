@@ -1,10 +1,10 @@
 # Adam Vinatieri
 
-**Indianapolis Colts · Kicker · No. 4 · Age 41 · Last game October 19, 2014**
+**Indianapolis Colts · Kicker · No. 4 · Age 41 · Last game October 26, 2014**
 
 6' 0", 209 lb · Born December 28, 1972 · South Dakota State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Adam Vinatieri](https://commons.wikimedia.org/wiki/Special:FilePath/Vinatieri%2C_Adam_%28USAF%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 84.6 (2014, through Week 7).
+**Field-goal percentage:** 85.7 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 41 | 4 | 7 | 11 | 13 | 84.6 | 61 | 17 | 17 | 100.0 | 50 |
+| 2014 (through Week 8) | Indianapolis | 41 | 4 | 8 | 12 | 14 | 85.7 | 61 | 18 | 18 | 100.0 | 54 |
 | 2013 | Indianapolis | 40 | 4 | 16 | 29 | 33 | 87.9 | N/A | 33 | 33 | 100.0 | 120 |
-| Career |  |  |  | 23 | 40 | 46 | 87.0 | N/A | 50 | 50 | 100.0 | 170 |
+| Career |  |  |  | 24 | 41 | 47 | 87.2 | N/A | 51 | 51 | 100.0 | 174 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 41 | 4 | 6-6 | 2-2 | 3-5 |
+| 2014 (through Week 8) | Indianapolis | 41 | 4 | 6-6 | 3-3 | 3-5 |
 | 2013 | Indianapolis | 40 | 4 | N/A | N/A | N/A |
 
 ### Playoffs

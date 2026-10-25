@@ -1,10 +1,10 @@
 # Terrance Knighton
 
-**Denver Broncos · Nose tackle · No. 98 · Age 28 · Last game October 19, 2014**
+**Denver Broncos · Nose tackle · No. 98 · Age 28 · Last game October 23, 2014**
 
 6' 3", 331 lb · Born July 4, 1986 · Temple · Drafted in 2009, third round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Terrance Knighton](https://commons.wikimedia.org/wiki/Special:FilePath/Terrance_Knighton.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting nose tackle.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 28 | 98 | 6 | 11 | 6 | 5 | 2 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 28 | 98 | 7 | 11 | 6 | 5 | 2 | 0 | 0 |
 | 2013 | Denver | 27 | 94 | 15 | 29 | 21 | 8 | 3 | 2 | 7 |
-| Career |  |  |  | 21 | 40 | 27 | 13 | 5 | 2 | 7 |
+| Career |  |  |  | 22 | 40 | 27 | 13 | 5 | 2 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 28 | 98 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 28 | 98 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Denver | 27 | 94 | 0 | 0 | 2 | 1 | 1 | N/A |
 
 ### Playoffs

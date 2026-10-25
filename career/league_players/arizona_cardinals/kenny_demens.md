@@ -1,10 +1,10 @@
 # Kenny Demens
 
-**Arizona Cardinals · Inside linebacker · No. 54 · Age 24 · Last game October 19, 2014**
+**Arizona Cardinals · Inside linebacker · No. 54 · Age 24 · Last game October 26, 2014**
 
 6' 1", 242 lb · Born February 4, 1990 · Michigan
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Kenny Demens](https://commons.wikimedia.org/wiki/Special:FilePath/Kenny_Demens_%282012-09-15%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve inside linebacker.
 
-**Tackles:** 5 (2014, through Week 7).
+**Tackles:** 7 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 24 | 54 | 6 | 5 | 4 | 1 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Arizona | 24 | 54 | 7 | 7 | 5 | 2 | 0 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 24 | 54 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Arizona | 24 | 54 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Sealver Siliga
 
-**New England Patriots · Defensive tackle · No. 96 · Age 24 · Last game October 16, 2014**
+**New England Patriots · Defensive tackle · No. 96 · Age 24 · Last game October 26, 2014**
 
 6' 2", 325 lb · Born April 26, 1990 · Utah
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Sealver Siliga](https://commons.wikimedia.org/wiki/Special:FilePath/Sealver_Siliga.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 24 | 96 | 7 | 2 | 2 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 24 | 96 | 8 | 3 | 3 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 24 | 96 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 24 | 96 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

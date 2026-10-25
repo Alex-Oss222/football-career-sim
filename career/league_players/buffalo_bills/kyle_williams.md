@@ -1,10 +1,10 @@
 # Kyle Williams
 
-**Buffalo Bills · Defensive tackle · No. 95 · Age 31 · Last game October 19, 2014**
+**Buffalo Bills · Defensive tackle · No. 95 · Age 31 · Last game October 26, 2014**
 
 6' 1", 303 lb · Born June 10, 1983 · LSU · Drafted in 2006, fifth round, by Buffalo
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Kyle Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Kyle_Williams_%28defensive_tackle%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 2 (2014, through Week 7).
+**Sacks:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 31 | 95 | 7 | 14 | 8 | 6 | 2 | 2 | 4 |
+| 2014 (through Week 8) | Buffalo | 31 | 95 | 8 | 16 | 9 | 7 | 3 | 2 | 4 |
 | 2013 | Buffalo | 30 | 95 | 16 | 81 | 57 | 24 | 10 | 5 | 8 |
-| Career |  |  |  | 23 | 95 | 65 | 30 | 12 | 7 | 12 |
+| Career |  |  |  | 24 | 97 | 66 | 31 | 13 | 7 | 12 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 31 | 95 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Buffalo | 31 | 95 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Buffalo | 30 | 95 | 1 | 24 | 3 | 1 | 1 | N/A |
 
 ### Playoffs

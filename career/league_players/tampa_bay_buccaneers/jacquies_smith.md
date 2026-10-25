@@ -1,10 +1,10 @@
-# Darryl Sharpton
+# Jacquies Smith
 
-**Houston Texans · Middle linebacker · Age 25 · Last game December 29, 2013**
+**Tampa Bay Buccaneers · Defensive end · No. 56 · Age 24 · Last game October 26, 2014**
 
-5' 11", 235 lb · Born January 1, 1988 · Miami · Drafted in 2010, fourth round, by Houston
+6' 2", 260 lb · Born March 18, 1990 · Missouri
 
-As of December 29, 2013, after Week 17.
+As of October 26, 2014, after Week 8.
 
 ## Contract
 
@@ -16,11 +16,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston | 25 | 51 | 15 | 9 | 6 | 3 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Buffalo, Tampa Bay | 24 | 56 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2013 | Houston | 25 | 51 | 0 | 0 | 0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Buffalo, Tampa Bay | 24 | 56 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
@@ -32,8 +32,6 @@ None.
 
 ## Transactions
 
-| Date | Transaction |
-|---|---|
-| 2010 | Drafted by Houston in the fourth round |
+None on record.
 
 <!-- player-page -->

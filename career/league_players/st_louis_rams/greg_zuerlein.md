@@ -1,10 +1,10 @@
 # Greg Zuerlein
 
-**St. Louis Rams · Kicker · No. 4 · Age 26 · Last game October 19, 2014**
+**St. Louis Rams · Kicker · No. 4 · Age 26 · Last game October 26, 2014**
 
 6' 0", 196 lb · Born December 27, 1987 · Missouri Western; Nebraska-Omaha · Drafted in 2012, sixth round, by St. Louis
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Greg Zuerlein](https://commons.wikimedia.org/wiki/Special:FilePath/Cowboys_K_Greg_Zuerlein_%2850530256403%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 90.9 (2014, through Week 7).
+**Field-goal percentage:** 93.3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 26 | 4 | 6 | 10 | 11 | 90.9 | 56 | 13 | 14 | 92.9 | 43 |
+| 2014 (through Week 8) | St. Louis | 26 | 4 | 7 | 14 | 15 | 93.3 | 56 | 16 | 17 | 94.1 | 58 |
 | 2013 | St. Louis | 25 | 4 | 16 | 23 | 24 | 95.8 | N/A | 47 | 47 | 100.0 | 116 |
-| Career |  |  |  | 22 | 33 | 35 | 94.3 | N/A | 60 | 61 | 98.4 | 159 |
+| Career |  |  |  | 23 | 37 | 39 | 94.9 | N/A | 63 | 64 | 98.4 | 174 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 26 | 4 | 2-2 | 4-5 | 4-4 |
+| 2014 (through Week 8) | St. Louis | 26 | 4 | 6-6 | 4-5 | 4-4 |
 | 2013 | St. Louis | 25 | 4 | N/A | N/A | N/A |
 
 ### Playoffs

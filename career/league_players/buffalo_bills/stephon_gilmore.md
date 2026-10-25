@@ -1,10 +1,10 @@
 # Stephon Gilmore
 
-**Buffalo Bills · Cornerback · No. 24 · Age 24 · Last game October 19, 2014**
+**Buffalo Bills · Cornerback · No. 24 · Age 24 · Last game October 26, 2014**
 
 6' 1", 190 lb · Born September 19, 1990 · South Carolina · Drafted in 2012, first round, by Buffalo
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Stephon Gilmore](https://commons.wikimedia.org/wiki/Special:FilePath/Stephon_Gilmore_2015_%28cropped%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 4 (2014, through Week 7).
+**Passes defended:** 5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 23 | 24 | 7 | 34 | 20 | 14 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Buffalo | 23 | 24 | 8 | 41 | 24 | 17 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 23 | 24 | 0 | 0 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Buffalo | 23 | 24 | 0 | 0 | 5 | 0 | 0 | 0 |
 
 ### Playoffs
 

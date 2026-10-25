@@ -1,10 +1,10 @@
 # Josh Boyd
 
-**Green Bay Packers · Defensive tackle · No. 93 · Age 25 · Last game October 19, 2014**
+**Green Bay Packers · Defensive tackle · No. 93 · Age 25 · Last game October 26, 2014**
 
 6' 3", 310 lb · Born August 3, 1989 · Mississippi State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Josh Boyd](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Boyd.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Green Bay | 25 | 93 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Green Bay | 25 | 93 | 8 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Green Bay | 24 | 93 | 16 | 18 | 10 | 8 | 2 | 1 | 1 |
-| Career |  |  |  | 23 | 18 | 10 | 8 | 2 | 1 | 1 |
+| Career |  |  |  | 24 | 18 | 10 | 8 | 2 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Green Bay | 25 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Green Bay | 25 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Green Bay | 24 | 93 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

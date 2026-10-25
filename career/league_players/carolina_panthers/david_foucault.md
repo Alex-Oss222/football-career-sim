@@ -1,10 +1,10 @@
 # David Foucault
 
-**Carolina Panthers · Offensive tackle · No. 63 · Age 25 · Last game October 19, 2014**
+**Carolina Panthers · Offensive tackle · No. 63 · Age 25 · Last game October 26, 2014**
 
 6' 8", 305 lb · Born January 7, 1989 · Montreal
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![David Foucault](https://commons.wikimedia.org/wiki/Special:FilePath/2019%2C_68%2C_David_Foucault.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 25 | 63 | 5 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Carolina | 25 | 63 | 5 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

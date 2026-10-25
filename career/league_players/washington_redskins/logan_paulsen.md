@@ -1,10 +1,10 @@
 # Logan Paulsen
 
-**Washington Redskins · Tight end · No. 82 · Age 27 · Last game October 19, 2014**
+**Washington Redskins · Tight end · No. 82 · Age 27 · Last game October 27, 2014**
 
 6' 5", 261 lb · Born February 26, 1987 · UCLA
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Logan Paulsen](https://commons.wikimedia.org/wiki/Special:FilePath/Logan_Paulsen.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 4.2 (2014, through Week 7).
+**Yards per target:** 4.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 27 | 82 | 7 | 17 | 10 | 72 | 7.2 | 2 | 20 | 10.3 | 58.8 |
+| 2014 (through Week 8) | Washington | 27 | 82 | 8 | 18 | 10 | 72 | 7.2 | 2 | 20 | 9.0 | 55.6 |
 | 2013 | Washington | 26 | 82 | 11 | 23 | 16 | 146 | 9.1 | 1 | 44 | 13.3 | 69.6 |
-| Career |  |  |  | 18 | 40 | 26 | 218 | 8.4 | 3 | 44 | 12.1 | 65.0 |
+| Career |  |  |  | 19 | 41 | 26 | 218 | 8.4 | 3 | 44 | 11.5 | 63.4 |
 
 ### Playoffs
 

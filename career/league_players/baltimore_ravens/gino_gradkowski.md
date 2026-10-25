@@ -1,10 +1,10 @@
 # Gino Gradkowski
 
-**Baltimore Ravens · Center · No. 66 · Age 25 · Last game October 19, 2014**
+**Baltimore Ravens · Center · No. 66 · Age 25 · Last game October 26, 2014**
 
 6' 3", 300 lb · Born November 5, 1988 · Delaware · Drafted in 2012, fourth round, by Baltimore
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Gino Gradkowski](https://commons.wikimedia.org/wiki/Special:FilePath/Gino_Gradkowski_2013.JPG?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Baltimore | 25 | 66 | 7 | 0 | 0 | 0 | 41 |
+| 2014 (through Week 8) | Baltimore | 25 | 66 | 8 | 0 | 0 | 0 | 45 |
 | 2013 | Baltimore | 24 | 66 | 16 | N/A | N/A | 10 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 10 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

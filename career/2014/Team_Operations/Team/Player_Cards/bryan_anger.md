@@ -4,7 +4,7 @@
 
 6' 3", 202 lb · Born October 6, 1988 · California · Drafted in 2012, third round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Bryan Anger](https://commons.wikimedia.org/wiki/Special:FilePath/Bryan_Anger_punts_at_2008_Emerald_Bowl.JPG?width=500)
 
@@ -12,13 +12,13 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 38.8 (2014, through Week 7).
+**Net punting average:** 39.6 (2014, through Week 8).
 
 ## Staff assessment
 
-Bryan Anger has been a viable NFL starting punter for Jacksonville. He was active for all 16 regular-season games in 2013, punting 69 times, and he has 33 punts in seven games in 2014. His best weapon is a strong leg for distance, with useful hang time and operation, and in camp he put the recorded situational punts to the side the staff called for. Directional punting and control in plus territory are less developed than his leg.
+Bryan Anger has been a viable NFL starting punter for Jacksonville. He was active for all 16 regular-season games in 2013, punting 69 times, and he has 38 punts in eight games in 2014. His best weapon is a strong leg for distance, with useful hang time and operation, and in camp he put the recorded situational punts to the side the staff called for. Directional punting and control in plus territory are less developed than his leg.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -35,9 +35,9 @@ Four-year contract through 2015.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 25 | 19 | 7 | 33 | 1,517 | 46.0 | 38.8 | 13 | 4 | 64 |
+| 2014 (through Week 8) | Jacksonville | 25 | 19 | 8 | 38 | 1,770 | 46.6 | 39.6 | 13 | 5 | 64 |
 | 2013 | Jacksonville | 24 | 19 | 16 | 69 | 3,116 | 45.2 | 39.5 | 27 | 5 | 68 |
-| With Jacksonville |  |  |  | 23 | 102 | 4,633 | 45.4 | 39.3 | 40 | 9 | 68 |
+| With Jacksonville |  |  |  | 24 | 107 | 4,886 | 45.7 | 39.5 | 40 | 10 | 68 |
 
 ### Playoffs
 

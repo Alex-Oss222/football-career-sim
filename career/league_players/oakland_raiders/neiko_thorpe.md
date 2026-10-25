@@ -1,10 +1,10 @@
 # Neiko Thorpe
 
-**Oakland Raiders · Cornerback · No. 31 · Age 24 · Last game October 19, 2014**
+**Oakland Raiders · Cornerback · No. 31 · Age 24 · Last game October 26, 2014**
 
 6' 1", 200 lb · Born February 11, 1990 · Auburn
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Neiko Thorpe](https://commons.wikimedia.org/wiki/Special:FilePath/Neiko_Thorpe.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 0 (2014, through Week 7).
+**Passes defended:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 24 | 31 | 6 | 10 | 9 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Oakland | 24 | 31 | 7 | 12 | 9 | 3 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 24 | 31 | 0 | 0 | 0 | 1 | 0 | 4 |
+| 2014 (through Week 8) | Oakland | 24 | 31 | 0 | 0 | 0 | 1 | 0 | 4 |
 
 ### Playoffs
 

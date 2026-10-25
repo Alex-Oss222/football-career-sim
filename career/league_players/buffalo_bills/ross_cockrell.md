@@ -1,10 +1,10 @@
 # Ross Cockrell
 
-**Buffalo Bills · Cornerback · No. 29 · Age 23 · Last game October 19, 2014**
+**Buffalo Bills · Cornerback · No. 29 · Age 23 · Last game October 26, 2014**
 
 6' 0", 190 lb · Born August 6, 1991 · Duke
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Ross Cockrell](https://commons.wikimedia.org/wiki/Special:FilePath/Ross_Cockrell.JPG?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 23 | 29 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Buffalo | 23 | 29 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 23 | 29 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Buffalo | 23 | 29 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

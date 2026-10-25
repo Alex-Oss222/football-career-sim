@@ -1,10 +1,10 @@
 # Jerod Mayo
 
-**New England Patriots · Linebacker · No. 51 · Age 28 · Last game October 16, 2014**
+**New England Patriots · Linebacker · No. 51 · Age 28 · Last game October 26, 2014**
 
 6' 1", 250 lb · Born February 23, 1986 · Tennessee · Drafted in 2008, first round, by New England
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jerod Mayo](https://commons.wikimedia.org/wiki/Special:FilePath/Jerod-Mayo_8-28-09_Patriots-vs.-Redskins.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting linebacker.
 
-**Tackles:** 31 (2014, through Week 7).
+**Tackles:** 46 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 28 | 51 | 5 | 31 | 21 | 10 | 3 | 0 | 4 |
+| 2014 (through Week 8) | New England | 28 | 51 | 6 | 46 | 33 | 13 | 3 | 1 | 6 |
 | 2013 | New England | 27 | 51 | 16 | 149 | 99 | 50 | 13 | 4 | 7 |
-| Career |  |  |  | 21 | 180 | 120 | 60 | 16 | 4 | 11 |
+| Career |  |  |  | 22 | 195 | 132 | 63 | 16 | 5 | 13 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 28 | 51 | 0 | 0 | 0 | 2 | 1 | 0 |
+| 2014 (through Week 8) | New England | 28 | 51 | 0 | 0 | 1 | 4 | 1 | 0 |
 | 2013 | New England | 27 | 51 | 2 | 32 | 10 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,14 +1,14 @@
 # Nate Chandler
 
-**Carolina Panthers · Offensive tackle · No. 78 · Age 25 · Last game October 19, 2014**
+**Carolina Panthers · Offensive tackle · No. 78 · Age 25 · Last game October 26, 2014**
 
 6' 4", 315 lb · Born June 1, 1989 · UCLA
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 5 (2014, through Week 7).
+**Sacks allowed:** 7 (2014, through Week 8).
 
 ## Contract
 
@@ -20,9 +20,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 25 | 78 | 7 | 7 | 445 | 5 | 32 |
+| 2014 (through Week 8) | Carolina | 25 | 78 | 8 | 8 | 516 | 7 | 38 |
 | 2013 | Carolina | 24 | 78 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

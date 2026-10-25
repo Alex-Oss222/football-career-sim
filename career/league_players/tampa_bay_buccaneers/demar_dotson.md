@@ -1,10 +1,10 @@
 # Demar Dotson
 
-**Tampa Bay Buccaneers · Offensive tackle · No. 69 · Age 29 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Offensive tackle · No. 69 · Age 29 · Last game October 26, 2014**
 
 6' 9", 315 lb · Born October 11, 1985 · Southern Mississippi; Southeastern Illinois
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Demar Dotson](https://commons.wikimedia.org/wiki/Special:FilePath/Demar_Dotson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 4 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 28 | 69 | 6 | 6 | 375 | 4 | 29 |
+| 2014 (through Week 8) | Tampa Bay | 28 | 69 | 7 | 7 | 452 | 4 | 34 |
 | 2013 | Tampa Bay | 27 | 69 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

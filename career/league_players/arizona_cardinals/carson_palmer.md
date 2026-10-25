@@ -1,10 +1,10 @@
 # Carson Palmer
 
-**Arizona Cardinals · Quarterback · No. 3 · Age 34 · Last game October 19, 2014**
+**Arizona Cardinals · Quarterback · No. 3 · Age 34 · Last game October 26, 2014**
 
 6' 5", 235 lb · Born December 27, 1979 · USC · Drafted in 2003, first round, by Cincinnati
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Carson Palmer](https://commons.wikimedia.org/wiki/Special:FilePath/Carson_Palmer_2019.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 103.6 (2014, through Week 7).
+**Passer rating:** 110.3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 34 | 3 | 6 | 116 | 175 | 66.3 | 1,405 | 8.0 | 234.2 | 8 | 1 | 103.6 |
+| 2014 (through Week 8) | Arizona | 34 | 3 | 7 | 138 | 206 | 67.0 | 1,808 | 8.8 | 258.3 | 11 | 1 | 110.3 |
 | 2013 | Arizona | 33 | 3 | 16 | 357 | 552 | 64.7 | 3,731 | 6.8 | 233.2 | 28 | 16 | 89.0 |
-| Career |  |  |  | 22 | 473 | 727 | 65.1 | 5,136 | 7.1 | 233.5 | 36 | 17 | 92.5 |
+| Career |  |  |  | 23 | 495 | 758 | 65.3 | 5,539 | 7.3 | 240.8 | 39 | 17 | 94.8 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 34 | 3 | 11 | 82 | 17 | 83 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Arizona | 34 | 3 | 12 | 90 | 21 | 90 | 0 | 2 | 2 |
 | 2013 | Arizona | 33 | 3 | 32 | 201 | 45 | 207 | 1 | 0 | 0 |
 
 ### Playoffs

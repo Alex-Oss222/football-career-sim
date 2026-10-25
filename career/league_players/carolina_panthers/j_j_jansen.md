@@ -1,10 +1,10 @@
 # J.J. Jansen
 
-**Carolina Panthers · Long snapper · No. 44 · Age 28 · Last game October 19, 2014**
+**Carolina Panthers · Long snapper · No. 44 · Age 28 · Last game October 26, 2014**
 
 6' 2", 240 lb · Born January 20, 1986 · Notre Dame
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![J.J. Jansen](https://commons.wikimedia.org/wiki/Special:FilePath/JJ_Jansen_panthers.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 61 (2014, through Week 7).
+**Long snaps:** 71 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 28 | 44 | 7 | 61 | 61 | 0 | 0 |
+| 2014 (through Week 8) | Carolina | 28 | 44 | 8 | 71 | 71 | 0 | 0 |
 | 2013 | Carolina | 27 | 44 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 24 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

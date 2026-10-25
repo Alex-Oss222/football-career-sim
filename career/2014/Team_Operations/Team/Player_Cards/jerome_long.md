@@ -4,7 +4,7 @@
 
 6' 4", 297 lb · Born April 9, 1990 · San Diego State · Drafted in 2012, seventh round, by Kansas City
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ## Staff assessment
 

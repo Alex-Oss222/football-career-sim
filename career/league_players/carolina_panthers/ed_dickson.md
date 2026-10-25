@@ -1,10 +1,10 @@
 # Ed Dickson
 
-**Carolina Panthers · Tight end · No. 84 · Age 27 · Last game October 19, 2014**
+**Carolina Panthers · Tight end · No. 84 · Age 27 · Last game October 26, 2014**
 
 6' 4", 255 lb · Born July 25, 1987 · Oregon · Drafted in 2010, third round, by Baltimore
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Ed Dickson](https://commons.wikimedia.org/wiki/Special:FilePath/Ed_Dickson_MT_Stadium_2012_Practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 5.9 (2014, through Week 7).
+**Yards per target:** 5.9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 27 | 84 | 7 | 8 | 4 | 47 | 11.8 | 0 | 16 | 6.7 | 50.0 |
+| 2014 (through Week 8) | Carolina | 27 | 84 | 8 | 8 | 4 | 47 | 11.8 | 0 | 16 | 5.9 | 50.0 |
 | 2013 | Baltimore | 26 | 84 | 16 | 83 | 55 | 639 | 11.6 | 5 | 45 | 39.9 | 66.3 |
-| Career |  |  |  | 23 | 91 | 59 | 686 | 11.6 | 5 | 45 | 29.8 | 64.8 |
+| Career |  |  |  | 24 | 91 | 59 | 686 | 11.6 | 5 | 45 | 28.6 | 64.8 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 27 | 84 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Carolina | 27 | 84 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Baltimore | 26 | 84 | 1 | -2 | 1 | 0 | 0 |
 
 ### Playoffs

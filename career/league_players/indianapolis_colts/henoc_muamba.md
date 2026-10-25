@@ -1,10 +1,10 @@
 # Henoc Muamba
 
-**Indianapolis Colts · Middle linebacker · No. 51 · Age 25 · Last game October 19, 2014**
+**Indianapolis Colts · Middle linebacker · No. 51 · Age 25 · Last game October 26, 2014**
 
 6' 0", 242 lb · Born February 23, 1989 · St. Francis Xavier University
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Henoc Muamba](https://commons.wikimedia.org/wiki/Special:FilePath/10%2C_Henoc_Muamba%2C_Sept_10%2C_2021.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve middle linebacker.
 
-**Tackles:** 5 (2014, through Week 7).
+**Tackles:** 6 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 25 | 51 | 7 | 5 | 3 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 25 | 51 | 8 | 6 | 4 | 2 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 25 | 51 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Indianapolis | 25 | 51 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

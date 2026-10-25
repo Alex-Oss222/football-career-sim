@@ -1,10 +1,10 @@
 # David Harris
 
-**New York Jets · Outside linebacker · No. 52 · Age 30 · Last game October 16, 2014**
+**New York Jets · Outside linebacker · No. 52 · Age 30 · Last game October 26, 2014**
 
 6' 2", 250 lb · Born January 21, 1984 · Michigan · Drafted in 2007, second round, by the New York Jets
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![David Harris](https://commons.wikimedia.org/wiki/Special:FilePath/David_Harris_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting middle linebacker.
 
-**Tackles:** 58 (2014, through Week 7).
+**Tackles:** 67 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 30 | 52 | 6 | 58 | 40 | 18 | 2 | 3 | 8 |
+| 2014 (through Week 8) | N.Y. Jets | 30 | 52 | 7 | 67 | 47 | 20 | 3 | 3 | 8 |
 | 2013 | N.Y. Jets | 29 | 52 | 16 | 164 | 113 | 51 | 12 | 6 | 12 |
-| Career |  |  |  | 22 | 222 | 153 | 69 | 14 | 9 | 20 |
+| Career |  |  |  | 23 | 231 | 160 | 71 | 15 | 9 | 20 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 30 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | N.Y. Jets | 30 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | N.Y. Jets | 29 | 52 | 2 | 41 | 11 | 1 | 1 | N/A |
 
 ### Playoffs

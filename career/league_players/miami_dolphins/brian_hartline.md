@@ -1,10 +1,10 @@
 # Brian Hartline
 
-**Miami Dolphins · Wide receiver · No. 82 · Age 27 · Last game October 19, 2014**
+**Miami Dolphins · Wide receiver · No. 82 · Age 27 · Last game October 26, 2014**
 
 6' 2", 200 lb · Born November 22, 1986 · Ohio State · Drafted in 2009, fourth round, by Miami
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brian Hartline](https://commons.wikimedia.org/wiki/Special:FilePath/Brian_Hartline.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 5.8 (2014, through Week 7).
+**Yards per target:** 5.9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 27 | 82 | 6 | 25 | 18 | 146 | 8.1 | 1 | 21 | 24.3 | 72.0 |
+| 2014 (through Week 8) | Miami | 27 | 82 | 7 | 28 | 20 | 165 | 8.2 | 1 | 21 | 23.6 | 71.4 |
 | 2013 | Miami | 26 | 82 | 16 | 159 | 96 | 1,000 | 10.4 | 5 | 54 | 62.5 | 60.4 |
-| Career |  |  |  | 22 | 184 | 114 | 1,146 | 10.1 | 6 | 54 | 52.1 | 62.0 |
+| Career |  |  |  | 23 | 187 | 116 | 1,165 | 10.0 | 6 | 54 | 50.7 | 62.0 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 27 | 82 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Miami | 27 | 82 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 26 | 82 | 5 | 22 | 0 | 1 | 1 |
 
 ### Playoffs

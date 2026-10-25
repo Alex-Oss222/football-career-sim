@@ -1,10 +1,10 @@
 # Kendall Wright
 
-**Tennessee Titans · Wide receiver · No. 13 · Age 24 · Last game October 19, 2014**
+**Tennessee Titans · Wide receiver · No. 13 · Age 24 · Last game October 26, 2014**
 
 5' 10", 191 lb · Born November 12, 1989 · Baylor · Drafted in 2012, first round, by Tennessee
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Kendall Wright](https://commons.wikimedia.org/wiki/Special:FilePath/Kendall_Wright.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 6.4 (2014, through Week 7).
+**Yards per target:** 7.1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 24 | 13 | 7 | 68 | 45 | 432 | 9.6 | 3 | 26 | 61.7 | 66.2 |
+| 2014 (through Week 8) | Tennessee | 24 | 13 | 8 | 85 | 58 | 607 | 10.5 | 4 | 30 | 75.9 | 68.2 |
 | 2013 | Tennessee | 23 | 13 | 16 | 64 | 44 | 430 | 9.8 | 4 | 53 | 26.9 | 68.8 |
-| Career |  |  |  | 23 | 132 | 89 | 862 | 9.7 | 7 | 53 | 37.5 | 67.4 |
+| Career |  |  |  | 24 | 149 | 102 | 1,037 | 10.2 | 8 | 53 | 43.2 | 68.5 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 24 | 13 | 3 | 33 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Tennessee | 24 | 13 | 3 | 33 | 0 | 2 | 1 |
 | 2013 | Tennessee | 23 | 13 | 2 | 3 | 0 | 0 | 0 |
 
 ### Playoffs

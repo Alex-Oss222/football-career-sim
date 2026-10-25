@@ -1,10 +1,10 @@
 # Tyler Clutts
 
-**Dallas Cowboys · Fullback · No. 44 · Age 29 · Last game October 19, 2014**
+**Dallas Cowboys · Fullback · No. 44 · Age 29 · Last game October 27, 2014**
 
 6' 2", 255 lb · Born November 9, 1984 · Fresno State
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Tyler Clutts](https://commons.wikimedia.org/wiki/Special:FilePath/Tyler_Clutts.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 5.7 (2014, through Week 7).
+**Yards per carry:** 6.5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 29 | 44 | 7 | 3 | 17 | 5.7 | 0 | 12 | 2.4 |
+| 2014 (through Week 8) | Dallas | 29 | 44 | 8 | 4 | 26 | 6.5 | 0 | 12 | 3.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 29 | 44 | 8 | 5 | 111 | 22.2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Dallas | 29 | 44 | 9 | 6 | 119 | 19.8 | 0 | 0 | 0 |
 
 ### Playoffs
 

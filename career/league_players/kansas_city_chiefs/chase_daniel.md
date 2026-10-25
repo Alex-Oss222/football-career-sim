@@ -1,10 +1,10 @@
 # Chase Daniel
 
-**Kansas City Chiefs · Quarterback · No. 10 · Age 28 · Last game October 19, 2014**
+**Kansas City Chiefs · Quarterback · No. 10 · Age 28 · Last game October 26, 2014**
 
 6' 0", 225 lb · Born October 7, 1986 · Missouri
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Chase Daniel](https://commons.wikimedia.org/wiki/Special:FilePath/Chase_Daniel_Saints_parade.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 27 | 10 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Kansas City | 27 | 10 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Kansas City | 26 | 10 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 22 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 23 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 27 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Kansas City | 27 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Kansas City | 26 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Michael Campanaro
 
-**Baltimore Ravens · Wide receiver · No. 15 · Age 23 · Last game October 19, 2014**
+**Baltimore Ravens · Wide receiver · No. 15 · Age 23 · Last game October 26, 2014**
 
 5' 9", 185 lb · Born January 25, 1991 · Wake Forest
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Michael Campanaro](https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Campanaro_2018_08-09.jpg?width=500)
 
@@ -20,7 +20,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Baltimore | 23 | 15 | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | Baltimore | 23 | 15 | 8 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

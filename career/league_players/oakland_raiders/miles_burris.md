@@ -1,10 +1,10 @@
 # Miles Burris
 
-**Oakland Raiders · Middle linebacker · No. 56 · Age 26 · Last game October 19, 2014**
+**Oakland Raiders · Middle linebacker · No. 56 · Age 26 · Last game October 26, 2014**
 
 6' 2", 235 lb · Born June 27, 1988 · San Diego State · Drafted in 2012, fourth round, by Oakland
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Miles Burris](https://commons.wikimedia.org/wiki/Special:FilePath/Miles_Burris.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting middle linebacker.
 
-**Tackles:** 60 (2014, through Week 7).
+**Tackles:** 61 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 26 | 56 | 6 | 60 | 40 | 20 | 2 | 2 | 5 |
+| 2014 (through Week 8) | Oakland | 26 | 56 | 7 | 61 | 40 | 21 | 2 | 2 | 5 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 26 | 56 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Oakland | 26 | 56 | 1 | 10 | 3 | 0 | 0 | 0 |
 
 ### Playoffs
 

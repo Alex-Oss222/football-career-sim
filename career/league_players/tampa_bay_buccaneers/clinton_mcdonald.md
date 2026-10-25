@@ -1,10 +1,10 @@
 # Clinton McDonald
 
-**Tampa Bay Buccaneers · Defensive tackle · No. 98 · Age 27 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Defensive tackle · No. 98 · Age 27 · Last game October 26, 2014**
 
 6' 2", 297 lb · Born January 6, 1987 · Memphis · Drafted in 2009, seventh round, by Cincinnati
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Clinton McDonald](https://commons.wikimedia.org/wiki/Special:FilePath/Clinton_McDonald_in_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 1 (2014, through Week 6).
+**Sacks:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 27 | 98 | 6 | 11 | 9 | 2 | 2 | 1 | 1 |
+| 2014 (through Week 8) | Tampa Bay | 27 | 98 | 6 | 11 | 9 | 2 | 2 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 27 | 98 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 27 | 98 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

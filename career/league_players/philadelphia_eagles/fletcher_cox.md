@@ -1,10 +1,10 @@
 # Fletcher Cox
 
-**Philadelphia Eagles · Defensive end · No. 91 · Age 23 · Last game October 12, 2014**
+**Philadelphia Eagles · Defensive end · No. 91 · Age 23 · Last game October 26, 2014**
 
 6' 4", 300 lb · Born December 13, 1990 · Mississippi State · Drafted in 2012, first round, by Philadelphia
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Fletcher Cox](https://commons.wikimedia.org/wiki/Special:FilePath/Fletcher_Cox.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 2 (2014, through Week 6).
+**Sacks:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 23 | 91 | 6 | 26 | 18 | 8 | 1 | 2 | 3 |
+| 2014 (through Week 8) | Philadelphia | 23 | 91 | 7 | 32 | 23 | 9 | 1 | 2 | 3 |
 | 2013 | Philadelphia | 22 | 91 | 16 | 92 | 64 | 28 | 8 | 9 | 11 |
-| Career |  |  |  | 22 | 118 | 82 | 36 | 9 | 11 | 14 |
+| Career |  |  |  | 23 | 124 | 87 | 37 | 9 | 11 | 14 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 23 | 91 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Philadelphia | 23 | 91 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Philadelphia | 22 | 91 | 0 | 0 | 3 | 1 | 1 | N/A |
 
 ### Playoffs

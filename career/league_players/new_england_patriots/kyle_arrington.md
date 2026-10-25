@@ -1,10 +1,10 @@
 # Kyle Arrington
 
-**New England Patriots · Cornerback · No. 25 · Age 28 · Last game October 16, 2014**
+**New England Patriots · Cornerback · No. 25 · Age 28 · Last game October 26, 2014**
 
 5' 10", 190 lb · Born August 12, 1986 · Hofstra
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Kyle Arrington](https://commons.wikimedia.org/wiki/Special:FilePath/Kyle_Arrington_2015.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 1 (2014, through Week 7).
+**Passes defended:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 28 | 25 | 7 | 4 | 1 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 28 | 25 | 8 | 8 | 3 | 5 | 0 | 0 | 0 |
 | 2013 | New England | 27 | 25 | 15 | 27 | 19 | 8 | 1 | 0 | 0 |
-| Career |  |  |  | 22 | 31 | 20 | 11 | 1 | 0 | 0 |
+| Career |  |  |  | 23 | 35 | 22 | 13 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 28 | 25 | 0 | 0 | 1 | 0 | 0 | 4 |
+| 2014 (through Week 8) | New England | 28 | 25 | 0 | 0 | 2 | 0 | 0 | 4 |
 | 2013 | New England | 27 | 25 | 1 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs

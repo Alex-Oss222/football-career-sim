@@ -1,10 +1,10 @@
 # Jason Hatcher
 
-**Washington Redskins · Defensive end · No. 97 · Age 32 · Last game October 19, 2014**
+**Washington Redskins · Defensive end · No. 97 · Age 32 · Last game October 27, 2014**
 
 6' 6", 299 lb · Born July 13, 1982 · Grambling State · Drafted in 2006, third round, by Dallas
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Jason Hatcher](https://commons.wikimedia.org/wiki/Special:FilePath/Jason_Hatcher_in_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 32 | 97 | 7 | 15 | 11 | 4 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Washington | 32 | 97 | 8 | 16 | 12 | 4 | 1 | 0 | 0 |
 | 2013 | Dallas | 31 | 97 | 16 | 46 | 29 | 17 | 5 | 4 | 5 |
-| Career |  |  |  | 23 | 61 | 40 | 21 | 6 | 4 | 5 |
+| Career |  |  |  | 24 | 62 | 41 | 21 | 6 | 4 | 5 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 32 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Washington | 32 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Dallas | 31 | 97 | 0 | 0 | 2 | 1 | 1 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Morgan Burnett
 
-**Green Bay Packers · Strong safety · No. 42 · Age 25 · Last game October 19, 2014**
+**Green Bay Packers · Strong safety · No. 42 · Age 25 · Last game October 26, 2014**
 
 6' 1", 209 lb · Born January 13, 1989 · Georgia Tech · Drafted in 2010, third round, by Green Bay
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Morgan Burnett](https://commons.wikimedia.org/wiki/Special:FilePath/Morgan_Burnett.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 2 (2014, through Week 7).
+**Passes defended:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Green Bay | 25 | 42 | 6 | 12 | 8 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Green Bay | 25 | 42 | 7 | 15 | 10 | 5 | 0 | 0 | 0 |
 | 2013 | Green Bay | 24 | 42 | 16 | 94 | 62 | 32 | 4 | 0 | 1 |
-| Career |  |  |  | 22 | 106 | 70 | 36 | 4 | 0 | 1 |
+| Career |  |  |  | 23 | 109 | 72 | 37 | 4 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Green Bay | 25 | 42 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Green Bay | 25 | 42 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Green Bay | 24 | 42 | 2 | 29 | 19 | 0 | 0 | N/A |
 
 ### Playoffs

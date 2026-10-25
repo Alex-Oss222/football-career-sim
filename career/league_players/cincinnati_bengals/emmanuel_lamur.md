@@ -1,10 +1,10 @@
 # Emmanuel Lamur
 
-**Cincinnati Bengals · Outside linebacker · No. 59 · Age 25 · Last game October 19, 2014**
+**Cincinnati Bengals · Outside linebacker · No. 59 · Age 25 · Last game October 26, 2014**
 
 6' 4", 240 lb · Born June 8, 1989 · Kansas State; Independence Comm. College
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Emmanuel Lamur](https://commons.wikimedia.org/wiki/Special:FilePath/Emmanuel_Lamur_2015.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting strongside linebacker.
 
-**Tackles:** 20 (2014, through Week 7).
+**Tackles:** 22 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 25 | 59 | 6 | 20 | 13 | 7 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cincinnati | 25 | 59 | 7 | 22 | 15 | 7 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 25 | 59 | 0 | 0 | 0 | 1 | 1 | 0 |
+| 2014 (through Week 8) | Cincinnati | 25 | 59 | 0 | 0 | 0 | 1 | 1 | 0 |
 
 ### Playoffs
 

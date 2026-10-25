@@ -1,10 +1,10 @@
 # Darren Fells
 
-**Arizona Cardinals · Tight end · No. 85 · Age 28 · Last game October 19, 2014**
+**Arizona Cardinals · Tight end · No. 85 · Age 28 · Last game October 26, 2014**
 
 6' 7", 281 lb · Born April 22, 1986 · UC Irvine
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Darren Fells](https://commons.wikimedia.org/wiki/Special:FilePath/Darren_Fells_in_2014.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 28 | 85 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | Arizona | 28 | 85 | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

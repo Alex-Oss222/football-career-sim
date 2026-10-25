@@ -1,16 +1,18 @@
 # Jorvorskie Lane
 
-**Tampa Bay Buccaneers · Fullback · No. 46 · Age 27 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Fullback · No. 46 · Age 27 · Last game October 26, 2014**
 
 5' 11", 258 lb · Born February 4, 1987 · Texas A&M
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Jorvorskie Lane](https://commons.wikimedia.org/wiki/Special:FilePath/Jorvorskie_Lane_2006.jpg?width=500)
 
 *Photo: Clinton & Charles Robertson from Del Rio, Texas & College Station, TX, USA, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Jorvorskie_Lane_2006.jpg)).*
 
 **Current assignment:** Starting fullback.
+
+**Yards per carry:** 2.5 (2014, through Week 8).
 
 ## Contract
 
@@ -22,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 27 | 46 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2014 (through Week 8) | Tampa Bay | 27 | 46 | 7 | 2 | 5 | 2.5 | 0 | 7 | 0.7 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 27 | 46 | 3 | 2 | 25 | 12.5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 27 | 46 | 5 | 4 | 43 | 10.8 | 0 | 0 | 0 |
 
 ### Playoffs
 

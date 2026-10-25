@@ -1,10 +1,10 @@
 # Corey Hilliard
 
-**Detroit Lions · Offensive tackle · No. 78 · Age 29 · Last game October 19, 2014**
+**Detroit Lions · Offensive tackle · No. 78 · Age 29 · Last game October 26, 2014**
 
 6' 6", 300 lb · Born April 26, 1985 · Oklahoma State · Drafted in 2007, sixth round, by New England
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Corey Hilliard](https://commons.wikimedia.org/wiki/Special:FilePath/Corey_Hilliard_2007.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve right tackle.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 29 | 78 | 7 | 3 | 241 | 3 | 19 |
+| 2014 (through Week 8) | Detroit | 29 | 78 | 8 | 3 | 241 | 3 | 19 |
 | 2013 | Detroit | 28 | 78 | 2 | N/A | N/A | 0 | N/A |
-| Career |  |  |  | 9 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 10 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 

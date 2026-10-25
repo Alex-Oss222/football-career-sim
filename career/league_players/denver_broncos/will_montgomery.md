@@ -1,10 +1,10 @@
 # Will Montgomery
 
-**Denver Broncos · Center · No. 64 · Age 31 · Last game October 19, 2014**
+**Denver Broncos · Center · No. 64 · Age 31 · Last game October 23, 2014**
 
 6' 3", 304 lb · Born February 13, 1983 · Virginia Tech · Drafted in 2006, seventh round, by Carolina
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Will Montgomery](https://commons.wikimedia.org/wiki/Special:FilePath/Will_montgomery.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 31 | 64 | 6 | 0 | 0 | 0 | 4 |
+| 2014 (through Week 8) | Denver | 31 | 64 | 7 | 0 | 0 | 0 | 4 |
 | 2013 | Washington | 30 | 63 | 16 | N/A | N/A | 2 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 2 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 

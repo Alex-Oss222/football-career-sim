@@ -15,7 +15,7 @@ The league's players of the week and players of the month. Open a week or a mont
 | [Week 5](week_05/README.md) | Danny Woodhead (Chargers) | Jamie Collins (Patriots) | Travis Benjamin (Browns) | Shaun Hill (Rams) | Malcolm Smith (Seahawks) | Benny Cunningham (Rams) |
 | [Week 6](week_06/README.md) | Ryan Mathews (Chargers) | Barkevious Mingo (Browns) | Billy Cundiff (Browns) | Colin Kaepernick (49ers) | Prince Amukamara (Giants) | Corey Brown (Panthers) |
 | [Week 7](week_07/README.md) | Shonn Greene (Titans) | Gregory Toler (Colts) | Donald Brown (Chargers) | Cam Newton (Panthers) | Sam Shields (Packers) | Matt Asiata (Vikings) |
-| Week 8 | Awarded after the week’s games |  |  |  |  |  |
+| [Week 8](week_08/README.md) | Jeremy Hill (Bengals) | Khalil Mack (Raiders) | Nick Novak (Chargers) | Jonathan Dwyer (Cardinals) | Janoris Jenkins (Rams) | Sam Martin (Lions) |
 | Week 9 | Awarded after the week’s games |  |  |  |  |  |
 | Week 10 | Awarded after the week’s games |  |  |  |  |  |
 | Week 11 | Awarded after the week’s games |  |  |  |  |  |

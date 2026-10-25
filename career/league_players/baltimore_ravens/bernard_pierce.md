@@ -1,10 +1,10 @@
 # Bernard Pierce
 
-**Baltimore Ravens · Running back · No. 30 · Age 23 · Last game October 19, 2014**
+**Baltimore Ravens · Running back · No. 30 · Age 23 · Last game October 26, 2014**
 
 6' 0", 230 lb · Born May 10, 1991 · Temple · Drafted in 2012, third round, by Baltimore
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Bernard Pierce](https://commons.wikimedia.org/wiki/Special:FilePath/Bernard_Pierce_Navy_Stadium_2012_Practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 4.8 (2014, through Week 7).
+**Yards per carry:** 5.2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Baltimore | 23 | 30 | 7 | 130 | 621 | 4.8 | 4 | 26 | 88.7 |
+| 2014 (through Week 8) | Baltimore | 23 | 30 | 8 | 137 | 714 | 5.2 | 5 | 55 | 89.2 |
 | 2013 | Baltimore | 22 | 30 | 16 | 88 | 408 | 4.6 | 4 | 49 | 25.5 |
-| Career |  |  |  | 23 | 218 | 1,029 | 4.7 | 8 | 49 | 44.7 |
+| Career |  |  |  | 24 | 225 | 1,122 | 5.0 | 9 | 55 | 46.8 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Baltimore | 23 | 30 | 26 | 19 | 190 | 10.0 | 3 | 0 | 0 |
+| 2014 (through Week 8) | Baltimore | 23 | 30 | 31 | 21 | 201 | 9.6 | 3 | 0 | 0 |
 | 2013 | Baltimore | 22 | 30 | 19 | 13 | 108 | 8.3 | 1 | 2 | 2 |
 
 ### Playoffs

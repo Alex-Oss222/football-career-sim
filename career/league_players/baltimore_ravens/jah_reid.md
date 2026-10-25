@@ -1,10 +1,10 @@
 # Jah Reid
 
-**Baltimore Ravens · Guard · No. 76 · Age 26 · Last game October 19, 2014**
+**Baltimore Ravens · Guard · No. 76 · Age 26 · Last game October 26, 2014**
 
 6' 7", 320 lb · Born July 21, 1988 · UCF · Drafted in 2011, third round, by Baltimore
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jah Reid](https://commons.wikimedia.org/wiki/Special:FilePath/Jah_Reid_2011_stadium_practice.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Baltimore | 26 | 76 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Baltimore | 26 | 76 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | Baltimore | 25 | 76 | 16 | N/A | N/A | 6 | N/A |
 | Career |  |  |  | 17 | N/A | N/A | 6 | N/A |
 

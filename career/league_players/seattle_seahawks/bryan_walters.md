@@ -1,10 +1,10 @@
 # Bryan Walters
 
-**Seattle Seahawks · Wide receiver · No. 19 · Age 26 · Last game October 19, 2014**
+**Seattle Seahawks · Wide receiver · No. 19 · Age 26 · Last game October 26, 2014**
 
 6' 0", 190 lb · Born November 4, 1987 · Cornell
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Bryan Walters](https://commons.wikimedia.org/wiki/Special:FilePath/Bryan_Walters.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 26 | 19 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | Seattle | 26 | 19 | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

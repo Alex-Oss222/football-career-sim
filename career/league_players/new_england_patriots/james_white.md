@@ -1,10 +1,10 @@
 # James White
 
-**New England Patriots · Running back · No. 28 · Age 22 · Last game October 16, 2014**
+**New England Patriots · Running back · No. 28 · Age 22 · Last game October 26, 2014**
 
 5' 10", 206 lb · Born February 3, 1992 · Wisconsin
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![James White](https://commons.wikimedia.org/wiki/Special:FilePath/Nov_2013_Wisconsin_Badgers_James_White_against_Iowa_Hawkeyes.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 3.6 (2014, through Week 7).
+**Yards per carry:** 3.2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 22 | 28 | 7 | 8 | 29 | 3.6 | 1 | 13 | 4.1 |
+| 2014 (through Week 8) | New England | 22 | 28 | 8 | 12 | 39 | 3.2 | 1 | 13 | 4.9 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 22 | 28 | 1 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 22 | 28 | 1 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 

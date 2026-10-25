@@ -1,10 +1,10 @@
 # Kevin Pamphile
 
-**Tampa Bay Buccaneers · Guard · No. 64 · Age 23 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Guard · No. 64 · Age 23 · Last game October 26, 2014**
 
 6' 5", 310 lb · Born November 27, 1990 · Purdue
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Kevin Pamphile](https://commons.wikimedia.org/wiki/Special:FilePath/Kevin_Pamphile_2018_08-09.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 23 | 64 | 6 | 0 | 0 | 0 | 29 |
+| 2014 (through Week 8) | Tampa Bay | 23 | 64 | 7 | 0 | 0 | 0 | 34 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Kemal Ishmael
 
-**Atlanta Falcons · Safety · No. 36 · Age 23 · Last game October 19, 2014**
+**Atlanta Falcons · Safety · No. 36 · Age 23 · Last game October 26, 2014**
 
 6' 0", 206 lb · Born May 6, 1991 · UCF
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Kemal Ishmael](https://commons.wikimedia.org/wiki/Special:FilePath/Kemal_Ishmael_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve safety.
 
-**Passes defended:** 1 (2014, through Week 7).
+**Passes defended:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 23 | 36 | 7 | 15 | 12 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Atlanta | 23 | 36 | 8 | 18 | 14 | 4 | 0 | 0 | 0 |
 | 2013 | Atlanta | 22 | 36 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 9 | 15 | 12 | 3 | 0 | 0 | 0 |
+| Career |  |  |  | 10 | 18 | 14 | 4 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 23 | 36 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Atlanta | 23 | 36 | 1 | 0 | 2 | 1 | 0 | 0 |
 | 2013 | Atlanta | 22 | 36 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

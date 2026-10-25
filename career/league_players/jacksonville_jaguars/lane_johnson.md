@@ -4,17 +4,17 @@
 
 6' 6", 310 lb · Born May 8, 1990 · Oklahoma; Kilgore · Drafted in 2013, No. 2 overall, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 3 (2014, through Week 8).
 
 ## Staff assessment
 
-Lane Johnson has shown he is a viable NFL starting right tackle. He started all 16 regular-season games and both playoff games as a rookie in 2013, and he has started seven games in 2014. He is an athletic mover who is at his best on reach blocks and at the second level, and he keeps the protection answers he is taught. He still loses leverage at times, and his hand placement and his anchor are not yet consistent.
+Lane Johnson has shown he is a viable NFL starting right tackle. He started all 16 regular-season games and both playoff games as a rookie in 2013, and he has started eight games in 2014. He is an athletic mover who is at his best on reach blocks and at the second level, and he keeps the protection answers he is taught. He still loses leverage at times, and his hand placement and his anchor are not yet consistent.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -33,9 +33,9 @@ Four-year contract through 2016.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 24 | N/A | 7 | 7 | 444 | 3 | 33 |
+| 2014 (through Week 8) | Jacksonville | 24 | N/A | 8 | 8 | 513 | 3 | 38 |
 | 2013 | Jacksonville | 23 | N/A | 16 | N/A | N/A | 8 | N/A |
-| With Jacksonville |  |  |  | 23 | N/A | N/A | 11 | N/A |
+| With Jacksonville |  |  |  | 24 | N/A | N/A | 11 | N/A |
 
 ### Playoffs
 

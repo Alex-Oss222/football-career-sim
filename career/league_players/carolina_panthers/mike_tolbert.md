@@ -1,10 +1,10 @@
 # Mike Tolbert
 
-**Carolina Panthers · Fullback · No. 35 · Age 28 · Last game October 19, 2014**
+**Carolina Panthers · Fullback · No. 35 · Age 28 · Last game October 26, 2014**
 
 5' 9", 245 lb · Born November 23, 1985 · Coastal Carolina
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Mike Tolbert](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_Tolbert.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 4.4 (2014, through Week 7).
+**Yards per carry:** 4.1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 28 | 35 | 7 | 8 | 35 | 4.4 | 0 | 9 | 5.0 |
+| 2014 (through Week 8) | Carolina | 28 | 35 | 8 | 9 | 37 | 4.1 | 0 | 9 | 4.6 |
 | 2013 | Carolina | 27 | 35 | 16 | 9 | 20 | 2.2 | 0 | 8 | 1.2 |
-| Career |  |  |  | 23 | 17 | 55 | 3.2 | 0 | 9 | 2.4 |
+| Career |  |  |  | 24 | 18 | 57 | 3.2 | 0 | 9 | 2.4 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 28 | 35 | 5 | 3 | 25 | 8.3 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Carolina | 28 | 35 | 5 | 3 | 25 | 8.3 | 0 | 1 | 1 |
 | 2013 | Carolina | 27 | 35 | 18 | 14 | 203 | 14.5 | 1 | 0 | 0 |
 
 ### Playoffs

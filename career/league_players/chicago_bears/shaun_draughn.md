@@ -1,10 +1,10 @@
 # Shaun Draughn
 
-**Chicago Bears · Running back · No. 20 · Age 26 · Last game October 19, 2014**
+**Chicago Bears · Running back · No. 20 · Age 26 · Last game October 26, 2014**
 
 6' 0", 205 lb · Born December 7, 1987 · North Carolina
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Shaun Draughn](https://commons.wikimedia.org/wiki/Special:FilePath/Shaun_Draughn.JPG?width=500)
 
@@ -20,11 +20,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 26 | 20 | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2014 (through Week 8) | Chicago | 26 | 20 | 4 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 26 | 20 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 26 | 20 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 

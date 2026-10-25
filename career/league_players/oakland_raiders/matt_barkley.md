@@ -1,10 +1,10 @@
 # Matt Barkley
 
-**Oakland Raiders · Quarterback · Age 24 · Last game October 19, 2014**
+**Oakland Raiders · Quarterback · Age 24 · Last game October 26, 2014**
 
 6' 2", 227 lb · Born September 8, 1990 · USC
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Matt Barkley](https://commons.wikimedia.org/wiki/Special:FilePath/2008-0808-MattBarkley.jpg?width=500)
 
@@ -20,13 +20,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 23 | N/A | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Oakland | 23 | N/A | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Oakland | 22 | N/A | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 22 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 23 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 23 | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Oakland | 23 | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Oakland | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

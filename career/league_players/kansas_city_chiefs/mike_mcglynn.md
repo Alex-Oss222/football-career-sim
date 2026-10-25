@@ -1,10 +1,10 @@
 # Mike McGlynn
 
-**Kansas City Chiefs · Guard · No. 75 · Age 29 · Last game October 19, 2014**
+**Kansas City Chiefs · Guard · No. 75 · Age 29 · Last game October 26, 2014**
 
 6' 4", 325 lb · Born March 8, 1985 · Pittsburgh · Drafted in 2008, fourth round, by Philadelphia
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Mike McGlynn](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_McGlynn.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 6 (2014, through Week 7).
+**Sacks allowed:** 6 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 29 | 75 | 6 | 6 | 379 | 6 | 21 |
+| 2014 (through Week 8) | Kansas City | 29 | 75 | 7 | 7 | 436 | 6 | 25 |
 | 2013 | Indianapolis | 28 | 75 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

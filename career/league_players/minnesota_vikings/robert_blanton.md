@@ -1,10 +1,10 @@
 # Robert Blanton
 
-**Minnesota Vikings · Strong safety · No. 36 · Age 25 · Last game October 19, 2014**
+**Minnesota Vikings · Strong safety · No. 36 · Age 25 · Last game October 26, 2014**
 
 6' 1", 200 lb · Born September 7, 1989 · Notre Dame · Drafted in 2012, fifth round, by Minnesota
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Robert Blanton](https://commons.wikimedia.org/wiki/Special:FilePath/Robert_Blanton_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 5 (2014, through Week 7).
+**Passes defended:** 5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 24 | 36 | 7 | 15 | 10 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Minnesota | 24 | 36 | 8 | 18 | 12 | 6 | 0 | 0 | 0 |
 | 2013 | Minnesota | 23 | 36 | 2 | 1 | 0 | 1 | 0 | 0 | 0 |
-| Career |  |  |  | 9 | 16 | 10 | 6 | 0 | 0 | 0 |
+| Career |  |  |  | 10 | 19 | 12 | 7 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 24 | 36 | 1 | 50 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Minnesota | 24 | 36 | 1 | 50 | 5 | 0 | 0 | 0 |
 | 2013 | Minnesota | 23 | 36 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

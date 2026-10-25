@@ -1,10 +1,10 @@
 # Peter Konz
 
-**Atlanta Falcons · Center · No. 66 · Age 24 · Last game October 19, 2014**
+**Atlanta Falcons · Center · No. 66 · Age 24 · Last game October 26, 2014**
 
 6' 5", 317 lb · Born December 20, 1989 · Wisconsin · Drafted in 2012, second round, by Atlanta
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Peter Konz](https://commons.wikimedia.org/wiki/Special:FilePath/Peter_Konz_2014.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 24 | 66 | 3 | 0 | 0 | 0 | 3 |
+| 2014 (through Week 8) | Atlanta | 24 | 66 | 4 | 0 | 0 | 0 | 9 |
 | 2013 | Atlanta | 23 | 66 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 19 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 20 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 

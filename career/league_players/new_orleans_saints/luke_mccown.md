@@ -1,10 +1,10 @@
 # Luke McCown
 
-**New Orleans Saints · Quarterback · No. 7 · Age 33 · Last game October 19, 2014**
+**New Orleans Saints · Quarterback · No. 7 · Age 33 · Last game October 26, 2014**
 
 6' 4", 217 lb · Born July 12, 1981 · Louisiana Tech · Drafted in 2004, fourth round, by Cleveland
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Luke McCown](https://commons.wikimedia.org/wiki/Special:FilePath/Luke_McCown_2009_pregame.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New Orleans | 33 | 7 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | New Orleans | 33 | 7 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | New Orleans | 32 | 7 | 16 | 153 | 237 | 64.6 | 1,872 | 7.9 | 117.0 | 12 | 8 | 91.6 |
-| Career |  |  |  | 22 | 153 | 237 | 64.6 | 1,872 | 7.9 | 85.1 | 12 | 8 | 91.6 |
+| Career |  |  |  | 23 | 153 | 237 | 64.6 | 1,872 | 7.9 | 81.4 | 12 | 8 | 91.6 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New Orleans | 33 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New Orleans | 33 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | New Orleans | 32 | 7 | 13 | 91 | 20 | 124 | 1 | 1 | 1 |
 
 ### Playoffs

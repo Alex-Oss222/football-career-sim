@@ -1,10 +1,10 @@
 # Paul Cornick
 
-**Denver Broncos · Offensive tackle · No. 71 · Age 25 · Last game October 19, 2014**
+**Denver Broncos · Offensive tackle · No. 71 · Age 25 · Last game October 23, 2014**
 
 6' 6", 310 lb · Born March 15, 1989 · North Dakota State
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Paul Cornick](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Cornick.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve left tackle.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 25 | 71 | 6 | 0 | 32 | 3 | 31 |
+| 2014 (through Week 8) | Denver | 25 | 71 | 7 | 0 | 32 | 3 | 36 |
 
 ### Playoffs
 

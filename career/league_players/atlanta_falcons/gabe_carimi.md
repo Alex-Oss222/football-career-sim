@@ -1,10 +1,10 @@
 # Gabe Carimi
 
-**Atlanta Falcons · Offensive tackle · No. 68 · Age 26 · Last game October 19, 2014**
+**Atlanta Falcons · Offensive tackle · No. 68 · Age 26 · Last game October 26, 2014**
 
 6' 7", 316 lb · Born June 13, 1988 · Wisconsin · Drafted in 2011, first round, by Chicago
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Gabe Carimi](https://commons.wikimedia.org/wiki/Special:FilePath/Gabe_Carimi_ASU.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve right guard.
 
-**Sacks allowed:** 0 (2014, through Week 7).
+**Sacks allowed:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 26 | 68 | 1 | 0 | 52 | 0 | 4 |
+| 2014 (through Week 8) | Atlanta | 26 | 68 | 1 | 0 | 52 | 0 | 4 |
 | 2013 | Tampa Bay | 25 | 72 | 16 | N/A | N/A | 1 | N/A |
 | Career |  |  |  | 17 | N/A | N/A | 1 | N/A |
 

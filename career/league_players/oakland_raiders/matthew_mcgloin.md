@@ -1,10 +1,10 @@
 # Matthew McGloin
 
-**Oakland Raiders · Quarterback · No. 14 · Age 24 · Last game October 19, 2014**
+**Oakland Raiders · Quarterback · No. 14 · Age 24 · Last game October 26, 2014**
 
 6' 1", 210 lb · Born December 2, 1989 · Penn State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ## Contract
 
@@ -16,13 +16,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 24 | 14 | 2 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Oakland | 24 | 14 | 3 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Oakland | 23 | 14 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 18 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 19 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 24 | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Oakland | 24 | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Oakland | 23 | 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

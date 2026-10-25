@@ -1,10 +1,10 @@
 # Cory Redding
 
-**Indianapolis Colts · Defensive end · No. 90 · Age 33 · Last game October 19, 2014**
+**Indianapolis Colts · Defensive end · No. 90 · Age 33 · Last game October 26, 2014**
 
 6' 4", 318 lb · Born November 15, 1980 · Texas · Drafted in 2003, third round, by Detroit
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Cory Redding](https://commons.wikimedia.org/wiki/Special:FilePath/Cory_Redding_at_M%26T_Bank_stadium_Dec_11%2C_2011.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 4 (2014, through Week 7).
+**Sacks:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 33 | 90 | 7 | 44 | 36 | 8 | 6 | 4 | 12 |
+| 2014 (through Week 8) | Indianapolis | 33 | 90 | 8 | 51 | 40 | 11 | 6 | 4 | 12 |
 | 2013 | Indianapolis | 32 | 90 | 16 | 91 | 62 | 29 | 10 | 9 | 19 |
-| Career |  |  |  | 23 | 135 | 98 | 37 | 16 | 13 | 31 |
+| Career |  |  |  | 24 | 142 | 102 | 40 | 16 | 13 | 31 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 33 | 90 | 0 | 0 | 1 | 1 | 1 | 0 |
+| 2014 (through Week 8) | Indianapolis | 33 | 90 | 0 | 0 | 1 | 1 | 1 | 0 |
 | 2013 | Indianapolis | 32 | 90 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Matt Tobin
 
-**Philadelphia Eagles · Guard · No. 64 · Age 24 · Last game October 12, 2014**
+**Philadelphia Eagles · Guard · No. 64 · Age 24 · Last game October 26, 2014**
 
 6' 6", 290 lb · Born June 5, 1990 · Iowa
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Matt Tobin](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Tobin_2015.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 24 | 64 | 4 | 0 | 0 | 0 | 7 |
+| 2014 (through Week 8) | Philadelphia | 24 | 64 | 4 | 0 | 0 | 0 | 7 |
 | 2013 | Philadelphia | 23 | 64 | 16 | N/A | N/A | 3 | N/A |
 | Career |  |  |  | 20 | N/A | N/A | 3 | N/A |
 

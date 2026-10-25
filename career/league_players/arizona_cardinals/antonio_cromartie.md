@@ -1,10 +1,10 @@
 # Antonio Cromartie
 
-**Arizona Cardinals · Cornerback · No. 31 · Age 30 · Last game October 19, 2014**
+**Arizona Cardinals · Cornerback · No. 31 · Age 30 · Last game October 26, 2014**
 
 6' 2", 210 lb · Born April 15, 1984 · Florida State · Drafted in 2006, first round, by San Diego
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Antonio Cromartie](https://commons.wikimedia.org/wiki/Special:FilePath/Antonio-Cromartie_04-24-10.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 2 (2014, through Week 7).
+**Passes defended:** 5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 30 | 31 | 6 | 24 | 16 | 8 | 1 | 1 | 1 |
+| 2014 (through Week 8) | Arizona | 30 | 31 | 7 | 30 | 18 | 12 | 1 | 1 | 1 |
 | 2013 | N.Y. Jets | 29 | 31 | 16 | 74 | 48 | 26 | 5 | 0 | 1 |
-| Career |  |  |  | 22 | 98 | 64 | 34 | 6 | 1 | 2 |
+| Career |  |  |  | 23 | 104 | 66 | 38 | 6 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 30 | 31 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Arizona | 30 | 31 | 1 | 44 | 5 | 0 | 0 | 0 |
 | 2013 | N.Y. Jets | 29 | 31 | 5 | 32 | 13 | 2 | 2 | N/A |
 
 ### Playoffs

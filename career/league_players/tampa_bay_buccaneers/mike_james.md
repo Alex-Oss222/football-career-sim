@@ -1,10 +1,10 @@
 # Mike James
 
-**Tampa Bay Buccaneers · Running back · No. 25 · Age 23 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Running back · No. 25 · Age 23 · Last game October 26, 2014**
 
 5' 10", 223 lb · Born April 13, 1991 · Miami
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Mike James](https://commons.wikimedia.org/wiki/Special:FilePath/Mike_James_%28American_football%29_2012.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 12.0 (2014, through Week 6).
+**Yards per carry:** 7.5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 23 | 25 | 6 | 1 | 12 | 12.0 | 0 | 12 | 2.0 |
+| 2014 (through Week 8) | Tampa Bay | 23 | 25 | 7 | 2 | 15 | 7.5 | 0 | 12 | 2.1 |
 | 2013 | Tampa Bay | 22 | 25 | 16 | 17 | 52 | 3.1 | 0 | 20 | 3.2 |
-| Career |  |  |  | 22 | 18 | 64 | 3.6 | 0 | 20 | 2.9 |
+| Career |  |  |  | 23 | 19 | 67 | 3.5 | 0 | 20 | 2.9 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 23 | 25 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 23 | 25 | 1 | 1 | 4 | 4.0 | 0 | 0 | 0 |
 | 2013 | Tampa Bay | 22 | 25 | 1 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 23 | 25 | 4 | 101 | 25.2 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Tampa Bay | 23 | 25 | 8 | 195 | 24.4 | 0 | 0 | N/A |
 | 2013 | Tampa Bay | 22 | 25 | 2 | 75 | 37.5 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -4,7 +4,7 @@
 
 6' 2", 195 lb · Born August 22, 1990 · Minnesota State · Undrafted
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Adam Thielen](https://commons.wikimedia.org/wiki/Special:FilePath/Adam_Thielen_2017.jpg?width=500)
 
@@ -12,13 +12,13 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting H receiver.
 
-**Yards per target:** 7.9 (2014, through Week 7).
+**Yards per target:** 8.4 (2014, through Week 8).
 
 ## Staff assessment
 
-Adam Thielen was active for all 16 regular-season games for Jacksonville in 2013 and earned an expanded receiving role at H, catching 52 passes for 616 yards. In 2014 he has been active for seven games, catching 25 passes for 285 yards, and in camp he carried the H assignment and kept his crossing depth through contact. He is a route-driven possession receiver who wins with the pace of his stem, leverage, coverage awareness and reliable hands, and he can move across the formation. He wins more with route detail than with burst or long speed, and his release against press and his downfield play are secondary parts of his game.
+Adam Thielen was active for all 16 regular-season games for Jacksonville in 2013 and earned an expanded receiving role at H, catching 52 passes for 616 yards. In 2014 he has been active for eight games, catching 28 passes for 371 yards, and in camp he carried the H assignment and kept his crossing depth through contact. He is a route-driven possession receiver who wins with the pace of his stem, leverage, coverage awareness and reliable hands, and he can move across the formation. He wins more with route detail than with burst or long speed, and his release against press and his downfield play are secondary parts of his game.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -35,18 +35,18 @@ Three-year contract through 2015.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 24 | N/A | 7 | 36 | 25 | 285 | 11.4 | 1 | 80 | 40.7 | 69.4 |
+| 2014 (through Week 8) | Jacksonville | 24 | N/A | 8 | 44 | 28 | 371 | 13.2 | 1 | 80 | 46.4 | 63.6 |
 | 2013 | Jacksonville | 23 | N/A | 16 | 84 | 52 | 616 | 11.8 | 3 | 50 | 38.5 | 61.9 |
-| With Jacksonville |  |  |  | 23 | 120 | 77 | 901 | 11.7 | 4 | 80 | 39.2 | 64.2 |
+| With Jacksonville |  |  |  | 24 | 128 | 80 | 987 | 12.3 | 4 | 80 | 41.1 | 62.5 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 24 | N/A | 1 | 1 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Jacksonville | 24 | N/A | 1 | 1 | 0 | 1 | 1 |
 | 2013 | Jacksonville | 23 | N/A | 1 | 3 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 24 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Jacksonville | 24 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 23 | N/A | 1 | 22 | 22.0 | 1 | 3 | 3.0 |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Jay Ratliff
 
-**Chicago Bears · Defensive tackle · No. 90 · Age 33 · Last game October 19, 2014**
+**Chicago Bears · Defensive tackle · No. 90 · Age 33 · Last game October 26, 2014**
 
 6' 4", 303 lb · Born August 29, 1981 · Auburn · Drafted in 2005, seventh round, by Dallas
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jay Ratliff](https://commons.wikimedia.org/wiki/Special:FilePath/Jeremiah_Ratliff_bears_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 33 | 90 | 7 | 18 | 11 | 7 | 4 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 33 | 90 | 8 | 24 | 15 | 9 | 6 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 33 | 90 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 33 | 90 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

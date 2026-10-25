@@ -1,10 +1,10 @@
 # Dominic Raiola
 
-**Detroit Lions · Center · No. 51 · Age 35 · Last game October 19, 2014**
+**Detroit Lions · Center · No. 51 · Age 35 · Last game October 26, 2014**
 
 6' 1", 310 lb · Born December 30, 1978 · Nebraska · Drafted in 2001, second round, by Detroit
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Dominic Raiola](https://commons.wikimedia.org/wiki/Special:FilePath/Dominic_Raiola.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 35 | 51 | 7 | 7 | 454 | 3 | 34 |
+| 2014 (through Week 8) | Detroit | 35 | 51 | 8 | 8 | 512 | 3 | 37 |
 | 2013 | Detroit | 34 | 51 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

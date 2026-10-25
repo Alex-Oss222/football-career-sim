@@ -1,10 +1,10 @@
 # Davin Joseph
 
-**St. Louis Rams · Guard · No. 69 · Age 30 · Last game October 19, 2014**
+**St. Louis Rams · Guard · No. 69 · Age 30 · Last game October 26, 2014**
 
 6' 3", 313 lb · Born November 22, 1983 · Oklahoma · Drafted in 2006, first round, by Tampa Bay
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Davin Joseph](https://commons.wikimedia.org/wiki/Special:FilePath/USO_tour_in_Kandahar_Davin_Joseph_130319-A-VM825-473_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 2 (2014, through Week 7).
+**Sacks allowed:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 30 | 69 | 6 | 6 | 344 | 2 | 23 |
+| 2014 (through Week 8) | St. Louis | 30 | 69 | 7 | 7 | 414 | 3 | 30 |
 | 2013 | Tampa Bay | 29 | 75 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 

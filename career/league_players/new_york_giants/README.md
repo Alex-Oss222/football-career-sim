@@ -1,6 +1,6 @@
 # New York Giants players
 
-NFC East. The players whose latest game on record was with the New York Giants. G counts regular-season games with any club. Records through October 20, 2014.
+NFC East. The players whose latest game on record was with the New York Giants. G counts regular-season games with any club. Records through October 27, 2014.
 
 [All clubs](../README.md)
 

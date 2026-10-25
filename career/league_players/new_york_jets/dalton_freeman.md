@@ -1,10 +1,10 @@
 # Dalton Freeman
 
-**New York Jets · Center · No. 63 · Age 24 · Last game October 16, 2014**
+**New York Jets · Center · No. 63 · Age 24 · Last game October 26, 2014**
 
 6' 4", 291 lb · Born June 18, 1990 · Clemson
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 **Current assignment:** Reserve center.
 
@@ -18,7 +18,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 24 | 63 | 7 | 0 | 0 | 0 | 3 |
+| 2014 (through Week 8) | N.Y. Jets | 24 | 63 | 8 | 0 | 0 | 0 | 3 |
 
 ### Playoffs
 

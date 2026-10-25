@@ -2,13 +2,13 @@
 
 [Regular season](../README.md) · [Player pages](../../Team_Operations/Team/Player_Cards/README.md) · [Head coach's desk](../../README.md)
 
-**Through Week 7.** Every closed game is counted (106 games).
+**Through Week 8.** Every closed game is counted (121 games).
 
 ## Team at a glance
 
 | Season | Scoring | Efficiency |
 |---|---|---|
-| 4-3 · 2nd AFC South · AFC position 9 | 170 scored · 153 allowed · +17 differential | 24.3 points per game · 38.5% on third down · 46.4% allowed |
+| 4-4 · 1st AFC South · AFC position 4 | 193 scored · 182 allowed · +11 differential | 24.1 points per game · 35.6% on third down · 45.2% allowed |
 
 ## Games played
 
@@ -21,14 +21,15 @@
 | 5 | [vs Pittsburgh Steelers](../Games/Week_05/output.md) | L 10-27 |
 | 6 | [at Tennessee Titans](../Games/Week_06/Game_Report.md) | W 24-10 |
 | 7 | [vs Cleveland Browns](../Games/Week_07/Game_Report.md) | L 31-34 |
+| 8 | [vs Miami Dolphins](../Games/Week_08/Game_Report.md) | L 23-29 |
 
 ## Player leaders
 
 | Category | Player | Season total |
 |---|---|---:|
-| Passing | [Kirk Cousins](../../Team_Operations/Team/Player_Cards/kirk_cousins.md) | 1,624 pass yds · 12 TD, 9 INT |
-| Rushing | [Maurice Jones-Drew](../../Team_Operations/Team/Player_Cards/maurice_jones_drew.md) | 570 rush yds · 4 TD |
-| Receiving | [Davante Adams](../../Team_Operations/Team/Player_Cards/davante_adams.md) | 451 rec yds · 36 catches, 3 TD |
+| Passing | [Kirk Cousins](../../Team_Operations/Team/Player_Cards/kirk_cousins.md) | 1,945 pass yds · 12 TD, 10 INT |
+| Rushing | [Maurice Jones-Drew](../../Team_Operations/Team/Player_Cards/maurice_jones_drew.md) | 599 rush yds · 4 TD |
+| Receiving | [Davante Adams](../../Team_Operations/Team/Player_Cards/davante_adams.md) | 609 rec yds · 44 catches, 3 TD |
 | Tackling | [Daryl Smith](../../Team_Operations/Team/Player_Cards/daryl_smith.md) | 61 tackles · 1 sack |
 
 ## Full statistics

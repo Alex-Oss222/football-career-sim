@@ -1,10 +1,10 @@
 # Omar Bolden
 
-**Denver Broncos · Free safety · No. 31 · Age 25 · Last game October 19, 2014**
+**Denver Broncos · Free safety · No. 31 · Age 25 · Last game October 23, 2014**
 
 5' 10", 195 lb · Born December 20, 1988 · Arizona State · Drafted in 2012, fourth round, by Denver
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Omar Bolden](https://commons.wikimedia.org/wiki/Special:FilePath/Omar_Bolden.JPG?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 25 | 31 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 25 | 31 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Denver | 24 | 31 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Career |  |  |  | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 25 | 31 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 25 | 31 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Denver | 24 | 31 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

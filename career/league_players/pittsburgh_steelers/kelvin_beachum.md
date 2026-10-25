@@ -1,10 +1,10 @@
 # Kelvin Beachum
 
-**Pittsburgh Steelers · Offensive tackle · No. 68 · Age 25 · Last game October 20, 2014**
+**Pittsburgh Steelers · Offensive tackle · No. 68 · Age 25 · Last game October 26, 2014**
 
 6' 3", 303 lb · Born June 8, 1989 · SMU · Drafted in 2012, seventh round, by Pittsburgh
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Kelvin Beachum](https://commons.wikimedia.org/wiki/Special:FilePath/Collision_2023_-_RCZ_7927_%2853008453231%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 25 | 68 | 7 | 7 | 447 | 3 | 41 |
+| 2014 (through Week 8) | Pittsburgh | 25 | 68 | 8 | 8 | 508 | 4 | 45 |
 | 2013 | Pittsburgh | 24 | 68 | 2 | N/A | N/A | 0 | N/A |
-| Career |  |  |  | 9 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 10 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

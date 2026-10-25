@@ -1,10 +1,10 @@
 # Clark Harris
 
-**Cincinnati Bengals · Long snapper · No. 46 · Age 30 · Last game October 19, 2014**
+**Cincinnati Bengals · Long snapper · No. 46 · Age 30 · Last game October 26, 2014**
 
 6' 5", 245 lb · Born July 10, 1984 · Rutgers · Drafted in 2007, seventh round, by Green Bay
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Clark Harris](https://commons.wikimedia.org/wiki/Special:FilePath/Clark_Harris.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 55 (2014, through Week 7).
+**Long snaps:** 66 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 30 | 46 | 6 | 55 | 55 | 0 | 0 |
+| 2014 (through Week 8) | Cincinnati | 30 | 46 | 7 | 66 | 66 | 0 | 0 |
 | 2013 | Cincinnati | 29 | 46 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 22 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

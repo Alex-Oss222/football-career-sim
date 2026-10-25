@@ -1,10 +1,10 @@
 # Austin Howard
 
-**Oakland Raiders · Offensive tackle · No. 77 · Age 27 · Last game October 19, 2014**
+**Oakland Raiders · Offensive tackle · No. 77 · Age 27 · Last game October 26, 2014**
 
 6' 7", 330 lb · Born March 22, 1987 · Northern Iowa
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Austin Howard](https://commons.wikimedia.org/wiki/Special:FilePath/Austin_Howard.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 1 (2014, through Week 7).
+**Sacks allowed:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 27 | 77 | 6 | 6 | 387 | 1 | 26 |
+| 2014 (through Week 8) | Oakland | 27 | 77 | 7 | 7 | 454 | 2 | 35 |
 | 2013 | N.Y. Jets | 26 | 77 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

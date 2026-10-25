@@ -1,10 +1,10 @@
 # Michael Koenen
 
-**Tampa Bay Buccaneers · Punter · No. 9 · Age 32 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Punter · No. 9 · Age 32 · Last game October 26, 2014**
 
 5' 11", 198 lb · Born July 13, 1982 · Western Washington University
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Michael Koenen](https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Koenen.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 36.6 (2014, through Week 6).
+**Net punting average:** 37.9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 32 | 9 | 6 | 25 | 1,109 | 44.4 | 36.6 | 7 | 4 | 66 |
+| 2014 (through Week 8) | Tampa Bay | 32 | 9 | 7 | 29 | 1,293 | 44.6 | 37.9 | 8 | 4 | 66 |
 | 2013 | Tampa Bay | 31 | 9 | 15 | 80 | 3,611 | 45.1 | 38.9 | 24 | 3 | 64 |
-| Career |  |  |  | 21 | 105 | 4,720 | 45.0 | 38.3 | 31 | 7 | 66 |
+| Career |  |  |  | 22 | 109 | 4,904 | 45.0 | 38.6 | 32 | 7 | 66 |
 
 ### Playoffs
 

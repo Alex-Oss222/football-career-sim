@@ -1,10 +1,10 @@
 # Jason Trusnik
 
-**Miami Dolphins · Linebacker · No. 93 · Age 30 · Last game October 19, 2014**
+**Miami Dolphins · Linebacker · No. 93 · Age 30 · Last game October 26, 2014**
 
 6' 4", 252 lb · Born June 6, 1984 · Ohio Northern University
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jason Trusnik](https://commons.wikimedia.org/wiki/Special:FilePath/Jason_Trusnik_2014.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve linebacker.
 
-**Tackles:** 2 (2014, through Week 7).
+**Tackles:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 30 | 93 | 6 | 2 | 0 | 2 | 2 | 0 | 0 |
+| 2014 (through Week 8) | Miami | 30 | 93 | 7 | 2 | 0 | 2 | 2 | 0 | 0 |
 | 2013 | Miami | 29 | 93 | 16 | 30 | 22 | 8 | 3 | 0 | 1 |
-| Career |  |  |  | 22 | 32 | 22 | 10 | 5 | 0 | 1 |
+| Career |  |  |  | 23 | 32 | 22 | 10 | 5 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 30 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Miami | 30 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 29 | 93 | 2 | 32 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

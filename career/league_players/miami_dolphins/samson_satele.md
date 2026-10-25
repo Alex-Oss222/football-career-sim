@@ -1,10 +1,10 @@
 # Samson Satele
 
-**Miami Dolphins · Center · No. 64 · Age 29 · Last game October 19, 2014**
+**Miami Dolphins · Center · No. 64 · Age 29 · Last game October 26, 2014**
 
 6' 3", 300 lb · Born November 29, 1984 · Hawaii · Drafted in 2007, second round, by Miami
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Samson Satele](https://commons.wikimedia.org/wiki/Special:FilePath/Samson_Satele_2014.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 2 (2014, through Week 7).
+**Sacks allowed:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 29 | 64 | 6 | 6 | 399 | 2 | 28 |
+| 2014 (through Week 8) | Miami | 29 | 64 | 7 | 7 | 473 | 2 | 35 |
 | 2013 | Indianapolis | 28 | 64 | 15 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

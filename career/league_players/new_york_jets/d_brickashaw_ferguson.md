@@ -1,10 +1,10 @@
 # D'Brickashaw Ferguson
 
-**New York Jets · Offensive tackle · No. 60 · Age 30 · Last game October 16, 2014**
+**New York Jets · Offensive tackle · No. 60 · Age 30 · Last game October 26, 2014**
 
 6' 6", 310 lb · Born December 10, 1983 · Virginia · Drafted in 2006, first round, by the New York Jets
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![D'Brickashaw Ferguson](https://commons.wikimedia.org/wiki/Special:FilePath/D%27Brickashaw_Ferguson_-_Jets_-_Sept_2009_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 4 (2014, through Week 7).
+**Sacks allowed:** 6 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 30 | 60 | 7 | 7 | 392 | 4 | 26 |
+| 2014 (through Week 8) | N.Y. Jets | 30 | 60 | 8 | 8 | 455 | 6 | 29 |
 | 2013 | N.Y. Jets | 29 | 60 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

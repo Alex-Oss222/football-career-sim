@@ -1,12 +1,12 @@
 # George Winn
 
-**Detroit Lions · Running back · Age 23 · Last game October 19, 2014**
+**Detroit Lions · Running back · Age 23 · Last game October 26, 2014**
 
 Born November 10, 1990 · Cincinnati
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
-**Yards per carry:** 11.6 (2014, through Week 7).
+**Yards per carry:** 9.4 (2014, through Week 8).
 
 ## Contract
 
@@ -18,11 +18,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 23 | N/A | 3 | 5 | 58 | 11.6 | 1 | 39 | 19.3 |
+| 2014 (through Week 8) | Detroit | 23 | N/A | 4 | 7 | 66 | 9.4 | 1 | 39 | 16.5 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 23 | N/A | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 8) | Detroit | 23 | N/A | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 

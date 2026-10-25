@@ -4,11 +4,13 @@
 
 5' 8", 167 lb · Born February 17, 1991 · Abilene Christian · Undrafted
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Taylor Gabriel](https://commons.wikimedia.org/wiki/Special:FilePath/Taylor_Gabriel.jpg?width=500)
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Taylor_Gabriel.jpg)).*
+
+**Yards per target:** 19.0 (2014, through Week 8).
 
 ## Staff assessment
 
@@ -32,7 +34,7 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 23 | 18 | 1 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | Jacksonville | 23 | 18 | 2 | 1 | 1 | 19 | 19.0 | 0 | 19 | 9.5 | 100.0 |
 
 ### Playoffs
 

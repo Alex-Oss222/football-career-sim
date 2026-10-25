@@ -1,10 +1,10 @@
 # Barry Cofield
 
-**Washington Redskins · Nose tackle · No. 96 · Age 30 · Last game October 19, 2014**
+**Washington Redskins · Nose tackle · No. 96 · Age 30 · Last game October 27, 2014**
 
 6' 4", 303 lb · Born March 19, 1984 · Northwestern · Drafted in 2006, fourth round, by the New York Giants
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Barry Cofield](https://commons.wikimedia.org/wiki/Special:FilePath/Barry_Cofield1.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting nose tackle.
 
-**Sacks:** 1 (2014, through Week 7).
+**Sacks:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 30 | 96 | 7 | 11 | 7 | 4 | 2 | 1 | 1 |
+| 2014 (through Week 8) | Washington | 30 | 96 | 8 | 14 | 9 | 5 | 2 | 1 | 2 |
 | 2013 | Washington | 29 | 96 | 15 | 56 | 34 | 22 | 11 | 4 | 11 |
-| Career |  |  |  | 22 | 67 | 41 | 26 | 13 | 5 | 12 |
+| Career |  |  |  | 23 | 70 | 43 | 27 | 13 | 5 | 13 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 30 | 96 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Washington | 30 | 96 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Washington | 29 | 96 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

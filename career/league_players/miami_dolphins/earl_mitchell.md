@@ -1,10 +1,10 @@
 # Earl Mitchell
 
-**Miami Dolphins · Defensive tackle · No. 90 · Age 27 · Last game October 19, 2014**
+**Miami Dolphins · Defensive tackle · No. 90 · Age 27 · Last game October 26, 2014**
 
 6' 3", 310 lb · Born September 25, 1987 · Arizona · Drafted in 2010, third round, by Houston
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Earl Mitchell](https://commons.wikimedia.org/wiki/Special:FilePath/Earl_Mitchell_2012.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 2 (2014, through Week 7).
+**Sacks:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 26 | 90 | 6 | 18 | 11 | 7 | 3 | 2 | 4 |
+| 2014 (through Week 8) | Miami | 26 | 90 | 7 | 22 | 12 | 10 | 3 | 2 | 5 |
 | 2013 | Houston | 25 | 92 | 16 | 70 | 50 | 20 | 11 | 3 | 12 |
-| Career |  |  |  | 22 | 88 | 61 | 27 | 14 | 5 | 16 |
+| Career |  |  |  | 23 | 92 | 62 | 30 | 14 | 5 | 17 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 26 | 90 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Miami | 26 | 90 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Houston | 25 | 92 | 0 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs

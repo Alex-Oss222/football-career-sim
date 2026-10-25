@@ -1,10 +1,10 @@
 # Ryan Kalil
 
-**Carolina Panthers · Center · No. 67 · Age 29 · Last game October 19, 2014**
+**Carolina Panthers · Center · No. 67 · Age 29 · Last game October 26, 2014**
 
 6' 2", 300 lb · Born March 29, 1985 · USC · Drafted in 2007, second round, by Carolina
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Ryan Kalil](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Kalil.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 5 (2014, through Week 7).
+**Sacks allowed:** 5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 29 | 67 | 7 | 7 | 418 | 5 | 29 |
+| 2014 (through Week 8) | Carolina | 29 | 67 | 8 | 8 | 489 | 5 | 35 |
 | 2013 | Carolina | 28 | 67 | 16 | N/A | N/A | 8 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 13 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 13 | N/A |
 
 ### Playoffs
 

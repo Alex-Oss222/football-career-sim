@@ -4,7 +4,7 @@
 
 6' 1", 215 lb · Born December 24, 1992 · Fresno State · Drafted in 2014, second round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Davante Adams](https://commons.wikimedia.org/wiki/Special:FilePath/Davante_Adams_Cropped.jpg?width=500)
 
@@ -12,13 +12,13 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting X receiver.
 
-**Yards per target:** 6.8 (2014, through Week 7).
+**Yards per target:** 7.7 (2014, through Week 8).
 
 ## Staff assessment
 
-Davante Adams is a rookie who has played X for Jacksonville, active for seven games with 36 catches for 451 yards and three touchdowns. He has a large catch radius and strong hands, and his routes are polished at the top of the stem. His long speed is average, and his release against NFL press was unproven when he arrived; in camp he won one contact release and lost another to Aqib Talib.
+Davante Adams is a rookie who has played X for Jacksonville, active for eight games with 44 catches for 609 yards and three touchdowns. He has a large catch radius and strong hands, and his routes are polished at the top of the stem. His long speed is average, and his release against NFL press was unproven when he arrived; in camp he won one contact release and lost another to Aqib Talib.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -37,11 +37,11 @@ Four-year contract through 2017.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 21 | 17 | 7 | 66 | 36 | 451 | 12.5 | 3 | 64 | 64.4 | 54.5 |
+| 2014 (through Week 8) | Jacksonville | 21 | 17 | 8 | 79 | 44 | 609 | 13.8 | 3 | 64 | 76.1 | 55.7 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 21 | 17 | 2 | 12 | 0 | 1 | 0 |
+| 2014 (through Week 8) | Jacksonville | 21 | 17 | 2 | 12 | 0 | 2 | 1 |
 
 ### Playoffs
 

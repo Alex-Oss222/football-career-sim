@@ -1,10 +1,10 @@
 # Jarvis Jenkins
 
-**Washington Redskins · Defensive end · No. 99 · Age 26 · Last game October 19, 2014**
+**Washington Redskins · Defensive end · No. 99 · Age 26 · Last game October 27, 2014**
 
 6' 4", 315 lb · Born April 24, 1988 · Clemson · Drafted in 2011, second round, by Washington
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Jarvis Jenkins](https://commons.wikimedia.org/wiki/Special:FilePath/Jarvisjenkins.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 26 | 99 | 7 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Washington | 26 | 99 | 8 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 26 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Washington | 26 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

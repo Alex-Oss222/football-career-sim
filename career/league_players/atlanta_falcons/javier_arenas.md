@@ -1,10 +1,10 @@
 # Javier Arenas
 
-**Atlanta Falcons · Cornerback · No. 28 · Age 26 · Last game October 19, 2014**
+**Atlanta Falcons · Cornerback · No. 28 · Age 26 · Last game October 26, 2014**
 
 5' 9", 197 lb · Born October 28, 1987 · Alabama · Drafted in 2010, second round, by Kansas City
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Javier Arenas](https://commons.wikimedia.org/wiki/Special:FilePath/Javier_Arenas_%28American_football%29_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 1 (2014, through Week 7).
+**Passes defended:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 26 | 28 | 6 | 3 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Atlanta | 26 | 28 | 7 | 3 | 3 | 0 | 0 | 0 | 0 |
 | 2013 | Arizona | 25 | 35 | 16 | 7 | 6 | 1 | 0 | 0 | 0 |
-| Career |  |  |  | 22 | 10 | 9 | 1 | 0 | 0 | 0 |
+| Career |  |  |  | 23 | 10 | 9 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 26 | 28 | 1 | 0 | 1 | 0 | 0 | 2 |
+| 2014 (through Week 8) | Atlanta | 26 | 28 | 1 | 0 | 1 | 0 | 0 | 2 |
 | 2013 | Arizona | 25 | 35 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 26 | 28 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Atlanta | 26 | 28 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Arizona | 25 | 35 | 45 | 1,110 | 24.7 | 0 | 0 | N/A |
 
 ### Playoffs

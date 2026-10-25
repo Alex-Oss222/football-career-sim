@@ -1,10 +1,10 @@
 # Tony Jefferson
 
-**Arizona Cardinals · Strong safety · No. 22 · Age 22 · Last game October 19, 2014**
+**Arizona Cardinals · Strong safety · No. 22 · Age 22 · Last game October 26, 2014**
 
 5' 11", 212 lb · Born January 27, 1992 · Oklahoma
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Tony Jefferson](https://commons.wikimedia.org/wiki/Special:FilePath/Tony_Jefferson.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 4 (2014, through Week 7).
+**Passes defended:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 22 | 22 | 6 | 29 | 20 | 9 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Arizona | 22 | 22 | 7 | 31 | 22 | 9 | 0 | 1 | 1 |
 | 2013 | Arizona | 21 | 22 | 11 | 1 | 1 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 17 | 30 | 21 | 9 | 0 | 1 | 1 |
+| Career |  |  |  | 18 | 32 | 23 | 9 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 22 | 22 | 0 | 0 | 4 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Arizona | 22 | 22 | 0 | 0 | 4 | 1 | 0 | 0 |
 | 2013 | Arizona | 21 | 22 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

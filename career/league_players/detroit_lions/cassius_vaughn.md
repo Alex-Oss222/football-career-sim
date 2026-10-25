@@ -1,10 +1,10 @@
 # Cassius Vaughn
 
-**Detroit Lions · Cornerback · No. 29 · Age 26 · Last game October 19, 2014**
+**Detroit Lions · Cornerback · No. 29 · Age 26 · Last game October 26, 2014**
 
 5' 11", 195 lb · Born November 3, 1987 · Mississippi
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Cassius Vaughn](https://commons.wikimedia.org/wiki/Special:FilePath/Cassius_Vaughn.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 3 (2014, through Week 7).
+**Passes defended:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 26 | 29 | 7 | 11 | 9 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Detroit | 26 | 29 | 8 | 15 | 11 | 4 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 25 | 32 | 16 | 25 | 17 | 8 | 0 | 0 | 0 |
-| Career |  |  |  | 23 | 36 | 26 | 10 | 0 | 0 | 0 |
+| Career |  |  |  | 24 | 40 | 28 | 12 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 26 | 29 | 0 | 0 | 3 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Detroit | 26 | 29 | 0 | 0 | 3 | 0 | 0 | 1 |
 | 2013 | Indianapolis | 25 | 32 | 1 | 16 | 1 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 26 | 29 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Detroit | 26 | 29 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Indianapolis | 25 | 32 | 43 | 1,083 | 25.2 | 0 | 0 | N/A |
 
 ### Playoffs

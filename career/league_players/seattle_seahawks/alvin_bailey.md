@@ -1,10 +1,10 @@
 # Alvin Bailey
 
-**Seattle Seahawks · Guard · No. 78 · Age 23 · Last game October 19, 2014**
+**Seattle Seahawks · Guard · No. 78 · Age 23 · Last game October 26, 2014**
 
 6' 3", 320 lb · Born August 26, 1991 · Arkansas
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Alvin Bailey](https://commons.wikimedia.org/wiki/Special:FilePath/Alvin_Bailey_in_2013.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 23 | 78 | 6 | 0 | 0 | 0 | 33 |
+| 2014 (through Week 8) | Seattle | 23 | 78 | 7 | 0 | 0 | 0 | 35 |
 | 2013 | Seattle | 22 | 78 | 16 | N/A | N/A | 11 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 11 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 11 | N/A |
 
 ### Playoffs
 

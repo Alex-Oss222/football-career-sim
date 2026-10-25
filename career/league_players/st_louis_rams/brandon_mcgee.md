@@ -1,10 +1,10 @@
 # Brandon McGee
 
-**St. Louis Rams · Cornerback · No. 32 · Age 23 · Last game October 19, 2014**
+**St. Louis Rams · Cornerback · No. 32 · Age 23 · Last game October 26, 2014**
 
 5' 11", 193 lb · Born December 11, 1990 · Miami
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brandon McGee](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_McGee_2012.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 1 (2014, through Week 7).
+**Passes defended:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 23 | 32 | 6 | 19 | 11 | 8 | 1 | 0 | 0 |
+| 2014 (through Week 8) | St. Louis | 23 | 32 | 7 | 20 | 12 | 8 | 1 | 0 | 0 |
 | 2013 | St. Louis | 22 | 32 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 8 | 19 | 11 | 8 | 1 | 0 | 0 |
+| Career |  |  |  | 9 | 20 | 12 | 8 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 23 | 32 | 0 | 0 | 1 | 1 | 0 | 1 |
+| 2014 (through Week 8) | St. Louis | 23 | 32 | 0 | 0 | 2 | 2 | 0 | 1 |
 | 2013 | St. Louis | 22 | 32 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

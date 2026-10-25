@@ -1,10 +1,10 @@
 # Steve McLendon
 
-**Pittsburgh Steelers · Nose tackle · No. 90 · Age 28 · Last game October 20, 2014**
+**Pittsburgh Steelers · Nose tackle · No. 90 · Age 28 · Last game October 26, 2014**
 
 6' 4", 320 lb · Born January 3, 1986 · Troy
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Steve McLendon](https://commons.wikimedia.org/wiki/Special:FilePath/Steve_McLendon.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Starting nose tackle.
 
-**Sacks:** 1 (2014, through Week 7).
+**Sacks:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 28 | 90 | 7 | 37 | 28 | 9 | 4 | 1 | 7 |
+| 2014 (through Week 8) | Pittsburgh | 28 | 90 | 8 | 42 | 32 | 10 | 4 | 1 | 7 |
 | 2013 | Pittsburgh | 27 | 90 | 16 | 44 | 29 | 15 | 6 | 1 | 4 |
-| Career |  |  |  | 23 | 81 | 57 | 24 | 10 | 2 | 11 |
+| Career |  |  |  | 24 | 86 | 61 | 25 | 10 | 2 | 11 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 28 | 90 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Pittsburgh | 28 | 90 | 0 | 0 | 3 | 0 | 0 | 0 |
 | 2013 | Pittsburgh | 27 | 90 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

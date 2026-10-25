@@ -1,10 +1,10 @@
 # Dustin Vaughan
 
-**Dallas Cowboys · Quarterback · No. 10 · Age 23 · Last game October 19, 2014**
+**Dallas Cowboys · Quarterback · No. 10 · Age 23 · Last game October 27, 2014**
 
 6' 5", 235 lb · Born January 27, 1991 · West Texas A&M
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Dustin Vaughan](https://commons.wikimedia.org/wiki/Special:FilePath/Dustin_Vaughan_%28LCCN2015630568%29_%28cropped%29.tif?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 23 | 10 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Dallas | 23 | 10 | 8 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 23 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Dallas | 23 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

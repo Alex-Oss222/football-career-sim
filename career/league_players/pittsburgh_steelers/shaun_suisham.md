@@ -1,10 +1,10 @@
 # Shaun Suisham
 
-**Pittsburgh Steelers · Kicker · No. 6 · Age 32 · Last game October 20, 2014**
+**Pittsburgh Steelers · Kicker · No. 6 · Age 32 · Last game October 26, 2014**
 
 6' 0", 200 lb · Born December 29, 1981 · Bowling Green
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Shaun Suisham](https://commons.wikimedia.org/wiki/Special:FilePath/Suisham_closeup.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 93.8 (2014, through Week 7).
+**Field-goal percentage:** 94.7 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 32 | 6 | 7 | 15 | 16 | 93.8 | 48 | 25 | 25 | 100.0 | 70 |
+| 2014 (through Week 8) | Pittsburgh | 32 | 6 | 8 | 18 | 19 | 94.7 | 48 | 26 | 26 | 100.0 | 80 |
 | 2013 | Pittsburgh | 31 | 6 | 16 | 31 | 36 | 86.1 | N/A | 40 | 40 | 100.0 | 133 |
-| Career |  |  |  | 23 | 46 | 52 | 88.5 | N/A | 65 | 65 | 100.0 | 203 |
+| Career |  |  |  | 24 | 49 | 55 | 89.1 | N/A | 66 | 66 | 100.0 | 213 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 32 | 6 | 8-8 | 7-7 | 0-1 |
+| 2014 (through Week 8) | Pittsburgh | 32 | 6 | 10-10 | 8-8 | 0-1 |
 | 2013 | Pittsburgh | 31 | 6 | N/A | N/A | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Chris Gragg
 
-**Buffalo Bills · Tight end · No. 89 · Age 24 · Last game October 19, 2014**
+**Buffalo Bills · Tight end · No. 89 · Age 24 · Last game October 26, 2014**
 
 6' 3", 244 lb · Born June 30, 1990 · Arkansas
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Chris Gragg](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Gragg_in_2015.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 11.2 (2014, through Week 7).
+**Yards per target:** 9.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 24 | 89 | 7 | 4 | 4 | 45 | 11.2 | 0 | 36 | 6.4 | 100.0 |
+| 2014 (through Week 8) | Buffalo | 24 | 89 | 8 | 6 | 5 | 54 | 10.8 | 0 | 36 | 6.8 | 83.3 |
 | 2013 | Buffalo | 23 | 89 | 16 | 2 | 1 | 20 | 20.0 | 0 | 20 | 1.2 | 50.0 |
-| Career |  |  |  | 23 | 6 | 5 | 65 | 13.0 | 0 | 36 | 2.8 | 83.3 |
+| Career |  |  |  | 24 | 8 | 6 | 74 | 12.3 | 0 | 36 | 3.1 | 75.0 |
 
 ### Playoffs
 

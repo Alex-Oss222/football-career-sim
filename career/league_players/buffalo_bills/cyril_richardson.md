@@ -1,10 +1,10 @@
 # Cyril Richardson
 
-**Buffalo Bills · Guard · No. 68 · Age 23 · Last game October 19, 2014**
+**Buffalo Bills · Guard · No. 68 · Age 23 · Last game October 26, 2014**
 
 6' 5", 343 lb · Born December 27, 1990 · Baylor
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Cyril Richardson](https://commons.wikimedia.org/wiki/Special:FilePath/Cyril_Richardson_%28American_football%29.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 23 | 68 | 7 | 0 | 0 | 0 | 4 |
+| 2014 (through Week 8) | Buffalo | 23 | 68 | 8 | 0 | 0 | 0 | 4 |
 
 ### Playoffs
 

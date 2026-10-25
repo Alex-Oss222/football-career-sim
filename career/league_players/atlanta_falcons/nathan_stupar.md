@@ -1,10 +1,10 @@
 # Nathan Stupar
 
-**Atlanta Falcons · Linebacker · No. 52 · Age 26 · Last game October 19, 2014**
+**Atlanta Falcons · Linebacker · No. 52 · Age 26 · Last game October 26, 2014**
 
 6' 2", 240 lb · Born March 14, 1988 · Penn State · Drafted in 2012, seventh round, by Oakland
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Nathan Stupar](https://commons.wikimedia.org/wiki/Special:FilePath/Nate_Stupar_2015.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve linebacker.
 
-**Tackles:** 27 (2014, through Week 7).
+**Tackles:** 28 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 26 | 52 | 7 | 27 | 19 | 8 | 2 | 1 | 3 |
+| 2014 (through Week 8) | Atlanta | 26 | 52 | 8 | 28 | 20 | 8 | 2 | 1 | 3 |
 | 2013 | San Francisco | 25 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 9 | 27 | 19 | 8 | 2 | 1 | 3 |
+| Career |  |  |  | 10 | 28 | 20 | 8 | 2 | 1 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 26 | 52 | 1 | 1 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Atlanta | 26 | 52 | 1 | 1 | 2 | 0 | 0 | 0 |
 | 2013 | San Francisco | 25 | N/A | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

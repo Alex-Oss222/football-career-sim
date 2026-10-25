@@ -1,10 +1,10 @@
 # Ronald Leary
 
-**Dallas Cowboys · Guard · No. 65 · Age 25 · Last game October 19, 2014**
+**Dallas Cowboys · Guard · No. 65 · Age 25 · Last game October 27, 2014**
 
 6' 3", 320 lb · Born April 29, 1989 · Memphis
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Ronald Leary](https://commons.wikimedia.org/wiki/Special:FilePath/Ronald_Leary_%28Denver_Broncos_player%29_during_pre-season_game_against_Green_Bay_Packers_on_August_26%2C_2017_in_Denver%2C_Colorado.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 25 | 65 | 7 | 7 | 408 | 3 | 27 |
+| 2014 (through Week 8) | Dallas | 25 | 65 | 8 | 8 | 479 | 4 | 32 |
 | 2013 | Dallas | 24 | 65 | 16 | N/A | N/A | 9 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 12 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 13 | N/A |
 
 ### Playoffs
 

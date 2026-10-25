@@ -1,10 +1,10 @@
 # Eric Decker
 
-**New York Jets · Wide receiver · No. 87 · Age 27 · Last game October 16, 2014**
+**New York Jets · Wide receiver · No. 87 · Age 27 · Last game October 26, 2014**
 
 6' 3", 214 lb · Born March 15, 1987 · Minnesota · Drafted in 2010, third round, by Denver
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Eric Decker](https://commons.wikimedia.org/wiki/Special:FilePath/Eric_Decker_2010.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 4.8 (2014, through Week 7).
+**Yards per target:** 5.2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 27 | 87 | 7 | 44 | 26 | 213 | 8.2 | 1 | 26 | 30.4 | 59.1 |
+| 2014 (through Week 8) | N.Y. Jets | 27 | 87 | 8 | 52 | 31 | 270 | 8.7 | 1 | 26 | 33.8 | 59.6 |
 | 2013 | Denver | 26 | 87 | 16 | 68 | 44 | 505 | 11.5 | 3 | 51 | 31.6 | 64.7 |
-| Career |  |  |  | 23 | 112 | 70 | 718 | 10.3 | 4 | 51 | 31.2 | 62.5 |
+| Career |  |  |  | 24 | 120 | 75 | 775 | 10.3 | 4 | 51 | 32.3 | 62.5 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 27 | 87 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | N.Y. Jets | 27 | 87 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Denver | 26 | 87 | 1 | 28 | 28.0 | 0 | 0 | N/A |
 
 ### Playoffs

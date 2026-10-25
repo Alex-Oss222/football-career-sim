@@ -4,7 +4,7 @@
 
 6' 2", 253 lb · Born August 17, 1989 · Boston College · Undrafted
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Kasim Edebali](https://commons.wikimedia.org/wiki/Special:FilePath/Kasim_Edebali.JPG?width=500)
 

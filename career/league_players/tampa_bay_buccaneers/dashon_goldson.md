@@ -1,10 +1,10 @@
 # Dashon Goldson
 
-**Tampa Bay Buccaneers · Free safety · No. 38 · Age 30 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Free safety · No. 38 · Age 30 · Last game October 26, 2014**
 
 6' 2", 200 lb · Born September 18, 1984 · Washington; Coffeyville CC · Drafted in 2007, fourth round, by San Francisco
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Dashon Goldson](https://commons.wikimedia.org/wiki/Special:FilePath/Dashon_Goldson_at_49ers_training_camp_2010-08-11_1.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 2 (2014, through Week 6).
+**Passes defended:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 29 | 38 | 2 | 7 | 2 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 29 | 38 | 2 | 7 | 2 | 5 | 0 | 0 | 0 |
 | 2013 | Tampa Bay | 28 | 38 | 16 | 79 | 58 | 21 | 1 | 1 | 2 |
 | Career |  |  |  | 18 | 86 | 60 | 26 | 1 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 29 | 38 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 29 | 38 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Tampa Bay | 28 | 38 | 2 | 25 | 16 | 2 | 2 | N/A |
 
 ### Playoffs

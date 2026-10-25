@@ -1,10 +1,10 @@
 # Adam Hayward
 
-**Washington Redskins · Inside linebacker · No. 55 · Age 30 · Last game October 19, 2014**
+**Washington Redskins · Inside linebacker · No. 55 · Age 30 · Last game October 27, 2014**
 
 6' 1", 240 lb · Born June 23, 1984 · Portland State; Colorado State · Drafted in 2007, sixth round, by Tampa Bay
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Adam Hayward](https://commons.wikimedia.org/wiki/Special:FilePath/Adam_Hayward_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve linebacker.
 
-**Tackles:** 7 (2014, through Week 7).
+**Tackles:** 9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 30 | 55 | 7 | 7 | 5 | 2 | 2 | 0 | 1 |
+| 2014 (through Week 8) | Washington | 30 | 55 | 8 | 9 | 7 | 2 | 2 | 0 | 1 |
 | 2013 | Tampa Bay | 29 | 57 | 16 | 12 | 8 | 4 | 0 | 0 | 1 |
-| Career |  |  |  | 23 | 19 | 13 | 6 | 2 | 0 | 2 |
+| Career |  |  |  | 24 | 21 | 15 | 6 | 2 | 0 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 30 | 55 | 0 | 0 | 1 | 0 | 0 | 6 |
+| 2014 (through Week 8) | Washington | 30 | 55 | 0 | 0 | 1 | 0 | 0 | 6 |
 | 2013 | Tampa Bay | 29 | 57 | 1 | 15 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

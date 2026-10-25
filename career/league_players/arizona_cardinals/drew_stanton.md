@@ -1,10 +1,10 @@
 # Drew Stanton
 
-**Arizona Cardinals · Quarterback · No. 5 · Age 30 · Last game October 19, 2014**
+**Arizona Cardinals · Quarterback · No. 5 · Age 30 · Last game October 26, 2014**
 
 6' 3", 243 lb · Born May 7, 1984 · Michigan State · Drafted in 2007, second round, by Detroit
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Drew Stanton](https://commons.wikimedia.org/wiki/Special:FilePath/Drew_Stanton_2018.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 30 | 5 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Arizona | 30 | 5 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Arizona | 29 | 5 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 22 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 23 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 30 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Arizona | 30 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Arizona | 29 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

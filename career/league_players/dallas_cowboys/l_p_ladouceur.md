@@ -1,10 +1,10 @@
 # L.P. Ladouceur
 
-**Dallas Cowboys · Long snapper · No. 91 · Age 33 · Last game October 19, 2014**
+**Dallas Cowboys · Long snapper · No. 91 · Age 33 · Last game October 27, 2014**
 
 6' 5", 256 lb · Born March 13, 1981 · California
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![L.P. Ladouceur](https://commons.wikimedia.org/wiki/Special:FilePath/L._P._Ladouceur.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 58 (2014, through Week 7).
+**Long snaps:** 65 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 33 | 91 | 7 | 58 | 58 | 0 | 0 |
+| 2014 (through Week 8) | Dallas | 33 | 91 | 8 | 65 | 65 | 0 | 0 |
 | 2013 | Dallas | 32 | 91 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 24 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

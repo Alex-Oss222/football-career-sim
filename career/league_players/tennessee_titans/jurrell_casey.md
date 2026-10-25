@@ -1,10 +1,10 @@
 # Jurrell Casey
 
-**Tennessee Titans · Defensive tackle · No. 99 · Age 24 · Last game October 19, 2014**
+**Tennessee Titans · Defensive tackle · No. 99 · Age 24 · Last game October 26, 2014**
 
 6' 1", 305 lb · Born December 5, 1989 · USC · Drafted in 2011, third round, by Tennessee
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jurrell Casey](https://commons.wikimedia.org/wiki/Special:FilePath/Jurrell_Casey.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 24 | 99 | 7 | 19 | 13 | 6 | 3 | 0 | 0 |
+| 2014 (through Week 8) | Tennessee | 24 | 99 | 8 | 20 | 14 | 6 | 3 | 0 | 0 |
 | 2013 | Tennessee | 23 | 99 | 16 | 55 | 36 | 19 | 9 | 2 | 8 |
-| Career |  |  |  | 23 | 74 | 49 | 25 | 12 | 2 | 8 |
+| Career |  |  |  | 24 | 75 | 50 | 25 | 12 | 2 | 8 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 24 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tennessee | 24 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Tennessee | 23 | 99 | 0 | 0 | 5 | 1 | 1 | N/A |
 
 ### Playoffs

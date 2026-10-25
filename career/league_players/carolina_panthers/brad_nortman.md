@@ -1,10 +1,10 @@
 # Brad Nortman
 
-**Carolina Panthers · Punter · No. 8 · Age 25 · Last game October 19, 2014**
+**Carolina Panthers · Punter · No. 8 · Age 25 · Last game October 26, 2014**
 
 6' 2", 210 lb · Born September 12, 1989 · Wisconsin · Drafted in 2012, sixth round, by Carolina
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brad Nortman](https://commons.wikimedia.org/wiki/Special:FilePath/Brad_nortman_panthers.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 39.5 (2014, through Week 7).
+**Net punting average:** 38.5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 24 | 8 | 7 | 29 | 1,271 | 43.8 | 39.5 | 11 | 3 | 64 |
+| 2014 (through Week 8) | Carolina | 24 | 8 | 8 | 33 | 1,420 | 43.0 | 38.5 | 13 | 4 | 64 |
 | 2013 | Carolina | 23 | 8 | 16 | 66 | 2,928 | 44.4 | 38.9 | 31 | 0 | 62 |
-| Career |  |  |  | 23 | 95 | 4,199 | 44.2 | 39.1 | 42 | 3 | 64 |
+| Career |  |  |  | 24 | 99 | 4,348 | 43.9 | 38.8 | 44 | 4 | 64 |
 
 ### Playoffs
 

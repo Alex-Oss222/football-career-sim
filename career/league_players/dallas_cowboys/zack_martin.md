@@ -1,10 +1,10 @@
 # Zack Martin
 
-**Dallas Cowboys · Guard · No. 70 · Age 23 · Last game October 19, 2014**
+**Dallas Cowboys · Guard · No. 70 · Age 23 · Last game October 27, 2014**
 
 6' 4", 310 lb · Born November 20, 1990 · Notre Dame
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Zack Martin](https://commons.wikimedia.org/wiki/Special:FilePath/Zack_Martin.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 2 (2014, through Week 7).
+**Sacks allowed:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 23 | 70 | 7 | 7 | 408 | 2 | 27 |
+| 2014 (through Week 8) | Dallas | 23 | 70 | 8 | 8 | 479 | 2 | 32 |
 
 ### Playoffs
 

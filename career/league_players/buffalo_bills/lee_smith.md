@@ -1,10 +1,10 @@
 # Lee Smith
 
-**Buffalo Bills · Tight end · No. 85 · Age 26 · Last game October 19, 2014**
+**Buffalo Bills · Tight end · No. 85 · Age 26 · Last game October 26, 2014**
 
 6' 6", 265 lb · Born November 21, 1987 · Marshall; Tennessee · Drafted in 2011, fifth round, by New England
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Lee Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Lee_Smith_%28American_football%29_2017.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 1.4 (2014, through Week 7).
+**Yards per target:** 2.3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 26 | 85 | 5 | 8 | 4 | 11 | 2.8 | 0 | 7 | 2.2 | 50.0 |
+| 2014 (through Week 8) | Buffalo | 26 | 85 | 6 | 15 | 7 | 35 | 5.0 | 0 | 9 | 5.8 | 46.7 |
 | 2013 | Buffalo | 25 | 85 | 16 | 13 | 11 | 130 | 11.8 | 0 | 36 | 8.1 | 84.6 |
-| Career |  |  |  | 21 | 21 | 15 | 141 | 9.4 | 0 | 36 | 6.7 | 71.4 |
+| Career |  |  |  | 22 | 28 | 18 | 165 | 9.2 | 0 | 36 | 7.5 | 64.3 |
 
 ### Playoffs
 

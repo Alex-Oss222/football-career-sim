@@ -1,10 +1,10 @@
 # Ahmad Bradshaw
 
-**Indianapolis Colts · Running back · No. 44 · Age 28 · Last game October 19, 2014**
+**Indianapolis Colts · Running back · No. 44 · Age 28 · Last game October 26, 2014**
 
 5' 10", 217 lb · Born March 19, 1986 · Marshall · Drafted in 2007, seventh round, by the New York Giants
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Ahmad Bradshaw](https://commons.wikimedia.org/wiki/Special:FilePath/BradshawNYG.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 4.7 (2014, through Week 7).
+**Yards per carry:** 4.5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 28 | 44 | 7 | 74 | 345 | 4.7 | 1 | 46 | 49.3 |
+| 2014 (through Week 8) | Indianapolis | 28 | 44 | 8 | 87 | 394 | 4.5 | 1 | 46 | 49.2 |
 | 2013 | Indianapolis | 27 | 44 | 16 | 16 | 75 | 4.7 | 0 | 14 | 4.7 |
-| Career |  |  |  | 23 | 90 | 420 | 4.7 | 1 | 46 | 18.3 |
+| Career |  |  |  | 24 | 103 | 469 | 4.6 | 1 | 46 | 19.5 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 28 | 44 | 11 | 6 | 56 | 9.3 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Indianapolis | 28 | 44 | 12 | 7 | 62 | 8.9 | 0 | 1 | 1 |
 | 2013 | Indianapolis | 27 | 44 | 4 | 3 | 31 | 10.3 | 1 | 0 | 0 |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Trent Murphy
 
-**Washington Redskins · Defensive end · No. 93 · Age 23 · Last game October 19, 2014**
+**Washington Redskins · Defensive end · No. 93 · Age 23 · Last game October 27, 2014**
 
 6' 5", 258 lb · Born December 22, 1990 · Stanford
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Trent Murphy](https://commons.wikimedia.org/wiki/Special:FilePath/Trent-Murphy.png?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve outside linebacker.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 23 | 93 | 7 | 2 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Washington | 23 | 93 | 8 | 3 | 1 | 2 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 23 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Washington | 23 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

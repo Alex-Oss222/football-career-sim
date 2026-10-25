@@ -1,10 +1,10 @@
 # Brandon Tate
 
-**Cincinnati Bengals · Wide receiver · No. 19 · Age 27 · Last game October 19, 2014**
+**Cincinnati Bengals · Wide receiver · No. 19 · Age 27 · Last game October 26, 2014**
 
 6' 1", 195 lb · Born October 5, 1987 · North Carolina · Drafted in 2009, third round, by New England
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brandon Tate](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Tate.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 14.0 (2014, through Week 7).
+**Yards per target:** 14.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 26 | 19 | 6 | 7 | 5 | 98 | 19.6 | 1 | 45 | 16.3 | 71.4 |
+| 2014 (through Week 8) | Cincinnati | 26 | 19 | 7 | 7 | 5 | 98 | 19.6 | 1 | 45 | 14.0 | 71.4 |
 | 2013 | Cincinnati | 25 | 19 | 16 | 38 | 28 | 314 | 11.2 | 3 | 38 | 19.6 | 73.7 |
-| Career |  |  |  | 22 | 45 | 33 | 412 | 12.5 | 4 | 45 | 18.7 | 73.3 |
+| Career |  |  |  | 23 | 45 | 33 | 412 | 12.5 | 4 | 45 | 17.9 | 73.3 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 26 | 19 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cincinnati | 26 | 19 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 25 | 19 | 0 | 0 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 26 | 19 | 19 | 411 | 21.6 | 11 | 123 | 11.2 |
+| 2014 (through Week 8) | Cincinnati | 26 | 19 | 21 | 447 | 21.3 | 13 | 142 | 10.9 |
 | 2013 | Cincinnati | 25 | 19 | 39 | 960 | 24.6 | 0 | 0 | N/A |
 
 ### Playoffs

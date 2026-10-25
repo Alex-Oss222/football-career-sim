@@ -1,10 +1,10 @@
 # Logan Ryan
 
-**New England Patriots · Cornerback · No. 26 · Age 23 · Last game October 16, 2014**
+**New England Patriots · Cornerback · No. 26 · Age 23 · Last game October 26, 2014**
 
 5' 11", 195 lb · Born February 9, 1991 · Rutgers
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Logan Ryan](https://commons.wikimedia.org/wiki/Special:FilePath/Logan_Ryan_Titans_vs_Colts_DEC2019.png?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 3 (2014, through Week 7).
+**Passes defended:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 23 | 26 | 7 | 3 | 2 | 1 | 0 | 1 | 2 |
+| 2014 (through Week 8) | New England | 23 | 26 | 8 | 5 | 4 | 1 | 0 | 1 | 2 |
 | 2013 | New England | 22 | 26 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 9 | 3 | 2 | 1 | 0 | 1 | 2 |
+| Career |  |  |  | 10 | 5 | 4 | 1 | 0 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 23 | 26 | 1 | 41 | 3 | 0 | 0 | 6 |
+| 2014 (through Week 8) | New England | 23 | 26 | 1 | 41 | 3 | 0 | 0 | 6 |
 | 2013 | New England | 22 | 26 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

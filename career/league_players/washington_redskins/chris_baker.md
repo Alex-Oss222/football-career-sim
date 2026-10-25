@@ -1,10 +1,10 @@
 # Chris Baker
 
-**Washington Redskins · Defensive tackle · No. 92 · Age 27 · Last game October 19, 2014**
+**Washington Redskins · Defensive tackle · No. 92 · Age 27 · Last game October 27, 2014**
 
 6' 2", 325 lb · Born October 8, 1987 · Hampton; Penn State
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Chris Baker](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Baker_%28defensive_lineman%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 26 | 92 | 7 | 24 | 16 | 8 | 6 | 0 | 1 |
+| 2014 (through Week 8) | Washington | 26 | 92 | 8 | 29 | 19 | 10 | 7 | 0 | 1 |
 | 2013 | Washington | 25 | 92 | 16 | 8 | 6 | 2 | 0 | 0 | 0 |
-| Career |  |  |  | 23 | 32 | 22 | 10 | 6 | 0 | 1 |
+| Career |  |  |  | 24 | 37 | 25 | 12 | 7 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 26 | 92 | 0 | 0 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Washington | 26 | 92 | 0 | 0 | 4 | 0 | 0 | 0 |
 | 2013 | Washington | 25 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

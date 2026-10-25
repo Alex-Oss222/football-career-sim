@@ -1,10 +1,10 @@
 # Brett Keisel
 
-**Pittsburgh Steelers · Defensive end · No. 99 · Age 36 · Last game October 20, 2014**
+**Pittsburgh Steelers · Defensive end · No. 99 · Age 36 · Last game October 26, 2014**
 
 6' 5", 285 lb · Born September 19, 1978 · BYU · Drafted in 2002, seventh round, by Pittsburgh
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brett Keisel](https://commons.wikimedia.org/wiki/Special:FilePath/Brett_Keisel.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 35 | 99 | 7 | 3 | 2 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Pittsburgh | 35 | 99 | 8 | 5 | 2 | 3 | 0 | 0 | 0 |
 | 2013 | Pittsburgh | 34 | 99 | 16 | 101 | 60 | 41 | 14 | 5 | 11 |
-| Career |  |  |  | 23 | 104 | 62 | 42 | 14 | 5 | 11 |
+| Career |  |  |  | 24 | 106 | 62 | 44 | 14 | 5 | 11 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 35 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Pittsburgh | 35 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Pittsburgh | 34 | 99 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

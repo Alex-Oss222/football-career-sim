@@ -1,10 +1,10 @@
 # Chase Reynolds
 
-**St. Louis Rams · Running back · No. 34 · Age 26 · Last game October 19, 2014**
+**St. Louis Rams · Running back · No. 34 · Age 27 · Last game October 26, 2014**
 
 6' 0", 205 lb · Born October 22, 1987 · Montana
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Chase Reynolds](https://commons.wikimedia.org/wiki/Special:FilePath/Ramsreynolds2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 4.7 (2014, through Week 7).
+**Yards per carry:** 4.8 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 26 | 34 | 6 | 36 | 169 | 4.7 | 2 | 31 | 28.2 |
+| 2014 (through Week 8) | St. Louis | 26 | 34 | 7 | 41 | 195 | 4.8 | 2 | 31 | 27.9 |
 | 2013 | St. Louis | 25 | 34 | 16 | 20 | 131 | 6.5 | 1 | 56 | 8.2 |
-| Career |  |  |  | 22 | 56 | 300 | 5.4 | 3 | 56 | 13.6 |
+| Career |  |  |  | 23 | 61 | 326 | 5.3 | 3 | 56 | 14.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 26 | 34 | 9 | 7 | 40 | 5.7 | 0 | 1 | 1 |
+| 2014 (through Week 8) | St. Louis | 26 | 34 | 12 | 8 | 50 | 6.2 | 0 | 1 | 1 |
 | 2013 | St. Louis | 25 | 34 | 2 | 2 | 9 | 4.5 | 1 | 0 | 0 |
 
 ### Playoffs

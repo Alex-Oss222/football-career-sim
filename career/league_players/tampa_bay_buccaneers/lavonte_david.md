@@ -1,10 +1,10 @@
 # Lavonte David
 
-**Tampa Bay Buccaneers · Inside linebacker · No. 54 · Age 24 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Inside linebacker · No. 54 · Age 24 · Last game October 26, 2014**
 
 6' 1", 233 lb · Born January 23, 1990 · Nebraska; Fort Scott CC · Drafted in 2012, second round, by Tampa Bay
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Lavonte David](https://commons.wikimedia.org/wiki/Special:FilePath/Lavonte_David.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting weakside linebacker.
 
-**Tackles:** 34 (2014, through Week 6).
+**Tackles:** 41 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 24 | 54 | 6 | 34 | 27 | 7 | 0 | 1 | 2 |
+| 2014 (through Week 8) | Tampa Bay | 24 | 54 | 7 | 41 | 33 | 8 | 0 | 2 | 3 |
 | 2013 | Tampa Bay | 23 | 54 | 15 | 128 | 90 | 38 | 11 | 2 | 7 |
-| Career |  |  |  | 21 | 162 | 117 | 45 | 11 | 3 | 9 |
+| Career |  |  |  | 22 | 169 | 123 | 46 | 11 | 4 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 24 | 54 | 0 | 0 | 2 | 1 | 1 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 24 | 54 | 0 | 0 | 2 | 1 | 1 | 0 |
 | 2013 | Tampa Bay | 23 | 54 | 0 | 0 | 6 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Garrison Sanborn
 
-**Buffalo Bills · Long snapper · No. 65 · Age 29 · Last game October 19, 2014**
+**Buffalo Bills · Long snapper · No. 65 · Age 29 · Last game October 26, 2014**
 
 6' 1", 240 lb · Born July 31, 1985 · Florida State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Garrison Sanborn](https://commons.wikimedia.org/wiki/Special:FilePath/Garrison_Sanborn.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 70 (2014, through Week 7).
+**Long snaps:** 80 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 29 | 65 | 7 | 70 | 70 | 0 | 0 |
+| 2014 (through Week 8) | Buffalo | 29 | 65 | 8 | 80 | 80 | 0 | 0 |
 | 2013 | Buffalo | 28 | 65 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 24 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

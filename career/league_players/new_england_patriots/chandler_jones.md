@@ -1,10 +1,10 @@
 # Chandler Jones
 
-**New England Patriots · Defensive end · No. 95 · Age 24 · Last game October 16, 2014**
+**New England Patriots · Defensive end · No. 95 · Age 24 · Last game October 26, 2014**
 
 6' 5", 265 lb · Born February 27, 1990 · Syracuse · Drafted in 2012, first round, by New England
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Chandler Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Chandler_Jones.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 3 (2014, through Week 7).
+**Sacks:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 24 | 95 | 7 | 20 | 13 | 7 | 2 | 3 | 3 |
+| 2014 (through Week 8) | New England | 24 | 95 | 8 | 21 | 13 | 8 | 2 | 3 | 3 |
 | 2013 | New England | 23 | 95 | 16 | 37 | 21 | 16 | 3 | 3 | 10 |
-| Career |  |  |  | 23 | 57 | 34 | 23 | 5 | 6 | 13 |
+| Career |  |  |  | 24 | 58 | 34 | 24 | 5 | 6 | 13 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 24 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 24 | 95 | 0 | 0 | 0 | 0 | 1 | 0 |
 | 2013 | New England | 23 | 95 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

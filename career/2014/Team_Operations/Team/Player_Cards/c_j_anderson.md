@@ -4,7 +4,7 @@
 
 5' 8", 224 lb · Born February 10, 1991 · California; Laney College · Undrafted
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![C.J. Anderson](https://commons.wikimedia.org/wiki/Special:FilePath/C._J._Anderson_2014.JPG?width=500)
 
@@ -12,13 +12,13 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 4.3 (2014, through Week 7).
+**Yards per carry:** 4.2 (2014, through Week 8).
 
 ## Staff assessment
 
-C.J. Anderson was a complementary back and a coverage-unit player for Jacksonville in 2013, with 17 carries, and he has 52 carries for 224 yards so far in 2014. He is a sturdy inside runner with useful balance and finishing, and his corrections have held after teaching, from his pickup base in the 2013 camp to his Inside Zone track in 2014. His receiving detail and open-field speed trail his inside-running tools, and his protection is still developing.
+C.J. Anderson was a complementary back and a coverage-unit player for Jacksonville in 2013, with 17 carries, and he has 71 carries for 298 yards so far in 2014. He is a sturdy inside runner with useful balance and finishing, and his corrections have held after teaching, from his pickup base in the 2013 camp to his Inside Zone track in 2014. His receiving detail and open-field speed trail his inside-running tools, and his protection is still developing.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -35,18 +35,18 @@ Three-year contract through 2015.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 23 | 22 | 7 | 52 | 224 | 4.3 | 2 | 24 | 32.0 |
+| 2014 (through Week 8) | Jacksonville | 23 | 22 | 8 | 71 | 298 | 4.2 | 2 | 24 | 37.2 |
 | 2013 | Jacksonville | 22 | N/A | 16 | 17 | 67 | 3.9 | 0 | 10 | 4.2 |
-| With Jacksonville |  |  |  | 23 | 69 | 291 | 4.2 | 2 | 24 | 12.7 |
+| With Jacksonville |  |  |  | 24 | 88 | 365 | 4.1 | 2 | 24 | 15.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 23 | 22 | 8 | 5 | 93 | 18.6 | 1 | 1 | 0 |
+| 2014 (through Week 8) | Jacksonville | 23 | 22 | 14 | 9 | 118 | 13.1 | 1 | 1 | 0 |
 | 2013 | Jacksonville | 22 | N/A | 2 | 1 | 17 | 17.0 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 23 | 22 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Jacksonville | 23 | 22 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 22 | N/A | 4 | 118 | 29.5 | 2 | 32 | 16.0 |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Brandon LaFell
 
-**New England Patriots · Wide receiver · No. 19 · Age 27 · Last game October 16, 2014**
+**New England Patriots · Wide receiver · No. 19 · Age 27 · Last game October 26, 2014**
 
 6' 3", 210 lb · Born November 4, 1986 · LSU · Drafted in 2010, third round, by Carolina
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brandon LaFell](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_LaFell_Panthers.jpg?width=500)
 
@@ -22,18 +22,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 27 | 19 | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | New England | 27 | 19 | 8 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | Carolina | 26 | 11 | 16 | 103 | 64 | 876 | 13.7 | 5 | 68 | 54.8 | 62.1 |
-| Career |  |  |  | 23 | 103 | 64 | 876 | 13.7 | 5 | 68 | 38.1 | 62.1 |
+| Career |  |  |  | 24 | 103 | 64 | 876 | 13.7 | 5 | 68 | 36.5 | 62.1 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 27 | 19 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 27 | 19 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Carolina | 26 | 11 | 2 | 5 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 27 | 19 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | New England | 27 | 19 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Carolina | 26 | 11 | 1 | 21 | 21.0 | 0 | 0 | N/A |
 
 ### Playoffs

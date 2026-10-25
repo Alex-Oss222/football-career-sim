@@ -1,10 +1,10 @@
 # Dan Bailey
 
-**Dallas Cowboys · Kicker · No. 5 · Age 26 · Last game October 19, 2014**
+**Dallas Cowboys · Kicker · No. 5 · Age 26 · Last game October 27, 2014**
 
 6' 0", 195 lb · Born January 26, 1988 · Oklahoma State
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Dan Bailey](https://commons.wikimedia.org/wiki/Special:FilePath/Dan_Bailey_after_Alamo_Bowl.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 100.0 (2014, through Week 7).
+**Field-goal percentage:** 100.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 26 | 5 | 7 | 9 | 9 | 100.0 | 52 | 18 | 18 | 100.0 | 45 |
+| 2014 (through Week 8) | Dallas | 26 | 5 | 8 | 13 | 13 | 100.0 | 52 | 19 | 19 | 100.0 | 58 |
 | 2013 | Dallas | 25 | 5 | 16 | 24 | 29 | 82.8 | N/A | 40 | 40 | 100.0 | 112 |
-| Career |  |  |  | 23 | 33 | 38 | 86.8 | N/A | 58 | 58 | 100.0 | 157 |
+| Career |  |  |  | 24 | 37 | 42 | 88.1 | N/A | 59 | 59 | 100.0 | 170 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 26 | 5 | 8-8 | 0-0 | 1-1 |
+| 2014 (through Week 8) | Dallas | 26 | 5 | 11-11 | 1-1 | 1-1 |
 | 2013 | Dallas | 25 | 5 | N/A | N/A | N/A |
 
 ### Playoffs

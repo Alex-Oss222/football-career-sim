@@ -1,10 +1,10 @@
 # Eric Berry
 
-**Kansas City Chiefs · Strong safety · No. 29 · Age 25 · Last game October 19, 2014**
+**Kansas City Chiefs · Strong safety · No. 29 · Age 25 · Last game October 26, 2014**
 
 6' 0", 211 lb · Born December 29, 1988 · Tennessee · Drafted in 2010, first round, by Kansas City
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Eric Berry](https://commons.wikimedia.org/wiki/Special:FilePath/Eric_Berry.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 4 (2014, through Week 7).
+**Passes defended:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 25 | 29 | 6 | 27 | 17 | 10 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Kansas City | 25 | 29 | 7 | 32 | 21 | 11 | 0 | 0 | 0 |
 | 2013 | Kansas City | 24 | 29 | 16 | 120 | 81 | 39 | 6 | 0 | 1 |
-| Career |  |  |  | 22 | 147 | 98 | 49 | 6 | 0 | 1 |
+| Career |  |  |  | 23 | 152 | 102 | 50 | 6 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 25 | 29 | 0 | 0 | 4 | 1 | 1 | 0 |
+| 2014 (through Week 8) | Kansas City | 25 | 29 | 0 | 0 | 4 | 1 | 1 | 0 |
 | 2013 | Kansas City | 24 | 29 | 5 | 57 | 25 | 1 | 1 | N/A |
 
 ### Playoffs

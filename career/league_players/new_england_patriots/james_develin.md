@@ -1,10 +1,10 @@
 # James Develin
 
-**New England Patriots · Running back · No. 46 · Age 26 · Last game October 16, 2014**
+**New England Patriots · Running back · No. 46 · Age 26 · Last game October 26, 2014**
 
 6' 3", 255 lb · Born July 23, 1988 · Brown
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![James Develin](https://commons.wikimedia.org/wiki/Special:FilePath/James_Develin.JPG?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 26 | 46 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2014 (through Week 8) | New England | 26 | 46 | 8 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 | 2013 | New England | 25 | 46 | 16 | 1 | 7 | 7.0 | 1 | 7 | 0.4 |
-| Career |  |  |  | 23 | 1 | 7 | 7.0 | 1 | 7 | 0.3 |
+| Career |  |  |  | 24 | 1 | 7 | 7.0 | 1 | 7 | 0.3 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 26 | 46 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 26 | 46 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 | 2013 | New England | 25 | 46 | 2 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs

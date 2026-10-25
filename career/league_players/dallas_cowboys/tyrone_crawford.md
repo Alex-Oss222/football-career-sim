@@ -1,10 +1,10 @@
 # Tyrone Crawford
 
-**Dallas Cowboys · Defensive end · No. 98 · Age 24 · Last game October 19, 2014**
+**Dallas Cowboys · Defensive end · No. 98 · Age 24 · Last game October 27, 2014**
 
 6' 4", 285 lb · Born November 22, 1989 · Boise State; Bakersfield College · Drafted in 2012, third round, by Dallas
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Tyrone Crawford](https://commons.wikimedia.org/wiki/Special:FilePath/Tyrone_Crawford.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 24 | 98 | 7 | 2 | 1 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Dallas | 24 | 98 | 8 | 2 | 1 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 24 | 98 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Dallas | 24 | 98 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Playoffs
 

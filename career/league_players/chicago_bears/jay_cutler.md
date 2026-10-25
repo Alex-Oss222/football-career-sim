@@ -1,10 +1,10 @@
 # Jay Cutler
 
-**Chicago Bears · Quarterback · No. 6 · Age 31 · Last game October 19, 2014**
+**Chicago Bears · Quarterback · No. 6 · Age 31 · Last game October 26, 2014**
 
 6' 3", 220 lb · Born April 29, 1983 · Vanderbilt · Drafted in 2006, first round, by Denver
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jay Cutler](https://commons.wikimedia.org/wiki/Special:FilePath/JayCutlergfdl.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 86.9 (2014, through Week 7).
+**Passer rating:** 87.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 31 | 6 | 7 | 168 | 269 | 62.5 | 1,835 | 6.8 | 262.1 | 11 | 6 | 86.9 |
+| 2014 (through Week 8) | Chicago | 31 | 6 | 8 | 194 | 307 | 63.2 | 2,040 | 6.6 | 255.0 | 13 | 7 | 87.0 |
 | 2013 | Chicago | 30 | 6 | 16 | 364 | 586 | 62.1 | 4,234 | 7.2 | 264.6 | 27 | 16 | 87.9 |
-| Career |  |  |  | 23 | 532 | 855 | 62.2 | 6,069 | 7.1 | 263.9 | 38 | 22 | 87.6 |
+| Career |  |  |  | 24 | 558 | 893 | 62.5 | 6,274 | 7.0 | 261.4 | 40 | 23 | 87.6 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 31 | 6 | 15 | 83 | 24 | 52 | 0 | 2 | 0 |
+| 2014 (through Week 8) | Chicago | 31 | 6 | 17 | 96 | 26 | 53 | 0 | 3 | 1 |
 | 2013 | Chicago | 30 | 6 | 39 | 254 | 40 | 153 | 2 | 1 | 1 |
 
 ### Playoffs

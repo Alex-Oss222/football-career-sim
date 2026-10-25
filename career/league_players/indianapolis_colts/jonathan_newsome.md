@@ -1,10 +1,10 @@
 # Jonathan Newsome
 
-**Indianapolis Colts · Outside linebacker · No. 91 · Age 23 · Last game October 19, 2014**
+**Indianapolis Colts · Outside linebacker · No. 91 · Age 23 · Last game October 26, 2014**
 
 6' 3", 251 lb · Born January 22, 1991 · Ball State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jonathan Newsome](https://commons.wikimedia.org/wiki/Special:FilePath/Jonathan_Newsome.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve strongside linebacker.
 
-**Tackles:** 1 (2014, through Week 7).
+**Tackles:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 23 | 91 | 7 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 23 | 91 | 8 | 2 | 0 | 2 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 23 | 91 | 0 | 0 | 0 | 0 | 0 | 3 |
+| 2014 (through Week 8) | Indianapolis | 23 | 91 | 0 | 0 | 0 | 0 | 0 | 3 |
 
 ### Playoffs
 

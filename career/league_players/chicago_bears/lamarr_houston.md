@@ -1,10 +1,10 @@
 # Lamarr Houston
 
-**Chicago Bears · Outside linebacker · No. 99 · Age 27 · Last game October 19, 2014**
+**Chicago Bears · Outside linebacker · No. 99 · Age 27 · Last game October 26, 2014**
 
 6' 3", 300 lb · Born June 24, 1987 · Texas · Drafted in 2010, second round, by Oakland
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Lamarr Houston](https://commons.wikimedia.org/wiki/Special:FilePath/Lamarr_Houston.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive end.
 
-**Tackles:** 15 (2014, through Week 7).
+**Tackles:** 15 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 27 | 99 | 7 | 15 | 11 | 4 | 3 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 27 | 99 | 8 | 15 | 11 | 4 | 3 | 0 | 0 |
 | 2013 | Oakland | 26 | 99 | 16 | 66 | 49 | 17 | 1 | 4 | 4 |
-| Career |  |  |  | 23 | 81 | 60 | 21 | 4 | 4 | 4 |
+| Career |  |  |  | 24 | 81 | 60 | 21 | 4 | 4 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 27 | 99 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 27 | 99 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Oakland | 26 | 99 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

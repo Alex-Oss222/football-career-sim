@@ -1,10 +1,10 @@
 # Lance Moore
 
-**Pittsburgh Steelers · Wide receiver · No. 16 · Age 31 · Last game October 20, 2014**
+**Pittsburgh Steelers · Wide receiver · No. 16 · Age 31 · Last game October 26, 2014**
 
 5' 9", 190 lb · Born August 31, 1983 · Toledo
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Lance Moore](https://commons.wikimedia.org/wiki/Special:FilePath/Lmoore.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 5.0 (2014, through Week 7).
+**Yards per target:** 3.7 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 31 | 16 | 5 | 12 | 6 | 60 | 10.0 | 0 | 23 | 12.0 | 50.0 |
+| 2014 (through Week 8) | Pittsburgh | 31 | 16 | 6 | 18 | 8 | 66 | 8.2 | 1 | 23 | 11.0 | 44.4 |
 | 2013 | New Orleans | 30 | 16 | 16 | 94 | 67 | 579 | 8.6 | 5 | 36 | 36.2 | 71.3 |
-| Career |  |  |  | 21 | 106 | 73 | 639 | 8.8 | 5 | 36 | 30.4 | 68.9 |
+| Career |  |  |  | 22 | 112 | 75 | 645 | 8.6 | 6 | 36 | 29.3 | 67.0 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 31 | 16 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Pittsburgh | 31 | 16 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | New Orleans | 30 | 16 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs

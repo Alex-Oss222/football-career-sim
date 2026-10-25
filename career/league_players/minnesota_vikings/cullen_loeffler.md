@@ -1,10 +1,10 @@
 # Cullen Loeffler
 
-**Minnesota Vikings · Long snapper · No. 46 · Age 33 · Last game October 19, 2014**
+**Minnesota Vikings · Long snapper · No. 46 · Age 33 · Last game October 26, 2014**
 
 6' 5", 241 lb · Born January 27, 1981 · Texas
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Cullen Loeffler](https://commons.wikimedia.org/wiki/Special:FilePath/Cullen_loeffler.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 67 (2014, through Week 7).
+**Long snaps:** 76 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 33 | 46 | 7 | 67 | 67 | 0 | 0 |
+| 2014 (through Week 8) | Minnesota | 33 | 46 | 8 | 76 | 76 | 0 | 0 |
 | 2013 | Minnesota | 32 | 46 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 24 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

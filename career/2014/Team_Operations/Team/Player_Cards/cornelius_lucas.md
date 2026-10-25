@@ -4,19 +4,19 @@
 
 6' 9", 325 lb · Born July 18, 1991 · Kansas State · Undrafted
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Cornelius Lucas](https://commons.wikimedia.org/wiki/Special:FilePath/Cornelius_Lucas_WFT_2021_training_camp_%28cropped%29.jpg?width=500)
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cornelius_Lucas_WFT_2021_training_camp_(cropped).jpg)).*
 
-**Sacks allowed:** 0 (2014, through Week 7).
+**Sacks allowed:** 0 (2014, through Week 8).
 
 ## Staff assessment
 
-Cornelius Lucas is a rookie tackle who has been active for seven regular-season games, with 33 snaps on special teams. He is a very large tackle with long arms and enough strength for the position. His set is still raw, and he falls short on bend, foot speed and change of direction; in camp his set landmark held against the rookie rushers, though Andre Branch beat him around the edge once.
+Cornelius Lucas is a rookie tackle who has been active for eight regular-season games, with 38 snaps on special teams. He is a very large tackle with long arms and enough strength for the position. His set is still raw, and he falls short on bend, foot speed and change of direction; in camp his set landmark held against the rookie rushers, though Andre Branch beat him around the edge once.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -34,7 +34,7 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 23 | 77 | 7 | 0 | 38 | 0 | 33 |
+| 2014 (through Week 8) | Jacksonville | 23 | 77 | 8 | 0 | 38 | 0 | 38 |
 
 ### Playoffs
 

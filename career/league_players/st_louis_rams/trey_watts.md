@@ -1,10 +1,10 @@
 # Trey Watts
 
-**St. Louis Rams · Running back · No. 42 · Age 23 · Last game October 19, 2014**
+**St. Louis Rams · Running back · No. 42 · Age 23 · Last game October 26, 2014**
 
 5' 9", 208 lb · Born February 13, 1991 · Tulsa
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 **Current assignment:** Reserve running back.
 
@@ -18,11 +18,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 23 | 42 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2014 (through Week 8) | St. Louis | 23 | 42 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | St. Louis | 23 | 42 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 8) | St. Louis | 23 | 42 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 ### Playoffs
 

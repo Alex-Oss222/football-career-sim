@@ -1,10 +1,10 @@
 # Rob Gronkowski
 
-**New England Patriots · Tight end · No. 87 · Age 25 · Last game October 16, 2014**
+**New England Patriots · Tight end · No. 87 · Age 25 · Last game October 26, 2014**
 
 6' 6", 265 lb · Born May 14, 1989 · Arizona · Drafted in 2010, second round, by New England
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Rob Gronkowski](https://commons.wikimedia.org/wiki/Special:FilePath/190326-D-SW162-1977_%2846564316465%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 6.3 (2014, through Week 7).
+**Yards per target:** 6.5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 25 | 87 | 6 | 27 | 17 | 170 | 10.0 | 1 | 29 | 28.3 | 63.0 |
+| 2014 (through Week 8) | New England | 25 | 87 | 7 | 36 | 24 | 235 | 9.8 | 1 | 29 | 33.6 | 66.7 |
 | 2013 | New England | 24 | 87 | 14 | 97 | 60 | 584 | 9.7 | 1 | 43 | 41.7 | 61.9 |
-| Career |  |  |  | 20 | 124 | 77 | 754 | 9.8 | 2 | 43 | 37.7 | 62.1 |
+| Career |  |  |  | 21 | 133 | 84 | 819 | 9.8 | 2 | 43 | 39.0 | 63.2 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 25 | 87 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 25 | 87 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | New England | 24 | 87 | 0 | 0 | 0 | 4 | 4 |
 
 ### Playoffs

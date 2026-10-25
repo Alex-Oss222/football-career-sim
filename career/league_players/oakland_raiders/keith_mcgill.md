@@ -1,10 +1,10 @@
 # Keith McGill
 
-**Oakland Raiders · Free safety · No. 39 · Age 25 · Last game October 19, 2014**
+**Oakland Raiders · Free safety · No. 39 · Age 25 · Last game October 26, 2014**
 
 6' 3", 211 lb · Born March 9, 1989 · Utah
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Keith McGill](https://commons.wikimedia.org/wiki/Special:FilePath/Keith_McGill_2014.JPG?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 25 | 39 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Oakland | 25 | 39 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 25 | 39 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Oakland | 25 | 39 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

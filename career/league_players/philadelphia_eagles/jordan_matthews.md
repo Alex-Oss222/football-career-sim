@@ -1,10 +1,10 @@
 # Jordan Matthews
 
-**Philadelphia Eagles · Wide receiver · No. 81 · Age 22 · Last game October 12, 2014**
+**Philadelphia Eagles · Wide receiver · No. 81 · Age 22 · Last game October 26, 2014**
 
 6' 3", 212 lb · Born July 16, 1992 · Vanderbilt
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Jordan Matthews](https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Matthews_Vanderbilt_US_Army_photo_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 6.7 (2014, through Week 6).
+**Yards per target:** 6.4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 22 | 81 | 6 | 23 | 15 | 153 | 10.2 | 1 | 27 | 25.5 | 65.2 |
+| 2014 (through Week 8) | Philadelphia | 22 | 81 | 7 | 24 | 15 | 153 | 10.2 | 1 | 27 | 21.9 | 62.5 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 22 | 81 | 2 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Philadelphia | 22 | 81 | 2 | 5 | 0 | 0 | 0 |
 
 ### Playoffs
 

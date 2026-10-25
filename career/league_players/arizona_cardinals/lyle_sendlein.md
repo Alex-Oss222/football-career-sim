@@ -1,10 +1,10 @@
 # Lyle Sendlein
 
-**Arizona Cardinals · Center · No. 63 · Age 30 · Last game October 19, 2014**
+**Arizona Cardinals · Center · No. 63 · Age 30 · Last game October 26, 2014**
 
 6' 3", 308 lb · Born March 16, 1984 · Texas
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Lyle Sendlein](https://commons.wikimedia.org/wiki/Special:FilePath/Lyle_Sendlein.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 1 (2014, through Week 7).
+**Sacks allowed:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 30 | 63 | 6 | 6 | 375 | 1 | 28 |
+| 2014 (through Week 8) | Arizona | 30 | 63 | 7 | 7 | 447 | 1 | 34 |
 | 2013 | Arizona | 29 | 63 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

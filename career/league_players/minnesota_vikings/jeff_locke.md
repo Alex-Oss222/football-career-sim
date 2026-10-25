@@ -1,10 +1,10 @@
 # Jeff Locke
 
-**Minnesota Vikings · Punter · No. 18 · Age 25 · Last game October 19, 2014**
+**Minnesota Vikings · Punter · No. 18 · Age 25 · Last game October 26, 2014**
 
 6' 0", 203 lb · Born September 27, 1989 · UCLA
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jeff Locke](https://commons.wikimedia.org/wiki/Special:FilePath/Jeff_Locke.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 39.3 (2014, through Week 7).
+**Net punting average:** 39.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 24 | 18 | 7 | 47 | 2,072 | 44.1 | 39.3 | 18 | 0 | 66 |
+| 2014 (through Week 8) | Minnesota | 24 | 18 | 8 | 52 | 2,274 | 43.7 | 39.0 | 21 | 1 | 66 |
 | 2013 | Minnesota | 23 | 18 | 16 | 80 | 3,726 | 46.6 | 41.0 | 34 | 3 | 71 |
-| Career |  |  |  | 23 | 127 | 5,798 | 45.7 | 40.3 | 52 | 3 | 71 |
+| Career |  |  |  | 24 | 132 | 6,000 | 45.5 | 40.2 | 55 | 4 | 71 |
 
 ### Playoffs
 

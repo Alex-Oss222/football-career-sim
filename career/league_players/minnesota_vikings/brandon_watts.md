@@ -1,10 +1,10 @@
 # Brandon Watts
 
-**Minnesota Vikings · Outside linebacker · No. 58 · Age 23 · Last game October 19, 2014**
+**Minnesota Vikings · Outside linebacker · No. 58 · Age 23 · Last game October 26, 2014**
 
 6' 2", 231 lb · Born January 21, 1991 · Georgia Tech
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brandon Watts](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Watts_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve weakside linebacker.
 
-**Tackles:** 3 (2014, through Week 7).
+**Tackles:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 23 | 58 | 5 | 3 | 2 | 1 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Minnesota | 23 | 58 | 6 | 4 | 3 | 1 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 23 | 58 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Minnesota | 23 | 58 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

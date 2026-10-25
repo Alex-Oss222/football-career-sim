@@ -1,10 +1,10 @@
 # Jim Leonhard
 
-**Cleveland Browns · Strong safety · No. 30 · Age 31 · Last game October 19, 2014**
+**Cleveland Browns · Strong safety · No. 30 · Age 31 · Last game October 26, 2014**
 
 5' 8", 188 lb · Born October 27, 1982 · Wisconsin
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jim Leonhard](https://commons.wikimedia.org/wiki/Special:FilePath/Jim_Leonhard.JPG?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 31 | 30 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 31 | 30 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Buffalo | 30 | 35 | 14 | 12 | 4 | 8 | 1 | 0 | 0 |
-| Career |  |  |  | 20 | 12 | 4 | 8 | 1 | 0 | 0 |
+| Career |  |  |  | 21 | 12 | 4 | 8 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 31 | 30 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Cleveland | 31 | 30 | 0 | 0 | 0 | 0 | 0 | 3 |
 | 2013 | Buffalo | 30 | 35 | 4 | 55 | 7 | 0 | 0 | N/A |
 
 ### Playoffs

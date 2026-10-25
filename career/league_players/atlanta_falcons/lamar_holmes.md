@@ -1,10 +1,10 @@
 # Lamar Holmes
 
-**Atlanta Falcons · Offensive tackle · No. 76 · Age 25 · Last game October 19, 2014**
+**Atlanta Falcons · Offensive tackle · No. 76 · Age 25 · Last game October 26, 2014**
 
 6' 6", 333 lb · Born July 8, 1989 · Southern Mississippi; Itawamba JC · Drafted in 2012, third round, by Atlanta
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Lamar Holmes](https://commons.wikimedia.org/wiki/Special:FilePath/Lamar_Holmes_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 25 | 76 | 6 | 6 | 336 | 3 | 26 |
+| 2014 (through Week 8) | Atlanta | 25 | 76 | 6 | 6 | 336 | 3 | 26 |
 | 2013 | Atlanta | 24 | 76 | 16 | N/A | N/A | 2 | N/A |
 | Career |  |  |  | 22 | N/A | N/A | 5 | N/A |
 

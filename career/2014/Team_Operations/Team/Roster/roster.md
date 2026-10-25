@@ -1,6 +1,6 @@
 # Jacksonville Jaguars roster
 
-As of October 26, 2014, after the Week 7 game against Cleveland (Cleveland 34, Jacksonville 31).
+As of October 26, 2014, after the Week 8 game against Miami (Miami 29, Jacksonville 23).
 
 | Active roster | Reserve lists | Practice squad | Open places |
 |---|---:|---|---|
@@ -45,7 +45,7 @@ As of October 26, 2014, after the Week 7 game against Cleveland (Cleveland 34, J
 | Player | # | Pos | Age | Status | Availability |
 |---|---:|---|---:|---|---|
 | [Marcedes Lewis](../Player_Cards/marcedes_lewis.md) | 89 | TE | 30 | Active roster | No communicated restriction |
-| [Travis Kelce](../Player_Cards/travis_kelce.md) |  | TE | 25 | Active roster | No communicated restriction: cleared September 25, 2014, his projected date, from the September 21 lower-extremity injury (reassessed September 22 with no change); did not practice September 24; full September 25 to 27 ([medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed)) |
+| [Travis Kelce](../Player_Cards/travis_kelce.md) |  | TE | 25 | Active roster | Out, minor: lower extremity, logged at 8:09 of the first quarter in the October 26 Week 8 game, not removed; projected return October 31, 2014; reassessment October 27 ([medical record](../../Medical/incidents/travis_kelce_2014-10-26.md)) |
 | [Marcel Jensen](../Player_Cards/marcel_jensen.md) | 87 | TE | 24 | Active roster | No communicated restriction (released August 28, 2014, his projected date, from the August 22 head/neck hold; reassessed August 24 with no change; inactive August 28 under the game plan; [medical history](../../Medical/medical_history.md#august-28-preseason-game-4-injuries)) |
 | [Gator Hoskins](../Player_Cards/gator_hoskins.md) |  | TE | 22 | Active roster | No communicated restriction: cleared September 16, 2014, his projected date, from the August 28 lower-extremity injury (reassessed September 3 with no change); full September 17 to October 4 |
 
@@ -61,7 +61,7 @@ As of October 26, 2014, after the Week 7 game against Cleveland (Cleveland 34, J
 | [Cornelius Lucas](../Player_Cards/cornelius_lucas.md) | 77 | OT | 23 | Active roster | No communicated restriction (club physical May 13, 2014, the specific check after his pre-combine foot stress fracture; the foot is a performance-staff review item) |
 | [Charles Leno Jr.](../Player_Cards/charles_leno_jr.md) | 72 | OT | 23 | Active roster | No communicated restriction |
 | [Andrew Norwell](../Player_Cards/andrew_norwell.md) | 68 | G | 23 | Active roster | Independent medical hold, short: head/neck, logged at 6:26 of the first quarter in the October 19 Week 7 game, removed; projected return November 2, 2014; reassessed October 23 with no change; did not take part October 20 to 25 ([medical record](../../Medical/incidents/andrew_norwell_2014-10-19.md)) |
-| [Corey Linsley](../Player_Cards/corey_linsley.md) | 63 | C | 23 | Active roster | No communicated restriction |
+| [Corey Linsley](../Player_Cards/corey_linsley.md) | 63 | C | 23 | Active roster | Independent medical hold, minor: head/neck, logged at 1:06 of the fourth quarter in the October 26 Week 8 game, removed; projected return October 31, 2014; reassessment October 27 ([medical record](../../Medical/incidents/corey_linsley_2014-10-26.md)) |
 
 ## Defensive line
 
@@ -101,7 +101,7 @@ As of October 26, 2014, after the Week 7 game against Cleveland (Cleveland 34, J
 | [Malcolm Butler](../Player_Cards/malcolm_butler.md) |  | CB | 24 | Active roster | No communicated restriction: independent medical hold from the September 21 head/neck injury released October 2, 2014, its projected date (reassessed September 24 with no change); did not practice October 1; full October 2 to 4 in approved preparation work only ([medical record](../../Medical/incidents/malcolm_butler_2014-09-21.md)) |
 | [Chris Prosinski](../Player_Cards/chris_prosinski.md) | 42 | S | 27 | Active roster | No communicated restriction |
 | [Adrian Phillips](../Player_Cards/adrian_phillips.md) |  | S | 22 | Active roster | No communicated restriction: cleared September 29, 2014, his projected date, from the September 28 lower-extremity injury, at the reassessment its instruction named; full September 29 to October 4 ([medical record](../../Medical/incidents/adrian_phillips_2014-09-28.md)) |
-| [Alan Ball](../Player_Cards/alan_ball.md) | 23 | CB | 29 | Active roster | No communicated restriction (club physical September 8, 2014, no finding; [signing record](../../Free_Agency/alan_ball_signing_2014-09-08.md)) |
+| [Alan Ball](../Player_Cards/alan_ball.md) | 23 | CB | 29 | Active roster | Out, minor: lower extremity, logged at 1:06 of the fourth quarter in the October 26 Week 8 game, not removed; projected return October 29, 2014; reassessment October 27 ([medical record](../../Medical/incidents/alan_ball_2014-10-26.md)) |
 
 ## Specialists
 

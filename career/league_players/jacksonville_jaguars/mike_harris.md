@@ -4,9 +4,9 @@
 
 5' 10", 188 lb · Born January 5, 1989 · Florida State; El Camino · Drafted in 2012, sixth round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
-**Passes defended:** 0 (2014, through Week 7).
+**Passes defended:** 0 (2014, through Week 8).
 
 ## Staff assessment
 
@@ -29,18 +29,18 @@ Four-year contract through 2015.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 25 | N/A | 1 | 6 | 5 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Jacksonville | 25 | N/A | 1 | 6 | 5 | 1 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 24 | 20 | 16 | 41 | 24 | 17 | 1 | 1 | 1 |
 | With Jacksonville |  |  |  | 17 | 47 | 29 | 18 | 1 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 25 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Jacksonville | 25 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 24 | 20 | 0 | 0 | 7 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 25 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Jacksonville | 25 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 24 | 20 | 2 | 46 | 23.0 | 7 | 74 | 10.6 |
 
 ### Playoffs

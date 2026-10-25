@@ -1,10 +1,10 @@
 # Tommy Bohanon
 
-**New York Jets · Fullback · No. 40 · Age 24 · Last game October 16, 2014**
+**New York Jets · Fullback · No. 40 · Age 24 · Last game October 26, 2014**
 
 6' 1", 246 lb · Born September 10, 1990 · Wake Forest
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Tommy Bohanon](https://commons.wikimedia.org/wiki/Special:FilePath/Tommy_Bohanon_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 5.0 (2014, through Week 7).
+**Yards per carry:** 5.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 23 | 40 | 7 | 7 | 35 | 5.0 | 0 | 7 | 5.0 |
+| 2014 (through Week 8) | N.Y. Jets | 23 | 40 | 8 | 7 | 35 | 5.0 | 0 | 7 | 4.4 |
 | 2013 | N.Y. Jets | 22 | 40 | 16 | 10 | 64 | 6.4 | 1 | 18 | 4.0 |
-| Career |  |  |  | 23 | 17 | 99 | 5.8 | 1 | 18 | 4.3 |
+| Career |  |  |  | 24 | 17 | 99 | 5.8 | 1 | 18 | 4.1 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 23 | 40 | 8 | 6 | 37 | 6.2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | N.Y. Jets | 23 | 40 | 8 | 6 | 37 | 6.2 | 0 | 0 | 0 |
 | 2013 | N.Y. Jets | 22 | 40 | 12 | 7 | 73 | 10.4 | 1 | 0 | 0 |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Paul Kruger
 
-**Cleveland Browns · Outside linebacker · No. 99 · Age 28 · Last game October 19, 2014**
+**Cleveland Browns · Outside linebacker · No. 99 · Age 28 · Last game October 26, 2014**
 
 6' 4", 270 lb · Born February 15, 1986 · Utah · Drafted in 2009, second round, by Baltimore
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Paul Kruger](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Kruger_MT_Stadium_2012_Practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 9 (2014, through Week 7).
+**Tackles:** 9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 28 | 99 | 6 | 9 | 5 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 28 | 99 | 7 | 9 | 5 | 4 | 0 | 0 | 0 |
 | 2013 | Cleveland | 27 | 99 | 16 | 32 | 21 | 11 | 2 | 2 | 6 |
-| Career |  |  |  | 22 | 41 | 26 | 15 | 2 | 2 | 6 |
+| Career |  |  |  | 23 | 41 | 26 | 15 | 2 | 2 | 6 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 28 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 28 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cleveland | 27 | 99 | 1 | 14 | 4 | 1 | 1 | N/A |
 
 ### Playoffs

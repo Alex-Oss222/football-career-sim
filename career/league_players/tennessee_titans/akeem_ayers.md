@@ -10,8 +10,6 @@ As of January 19, 2014, after the Conference Championships.
 
 *Photo: Keith Allison, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Akeem_Ayers.jpg)).*
 
-**Current assignment:** Reserve outside linebacker.
-
 ## Contract
 
 Contract not established.

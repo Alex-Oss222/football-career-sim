@@ -1,10 +1,10 @@
 # Jeremy Hill
 
-**Cincinnati Bengals · Running back · No. 32 · Age 21 · Last game October 19, 2014**
+**Cincinnati Bengals · Running back · No. 32 · Age 22 · Last game October 26, 2014**
 
 6' 1", 238 lb · Born October 20, 1992 · LSU
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jeremy Hill](https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy_Hill_%28American_football%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 5.4 (2014, through Week 7).
+**Yards per carry:** 5.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 21 | 32 | 6 | 56 | 303 | 5.4 | 2 | 67 | 50.5 |
+| 2014 (through Week 8) | Cincinnati | 21 | 32 | 7 | 74 | 368 | 5.0 | 4 | 67 | 52.6 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 21 | 32 | 13 | 7 | 124 | 17.7 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cincinnati | 21 | 32 | 16 | 10 | 163 | 16.3 | 1 | 0 | 0 |
 
 ### Playoffs
 
@@ -36,7 +36,7 @@ No playoff games on record.
 
 ## Awards
 
-None.
+- AFC Offensive Player of the Week (2014, Week 8)
 
 ## Transactions
 

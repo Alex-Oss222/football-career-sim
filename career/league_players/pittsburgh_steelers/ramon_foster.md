@@ -1,10 +1,10 @@
 # Ramon Foster
 
-**Pittsburgh Steelers · Guard · No. 73 · Age 28 · Last game October 20, 2014**
+**Pittsburgh Steelers · Guard · No. 73 · Age 28 · Last game October 26, 2014**
 
 6' 6", 325 lb · Born January 7, 1986 · Tennessee
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Ramon Foster](https://commons.wikimedia.org/wiki/Special:FilePath/Ramon_Foster.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 2 (2014, through Week 7).
+**Sacks allowed:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 28 | 73 | 7 | 7 | 419 | 2 | 37 |
+| 2014 (through Week 8) | Pittsburgh | 28 | 73 | 8 | 8 | 431 | 2 | 37 |
 | 2013 | Pittsburgh | 27 | 73 | 16 | N/A | N/A | 8 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 10 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

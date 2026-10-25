@@ -1,10 +1,10 @@
 # Joshua Mauga
 
-**Kansas City Chiefs · Inside linebacker · No. 90 · Age 27 · Last game October 19, 2014**
+**Kansas City Chiefs · Inside linebacker · No. 90 · Age 27 · Last game October 26, 2014**
 
 6' 1", 245 lb · Born June 20, 1987 · Nevada
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Joshua Mauga](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Mauga_at_Jets_training_camp.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting inside linebacker.
 
-**Tackles:** 33 (2014, through Week 7).
+**Tackles:** 37 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 27 | 90 | 6 | 33 | 21 | 12 | 1 | 0 | 2 |
+| 2014 (through Week 8) | Kansas City | 27 | 90 | 7 | 37 | 23 | 14 | 2 | 0 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 27 | 90 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Kansas City | 27 | 90 | 0 | 0 | 7 | 0 | 0 | 0 |
 
 ### Playoffs
 

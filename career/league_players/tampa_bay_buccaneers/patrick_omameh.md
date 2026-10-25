@@ -1,10 +1,10 @@
 # Patrick Omameh
 
-**Tampa Bay Buccaneers · Guard · No. 66 · Age 24 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Guard · No. 66 · Age 24 · Last game October 26, 2014**
 
 6' 4", 305 lb · Born December 29, 1989 · Michigan
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Patrick Omameh](https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_Omameh.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 3 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 24 | 66 | 6 | 6 | 375 | 3 | 29 |
+| 2014 (through Week 8) | Tampa Bay | 24 | 66 | 7 | 7 | 452 | 4 | 34 |
 
 ### Playoffs
 

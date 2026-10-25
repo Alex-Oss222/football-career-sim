@@ -1,10 +1,10 @@
 # Juwan Thompson
 
-**Denver Broncos · Running back · No. 40 · Age 22 · Last game October 19, 2014**
+**Denver Broncos · Running back · No. 40 · Age 22 · Last game October 23, 2014**
 
 5' 11", 225 lb · Born May 13, 1992 · Duke
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Juwan Thompson](https://commons.wikimedia.org/wiki/Special:FilePath/Juwan_Thompson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 4.8 (2014, through Week 7).
+**Yards per carry:** 4.8 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 22 | 40 | 6 | 6 | 29 | 4.8 | 0 | 9 | 4.8 |
+| 2014 (through Week 8) | Denver | 22 | 40 | 7 | 6 | 29 | 4.8 | 0 | 9 | 4.1 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 22 | 40 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 22 | 40 | 2 | 1 | 16 | 16.0 | 0 | 0 | 0 |
 
 ### Playoffs
 

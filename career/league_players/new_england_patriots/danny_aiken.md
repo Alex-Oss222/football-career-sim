@@ -1,12 +1,12 @@
 # Danny Aiken
 
-**New England Patriots · Long snapper · No. 48 · Age 26 · Last game October 16, 2014**
+**New England Patriots · Long snapper · No. 48 · Age 26 · Last game October 26, 2014**
 
 6' 4", 255 lb · Born August 28, 1988 · Virginia
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
-**Long snaps:** 33 (2014, through Week 7).
+**Long snaps:** 40 (2014, through Week 8).
 
 ## Contract
 
@@ -18,9 +18,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 26 | 48 | 3 | 33 | 33 | 0 | 0 |
+| 2014 (through Week 8) | New England | 26 | 48 | 4 | 40 | 40 | 0 | 0 |
 | 2013 | New England | 25 | 48 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 19 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 20 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Jordan Gay
 
-**Buffalo Bills · Punter · No. 4 · Age 24 · Last game October 19, 2014**
+**Buffalo Bills · Punter · No. 4 · Age 24 · Last game October 26, 2014**
 
 6' 1", 200 lb · Born March 29, 1990 · Centre
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jordan Gay](https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Gay.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Kickoff specialist.
 
-**Net punting average:** 37.9 (2014, through Week 7).
+**Net punting average:** 38.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 24 | 4 | 7 | 33 | 1,469 | 44.5 | 37.9 | 8 | 2 | 61 |
+| 2014 (through Week 8) | Buffalo | 24 | 4 | 8 | 40 | 1,779 | 44.5 | 38.0 | 13 | 4 | 61 |
 
 ### Playoffs
 

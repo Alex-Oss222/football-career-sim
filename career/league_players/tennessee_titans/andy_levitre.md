@@ -1,10 +1,10 @@
 # Andy Levitre
 
-**Tennessee Titans · Guard · No. 67 · Age 28 · Last game October 19, 2014**
+**Tennessee Titans · Guard · No. 67 · Age 28 · Last game October 26, 2014**
 
 6' 2", 303 lb · Born May 15, 1986 · Oregon State · Drafted in 2009, second round, by Buffalo
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Andy Levitre](https://commons.wikimedia.org/wiki/Special:FilePath/Andy_Levitre_2013.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 2 (2014, through Week 7).
+**Sacks allowed:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 28 | 67 | 7 | 7 | 440 | 2 | 31 |
+| 2014 (through Week 8) | Tennessee | 28 | 67 | 8 | 8 | 507 | 2 | 37 |
 | 2013 | Tennessee | 27 | 67 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 

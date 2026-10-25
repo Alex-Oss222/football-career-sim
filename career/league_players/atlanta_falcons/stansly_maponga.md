@@ -1,10 +1,10 @@
 # Stansly Maponga
 
-**Atlanta Falcons · Defensive end · No. 90 · Age 23 · Last game October 19, 2014**
+**Atlanta Falcons · Defensive end · No. 90 · Age 23 · Last game October 26, 2014**
 
 6' 2", 265 lb · Born March 5, 1991 · TCU
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Stansly Maponga](https://commons.wikimedia.org/wiki/Special:FilePath/Stansly_Maponga_2014.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 23 | 90 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Atlanta | 23 | 90 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Atlanta | 22 | 90 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Career |  |  |  | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 23 | 90 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Atlanta | 23 | 90 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Atlanta | 22 | 90 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

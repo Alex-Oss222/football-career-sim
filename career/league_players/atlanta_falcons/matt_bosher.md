@@ -1,10 +1,10 @@
 # Matt Bosher
 
-**Atlanta Falcons · Punter · No. 5 · Age 27 · Last game October 19, 2014**
+**Atlanta Falcons · Punter · No. 5 · Age 27 · Last game October 26, 2014**
 
 6' 0", 208 lb · Born October 18, 1987 · Miami · Drafted in 2011, sixth round, by Atlanta
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Matt Bosher](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Bosher_2016_2.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 41.0 (2014, through Week 7).
+**Net punting average:** 40.7 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 26 | 5 | 7 | 31 | 1,400 | 45.2 | 41.0 | 13 | 3 | 61 |
+| 2014 (through Week 8) | Atlanta | 26 | 5 | 8 | 38 | 1,728 | 45.5 | 40.7 | 14 | 5 | 61 |
 | 2013 | Atlanta | 25 | 5 | 16 | 78 | 3,566 | 45.7 | 40.0 | 20 | 4 | 64 |
-| Career |  |  |  | 23 | 109 | 4,966 | 45.6 | 40.3 | 33 | 7 | 64 |
+| Career |  |  |  | 24 | 116 | 5,294 | 45.6 | 40.2 | 34 | 9 | 64 |
 
 ### Playoffs
 

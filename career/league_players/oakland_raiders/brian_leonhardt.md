@@ -1,10 +1,10 @@
 # Brian Leonhardt
 
-**Oakland Raiders · Tight end · No. 87 · Age 24 · Last game October 19, 2014**
+**Oakland Raiders · Tight end · No. 87 · Age 24 · Last game October 26, 2014**
 
 6' 5", 255 lb · Born April 2, 1990 · Bemidji State University
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brian Leonhardt](https://commons.wikimedia.org/wiki/Special:FilePath/Brain_leonhardt_vikings_1016.webp?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 24 | 87 | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | Oakland | 24 | 87 | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 
 ### Playoffs
 

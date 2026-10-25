@@ -1,10 +1,10 @@
 # Tharold Simon
 
-**Seattle Seahawks · Cornerback · No. 27 · Age 23 · Last game October 19, 2014**
+**Seattle Seahawks · Cornerback · No. 27 · Age 23 · Last game October 26, 2014**
 
 6' 3", 202 lb · Born March 6, 1991 · LSU
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Tharold Simon](https://commons.wikimedia.org/wiki/Special:FilePath/Tharold_Simon.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 23 | 27 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Seattle | 23 | 27 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 23 | 27 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Seattle | 23 | 27 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

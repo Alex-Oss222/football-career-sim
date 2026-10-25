@@ -1,10 +1,10 @@
 # D.J. Fluker
 
-**San Diego Chargers · Guard · No. 76 · Age 23 · Last game October 19, 2014**
+**San Diego Chargers · Guard · No. 76 · Age 23 · Last game October 23, 2014**
 
 6' 5", 339 lb · Born March 13, 1991 · Alabama
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![D.J. Fluker](https://commons.wikimedia.org/wiki/Special:FilePath/D._J._Fluker_at_Alabama.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 23 | 76 | 7 | 7 | 460 | 3 | 32 |
+| 2014 (through Week 8) | San Diego | 23 | 76 | 8 | 8 | 536 | 3 | 40 |
 | 2013 | San Diego | 22 | 76 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

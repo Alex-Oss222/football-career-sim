@@ -1,10 +1,10 @@
 # Justin Blalock
 
-**Atlanta Falcons · Guard · No. 63 · Age 30 · Last game October 19, 2014**
+**Atlanta Falcons · Guard · No. 63 · Age 30 · Last game October 26, 2014**
 
 6' 4", 326 lb · Born December 20, 1983 · Texas · Drafted in 2007, second round, by Atlanta
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Justin Blalock](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Blalock_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 2 (2014, through Week 7).
+**Sacks allowed:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 30 | 63 | 7 | 7 | 446 | 2 | 32 |
+| 2014 (through Week 8) | Atlanta | 30 | 63 | 7 | 7 | 446 | 2 | 32 |
 | 2013 | Atlanta | 29 | 63 | 16 | N/A | N/A | 5 | N/A |
 | Career |  |  |  | 23 | N/A | N/A | 7 | N/A |
 

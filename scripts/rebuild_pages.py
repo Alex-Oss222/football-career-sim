@@ -22,6 +22,9 @@ built before a page or file it links to or reads:
  7. player ages          scripts/render_player_ages.py
  8. club pages           scripts/render_club_pages.py     (team, roster, depth chart
                                                            and its change history)
+    progression roster   scripts/build_player_progression_roster.py (the development
+                                                           cohort the roster record
+                                                           generates)
  9. coach pages          scripts/render_coach_pages.py    (Coach page, Contract and
                                                            jobs, Staff page)
 10. cap views            scripts/render_jaguars_cap_tracker.py
@@ -204,6 +207,18 @@ def club_pages(run):
         run.put(rel, text)
 
 
+def progression_roster(run):
+    """The player-progression cohort the roster record generates (a data file the development
+    phases read, regenerated after every roster change, as the club pages are)."""
+    from scripts import build_player_progression_roster as builder
+    exits = run.paths.record("offseason/player_development/2013_exit_player_index.json")
+    if not exits.is_file():
+        return
+    manifest = builder.build_manifest(run.paths.roster, exits)
+    run.put(run.paths.record("offseason/player_development/progression_roster.json"),
+            json.dumps(manifest, indent=2) + "\n")
+
+
 def coach_pages(run):
     from scripts import render_coach_pages
     if run.check:
@@ -366,7 +381,8 @@ def annual_record(run):
 
 STEPS = (("standings", standings), ("statistics", statistics), ("team tracker", team_tracker),
          ("award pages", award_pages), ("contract pages", contract_pages), ("player pages", player_pages),
-         ("player ages", player_ages), ("club pages", club_pages), ("coach pages", coach_pages),
+         ("player ages", player_ages), ("club pages", club_pages), ("progression roster", progression_roster),
+         ("coach pages", coach_pages),
          ("cap views", cap_views), ("event results", event_results), ("roster moves", roster_moves),
          ("box scores", box_scores), ("game-week pages", game_week_pages), ("bye pages", bye_pages),
          ("week pages", week_pages), ("in-season rails", rails_pages), ("trade pages", trade_pages),

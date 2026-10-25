@@ -1,10 +1,10 @@
 # Fred Jackson
 
-**Buffalo Bills · Running back · No. 22 · Age 33 · Last game October 19, 2014**
+**Buffalo Bills · Running back · No. 22 · Age 33 · Last game October 26, 2014**
 
 6' 1", 216 lb · Born February 20, 1981 · Coe College
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Fred Jackson](https://commons.wikimedia.org/wiki/Special:FilePath/Fred_Jackson_NY_Jets_vs._Buffalo%2C_Oct_2009_-_05.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 4.4 (2014, through Week 7).
+**Yards per carry:** 4.4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 33 | 22 | 7 | 7 | 31 | 4.4 | 2 | 11 | 4.4 |
+| 2014 (through Week 8) | Buffalo | 33 | 22 | 8 | 7 | 31 | 4.4 | 2 | 11 | 3.9 |
 | 2013 | Buffalo | 32 | 22 | 16 | 112 | 589 | 5.3 | 4 | 24 | 36.8 |
-| Career |  |  |  | 23 | 119 | 620 | 5.2 | 6 | 24 | 27.0 |
+| Career |  |  |  | 24 | 119 | 620 | 5.2 | 6 | 24 | 25.8 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 33 | 22 | 2 | 1 | 31 | 31.0 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Buffalo | 33 | 22 | 2 | 1 | 31 | 31.0 | 1 | 0 | 0 |
 | 2013 | Buffalo | 32 | 22 | 26 | 11 | 77 | 7.0 | 1 | 1 | 1 |
 
 ### Playoffs

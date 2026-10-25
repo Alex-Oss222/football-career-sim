@@ -1,10 +1,10 @@
 # Matt Moore
 
-**Miami Dolphins · Quarterback · No. 8 · Age 30 · Last game October 19, 2014**
+**Miami Dolphins · Quarterback · No. 8 · Age 30 · Last game October 26, 2014**
 
 6' 3", 220 lb · Born August 9, 1984 · Oregon State; UCLA; College of the Canyons
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Matt Moore](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Moore_Spring_Ball_2006_by_GregKeene.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 30 | 8 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Miami | 30 | 8 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Miami | 29 | 8 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 22 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 23 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 30 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Miami | 30 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 29 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

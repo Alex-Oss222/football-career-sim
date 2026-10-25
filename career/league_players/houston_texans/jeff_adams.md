@@ -1,10 +1,10 @@
 # Jeff Adams
 
-**Houston Texans · Offensive tackle · No. 70 · Age 25 · Last game October 20, 2014**
+**Houston Texans · Offensive tackle · No. 70 · Age 25 · Last game October 26, 2014**
 
 6' 7", 305 lb · Born September 6, 1989 · Columbia
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jeff Adams](https://commons.wikimedia.org/wiki/Special:FilePath/Jeff_Adams_%285108934810%29_%28cropped%29.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 24 | 70 | 7 | 0 | 0 | 0 | 35 |
+| 2014 (through Week 8) | Houston | 24 | 70 | 8 | 0 | 0 | 0 | 40 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Major Wright
 
-**Tampa Bay Buccaneers · Strong safety · No. 31 · Age 26 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Strong safety · No. 31 · Age 26 · Last game October 26, 2014**
 
 5' 11", 204 lb · Born July 1, 1988 · Florida · Drafted in 2010, third round, by Chicago
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Major Wright](https://commons.wikimedia.org/wiki/Special:FilePath/Major_wright_bears2013.jpg?width=500)
 
@@ -20,13 +20,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 26 | 31 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 26 | 31 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Chicago | 25 | 21 | 16 | 81 | 53 | 28 | 3 | 3 | 3 |
-| Career |  |  |  | 21 | 81 | 53 | 28 | 3 | 3 | 3 |
+| Career |  |  |  | 22 | 81 | 53 | 28 | 3 | 3 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 26 | 31 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 26 | 31 | 0 | 0 | 0 | 0 | 0 | 1 |
 | 2013 | Chicago | 25 | 21 | 4 | 4 | 15 | 0 | 0 | N/A |
 
 ### Playoffs

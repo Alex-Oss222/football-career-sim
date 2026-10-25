@@ -1,10 +1,10 @@
 # Andrew Gachkar
 
-**San Diego Chargers · Inside linebacker · No. 59 · Age 25 · Last game December 29, 2013**
+**San Diego Chargers · Inside linebacker · No. 59 · Age 25 · Last game October 23, 2014**
 
 6' 3", 240 lb · Born November 4, 1988 · Missouri · Drafted in 2011, seventh round, by San Diego
 
-As of December 29, 2013, after Week 17.
+As of October 23, 2014, after Week 8.
 
 ![Andrew Gachkar](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_Gachkar.JPG?width=500)
 
@@ -22,10 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 8) | San Diego | 25 | 59 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | San Diego | 24 | 59 | 16 | 4 | 2 | 2 | 0 | 0 | 2 |
+| Career |  |  |  | 17 | 4 | 2 | 2 | 0 | 0 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 8) | San Diego | 25 | 59 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | San Diego | 24 | 59 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

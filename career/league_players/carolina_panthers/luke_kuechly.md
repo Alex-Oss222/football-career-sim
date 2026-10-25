@@ -1,10 +1,10 @@
 # Luke Kuechly
 
-**Carolina Panthers · Middle linebacker · No. 59 · Age 23 · Last game October 19, 2014**
+**Carolina Panthers · Middle linebacker · No. 59 · Age 23 · Last game October 26, 2014**
 
 6' 3", 238 lb · Born April 20, 1991 · Boston College · Drafted in 2012, first round, by Carolina
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Luke Kuechly](https://commons.wikimedia.org/wiki/Special:FilePath/Saints_vs_Panthers_12.6.15_189.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting middle linebacker.
 
-**Tackles:** 49 (2014, through Week 7).
+**Tackles:** 54 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 23 | 59 | 7 | 49 | 39 | 10 | 5 | 1 | 2 |
+| 2014 (through Week 8) | Carolina | 23 | 59 | 8 | 54 | 44 | 10 | 5 | 4 | 5 |
 | 2013 | Carolina | 22 | 59 | 16 | 150 | 115 | 35 | 14 | 6 | 13 |
-| Career |  |  |  | 23 | 199 | 154 | 45 | 19 | 7 | 15 |
+| Career |  |  |  | 24 | 204 | 159 | 45 | 19 | 10 | 18 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 23 | 59 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Carolina | 23 | 59 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Carolina | 22 | 59 | 1 | 31 | 8 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Oday Aboushi
 
-**New York Jets · Guard · No. 75 · Age 23 · Last game October 16, 2014**
+**New York Jets · Guard · No. 75 · Age 23 · Last game October 26, 2014**
 
 6' 4", 308 lb · Born June 5, 1991 · Virginia
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Oday Aboushi](https://commons.wikimedia.org/wiki/Special:FilePath/Oday_Aboushi_2012.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 23 | 75 | 4 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | N.Y. Jets | 23 | 75 | 5 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

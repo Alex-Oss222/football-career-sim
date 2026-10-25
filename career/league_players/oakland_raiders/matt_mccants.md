@@ -1,10 +1,10 @@
 # Matt McCants
 
-**Oakland Raiders · Offensive tackle · No. 73 · Age 25 · Last game October 19, 2014**
+**Oakland Raiders · Offensive tackle · No. 73 · Age 25 · Last game October 26, 2014**
 
 6' 6", 310 lb · Born August 18, 1989 · UAB · Drafted in 2012, sixth round, by the New York Giants
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 **Current assignment:** Reserve left tackle.
 
@@ -18,7 +18,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 25 | 73 | 6 | 0 | 0 | 0 | 26 |
+| 2014 (through Week 8) | Oakland | 25 | 73 | 7 | 0 | 0 | 0 | 35 |
 
 ### Playoffs
 

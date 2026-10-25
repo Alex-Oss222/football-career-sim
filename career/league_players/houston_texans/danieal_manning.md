@@ -1,10 +1,10 @@
 # Danieal Manning
 
-**Houston Texans · Free safety · No. 38 · Age 32 · Last game October 20, 2014**
+**Houston Texans · Free safety · No. 38 · Age 32 · Last game October 26, 2014**
 
 5' 11", 212 lb · Born August 9, 1982 · Abilene Christian · Drafted in 2006, second round, by Chicago
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Danieal Manning](https://commons.wikimedia.org/wiki/Special:FilePath/Danieal_Manning.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Reserve free safety.
 
-**Passes defended:** 0 (2014, through Week 7).
+**Passes defended:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 32 | 38 | 7 | 12 | 9 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Houston | 32 | 38 | 8 | 13 | 9 | 4 | 0 | 0 | 0 |
 | 2013 | Houston | 31 | 38 | 10 | 87 | 56 | 31 | 6 | 0 | 1 |
-| Career |  |  |  | 17 | 99 | 65 | 34 | 6 | 0 | 1 |
+| Career |  |  |  | 18 | 100 | 65 | 35 | 6 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 32 | 38 | 0 | 0 | 0 | 0 | 0 | 3 |
+| 2014 (through Week 8) | Houston | 32 | 38 | 0 | 0 | 0 | 0 | 0 | 4 |
 | 2013 | Houston | 31 | 38 | 3 | 66 | 13 | 0 | 0 | N/A |
 
 ### Playoffs

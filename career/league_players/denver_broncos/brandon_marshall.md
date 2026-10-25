@@ -1,10 +1,10 @@
 # Brandon Marshall
 
-**Denver Broncos · Inside linebacker · No. 54 · Age 25 · Last game October 19, 2014**
+**Denver Broncos · Inside linebacker · No. 54 · Age 25 · Last game October 23, 2014**
 
 6' 1", 250 lb · Born September 10, 1989 · Nevada · Drafted in 2012, fifth round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Brandon Marshall](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Marshall_%28linebacker%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve weakside linebacker.
 
-**Tackles:** 12 (2014, through Week 7).
+**Tackles:** 12 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 24 | 54 | 6 | 12 | 6 | 6 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Denver | 24 | 54 | 7 | 12 | 6 | 6 | 0 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 24 | 54 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 24 | 54 | 1 | 0 | 1 | 0 | 0 | 1 |
 
 ### Playoffs
 

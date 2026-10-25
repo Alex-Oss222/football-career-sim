@@ -1,10 +1,10 @@
 # Darren McFadden
 
-**Oakland Raiders · Running back · No. 20 · Age 27 · Last game October 19, 2014**
+**Oakland Raiders · Running back · No. 20 · Age 27 · Last game October 26, 2014**
 
 6' 1", 218 lb · Born August 27, 1987 · Arkansas · Drafted in 2008, first round, by Oakland
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Darren McFadden](https://commons.wikimedia.org/wiki/Special:FilePath/Darren_McFadden_Raiders.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 3.8 (2014, through Week 7).
+**Yards per carry:** 4.2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 27 | 20 | 5 | 73 | 279 | 3.8 | 1 | 42 | 55.8 |
+| 2014 (through Week 8) | Oakland | 27 | 20 | 6 | 96 | 402 | 4.2 | 2 | 51 | 67.0 |
 | 2013 | Oakland | 26 | 20 | 15 | 256 | 1,060 | 4.1 | 11 | 30 | 70.7 |
-| Career |  |  |  | 20 | 329 | 1,339 | 4.1 | 12 | 42 | 67.0 |
+| Career |  |  |  | 21 | 352 | 1,462 | 4.2 | 13 | 51 | 69.6 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 27 | 20 | 30 | 24 | 277 | 11.5 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Oakland | 27 | 20 | 33 | 26 | 292 | 11.2 | 2 | 0 | 0 |
 | 2013 | Oakland | 26 | 20 | 61 | 41 | 413 | 10.1 | 0 | 2 | 2 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 27 | 20 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Oakland | 27 | 20 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Oakland | 26 | 20 | 0 | 0 | N/A | 2 | 12 | 6.0 |
 
 ### Playoffs

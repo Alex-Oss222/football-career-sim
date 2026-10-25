@@ -1,10 +1,10 @@
 # Xavier Su'a-Filo
 
-**Houston Texans · Guard · No. 71 · Age 23 · Last game October 20, 2014**
+**Houston Texans · Guard · No. 71 · Age 23 · Last game October 26, 2014**
 
 6' 4", 307 lb · Born January 1, 1991 · UCLA
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Xavier Su'a-Filo](https://commons.wikimedia.org/wiki/Special:FilePath/Xavier_Su%27a-Filo_2014_combine.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 23 | 71 | 7 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Houston | 23 | 71 | 8 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

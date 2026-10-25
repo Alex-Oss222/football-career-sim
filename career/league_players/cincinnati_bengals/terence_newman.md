@@ -1,10 +1,10 @@
 # Terence Newman
 
-**Cincinnati Bengals · Cornerback · No. 23 · Age 36 · Last game October 19, 2014**
+**Cincinnati Bengals · Cornerback · No. 23 · Age 36 · Last game October 26, 2014**
 
 5' 10", 197 lb · Born September 4, 1978 · Kansas State · Drafted in 2003, first round, by Dallas
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Terence Newman](https://commons.wikimedia.org/wiki/Special:FilePath/Terence_Newman_Bengals_2012_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 6 (2014, through Week 7).
+**Passes defended:** 7 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 36 | 23 | 6 | 37 | 25 | 12 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Cincinnati | 36 | 23 | 7 | 40 | 28 | 12 | 0 | 1 | 1 |
 | 2013 | Cincinnati | 35 | 23 | 16 | 95 | 63 | 32 | 3 | 0 | 0 |
-| Career |  |  |  | 22 | 132 | 88 | 44 | 3 | 1 | 1 |
+| Career |  |  |  | 23 | 135 | 91 | 44 | 3 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 36 | 23 | 0 | 0 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cincinnati | 36 | 23 | 0 | 0 | 7 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 35 | 23 | 3 | 37 | 22 | 0 | 0 | N/A |
 
 ### Playoffs

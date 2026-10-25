@@ -1,10 +1,10 @@
 # Greg Warren
 
-**Pittsburgh Steelers · Long snapper · No. 60 · Age 33 · Last game October 20, 2014**
+**Pittsburgh Steelers · Long snapper · No. 60 · Age 33 · Last game October 26, 2014**
 
 6' 3", 252 lb · Born October 18, 1981 · North Carolina
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Greg Warren](https://commons.wikimedia.org/wiki/Special:FilePath/Greg_Warren_Steelers.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 65 (2014, through Week 7).
+**Long snaps:** 72 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 32 | 60 | 7 | 65 | 65 | 0 | 0 |
+| 2014 (through Week 8) | Pittsburgh | 32 | 60 | 8 | 72 | 72 | 0 | 0 |
 | 2013 | Pittsburgh | 31 | 60 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 24 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

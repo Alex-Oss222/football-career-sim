@@ -1,10 +1,10 @@
 # Jon Dorenbos
 
-**Philadelphia Eagles · Long snapper · No. 46 · Age 34 · Last game October 12, 2014**
+**Philadelphia Eagles · Long snapper · No. 46 · Age 34 · Last game October 26, 2014**
 
 6' 0", 250 lb · Born July 21, 1980 · Texas-El Paso; Golden West
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Jon Dorenbos](https://commons.wikimedia.org/wiki/Special:FilePath/Eagles_LS_Jon_Dorenbos.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 69 (2014, through Week 6).
+**Long snaps:** 79 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 34 | 46 | 6 | 69 | 69 | 0 | 0 |
+| 2014 (through Week 8) | Philadelphia | 34 | 46 | 7 | 79 | 79 | 0 | 0 |
 | 2013 | Philadelphia | 33 | 46 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 22 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

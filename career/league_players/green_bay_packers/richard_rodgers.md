@@ -1,10 +1,10 @@
 # Richard Rodgers
 
-**Green Bay Packers · Tight end · No. 89 · Age 22 · Last game October 19, 2014**
+**Green Bay Packers · Tight end · No. 89 · Age 22 · Last game October 26, 2014**
 
 6' 4", 257 lb · Born January 22, 1992 · California
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Richard Rodgers](https://commons.wikimedia.org/wiki/Special:FilePath/Richard_Rodgers_Cropped.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 6.9 (2014, through Week 7).
+**Yards per target:** 8.1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Green Bay | 22 | 89 | 7 | 35 | 22 | 243 | 11.0 | 3 | 71 | 34.7 | 62.9 |
+| 2014 (through Week 8) | Green Bay | 22 | 89 | 8 | 40 | 26 | 323 | 12.4 | 3 | 71 | 40.4 | 65.0 |
 
 ### Playoffs
 

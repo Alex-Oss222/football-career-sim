@@ -1,10 +1,10 @@
 # Justin Durant
 
-**Dallas Cowboys · Outside linebacker · No. 52 · Age 29 · Last game October 19, 2014**
+**Dallas Cowboys · Outside linebacker · No. 52 · Age 29 · Last game October 27, 2014**
 
 6' 1", 230 lb · Born September 21, 1985 · Hampton · Drafted in 2007, second round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Justin Durant](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Durant.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting weakside linebacker.
 
-**Tackles:** 61 (2014, through Week 7).
+**Tackles:** 68 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 28 | 52 | 7 | 61 | 41 | 20 | 4 | 2 | 5 |
+| 2014 (through Week 8) | Dallas | 28 | 52 | 8 | 68 | 46 | 22 | 5 | 3 | 7 |
 | 2013 | Dallas | 27 | 52 | 16 | 141 | 103 | 38 | 11 | 9 | 14 |
-| Career |  |  |  | 23 | 202 | 144 | 58 | 15 | 11 | 19 |
+| Career |  |  |  | 24 | 209 | 149 | 60 | 16 | 12 | 21 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 28 | 52 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Dallas | 28 | 52 | 0 | 0 | 3 | 0 | 0 | 0 |
 | 2013 | Dallas | 27 | 52 | 1 | 2 | 9 | 0 | 0 | N/A |
 
 ### Playoffs

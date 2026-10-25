@@ -1,10 +1,10 @@
 # Michael Floyd
 
-**Arizona Cardinals · Wide receiver · No. 15 · Age 24 · Last game October 19, 2014**
+**Arizona Cardinals · Wide receiver · No. 15 · Age 24 · Last game October 26, 2014**
 
 6' 3", 225 lb · Born November 27, 1989 · Notre Dame · Drafted in 2012, first round, by Arizona
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Michael Floyd](https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Floyd.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 9.4 (2014, through Week 7).
+**Yards per target:** 8.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 24 | 15 | 5 | 25 | 16 | 235 | 14.7 | 0 | 45 | 47.0 | 64.0 |
+| 2014 (through Week 8) | Arizona | 24 | 15 | 6 | 31 | 19 | 249 | 13.1 | 1 | 45 | 41.5 | 61.3 |
 | 2013 | Arizona | 23 | 15 | 16 | 91 | 55 | 550 | 10.0 | 2 | 40 | 34.4 | 60.4 |
-| Career |  |  |  | 21 | 116 | 71 | 785 | 11.1 | 2 | 45 | 37.4 | 61.2 |
+| Career |  |  |  | 22 | 122 | 74 | 799 | 10.8 | 3 | 45 | 36.3 | 60.7 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 24 | 15 | 3 | 10 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Arizona | 24 | 15 | 3 | 10 | 0 | 1 | 1 |
 | 2013 | Arizona | 23 | 15 | 1 | 2 | 0 | 0 | 0 |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Cam Johnson
 
-**Indianapolis Colts · Defensive end · No. 59 · Age 24 · Last game October 19, 2014**
+**Indianapolis Colts · Defensive end · No. 59 · Age 24 · Last game October 26, 2014**
 
 6' 3", 260 lb · Born May 24, 1990 · Virginia · Drafted in 2012, seventh round, by San Francisco
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Cam Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Cam_Johnson_2014.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 3 (2014, through Week 7).
+**Sacks:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 24 | 59 | 7 | 17 | 8 | 9 | 3 | 3 | 4 |
+| 2014 (through Week 8) | Indianapolis | 24 | 59 | 8 | 18 | 9 | 9 | 3 | 3 | 4 |
 | 2013 | Indianapolis | 23 | 59 | 16 | 8 | 6 | 2 | 0 | 3 | 3 |
-| Career |  |  |  | 23 | 25 | 14 | 11 | 3 | 6 | 7 |
+| Career |  |  |  | 24 | 26 | 15 | 11 | 3 | 6 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 24 | 59 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 24 | 59 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 23 | 59 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

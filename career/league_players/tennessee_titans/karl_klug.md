@@ -1,10 +1,10 @@
 # Karl Klug
 
-**Tennessee Titans · Defensive tackle · No. 97 · Age 26 · Last game October 19, 2014**
+**Tennessee Titans · Defensive tackle · No. 97 · Age 26 · Last game October 26, 2014**
 
 6' 3", 278 lb · Born March 31, 1988 · Iowa · Drafted in 2011, fifth round, by Tennessee
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Karl Klug](https://commons.wikimedia.org/wiki/Special:FilePath/Karl_Klug.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 26 | 97 | 7 | 2 | 1 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Tennessee | 26 | 97 | 8 | 2 | 1 | 1 | 1 | 0 | 0 |
 | 2013 | Tennessee | 25 | 97 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 9 | 2 | 1 | 1 | 1 | 0 | 0 |
+| Career |  |  |  | 10 | 2 | 1 | 1 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 26 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tennessee | 26 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Tennessee | 25 | 97 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

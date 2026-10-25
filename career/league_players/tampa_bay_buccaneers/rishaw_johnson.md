@@ -1,10 +1,10 @@
 # Rishaw Johnson
 
-**Tampa Bay Buccaneers · Guard · No. 65 · Age 25 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Guard · No. 65 · Age 25 · Last game October 26, 2014**
 
 6' 3", 313 lb · Born February 23, 1989 · California (PA); Mississippi
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Rishaw Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Rishaw_Johnson.jpg?width=500)
 
@@ -20,7 +20,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 25 | 65 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 25 | 65 | 3 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

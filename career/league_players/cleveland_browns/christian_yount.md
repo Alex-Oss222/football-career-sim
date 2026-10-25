@@ -1,10 +1,10 @@
 # Christian Yount
 
-**Cleveland Browns · Long snapper · No. 57 · Age 26 · Last game October 19, 2014**
+**Cleveland Browns · Long snapper · No. 57 · Age 26 · Last game October 26, 2014**
 
 6' 1", 250 lb · Born July 8, 1988 · UCLA
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Christian Yount](https://commons.wikimedia.org/wiki/Special:FilePath/Christian_Yount.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 63 (2014, through Week 7).
+**Long snaps:** 69 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 26 | 57 | 6 | 63 | 63 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 26 | 57 | 7 | 69 | 69 | 0 | 0 |
 | 2013 | Cleveland | 25 | 57 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 22 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

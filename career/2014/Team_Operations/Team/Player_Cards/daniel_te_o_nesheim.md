@@ -4,15 +4,15 @@
 
 6' 3", 263 lb · Born June 12, 1987 · Washington · Drafted in 2010, third round, by Philadelphia
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
-**Sacks:** 1 (2014, through Week 7).
+**Sacks:** 1 (2014, through Week 8).
 
 ## Staff assessment
 
-Daniel Te'o-Nesheim has been active for seven games in his first season with Jacksonville. He is a power-oriented edge reserve suited to a defined run-setting assignment, more useful setting the edge and holding contain than rushing the passer. His get-off, bend around the corner and counter moves are below a starter's standard.
+Daniel Te'o-Nesheim has been active for eight games in his first season with Jacksonville. He is a power-oriented edge reserve suited to a defined run-setting assignment, more useful setting the edge and holding contain than rushing the passer. His get-off, bend around the corner and counter moves are below a starter's standard.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -30,13 +30,13 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 27 | N/A | 7 | 5 | 2 | 3 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Jacksonville | 27 | N/A | 8 | 5 | 2 | 3 | 0 | 1 | 1 |
 | 2013 | Tampa Bay | 26 | 50 | 16 | 85 | 59 | 26 | 14 | 9 | 15 |
-| Career |  |  |  | 23 | 90 | 61 | 29 | 14 | 10 | 16 |
+| Career |  |  |  | 24 | 90 | 61 | 29 | 14 | 10 | 16 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 27 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Jacksonville | 27 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Tampa Bay | 26 | 50 | 0 | 0 | 4 | 1 | 1 | N/A |
 
 ### Playoffs

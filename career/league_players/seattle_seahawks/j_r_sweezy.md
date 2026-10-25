@@ -1,10 +1,10 @@
 # J.R. Sweezy
 
-**Seattle Seahawks · Guard · No. 64 · Age 25 · Last game October 19, 2014**
+**Seattle Seahawks · Guard · No. 64 · Age 25 · Last game October 26, 2014**
 
 6' 5", 298 lb · Born April 8, 1989 · N.C. State · Drafted in 2012, seventh round, by Seattle
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![J.R. Sweezy](https://commons.wikimedia.org/wiki/Special:FilePath/J._R._Sweezy_blocking_a_Raider.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 0 (2014, through Week 7).
+**Sacks allowed:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 25 | 64 | 6 | 6 | 409 | 0 | 33 |
+| 2014 (through Week 8) | Seattle | 25 | 64 | 7 | 7 | 469 | 1 | 35 |
 | 2013 | Seattle | 24 | 64 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

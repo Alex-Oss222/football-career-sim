@@ -1,16 +1,16 @@
 # Jonathan Stewart
 
-**Carolina Panthers · Running back · No. 28 · Age 27 · Last game October 19, 2014**
+**Carolina Panthers · Running back · No. 28 · Age 27 · Last game October 26, 2014**
 
 5' 10", 235 lb · Born March 21, 1987 · Oregon · Drafted in 2008, first round, by Carolina
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jonathan Stewart](https://commons.wikimedia.org/wiki/Special:FilePath/Jonathan_Stewart_2013.jpg?width=500)
 
 *Photo: original: U.S. Army National Guard Photo by Sgt. Leticia Samuels, North Carolina National Guard Public Affairs/Released North Carolina National Guard derivative: Diddykong1130, Public domain ([source](https://commons.wikimedia.org/wiki/File:Jonathan_Stewart_2013.jpg)).*
 
-**Yards per carry:** 6.9 (2014, through Week 7).
+**Yards per carry:** 6.9 (2014, through Week 8).
 
 ## Contract
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 27 | 28 | 6 | 16 | 111 | 6.9 | 2 | 23 | 18.5 |
+| 2014 (through Week 8) | Carolina | 27 | 28 | 6 | 16 | 111 | 6.9 | 2 | 23 | 18.5 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Carolina | 27 | 28 | 3 | 1 | 0 | 0.0 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Carolina | 27 | 28 | 3 | 1 | 0 | 0.0 | 0 | 1 | 1 |
 
 ### Playoffs
 

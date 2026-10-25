@@ -1,10 +1,10 @@
 # Joe Reitz
 
-**Indianapolis Colts · Offensive tackle · No. 76 · Age 29 · Last game October 19, 2014**
+**Indianapolis Colts · Offensive tackle · No. 76 · Age 29 · Last game October 26, 2014**
 
 6' 7", 325 lb · Born August 24, 1985 · Western Michigan
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Joe Reitz](https://commons.wikimedia.org/wiki/Special:FilePath/Reitz_baltimore_training_camp.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 29 | 76 | 5 | 0 | 0 | 0 | 19 |
+| 2014 (through Week 8) | Indianapolis | 29 | 76 | 6 | 0 | 0 | 0 | 21 |
 | 2013 | Indianapolis | 28 | 76 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

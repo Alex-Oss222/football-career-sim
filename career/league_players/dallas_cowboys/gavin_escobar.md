@@ -1,14 +1,14 @@
 # Gavin Escobar
 
-**Dallas Cowboys · Tight end · No. 89 · Age 23 · Last game October 19, 2014**
+**Dallas Cowboys · Tight end · No. 89 · Age 23 · Last game October 27, 2014**
 
 6' 6", 260 lb · Born February 3, 1991 · San Diego State
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 14.0 (2014, through Week 7).
+**Yards per target:** 10.0 (2014, through Week 8).
 
 ## Contract
 
@@ -20,9 +20,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Dallas | 23 | 89 | 7 | 5 | 3 | 70 | 23.3 | 0 | 37 | 10.0 | 60.0 |
+| 2014 (through Week 8) | Dallas | 23 | 89 | 8 | 7 | 3 | 70 | 23.3 | 0 | 37 | 8.8 | 42.9 |
 | 2013 | Dallas | 22 | 89 | 16 | 1 | 1 | 4 | 4.0 | 0 | 4 | 0.2 | 100.0 |
-| Career |  |  |  | 23 | 6 | 4 | 74 | 18.5 | 0 | 37 | 3.2 | 66.7 |
+| Career |  |  |  | 24 | 8 | 4 | 74 | 18.5 | 0 | 37 | 3.1 | 50.0 |
 
 ### Playoffs
 

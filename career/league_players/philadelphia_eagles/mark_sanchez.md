@@ -1,10 +1,10 @@
 # Mark Sanchez
 
-**Philadelphia Eagles · Quarterback · No. 3 · Age 27 · Last game October 12, 2014**
+**Philadelphia Eagles · Quarterback · No. 3 · Age 27 · Last game October 26, 2014**
 
 6' 2", 225 lb · Born November 11, 1986 · USC · Drafted in 2009, first round, by the New York Jets
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Mark Sanchez](https://commons.wikimedia.org/wiki/Special:FilePath/Washington_Football_Team_at_Atlanta_Falcons_%283_October_2021%29_JMG_3299_%2851555298779%29_%28cropped%29.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 27 | 3 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Philadelphia | 27 | 3 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 27 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Philadelphia | 27 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

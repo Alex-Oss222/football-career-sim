@@ -1,10 +1,10 @@
 # Doug Martin
 
-**Tampa Bay Buccaneers · Running back · No. 22 · Age 25 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Running back · No. 22 · Age 25 · Last game October 26, 2014**
 
 5' 9", 215 lb · Born January 13, 1989 · Boise State · Drafted in 2012, first round, by Tampa Bay
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Doug Martin](https://commons.wikimedia.org/wiki/Special:FilePath/Doug_Martin_at_Schoffield_Barracks_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 5.4 (2014, through Week 6).
+**Yards per carry:** 5.1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 25 | 22 | 6 | 104 | 566 | 5.4 | 4 | 45 | 94.3 |
+| 2014 (through Week 8) | Tampa Bay | 25 | 22 | 7 | 123 | 623 | 5.1 | 5 | 45 | 89.0 |
 | 2013 | Tampa Bay | 24 | 22 | 16 | 309 | 1,337 | 4.3 | 10 | 72 | 83.6 |
-| Career |  |  |  | 22 | 413 | 1,903 | 4.6 | 14 | 72 | 86.5 |
+| Career |  |  |  | 23 | 432 | 1,960 | 4.5 | 15 | 72 | 85.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 25 | 22 | 28 | 19 | 142 | 7.5 | 1 | 1 | 1 |
+| 2014 (through Week 8) | Tampa Bay | 25 | 22 | 36 | 21 | 156 | 7.4 | 1 | 1 | 1 |
 | 2013 | Tampa Bay | 24 | 22 | 71 | 54 | 592 | 11.0 | 3 | 3 | 3 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 25 | 22 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Tampa Bay | 25 | 22 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Tampa Bay | 24 | 22 | 2 | 45 | 22.5 | 5 | 36 | 7.2 |
 
 ### Playoffs

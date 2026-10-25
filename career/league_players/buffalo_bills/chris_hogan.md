@@ -1,10 +1,10 @@
 # Chris Hogan
 
-**Buffalo Bills · Wide receiver · No. 15 · Age 26 · Last game October 19, 2014**
+**Buffalo Bills · Wide receiver · No. 15 · Age 27 · Last game October 26, 2014**
 
 6' 1", 220 lb · Born October 24, 1987 · Monmouth; Penn State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Chris Hogan](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Hogan_%28American_football%29.JPG?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 26 | 15 | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 8) | Buffalo | 26 | 15 | 8 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | Buffalo | 25 | 15 | 16 | 8 | 5 | 33 | 6.6 | 0 | 12 | 2.1 | 62.5 |
-| Career |  |  |  | 23 | 8 | 5 | 33 | 6.6 | 0 | 12 | 1.4 | 62.5 |
+| Career |  |  |  | 24 | 8 | 5 | 33 | 6.6 | 0 | 12 | 1.4 | 62.5 |
 
 ### Playoffs
 

@@ -1,16 +1,16 @@
 # Luke Joeckel
 
-**Philadelphia Eagles · Guard · Age 22 · Last game October 12, 2014**
+**Philadelphia Eagles · Guard · Age 22 · Last game October 26, 2014**
 
 6' 6", 306 lb · Born November 6, 1991 · Texas A&M
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Luke Joeckel](https://commons.wikimedia.org/wiki/Special:FilePath/Luke_Joeckel_2011.jpg?width=500)
 
 *Photo: Texas_A&M_QB_Ryan_Tannehill_scrambling.jpg : SD Dirk derivative work: Arbor to SJ, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Luke_Joeckel_2011.jpg)).*
 
-**Sacks allowed:** 2 (2014, through Week 6).
+**Sacks allowed:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 22 | N/A | 6 | 6 | 423 | 2 | 33 |
+| 2014 (through Week 8) | Philadelphia | 22 | N/A | 7 | 7 | 474 | 2 | 34 |
 | 2013 | Philadelphia | 21 | N/A | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 

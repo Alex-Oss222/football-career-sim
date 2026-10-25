@@ -1,10 +1,10 @@
 # Jared Odrick
 
-**Miami Dolphins · Defensive tackle · No. 98 · Age 26 · Last game October 19, 2014**
+**Miami Dolphins · Defensive tackle · No. 98 · Age 26 · Last game October 26, 2014**
 
 6' 5", 304 lb · Born December 31, 1987 · Penn State · Drafted in 2010, first round, by Miami
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jared Odrick](https://commons.wikimedia.org/wiki/Special:FilePath/Jared_Odrick_2014.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 1 (2014, through Week 7).
+**Sacks:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 26 | 98 | 6 | 2 | 2 | 0 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Miami | 26 | 98 | 7 | 2 | 2 | 0 | 0 | 1 | 1 |
 | 2013 | Miami | 25 | 98 | 11 | 7 | 5 | 2 | 0 | 0 | 1 |
-| Career |  |  |  | 17 | 9 | 7 | 2 | 0 | 1 | 2 |
+| Career |  |  |  | 18 | 9 | 7 | 2 | 0 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 26 | 98 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Miami | 26 | 98 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 25 | 98 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

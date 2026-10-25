@@ -4,13 +4,13 @@
 
 6' 2", 250 lb · Born March 14, 1982 · Georgia Tech · Drafted in 2004, second round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Daryl Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Daryl_Smith.JPG?width=500)
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:Daryl_Smith.JPG)).*
 
-**Tackles:** 61 (2014, through Week 7).
+**Tackles:** 61 (2014, through Week 8).
 
 ## Staff assessment
 
@@ -32,13 +32,13 @@ Two-year contract through 2014.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 32 | N/A | 7 | 61 | 38 | 23 | 3 | 1 | 2 |
+| 2014 (through Week 8) | Jacksonville | 32 | N/A | 7 | 61 | 38 | 23 | 3 | 1 | 2 |
 | 2013 | Jacksonville | 31 | N/A | 16 | 109 | 73 | 36 | 3 | 0 | 6 |
 | With Jacksonville |  |  |  | 23 | 170 | 111 | 59 | 6 | 1 | 8 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 32 | N/A | 0 | 0 | 4 | 1 | 1 | 0 |
+| 2014 (through Week 8) | Jacksonville | 32 | N/A | 0 | 0 | 4 | 1 | 1 | 0 |
 | 2013 | Jacksonville | 31 | N/A | 1 | 38 | 3 | 1 | 1 | N/A |
 
 ### Playoffs

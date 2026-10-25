@@ -1,10 +1,10 @@
 # Trent Williams
 
-**Washington Redskins · Offensive tackle · No. 71 · Age 26 · Last game October 19, 2014**
+**Washington Redskins · Offensive tackle · No. 71 · Age 26 · Last game October 27, 2014**
 
 6' 5", 337 lb · Born July 19, 1988 · Oklahoma · Drafted in 2010, first round, by Washington
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Trent Williams](https://commons.wikimedia.org/wiki/Special:FilePath/Trent_williams_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 8 (2014, through Week 7).
+**Sacks allowed:** 9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 26 | 71 | 7 | 7 | 454 | 8 | 25 |
+| 2014 (through Week 8) | Washington | 26 | 71 | 8 | 8 | 517 | 9 | 30 |
 | 2013 | Washington | 25 | 71 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 13 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 14 | N/A |
 
 ### Playoffs
 

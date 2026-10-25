@@ -1,10 +1,10 @@
 # Paul Richardson
 
-**Seattle Seahawks · Wide receiver · No. 10 · Age 22 · Last game October 19, 2014**
+**Seattle Seahawks · Wide receiver · No. 10 · Age 22 · Last game October 26, 2014**
 
 6' 0", 183 lb · Born April 13, 1992 · Colorado
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Paul Richardson](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Richardson_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 0.0 (2014, through Week 7).
+**Yards per target:** 15.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 22 | 10 | 6 | 2 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0.0 |
+| 2014 (through Week 8) | Seattle | 22 | 10 | 7 | 3 | 1 | 45 | 45.0 | 0 | 45 | 6.4 | 33.3 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 22 | 10 | 0 | 0 | N/A | 2 | 14 | 7.0 |
+| 2014 (through Week 8) | Seattle | 22 | 10 | 0 | 0 | N/A | 2 | 14 | 7.0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Sean Porter
 
-**Cincinnati Bengals · Outside linebacker · No. 56 · Age 23 · Last game October 19, 2014**
+**Cincinnati Bengals · Outside linebacker · No. 56 · Age 23 · Last game October 26, 2014**
 
 6' 1", 242 lb · Born January 12, 1991 · Texas A&M
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Sean Porter](https://commons.wikimedia.org/wiki/Special:FilePath/Sean_Porter.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 23 | 56 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cincinnati | 23 | 56 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 23 | 56 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 8) | Cincinnati | 23 | 56 | 0 | 0 | 0 | 0 | 0 | 2 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Jarius Wright
 
-**Minnesota Vikings · Wide receiver · No. 17 · Age 24 · Last game October 19, 2014**
+**Minnesota Vikings · Wide receiver · No. 17 · Age 24 · Last game October 26, 2014**
 
 5' 10", 180 lb · Born November 25, 1989 · Arkansas · Drafted in 2012, fourth round, by Minnesota
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jarius Wright](https://commons.wikimedia.org/wiki/Special:FilePath/Jarius_Wright.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 6.5 (2014, through Week 7).
+**Yards per target:** 6.3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 24 | 17 | 7 | 33 | 22 | 215 | 9.8 | 3 | 43 | 30.7 | 66.7 |
+| 2014 (through Week 8) | Minnesota | 24 | 17 | 8 | 35 | 24 | 222 | 9.2 | 3 | 43 | 27.8 | 68.6 |
 | 2013 | Minnesota | 23 | 17 | 16 | 50 | 35 | 369 | 10.5 | 3 | 44 | 23.1 | 70.0 |
-| Career |  |  |  | 23 | 83 | 57 | 584 | 10.2 | 6 | 44 | 25.4 | 68.7 |
+| Career |  |  |  | 24 | 85 | 59 | 591 | 10.0 | 6 | 44 | 24.6 | 69.4 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 24 | 17 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Minnesota | 24 | 17 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Minnesota | 23 | 17 | 0 | 0 | N/A | 4 | 81 | 20.2 |
 
 ### Playoffs

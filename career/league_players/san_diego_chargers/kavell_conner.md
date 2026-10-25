@@ -1,10 +1,10 @@
 # Kavell Conner
 
-**San Diego Chargers · Inside linebacker · No. 53 · Age 27 · Last game October 19, 2014**
+**San Diego Chargers · Inside linebacker · No. 53 · Age 27 · Last game October 23, 2014**
 
 6' 0", 245 lb · Born February 23, 1987 · Clemson · Drafted in 2010, seventh round, by Indianapolis
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Kavell Conner](https://commons.wikimedia.org/wiki/Special:FilePath/Kavell_Conner.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve inside linebacker.
 
-**Tackles:** 2 (2014, through Week 7).
+**Tackles:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 27 | 53 | 7 | 2 | 2 | 0 | 0 | 1 | 1 |
+| 2014 (through Week 8) | San Diego | 27 | 53 | 8 | 3 | 3 | 0 | 0 | 2 | 2 |
 | 2013 | Indianapolis | 26 | 53 | 15 | 7 | 5 | 2 | 0 | 0 | 0 |
-| Career |  |  |  | 22 | 9 | 7 | 2 | 0 | 1 | 1 |
+| Career |  |  |  | 23 | 10 | 8 | 2 | 0 | 2 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 27 | 53 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 8) | San Diego | 27 | 53 | 0 | 0 | 0 | 1 | 1 | 1 |
 | 2013 | Indianapolis | 26 | 53 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

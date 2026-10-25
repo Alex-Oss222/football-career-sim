@@ -1,10 +1,10 @@
 # Akeem Dent
 
-**Houston Texans · Inside linebacker · No. 50 · Age 27 · Last game October 20, 2014**
+**Houston Texans · Inside linebacker · No. 50 · Age 27 · Last game October 26, 2014**
 
 6' 1", 239 lb · Born September 27, 1987 · Georgia · Drafted in 2011, third round, by Atlanta
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Akeem Dent](https://commons.wikimedia.org/wiki/Special:FilePath/Akeem_Dent_2013.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 26 | 50 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Houston | 26 | 50 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Atlanta | 25 | 52 | 16 | 64 | 42 | 22 | 6 | 3 | 7 |
-| Career |  |  |  | 19 | 64 | 42 | 22 | 6 | 3 | 7 |
+| Career |  |  |  | 20 | 64 | 42 | 22 | 6 | 3 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 26 | 50 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Houston | 26 | 50 | 0 | 0 | 0 | 0 | 0 | 2 |
 | 2013 | Atlanta | 25 | 52 | 1 | 11 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

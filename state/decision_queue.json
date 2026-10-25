@@ -489,6 +489,141 @@
     },
     "summary": "Stone set the inactives on his Week 8 Game Plan, checked and applied October 26, 2014"
    }
+  },
+  {
+   "id": "2014-w09-game-plan",
+   "title": "Week 9 game plan for Cincinnati",
+   "class": "weekly_game_plan",
+   "owner": "stone",
+   "authority_rows": [
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "question": "Stone's Week 9 plan for Cincinnati, from which the call sheet is frozen before the game.",
+   "raised": {
+    "date": "2014-10-26",
+    "by": "workflow",
+    "event": "2014-10-26-week-8-vs-miami"
+   },
+   "status": "OPEN",
+   "waits_on": [],
+   "deadline": {
+    "date": "2014-11-02",
+    "label": "before the Week 9 call sheet is frozen and the Week 9 inputs are built; kickoff November 2, 1 p.m. ET",
+    "before": {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 9
+    }
+   },
+   "blocks": [
+    {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 9
+    }
+   ],
+   "fallback": null,
+   "can_continue": null,
+   "record": {
+    "path": "career/2014/Regular_Season/Games/Week_09/README.md"
+   },
+   "sources": [
+    {
+     "path": "career/2014/Regular_Season/Games/Week_08/Game_Report.md"
+    }
+   ],
+   "resolution": null
+  },
+  {
+   "id": "2014-w09-inactives",
+   "title": "Week 9 inactives",
+   "class": "game_day_inactives",
+   "owner": "stone",
+   "authority_rows": [
+    "8"
+   ],
+   "question": "Stone's Week 9 inactives for Cincinnati.",
+   "raised": {
+    "date": "2014-10-26",
+    "by": "workflow",
+    "event": "2014-10-26-week-8-vs-miami"
+   },
+   "status": "OPEN",
+   "waits_on": [
+    {
+     "what": "Alan Ball's reassessment",
+     "owner": "medical_staff",
+     "date": "2014-10-27"
+    },
+    {
+     "what": "Corey Linsley's reassessment",
+     "owner": "medical_staff",
+     "date": "2014-10-27"
+    },
+    {
+     "what": "Travis Kelce's reassessment",
+     "owner": "medical_staff",
+     "date": "2014-10-27"
+    },
+    {
+     "what": "Alan Ball's projected return",
+     "owner": "medical_staff",
+     "date": "2014-10-29"
+    },
+    {
+     "what": "Corey Linsley's projected return",
+     "owner": null,
+     "date": "2014-10-31"
+    },
+    {
+     "what": "Daryl Smith's projected return",
+     "owner": "medical_staff",
+     "date": "2014-10-31"
+    },
+    {
+     "what": "Travis Kelce's projected return",
+     "owner": "medical_staff",
+     "date": "2014-10-31"
+    }
+   ],
+   "deadline": {
+    "date": "2014-11-02",
+    "label": "before the Week 9 inputs are built",
+    "before": {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 9
+    }
+   },
+   "blocks": [
+    {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 9
+    }
+   ],
+   "standing_not_applied": [
+    {
+     "instruction": "stone-healthy-inactive-rule",
+     "reason": "the rule covers the healthy inactives only; who is out for the game is known only as the week goes on, so the list is set on the Game Plan"
+    }
+   ],
+   "fallback": null,
+   "can_continue": null,
+   "record": {
+    "path": "career/2014/Team_Operations/Team/Depth_Chart/depth_chart.md"
+   },
+   "sources": [
+    {
+     "path": "career/2014/Regular_Season/Games/Week_08/Game_Report.md"
+    }
+   ],
+   "resolution": null
   }
  ]
 }

@@ -1,10 +1,10 @@
 # Walt Aikens
 
-**Miami Dolphins · Safety · No. 35 · Age 23 · Last game October 19, 2014**
+**Miami Dolphins · Safety · No. 35 · Age 23 · Last game October 26, 2014**
 
 6' 1", 210 lb · Born June 19, 1991 · Liberty
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Walt Aikens](https://commons.wikimedia.org/wiki/Special:FilePath/Walt_Aikens.JPG?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 23 | 35 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Miami | 23 | 35 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Miami | 23 | 35 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Miami | 23 | 35 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

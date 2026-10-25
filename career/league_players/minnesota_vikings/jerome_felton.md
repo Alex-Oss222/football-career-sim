@@ -1,10 +1,10 @@
 # Jerome Felton
 
-**Minnesota Vikings · Fullback · No. 42 · Age 28 · Last game October 19, 2014**
+**Minnesota Vikings · Fullback · No. 42 · Age 28 · Last game October 26, 2014**
 
 6' 0", 248 lb · Born July 3, 1986 · Furman · Drafted in 2008, fifth round, by Detroit
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jerome Felton](https://commons.wikimedia.org/wiki/Special:FilePath/Jerome_Felton_2013_Pro_Bowl_%28cropped%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 4.2 (2014, through Week 7).
+**Yards per carry:** 3.2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 28 | 42 | 7 | 4 | 17 | 4.2 | 0 | 7 | 2.4 |
+| 2014 (through Week 8) | Minnesota | 28 | 42 | 8 | 5 | 16 | 3.2 | 0 | 7 | 2.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 28 | 42 | 3 | 3 | 27 | 9.0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Minnesota | 28 | 42 | 4 | 3 | 27 | 9.0 | 0 | 0 | 0 |
 
 ### Playoffs
 

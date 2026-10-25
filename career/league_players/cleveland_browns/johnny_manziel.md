@@ -1,10 +1,10 @@
 # Johnny Manziel
 
-**Cleveland Browns · Quarterback · No. 2 · Age 21 · Last game October 19, 2014**
+**Cleveland Browns · Quarterback · No. 2 · Age 21 · Last game October 26, 2014**
 
 6' 0", 210 lb · Born December 6, 1992 · Texas A&M
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Johnny Manziel](https://commons.wikimedia.org/wiki/Special:FilePath/Johnny_Manziel_2015.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 21 | 2 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Cleveland | 21 | 2 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 21 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 21 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

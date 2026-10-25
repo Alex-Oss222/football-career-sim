@@ -1,16 +1,16 @@
 # Glenn Winston
 
-**Cleveland Browns · Running back · No. 41 · Age 25 · Last game October 19, 2014**
+**Cleveland Browns · Running back · No. 41 · Age 25 · Last game October 26, 2014**
 
 6' 2", 220 lb · Born April 29, 1989 · Northwood; Michigan State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Glenn Winston](https://commons.wikimedia.org/wiki/Special:FilePath/Glenn_Winston.jpg?width=500)
 
 *Photo: Erik Drost, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Glenn_Winston.jpg)).*
 
-**Yards per carry:** 7.1 (2014, through Week 7).
+**Yards per carry:** 6.0 (2014, through Week 8).
 
 ## Contract
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 25 | 41 | 6 | 8 | 57 | 7.1 | 0 | 15 | 9.5 |
+| 2014 (through Week 8) | Cleveland | 25 | 41 | 7 | 15 | 90 | 6.0 | 0 | 18 | 12.9 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 25 | 41 | 4 | 2 | 12 | 6.0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 25 | 41 | 5 | 3 | 20 | 6.7 | 0 | 2 | 2 |
 
 ### Playoffs
 

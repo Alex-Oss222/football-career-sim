@@ -1,10 +1,10 @@
 # Vinny Curry
 
-**Philadelphia Eagles · Defensive end · No. 75 · Age 26 · Last game October 12, 2014**
+**Philadelphia Eagles · Defensive end · No. 75 · Age 26 · Last game October 26, 2014**
 
 6' 3", 279 lb · Born June 30, 1988 · Marshall · Drafted in 2012, second round, by Philadelphia
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Vinny Curry](https://commons.wikimedia.org/wiki/Special:FilePath/Vinny_Curry.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 1 (2014, through Week 6).
+**Sacks:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 26 | 75 | 6 | 4 | 3 | 1 | 0 | 1 | 3 |
+| 2014 (through Week 8) | Philadelphia | 26 | 75 | 7 | 8 | 7 | 1 | 0 | 2 | 4 |
 | 2013 | Philadelphia | 25 | 75 | 16 | 13 | 7 | 6 | 2 | 0 | 0 |
-| Career |  |  |  | 22 | 17 | 10 | 7 | 2 | 1 | 3 |
+| Career |  |  |  | 23 | 21 | 14 | 7 | 2 | 2 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 26 | 75 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Philadelphia | 26 | 75 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Philadelphia | 25 | 75 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

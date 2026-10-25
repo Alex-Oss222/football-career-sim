@@ -1,10 +1,10 @@
 # Ryan Harris
 
-**Kansas City Chiefs · Offensive tackle · No. 68 · Age 29 · Last game October 19, 2014**
+**Kansas City Chiefs · Offensive tackle · No. 68 · Age 29 · Last game October 26, 2014**
 
 6' 5", 302 lb · Born March 11, 1985 · Notre Dame · Drafted in 2007, third round, by Denver
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Ryan Harris](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Harris_%28American_football%29.JPG?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 29 | 68 | 6 | 0 | 0 | 0 | 21 |
+| 2014 (through Week 8) | Kansas City | 29 | 68 | 7 | 0 | 0 | 0 | 25 |
 | 2013 | Houston | 28 | 68 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

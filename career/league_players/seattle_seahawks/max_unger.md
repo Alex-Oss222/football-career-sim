@@ -1,10 +1,10 @@
 # Max Unger
 
-**Seattle Seahawks · Center · No. 60 · Age 28 · Last game October 19, 2014**
+**Seattle Seahawks · Center · No. 60 · Age 28 · Last game October 26, 2014**
 
 6' 5", 305 lb · Born April 14, 1986 · Oregon · Drafted in 2009, second round, by Seattle
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Max Unger](https://commons.wikimedia.org/wiki/Special:FilePath/Max_Unger.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 1 (2014, through Week 7).
+**Sacks allowed:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 28 | 60 | 6 | 6 | 409 | 1 | 33 |
+| 2014 (through Week 8) | Seattle | 28 | 60 | 7 | 7 | 469 | 1 | 35 |
 | 2013 | Seattle | 27 | 60 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 

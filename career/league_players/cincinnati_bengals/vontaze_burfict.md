@@ -1,10 +1,10 @@
 # Vontaze Burfict
 
-**Cincinnati Bengals · Middle linebacker · No. 55 · Age 24 · Last game October 19, 2014**
+**Cincinnati Bengals · Middle linebacker · No. 55 · Age 24 · Last game October 26, 2014**
 
 6' 1", 248 lb · Born September 24, 1990 · Arizona State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Vontaze Burfict](https://commons.wikimedia.org/wiki/Special:FilePath/Vontaze_Burfict_2017.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting weakside linebacker.
 
-**Tackles:** 51 (2014, through Week 7).
+**Tackles:** 58 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 23 | 55 | 6 | 51 | 35 | 16 | 3 | 3 | 4 |
+| 2014 (through Week 8) | Cincinnati | 23 | 55 | 7 | 58 | 42 | 16 | 3 | 3 | 4 |
 | 2013 | Cincinnati | 22 | 55 | 16 | 173 | 109 | 64 | 9 | 7 | 11 |
-| Career |  |  |  | 22 | 224 | 144 | 80 | 12 | 10 | 15 |
+| Career |  |  |  | 23 | 231 | 151 | 80 | 12 | 10 | 15 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 23 | 55 | 1 | 2 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cincinnati | 23 | 55 | 1 | 2 | 1 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 22 | 55 | 3 | 60 | 10 | 2 | 2 | N/A |
 
 ### Playoffs

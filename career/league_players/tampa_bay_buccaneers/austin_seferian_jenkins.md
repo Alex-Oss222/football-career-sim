@@ -1,10 +1,10 @@
 # Austin Seferian-Jenkins
 
-**Tampa Bay Buccaneers · Tight end · No. 87 · Age 22 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Tight end · No. 87 · Age 22 · Last game October 26, 2014**
 
 6' 5", 262 lb · Born September 29, 1992 · Washington
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Austin Seferian-Jenkins](https://commons.wikimedia.org/wiki/Special:FilePath/Austin_Seferian-Jenkins.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 4.2 (2014, through Week 6).
+**Yards per target:** 3.8 (2014, through Week 8).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 21 | 87 | 6 | 9 | 4 | 38 | 9.5 | 0 | 19 | 6.3 | 44.4 |
+| 2014 (through Week 8) | Tampa Bay | 21 | 87 | 7 | 10 | 4 | 38 | 9.5 | 0 | 19 | 5.4 | 40.0 |
 
 ### Playoffs
 

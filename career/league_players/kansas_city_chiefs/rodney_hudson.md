@@ -1,10 +1,10 @@
 # Rodney Hudson
 
-**Kansas City Chiefs · Center · No. 61 · Age 25 · Last game October 19, 2014**
+**Kansas City Chiefs · Center · No. 61 · Age 25 · Last game October 26, 2014**
 
 6' 2", 299 lb · Born July 12, 1989 · Florida State · Drafted in 2011, second round, by Kansas City
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Rodney Hudson](https://commons.wikimedia.org/wiki/Special:FilePath/Rodney_Hudson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 2 (2014, through Week 7).
+**Sacks allowed:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Kansas City | 25 | 61 | 6 | 6 | 379 | 2 | 21 |
+| 2014 (through Week 8) | Kansas City | 25 | 61 | 7 | 7 | 436 | 2 | 25 |
 | 2013 | Kansas City | 24 | 61 | 16 | N/A | N/A | 2 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

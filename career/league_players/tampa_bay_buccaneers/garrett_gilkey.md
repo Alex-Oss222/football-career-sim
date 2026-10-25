@@ -1,10 +1,10 @@
 # Garrett Gilkey
 
-**Tampa Bay Buccaneers · Center · No. 72 · Age 24 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Center · No. 72 · Age 24 · Last game October 26, 2014**
 
 6' 6", 315 lb · Born July 9, 1990 · Chadron State
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Garrett Gilkey](https://commons.wikimedia.org/wiki/Special:FilePath/Garrett_Gilkey_at_2013_training_camp.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 24 | 72 | 6 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 24 | 72 | 7 | 0 | 0 | 0 | 0 |
 | 2013 | Cleveland | 23 | 65 | 16 | N/A | N/A | 2 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 2 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 

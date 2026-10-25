@@ -1,10 +1,10 @@
 # Eric Ebron
 
-**Detroit Lions · Tight end · No. 85 · Age 21 · Last game October 19, 2014**
+**Detroit Lions · Tight end · No. 85 · Age 21 · Last game October 26, 2014**
 
 6' 4", 265 lb · Born April 10, 1993 · North Carolina
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Eric Ebron](https://commons.wikimedia.org/wiki/Special:FilePath/Eric_Ebron.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 6.0 (2014, through Week 7).
+**Yards per target:** 6.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 21 | 85 | 7 | 1 | 1 | 6 | 6.0 | 0 | 6 | 0.9 | 100.0 |
+| 2014 (through Week 8) | Detroit | 21 | 85 | 8 | 1 | 1 | 6 | 6.0 | 0 | 6 | 0.8 | 100.0 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Detroit | 21 | 85 | 0 | 0 | 0 | 1 | 1 |
+| 2014 (through Week 8) | Detroit | 21 | 85 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 

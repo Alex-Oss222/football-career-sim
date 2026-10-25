@@ -1,10 +1,10 @@
 # Justin Drescher
 
-**New Orleans Saints · Long snapper · No. 47 · Age 26 · Last game October 19, 2014**
+**New Orleans Saints · Long snapper · No. 47 · Age 26 · Last game October 26, 2014**
 
 6' 1", 235 lb · Born January 1, 1988 · Colorado
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Justin Drescher](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Drescher.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 52 (2014, through Week 7).
+**Long snaps:** 63 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New Orleans | 26 | 47 | 6 | 52 | 52 | 0 | 0 |
+| 2014 (through Week 8) | New Orleans | 26 | 47 | 7 | 63 | 63 | 0 | 0 |
 | 2013 | New Orleans | 25 | 47 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 22 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

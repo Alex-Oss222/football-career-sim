@@ -1,16 +1,16 @@
 # Cecil Shorts
 
-**Indianapolis Colts · Wide receiver · Age 26 · Last game October 19, 2014**
+**Indianapolis Colts · Wide receiver · Age 26 · Last game October 26, 2014**
 
 6' 0", 202 lb · Born December 22, 1987 · Mount Union College · Drafted in 2011, fourth round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Cecil Shorts](https://commons.wikimedia.org/wiki/Special:FilePath/Cecil_Shorts_III.jpg?width=500)
 
 *Photo: Keith Allison from Hanover, MD, USA, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Cecil_Shorts_III.jpg)).*
 
-**Yards per target:** 6.3 (2014, through Week 7).
+**Yards per target:** 6.3 (2014, through Week 8).
 
 ## Staff assessment
 
@@ -28,18 +28,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 26 | N/A | 7 | 3 | 2 | 19 | 9.5 | 0 | 14 | 2.7 | 66.7 |
+| 2014 (through Week 8) | Indianapolis | 26 | N/A | 8 | 3 | 2 | 19 | 9.5 | 0 | 14 | 2.4 | 66.7 |
 | 2013 | Jacksonville | 25 | 84 | 16 | 157 | 104 | 1,158 | 11.1 | 6 | 55 | 72.4 | 66.2 |
-| Career |  |  |  | 23 | 160 | 106 | 1,177 | 11.1 | 6 | 55 | 51.2 | 66.2 |
+| Career |  |  |  | 24 | 160 | 106 | 1,177 | 11.1 | 6 | 55 | 49.0 | 66.2 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 26 | N/A | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 26 | N/A | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 25 | 84 | 4 | 15 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 26 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Indianapolis | 26 | N/A | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 25 | 84 | 1 | 24 | 24.0 | 2 | 13 | 6.5 |
 
 ### Playoffs

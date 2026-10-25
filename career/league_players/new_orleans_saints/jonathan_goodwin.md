@@ -1,10 +1,10 @@
 # Jonathan Goodwin
 
-**New Orleans Saints · Center · No. 55 · Age 35 · Last game October 19, 2014**
+**New Orleans Saints · Center · No. 55 · Age 35 · Last game October 26, 2014**
 
 6' 3", 318 lb · Born December 2, 1978 · Michigan; Ohio · Drafted in 2002, fifth round, by the New York Jets
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jonathan Goodwin](https://commons.wikimedia.org/wiki/Special:FilePath/Jonathan_Goodwin_%28American_football%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 1 (2014, through Week 7).
+**Sacks allowed:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New Orleans | 35 | 55 | 6 | 6 | 399 | 1 | 28 |
+| 2014 (through Week 8) | New Orleans | 35 | 55 | 7 | 7 | 480 | 1 | 35 |
 | 2013 | San Francisco | 34 | 59 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

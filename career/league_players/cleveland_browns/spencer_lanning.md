@@ -1,10 +1,10 @@
 # Spencer Lanning
 
-**Cleveland Browns · Punter · No. 5 · Age 26 · Last game October 19, 2014**
+**Cleveland Browns · Punter · No. 5 · Age 26 · Last game October 26, 2014**
 
 5' 11", 200 lb · Born May 21, 1988 · South Carolina
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Spencer Lanning](https://commons.wikimedia.org/wiki/Special:FilePath/Spencer_Lanning_punting.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 40.6 (2014, through Week 7).
+**Net punting average:** 41.5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 26 | 5 | 6 | 25 | 1,111 | 44.4 | 40.6 | 13 | 3 | 66 |
+| 2014 (through Week 8) | Cleveland | 26 | 5 | 7 | 28 | 1,264 | 45.1 | 41.5 | 14 | 3 | 66 |
 | 2013 | Cleveland | 25 | 5 | 16 | 94 | 4,419 | 47.0 | 40.7 | 31 | 3 | 68 |
-| Career |  |  |  | 22 | 119 | 5,530 | 46.5 | 40.7 | 44 | 6 | 68 |
+| Career |  |  |  | 23 | 122 | 5,683 | 46.6 | 40.9 | 45 | 6 | 68 |
 
 ### Playoffs
 

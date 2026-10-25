@@ -1,10 +1,10 @@
 # Kelechi Osemele
 
-**Baltimore Ravens · Guard · No. 72 · Age 25 · Last game October 19, 2014**
+**Baltimore Ravens · Guard · No. 72 · Age 25 · Last game October 26, 2014**
 
 6' 5", 330 lb · Born June 24, 1989 · Iowa State · Drafted in 2012, second round, by Baltimore
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Kelechi Osemele](https://commons.wikimedia.org/wiki/Special:FilePath/Kelechi_Osemele_Ravens_Stadium_Practice_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Baltimore | 25 | 72 | 7 | 7 | 485 | 3 | 41 |
+| 2014 (through Week 8) | Baltimore | 25 | 72 | 8 | 8 | 542 | 5 | 45 |
 | 2013 | Baltimore | 24 | 72 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 10 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 12 | N/A |
 
 ### Playoffs
 

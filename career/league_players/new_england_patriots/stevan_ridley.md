@@ -1,10 +1,10 @@
 # Stevan Ridley
 
-**New England Patriots · Running back · No. 22 · Age 25 · Last game October 16, 2014**
+**New England Patriots · Running back · No. 22 · Age 25 · Last game October 26, 2014**
 
 5' 11", 220 lb · Born January 27, 1989 · LSU · Drafted in 2011, third round, by New England
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Stevan Ridley](https://commons.wikimedia.org/wiki/Special:FilePath/Stevan_Ridley.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 4.9 (2014, through Week 7).
+**Yards per carry:** 4.9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 25 | 22 | 7 | 145 | 709 | 4.9 | 7 | 53 | 101.3 |
+| 2014 (through Week 8) | New England | 25 | 22 | 8 | 156 | 759 | 4.9 | 8 | 53 | 94.9 |
 | 2013 | New England | 24 | 22 | 16 | 264 | 1,296 | 4.9 | 13 | 46 | 81.0 |
-| Career |  |  |  | 23 | 409 | 2,005 | 4.9 | 20 | 53 | 87.2 |
+| Career |  |  |  | 24 | 420 | 2,055 | 4.9 | 21 | 53 | 85.6 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 25 | 22 | 17 | 11 | 121 | 11.0 | 1 | 1 | 1 |
+| 2014 (through Week 8) | New England | 25 | 22 | 22 | 14 | 192 | 13.7 | 1 | 1 | 1 |
 | 2013 | New England | 24 | 22 | 70 | 51 | 556 | 10.9 | 4 | 3 | 3 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 25 | 22 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | New England | 25 | 22 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | New England | 24 | 22 | 1 | 35 | 35.0 | 0 | 0 | N/A |
 
 ### Playoffs

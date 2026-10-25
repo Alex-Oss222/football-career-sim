@@ -1,6 +1,6 @@
 # San Francisco 49ers players
 
-NFC West. The players whose latest game on record was with the San Francisco 49ers. G counts regular-season games with any club. Records through October 20, 2014.
+NFC West. The players whose latest game on record was with the San Francisco 49ers. G counts regular-season games with any club. Records through October 27, 2014.
 
 [All clubs](../README.md)
 

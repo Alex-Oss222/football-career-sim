@@ -1,10 +1,10 @@
 # Michael Bennett
 
-**Seattle Seahawks · Defensive end · No. 72 · Age 28 · Last game October 19, 2014**
+**Seattle Seahawks · Defensive end · No. 72 · Age 28 · Last game October 26, 2014**
 
 6' 4", 274 lb · Born November 13, 1985 · Texas A&M
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Michael Bennett](https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Bennett.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 4 (2014, through Week 7).
+**Sacks:** 6 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 28 | 72 | 6 | 26 | 19 | 7 | 1 | 4 | 5 |
+| 2014 (through Week 8) | Seattle | 28 | 72 | 7 | 31 | 22 | 9 | 1 | 6 | 7 |
 | 2013 | Seattle | 27 | 72 | 16 | 47 | 36 | 11 | 6 | 4 | 9 |
-| Career |  |  |  | 22 | 73 | 55 | 18 | 7 | 8 | 14 |
+| Career |  |  |  | 23 | 78 | 58 | 20 | 7 | 10 | 16 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 28 | 72 | 1 | 5 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Seattle | 28 | 72 | 1 | 5 | 4 | 0 | 0 | 0 |
 | 2013 | Seattle | 27 | 72 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

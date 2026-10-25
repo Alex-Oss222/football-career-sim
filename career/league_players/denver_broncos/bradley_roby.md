@@ -1,10 +1,10 @@
 # Bradley Roby
 
-**Denver Broncos · Cornerback · No. 29 · Age 22 · Last game October 19, 2014**
+**Denver Broncos · Cornerback · No. 29 · Age 22 · Last game October 23, 2014**
 
 5' 11", 194 lb · Born May 1, 1992 · Ohio State
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Bradley Roby](https://commons.wikimedia.org/wiki/Special:FilePath/Bradley_Roby.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 5 (2014, through Week 7).
+**Passes defended:** 6 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 22 | 29 | 6 | 25 | 19 | 6 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 22 | 29 | 7 | 29 | 23 | 6 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 22 | 29 | 0 | 0 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 22 | 29 | 0 | 0 | 6 | 0 | 0 | 0 |
 
 ### Playoffs
 

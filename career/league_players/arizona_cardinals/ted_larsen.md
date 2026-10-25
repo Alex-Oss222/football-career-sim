@@ -1,10 +1,10 @@
 # Ted Larsen
 
-**Arizona Cardinals · Guard · No. 62 · Age 27 · Last game October 19, 2014**
+**Arizona Cardinals · Guard · No. 62 · Age 27 · Last game October 26, 2014**
 
 6' 2", 305 lb · Born June 13, 1987 · N.C. State · Drafted in 2010, sixth round, by New England
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Ted Larsen](https://commons.wikimedia.org/wiki/Special:FilePath/Ted_Larsen.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Arizona | 27 | 62 | 6 | 6 | 375 | 3 | 28 |
+| 2014 (through Week 8) | Arizona | 27 | 62 | 7 | 7 | 447 | 3 | 34 |
 | 2013 | Tampa Bay | 26 | 62 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

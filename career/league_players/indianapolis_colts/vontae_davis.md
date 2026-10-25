@@ -1,10 +1,10 @@
 # Vontae Davis
 
-**Indianapolis Colts · Cornerback · No. 21 · Age 26 · Last game October 19, 2014**
+**Indianapolis Colts · Cornerback · No. 21 · Age 26 · Last game October 26, 2014**
 
 5' 11", 207 lb · Born May 27, 1988 · Illinois · Drafted in 2009, first round, by Miami
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Vontae Davis](https://commons.wikimedia.org/wiki/Special:FilePath/Vontae_Davis_2018_01.png?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 7 (2014, through Week 7).
+**Passes defended:** 9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 26 | 21 | 6 | 36 | 25 | 11 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 26 | 21 | 7 | 42 | 29 | 13 | 1 | 0 | 1 |
 | 2013 | Indianapolis | 25 | 23 | 16 | 59 | 37 | 22 | 4 | 0 | 1 |
-| Career |  |  |  | 22 | 95 | 62 | 33 | 5 | 0 | 1 |
+| Career |  |  |  | 23 | 101 | 66 | 35 | 5 | 0 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Indianapolis | 26 | 21 | 2 | 7 | 7 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Indianapolis | 26 | 21 | 4 | 22 | 9 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 25 | 23 | 2 | 41 | 11 | 1 | 1 | N/A |
 
 ### Playoffs

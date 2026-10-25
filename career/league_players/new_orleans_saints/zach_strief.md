@@ -1,10 +1,10 @@
 # Zach Strief
 
-**New Orleans Saints · Offensive tackle · No. 64 · Age 31 · Last game October 19, 2014**
+**New Orleans Saints · Offensive tackle · No. 64 · Age 31 · Last game October 26, 2014**
 
 6' 7", 320 lb · Born September 22, 1983 · Northwestern · Drafted in 2006, seventh round, by New Orleans
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Zach Strief](https://commons.wikimedia.org/wiki/Special:FilePath/Zach_Strief.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 5 (2014, through Week 7).
+**Sacks allowed:** 9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New Orleans | 30 | 64 | 6 | 6 | 399 | 5 | 28 |
+| 2014 (through Week 8) | New Orleans | 30 | 64 | 7 | 7 | 480 | 9 | 35 |
 | 2013 | New Orleans | 29 | 64 | 16 | N/A | N/A | 8 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 13 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 17 | N/A |
 
 ### Playoffs
 

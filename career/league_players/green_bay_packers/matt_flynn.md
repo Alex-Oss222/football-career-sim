@@ -1,10 +1,10 @@
 # Matt Flynn
 
-**Green Bay Packers · Quarterback · No. 10 · Age 29 · Last game October 19, 2014**
+**Green Bay Packers · Quarterback · No. 10 · Age 29 · Last game October 26, 2014**
 
 6' 2", 225 lb · Born June 20, 1985 · LSU · Drafted in 2008, seventh round, by Green Bay
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Matt Flynn](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Flynn1.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Green Bay | 29 | 10 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Green Bay | 29 | 10 | 8 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Oakland | 28 | N/A | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 23 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 24 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Green Bay | 29 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Green Bay | 29 | 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Oakland | 28 | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

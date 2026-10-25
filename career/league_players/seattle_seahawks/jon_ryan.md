@@ -1,10 +1,10 @@
 # Jon Ryan
 
-**Seattle Seahawks · Punter · No. 9 · Age 32 · Last game October 19, 2014**
+**Seattle Seahawks · Punter · No. 9 · Age 32 · Last game October 26, 2014**
 
 6' 0", 217 lb · Born November 26, 1981 · Regina
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jon Ryan](https://commons.wikimedia.org/wiki/Special:FilePath/Jon_Ryan_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Punter.
 
-**Net punting average:** 38.9 (2014, through Week 7).
+**Net punting average:** 39.3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Punts | Yards | Avg | Net | Inside 20 | Touchbacks | Long |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 32 | 9 | 6 | 27 | 1,203 | 44.6 | 38.9 | 14 | 3 | 66 |
+| 2014 (through Week 8) | Seattle | 32 | 9 | 7 | 32 | 1,419 | 44.3 | 39.3 | 17 | 3 | 66 |
 | 2013 | Seattle | 31 | 9 | 16 | 78 | 3,622 | 46.4 | 40.2 | 31 | 2 | 65 |
-| Career |  |  |  | 22 | 105 | 4,825 | 46.0 | 39.9 | 45 | 5 | 66 |
+| Career |  |  |  | 23 | 110 | 5,041 | 45.8 | 40.0 | 48 | 5 | 66 |
 
 ### Playoffs
 

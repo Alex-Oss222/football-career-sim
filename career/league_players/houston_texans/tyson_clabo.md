@@ -1,10 +1,10 @@
 # Tyson Clabo
 
-**Houston Texans · Offensive tackle · No. 74 · Age 33 · Last game October 20, 2014**
+**Houston Texans · Offensive tackle · No. 74 · Age 33 · Last game October 26, 2014**
 
 6' 6", 315 lb · Born October 17, 1981 · Wake Forest
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Tyson Clabo](https://commons.wikimedia.org/wiki/Special:FilePath/Rader%2C_Clabo_and_Norwood.png?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 32 | 74 | 7 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Houston | 32 | 74 | 8 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 31 | 77 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 

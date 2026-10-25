@@ -1,20 +1,21 @@
 # Jacksonville 2014
 
-**October 26, 2014.** Last game: Week 7, lost to Cleveland 34-31 at home. Record: 4-3.
+**October 26, 2014.** Last game: Week 8, lost to Miami 29-23 at home. Record: 4-4.
 
 Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coach page](../Stone/README.md)
 
 ## Waiting on you
 
-Nothing is waiting on you.
+1. **Week 9 game plan for Cincinnati.** Due before kickoff, Sunday, November 2, 1 p.m. ET; the practice work before the first practice, Wednesday, October 29. [Game Week Briefing](Regular_Season/Games/Week_09/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_09/Game_Plan.md)
+2. **Week 9 inactives.** Due before kickoff, Sunday, November 2, 1 p.m. ET. Still to come: Alan Ball's reassessment (October 27); Corey Linsley's reassessment (October 27); Travis Kelce's reassessment (October 27); Alan Ball's projected return (October 29); Corey Linsley's projected return (October 31); Daryl Smith's projected return (October 31); Travis Kelce's projected return (October 31). [Game Week Briefing](Regular_Season/Games/Week_09/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_09/Game_Plan.md)
 
 ## Next event
 
-**Next game:** Week 8, Miami at Jacksonville, Sunday, October 26, 1 p.m. ET, EverBank Field. [Week 8](Regular_Season/Games/Week_08/README.md)
+**Next game:** Week 9, Jacksonville at Cincinnati, Sunday, November 2, 1 p.m. ET, Paul Brown Stadium. [Week 9](Regular_Season/Games/Week_09/README.md)
 
 ## Season at a glance
 
-**4-3 · 2nd AFC South · AFC position 9.** 170 scored · 153 allowed · +17 differential. 24.3 points per game · 38.5% on third down · 46.4% allowed.
+**4-4 · 1st AFC South · AFC position 4.** 193 scored · 182 allowed · +11 differential. 24.1 points per game · 35.6% on third down · 45.2% allowed.
 
 [Season statistics](Regular_Season/Statistics/README.md) · [Division standings](Regular_Season/standings.md)
 
@@ -22,27 +23,33 @@ Nothing is waiting on you.
 
 | Category | Player | Through the last game |
 |---|---|---|
-| Passing | [Kirk Cousins](Team_Operations/Team/Player_Cards/kirk_cousins.md) | 1,624 pass yds · 12 TD, 9 INT |
-| Rushing | [Maurice Jones-Drew](Team_Operations/Team/Player_Cards/maurice_jones_drew.md) | 570 rush yds · 4 TD |
-| Receiving | [Davante Adams](Team_Operations/Team/Player_Cards/davante_adams.md) | 451 rec yds · 36 catches, 3 TD |
+| Passing | [Kirk Cousins](Team_Operations/Team/Player_Cards/kirk_cousins.md) | 1,945 pass yds · 12 TD, 10 INT |
+| Rushing | [Maurice Jones-Drew](Team_Operations/Team/Player_Cards/maurice_jones_drew.md) | 599 rush yds · 4 TD |
+| Receiving | [Davante Adams](Team_Operations/Team/Player_Cards/davante_adams.md) | 609 rec yds · 44 catches, 3 TD |
 | Tackling | [Daryl Smith](Team_Operations/Team/Player_Cards/daryl_smith.md) | 61 tackles · 1 sack |
 
 ## Medical and availability
 
 | Player | Status | Next medical date |
 |---|---|---|
+| [Travis Kelce](Team_Operations/Team/Player_Cards/travis_kelce.md) | [Out · lower extremity (minor)](Team_Operations/Medical/incidents/travis_kelce_2014-10-26.md) | Review October 27, 2014; projected return October 31, 2014 |
 | [Andrew Norwell](Team_Operations/Team/Player_Cards/andrew_norwell.md) | [Independent hold · head/neck (short)](Team_Operations/Medical/incidents/andrew_norwell_2014-10-19.md) | Projected return November 2, 2014 |
+| [Corey Linsley](Team_Operations/Team/Player_Cards/corey_linsley.md) | [Independent hold · head/neck (minor)](Team_Operations/Medical/incidents/corey_linsley_2014-10-26.md) | Review October 27, 2014; projected return October 31, 2014 |
 | [Daryl Smith](Team_Operations/Team/Player_Cards/daryl_smith.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/daryl_smith_2014-10-19.md) | Projected return October 31, 2014 |
+| [Alan Ball](Team_Operations/Team/Player_Cards/alan_ball.md) | [Out · lower extremity (minor)](Team_Operations/Medical/incidents/alan_ball_2014-10-26.md) | Review October 27, 2014; projected return October 29, 2014 |
 
 Projected dates require medical clearance. [Full injury report](Team_Operations/Medical/current_injury_report.md)
 
 ## Coming up
 
-- October 26, 1 p.m.: Week 8, Miami at Jacksonville, EverBank Field
+- October 27: Miami review and Cincinnati introduction; Kelce's, Linsley's and Ball's reassessments
+- October 28: The players' day off
 - October 28, 4 p.m.: Trading deadline
 - October 29: Veteran releases become subject to waivers for the rest of the season
-- October 31: Daryl Smith's projected return
-- November 2, 1 p.m.: Week 9, Jacksonville at Cincinnati; Norwell's projected return
+- October 29: Ball's projected return
+- October 29 to November 1: Week 9 practice week under Stone's standing practice instruction
+- October 31: Kelce's, Linsley's and Daryl Smith's projected returns
+- November 2, 1 p.m.: Week 9, Jacksonville at Cincinnati, Paul Brown Stadium; Norwell's projected return
 - November 3: Lowery's earliest return to the active roster
 
 ## With others

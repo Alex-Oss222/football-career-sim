@@ -1,10 +1,10 @@
 # Harry Douglas
 
-**Atlanta Falcons · Wide receiver · No. 83 · Age 30 · Last game October 19, 2014**
+**Atlanta Falcons · Wide receiver · No. 83 · Age 30 · Last game October 26, 2014**
 
 6' 0", 183 lb · Born September 16, 1984 · Louisville · Drafted in 2008, third round, by Atlanta
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Harry Douglas](https://commons.wikimedia.org/wiki/Special:FilePath/Harry_Douglas_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 3.7 (2014, through Week 7).
+**Yards per target:** 3.7 (2014, through Week 8).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 29 | 83 | 7 | 9 | 3 | 33 | 11.0 | 0 | 24 | 4.7 | 33.3 |
+| 2014 (through Week 8) | Atlanta | 29 | 83 | 8 | 9 | 3 | 33 | 11.0 | 0 | 24 | 4.1 | 33.3 |
 | 2013 | Atlanta | 28 | 83 | 16 | 51 | 30 | 264 | 8.8 | 4 | 34 | 16.5 | 58.8 |
-| Career |  |  |  | 23 | 60 | 33 | 297 | 9.0 | 4 | 34 | 12.9 | 55.0 |
+| Career |  |  |  | 24 | 60 | 33 | 297 | 9.0 | 4 | 34 | 12.4 | 55.0 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 29 | 83 | 1 | 25 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Atlanta | 29 | 83 | 1 | 25 | 0 | 0 | 0 |
 | 2013 | Atlanta | 28 | 83 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 29 | 83 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | Atlanta | 29 | 83 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Atlanta | 28 | 83 | 0 | 0 | N/A | 40 | 531 | 13.3 |
 
 ### Playoffs

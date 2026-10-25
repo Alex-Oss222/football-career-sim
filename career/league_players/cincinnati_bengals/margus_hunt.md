@@ -1,10 +1,10 @@
 # Margus Hunt
 
-**Cincinnati Bengals · Defensive tackle · No. 99 · Age 27 · Last game October 19, 2014**
+**Cincinnati Bengals · Defensive tackle · No. 99 · Age 27 · Last game October 26, 2014**
 
 6' 8", 290 lb · Born July 14, 1987 · SMU
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Margus Hunt](https://commons.wikimedia.org/wiki/Special:FilePath/Margus_Hunt_2014_Bengals_training_camp_Cropped.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 27 | 99 | 6 | 2 | 2 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cincinnati | 27 | 99 | 7 | 2 | 2 | 0 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 26 | 99 | 10 | 2 | 0 | 2 | 0 | 0 | 0 |
-| Career |  |  |  | 16 | 4 | 2 | 2 | 0 | 0 | 0 |
+| Career |  |  |  | 17 | 4 | 2 | 2 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cincinnati | 27 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cincinnati | 27 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cincinnati | 26 | 99 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

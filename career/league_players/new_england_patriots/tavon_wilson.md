@@ -1,10 +1,10 @@
 # Tavon Wilson
 
-**New England Patriots · Safety · No. 27 · Age 24 · Last game October 16, 2014**
+**New England Patriots · Safety · No. 27 · Age 24 · Last game October 26, 2014**
 
 6' 0", 215 lb · Born March 19, 1990 · Illinois · Drafted in 2012, second round, by New England
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Tavon Wilson](https://commons.wikimedia.org/wiki/Special:FilePath/Tavon_Wilson.JPG?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 24 | 27 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New England | 24 | 27 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | New England | 23 | 27 | 16 | 12 | 6 | 6 | 0 | 0 | 0 |
-| Career |  |  |  | 20 | 12 | 6 | 6 | 0 | 0 | 0 |
+| Career |  |  |  | 21 | 12 | 6 | 6 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New England | 24 | 27 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 8) | New England | 24 | 27 | 0 | 0 | 0 | 0 | 0 | 1 |
 | 2013 | New England | 23 | 27 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

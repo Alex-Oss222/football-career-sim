@@ -1,10 +1,10 @@
 # Anthony Collins
 
-**Tampa Bay Buccaneers · Offensive tackle · No. 73 · Age 28 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Offensive tackle · No. 73 · Age 28 · Last game October 26, 2014**
 
 6' 5", 315 lb · Born November 2, 1985 · Kansas · Drafted in 2008, fourth round, by Cincinnati
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Anthony Collins](https://commons.wikimedia.org/wiki/Special:FilePath/Anthony_Collins_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 4 (2014, through Week 6).
+**Sacks allowed:** 5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 28 | 73 | 6 | 6 | 375 | 4 | 29 |
+| 2014 (through Week 8) | Tampa Bay | 28 | 73 | 7 | 7 | 452 | 5 | 34 |
 | 2013 | Cincinnati | 27 | 73 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

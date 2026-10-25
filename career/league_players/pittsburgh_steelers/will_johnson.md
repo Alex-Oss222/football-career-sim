@@ -1,10 +1,10 @@
 # Will Johnson
 
-**Pittsburgh Steelers · Fullback · No. 46 · Age 25 · Last game October 20, 2014**
+**Pittsburgh Steelers · Fullback · No. 46 · Age 25 · Last game October 26, 2014**
 
 6' 2", 238 lb · Born November 14, 1988 · West Virginia
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Will Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/Will_Johnson_American_Football_46_entering_field_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 5.7 (2014, through Week 7).
+**Yards per carry:** 4.9 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 25 | 46 | 7 | 6 | 34 | 5.7 | 0 | 11 | 4.9 |
+| 2014 (through Week 8) | Pittsburgh | 25 | 46 | 8 | 7 | 34 | 4.9 | 0 | 11 | 4.2 |
 | 2013 | Pittsburgh | 24 | 46 | 16 | 12 | 36 | 3.0 | 0 | 6 | 2.2 |
-| Career |  |  |  | 23 | 18 | 70 | 3.9 | 0 | 11 | 3.0 |
+| Career |  |  |  | 24 | 19 | 70 | 3.7 | 0 | 11 | 2.9 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 25 | 46 | 4 | 2 | 1 | 0.5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Pittsburgh | 25 | 46 | 5 | 3 | 13 | 4.3 | 0 | 0 | 0 |
 | 2013 | Pittsburgh | 24 | 46 | 14 | 12 | 160 | 13.3 | 0 | 0 | 0 |
 
 ### Playoffs

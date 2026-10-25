@@ -1,10 +1,10 @@
 # Sherrick McManis
 
-**Chicago Bears · Cornerback · No. 27 · Age 26 · Last game October 19, 2014**
+**Chicago Bears · Cornerback · No. 27 · Age 26 · Last game October 26, 2014**
 
 6' 1", 193 lb · Born December 19, 1987 · Northwestern · Drafted in 2010, fifth round, by Houston
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Sherrick McManis](https://commons.wikimedia.org/wiki/Special:FilePath/Sherrick_McManis.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 0 (2014, through Week 7).
+**Passes defended:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 26 | 27 | 7 | 12 | 8 | 4 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Chicago | 26 | 27 | 8 | 15 | 11 | 4 | 1 | 0 | 0 |
 | 2013 | Chicago | 25 | 27 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 9 | 12 | 8 | 4 | 1 | 0 | 0 |
+| Career |  |  |  | 10 | 15 | 11 | 4 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 26 | 27 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 8) | Chicago | 26 | 27 | 0 | 0 | 0 | 0 | 0 | 2 |
 | 2013 | Chicago | 25 | 27 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Donald Brown
 
-**San Diego Chargers · Running back · No. 34 · Age 27 · Last game October 19, 2014**
+**San Diego Chargers · Running back · No. 34 · Age 27 · Last game October 23, 2014**
 
 5' 10", 207 lb · Born April 11, 1987 · Connecticut · Drafted in 2009, first round, by Indianapolis
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Donald Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Donald_Brown.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 3.6 (2014, through Week 7).
+**Yards per carry:** 4.1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 27 | 34 | 7 | 21 | 76 | 3.6 | 0 | 14 | 10.9 |
+| 2014 (through Week 8) | San Diego | 27 | 34 | 8 | 22 | 90 | 4.1 | 0 | 14 | 11.2 |
 | 2013 | Indianapolis | 26 | 31 | 16 | 83 | 373 | 4.5 | 2 | 23 | 23.3 |
-| Career |  |  |  | 23 | 104 | 449 | 4.3 | 2 | 23 | 19.5 |
+| Career |  |  |  | 24 | 105 | 463 | 4.4 | 2 | 23 | 19.3 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 27 | 34 | 2 | 1 | 5 | 5.0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | San Diego | 27 | 34 | 3 | 1 | 5 | 5.0 | 0 | 1 | 0 |
 | 2013 | Indianapolis | 26 | 31 | 26 | 15 | 97 | 6.5 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 27 | 34 | 17 | 504 | 29.6 | 0 | 0 | N/A |
+| 2014 (through Week 8) | San Diego | 27 | 34 | 20 | 591 | 29.6 | 0 | 0 | N/A |
 | 2013 | Indianapolis | 26 | 31 | 0 | 0 | N/A | 0 | 0 | N/A |
 
 ### Playoffs

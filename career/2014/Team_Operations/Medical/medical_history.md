@@ -283,3 +283,15 @@ A projected return is the medical staff's projection, not a clearance. No other 
 - **Daryl Smith, LB: reassessed October 23 with no change.** The instruction stands: out, projected return October 31, no further reassessment date, no football work. He took no part in any session; under Stone's plan Paul Posluszny made the front declaration, with Telvin Smith and Sio Moore completing the first linebacker group and Julian Stanford next. The league's report lists him as a non-participant Wednesday through Friday and out for the game ([incident record](incidents/daryl_smith_2014-10-19.md)).
 
 The Miami practice week (the Monday walkthrough, October 20; the players' day off, October 21; the Wednesday, Thursday and Friday practices in helmets, with no padded practice in the week; and the Saturday walkthrough, October 25) produced no injury and no new restriction; the program has no injury draw for practices, and only communicated instructions are recorded. No reassessment was communicated in the week for the players on reserve/injured. Dwight Lowery's designation for return allows practice from October 20, but his instruction (out, projected return December 11) has not cleared him for football work, and Stone's plan opened that window only on a clearance, so he did not practice.
+
+<!-- event-record: {"date": "2014-10-26", "follows": "2014-10-26-week-8-vs-miami", "id": "2014-10-26-week-8-injuries-against-miami", "status": "closed", "summary": "Three Jacksonville players were injured in the Week 8 game against Miami (Miami 29, Jacksonville 23): Travis Kelce (lower extremity, minor; not removed; out, projected return October 31, reassessment October 27), Corey Linsley (head/neck, minor; removed; independent medical hold, projected return October 31, reassessment October 27) and Alan Ball (lower extremity, minor; not removed; out, projected return October 29, reassessment October 27)."} -->
+
+## October 26: Week 8 injuries against Miami
+
+Three Jacksonville players were injured in the [Week 8 game against Miami](../../Regular_Season/Games/Week_08/Game_Report.md) (Miami 29, Jacksonville 23), each with its own incident record:
+
+- [Travis Kelce](incidents/travis_kelce_2014-10-26.md), TE: lower extremity, minor; injured at 8:09 of the first quarter, not removed; out, projected return October 31 (5 days), reassessment October 27.
+- [Corey Linsley](incidents/corey_linsley_2014-10-26.md), C: head/neck, minor; injured at 1:06 of the fourth quarter, removed; independent medical hold, projected return October 31 (5 days), reassessment October 27.
+- [Alan Ball](incidents/alan_ball_2014-10-26.md), CB: lower extremity, minor; injured at 1:06 of the fourth quarter, not removed; out, projected return October 29 (3 days), reassessment October 27.
+
+A projected return is the medical staff's projection, not a clearance. No other Jacksonville injury was recorded in the game.

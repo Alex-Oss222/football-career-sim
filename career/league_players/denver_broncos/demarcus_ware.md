@@ -1,10 +1,10 @@
 # DeMarcus Ware
 
-**Denver Broncos · Defensive end · No. 94 · Age 32 · Last game October 19, 2014**
+**Denver Broncos · Defensive end · No. 94 · Age 32 · Last game October 23, 2014**
 
 6' 4", 258 lb · Born July 31, 1982 · Troy · Drafted in 2005, first round, by Dallas
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![DeMarcus Ware](https://commons.wikimedia.org/wiki/Special:FilePath/DeMarcus_Ware.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 4 (2014, through Week 7).
+**Sacks:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 32 | 94 | 6 | 28 | 20 | 8 | 1 | 4 | 8 |
+| 2014 (through Week 8) | Denver | 32 | 94 | 7 | 30 | 21 | 9 | 1 | 4 | 8 |
 | 2013 | Dallas | 31 | 94 | 16 | 59 | 38 | 21 | 10 | 3 | 17 |
-| Career |  |  |  | 22 | 87 | 58 | 29 | 11 | 7 | 25 |
+| Career |  |  |  | 23 | 89 | 59 | 30 | 11 | 7 | 25 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 32 | 94 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 32 | 94 | 0 | 0 | 3 | 0 | 0 | 0 |
 | 2013 | Dallas | 31 | 94 | 1 | 28 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

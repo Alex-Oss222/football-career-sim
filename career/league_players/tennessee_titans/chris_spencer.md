@@ -1,10 +1,10 @@
 # Chris Spencer
 
-**Tennessee Titans · Guard · No. 60 · Age 32 · Last game October 19, 2014**
+**Tennessee Titans · Guard · No. 60 · Age 32 · Last game October 26, 2014**
 
 6' 3", 308 lb · Born March 28, 1982 · Mississippi · Drafted in 2005, first round, by Seattle
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Chris Spencer](https://commons.wikimedia.org/wiki/Special:FilePath/Chris-Spencer-2008-11-02-Eagles.jpg?width=500)
 
@@ -22,9 +22,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 32 | 60 | 4 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Tennessee | 32 | 60 | 5 | 0 | 0 | 0 | 7 |
 | 2013 | Tennessee | 31 | 60 | 16 | N/A | N/A | 4 | N/A |
-| Career |  |  |  | 20 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

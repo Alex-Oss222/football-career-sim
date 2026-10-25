@@ -1,10 +1,10 @@
 # Brandon Brooks
 
-**Houston Texans · Guard · No. 79 · Age 25 · Last game October 20, 2014**
+**Houston Texans · Guard · No. 79 · Age 25 · Last game October 26, 2014**
 
 6' 5", 335 lb · Born August 19, 1989 · Miami (Ohio) · Drafted in 2012, third round, by Houston
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brandon Brooks](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Brooks_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 0 (2014, through Week 7).
+**Sacks allowed:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 25 | 79 | 7 | 7 | 447 | 0 | 35 |
+| 2014 (through Week 8) | Houston | 25 | 79 | 8 | 8 | 515 | 0 | 40 |
 | 2013 | Houston | 24 | 79 | 15 | N/A | N/A | 2 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 2 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 

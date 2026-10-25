@@ -1,10 +1,10 @@
 # Evan Mathis
 
-**Philadelphia Eagles · Guard · No. 69 · Age 32 · Last game October 12, 2014**
+**Philadelphia Eagles · Guard · No. 69 · Age 32 · Last game October 26, 2014**
 
 6' 5", 298 lb · Born November 1, 1981 · Alabama · Drafted in 2005, third round, by Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Evan Mathis](https://commons.wikimedia.org/wiki/Special:FilePath/Evan_Mathis_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 1 (2014, through Week 6).
+**Sacks allowed:** 1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 32 | 69 | 4 | 4 | 243 | 1 | 17 |
+| 2014 (through Week 8) | Philadelphia | 32 | 69 | 5 | 5 | 294 | 1 | 18 |
 | 2013 | Philadelphia | 31 | 69 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 20 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 21 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

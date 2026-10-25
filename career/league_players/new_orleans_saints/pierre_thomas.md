@@ -1,10 +1,10 @@
 # Pierre Thomas
 
-**New Orleans Saints · Running back · No. 23 · Age 29 · Last game October 19, 2014**
+**New Orleans Saints · Running back · No. 23 · Age 29 · Last game October 26, 2014**
 
 5' 11", 215 lb · Born December 18, 1984 · Illinois
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Pierre Thomas](https://commons.wikimedia.org/wiki/Special:FilePath/Pierre_Thomas_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 7.3 (2014, through Week 7).
+**Yards per carry:** 6.5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New Orleans | 29 | 23 | 6 | 7 | 51 | 7.3 | 0 | 14 | 8.5 |
+| 2014 (through Week 8) | New Orleans | 29 | 23 | 7 | 10 | 65 | 6.5 | 0 | 14 | 9.3 |
 | 2013 | New Orleans | 28 | 23 | 16 | 301 | 1,297 | 4.3 | 10 | 30 | 81.1 |
-| Career |  |  |  | 22 | 308 | 1,348 | 4.4 | 10 | 30 | 61.3 |
+| Career |  |  |  | 23 | 311 | 1,362 | 4.4 | 10 | 30 | 59.2 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New Orleans | 29 | 23 | 2 | 1 | 20 | 20.0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New Orleans | 29 | 23 | 2 | 1 | 20 | 20.0 | 0 | 0 | 0 |
 | 2013 | New Orleans | 28 | 23 | 61 | 35 | 392 | 11.2 | 3 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New Orleans | 29 | 23 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 8) | New Orleans | 29 | 23 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | New Orleans | 28 | 23 | 1 | 21 | 21.0 | 1 | 16 | 16.0 |
 
 ### Playoffs

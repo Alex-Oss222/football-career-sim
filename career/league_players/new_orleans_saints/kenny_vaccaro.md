@@ -1,10 +1,10 @@
 # Kenny Vaccaro
 
-**New Orleans Saints · Strong safety · No. 32 · Age 23 · Last game October 19, 2014**
+**New Orleans Saints · Strong safety · No. 32 · Age 23 · Last game October 26, 2014**
 
 6' 0", 214 lb · Born February 15, 1991 · Texas
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Kenny Vaccaro](https://commons.wikimedia.org/wiki/Special:FilePath/Kenny_vaccaro_longhorns_2010.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 6 (2014, through Week 7).
+**Passes defended:** 6 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New Orleans | 23 | 32 | 6 | 17 | 9 | 8 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New Orleans | 23 | 32 | 7 | 22 | 12 | 10 | 0 | 0 | 0 |
 | 2013 | New Orleans | 22 | 32 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 8 | 17 | 9 | 8 | 0 | 0 | 0 |
+| Career |  |  |  | 9 | 22 | 12 | 10 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | New Orleans | 23 | 32 | 0 | 0 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 8) | New Orleans | 23 | 32 | 0 | 0 | 6 | 0 | 0 | 0 |
 | 2013 | New Orleans | 22 | 32 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

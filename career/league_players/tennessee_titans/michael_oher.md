@@ -1,10 +1,10 @@
 # Michael Oher
 
-**Tennessee Titans · Offensive tackle · No. 72 · Age 28 · Last game October 19, 2014**
+**Tennessee Titans · Offensive tackle · No. 72 · Age 28 · Last game October 26, 2014**
 
 6' 4", 315 lb · Born May 28, 1986 · Mississippi · Drafted in 2009, first round, by Baltimore
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Michael Oher](https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Oher_Ravens_Training_Camp_August_5%2C_2009.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 3 (2014, through Week 7).
+**Sacks allowed:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 28 | 72 | 7 | 7 | 440 | 3 | 31 |
+| 2014 (through Week 8) | Tennessee | 28 | 72 | 8 | 8 | 507 | 3 | 37 |
 | 2013 | Baltimore | 27 | 74 | 15 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Derek Wolfe
 
-**Denver Broncos · Defensive end · No. 95 · Age 24 · Last game October 19, 2014**
+**Denver Broncos · Defensive end · No. 95 · Age 24 · Last game October 23, 2014**
 
 6' 5", 285 lb · Born February 24, 1990 · Cincinnati · Drafted in 2012, second round, by Denver
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Derek Wolfe](https://commons.wikimedia.org/wiki/Special:FilePath/Derek_Wolfe.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 3 (2014, through Week 7).
+**Sacks:** 3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 24 | 95 | 6 | 15 | 9 | 6 | 2 | 3 | 4 |
+| 2014 (through Week 8) | Denver | 24 | 95 | 7 | 18 | 11 | 7 | 2 | 3 | 4 |
 | 2013 | Denver | 23 | 95 | 16 | 87 | 62 | 25 | 13 | 6 | 18 |
-| Career |  |  |  | 22 | 102 | 71 | 31 | 15 | 9 | 22 |
+| Career |  |  |  | 23 | 105 | 73 | 32 | 15 | 9 | 22 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 24 | 95 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 24 | 95 | 0 | 0 | 1 | 0 | 1 | 0 |
 | 2013 | Denver | 23 | 95 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Erik Pears
 
-**Buffalo Bills · Offensive tackle · No. 79 · Age 32 · Last game October 19, 2014**
+**Buffalo Bills · Offensive tackle · No. 79 · Age 32 · Last game October 26, 2014**
 
 6' 8", 316 lb · Born June 25, 1982 · Colorado State
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Erik Pears](https://commons.wikimedia.org/wiki/Special:FilePath/Erik_Pears.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 4 (2014, through Week 7).
+**Sacks allowed:** 4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Buffalo | 32 | 79 | 7 | 7 | 457 | 4 | 37 |
+| 2014 (through Week 8) | Buffalo | 32 | 79 | 8 | 8 | 526 | 4 | 40 |
 | 2013 | Buffalo | 31 | 79 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 10 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

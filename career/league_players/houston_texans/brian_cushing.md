@@ -1,10 +1,10 @@
 # Brian Cushing
 
-**Houston Texans · Inside linebacker · No. 56 · Age 27 · Last game October 20, 2014**
+**Houston Texans · Inside linebacker · No. 56 · Age 27 · Last game October 26, 2014**
 
 6' 3", 249 lb · Born January 24, 1987 · USC · Drafted in 2009, first round, by Houston
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brian Cushing](https://commons.wikimedia.org/wiki/Special:FilePath/Brian_Cushing.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Starting middle linebacker.
 
-**Tackles:** 41 (2014, through Week 7).
+**Tackles:** 50 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 27 | 56 | 7 | 41 | 33 | 8 | 2 | 1 | 2 |
+| 2014 (through Week 8) | Houston | 27 | 56 | 8 | 50 | 38 | 12 | 2 | 1 | 3 |
 | 2013 | Houston | 26 | 56 | 16 | 163 | 103 | 60 | 10 | 8 | 14 |
-| Career |  |  |  | 23 | 204 | 136 | 68 | 12 | 9 | 16 |
+| Career |  |  |  | 24 | 213 | 141 | 72 | 12 | 9 | 17 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 27 | 56 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Houston | 27 | 56 | 0 | 0 | 3 | 0 | 0 | 0 |
 | 2013 | Houston | 26 | 56 | 1 | 0 | 6 | 0 | 0 | N/A |
 
 ### Playoffs

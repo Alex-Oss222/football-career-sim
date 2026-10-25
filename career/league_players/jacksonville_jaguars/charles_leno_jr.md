@@ -4,13 +4,13 @@
 
 6' 3", 302 lb · Born October 9, 1991 · Boise State · Drafted in 2014, fifth round, by Jacksonville
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ## Staff assessment
 
 Charles Leno Jr. is a rookie tackle who has been active for six regular-season games. A four-year college starter who finished at left tackle, he moves well in a short area and has a long frame. His strength is light for the position, and his anchor is the staff's biggest concern.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -29,7 +29,7 @@ Four-year contract through 2017.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 22 | 72 | 6 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Jacksonville | 22 | 72 | 6 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

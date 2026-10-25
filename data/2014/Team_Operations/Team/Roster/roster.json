@@ -3,7 +3,7 @@
  "season": 2014,
  "as_of": {
   "date": "2014-10-26",
-  "event": "game day against Miami before kickoff"
+  "event": "after the Week 8 game against Miami"
  },
  "practice_squad_places": 10,
  "active_limit": 53,
@@ -177,10 +177,10 @@
    "list": "active",
    "group": "Tight ends",
    "status": "Active 53",
-   "availability": "No communicated restriction: cleared September 25, 2014, his projected date, from the September 21 lower-extremity injury (reassessed September 22 with no change); did not practice September 24; full September 25 to 27 ([medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed))",
+   "availability": "Out, minor: lower extremity, logged at 8:09 of the first quarter in the October 26 Week 8 game, not removed; projected return October 31, 2014; reassessment October 27 ([medical record](../../Medical/incidents/travis_kelce_2014-10-26.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/travis_kelce_2014-10-26.md"
    }
   },
   {
@@ -312,10 +312,10 @@
    "list": "active",
    "group": "Offensive line",
    "status": "Active 53 (Rookie, drafted No. 153, May 10, 2014; rookie contract signed May 11, 2014)",
-   "availability": "No communicated restriction",
+   "availability": "Independent medical hold, minor: head/neck, logged at 1:06 of the fourth quarter in the October 26 Week 8 game, removed; projected return October 31, 2014; reassessment October 27 ([medical record](../../Medical/incidents/corey_linsley_2014-10-26.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
-    "availability": "career/2014/Team_Operations/Medical/medical_history.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/corey_linsley_2014-10-26.md"
    }
   },
   {
@@ -612,10 +612,10 @@
    "list": "active",
    "group": "Defensive backs",
    "status": "Active 53 (signed September 8, 2014, one year)",
-   "availability": "No communicated restriction (club physical September 8, 2014, no finding; [signing record](../../Free_Agency/alan_ball_signing_2014-09-08.md))",
+   "availability": "Out, minor: lower extremity, logged at 1:06 of the fourth quarter in the October 26 Week 8 game, not removed; projected return October 29, 2014; reassessment October 27 ([medical record](../../Medical/incidents/alan_ball_2014-10-26.md))",
    "sources": {
     "status": "career/2014/Team_Operations/Team/Roster/transactions_2014-09-08.md",
-    "availability": "career/2014/Team_Operations/Free_Agency/alan_ball_signing_2014-09-08.md"
+    "availability": "career/2014/Team_Operations/Medical/incidents/alan_ball_2014-10-26.md"
    }
   },
   {

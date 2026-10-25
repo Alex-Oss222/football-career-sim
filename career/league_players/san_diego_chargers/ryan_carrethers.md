@@ -1,10 +1,10 @@
 # Ryan Carrethers
 
-**San Diego Chargers · Defensive tackle · No. 92 · Age 23 · Last game October 19, 2014**
+**San Diego Chargers · Defensive tackle · No. 92 · Age 23 · Last game October 23, 2014**
 
 6' 1", 333 lb · Born February 26, 1991 · Arkansas State
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Ryan Carrethers](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Carrethers.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 7).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 23 | 92 | 7 | 4 | 2 | 2 | 2 | 0 | 0 |
+| 2014 (through Week 8) | San Diego | 23 | 92 | 8 | 5 | 3 | 2 | 2 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | San Diego | 23 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | San Diego | 23 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

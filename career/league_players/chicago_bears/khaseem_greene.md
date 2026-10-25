@@ -1,10 +1,10 @@
 # Khaseem Greene
 
-**Chicago Bears · Outside linebacker · No. 52 · Age 25 · Last game October 19, 2014**
+**Chicago Bears · Outside linebacker · No. 52 · Age 25 · Last game October 26, 2014**
 
 6' 1", 241 lb · Born February 4, 1989 · Rutgers
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Khaseem Greene](https://commons.wikimedia.org/wiki/Special:FilePath/Khaseem_Greene_bears.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve weakside linebacker.
 
-**Tackles:** 9 (2014, through Week 7).
+**Tackles:** 10 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 25 | 52 | 7 | 9 | 6 | 3 | 1 | 0 | 1 |
+| 2014 (through Week 8) | Chicago | 25 | 52 | 8 | 10 | 7 | 3 | 1 | 0 | 1 |
 | 2013 | Chicago | 24 | 59 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 9 | 9 | 6 | 3 | 1 | 0 | 1 |
+| Career |  |  |  | 10 | 10 | 7 | 3 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Chicago | 25 | 52 | 0 | 0 | 0 | 0 | 0 | 4 |
+| 2014 (through Week 8) | Chicago | 25 | 52 | 0 | 0 | 0 | 0 | 0 | 4 |
 | 2013 | Chicago | 24 | 59 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Colin Jones
 
-**Carolina Panthers · Free safety · No. 42 · Age 26 · Last game December 29, 2013**
+**Carolina Panthers · Free safety · No. 42 · Age 26 · Last game October 26, 2014**
 
 6' 0", 205 lb · Born October 27, 1987 · TCU · Drafted in 2011, sixth round, by San Francisco
 
-As of December 29, 2013, after Week 17.
+As of October 26, 2014, after Week 8.
 
 ![Colin Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Colin_Jones_49ers.jpg?width=500)
 
@@ -22,10 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 8) | Carolina | 26 | 42 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Carolina | 25 | 42 | 6 | 1 | 0 | 1 | 0 | 0 | 0 |
+| Career |  |  |  | 7 | 1 | 0 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 8) | Carolina | 26 | 42 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Carolina | 25 | 42 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

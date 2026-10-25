@@ -1,10 +1,10 @@
 # Billy Cundiff
 
-**Cleveland Browns · Kicker · No. 8 · Age 34 · Last game October 19, 2014**
+**Cleveland Browns · Kicker · No. 8 · Age 34 · Last game October 26, 2014**
 
 6' 1", 212 lb · Born March 30, 1980 · Drake
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Billy Cundiff](https://commons.wikimedia.org/wiki/Special:FilePath/Billy_Cundiff_2011_stadium_practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 95.8 (2014, through Week 7).
+**Field-goal percentage:** 92.0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 34 | 8 | 6 | 23 | 24 | 95.8 | 59 | 14 | 14 | 100.0 | 83 |
+| 2014 (through Week 8) | Cleveland | 34 | 8 | 7 | 23 | 25 | 92.0 | 59 | 16 | 16 | 100.0 | 85 |
 | 2013 | Cleveland | 33 | 8 | 16 | 30 | 32 | 93.8 | N/A | 33 | 33 | 100.0 | 123 |
-| Career |  |  |  | 22 | 53 | 56 | 94.6 | N/A | 47 | 47 | 100.0 | 206 |
+| Career |  |  |  | 23 | 53 | 57 | 93.0 | N/A | 49 | 49 | 100.0 | 208 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 34 | 8 | 11-11 | 10-10 | 2-3 |
+| 2014 (through Week 8) | Cleveland | 34 | 8 | 11-11 | 10-11 | 2-3 |
 | 2013 | Cleveland | 33 | 8 | N/A | N/A | N/A |
 
 ### Playoffs

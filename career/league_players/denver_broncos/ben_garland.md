@@ -1,10 +1,10 @@
 # Ben Garland
 
-**Denver Broncos · Center · No. 63 · Age 26 · Last game October 19, 2014**
+**Denver Broncos · Center · No. 63 · Age 26 · Last game October 23, 2014**
 
 6' 5", 308 lb · Born April 6, 1988 · Air Force
 
-As of October 19, 2014, after Week 7.
+As of October 23, 2014, after Week 8.
 
 ![Ben Garland](https://commons.wikimedia.org/wiki/Special:FilePath/Ben_Garland.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Denver | 26 | 63 | 4 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Denver | 26 | 63 | 5 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Kai Forbath
 
-**Washington Redskins · Kicker · No. 2 · Age 27 · Last game October 19, 2014**
+**Washington Redskins · Kicker · No. 2 · Age 27 · Last game October 27, 2014**
 
 5' 11", 197 lb · Born September 2, 1987 · UCLA
 
-As of October 19, 2014, after Week 7.
+As of October 27, 2014, after Week 8.
 
 ![Kai Forbath](https://commons.wikimedia.org/wiki/Special:FilePath/Kai_forbath_redskins.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 90.9 (2014, through Week 7).
+**Field-goal percentage:** 93.3 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 27 | 2 | 7 | 10 | 11 | 90.9 | 47 | 13 | 14 | 92.9 | 43 |
+| 2014 (through Week 8) | Washington | 27 | 2 | 8 | 14 | 15 | 93.3 | 59 | 14 | 15 | 93.3 | 56 |
 | 2013 | Washington | 26 | 2 | 16 | 29 | 32 | 90.6 | N/A | 37 | 37 | 100.0 | 124 |
-| Career |  |  |  | 23 | 39 | 43 | 90.7 | N/A | 50 | 51 | 98.0 | 167 |
+| Career |  |  |  | 24 | 43 | 47 | 91.5 | N/A | 51 | 52 | 98.1 | 180 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Washington | 27 | 2 | 5-5 | 5-6 | 0-0 |
+| 2014 (through Week 8) | Washington | 27 | 2 | 8-8 | 5-6 | 1-1 |
 | 2013 | Washington | 26 | 2 | N/A | N/A | N/A |
 
 ### Playoffs

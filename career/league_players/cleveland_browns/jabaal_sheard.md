@@ -1,10 +1,10 @@
 # Jabaal Sheard
 
-**Cleveland Browns · Outside linebacker · No. 97 · Age 25 · Last game October 19, 2014**
+**Cleveland Browns · Outside linebacker · No. 97 · Age 25 · Last game October 26, 2014**
 
 6' 3", 264 lb · Born May 10, 1989 · Pittsburgh · Drafted in 2011, second round, by Cleveland
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jabaal Sheard](https://commons.wikimedia.org/wiki/Special:FilePath/Jabaal_Sheard_cropped.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 25 | 97 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 25 | 97 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cleveland | 24 | 97 | 10 | 32 | 19 | 13 | 2 | 1 | 1 |
-| Career |  |  |  | 14 | 32 | 19 | 13 | 2 | 1 | 1 |
+| Career |  |  |  | 15 | 32 | 19 | 13 | 2 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Cleveland | 25 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Cleveland | 25 | 97 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cleveland | 24 | 97 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

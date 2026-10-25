@@ -1,10 +1,10 @@
 # William Gholston
 
-**Tampa Bay Buccaneers · Defensive end · No. 92 · Age 23 · Last game October 12, 2014**
+**Tampa Bay Buccaneers · Defensive end · No. 92 · Age 23 · Last game October 26, 2014**
 
 6' 6", 281 lb · Born July 31, 1991 · Michigan State
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![William Gholston](https://commons.wikimedia.org/wiki/Special:FilePath/William_Gholston_-_2020_Playoffs_-_WFT_vs._Buccaneers_%2851002019556%29_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 23 | 92 | 5 | 1 | 0 | 1 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Tampa Bay | 23 | 92 | 6 | 3 | 2 | 1 | 1 | 0 | 1 |
 | 2013 | Tampa Bay | 22 | 92 | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 12 | 1 | 0 | 1 | 0 | 0 | 1 |
+| Career |  |  |  | 13 | 3 | 2 | 1 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tampa Bay | 23 | 92 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Tampa Bay | 23 | 92 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Tampa Bay | 22 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

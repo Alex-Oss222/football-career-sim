@@ -1,10 +1,10 @@
 # Kareem Jackson
 
-**Houston Texans · Cornerback · No. 25 · Age 26 · Last game October 20, 2014**
+**Houston Texans · Cornerback · No. 25 · Age 26 · Last game October 26, 2014**
 
 5' 10", 188 lb · Born April 10, 1988 · Alabama · Drafted in 2010, first round, by Houston
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Kareem Jackson](https://commons.wikimedia.org/wiki/Special:FilePath/Kareem_Jackson_-_Houston_Texans.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 7 (2014, through Week 7).
+**Passes defended:** 7 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 26 | 25 | 7 | 28 | 20 | 8 | 2 | 1 | 1 |
+| 2014 (through Week 8) | Houston | 26 | 25 | 8 | 33 | 23 | 10 | 3 | 1 | 2 |
 | 2013 | Houston | 25 | 25 | 16 | 75 | 54 | 21 | 2 | 0 | 0 |
-| Career |  |  |  | 23 | 103 | 74 | 29 | 4 | 1 | 1 |
+| Career |  |  |  | 24 | 108 | 77 | 31 | 5 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Houston | 26 | 25 | 1 | 29 | 7 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Houston | 26 | 25 | 1 | 29 | 7 | 0 | 0 | 0 |
 | 2013 | Houston | 25 | 25 | 0 | 0 | 7 | 0 | 0 | N/A |
 
 ### Playoffs

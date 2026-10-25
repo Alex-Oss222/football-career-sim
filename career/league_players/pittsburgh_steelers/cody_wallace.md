@@ -1,10 +1,10 @@
 # Cody Wallace
 
-**Pittsburgh Steelers · Center · No. 72 · Age 29 · Last game October 20, 2014**
+**Pittsburgh Steelers · Center · No. 72 · Age 29 · Last game October 26, 2014**
 
 6' 4", 300 lb · Born November 26, 1984 · Texas A&M · Drafted in 2008, fourth round, by San Francisco
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Cody Wallace](https://commons.wikimedia.org/wiki/Special:FilePath/Cody_Wallace.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Reserve center.
 
-**Sacks allowed:** 0 (2014, through Week 7).
+**Sacks allowed:** 0 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 29 | 72 | 5 | 1 | 59 | 0 | 6 |
+| 2014 (through Week 8) | Pittsburgh | 29 | 72 | 6 | 1 | 59 | 0 | 6 |
 | 2013 | Pittsburgh | 28 | 72 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

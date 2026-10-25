@@ -1,10 +1,10 @@
 # Zach Brown
 
-**Tennessee Titans · Inside linebacker · No. 55 · Age 24 · Last game October 19, 2014**
+**Tennessee Titans · Inside linebacker · No. 55 · Age 25 · Last game October 26, 2014**
 
 6' 1", 248 lb · Born October 23, 1989 · North Carolina · Drafted in 2012, second round, by Tennessee
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Zach Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Zach_Brown.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting inside linebacker.
 
-**Tackles:** 55 (2014, through Week 7).
+**Tackles:** 68 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 24 | 55 | 7 | 55 | 38 | 17 | 4 | 2 | 6 |
+| 2014 (through Week 8) | Tennessee | 24 | 55 | 8 | 68 | 46 | 22 | 4 | 3 | 7 |
 | 2013 | Tennessee | 23 | 55 | 16 | 116 | 75 | 41 | 9 | 1 | 7 |
-| Career |  |  |  | 23 | 171 | 113 | 58 | 13 | 3 | 13 |
+| Career |  |  |  | 24 | 184 | 121 | 63 | 13 | 4 | 14 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Tennessee | 24 | 55 | 0 | 0 | 2 | 1 | 0 | 0 |
+| 2014 (through Week 8) | Tennessee | 24 | 55 | 0 | 0 | 2 | 2 | 0 | 0 |
 | 2013 | Tennessee | 23 | 55 | 1 | 20 | 5 | 2 | 2 | N/A |
 
 ### Playoffs

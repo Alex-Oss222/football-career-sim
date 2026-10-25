@@ -1,10 +1,10 @@
 # Adrian Peterson
 
-**Minnesota Vikings · Running back · No. 28 · Age 29 · Last game October 19, 2014**
+**Minnesota Vikings · Running back · No. 28 · Age 29 · Last game October 26, 2014**
 
 6' 1", 217 lb · Born March 21, 1985 · Oklahoma · Drafted in 2007, first round, by Minnesota
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Adrian Peterson](https://commons.wikimedia.org/wiki/Special:FilePath/Adrian_Peterson_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 5.6 (2014, through Week 7).
+**Yards per carry:** 5.4 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 29 | 28 | 6 | 86 | 482 | 5.6 | 2 | 34 | 80.3 |
+| 2014 (through Week 8) | Minnesota | 29 | 28 | 7 | 104 | 562 | 5.4 | 2 | 48 | 80.3 |
 | 2013 | Minnesota | 28 | 28 | 16 | 271 | 1,315 | 4.9 | 9 | 77 | 82.2 |
-| Career |  |  |  | 22 | 357 | 1,797 | 5.0 | 11 | 77 | 81.7 |
+| Career |  |  |  | 23 | 375 | 1,877 | 5.0 | 11 | 77 | 81.6 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Minnesota | 29 | 28 | 18 | 9 | 74 | 8.2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Minnesota | 29 | 28 | 24 | 13 | 130 | 10.0 | 1 | 0 | 0 |
 | 2013 | Minnesota | 28 | 28 | 70 | 46 | 503 | 10.9 | 3 | 2 | 2 |
 
 ### Playoffs

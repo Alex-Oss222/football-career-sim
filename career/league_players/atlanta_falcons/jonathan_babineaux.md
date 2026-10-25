@@ -1,10 +1,10 @@
 # Jonathan Babineaux
 
-**Atlanta Falcons · Defensive end · No. 95 · Age 33 · Last game October 19, 2014**
+**Atlanta Falcons · Defensive end · No. 95 · Age 33 · Last game October 26, 2014**
 
 6' 2", 300 lb · Born October 12, 1981 · Iowa · Drafted in 2005, second round, by Atlanta
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Jonathan Babineaux](https://commons.wikimedia.org/wiki/Special:FilePath/Jonathan_Babineaux.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 1 (2014, through Week 7).
+**Sacks:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 32 | 95 | 7 | 21 | 15 | 6 | 3 | 1 | 3 |
+| 2014 (through Week 8) | Atlanta | 32 | 95 | 8 | 24 | 17 | 7 | 3 | 2 | 4 |
 | 2013 | Atlanta | 31 | 95 | 16 | 59 | 39 | 20 | 8 | 4 | 6 |
-| Career |  |  |  | 23 | 80 | 54 | 26 | 11 | 5 | 9 |
+| Career |  |  |  | 24 | 83 | 56 | 27 | 11 | 6 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 32 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Atlanta | 32 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Atlanta | 31 | 95 | 0 | 0 | 4 | 0 | 0 | N/A |
 
 ### Playoffs

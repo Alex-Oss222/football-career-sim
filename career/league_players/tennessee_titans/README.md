@@ -1,6 +1,6 @@
 # Tennessee Titans players
 
-AFC South. The players whose latest game on record was with the Tennessee Titans. G counts regular-season games with any club. Records through October 20, 2014.
+AFC South. The players whose latest game on record was with the Tennessee Titans. G counts regular-season games with any club. Records through October 27, 2014.
 
 [All clubs](../README.md)
 
@@ -8,100 +8,101 @@ AFC South. The players whose latest game on record was with the Tennessee Titans
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 12 | [Charlie Whitehurst](charlie_whitehurst.md) | QB | 7 | 16 |
-| 10 | [Jake Locker](jake_locker.md) | QB | 6 | 16 |
-| 7 | [Zach Mettenberger](zach_mettenberger.md) | QB | 7 | 0 |
+| 12 | [Charlie Whitehurst](charlie_whitehurst.md) | QB | 8 | 16 |
+| 10 | [Jake Locker](jake_locker.md) | QB | 7 | 16 |
+| 7 | [Zach Mettenberger](zach_mettenberger.md) | QB | 8 | 0 |
 
 ## Running backs
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 20 | [Bishop Sankey](bishop_sankey.md) | RB | 7 | 0 |
+| 20 | [Bishop Sankey](bishop_sankey.md) | RB | 8 | 0 |
 | N/A | [Collin Mooney](collin_mooney.md) | FB | 0 | 16 |
 | N/A | [Darius Reynaud](darius_reynaud.md) | RB | 0 | 16 |
-| N/A | [Denard Robinson](denard_robinson.md) | RB | 7 | 16 |
-| 22 | [Dexter McCluster](dexter_mccluster.md) | RB | 7 | 16 |
-| 29 | [Leon Washington](leon_washington.md) | RB | 7 | 16 |
-| 23 | [Shonn Greene](shonn_greene.md) | RB | 7 | 16 |
+| N/A | [Denard Robinson](denard_robinson.md) | RB | 8 | 16 |
+| 22 | [Dexter McCluster](dexter_mccluster.md) | RB | 8 | 16 |
+| 29 | [Leon Washington](leon_washington.md) | RB | 8 | 16 |
+| 23 | [Shonn Greene](shonn_greene.md) | RB | 8 | 16 |
 
 ## Wide receivers
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
 | N/A | [Damian Williams](damian_williams.md) | WR | 0 | 16 |
-| 80 | [Derek Hagan](derek_hagan.md) | WR | 7 | 0 |
-| 15 | [Justin Hunter](justin_hunter.md) | WR | 7 | 16 |
-| 13 | [Kendall Wright](kendall_wright.md) | WR | 7 | 16 |
-| 17 | [Kris Durham](kris_durham.md) | WR | 7 | 16 |
+| 80 | [Derek Hagan](derek_hagan.md) | WR | 8 | 0 |
+| 15 | [Justin Hunter](justin_hunter.md) | WR | 8 | 16 |
+| 13 | [Kendall Wright](kendall_wright.md) | WR | 8 | 16 |
+| 17 | [Kris Durham](kris_durham.md) | WR | 8 | 16 |
 | N/A | [Michael Preston](michael_preston.md) | WR | 0 | 16 |
-| 85 | [Nate Washington](nate_washington.md) | WR | 7 | 16 |
+| 85 | [Nate Washington](nate_washington.md) | WR | 8 | 16 |
 
 ## Tight ends
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 88 | [Craig Stevens](craig_stevens.md) | TE | 7 | 16 |
-| 82 | [Delanie Walker](delanie_walker.md) | TE | 7 | 0 |
-| 44 | [Jackie Battle](jackie_battle.md) | TE | 7 | 16 |
-| 84 | [Taylor Thompson](taylor_thompson.md) | TE | 7 | 16 |
+| 88 | [Craig Stevens](craig_stevens.md) | TE | 8 | 16 |
+| 82 | [Delanie Walker](delanie_walker.md) | TE | 8 | 0 |
+| 44 | [Jackie Battle](jackie_battle.md) | TE | 8 | 16 |
+| N/A | [Richard Gordon](richard_gordon.md) | TE | 1 | 0 |
+| 84 | [Taylor Thompson](taylor_thompson.md) | TE | 8 | 16 |
 
 ## Offensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 67 | [Andy Levitre](andy_levitre.md) | G | 7 | 16 |
-| 62 | [Brian Schwenke](brian_schwenke.md) | C | 7 | 2 |
+| 67 | [Andy Levitre](andy_levitre.md) | G | 8 | 16 |
+| 62 | [Brian Schwenke](brian_schwenke.md) | C | 8 | 2 |
 | 68 | [Byron Stingily](byron_stingily.md) | T | 0 | 4 |
-| 70 | [Chance Warmack](chance_warmack.md) | G | 7 | 16 |
-| 60 | [Chris Spencer](chris_spencer.md) | G | 4 | 16 |
+| 70 | [Chance Warmack](chance_warmack.md) | G | 8 | 16 |
+| 60 | [Chris Spencer](chris_spencer.md) | G | 5 | 16 |
 | N/A | [David Stewart](david_stewart.md) | T | 0 | 16 |
-| 72 | [Michael Oher](michael_oher.md) | T | 7 | 15 |
-| 71 | [Michael Roos](michael_roos.md) | T | 7 | 16 |
+| 72 | [Michael Oher](michael_oher.md) | T | 8 | 15 |
+| 71 | [Michael Roos](michael_roos.md) | T | 8 | 16 |
 | N/A | [Mike Otto](mike_otto.md) | T | 0 | 16 |
 | N/A | [Robert Turner](robert_turner.md) | C | 0 | 16 |
-| 77 | [Taylor Lewan](taylor_lewan.md) | T | 7 | 0 |
+| 77 | [Taylor Lewan](taylor_lewan.md) | T | 8 | 0 |
 
 ## Defensive line
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 96 | [Al Woods](al_woods.md) | NT | 7 | 16 |
+| 96 | [Al Woods](al_woods.md) | NT | 8 | 16 |
 | N/A | [Antonio Johnson](antonio_johnson.md) | DT | 0 | 16 |
-| 98 | [DaQuan Jones](daquan_jones.md) | DE | 7 | 0 |
-| 99 | [Jurrell Casey](jurrell_casey.md) | DT | 7 | 16 |
-| 97 | [Karl Klug](karl_klug.md) | DT | 7 | 2 |
+| 98 | [DaQuan Jones](daquan_jones.md) | DE | 8 | 0 |
+| 99 | [Jurrell Casey](jurrell_casey.md) | DT | 8 | 16 |
+| 97 | [Karl Klug](karl_klug.md) | DT | 8 | 2 |
 | N/A | [Keyunta Dawson](keyunta_dawson.md) | DE | 0 | 2 |
-| 93 | [Mike Martin](mike_martin.md) | DT | 7 | 16 |
-| 92 | [Ropati Pitoitua](ropati_pitoitua.md) | DE | 7 | 16 |
-| 94 | [Sammie Lee Hill](sammie_lee_hill.md) | NT | 7 | 16 |
+| 93 | [Mike Martin](mike_martin.md) | DT | 8 | 16 |
+| 92 | [Ropati Pitoitua](ropati_pitoitua.md) | DE | 8 | 16 |
+| 94 | [Sammie Lee Hill](sammie_lee_hill.md) | NT | 8 | 16 |
 
 ## Linebackers
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
 | 56 | [Akeem Ayers](akeem_ayers.md) | OLB | 0 | 16 |
-| 54 | [Avery Williamson](avery_williamson.md) | ILB | 7 | 0 |
+| 54 | [Avery Williamson](avery_williamson.md) | ILB | 8 | 0 |
 | N/A | [Colin McCarthy](colin_mccarthy.md) | MLB | 0 | 16 |
-| 91 | [Derrick Morgan](derrick_morgan.md) | OLB | 7 | 16 |
-| 95 | [Kamerion Wimbley](kamerion_wimbley.md) | OLB | 7 | 16 |
+| 91 | [Derrick Morgan](derrick_morgan.md) | OLB | 8 | 16 |
+| 95 | [Kamerion Wimbley](kamerion_wimbley.md) | OLB | 8 | 16 |
 | N/A | [Moise Fokou](moise_fokou.md) | MLB | 0 | 16 |
 | N/A | [Patrick Bailey](patrick_bailey.md) | OLB | 0 | 14 |
-| 59 | [Wesley Woodyard](wesley_woodyard.md) | ILB | 7 | 16 |
-| 55 | [Zach Brown](zach_brown.md) | ILB | 7 | 16 |
-| 50 | [Zaviar Gooden](zaviar_gooden.md) | ILB | 7 | 15 |
+| 59 | [Wesley Woodyard](wesley_woodyard.md) | ILB | 8 | 16 |
+| 55 | [Zach Brown](zach_brown.md) | ILB | 8 | 16 |
+| 50 | [Zaviar Gooden](zaviar_gooden.md) | ILB | 8 | 15 |
 
 ## Defensive backs
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 31 | [Bernard Pollard](bernard_pollard.md) | SS | 7 | 16 |
-| 25 | [Blidi Wreh-Wilson](blidi_wreh_wilson.md) | CB | 7 | 2 |
-| 32 | [Brandon Harris](brandon_harris.md) | CB | 7 | 16 |
+| 31 | [Bernard Pollard](bernard_pollard.md) | SS | 8 | 16 |
+| 25 | [Blidi Wreh-Wilson](blidi_wreh_wilson.md) | CB | 8 | 2 |
+| 32 | [Brandon Harris](brandon_harris.md) | CB | 8 | 16 |
 | 24 | [Coty Sensabaugh](coty_sensabaugh.md) | CB | 0 | 16 |
 | 39 | [Daimion Stafford](daimion_stafford.md) | SS | 1 | 2 |
-| 21 | [George Wilson](george_wilson.md) | FS | 6 | 16 |
-| 30 | [Jason McCourty](jason_mccourty.md) | CB | 7 | 16 |
-| 33 | [Michael Griffin](michael_griffin.md) | FS | 7 | 16 |
+| 21 | [George Wilson](george_wilson.md) | FS | 7 | 16 |
+| 30 | [Jason McCourty](jason_mccourty.md) | CB | 8 | 16 |
+| 33 | [Michael Griffin](michael_griffin.md) | FS | 8 | 16 |
 | N/A | [Tommie Campbell](tommie_campbell.md) | CB | 0 | 16 |
 
 ## Kickers
@@ -109,7 +110,7 @@ AFC South. The players whose latest game on record was with the Tennessee Titans
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
 | N/A | [Rob Bironas](rob_bironas.md) | K | 0 | 16 |
-| 8 | [Ryan Succop](ryan_succop.md) | K | 7 | 16 |
+| 8 | [Ryan Succop](ryan_succop.md) | K | 8 | 16 |
 
 ## Punters
 
@@ -121,6 +122,6 @@ AFC South. The players whose latest game on record was with the Tennessee Titans
 
 | # | Player | Pos | 2014 G | 2013 G |
 |---|---|---|---:|---:|
-| 48 | [Beau Brinkley](beau_brinkley.md) | LS | 7 | 16 |
+| 48 | [Beau Brinkley](beau_brinkley.md) | LS | 8 | 16 |
 
 <!-- player-index -->

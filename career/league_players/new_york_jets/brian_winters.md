@@ -1,10 +1,10 @@
 # Brian Winters
 
-**New York Jets · Guard · No. 67 · Age 23 · Last game October 16, 2014**
+**New York Jets · Guard · No. 67 · Age 23 · Last game October 26, 2014**
 
 6' 4", 320 lb · Born July 10, 1991 · Kent State
 
-As of October 16, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Brian Winters](https://commons.wikimedia.org/wiki/Special:FilePath/Brian_Winters_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 4 (2014, through Week 7).
+**Sacks allowed:** 5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | N.Y. Jets | 23 | 67 | 7 | 7 | 450 | 4 | 29 |
+| 2014 (through Week 8) | N.Y. Jets | 23 | 67 | 8 | 8 | 513 | 5 | 32 |
 | 2013 | N.Y. Jets | 22 | 67 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 23 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 24 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

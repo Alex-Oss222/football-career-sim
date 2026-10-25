@@ -1,10 +1,10 @@
 # LeGarrette Blount
 
-**Pittsburgh Steelers · Running back · No. 27 · Age 27 · Last game October 20, 2014**
+**Pittsburgh Steelers · Running back · No. 27 · Age 27 · Last game October 26, 2014**
 
 6' 0", 250 lb · Born December 5, 1986 · Oregon; East Mississippi JC
 
-As of October 20, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![LeGarrette Blount](https://commons.wikimedia.org/wiki/Special:FilePath/LeGarrette_Blount.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 20, 2014, after Week 7.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 8.0 (2014, through Week 7).
+**Yards per carry:** 7.1 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 27 | 27 | 7 | 33 | 265 | 8.0 | 3 | 32 | 37.9 |
+| 2014 (through Week 8) | Pittsburgh | 27 | 27 | 8 | 40 | 284 | 7.1 | 3 | 32 | 35.5 |
 | 2013 | New England | 26 | 29 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 |
-| Career |  |  |  | 23 | 33 | 265 | 8.0 | 3 | 32 | 11.5 |
+| Career |  |  |  | 24 | 40 | 284 | 7.1 | 3 | 32 | 11.8 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Pittsburgh | 27 | 27 | 8 | 4 | 50 | 12.5 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Pittsburgh | 27 | 27 | 9 | 4 | 50 | 12.5 | 0 | 0 | 0 |
 | 2013 | New England | 26 | 29 | 1 | 1 | 10 | 10.0 | 0 | 0 | 0 |
 
 ### Playoffs

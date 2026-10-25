@@ -1,10 +1,10 @@
 # Matt Schaub
 
-**Oakland Raiders · Quarterback · No. 8 · Age 33 · Last game October 19, 2014**
+**Oakland Raiders · Quarterback · No. 8 · Age 33 · Last game October 26, 2014**
 
 6' 6", 235 lb · Born June 25, 1981 · Virginia · Drafted in 2004, third round, by Atlanta
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Matt Schaub](https://commons.wikimedia.org/wiki/Special:FilePath/Matt_Schaub_drops_back.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 33 | 8 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 8) | Oakland | 33 | 8 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Houston | 32 | 8 | 16 | 343 | 529 | 64.8 | 3,750 | 7.1 | 234.4 | 22 | 22 | 82.2 |
-| Career |  |  |  | 22 | 343 | 529 | 64.8 | 3,750 | 7.1 | 170.5 | 22 | 22 | 82.2 |
+| Career |  |  |  | 23 | 343 | 529 | 64.8 | 3,750 | 7.1 | 163.0 | 22 | 22 | 82.2 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Oakland | 33 | 8 | 0 | 0 | 2 | -2 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Oakland | 33 | 8 | 0 | 0 | 2 | -2 | 0 | 0 | 0 |
 | 2013 | Houston | 32 | 8 | 39 | 228 | 40 | 246 | 2 | 2 | 2 |
 
 ### Playoffs

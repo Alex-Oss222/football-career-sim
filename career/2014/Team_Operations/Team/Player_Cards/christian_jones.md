@@ -4,7 +4,7 @@
 
 6' 3", 240 lb · Born February 18, 1991 · Florida State · Undrafted
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Christian Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Christian_Jones_bears.jpg?width=500)
 
@@ -12,9 +12,9 @@ As of October 19, 2014, after Week 7.
 
 ## Staff assessment
 
-Christian Jones is a rookie linebacker who has made four special-teams tackles in seven games. He is a big linebacker who played both middle and outside linebacker at Florida State, with the size and strength for the strong side and experience on coverage units. His instincts and change of direction are the questions.
+Christian Jones is a rookie linebacker who has made four special-teams tackles in eight games. He is a big linebacker who played both middle and outside linebacker at Florida State, with the size and strength for the strong side and experience on coverage units. His instincts and change of direction are the questions.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 19.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 26.*
 
 ## Contract
 
@@ -32,11 +32,11 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 23 | 59 | 7 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 8) | Jacksonville | 23 | 59 | 8 | 0 | 0 | 0 | 0 | 0 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Jacksonville | 23 | 59 | 0 | 0 | 0 | 0 | 0 | 4 |
+| 2014 (through Week 8) | Jacksonville | 23 | 59 | 0 | 0 | 0 | 0 | 0 | 4 |
 
 ### Playoffs
 

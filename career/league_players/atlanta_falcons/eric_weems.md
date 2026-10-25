@@ -1,10 +1,10 @@
 # Eric Weems
 
-**Atlanta Falcons · Wide receiver · No. 14 · Age 29 · Last game October 19, 2014**
+**Atlanta Falcons · Wide receiver · No. 14 · Age 29 · Last game October 26, 2014**
 
 5' 9", 195 lb · Born July 4, 1985 · Bethune-Cookman College
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Eric Weems](https://commons.wikimedia.org/wiki/Special:FilePath/Eric_Weems_Falcons_2016.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 7.5 (2014, through Week 7).
+**Yards per target:** 7.5 (2014, through Week 8).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Atlanta | 29 | 14 | 7 | 4 | 2 | 30 | 15.0 | 0 | 15 | 4.3 | 50.0 |
+| 2014 (through Week 8) | Atlanta | 29 | 14 | 8 | 4 | 2 | 30 | 15.0 | 0 | 15 | 3.8 | 50.0 |
 | 2013 | Chicago | 28 | 14 | 16 | 1 | 1 | 8 | 8.0 | 0 | 8 | 0.5 | 100.0 |
-| Career |  |  |  | 23 | 5 | 3 | 38 | 12.7 | 0 | 15 | 1.7 | 60.0 |
+| Career |  |  |  | 24 | 5 | 3 | 38 | 12.7 | 0 | 15 | 1.6 | 60.0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Najee Goode
 
-**Philadelphia Eagles · Inside linebacker · No. 53 · Age 25 · Last game October 12, 2014**
+**Philadelphia Eagles · Inside linebacker · No. 53 · Age 25 · Last game October 26, 2014**
 
 6' 0", 244 lb · Born June 4, 1989 · West Virginia · Drafted in 2012, fifth round, by Tampa Bay
 
-As of October 12, 2014, after Week 6.
+As of October 26, 2014, after Week 8.
 
 ![Najee Goode](https://commons.wikimedia.org/wiki/Special:FilePath/Najee_Goode.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve inside linebacker.
 
-**Tackles:** 2 (2014, through Week 6).
+**Tackles:** 2 (2014, through Week 8).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 25 | 53 | 6 | 2 | 1 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Philadelphia | 25 | 53 | 7 | 2 | 1 | 1 | 0 | 0 | 0 |
 | 2013 | Philadelphia | 24 | 53 | 16 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 22 | 2 | 1 | 1 | 0 | 0 | 0 |
+| Career |  |  |  | 23 | 2 | 1 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Philadelphia | 25 | 53 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 8) | Philadelphia | 25 | 53 | 0 | 0 | 0 | 0 | 0 | 3 |
 | 2013 | Philadelphia | 24 | 53 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

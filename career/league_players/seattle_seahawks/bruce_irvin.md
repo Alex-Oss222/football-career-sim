@@ -1,10 +1,10 @@
 # Bruce Irvin
 
-**Seattle Seahawks · Outside linebacker · No. 51 · Age 26 · Last game October 19, 2014**
+**Seattle Seahawks · Outside linebacker · No. 51 · Age 26 · Last game October 26, 2014**
 
 6' 3", 248 lb · Born November 1, 1987 · West Virginia; Mt. San Antonio; Butler County CC · Drafted in 2012, first round, by Seattle
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 8.
 
 ![Bruce Irvin](https://commons.wikimedia.org/wiki/Special:FilePath/Bruce_Irvin_in_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve outside linebacker.
 
-**Tackles:** 11 (2014, through Week 7).
+**Tackles:** 18 (2014, through Week 8).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 26 | 51 | 6 | 11 | 9 | 2 | 0 | 1 | 2 |
+| 2014 (through Week 8) | Seattle | 26 | 51 | 7 | 18 | 15 | 3 | 0 | 2 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 7) | Seattle | 26 | 51 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 8) | Seattle | 26 | 51 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 
