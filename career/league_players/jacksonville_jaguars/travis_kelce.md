@@ -4,19 +4,21 @@
 
 6' 5", 260 lb · Born October 5, 1989 · Cincinnati · Drafted in 2013, No. 33 overall, by Jacksonville
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Travis Kelce](https://commons.wikimedia.org/wiki/Special:FilePath/Travis_Kelce_in_the_Oval_Office_of_the_White_House_on_June_5%2C_2023_-_P20230605AS-0902_%28cropped%29.jpg?width=500)
 
 *Photo: Adam Schultz, Public domain ([source](https://commons.wikimedia.org/wiki/File:Travis_Kelce_in_the_Oval_Office_of_the_White_House_on_June_5,_2023_-_P20230605AS-0902_(cropped).jpg)).*
 
-**Yards per target:** 12.0 (2014, through Week 6).
+**Current assignment:** Starting tight end.
+
+**Yards per target:** 9.9 (2014, through Week 7).
 
 ## Staff assessment
 
-Travis Kelce is Jacksonville's second tight end behind Marcedes Lewis, the complementary role he held as a rookie in 2013, and he is not yet a proven high-volume receiver. He was active for all 16 regular-season games in 2013 with 17 targets, and he has six catches in six games in 2014. He is a movable receiving tight end who can line up attached, on the wing or in the slot, with enough speed to threaten the seam, the change of direction and route tempo to separate from linebackers and dependable hands away from his body. His blocking trails his receiving, with his pad level, hand placement and ability to sustain leverage still needing work, and he suits chip-and-release jobs better than extended one-on-one protection.
+Travis Kelce was Jacksonville's second tight end behind Marcedes Lewis into October, the complementary role he held as a rookie in 2013, and he is not yet a proven high-volume receiver. He was active for all 16 regular-season games in 2013 with 17 targets, and he has seven catches in seven games in 2014. He is a movable receiving tight end who can line up attached, on the wing or in the slot, with enough speed to threaten the seam, the change of direction and route tempo to separate from linebackers and dependable hands away from his body. His blocking trails his receiving, with his pad level, hand placement and ability to sustain leverage still needing work, and he suits chip-and-release jobs better than extended one-on-one protection.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 12.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 19.*
 
 ## Contract
 
@@ -34,9 +36,9 @@ Four-year contract through 2016.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 24 | N/A | 6 | 11 | 6 | 132 | 22.0 | 1 | 71 | 22.0 | 54.5 |
+| 2014 (through Week 7) | Jacksonville | 24 | N/A | 7 | 15 | 7 | 149 | 21.3 | 1 | 71 | 21.3 | 46.7 |
 | 2013 | Jacksonville | 23 | N/A | 16 | 17 | 8 | 105 | 13.1 | 0 | 36 | 6.6 | 47.1 |
-| With Jacksonville |  |  |  | 22 | 28 | 14 | 237 | 16.9 | 1 | 71 | 10.8 | 50.0 |
+| With Jacksonville |  |  |  | 23 | 32 | 15 | 254 | 16.9 | 1 | 71 | 11.0 | 46.9 |
 
 ### Playoffs
 

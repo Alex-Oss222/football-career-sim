@@ -1,10 +1,10 @@
 # Patrick Chung
 
-**New England Patriots · Safety · No. 23 · Age 27 · Last game October 12, 2014**
+**New England Patriots · Safety · No. 23 · Age 27 · Last game October 16, 2014**
 
 5' 11", 210 lb · Born August 19, 1987 · Oregon · Drafted in 2009, second round, by New England
 
-As of October 12, 2014, after Week 6.
+As of October 16, 2014, after Week 7.
 
 ![Patrick Chung](https://commons.wikimedia.org/wiki/Special:FilePath/Patrick_chung.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve safety.
 
-**Passes defended:** 4 (2014, through Week 6).
+**Passes defended:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | New England | 27 | 23 | 6 | 7 | 4 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 7) | New England | 27 | 23 | 7 | 8 | 5 | 3 | 0 | 0 | 0 |
 | 2013 | Philadelphia | 26 | 23 | 5 | 18 | 11 | 7 | 1 | 0 | 0 |
-| Career |  |  |  | 11 | 25 | 15 | 10 | 1 | 0 | 0 |
+| Career |  |  |  | 12 | 26 | 16 | 10 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | New England | 27 | 23 | 0 | 0 | 4 | 0 | 0 | 1 |
+| 2014 (through Week 7) | New England | 27 | 23 | 0 | 0 | 5 | 0 | 0 | 1 |
 | 2013 | Philadelphia | 26 | 23 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

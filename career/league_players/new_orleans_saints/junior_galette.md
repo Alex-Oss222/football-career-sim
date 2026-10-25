@@ -1,10 +1,10 @@
 # Junior Galette
 
-**New Orleans Saints · Outside linebacker · No. 93 · Age 26 · Last game October 5, 2014**
+**New Orleans Saints · Outside linebacker · No. 93 · Age 26 · Last game October 19, 2014**
 
 6' 2", 258 lb · Born March 27, 1988 · Stillman College; Temple
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Junior Galette](https://commons.wikimedia.org/wiki/Special:FilePath/Junior_Galette_For_the_Love_of_Football.png?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 19 (2014, through Week 5).
+**Tackles:** 22 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 26 | 93 | 5 | 19 | 14 | 5 | 0 | 1 | 4 |
+| 2014 (through Week 7) | New Orleans | 26 | 93 | 6 | 22 | 16 | 6 | 0 | 1 | 4 |
 | 2013 | New Orleans | 25 | 93 | 16 | 48 | 32 | 16 | 2 | 4 | 5 |
-| Career |  |  |  | 21 | 67 | 46 | 21 | 2 | 5 | 9 |
+| Career |  |  |  | 22 | 70 | 48 | 22 | 2 | 5 | 9 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 26 | 93 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | New Orleans | 26 | 93 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | New Orleans | 25 | 93 | 1 | 35 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

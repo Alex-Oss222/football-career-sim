@@ -1,6 +1,6 @@
 # Philadelphia Eagles players
 
-NFC East. The players whose latest game on record was with the Philadelphia Eagles. G counts regular-season games with any club. Records through October 13, 2014.
+NFC East. The players whose latest game on record was with the Philadelphia Eagles. G counts regular-season games with any club. Records through October 20, 2014.
 
 [All clubs](../README.md)
 

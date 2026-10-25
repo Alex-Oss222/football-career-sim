@@ -23,10 +23,12 @@ from scripts.render_season_stats import load_receipts
 from runtime.seasons import SeasonPaths
 
 ROOT = Path(__file__).resolve().parents[1]
-# The last cutoff of each week before a committed shard's effective week
-# (week_inputs.season_last_cutoffs): Week 4's for the Week 5 shard, Week 5's
-# for the Week 6 shard.
-LAST = {4: date(2014, 9, 27), 5: date(2014, 10, 4)}
+# The last cutoff of every scheduled week, as the production path passes it
+# (week_inputs.season_last_cutoffs): each committed shard's rows replay after
+# the last cutoff of the week before their effective week (Week 4's, September
+# 27, for the Week 5 shard; Week 5's, October 4, for the Week 6 shard), and a
+# shard added as the clock reaches a later week finds its week's cutoff too.
+LAST = week_inputs.season_last_cutoffs(2014)
 
 
 # ---- synthetic league ---------------------------------------------------------------

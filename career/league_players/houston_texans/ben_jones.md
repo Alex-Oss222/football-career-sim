@@ -1,10 +1,10 @@
 # Ben Jones
 
-**Houston Texans · Center · No. 60 · Age 25 · Last game October 9, 2014**
+**Houston Texans · Center · No. 60 · Age 25 · Last game October 20, 2014**
 
 6' 3", 308 lb · Born July 2, 1989 · Georgia · Drafted in 2012, fourth round, by Houston
 
-As of October 9, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Ben Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Ben_Jones_%28center%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 9, 2014, after Week 6.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 1 (2014, through Week 6).
+**Sacks allowed:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 25 | 60 | 6 | 6 | 381 | 1 | 29 |
+| 2014 (through Week 7) | Houston | 25 | 60 | 7 | 7 | 447 | 1 | 35 |
 | 2013 | Houston | 24 | 60 | 16 | N/A | N/A | 8 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 9 | N/A |
 
 ### Playoffs
 

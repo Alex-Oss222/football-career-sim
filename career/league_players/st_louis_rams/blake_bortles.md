@@ -1,10 +1,10 @@
 # Blake Bortles
 
-**St. Louis Rams · Quarterback · Age 22 · Last game October 13, 2014**
+**St. Louis Rams · Quarterback · Age 22 · Last game October 19, 2014**
 
 6' 5", 232 lb · Born April 28, 1992 · Central Florida
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Blake Bortles](https://commons.wikimedia.org/wiki/Special:FilePath/20140914_Blake_Bortles.jpg?width=500)
 
@@ -20,11 +20,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 22 | N/A | 5 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 7) | St. Louis | 22 | N/A | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | St. Louis | 22 | N/A | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

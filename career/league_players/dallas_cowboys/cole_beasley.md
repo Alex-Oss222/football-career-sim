@@ -1,10 +1,10 @@
 # Cole Beasley
 
-**Dallas Cowboys · Wide receiver · No. 11 · Age 25 · Last game October 12, 2014**
+**Dallas Cowboys · Wide receiver · No. 11 · Age 25 · Last game October 19, 2014**
 
 5' 8", 180 lb · Born April 26, 1989 · SMU
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Cole Beasley](https://commons.wikimedia.org/wiki/Special:FilePath/Cole_Beasley_September_2016_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 7.5 (2014, through Week 6).
+**Yards per target:** 8.0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 25 | 11 | 6 | 19 | 17 | 142 | 8.4 | 1 | 30 | 23.7 | 89.5 |
+| 2014 (through Week 7) | Dallas | 25 | 11 | 7 | 22 | 20 | 176 | 8.8 | 1 | 30 | 25.1 | 90.9 |
 | 2013 | Dallas | 24 | 11 | 16 | 6 | 4 | 25 | 6.2 | 0 | 14 | 1.6 | 66.7 |
-| Career |  |  |  | 22 | 25 | 21 | 167 | 8.0 | 1 | 30 | 7.6 | 84.0 |
+| Career |  |  |  | 23 | 28 | 24 | 201 | 8.4 | 1 | 30 | 8.7 | 85.7 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 25 | 11 | 3 | 18 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Dallas | 25 | 11 | 3 | 18 | 0 | 2 | 1 |
 | 2013 | Dallas | 24 | 11 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

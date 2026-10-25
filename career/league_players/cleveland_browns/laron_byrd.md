@@ -1,12 +1,12 @@
 # Laron Byrd
 
-**Cleveland Browns · Wide receiver · No. 17 · Age 25 · Last game October 12, 2014**
+**Cleveland Browns · Wide receiver · No. 17 · Age 25 · Last game October 19, 2014**
 
 6' 4", 220 lb · Born August 18, 1989 · Miami
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
-**Yards per target:** 4.0 (2014, through Week 6).
+**Yards per target:** 4.0 (2014, through Week 7).
 
 ## Contract
 
@@ -18,7 +18,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 25 | 17 | 3 | 10 | 6 | 40 | 6.7 | 0 | 11 | 13.3 | 60.0 |
+| 2014 (through Week 7) | Cleveland | 25 | 17 | 3 | 10 | 6 | 40 | 6.7 | 0 | 11 | 13.3 | 60.0 |
 
 ### Playoffs
 

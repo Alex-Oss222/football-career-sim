@@ -1,0 +1,135 @@
+{
+ "id": "2014-10-13-head-coach-change-carolina-panthers",
+ "kind": "head_coach_change",
+ "season": 2014,
+ "subject": "Carolina Panthers",
+ "raised": {
+  "at": "2014-10-13T00:00:00-04:00",
+  "by": "communications_staff",
+  "source": {
+   "path": "career/2014/League/Coaching_Changes/README.md",
+   "anchor": "changes"
+  },
+  "after_issue": {
+   "period": {
+    "week": 7
+   },
+   "date": "2014-10-12",
+   "revision": 1
+  }
+ },
+ "known_to": [
+  "stone",
+  "khan",
+  "caldwell"
+ ],
+ "authority": {
+  "rows": [
+   "1"
+  ],
+  "decides": "other_club"
+ },
+ "stone_part": "none",
+ "summary": {
+  "text": "The Carolina Panthers made a change at head coach after a 2-4 record in their first six games; an interim head coach from the club's staff takes over.",
+  "author": "communications_staff",
+  "date": "2014-10-13"
+ },
+ "staff_position": null,
+ "consequence": null,
+ "facts": [
+  {
+   "label": "Club",
+   "value": "Carolina Panthers",
+   "source": {
+    "path": "data/2014/League/Coaching_Changes/week_03.json",
+    "pointer": "/clubs/4/club"
+   }
+  },
+  {
+   "label": "Head coach",
+   "value": "Ron Rivera",
+   "source": {
+    "path": "data/2014/League/Coaching_Changes/week_03.json",
+    "pointer": "/clubs/4/coach"
+   }
+  },
+  {
+   "label": "Record at the change",
+   "value": "2-4",
+   "source": {
+    "path": "data/2014/League/Coaching_Changes/week_03.json",
+    "pointer": "/clubs/4/at_change"
+   }
+  },
+  {
+   "label": "Effective",
+   "value": "October 13, 2014",
+   "source": {
+    "path": "data/2014/League/Coaching_Changes/week_03.json",
+    "pointer": "/clubs/4/effective"
+   }
+  },
+  {
+   "label": "Takes over",
+   "value": "An interim head coach from the club's staff",
+   "source": {
+    "path": "data/2014/League/Coaching_Changes/method.json",
+    "pointer": "/effect/successor"
+   }
+  }
+ ],
+ "options": [],
+ "deadline": null,
+ "state": "resolved",
+ "process": [
+  {
+   "at": "2014-10-13T00:00:00-04:00",
+   "kind": "criteria",
+   "by": "other_club",
+   "what": "The league's weekly head-coach check after the club's game, the one method all 32 clubs share: the club's record after the game and its coach's season with the club.",
+   "source": {
+    "path": "data/2014/League/Coaching_Changes/week_03.json",
+    "pointer": "/clubs/4"
+   },
+   "after_issue": {
+    "period": {
+     "week": 7
+    },
+    "date": "2014-10-12",
+    "revision": 1
+   },
+   "period": {
+    "week": 7
+   }
+  }
+ ],
+ "queue_item": null,
+ "response": null,
+ "resolution": {
+  "at": "2014-10-13T00:00:00-04:00",
+  "outcome": "executed",
+  "by": "other_club",
+  "decision": {
+   "text": "The club changed its head coach; an interim head coach from its staff takes over.",
+   "author": "other_club",
+   "date": "2014-10-13",
+   "criteria": 0
+  },
+  "result_page": "career/2014/League/Coaching_Changes/Head_Coach_Change_2014-10-13_Carolina_Panthers.md",
+  "after_issue": {
+   "period": {
+    "week": 7
+   },
+   "date": "2014-10-12",
+   "revision": 1
+  },
+  "period": {
+   "week": 7
+  }
+ },
+ "schema": "open-event-v1",
+ "period": {
+  "week": 7
+ }
+}

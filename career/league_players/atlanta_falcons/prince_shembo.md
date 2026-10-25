@@ -1,10 +1,10 @@
 # Prince Shembo
 
-**Atlanta Falcons · Linebacker · No. 53 · Age 22 · Last game October 12, 2014**
+**Atlanta Falcons · Linebacker · No. 53 · Age 22 · Last game October 19, 2014**
 
 6' 0", 254 lb · Born December 24, 1991 · Notre Dame
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Prince Shembo](https://commons.wikimedia.org/wiki/Special:FilePath/Prince_Shembo_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve linebacker.
 
-**Tackles:** 8 (2014, through Week 6).
+**Tackles:** 11 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 22 | 53 | 6 | 8 | 5 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Atlanta | 22 | 53 | 7 | 11 | 6 | 5 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 22 | 53 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Atlanta | 22 | 53 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

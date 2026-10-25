@@ -1,10 +1,10 @@
 # Jeff Janis
 
-**Green Bay Packers · Wide receiver · No. 83 · Age 23 · Last game October 12, 2014**
+**Green Bay Packers · Wide receiver · No. 83 · Age 23 · Last game October 19, 2014**
 
 6' 3", 219 lb · Born June 24, 1991 · Saginaw Valley State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jeff Janis](https://commons.wikimedia.org/wiki/Special:FilePath/Jeff_Janis_in_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 2.3 (2014, through Week 6).
+**Yards per target:** 2.3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 23 | 83 | 6 | 3 | 1 | 7 | 7.0 | 0 | 7 | 1.2 | 33.3 |
+| 2014 (through Week 7) | Green Bay | 23 | 83 | 7 | 3 | 1 | 7 | 7.0 | 0 | 7 | 1.0 | 33.3 |
 
 ### Playoffs
 

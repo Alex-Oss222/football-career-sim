@@ -1,10 +1,10 @@
 # Janoris Jenkins
 
-**St. Louis Rams · Cornerback · No. 21 · Age 25 · Last game October 13, 2014**
+**St. Louis Rams · Cornerback · No. 21 · Age 25 · Last game October 19, 2014**
 
 5' 10", 198 lb · Born October 29, 1988 · North Alabama; Florida · Drafted in 2012, second round, by St. Louis
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Janoris Jenkins](https://commons.wikimedia.org/wiki/Special:FilePath/Janoris_Jenkins_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 5 (2014, through Week 6).
+**Passes defended:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 25 | 21 | 5 | 51 | 29 | 22 | 3 | 0 | 0 |
+| 2014 (through Week 7) | St. Louis | 25 | 21 | 6 | 56 | 31 | 25 | 4 | 0 | 0 |
 | 2013 | St. Louis | 24 | 21 | 16 | 84 | 63 | 21 | 2 | 0 | 2 |
-| Career |  |  |  | 21 | 135 | 92 | 43 | 5 | 0 | 2 |
+| Career |  |  |  | 22 | 140 | 94 | 46 | 6 | 0 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 25 | 21 | 1 | 2 | 5 | 2 | 2 | 0 |
+| 2014 (through Week 7) | St. Louis | 25 | 21 | 1 | 2 | 5 | 2 | 2 | 0 |
 | 2013 | St. Louis | 24 | 21 | 3 | 19 | 16 | 0 | 0 | N/A |
 
 ### Playoffs

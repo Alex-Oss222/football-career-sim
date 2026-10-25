@@ -1,10 +1,10 @@
 # Jonathan Dwyer
 
-**Arizona Cardinals · Running back · No. 20 · Age 25 · Last game October 12, 2014**
+**Arizona Cardinals · Running back · No. 20 · Age 25 · Last game October 19, 2014**
 
 5' 11", 229 lb · Born July 26, 1989 · Georgia Tech · Drafted in 2010, sixth round, by Pittsburgh
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jonathan Dwyer](https://commons.wikimedia.org/wiki/Special:FilePath/Jonathan_Dwyer.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 3.4 (2014, through Week 6).
+**Yards per carry:** 4.7 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 25 | 20 | 5 | 49 | 169 | 3.4 | 1 | 14 | 33.8 |
+| 2014 (through Week 7) | Arizona | 25 | 20 | 6 | 70 | 326 | 4.7 | 1 | 35 | 54.3 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 25 | 20 | 7 | 2 | 9 | 4.5 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Arizona | 25 | 20 | 9 | 4 | 21 | 5.2 | 0 | 1 | 1 |
 
 ### Playoffs
 

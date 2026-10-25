@@ -1,10 +1,10 @@
 # Brandon Weeden
 
-**Dallas Cowboys · Quarterback · No. 3 · Age 30 · Last game October 12, 2014**
+**Dallas Cowboys · Quarterback · No. 3 · Age 31 · Last game October 19, 2014**
 
 6' 3", 228 lb · Born October 14, 1983 · Oklahoma State · Drafted in 2012, first round, by Cleveland
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Brandon Weeden](https://commons.wikimedia.org/wiki/Special:FilePath/Brandon_Weeden_%28CROP%29.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 30 | 3 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 7) | Dallas | 30 | 3 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Cleveland | 29 | 3 | 16 | 343 | 590 | 58.1 | 3,656 | 6.2 | 228.5 | 26 | 21 | 76.2 |
-| Career |  |  |  | 22 | 343 | 590 | 58.1 | 3,656 | 6.2 | 166.2 | 26 | 21 | 76.2 |
+| Career |  |  |  | 23 | 343 | 590 | 58.1 | 3,656 | 6.2 | 159.0 | 26 | 21 | 76.2 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 30 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Dallas | 30 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cleveland | 29 | 3 | 28 | 178 | 43 | 134 | 0 | 0 | 0 |
 
 ### Playoffs

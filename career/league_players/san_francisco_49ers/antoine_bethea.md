@@ -1,10 +1,10 @@
 # Antoine Bethea
 
-**San Francisco 49ers · Strong safety · No. 41 · Age 30 · Last game October 13, 2014**
+**San Francisco 49ers · Strong safety · No. 41 · Age 30 · Last game October 19, 2014**
 
 5' 11", 206 lb · Born July 27, 1984 · Howard · Drafted in 2006, sixth round, by Indianapolis
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Antoine Bethea](https://commons.wikimedia.org/wiki/Special:FilePath/Antoine_Bethea_2010-12-18.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 2 (2014, through Week 6).
+**Passes defended:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 30 | 41 | 6 | 20 | 15 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Francisco | 30 | 41 | 7 | 23 | 18 | 5 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 29 | 41 | 16 | 131 | 102 | 29 | 4 | 0 | 2 |
-| Career |  |  |  | 22 | 151 | 117 | 34 | 4 | 0 | 2 |
+| Career |  |  |  | 23 | 154 | 120 | 34 | 4 | 0 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 30 | 41 | 2 | 1 | 2 | 1 | 2 | 0 |
+| 2014 (through Week 7) | San Francisco | 30 | 41 | 2 | 1 | 2 | 1 | 2 | 0 |
 | 2013 | Indianapolis | 29 | 41 | 5 | 46 | 20 | 0 | 0 | N/A |
 
 ### Playoffs

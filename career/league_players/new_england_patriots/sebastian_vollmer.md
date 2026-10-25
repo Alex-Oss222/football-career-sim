@@ -1,10 +1,10 @@
 # Sebastian Vollmer
 
-**New England Patriots · Offensive tackle · No. 76 · Age 30 · Last game October 12, 2014**
+**New England Patriots · Offensive tackle · No. 76 · Age 30 · Last game October 16, 2014**
 
 6' 8", 320 lb · Born July 10, 1984 · Houston · Drafted in 2009, second round, by New England
 
-As of October 12, 2014, after Week 6.
+As of October 16, 2014, after Week 7.
 
 ![Sebastian Vollmer](https://commons.wikimedia.org/wiki/Special:FilePath/Vollmerphotocamp.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 5 (2014, through Week 6).
+**Sacks allowed:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | New England | 30 | 76 | 6 | 6 | 364 | 5 | 30 |
+| 2014 (through Week 7) | New England | 30 | 76 | 7 | 7 | 427 | 5 | 36 |
 | 2013 | New England | 29 | 76 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 12 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 12 | N/A |
 
 ### Playoffs
 

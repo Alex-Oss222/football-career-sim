@@ -1,10 +1,10 @@
 # Chris Watt
 
-**San Diego Chargers · Center · No. 65 · Age 24 · Last game October 12, 2014**
+**San Diego Chargers · Center · No. 65 · Age 24 · Last game October 19, 2014**
 
 6' 2", 311 lb · Born August 17, 1990 · Notre Dame
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Chris Watt](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_Watt_2014_combine.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 24 | 65 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Diego | 24 | 65 | 4 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

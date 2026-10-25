@@ -1,14 +1,14 @@
 # Brandon Mosley
 
-**New York Giants · Guard · No. 75 · Age 25 · Last game October 12, 2014**
+**New York Giants · Guard · No. 75 · Age 25 · Last game October 19, 2014**
 
 6' 5", 318 lb · Born December 21, 1988 · Auburn; Coffeyville CC · Drafted in 2012, fourth round, by the New York Giants
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 1 (2014, through Week 6).
+**Sacks allowed:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -20,9 +20,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 25 | 75 | 6 | 6 | 342 | 1 | 27 |
+| 2014 (through Week 7) | N.Y. Giants | 25 | 75 | 7 | 7 | 415 | 2 | 32 |
 | 2013 | N.Y. Giants | 24 | 67 | 16 | N/A | N/A | 8 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 9 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

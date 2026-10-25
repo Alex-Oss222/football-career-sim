@@ -1,10 +1,10 @@
 # Chris McCain
 
-**Miami Dolphins · Linebacker · No. 58 · Age 22 · Last game October 12, 2014**
+**Miami Dolphins · Linebacker · No. 58 · Age 22 · Last game October 19, 2014**
 
 6' 5", 250 lb · Born November 21, 1991 · California
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Chris McCain](https://commons.wikimedia.org/wiki/Special:FilePath/Chris_McCain.JPG?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 22 | 58 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 22 | 58 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 22 | 58 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 22 | 58 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -2,7 +2,7 @@
 
 **Head coach:** Alex Stone  
 **Game:** Cleveland at Jacksonville, Sunday, October 19, 2014, 1 p.m. ET, EverBank Field  
-**Briefing used:** October 12, 2014  
+**Briefing used:** October 19, 2014  
 **Baseline:** Carry Week 6
 
 ## 1. What I want this game to look like
@@ -17,7 +17,7 @@
 
 **Inactives:** Standing rule
 
-**Depth/role changes:** Offensive line order: Eugene Monroe, Andrew Norwell, Corey Linsley, Trai Turner, Lane Johnson, Cornelius Lucas, Mike Brewster, Charles Leno Jr., Joel Bitonio; Nickel: Alan Ball; Outside reserve corner: Malcolm Butler
+**Depth/role changes:** Running backs order: C.J. Anderson, Maurice Jones-Drew, Jonathan Grimes; Wide receivers order: Davante Adams, Adam Thielen, Andrew Hawkins, Allen Hurns, Taylor Gabriel, Hakeem Nicks; Tight ends order: Travis Kelce, Marcedes Lewis, Marcel Jensen, Gator Hoskins; Offensive line order: Eugene Monroe, Andrew Norwell, Corey Linsley, Trai Turner, Lane Johnson, Cornelius Lucas, Mike Brewster, Charles Leno Jr., Joel Bitonio; Defensive line order: Jeremy Mincey, Aaron Donald, Sen'Derrick Marks, Andre Branch, Roy Miller, C.J. Mosley, Daniel Te'o-Nesheim, Kasim Edebali; Linebackers order: Daryl Smith, Paul Posluszny, Telvin Smith, Sio Moore, Julian Stanford, Christian Jones, Todd Davis; Nickel: Alan Ball; Outside reserve corner: Malcolm Butler
 
 **If Bitonio or Bouye cannot dress:** Andrew Norwell takes the first-unit left-guard work beside Monroe and Linsley; Brewster is the interior relief. Alan Ball takes the nickel and Malcolm Butler the outside reserve job, with Prosinski the sixth defensive back and Phillips the safety reserve. These are the Week 7 answers if the October 15 reassessments do not clear Bitonio or Bouye. If either is cleared unexpectedly, I recheck the order, nickel and seven inactives with the medical staff before the final sheet.
 
@@ -44,7 +44,7 @@
 | 12 SHIFT Empty, Stick | normal downs, third and medium, two-minute, two-point tries | Force a coverage count without substituting; give Cousins a fast leverage answer. | Linsley identifies the pressure, Cousins the hot. Drop the shift when the protection exchange is late. |
 | 12 Trey, Y-Cross, SOLID | normal downs, second and long, third and medium, third and long, high red zone, two-minute, four-minute | Kelce threatens the intermediate middle with Lewis helping the complementary level. | SOLID protection, then the actual linebacker and safety leverage. No predetermined Kelce target. |
 | 11 Bunch, Mesh, HALF | normal downs, third and medium, low red zone, two-minute, two-point tries | Legal shallow traffic versus man, settle versus zone, and room for a catch-and-run. | Teach the exchange and HALF's backside scan; no rub, drift or blind throw into the robber. |
-| 11 Doubles, Stick, SCAT | normal downs, third and medium, backed up, two-minute | A quick answer when Mingo or Kruger adds stress to the launch point. | The immediate throw replaces the extra rusher; if the count is wrong, get out of the call. |
+| 11 Doubles, Stick, SCAT (without Nicks X relief) | normal downs, third and medium, backed up, two-minute | A quick answer when Mingo or Kruger adds stress to the launch point. | The immediate throw replaces the extra rusher; if the count is wrong, get out of the call. |
 | 11 Doubles, RB Slow Screen | second and long, third and long, two-minute, sudden change | Punish upfield pursuit only after the rush creates the space. | Yarno and Spencer verify release timing. No screen into a defender sitting on Anderson or Jones-Drew. |
 | 12 Ace, Power Right | normal downs, third and short, backed up, low red zone, goal line, four-minute, two-point tries | Test the interior fit and make Whitner declare whether he is a plus-one fitter. | Jones-Drew is available for his rehearsed downhill job; secure the exchange and account for the puller. |
 | 12 Ace, Counter Right | normal downs, third and short, low red zone, goal line, four-minute, two-point tries | Counter a defense flowing ahead of Power and Zone. | Don't call into immediate penetration that wrecks the pull. |
@@ -52,6 +52,7 @@
 | 11 Doubles, Inside Zone Right | normal downs, backed up, four-minute | Take the inside crease when Cleveland widens to stop the edge or a detached tight end. | Norwell and Linsley must execute the combination into the linebacker. |
 | 12 Ace, Power Pass / Post-Cross, MAX | normal downs, high red zone, sudden change, final play of the half | Work behind a safety who has actually inserted against Power. | MAX stays intact; no slow shot if Cousins is taking immediate pressure. |
 | 11 Trey, Dagger, HALF | third and long, two-minute | Vertical clear-out with the dig arriving beyond the marker against the right leverage. | Use only with a clean HALF count; check down or abandon the deep dig when the rush beats the clock. |
+| 11 Doubles, Drive, HALF (without Nicks X relief) | second and long, third and medium, third and long, two-minute, PRESS sequence | As carried from Week 6; Nicks X relief comes off because Nicks does not dress under this week's receiver order. | As carried from Week 6. |
 | 12 Wing, TE Delay | second and long, high red zone, third and medium | Lewis sells the block and arrives behind an eager rush. | Keep the taught release count. If his man waits, take the next read. |
 | 11 Bunch, Snag | low red zone, two-point tries | Compact-space answer to outside leverage without asking for a late cross-field throw. | Keep it in the scoring-area folder with clean legal spacing. |
 

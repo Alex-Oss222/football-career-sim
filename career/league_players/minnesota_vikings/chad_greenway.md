@@ -1,10 +1,10 @@
 # Chad Greenway
 
-**Minnesota Vikings · Outside linebacker · No. 52 · Age 31 · Last game October 12, 2014**
+**Minnesota Vikings · Outside linebacker · No. 52 · Age 31 · Last game October 19, 2014**
 
 6' 3", 237 lb · Born January 12, 1983 · Iowa · Drafted in 2006, first round, by Minnesota
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Chad Greenway](https://commons.wikimedia.org/wiki/Special:FilePath/Chad_Greenway_%282%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting weakside linebacker.
 
-**Tackles:** 56 (2014, through Week 6).
+**Tackles:** 70 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 31 | 52 | 6 | 56 | 38 | 18 | 5 | 2 | 5 |
+| 2014 (through Week 7) | Minnesota | 31 | 52 | 7 | 70 | 48 | 22 | 6 | 2 | 5 |
 | 2013 | Minnesota | 30 | 52 | 16 | 139 | 100 | 39 | 6 | 8 | 12 |
-| Career |  |  |  | 22 | 195 | 138 | 57 | 11 | 10 | 17 |
+| Career |  |  |  | 23 | 209 | 148 | 61 | 12 | 10 | 17 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 31 | 52 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Minnesota | 31 | 52 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | Minnesota | 30 | 52 | 1 | 6 | 8 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Bjoern Werner
 
-**Indianapolis Colts · Outside linebacker · No. 92 · Age 24 · Last game October 9, 2014**
+**Indianapolis Colts · Outside linebacker · No. 92 · Age 24 · Last game October 19, 2014**
 
 6' 3", 257 lb · Born August 30, 1990 · Florida State
 
-As of October 9, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Bjoern Werner](https://commons.wikimedia.org/wiki/Special:FilePath/Bj%C3%B6rn_Werner.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 9, 2014, after Week 6.
 
 **Current assignment:** Starting outside linebacker.
 
-**Tackles:** 16 (2014, through Week 6).
+**Tackles:** 20 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 24 | 92 | 6 | 16 | 12 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Indianapolis | 24 | 92 | 7 | 20 | 13 | 7 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 23 | 92 | 15 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 21 | 16 | 12 | 4 | 0 | 0 | 0 |
+| Career |  |  |  | 22 | 20 | 13 | 7 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Indianapolis | 24 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Indianapolis | 24 | 92 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Indianapolis | 23 | 92 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

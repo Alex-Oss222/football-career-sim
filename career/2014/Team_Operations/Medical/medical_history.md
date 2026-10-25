@@ -247,3 +247,26 @@ Two Jacksonville players were injured in the [Week 6 game at Tennessee](../../Re
 - [Joel Bitonio](incidents/joel_bitonio_2014-10-12.md), OT: lower extremity, short; injured at 1:13 of the fourth quarter, not removed; out, projected return October 22 (10 days), reassessment October 15.
 
 A projected return is the medical staff's projection, not a clearance. No other Jacksonville injury was recorded in the game.
+
+<!-- event-record: {"date": "2014-10-13", "date_end": "2014-10-18", "id": "2014-10-13-to-10-18-bitonio-bouye-reassessed", "status": "closed", "summary": "Joel Bitonio and A.J. Bouye were reassessed October 15, the date their October 12 instructions named, with no change: out, projected return October 22, no further reassessment date; neither took part in the October 15, 16 and 17 practices, and both are out for the Week 7 game. The Cleveland practice week produced no injury and no new restriction."} -->
+
+## October 13 to 18: Bitonio and Bouye reassessed, no change
+
+- **Joel Bitonio, OT: reassessed October 15 with no change.** The medical staff reassessed him on the date his October 12 instruction named. The instruction stands: out, projected return October 22, no further reassessment date, no football work. He took no part in the Wednesday, Thursday and Friday practices; under Stone's Week 7 Game Plan Andrew Norwell took the first-unit left-guard work beside Eugene Monroe and Corey Linsley. The league's report lists him as a non-participant Wednesday through Friday and out for the game ([incident record](incidents/joel_bitonio_2014-10-12.md)).
+- **A.J. Bouye, CB: reassessed October 15 with no change.** Reassessed on the date his instruction named; the instruction stands: out, projected return October 22, no further reassessment date, no football work. He took no part in the three practices; under Stone's plan Alan Ball took the nickel and Malcolm Butler the outside reserve corner work. The league's report lists him as a non-participant Wednesday through Friday and out for the game ([incident record](incidents/a_j_bouye_2014-10-12.md)).
+
+The Cleveland practice week (the Monday walkthrough, October 13; the players' day off, October 14; the Wednesday practice in helmets and shoulder pads, the week's one padded practice; the Thursday and Friday practices in helmets; and the Saturday walkthrough, October 18) produced no injury and no new restriction; the program has no injury draw for practices, and only communicated instructions are recorded. No reassessment was communicated in the week for the players on reserve/injured.
+
+<!-- event-record: {"date": "2014-10-19", "id": "2014-10-19-week-7-injuries-against-cleveland", "status": "closed", "summary": "Five Jacksonville players were injured in the Week 7 game against Cleveland (Cleveland 34, Jacksonville 31): Andrew Norwell (head/neck, short; removed; independent medical hold, projected return November 2, reassessment October 23), Aqib Talib (head/neck, minor; removed; independent medical hold, projected return October 22, reassessment October 20), Daryl Smith (lower extremity, short; removed; out, projected return October 31, reassessment October 23), Alterraun Verner (lower extremity, minor; not removed; limited, no time lost projected, reassessment October 20) and Davante Adams (lower extremity, minor; not removed; out, projected return October 20, reassessment October 20)."} -->
+
+## October 19: Week 7 injuries against Cleveland
+
+Five Jacksonville players were injured in the [Week 7 game against Cleveland](../../Regular_Season/Games/Week_07/Game_Report.md) (Cleveland 34, Jacksonville 31), each with its own incident record:
+
+- [Andrew Norwell](incidents/andrew_norwell_2014-10-19.md), G: head/neck, short; injured at 6:26 of the first quarter, removed; independent medical hold, projected return November 2 (14 days), reassessment October 23.
+- [Aqib Talib](incidents/aqib_talib_2014-10-19.md), CB: head/neck, minor; injured at 2:45 of the first quarter, removed; independent medical hold, projected return October 22 (3 days), reassessment October 20.
+- [Daryl Smith](incidents/daryl_smith_2014-10-19.md), LB: lower extremity, short; injured at 10:27 of the second quarter, removed; out, projected return October 31 (12 days), reassessment October 23.
+- [Alterraun Verner](incidents/alterraun_verner_2014-10-19.md), CB: lower extremity, minor; injured at 10:27 of the second quarter, not removed; limited, no time lost projected, reassessment October 20.
+- [Davante Adams](incidents/davante_adams_2014-10-19.md), WR: lower extremity, minor; injured at 0:00 of the second quarter, not removed; out, projected return October 20 (1 day), reassessment October 20.
+
+A projected return is the medical staff's projection, not a clearance. No other Jacksonville injury was recorded in the game.

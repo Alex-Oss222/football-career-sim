@@ -1,10 +1,10 @@
 # Stevie Brown
 
-**New York Giants · Free safety · No. 27 · Age 27 · Last game October 12, 2014**
+**New York Giants · Free safety · No. 27 · Age 27 · Last game October 19, 2014**
 
 5' 11", 215 lb · Born July 17, 1987 · Michigan · Drafted in 2010, seventh round, by Oakland
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Stevie Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Stevie_Brown.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 1 (2014, through Week 6).
+**Passes defended:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 27 | 27 | 6 | 22 | 11 | 11 | 2 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Giants | 27 | 27 | 7 | 30 | 18 | 12 | 2 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 27 | 27 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Giants | 27 | 27 | 0 | 0 | 2 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Rob Sims
 
-**Detroit Lions · Guard · No. 67 · Age 30 · Last game October 12, 2014**
+**Detroit Lions · Guard · No. 67 · Age 30 · Last game October 19, 2014**
 
 6' 3", 312 lb · Born December 6, 1983 · Ohio State · Drafted in 2006, fourth round, by Seattle
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Rob Sims](https://commons.wikimedia.org/wiki/Special:FilePath/Rob_Sims.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 3 (2014, through Week 6).
+**Sacks allowed:** 3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Detroit | 30 | 67 | 6 | 6 | 394 | 3 | 28 |
+| 2014 (through Week 7) | Detroit | 30 | 67 | 7 | 7 | 454 | 3 | 34 |
 | 2013 | Detroit | 29 | 67 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 10 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

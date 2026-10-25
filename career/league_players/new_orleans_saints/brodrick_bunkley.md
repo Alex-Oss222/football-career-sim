@@ -1,18 +1,16 @@
 # Brodrick Bunkley
 
-**New Orleans Saints · Nose tackle · No. 77 · Age 30 · Last game October 5, 2014**
+**New Orleans Saints · Nose tackle · No. 77 · Age 30 · Last game October 19, 2014**
 
 6' 2", 306 lb · Born November 23, 1983 · Florida State · Drafted in 2006, first round, by Philadelphia
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Brodrick Bunkley](https://commons.wikimedia.org/wiki/Special:FilePath/Brodrick_Bunkley_2007.jpg?width=500)
 
 *Photo: Eagles_v_cowboys_2007.jpg : Billy Bob Bain derivative work: Lpdrew ( talk ), [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Brodrick_Bunkley_2007.jpg)).*
 
-**Current assignment:** Starting nose tackle.
-
-**Sacks:** 5 (2014, through Week 5).
+**Sacks:** 6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 30 | 77 | 5 | 17 | 14 | 3 | 3 | 5 | 6 |
+| 2014 (through Week 7) | New Orleans | 30 | 77 | 6 | 22 | 18 | 4 | 3 | 6 | 7 |
 | 2013 | New Orleans | 29 | 77 | 15 | 56 | 36 | 20 | 5 | 8 | 12 |
-| Career |  |  |  | 20 | 73 | 50 | 23 | 8 | 13 | 18 |
+| Career |  |  |  | 21 | 78 | 54 | 24 | 8 | 14 | 19 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 30 | 77 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | New Orleans | 30 | 77 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | New Orleans | 29 | 77 | 0 | 0 | 0 | 1 | 1 | N/A |
 
 ### Playoffs

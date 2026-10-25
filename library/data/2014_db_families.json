@@ -1038,6 +1038,16 @@
    "weekly_label": "CB",
    "weekly_week": 1
   },
+  "00-0027359": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Ross Weaver",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
   "00-0027375": {
    "basis": "chart_slot",
    "chart_slot": "LCB1",
@@ -3668,6 +3678,16 @@
    "weekly_label": "CB",
    "weekly_week": 4
   },
+  "00-0031379": {
+   "basis": "rails_position",
+   "chart_slot": null,
+   "family": "corner",
+   "origin": "rails",
+   "player_id": "Victor Hampton",
+   "position": "CB",
+   "weekly_label": null,
+   "weekly_week": null
+  },
   "00-0031380": {
    "basis": "chart_slot",
    "chart_slot": "RCB3",
@@ -3749,7 +3769,7 @@
   },
   "inseason_rails_manifest": {
    "path": "library/data/2014_inseason_rails/manifest.json",
-   "sha256": "4d2a953dc7bfdbb2d55dbfb545f3f6045486d5b92cd6df4fea633c721324380f"
+   "sha256": "f936516aff83aeecb57f64d7b3f8b5769b474293275589e2140f4386c3a6d513"
   },
   "roster_weekly_2014w4.csv": {
    "scope": "2014 REG Weeks 1-4, the latest week per player",
@@ -3764,8 +3784,8 @@
  "verification": {
   "basis": {
    "chart_slot": 286,
-   "none": 15,
-   "rails_position": 60,
+   "none": 17,
+   "rails_position": 62,
    "weekly_roster": 27
   },
   "chart_and_weekly_disagree": [],

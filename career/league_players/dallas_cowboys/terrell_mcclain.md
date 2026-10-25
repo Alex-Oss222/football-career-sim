@@ -1,10 +1,10 @@
 # Terrell McClain
 
-**Dallas Cowboys · Defensive tackle · No. 97 · Age 26 · Last game October 12, 2014**
+**Dallas Cowboys · Defensive tackle · No. 97 · Age 26 · Last game October 19, 2014**
 
 6' 2", 300 lb · Born July 20, 1988 · University of South Florida · Drafted in 2011, third round, by Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Terrell McClain](https://commons.wikimedia.org/wiki/Special:FilePath/2022%2C_98%2C_Terrell_McClain.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 2 (2014, through Week 6).
+**Sacks:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 26 | 97 | 6 | 5 | 3 | 2 | 0 | 2 | 2 |
+| 2014 (through Week 7) | Dallas | 26 | 97 | 7 | 6 | 4 | 2 | 0 | 2 | 2 |
 | 2013 | Houston | 25 | 97 | 16 | 10 | 5 | 5 | 0 | 0 | 0 |
-| Career |  |  |  | 22 | 15 | 8 | 7 | 0 | 2 | 2 |
+| Career |  |  |  | 23 | 16 | 9 | 7 | 0 | 2 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 26 | 97 | 0 | 0 | 2 | 1 | 1 | 0 |
+| 2014 (through Week 7) | Dallas | 26 | 97 | 0 | 0 | 2 | 1 | 1 | 0 |
 | 2013 | Houston | 25 | 97 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

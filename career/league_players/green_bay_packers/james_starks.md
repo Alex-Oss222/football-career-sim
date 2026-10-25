@@ -1,10 +1,10 @@
 # James Starks
 
-**Green Bay Packers · Running back · No. 44 · Age 28 · Last game October 12, 2014**
+**Green Bay Packers · Running back · No. 44 · Age 28 · Last game October 19, 2014**
 
 6' 2", 218 lb · Born February 25, 1986 · Buffalo · Drafted in 2010, sixth round, by Green Bay
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![James Starks](https://commons.wikimedia.org/wiki/Special:FilePath/James_Starks.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 3.5 (2014, through Week 6).
+**Yards per carry:** 3.5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 28 | 44 | 5 | 19 | 67 | 3.5 | 1 | 18 | 13.4 |
+| 2014 (through Week 7) | Green Bay | 28 | 44 | 5 | 19 | 67 | 3.5 | 1 | 18 | 13.4 |
 | 2013 | Green Bay | 27 | 44 | 16 | 84 | 415 | 4.9 | 5 | 53 | 25.9 |
 | Career |  |  |  | 21 | 103 | 482 | 4.7 | 6 | 53 | 23.0 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 28 | 44 | 6 | 4 | 43 | 10.8 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Green Bay | 28 | 44 | 6 | 4 | 43 | 10.8 | 0 | 0 | 0 |
 | 2013 | Green Bay | 27 | 44 | 21 | 15 | 195 | 13.0 | 1 | 0 | 0 |
 
 ### Playoffs

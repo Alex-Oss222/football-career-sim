@@ -1,10 +1,10 @@
 # Rahim Moore
 
-**Denver Broncos · Free safety · No. 26 · Age 24 · Last game October 12, 2014**
+**Denver Broncos · Free safety · No. 26 · Age 24 · Last game October 19, 2014**
 
 6' 1", 195 lb · Born February 11, 1990 · UCLA · Drafted in 2011, second round, by Denver
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Rahim Moore](https://commons.wikimedia.org/wiki/Special:FilePath/Rahim_Moore_%28Broncos%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 1 (2014, through Week 6).
+**Passes defended:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 24 | 26 | 5 | 34 | 25 | 9 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Denver | 24 | 26 | 6 | 40 | 27 | 13 | 0 | 0 | 0 |
 | 2013 | Denver | 23 | 26 | 16 | 111 | 73 | 38 | 4 | 0 | 1 |
-| Career |  |  |  | 21 | 145 | 98 | 47 | 4 | 0 | 1 |
+| Career |  |  |  | 22 | 151 | 100 | 51 | 4 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 24 | 26 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Denver | 24 | 26 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Denver | 23 | 26 | 7 | 70 | 21 | 0 | 0 | N/A |
 
 ### Playoffs

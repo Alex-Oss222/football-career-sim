@@ -1,10 +1,10 @@
 # Maurkice Pouncey
 
-**Pittsburgh Steelers · Center · No. 53 · Age 25 · Last game October 12, 2014**
+**Pittsburgh Steelers · Center · No. 53 · Age 25 · Last game October 20, 2014**
 
 6' 4", 304 lb · Born July 24, 1989 · Florida · Drafted in 2010, first round, by Pittsburgh
 
-As of October 12, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Maurkice Pouncey](https://commons.wikimedia.org/wiki/Special:FilePath/Maurkice_Pouncey.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 3 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 25 | 53 | 5 | 5 | 323 | 3 | 28 |
+| 2014 (through Week 7) | Pittsburgh | 25 | 53 | 6 | 6 | 385 | 4 | 35 |
 | 2013 | Pittsburgh | 24 | 53 | 16 | N/A | N/A | 2 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 5 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

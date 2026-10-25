@@ -1,10 +1,10 @@
 # Ryan Succop
 
-**Tennessee Titans · Kicker · No. 8 · Age 28 · Last game October 12, 2014**
+**Tennessee Titans · Kicker · No. 8 · Age 28 · Last game October 19, 2014**
 
 6' 2", 218 lb · Born September 19, 1986 · South Carolina · Drafted in 2009, seventh round, by Kansas City
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Ryan Succop](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Succop.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 92.9 (2014, through Week 6).
+**Field-goal percentage:** 88.2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 27 | 8 | 6 | 13 | 14 | 92.9 | 56 | 11 | 11 | 100.0 | 50 |
+| 2014 (through Week 7) | Tennessee | 27 | 8 | 7 | 15 | 17 | 88.2 | 56 | 14 | 14 | 100.0 | 59 |
 | 2013 | Kansas City | 26 | 6 | 16 | 35 | 38 | 92.1 | N/A | 42 | 42 | 100.0 | 147 |
-| Career |  |  |  | 22 | 48 | 52 | 92.3 | N/A | 53 | 53 | 100.0 | 197 |
+| Career |  |  |  | 23 | 50 | 55 | 90.9 | N/A | 56 | 56 | 100.0 | 206 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 27 | 8 | 6-6 | 5-6 | 2-2 |
+| 2014 (through Week 7) | Tennessee | 27 | 8 | 7-8 | 6-7 | 2-2 |
 | 2013 | Kansas City | 26 | 6 | N/A | N/A | N/A |
 
 ### Playoffs

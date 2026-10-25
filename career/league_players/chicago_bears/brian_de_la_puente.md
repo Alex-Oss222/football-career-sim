@@ -1,16 +1,18 @@
 # Brian De La Puente
 
-**Chicago Bears · Center · No. 64 · Age 29 · Last game October 12, 2014**
+**Chicago Bears · Center · No. 64 · Age 29 · Last game October 19, 2014**
 
 6' 3", 306 lb · Born May 13, 1985 · California
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Brian De La Puente](https://commons.wikimedia.org/wiki/Special:FilePath/Brian_de_la_Puente.JPG?width=500)
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Brian_de_la_Puente.JPG)).*
 
 **Current assignment:** Reserve center.
+
+**Sacks allowed:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -22,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 29 | 64 | 6 | 0 | 0 | 0 | 25 |
+| 2014 (through Week 7) | Chicago | 29 | 64 | 7 | 0 | 5 | 0 | 31 |
 | 2013 | New Orleans | 28 | 60 | 16 | N/A | N/A | 8 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 8 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 8 | N/A |
 
 ### Playoffs
 

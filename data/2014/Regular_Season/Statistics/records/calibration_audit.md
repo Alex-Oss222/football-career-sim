@@ -1,7 +1,7 @@
 # 2014 statistical band audit
 
-**Version:** `2014-W06-BAND-AUDIT`
-**Through:** Week 6.
+**Version:** `2014-W07-BAND-AUDIT`
+**Through:** Week 7.
 
 League-wide receipts compared with the sourced 2012 shapes in `library/data/2012_nfl_aggregate_baseline.json`, `library/data/2012_nfl_position_usage_baseline.json`, `library/data/2012_nfl_drive_model.json` and `library/data/2012_nfl_field_position_model.json`. This is a defect detector for engine code and TeamInputs. An OUTSIDE row is investigated; it never reruns, selects or edits a closed game. Receipts are split into cohorts by kernel version; grading starts at 16 team-games per cohort.
 
@@ -674,34 +674,34 @@ Zero-tolerance counts from `runtime.play_detail.check_ledger` (15 original and 1
 | goal to go mismatch | 0 | WITHIN |
 | layout resample incoherent | 0 | WITHIN |
 
-## Kernel 2014.6 cohort (Weeks 5-6)
+## Kernel 2014.6 cohort (Weeks 5-7)
 
-**Calibration base:** 2010_2014w4 (`library/data/2010_2014w4_nfl_aggregate_baseline.json`, `library/data/2010_2014w4_nfl_drive_model.json`, `library/data/2010_2014w4_nfl_field_position_model.json`, `library/data/2010_2014w4_nfl_position_usage_baseline.json`, `library/data/2010_2014w4_nfl_injury_calibration.json`, `library/data/2014_strength_calibration_v2.json`, `library/data/2010_2014w4_scoring_decisions.json`, `library/data/2010_2014w4_fourth_down_decisions.json`, `library/data/2010_2014w4_ball_security.json`, `library/data/2010_2014w4_penalties.json`, `library/data/2010_2014w4_yardage.json`). **Team-games audited:** 60. Carry shares exclude kneels.
+**Calibration base:** 2010_2014w4 (`library/data/2010_2014w4_nfl_aggregate_baseline.json`, `library/data/2010_2014w4_nfl_drive_model.json`, `library/data/2010_2014w4_nfl_field_position_model.json`, `library/data/2010_2014w4_nfl_position_usage_baseline.json`, `library/data/2010_2014w4_nfl_injury_calibration.json`, `library/data/2014_strength_calibration_v2.json`, `library/data/2010_2014w4_scoring_decisions.json`, `library/data/2010_2014w4_fourth_down_decisions.json`, `library/data/2010_2014w4_ball_security.json`, `library/data/2010_2014w4_penalties.json`, `library/data/2010_2014w4_yardage.json`). **Team-games audited:** 90. Carry shares exclude kneels.
 
 | Metric | Observed | 2010_2014w4 base centre | Tolerance | Status |
 |---|---:|---:|---:|---|
-| QB1 share of team pass attempts | 0.998 | 0.974 | ±0.050 | WITHIN |
-| top receiver share of team targets (team-game) | 0.311 | 0.290 | ±0.025 | WITHIN |
-| top rusher share of non-QB carries (team-game) | 0.711 | 0.694 | ±0.061 | WITHIN |
-| FB share of carries | 0.014 | 0.027 | ±0.050 | WITHIN |
-| QB share of carries | 0.083 | 0.089 | ±0.050 | WITHIN |
-| RB share of carries | 0.883 | 0.859 | ±0.050 | WITHIN |
-| TE share of carries | 0.001 | 0.001 | ±0.050 | WITHIN |
-| WR share of carries | 0.019 | 0.022 | ±0.050 | WITHIN |
-| FB share of targets | 0.022 | 0.026 | ±0.050 | WITHIN |
-| RB share of targets | 0.173 | 0.165 | ±0.050 | WITHIN |
-| TE share of targets | 0.207 | 0.211 | ±0.050 | WITHIN |
-| WR share of targets | 0.598 | 0.597 | ±0.050 | WITHIN |
-| DB share of tackle credits | 0.382 | 0.402 | ±0.050 | WITHIN |
-| DL share of tackle credits | 0.260 | 0.226 | ±0.050 | WITHIN |
-| LB share of tackle credits | 0.358 | 0.351 | ±0.050 | WITHIN |
-| Assisted share of tackle credits | 0.337 | 0.348 | ±0.050 | WITHIN |
-| plays per team game | 63.0 | 64.0 | ±6.0 | WITHIN |
-| yards per team game | 340.1 | 344.9 | ±40.0 | WITHIN |
-| points per team game | 22.2 | 22.6 | ±5.0 | WITHIN |
-| first downs per team game | 19.8 | 19.6 | ±3.0 | WITHIN |
-| third down attempts per team game | 13.2 | 13.4 | ±2.5 | WITHIN |
-| third down rate | 0.383 | 0.384 | ±0.060 | WITHIN |
+| QB1 share of team pass attempts | 0.995 | 0.974 | ±0.050 | WITHIN |
+| top receiver share of team targets (team-game) | 0.310 | 0.290 | ±0.020 | WITHIN |
+| top rusher share of non-QB carries (team-game) | 0.708 | 0.694 | ±0.050 | WITHIN |
+| FB share of carries | 0.015 | 0.027 | ±0.050 | WITHIN |
+| QB share of carries | 0.086 | 0.089 | ±0.050 | WITHIN |
+| RB share of carries | 0.876 | 0.859 | ±0.050 | WITHIN |
+| TE share of carries | 0.002 | 0.001 | ±0.050 | WITHIN |
+| WR share of carries | 0.021 | 0.022 | ±0.050 | WITHIN |
+| FB share of targets | 0.024 | 0.026 | ±0.050 | WITHIN |
+| RB share of targets | 0.170 | 0.165 | ±0.050 | WITHIN |
+| TE share of targets | 0.210 | 0.211 | ±0.050 | WITHIN |
+| WR share of targets | 0.596 | 0.597 | ±0.050 | WITHIN |
+| DB share of tackle credits | 0.388 | 0.402 | ±0.050 | WITHIN |
+| DL share of tackle credits | 0.258 | 0.226 | ±0.050 | WITHIN |
+| LB share of tackle credits | 0.354 | 0.351 | ±0.050 | WITHIN |
+| Assisted share of tackle credits | 0.330 | 0.348 | ±0.050 | WITHIN |
+| plays per team game | 63.6 | 64.0 | ±6.0 | WITHIN |
+| yards per team game | 357.2 | 344.9 | ±40.0 | WITHIN |
+| points per team game | 24.2 | 22.6 | ±5.0 | WITHIN |
+| first downs per team game | 20.5 | 19.6 | ±3.0 | WITHIN |
+| third down attempts per team game | 13.0 | 13.4 | ±2.5 | WITHIN |
+| third down rate | 0.402 | 0.384 | ±0.060 | WITHIN |
 
 Points: from kernel 2014.6 the two-point tries, onside kicks and the non-offensive (interception, fumble, punt, blocked-kick and kickoff return) touchdowns with their tries are modelled from the 2010-2014 scoring artifact (the scoring-decision rows below); points per team-game are measured, never forecast. Yards per team game are net of sack yards.
 
@@ -711,26 +711,26 @@ Centres from the base's band centres (equal weight per event); tolerance is thre
 
 | Metric | Observed | 2010_2014w4 base centre | Tolerance | Status |
 |---|---:|---:|---:|---|
-| FG accuracy | 0.828 | 0.840 | ±0.100 | WITHIN |
-| FG accuracy <30 yd | 0.923 | 0.965 | ±0.107 | INSUFFICIENT SAMPLE |
-| FG accuracy 30-39 yd | 0.806 | 0.886 | ±0.159 | WITHIN |
-| FG accuracy 40-49 yd | 0.810 | 0.777 | ±0.193 | WITHIN |
-| FG accuracy 50+ yd | 0.778 | 0.627 | ±0.342 | INSUFFICIENT SAMPLE |
-| XP accuracy (informational; partially verified) | 1.000 | 0.993 | ±0.021 | WITHIN |
-| FGA per team game | 2.0 | 1.947 | ±0.540 | WITHIN (known detection) |
-| FGM per team game | 1.683 | 1.635 | ±0.495 | WITHIN (known detection) |
-| drives per team game (nflverse definition; PFR 10.47) | 11.5 | 11.8 | ±1.329 | WITHIN |
-| punts per team game (drive-ending) | 4.8 | 4.8 | ±0.850 | WITHIN (known detection) |
-| drive share: touchdown | 0.194 | 0.195 | ±0.045 | WITHIN (provisional detection, re-graded at B17) |
-| drive share: field goal attempt | 0.177 | 0.165 | ±0.042 | WITHIN |
-| drive share: punt | 0.417 | 0.409 | ±0.056 | WITHIN (provisional detection, re-graded at B17) |
-| drive share: turnover (INT + fumble lost) | 0.110 | 0.127 | ±0.038 | WITHIN |
-| drive share: downs | 0.035 | 0.036 | ±0.021 | WITHIN |
-| drive share: safety | 0.001 | 0.003 | ±0.006 | WITHIN (provisional detection, re-graded at B17) |
-| drive share: clock | 0.067 | 0.065 | ±0.028 | WITHIN (known detection) |
-| clock-expired drives per team game | 0.767 | 0.761 | ±0.338 | WITHIN (known detection) |
-| offensive-drive turnovers per team game | 1.267 | 1.500 | ±0.474 | WITHIN |
-| interception share of turnovers | 0.632 | 0.641 | ±0.165 | WITHIN |
+| FG accuracy | 0.845 | 0.840 | ±0.081 | WITHIN |
+| FG accuracy <30 yd | 0.951 | 0.965 | ±0.086 | WITHIN |
+| FG accuracy 30-39 yd | 0.862 | 0.886 | ±0.125 | WITHIN |
+| FG accuracy 40-49 yd | 0.817 | 0.777 | ±0.161 | WITHIN |
+| FG accuracy 50+ yd | 0.714 | 0.627 | ±0.274 | INSUFFICIENT SAMPLE |
+| XP accuracy (informational; partially verified) | 0.996 | 0.993 | ±0.016 | WITHIN |
+| FGA per team game | 2.1 | 1.947 | ±0.441 | WITHIN (known detection) |
+| FGM per team game | 1.756 | 1.635 | ±0.404 | WITHIN (known detection) |
+| drives per team game (nflverse definition; PFR 10.47) | 11.5 | 11.8 | ±1.085 | WITHIN |
+| punts per team game (drive-ending) | 4.5 | 4.8 | ±0.694 | WITHIN (known detection) |
+| drive share: touchdown | 0.216 | 0.195 | ±0.037 | WITHIN (provisional detection, re-graded at B17) |
+| drive share: field goal attempt | 0.180 | 0.165 | ±0.035 | WITHIN |
+| drive share: punt | 0.393 | 0.409 | ±0.046 | WITHIN (provisional detection, re-graded at B17) |
+| drive share: turnover (INT + fumble lost) | 0.109 | 0.127 | ±0.031 | WITHIN |
+| drive share: downs | 0.033 | 0.036 | ±0.017 | WITHIN |
+| drive share: safety | 0.002 | 0.003 | ±0.005 | WITHIN (provisional detection, re-graded at B17) |
+| drive share: clock | 0.067 | 0.065 | ±0.023 | WITHIN (known detection) |
+| clock-expired drives per team game | 0.778 | 0.761 | ±0.276 | WITHIN (known detection) |
+| offensive-drive turnovers per team game | 1.256 | 1.500 | ±0.387 | WITHIN |
+| interception share of turnovers | 0.664 | 0.641 | ±0.135 | WITHIN |
 
 Known detections (`runtime/bands.py` `KNOWN_DETECTIONS`): graded rows with a documented design cause, accepted rather than tuned. Each stays graded; OUTSIDE within 2x its tolerance is the documented detection, and beyond that it is investigated. No centre, tolerance, coefficient or pool was changed. A row marked PROVISIONAL is a carried diagnosis from the kernel 2014.6 build, not an accepted detection: it is not bounded, and batch B17 re-grades it with the provisional status removed; a row still OUTSIDE then goes to the user (U8).
 
@@ -757,66 +757,66 @@ Centres from the base's band centres and its drawn transition pools. Rates use 3
 
 | Metric | Observed | 2010_2014w4 base centre | Tolerance | Status |
 |---|---:|---:|---:|---|
-| kickoff touchback share | 0.479 | 0.487 | ±0.088 | WITHIN |
-| mean start after a non-touchback kickoff (yardline_100) | 76.0 | 76.9 | ±2.4 | WITHIN |
-| mean realized punt net, LOS opp 39-30 | 18.8 | 26.0 | ±9.7 | INSUFFICIENT SAMPLE |
-| mean realized punt net, LOS opp 49-40 | 33.0 | 32.1 | ±3.4 | WITHIN |
-| mean realized punt net, LOS own 1-10 | 43.5 | 42.6 | ±9.0 | INSUFFICIENT SAMPLE |
-| mean realized punt net, LOS own 11-20 | 46.1 | 43.5 | ±5.4 | WITHIN |
-| mean realized punt net, LOS own 21-30 | 43.2 | 42.3 | ±4.1 | WITHIN |
-| mean realized punt net, LOS own 31-40 | 42.4 | 41.6 | ±5.0 | WITHIN |
-| mean realized punt net, LOS own 41-50 | 35.7 | 38.4 | ±4.1 | WITHIN |
-| mean kickoff return yards (non-touchback kickoffs) | 24.2 | 23.1 | ±2.6 | WITHIN |
-| mean punt return yards (returned punts) | 10.2 | 9.1 | ±2.8 | WITHIN |
-| punt share of possessions ending in Q4's last 5:00 or OT, offense trailing 1-8 | 0.048 | 0.100 | ±0.197 | INSUFFICIENT SAMPLE |
-| punt share of possessions ending in Q4's last 2:00 or OT, offense trailing 1-8 | 0.000 | 0.004 | ±0.051 | INSUFFICIENT SAMPLE |
-| third-down attempts per punt drive | 1.206 | 1.189 | ±0.080 | WITHIN |
-| sacks per dropback | 0.069 | 0.063 | ±0.016 | WITHIN |
-| DB share of sack credits | 0.053 | 0.083 | ±0.068 | WITHIN |
-| DL share of sack credits | 0.573 | 0.566 | ±0.121 | WITHIN |
-| LB share of sack credits | 0.373 | 0.351 | ±0.117 | WITHIN |
-| first-half final possessions: field-goal-attempt share | 0.333 | 0.265 | ±0.242 | WITHIN |
-| first-half final possessions: clock share | 0.633 | 0.663 | ±0.259 | WITHIN |
-| P(final | first-half possession starting with 61-120 s left) | 0.471 | 0.274 | ±0.325 | INSUFFICIENT SAMPLE |
-| P(final | first-half possession starting with 121-240 s left) | 0.000 | 0.081 | ±0.164 | INSUFFICIENT SAMPLE |
-| first-half final possessions starting with 0-30 s left (share) | 0.533 | 0.494 | ±0.274 | WITHIN |
-| first-half final possessions starting with 31-60 s left (share) | 0.200 | 0.257 | ±0.239 | WITHIN |
-| first-half final possessions starting with 61-120 s left (share) | 0.267 | 0.177 | ±0.209 | WITHIN |
-| first-half final possessions starting with 121-240 s left (share) | 0.000 | 0.054 | ±0.124 | WITHIN |
-| first-half final possessions starting with 241-600 s left (share) | 0.000 | 0.018 | ±0.072 | WITHIN |
+| kickoff touchback share | 0.480 | 0.487 | ±0.070 | WITHIN |
+| mean start after a non-touchback kickoff (yardline_100) | 76.2 | 76.9 | ±1.939 | WITHIN |
+| mean realized punt net, LOS opp 39-30 | 21.5 | 26.0 | ±8.9 | INSUFFICIENT SAMPLE |
+| mean realized punt net, LOS opp 49-40 | 33.0 | 32.1 | ±2.8 | WITHIN |
+| mean realized punt net, LOS own 1-10 | 42.8 | 42.6 | ±7.3 | INSUFFICIENT SAMPLE |
+| mean realized punt net, LOS own 11-20 | 45.7 | 43.5 | ±4.5 | WITHIN |
+| mean realized punt net, LOS own 21-30 | 42.6 | 42.3 | ±3.5 | WITHIN |
+| mean realized punt net, LOS own 31-40 | 41.6 | 41.6 | ±4.0 | WITHIN |
+| mean realized punt net, LOS own 41-50 | 36.1 | 38.4 | ±3.5 | WITHIN |
+| mean kickoff return yards (non-touchback kickoffs) | 23.3 | 23.1 | ±2.1 | WITHIN |
+| mean punt return yards (returned punts) | 9.8 | 9.1 | ±2.3 | WITHIN |
+| punt share of possessions ending in Q4's last 5:00 or OT, offense trailing 1-8 | 0.028 | 0.100 | ±0.150 | WITHIN |
+| punt share of possessions ending in Q4's last 2:00 or OT, offense trailing 1-8 | 0.000 | 0.004 | ±0.039 | INSUFFICIENT SAMPLE |
+| third-down attempts per punt drive | 1.205 | 1.189 | ±0.067 | WITHIN |
+| sacks per dropback | 0.065 | 0.063 | ±0.013 | WITHIN |
+| DB share of sack credits | 0.047 | 0.083 | ±0.056 | WITHIN |
+| DL share of sack credits | 0.553 | 0.566 | ±0.101 | WITHIN |
+| LB share of sack credits | 0.400 | 0.351 | ±0.098 | WITHIN |
+| first-half final possessions: field-goal-attempt share | 0.244 | 0.265 | ±0.197 | WITHIN |
+| first-half final possessions: clock share | 0.667 | 0.663 | ±0.211 | WITHIN |
+| P(final | first-half possession starting with 61-120 s left) | 0.360 | 0.274 | ±0.268 | INSUFFICIENT SAMPLE |
+| P(final | first-half possession starting with 121-240 s left) | 0.028 | 0.081 | ±0.137 | WITHIN |
+| first-half final possessions starting with 0-30 s left (share) | 0.622 | 0.494 | ±0.224 | WITHIN |
+| first-half final possessions starting with 31-60 s left (share) | 0.156 | 0.257 | ±0.195 | WITHIN |
+| first-half final possessions starting with 61-120 s left (share) | 0.200 | 0.177 | ±0.171 | WITHIN |
+| first-half final possessions starting with 121-240 s left (share) | 0.022 | 0.054 | ±0.101 | WITHIN |
+| first-half final possessions starting with 241-600 s left (share) | 0.000 | 0.018 | ±0.059 | WITHIN |
 | first-half final possessions starting with 601-1800 s left (share) | 0.000 | 0.000 | ±0.000 | WITHIN |
-| clock-expired first halves ending inside the opponent 30 | 0.000 | 0.043 | ±0.140 | INSUFFICIENT SAMPLE |
-| field-goal attempts inside 2:00 of Q4, offense trailing by 12 or more (per team-game) | 0.000 | 0.001 | ±0.012 | WITHIN |
+| clock-expired first halves ending inside the opponent 30 | 0.000 | 0.043 | ±0.111 | WITHIN |
+| field-goal attempts inside 2:00 of Q4, offense trailing by 12 or more (per team-game) | 0.000 | 0.001 | ±0.010 | WITHIN |
 | field-goal attempts inside 2:00 of Q4, offense trailing by 9-11 (per team-game) | 0.000 | 0.011 | — | INFORMATIONAL |
-| defensive timeouts per second-half possession starting over 10:00 | 0.032 | 0.040 | ±0.041 | WITHIN |
-| timeouts per team-game | 3.2 | 3.7 | ±0.608 | WITHIN |
+| defensive timeouts per second-half possession starting over 10:00 | 0.031 | 0.040 | ±0.034 | WITHIN |
+| timeouts per team-game | 3.2 | 3.7 | ±0.540 | WITHIN |
 | overtime spikes with more than 148 s left (zero tolerance) | — | 0.000 | ±0.000 | INSUFFICIENT SAMPLE |
 | trailing overtime punts (zero tolerance) | 0.000 | 0.000 | ±0.000 | WITHIN |
-| mean drive start, all drives (all-drive centre) | 72.5 | 71.6 | — | INFORMATIONAL |
-| start-bin share 90-99 | 0.082 | 0.091 | — | INFORMATIONAL |
-| start-bin share 81-89 | 0.142 | 0.150 | — | INFORMATIONAL |
-| start-bin share 80-80 | 0.266 | 0.232 | — | INFORMATIONAL |
-| start-bin share 70-79 | 0.239 | 0.203 | — | INFORMATIONAL |
-| start-bin share 60-69 | 0.111 | 0.138 | — | INFORMATIONAL |
-| start-bin share 50-59 | 0.051 | 0.074 | — | INFORMATIONAL |
-| start-bin share 40-49 | 0.048 | 0.045 | — | INFORMATIONAL |
-| start-bin share 30-39 | 0.019 | 0.027 | — | INFORMATIONAL |
-| start-bin share 20-29 | 0.022 | 0.020 | — | INFORMATIONAL |
+| mean drive start, all drives (all-drive centre) | 72.4 | 71.6 | — | INFORMATIONAL |
+| start-bin share 90-99 | 0.077 | 0.091 | — | INFORMATIONAL |
+| start-bin share 81-89 | 0.144 | 0.150 | — | INFORMATIONAL |
+| start-bin share 80-80 | 0.273 | 0.232 | — | INFORMATIONAL |
+| start-bin share 70-79 | 0.227 | 0.203 | — | INFORMATIONAL |
+| start-bin share 60-69 | 0.106 | 0.138 | — | INFORMATIONAL |
+| start-bin share 50-59 | 0.066 | 0.074 | — | INFORMATIONAL |
+| start-bin share 40-49 | 0.046 | 0.045 | — | INFORMATIONAL |
+| start-bin share 30-39 | 0.023 | 0.027 | — | INFORMATIONAL |
+| start-bin share 20-29 | 0.018 | 0.020 | — | INFORMATIONAL |
 | start-bin share 1-19 | 0.020 | 0.021 | — | INFORMATIONAL |
-| points per drive, start 1-19 | 3.6 | 4.5 | — | INFORMATIONAL |
-| points per drive, start 20-29 | 2.9 | 3.9 | — | INFORMATIONAL |
-| points per drive, start 30-39 | 3.3 | 3.4 | — | INFORMATIONAL |
-| points per drive, start 40-49 | 4.2 | 2.7 | — | INFORMATIONAL |
-| points per drive, start 50-59 | 2.1 | 2.3 | — | INFORMATIONAL |
-| points per drive, start 60-69 | 1.597 | 1.855 | — | INFORMATIONAL |
-| points per drive, start 70-79 | 1.533 | 1.615 | — | INFORMATIONAL |
-| points per drive, start 80-89 | 1.652 | 1.421 | — | INFORMATIONAL |
-| points per drive, start 90-99 | 0.860 | 1.127 | — | INFORMATIONAL |
-| QB scramble share of QB carries (label stream) | 0.500 | 0.579 | — | INFORMATIONAL |
-| spikes stamped with more than 148 s left in the half (share, informational) | — | 0.000 | — | INSUFFICIENT SAMPLE |
-| fourth-down attempts per team game (drive chains) | 0.833 | 0.889 | — | INFORMATIONAL |
-| fourth-down conversions per team game (drive chains) | 0.383 | 0.423 | — | INFORMATIONAL |
-| kneels per team game | 0.800 | 0.720 | — | INFORMATIONAL |
+| points per drive, start 1-19 | 4.0 | 4.5 | — | INFORMATIONAL |
+| points per drive, start 20-29 | 2.6 | 3.9 | — | INFORMATIONAL |
+| points per drive, start 30-39 | 3.5 | 3.4 | — | INFORMATIONAL |
+| points per drive, start 40-49 | 4.0 | 2.7 | — | INFORMATIONAL |
+| points per drive, start 50-59 | 2.0 | 2.3 | — | INFORMATIONAL |
+| points per drive, start 60-69 | 1.836 | 1.855 | — | INFORMATIONAL |
+| points per drive, start 70-79 | 1.907 | 1.615 | — | INFORMATIONAL |
+| points per drive, start 80-89 | 1.738 | 1.421 | — | INFORMATIONAL |
+| points per drive, start 90-99 | 1.163 | 1.127 | — | INFORMATIONAL |
+| QB scramble share of QB carries (label stream) | 0.467 | 0.579 | — | INFORMATIONAL |
+| spikes stamped with more than 148 s left in the half (share, informational) | 0.000 | 0.000 | — | INSUFFICIENT SAMPLE |
+| fourth-down attempts per team game (drive chains) | 0.756 | 0.889 | — | INFORMATIONAL |
+| fourth-down conversions per team game (drive chains) | 0.322 | 0.423 | — | INFORMATIONAL |
+| kneels per team game | 0.744 | 0.720 | — | INFORMATIONAL |
 
 ### Injury rows
 
@@ -824,13 +824,13 @@ The injury calibration's acceptance bands (kernel 2014.4 method): WITHIN when th
 
 | Metric | Observed | band midpoint | Tolerance | Status |
 |---|---:|---:|---:|---|
-| injury onsets per team-game | 2.4 | 2.7 | ±0.432 | WITHIN |
-| rest-of-game removals per team-game | 0.850 | 0.861 | ±0.253 | WITHIN |
-| head/neck share of onsets | 0.152 | 0.169 | ±0.034 | WITHIN |
-| head/neck onsets per team-game | 0.367 | 0.454 | ±0.083 | OUTSIDE |
-| lower-extremity share of onsets | 0.655 | 0.598 | ±0.057 | WITHIN |
-| time-loss share of onsets (short or longer) | 0.297 | 0.285 | ±0.071 | WITHIN |
-| long-term share of onsets | 0.028 | 0.045 | ±0.027 | WITHIN |
+| injury onsets per team-game | 2.6 | 2.7 | ±0.432 | WITHIN |
+| rest-of-game removals per team-game | 1.000 | 0.861 | ±0.253 | WITHIN |
+| head/neck share of onsets | 0.184 | 0.169 | ±0.034 | WITHIN |
+| head/neck onsets per team-game | 0.478 | 0.454 | ±0.083 | WITHIN |
+| lower-extremity share of onsets | 0.594 | 0.598 | ±0.057 | WITHIN |
+| time-loss share of onsets (short or longer) | 0.299 | 0.285 | ±0.071 | WITHIN |
+| long-term share of onsets | 0.026 | 0.045 | ±0.027 | WITHIN |
 
 ### Scoring-decision rows
 
@@ -838,22 +838,22 @@ Two-point tries, onside kicks and non-offensive touchdowns (kernel 2014.6 batch 
 
 | Metric | Observed | 2010_2014w4 base centre | Tolerance | Status |
 |---|---:|---:|---:|---|
-| two-point attempt share of tries | 0.035 | 0.043 | ±0.051 | WITHIN |
-| two-point conversion rate | 0.400 | 0.496 | ±0.671 | INSUFFICIENT SAMPLE |
-| extra-point rate | 1.000 | 0.993 | ±0.021 | WITHIN |
+| two-point attempt share of tries | 0.043 | 0.043 | ±0.040 | WITHIN |
+| two-point conversion rate | 0.600 | 0.496 | ±0.474 | INSUFFICIENT SAMPLE |
+| extra-point rate | 0.996 | 0.993 | ±0.016 | WITHIN |
 | fourth-quarter go share of tries down 2 after the touchdown | — | 0.941 | — | INSUFFICIENT SAMPLE |
-| onside kicks per team-game | 0.138 | 0.107 | ±0.129 | WITHIN |
-| onside share of kicks trailing by 1-8 inside 2:00 | 0.750 | 0.943 | ±0.348 | INSUFFICIENT SAMPLE |
-| tries and kickoffs decided by a club's block or a live answer (informational; counted apart, never graded against the chart) | 11.0 | — | — | MEASURED |
-| expected onside recovery rate | 0.333 | 0.110 | ±0.384 | INSUFFICIENT SAMPLE |
+| onside kicks per team-game | 0.138 | 0.107 | ±0.105 | WITHIN |
+| onside share of kicks trailing by 1-8 inside 2:00 | 0.857 | 0.943 | ±0.263 | INSUFFICIENT SAMPLE |
+| tries and kickoffs decided by a club's block or a live answer (informational; counted apart, never graded against the chart) | 21.0 | — | — | MEASURED |
+| expected onside recovery rate | 0.200 | 0.110 | ±0.297 | INSUFFICIENT SAMPLE |
 | surprise onside recovery rate (informational) | 0.500 | 0.241 | — | INSUFFICIENT SAMPLE |
-| interception-return touchdown share of interceptions | 0.146 | 0.122 | ±0.142 | WITHIN |
-| fumble-return touchdown share of lost fumbles | 0.107 | 0.080 | ±0.154 | INSUFFICIENT SAMPLE |
-| punt return or blocked-punt touchdown share of punts | 0.010 | 0.009 | ±0.017 | WITHIN |
-| kickoff-return touchdown share of deep kickoffs | 0.000 | 0.004 | ±0.011 | WITHIN |
+| interception-return touchdown share of interceptions | 0.133 | 0.122 | ±0.113 | WITHIN |
+| fumble-return touchdown share of lost fumbles | 0.079 | 0.080 | ±0.132 | WITHIN |
+| punt return or blocked-punt touchdown share of punts | 0.010 | 0.009 | ±0.014 | WITHIN |
+| kickoff-return touchdown share of deep kickoffs | 0.004 | 0.004 | ±0.009 | WITHIN |
 | blocked field-goal touchdowns per missed field goal (informational) | 0.000 | 0.007 | — | INSUFFICIENT SAMPLE |
-| non-offensive touchdowns per team-game (informational) | 0.217 | 0.230 | — | INFORMATIONAL |
-| points per team-game (measured; no forecast) | 22.2 | — | — | MEASURED |
+| non-offensive touchdowns per team-game (informational) | 0.211 | 0.230 | — | INFORMATIONAL |
+| points per team-game (measured; no forecast) | 24.2 | — | — | MEASURED |
 
 ### Fourth-down rows
 
@@ -861,14 +861,14 @@ Fourth-down decisions and conversions (kernel 2014.6 batch B9F). Centres from th
 
 | Metric | Observed | 2010_2014w4 base centre | Tolerance | Status |
 |---|---:|---:|---:|---|
-| fourth-down go share of chart decisions | 0.108 | 0.118 | ±0.046 | WITHIN |
-| fourth-down attempts per team-game (team-games decided by the chart) | 0.810 | 0.882 | ±0.370 | WITHIN |
-| fourth-down conversion rate | 0.460 | 0.479 | ±0.212 | WITHIN |
-| field-goal share of chart fourth-down decisions (informational) | 0.247 | 0.239 | — | INFORMATIONAL |
-| punt share of chart fourth-down decisions (informational) | 0.645 | 0.643 | — | INFORMATIONAL |
-| fourth-down decisions per team-game (informational) | 7.5 | 7.5 | — | INFORMATIONAL |
-| chart-conditional go count against the sum of the chart decisions' go probabilities (informational) | 47.0 | 44.4 | — | INFORMATIONAL |
-| fourth downs decided by a club's block or a live answer (informational; counted apart, never graded against the chart) | 14.0 | — | — | MEASURED |
+| fourth-down go share of chart decisions | 0.101 | 0.118 | ±0.039 | WITHIN |
+| fourth-down attempts per team-game (team-games decided by the chart) | 0.724 | 0.882 | ±0.302 | WITHIN |
+| fourth-down conversion rate | 0.426 | 0.479 | ±0.182 | WITHIN |
+| field-goal share of chart fourth-down decisions (informational) | 0.267 | 0.239 | — | INFORMATIONAL |
+| punt share of chart fourth-down decisions (informational) | 0.633 | 0.643 | — | INFORMATIONAL |
+| fourth-down decisions per team-game (informational) | 7.2 | 7.5 | — | INFORMATIONAL |
+| chart-conditional go count against the sum of the chart decisions' go probabilities (informational) | 63.0 | 64.6 | — | INFORMATIONAL |
+| fourth downs decided by a club's block or a live answer (informational; counted apart, never graded against the chart) | 21.0 | — | — | MEASURED |
 
 ### Ball-security rows
 
@@ -876,19 +876,19 @@ Fumbles, muffs and kicking-team recoveries (kernel 2014.6 batch B10). Centres fr
 
 | Metric | Observed | 2010_2014w4 base centre | Tolerance | Status |
 |---|---:|---:|---:|---|
-| fumbles per team-game (nflverse definition, less defensive fumbles after a turnover) | 1.217 | 1.305 | ±0.465 | WITHIN |
-| lost fumbles per team-game | 0.517 | 0.624 | ±0.306 | WITHIN |
-| offense-kept share of scrimmage fumbles | 0.556 | 0.497 | ±0.189 | WITHIN |
-| sack share of lost scrimmage fumbles | 0.250 | 0.316 | ±0.264 | INSUFFICIENT SAMPLE |
-| kicking-team recoveries per team-game (punts; kickoffs from the 35 from 2011) | 0.050 | 0.073 | ±0.105 | WITHIN |
+| fumbles per team-game (nflverse definition, less defensive fumbles after a turnover) | 1.100 | 1.305 | ±0.380 | WITHIN |
+| lost fumbles per team-game | 0.478 | 0.624 | ±0.250 | WITHIN |
+| offense-kept share of scrimmage fumbles | 0.537 | 0.497 | ±0.166 | WITHIN |
+| sack share of lost scrimmage fumbles | 0.211 | 0.316 | ±0.226 | WITHIN |
+| kicking-team recoveries per team-game (punts; kickoffs from the 35 from 2011) | 0.056 | 0.073 | ±0.086 | WITHIN |
 | muffer role share (the returner, muffs with a recorded muffer) | 1.000 | 1.000 | ±0.000 | INSUFFICIENT SAMPLE |
-| forced share of lost non-aborted scrimmage fumbles (informational) | 0.963 | 0.946 | — | INSUFFICIENT SAMPLE |
-| forcer also recovers, forced lost scrimmage fumbles (informational) | 0.269 | 0.141 | — | INSUFFICIENT SAMPLE |
-| muffs per punt (informational) | 0.035 | 0.025 | — | INFORMATIONAL |
-| receiving club's keep share of punt muffs (informational) | 0.700 | 0.701 | — | INSUFFICIENT SAMPLE |
-| lost-fumble terminal snaps: run share (informational; the base pool's lost entries) | 0.536 | 0.421 | — | INSUFFICIENT SAMPLE |
-| lost-fumble terminal snaps: catch share (informational; the base pool's lost entries) | 0.214 | 0.262 | — | INSUFFICIENT SAMPLE |
-| lost-fumble terminal snaps: sack share (informational; the base pool's lost entries) | 0.250 | 0.317 | — | INSUFFICIENT SAMPLE |
+| forced share of lost non-aborted scrimmage fumbles (informational) | 0.946 | 0.946 | — | INFORMATIONAL |
+| forcer also recovers, forced lost scrimmage fumbles (informational) | 0.229 | 0.141 | — | INFORMATIONAL |
+| muffs per punt (informational) | 0.034 | 0.025 | — | INFORMATIONAL |
+| receiving club's keep share of punt muffs (informational) | 0.714 | 0.701 | — | INSUFFICIENT SAMPLE |
+| lost-fumble terminal snaps: run share (informational; the base pool's lost entries) | 0.553 | 0.421 | — | INFORMATIONAL |
+| lost-fumble terminal snaps: catch share (informational; the base pool's lost entries) | 0.237 | 0.262 | — | INFORMATIONAL |
+| lost-fumble terminal snaps: sack share (informational; the base pool's lost entries) | 0.211 | 0.317 | — | INFORMATIONAL |
 
 ### Penalty rows
 
@@ -896,14 +896,14 @@ Replayed penalty records (kernel 2014.6 batch B11). Centres from the base's pena
 
 | Metric | Observed | 2010_2014w4 base centre | Tolerance | Status |
 |---|---:|---:|---:|---|
-| accepted penalties per team-game (drive and kick plays; the fouling club) | 6.4 | 5.9 | ±1.047 | WITHIN |
-| penalty yards per team-game (the fouling club) | 50.9 | 49.6 | ±10.0 | WITHIN |
-| first downs by penalty per team-game | 1.900 | 1.712 | ±0.507 | WITHIN |
-| defense share of accepted drive penalties (informational) | 0.430 | 0.435 | — | INFORMATIONAL |
-| declined penalties per team-game (informational) | 0.617 | 0.655 | — | INFORMATIONAL |
-| offsetting penalties per team-game (informational) | 0.167 | 0.221 | — | INFORMATIONAL |
-| kick-play accepted penalties per team-game (informational) | 0.567 | 0.655 | — | INFORMATIONAL |
-| net yards the records move the offense per team-game (reported, not tuned) | -0.217 | — | — | MEASURED |
+| accepted penalties per team-game (drive and kick plays; the fouling club) | 6.4 | 5.9 | ±0.855 | WITHIN |
+| penalty yards per team-game (the fouling club) | 53.6 | 49.6 | ±8.2 | WITHIN |
+| first downs by penalty per team-game | 1.844 | 1.712 | ±0.414 | WITHIN |
+| defense share of accepted drive penalties (informational) | 0.437 | 0.435 | — | INFORMATIONAL |
+| declined penalties per team-game (informational) | 0.633 | 0.655 | — | INFORMATIONAL |
+| offsetting penalties per team-game (informational) | 0.178 | 0.221 | — | INFORMATIONAL |
+| kick-play accepted penalties per team-game (informational) | 0.667 | 0.655 | — | INFORMATIONAL |
+| net yards the records move the offense per team-game (reported, not tuned) | 0.944 | — | — | MEASURED |
 
 ### Yardage rows
 
@@ -911,22 +911,22 @@ The replayed yard split (kernel 2014.6 batch B13): each replayed drive keeps its
 
 | Metric | Observed | 2010_2014w4 base centre | Tolerance | Status |
 |---|---:|---:|---:|---|
-| yards per carry (kneels included) | 4.2 | 4.2 | ±0.494 | WITHIN |
-| completion rate (spikes as attempts) | 0.624 | 0.610 | ±0.037 | WITHIN |
-| run share of scrimmage plays | 0.423 | 0.425 | ±0.044 | WITHIN |
-| rushing yards per team-game (kneels included) | 110.6 | 115.0 | ±20.1 | WITHIN |
-| share of non-kneel runs losing yards (informational) | 0.115 | 0.096 | — | INFORMATIONAL |
-| share of non-kneel runs gaining 0 (informational) | 0.101 | 0.094 | — | INFORMATIONAL |
-| share of non-kneel runs of 1-3 yards (informational) | 0.351 | 0.370 | — | INFORMATIONAL |
-| share of non-kneel runs of 4-9 yards (informational) | 0.308 | 0.326 | — | INFORMATIONAL |
-| share of non-kneel runs of 10-19 yards (informational) | 0.092 | 0.088 | — | INFORMATIONAL |
-| share of non-kneel runs of 20+ yards (informational) | 0.032 | 0.026 | — | INFORMATIONAL |
-| completions of 20+ yards per attempt (informational) | 0.101 | 0.091 | — | INFORMATIONAL |
-| completions the layout forced per team-game (measured) | 0.133 | — | — | MEASURED |
+| yards per carry (kneels included) | 4.3 | 4.2 | ±0.403 | WITHIN |
+| completion rate (spikes as attempts) | 0.627 | 0.610 | ±0.030 | WITHIN |
+| run share of scrimmage plays | 0.426 | 0.425 | ±0.036 | WITHIN |
+| rushing yards per team-game (kneels included) | 116.9 | 115.0 | ±16.4 | WITHIN |
+| share of non-kneel runs losing yards (informational) | 0.112 | 0.096 | — | INFORMATIONAL |
+| share of non-kneel runs gaining 0 (informational) | 0.094 | 0.094 | — | INFORMATIONAL |
+| share of non-kneel runs of 1-3 yards (informational) | 0.352 | 0.370 | — | INFORMATIONAL |
+| share of non-kneel runs of 4-9 yards (informational) | 0.315 | 0.326 | — | INFORMATIONAL |
+| share of non-kneel runs of 10-19 yards (informational) | 0.094 | 0.088 | — | INFORMATIONAL |
+| share of non-kneel runs of 20+ yards (informational) | 0.033 | 0.026 | — | INFORMATIONAL |
+| completions of 20+ yards per attempt (informational) | 0.102 | 0.091 | — | INFORMATIONAL |
+| completions the layout forced per team-game (measured) | 0.111 | — | — | MEASURED |
 
 ### Ledger coherence
 
-Zero-tolerance counts from `runtime.play_detail.check_ledger`, checked with this base's rules. Games checked: 30.
+Zero-tolerance counts from `runtime.play_detail.check_ledger`, checked with this base's rules. Games checked: 45.
 
 | Class | Count | Status |
 |---|---:|---|

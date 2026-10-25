@@ -1,10 +1,10 @@
 # Rafael Bush
 
-**New Orleans Saints · Free safety · No. 25 · Age 27 · Last game October 5, 2014**
+**New Orleans Saints · Free safety · No. 25 · Age 27 · Last game October 19, 2014**
 
 5' 11", 200 lb · Born May 12, 1987 · South Carolina State
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Rafael Bush](https://commons.wikimedia.org/wiki/Special:FilePath/Rafael_Bush.JPG?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 27 | 25 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | New Orleans | 27 | 25 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | New Orleans | 26 | 25 | 15 | 6 | 4 | 2 | 0 | 0 | 1 |
 | Career |  |  |  | 20 | 6 | 4 | 2 | 0 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 27 | 25 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | New Orleans | 27 | 25 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | New Orleans | 26 | 25 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

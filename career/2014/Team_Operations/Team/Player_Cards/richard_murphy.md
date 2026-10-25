@@ -4,7 +4,7 @@
 
 6' 1", 215 lb · Born September 18, 1986 · LSU
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ## Staff assessment
 

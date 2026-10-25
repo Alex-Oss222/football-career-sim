@@ -1,10 +1,10 @@
 # John Hughes
 
-**Cleveland Browns · Defensive tackle · No. 93 · Age 26 · Last game October 12, 2014**
+**Cleveland Browns · Defensive tackle · No. 93 · Age 26 · Last game October 19, 2014**
 
 6' 2", 320 lb · Born April 27, 1988 · Cincinnati · Drafted in 2012, third round, by Cleveland
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![John Hughes](https://commons.wikimedia.org/wiki/Special:FilePath/John_Hughes_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive end.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 26 | 93 | 4 | 4 | 1 | 3 | 1 | 0 | 1 |
+| 2014 (through Week 7) | Cleveland | 26 | 93 | 5 | 5 | 2 | 3 | 1 | 0 | 1 |
 | 2013 | Cleveland | 25 | 93 | 16 | 24 | 12 | 12 | 0 | 2 | 3 |
-| Career |  |  |  | 20 | 28 | 13 | 15 | 1 | 2 | 4 |
+| Career |  |  |  | 21 | 29 | 14 | 15 | 1 | 2 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 26 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Cleveland | 26 | 93 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Cleveland | 25 | 93 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

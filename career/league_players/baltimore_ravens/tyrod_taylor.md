@@ -1,10 +1,10 @@
 # Tyrod Taylor
 
-**Baltimore Ravens · Quarterback · No. 2 · Age 25 · Last game October 12, 2014**
+**Baltimore Ravens · Quarterback · No. 2 · Age 25 · Last game October 19, 2014**
 
 6' 1", 208 lb · Born August 3, 1989 · Virginia Tech · Drafted in 2011, sixth round, by Baltimore
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Tyrod Taylor](https://commons.wikimedia.org/wiki/Special:FilePath/Tyrod_Taylor_2016.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 25 | 2 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 7) | Baltimore | 25 | 2 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 | 2013 | Baltimore | 24 | 2 | 16 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
-| Career |  |  |  | 22 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| Career |  |  |  | 23 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 25 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Baltimore | 25 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Baltimore | 24 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs

@@ -42,21 +42,29 @@ def quiet(call, *args, **kwargs):
 
 
 class RealWeekTests(unittest.TestCase):
-    """F1: the open week opens without events; its issued pages are unchanged and no reissue is due."""
+    """F1: the open week's issued pages are unchanged and no reissue is due; its briefing carries an
+    insert section exactly when its issue has a notice for it (a week can open with a league window
+    coming up, or with news resolved since the issue before)."""
 
     def test_f1_the_issued_briefing_and_index_rebuild_byte_for_byte(self):
         wk = render_game_week.Week(ROOT)
         if wk.game is None or not wk.pages.briefing.is_file():
             self.skipTest("no issued briefing for an open week")
-        self.assertEqual(open_events.load(SEASON, ROOT), [])
         when, revision = render_game_week.current_issue(wk)
         page = wk.pages.briefing.read_text(encoding="utf-8")
         rebuilt = render_game_week.briefing(wk, when, previous=render_game_week.previous_issue(wk), revision=revision)
         self.assertEqual(rebuilt, page)
-        # Section 8 keeps its "If facts change" sentence, and no insert section is added.
+        # Section 8 keeps its "If facts change" sentence; an insert section only for its notices.
         self.assertIn("**If facts change:** The staff issues a new briefing", page)
-        for heading in event_inserts.HEADINGS:
-            self.assertNotIn(heading, page)
+        # The insert sections are the ones its issue recorded when it was issued (the issue record's
+        # inserts, each with the sha256 of its lines), and the notices worked out again now are those.
+        entry = render_game_week.issues(wk)[-1]
+        self.assertEqual(entry["revision"], revision)
+        recorded = entry.get("inserts") or []
+        for heading, section in zip(event_inserts.HEADINGS, ("action", "fyi", "coming_up")):
+            self.assertEqual(heading in page, any(i["section"] == section for i in recorded), heading)
+        route = render_game_week.issue_route(wk, when, revision)
+        self.assertEqual(event_inserts.issue_inserts(route, wk.rel(wk.pages.briefing)), recorded)
         self.assertIsNone(render_game_week.reissue_reason(wk))
         self.assertFalse(render_game_week.overtaken(wk))
         self.assertEqual(render_game_week.index_page(wk), wk.pages.readme.read_text(encoding="utf-8"))

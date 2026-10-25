@@ -1,14 +1,18 @@
 # Corey Linsley
 
-**Jacksonville Jaguars · Center · Age 23 · Active roster**
+**Jacksonville Jaguars · Center · No. 63 · Age 23 · Active roster**
 
 6' 3", 301 lb · Born July 27, 1991 · Ohio State · Drafted in 2014, fifth round, by Jacksonville
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Corey Linsley](https://commons.wikimedia.org/wiki/Special:FilePath/Corey_Linsley.jpg?width=500)
 
 *Photo: Kyle Engman, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) ([source](https://commons.wikimedia.org/wiki/File:Corey_Linsley.jpg)).*
+
+**Current assignment:** Starting center.
+
+**Sacks allowed:** 0 (2014, through Week 7).
 
 ## Staff assessment
 
@@ -31,7 +35,9 @@ Four-year contract through 2017.
 
 ### Regular season
 
-No regular-season games on record.
+| Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| 2014 (through Week 7) | Jacksonville | 23 | 63 | 1 | 1 | 51 | 0 | 5 |
 
 ### Playoffs
 

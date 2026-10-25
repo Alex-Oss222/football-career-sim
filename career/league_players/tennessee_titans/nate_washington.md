@@ -1,10 +1,10 @@
 # Nate Washington
 
-**Tennessee Titans · Wide receiver · No. 85 · Age 31 · Last game October 12, 2014**
+**Tennessee Titans · Wide receiver · No. 85 · Age 31 · Last game October 19, 2014**
 
 6' 1", 183 lb · Born August 28, 1983 · Tiffin
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Nate Washington](https://commons.wikimedia.org/wiki/Special:FilePath/Nate_washington.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 7.6 (2014, through Week 6).
+**Yards per target:** 8.1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 31 | 85 | 6 | 31 | 22 | 236 | 10.7 | 0 | 36 | 39.3 | 71.0 |
+| 2014 (through Week 7) | Tennessee | 31 | 85 | 7 | 35 | 25 | 282 | 11.3 | 0 | 36 | 40.3 | 71.4 |
 | 2013 | Tennessee | 30 | 85 | 16 | 120 | 77 | 786 | 10.2 | 4 | 42 | 49.1 | 64.2 |
-| Career |  |  |  | 22 | 151 | 99 | 1,022 | 10.3 | 4 | 42 | 46.5 | 65.6 |
+| Career |  |  |  | 23 | 155 | 102 | 1,068 | 10.5 | 4 | 42 | 46.4 | 65.8 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 31 | 85 | 2 | 12 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Tennessee | 31 | 85 | 2 | 12 | 0 | 0 | 0 |
 | 2013 | Tennessee | 30 | 85 | 4 | 30 | 0 | 0 | 0 |
 
 ### Playoffs

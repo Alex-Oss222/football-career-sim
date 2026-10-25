@@ -4,17 +4,15 @@
 
 6' 1", 230 lb · Born September 2, 1990 · Wagner · Undrafted
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
-**Current assignment:** Starting linebacker.
-
-**Tackles:** 29 (2014, through Week 6).
+**Tackles:** 32 (2014, through Week 7).
 
 ## Staff assessment
 
-Julian Stanford was a reserve linebacker for Jacksonville in 2013, dressing for all 16 regular-season games, with his role expanding late that season. In 2014 he has played as the third linebacker in the base defense, with 29 tackles in six games. He is mobile, can cover space and pursue, and can handle a defined replacement assignment. His main limitations are taking on blocks, reading and fitting the run, and the detail of his coverage, especially in man coverage.
+Julian Stanford was a reserve linebacker for Jacksonville in 2013, dressing for all 16 regular-season games, with his role expanding late that season. By early October he had played as the third linebacker in the base defense, and he has 32 tackles in seven games in 2014. He is mobile, can cover space and pursue, and can handle a defined replacement assignment. His main limitations are taking on blocks, reading and fitting the run, and the detail of his coverage, especially in man coverage.
 
-*Staff assessment originally dated March 31, 2014; 2014 results current through October 12.*
+*Staff assessment originally dated March 31, 2014; 2014 results current through October 19.*
 
 ## Contract
 
@@ -30,13 +28,13 @@ Three-year contract through 2014.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 24 | 49 | 6 | 29 | 21 | 8 | 2 | 2 | 4 |
+| 2014 (through Week 7) | Jacksonville | 24 | 49 | 7 | 32 | 22 | 10 | 2 | 2 | 4 |
 | 2013 | Jacksonville | 23 | N/A | 16 | 24 | 15 | 9 | 0 | 0 | 0 |
-| With Jacksonville |  |  |  | 22 | 53 | 36 | 17 | 2 | 2 | 4 |
+| With Jacksonville |  |  |  | 23 | 56 | 37 | 19 | 2 | 2 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 24 | 49 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Jacksonville | 24 | 49 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 23 | N/A | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Marcus Gilchrist
 
-**San Diego Chargers · Strong safety · No. 38 · Age 25 · Last game October 12, 2014**
+**San Diego Chargers · Strong safety · No. 38 · Age 25 · Last game October 19, 2014**
 
 5' 10", 198 lb · Born December 8, 1988 · Clemson · Drafted in 2011, second round, by San Diego
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Marcus Gilchrist](https://commons.wikimedia.org/wiki/Special:FilePath/MarcusGilchrist.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 2 (2014, through Week 6).
+**Passes defended:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 25 | 38 | 6 | 14 | 9 | 5 | 1 | 0 | 0 |
+| 2014 (through Week 7) | San Diego | 25 | 38 | 7 | 21 | 11 | 10 | 2 | 0 | 0 |
 | 2013 | San Diego | 24 | 38 | 16 | 76 | 49 | 27 | 2 | 0 | 0 |
-| Career |  |  |  | 22 | 90 | 58 | 32 | 3 | 0 | 0 |
+| Career |  |  |  | 23 | 97 | 60 | 37 | 4 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 25 | 38 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Diego | 25 | 38 | 1 | 10 | 5 | 0 | 0 | 0 |
 | 2013 | San Diego | 24 | 38 | 2 | 42 | 14 | 2 | 2 | N/A |
 
 ### Playoffs

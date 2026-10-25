@@ -1,6 +1,6 @@
 # Jacksonville 2014 regular season
 
-**4-2 through Week 6.** Next: Week 7 against Cleveland, Sunday, October 19, 1 p.m. ET, EverBank Field.
+**4-3 through Week 7.** Next: Week 8 against Miami, Sunday, October 26, 1 p.m. ET, EverBank Field.
 
 | Week | Date | Opponent | Kickoff (ET) | Site | Result |
 |---|---|---|---|---|---|
@@ -10,8 +10,8 @@
 | [Week 4](Week_04/README.md) | Sunday, September 28 | at San Diego | 4:05 p.m. | Qualcomm Stadium | [Lost 21-20](Week_04/output.md) |
 | [Week 5](Week_05/README.md) | Sunday, October 5 | vs. Pittsburgh | 1 p.m. | EverBank Field | [Lost 27-10](Week_05/output.md) |
 | [Week 6](Week_06/README.md) | Sunday, October 12 | at Tennessee | 1 p.m. | LP Field | [Won 24-10](Week_06/Game_Report.md) |
-| [Week 7](Week_07/README.md) | Sunday, October 19 | vs. Cleveland | 1 p.m. | EverBank Field | Next |
-| [Week 8](Week_08/README.md) | Sunday, October 26 | vs. Miami | 1 p.m. | EverBank Field |  |
+| [Week 7](Week_07/README.md) | Sunday, October 19 | vs. Cleveland | 1 p.m. | EverBank Field | [Lost 34-31](Week_07/Game_Report.md) |
+| [Week 8](Week_08/README.md) | Sunday, October 26 | vs. Miami | 1 p.m. | EverBank Field | Next |
 | [Week 9](Week_09/README.md) | Sunday, November 2 | at Cincinnati | 1 p.m. | Paul Brown Stadium |  |
 | [Week 10](Week_10/README.md) | Sunday, November 9 | vs. Dallas | 1 p.m. | Wembley Stadium, London |  |
 | [Week 11](Week_11/README.md) |  | Bye |  |  |  |

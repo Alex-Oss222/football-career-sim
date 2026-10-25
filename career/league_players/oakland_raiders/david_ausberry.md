@@ -1,10 +1,10 @@
 # David Ausberry
 
-**Oakland Raiders · Tight end · No. 86 · Age 27 · Last game October 12, 2014**
+**Oakland Raiders · Tight end · No. 86 · Age 27 · Last game October 19, 2014**
 
 6' 4", 250 lb · Born September 25, 1987 · USC · Drafted in 2011, seventh round, by Oakland
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![David Ausberry](https://commons.wikimedia.org/wiki/Special:FilePath/2008-0808-DavidAusberry.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 6.6 (2014, through Week 6).
+**Yards per target:** 6.7 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 26 | 86 | 5 | 32 | 23 | 211 | 9.2 | 0 | 25 | 42.2 | 71.9 |
+| 2014 (through Week 7) | Oakland | 26 | 86 | 6 | 38 | 26 | 254 | 9.8 | 0 | 25 | 42.3 | 68.4 |
 
 ### Playoffs
 

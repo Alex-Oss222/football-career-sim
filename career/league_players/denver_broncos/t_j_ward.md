@@ -1,10 +1,10 @@
 # T.J. Ward
 
-**Denver Broncos · Strong safety · No. 43 · Age 27 · Last game October 12, 2014**
+**Denver Broncos · Strong safety · No. 43 · Age 27 · Last game October 19, 2014**
 
 5' 10", 200 lb · Born December 12, 1986 · Oregon · Drafted in 2010, second round, by Cleveland
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![T.J. Ward](https://commons.wikimedia.org/wiki/Special:FilePath/T.J.WardBroncos.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 2 (2014, through Week 6).
+**Passes defended:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 27 | 43 | 5 | 20 | 12 | 8 | 1 | 0 | 1 |
+| 2014 (through Week 7) | Denver | 27 | 43 | 6 | 21 | 12 | 9 | 1 | 0 | 1 |
 | 2013 | Cleveland | 26 | 43 | 16 | 114 | 79 | 35 | 3 | 0 | 0 |
-| Career |  |  |  | 21 | 134 | 91 | 43 | 4 | 0 | 1 |
+| Career |  |  |  | 22 | 135 | 91 | 44 | 4 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 27 | 43 | 2 | 13 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Denver | 27 | 43 | 3 | 13 | 4 | 0 | 0 | 0 |
 | 2013 | Cleveland | 26 | 43 | 3 | 44 | 15 | 1 | 1 | N/A |
 
 ### Playoffs

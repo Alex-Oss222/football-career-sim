@@ -1,10 +1,10 @@
 # Dominique Rodgers-Cromartie
 
-**New York Giants · Cornerback · No. 21 · Age 28 · Last game October 12, 2014**
+**New York Giants · Cornerback · No. 21 · Age 28 · Last game October 19, 2014**
 
 6' 2", 193 lb · Born April 7, 1986 · Tennessee State · Drafted in 2008, first round, by Arizona
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Dominique Rodgers-Cromartie](https://commons.wikimedia.org/wiki/Special:FilePath/Dominique_Rodgers-Cromartie.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 6 (2014, through Week 6).
+**Passes defended:** 6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 28 | 21 | 6 | 35 | 24 | 11 | 2 | 0 | 1 |
+| 2014 (through Week 7) | N.Y. Giants | 28 | 21 | 7 | 40 | 27 | 13 | 3 | 0 | 1 |
 | 2013 | Denver | 27 | 45 | 16 | 58 | 42 | 16 | 1 | 1 | 1 |
-| Career |  |  |  | 22 | 93 | 66 | 27 | 3 | 1 | 2 |
+| Career |  |  |  | 23 | 98 | 69 | 29 | 4 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 28 | 21 | 1 | 21 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Giants | 28 | 21 | 1 | 21 | 6 | 0 | 0 | 0 |
 | 2013 | Denver | 27 | 45 | 1 | 0 | 8 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 28 | 21 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | N.Y. Giants | 28 | 21 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Denver | 27 | 45 | 1 | 34 | 34.0 | 0 | 0 | N/A |
 
 ### Playoffs

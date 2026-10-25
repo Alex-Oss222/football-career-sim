@@ -1,10 +1,10 @@
 # Jamar Taylor
 
-**Miami Dolphins · Cornerback · No. 22 · Age 24 · Last game October 12, 2014**
+**Miami Dolphins · Cornerback · No. 22 · Age 24 · Last game October 19, 2014**
 
 5' 10", 200 lb · Born September 29, 1990 · Boise State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jamar Taylor](https://commons.wikimedia.org/wiki/Special:FilePath/Jamar_Taylor_2017_preseason_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 1 (2014, through Week 6).
+**Passes defended:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 23 | 22 | 5 | 10 | 7 | 3 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 23 | 22 | 6 | 12 | 9 | 3 | 1 | 0 | 1 |
 | 2013 | Miami | 22 | 22 | 14 | 33 | 17 | 16 | 3 | 0 | 0 |
-| Career |  |  |  | 19 | 43 | 24 | 19 | 4 | 0 | 0 |
+| Career |  |  |  | 20 | 45 | 26 | 19 | 4 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 23 | 22 | 1 | 27 | 1 | 0 | 0 | 5 |
+| 2014 (through Week 7) | Miami | 23 | 22 | 1 | 27 | 2 | 0 | 0 | 5 |
 | 2013 | Miami | 22 | 22 | 3 | 40 | 8 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Ray Agnew
 
-**Cleveland Browns · Fullback · No. 48 · Age 23 · Last game October 12, 2014**
+**Cleveland Browns · Fullback · No. 48 · Age 23 · Last game October 19, 2014**
 
 5' 10", 247 lb · Born February 26, 1991 · Southern Illinois
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Ray Agnew](https://commons.wikimedia.org/wiki/Special:FilePath/Ray_Agnew_III.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 5.0 (2014, through Week 6).
+**Yards per carry:** 3.8 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 23 | 48 | 5 | 4 | 20 | 5.0 | 0 | 18 | 4.0 |
+| 2014 (through Week 7) | Cleveland | 23 | 48 | 6 | 6 | 23 | 3.8 | 0 | 18 | 3.8 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 23 | 48 | 10 | 7 | 49 | 7.0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Cleveland | 23 | 48 | 13 | 8 | 76 | 9.5 | 0 | 0 | 0 |
 
 ### Playoffs
 

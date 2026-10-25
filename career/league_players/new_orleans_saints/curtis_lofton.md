@@ -1,10 +1,10 @@
 # Curtis Lofton
 
-**New Orleans Saints · Inside linebacker · No. 50 · Age 28 · Last game October 5, 2014**
+**New Orleans Saints · Inside linebacker · No. 50 · Age 28 · Last game October 19, 2014**
 
 6' 0", 241 lb · Born June 9, 1986 · Oklahoma · Drafted in 2008, second round, by Atlanta
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Curtis Lofton](https://commons.wikimedia.org/wiki/Special:FilePath/Curtis_Lofton_2015.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting inside linebacker.
 
-**Tackles:** 42 (2014, through Week 5).
+**Tackles:** 47 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 28 | 50 | 5 | 42 | 24 | 18 | 3 | 2 | 6 |
+| 2014 (through Week 7) | New Orleans | 28 | 50 | 6 | 47 | 28 | 19 | 3 | 4 | 8 |
 | 2013 | New Orleans | 27 | 50 | 16 | 157 | 111 | 46 | 9 | 3 | 11 |
-| Career |  |  |  | 21 | 199 | 135 | 64 | 12 | 5 | 17 |
+| Career |  |  |  | 22 | 204 | 139 | 65 | 12 | 7 | 19 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 28 | 50 | 1 | 10 | 2 | 1 | 1 | 0 |
+| 2014 (through Week 7) | New Orleans | 28 | 50 | 1 | 10 | 2 | 1 | 1 | 0 |
 | 2013 | New Orleans | 27 | 50 | 0 | 0 | 10 | 3 | 3 | N/A |
 
 ### Playoffs

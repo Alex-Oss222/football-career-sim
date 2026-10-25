@@ -1,10 +1,10 @@
 # Lance Dunbar
 
-**Dallas Cowboys · Running back · No. 25 · Age 24 · Last game October 12, 2014**
+**Dallas Cowboys · Running back · No. 25 · Age 24 · Last game October 19, 2014**
 
 5' 8", 195 lb · Born January 25, 1990 · North Texas
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Lance Dunbar](https://commons.wikimedia.org/wiki/Special:FilePath/Lance_Dunbar.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 7.5 (2014, through Week 6).
+**Yards per carry:** 7.0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 24 | 25 | 6 | 33 | 248 | 7.5 | 3 | 77 | 41.3 |
+| 2014 (through Week 7) | Dallas | 24 | 25 | 7 | 36 | 253 | 7.0 | 3 | 77 | 36.1 |
 | 2013 | Dallas | 23 | 25 | 15 | 85 | 313 | 3.7 | 1 | 30 | 20.9 |
-| Career |  |  |  | 21 | 118 | 561 | 4.8 | 4 | 77 | 26.7 |
+| Career |  |  |  | 22 | 121 | 566 | 4.7 | 4 | 77 | 25.7 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Dallas | 24 | 25 | 12 | 8 | 84 | 10.5 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Dallas | 24 | 25 | 13 | 9 | 104 | 11.6 | 0 | 0 | 0 |
 | 2013 | Dallas | 23 | 25 | 10 | 7 | 110 | 15.7 | 0 | 3 | 3 |
 
 ### Playoffs

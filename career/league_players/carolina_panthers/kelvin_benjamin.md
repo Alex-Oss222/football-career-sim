@@ -1,10 +1,10 @@
 # Kelvin Benjamin
 
-**Carolina Panthers · Wide receiver · No. 13 · Age 23 · Last game October 12, 2014**
+**Carolina Panthers · Wide receiver · No. 13 · Age 23 · Last game October 19, 2014**
 
 6' 5", 240 lb · Born February 5, 1991 · Florida State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Kelvin Benjamin](https://commons.wikimedia.org/wiki/Special:FilePath/Kelvin_Benjamin_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 7.5 (2014, through Week 6).
+**Yards per target:** 8.2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 23 | 13 | 5 | 40 | 23 | 302 | 13.1 | 3 | 31 | 60.4 | 57.5 |
+| 2014 (through Week 7) | Carolina | 23 | 13 | 6 | 50 | 30 | 408 | 13.6 | 4 | 31 | 68.0 | 60.0 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 23 | 13 | 2 | 25 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Carolina | 23 | 13 | 3 | 25 | 0 | 0 | 0 |
 
 ### Playoffs
 

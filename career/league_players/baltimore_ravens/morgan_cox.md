@@ -1,10 +1,10 @@
 # Morgan Cox
 
-**Baltimore Ravens · Long snapper · No. 46 · Age 28 · Last game October 12, 2014**
+**Baltimore Ravens · Long snapper · No. 46 · Age 28 · Last game October 19, 2014**
 
 6' 4", 233 lb · Born April 26, 1986 · Tennessee
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Morgan Cox](https://commons.wikimedia.org/wiki/Special:FilePath/Morgan_Cox_Navy_Stadium_2012_Practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 57 (2014, through Week 6).
+**Long snaps:** 68 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 28 | 46 | 6 | 57 | 57 | 0 | 0 |
+| 2014 (through Week 7) | Baltimore | 28 | 46 | 7 | 68 | 68 | 0 | 0 |
 | 2013 | Baltimore | 27 | 46 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 22 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

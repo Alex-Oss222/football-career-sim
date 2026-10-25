@@ -536,6 +536,9 @@ def schedule_from_instruction(instruction, season, week, root=ROOT, games=None):
     for added in schedule.get("added_days_off") or ():
         if first <= _date(added["on"]) <= last:
             out.append({"date": added["on"], "scope": added["scope"], "players": "all", "exceptions": []})
+    # An added day off takes the place of the week's session that day (November 24, 2014, a Monday).
+    added_off = {d["date"] for d in out if d["scope"] == "players"}
+    sessions = [s for s in sessions if s["date"] not in added_off]
     sessions.sort(key=lambda s: s["date"])
     out.sort(key=lambda d: d["date"])
     return {"sessions": sessions, "days_off": out, "source": {"instruction": instruction.get("id")},

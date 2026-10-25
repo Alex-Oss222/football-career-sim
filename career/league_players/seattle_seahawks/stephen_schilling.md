@@ -1,10 +1,10 @@
 # Stephen Schilling
 
-**Seattle Seahawks · Guard · No. 63 · Age 26 · Last game October 12, 2014**
+**Seattle Seahawks · Guard · No. 63 · Age 26 · Last game October 19, 2014**
 
 6' 5", 312 lb · Born July 21, 1988 · Michigan · Drafted in 2011, sixth round, by San Diego
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Stephen Schilling](https://commons.wikimedia.org/wiki/Special:FilePath/Stephen_Schilling.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Seattle | 26 | 63 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Seattle | 26 | 63 | 2 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

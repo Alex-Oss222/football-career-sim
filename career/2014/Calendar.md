@@ -7,8 +7,8 @@ Dates and appointments for the football year. Times are Eastern. Scheduled work 
 | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 | --- | --- | --- | --- | --- | --- | --- |
 |   |   | 1 | 2 | 3 | 4 | 5 [vs Pittsburgh Steelers](Regular_Season/Games/Week_05/README.md) |
-| 6 | 7 | 8 | 9 | 10 | 11 | **12 [at Tennessee Titans](Regular_Season/Games/Week_06/README.md)** |
-| 13 | 14 | 15 | 16 | 17 | 18 | 19 [vs Cleveland Browns](Regular_Season/Games/Week_07/README.md) |
+| 6 | 7 | 8 | 9 | 10 | 11 | 12 [at Tennessee Titans](Regular_Season/Games/Week_06/README.md) |
+| 13 | 14 | 15 | 16 | 17 | 18 | **19 [vs Cleveland Browns](Regular_Season/Games/Week_07/README.md)** |
 | 20 | 21 | 22 | 23 | 24 | 25 | 26 [vs Miami Dolphins](Regular_Season/Games/Week_08/README.md) |
 | 27 | 28 | 29 | 30 | 31 |   |   |
 
@@ -16,11 +16,11 @@ Dates and appointments for the football year. Times are Eastern. Scheduled work 
 
 | Date | Event |
 |---|---|
-| Oct 19 | [Week 7 vs Cleveland Browns](Regular_Season/Games/Week_07/README.md) |
 | Oct 26 | [Week 8 vs Miami Dolphins](Regular_Season/Games/Week_08/README.md) |
 | Nov 2 | [Week 9 at Cincinnati Bengals](Regular_Season/Games/Week_09/README.md) |
 | Nov 9 | [Week 10 vs Dallas Cowboys](Regular_Season/Games/Week_10/README.md) |
 | Nov 23 | [Week 12 at Indianapolis Colts](Regular_Season/Games/Week_12/README.md) |
+| Nov 30 | [Week 13 vs New York Giants](Regular_Season/Games/Week_13/README.md) |
 
 ## Full-year dates
 

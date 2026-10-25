@@ -1,10 +1,10 @@
 # Jamize Olawale
 
-**Oakland Raiders · Fullback · No. 49 · Age 25 · Last game October 12, 2014**
+**Oakland Raiders · Fullback · No. 49 · Age 25 · Last game October 19, 2014**
 
 6' 1", 235 lb · Born April 17, 1989 · North Texas
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jamize Olawale](https://commons.wikimedia.org/wiki/Special:FilePath/Jamize_Olawale.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve fullback.
 
-**Yards per carry:** 25.0 (2014, through Week 6).
+**Yards per carry:** 25.0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 25 | 49 | 5 | 1 | 25 | 25.0 | 0 | 25 | 5.0 |
+| 2014 (through Week 7) | Oakland | 25 | 49 | 6 | 1 | 25 | 25.0 | 0 | 25 | 4.2 |
 | 2013 | Oakland | 24 | 49 | 16 | 2 | -1 | -0.5 | 0 | 1 | -0.1 |
-| Career |  |  |  | 21 | 3 | 24 | 8.0 | 0 | 25 | 1.1 |
+| Career |  |  |  | 22 | 3 | 24 | 8.0 | 0 | 25 | 1.1 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 25 | 49 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 7) | Oakland | 25 | 49 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 | 2013 | Oakland | 24 | 49 | 3 | 2 | 25 | 12.5 | 1 | 0 | 0 |
 
 ### Playoffs

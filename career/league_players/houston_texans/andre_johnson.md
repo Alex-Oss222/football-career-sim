@@ -1,10 +1,10 @@
 # Andre Johnson
 
-**Houston Texans · Wide receiver · No. 80 · Age 33 · Last game October 9, 2014**
+**Houston Texans · Wide receiver · No. 80 · Age 33 · Last game October 20, 2014**
 
 6' 3", 230 lb · Born July 11, 1981 · Miami · Drafted in 2003, first round, by Houston
 
-As of October 9, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ## Contract
 
@@ -16,13 +16,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 33 | 80 | 2 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 7) | Houston | 33 | 80 | 3 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | Houston | 32 | 80 | 16 | 146 | 93 | 1,015 | 10.9 | 7 | 73 | 63.4 | 63.7 |
-| Career |  |  |  | 18 | 146 | 93 | 1,015 | 10.9 | 7 | 73 | 56.4 | 63.7 |
+| Career |  |  |  | 19 | 146 | 93 | 1,015 | 10.9 | 7 | 73 | 53.4 | 63.7 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 33 | 80 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Houston | 33 | 80 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Houston | 32 | 80 | 5 | 23 | 0 | 3 | 3 |
 
 ### Playoffs

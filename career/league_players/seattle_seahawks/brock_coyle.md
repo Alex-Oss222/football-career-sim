@@ -1,10 +1,10 @@
 # Brock Coyle
 
-**Seattle Seahawks · Middle linebacker · No. 52 · Age 24 · Last game October 12, 2014**
+**Seattle Seahawks · Middle linebacker · No. 52 · Age 24 · Last game October 19, 2014**
 
 6' 1", 243 lb · Born October 12, 1990 · Montana
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Brock Coyle](https://commons.wikimedia.org/wiki/Special:FilePath/Brock_Coyle.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve middle linebacker.
 
-**Tackles:** 4 (2014, through Week 6).
+**Tackles:** 6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Seattle | 23 | 52 | 5 | 4 | 2 | 2 | 0 | 2 | 2 |
+| 2014 (through Week 7) | Seattle | 23 | 52 | 6 | 6 | 4 | 2 | 0 | 2 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Seattle | 23 | 52 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Seattle | 23 | 52 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

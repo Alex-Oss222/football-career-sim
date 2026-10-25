@@ -1,10 +1,10 @@
 # LaAdrian Waddle
 
-**Detroit Lions · Offensive tackle · No. 66 · Age 23 · Last game October 12, 2014**
+**Detroit Lions · Offensive tackle · No. 66 · Age 23 · Last game October 19, 2014**
 
 6' 6", 330 lb · Born July 21, 1991 · Texas Tech
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![LaAdrian Waddle](https://commons.wikimedia.org/wiki/Special:FilePath/LaAdrian_Waddle.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 7 (2014, through Week 6).
+**Sacks allowed:** 7 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Detroit | 23 | 66 | 6 | 6 | 394 | 7 | 28 |
+| 2014 (through Week 7) | Detroit | 23 | 66 | 7 | 7 | 454 | 7 | 34 |
 | 2013 | Detroit | 22 | 66 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 10 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 10 | N/A |
 
 ### Playoffs
 

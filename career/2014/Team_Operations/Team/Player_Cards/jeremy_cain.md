@@ -1,10 +1,10 @@
 # Jeremy Cain
 
-**Chicago Bears · Long snapper · No. 44 · Age 34 · Last game October 12, 2014**
+**Chicago Bears · Long snapper · No. 44 · Age 34 · Last game October 19, 2014**
 
 6' 1", 245 lb · Born March 24, 1980 · UMass Amherst
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jeremy Cain](https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy_Cain.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 51 (2014, through Week 6).
+**Long snaps:** 58 (2014, through Week 7).
 
 ## Staff assessment
 
@@ -30,9 +30,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 34 | 44 | 6 | 51 | 51 | 0 | 0 |
+| 2014 (through Week 7) | Chicago | 34 | 44 | 7 | 58 | 58 | 0 | 0 |
 | 2013 | Jacksonville | 33 | N/A | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 22 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

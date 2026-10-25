@@ -1,14 +1,14 @@
 # Keshawn Martin
 
-**Houston Texans · Wide receiver · No. 82 · Age 24 · Last game October 9, 2014**
+**Houston Texans · Wide receiver · No. 82 · Age 24 · Last game October 20, 2014**
 
 5' 11", 194 lb · Born March 15, 1990 · Michigan State · Drafted in 2012, fourth round, by Houston
 
-As of October 9, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 6.9 (2014, through Week 6).
+**Yards per target:** 7.3 (2014, through Week 7).
 
 ## Contract
 
@@ -20,18 +20,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 24 | 82 | 6 | 27 | 14 | 186 | 13.3 | 1 | 39 | 31.0 | 51.9 |
+| 2014 (through Week 7) | Houston | 24 | 82 | 7 | 36 | 22 | 263 | 12.0 | 1 | 39 | 37.6 | 61.1 |
 | 2013 | Houston | 23 | 82 | 16 | 57 | 41 | 484 | 11.8 | 2 | 57 | 30.2 | 71.9 |
-| Career |  |  |  | 22 | 84 | 55 | 670 | 12.2 | 3 | 57 | 30.5 | 65.5 |
+| Career |  |  |  | 23 | 93 | 63 | 747 | 11.9 | 3 | 57 | 32.5 | 67.7 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 24 | 82 | 1 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Houston | 24 | 82 | 1 | 4 | 0 | 0 | 0 |
 | 2013 | Houston | 23 | 82 | 2 | 9 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 24 | 82 | 15 | 253 | 16.9 | 9 | 99 | 11.0 |
+| 2014 (through Week 7) | Houston | 24 | 82 | 18 | 330 | 18.3 | 10 | 102 | 10.2 |
 | 2013 | Houston | 23 | 82 | 45 | 1,096 | 24.4 | 36 | 384 | 10.7 |
 
 ### Playoffs

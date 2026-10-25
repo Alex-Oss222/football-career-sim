@@ -1,10 +1,10 @@
 # Cortez Allen
 
-**Pittsburgh Steelers · Cornerback · No. 28 · Age 25 · Last game October 12, 2014**
+**Pittsburgh Steelers · Cornerback · No. 28 · Age 25 · Last game October 20, 2014**
 
 6' 1", 196 lb · Born October 29, 1988 · The Citadel · Drafted in 2011, fourth round, by Pittsburgh
 
-As of October 12, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Cortez Allen](https://commons.wikimedia.org/wiki/Special:FilePath/Cortez_Allen.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 10 (2014, through Week 6).
+**Passes defended:** 12 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 25 | 28 | 6 | 23 | 16 | 7 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Pittsburgh | 25 | 28 | 7 | 32 | 24 | 8 | 0 | 0 | 1 |
 | 2013 | Pittsburgh | 24 | 28 | 16 | 78 | 55 | 23 | 1 | 0 | 0 |
-| Career |  |  |  | 22 | 101 | 71 | 30 | 1 | 0 | 1 |
+| Career |  |  |  | 23 | 110 | 79 | 31 | 1 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Pittsburgh | 25 | 28 | 1 | 0 | 10 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Pittsburgh | 25 | 28 | 1 | 0 | 12 | 1 | 0 | 0 |
 | 2013 | Pittsburgh | 24 | 28 | 4 | 55 | 10 | 0 | 0 | N/A |
 
 ### Playoffs

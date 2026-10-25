@@ -1,10 +1,10 @@
 # Nickell Robey
 
-**Buffalo Bills · Cornerback · No. 37 · Age 22 · Last game October 12, 2014**
+**Buffalo Bills · Cornerback · No. 37 · Age 22 · Last game October 19, 2014**
 
 5' 8", 165 lb · Born January 17, 1992 · USC
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Nickell Robey](https://commons.wikimedia.org/wiki/Special:FilePath/Nickell_Robey_USC_2010.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 22 | 37 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Buffalo | 22 | 37 | 6 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Buffalo | 21 | 37 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 7 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 8 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 22 | 37 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 7) | Buffalo | 22 | 37 | 0 | 0 | 0 | 0 | 0 | 2 |
 | 2013 | Buffalo | 21 | 37 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # John Urschel
 
-**Baltimore Ravens · Guard · No. 64 · Age 23 · Last game October 12, 2014**
+**Baltimore Ravens · Guard · No. 64 · Age 23 · Last game October 19, 2014**
 
 6' 3", 308 lb · Born June 24, 1991 · Penn State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![John Urschel](https://commons.wikimedia.org/wiki/Special:FilePath/John_Urschel.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 23 | 64 | 6 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Baltimore | 23 | 64 | 7 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

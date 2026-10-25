@@ -38,10 +38,15 @@ def copy_repo(test):
     shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns(*IGNORED), symlinks=True)
     for record in root.glob("career/**/paused_game.json"):
         record.unlink()
-    for folder in open_events.stores(SEASON, root):
-        if folder.is_dir():
-            shutil.rmtree(folder)
+    # The copy keeps the season's events as they stand (a resolved one is on a closed week's index,
+    # which would go stale without it); a test counts only the events it raises (raised_here).
+    test.before = {r["id"] for r in open_events.load(SEASON, root)}
     return root
+
+
+def raised_here(test, root):
+    """The events raised in the copy since copy_repo made it."""
+    return [r for r in open_events.load(SEASON, root) if r["id"] not in test.before]
 
 
 def quiet(call, *args, **kwargs):
@@ -132,8 +137,9 @@ class WindowTests(unittest.TestCase):
         after = open_events.route(SEASON, deadline + MINUTE, {"week": int(game["week"]) + 1}, root, issue=1)
         self.assertFalse(any(n.key.endswith("trading-deadline") for n in after.coming_up))
         self.assertEqual([digest(p) for p in watched], snapshot)
-        self.assertEqual(open_events.load(SEASON, root), [])
-        self.assertFalse(any(i.get("event") for i in decision_queue.load(root)["items"]))
+        self.assertEqual(raised_here(self, root), [])
+        self.assertFalse(any(i.get("event") and i["event"] not in self.before
+                             for i in decision_queue.load(root)["items"]))
 
     def test_each_eligibility_window_shows_until_its_date(self):
         data = roster_record.load(SeasonPaths(SEASON, ROOT).roster)
@@ -201,7 +207,7 @@ class SyntheticDeadlineTests(unittest.TestCase):
         self.assertIn(deadlines.league_date(SEASON, "trading_deadline", self.root)["key"],
                       [i.get("window") for i in entry["inserts"]])
         # Nothing is accepted, and neither call holds the game, whatever its due time.
-        for record in open_events.load(SEASON, self.root):
+        for record in raised_here(self, self.root):
             self.assertEqual((record["state"], record["resolution"]), ("open", None))
             self.assertEqual(se.item(self.root, record["queue_item"])["status"], "OPEN")
         self.assertEqual(decision_queue.blocking_errors([decision_queue.event("week_inputs", SEASON, self.week),

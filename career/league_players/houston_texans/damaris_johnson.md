@@ -1,14 +1,14 @@
 # Damaris Johnson
 
-**Houston Texans · Wide receiver · No. 13 · Age 24 · Last game October 9, 2014**
+**Houston Texans · Wide receiver · No. 13 · Age 24 · Last game October 20, 2014**
 
 5' 8", 175 lb · Born November 22, 1989 · Tulsa
 
-As of October 9, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 **Current assignment:** Reserve wide receiver.
 
-**Yards per target:** 7.6 (2014, through Week 6).
+**Yards per target:** 7.0 (2014, through Week 7).
 
 ## Contract
 
@@ -20,13 +20,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 24 | 13 | 6 | 26 | 18 | 197 | 10.9 | 1 | 26 | 32.8 | 69.2 |
+| 2014 (through Week 7) | Houston | 24 | 13 | 7 | 28 | 18 | 197 | 10.9 | 1 | 26 | 28.1 | 64.3 |
 | 2013 | Philadelphia | 23 | 13 | 16 | 9 | 4 | 81 | 20.2 | 0 | 37 | 5.1 | 44.4 |
-| Career |  |  |  | 22 | 35 | 22 | 278 | 12.6 | 1 | 37 | 12.6 | 62.9 |
+| Career |  |  |  | 23 | 37 | 22 | 278 | 12.6 | 1 | 37 | 12.1 | 59.5 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 24 | 13 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Houston | 24 | 13 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Philadelphia | 23 | 13 | 45 | 1,069 | 23.8 | 0 | 0 | N/A |
 
 ### Playoffs

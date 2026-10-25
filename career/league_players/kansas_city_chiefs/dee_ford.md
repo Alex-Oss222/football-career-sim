@@ -1,10 +1,10 @@
 # Dee Ford
 
-**Kansas City Chiefs · Defensive end · No. 55 · Age 23 · Last game October 5, 2014**
+**Kansas City Chiefs · Defensive end · No. 55 · Age 23 · Last game October 19, 2014**
 
 6' 2", 252 lb · Born March 19, 1991 · Auburn
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Dee Ford](https://commons.wikimedia.org/wiki/Special:FilePath/Dee_Ford_in_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve outside linebacker.
 
-**Sacks:** 0 (2014, through Week 5).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 23 | 55 | 5 | 9 | 8 | 1 | 3 | 0 | 0 |
+| 2014 (through Week 7) | Kansas City | 23 | 55 | 6 | 9 | 8 | 1 | 3 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 23 | 55 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Kansas City | 23 | 55 | 0 | 0 | 1 | 0 | 0 | 0 |
 
 ### Playoffs
 

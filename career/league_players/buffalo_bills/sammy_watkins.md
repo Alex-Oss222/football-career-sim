@@ -1,10 +1,10 @@
 # Sammy Watkins
 
-**Buffalo Bills · Wide receiver · No. 14 · Age 21 · Last game October 12, 2014**
+**Buffalo Bills · Wide receiver · No. 14 · Age 21 · Last game October 19, 2014**
 
 6' 1", 211 lb · Born June 14, 1993 · Clemson
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Sammy Watkins](https://commons.wikimedia.org/wiki/Special:FilePath/Sammy_Watkins.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 6.8 (2014, through Week 6).
+**Yards per target:** 6.9 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 21 | 14 | 6 | 49 | 29 | 335 | 11.6 | 4 | 44 | 55.8 | 59.2 |
+| 2014 (through Week 7) | Buffalo | 21 | 14 | 7 | 53 | 32 | 366 | 11.4 | 4 | 44 | 52.3 | 60.4 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 21 | 14 | 0 | 0 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Buffalo | 21 | 14 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs
 

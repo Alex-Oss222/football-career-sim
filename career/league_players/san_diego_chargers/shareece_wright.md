@@ -1,10 +1,10 @@
 # Shareece Wright
 
-**San Diego Chargers · Cornerback · No. 29 · Age 27 · Last game October 12, 2014**
+**San Diego Chargers · Cornerback · No. 29 · Age 27 · Last game October 19, 2014**
 
 5' 11", 182 lb · Born April 8, 1987 · USC · Drafted in 2011, third round, by San Diego
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Shareece Wright](https://commons.wikimedia.org/wiki/Special:FilePath/Shareece_Wright.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 5 (2014, through Week 6).
+**Passes defended:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 27 | 29 | 6 | 28 | 17 | 11 | 1 | 0 | 0 |
+| 2014 (through Week 7) | San Diego | 27 | 29 | 7 | 28 | 17 | 11 | 1 | 0 | 0 |
 | 2013 | San Diego | 26 | 29 | 16 | 49 | 27 | 22 | 0 | 1 | 3 |
-| Career |  |  |  | 22 | 77 | 44 | 33 | 1 | 1 | 3 |
+| Career |  |  |  | 23 | 77 | 44 | 33 | 1 | 1 | 3 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 27 | 29 | 0 | 0 | 5 | 1 | 0 | 0 |
+| 2014 (through Week 7) | San Diego | 27 | 29 | 0 | 0 | 5 | 1 | 0 | 0 |
 | 2013 | San Diego | 26 | 29 | 2 | 9 | 11 | 0 | 0 | N/A |
 
 ### Playoffs

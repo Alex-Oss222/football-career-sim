@@ -73,6 +73,11 @@ LABEL_WORDS = {
     "Outside reserve": "Reserve outside cornerback",
 }
 
+# Stone's labels that name a game role (the chart's roles). A Game Plan that takes the role from
+# the player clears the label (scripts/apply_game_plan.cleared_labels).
+LABEL_ROLES = {"Nickel (DB5)": {"nickel"}, "Outside reserve": {"outside_reserve"},
+               "Kick returner and punt returner": {"kick_return", "punt_return"}}
+
 # The Week 1 library's slot codes in page words. None: the slot names no position (OFF, DEF,
 # SPE). ROSTER: the slot is a scheme label read through the entry's roster position (the
 # library's own rule 2).

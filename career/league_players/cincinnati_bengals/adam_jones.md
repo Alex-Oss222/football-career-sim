@@ -1,10 +1,10 @@
 # Adam Jones
 
-**Cincinnati Bengals · Cornerback · No. 24 · Age 31 · Last game October 12, 2014**
+**Cincinnati Bengals · Cornerback · No. 24 · Age 31 · Last game October 19, 2014**
 
 5' 10", 186 lb · Born September 30, 1983 · West Virginia · Drafted in 2005, first round, by Tennessee
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Adam Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Adam_Pacman_Jones.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 1 (2014, through Week 6).
+**Passes defended:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,18 +24,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 30 | 24 | 5 | 11 | 8 | 3 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Cincinnati | 30 | 24 | 6 | 13 | 10 | 3 | 1 | 0 | 0 |
 | 2013 | Cincinnati | 29 | 24 | 16 | 29 | 14 | 15 | 1 | 0 | 0 |
-| Career |  |  |  | 21 | 40 | 22 | 18 | 2 | 0 | 0 |
+| Career |  |  |  | 22 | 42 | 24 | 18 | 2 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 30 | 24 | 0 | 0 | 1 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Cincinnati | 30 | 24 | 0 | 0 | 1 | 0 | 0 | 1 |
 | 2013 | Cincinnati | 29 | 24 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 30 | 24 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Cincinnati | 30 | 24 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Cincinnati | 29 | 24 | 0 | 0 | N/A | 47 | 528 | 11.2 |
 
 ### Playoffs

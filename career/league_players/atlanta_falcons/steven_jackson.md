@@ -1,10 +1,10 @@
 # Steven Jackson
 
-**Atlanta Falcons · Running back · No. 39 · Age 31 · Last game October 12, 2014**
+**Atlanta Falcons · Running back · No. 39 · Age 31 · Last game October 19, 2014**
 
 6' 2", 240 lb · Born July 22, 1983 · Oregon State · Drafted in 2004, first round, by St. Louis
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Steven Jackson](https://commons.wikimedia.org/wiki/Special:FilePath/Steven_Jackson_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 4.6 (2014, through Week 6).
+**Yards per carry:** 4.4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 31 | 39 | 6 | 30 | 138 | 4.6 | 0 | 23 | 23.0 |
+| 2014 (through Week 7) | Atlanta | 31 | 39 | 7 | 34 | 148 | 4.4 | 0 | 23 | 21.1 |
 | 2013 | Atlanta | 30 | 39 | 16 | 271 | 1,212 | 4.5 | 4 | 26 | 75.8 |
-| Career |  |  |  | 22 | 301 | 1,350 | 4.5 | 4 | 26 | 61.4 |
+| Career |  |  |  | 23 | 305 | 1,360 | 4.5 | 4 | 26 | 59.1 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 31 | 39 | 6 | 6 | 62 | 10.3 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Atlanta | 31 | 39 | 9 | 8 | 61 | 7.6 | 1 | 0 | 0 |
 | 2013 | Atlanta | 30 | 39 | 73 | 42 | 381 | 9.1 | 1 | 2 | 2 |
 
 ### Playoffs

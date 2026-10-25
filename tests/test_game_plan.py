@@ -557,21 +557,29 @@ def needed_inactives(root, week):
     return out
 
 
+# A role a player of only these positions can hold (the outside reserve replaces an outside corner).
+ROLE_FAMILY = {"outside_reserve": {"CB"}}
+
+
 def role_cover(root, inactive):
     """The depth lines a complete page needs when a game role's holder does not dress (a real game
     can leave one out, as Week 6 left the nickel): each such role goes to the next player of its group
-    after the holder, in chart order, who dresses and holds no role."""
+    below the holder, in chart order, who dresses, holds no role and fits the role (a corner for the
+    outside reserve), or, when none below him does (Butler, the outside reserve, second to last in
+    Week 7's order), the nearest such player above him."""
     from scripts.check_game_plan import ROLE_GROUP
     chart = json.loads(SeasonPaths(SEASON, root).depth_chart.read_text(encoding="utf-8"))
-    roles = chart.get("roles") or {}
+    roles, positions = chart.get("roles") or {}, chart.get("positions") or {}
     lines = []
     for label, role in game_plan.ROLES.items():
         holder = next((p for p, held in roles.items() if role in (held or ())), None)
         if holder is None or holder not in inactive or role not in ROLE_GROUP:
             continue
         order = chart["depth"][ROLE_GROUP[role]]
-        after = order[order.index(holder) + 1:] if holder in order else order
-        lines.append("%s: %s" % (label, next(p for p in after if p not in inactive and p not in roles)))
+        at = order.index(holder) if holder in order else len(order)
+        fits = [p for p in order[at + 1:] + order[:at][::-1] if p not in inactive and p not in roles
+                and positions.get(p) in ROLE_FAMILY.get(role, {positions.get(p)})]
+        lines.append("%s: %s" % (label, fits[0]))
     return lines
 
 
@@ -957,6 +965,62 @@ class CarryTests(unittest.TestCase):
         _, first, _ = compile_week6(staff="Tice relays.")
         _, second, _ = compile_week6(staff="Tice relays.\n- And at greater length.\n- Bates on protection.")
         self.assertEqual(game_plan.sheet_bytes(first), game_plan.sheet_bytes(second))
+
+
+class ClearedLabelTests(unittest.TestCase):
+    """The chart writers clear a dated label the chart no longer bears out: a place a reorder
+    changed, or a game role (a label that names one) given to someone else."""
+
+    def labels(self, decisions):
+        from types import SimpleNamespace
+        from scripts import apply_game_plan
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        working = Path(tmp.name) / "working.json"
+        working.write_text(json.dumps({"stone_role_decisions": decisions}), encoding="utf-8")
+        return apply_game_plan.label_decisions(SimpleNamespace(record=lambda rel: working),
+                                               skip=lambda d: d.get("game_plan_week") == 7)
+
+    def test_a_role_change_clears_only_a_role_label_the_player_lost(self):
+        from scripts import apply_game_plan
+        labels = self.labels([
+            {"date": "October 4, 2014", "decisions": [
+                {"player": "Nickel", "role": "Nickel (DB5)"}, {"player": "Reserve", "role": "Outside reserve"},
+                {"player": "Returner", "role": "Kick returner and punt returner"},
+                {"player": "Receiver", "role": "X relief (fifth receiver)"}, {"player": "Mover", "role": "Sixth receiver"},
+                {"player": "Both", "role": "H"}]},
+            {"date": "October 19, 2014", "game_plan_week": 7, "decisions": [{"player": "Nickel", "role": None}]}])
+        self.assertEqual(labels["Nickel"], "Nickel (DB5)")   # the week's own earlier apply is left out
+        base = {"depth": {"WR": ["Receiver", "Other", "Mover", "Both"], "DB": ["Nickel", "Reserve", "Butler"]},
+                "roles": {"Nickel": ["nickel"], "Reserve": ["outside_reserve"],
+                          "Returner": ["kick_return", "punt_return"]}}
+        after = {"depth": {"WR": ["Receiver", "Mover", "Other", "Both"], "DB": ["Nickel", "Reserve", "Butler"]},
+                 "roles": {"Reserve": ["nickel"], "Butler": ["outside_reserve"],
+                           "Returner": ["kick_return", "punt_return"], "Receiver": ["kick_return"]}}
+        after["depth"]["WR"] = ["Receiver", "Mover", "Both", "Other"]
+        after["roles"]["Both"] = ["punt_return"]
+        # Mover's and Both's places changed (Both also took a return: his reason is still his
+        # place); Nickel lost the nickel and Reserve the outside reserve. Receiver gained a
+        # return, but his label names his receiver place, which held.
+        self.assertEqual(apply_game_plan.cleared_labels(labels, base, after),
+                         [("Mover", "place"), ("Both", "place"), ("Nickel", "role"), ("Reserve", "role")])
+        self.assertEqual(apply_game_plan.role_changed(base, after),
+                         ["Both", "Butler", "Nickel", "Receiver", "Reserve"])
+
+    def test_the_entry_is_the_week_7_record(self):
+        """The one helper writes the Week 7 Game Plan's committed entry, and a re-apply replaces it."""
+        from scripts import apply_game_plan
+        working = json.loads(SeasonPaths(2014, ROOT).record("offseason/depth_chart_working.json")
+                             .read_text(encoding="utf-8"))
+        entry = next(d for d in working["stone_role_decisions"] if d.get("game_plan_week") == 7)
+        cleared = [(row["player"], row["note"].split(" ", 1)[0]) for row in entry["decisions"]]
+        chart = {"stone_role_decisions": [d for d in working["stone_role_decisions"] if d is not entry] + [entry]}
+        this_week = lambda d: d.get("game_plan_week") == 7      # noqa: E731
+        out = apply_game_plan.record_cleared(copy.deepcopy(chart), cleared, entry["date"], "Week 7 Game Plan",
+                                             drop=this_week, game_plan_week=7)
+        self.assertEqual(json.dumps(out["stone_role_decisions"][-1]), json.dumps(entry))
+        self.assertEqual(sum(this_week(d) for d in out["stone_role_decisions"]), 1)
+        self.assertEqual(apply_game_plan.record_cleared({}, [], entry["date"], "Week 7 Game Plan"), {})
 
 
 class ParseTests(unittest.TestCase):

@@ -1,10 +1,10 @@
 # Antone Smith
 
-**Atlanta Falcons · Running back · No. 35 · Age 29 · Last game October 12, 2014**
+**Atlanta Falcons · Running back · No. 35 · Age 29 · Last game October 19, 2014**
 
 5' 9", 192 lb · Born September 17, 1985 · Florida State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Antone Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Antone_Smith_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve running back.
 
-**Yards per carry:** 10.0 (2014, through Week 6).
+**Yards per carry:** 10.0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 28 | 35 | 6 | 1 | 10 | 10.0 | 0 | 10 | 1.7 |
+| 2014 (through Week 7) | Atlanta | 28 | 35 | 7 | 1 | 10 | 10.0 | 0 | 10 | 1.4 |
 | 2013 | Atlanta | 27 | 35 | 16 | 25 | 92 | 3.7 | 0 | 11 | 5.8 |
-| Career |  |  |  | 22 | 26 | 102 | 3.9 | 0 | 11 | 4.6 |
+| Career |  |  |  | 23 | 26 | 102 | 3.9 | 0 | 11 | 4.4 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 28 | 35 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 7) | Atlanta | 28 | 35 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 | 2013 | Atlanta | 27 | 35 | 2 | 1 | 12 | 12.0 | 0 | 1 | 1 |
 
 ### Playoffs

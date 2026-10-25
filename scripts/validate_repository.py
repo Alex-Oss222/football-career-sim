@@ -690,9 +690,10 @@ def validate(root=ROOT):
                                    f'differs from its receipt; run render_box_score.py --season {year} --write')
     except (OSError, ValueError, KeyError, TypeError) as exc:
         errors.append(f'Box score cannot be rebuilt from its receipt: {exc}')
-    # Game week version 2 (runtime/game_report.py): every Game Report in the template's section
-    # order, its box score last under "Full game statistics" once the game has closed, and its
-    # final score, line score, overtime and record agreeing with the game.
+    # Game week version 2 (runtime/game_report.py): every Game Report in its game's layout (the
+    # template's from 2014 Week 7, Week 6's as written), its box score last under "Full game
+    # statistics" once the game has closed, and its final score, line score, overtime and record
+    # agreeing with the game.
     try:
         from runtime.game_report import validation_errors as game_report_errors
         errors.extend(game_report_errors(root))

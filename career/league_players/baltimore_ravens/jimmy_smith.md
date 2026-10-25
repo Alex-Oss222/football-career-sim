@@ -1,10 +1,10 @@
 # Jimmy Smith
 
-**Baltimore Ravens · Cornerback · No. 22 · Age 26 · Last game October 12, 2014**
+**Baltimore Ravens · Cornerback · No. 22 · Age 26 · Last game October 19, 2014**
 
 6' 2", 209 lb · Born July 26, 1988 · Colorado · Drafted in 2011, first round, by Baltimore
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jimmy Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_smith_2011_stadium_practice.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 5 (2014, through Week 6).
+**Passes defended:** 6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 26 | 22 | 6 | 37 | 25 | 12 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Baltimore | 26 | 22 | 7 | 46 | 33 | 13 | 0 | 1 | 1 |
 | 2013 | Baltimore | 25 | 22 | 16 | 41 | 32 | 9 | 1 | 0 | 0 |
-| Career |  |  |  | 22 | 78 | 57 | 21 | 1 | 1 | 1 |
+| Career |  |  |  | 23 | 87 | 65 | 22 | 1 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 26 | 22 | 2 | 62 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Baltimore | 26 | 22 | 2 | 62 | 6 | 0 | 0 | 0 |
 | 2013 | Baltimore | 25 | 22 | 2 | 27 | 5 | 2 | 2 | N/A |
 
 ### Playoffs

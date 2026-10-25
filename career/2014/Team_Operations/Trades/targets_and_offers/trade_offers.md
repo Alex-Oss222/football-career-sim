@@ -18,3 +18,9 @@ Dated record of every actual trade communication, in order. The plan and each tr
 ## Open trade calls
 
 No trade call is open.
+
+## Trade deadline
+
+| Deadline | When | Where it stands |
+|---|---|---|
+| Trading deadline | Tuesday, October 28, 4 p.m. ET | No proposal is on record. |

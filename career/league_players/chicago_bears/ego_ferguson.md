@@ -1,10 +1,10 @@
 # Ego Ferguson
 
-**Chicago Bears · Nose tackle · No. 95 · Age 23 · Last game October 12, 2014**
+**Chicago Bears · Nose tackle · No. 95 · Age 23 · Last game October 19, 2014**
 
 6' 2", 315 lb · Born September 22, 1991 · LSU
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Ego Ferguson](https://commons.wikimedia.org/wiki/Special:FilePath/NFL_Chicago_Bears_DT_Ego_Ferguson_and_his_daughter_Farrah_Ferguson_play_at_Gymboree.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve nose tackle.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 22 | 95 | 6 | 3 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Chicago | 22 | 95 | 7 | 3 | 3 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 22 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Chicago | 22 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -756,6 +756,52 @@
    "events": [
     "2014-10-12-week-6-at-tennessee"
    ]
+  },
+  {
+   "date": "October 13 to 18, 2014",
+   "recorded": "2014-10-18",
+   "event": "Cleveland practice week: availability notes",
+   "change": "No order change and no Stone depth decision. Availability notes only: Joel Bitonio and A.J. Bouye reassessed October 15, the date their instructions named, with no change; each stays out, projected return October 22, no further reassessment date, and neither took part in the Wednesday, Thursday and Friday practices. The practice week produced no injury and no new restriction. The Week 7 inactives, the nickel and any order change are Stone's on his Week 7 Game Plan.",
+   "sources": [
+    {
+     "label": "Medical history",
+     "page": "career/2014/Team_Operations/Medical/medical_history.md#october-13-to-18-bitonio-and-bouye-reassessed-no-change"
+    }
+   ],
+   "events": [
+    "2014-10-13-to-10-18-bitonio-bouye-reassessed"
+   ]
+  },
+  {
+   "date": "October 19, 2014",
+   "recorded": "2014-10-19",
+   "event": "Week 7: Stone's Game Plan",
+   "change": "Week 7 inactives: Joel Bitonio, A.J. Bouye, Jordan Poyer, Charles Leno Jr., Kasim Edebali, Todd Davis, Hakeem Nicks. RB order: C.J. Anderson, Maurice Jones-Drew, Jonathan Grimes; WR order: Davante Adams, Adam Thielen, Andrew Hawkins, Allen Hurns, Taylor Gabriel, Hakeem Nicks; TE order: Travis Kelce, Marcedes Lewis, Marcel Jensen, Gator Hoskins; OL order: Eugene Monroe, Andrew Norwell, Corey Linsley, Trai Turner, Lane Johnson, Cornelius Lucas, Mike Brewster, Charles Leno Jr., Joel Bitonio; DL order: Jeremy Mincey, Aaron Donald, Sen'Derrick Marks, Andre Branch, Roy Miller, C.J. Mosley, Daniel Te'o-Nesheim, Kasim Edebali; LB order: Daryl Smith, Paul Posluszny, Telvin Smith, Sio Moore, Julian Stanford, Christian Jones, Todd Davis; Nickel: Alan Ball; Outside reserve corner: Malcolm Butler; the earlier label of Taylor Gabriel cleared; the earlier label of Hakeem Nicks cleared; the earlier label of Joel Bitonio cleared; the earlier label of A.J. Bouye cleared; the earlier label of Alan Ball cleared.",
+   "sources": [
+    {
+     "label": "Week 7 Game Plan",
+     "page": "career/2014/Regular_Season/Games/Week_07/Game_Plan.md"
+    }
+   ]
+  },
+  {
+   "date": "October 19, 2014",
+   "recorded": "2014-10-19",
+   "event": "Week 7 against Cleveland: availability notes",
+   "change": "No order change and no Stone depth decision. Availability notes only: Andrew Norwell under an independent medical hold (October 19; head/neck, short, logged at 6:26 of the first quarter and removed, Cornelius Lucas playing left guard from then on by the chart's order; projected return November 2, reassessment October 23); Aqib Talib under an independent medical hold (head/neck, minor, logged at 2:45 of the first quarter and removed, Alterraun Verner moving to his spot and Malcolm Butler coming on outside by the chart's order; projected return October 22, reassessment October 20); Daryl Smith out, short (lower extremity, logged at 10:27 of the second quarter and removed, Paul Posluszny moving to his spot, Telvin Smith to Posluszny's and Sio Moore coming on by the chart's order; projected return October 31, reassessment October 23); Alterraun Verner limited (lower extremity, minor, logged at 10:27 of the second quarter, not removed; no time lost projected, reassessment October 20); Davante Adams out (lower extremity, minor, logged at 0:00 of the second quarter, not removed; projected return October 20, reassessment October 20). The seven Week 7 inactives were applied as set. The Week 8 inactives and any order change are Stone's on his Week 8 Game Plan after the October 20 and 23 reassessments.",
+   "sources": [
+    {
+     "label": "Week 7 Game Report",
+     "page": "career/2014/Regular_Season/Games/Week_07/Game_Report.md"
+    },
+    {
+     "label": "medical history",
+     "page": "career/2014/Team_Operations/Medical/medical_history.md#october-19-week-7-injuries-against-cleveland"
+    }
+   ],
+   "events": [
+    "2014-10-19-week-7-vs-cleveland"
+   ]
   }
  ]
 }

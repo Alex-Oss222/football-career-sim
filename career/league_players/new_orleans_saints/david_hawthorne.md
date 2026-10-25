@@ -1,10 +1,10 @@
 # David Hawthorne
 
-**New Orleans Saints · Inside linebacker · No. 57 · Age 29 · Last game October 5, 2014**
+**New Orleans Saints · Inside linebacker · No. 57 · Age 29 · Last game October 19, 2014**
 
 6' 0", 246 lb · Born May 14, 1985 · TCU
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![David Hawthorne](https://commons.wikimedia.org/wiki/Special:FilePath/David_Hawthorne.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting inside linebacker.
 
-**Tackles:** 17 (2014, through Week 5).
+**Tackles:** 22 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 29 | 57 | 4 | 17 | 13 | 4 | 1 | 1 | 2 |
+| 2014 (through Week 7) | New Orleans | 29 | 57 | 5 | 22 | 17 | 5 | 1 | 2 | 4 |
 | 2013 | New Orleans | 28 | 57 | 16 | 106 | 76 | 30 | 10 | 6 | 9 |
-| Career |  |  |  | 20 | 123 | 89 | 34 | 11 | 7 | 11 |
+| Career |  |  |  | 21 | 128 | 93 | 35 | 11 | 8 | 13 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 29 | 57 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | New Orleans | 29 | 57 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | New Orleans | 28 | 57 | 3 | 20 | 5 | 1 | 1 | N/A |
 
 ### Playoffs

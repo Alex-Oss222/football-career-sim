@@ -1,10 +1,10 @@
 # Owen Daniels
 
-**Baltimore Ravens · Tight end · No. 81 · Age 31 · Last game October 12, 2014**
+**Baltimore Ravens · Tight end · No. 81 · Age 31 · Last game October 19, 2014**
 
 6' 3", 245 lb · Born November 9, 1982 · Wisconsin · Drafted in 2006, fourth round, by Houston
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Owen Daniels](https://commons.wikimedia.org/wiki/Special:FilePath/Owen_Daniels.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve tight end.
 
-**Yards per target:** 5.6 (2014, through Week 6).
+**Yards per target:** 5.1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 31 | 81 | 6 | 9 | 6 | 50 | 8.3 | 0 | 20 | 8.3 | 66.7 |
+| 2014 (through Week 7) | Baltimore | 31 | 81 | 7 | 15 | 9 | 76 | 8.4 | 0 | 20 | 10.9 | 60.0 |
 | 2013 | Houston | 30 | 81 | 16 | 79 | 54 | 647 | 12.0 | 2 | 40 | 40.4 | 68.4 |
-| Career |  |  |  | 22 | 88 | 60 | 697 | 11.6 | 2 | 40 | 31.7 | 68.2 |
+| Career |  |  |  | 23 | 94 | 63 | 723 | 11.5 | 2 | 40 | 31.4 | 67.0 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 31 | 81 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Baltimore | 31 | 81 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Houston | 30 | 81 | 0 | 0 | 0 | 1 | 1 |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Brent Grimes
 
-**Miami Dolphins · Cornerback · No. 21 · Age 31 · Last game October 12, 2014**
+**Miami Dolphins · Cornerback · No. 21 · Age 31 · Last game October 19, 2014**
 
 5' 10", 190 lb · Born July 19, 1983 · University of Shippensburg
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Brent Grimes](https://commons.wikimedia.org/wiki/Special:FilePath/Brent_Grimes-Hamburg_Sea_Devils.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 5 (2014, through Week 6).
+**Passes defended:** 5 (2014, through Week 7).
 
 ## Staff assessment
 
@@ -30,18 +30,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 31 | 21 | 5 | 27 | 20 | 7 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 31 | 21 | 6 | 34 | 25 | 9 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 30 | N/A | 16 | 67 | 44 | 23 | 5 | 0 | 0 |
-| Career |  |  |  | 21 | 94 | 64 | 30 | 5 | 0 | 0 |
+| Career |  |  |  | 22 | 101 | 69 | 32 | 5 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 31 | 21 | 1 | 11 | 5 | 1 | 1 | 0 |
+| 2014 (through Week 7) | Miami | 31 | 21 | 1 | 11 | 5 | 1 | 1 | 0 |
 | 2013 | Jacksonville | 30 | N/A | 2 | 36 | 5 | 1 | 1 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 31 | 21 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Miami | 31 | 21 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 30 | N/A | 4 | 91 | 22.8 | 2 | 10 | 5.0 |
 
 ### Playoffs

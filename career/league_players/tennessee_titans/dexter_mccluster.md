@@ -1,10 +1,10 @@
 # Dexter McCluster
 
-**Tennessee Titans · Running back · No. 22 · Age 26 · Last game October 12, 2014**
+**Tennessee Titans · Running back · No. 22 · Age 26 · Last game October 19, 2014**
 
 5' 8", 170 lb · Born August 25, 1988 · Mississippi · Drafted in 2010, second round, by Kansas City
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Dexter McCluster](https://commons.wikimedia.org/wiki/Special:FilePath/Mccluster_spring_game.jpg?width=500)
 
@@ -22,18 +22,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 26 | 22 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 |
+| 2014 (through Week 7) | Tennessee | 26 | 22 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 |
 | 2013 | Kansas City | 25 | 22 | 16 | 2 | 6 | 3.0 | 0 | 6 | 0.4 |
-| Career |  |  |  | 22 | 2 | 6 | 3.0 | 0 | 6 | 0.3 |
+| Career |  |  |  | 23 | 2 | 6 | 3.0 | 0 | 6 | 0.3 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 26 | 22 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 7) | Tennessee | 26 | 22 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 | 2013 | Kansas City | 25 | 22 | 63 | 41 | 434 | 10.6 | 1 | 1 | 1 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 26 | 22 | 0 | 0 | N/A | 9 | 56 | 6.2 |
+| 2014 (through Week 7) | Tennessee | 26 | 22 | 0 | 0 | N/A | 10 | 58 | 5.8 |
 | 2013 | Kansas City | 25 | 22 | 0 | 0 | N/A | 39 | 428 | 11.0 |
 
 ### Playoffs

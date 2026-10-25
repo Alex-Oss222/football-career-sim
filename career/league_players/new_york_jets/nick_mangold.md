@@ -1,10 +1,10 @@
 # Nick Mangold
 
-**New York Jets · Center · No. 74 · Age 30 · Last game October 12, 2014**
+**New York Jets · Center · No. 74 · Age 30 · Last game October 16, 2014**
 
 6' 4", 307 lb · Born January 13, 1984 · Ohio State · Drafted in 2006, first round, by the New York Jets
 
-As of October 12, 2014, after Week 6.
+As of October 16, 2014, after Week 7.
 
 ![Nick Mangold](https://commons.wikimedia.org/wiki/Special:FilePath/Nick_mangold_2011.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting center.
 
-**Sacks allowed:** 1 (2014, through Week 6).
+**Sacks allowed:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Jets | 30 | 74 | 6 | 6 | 384 | 1 | 23 |
+| 2014 (through Week 7) | N.Y. Jets | 30 | 74 | 7 | 7 | 450 | 1 | 29 |
 | 2013 | N.Y. Jets | 29 | 74 | 16 | N/A | N/A | 1 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 2 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 2 | N/A |
 
 ### Playoffs
 

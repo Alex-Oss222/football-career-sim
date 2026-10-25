@@ -1,10 +1,10 @@
 # Eric Weddle
 
-**San Diego Chargers · Free safety · No. 32 · Age 29 · Last game October 12, 2014**
+**San Diego Chargers · Free safety · No. 32 · Age 29 · Last game October 19, 2014**
 
 5' 11", 200 lb · Born January 4, 1985 · Utah · Drafted in 2007, second round, by San Diego
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Eric Weddle](https://commons.wikimedia.org/wiki/Special:FilePath/Eric_Weddle.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 3 (2014, through Week 6).
+**Passes defended:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 29 | 32 | 6 | 15 | 11 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Diego | 29 | 32 | 7 | 21 | 14 | 7 | 0 | 0 | 0 |
 | 2013 | San Diego | 28 | 32 | 16 | 111 | 73 | 38 | 2 | 1 | 1 |
-| Career |  |  |  | 22 | 126 | 84 | 42 | 2 | 1 | 1 |
+| Career |  |  |  | 23 | 132 | 87 | 45 | 2 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Diego | 29 | 32 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Diego | 29 | 32 | 0 | 0 | 4 | 0 | 0 | 0 |
 | 2013 | San Diego | 28 | 32 | 2 | 0 | 22 | 1 | 1 | N/A |
 
 ### Playoffs

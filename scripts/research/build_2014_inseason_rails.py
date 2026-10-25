@@ -128,6 +128,8 @@ CLUB = {"R14-0107": "FA"}
 POSITION_REVIEWED = {
     "R14W6-098": "the Week 1 chart seats this gsis in a defensive-end slot (LDE2) under a TE label; the source "
                 "states DE, and nflverse players.csv holds one player of the name",
+    "R14W7-039": "the same gsis as R14W6-098, re-signed by the club that waived him; the Week 1 chart seats him in a "
+                "defensive-end slot (LDE2) under a TE label and the source states DE",
 }
 # Second-pass citations whose page title names a real injury are recorded
 # without the URL (rules C6); the URL stays in the pinned research list.
@@ -162,6 +164,8 @@ KIND_MAP = {
     "ps_poach": "ps_poach", "waiver_claim": "waiver_claim", "extension": "contract",
     "released_unspecified": "released_unspecified", "reserve_nfi": "availability", "retirement": "retirement",
     "left_team_exemption": "availability", "activated": "injury_activation",
+    # The record's first trade (Week 7): one row for each club, the runtime's trade kinds (runtime/rails.py).
+    "trade_in": "trade_in", "trade_out": "trade_out",
 }
 INERT_OUTCOME = {"injury_reserve": "NOT_APPLIED_INJURY", "injury_release": "NOT_APPLIED_INJURY",
                  "injury_activation": "NOT_APPLIED_INJURY", "suspension": "NOT_APPLIED_SUSPENSION",

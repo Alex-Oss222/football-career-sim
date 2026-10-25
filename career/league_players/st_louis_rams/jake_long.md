@@ -1,10 +1,10 @@
 # Jake Long
 
-**St. Louis Rams · Offensive tackle · No. 77 · Age 29 · Last game October 13, 2014**
+**St. Louis Rams · Offensive tackle · No. 77 · Age 29 · Last game October 19, 2014**
 
 6' 7", 322 lb · Born May 9, 1985 · Michigan · Drafted in 2008, first round, by Miami
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jake Long](https://commons.wikimedia.org/wiki/Special:FilePath/Jakelong22222.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 6 (2014, through Week 6).
+**Sacks allowed:** 6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | St. Louis | 29 | 77 | 5 | 5 | 323 | 6 | 19 |
+| 2014 (through Week 7) | St. Louis | 29 | 77 | 5 | 5 | 323 | 6 | 19 |
 | 2013 | St. Louis | 28 | 77 | 16 | N/A | N/A | 7 | N/A |
 | Career |  |  |  | 21 | N/A | N/A | 13 | N/A |
 

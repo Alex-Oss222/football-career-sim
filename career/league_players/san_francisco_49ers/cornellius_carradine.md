@@ -1,10 +1,10 @@
 # Cornellius Carradine
 
-**San Francisco 49ers · Defensive end · No. 95 · Age 24 · Last game October 13, 2014**
+**San Francisco 49ers · Defensive end · No. 95 · Age 24 · Last game October 19, 2014**
 
 6' 4", 295 lb · Born February 18, 1990 · Florida State; Butler County JC
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Cornellius Carradine](https://commons.wikimedia.org/wiki/Special:FilePath/Cornellius_Carradine.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Reserve defensive tackle.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 24 | 95 | 6 | 1 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Francisco | 24 | 95 | 7 | 2 | 1 | 1 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 24 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Francisco | 24 | 95 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

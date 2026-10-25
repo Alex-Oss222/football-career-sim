@@ -1,10 +1,10 @@
 # Garth Gerhart
 
-**Green Bay Packers · Center · No. 72 · Age 25 · Last game October 12, 2014**
+**Green Bay Packers · Center · No. 72 · Age 25 · Last game October 19, 2014**
 
 6' 1", 310 lb · Born October 21, 1988 · Arizona State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ## Contract
 
@@ -16,7 +16,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 25 | 72 | 6 | 0 | 0 | 0 | 21 |
+| 2014 (through Week 7) | Green Bay | 25 | 72 | 7 | 0 | 0 | 0 | 21 |
 
 ### Playoffs
 

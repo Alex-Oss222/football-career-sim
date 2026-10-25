@@ -1,10 +1,10 @@
 # Joe Berger
 
-**Minnesota Vikings · Center · No. 61 · Age 32 · Last game October 12, 2014**
+**Minnesota Vikings · Center · No. 61 · Age 32 · Last game October 19, 2014**
 
 6' 5", 305 lb · Born May 25, 1982 · Michigan Tech University · Drafted in 2005, sixth round, by Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Joe Berger](https://commons.wikimedia.org/wiki/Special:FilePath/Joe_Berger.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve center.
 
-**Sacks allowed:** 1 (2014, through Week 6).
+**Sacks allowed:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 32 | 61 | 6 | 1 | 118 | 1 | 15 |
+| 2014 (through Week 7) | Minnesota | 32 | 61 | 7 | 1 | 118 | 1 | 18 |
 | 2013 | Minnesota | 31 | 61 | 16 | N/A | N/A | 6 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 7 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 7 | N/A |
 
 ### Playoffs
 

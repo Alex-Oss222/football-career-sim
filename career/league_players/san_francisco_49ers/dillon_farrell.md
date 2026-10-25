@@ -1,10 +1,10 @@
 # Dillon Farrell
 
-**San Francisco 49ers · Guard · No. 56 · Age 24 · Last game October 13, 2014**
+**San Francisco 49ers · Guard · No. 56 · Age 24 · Last game October 19, 2014**
 
 6' 5", 303 lb · Born September 7, 1990 · New Mexico
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Dillon Farrell](https://commons.wikimedia.org/wiki/Special:FilePath/Dillon_Farrell.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 23 | 56 | 6 | 0 | 0 | 0 | 25 |
+| 2014 (through Week 7) | San Francisco | 23 | 56 | 7 | 0 | 0 | 0 | 25 |
 
 ### Playoffs
 

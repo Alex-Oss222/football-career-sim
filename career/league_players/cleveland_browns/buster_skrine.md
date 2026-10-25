@@ -1,10 +1,10 @@
 # Buster Skrine
 
-**Cleveland Browns · Cornerback · No. 22 · Age 25 · Last game October 12, 2014**
+**Cleveland Browns · Cornerback · No. 22 · Age 25 · Last game October 19, 2014**
 
 5' 9", 185 lb · Born April 26, 1989 · Tennessee-Chattanooga · Drafted in 2011, fifth round, by Cleveland
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Buster Skrine](https://commons.wikimedia.org/wiki/Special:FilePath/Buster_Skrine_cropped.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 6 (2014, through Week 6).
+**Passes defended:** 9 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 25 | 22 | 5 | 32 | 22 | 10 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Cleveland | 25 | 22 | 6 | 38 | 26 | 12 | 0 | 0 | 0 |
 | 2013 | Cleveland | 24 | 22 | 15 | 111 | 71 | 40 | 3 | 0 | 0 |
-| Career |  |  |  | 20 | 143 | 93 | 50 | 3 | 0 | 0 |
+| Career |  |  |  | 21 | 149 | 97 | 52 | 3 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cleveland | 25 | 22 | 3 | 58 | 6 | 0 | 1 | 0 |
+| 2014 (through Week 7) | Cleveland | 25 | 22 | 3 | 58 | 9 | 0 | 1 | 0 |
 | 2013 | Cleveland | 24 | 22 | 7 | 119 | 24 | 2 | 2 | N/A |
 
 ### Playoffs

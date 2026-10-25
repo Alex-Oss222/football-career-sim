@@ -1,21 +1,21 @@
 # Jacksonville 2014
 
-**October 12, 2014.** Last game: Week 6, beat Tennessee 24-10 away. Record: 4-2.
+**October 19, 2014.** Last game: Week 7, lost to Cleveland 34-31 at home. Record: 4-3.
 
 Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coach page](../Stone/README.md)
 
 ## Waiting on you
 
-1. **Week 7 game plan for Cleveland.** Due before kickoff, Sunday, October 19, 1 p.m. ET; the practice work before the first practice, Wednesday, October 15. [Game Week Briefing](Regular_Season/Games/Week_07/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_07/Game_Plan.md)
-2. **Week 7 inactives.** Due before kickoff, Sunday, October 19, 1 p.m. ET. Still to come: A.J. Bouye's reassessment (October 15); Joel Bitonio's reassessment (October 15). [Game Week Briefing](Regular_Season/Games/Week_07/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_07/Game_Plan.md)
+1. **Week 8 game plan for Miami.** Due before kickoff, Sunday, October 26, 1 p.m. ET; the practice work before the first practice, Wednesday, October 22. [Game Week Briefing](Regular_Season/Games/Week_08/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_08/Game_Plan.md)
+2. **Week 8 inactives.** Due before kickoff, Sunday, October 26, 1 p.m. ET. Still to come: Alterraun Verner's reassessment (October 20); Aqib Talib's reassessment (October 20); Davante Adams's reassessment and projected return (October 20); A.J. Bouye's projected return (October 22); Aqib Talib's projected return (October 22); Joel Bitonio's projected return (October 22); Andrew Norwell's reassessment (October 23); Daryl Smith's reassessment (October 23). [Game Week Briefing](Regular_Season/Games/Week_08/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_08/Game_Plan.md)
 
 ## Next event
 
-**Next game:** Week 7, Cleveland at Jacksonville, Sunday, October 19, 1 p.m. ET, EverBank Field. [Week 7](Regular_Season/Games/Week_07/README.md)
+**Next game:** Week 8, Miami at Jacksonville, Sunday, October 26, 1 p.m. ET, EverBank Field. [Week 8](Regular_Season/Games/Week_08/README.md)
 
 ## Season at a glance
 
-**4-2 · 2nd AFC South · AFC position 8.** 139 scored · 119 allowed · +20 differential. 23.2 points per game · 41.0% on third down · 43.0% allowed.
+**4-3 · 2nd AFC South · AFC position 9.** 170 scored · 153 allowed · +17 differential. 24.3 points per game · 38.5% on third down · 46.4% allowed.
 
 [Season statistics](Regular_Season/Statistics/README.md) · [Division standings](Regular_Season/standings.md)
 
@@ -23,29 +23,36 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coac
 
 | Category | Player | Through the last game |
 |---|---|---|
-| Passing | [Kirk Cousins](Team_Operations/Team/Player_Cards/kirk_cousins.md) | 1,444 pass yds · 10 TD, 8 INT |
-| Rushing | [Maurice Jones-Drew](Team_Operations/Team/Player_Cards/maurice_jones_drew.md) | 569 rush yds · 4 TD |
-| Receiving | [Davante Adams](Team_Operations/Team/Player_Cards/davante_adams.md) | 421 rec yds · 34 catches, 3 TD |
-| Tackling | [Daryl Smith](Team_Operations/Team/Player_Cards/daryl_smith.md) | 56 tackles · 1 sack |
+| Passing | [Kirk Cousins](Team_Operations/Team/Player_Cards/kirk_cousins.md) | 1,624 pass yds · 12 TD, 9 INT |
+| Rushing | [Maurice Jones-Drew](Team_Operations/Team/Player_Cards/maurice_jones_drew.md) | 570 rush yds · 4 TD |
+| Receiving | [Davante Adams](Team_Operations/Team/Player_Cards/davante_adams.md) | 451 rec yds · 36 catches, 3 TD |
+| Tackling | [Daryl Smith](Team_Operations/Team/Player_Cards/daryl_smith.md) | 61 tackles · 1 sack |
 
 ## Medical and availability
 
 | Player | Status | Next medical date |
 |---|---|---|
-| [Joel Bitonio](Team_Operations/Team/Player_Cards/joel_bitonio.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md) | Review October 15, 2014; projected return October 22, 2014 |
-| [A.J. Bouye](Team_Operations/Team/Player_Cards/a_j_bouye.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md) | Review October 15, 2014; projected return October 22, 2014 |
+| [Davante Adams](Team_Operations/Team/Player_Cards/davante_adams.md) | [Out · lower extremity (minor)](Team_Operations/Medical/incidents/davante_adams_2014-10-19.md) | Review October 20, 2014; projected return October 20, 2014 |
+| [Joel Bitonio](Team_Operations/Team/Player_Cards/joel_bitonio.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md) | Projected return October 22, 2014 |
+| [Andrew Norwell](Team_Operations/Team/Player_Cards/andrew_norwell.md) | [Independent hold · head/neck (short)](Team_Operations/Medical/incidents/andrew_norwell_2014-10-19.md) | Review October 23, 2014; projected return November 2, 2014 |
+| [Daryl Smith](Team_Operations/Team/Player_Cards/daryl_smith.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/daryl_smith_2014-10-19.md) | Review October 23, 2014; projected return October 31, 2014 |
+| [Aqib Talib](Team_Operations/Team/Player_Cards/aqib_talib.md) | [Independent hold · head/neck (minor)](Team_Operations/Medical/incidents/aqib_talib_2014-10-19.md) | Review October 20, 2014; projected return October 22, 2014 |
+| [Alterraun Verner](Team_Operations/Team/Player_Cards/alterraun_verner.md) | [Limited · lower extremity (no projected absence)](Team_Operations/Medical/incidents/alterraun_verner_2014-10-19.md) | Review October 20, 2014 |
+| [A.J. Bouye](Team_Operations/Team/Player_Cards/a_j_bouye.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md) | Projected return October 22, 2014 |
 
 Projected dates require medical clearance. [Full injury report](Team_Operations/Medical/current_injury_report.md)
 
 ## Coming up
 
-- October 13: Tennessee review and Cleveland introduction
-- October 14: The players' day off; the applicable Reserve/PUP and Reserve/NFI practice-return period opens
-- October 15 to 18: Week 7 practice week under Stone's standing practice instruction; Bouye's and Bitonio's reassessments October 15
-- October 19, 1 p.m.: Week 7, Cleveland at Jacksonville, EverBank Field
-- October 20: Lowery may begin practicing
-- October 22: Bouye's and Bitonio's projected returns
+- October 20: Cleveland review and Miami introduction; Talib's, Verner's and Adams's reassessments and Adams's projected return; Lowery may begin practicing
+- October 21: The players' day off
+- October 22: Bouye's, Bitonio's and Talib's projected returns
+- October 22 to 25: Week 8 practice week under Stone's standing practice instruction; Norwell's and Daryl Smith's reassessments October 23
+- October 26, 1 p.m.: Week 8, Miami at Jacksonville, EverBank Field
 - October 28, 4 p.m.: Trading deadline
+- October 29: Veteran releases become subject to waivers for the rest of the season
+- October 31: Daryl Smith's projected return
+- November 2, 1 p.m.: Week 9, Jacksonville at Cincinnati; Norwell's projected return
 - November 3: Lowery's earliest return to the active roster
 
 ## With others
@@ -62,7 +69,7 @@ Projected dates require medical clearance. [Full injury report](Team_Operations/
 - **Fourth downs:** Fourth-and-2 or less, go, with Tice's first call on the matching menu; fourth-and-3 or 4, go on the opponent's side of midfield, otherwise the field goal or the punt by the field-goal line; fourth-and-5 or more, a field goal when the kick is 52 yards or less, otherwise a punt. [Week 5 report](Regular_Season/Games/Week_05/output.md)
 - **Other clubs' approaches:** You are not open to job offers or interviews with other clubs; another club's request and Shad Khan's answer reach you as news.
 - **Assistants' interviews elsewhere:** Grant an assistant's head-coach interview and a position coach's coordinator interview; refuse a move to the same title elsewhere; alike whatever the asking club, within the league's rules for the season.
-- **Practice schedule:** Each week as in Weeks 1 to 5: Tuesday the players' day off, practices on Wednesday, Thursday and Friday, and a walkthrough on Saturday; pads on the Wednesday of Weeks 7, 9, 13, 15 and 17, helmets only otherwise; Monday, November 24, 2014 an added day off, so November has the four days off the CBA requires, bye days not counted.
+- **Practice schedule:** Each week as in Weeks 1 to 5: a walkthrough on Monday, Tuesday the players' day off, practices on Wednesday, Thursday and Friday, and a walkthrough on Saturday; pads on the Wednesday of Weeks 7, 9, 13, 15 and 17, helmets only otherwise; Monday, November 24, 2014 an added day off in place of that week's walkthrough, so November has the four days off the CBA requires, bye days not counted.
 
 ## Who calls what
 

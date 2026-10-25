@@ -1,10 +1,10 @@
 # Darian Stewart
 
-**Baltimore Ravens · Free safety · No. 24 · Age 26 · Last game October 12, 2014**
+**Baltimore Ravens · Free safety · No. 24 · Age 26 · Last game October 19, 2014**
 
 5' 11", 214 lb · Born August 4, 1988 · South Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Darian Stewart](https://commons.wikimedia.org/wiki/Special:FilePath/Darian_Stewart.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 3 (2014, through Week 6).
+**Passes defended:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 26 | 24 | 6 | 36 | 26 | 10 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Baltimore | 26 | 24 | 7 | 38 | 28 | 10 | 0 | 1 | 1 |
 | 2013 | St. Louis | 25 | 20 | 14 | 6 | 4 | 2 | 0 | 0 | 0 |
-| Career |  |  |  | 20 | 42 | 30 | 12 | 0 | 1 | 1 |
+| Career |  |  |  | 21 | 44 | 32 | 12 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 26 | 24 | 0 | 0 | 3 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Baltimore | 26 | 24 | 1 | 0 | 4 | 0 | 0 | 0 |
 | 2013 | St. Louis | 25 | 20 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

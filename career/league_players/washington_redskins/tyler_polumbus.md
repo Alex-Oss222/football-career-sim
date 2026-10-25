@@ -1,10 +1,10 @@
 # Tyler Polumbus
 
-**Washington Redskins · Offensive tackle · No. 74 · Age 29 · Last game October 12, 2014**
+**Washington Redskins · Offensive tackle · No. 74 · Age 29 · Last game October 19, 2014**
 
 6' 8", 308 lb · Born April 10, 1985 · Colorado
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Tyler Polumbus](https://commons.wikimedia.org/wiki/Special:FilePath/Tyler_polumbus_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 2 (2014, through Week 6).
+**Sacks allowed:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 29 | 74 | 5 | 5 | 273 | 2 | 17 |
+| 2014 (through Week 7) | Washington | 29 | 74 | 5 | 5 | 273 | 2 | 17 |
 | 2013 | Washington | 28 | 74 | 16 | N/A | N/A | 7 | N/A |
 | Career |  |  |  | 21 | N/A | N/A | 9 | N/A |
 

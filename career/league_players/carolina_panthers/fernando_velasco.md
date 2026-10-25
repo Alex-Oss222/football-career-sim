@@ -1,10 +1,10 @@
 # Fernando Velasco
 
-**Carolina Panthers · Center · No. 75 · Age 29 · Last game October 12, 2014**
+**Carolina Panthers · Center · No. 75 · Age 29 · Last game October 19, 2014**
 
 6' 4", 310 lb · Born February 22, 1985 · Georgia
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Fernando Velasco](https://commons.wikimedia.org/wiki/Special:FilePath/Fernando_Velasco_%28American_football%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve center.
 
-**Sacks allowed:** 0 (2014, through Week 6).
+**Sacks allowed:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 29 | 75 | 6 | 0 | 27 | 0 | 3 |
+| 2014 (through Week 7) | Carolina | 29 | 75 | 7 | 0 | 27 | 0 | 3 |
 
 ### Playoffs
 

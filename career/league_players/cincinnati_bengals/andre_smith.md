@@ -1,10 +1,10 @@
 # Andre Smith
 
-**Cincinnati Bengals · Offensive tackle · No. 71 · Age 27 · Last game October 12, 2014**
+**Cincinnati Bengals · Offensive tackle · No. 71 · Age 27 · Last game October 19, 2014**
 
 6' 4", 340 lb · Born January 25, 1987 · Alabama · Drafted in 2009, first round, by Cincinnati
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Andre Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Andre_Smith_%28offensive_tackle%29_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 5 (2014, through Week 6).
+**Sacks allowed:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 27 | 71 | 5 | 5 | 338 | 5 | 22 |
+| 2014 (through Week 7) | Cincinnati | 27 | 71 | 6 | 6 | 405 | 5 | 27 |
 | 2013 | Cincinnati | 26 | 71 | 16 | N/A | N/A | 7 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 12 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 12 | N/A |
 
 ### Playoffs
 

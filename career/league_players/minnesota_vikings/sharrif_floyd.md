@@ -1,10 +1,10 @@
 # Sharrif Floyd
 
-**Minnesota Vikings · Defensive tackle · No. 73 · Age 23 · Last game October 12, 2014**
+**Minnesota Vikings · Defensive tackle · No. 73 · Age 23 · Last game October 19, 2014**
 
 6' 3", 305 lb · Born May 28, 1991 · Florida
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Sharrif Floyd](https://commons.wikimedia.org/wiki/Special:FilePath/Floyd_Army_Bowl.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 6 (2014, through Week 6).
+**Sacks:** 7 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 23 | 73 | 6 | 43 | 38 | 5 | 6 | 6 | 8 |
+| 2014 (through Week 7) | Minnesota | 23 | 73 | 7 | 50 | 44 | 6 | 6 | 7 | 11 |
 | 2013 | Minnesota | 22 | 95 | 16 | 5 | 3 | 2 | 0 | 0 | 0 |
-| Career |  |  |  | 22 | 48 | 41 | 7 | 6 | 6 | 8 |
+| Career |  |  |  | 23 | 55 | 47 | 8 | 6 | 7 | 11 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 23 | 73 | 0 | 0 | 0 | 2 | 0 | 0 |
+| 2014 (through Week 7) | Minnesota | 23 | 73 | 0 | 0 | 0 | 2 | 0 | 0 |
 | 2013 | Minnesota | 22 | 95 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

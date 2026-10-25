@@ -1,6 +1,6 @@
 # Jacksonville Jaguars depth chart
 
-As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Tennessee 10).
+As of October 19, 2014, after the Week 7 game against Cleveland (Cleveland 34, Jacksonville 31).
 
 This is Stone's current depth order, not a confirmed game-day lineup. Injuries do not change a starter or reserve assignment until Stone changes the chart.
 
@@ -13,15 +13,15 @@ Player use varies with the personnel package. The starting line and the X, H and
 | Position | Player | Assignment |
 |---|---|---|
 | QB | [Kirk Cousins](../Player_Cards/kirk_cousins.md) | Chad Henne is QB2 |
-| RB | [Maurice Jones-Drew](../Player_Cards/maurice_jones_drew.md) | C.J. Anderson and Jonathan Grimes follow |
+| RB | [C.J. Anderson](../Player_Cards/c_j_anderson.md) | Maurice Jones-Drew and Jonathan Grimes follow |
 | FB | [Montell Owens](../Player_Cards/montell_owens.md) | For fullback packages |
 | X | [Davante Adams](../Player_Cards/davante_adams.md) | X (WR1) |
 | H | [Adam Thielen](../Player_Cards/adam_thielen.md) | H |
 | Z | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) | Z |
-| TE | [Marcedes Lewis](../Player_Cards/marcedes_lewis.md) | Additional tight ends follow in the group order |
+| TE | [Travis Kelce](../Player_Cards/travis_kelce.md) | Additional tight ends follow in the group order |
 | LT | [Eugene Monroe](../Player_Cards/eugene_monroe.md) |  |
-| LG | [Joel Bitonio](../Player_Cards/joel_bitonio.md) |  |
-| C | [Mike Brewster](../Player_Cards/mike_brewster.md) |  |
+| LG | [Andrew Norwell](../Player_Cards/andrew_norwell.md) |  |
+| C | [Corey Linsley](../Player_Cards/corey_linsley.md) |  |
 | RG | [Trai Turner](../Player_Cards/trai_turner.md) |  |
 | RT | [Lane Johnson](../Player_Cards/lane_johnson.md) |  |
 
@@ -31,24 +31,29 @@ The first defensive-line and linebacker groups, and the first four defensive bac
 
 | Unit | First group |
 |---|---|
-| Defensive line | [Jeremy Mincey](../Player_Cards/jeremy_mincey.md), [Sen'Derrick Marks](../Player_Cards/sen_derrick_marks.md), [Roy Miller](../Player_Cards/roy_miller.md), [Andre Branch](../Player_Cards/andre_branch.md) |
-| Linebackers | [Daryl Smith](../Player_Cards/daryl_smith.md), [Paul Posluszny](../Player_Cards/paul_posluszny.md), [Julian Stanford](../Player_Cards/julian_stanford.md) |
+| Defensive line | [Jeremy Mincey](../Player_Cards/jeremy_mincey.md), [Aaron Donald](../Player_Cards/aaron_donald.md), [Sen'Derrick Marks](../Player_Cards/sen_derrick_marks.md), [Andre Branch](../Player_Cards/andre_branch.md) |
+| Linebackers | [Daryl Smith](../Player_Cards/daryl_smith.md), [Paul Posluszny](../Player_Cards/paul_posluszny.md), [Telvin Smith](../Player_Cards/telvin_smith.md) |
 | Defensive backs | [Aqib Talib](../Player_Cards/aqib_talib.md), [Alterraun Verner](../Player_Cards/alterraun_verner.md), [Bacarri Rambo](../Player_Cards/bacarri_rambo.md), [Brynden Trawick](../Player_Cards/brynden_trawick.md) |
 
 ## Situational defensive roles
 
 | Role | Player |
 |---|---|
-| Nickel corner | [A.J. Bouye](../Player_Cards/a_j_bouye.md) |
-| Outside corner reserve | [Alan Ball](../Player_Cards/alan_ball.md) |
+| Nickel corner | [Alan Ball](../Player_Cards/alan_ball.md) |
+| Outside corner reserve | [Malcolm Butler](../Player_Cards/malcolm_butler.md) |
 | Dime, sixth defensive back | [Chris Prosinski](../Player_Cards/chris_prosinski.md) |
 
 ## Current medical limitations
 
 | Player | Status | Next medical date |
 |---|---|---|
-| [Joel Bitonio](../Player_Cards/joel_bitonio.md) | Out · lower extremity (short) | Review October 15, 2014; projected return October 22, 2014 |
-| [A.J. Bouye](../Player_Cards/a_j_bouye.md) | Out · lower extremity (short) | Review October 15, 2014; projected return October 22, 2014 |
+| [Davante Adams](../Player_Cards/davante_adams.md) | Out · lower extremity (minor) | Review October 20, 2014; projected return October 20, 2014 |
+| [Joel Bitonio](../Player_Cards/joel_bitonio.md) | Out · lower extremity (short) | Projected return October 22, 2014 |
+| [Andrew Norwell](../Player_Cards/andrew_norwell.md) | Independent hold · head/neck (short) | Review October 23, 2014; projected return November 2, 2014 |
+| [Daryl Smith](../Player_Cards/daryl_smith.md) | Out · lower extremity (short) | Review October 23, 2014; projected return October 31, 2014 |
+| [Aqib Talib](../Player_Cards/aqib_talib.md) | Independent hold · head/neck (minor) | Review October 20, 2014; projected return October 22, 2014 |
+| [Alterraun Verner](../Player_Cards/alterraun_verner.md) | Limited · lower extremity (no projected absence) | Review October 20, 2014 |
+| [A.J. Bouye](../Player_Cards/a_j_bouye.md) | Out · lower extremity (short) | Projected return October 22, 2014 |
 
 Medical clearance remains with the medical staff. [Full medical report](../../Medical/current_injury_report.md)
 
@@ -69,8 +74,8 @@ The order in each group remains Stone's current order. Reserve assignments that 
 
 | Order | Player | Pos | Role |
 |---:|---|---|---|
-| 1 | [Maurice Jones-Drew](../Player_Cards/maurice_jones_drew.md) | RB |  |
-| 2 | [C.J. Anderson](../Player_Cards/c_j_anderson.md) | RB |  |
+| 1 | [C.J. Anderson](../Player_Cards/c_j_anderson.md) | RB |  |
+| 2 | [Maurice Jones-Drew](../Player_Cards/maurice_jones_drew.md) | RB |  |
 | 3 | [Jonathan Grimes](../Player_Cards/jonathan_grimes.md) | RB |  |
 
 #### Fullback
@@ -87,15 +92,15 @@ The order in each group remains Stone's current order. Reserve assignments that 
 | 2 | [Adam Thielen](../Player_Cards/adam_thielen.md) | WR | H |
 | 3 | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) | WR | Z |
 | 4 | [Allen Hurns](../Player_Cards/allen_hurns.md) | WR | First general receiver relief |
-| 5 | [Hakeem Nicks](../Player_Cards/hakeem_nicks.md) | WR | X relief (fifth receiver) |
-| 6 | [Taylor Gabriel](../Player_Cards/taylor_gabriel.md) | WR | Sixth receiver |
+| 5 | [Taylor Gabriel](../Player_Cards/taylor_gabriel.md) | WR |  |
+| 6 | [Hakeem Nicks](../Player_Cards/hakeem_nicks.md) | WR |  |
 
 #### Tight ends
 
 | Order | Player | Pos | Role |
 |---:|---|---|---|
-| 1 | [Marcedes Lewis](../Player_Cards/marcedes_lewis.md) | TE |  |
-| 2 | [Travis Kelce](../Player_Cards/travis_kelce.md) | TE |  |
+| 1 | [Travis Kelce](../Player_Cards/travis_kelce.md) | TE |  |
+| 2 | [Marcedes Lewis](../Player_Cards/marcedes_lewis.md) | TE |  |
 | 3 | [Marcel Jensen](../Player_Cards/marcel_jensen.md) | TE |  |
 | 4 | [Gator Hoskins](../Player_Cards/gator_hoskins.md) | TE |  |
 
@@ -104,14 +109,14 @@ The order in each group remains Stone's current order. Reserve assignments that 
 | Order | Player | Pos | Role |
 |---:|---|---|---|
 | 1 | [Eugene Monroe](../Player_Cards/eugene_monroe.md) | OT |  |
-| 2 | [Joel Bitonio](../Player_Cards/joel_bitonio.md) | OT | Left guard |
-| 3 | [Mike Brewster](../Player_Cards/mike_brewster.md) | C |  |
+| 2 | [Andrew Norwell](../Player_Cards/andrew_norwell.md) | G |  |
+| 3 | [Corey Linsley](../Player_Cards/corey_linsley.md) | C |  |
 | 4 | [Trai Turner](../Player_Cards/trai_turner.md) | G | Right guard |
 | 5 | [Lane Johnson](../Player_Cards/lane_johnson.md) | OT |  |
 | 6 | [Cornelius Lucas](../Player_Cards/cornelius_lucas.md) | OT |  |
-| 7 | [Charles Leno Jr.](../Player_Cards/charles_leno_jr.md) | OT |  |
-| 8 | [Andrew Norwell](../Player_Cards/andrew_norwell.md) | G |  |
-| 9 | [Corey Linsley](../Player_Cards/corey_linsley.md) | C |  |
+| 7 | [Mike Brewster](../Player_Cards/mike_brewster.md) | C |  |
+| 8 | [Charles Leno Jr.](../Player_Cards/charles_leno_jr.md) | OT |  |
+| 9 | [Joel Bitonio](../Player_Cards/joel_bitonio.md) | OT |  |
 
 ### Defense
 
@@ -120,12 +125,12 @@ The order in each group remains Stone's current order. Reserve assignments that 
 | Order | Player | Pos | Role |
 |---:|---|---|---|
 | 1 | [Jeremy Mincey](../Player_Cards/jeremy_mincey.md) | DE | Edge 1 |
-| 2 | [Sen'Derrick Marks](../Player_Cards/sen_derrick_marks.md) | DT |  |
-| 3 | [Roy Miller](../Player_Cards/roy_miller.md) | DT |  |
+| 2 | [Aaron Donald](../Player_Cards/aaron_donald.md) | DT |  |
+| 3 | [Sen'Derrick Marks](../Player_Cards/sen_derrick_marks.md) | DT |  |
 | 4 | [Andre Branch](../Player_Cards/andre_branch.md) | DE |  |
-| 5 | [C.J. Mosley](../Player_Cards/c_j_mosley.md) | DT |  |
-| 6 | [Daniel Te'o-Nesheim](../Player_Cards/daniel_te_o_nesheim.md) | DE |  |
-| 7 | [Aaron Donald](../Player_Cards/aaron_donald.md) | DT |  |
+| 5 | [Roy Miller](../Player_Cards/roy_miller.md) | DT |  |
+| 6 | [C.J. Mosley](../Player_Cards/c_j_mosley.md) | DT |  |
+| 7 | [Daniel Te'o-Nesheim](../Player_Cards/daniel_te_o_nesheim.md) | DE |  |
 | 8 | [Kasim Edebali](../Player_Cards/kasim_edebali.md) | DE |  |
 
 #### Linebackers
@@ -134,9 +139,9 @@ The order in each group remains Stone's current order. Reserve assignments that 
 |---:|---|---|---|
 | 1 | [Daryl Smith](../Player_Cards/daryl_smith.md) | LB |  |
 | 2 | [Paul Posluszny](../Player_Cards/paul_posluszny.md) | LB |  |
-| 3 | [Julian Stanford](../Player_Cards/julian_stanford.md) | LB |  |
+| 3 | [Telvin Smith](../Player_Cards/telvin_smith.md) | LB |  |
 | 4 | [Sio Moore](../Player_Cards/sio_moore.md) | LB |  |
-| 5 | [Telvin Smith](../Player_Cards/telvin_smith.md) | LB |  |
+| 5 | [Julian Stanford](../Player_Cards/julian_stanford.md) | LB |  |
 | 6 | [Christian Jones](../Player_Cards/christian_jones.md) | LB |  |
 | 7 | [Todd Davis](../Player_Cards/todd_davis.md) | LB |  |
 
@@ -148,11 +153,11 @@ The order in each group remains Stone's current order. Reserve assignments that 
 | 2 | [Alterraun Verner](../Player_Cards/alterraun_verner.md) | CB |  |
 | 3 | [Bacarri Rambo](../Player_Cards/bacarri_rambo.md) | S |  |
 | 4 | [Brynden Trawick](../Player_Cards/brynden_trawick.md) | S |  |
-| 5 | [A.J. Bouye](../Player_Cards/a_j_bouye.md) | CB | Nickel (DB5) |
+| 5 | [A.J. Bouye](../Player_Cards/a_j_bouye.md) | CB |  |
 | 6 | [Chris Prosinski](../Player_Cards/chris_prosinski.md) | S | Sixth defensive back (Dime) |
 | 7 | [Adrian Phillips](../Player_Cards/adrian_phillips.md) | S |  |
-| 8 | [Alan Ball](../Player_Cards/alan_ball.md) | CB | Outside reserve |
-| 9 | [Malcolm Butler](../Player_Cards/malcolm_butler.md) | CB |  |
+| 8 | [Alan Ball](../Player_Cards/alan_ball.md) | CB | Nickel |
+| 9 | [Malcolm Butler](../Player_Cards/malcolm_butler.md) | CB | Outside reserve corner |
 | 10 | [Jordan Poyer](../Player_Cards/jordan_poyer.md) | CB |  |
 
 ## Special teams
@@ -167,19 +172,19 @@ The order in each group remains Stone's current order. Reserve assignments that 
 
 ## Inactives
 
-Week 7 against Cleveland, October 19, 2014: not yet set. Stone selects the eligible inactives before the game.
+Week 8 against Miami, October 26, 2014: not yet set. Stone selects the eligible inactives before the game.
 
 The prior game's inactives, for reference:
 
 | Player | Position |
 |---|---|
+| [Joel Bitonio](../Player_Cards/joel_bitonio.md) | OT |
+| [A.J. Bouye](../Player_Cards/a_j_bouye.md) | CB |
 | [Jordan Poyer](../Player_Cards/jordan_poyer.md) | CB |
-| [Malcolm Butler](../Player_Cards/malcolm_butler.md) | CB |
-| [Jonathan Grimes](../Player_Cards/jonathan_grimes.md) | RB |
-| [Corey Linsley](../Player_Cards/corey_linsley.md) | C |
+| [Charles Leno Jr.](../Player_Cards/charles_leno_jr.md) | OT |
 | [Kasim Edebali](../Player_Cards/kasim_edebali.md) | DE |
-| [Taylor Gabriel](../Player_Cards/taylor_gabriel.md) | WR |
-| [Gator Hoskins](../Player_Cards/gator_hoskins.md) | TE |
+| [Todd Davis](../Player_Cards/todd_davis.md) | LB |
+| [Hakeem Nicks](../Player_Cards/hakeem_nicks.md) | WR |
 
 ## Captains, August 31, 2014
 

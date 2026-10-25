@@ -1,10 +1,10 @@
 # Sean Renfree
 
-**Atlanta Falcons · Quarterback · No. 12 · Age 24 · Last game October 12, 2014**
+**Atlanta Falcons · Quarterback · No. 12 · Age 24 · Last game October 19, 2014**
 
 6' 5", 225 lb · Born April 28, 1990 · Duke
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Sean Renfree](https://commons.wikimedia.org/wiki/Special:FilePath/Sean_Renfree_2013.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 24 | 12 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 7) | Atlanta | 24 | 12 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 24 | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Atlanta | 24 | 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

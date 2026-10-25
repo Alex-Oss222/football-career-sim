@@ -22,17 +22,6 @@ jobs:
         run: python scripts/validate_repository.py
       - name: Validate ten-year cap tracker
         run: python scripts/render_jaguars_cap_tracker.py --check
-      - name: Regression tests
-        # One process per test module on four cores; the verbose log of any
-        # failed module is printed, and every module's log is kept below.
-        run: python scripts/run_suite_parallel.py . --jobs 4 --out "${{ runner.temp }}/regression-test-logs"
-      - name: Keep the regression test logs
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: regression-test-logs
-          path: ${{ runner.temp }}/regression-test-logs
-          if-no-files-found: ignore
       - name: Report the separate game gate
         shell: bash
         run: |
@@ -46,3 +35,32 @@ jobs:
           elif [ "$result" -ne 0 ]; then
             exit "$result"
           fi
+
+  regression-tests:
+    # The suite split across four machines (scripts/run_suite_parallel.py
+    # --shard): each module runs in exactly one shard, balanced by the
+    # durations in tests/suite_durations.json; one process per test module on
+    # four cores in each.
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [1, 2, 3, 4]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Regression tests, shard ${{ matrix.shard }} of 4
+        # The verbose log of any failed module is printed, and every module's
+        # log is kept below.
+        run: python scripts/run_suite_parallel.py . --jobs 4 --shard ${{ matrix.shard }}/4 --out "${{ runner.temp }}/regression-test-logs"
+      - name: Keep the regression test logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: regression-test-logs-${{ matrix.shard }}
+          path: ${{ runner.temp }}/regression-test-logs
+          if-no-files-found: ignore

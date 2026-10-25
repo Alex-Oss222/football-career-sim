@@ -384,8 +384,10 @@ class RehearsalTests(Runner):
         self.assertNotIn(first["id"], page)
         self.assertIn(("action", first["id"]), [(i["section"], i.get("event")) for i in entry["inserts"]])
         self.assertIn("## %s" % open_events.title(first), self.pages.responses.read_text(encoding="utf-8"))
-        # Each head-coach change the clock has reached is news under FOR YOUR INFORMATION here.
-        news = [e["id"] for e in lc.stored_news(SEASON, root).values()]
+        # Each head-coach change resolved in this week's period is news under FOR YOUR INFORMATION
+        # here; one resolved before the week's first briefing went out in an earlier week's brief.
+        news = [e["id"] for e in lc.stored_news(SEASON, root).values()
+                if (e["resolution"].get("period") or e["period"]) == {"week": week}]
         self.assertEqual(sorted(i["event"] for i in entry["inserts"] if i["section"] == "fyi"), sorted(news))
         item = se.item(root, first["queue_item"])
         self.assertEqual((item["status"], item["blocks"]),
@@ -488,18 +490,25 @@ class RehearsalTests(Runner):
         wk = render_game_week.Week(root)
         se.set_clock(root, "%s, after the game-day clock advance for Week %d %s" % (se.long_date(self.game_day), week,
                                                                                     wk.where()))
-        # The exams of the week, each recorded on its date (test data: no change).
+        # The exams of the week, each recorded on its date (test data): a reassessment with no change, and
+        # a projected return reached, which clears the player on that date as every reader of the note
+        # does (runtime/week_inputs.roster_available), in the club's clearance words.
         data = json.loads(self.paths.roster.read_text(encoding="utf-8"))
-        names = []
+        names, reassessed, cleared = [], [], {}
         for wait in self.waits:
-            name = wait["what"].split("'s reassessment")[0]
-            if name in names:
-                continue
-            names.append(name)
+            name, what = wait["what"].split("'s ", 1)
+            if name not in names:
+                names.append(name)
             row = next(p for p in data["players"] if p["name"] == name)
             day = date.fromisoformat(wait["date"])
-            new = re.sub(r"; reassessment [A-Z][a-z]+ \d{1,2}", "; reassessed %s %d with no change (%s)" % (
-                day.strftime("%B"), day.day, TEST), row["availability"], count=1)
+            if what.startswith("reassessment"):
+                new = re.sub(r"; reassessment [A-Z][a-z]+ \d{1,2}", "; reassessed %s %d with no change (%s)" % (
+                    day.strftime("%B"), day.day, TEST), row["availability"], count=1)
+                reassessed += [name] if name not in reassessed else []
+            else:
+                self.assertTrue(what.startswith("projected return"), wait["what"])
+                new = "No communicated restriction: cleared %s, his projected date (%s)" % (se.long_date(day), TEST)
+                cleared[name] = day
             self.assertNotEqual(new, row["availability"])
             row["availability"] = new
         self.paths.roster.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
@@ -511,19 +520,25 @@ class RehearsalTests(Runner):
                 "id": "%s-to-%s-test-reassessments" % (monday.isoformat(), saturday.strftime("%m-%d")),
                 "summary": "A test record of the week's reassessments, with no change; the practice week produced no "
                            "injury or new restriction."}
+        record = "%s reassessed on the dates the instructions named, with no change" % (
+            " and ".join(reassessed) or "no player was")
+        if cleared:
+            record += "; %s cleared on %s projected dates" % (" and ".join(cleared), "his" if len(cleared) == 1 else
+                                                              "their")
         history.write_text(recorded.decode("utf-8") + "\n<!-- event-record: %s -->\n\n## %s\n\nA test record for the "
-                           "rehearsal: %s reassessed on the dates the instructions named, with no change.\n" % (
-                               json.dumps(line, sort_keys=True), heading, " and ".join(names) or "no player was"),
-                           encoding="utf-8")
+                           "rehearsal: %s.\n" % (json.dumps(line, sort_keys=True), heading, record), encoding="utf-8")
         anchor = re.sub(r"[^\w\- ]", "", heading.lower()).replace(" ", "-")
         # What was held, against the schedule the standing instruction set.
         schedule, why = rpw.applied_schedule(root, SEASON, week)
         self.assertIsNotNone(schedule, why)
         source = {"page": self.pages.readme.relative_to(root).as_posix()}
+        # A player sits out a practice under his instruction until the day it clears.
+        held_out = lambda s: [n for n in names if n not in cleared or s["date"] < cleared[n].isoformat()]  # noqa: E731
         sessions = [dict(s, participation_recorded=False, participation=[
             {"player": n, "status": "did_not_participate", "basis": "medical_instruction",
              "medical": {"page": history.relative_to(root).as_posix(), "anchor": anchor}, "source": source}
-            for n in names] if s["type"] == "practice" else []) for s in schedule["sessions"]]
+            for n in held_out(s)] if s["type"] == "practice" else []) for s in schedule["sessions"]]
+        sat_out = [n for n in names if any(n in held_out(s) for s in schedule["sessions"] if s["type"] == "practice")]
         held = root.parent / "held.json"
         held.write_text(json.dumps({"source": source, "sessions": sessions, "days_off": schedule["days_off"],
                                     "gaps": ["Participation was not recorded session by session (%s)" % TEST]}),
@@ -533,7 +548,8 @@ class RehearsalTests(Runner):
         self.assertEqual(problems, [])
         self.assertTrue(written.is_file())
         self.assertEqual(practices.padded_status(SEASON, week, root)["first"]["used"], used + self.padded)
-        # The Game Report opened with its preparation and pregame media, frozen, and its two event lines.
+        # The Game Report opened with its preparation (the template's one pregame section), frozen, and its
+        # two event lines.
         sequence = max(item["sequence"] for _, _, item in ev_mod.closures(ev_mod.load_events(root))) + 1
         prep = {"closure": {"checkpoint": "Canonical update - %s - Week %d preparation closed (%s)" % (
                     se.long_date(saturday), week, TEST), "sequence": sequence, "through": saturday.isoformat()},
@@ -546,12 +562,13 @@ class RehearsalTests(Runner):
                "date": self.game_day.isoformat(), "id": "%s-week-%d-game-day" % (self.game_day.isoformat(), week),
                "kind": "technical", "status": "closed",
                "summary": "A test record: game day of Week %d; the clock reached the game." % week}
-        self.pages.report.write_text(opened_report(root, self.game, week, [prep, day], names), encoding="utf-8")
+        self.pages.report.write_text(opened_report(root, self.game, week, [prep, day], sat_out), encoding="utf-8")
         self.assertEqual(quiet(freeze_pregame.main, [str(week), "--season", str(SEASON), "--root", str(root)])[0], 0)
         self.checkpoint(day["closure"]["checkpoint"])
         quiet(coaching_check.main, ["--season", str(SEASON), "--effective"], root=root, out=print)
         if names:
-            # The entries changed the brief's own sections while the week's items are open: reissued.
+            # The entries (each note the week's exams changed) changed the brief's own sections while the
+            # week's items are open: reissued.
             _, entry = self.reissue("b")
             self.game_day_issue = entry
             (problems, _, _), _ = quiet(check_game_plan.check, root, SEASON, week)
@@ -596,12 +613,15 @@ class RehearsalTests(Runner):
         self.assertEqual(still, [])
         ours = [r for r in game_weeks.regular_receipts(self.paths) if CLUB in (r["away"], r["home"])]
         record = sorted(game_report.record_forms(ours, CLUB), key=len)[0]
-        page = template_report(receipt, game_weeks.club_game(self.paths, week, CLUB), record, root)
-        for heading in game_report.PREGAME:
+        fixture = game_weeks.club_game(self.paths, week, CLUB)
+        layout = game_report.layout(fixture, root)
+        page = template_report(receipt, fixture, record, root)
+        for heading in layout.pregame:
             page = page.replace(section(page, heading), section(opened, heading), 1)
         links = ["[%s](%s)" % (open_events.title(r), os.path.relpath(root / r["resolution"]["result_page"],
                                                                      self.pages.folder)) for r in results]
-        page = page.replace("## 7. ", "The week's other business: %s.\n\n## 7. " % "; ".join(links), 1)
+        final = "## %s" % layout.final_record
+        page = page.replace(final, "The week's other business: %s.\n\n%s" % ("; ".join(links), final), 1)
         sequence = max(item["sequence"] for _, _, item in ev_mod.closures(ev_mod.load_events(root))) + 1
         checkpoint = "Canonical update - %s - Week %d closed" % (wpages.long_date(played), week)
         event = {"date": played.isoformat(), "id": "%s-week-%d-game" % (played.isoformat(), week), "status": "closed",
@@ -612,7 +632,7 @@ class RehearsalTests(Runner):
         text = "\n".join([title, ""] + earlier + ["<!-- event-record: %s -->" % json.dumps(event, sort_keys=True), rest])
         self.pages.report.write_text(text, encoding="utf-8")
         self.assertEqual(game_report.pregame_errors(text, json.loads(self.pages.pregame.read_text(encoding="utf-8")),
-                                                    True), [])
+                                                    True, game=fixture, root=root), [])
         self.assertEqual(game_report.result_link_errors(text, results, self.pages.report.relative_to(root).as_posix()), [])
         self.checkpoint(checkpoint)
         snapshot = hashlib.sha256((root / STATE).read_bytes()).hexdigest()
@@ -909,9 +929,9 @@ def section(text, heading):
 
 
 def opened_report(root, game, week, lines, names):
-    """The Game Report as the practice-week commit opens it: the header, the week's two event lines,
-    its preparation (test data) and the pregame media section, no session having been recorded; the
-    other sections stay the template's prompts until the game is played."""
+    """The Game Report as the practice-week commit opens it, in the template's layout: the header, the
+    week's two event lines and its preparation (test data), the one pregame section; the other sections
+    stay the template's prompts until the game is played."""
     template = (Path(root) / game_report.TEMPLATE).read_text(encoding="utf-8")
     _, rest = template.split("\n## Coach record", 1)
     when = date.fromisoformat(game["date"])
@@ -926,10 +946,9 @@ def opened_report(root, game, week, lines, names):
              "Plan](Game_Plan.md).  \n**Game-day availability:** As the Game Plan sets it.\n\n") % (
         ("%s did not practice under their medical instructions." % " and ".join(names)) if names else
         "No player was under a medical instruction.", week)
-    second = "## 2. Pregame media\n\nNo pregame media session was recorded.\n\n"
-    after = rest.split("\n## 3. The game", 1)[1]
-    return "\n".join(header) + "\n## Coach record" + rest.split("\n## 1.", 1)[0] + "\n" + first + second + \
-        "## 3. The game" + after
+    story = "## %s" % game_report.layout(game, root).story
+    after = rest.split("\n" + story, 1)[1]
+    return "\n".join(header) + "\n## Coach record" + rest.split("\n## 1.", 1)[0] + "\n" + first + story + after
 
 
 def week_digests(root, week):

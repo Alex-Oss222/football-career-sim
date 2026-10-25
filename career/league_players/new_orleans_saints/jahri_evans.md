@@ -1,10 +1,10 @@
 # Jahri Evans
 
-**New Orleans Saints · Guard · No. 73 · Age 31 · Last game October 5, 2014**
+**New Orleans Saints · Guard · No. 73 · Age 31 · Last game October 19, 2014**
 
 6' 4", 318 lb · Born August 22, 1983 · Bloomsburg · Drafted in 2006, fourth round, by New Orleans
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Jahri Evans](https://commons.wikimedia.org/wiki/Special:FilePath/Jahri_Evans_2007.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 2 (2014, through Week 5).
+**Sacks allowed:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 31 | 73 | 5 | 5 | 329 | 2 | 23 |
+| 2014 (through Week 7) | New Orleans | 31 | 73 | 6 | 6 | 399 | 2 | 28 |
 | 2013 | New Orleans | 30 | 73 | 16 | N/A | N/A | 1 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Gabe Jackson
 
-**Oakland Raiders · Guard · No. 66 · Age 23 · Last game October 12, 2014**
+**Oakland Raiders · Guard · No. 66 · Age 23 · Last game October 19, 2014**
 
 6' 3", 336 lb · Born July 12, 1991 · Mississippi State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Gabe Jackson](https://commons.wikimedia.org/wiki/Special:FilePath/Gabe_Jackson.JPG?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 23 | 66 | 5 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Oakland | 23 | 66 | 6 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

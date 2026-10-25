@@ -1,10 +1,10 @@
 # Jordan Reed
 
-**Washington Redskins · Tight end · No. 86 · Age 24 · Last game October 12, 2014**
+**Washington Redskins · Tight end · No. 86 · Age 24 · Last game October 19, 2014**
 
 6' 2", 237 lb · Born July 3, 1990 · Florida
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jordan Reed](https://commons.wikimedia.org/wiki/Special:FilePath/Jordan_Reed.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 7.4 (2014, through Week 6).
+**Yards per target:** 6.3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Washington | 24 | 86 | 4 | 31 | 24 | 229 | 9.5 | 1 | 80 | 57.2 | 77.4 |
+| 2014 (through Week 7) | Washington | 24 | 86 | 5 | 40 | 27 | 252 | 9.3 | 2 | 80 | 50.4 | 67.5 |
 | 2013 | Washington | 23 | 86 | 16 | 2 | 1 | -3 | -3.0 | 0 | 0 | -0.2 | 50.0 |
-| Career |  |  |  | 20 | 33 | 25 | 226 | 9.0 | 1 | 80 | 11.3 | 75.8 |
+| Career |  |  |  | 21 | 42 | 28 | 249 | 8.9 | 2 | 80 | 11.9 | 66.7 |
 
 ### Playoffs
 

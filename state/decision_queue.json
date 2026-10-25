@@ -231,7 +231,7 @@
     "by": "workflow",
     "event": "2014-10-12-week-6-at-tennessee"
    },
-   "status": "OPEN",
+   "status": "RESOLVED",
    "waits_on": [],
    "deadline": {
     "date": "2014-10-19",
@@ -259,7 +259,14 @@
      "path": "career/2014/Regular_Season/Games/Week_06/Game_Report.md"
     }
    ],
-   "resolution": null
+   "resolution": {
+    "date": "2014-10-19",
+    "by": "user",
+    "record": {
+     "path": "career/2014/Regular_Season/Games/Week_07/Game_Plan.md"
+    },
+    "summary": "Stone set the game plan on his Week 7 Game Plan, checked and applied October 19, 2014"
+   }
   },
   {
    "id": "2014-w07-inactives",
@@ -275,7 +282,7 @@
     "by": "workflow",
     "event": "2014-10-12-week-6-at-tennessee"
    },
-   "status": "OPEN",
+   "status": "RESOLVED",
    "waits_on": [
     {
      "what": "A.J. Bouye's reassessment",
@@ -318,6 +325,153 @@
    "sources": [
     {
      "path": "career/2014/Regular_Season/Games/Week_06/Game_Report.md"
+    }
+   ],
+   "resolution": {
+    "date": "2014-10-19",
+    "by": "user",
+    "record": {
+     "path": "career/2014/Regular_Season/Games/Week_07/Game_Plan.md"
+    },
+    "summary": "Stone set the inactives on his Week 7 Game Plan, checked and applied October 19, 2014"
+   }
+  },
+  {
+   "id": "2014-w08-game-plan",
+   "title": "Week 8 game plan for Miami",
+   "class": "weekly_game_plan",
+   "owner": "stone",
+   "authority_rows": [
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14"
+   ],
+   "question": "Stone's Week 8 plan for Miami, from which the call sheet is frozen before the game.",
+   "raised": {
+    "date": "2014-10-19",
+    "by": "workflow",
+    "event": "2014-10-19-week-7-vs-cleveland"
+   },
+   "status": "OPEN",
+   "waits_on": [],
+   "deadline": {
+    "date": "2014-10-26",
+    "label": "before the Week 8 call sheet is frozen and the Week 8 inputs are built; kickoff October 26, 1 p.m. ET",
+    "before": {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 8
+    }
+   },
+   "blocks": [
+    {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 8
+    }
+   ],
+   "fallback": null,
+   "can_continue": null,
+   "record": {
+    "path": "career/2014/Regular_Season/Games/Week_08/README.md"
+   },
+   "sources": [
+    {
+     "path": "career/2014/Regular_Season/Games/Week_07/Game_Report.md"
+    }
+   ],
+   "resolution": null
+  },
+  {
+   "id": "2014-w08-inactives",
+   "title": "Week 8 inactives",
+   "class": "game_day_inactives",
+   "owner": "stone",
+   "authority_rows": [
+    "8"
+   ],
+   "question": "Stone's Week 8 inactives for Miami.",
+   "raised": {
+    "date": "2014-10-19",
+    "by": "workflow",
+    "event": "2014-10-19-week-7-vs-cleveland"
+   },
+   "status": "OPEN",
+   "waits_on": [
+    {
+     "what": "Alterraun Verner's reassessment",
+     "owner": "medical_staff",
+     "date": "2014-10-20"
+    },
+    {
+     "what": "Aqib Talib's reassessment",
+     "owner": "medical_staff",
+     "date": "2014-10-20"
+    },
+    {
+     "what": "Davante Adams's reassessment and projected return",
+     "owner": "medical_staff",
+     "date": "2014-10-20"
+    },
+    {
+     "what": "A.J. Bouye's projected return",
+     "owner": "medical_staff",
+     "date": "2014-10-22"
+    },
+    {
+     "what": "Aqib Talib's projected return",
+     "owner": "medical_staff",
+     "date": "2014-10-22"
+    },
+    {
+     "what": "Joel Bitonio's projected return",
+     "owner": "medical_staff",
+     "date": "2014-10-22"
+    },
+    {
+     "what": "Andrew Norwell's reassessment",
+     "owner": "medical_staff",
+     "date": "2014-10-23"
+    },
+    {
+     "what": "Daryl Smith's reassessment",
+     "owner": "medical_staff",
+     "date": "2014-10-23"
+    }
+   ],
+   "deadline": {
+    "date": "2014-10-26",
+    "label": "before the Week 8 inputs are built",
+    "before": {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 8
+    }
+   },
+   "blocks": [
+    {
+     "kind": "week_inputs",
+     "season": 2014,
+     "week": 8
+    }
+   ],
+   "standing_not_applied": [
+    {
+     "instruction": "stone-healthy-inactive-rule",
+     "reason": "the rule covers the healthy inactives only; who is out for the game is known only as the week goes on, so the list is set on the Game Plan"
+    }
+   ],
+   "fallback": null,
+   "can_continue": null,
+   "record": {
+    "path": "career/2014/Team_Operations/Team/Depth_Chart/depth_chart.md"
+   },
+   "sources": [
+    {
+     "path": "career/2014/Regular_Season/Games/Week_07/Game_Report.md"
     }
    ],
    "resolution": null

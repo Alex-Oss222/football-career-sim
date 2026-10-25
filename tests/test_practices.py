@@ -205,9 +205,16 @@ class InstructionTests(unittest.TestCase):
             schedule = from_instruction(week)
             got = [(dt.date.fromisoformat(s["date"]).strftime("%A"), s["type"], s["equipment"])
                    for s in schedule["sessions"]]
+            added_off = {a["on"] for a in rule["added_days_off"]}
+            # The weekdays of this week an added day off falls on (Monday, November 24, 2014).
+            off_days = {dt.date.fromisoformat(d["date"]).strftime("%A") for d in schedule["days_off"]
+                        if d["date"] in added_off}
+            dates = [s["date"] for s in schedule["sessions"]]
             want = [(s["day"], s["type"], PAD if (week, s["day"]) in pads else rule["equipment"]["otherwise"])
-                    for s in rule["week"]["sessions"]]
+                    for s in rule["week"]["sessions"] if s["day"] not in off_days]
             self.assertEqual(got, want, week)
+            # An added day off takes the place of that day's session.
+            self.assertFalse(set(dates) & added_off, week)
             days = [dt.date.fromisoformat(d["date"]) for d in schedule["days_off"]]
             self.assertTrue(all(d < dt.date.fromisoformat(game["date"]) for d in days))
             added = [a["on"] for a in rule["added_days_off"]]
@@ -284,7 +291,8 @@ class LimitTests(unittest.TestCase):
         later = next(w for w in sorted(club_weeks()) if w > pad_weeks[-1] and w <= practices.FIRST_WEEKS)
         found = season_records(stop=later - 1)
         schedule = from_instruction(later)
-        sessions = [dict(s, equipment=PAD) if s["type"] == "practice" and i == 0 else s
+        first_practice = next(i for i, s in enumerate(schedule["sessions"]) if s["type"] == "practice")
+        sessions = [dict(s, equipment=PAD) if i == first_practice else s
                     for i, s in enumerate(schedule["sessions"])]
         message = bye_message("This practice requests pads but the earlier recorded practices")
         self.assertIn(message, practices.check_schedule(SEASON, later, sessions, schedule["days_off"], ROOT, found))

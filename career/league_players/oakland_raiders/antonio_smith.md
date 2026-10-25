@@ -1,10 +1,10 @@
 # Antonio Smith
 
-**Oakland Raiders · Defensive tackle · No. 94 · Age 32 · Last game October 12, 2014**
+**Oakland Raiders · Defensive tackle · No. 94 · Age 32 · Last game October 19, 2014**
 
 6' 3", 290 lb · Born October 21, 1981 · Oklahoma State; Northeast Oklahoma · Drafted in 2004, fifth round, by Arizona
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Antonio Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Antonio_Smith_%28defensive_end%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 2 (2014, through Week 6).
+**Sacks:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 32 | 94 | 5 | 9 | 5 | 4 | 2 | 2 | 3 |
+| 2014 (through Week 7) | Oakland | 32 | 94 | 6 | 9 | 5 | 4 | 2 | 2 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 32 | 94 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Oakland | 32 | 94 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

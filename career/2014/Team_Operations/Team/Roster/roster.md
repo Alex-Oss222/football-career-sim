@@ -1,6 +1,6 @@
 # Jacksonville Jaguars roster
 
-As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Tennessee 10).
+As of October 19, 2014, after the Week 7 game against Cleveland (Cleveland 34, Jacksonville 31).
 
 | Active roster | Reserve lists | Practice squad | Open places |
 |---|---:|---|---|
@@ -33,11 +33,11 @@ As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Ten
 
 | Player | # | Pos | Age | Status | Availability |
 |---|---:|---|---:|---|---|
-| [Davante Adams](../Player_Cards/davante_adams.md) | 17 | WR | 21 | Active roster | No communicated restriction: cleared September 26, 2014, his projected date, from the September 21 lower-extremity injury (reassessed September 22 with no change); did not practice September 24 and 25; not inserted into the Friday practice; questionable on the September 26 report; full in the September 27 walkthrough ([medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed)) |
+| [Davante Adams](../Player_Cards/davante_adams.md) | 17 | WR | 21 | Active roster | Out, minor: lower extremity, logged at 0:00 of the second quarter in the October 19 Week 7 game, not removed; projected return October 20, 2014; reassessment October 20 ([medical record](../../Medical/incidents/davante_adams_2014-10-19.md)) |
 | [Adam Thielen](../Player_Cards/adam_thielen.md) |  | WR | 24 | Active roster | No communicated restriction |
 | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) | 16 | WR | 28 | Active roster | No communicated restriction |
 | [Allen Hurns](../Player_Cards/allen_hurns.md) | 88 | WR | 22 | Active roster | No communicated restriction |
-| [Taylor Gabriel](../Player_Cards/taylor_gabriel.md) |  | WR | 23 | Active roster | No communicated restriction |
+| [Taylor Gabriel](../Player_Cards/taylor_gabriel.md) | 18 | WR | 23 | Active roster | No communicated restriction |
 | [Hakeem Nicks](../Player_Cards/hakeem_nicks.md) | 14 | WR | 26 | Active roster | No communicated restriction: cleared September 20, 2014, his projected date, from the August 28 lower-extremity injury (reassessed September 4 with no change); full in every session September 22 to 27 and September 29 to October 4 ([medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed)) |
 
 ## Tight ends
@@ -54,14 +54,14 @@ As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Ten
 | Player | # | Pos | Age | Status | Availability |
 |---|---:|---|---:|---|---|
 | [Eugene Monroe](../Player_Cards/eugene_monroe.md) | 60 | OT | 27 | Active roster | No communicated restriction |
-| [Joel Bitonio](../Player_Cards/joel_bitonio.md) | 75 | OT | 23 | Active roster | Out, short: lower extremity, logged at 1:13 of the fourth quarter in the October 12 Week 6 game, not removed; projected return October 22, 2014; reassessment October 15 ([medical record](../../Medical/incidents/joel_bitonio_2014-10-12.md)) |
+| [Joel Bitonio](../Player_Cards/joel_bitonio.md) | 75 | OT | 23 | Active roster | Out, short: lower extremity, logged at 1:13 of the fourth quarter in the October 12 Week 6 game, not removed; projected return October 22, 2014; reassessed October 15 with no change; did not practice October 15 to 17 ([medical record](../../Medical/incidents/joel_bitonio_2014-10-12.md)) |
 | [Mike Brewster](../Player_Cards/mike_brewster.md) |  | C | 25 | Active roster | No communicated restriction |
 | [Trai Turner](../Player_Cards/trai_turner.md) | 70 | G | 21 | Active roster | No communicated restriction |
 | [Lane Johnson](../Player_Cards/lane_johnson.md) |  | OT | 24 | Active roster | No communicated restriction: cleared September 17, 2014, his projected date, from the September 14 lower-extremity injury (reassessed September 15 with no change) ([medical record](../../Medical/incidents/lane_johnson_2014-09-14.md)) |
 | [Cornelius Lucas](../Player_Cards/cornelius_lucas.md) | 77 | OT | 23 | Active roster | No communicated restriction (club physical May 13, 2014, the specific check after his pre-combine foot stress fracture; the foot is a performance-staff review item) |
 | [Charles Leno Jr.](../Player_Cards/charles_leno_jr.md) | 72 | OT | 23 | Active roster | No communicated restriction |
-| [Andrew Norwell](../Player_Cards/andrew_norwell.md) | 68 | G | 22 | Active roster | No communicated restriction |
-| [Corey Linsley](../Player_Cards/corey_linsley.md) |  | C | 23 | Active roster | No communicated restriction |
+| [Andrew Norwell](../Player_Cards/andrew_norwell.md) | 68 | G | 22 | Active roster | Independent medical hold, short: head/neck, logged at 6:26 of the first quarter in the October 19 Week 7 game, removed; projected return November 2, 2014; reassessment October 23 ([medical record](../../Medical/incidents/andrew_norwell_2014-10-19.md)) |
+| [Corey Linsley](../Player_Cards/corey_linsley.md) | 63 | C | 23 | Active roster | No communicated restriction |
 
 ## Defensive line
 
@@ -80,7 +80,7 @@ As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Ten
 
 | Player | # | Pos | Age | Status | Availability |
 |---|---:|---|---:|---|---|
-| [Daryl Smith](../Player_Cards/daryl_smith.md) |  | LB | 32 | Active roster | No communicated restriction |
+| [Daryl Smith](../Player_Cards/daryl_smith.md) |  | LB | 32 | Active roster | Out, short: lower extremity, logged at 10:27 of the second quarter in the October 19 Week 7 game, removed; projected return October 31, 2014; reassessment October 23 ([medical record](../../Medical/incidents/daryl_smith_2014-10-19.md)) |
 | [Paul Posluszny](../Player_Cards/paul_posluszny.md) | 51 | LB | 30 | Active roster | No communicated restriction: cleared October 3, 2014, his projected date, from the September 28 trunk injury (reassessed September 29 with no change); did not practice October 1 and 2; full in the October 3 practice and the October 4 walkthrough ([medical record](../../Medical/incidents/paul_posluszny_2014-09-28.md)); earlier the head/neck hold from Week 13 cleared April 5, 2014 |
 | [Julian Stanford](../Player_Cards/julian_stanford.md) | 49 | LB | 24 | Active roster | No communicated restriction: the September 28 lower-extremity limit ended at the September 29 reassessment its instruction named (no time lost projected, nothing else communicated); full September 29 to October 4 ([medical record](../../Medical/incidents/julian_stanford_2014-09-28.md)); earlier cleared September 19 from the September 14 upper-extremity injury ([medical record](../../Medical/incidents/julian_stanford_2014-09-14.md)) |
 | [Sio Moore](../Player_Cards/sio_moore.md) | 55 | LB | 24 | Active roster | No communicated restriction |
@@ -92,12 +92,12 @@ As of October 12, 2014, after the Week 6 game at Tennessee (Jacksonville 24, Ten
 
 | Player | # | Pos | Age | Status | Availability |
 |---|---:|---|---:|---|---|
-| [Aqib Talib](../Player_Cards/aqib_talib.md) |  | CB | 28 | Active roster | No communicated restriction: independent medical hold from the September 21 head/neck injury released September 25, 2014, its projected date (reassessed September 22 with no change); did not practice September 24; full September 25 to 27 ([medical history](../../Medical/medical_history.md#september-22-to-27-kelce-talib-and-adams-cleared-butler-and-poyer-reassessed)) |
+| [Aqib Talib](../Player_Cards/aqib_talib.md) |  | CB | 28 | Active roster | Independent medical hold, minor: head/neck, logged at 2:45 of the first quarter in the October 19 Week 7 game, removed; projected return October 22, 2014; reassessment October 20 ([medical record](../../Medical/incidents/aqib_talib_2014-10-19.md)) |
 | [Bacarri Rambo](../Player_Cards/bacarri_rambo.md) | 24 | S | 24 | Active roster | No communicated restriction |
 | [Brynden Trawick](../Player_Cards/brynden_trawick.md) | 28 | S | 24 | Active roster | No communicated restriction: cleared October 11, 2014, his projected date, from the October 5 lower-extremity injury (reassessed October 7 with no change); did not practice October 8 to 10; full in the October 11 walkthrough ([medical record](../../Medical/incidents/brynden_trawick_2014-10-05.md)) |
 | [Jordan Poyer](../Player_Cards/jordan_poyer.md) | 33 | CB | 23 | Active roster | No communicated restriction: independent medical hold from the September 21 head/neck injury released October 9, 2014, its projected date (reassessed September 27 with no change); did not practice October 8; full October 9 to 11 ([medical record](../../Medical/incidents/jordan_poyer_2014-09-21.md)); earlier cleared August 26 from the August 22 upper-extremity injury |
-| [Alterraun Verner](../Player_Cards/alterraun_verner.md) |  | CB | 25 | Active roster | No communicated restriction |
-| [A.J. Bouye](../Player_Cards/a_j_bouye.md) |  | CB | 23 | Active roster | Out, short: lower extremity, logged at 13:26 of the third quarter in the October 12 Week 6 game, removed; projected return October 22, 2014; reassessment October 15 ([medical record](../../Medical/incidents/a_j_bouye_2014-10-12.md)) |
+| [Alterraun Verner](../Player_Cards/alterraun_verner.md) |  | CB | 25 | Active roster | Limited, no projected absence: lower extremity, logged at 10:27 of the second quarter in the October 19 Week 7 game, not removed; no time lost projected; reassessment October 20 ([medical record](../../Medical/incidents/alterraun_verner_2014-10-19.md)) |
+| [A.J. Bouye](../Player_Cards/a_j_bouye.md) |  | CB | 23 | Active roster | Out, short: lower extremity, logged at 13:26 of the third quarter in the October 12 Week 6 game, removed; projected return October 22, 2014; reassessed October 15 with no change; did not practice October 15 to 17 ([medical record](../../Medical/incidents/a_j_bouye_2014-10-12.md)) |
 | [Malcolm Butler](../Player_Cards/malcolm_butler.md) |  | CB | 24 | Active roster | No communicated restriction: independent medical hold from the September 21 head/neck injury released October 2, 2014, its projected date (reassessed September 24 with no change); did not practice October 1; full October 2 to 4 in approved preparation work only ([medical record](../../Medical/incidents/malcolm_butler_2014-09-21.md)) |
 | [Chris Prosinski](../Player_Cards/chris_prosinski.md) | 42 | S | 27 | Active roster | No communicated restriction |
 | [Adrian Phillips](../Player_Cards/adrian_phillips.md) |  | S | 22 | Active roster | No communicated restriction: cleared September 29, 2014, his projected date, from the September 28 lower-extremity injury, at the reassessment its instruction named; full September 29 to October 4 ([medical record](../../Medical/incidents/adrian_phillips_2014-09-28.md)) |

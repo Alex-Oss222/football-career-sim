@@ -1,10 +1,10 @@
 # Demario Davis
 
-**New York Jets · Middle linebacker · No. 56 · Age 25 · Last game October 12, 2014**
+**New York Jets · Middle linebacker · No. 56 · Age 25 · Last game October 16, 2014**
 
 6' 2", 239 lb · Born January 11, 1989 · Arkansas State · Drafted in 2012, third round, by the New York Jets
 
-As of October 12, 2014, after Week 6.
+As of October 16, 2014, after Week 7.
 
 ![Demario Davis](https://commons.wikimedia.org/wiki/Special:FilePath/WFT_vs._Saints_%2851582765191%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting weakside linebacker.
 
-**Tackles:** 37 (2014, through Week 6).
+**Tackles:** 43 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Jets | 25 | 56 | 6 | 37 | 21 | 16 | 2 | 2 | 3 |
+| 2014 (through Week 7) | N.Y. Jets | 25 | 56 | 7 | 43 | 26 | 17 | 3 | 3 | 5 |
 | 2013 | N.Y. Jets | 24 | 56 | 16 | 63 | 47 | 16 | 3 | 1 | 1 |
-| Career |  |  |  | 22 | 100 | 68 | 32 | 5 | 3 | 4 |
+| Career |  |  |  | 23 | 106 | 73 | 33 | 6 | 4 | 6 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Jets | 25 | 56 | 0 | 0 | 2 | 1 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Jets | 25 | 56 | 0 | 0 | 2 | 1 | 0 | 0 |
 | 2013 | N.Y. Jets | 24 | 56 | 0 | 0 | 3 | 0 | 0 | N/A |
 
 ### Playoffs

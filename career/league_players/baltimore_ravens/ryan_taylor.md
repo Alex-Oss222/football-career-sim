@@ -1,10 +1,10 @@
 # Ryan Taylor
 
-**Baltimore Ravens · Tight end · Age 26 · Last game October 12, 2014**
+**Baltimore Ravens · Tight end · Age 26 · Last game October 19, 2014**
 
 6' 3", 254 lb · Born November 16, 1987 · North Carolina · Drafted in 2011, seventh round, by Green Bay
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Ryan Taylor](https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Taylor_Rookie_year_Packers.jpg?width=500)
 
@@ -20,9 +20,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay, Baltimore | 26 | N/A | 6 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
+| 2014 (through Week 7) | Green Bay, Baltimore | 26 | N/A | 7 | 0 | 0 | 0 | N/A | 0 | N/A | 0.0 | N/A |
 | 2013 | Green Bay | 25 | 82 | 16 | 2 | 1 | 8 | 8.0 | 0 | 8 | 0.5 | 50.0 |
-| Career |  |  |  | 22 | 2 | 1 | 8 | 8.0 | 0 | 8 | 0.4 | 50.0 |
+| Career |  |  |  | 23 | 2 | 1 | 8 | 8.0 | 0 | 8 | 0.3 | 50.0 |
 
 ### Playoffs
 

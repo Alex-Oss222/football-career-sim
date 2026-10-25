@@ -1,10 +1,10 @@
 # Chris Williams
 
-**Buffalo Bills · Guard · No. 74 · Age 29 · Last game October 12, 2014**
+**Buffalo Bills · Guard · No. 74 · Age 29 · Last game October 19, 2014**
 
 6' 6", 320 lb · Born August 26, 1985 · Vanderbilt · Drafted in 2008, first round, by Chicago
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Chris Williams](https://commons.wikimedia.org/wiki/Special:FilePath/WilliamsChris81513.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left guard.
 
-**Sacks allowed:** 1 (2014, through Week 6).
+**Sacks allowed:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 29 | 74 | 6 | 6 | 378 | 1 | 32 |
+| 2014 (through Week 7) | Buffalo | 29 | 74 | 7 | 7 | 457 | 2 | 37 |
 | 2013 | St. Louis | 28 | 65 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 

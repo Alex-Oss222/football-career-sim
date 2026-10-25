@@ -1,10 +1,10 @@
 # Byron Bell
 
-**Carolina Panthers · Guard · No. 77 · Age 25 · Last game October 12, 2014**
+**Carolina Panthers · Guard · No. 77 · Age 25 · Last game October 19, 2014**
 
 6' 5", 340 lb · Born January 17, 1989 · New Mexico
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Byron Bell](https://commons.wikimedia.org/wiki/Special:FilePath/Byron_Bell.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting left tackle.
 
-**Sacks allowed:** 4 (2014, through Week 6).
+**Sacks allowed:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 25 | 77 | 6 | 6 | 378 | 4 | 27 |
+| 2014 (through Week 7) | Carolina | 25 | 77 | 7 | 7 | 445 | 5 | 32 |
 | 2013 | Carolina | 24 | 77 | 16 | N/A | N/A | 8 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 12 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 13 | N/A |
 
 ### Playoffs
 

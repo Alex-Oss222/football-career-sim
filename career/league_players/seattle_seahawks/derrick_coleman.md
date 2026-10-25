@@ -1,10 +1,10 @@
 # Derrick Coleman
 
-**Seattle Seahawks · Fullback · No. 40 · Age 23 · Last game October 12, 2014**
+**Seattle Seahawks · Fullback · No. 40 · Age 24 · Last game October 19, 2014**
 
 6' 0", 233 lb · Born October 18, 1990 · UCLA
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Derrick Coleman](https://commons.wikimedia.org/wiki/Special:FilePath/Derrick_Coleman_Seahawks_2013.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting fullback.
 
-**Yards per carry:** 4.7 (2014, through Week 6).
+**Yards per carry:** 4.7 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Seattle | 23 | 40 | 5 | 3 | 14 | 4.7 | 0 | 9 | 2.8 |
+| 2014 (through Week 7) | Seattle | 23 | 40 | 6 | 3 | 14 | 4.7 | 0 | 9 | 2.3 |
 | 2013 | Seattle | 22 | 40 | 16 | 8 | 69 | 8.6 | 1 | 22 | 4.3 |
-| Career |  |  |  | 21 | 11 | 83 | 7.5 | 1 | 22 | 4.0 |
+| Career |  |  |  | 22 | 11 | 83 | 7.5 | 1 | 22 | 3.8 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Seattle | 23 | 40 | 6 | 5 | 26 | 5.2 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Seattle | 23 | 40 | 8 | 7 | 36 | 5.1 | 0 | 1 | 1 |
 | 2013 | Seattle | 22 | 40 | 13 | 8 | 102 | 12.8 | 0 | 0 | 0 |
 
 ### Playoffs

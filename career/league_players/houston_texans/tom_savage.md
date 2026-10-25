@@ -1,10 +1,10 @@
 # Tom Savage
 
-**Houston Texans · Quarterback · No. 3 · Age 24 · Last game October 9, 2014**
+**Houston Texans · Quarterback · No. 3 · Age 24 · Last game October 20, 2014**
 
 6' 4", 228 lb · Born April 26, 1990 · Pittsburgh
 
-As of October 9, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Tom Savage](https://commons.wikimedia.org/wiki/Special:FilePath/Tom_Savage_%28American_football%29_2013.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 24 | 3 | 6 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
+| 2014 (through Week 7) | Houston | 24 | 3 | 7 | 0 | 0 | N/A | 0 | N/A | 0.0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 24 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Houston | 24 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -1,10 +1,10 @@
 # Roman Harper
 
-**Carolina Panthers · Strong safety · No. 41 · Age 31 · Last game October 12, 2014**
+**Carolina Panthers · Strong safety · No. 41 · Age 31 · Last game October 19, 2014**
 
 6' 1", 205 lb · Born December 11, 1982 · Alabama · Drafted in 2006, second round, by New Orleans
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Roman Harper](https://commons.wikimedia.org/wiki/Special:FilePath/Roman_Harper_2012.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting strong safety.
 
-**Passes defended:** 1 (2014, through Week 6).
+**Passes defended:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 31 | 41 | 6 | 30 | 23 | 7 | 1 | 1 | 1 |
+| 2014 (through Week 7) | Carolina | 31 | 41 | 7 | 32 | 23 | 9 | 1 | 1 | 1 |
 | 2013 | New Orleans | 30 | 41 | 16 | 106 | 80 | 26 | 2 | 1 | 3 |
-| Career |  |  |  | 22 | 136 | 103 | 33 | 3 | 2 | 4 |
+| Career |  |  |  | 23 | 138 | 103 | 35 | 3 | 2 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Carolina | 31 | 41 | 0 | 0 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Carolina | 31 | 41 | 0 | 0 | 1 | 1 | 0 | 0 |
 | 2013 | New Orleans | 30 | 41 | 4 | 92 | 20 | 0 | 0 | N/A |
 
 ### Playoffs

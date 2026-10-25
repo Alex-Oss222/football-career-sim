@@ -1,10 +1,10 @@
 # Da'Norris Searcy
 
-**Buffalo Bills · Free safety · No. 25 · Age 25 · Last game October 12, 2014**
+**Buffalo Bills · Free safety · No. 25 · Age 25 · Last game October 19, 2014**
 
 5' 11", 207 lb · Born November 16, 1988 · North Carolina · Drafted in 2011, fourth round, by Buffalo
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Da'Norris Searcy](https://commons.wikimedia.org/wiki/Special:FilePath/Da%27Norris_Searcy.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting safety.
 
-**Passes defended:** 3 (2014, through Week 6).
+**Passes defended:** 3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 25 | 25 | 6 | 16 | 10 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Buffalo | 25 | 25 | 7 | 19 | 12 | 7 | 0 | 0 | 0 |
 | 2013 | Buffalo | 24 | 25 | 16 | 89 | 61 | 28 | 6 | 1 | 1 |
-| Career |  |  |  | 22 | 105 | 71 | 34 | 6 | 1 | 1 |
+| Career |  |  |  | 23 | 108 | 73 | 35 | 6 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 25 | 25 | 0 | 0 | 3 | 1 | 1 | 0 |
+| 2014 (through Week 7) | Buffalo | 25 | 25 | 0 | 0 | 3 | 1 | 1 | 0 |
 | 2013 | Buffalo | 24 | 25 | 3 | 29 | 17 | 0 | 0 | N/A |
 
 ### Playoffs

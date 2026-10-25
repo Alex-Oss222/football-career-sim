@@ -1,10 +1,10 @@
 # Jabari Price
 
-**Minnesota Vikings · Cornerback · No. 39 · Age 22 · Last game October 12, 2014**
+**Minnesota Vikings · Cornerback · No. 39 · Age 22 · Last game October 19, 2014**
 
 5' 10", 200 lb · Born August 31, 1992 · North Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 **Current assignment:** Reserve cornerback.
 
@@ -18,11 +18,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 22 | 39 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Minnesota | 22 | 39 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 22 | 39 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Minnesota | 22 | 39 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

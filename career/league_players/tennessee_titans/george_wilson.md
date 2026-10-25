@@ -1,10 +1,10 @@
 # George Wilson
 
-**Tennessee Titans · Free safety · No. 21 · Age 33 · Last game October 12, 2014**
+**Tennessee Titans · Free safety · No. 21 · Age 33 · Last game October 19, 2014**
 
 6' 0", 210 lb · Born March 14, 1981 · Arkansas
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![George Wilson](https://commons.wikimedia.org/wiki/Special:FilePath/George_Wilson_%28safety%29_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve free safety.
 
-**Passes defended:** 1 (2014, through Week 6).
+**Passes defended:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 33 | 21 | 5 | 8 | 2 | 6 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Tennessee | 33 | 21 | 6 | 8 | 2 | 6 | 0 | 0 | 0 |
 | 2013 | Tennessee | 32 | 21 | 16 | 32 | 20 | 12 | 0 | 0 | 0 |
-| Career |  |  |  | 21 | 40 | 22 | 18 | 0 | 0 | 0 |
+| Career |  |  |  | 22 | 40 | 22 | 18 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 33 | 21 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Tennessee | 33 | 21 | 0 | 0 | 1 | 0 | 1 | 1 |
 | 2013 | Tennessee | 32 | 21 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

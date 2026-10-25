@@ -104,9 +104,9 @@ def restate_records(paths):
 
     The synthetic slate replaces the real Week 1 result, and Jacksonville's record after every
     later game counts it. A closed Game Report (from 2014 Week 6, runtime.seasons.GAME_REPORT_FROM)
-    names that record in section 7's "Record after game" line, written against the real Week 1;
-    here that line alone names Jacksonville's record over the copy's receipts through the report's
-    week, tallied from the final scores. The rest of each report is the real one. Returns the
+    names that record in its "Record after game" line (its final record section), written against
+    the real Week 1; here that line alone names Jacksonville's record over the copy's receipts
+    through the report's week, tallied from the final scores. The rest of each report is the real one. Returns the
     reports rewritten."""
     own = [r for r in render_season_stats.load_receipts(paths.receipts) if JAX in (r["away"], r["home"])]
     first = seasons.GAME_REPORT_FROM
@@ -302,7 +302,21 @@ class SeasonClosure2014Tests(unittest.TestCase):
         baseline = set(validate(ROOT))
         with pinned_copy(root):
             errors = validate(root)
-        self.assertEqual(sorted(set(errors) - baseline), [])
+        # The weekly head-coach checks already recorded were drawn from the real games: each
+        # counts every club's record after its game, Week 1's included, so with the synthetic
+        # Week 1 in its place each recorded check's inputs differ from the copy's closed games,
+        # and a recorded change names a record at the change those games no longer give. The
+        # draws are private and stay as drawn (the copy cannot redraw them as they were), so
+        # exactly these errors follow from the substitution, the first for every recorded week,
+        # and no other error may.
+        from runtime import league_coaches
+        recorded = set(league_coaches.checks(SEASON, root))
+        substituted = re.compile(r"Week (\d+) head-coach check: (its inputs differ from the closed games and the "
+                                 r"earlier checks|.+'s record at the change)")
+        follows = {e for e in set(errors) - baseline
+                   if substituted.fullmatch(e) and int(substituted.fullmatch(e).group(1)) in recorded}
+        self.assertEqual({int(substituted.fullmatch(e).group(1)) for e in follows if "inputs differ" in e}, recorded)
+        self.assertEqual(sorted(set(errors) - baseline - follows), [])
 
         # Isolation: nothing reached the real season tree, cache or receipts.
         self.assertEqual(sorted(p for p in self.real.data.rglob("*.json")), self.real_files)

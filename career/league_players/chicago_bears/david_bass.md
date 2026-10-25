@@ -1,10 +1,10 @@
 # David Bass
 
-**Chicago Bears · Outside linebacker · No. 91 · Age 24 · Last game October 12, 2014**
+**Chicago Bears · Outside linebacker · No. 91 · Age 24 · Last game October 19, 2014**
 
 6' 4", 256 lb · Born September 11, 1990 · Missouri Western
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![David Bass](https://commons.wikimedia.org/wiki/Special:FilePath/David_Bass_%28American_football%29.JPG?width=500)
 
@@ -20,13 +20,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 23 | 91 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Chicago | 23 | 91 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Chicago | 22 | 91 | 16 | 2 | 2 | 0 | 0 | 0 | 0 |
 | Career |  |  |  | 18 | 2 | 2 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 23 | 91 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Chicago | 23 | 91 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Chicago | 22 | 91 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

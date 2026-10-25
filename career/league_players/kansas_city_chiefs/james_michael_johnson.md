@@ -1,10 +1,10 @@
 # James-Michael Johnson
 
-**Kansas City Chiefs · Outside linebacker · No. 52 · Age 25 · Last game October 5, 2014**
+**Kansas City Chiefs · Outside linebacker · No. 52 · Age 25 · Last game October 19, 2014**
 
 6' 1", 240 lb · Born August 20, 1989 · Nevada · Drafted in 2012, fourth round, by Cleveland
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![James-Michael Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/James-Michael_Johnson.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Reserve inside linebacker.
 
-**Tackles:** 4 (2014, through Week 5).
+**Tackles:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 25 | 52 | 5 | 4 | 3 | 1 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Kansas City | 25 | 52 | 6 | 5 | 3 | 2 | 0 | 1 | 1 |
 | 2013 | Kansas City | 24 | 52 | 16 | 8 | 3 | 5 | 0 | 0 | 1 |
-| Career |  |  |  | 21 | 12 | 6 | 6 | 0 | 1 | 2 |
+| Career |  |  |  | 22 | 13 | 6 | 7 | 0 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 25 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Kansas City | 25 | 52 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Kansas City | 24 | 52 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

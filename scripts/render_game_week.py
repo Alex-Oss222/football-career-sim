@@ -613,6 +613,20 @@ def place_words(n):
     return "%d%s" % (n, "th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th"))
 
 
+def standings_reach(wk, week):
+    """How far the standings reach: "through Week N" when every Week N game has been played by the
+    briefing's date, otherwise "as of" that date with the Week N games still to play named (a Monday
+    game is played the day after the briefing is issued)."""
+    played = {(int(r["week"]), r["away"], r["home"]) for r in wk.receipts}
+    pending = [g for g in wk.paths.regular_games()
+               if int(g["week"]) == week and (int(g["week"]), g["away"], g["home"]) not in played]
+    if not pending:
+        return "through Week %d" % week
+    games = ["%s at %s, %s" % (wk.place(g["away"]), wk.place(g["home"]), day(g["date"], year=False))
+             for g in sorted(pending, key=lambda g: (g["date"], g["away"]))]
+    return "as of %s, with Week %d's %s still to play" % (day(wk.as_of), week, "; ".join(games))
+
+
 def stakes_text(wk):
     """The division order and conference places, from the standings owner (with the tiebreakers)."""
     from runtime import standings
@@ -624,8 +638,9 @@ def stakes_text(wk):
         return ("A division game. " if same else "") + "No regular-season game has been played."
     order = picture["division_ranks"][division]
     record = lambda club: wk.record(club)
-    text = ("A division game. " if same else "") + "%s through Week %d: %s." % (
-        division, picture["through_week"], ", ".join("%s %s" % (wk.place(c), record(c)) for c in order))
+    text = ("A division game. " if same else "") + "%s %s: %s." % (
+        division, standings_reach(wk, picture["through_week"]),
+        ", ".join("%s %s" % (wk.place(c), record(c)) for c in order))
     conference = conference_of(JAX)
     places = picture["conferences"][conference]
     ranked = list(places["division_winners"]) + list(places["others"])

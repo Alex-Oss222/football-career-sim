@@ -1027,5 +1027,152 @@
     "winner_index": 1
    }
   }
+ },
+ "week-7": {
+  "kind": "week",
+  "key": "7",
+  "label": "Week 7",
+  "order": 7,
+  "note": "",
+  "awards": {
+   "AFC-offense": {
+    "event_id": "2014-award-week07-afc-offense-v1-2014",
+    "packet_sha256": "98f5bb455b9c32ff6360e05e205eac75ac10f45aa00679b6219bbdfa500e8b9c",
+    "result_ref": "d79729da1af315faf7fb9d46ef191f938811344a5fc114ed359f149c6cea09e2",
+    "shortlist": [
+     {
+      "player": "Shonn Greene",
+      "team": "Tennessee Titans",
+      "score": 41.8
+     },
+     {
+      "player": "Ben Roethlisberger",
+      "team": "Pittsburgh Steelers",
+      "score": 32.18
+     },
+     {
+      "player": "T.Y. Hilton",
+      "team": "Indianapolis Colts",
+      "score": 26.2
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-defense": {
+    "event_id": "2014-award-week07-afc-defense-v1-2014",
+    "packet_sha256": "7008bc174e750096f1e369814d3be70c04f5c3613ff165ded002aad6ddadc255",
+    "result_ref": "acb6e5285a63aacc7132caedb517f6ff5054a43133e49f9357fb0575bf26c1e0",
+    "shortlist": [
+     {
+      "player": "Gregory Toler",
+      "team": "Indianapolis Colts",
+      "score": 32.7
+     },
+     {
+      "player": "Manti Te'o",
+      "team": "San Diego Chargers",
+      "score": 22.5
+     },
+     {
+      "player": "Paul Posluszny",
+      "team": "Jacksonville Jaguars",
+      "score": 20.2
+     }
+    ],
+    "winner_index": 0
+   },
+   "AFC-special_teams": {
+    "event_id": "2014-award-week07-afc-special_teams-v1-2014",
+    "packet_sha256": "ea4aface8d9d19b49ae1c2ed163f7810b8bd86b73a2bb56c60067d234f4f4136",
+    "result_ref": "8aaa6dabf1ff7a97ae9112c1d35952779959dd55a3487d6fbc8e0691c2eb4ab1",
+    "shortlist": [
+     {
+      "player": "Donald Brown",
+      "team": "San Diego Chargers",
+      "score": 17.1
+     },
+     {
+      "player": "Dan Herron",
+      "team": "Indianapolis Colts",
+      "score": 14.7
+     },
+     {
+      "player": "Billy Cundiff",
+      "team": "Cleveland Browns",
+      "score": 14.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-offense": {
+    "event_id": "2014-award-week07-nfc-offense-v1-2014",
+    "packet_sha256": "12133da930350bfe6ca8593e5bf88d000387977ae8865afd983a5491e2d80ffd",
+    "result_ref": "44f0ae037c34bec01c390f69043a5a6c72d3269305a165811408a045e7e9d5fb",
+    "shortlist": [
+     {
+      "player": "Mark Ingram",
+      "team": "New Orleans Saints",
+      "score": 32.8
+     },
+     {
+      "player": "Aaron Rodgers",
+      "team": "Green Bay Packers",
+      "score": 29.58
+     },
+     {
+      "player": "Cam Newton",
+      "team": "Carolina Panthers",
+      "score": 26.12
+     }
+    ],
+    "winner_index": 2
+   },
+   "NFC-defense": {
+    "event_id": "2014-award-week07-nfc-defense-v1-2014",
+    "packet_sha256": "4151c2a6b07d639a313060453b5af4c11dc431d2ca2a1295cb394fce493325cd",
+    "result_ref": "3167a7e3ff85338e5379ed78765f5456199578af3ef8b0703fe5a07290d3dcab",
+    "shortlist": [
+     {
+      "player": "Sam Shields",
+      "team": "Green Bay Packers",
+      "score": 23.5
+     },
+     {
+      "player": "Rodney McLeod",
+      "team": "St. Louis Rams",
+      "score": 23.2
+     },
+     {
+      "player": "Barry Church",
+      "team": "Dallas Cowboys",
+      "score": 22.0
+     }
+    ],
+    "winner_index": 0
+   },
+   "NFC-special_teams": {
+    "event_id": "2014-award-week07-nfc-special_teams-v1-2014",
+    "packet_sha256": "4b4daad4a2b5e03781126706d6ad8fe0e00584e5f9e0d25c3543eb49775ac8ea",
+    "result_ref": "8a0a7005f77c9cf64c9630d9e7adae8858b0098e7595828fc1cb2feb0b758748",
+    "shortlist": [
+     {
+      "player": "Matt Asiata",
+      "team": "Minnesota Vikings",
+      "score": 18.4
+     },
+     {
+      "player": "Mason Crosby",
+      "team": "Green Bay Packers",
+      "score": 17.0
+     },
+     {
+      "player": "Dwayne Harris",
+      "team": "Dallas Cowboys",
+      "score": 16.3
+     }
+    ],
+    "winner_index": 0
+   }
+  }
  }
 }

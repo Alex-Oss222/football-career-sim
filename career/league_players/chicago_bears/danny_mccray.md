@@ -1,10 +1,10 @@
 # Danny McCray
 
-**Chicago Bears · Free safety · No. 29 · Age 26 · Last game October 12, 2014**
+**Chicago Bears · Free safety · No. 29 · Age 26 · Last game October 19, 2014**
 
 6' 1", 221 lb · Born March 10, 1988 · LSU
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Danny McCray](https://commons.wikimedia.org/wiki/Special:FilePath/Danny_McCray_Bears_2014.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 2 (2014, through Week 6).
+**Passes defended:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 26 | 29 | 5 | 17 | 9 | 8 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Chicago | 26 | 29 | 6 | 20 | 11 | 9 | 0 | 0 | 0 |
 | 2013 | Dallas | 25 | 40 | 15 | 43 | 21 | 22 | 0 | 3 | 4 |
-| Career |  |  |  | 20 | 60 | 30 | 30 | 0 | 3 | 4 |
+| Career |  |  |  | 21 | 63 | 32 | 31 | 0 | 3 | 4 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Chicago | 26 | 29 | 0 | 0 | 2 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Chicago | 26 | 29 | 0 | 0 | 2 | 0 | 0 | 0 |
 | 2013 | Dallas | 25 | 40 | 1 | 20 | 5 | 0 | 0 | N/A |
 
 ### Playoffs

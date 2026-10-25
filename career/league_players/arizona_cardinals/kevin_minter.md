@@ -1,10 +1,10 @@
 # Kevin Minter
 
-**Arizona Cardinals · Inside linebacker · No. 51 · Age 23 · Last game October 12, 2014**
+**Arizona Cardinals · Inside linebacker · No. 51 · Age 23 · Last game October 19, 2014**
 
 6' 1", 245 lb · Born December 3, 1990 · LSU
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Kevin Minter](https://commons.wikimedia.org/wiki/Special:FilePath/Kevin_Minter.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting inside linebacker.
 
-**Tackles:** 25 (2014, through Week 6).
+**Tackles:** 33 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 23 | 51 | 5 | 25 | 18 | 7 | 2 | 1 | 1 |
+| 2014 (through Week 7) | Arizona | 23 | 51 | 6 | 33 | 23 | 10 | 2 | 2 | 2 |
 | 2013 | Arizona | 22 | 51 | 16 | 5 | 2 | 3 | 0 | 0 | 0 |
-| Career |  |  |  | 21 | 30 | 20 | 10 | 2 | 1 | 1 |
+| Career |  |  |  | 22 | 38 | 25 | 13 | 2 | 2 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 23 | 51 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Arizona | 23 | 51 | 0 | 0 | 2 | 0 | 1 | 0 |
 | 2013 | Arizona | 22 | 51 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

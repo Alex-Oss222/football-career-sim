@@ -4,11 +4,11 @@
 
 6' 1", 208 lb · Born April 28, 1987 · Wyoming · Drafted in 2011, fourth round, by Jacksonville
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 **Current assignment:** Dime defensive back.
 
-**Passes defended:** 0 (2014, through Week 6).
+**Passes defended:** 1 (2014, through Week 7).
 
 ## Staff assessment
 
@@ -30,18 +30,18 @@ Four-year contract through 2014.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 27 | 42 | 6 | 3 | 2 | 1 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Jacksonville | 27 | 42 | 7 | 3 | 2 | 1 | 1 | 0 | 0 |
 | 2013 | Jacksonville | 26 | 42 | 16 | 1 | 0 | 1 | 0 | 0 | 0 |
-| With Jacksonville |  |  |  | 22 | 4 | 2 | 2 | 1 | 0 | 0 |
+| With Jacksonville |  |  |  | 23 | 4 | 2 | 2 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 27 | 42 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Jacksonville | 27 | 42 | 0 | 0 | 1 | 0 | 0 | 3 |
 | 2013 | Jacksonville | 26 | 42 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 27 | 42 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Jacksonville | 27 | 42 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 26 | 42 | 3 | 71 | 23.7 | 3 | 41 | 13.7 |
 
 ### Playoffs

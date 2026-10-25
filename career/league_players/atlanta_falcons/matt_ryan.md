@@ -1,10 +1,10 @@
 # Matt Ryan
 
-**Atlanta Falcons · Quarterback · No. 2 · Age 29 · Last game October 12, 2014**
+**Atlanta Falcons · Quarterback · No. 2 · Age 29 · Last game October 19, 2014**
 
 6' 4", 217 lb · Born May 17, 1985 · Boston College · Drafted in 2008, first round, by Atlanta
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Matt Ryan](https://commons.wikimedia.org/wiki/Special:FilePath/Washington_Football_Team_at_Atlanta_Falcons_%283_October_2021%29_DSC_4628_%2851555290664%29_%28cropped%29.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting quarterback.
 
-**Passer rating:** 107.2 (2014, through Week 6).
+**Passer rating:** 101.3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | CMP | ATT | CMP% | YDS | Y/A | YDS/G | TD | INT | Passer rating |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 29 | 2 | 6 | 129 | 207 | 62.3 | 1,803 | 8.7 | 300.5 | 13 | 2 | 107.2 |
+| 2014 (through Week 7) | Atlanta | 29 | 2 | 7 | 151 | 246 | 61.4 | 2,018 | 8.2 | 288.3 | 14 | 3 | 101.3 |
 | 2013 | Atlanta | 28 | 2 | 16 | 357 | 567 | 63.0 | 3,943 | 7.0 | 246.4 | 24 | 14 | 87.3 |
-| Career |  |  |  | 22 | 486 | 774 | 62.8 | 5,746 | 7.4 | 261.2 | 37 | 16 | 92.7 |
+| Career |  |  |  | 23 | 508 | 813 | 62.5 | 5,961 | 7.3 | 259.2 | 38 | 17 | 91.6 |
 
 | Season | Team | Age | # | Sacked | Sack yards | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Atlanta | 29 | 2 | 11 | 84 | 21 | 31 | 1 | 1 | 1 |
+| 2014 (through Week 7) | Atlanta | 29 | 2 | 13 | 106 | 26 | 36 | 1 | 2 | 1 |
 | 2013 | Atlanta | 28 | 2 | 34 | 249 | 51 | 241 | 2 | 3 | 3 |
 
 ### Playoffs

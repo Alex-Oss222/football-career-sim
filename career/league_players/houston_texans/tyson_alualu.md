@@ -1,10 +1,10 @@
 # Tyson Alualu
 
-**Houston Texans · Defensive tackle · Age 27 · Last game October 9, 2014**
+**Houston Texans · Defensive tackle · Age 27 · Last game October 20, 2014**
 
 6' 3", 295 lb · Born May 12, 1987 · California · Drafted in 2010, first round, by Jacksonville
 
-As of October 9, 2014, after Week 6.
+As of October 20, 2014, after Week 7.
 
 ![Tyson Alualu](https://commons.wikimedia.org/wiki/Special:FilePath/Tyson_Alualu_at_2009_Cal_Fan_Appreciation_Day.JPG?width=500)
 
@@ -26,13 +26,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 27 | N/A | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Houston | 27 | N/A | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 26 | 93 | 16 | 24 | 18 | 6 | 3 | 3 | 7 |
-| Career |  |  |  | 18 | 24 | 18 | 6 | 3 | 3 | 7 |
+| Career |  |  |  | 19 | 24 | 18 | 6 | 3 | 3 | 7 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Houston | 27 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Houston | 27 | N/A | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 26 | 93 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

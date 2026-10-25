@@ -1,14 +1,14 @@
 # Antonio Allen
 
-**New York Jets · Cornerback · No. 39 · Age 26 · Last game October 12, 2014**
+**New York Jets · Cornerback · No. 39 · Age 26 · Last game October 16, 2014**
 
 6' 1", 210 lb · Born September 23, 1988 · South Carolina · Drafted in 2012, seventh round, by the New York Jets
 
-As of October 12, 2014, after Week 6.
+As of October 16, 2014, after Week 7.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 5 (2014, through Week 6).
+**Passes defended:** 6 (2014, through Week 7).
 
 ## Contract
 
@@ -20,13 +20,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Jets | 25 | 39 | 6 | 25 | 20 | 5 | 1 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Jets | 25 | 39 | 7 | 29 | 23 | 6 | 1 | 0 | 0 |
 | 2013 | N.Y. Jets | 24 | 39 | 16 | 69 | 50 | 19 | 6 | 0 | 0 |
-| Career |  |  |  | 22 | 94 | 70 | 24 | 7 | 0 | 0 |
+| Career |  |  |  | 23 | 98 | 73 | 25 | 7 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Jets | 25 | 39 | 0 | 0 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Jets | 25 | 39 | 1 | 15 | 6 | 0 | 0 | 0 |
 | 2013 | N.Y. Jets | 24 | 39 | 8 | 118 | 21 | 0 | 0 | N/A |
 
 ### Playoffs

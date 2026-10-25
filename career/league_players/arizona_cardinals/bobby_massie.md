@@ -1,10 +1,10 @@
 # Bobby Massie
 
-**Arizona Cardinals · Offensive tackle · No. 70 · Age 25 · Last game October 12, 2014**
+**Arizona Cardinals · Offensive tackle · No. 70 · Age 25 · Last game October 19, 2014**
 
 6' 6", 316 lb · Born August 1, 1989 · Mississippi · Drafted in 2012, fourth round, by Arizona
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Bobby Massie](https://commons.wikimedia.org/wiki/Special:FilePath/Bobby_Massie.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right tackle.
 
-**Sacks allowed:** 3 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 25 | 70 | 5 | 5 | 322 | 3 | 25 |
+| 2014 (through Week 7) | Arizona | 25 | 70 | 6 | 6 | 375 | 4 | 28 |
 | 2013 | Arizona | 24 | 70 | 2 | N/A | N/A | 0 | N/A |
-| Career |  |  |  | 7 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 8 | N/A | N/A | 4 | N/A |
 
 ### Playoffs
 

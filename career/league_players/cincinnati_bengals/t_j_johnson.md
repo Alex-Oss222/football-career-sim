@@ -1,10 +1,10 @@
 # T.J. Johnson
 
-**Cincinnati Bengals · Center · No. 60 · Age 24 · Last game October 12, 2014**
+**Cincinnati Bengals · Center · No. 60 · Age 24 · Last game October 19, 2014**
 
 6' 4", 310 lb · Born July 17, 1990 · South Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![T.J. Johnson](https://commons.wikimedia.org/wiki/Special:FilePath/T._J._Johnson_%28American_football%29_2013.jpg?width=500)
 
@@ -22,7 +22,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Cincinnati | 24 | 60 | 3 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Cincinnati | 24 | 60 | 3 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

@@ -16,8 +16,11 @@ exactly the records the game path already reads, and the record of the apply:
   in the depth chart's update log naming the page as its source. A starter,
   kicker or punter named in the role table heads his group. Where an order
   change moves a player whose receiver or defensive-back label (Stone's dated
-  role decisions on the working chart) no longer holds, a dated entry clears
-  that label rather than leave it on the wrong player;
+  role decisions on the working chart) no longer holds, or the plan takes from
+  a player the game role his label names (the nickel, the outside reserve
+  corner, the returns: runtime/assignments.LABEL_ROLES), a dated entry clears
+  that label rather than leave it on the wrong player (record_cleared, which
+  a game-day change and the bye adjustments use too);
 - the decision-queue items the plan settles (the week's game plan and
   inactives, Stone's), marked RESOLVED by the user with the page as their
   record. Nothing is applied while either item still waits on an exam dated
@@ -68,7 +71,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from runtime import game_plan  # noqa: E402
+from runtime import assignments, game_plan  # noqa: E402
 from scripts.check_game_plan import (JAX, ROLE_WORDS, Plan, changed_chart, check, page_digest,  # noqa: E402
                                      place_upload)
 
@@ -156,26 +159,66 @@ def _set(chart, before):
                       for role in before["roles"]}}
 
 
-def cleared_labels(plan, base, after):
-    """The players of a reordered group whose place changed and who hold one of Stone's dated
-    receiver or defensive-back labels (the working chart's role decisions): the label no longer
-    describes the order, so the apply clears it."""
-    working = plan.paths.record("offseason/depth_chart_working.json")
+def label_decisions(paths, skip=None):
+    """{player: label}: Stone's dated receiver and defensive-back labels on the working chart (its
+    role decisions, the latest per player; a cleared label is None), leaving out the decisions
+    ``skip`` (a function of a decision) matches."""
+    working = paths.record("offseason/depth_chart_working.json")
     if not working.is_file():
-        return []
+        return {}
     labels = {}
     for decision in json.loads(working.read_text(encoding="utf-8")).get("stone_role_decisions", ()):
-        if decision.get("game_plan_week") == plan.week:
-            continue        # this week's own earlier apply, replaced below
+        if skip is not None and skip(decision):
+            continue
         for row in decision.get("decisions", ()):
             labels[row["player"]] = row.get("role")
+    return labels
+
+
+def cleared_labels(labels, base, after):
+    """[(player, why)]: the players holding one of Stone's labels (``labels``, label_decisions) that no
+    longer describes the chart: "place" when his place in a reordered group changed, "role" when the
+    chart took from him the game role his label names (assignments.LABEL_ROLES); a label naming no
+    role is not touched by a role change. The change clears each one."""
     out = []
     for group, order in (after.get("depth") or {}).items():
         old = (base.get("depth") or {}).get(group) or []
         for player in order:
             if labels.get(player) and player in old and old.index(player) != order.index(player):
-                out.append(player)
+                out.append((player, "place"))
+    now, placed = after.get("roles") or {}, {p for p, _ in out}
+    for player in role_changed(base, after):
+        named = assignments.LABEL_ROLES.get(labels.get(player))
+        if named and not named <= set(now.get(player) or ()) and player not in placed:
+            out.append((player, "role"))
     return out
+
+
+def record_cleared(chart, cleared, when, what, drop=None, **key):
+    """The working chart ``chart`` with its role decisions: those ``drop`` (a function of a decision)
+    does not match, and, when ``cleared`` (cleared_labels) holds a player, one entry dated ``when``
+    clearing those labels, keyed by ``key``; ``what`` names Stone's decision that changed the chart
+    ("Week 7 Game Plan")."""
+    decisions = [d for d in chart.get("stone_role_decisions", ()) if drop is None or not drop(d)]
+    if cleared:
+        decisions.append(dict({"date": when}, **key,
+                              rule="Stone's %s changed the order or the roles; these players' earlier labels "
+                                   "no longer describe their places." % what,
+                              decisions=[{"player": p, "role": None, "note": "%s changed on the %s" % (why, what)}
+                                         for p, why in cleared]))
+    if decisions or "stone_role_decisions" in chart:
+        chart["stone_role_decisions"] = decisions
+    return chart
+
+
+def cleared_words(cleared):
+    return ["the earlier label of %s cleared" % p for p, _ in cleared]
+
+
+def role_changed(base, after):
+    """The players whose game roles (nickel, outside reserve, returners) differ after the apply."""
+    was, now = base.get("roles") or {}, after.get("roles") or {}
+    return [p for p in sorted(set(was) | set(now)) if sorted(was.get(p) or ()) != sorted(now.get(p) or ())]
 
 
 def event_for(plan, sheet, players, changes):
@@ -259,7 +302,8 @@ def apply_records(plan, sheet, players, resolve_queue=True):
     _restore(game, earlier)
     after, changes = changed_chart(game, depth)
     before = _before(game, after)
-    cleared = cleared_labels(plan, game, after)
+    this_week = lambda d: d.get("game_plan_week") == plan.week      # noqa: E731  (a re-apply replaces it)
+    cleared = cleared_labels(label_decisions(plan.paths, skip=this_week), game, after)
 
     def change(chart, working):
         _restore(chart, earlier)
@@ -268,20 +312,12 @@ def apply_records(plan, sheet, players, resolve_queue=True):
             chart["game_day_inactives"] = {"week": plan.week, "players": list(players),
                                            "note": inactive_note(plan, players)}
         if working:
-            decisions = [d for d in chart.get("stone_role_decisions", ())
-                         if d.get("game_plan_week") != plan.week]
-            if cleared:
-                decisions.append({"date": long_date(plan.master), "game_plan_week": plan.week,
-                                  "rule": "Stone's %s Game Plan changed the order; these players' earlier labels "
-                                          "no longer describe their places." % plan.label(),
-                                  "decisions": [{"player": p, "role": None, "note": "place changed on the %s "
-                                                 "Game Plan" % plan.label()} for p in cleared]})
-            if decisions or "stone_role_decisions" in chart:
-                chart["stone_role_decisions"] = decisions
+            record_cleared(chart, cleared, long_date(plan.master), "%s Game Plan" % plan.label(), drop=this_week,
+                           game_plan_week=plan.week)
         return chart
     written += write_charts(plan.paths, change)
     change = "%s inactives: %s." % (plan.label(), ", ".join(players)) if players is not None else ""
-    shown = changes + ["the earlier label of %s cleared" % p for p in cleared]
+    shown = changes + cleared_words(cleared)
     change += (" " + "; ".join(shown) + ".") if shown else " No order or role change."
     written.append(log_change(plan.paths, {
         "date": long_date(plan.master), "recorded": plan.master.isoformat(), "event": log_event(plan),
@@ -296,7 +332,7 @@ def apply_records(plan, sheet, players, resolve_queue=True):
     _, source, _ = plan.compiled()
     record = {"season": plan.season, "week": plan.week, "applied": plan.master.isoformat(), "page": page,
               "page_sha256": page_digest(plan.text), "call_sheet_sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
-              "before": before, "set": _set(after, before), "labels_cleared": cleared,
+              "before": before, "set": _set(after, before), "labels_cleared": [p for p, _ in cleared],
               # Where every emitted call, defensive row and decision came from (a page line or a carried
               # frozen item), and his reasons, kept as author intent: they never reach the call sheet.
               "source_map": source, "intent": dict(game_plan.intent(plan.choices), known=plan.master.isoformat()),

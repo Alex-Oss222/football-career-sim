@@ -1,10 +1,10 @@
 # Jason Pierre-Paul
 
-**New York Giants · Defensive end · No. 90 · Age 25 · Last game October 12, 2014**
+**New York Giants · Defensive end · No. 90 · Age 25 · Last game October 19, 2014**
 
 6' 5", 278 lb · Born January 1, 1989 · University of South Florida; Fort Scott CC; College of the Canyons · Drafted in 2010, first round, by the New York Giants
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jason Pierre-Paul](https://commons.wikimedia.org/wiki/Special:FilePath/2012_Packers_vs_Giants_-_Jason_Pierre-Paul.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive end.
 
-**Sacks:** 5 (2014, through Week 6).
+**Sacks:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 25 | 90 | 6 | 41 | 29 | 12 | 4 | 5 | 6 |
+| 2014 (through Week 7) | N.Y. Giants | 25 | 90 | 7 | 49 | 34 | 15 | 4 | 5 | 6 |
 | 2013 | N.Y. Giants | 24 | 90 | 16 | 15 | 12 | 3 | 1 | 1 | 3 |
-| Career |  |  |  | 22 | 56 | 41 | 15 | 5 | 6 | 9 |
+| Career |  |  |  | 23 | 64 | 46 | 18 | 5 | 6 | 9 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 25 | 90 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Giants | 25 | 90 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | N.Y. Giants | 24 | 90 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Eddie Lacy
 
-**Green Bay Packers · Running back · No. 27 · Age 24 · Last game October 12, 2014**
+**Green Bay Packers · Running back · No. 27 · Age 24 · Last game October 19, 2014**
 
 5' 11", 230 lb · Born June 2, 1990 · Alabama
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Eddie Lacy](https://commons.wikimedia.org/wiki/Special:FilePath/Eddie_Lacy_versus_Arkansas_09-24-11.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 5.5 (2014, through Week 6).
+**Yards per carry:** 5.5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 24 | 27 | 5 | 72 | 398 | 5.5 | 1 | 43 | 79.6 |
+| 2014 (through Week 7) | Green Bay | 24 | 27 | 6 | 96 | 530 | 5.5 | 2 | 48 | 88.3 |
 | 2013 | Green Bay | 23 | 27 | 16 | 258 | 1,211 | 4.7 | 8 | 26 | 75.7 |
-| Career |  |  |  | 21 | 330 | 1,609 | 4.9 | 9 | 43 | 76.6 |
+| Career |  |  |  | 22 | 354 | 1,741 | 4.9 | 10 | 48 | 79.1 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 24 | 27 | 14 | 11 | 161 | 14.6 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Green Bay | 24 | 27 | 18 | 14 | 192 | 13.7 | 1 | 0 | 0 |
 | 2013 | Green Bay | 23 | 27 | 52 | 35 | 307 | 8.8 | 2 | 1 | 1 |
 
 ### Playoffs

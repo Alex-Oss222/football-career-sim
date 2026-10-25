@@ -1,10 +1,10 @@
 # Torrey Smith
 
-**Baltimore Ravens · Wide receiver · No. 82 · Age 25 · Last game October 12, 2014**
+**Baltimore Ravens · Wide receiver · No. 82 · Age 25 · Last game October 19, 2014**
 
 6' 0", 205 lb · Born January 26, 1989 · Maryland · Drafted in 2011, second round, by Baltimore
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Torrey Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Torrey_Smith_posing_with_the_Lombardi_Trophy.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting wide receiver.
 
-**Yards per target:** 7.5 (2014, through Week 6).
+**Yards per target:** 7.8 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 25 | 82 | 6 | 64 | 43 | 480 | 11.2 | 0 | 38 | 80.0 | 67.2 |
+| 2014 (through Week 7) | Baltimore | 25 | 82 | 7 | 71 | 48 | 553 | 11.5 | 0 | 38 | 79.0 | 67.6 |
 | 2013 | Baltimore | 24 | 82 | 16 | 157 | 96 | 942 | 9.8 | 3 | 51 | 58.9 | 61.1 |
-| Career |  |  |  | 22 | 221 | 139 | 1,422 | 10.2 | 3 | 51 | 64.6 | 62.9 |
+| Career |  |  |  | 23 | 228 | 144 | 1,495 | 10.4 | 3 | 51 | 65.0 | 63.2 |
 
 | Season | Team | Age | # | Rushes | Rush yards | Rush TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Baltimore | 25 | 82 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Baltimore | 25 | 82 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Baltimore | 24 | 82 | 5 | 6 | 0 | 1 | 1 |
 
 ### Playoffs

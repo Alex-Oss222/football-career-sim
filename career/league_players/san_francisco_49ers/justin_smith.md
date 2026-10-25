@@ -1,10 +1,10 @@
 # Justin Smith
 
-**San Francisco 49ers · Defensive end · No. 94 · Age 35 · Last game October 13, 2014**
+**San Francisco 49ers · Defensive end · No. 94 · Age 35 · Last game October 19, 2014**
 
 6' 4", 285 lb · Born September 30, 1979 · Missouri · Drafted in 2001, first round, by Cincinnati
 
-As of October 13, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Justin Smith](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Smith_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 13, 2014, after Week 6.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 2 (2014, through Week 6).
+**Sacks:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 34 | 94 | 6 | 16 | 10 | 6 | 1 | 2 | 3 |
+| 2014 (through Week 7) | San Francisco | 34 | 94 | 7 | 16 | 10 | 6 | 1 | 2 | 4 |
 | 2013 | San Francisco | 33 | 94 | 16 | 95 | 68 | 27 | 12 | 6 | 19 |
-| Career |  |  |  | 22 | 111 | 78 | 33 | 13 | 8 | 22 |
+| Career |  |  |  | 23 | 111 | 78 | 33 | 13 | 8 | 23 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | San Francisco | 34 | 94 | 0 | 0 | 1 | 0 | 0 | 0 |
+| 2014 (through Week 7) | San Francisco | 34 | 94 | 0 | 0 | 1 | 0 | 0 | 0 |
 | 2013 | San Francisco | 33 | 94 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

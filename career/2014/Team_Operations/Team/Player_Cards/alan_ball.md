@@ -4,17 +4,17 @@
 
 6' 2", 197 lb · Born March 29, 1985 · Illinois · Drafted in 2007, seventh round, by Dallas
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
-**Current assignment:** Reserve outside cornerback.
+**Current assignment:** Nickel cornerback.
 
-**Passes defended:** 0 (2014, through Week 6).
+**Passes defended:** 0 (2014, through Week 7).
 
 ## Staff assessment
 
-Alan Ball won Jacksonville's outside cornerback job in the 2013 camp and started the first nine games until he was hurt. Jacksonville signed him again in September 2014 after ten months out of football, and in his three games since, Stone has made him the outside reserve behind Aqib Talib and Alterraun Verner. He is a long outside corner who can handle a defined starting coverage job and communicate exchanges. He has a balanced profile, with less playmaking and route anticipation than the better corners.
+Alan Ball won Jacksonville's outside cornerback job in the 2013 camp and started the first nine games until he was hurt. Jacksonville signed him again in September 2014 after ten months out of football; he has played four games since, and by early October Stone had made him the outside reserve behind Aqib Talib and Alterraun Verner. He is a long outside corner who can handle a defined starting coverage job and communicate exchanges. He has a balanced profile, with less playmaking and route anticipation than the better corners.
 
-*Staff assessment originally dated September 8, 2014; 2014 results current through October 12.*
+*Staff assessment originally dated September 8, 2014; 2014 results current through October 19.*
 
 ## Contract
 
@@ -30,18 +30,18 @@ One-year contract through 2014.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 29 | 23 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Jacksonville | 29 | 23 | 4 | 4 | 3 | 1 | 0 | 0 | 0 |
 | 2013 | Jacksonville | 28 | 23 | 9 | 41 | 23 | 18 | 1 | 0 | 0 |
-| With Jacksonville |  |  |  | 12 | 41 | 23 | 18 | 1 | 0 | 0 |
+| With Jacksonville |  |  |  | 13 | 45 | 26 | 19 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 29 | 23 | 0 | 0 | 0 | 0 | 0 | 2 |
+| 2014 (through Week 7) | Jacksonville | 29 | 23 | 0 | 0 | 0 | 0 | 0 | 3 |
 | 2013 | Jacksonville | 28 | 23 | 1 | 8 | 9 | 0 | 0 | N/A |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 29 | 23 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Jacksonville | 29 | 23 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Jacksonville | 28 | 23 | 4 | 88 | 22.0 | 0 | 0 | N/A |
 
 ### Playoffs

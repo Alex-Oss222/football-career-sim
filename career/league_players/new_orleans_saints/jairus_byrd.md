@@ -1,10 +1,10 @@
 # Jairus Byrd
 
-**New Orleans Saints · Free safety · No. 31 · Age 27 · Last game October 5, 2014**
+**New Orleans Saints · Free safety · No. 31 · Age 28 · Last game October 19, 2014**
 
 5' 10", 203 lb · Born October 7, 1986 · Oregon · Drafted in 2009, second round, by Buffalo
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Jairus Byrd](https://commons.wikimedia.org/wiki/Special:FilePath/Jairus_Byrd.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 5, 2014, after Week 5.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 5 (2014, through Week 5).
+**Passes defended:** 6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 27 | 31 | 5 | 26 | 17 | 9 | 2 | 0 | 0 |
+| 2014 (through Week 7) | New Orleans | 27 | 31 | 6 | 30 | 21 | 9 | 2 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | New Orleans | 27 | 31 | 0 | 0 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 7) | New Orleans | 27 | 31 | 0 | 0 | 6 | 0 | 0 | 0 |
 
 ### Playoffs
 

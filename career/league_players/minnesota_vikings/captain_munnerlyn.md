@@ -1,10 +1,10 @@
 # Captain Munnerlyn
 
-**Minnesota Vikings · Cornerback · No. 24 · Age 26 · Last game October 12, 2014**
+**Minnesota Vikings · Cornerback · No. 24 · Age 26 · Last game October 19, 2014**
 
 5' 9", 195 lb · Born April 10, 1988 · South Carolina · Drafted in 2009, seventh round, by Carolina
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Captain Munnerlyn](https://commons.wikimedia.org/wiki/Special:FilePath/Captain_Munnerlyn.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting cornerback.
 
-**Passes defended:** 5 (2014, through Week 6).
+**Passes defended:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 26 | 24 | 6 | 34 | 20 | 14 | 4 | 0 | 1 |
+| 2014 (through Week 7) | Minnesota | 26 | 24 | 7 | 42 | 25 | 17 | 4 | 0 | 1 |
 | 2013 | Carolina | 25 | 41 | 16 | 83 | 53 | 30 | 3 | 0 | 0 |
-| Career |  |  |  | 22 | 117 | 73 | 44 | 7 | 0 | 1 |
+| Career |  |  |  | 23 | 125 | 78 | 47 | 7 | 0 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 26 | 24 | 1 | 1 | 5 | 0 | 1 | 0 |
+| 2014 (through Week 7) | Minnesota | 26 | 24 | 1 | 1 | 5 | 0 | 1 | 0 |
 | 2013 | Carolina | 25 | 41 | 1 | 22 | 11 | 0 | 0 | N/A |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Carl Bradford
 
-**Green Bay Packers · Inside linebacker · No. 54 · Age 22 · Last game October 12, 2014**
+**Green Bay Packers · Inside linebacker · No. 54 · Age 22 · Last game October 19, 2014**
 
 6' 1", 252 lb · Born August 15, 1992 · Arizona State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Carl Bradford](https://commons.wikimedia.org/wiki/Special:FilePath/Carl_Bradford.jpg?width=500)
 
@@ -22,11 +22,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 22 | 54 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Green Bay | 22 | 54 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 22 | 54 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Green Bay | 22 | 54 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

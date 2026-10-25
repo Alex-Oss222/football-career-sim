@@ -1,10 +1,10 @@
 # Derek Sherrod
 
-**Green Bay Packers · Offensive tackle · No. 78 · Age 25 · Last game October 12, 2014**
+**Green Bay Packers · Offensive tackle · No. 78 · Age 25 · Last game October 19, 2014**
 
 6' 6", 321 lb · Born April 23, 1989 · Mississippi State · Drafted in 2011, first round, by Green Bay
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Derek Sherrod](https://commons.wikimedia.org/wiki/Special:FilePath/Derek_Sherrod.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve left tackle.
 
-**Sacks allowed:** 4 (2014, through Week 6).
+**Sacks allowed:** 4 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Green Bay | 25 | 78 | 6 | 6 | 373 | 4 | 27 |
+| 2014 (through Week 7) | Green Bay | 25 | 78 | 7 | 7 | 442 | 4 | 36 |
 
 ### Playoffs
 

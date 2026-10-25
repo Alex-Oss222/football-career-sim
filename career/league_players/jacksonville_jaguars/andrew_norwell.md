@@ -4,17 +4,21 @@
 
 6' 6", 310 lb · Born October 25, 1991 · Ohio State · Undrafted
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Andrew Norwell](https://commons.wikimedia.org/wiki/Special:FilePath/Andrew_Norwell_2022.jpg?width=500)
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andrew_Norwell_2022.jpg)).*
 
+**Current assignment:** Starting left guard.
+
+**Sacks allowed:** 0 (2014, through Week 7).
+
 ## Staff assessment
 
-Andrew Norwell is an undrafted rookie guard who has been active for six regular-season games. A three-year college starter at guard, he has a strong upper body and a physical finish, and in camp he carried a combination block with Mike Brewster to the linebacker and handled the protection calls at both guard spots. He is a limited athlete, short on lateral movement and speed.
+Andrew Norwell is an undrafted rookie guard who has been active for seven regular-season games. A three-year college starter at guard, he has a strong upper body and a physical finish, and in camp he carried a combination block with Mike Brewster to the linebacker and handled the protection calls at both guard spots. He is a limited athlete, short on lateral movement and speed.
 
-*Staff assessment originally dated May 11, 2014; 2014 results current through October 12.*
+*Staff assessment originally dated May 11, 2014; 2014 results current through October 19.*
 
 ## Contract
 
@@ -32,7 +36,7 @@ Three-year contract through 2016.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 22 | 68 | 6 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Jacksonville | 22 | 68 | 7 | 1 | 13 | 0 | 2 |
 
 ### Playoffs
 

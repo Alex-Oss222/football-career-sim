@@ -11,7 +11,7 @@ A script that talks to the private Engine State service needs `ENGINE_RUNTIME_UR
 | `python scripts/validate_repository.py [--root PATH]` | Read-only continuity checks across the repository |
 | `python scripts/check_game_readiness.py [--season YEAR] [--preseason N] [--json]` | Fail-closed game preflight: public release gates, then the live private-runtime probe |
 | `python scripts/check_week_input_exclusivity.py PACKAGE --expected-games COUNT [--season YEAR] [--roster PATH] [--protagonist NAME]` | Fails a weekly TeamInput slate that is incomplete or puts a player on two clubs |
-| `python scripts/run_suite_parallel.py [REPO_DIR] [--jobs N] [--out LOG_DIR] [--durations PATH] [--only MODULE ...]` | The full unit-test suite, one module per process, proven to cover the same tests as `python -m unittest discover -s tests` (CI runs this) |
+| `python scripts/run_suite_parallel.py [REPO_DIR] [--jobs N] [--out LOG_DIR] [--durations PATH] [--shard I/N] [--only MODULE ...]` | The full unit-test suite, one module per process, proven to cover the same tests as `python -m unittest discover -s tests`; `--shard I/N` runs one of N balanced parts (CI runs four on separate machines) |
 
 ## A regular-season or postseason week
 

@@ -1,10 +1,10 @@
 # Zak DeOssie
 
-**New York Giants · Long snapper · No. 51 · Age 30 · Last game October 12, 2014**
+**New York Giants · Long snapper · No. 51 · Age 30 · Last game October 19, 2014**
 
 6' 4", 249 lb · Born May 24, 1984 · Brown · Drafted in 2007, fourth round, by the New York Giants
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Zak DeOssie](https://commons.wikimedia.org/wiki/Special:FilePath/Zak_DeOssie_at_Super_Bowl_XLII_victory_parade.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Long snapper.
 
-**Long snaps:** 55 (2014, through Week 6).
+**Long snaps:** 64 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Long snaps | Special teams snaps | ST tackles | Tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 30 | 51 | 6 | 55 | 55 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Giants | 30 | 51 | 7 | 64 | 64 | 0 | 0 |
 | 2013 | N.Y. Giants | 29 | 51 | 16 | N/A | N/A | N/A | 0 |
-| Career |  |  |  | 22 | N/A | N/A | N/A | 0 |
+| Career |  |  |  | 23 | N/A | N/A | N/A | 0 |
 
 ### Playoffs
 

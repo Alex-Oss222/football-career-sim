@@ -1,10 +1,10 @@
 # Justin Bethel
 
-**Arizona Cardinals · Cornerback · No. 28 · Age 24 · Last game October 12, 2014**
+**Arizona Cardinals · Cornerback · No. 28 · Age 24 · Last game October 19, 2014**
 
 6' 0", 190 lb · Born June 17, 1990 · Presbyterian College · Drafted in 2012, sixth round, by Arizona
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Justin Bethel](https://commons.wikimedia.org/wiki/Special:FilePath/Justin_Bethel.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve cornerback.
 
-**Passes defended:** 0 (2014, through Week 6).
+**Passes defended:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 24 | 28 | 3 | 1 | 1 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Arizona | 24 | 28 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
 | 2013 | Arizona | 23 | 31 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Career |  |  |  | 5 | 1 | 1 | 0 | 0 | 0 | 0 |
+| Career |  |  |  | 6 | 1 | 1 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 24 | 28 | 0 | 0 | 0 | 0 | 0 | 3 |
+| 2014 (through Week 7) | Arizona | 24 | 28 | 0 | 0 | 0 | 0 | 0 | 4 |
 | 2013 | Arizona | 23 | 31 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

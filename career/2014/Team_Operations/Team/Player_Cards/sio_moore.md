@@ -4,13 +4,13 @@
 
 6' 1", 240 lb · Born May 2, 1990 · Connecticut · Drafted in 2013, No. 98 overall, by Jacksonville
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Sio Moore](https://commons.wikimedia.org/wiki/Special:FilePath/Sio_Moore.JPG?width=500)
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Sio_Moore.JPG)).*
 
-**Tackles:** 14 (2014, through Week 6).
+**Tackles:** 18 (2014, through Week 7).
 
 ## Staff assessment
 
@@ -34,13 +34,13 @@ Four-year contract through 2016.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 24 | 55 | 6 | 14 | 7 | 7 | 2 | 1 | 1 |
+| 2014 (through Week 7) | Jacksonville | 24 | 55 | 7 | 18 | 8 | 10 | 2 | 1 | 2 |
 | 2013 | Jacksonville | 23 | N/A | 16 | 12 | 6 | 6 | 0 | 0 | 0 |
-| With Jacksonville |  |  |  | 22 | 26 | 13 | 13 | 2 | 1 | 1 |
+| With Jacksonville |  |  |  | 23 | 30 | 14 | 16 | 2 | 1 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Jacksonville | 24 | 55 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Jacksonville | 24 | 55 | 0 | 0 | 0 | 1 | 0 | 0 |
 | 2013 | Jacksonville | 23 | N/A | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

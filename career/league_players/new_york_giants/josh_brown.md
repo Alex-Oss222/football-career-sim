@@ -1,10 +1,10 @@
 # Josh Brown
 
-**New York Giants · Kicker · No. 3 · Age 35 · Last game October 12, 2014**
+**New York Giants · Kicker · No. 3 · Age 35 · Last game October 19, 2014**
 
 6' 0", 202 lb · Born April 29, 1979 · Nebraska · Drafted in 2003, seventh round, by Seattle
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Josh Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Josh_Brown_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Kicker.
 
-**Field-goal percentage:** 84.6 (2014, through Week 6).
+**Field-goal percentage:** 85.7 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | FGM | FGA | FG% | Long | XPM | XPA | XP% | Points |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 35 | 3 | 6 | 11 | 13 | 84.6 | 53 | 14 | 14 | 100.0 | 47 |
+| 2014 (through Week 7) | N.Y. Giants | 35 | 3 | 7 | 12 | 14 | 85.7 | 53 | 18 | 18 | 100.0 | 54 |
 | 2013 | N.Y. Giants | 34 | 3 | 16 | 34 | 37 | 91.9 | N/A | 37 | 37 | 100.0 | 139 |
-| Career |  |  |  | 22 | 45 | 50 | 90.0 | N/A | 51 | 51 | 100.0 | 186 |
+| Career |  |  |  | 23 | 46 | 51 | 90.2 | N/A | 55 | 55 | 100.0 | 193 |
 
 | Season | Team | Age | # | FG 1-39 | FG 40-49 | FG 50+ |
 |---|---|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 35 | 3 | 9-9 | 0-0 | 2-4 |
+| 2014 (through Week 7) | N.Y. Giants | 35 | 3 | 10-10 | 0-0 | 2-4 |
 | 2013 | N.Y. Giants | 34 | 3 | N/A | N/A | N/A |
 
 ### Playoffs

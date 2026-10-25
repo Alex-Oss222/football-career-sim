@@ -1,10 +1,10 @@
 # Marcell Dareus
 
-**Buffalo Bills · Defensive tackle · No. 99 · Age 24 · Last game October 12, 2014**
+**Buffalo Bills · Defensive tackle · No. 99 · Age 24 · Last game October 19, 2014**
 
 6' 3", 331 lb · Born March 13, 1990 · Alabama · Drafted in 2011, first round, by Buffalo
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Marcell Dareus](https://commons.wikimedia.org/wiki/Special:FilePath/Marcell_Dareus.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting defensive tackle.
 
-**Sacks:** 0 (2014, through Week 6).
+**Sacks:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 24 | 99 | 6 | 11 | 7 | 4 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Buffalo | 24 | 99 | 7 | 11 | 7 | 4 | 0 | 0 | 0 |
 | 2013 | Buffalo | 23 | 99 | 16 | 37 | 24 | 13 | 8 | 3 | 10 |
-| Career |  |  |  | 22 | 48 | 31 | 17 | 8 | 3 | 10 |
+| Career |  |  |  | 23 | 48 | 31 | 17 | 8 | 3 | 10 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 24 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Buffalo | 24 | 99 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Buffalo | 23 | 99 | 0 | 0 | 2 | 0 | 0 | N/A |
 
 ### Playoffs

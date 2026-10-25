@@ -1,16 +1,16 @@
 # Taiwan Jones
 
-**Oakland Raiders · Running back · No. 22 · Age 26 · Last game October 12, 2014**
+**Oakland Raiders · Running back · No. 22 · Age 26 · Last game October 19, 2014**
 
 6' 0", 195 lb · Born July 26, 1988 · Eastern Washington · Drafted in 2011, fourth round, by Oakland
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Taiwan Jones](https://commons.wikimedia.org/wiki/Special:FilePath/Taiwan_Jones.JPG?width=500)
 
 *Photo: Jeffrey Beall, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) ([source](https://commons.wikimedia.org/wiki/File:Taiwan_Jones.JPG)).*
 
-**Yards per carry:** 4.0 (2014, through Week 6).
+**Yards per carry:** 3.8 (2014, through Week 7).
 
 ## Contract
 
@@ -22,18 +22,18 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 26 | 22 | 5 | 6 | 24 | 4.0 | 0 | 8 | 4.8 |
+| 2014 (through Week 7) | Oakland | 26 | 22 | 6 | 14 | 53 | 3.8 | 1 | 14 | 8.8 |
 | 2013 | Oakland | 25 | 22 | 16 | 2 | 7 | 3.5 | 0 | 4 | 0.4 |
-| Career |  |  |  | 21 | 8 | 31 | 3.9 | 0 | 8 | 1.5 |
+| Career |  |  |  | 22 | 16 | 60 | 3.8 | 1 | 14 | 2.7 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 26 | 22 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
+| 2014 (through Week 7) | Oakland | 26 | 22 | 0 | 0 | 0 | N/A | 0 | 1 | 1 |
 | 2013 | Oakland | 25 | 22 | 0 | 0 | 0 | N/A | 0 | 0 | 0 |
 
 | Season | Team | Age | # | Kick returns | KR yards | KR avg | Punt returns | PR yards | PR avg |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Oakland | 26 | 22 | 0 | 0 | N/A | 0 | 0 | N/A |
+| 2014 (through Week 7) | Oakland | 26 | 22 | 0 | 0 | N/A | 0 | 0 | N/A |
 | 2013 | Oakland | 25 | 22 | 0 | 0 | N/A | 4 | 36 | 9.0 |
 
 ### Playoffs

@@ -1,10 +1,10 @@
 # Marvin Austin
 
-**Denver Broncos · Nose tackle · No. 76 · Age 25 · Last game October 12, 2014**
+**Denver Broncos · Nose tackle · No. 76 · Age 25 · Last game October 19, 2014**
 
 6' 2", 312 lb · Born January 10, 1989 · North Carolina · Drafted in 2011, second round, by the New York Giants
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Marvin Austin](https://commons.wikimedia.org/wiki/Special:FilePath/Marvin_Austin.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve nose tackle.
 
-**Sacks:** 1 (2014, through Week 6).
+**Sacks:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 25 | 76 | 5 | 6 | 3 | 3 | 0 | 1 | 1 |
+| 2014 (through Week 7) | Denver | 25 | 76 | 6 | 6 | 3 | 3 | 0 | 1 | 1 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 25 | 76 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Denver | 25 | 76 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ### Playoffs
 

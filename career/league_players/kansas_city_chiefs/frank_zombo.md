@@ -1,10 +1,10 @@
 # Frank Zombo
 
-**Kansas City Chiefs · Outside linebacker · No. 51 · Age 27 · Last game October 5, 2014**
+**Kansas City Chiefs · Outside linebacker · No. 51 · Age 27 · Last game October 19, 2014**
 
 6' 3", 254 lb · Born March 5, 1987 · Central Michigan
 
-As of October 5, 2014, after Week 5.
+As of October 19, 2014, after Week 7.
 
 ![Frank Zombo](https://commons.wikimedia.org/wiki/Special:FilePath/Frank_Zombo.jpg?width=500)
 
@@ -22,13 +22,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 27 | 51 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Kansas City | 27 | 51 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Kansas City | 26 | 51 | 15 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Career |  |  |  | 20 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 5) | Kansas City | 27 | 51 | 0 | 0 | 0 | 0 | 0 | 4 |
+| 2014 (through Week 7) | Kansas City | 27 | 51 | 0 | 0 | 0 | 0 | 0 | 4 |
 | 2013 | Kansas City | 26 | 51 | 0 | 0 | 0 | 0 | 0 | N/A |
 
 ### Playoffs

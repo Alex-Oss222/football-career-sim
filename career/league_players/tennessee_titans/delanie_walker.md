@@ -1,10 +1,10 @@
 # Delanie Walker
 
-**Tennessee Titans · Tight end · No. 82 · Age 30 · Last game October 12, 2014**
+**Tennessee Titans · Tight end · No. 82 · Age 30 · Last game October 19, 2014**
 
 6' 0", 248 lb · Born August 12, 1984 · Central Missouri; Mt. San Antonio · Drafted in 2006, sixth round, by San Francisco
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Delanie Walker](https://commons.wikimedia.org/wiki/Special:FilePath/Delanie_Walker_2009.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting tight end.
 
-**Yards per target:** 5.7 (2014, through Week 6).
+**Yards per target:** 5.6 (2014, through Week 7).
 
 ## Contract
 
@@ -24,7 +24,7 @@ Contract not established.
 
 | Season | Team | Age | # | G | Targets | Rec | Yards | Y/R | TD | Long | YDS/G | Catch% |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 30 | 82 | 6 | 43 | 21 | 244 | 11.6 | 4 | 33 | 40.7 | 48.8 |
+| 2014 (through Week 7) | Tennessee | 30 | 82 | 7 | 48 | 24 | 271 | 11.3 | 4 | 33 | 38.7 | 50.0 |
 
 ### Playoffs
 

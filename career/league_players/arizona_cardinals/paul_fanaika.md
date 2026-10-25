@@ -1,10 +1,10 @@
 # Paul Fanaika
 
-**Arizona Cardinals · Guard · No. 74 · Age 28 · Last game October 12, 2014**
+**Arizona Cardinals · Guard · No. 74 · Age 28 · Last game October 19, 2014**
 
 6' 5", 327 lb · Born April 9, 1986 · Arizona State · Drafted in 2009, seventh round, by Philadelphia
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Paul Fanaika](https://commons.wikimedia.org/wiki/Special:FilePath/Paul_Fanaika_2014.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 0 (2014, through Week 6).
+**Sacks allowed:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Arizona | 28 | 74 | 5 | 5 | 322 | 0 | 25 |
+| 2014 (through Week 7) | Arizona | 28 | 74 | 6 | 6 | 375 | 0 | 28 |
 | 2013 | Arizona | 27 | 74 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 3 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 3 | N/A |
 
 ### Playoffs
 

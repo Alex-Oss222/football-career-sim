@@ -1,10 +1,10 @@
 # Antone Exum
 
-**Minnesota Vikings · Strong safety · No. 32 · Age 23 · Last game October 12, 2014**
+**Minnesota Vikings · Strong safety · No. 32 · Age 23 · Last game October 19, 2014**
 
 6' 0", 219 lb · Born February 27, 1991 · Virginia Tech
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Antone Exum](https://commons.wikimedia.org/wiki/Special:FilePath/Antone_Exum_2018.png?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve strong safety.
 
-**Passes defended:** 0 (2014, through Week 6).
+**Passes defended:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 23 | 32 | 6 | 7 | 5 | 2 | 1 | 0 | 0 |
+| 2014 (through Week 7) | Minnesota | 23 | 32 | 7 | 8 | 6 | 2 | 1 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Minnesota | 23 | 32 | 0 | 0 | 0 | 0 | 0 | 7 |
+| 2014 (through Week 7) | Minnesota | 23 | 32 | 0 | 0 | 0 | 0 | 0 | 7 |
 
 ### Playoffs
 

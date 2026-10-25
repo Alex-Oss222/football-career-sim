@@ -1,10 +1,10 @@
 # Sheldon Richardson
 
-**New York Jets · Offensive tackle · No. 91 · Age 23 · Last game October 12, 2014**
+**New York Jets · Offensive tackle · No. 91 · Age 23 · Last game October 16, 2014**
 
 6' 3", 294 lb · Born November 29, 1990 · Missouri; College of the Sequoias
 
-As of October 12, 2014, after Week 6.
+As of October 16, 2014, after Week 7.
 
 ![Sheldon Richardson](https://commons.wikimedia.org/wiki/Special:FilePath/Sheldon_Richardson_Jets91.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting tackle.
 
-**Sacks allowed:** 1 (2014, through Week 6).
+**Sacks allowed:** 1 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Jets | 23 | 91 | 6 | 0 | 58 | 1 | 23 |
+| 2014 (through Week 7) | N.Y. Jets | 23 | 91 | 7 | 0 | 58 | 1 | 29 |
 | 2013 | N.Y. Jets | 22 | 91 | 16 | N/A | N/A | 5 | N/A |
-| Career |  |  |  | 22 | N/A | N/A | 6 | N/A |
+| Career |  |  |  | 23 | N/A | N/A | 6 | N/A |
 
 ### Playoffs
 

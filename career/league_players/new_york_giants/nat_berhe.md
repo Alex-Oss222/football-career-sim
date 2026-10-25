@@ -1,10 +1,10 @@
 # Nat Berhe
 
-**New York Giants · Strong safety · No. 34 · Age 23 · Last game October 12, 2014**
+**New York Giants · Strong safety · No. 34 · Age 23 · Last game October 19, 2014**
 
 6' 0", 194 lb · Born July 6, 1991 · San Diego State
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Nat Berhe](https://commons.wikimedia.org/wiki/Special:FilePath/Nat_Berhe.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Reserve strong safety.
 
-**Passes defended:** 0 (2014, through Week 6).
+**Passes defended:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,11 +24,11 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 23 | 34 | 6 | 12 | 5 | 7 | 0 | 0 | 0 |
+| 2014 (through Week 7) | N.Y. Giants | 23 | 34 | 7 | 13 | 5 | 8 | 0 | 0 | 0 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | N.Y. Giants | 23 | 34 | 0 | 0 | 0 | 0 | 0 | 1 |
+| 2014 (through Week 7) | N.Y. Giants | 23 | 34 | 0 | 0 | 0 | 0 | 0 | 1 |
 
 ### Playoffs
 

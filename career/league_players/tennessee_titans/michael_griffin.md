@@ -1,10 +1,10 @@
 # Michael Griffin
 
-**Tennessee Titans · Free safety · No. 33 · Age 29 · Last game October 12, 2014**
+**Tennessee Titans · Free safety · No. 33 · Age 29 · Last game October 19, 2014**
 
 6' 0", 215 lb · Born January 4, 1985 · Texas · Drafted in 2007, first round, by Tennessee
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Michael Griffin](https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Griffin_%28American_football%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting free safety.
 
-**Passes defended:** 5 (2014, through Week 6).
+**Passes defended:** 5 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 29 | 33 | 6 | 19 | 14 | 5 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Tennessee | 29 | 33 | 7 | 24 | 18 | 6 | 0 | 0 | 0 |
 | 2013 | Tennessee | 28 | 33 | 16 | 48 | 29 | 19 | 2 | 2 | 2 |
-| Career |  |  |  | 22 | 67 | 43 | 24 | 2 | 2 | 2 |
+| Career |  |  |  | 23 | 72 | 47 | 25 | 2 | 2 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Tennessee | 29 | 33 | 0 | 0 | 5 | 1 | 1 | 0 |
+| 2014 (through Week 7) | Tennessee | 29 | 33 | 0 | 0 | 5 | 1 | 1 | 0 |
 | 2013 | Tennessee | 28 | 33 | 0 | 0 | 5 | 1 | 1 | N/A |
 
 ### Playoffs

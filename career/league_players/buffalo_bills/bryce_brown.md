@@ -1,10 +1,10 @@
 # Bryce Brown
 
-**Buffalo Bills · Running back · No. 35 · Age 23 · Last game October 12, 2014**
+**Buffalo Bills · Running back · No. 35 · Age 23 · Last game October 19, 2014**
 
 6' 0", 220 lb · Born May 14, 1991 · Kansas State; Tennessee · Drafted in 2012, seventh round, by Philadelphia
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Bryce Brown](https://commons.wikimedia.org/wiki/Special:FilePath/Bryce_Brown.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting running back.
 
-**Yards per carry:** 8.3 (2014, through Week 6).
+**Yards per carry:** 7.3 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Rushes | Rush yards | Y/C | Rush TD | Long | YDS/G |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 23 | 35 | 6 | 26 | 217 | 8.3 | 1 | 57 | 36.2 |
+| 2014 (through Week 7) | Buffalo | 23 | 35 | 7 | 34 | 249 | 7.3 | 1 | 57 | 35.6 |
 | 2013 | Philadelphia | 22 | 34 | 16 | 95 | 499 | 5.3 | 4 | 80 | 31.2 |
-| Career |  |  |  | 22 | 121 | 716 | 5.9 | 5 | 80 | 32.5 |
+| Career |  |  |  | 23 | 129 | 748 | 5.8 | 5 | 80 | 32.5 |
 
 | Season | Team | Age | # | Targets | Rec | Rec yards | Y/R | Rec TD | Fumbles | Lost |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Buffalo | 23 | 35 | 7 | 6 | 52 | 8.7 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Buffalo | 23 | 35 | 8 | 7 | 66 | 9.4 | 0 | 0 | 0 |
 | 2013 | Philadelphia | 22 | 34 | 24 | 15 | 162 | 10.8 | 0 | 2 | 2 |
 
 ### Playoffs

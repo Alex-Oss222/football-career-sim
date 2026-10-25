@@ -1,10 +1,10 @@
 # Jimmy Wilson
 
-**Miami Dolphins · Safety · No. 27 · Age 28 · Last game October 12, 2014**
+**Miami Dolphins · Safety · No. 27 · Age 28 · Last game October 19, 2014**
 
 5' 11", 205 lb · Born July 30, 1986 · Montana · Drafted in 2011, seventh round, by Miami
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Jimmy Wilson](https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy_Wilson.jpg?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting safety.
 
-**Passes defended:** 0 (2014, through Week 6).
+**Passes defended:** 0 (2014, through Week 7).
 
 ## Contract
 
@@ -24,13 +24,13 @@ Contract not established.
 
 | Season | Team | Age | # | G | Tackles | Solo | Assisted | TFL | Sacks | Pressures |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 28 | 27 | 5 | 14 | 5 | 9 | 0 | 0 | 1 |
+| 2014 (through Week 7) | Miami | 28 | 27 | 6 | 20 | 8 | 12 | 0 | 0 | 1 |
 | 2013 | Miami | 27 | 27 | 16 | 13 | 7 | 6 | 1 | 0 | 1 |
-| Career |  |  |  | 21 | 27 | 12 | 15 | 1 | 0 | 2 |
+| Career |  |  |  | 22 | 33 | 15 | 18 | 1 | 0 | 2 |
 
 | Season | Team | Age | # | INT | INT yards | PD | FF | FR | ST tackles |
 |---|---|---:|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Miami | 28 | 27 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 2014 (through Week 7) | Miami | 28 | 27 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 2013 | Miami | 27 | 27 | 0 | 0 | 1 | 0 | 0 | N/A |
 
 ### Playoffs

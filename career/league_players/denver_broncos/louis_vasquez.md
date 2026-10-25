@@ -1,10 +1,10 @@
 # Louis Vasquez
 
-**Denver Broncos · Guard · No. 65 · Age 27 · Last game October 12, 2014**
+**Denver Broncos · Guard · No. 65 · Age 27 · Last game October 19, 2014**
 
 6' 5", 335 lb · Born April 11, 1987 · Texas Tech · Drafted in 2009, third round, by San Diego
 
-As of October 12, 2014, after Week 6.
+As of October 19, 2014, after Week 7.
 
 ![Louis Vasquez](https://commons.wikimedia.org/wiki/Special:FilePath/Louis_Vasquez_%28American_football_-_Denver_Broncos%29.JPG?width=500)
 
@@ -12,7 +12,7 @@ As of October 12, 2014, after Week 6.
 
 **Current assignment:** Starting right guard.
 
-**Sacks allowed:** 1 (2014, through Week 6).
+**Sacks allowed:** 2 (2014, through Week 7).
 
 ## Contract
 
@@ -24,9 +24,9 @@ Contract not established.
 
 | Season | Team | Age | # | G | Starts | Offensive snaps | Sacks allowed | Special teams snaps |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| 2014 (through Week 6) | Denver | 27 | 65 | 5 | 5 | 294 | 1 | 25 |
+| 2014 (through Week 7) | Denver | 27 | 65 | 6 | 6 | 364 | 2 | 31 |
 | 2013 | Denver | 26 | 65 | 16 | N/A | N/A | 3 | N/A |
-| Career |  |  |  | 21 | N/A | N/A | 4 | N/A |
+| Career |  |  |  | 22 | N/A | N/A | 5 | N/A |
 
 ### Playoffs
 

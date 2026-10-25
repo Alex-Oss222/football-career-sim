@@ -13,8 +13,8 @@
       "Chad Henne"
     ],
     "RB": [
-      "Maurice Jones-Drew",
       "C.J. Anderson",
+      "Maurice Jones-Drew",
       "Jonathan Grimes"
     ],
     "FB": [
@@ -25,42 +25,42 @@
       "Adam Thielen",
       "Andrew Hawkins",
       "Allen Hurns",
-      "Hakeem Nicks",
-      "Taylor Gabriel"
+      "Taylor Gabriel",
+      "Hakeem Nicks"
     ],
     "TE": [
-      "Marcedes Lewis",
       "Travis Kelce",
+      "Marcedes Lewis",
       "Marcel Jensen",
       "Gator Hoskins"
     ],
     "OL": [
       "Eugene Monroe",
-      "Joel Bitonio",
-      "Mike Brewster",
+      "Andrew Norwell",
+      "Corey Linsley",
       "Trai Turner",
       "Lane Johnson",
       "Cornelius Lucas",
+      "Mike Brewster",
       "Charles Leno Jr.",
-      "Andrew Norwell",
-      "Corey Linsley"
+      "Joel Bitonio"
     ],
     "DL": [
       "Jeremy Mincey",
+      "Aaron Donald",
       "Sen'Derrick Marks",
-      "Roy Miller",
       "Andre Branch",
+      "Roy Miller",
       "C.J. Mosley",
       "Daniel Te'o-Nesheim",
-      "Aaron Donald",
       "Kasim Edebali"
     ],
     "LB": [
       "Daryl Smith",
       "Paul Posluszny",
-      "Julian Stanford",
-      "Sio Moore",
       "Telvin Smith",
+      "Sio Moore",
+      "Julian Stanford",
       "Christian Jones",
       "Todd Davis"
     ],
@@ -155,10 +155,10 @@
       "kick_return",
       "punt_return"
     ],
-    "A.J. Bouye": [
+    "Alan Ball": [
       "nickel"
     ],
-    "Alan Ball": [
+    "Malcolm Butler": [
       "outside_reserve"
     ]
   },
@@ -267,17 +267,17 @@
     "Austin Pasztor": "Tender withdrawn August 30, 2014; rights renounced"
   },
   "game_day_inactives": {
-    "week": 6,
+    "week": 7,
     "players": [
+      "Joel Bitonio",
+      "A.J. Bouye",
       "Jordan Poyer",
-      "Malcolm Butler",
-      "Jonathan Grimes",
-      "Corey Linsley",
+      "Charles Leno Jr.",
       "Kasim Edebali",
-      "Taylor Gabriel",
-      "Gator Hoskins"
+      "Todd Davis",
+      "Hakeem Nicks"
     ],
-    "note": "7 of the 53 are inactive for Week 6 at Tennessee (46 dress), set by Stone on October 12, 2014 on his Week 6 Game Plan: Jordan Poyer; Malcolm Butler; Jonathan Grimes; Corey Linsley; Kasim Edebali; Taylor Gabriel; Gator Hoskins."
+    "note": "7 of the 53 are inactive for Week 7 against Cleveland (46 dress), set by Stone on October 19, 2014 on his Week 7 Game Plan by his standing rule: Joel Bitonio; A.J. Bouye; Jordan Poyer; Charles Leno Jr.; Kasim Edebali; Todd Davis; Hakeem Nicks."
   },
   "update_log": "Moved with rebuild step 3b (October 19, 2026) to update_log.json in this folder, the one dated log of chart changes.",
   "added_not_placed": {
@@ -378,6 +378,38 @@
           "role": "Outside reserve",
           "player": "Alan Ball",
           "note": "kernel role outside_reserve"
+        }
+      ]
+    },
+    {
+      "date": "October 19, 2014",
+      "game_plan_week": 7,
+      "rule": "Stone's Week 7 Game Plan changed the order or the roles; these players' earlier labels no longer describe their places.",
+      "decisions": [
+        {
+          "player": "Taylor Gabriel",
+          "role": null,
+          "note": "place changed on the Week 7 Game Plan"
+        },
+        {
+          "player": "Hakeem Nicks",
+          "role": null,
+          "note": "place changed on the Week 7 Game Plan"
+        },
+        {
+          "player": "Joel Bitonio",
+          "role": null,
+          "note": "place changed on the Week 7 Game Plan"
+        },
+        {
+          "player": "A.J. Bouye",
+          "role": null,
+          "note": "role changed on the Week 7 Game Plan"
+        },
+        {
+          "player": "Alan Ball",
+          "role": null,
+          "note": "role changed on the Week 7 Game Plan"
         }
       ]
     }

@@ -527,14 +527,14 @@ class Week5BuildTests(unittest.TestCase):
         from runtime import player_state
         cls.binding = {"schema": player_state.BINDING_SCHEMA, "league_year": 2014,
                        "manifest_sha256": player_state.manifest_sha256(), "commitment": "0" * 64}
-        chart = json.loads(paths.depth_chart.read_text(encoding="utf-8"))
-        bare = copy.deepcopy(chart)
-        bare["roles"] = {p: [r for r in roles if r not in ("nickel", "outside_reserve")]
-                         for p, roles in bare["roles"].items()}
+        # The current chart without its defensive-back roles, and with Week 5's (Bouye the
+        # nickel, Ball the outside reserve corner), whatever a later Game Plan has set since.
+        bare = json.loads(paths.depth_chart.read_text(encoding="utf-8"))
+        bare["roles"] = {p: kept for p, kept in ((p, [r for r in roles if r not in ("nickel", "outside_reserve")])
+                                                 for p, roles in bare["roles"].items()) if kept}
+        chart = copy.deepcopy(bare)
         for player, role in (("A.J. Bouye", "nickel"), ("Alan Ball", "outside_reserve")):
-            roles = chart["roles"].setdefault(player, [])
-            if role not in roles:
-                roles.append(role)
+            chart["roles"].setdefault(player, []).append(role)
         cls.tmp = tempfile.TemporaryDirectory()
         cls.chart = Path(cls.tmp.name) / "chart.json"
         cls.chart.write_text(json.dumps(chart), encoding="utf-8")
