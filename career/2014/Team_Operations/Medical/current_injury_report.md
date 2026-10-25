@@ -10,9 +10,9 @@ As of October 19, 2014, after the Week 7 game against Cleveland (Cleveland 34, J
 |---|---|---|---|
 | [Davante Adams](../Team/Player_Cards/davante_adams.md) | WR | [Out · lower extremity (minor)](incidents/davante_adams_2014-10-19.md) | Review October 20, 2014; projected return October 20, 2014 |
 | [Joel Bitonio](../Team/Player_Cards/joel_bitonio.md) | OT | [Out · lower extremity (short)](incidents/joel_bitonio_2014-10-12.md) | Projected return October 22, 2014 |
-| [Andrew Norwell](../Team/Player_Cards/andrew_norwell.md) | G | [Out · head/neck (short)](incidents/andrew_norwell_2014-10-19.md) | Review October 23, 2014; projected return November 2, 2014 |
+| [Andrew Norwell](../Team/Player_Cards/andrew_norwell.md) | G | [Independent hold · head/neck (short)](incidents/andrew_norwell_2014-10-19.md) | Review October 23, 2014; projected return November 2, 2014 |
 | [Daryl Smith](../Team/Player_Cards/daryl_smith.md) | LB | [Out · lower extremity (short)](incidents/daryl_smith_2014-10-19.md) | Review October 23, 2014; projected return October 31, 2014 |
-| [Aqib Talib](../Team/Player_Cards/aqib_talib.md) | CB | [Out · head/neck (minor)](incidents/aqib_talib_2014-10-19.md) | Review October 20, 2014; projected return October 22, 2014 |
+| [Aqib Talib](../Team/Player_Cards/aqib_talib.md) | CB | [Independent hold · head/neck (minor)](incidents/aqib_talib_2014-10-19.md) | Review October 20, 2014; projected return October 22, 2014 |
 | [Alterraun Verner](../Team/Player_Cards/alterraun_verner.md) | CB | [Limited · lower extremity (no projected absence)](incidents/alterraun_verner_2014-10-19.md) | Review October 20, 2014 |
 | [A.J. Bouye](../Team/Player_Cards/a_j_bouye.md) | CB | [Out · lower extremity (short)](incidents/a_j_bouye_2014-10-12.md) | Projected return October 22, 2014 |
 

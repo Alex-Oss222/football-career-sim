@@ -83,7 +83,8 @@ if str(ROOT) not in sys.path:
 from runtime import decision_queue, decisions, game_plan, responses  # noqa: E402
 from runtime import roster as roster_record  # noqa: E402
 from runtime.week_pages import kickoff  # noqa: E402
-from scripts.apply_game_plan import log_change, long_date, opponent_words, write_charts, write_like  # noqa: E402
+from scripts.apply_game_plan import (cleared_labels, cleared_words, label_decisions, log_change,  # noqa: E402
+                                     long_date, opponent_words, record_cleared, write_charts, write_like)
 from scripts.check_game_plan import (Plan, changed_chart, closed_for_changes, depth_problems,  # noqa: E402
                                      inactive_problems, offense_problems, role_problems)
 
@@ -288,7 +289,8 @@ def record_change(root, season, week, choices, item_id=None, block_sha256=None, 
     item = next(i for i in queue["items"] if i.get("id") == item["id"])
     players = plan.inactives()
     depth = choices.get("depth") if isinstance(choices.get("depth"), dict) else {}
-    _, changes = changed_chart(plan.chart, depth)
+    after, changes = changed_chart(plan.chart, depth)
+    cleared = cleared_labels(label_decisions(plan.paths), plan.chart, after)
     page = item["record"]["path"]
     heading = next(h for h in [decisions.game_day_change_heading(n) for n in range(1, len(mine) + 2)]
                    if anchor(h) == item["record"]["anchor"])
@@ -297,6 +299,9 @@ def record_change(root, season, week, choices, item_id=None, block_sha256=None, 
     def change(chart, working):
         chart, _ = changed_chart(chart, depth)
         chart["game_day_inactives"] = {"week": week, "players": list(players), "note": note}
+        if working:
+            record_cleared(chart, cleared, long_date(plan.master), "%s game-day change" % plan.label(),
+                           game_day_week=week)
         return chart
     written = write_charts(plan.paths, change)
     added = [p for p in players if p not in before]
@@ -304,7 +309,8 @@ def record_change(root, season, week, choices, item_id=None, block_sha256=None, 
     words = ("%s inactives changed on My Responses after the Game Plan: %s inactive%s." % (
         plan.label(), ", ".join(added), "; %s dress%s" % (", ".join(dressed), "es" if len(dressed) == 1 else "")
         if dressed else "") if added or dressed else "%s inactives unchanged." % plan.label())
-    words += (" " + "; ".join(changes) + ".") if changes else " No order or role change."
+    shown = changes + cleared_words(cleared)
+    words += (" " + "; ".join(shown) + ".") if shown else " No order or role change."
     written.append(log_change(plan.paths, {
         "date": long_date(plan.master), "recorded": plan.master.isoformat(),
         "event": "%s: Stone's depth and inactives change" % plan.label(), "change": words,
@@ -320,7 +326,8 @@ def record_change(root, season, week, choices, item_id=None, block_sha256=None, 
     record["changes"].append({"n": len(record["changes"]) + 1, "heading": heading, "item": item["id"],
                               "date": plan.master.isoformat(), "page": page, "anchor": item["record"]["anchor"],
                               "block_sha256": block_sha256, "inactives": {"before": before, "after": list(players)},
-                              "depth": depth or "none", "chart_changes": changes})
+                              "depth": depth or "none", "chart_changes": changes,
+                              "labels_cleared": [p for p, _ in cleared]})
     plan.pages.game_day_changes.parent.mkdir(parents=True, exist_ok=True)
     plan.pages.game_day_changes.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     written.append(plan.pages.game_day_changes)

@@ -60,7 +60,7 @@ As of October 19, 2014, after the Week 7 game against Cleveland (Cleveland 34, J
 | [Lane Johnson](../Player_Cards/lane_johnson.md) |  | OT | 24 | Active roster | No communicated restriction: cleared September 17, 2014, his projected date, from the September 14 lower-extremity injury (reassessed September 15 with no change) ([medical record](../../Medical/incidents/lane_johnson_2014-09-14.md)) |
 | [Cornelius Lucas](../Player_Cards/cornelius_lucas.md) | 77 | OT | 23 | Active roster | No communicated restriction (club physical May 13, 2014, the specific check after his pre-combine foot stress fracture; the foot is a performance-staff review item) |
 | [Charles Leno Jr.](../Player_Cards/charles_leno_jr.md) | 72 | OT | 23 | Active roster | No communicated restriction |
-| [Andrew Norwell](../Player_Cards/andrew_norwell.md) | 68 | G | 22 | Active roster | Out, short: head/neck, logged at 6:26 of the first quarter in the October 19 Week 7 game, removed; projected return November 2, 2014; reassessment October 23 ([medical record](../../Medical/incidents/andrew_norwell_2014-10-19.md)) |
+| [Andrew Norwell](../Player_Cards/andrew_norwell.md) | 68 | G | 22 | Active roster | Independent medical hold, short: head/neck, logged at 6:26 of the first quarter in the October 19 Week 7 game, removed; projected return November 2, 2014; reassessment October 23 ([medical record](../../Medical/incidents/andrew_norwell_2014-10-19.md)) |
 | [Corey Linsley](../Player_Cards/corey_linsley.md) | 63 | C | 23 | Active roster | No communicated restriction |
 
 ## Defensive line
@@ -92,7 +92,7 @@ As of October 19, 2014, after the Week 7 game against Cleveland (Cleveland 34, J
 
 | Player | # | Pos | Age | Status | Availability |
 |---|---:|---|---:|---|---|
-| [Aqib Talib](../Player_Cards/aqib_talib.md) |  | CB | 28 | Active roster | Out, minor: head/neck, logged at 2:45 of the first quarter in the October 19 Week 7 game, removed; projected return October 22, 2014; reassessment October 20 ([medical record](../../Medical/incidents/aqib_talib_2014-10-19.md)) |
+| [Aqib Talib](../Player_Cards/aqib_talib.md) |  | CB | 28 | Active roster | Independent medical hold, minor: head/neck, logged at 2:45 of the first quarter in the October 19 Week 7 game, removed; projected return October 22, 2014; reassessment October 20 ([medical record](../../Medical/incidents/aqib_talib_2014-10-19.md)) |
 | [Bacarri Rambo](../Player_Cards/bacarri_rambo.md) | 24 | S | 24 | Active roster | No communicated restriction |
 | [Brynden Trawick](../Player_Cards/brynden_trawick.md) | 28 | S | 24 | Active roster | No communicated restriction: cleared October 11, 2014, his projected date, from the October 5 lower-extremity injury (reassessed October 7 with no change); did not practice October 8 to 10; full in the October 11 walkthrough ([medical record](../../Medical/incidents/brynden_trawick_2014-10-05.md)) |
 | [Jordan Poyer](../Player_Cards/jordan_poyer.md) | 33 | CB | 23 | Active roster | No communicated restriction: independent medical hold from the September 21 head/neck injury released October 9, 2014, its projected date (reassessed September 27 with no change); did not practice October 8; full October 9 to 11 ([medical record](../../Medical/incidents/jordan_poyer_2014-09-21.md)); earlier cleared August 26 from the August 22 upper-extremity injury |

@@ -10,8 +10,6 @@ As of October 19, 2014, after Week 7.
 
 *Photo: Jeffrey Beall, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0) ([source](https://commons.wikimedia.org/wiki/File:A._J._Bouye.JPG)).*
 
-**Current assignment:** Nickel cornerback.
-
 **Passes defended:** 0 (2014, through Week 7).
 
 ## Staff assessment

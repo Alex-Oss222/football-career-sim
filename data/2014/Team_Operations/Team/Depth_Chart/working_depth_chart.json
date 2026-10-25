@@ -384,7 +384,7 @@
     {
       "date": "October 19, 2014",
       "game_plan_week": 7,
-      "rule": "Stone's Week 7 Game Plan changed the order; these players' earlier labels no longer describe their places.",
+      "rule": "Stone's Week 7 Game Plan changed the order or the roles; these players' earlier labels no longer describe their places.",
       "decisions": [
         {
           "player": "Taylor Gabriel",
@@ -400,6 +400,16 @@
           "player": "Joel Bitonio",
           "role": null,
           "note": "place changed on the Week 7 Game Plan"
+        },
+        {
+          "player": "A.J. Bouye",
+          "role": null,
+          "note": "role changed on the Week 7 Game Plan"
+        },
+        {
+          "player": "Alan Ball",
+          "role": null,
+          "note": "role changed on the Week 7 Game Plan"
         }
       ]
     }

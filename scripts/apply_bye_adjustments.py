@@ -81,22 +81,31 @@ def apply(root, season, week):
     rel = pages.adjustments.relative_to(root).as_posix()
     text = pages.adjustments.read_text(encoding="utf-8")
     written = []
-    changes = []
+    changes, cleared = [], []
     if compiled["roles"] != "none":
-        from scripts.apply_game_plan import log_change, long_date, write_charts
+        from scripts.apply_game_plan import (cleared_labels, cleared_words, label_decisions, log_change,
+                                             long_date, record_cleared, write_charts)
         from scripts.check_game_plan import changed_chart
         depth = compiled["roles"]
-        _, changes = changed_chart(json.loads(bye.paths.depth_chart.read_text(encoding="utf-8")), depth)
-        written += write_charts(bye.paths, lambda chart, working: changed_chart(chart, depth)[0])
+        base = json.loads(bye.paths.depth_chart.read_text(encoding="utf-8"))
+        after, changes = changed_chart(base, depth)
+        cleared = cleared_labels(label_decisions(bye.paths), base, after)
+
+        def change(chart, working):
+            chart = changed_chart(chart, depth)[0]
+            return record_cleared(chart, cleared, long_date(bye.master), "Week %d bye adjustments" % week,
+                                  bye_week=week) if working else chart
+        written += write_charts(bye.paths, change)
         written.append(log_change(bye.paths, {
             "date": long_date(bye.master), "recorded": bye.master.isoformat(),
             "event": "Week %d bye: Stone's role and depth decisions" % week,
-            "change": "Week %d bye adjustments, applied immediately: %s." % (week, "; ".join(changes)),
+            "change": "Week %d bye adjustments, applied immediately: %s." % (
+                week, "; ".join(changes + cleared_words(cleared))),
             "sources": [{"label": "Week %d My Adjustments" % week,
                          "page": "%s#5-personnel-and-medical-contingencies" % rel}]}))
     record = {"schema": bye_week.APPLIED_SCHEMA, "about": bye_week.APPLIED_ABOUT, "season": season, "week": week,
               "date": bye.master.isoformat(), "page": rel, "page_sha256": bye_week.page_sha256(text),
-              "choices": compiled, "chart_changes": changes}
+              "choices": compiled, "chart_changes": changes, "labels_cleared": [p for p, _ in cleared]}
     pages.applied.parent.mkdir(parents=True, exist_ok=True)
     pages.applied.write_text(json.dumps(record, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
     written.append(pages.applied)

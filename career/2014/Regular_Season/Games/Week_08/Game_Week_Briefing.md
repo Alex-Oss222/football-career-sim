@@ -1,10 +1,10 @@
 # Week 8 Game Week Briefing: Miami
 
-**Issued:** October 19, 2014  
+**Issued:** October 19, 2014, revision 2  
 **Game:** Miami at Jacksonville, Sunday, October 26, 2014, 1 p.m. ET, EverBank Field  
 **Prepared for:** Head Coach Alex Stone  
 **Football staff:** Mike Tice (offense), Romeo Crennel (defense), Mike Westhoff (special teams), the medical staff and pro personnel  
-**Status:** Initial briefing.
+**Status:** Revised: it replaces the briefing of October 19, 2014.
 
 ## COMING UP
 
@@ -67,9 +67,9 @@
 |---|---|---|---|
 | [Davante Adams](../../../Team_Operations/Medical/incidents/davante_adams_2014-10-19.md), WR | Out: lower extremity (minor); projected return October 20, 2014 | Reassessment, October 20 | Next in the chart's receiver order: Adam Thielen |
 | [Joel Bitonio](../../../Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md), OT | Out: lower extremity (short); projected return October 22, 2014 | Not communicated | No one behind him in the chart's offensive line order |
-| [Andrew Norwell](../../../Team_Operations/Medical/incidents/andrew_norwell_2014-10-19.md), G | Out: head/neck (short); projected return November 2, 2014 | Reassessment, October 23 | By the chart and the Week 7 game-day list: Cornelius Lucas at left guard |
+| [Andrew Norwell](../../../Team_Operations/Medical/incidents/andrew_norwell_2014-10-19.md), G | Independent hold: head/neck (short); projected return November 2, 2014 | Reassessment, October 23 | By the chart and the Week 7 game-day list: Cornelius Lucas at left guard |
 | [Daryl Smith](../../../Team_Operations/Medical/incidents/daryl_smith_2014-10-19.md), LB | Out: lower extremity (short); projected return October 31, 2014 | Reassessment, October 23 | Next in the chart's linebacker order: Paul Posluszny |
-| [Aqib Talib](../../../Team_Operations/Medical/incidents/aqib_talib_2014-10-19.md), CB | Out: head/neck (minor); projected return October 22, 2014 | Reassessment, October 20 | By the chart and the Week 7 game-day list: Malcolm Butler at outside corner |
+| [Aqib Talib](../../../Team_Operations/Medical/incidents/aqib_talib_2014-10-19.md), CB | Independent hold: head/neck (minor); projected return October 22, 2014 | Reassessment, October 20 | By the chart and the Week 7 game-day list: Malcolm Butler at outside corner |
 | [Alterraun Verner](../../../Team_Operations/Medical/incidents/alterraun_verner_2014-10-19.md), CB | Limited: lower extremity (no projected absence) | Reassessment, October 20 | By the chart and the Week 7 game-day list: Chris Prosinski at outside corner |
 | [A.J. Bouye](../../../Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md), CB | Out: lower extremity (short); projected return October 22, 2014 | Not communicated | By the chart and the Week 7 game-day list: Malcolm Butler at outside corner |
 

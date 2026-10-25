@@ -197,6 +197,28 @@ class WeekPagesTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             week_pages.participation({"restriction": "questionable"})
 
+    def test_the_roster_note_names_the_restrictions_instruction(self):
+        """The roster record's note starts with the restriction's instruction in the one medical
+        format (an independent medical hold reads as one, never Out, as the Week 7 Norwell and Talib
+        rows read), the format the injury report parses; an unknown restriction is refused."""
+        from runtime import season_summary
+        season = week_pages.Season(ROOT, SEASON)
+        game = next(g for g in season.fixtures if g["week"] == FIRST and JAX in (g["away"], g["home"]))
+        other = game["home"] if game["away"] == JAX else game["away"]
+        name = next(p["name"] for p in season.roster["players"] if p["list"] == "active")
+        receipt = {"week": FIRST, "away": game["away"], "home": game["home"], "final_score": {JAX: 31, other: 34},
+                   "drives": []}
+        for restriction, start in (("out", "Out, short: head/neck"), ("limited", "Limited, short: head/neck"),
+                                   ("independent medical hold", "Independent medical hold, short: head/neck")):
+            injury = {"team": JAX, "player": name, "injury_class": "head_neck", "severity": "short",
+                      "restriction": restriction, "return_days": 14, "reassessment_days": 4, "removed": True,
+                      "period": 1, "clock": "6:26"}
+            text, _ = week_pages.availability_entry(season, dict(receipt, injuries=[injury]), injury)
+            self.assertTrue(text.startswith(start + ", logged "), text)
+            self.assertEqual(season_summary.STATUS.match(text).group("kind"), start.split(",")[0])
+        with self.assertRaises(ValueError):
+            week_pages.availability_entry(season, dict(receipt, injuries=[]), dict(injury, restriction="questionable"))
+
     def test_rebased_links_reach_the_same_file(self):
         out = week_pages.rebase("([record](../../Medical/incidents/x.md#a))",
                                 "career/2014/Team_Operations/Team/Roster/roster.md",

@@ -49,9 +49,9 @@ The first defensive-line and linebacker groups, and the first four defensive bac
 |---|---|---|
 | [Davante Adams](../Player_Cards/davante_adams.md) | Out · lower extremity (minor) | Review October 20, 2014; projected return October 20, 2014 |
 | [Joel Bitonio](../Player_Cards/joel_bitonio.md) | Out · lower extremity (short) | Projected return October 22, 2014 |
-| [Andrew Norwell](../Player_Cards/andrew_norwell.md) | Out · head/neck (short) | Review October 23, 2014; projected return November 2, 2014 |
+| [Andrew Norwell](../Player_Cards/andrew_norwell.md) | Independent hold · head/neck (short) | Review October 23, 2014; projected return November 2, 2014 |
 | [Daryl Smith](../Player_Cards/daryl_smith.md) | Out · lower extremity (short) | Review October 23, 2014; projected return October 31, 2014 |
-| [Aqib Talib](../Player_Cards/aqib_talib.md) | Out · head/neck (minor) | Review October 20, 2014; projected return October 22, 2014 |
+| [Aqib Talib](../Player_Cards/aqib_talib.md) | Independent hold · head/neck (minor) | Review October 20, 2014; projected return October 22, 2014 |
 | [Alterraun Verner](../Player_Cards/alterraun_verner.md) | Limited · lower extremity (no projected absence) | Review October 20, 2014 |
 | [A.J. Bouye](../Player_Cards/a_j_bouye.md) | Out · lower extremity (short) | Projected return October 22, 2014 |
 
@@ -153,10 +153,10 @@ The order in each group remains Stone's current order. Reserve assignments that 
 | 2 | [Alterraun Verner](../Player_Cards/alterraun_verner.md) | CB |  |
 | 3 | [Bacarri Rambo](../Player_Cards/bacarri_rambo.md) | S |  |
 | 4 | [Brynden Trawick](../Player_Cards/brynden_trawick.md) | S |  |
-| 5 | [A.J. Bouye](../Player_Cards/a_j_bouye.md) | CB | Nickel (DB5) |
+| 5 | [A.J. Bouye](../Player_Cards/a_j_bouye.md) | CB |  |
 | 6 | [Chris Prosinski](../Player_Cards/chris_prosinski.md) | S | Sixth defensive back (Dime) |
 | 7 | [Adrian Phillips](../Player_Cards/adrian_phillips.md) | S |  |
-| 8 | [Alan Ball](../Player_Cards/alan_ball.md) | CB | Outside reserve |
+| 8 | [Alan Ball](../Player_Cards/alan_ball.md) | CB | Nickel |
 | 9 | [Malcolm Butler](../Player_Cards/malcolm_butler.md) | CB | Outside reserve corner |
 | 10 | [Jordan Poyer](../Player_Cards/jordan_poyer.md) | CB |  |
 

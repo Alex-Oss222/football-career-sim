@@ -41,6 +41,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from runtime import clean_pages, game_plan, game_report, game_weeks  # noqa: E402
 from runtime.decisions import week_pages  # noqa: E402
+from runtime.player_bios import master_date  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
 from runtime.week_inputs import receipt_name  # noqa: E402
 from test_game_plan import role_cover  # noqa: E402
@@ -51,9 +52,36 @@ IGNORED = (".git", ".sim_cache", "__pycache__", ".pytest_cache")
 FIXTURE = Path(__file__).resolve().parent / "fixtures" / "game_reports" / "playoff_game.md"
 # The receipt fields tied to the week a game was played under (tests/test_week_close_pages.py).
 WEEK_BOUND = ("defensive_calls", "defensive_call_stats", "decision_policies")
-# Fixture slot dates (the copy's clock is October 5, 2014): the rounds on the weekends after it.
-SLOT_DATES = {"2014-01-04": "2014-10-11", "2014-01-05": "2014-10-12", "2014-01-11": "2014-10-18",
-              "2014-01-12": "2014-10-19", "2014-01-19": "2014-10-26", "2014-02-02": "2014-11-09"}
+# Fixture slot dates: the rounds on the weekends after the copy's clock. Written when the clock
+# was October 5, 2014, with the Wild Card weekend October 11 and 12; moved on by whole weeks once
+# the clock reaches that Saturday, so each date keeps its weekday and the rounds their spacing.
+_FIRST_SLOT = date(2014, 10, 11)
+_SHIFT = timedelta(weeks=max(0, -(-((master_date(ROOT) - _FIRST_SLOT).days + 1) // 7)))
+
+
+def slot_day(day):
+    return date.fromisoformat(day) + _SHIFT
+
+
+def long_day(day):
+    return "%s %d, %d" % (day.strftime("%B"), day.day, day.year)
+
+
+def shifted(text):
+    """``text`` (a fixture written for the October 12 Wild Card) with each autumn 2014 date moved
+    on by the same whole weeks as the slots, so its header and injury rows name the game's dates."""
+    def move(m):
+        day = date(2014, MONTHS.index(m.group(1)) + 10, int(m.group(2))) + _SHIFT
+        return "%s %d%s" % (day.strftime("%B"), day.day, ", %d" % day.year if m.group(3) else "")
+    return re.sub(r"\b(%s) (\d{1,2})(, 2014)?\b" % "|".join(MONTHS), move, text)
+
+
+MONTHS = ("October", "November", "December")
+SLOT_DATES = {old: slot_day(new).isoformat() for old, new in {
+    "2014-01-04": "2014-10-11", "2014-01-05": "2014-10-12", "2014-01-11": "2014-10-18",
+    "2014-01-12": "2014-10-19", "2014-01-19": "2014-10-26", "2014-02-02": "2014-11-09"}.items()}
+WILD_CARD_DAY, DIVISIONAL_DAY, CONFERENCE_DAY, SUPER_BOWL_DAY = (
+    long_day(slot_day(d)) for d in ("2014-10-12", "2014-10-19", "2014-10-26", "2014-11-09"))
 
 
 def quiet(fn, *args, **kwargs):
@@ -93,11 +121,17 @@ class PostseasonGameWeekTests(unittest.TestCase):
             if int(receipt.name[5:7]) > last:
                 receipt.unlink()
 
-    def inactives(self, plan):
+    def inactives(self, plan, carry=5):
         """A legal list from the stored facts: every player out for the game, then the deepest reserve
-        of the largest groups (tests/test_game_plan.needed_inactives, for a playoff game's date)."""
+        of the largest groups (tests/test_game_plan.needed_inactives, for a playoff game's date),
+        passing over a player a variation on the carried week's calls names (the page carries those
+        calls as set, and the check refuses a variation whose player does not dress: Nicks, the X
+        relief on two Week 5 calls, last of the receivers from Week 7)."""
         outs, problems = plan.outs()
         self.assertEqual(problems, [])
+        sheet = json.loads(self.paths.call_sheet(carry, postseason=carry >= WILD_CARD).read_text(encoding="utf-8"))
+        named = {word.lower() for call in sheet.get("offensive_call_sheet") or () for tag in call.get("tags") or ()
+                 for word in re.findall(r"[A-Za-z'.-]+", tag)}
         active = plan.active()
         out = [p for p in active if p in outs]
         groups = sorted(plan.chart["depth"].items(), key=lambda kv: -len(kv[1]))
@@ -106,7 +140,7 @@ class PostseasonGameWeekTests(unittest.TestCase):
             for _, players in groups:
                 if len(out) < plan.needed() and len(players) > depth + 2:
                     name = players[-depth]
-                    if name in active and name not in out:
+                    if name in active and name not in out and name.split()[-1].lower() not in named:
                         out.append(name)
             depth += 1
         return out
@@ -137,7 +171,7 @@ class PostseasonGameWeekTests(unittest.TestCase):
         (folder / receipt_name(game)).write_text(json.dumps(receipt, indent=1), encoding="utf-8")
         state = self.root / "state/05_Current_Season_State.md"
         text, n = re.subn(r"(\| Master date/time \| )[A-Za-z]+ \d{1,2}, \d{4}[^|]*\|",
-                          r"\g<1>October 12, 2014, after the Wild Card game against Pittsburgh |",
+                          r"\g<1>%s, after the Wild Card game against Pittsburgh |" % WILD_CARD_DAY,
                           state.read_text(encoding="utf-8"), count=1)
         self.assertEqual(n, 1)
         state.write_text(text, encoding="utf-8")
@@ -240,7 +274,7 @@ class PostseasonGameWeekTests(unittest.TestCase):
         self.assertEqual([p for p in (paths.call_sheet(WILD_CARD), sheet_path) if p.exists()], [sheet_path])
         sheet = json.loads(sheet_path.read_text(encoding="utf-8"))
         week5 = json.loads(paths.call_sheet(5).read_text(encoding="utf-8"))
-        self.assertEqual(sheet["event"], "2014 postseason Wild Card, Pittsburgh at Jacksonville, October 12, 2014")
+        self.assertEqual(sheet["event"], "2014 postseason Wild Card, Pittsburgh at Jacksonville, %s" % WILD_CARD_DAY)
         # Week 5's calls carried as set; its "what I am looking at" text is author intent, not the sheet's.
         strip = lambda calls: [{k: v for k, v in c.items() if k != "what_stone_is_looking_at"} for c in calls]
         self.assertEqual(sheet["offensive_call_sheet"], strip(week5["offensive_call_sheet"]))
@@ -260,7 +294,8 @@ class PostseasonGameWeekTests(unittest.TestCase):
         # Game day: the Game Report opened with its preparation (the template's layout: a playoff game
         # has no media sections), frozen before kickoff.
         from scripts import freeze_pregame
-        report = FIXTURE.read_text(encoding="utf-8")
+        report = shifted(FIXTURE.read_text(encoding="utf-8"))
+        self.assertIn("Sunday, %s | 1:05 p.m. ET" % WILD_CARD_DAY, report)
         head, *sections = report.split("\n## ")
         head = re.sub(r"^\*\*Final: .*\n", "", head + "\n", flags=re.M).rstrip("\n")
         pregame = "\n## ".join([head] + [part for part in sections if part.startswith("1. ")]) + "\n"
@@ -371,7 +406,7 @@ class PostseasonGameWeekTests(unittest.TestCase):
         pages = week_pages(SEASON, week, root)
         self.assertEqual(pages.folder, self.paths.week_folder(week, postseason=True))
         plan = check_game_plan.Plan(root, SEASON, week)
-        inactive = self.inactives(plan)
+        inactive = self.inactives(plan, carry)
         answers = {
             "baseline": "Carry Week %d" % carry, "attack": "Their linebackers in space against our tight ends.",
             "protect": "A cutback behind an overrun.", "change_course": "A safety rotating late.",
@@ -435,7 +470,7 @@ class PostseasonGameWeekTests(unittest.TestCase):
         # The Wild Card round, closed: Jacksonville beats Pittsburgh at home; every other host wins.
         game, _ = self.close_round(WILD_CARD, wins)
         self.assertEqual((game["away"], game["home"]), (PIT, JAX))
-        self.set_master("October 12, 2014, after the Wild Card game against Pittsburgh")
+        self.set_master("%s, after the Wild Card game against Pittsburgh" % WILD_CARD_DAY)
 
         # Divisional: set only now, Jacksonville at the second seed, which had the first-round bye.
         game = game_weeks.club_game(paths, DIVISIONAL, JAX)
@@ -453,7 +488,7 @@ class PostseasonGameWeekTests(unittest.TestCase):
         self.assertEqual(sheet["offensive_call_sheet"], strip(week5["offensive_call_sheet"]))
         self.assertTrue(sheet["event"].startswith("2014 postseason Divisional, Jacksonville at "))
         self.close_round(DIVISIONAL, wins)
-        self.set_master("October 19, 2014, after the Divisional game at %s" % host.rsplit(" ", 1)[0])
+        self.set_master("%s, after the Divisional game at %s" % (DIVISIONAL_DAY, host.rsplit(" ", 1)[0]))
 
         # Conference Championship: carrying the Divisional round's plan as set.
         game = game_weeks.club_game(paths, 20, JAX)
@@ -467,8 +502,8 @@ class PostseasonGameWeekTests(unittest.TestCase):
         self.assertEqual(conference["offensive_call_sheet"], sheet["offensive_call_sheet"])
         self.assertEqual(conference["defensive_call_sheet"]["rows"], sheet["defensive_call_sheet"]["rows"])
         self.close_round(20, wins)
-        self.set_master("October 26, 2014, after the Conference Championship game at %s"
-                        % game["home"].rsplit(" ", 1)[0])
+        self.set_master("%s, after the Conference Championship game at %s"
+                        % (CONFERENCE_DAY, game["home"].rsplit(" ", 1)[0]))
 
         # The Super Bowl: the two champions at a neutral site, Jacksonville the designated home club.
         game = game_weeks.club_game(paths, 21, JAX)
@@ -481,8 +516,8 @@ class PostseasonGameWeekTests(unittest.TestCase):
                      "| If we win | We are the league champions. |", "| Earlier meeting | None this season. |"):
             self.assertIn(text, section)
         self.assertNotIn("at home", section.split("| Rest and travel |", 1)[1].split("\n", 1)[0])
-        self.assertEqual(final["event"], "2014 postseason Super Bowl, %s at Jacksonville, November 9, 2014"
-                         % game["away"].rsplit(" ", 1)[0])
+        self.assertEqual(final["event"], "2014 postseason Super Bowl, %s at Jacksonville, %s"
+                         % (game["away"].rsplit(" ", 1)[0], SUPER_BOWL_DAY))
         self.assertEqual(final["offensive_call_sheet"], sheet["offensive_call_sheet"])
         from scripts import render_game_week
         self.assertEqual(render_game_week.validation_errors(root), [])

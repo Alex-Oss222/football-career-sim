@@ -10,7 +10,7 @@ As of October 19, 2014, after Week 7.
 
 ## Staff assessment
 
-Julian Stanford was a reserve linebacker for Jacksonville in 2013, dressing for all 16 regular-season games, with his role expanding late that season. In 2014 he has played as the third linebacker in the base defense, with 32 tackles in seven games. He is mobile, can cover space and pursue, and can handle a defined replacement assignment. His main limitations are taking on blocks, reading and fitting the run, and the detail of his coverage, especially in man coverage.
+Julian Stanford was a reserve linebacker for Jacksonville in 2013, dressing for all 16 regular-season games, with his role expanding late that season. By early October he had played as the third linebacker in the base defense, and he has 32 tackles in seven games in 2014. He is mobile, can cover space and pursue, and can handle a defined replacement assignment. His main limitations are taking on blocks, reading and fitting the run, and the detail of his coverage, especially in man coverage.
 
 *Staff assessment originally dated March 31, 2014; 2014 results current through October 19.*
 

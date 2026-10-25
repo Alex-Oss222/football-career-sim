@@ -67,14 +67,13 @@ def page(rel):
     return (ROOT / rel).read_text(encoding="utf-8")
 
 
-def label(year, kind="regular"):
-    """The season row's label: the year, and while the season is open the latest week its game
-    records cover (worked out from the receipts, never named)."""
-    c = ctx()
-    if c.complete.get(year, True) or year != c.active:
-        return str(year)
-    week = c.latest_week[(year, kind)]
-    return "%d (through %s)" % (year, player_pages.ROUND_NAMES.get(week, "Week %d" % week))
+def season_row(rows, year):
+    """A table's one row for the season: labelled the year, or while the season is open the year
+    and the latest week his club's games reach, which a bye can hold behind the league's (the
+    label itself: test_the_metric_and_the_season_row_read_through_the_as_of_week)."""
+    found = [row for key, row in rows.items() if key == str(year) or key.startswith("%d (through " % year)]
+    assert len(found) == 1, (year, sorted(rows))
+    return found[0]
 
 
 def jaguars_page_ids():
@@ -106,13 +105,27 @@ def league_page(name, club):
     return "%s/%s/%s.md" % (LEAGUE_PLAYER_PAGES, player_cards.club_slug(club), people.slugify(name))
 
 
-def period():
-    """The position statistic's period, worked out from the receipts: the active season and,
-    while it is open, its latest regular-season week."""
+def club_week(club):
+    """His club's latest closed regular-season week in the active season, worked out from the
+    receipts: a bye leaves it behind the league's latest week."""
+    c = ctx()
+    return max(w for (team, when), w in c.weeks.items()
+               if team == club and when.startswith(str(c.active)) and w not in player_pages.ROUND_NAMES)
+
+
+def period(club=JAX):
+    """The position statistic's period on a page of ``club``'s player: the active season and,
+    while it is open, the club's latest regular-season week (the page's As of week)."""
     c = ctx()
     if c.complete.get(c.active, True):
         return str(c.active)
-    return "%d, through Week %d" % (c.active, c.latest_week[(c.active, "regular")])
+    return "%d, through Week %d" % (c.active, club_week(club))
+
+
+def next_jacksonville_fixture(paths):
+    """The first scheduled Jacksonville game after its latest closed one (its bye skipped)."""
+    games = [g for g in json.loads(paths.schedule.read_text(encoding="utf-8"))["games"] if JAX in (g["away"], g["home"])]
+    return min((g for g in games if g["week"] > club_week(JAX)), key=lambda g: g["week"])
 
 
 def month_day(iso):
@@ -429,7 +442,8 @@ class LayoutTests(unittest.TestCase):
         # His Week 1 slot (WR1) with Cincinnati, and his yards per target from the statbook.
         self.assertIn("\n**Current assignment:** Starting wide receiver.\n", text)
         g = book(2014)["players"]["A.J. Green"]
-        self.assertIn("\n**Yards per target:** %.1f (%s).\n" % (g["receiving_yards"] / g["targets"], period()), text)
+        self.assertIn("\n**Yards per target:** %.1f (%s).\n" % (g["receiving_yards"] / g["targets"],
+                                                               period("Cincinnati Bengals")), text)
 
     def test_a_former_jaguar_keeps_his_assessment_and_his_moves(self):
         text = page(league_page("Cecil Shorts", "Indianapolis Colts"))
@@ -471,7 +485,7 @@ class ValueTests(unittest.TestCase):
         regular, _ = tables(page(league_page("Kirk Cousins", "Jacksonville Jaguars")))
         for year in (2013, 2014):
             line = book(year)["players"]["Kirk Cousins"]
-            row = regular[label(year)]
+            row = season_row(regular, year)
             self.assertEqual(row["G"], str(line["games"]))
             self.assertEqual(row["CMP"], "{:,}".format(line["completions"]))
             self.assertEqual(row["ATT"], "{:,}".format(line["pass_attempts"]))
@@ -487,12 +501,12 @@ class ValueTests(unittest.TestCase):
         watt = tables(page(league_page("J.J. Watt", "Houston Texans")))[0]
         for year in (2013, 2014):
             g = book(year)["players"]["A.J. Green"]
-            row = green[label(year)]
+            row = season_row(green, year)
             self.assertEqual((row["Rec"], row["Yards"], row["Targets"]),
                              (str(g["receptions"]), "{:,}".format(g["receiving_yards"]), str(g["targets"])))
             w = book(year)["players"]["J.J. Watt"]
-            self.assertEqual(watt[label(year)]["Tackles"], str(w["tackles"]))
-            self.assertEqual(float(watt[label(year)]["Sacks"]), float(w["sacks"]))
+            self.assertEqual(season_row(watt, year)["Tackles"], str(w["tackles"]))
+            self.assertEqual(float(season_row(watt, year)["Sacks"]), float(w["sacks"]))
 
     def test_every_player_season_total_equals_the_statbook(self):
         from runtime.statbook import BOOK_FIELDS
@@ -517,7 +531,7 @@ class ValueTests(unittest.TestCase):
         rows = tables(page(league_page("Luke Joeckel", "Philadelphia Eagles")))[0]
         self.assertEqual((rows["2013"]["Starts"], rows["2013"]["Offensive snaps"]), ("N/A", "N/A"))
         self.assertEqual(rows["Career"]["Starts"], "N/A")
-        self.assertEqual(rows[label(2014)]["Starts"],
+        self.assertEqual(season_row(rows, 2014)["Starts"],
                          str(book(2014)["players"]["Luke Joeckel"]["line_starts"]))
 
     def test_namesakes_keep_their_own_birth_dates(self):
@@ -527,13 +541,13 @@ class ValueTests(unittest.TestCase):
     def test_ages_read_the_canon_override(self):
         text = page(league_page("Kirk Cousins", "Jacksonville Jaguars"))
         regular, _ = tables(text)
-        self.assertEqual((regular["2013"]["Age"], regular[label(2014)]["Age"]), ("22", "23"))
+        self.assertEqual((regular["2013"]["Age"], season_row(regular, 2014)["Age"]), ("22", "23"))
         self.assertEqual(tables(text, "### Playoffs")[0]["2013"]["Age"], "22")
         self.assertEqual((regular["Career" if "Career" in regular else "With Jacksonville"]["Age"]), "")
 
     def test_the_number_follows_the_season_and_team(self):
         regular, _ = tables(page(league_page("Kirk Cousins", "Jacksonville Jaguars")))
-        self.assertEqual((regular["2013"]["#"], regular[label(2014)]["#"]), ("N/A", "8"))
+        self.assertEqual((regular["2013"]["#"], season_row(regular, 2014)["#"]), ("N/A", "8"))
         no_club_twice = {}
         for p in ctx().data["players"]:
             if p["number"] is not None:
@@ -876,8 +890,7 @@ class TokenTests(unittest.TestCase):
         Jacksonville figures and their cutoff; nothing refuses the check or the write."""
         paths = SeasonPaths(2014, ROOT)
         receipts = paths.receipts.relative_to(ROOT).as_posix()
-        fixture = next(g for g in json.loads(paths.schedule.read_text(encoding="utf-8"))["games"]
-                       if g["week"] == ctx().latest_week[(2014, "regular")] + 1 and JAX in (g["away"], g["home"]))
+        fixture = next_jacksonville_fixture(paths)
         last = max((f for f in paths.receipts.glob("*.json")
                     if JAX in json.loads(f.read_text(encoding="utf-8"))["team_stats"]),
                    key=lambda f: json.loads(f.read_text(encoding="utf-8"))["week"])
@@ -927,8 +940,7 @@ class TokenTests(unittest.TestCase):
         figures and the dated line; the words of the short stay as written."""
         paths = SeasonPaths(2014, ROOT)
         receipts = paths.receipts.relative_to(ROOT).as_posix()
-        fixture = next(g for g in json.loads(paths.schedule.read_text(encoding="utf-8"))["games"]
-                       if g["week"] == ctx().latest_week[(2014, "regular")] + 1 and JAX in (g["away"], g["home"]))
+        fixture = next_jacksonville_fixture(paths)
         last = max((f for f in paths.receipts.glob("*.json")
                     if JAX in json.loads(f.read_text(encoding="utf-8"))["team_stats"]),
                    key=lambda f: json.loads(f.read_text(encoding="utf-8"))["week"])
@@ -981,8 +993,8 @@ class MetricTests(unittest.TestCase):
             ("Eugene Monroe", JAX, "Sacks allowed", lambda l: str(l["sacks_allowed"])),
         )
         for name, club, label, value in cases:
-            self.assertEqual(self.metric(name, club), ["**%s:** %s (%s)." % (label, value(self.line(name)), period())],
-                             name)
+            self.assertEqual(self.metric(name, club),
+                             ["**%s:** %s (%s)." % (label, value(self.line(name)), period(club))], name)
 
     def test_the_punters_net_average_is_worked_out_from_the_games(self):
         paths = SeasonPaths(ctx().active, ROOT)
@@ -1021,30 +1033,30 @@ class MetricTests(unittest.TestCase):
         self.assertIsNone(player_pages.position_metric(ctx(), ctx().league_player(ctx().records["brad_meester"]), "C"))
 
     def test_the_metric_and_the_season_row_read_through_the_as_of_week(self):
-        """A club whose latest game came before the league's latest week (a bye): his position
-        statistic, his partial-season row and his As of line name the same week."""
+        """His position statistic, his partial-season row and his As of line name the same week,
+        his club's latest: a club whose latest game came before the league's latest week (a bye)
+        reads its own week, not the league's."""
         c = ctx()
         if c.complete.get(c.active, True):
             self.skipTest("the season is complete")
         latest = c.latest_week[(c.active, "regular")]
-        club_week = {}
-        for (team, when), week in c.weeks.items():
-            if when.startswith(str(c.active)) and week not in player_pages.ROUND_NAMES:
-                club_week[team] = max(club_week.get(team, 0), week)
-        early = {t for t, w in club_week.items() if w < latest and t != JAX}
-        self.assertTrue(early)
-        checked = 0
+        checked, behind = 0, 0
         for rel, text in built()[0].items():
             if not rel.startswith(LEAGUE_PLAYER_PAGES + "/"):
                 continue
             as_of = re.search(r"^As of .*, after Week (\d+)\.$", text, re.M)
             metric = re.search(r"^\*\*[^*]+:\*\* \S+ \(%d, through Week (\d+)\)\.$" % c.active, text, re.M)
-            if not (as_of and metric) or int(as_of.group(1)) == latest:
+            if not (as_of and metric):
                 continue
             self.assertEqual(metric.group(1), as_of.group(1), rel)
             self.assertIn("| %d (through Week %s) |" % (c.active, as_of.group(1)), text, rel)
             checked += 1
+            behind += int(as_of.group(1)) < latest
         self.assertTrue(checked)
+        # Every club whose latest game is behind the league's has its pages checked above.
+        early = {t for (t, when), w in c.weeks.items() if when.startswith(str(c.active))
+                 and w not in player_pages.ROUND_NAMES and club_week(t) < latest}
+        self.assertEqual(bool(early), bool(behind))
 
     def test_a_metric_is_never_qbr_or_a_rating_of_the_player(self):
         labels = {m[0] for m in player_pages.METRICS.values()}

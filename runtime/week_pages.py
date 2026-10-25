@@ -64,6 +64,9 @@ PERIODS = {1: "first", 2: "second", 3: "third", 4: "fourth"}
 CLASSES = {"head_neck": "head/neck", "upper_extremity": "upper extremity", "lower_extremity": "lower extremity",
            "trunk": "trunk"}
 RESTRICTIONS = {"out": "out", "limited": "limited"}
+# The roster record's instruction for each restriction an injury carries (runtime/season_summary's
+# one medical format); a restriction not named here is refused, never written as out.
+INSTRUCTIONS = {"out": "Out", "limited": "Limited", injury_model.HOLD: "Independent medical hold"}
 # The practice participation and permitted work each restriction the game records allows, as the
 # incident page writes them: an independent medical hold is no football work until it is released,
 # as the hand-written holds of August and September 2014 read.
@@ -593,7 +596,9 @@ def availability_entry(season, receipt, injury):
     played = injury_date(season, receipt)
     days = injury.get("return_days") or 0
     restriction = injury.get("restriction")
-    instruction = "Limited" if restriction == "limited" else "Out"
+    if restriction not in INSTRUCTIONS:
+        raise ValueError("no medical instruction for the restriction %r" % restriction)
+    instruction = INSTRUCTIONS[restriction]
     severity = severity_words(injury) if days or restriction != "limited" else "no projected absence"
     parts = ["%s, %s: %s, logged %s in the %s Week %d game, %s" % (
         instruction, severity, words(injury.get("injury_class"), CLASSES), clock_text(injury), month_day(played),

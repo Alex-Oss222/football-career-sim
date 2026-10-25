@@ -34,9 +34,9 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coac
 |---|---|---|
 | [Davante Adams](Team_Operations/Team/Player_Cards/davante_adams.md) | [Out · lower extremity (minor)](Team_Operations/Medical/incidents/davante_adams_2014-10-19.md) | Review October 20, 2014; projected return October 20, 2014 |
 | [Joel Bitonio](Team_Operations/Team/Player_Cards/joel_bitonio.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md) | Projected return October 22, 2014 |
-| [Andrew Norwell](Team_Operations/Team/Player_Cards/andrew_norwell.md) | [Out · head/neck (short)](Team_Operations/Medical/incidents/andrew_norwell_2014-10-19.md) | Review October 23, 2014; projected return November 2, 2014 |
+| [Andrew Norwell](Team_Operations/Team/Player_Cards/andrew_norwell.md) | [Independent hold · head/neck (short)](Team_Operations/Medical/incidents/andrew_norwell_2014-10-19.md) | Review October 23, 2014; projected return November 2, 2014 |
 | [Daryl Smith](Team_Operations/Team/Player_Cards/daryl_smith.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/daryl_smith_2014-10-19.md) | Review October 23, 2014; projected return October 31, 2014 |
-| [Aqib Talib](Team_Operations/Team/Player_Cards/aqib_talib.md) | [Out · head/neck (minor)](Team_Operations/Medical/incidents/aqib_talib_2014-10-19.md) | Review October 20, 2014; projected return October 22, 2014 |
+| [Aqib Talib](Team_Operations/Team/Player_Cards/aqib_talib.md) | [Independent hold · head/neck (minor)](Team_Operations/Medical/incidents/aqib_talib_2014-10-19.md) | Review October 20, 2014; projected return October 22, 2014 |
 | [Alterraun Verner](Team_Operations/Team/Player_Cards/alterraun_verner.md) | [Limited · lower extremity (no projected absence)](Team_Operations/Medical/incidents/alterraun_verner_2014-10-19.md) | Review October 20, 2014 |
 | [A.J. Bouye](Team_Operations/Team/Player_Cards/a_j_bouye.md) | [Out · lower extremity (short)](Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md) | Projected return October 22, 2014 |
 
