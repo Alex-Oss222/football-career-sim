@@ -1,0 +1,896 @@
+{
+ "season": 2014,
+ "week": 8,
+ "applied": "2014-10-26",
+ "page": "career/2014/Regular_Season/Games/Week_08/Game_Plan.md",
+ "page_sha256": "3782a98e43957ae5f6fa7664ebabd148032257c55b6e20b469ef3ce47609d7e1",
+ "call_sheet_sha256": "08609ada4b8b864e3f2f2d5998e192b4f7d4599cff40987835d4fe2c7639e7ab",
+ "before": {
+  "orders": {
+   "OL": [
+    "Eugene Monroe",
+    "Andrew Norwell",
+    "Corey Linsley",
+    "Trai Turner",
+    "Lane Johnson",
+    "Cornelius Lucas",
+    "Mike Brewster",
+    "Charles Leno Jr.",
+    "Joel Bitonio"
+   ],
+   "LB": [
+    "Daryl Smith",
+    "Paul Posluszny",
+    "Telvin Smith",
+    "Sio Moore",
+    "Julian Stanford",
+    "Christian Jones",
+    "Todd Davis"
+   ]
+  },
+  "roles": {}
+ },
+ "set": {
+  "orders": {
+   "OL": [
+    "Eugene Monroe",
+    "Joel Bitonio",
+    "Corey Linsley",
+    "Trai Turner",
+    "Lane Johnson",
+    "Cornelius Lucas",
+    "Mike Brewster",
+    "Charles Leno Jr.",
+    "Andrew Norwell"
+   ],
+   "LB": [
+    "Paul Posluszny",
+    "Telvin Smith",
+    "Sio Moore",
+    "Julian Stanford",
+    "Christian Jones",
+    "Todd Davis",
+    "Daryl Smith"
+   ]
+  },
+  "roles": {}
+ },
+ "labels_cleared": [],
+ "source_map": {
+  "calls": {
+   "12 Wing, Outside Zone Left": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 0
+     }
+    },
+    {
+     "page": 42,
+     "text": "12 Wing, Outside Zone Left"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Doubles, Stick, SCAT": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 5
+     }
+    },
+    {
+     "page": 44,
+     "text": "11 Doubles, Stick, SCAT"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Ace, Power Right": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 2
+     }
+    },
+    {
+     "page": 50,
+     "text": "12 Ace, Power Right"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Wing, Boot Flood Right": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 4
+     }
+    },
+    {
+     "page": 43,
+     "text": "12 Wing, Boot Flood Right"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 SHIFT Empty, Stick": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 1
+     }
+    },
+    {
+     "page": 45,
+     "text": "12 SHIFT Empty, Stick"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Trips, Inside Zone + Bubble": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 6
+     }
+    },
+    {
+     "page": 46,
+     "text": "11 Trips, Inside Zone + Bubble"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Bunch, Mesh, HALF": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 7
+     }
+    },
+    {
+     "page": 47,
+     "text": "11 Bunch, Mesh, HALF"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Ace, Counter Right": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 8
+     }
+    },
+    {
+     "page": 51,
+     "text": "12 Ace, Counter Right"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Trey, Y-Cross, SOLID": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 3
+     }
+    },
+    {
+     "page": 48,
+     "text": "12 Trey, Y-Cross, SOLID"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Doubles, RB Slow Screen": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 9
+     }
+    },
+    {
+     "page": 49,
+     "text": "11 Doubles, RB Slow Screen"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Doubles, Inside Zone Right": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 10
+     }
+    },
+    {
+     "page": 52,
+     "text": "11 Doubles, Inside Zone Right"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Doubles, Spacing, SCAT": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 19
+     }
+    },
+    {
+     "page": 53,
+     "text": "11 Doubles, Spacing, SCAT"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Wing, TE Delay": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 13
+     }
+    },
+    {
+     "page": 55,
+     "text": "12 Wing, TE Delay"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Doubles, Drive, HALF": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 12
+     }
+    },
+    {
+     "page": 54,
+     "text": "11 Doubles, Drive, HALF"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Ace, Power Left": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 16
+     }
+    },
+    {
+     "page": 59,
+     "text": "12 Ace, Power Left"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Trey, Dagger, HALF": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 14
+     }
+    },
+    {
+     "page": 56,
+     "text": "11 Trey, Dagger, HALF"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "12 Ace, Power Pass / Post-Cross, MAX": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 11
+     }
+    },
+    {
+     "page": 57,
+     "text": "12 Ace, Power Pass / Post-Cross, MAX"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 Bunch, Snag": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 15
+     }
+    },
+    {
+     "page": 58,
+     "text": "11 Bunch, Snag"
+    },
+    {
+     "opening": {
+      "page": 36
+     }
+    }
+   ],
+   "11 SHIFT Empty, Spacing, SCAT": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 17
+     }
+    }
+   ],
+   "12 Trey, TE Delay": [
+    {
+     "carried": {
+      "week": 7,
+      "call": 18
+     }
+    }
+   ]
+  },
+  "defense": {
+   "normal-down": {
+    "page": 93,
+    "text": "normal downs | Under, Quarters or Cover 6"
+   },
+   "second-and-long": {
+    "page": 94,
+    "text": "second and long | Nickel Even, 3 Match or Quarters"
+   },
+   "third-and-short": {
+    "page": 95,
+    "text": "third and short | Bear, 1 Robber or 3 Match"
+   },
+   "third-and-medium": {
+    "page": 96,
+    "text": "third and medium | Nickel Even, 1 Robber or 3 Match"
+   },
+   "third-and-long": {
+    "page": 97,
+    "text": "third and long | Dime, Nickel Even, Quarters or Cover 6"
+   },
+   "backed-up": {
+    "page": 98,
+    "text": "backed up | Under, 3 Match or Quarters"
+   },
+   "high-red-zone": {
+    "page": 99,
+    "text": "high red zone | Nickel Even, 1 Robber or Quarters"
+   },
+   "low-red-zone": {
+    "page": 100,
+    "text": "low red zone | Under, 3 Match or 1 Robber"
+   },
+   "goal-line": {
+    "page": 101,
+    "text": "goal line | Bear, 1 Robber"
+   },
+   "two-minute": {
+    "page": 102,
+    "text": "two-minute | Nickel Even, Quarters or Cover 6"
+   },
+   "four-minute": {
+    "page": 103,
+    "text": "four-minute | Under, Quarters"
+   },
+   "lead-late": {
+    "page": 104,
+    "text": "late lead | Dime, Cover 6 or 3 Match"
+   },
+   "conditional-1": {
+    "page": 105,
+    "text": "If Wallace motions or stacks | Nickel Even, Cover 6 or Quarters"
+   },
+   "conditional-2": {
+    "page": 106,
+    "text": "If Clay flexes or crosses the formation | Big Nickel, 3 Match or Quarters"
+   },
+   "conditional-3": {
+    "page": 107,
+    "text": "If Miami goes empty | Dime, Nickel Even, Quarters or Cover 6"
+   },
+   "conditional-4": {
+    "page": 108,
+    "text": "If Tannehill keeps on Boot or escapes right | Under, 3 Match"
+   },
+   "conditional-5": {
+    "page": 109,
+    "text": "When Satele resets to both A-gap threats | Nickel Even, Mug, Quarters"
+   },
+   "counter-1": {
+    "page": 110,
+    "text": "Counter to a confirmed field-side slide | Nickel Even, Replace Field, 3 Match"
+   },
+   "counter-2": {
+    "page": 111,
+    "text": "Counter to a verified max-protection shot | Nickel Even, Fire 3"
+   }
+  },
+  "decisions": {
+   "two_point": {
+    "standing": true
+   },
+   "kickoff": {
+    "standing": true
+   },
+   "fourth_down": {
+    "standing": true
+   }
+  }
+ },
+ "intent": {
+  "lines": {
+   "head_coach": {
+    "line": 3,
+    "text": "Alex Stone",
+    "label": "Head coach"
+   },
+   "game": {
+    "line": 4,
+    "text": "Miami at Jacksonville, Sunday, October 26, 2014, 1 p.m. ET, EverBank Field",
+    "label": "Game"
+   },
+   "attack": {
+    "line": 10,
+    "text": "Miami's front has 16 sacks through six games, with Olivier Vernon and Cameron Wake setting the edges. Make that front defend the run, the keeper and the screen from related 12-personnel looks. Kevin O'Connell's wide-zone and movement-pass structure supplies the first picture; Ben Johnson's Counter, Power, condensed releases and complementary shifts supply the answer when Miami overplays it. Move Kelce and Lewis without changing the eleven. Locate Grimes and Delmas before testing the intermediate middle. Win third down with protection and spacing, not a succession of slow-developing shots.",
+    "label": "The matchup I am attacking"
+   },
+   "protect": {
+    "line": 12,
+    "text": "Free edge rushes, a disguised pressure Cousins cannot identify, and a takeaway that gives Tannehill a short field. We converted one of eight third downs against Cleveland and gained 86 yards on the ground. On defense, do not repeat Cleveland's 32 first downs or 11 third-down conversions. Miller cannot reach the cutback untouched; Wallace cannot get a free vertical release; Clay and Gibson cannot own the easy catch at the marker. Donald's penetration must remain tied to a complete run fit and four connected rush lanes.",
+    "label": "What I must not give them"
+   },
+   "change_course": {
+    "line": 14,
+    "text": "If Wake or Vernon defeats the protection help, use SCAT Stick, Spacing, Mesh, the Slow Screen and a protected Y-Cross before taking another long-set throw. If Miami squeezes wide zone, hit Counter or Inside Zone; if the box loads, shift Kelce out and use the access or crossing answer. If Tannehill escapes an interior rush or Miami converts short third downs, simplify the A-gap presentation, contain both edges and tighten coverage at the marker. If cornerback or left-guard availability changes, reset the job assignments before kickoff.",
+    "label": "What would make me change course"
+   },
+   "contingency": {
+    "line": 22,
+    "text": "Adams needs the October 20 clearance; otherwise Thielen moves to X, Hurns supplies the next receiver position and Hawkins remains the movable Z, with Gabriel the next relief. Bitonio is the intended left guard only if the October 22 clearance and protection work permit it; otherwise Lucas stays at left guard as he did against Cleveland, with Brewster the interior relief. Norwell remains out under his independent hold unless the medical staff explicitly releases it. Daryl Smith is projected out through October 31; Posluszny makes the front declaration, with Telvin Smith and Sio Moore completing the first linebacker group and Stanford next. Talib returns outside only with independent clearance; if he cannot go, Butler starts outside opposite an eligible Verner. Verner's October 20 restriction controls his work; if he cannot go, use the eligible Talib and Butler, then Ball outside if both are unavailable. Ball is the nickel for continuity; Bouye enters that rotation only after clearance and a clean exchange rehearsal. If the available corners cannot cover the normal nickel jobs, use the medically eligible defensive backs and simplify the coverage before setting the seven inactives.",
+    "label": "If Adams, Bitonio, Norwell, Smith, Talib, Verner or Bouye cannot dress"
+   },
+   "coverage_units": {
+    "line": 24,
+    "text": "Westhoff rebuilds coverage units from the final dressed defensive backs, linebackers and receivers. Phillips and Prosinski take safety and kicking relief where eligible; Butler and Ball may have expanded corner duties. No player under an independent hold takes a walkthrough or a game assignment without medical authorization. Dwight Lowery may begin the designated return practice window on October 20 if cleared, but is not eligible to play October 26. Donald remains a first-unit interior starter with Marks in base, Nickel and Dime; Miller is the heavier interior alternative, not Donald's replacement on passing downs.",
+    "label": "Special coverage and substitution consequences"
+   },
+   "base_personnel": {
+    "line": 30,
+    "text": "Start from 12 personnel with Kelce and Lewis attached, wing or shifted to a spread picture; rotate to 11 without announcing pass. Anderson remains the first back and presses the wide-zone and inside-zone track, with Jones-Drew available for Power, Counter, pass protection and four-minute work. No preset touch split. Adams, if cleared, is X; Thielen works H and Hawkins Z, with Hurns and Gabriel used according to the actual matchup and availability. Monroe and Johnson need help on the correct edge, not an automatic chip that removes a required route. Linsley owns the center point with Bitonio or Lucas at left guard according to the medical and practice checks.",
+    "label": "Base personnel and roles"
+   },
+   "learn": {
+    "line": 32,
+    "text": "Does Miami play Wake and Vernon upfield against the same Wing wide-zone and Boot picture? Does the front slant when Lewis moves? Will Grimes stay with Adams or remain to a side? Does Delmas insert into a Power fit or hold the post? Do Miami's linebackers travel or bump with Kelce's shift, and do they exchange the Mesh crossers? Which defender owns the back when we show a Slow Screen after a dropback? Let the answers select the return calls.",
+    "label": "The first things I want to learn"
+   },
+   "opening_approach": {
+    "line": 34,
+    "text": "Begin with wide zone and quick-game distribution to force Miami to declare front strength and coverage leverage. Repeat the formation with Boot, then Power and Counter when the backside defender runs over the top. Mix Bunch Mesh, SOLID Y-Cross and the back screen into the same personnel sequence. Take a protected Power Pass only after a safety has actually attacked the run. Opening ideas are choices in priority order, not an unchangeable first-drive script.",
+    "label": "Opening approach"
+   },
+   "third_down": {
+    "line": 63,
+    "text": "Short: counted Power, Counter or Inside Zone with access only when the perimeter wins leverage. Medium: Stick, Spacing, Mesh, Drive and SOLID Y-Cross, all with the marker as the landmark. Long: Y-Cross, protected Dagger or Slow Screen after the rush declares. We were one for eight against Cleveland; first-down gains and third-down distances matter as much as the call.",
+    "label": "Third down"
+   },
+   "backed_up": {
+    "line": 65,
+    "text": "Wide Zone, Inside Zone, SCAT Stick or Spacing. Use the correct chip and escape route. No blind vertical, delayed screen into the goal line or gratuitous shift that risks a false start.",
+    "label": "Backed up"
+   },
+   "red_zone": {
+    "line": 67,
+    "text": "High: Y-Cross, protected Power Pass after the run-fit trigger, or Boot when the edge chases. Low: Mesh, Snag, Power and Counter, with an identified free defender. Goal line: downhill run and one protected pass answer; finish the center-guard exchange before choosing the play.",
+    "label": "High red zone, low red zone, goal line"
+   },
+   "two_minute": {
+    "line": 69,
+    "text": "HOLD 11 or 12 for Stick, Spacing, Drive, Mesh and Y-Cross; use PRESS only after the current eleven communicates properly. Cousins carries the protection point and immediate sideline/clock answer.",
+    "label": "Two-minute / hurry-up"
+   },
+   "four_minute": {
+    "line": 71,
+    "text": "Run toward the soundest fit, protect the football and mix quick completion or a gated Boot when Miami packs the box. Know the field position, lead and remaining time before third down; prepare the fourth-down call under the standing rule instead of discovering it after a stop.",
+    "label": "Four-minute / protect a lead"
+   },
+   "sudden_change": {
+    "line": 73,
+    "text": "Secure a first down before chasing a highlight. Power Pass or Boot only when the safety or edge has given the exact trigger; otherwise run the base concept or the back screen into an overaggressive rush.",
+    "label": "Sudden change / shot opportunities"
+   },
+   "front": {
+    "line": 83,
+    "text": "Under with Donald at the attacking interior 3-technique alongside Marks, Mincey and Andre Branch on the edges; move to Nickel Even against open formations and Bear for short yardage. Roy Miller is the heavy-run alternate. Posluszny makes the front call while Daryl Smith is out, with Telvin Smith and Sio Moore in the first linebacker group. Set force before pursuit and stay square against Lamar Miller's zone cutback. Donald's first job is to own his gap, then penetrate; Marks and the ends cannot chase inside and leave Tannehill a boot or scramble lane.",
+    "label": "Base front and run fits"
+   },
+   "coverage": {
+    "line": 85,
+    "text": "Show Spagnuolo's crowded pressure surface and Flores's late rotation, but earn both with clean assignments. Present the two A-gap threats and usually send four: Donald and Marks compress inside while the edges keep the cage. Rotate between 1 Robber, 3 Match, Quarters and Cover 6 according to release distribution. Put Wallace's deep stem first in the outside coverage count, Gibson's intermediate routes next, and Clay's seam, crossing release and flat work in the linebacker-safety exchange. Use a genuine fifth man with Fire 3 only when Tannehill's hot answer and the vacated zone are covered. With injured corners and Daryl Smith out, do not make complexity the objective.",
+    "label": "Coverage and rush approach"
+   },
+   "discover": {
+    "line": 89,
+    "text": "Does Samson Satele redirect the line when both A-gaps show pressure? Does Lamar Miller scan inside-out or release? Do Albert and James chase defensive-line movement or keep a firm edge? Does Tannehill take the immediate throw, climb past Donald or escape the edge? How does Wallace change splits; where does Gibson settle; does Clay stay to help or release through the middle? Record the answer before dialing a counter.",
+    "label": "What we need to discover early"
+   },
+   "matchups": {
+    "line": 113,
+    "text": "Donald stays on the field for the meaningful interior pass-rush downs, aligned against Miami's actual guard and center protection rather than a fixed target picked on paper. Marks complements him, Mincey and Andre Branch preserve the edges. Posluszny declares the front; Telvin Smith and Sio Moore own run-fit, underneath and back-release duties with clear handoffs. Talib and Verner play outside only if cleared, with Butler the first outside relief. Ball is the initial nickel, Prosinski the sixth defensive back, Rambo and Trawick at safety. Do not demand repeated late man exchanges from a replacement secondary.",
+    "label": "Individual matchups / roles changed"
+   },
+   "kicking": {
+    "line": 119,
+    "text": "Hawkins remains the kick and punt returner, with Hurns available on the prepared punt-return alternative. Scobee, Anger and Kreiter own the operation. Miami already has a special-teams touchdown in six games; cover with sound lane spacing and vice, avoid a cheap return-lane penalty, and finish punt protection before releasing. Westhoff confirms the replacement coverage players after the corner and linebacker exams; no medically unavailable player is carried into the 46 on reputation.",
+    "label": "Return, coverage and operation instructions"
+   },
+   "endgame": {
+    "line": 127,
+    "text": "Skalaski gives me the score, clock, field position, distance and timeouts before every material fourth down; Tice has the first eligible call ready under the standing rule. Cleveland's two late failed tries in our own territory make the field-position cost explicit in every pregame scenario, even though the standing rule has not been changed. Preserve timeouts for possessions and must-have communication. The booth controls automatic reviews and reviews inside two minutes. Prepare Cousins for an urgent sideline throw and for protecting a lead without relying on a fourth-down conversion.",
+    "label": "Timeouts, challenges and endgame"
+   },
+   "participation": {
+    "line": 141,
+    "text": "October 20 reviews Adams, Talib and Verner; October 22 is the projected date for Bitonio and Bouye; October 23 reassesses Norwell and Daryl Smith. Medical clearance controls all reps. Lucas, Posluszny, Moore, Ball, Butler and the healthy receiver order take the corresponding first-unit work until a cleared player has both permission and enough correctly executed assignment work to return. Reconfirm the seven inactives, 46 dressed players and kicking assignments after the final medical communication.",
+    "label": "If a medical assessment changes participation"
+   },
+   "tradeoff": {
+    "line": 143,
+    "text": "No new gadget installation, no extra unprotected vertical-shot period and no repeated exotic pressure package before the base checks hold. The Flea Flicker is off this week's prepared menu. Monday is review and walkthrough, Tuesday off, Wednesday through Friday helmets only, Saturday walkthrough; this plan does not represent those practices as already completed.",
+    "label": "What leaves the practice menu to make room"
+   },
+   "staff": {
+    "line": 147,
+    "text": "I call the offense and defense. Tice organizes the offensive menu and relays the situation; Bates owns Cousins's protection and hot-answer review. Crennel prepares the defensive pressures and transmits the call, with Posluszny declaring the front while Daryl Smith is out. Westhoff sets the kicking operation from the actual dressed eleven. Bring the Week 7 third-down and fourth-down film into the meeting with the exact down, distance and field position. Challenge an assignment with a better football answer, then rehearse the correction. The package must be executable by the available players, not only clever on the board.",
+    "label": "Staff instructions"
+   },
+   "public": {
+    "line": 149,
+    "text": "None",
+    "label": "Public position, if I am adding one"
+   },
+   "open_decisions": {
+    "line": 151,
+    "text": "Medical clearance for Adams, Bitonio, Norwell, Smith, Talib, Verner and Bouye; final left-guard, linebacker and corner assignments; the legal 46 and coverage teams. The standing fourth-down rule remains in force unless I separately change it.",
+    "label": "Other open decisions"
+   },
+   "ready": {
+    "line": 153,
+    "text": "The October 20, 22 and 23 availability decisions, protection communication on both possible left guards, Posluszny's front calls, the corner and nickel exchange, Donald's run-fit/rush-lane work, and Westhoff's final game-day coverage list have been checked before October 26 kickoff.",
+    "label": "Ready to lock after"
+   }
+  },
+  "calls": [
+   {
+    "line": 42,
+    "call": "12 Wing, Outside Zone Left",
+    "reason": "Make Miami's front run laterally; find the cutback and set the Boot edge.",
+    "condition": "Anderson presses the track. Lewis closes the backside. Kill it if penetration destroys the stretch."
+   },
+   {
+    "line": 43,
+    "call": "12 Wing, Boot Flood Right",
+    "reason": "Punish the edge that chases Outside Zone with flat, intermediate and deep levels.",
+    "condition": "Move Cousins only after the contain player is identified. Take the flat if the end sits."
+   },
+   {
+    "line": 44,
+    "call": "11 Doubles, Stick, SCAT",
+    "reason": "Get an immediate leverage answer against Wake, Vernon or an added rusher.",
+    "condition": "Cousins owns HOT and the uncovered throw; no five-man protection against six without the answer."
+   },
+   {
+    "line": 45,
+    "call": "12 SHIFT Empty, Stick",
+    "reason": "Shift without substituting and make Miami show who covers Kelce and the back.",
+    "condition": "Linsley declares the point. Cancel the shift when communication or legal reset timing fails."
+   },
+   {
+    "line": 46,
+    "call": "11 Trips, Inside Zone + Bubble",
+    "reason": "Make the apex defender choose box support or the uncovered access throw.",
+    "condition": "Run or throw by the actual leverage and count, not an automatic bubble."
+   },
+   {
+    "line": 47,
+    "call": "11 Bunch, Mesh, HALF",
+    "reason": "Cross underneath man leverage and settle cleanly against zone.",
+    "condition": "Legal crossing depths and HALF backside scan. Do not lead a target into the robber."
+   },
+   {
+    "line": 48,
+    "call": "12 Trey, Y-Cross, SOLID",
+    "reason": "Kelce attacks the linebacker-safety space while the other levels give Cousins a safe exit.",
+    "condition": "Keep the sixth protector until the rush count is secure; hit the actual open level."
+   },
+   {
+    "line": 49,
+    "call": "11 Doubles, RB Slow Screen",
+    "reason": "Answer Miami's upfield edge pursuit and its pressure package.",
+    "condition": "Rehearse release timing; cancel when the screen-side defender sits under the back."
+   },
+   {
+    "line": 50,
+    "call": "12 Ace, Power Right",
+    "reason": "Test the interior double and declared downhill fitter.",
+    "condition": "Jones-Drew or Anderson by fit, no preset fourth-down runner. Correct the puller and play-side linebacker."
+   },
+   {
+    "line": 51,
+    "call": "12 Ace, Counter Right",
+    "reason": "Attack pursuit that starts early against Power and Wide Zone.",
+    "condition": "Puller gets through cleanly; reject against immediate interior penetration."
+   },
+   {
+    "line": 52,
+    "call": "11 Doubles, Inside Zone Right",
+    "reason": "Punish a widened front when both edges are occupied with the Boot threat.",
+    "condition": "Linsley and the left guard must reach the linebacker without losing the A-gap."
+   },
+   {
+    "line": 53,
+    "call": "11 Doubles, Spacing, SCAT",
+    "reason": "Keep the ball moving against soft outside leverage or a late shell rotation.",
+    "condition": "Fast distribution only after the pressure count; work the sticks, not a predetermined receiver."
+   },
+   {
+    "line": 54,
+    "call": "11 Doubles, Drive, HALF",
+    "reason": "Put a shallow route and a dig at different depths against Miami's underneath exchanges.",
+    "condition": "Clean dig landmark, actual backside pickup, and the safe shallow answer when the dig is capped."
+   },
+   {
+    "line": 55,
+    "call": "12 Wing, TE Delay",
+    "reason": "Lewis blocks before releasing into a space created by edge pursuit.",
+    "condition": "Delay is real protection first; do not release into an unblocked blitzer."
+   },
+   {
+    "line": 56,
+    "call": "11 Trey, Dagger, HALF",
+    "reason": "Stress the safety with a vertical clear and an intermediate dig behind it.",
+    "condition": "Use only on a clean protection count; throw away from covered depth."
+   },
+   {
+    "line": 57,
+    "call": "12 Ace, Power Pass / Post-Cross, MAX",
+    "reason": "Hit behind Delmas if he has actually inserted to stop Power.",
+    "condition": "MAX stays intact; do not force a shot while the edges win early."
+   },
+   {
+    "line": 58,
+    "call": "11 Bunch, Snag",
+    "reason": "Give a compressed-field corner/flat/spot read if the defense crowds the run.",
+    "condition": "Verify legal spacing and a clear answer off the first break."
+   },
+   {
+    "line": 59,
+    "call": "12 Ace, Power Left",
+    "reason": "Move the downhill point and test the opposite interior fit without changing the personnel.",
+    "condition": "Account for the backside defender and the correct pull path."
+   }
+  ],
+  "responses": [
+   {
+    "line": 93,
+    "reason": "Keep Miller's first lane and cutback assigned while Donald attacks the guard-center seam.",
+    "counter": "Nickel Even when Miami spreads and the box count changes."
+   },
+   {
+    "line": 94,
+    "reason": "Disguise the shell without losing the draw, screen or quarterback-exit fit.",
+    "counter": "Under if Miami stays in a heavy run surface."
+   },
+   {
+    "line": 95,
+    "reason": "Force a defined gap and challenge the quick throw at the line to gain.",
+    "counter": "Never bring a safety down without replacing his coverage."
+   },
+   {
+    "line": 96,
+    "reason": "Contest Gibson and Clay at the sticks with Donald pressing Tannehill's step-up space.",
+    "counter": "Use 3 Match if the man exchange fails against motion or bunch."
+   },
+   {
+    "line": 97,
+    "reason": "Top-down coverage with a disciplined four-man rush and a back-screen defender.",
+    "counter": "Stay in Nickel if Miami holds tempo; no free escape lane."
+   },
+   {
+    "line": 98,
+    "reason": "Fit the run, contain Tannehill and win field position without gifting a long gain.",
+    "counter": "No automatic blitz against a long field."
+   },
+   {
+    "line": 99,
+    "reason": "Match Clay's release and cap Wallace before the goal-line space compresses.",
+    "counter": "Under when Miami adds a lead blocker."
+   },
+   {
+    "line": 100,
+    "reason": "Put eyes on Tannehill's exit and defend the immediate flat and inside break.",
+    "counter": "Simplify if substitute corners cannot handle the check."
+   },
+   {
+    "line": 101,
+    "reason": "Make Miller run through the assigned interior fit and cover the eligible tight end.",
+    "counter": "Retain edge force; do not leave an uncounted receiver."
+   },
+   {
+    "line": 102,
+    "reason": "Stay over Wallace, contest sideline throws and rally to Gibson's catches.",
+    "counter": "Dime on a clean substitution only."
+   },
+   {
+    "line": 103,
+    "reason": "Eliminate Miller's cutback and stop the clock through the ordinary tackle, not a risky pressure.",
+    "counter": "Nickel against true spread personnel."
+   },
+   {
+    "line": 104,
+    "reason": "Protect the deep top while contesting the line to gain and preserving a four-man rush.",
+    "counter": "Tighten underneath spacing if Miami is taking effortless first downs."
+   },
+   {
+    "line": 105,
+    "reason": "Recount vertical threats; retain help over the top instead of losing the release in traffic.",
+    "counter": "Return to the called side rule once the receivers reset."
+   },
+   {
+    "line": 106,
+    "reason": "Give the tight-end release a named collision, seam and crosser exchange.",
+    "counter": "Stay Nickel when the replacement safety or linebacker cannot make the switch."
+   },
+   {
+    "line": 107,
+    "reason": "Identify all five receivers before showing the A-gap crowd.",
+    "counter": "HOLD Nickel if hurry-up prevents a safe substitution."
+   },
+   {
+    "line": 108,
+    "reason": "Keep the backside edge home and replace the flat without vacating the middle.",
+    "counter": "Reduce twists until the containment and scrape communicate cleanly."
+   },
+   {
+    "line": 109,
+    "reason": "Stress the center's declaration and give Donald an interior one-on-one without committing a sixth rusher.",
+    "counter": "Drop the mug if the uncovered back or run fit becomes a problem."
+   },
+   {
+    "line": 110,
+    "reason": "Exchange a rush source while occupying the hot window against the slide.",
+    "counter": "Return to straight four if the replacement loses contain or the short zone."
+   },
+   {
+    "line": 111,
+    "reason": "Selective five-man pressure into the protection with a called quick-throw replacement.",
+    "counter": "Stop if Wallace is isolated deep or Tannehill beats the vacated hook."
+   }
+  ],
+  "practice": [
+   {
+    "line": 133,
+    "priority": "Left guard and edge protection",
+    "who": "Tice, Yarno, Bates, Monroe, Bitonio or Lucas, Linsley, Turner, Johnson, Cousins, Lewis",
+    "situation": "Wake/Vernon alignment changes, interior games, six-man pressure, Boot edge",
+    "ready": "Correct point, guard-center exchange, chip release and immediate hot answer after the front changes"
+   },
+   {
+    "line": 134,
+    "priority": "Wide Zone to Boot and Counter",
+    "who": "Tice, Zernhelt, Anderson, Jones-Drew, Kelce, Lewis, line, Cousins",
+    "situation": "Same Wing surface, backside end chasing or sitting, loaded run fit",
+    "ready": "Same initial picture, correct run track, sealed edge, sound puller and covered keeper lane"
+   },
+   {
+    "line": 135,
+    "priority": "Third-down separation and protection",
+    "who": "Bates, Drake, Spencer, Cousins, Adams if cleared, Thielen, Hawkins, Hurns, tight ends, backs",
+    "situation": "Third-and-3 to 8, SCAT Stick and Spacing, Bunch Mesh, SOLID Y-Cross, rush and drop-eight",
+    "ready": "Marker depth correct, one hot answer identified, no blind dig and secure catch-to-finish"
+   },
+   {
+    "line": 136,
+    "priority": "Donald with four connected rush lanes",
+    "who": "Crennel, Pleasant, Donald, Marks, Mincey, Andre Branch, Roy Miller and linebackers",
+    "situation": "Interior slide, Lamar Miller cutback, Tannehill step-up and Boot containment",
+    "ready": "Interior rush and run gap owned, edges close escape, twist does not open a lane"
+   },
+   {
+    "line": 137,
+    "priority": "A-gap mask with simple coverage checks",
+    "who": "Crennel, Oden, Bush, Posluszny, Telvin Smith, Sio Moore, available corners, Rambo, Trawick",
+    "situation": "Gibson at the marker, Wallace vertical, Clay seam, motion to Empty, one actual Fire 3",
+    "ready": "The front declaration, deep cap, hot replacement and back responsibility all survive a second look"
+   },
+   {
+    "line": 138,
+    "priority": "Fourth-down and endgame operation",
+    "who": "Stone, Tice, Skalaski, Cousins, backs, first-unit line",
+    "situation": "Fourth-and-short on our 30 to 40 with a late lead, fourth-and-medium across midfield, two-minute and four-minute",
+    "ready": "Score, time, spot, eligible first call and turnover-on-downs consequence reported before the snap"
+   },
+   {
+    "line": 139,
+    "priority": "Return and coverage substitutions",
+    "who": "Westhoff, Hawkins, Hurns, Ball, Butler, Phillips, Prosinski, Anger, Scobee, Kreiter",
+    "situation": "Miami return unit, backed-up punt, placekick and medically adjusted coverage eleven",
+    "ready": "Every dressed player's protection, lane, vice and substitution job is clear"
+   }
+  ],
+  "special_plays": [
+   {
+    "call": "12 Wing, TE Delay",
+    "reason": ""
+   },
+   {
+    "call": "12 Trey, TE Delay",
+    "reason": ""
+   }
+  ],
+  "not_available": [],
+  "known": "2014-10-26"
+ },
+ "event": {
+  "id": "2014-10-26-week-8-game-plan-set",
+  "date": "2014-10-26",
+  "season": 2014,
+  "status": "closed",
+  "summary": "Stone set his Week 8 Game Plan against Miami: the call sheet frozen with 20 offensive calls and 19 defensive calls, fourth downs his standing rule, two-point tries his standing rule, kickoffs his standing rule; the 7 inactives Andrew Norwell, Daryl Smith, Jordan Poyer, Charles Leno Jr., Kasim Edebali, Hakeem Nicks, Todd Davis; OL order: Eugene Monroe, Joel Bitonio, Corey Linsley, Trai Turner, Lane Johnson, Cornelius Lucas, Mike Brewster, Charles Leno Jr., Andrew Norwell; LB order: Paul Posluszny, Telvin Smith, Sio Moore, Julian Stanford, Christian Jones, Todd Davis, Daryl Smith.",
+  "follows": "2014-10-26-week-8-game-day"
+ }
+}

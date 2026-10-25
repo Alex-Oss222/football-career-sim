@@ -18,7 +18,7 @@ This document states what is true now and what comes next. The [2014 record](../
 | Document 3 | `3723e1bd3589fe47b9070001ad6dfb5189f335cb` | Active foundation source |
 | Document 4 | `JAX-2014-OCT26-REGISTER-94` | Roster, staff, medical and role register |
 | Current job record | `b6ab3b1c2709e7f8631f011289222ac9c31a5ed9` | [Job, authority and delegation](current_job.json) |
-| Decision queue | `b31ac61908b256ea77ea566d38637c44a8b2c6e7` | [Open and resolved decisions](decision_queue.json) |
+| Decision queue | `64e9994531e06613da88d39073c42a3cd17b0383` | [Open and resolved decisions](decision_queue.json) |
 | Document 6 | [Event records and handoff protocol](../foundation/06_Event_Records_and_Handoff.md) | Latest closed game: [Week 7 against Cleveland](../career/2014/Regular_Season/Games/Week_07/Game_Report.md), October 19, 2014 (Cleveland 34, Jacksonville 31); latest closed event of any kind: [Week 8 game day](../career/2014/Regular_Season/Games/Week_08/README.md), October 26, 2014 (technical), after the Miami preparation closed October 25 |
 
 ## 1. Master clock and competition position
@@ -177,8 +177,6 @@ Execution and observable effort remain separate: protection losses were techniqu
 <!-- decision-queue:begin -->
 | Decision | Owner | Needed | Holds | Waiting on | Record |
 |---|---|---|---|---|---|
-| Week 8 game plan for Miami | Alex Stone | before the Week 8 call sheet is frozen and the Week 8 inputs are built; kickoff October 26, 1 p.m. ET | the Week 8 game | nothing | [record](../career/2014/Regular_Season/Games/Week_08/README.md) |
-| Week 8 inactives | Alex Stone | before the Week 8 inputs are built | the Week 8 game | Alterraun Verner's reassessment (October 20); Aqib Talib's reassessment (October 20); Davante Adams's reassessment and projected return (October 20); A.J. Bouye's projected return (October 22); Aqib Talib's projected return (October 22); Joel Bitonio's projected return (October 22); Andrew Norwell's reassessment (October 23); Daryl Smith's reassessment (October 23) | [record](../career/2014/Team_Operations/Team/Depth_Chart/depth_chart.md) |
 | Individual film packets: preparation and coach approval | Jacksonville coaching staff | no deadline | nothing | cause review and comparison clips for the Cousins packet; the cut-up video, not yet supplied | [record](../career/2014/Team_Operations/Film/player_queue.md) |
 | Three open practice-squad places | David Caldwell | no deadline | nothing | nothing | [record](../career/2014/Team_Operations/Team/Roster/roster.md) |
 

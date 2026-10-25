@@ -6,8 +6,7 @@ Alex Stone, head coach of the Jacksonville Jaguars since January 15, 2013. [Coac
 
 ## Waiting on you
 
-1. **Week 8 game plan for Miami.** Due before kickoff, Sunday, October 26, 1 p.m. ET. [Game Week Briefing](Regular_Season/Games/Week_08/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_08/Game_Plan.md)
-2. **Week 8 inactives.** Due before kickoff, Sunday, October 26, 1 p.m. ET. [Game Week Briefing](Regular_Season/Games/Week_08/Game_Week_Briefing.md) · [Game Plan](Regular_Season/Games/Week_08/Game_Plan.md)
+Nothing is waiting on you.
 
 ## Next event
 

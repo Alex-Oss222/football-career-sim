@@ -355,7 +355,7 @@
     "by": "workflow",
     "event": "2014-10-19-week-7-vs-cleveland"
    },
-   "status": "OPEN",
+   "status": "RESOLVED",
    "waits_on": [],
    "deadline": {
     "date": "2014-10-26",
@@ -383,7 +383,14 @@
      "path": "career/2014/Regular_Season/Games/Week_07/Game_Report.md"
     }
    ],
-   "resolution": null
+   "resolution": {
+    "date": "2014-10-26",
+    "by": "user",
+    "record": {
+     "path": "career/2014/Regular_Season/Games/Week_08/Game_Plan.md"
+    },
+    "summary": "Stone set the game plan on his Week 8 Game Plan, checked and applied October 26, 2014"
+   }
   },
   {
    "id": "2014-w08-inactives",
@@ -399,7 +406,7 @@
     "by": "workflow",
     "event": "2014-10-19-week-7-vs-cleveland"
    },
-   "status": "OPEN",
+   "status": "RESOLVED",
    "waits_on": [
     {
      "what": "Alterraun Verner's reassessment",
@@ -474,7 +481,14 @@
      "path": "career/2014/Regular_Season/Games/Week_07/Game_Report.md"
     }
    ],
-   "resolution": null
+   "resolution": {
+    "date": "2014-10-26",
+    "by": "user",
+    "record": {
+     "path": "career/2014/Regular_Season/Games/Week_08/Game_Plan.md"
+    },
+    "summary": "Stone set the inactives on his Week 8 Game Plan, checked and applied October 26, 2014"
+   }
   }
  ]
 }

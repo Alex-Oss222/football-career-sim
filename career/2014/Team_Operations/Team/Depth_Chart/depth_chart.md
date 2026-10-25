@@ -20,7 +20,7 @@ Player use varies with the personnel package. The starting line and the X, H and
 | Z | [Andrew Hawkins](../Player_Cards/andrew_hawkins.md) | Z |
 | TE | [Travis Kelce](../Player_Cards/travis_kelce.md) | Additional tight ends follow in the group order |
 | LT | [Eugene Monroe](../Player_Cards/eugene_monroe.md) |  |
-| LG | [Andrew Norwell](../Player_Cards/andrew_norwell.md) |  |
+| LG | [Joel Bitonio](../Player_Cards/joel_bitonio.md) |  |
 | C | [Corey Linsley](../Player_Cards/corey_linsley.md) |  |
 | RG | [Trai Turner](../Player_Cards/trai_turner.md) |  |
 | RT | [Lane Johnson](../Player_Cards/lane_johnson.md) |  |
@@ -32,7 +32,7 @@ The first defensive-line and linebacker groups, and the first four defensive bac
 | Unit | First group |
 |---|---|
 | Defensive line | [Jeremy Mincey](../Player_Cards/jeremy_mincey.md), [Aaron Donald](../Player_Cards/aaron_donald.md), [Sen'Derrick Marks](../Player_Cards/sen_derrick_marks.md), [Andre Branch](../Player_Cards/andre_branch.md) |
-| Linebackers | [Daryl Smith](../Player_Cards/daryl_smith.md), [Paul Posluszny](../Player_Cards/paul_posluszny.md), [Telvin Smith](../Player_Cards/telvin_smith.md) |
+| Linebackers | [Paul Posluszny](../Player_Cards/paul_posluszny.md), [Telvin Smith](../Player_Cards/telvin_smith.md), [Sio Moore](../Player_Cards/sio_moore.md) |
 | Defensive backs | [Aqib Talib](../Player_Cards/aqib_talib.md), [Alterraun Verner](../Player_Cards/alterraun_verner.md), [Bacarri Rambo](../Player_Cards/bacarri_rambo.md), [Brynden Trawick](../Player_Cards/brynden_trawick.md) |
 
 ## Situational defensive roles
@@ -104,14 +104,14 @@ The order in each group remains Stone's current order. Reserve assignments that 
 | Order | Player | Pos | Role |
 |---:|---|---|---|
 | 1 | [Eugene Monroe](../Player_Cards/eugene_monroe.md) | OT |  |
-| 2 | [Andrew Norwell](../Player_Cards/andrew_norwell.md) | G |  |
+| 2 | [Joel Bitonio](../Player_Cards/joel_bitonio.md) | OT |  |
 | 3 | [Corey Linsley](../Player_Cards/corey_linsley.md) | C |  |
 | 4 | [Trai Turner](../Player_Cards/trai_turner.md) | G | Right guard |
 | 5 | [Lane Johnson](../Player_Cards/lane_johnson.md) | OT |  |
 | 6 | [Cornelius Lucas](../Player_Cards/cornelius_lucas.md) | OT |  |
 | 7 | [Mike Brewster](../Player_Cards/mike_brewster.md) | C |  |
 | 8 | [Charles Leno Jr.](../Player_Cards/charles_leno_jr.md) | OT |  |
-| 9 | [Joel Bitonio](../Player_Cards/joel_bitonio.md) | OT |  |
+| 9 | [Andrew Norwell](../Player_Cards/andrew_norwell.md) | G |  |
 
 ### Defense
 
@@ -132,13 +132,13 @@ The order in each group remains Stone's current order. Reserve assignments that 
 
 | Order | Player | Pos | Role |
 |---:|---|---|---|
-| 1 | [Daryl Smith](../Player_Cards/daryl_smith.md) | LB |  |
-| 2 | [Paul Posluszny](../Player_Cards/paul_posluszny.md) | LB |  |
-| 3 | [Telvin Smith](../Player_Cards/telvin_smith.md) | LB |  |
-| 4 | [Sio Moore](../Player_Cards/sio_moore.md) | LB |  |
-| 5 | [Julian Stanford](../Player_Cards/julian_stanford.md) | LB |  |
-| 6 | [Christian Jones](../Player_Cards/christian_jones.md) | LB |  |
-| 7 | [Todd Davis](../Player_Cards/todd_davis.md) | LB |  |
+| 1 | [Paul Posluszny](../Player_Cards/paul_posluszny.md) | LB |  |
+| 2 | [Telvin Smith](../Player_Cards/telvin_smith.md) | LB |  |
+| 3 | [Sio Moore](../Player_Cards/sio_moore.md) | LB |  |
+| 4 | [Julian Stanford](../Player_Cards/julian_stanford.md) | LB |  |
+| 5 | [Christian Jones](../Player_Cards/christian_jones.md) | LB |  |
+| 6 | [Todd Davis](../Player_Cards/todd_davis.md) | LB |  |
+| 7 | [Daryl Smith](../Player_Cards/daryl_smith.md) | LB |  |
 
 #### Defensive backs
 
@@ -167,19 +167,17 @@ The order in each group remains Stone's current order. Reserve assignments that 
 
 ## Inactives
 
-Week 8 against Miami, October 26, 2014: not yet set. Stone selects the eligible inactives before the game.
-
 The prior game's inactives, for reference:
 
 | Player | Position |
 |---|---|
-| [Joel Bitonio](../Player_Cards/joel_bitonio.md) | OT |
-| [A.J. Bouye](../Player_Cards/a_j_bouye.md) | CB |
+| [Andrew Norwell](../Player_Cards/andrew_norwell.md) | G |
+| [Daryl Smith](../Player_Cards/daryl_smith.md) | LB |
 | [Jordan Poyer](../Player_Cards/jordan_poyer.md) | CB |
 | [Charles Leno Jr.](../Player_Cards/charles_leno_jr.md) | OT |
 | [Kasim Edebali](../Player_Cards/kasim_edebali.md) | DE |
-| [Todd Davis](../Player_Cards/todd_davis.md) | LB |
 | [Hakeem Nicks](../Player_Cards/hakeem_nicks.md) | WR |
+| [Todd Davis](../Player_Cards/todd_davis.md) | LB |
 
 ## Captains, August 31, 2014
 

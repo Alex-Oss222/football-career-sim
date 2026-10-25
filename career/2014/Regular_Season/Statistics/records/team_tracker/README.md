@@ -23,9 +23,9 @@ The current order, first listed first; Stone owns it. Dates and roles are on the
 | FB | Montell Owens |
 | WR | Davante Adams / Adam Thielen / Andrew Hawkins / Allen Hurns / Taylor Gabriel / Hakeem Nicks |
 | TE | Travis Kelce / Marcedes Lewis / Marcel Jensen / Gator Hoskins |
-| OL | Eugene Monroe / Andrew Norwell / Corey Linsley / Trai Turner / Lane Johnson / Cornelius Lucas / Mike Brewster / Charles Leno Jr. / Joel Bitonio |
+| OL | Eugene Monroe / Joel Bitonio / Corey Linsley / Trai Turner / Lane Johnson / Cornelius Lucas / Mike Brewster / Charles Leno Jr. / Andrew Norwell |
 | DL | Jeremy Mincey / Aaron Donald / Sen'Derrick Marks / Andre Branch / Roy Miller / C.J. Mosley / Daniel Te'o-Nesheim / Kasim Edebali |
-| LB | Daryl Smith / Paul Posluszny / Telvin Smith / Sio Moore / Julian Stanford / Christian Jones / Todd Davis |
+| LB | Paul Posluszny / Telvin Smith / Sio Moore / Julian Stanford / Christian Jones / Todd Davis / Daryl Smith |
 | DB | Aqib Talib / Alterraun Verner / Bacarri Rambo / Brynden Trawick / A.J. Bouye / Chris Prosinski / Adrian Phillips / Alan Ball / Malcolm Butler / Jordan Poyer |
 | K | Josh Scobee |
 | P | Bryan Anger |

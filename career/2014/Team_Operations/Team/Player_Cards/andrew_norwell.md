@@ -10,8 +10,6 @@ As of October 19, 2014, after Week 7.
 
 *Photo: All-Pro Reels, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) ([source](https://commons.wikimedia.org/wiki/File:Andrew_Norwell_2022.jpg)).*
 
-**Current assignment:** Starting left guard.
-
 **Sacks allowed:** 0 (2014, through Week 7).
 
 ## Staff assessment

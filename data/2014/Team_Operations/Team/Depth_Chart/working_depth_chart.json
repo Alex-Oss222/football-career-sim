@@ -36,14 +36,14 @@
     ],
     "OL": [
       "Eugene Monroe",
-      "Andrew Norwell",
+      "Joel Bitonio",
       "Corey Linsley",
       "Trai Turner",
       "Lane Johnson",
       "Cornelius Lucas",
       "Mike Brewster",
       "Charles Leno Jr.",
-      "Joel Bitonio"
+      "Andrew Norwell"
     ],
     "DL": [
       "Jeremy Mincey",
@@ -56,13 +56,13 @@
       "Kasim Edebali"
     ],
     "LB": [
-      "Daryl Smith",
       "Paul Posluszny",
       "Telvin Smith",
       "Sio Moore",
       "Julian Stanford",
       "Christian Jones",
-      "Todd Davis"
+      "Todd Davis",
+      "Daryl Smith"
     ],
     "DB": [
       "Aqib Talib",
@@ -267,17 +267,17 @@
     "Austin Pasztor": "Tender withdrawn August 30, 2014; rights renounced"
   },
   "game_day_inactives": {
-    "week": 7,
+    "week": 8,
     "players": [
-      "Joel Bitonio",
-      "A.J. Bouye",
+      "Andrew Norwell",
+      "Daryl Smith",
       "Jordan Poyer",
       "Charles Leno Jr.",
       "Kasim Edebali",
-      "Todd Davis",
-      "Hakeem Nicks"
+      "Hakeem Nicks",
+      "Todd Davis"
     ],
-    "note": "7 of the 53 are inactive for Week 7 against Cleveland (46 dress), set by Stone on October 19, 2014 on his Week 7 Game Plan by his standing rule: Joel Bitonio; A.J. Bouye; Jordan Poyer; Charles Leno Jr.; Kasim Edebali; Todd Davis; Hakeem Nicks."
+    "note": "7 of the 53 are inactive for Week 8 against Miami (46 dress), set by Stone on October 26, 2014 on his Week 8 Game Plan by his standing rule: Andrew Norwell; Daryl Smith; Jordan Poyer; Charles Leno Jr.; Kasim Edebali; Hakeem Nicks; Todd Davis."
   },
   "update_log": "Moved with rebuild step 3b (October 19, 2026) to update_log.json in this folder, the one dated log of chart changes.",
   "added_not_placed": {

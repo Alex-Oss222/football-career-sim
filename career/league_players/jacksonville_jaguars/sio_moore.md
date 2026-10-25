@@ -10,6 +10,8 @@ As of October 19, 2014, after Week 7.
 
 *Photo: Jeffrey Beall, [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) ([source](https://commons.wikimedia.org/wiki/File:Sio_Moore.JPG)).*
 
+**Current assignment:** Starting linebacker.
+
 **Tackles:** 18 (2014, through Week 7).
 
 ## Staff assessment
