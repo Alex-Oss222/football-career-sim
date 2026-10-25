@@ -20,9 +20,9 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "tests"))
 from release_staging import copied_root  # noqa: E402
 import support_events as se  # noqa: E402
-from runtime import clean_pages, decision_queue, decisions, deadlines, open_events  # noqa: E402
+from runtime import clean_pages, decision_queue, decisions, deadlines, open_events, practices  # noqa: E402
 from runtime.events import EVENT_META, annual_record_path  # noqa: E402
-from scripts import render_game_week, resolve_event  # noqa: E402
+from scripts import resolve_event  # noqa: E402
 from scripts import render_trade_pages as trades  # noqa: E402
 
 LOG_SEASON = 2014          # the season whose offer log, written before Week 6, was split
@@ -38,6 +38,17 @@ LINK = re.compile(r"\]\(([^()\s]+)\)")
 
 def links(text):
     return LINK.findall(text)
+
+
+def section(text, heading):
+    """The text under one heading of the index, to the next heading."""
+    return text.split("\n## %s\n" % heading, 1)[1].split("\n## ", 1)[0]
+
+
+def rows(text):
+    """The rows of the index's call tables in ``text``, their header rows left out."""
+    return [line for line in text.splitlines() if line.startswith("| ")
+            and not line.startswith(("| First call |", "| Raised |"))]
 
 
 class CallPageTests(unittest.TestCase):
@@ -88,24 +99,34 @@ class TradeIndexTests(unittest.TestCase):
 
     def test_the_index_lists_the_eight_calls_with_their_records(self):
         text = INDEX.read_text(encoding="utf-8")
-        rows = [line for line in text.split("## Open trade calls")[0].splitlines() if line.startswith("| ")
-                and "](" in line]
-        self.assertEqual(len(rows), 8)
-        self.assertEqual({links(row)[0] for row in rows}, CALLS)
-        completed = [row for row in rows if "[Completed " in row]
+        table = rows(text.split("## Open trade calls")[0])
+        logged = [row for row in table if links(row)[:1] and links(row)[0] in CALLS]
+        self.assertEqual(len(logged), 8)
+        self.assertEqual({links(row)[0] for row in logged}, CALLS)
+        completed = [row for row in logged if "[Completed " in row]
         self.assertEqual(len(completed), 7)
         for row in completed:  # each completed call links the completed record of the same players and club
             call, record = links(row)
             self.assertTrue(record.startswith("../completed_trades/"), row)
             self.assertEqual(re.sub(r"_\d{4}-\d{2}-\d{2}\.md$", "", Path(record).name),
                              re.sub(r"_\d{4}-\d{2}-\d{2}\.md$", "", call))
-        (withdrawn,) = [row for row in rows if "[Completed " not in row]
+        (withdrawn,) = [row for row in logged if "[Completed " not in row]
         self.assertIn("nwaneri_to_san_francisco_2014-03-11.md", withdrawn)
         self.assertIn("No trade; the call page is its record", withdrawn)
         # In the order of the first call, as the log gave them on a shared date.
-        firsts = [re.search(r"_(\d{4}-\d{2}-\d{2})\.md", row)[1] for row in rows]
+        firsts = [re.search(r"_(\d{4}-\d{2}-\d{2})\.md", row)[1] for row in logged]
         self.assertEqual(firsts, sorted(firsts))
-        self.assertIn("No trade call is open.", text)
+        # The calls recorded as events from Week 6 follow the log's, one row each once resolved; those
+        # still open are the open calls, and a page with none says so.
+        events = trades.trade_events(ROOT, LOG_SEASON)
+        still = [r for r in events if r.get("resolution") is None]
+        self.assertEqual(table[:len(logged)], logged)
+        self.assertEqual(len(table) - len(logged), len(events) - len(still))
+        for row in table[len(logged):]:
+            self.assertIn("Trade call from ", row)
+        opened = section(text, "Open trade calls")
+        self.assertEqual(len(rows(opened)), len(still))
+        (self.assertNotIn if still else self.assertIn)("No trade call is open.", opened)
 
     def test_the_folder_navigation_keeps_its_bytes(self):
         (path, text), = trades.render(ROOT, LOG_SEASON).items()
@@ -116,40 +137,69 @@ class TradeIndexTests(unittest.TestCase):
 
 
 class TradeEventIndexTests(unittest.TestCase):
-    """Trade calls recorded as events from Week 6, in a copy at a mid-week clock."""
+    """Trade calls recorded as events from Week 6, in a copy at a mid-week clock of the open period
+    (the bye while it is open). The season's own trade calls stay in the copy beside the test's."""
 
     @classmethod
     def setUpClass(cls):
         cls.game = se.open_game(ROOT)
         if cls.game is None:
             raise unittest.SkipTest("every regular-season game has closed")
-        cls.week = int(cls.game["week"])
         cls.root = copied_root(SimpleNamespace(addCleanup=cls.addClassCleanup))
         for record in cls.root.glob("career/**/paused_game.json"):
             record.unlink()
-        cls.tuesday = se.tuesday_before(cls.game)
+        # The first Tuesday of the open period's week (the bye's while the bye is open, when no game
+        # week is; two days before a Thursday game), after every game closed before it.
+        (kind, cls.week), = open_events.open_period(se.SEASON, cls.root).items()
+        first, _ = practices.week_span(se.SEASON, cls.week, cls.root)
+        cls.tuesday = first + timedelta(days=(1 - first.weekday()) % 7)
+        # The result writer also rebuilds Record.md and the open period's index (scripts/resolve_event).
+        pages = decisions.bye_pages if kind == "bye" else decisions.week_pages
+        cls.period_index = pages(se.SEASON, cls.week, cls.root).readme
         cls.index = trades.index_path(cls.root, se.SEASON)
+        # The index lists the season's own calls too: resolved ones among the calls, the rest open.
+        events = trades.trade_events(cls.root, se.SEASON)
+        cls.still = [r for r in events if r.get("resolution") is None]
+        cls.listed = len(CALLS) + len(events) - len(cls.still)
 
     def setUp(self):
         for rel in (str(decision_queue.QUEUE), se.STATE):
             path = self.root / rel
             before = path.read_bytes()
             self.addCleanup(path.write_bytes, before)
-        # The result writer also rebuilds Record.md and the open week's index.
-        for path in (annual_record_path(self.root, se.SEASON), render_game_week.Week(self.root).pages.readme):
+        for path in (annual_record_path(self.root, se.SEASON), self.period_index):
             if path.is_file():
                 self.addCleanup(path.write_bytes, path.read_bytes())
         for folder in open_events.stores(se.SEASON, self.root):
-            self.addCleanup(self._clear, folder)
+            self.addCleanup(self._restore, folder, self._records(folder))
         folder = decisions.event_folder("trade_talks", se.SEASON, self.root)
         before = set(folder.glob("*.md"))
         self.addCleanup(lambda: [p.unlink() for p in folder.glob("*.md") if p not in before])
         se.midweek(self.root, self.tuesday, 10, 30, self.week)
 
     @staticmethod
-    def _clear(folder):
+    def _records(folder):
+        return {path: path.read_bytes() for path in folder.glob("*.json")} if folder.is_dir() else {}
+
+    @staticmethod
+    def _restore(folder, records):
+        """The store as it was: the test's records removed, the season's own kept (the restored
+        decision queue still names them)."""
         for path in folder.glob("*.json") if folder.is_dir() else ():
-            path.unlink()
+            if path not in records:
+                path.unlink()
+        for path, data in records.items():
+            path.write_bytes(data)
+
+    def assert_open(self, text, *extra):
+        """The index's open calls are the season's own still open and ``extra`` (the test's rows); a
+        page with none says so."""
+        opened = section(text, "Open trade calls")
+        listed = rows(opened)
+        self.assertEqual(len(listed), len(self.still) + len(extra))
+        for row in extra:
+            self.assertIn(row, listed)
+        (self.assertNotIn if self.still or extra else self.assertIn)("No trade call is open.", opened)
 
     def index_text(self):
         text = trades.render_index(self.root, se.SEASON)[self.index]
@@ -167,9 +217,11 @@ class TradeEventIndexTests(unittest.TestCase):
         source = os.path.relpath(self.root / record["raised"]["source"]["path"], self.index.parent)
         text = self.index_text()
         opened = text.split("## Open trade calls")[1]
-        self.assertIn("| %s | [Trade call from Test Club](%s) | Open | %s |" % (
-            open_events.at_text(raised), source, open_events.at_text(due)), opened)
+        row = "| %s | [Trade call from Test Club](%s) | Open | %s |" % (
+            open_events.at_text(raised), source, open_events.at_text(due))
+        self.assertIn(row, opened)
         self.assertNotIn("No trade call is open.", text)
+        self.assert_open(text, row)
         # Caldwell's criteria, Stone's answer, the decision and its result page: the call moves to
         # the list of calls with its Trade Result, as the result writer leaves it.
         open_events.add_process(se.SEASON, record["id"], {
@@ -186,12 +238,12 @@ class TradeEventIndexTests(unittest.TestCase):
                          "Trade_Result_%s_Test_Club.md" % self.tuesday.isoformat())
         self.assertEqual(open_events.validation_errors(self.root), [])
         text = self.index_text()
-        calls, opened = text.split("## Open trade calls")
-        result = os.path.relpath(self.root / page, self.index.parent)
+        calls = text.split("## Open trade calls")[0]
+        result =os.path.relpath(self.root / page, self.index.parent)
         self.assertIn("| %s | [Trade call from Test Club](%s) | [Declined %s](%s) |" % (
             se.long_date(self.tuesday), source, se.long_date(self.tuesday), result), calls)
-        self.assertIn("No trade call is open.", opened)
-        self.assertEqual(len([line for line in calls.splitlines() if line.startswith("| ") and "](" in line]), 9)
+        self.assert_open(text)
+        self.assertEqual(len(rows(calls)), self.listed + 1)
         # The page on disk is now stale until rebuilt, and the check says so.
         self.assertEqual(trades.check(self.root, se.SEASON),
                          ["Trade index stale: %s" % self.index.relative_to(self.root.resolve())])
@@ -200,7 +252,7 @@ class TradeEventIndexTests(unittest.TestCase):
         late = open_events.et(self.tuesday, 11)
         with self.assertRaises(open_events.Refused):
             open_events.raise_event(se.trade_call(self.root, "test-index-late", late), self.root)
-        self.assertIn("No trade call is open.", self.index_text())
+        self.assert_open(self.index_text())
 
     def test_the_trade_deadline_shows_only_while_the_briefs_show_it(self):
         at = open_events.et(self.tuesday + timedelta(days=21), 16)

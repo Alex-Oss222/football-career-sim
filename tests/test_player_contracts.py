@@ -103,8 +103,14 @@ class ConversionTests(unittest.TestCase):
             self.assertEqual(hashlib.sha256(built[rel].encode("utf-8")).hexdigest(), digest, rel)
 
     def test_every_player_entry_and_amendment_became_record_entries(self):
-        records = pc.load_all(ROOT)
+        # The records converted from the inputs (each carries ``converted`` and begins by the conversion
+        # day). A player signed later (an injury replacement, a practice-squad signing, a waiver claim)
+        # gets a new record without it on the next register line, so he never counts here.
+        records = {rid: r for rid, r in pc.load_all(ROOT).items() if r.get("converted")}
         self.assertEqual(len(records), 90)
+        self.assertEqual(sorted(r["listed"] for r in records.values()), list(range(1, 91)))
+        for rid, r in records.items():
+            self.assertLessEqual(min(pc.day(e["date"]) for e in r["entries"]), CONVERTED_ON, rid)
         by_name = {r["name"]: r for r in records.values()}
         # The sixteen amendments of the old inputs, by the dated entries that now carry each one's
         # player facts (the March 31 pick exchange moved no player contract).
@@ -274,8 +280,13 @@ class ValidationTests(unittest.TestCase):
         in-season minimum for fewer credited seasons than his record holds."""
         records = copy.deepcopy(self.records)
         murphy = records["richard_murphy"]
-        squad = pc.contract_on(murphy, None, ROOT)
         day = "2014-10-14"
+        # The practice-squad contract in force on the test's promotion day, and his record as it stood
+        # then: a later release, promotion or signing on the live record changes neither (the cut is
+        # made in the copy only; every other record is still checked as it stands).
+        squad = pc.contract_on(murphy, date.fromisoformat(day), ROOT)
+        self.assertEqual(squad["kind"], "practice_squad")
+        murphy["entries"] = [e for e in murphy["entries"] if pc.day(e["date"]) <= date.fromisoformat(day)]
         weeks = sum(1 for _, paid in pc.pay_weeks(YEAR, ROOT) if date.fromisoformat(squad["start"]["date"]) <= paid
                     < date.fromisoformat(day))
         promoted = {"kind": "contract_signed", "date": day, "source": squad["start"]["source"],
@@ -357,23 +368,38 @@ class WriterTests(unittest.TestCase):
         paths = pages.page_paths(YEAR, self.root)
         rel = paths["changes"]
         recorded = (self.root / rel).read_bytes()
-        self.assertEqual(clean_pages.digest(recorded), clean_pages.history(self.root)[rel])
+        length, pinned = clean_pages.history_lengths(self.root)[rel], clean_pages.history(self.root)[rel]
+        # Its pre-Week-6 bytes stay exactly as recorded: the whole page until a contract changes after the
+        # history closes, then the prefix the built entries follow.
+        self.assertEqual(clean_pages.digest(recorded[:length]), pinned)
+        self.assertEqual(clean_pages.unchecked_prefix(recorded, pinned, length), length)
         self.assertEqual(pages.changes_page(pc.load_all(self.root), pc.inputs(self.root), YEAR, self.root, paths),
                          recorded.decode("utf-8"))
-        # A test release from the practice squad recorded after the history closes appends one dated
-        # line (in the copy only).
-        rid = "jemea_thomas"
+        # A test release recorded the day after every real entry appends one dated line (in the copy
+        # only): from the practice squad while a contract is open there, else the first open contract.
+        records = pc.load_all(self.root)
+        held = [(r, pc.contract_on(r, None, self.root)) for r in sorted(records.values(), key=lambda r: r["listed"])]
+        held = [(r, c) for r, c in held if c is not None]
+        record, contract = next((h for h in held if h[1]["kind"] == "practice_squad"), held[0])
+        rid = record["player"]
         self.restore(pc.record_path(self.root, rid).relative_to(self.root).as_posix())
-        squad = [e for e in pc.load(rid, self.root)["entries"] if e["kind"] == "practice_squad"][-1]
-        on = (pc.history_through(self.root) + timedelta(days=1)).isoformat()
-        pc.add_entry(self.root, rid, {"kind": "contract_ended", "date": on, "source": squad["source"],
-                                      "contract": squad["contract"], "how": "released",
-                                      "text": "Test data: released from the practice squad"})
+        last = max([pc.history_through(self.root)]
+                   + [pc.day(e["date"]) for r in records.values() for e in r["entries"]])
+        on = (last + timedelta(days=1)).isoformat()
+        pc.add_entry(self.root, rid, {"kind": "contract_ended", "date": on, "source": contract["start"]["source"],
+                                      "contract": contract["contract"], "how": "released",
+                                      "text": "Test data: released"})
         built = pages.changes_page(pc.load_all(self.root), pc.inputs(self.root), YEAR, self.root, paths)
         self.assertTrue(built.startswith(recorded.decode("utf-8")))
         tail = built[len(recorded.decode("utf-8")):]
-        self.assertIn("## Changes from", tail)
-        self.assertIn("Jemea Thomas", tail)
+        # The dated part follows the recorded bytes (its heading is in the tail until a real entry
+        # brought it), and the tail holds one dated line: the release.
+        self.assertIn("## Changes from", built.encode("utf-8")[length:].decode("utf-8"))
+        lines = [line for line in tail.splitlines()
+                 if line.startswith("| ") and not line.startswith("| Date and completed business |")]
+        self.assertEqual(len(lines), 1, lines)
+        self.assertTrue(lines[0].startswith("| %s: %s:" % (pc.date_words(on).rsplit(",", 1)[0], record["name"])),
+                        lines[0])
         self.assertEqual(clean_pages.text_errors(rel, built, self.root), [])
 
 
@@ -397,14 +423,35 @@ class PageTests(unittest.TestCase):
         text = self.built[self.paths["cap"]]
         exact = {m.rstrip(",.") for m in re.findall(r"\$\d[\d,]*", section)}
         self.assertGreater(len(exact), 20)
+        # Each figure is on the page's own September 8 reconciliation (its before and after are the
+        # records in force on September 7 and 8, so a later entry never changes it), or in the working
+        # position and the reserve charges of Mike Harris and Dwight Lowery that the page's functions
+        # build from the records as of September 8: the live position and reserve lists move with
+        # every later transaction.
+        dated = text.split("\n### September 8, 2014\n")[1].split("\n## ")[0]
+        records, data = pc.load_all(ROOT), pc.inputs(ROOT)
+        then = pages.Position(records, data, YEAR, ROOT, CONVERTED_ON)
+        working = pages.table(["Component", str(YEAR)], pages.position_rows(then, data), right=(1,))
+        by_name = {r["name"]: r for r in then.current}
+        reserve = "\n".join(pages.money(pages.charge(by_name[name]["years"][str(YEAR)]))
+                            for name in ("Mike Harris", "Dwight Lowery"))
         for figure in exact:
-            self.assertIn(figure, text, figure)
+            self.assertIn(figure, "\n".join((dated, working, reserve)), figure)
         # "about $12.63M to $13.30M" with the carryover estimate: the estimate is approximate, so the page
         # gives it and the range built on it in the worksheet's rounded form, never to the dollar.
         self.assertIn("about $12.63M to $13.30M with it", section)
         self.assertIn("(about $5.33 million to $6.00 million), not certified | about $12.63 million to $13.30 million |",
-                      text)
-        self.assertNotIn("$12,631,314", text)
+                      working)
+        self.assertNotIn("$12,631,314", working + text)
+        # The live page gives its current range the same rounded way, never to the dollar.
+        now = pages.Position(records, data, YEAR, ROOT)
+        estimate = data["team_years"][str(YEAR)]["carryover_working_estimate"]
+        low, high = now.difference() + estimate["low"], now.difference() + estimate["high"]
+        self.assertIn("(about %s to %s), not certified | about %s to %s |" % (
+            pages.about_millions(estimate["low"]), pages.about_millions(estimate["high"]),
+            pages.about_millions(low), pages.about_millions(high)), text)
+        self.assertNotIn(pages.money(low), text)
+        self.assertNotIn(pages.money(high), text)
 
     def test_the_contract_page_lists_every_player_and_the_update_log(self):
         text = self.built[self.paths["contracts"]]
@@ -424,8 +471,18 @@ class PageTests(unittest.TestCase):
         from urllib.parse import unquote, urlsplit
         history = clean_pages.history(ROOT)
         kept = [self.paths[k] for k in ("contract_table", "status_register", "worksheet", "changes")]
+        lengths = clean_pages.history_lengths(ROOT)
         for rel in kept:
-            self.assertEqual(clean_pages.digest((ROOT / rel).read_bytes()), history[rel], rel)
+            data = (ROOT / rel).read_bytes()
+            if rel == self.paths["changes"]:
+                # Append-only: after the history closes the builder adds dated entries after its recorded
+                # bytes, which stay exactly as recorded.
+                self.assertIsInstance(lengths.get(rel), int, rel)
+                self.assertGreaterEqual(len(data), lengths[rel], rel)
+                self.assertEqual(clean_pages.digest(data[:lengths[rel]]), history[rel], rel)
+            else:
+                # The contract table, the status register and the cap worksheet are frozen: the whole file.
+                self.assertEqual(clean_pages.digest(data), history[rel], rel)
         targets = {(ROOT / rel).resolve(): anchors(without_code((ROOT / rel).read_text(encoding="utf-8"))) for rel in kept}
         found = 0
         for page in (ROOT / "career").rglob("*.md"):

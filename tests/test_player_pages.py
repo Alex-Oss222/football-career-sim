@@ -29,18 +29,25 @@ sys.path.insert(0, str(ROOT))
 
 import copy  # noqa: E402
 
+from datetime import timedelta  # noqa: E402
+
 from runtime import assignments, clean_pages, people, player_bios, player_cards, player_pages  # noqa: E402
 from runtime.season_layout import LEAGUE_PLAYER_PAGES, PAGE_HISTORY, PLAYER_RECORDS  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
 from runtime.statbook import aggregate_receipts  # noqa: E402
 from runtime.stat_tables import rating_value, thrown  # noqa: E402
 from scripts import render_player_pages  # noqa: E402
+from scripts.build_annual_player_sheets import season_closeout_paths  # noqa: E402
 
 LEAGUE = ROOT / LEAGUE_PLAYER_PAGES
 FOLDER = SeasonPaths(2014, ROOT).record("player_profiles")
+# The season's review (either name) closes the season and makes its player folder history.
+REVIEWS = tuple(p.relative_to(ROOT).as_posix() for p in season_closeout_paths(2014, ROOT))
+POSTSEASON = SeasonPaths(2014, ROOT).postseason_receipts.relative_to(ROOT).as_posix()
 JAX = player_cards.JAX
 _CTX = None
 _BUILT = None
+_FOLDER_BUILT = None
 
 
 def ctx():
@@ -55,6 +62,37 @@ def built():
     if _BUILT is None:
         _BUILT = player_pages.build(ctx=ctx())
     return _BUILT
+
+
+def folder_built():
+    """The build with the season's player folder in it: built() while the season is open; once
+    its review has made the folder history (StatusTests), a build of the same stored facts with
+    the folder still written, so the folder's rules are proved on a fresh build at every week."""
+    global _FOLDER_BUILT
+    if _FOLDER_BUILT is None:
+        if ctx().folder_open:
+            _FOLDER_BUILT = built()
+        else:
+            opened = copy.copy(ctx())
+            opened.folder_open = True
+            _FOLDER_BUILT = player_pages.build(ctx=opened)
+    return _FOLDER_BUILT
+
+
+def folder_page(rel):
+    """A page of the season's player folder: the committed page while the season is open (it
+    equals a fresh build), else the page ``folder_built`` writes."""
+    return page(rel) if ctx().folder_open else folder_built()[0][rel]
+
+
+def reopen(root):
+    """Remove the season's review from an overlay ``root`` (its folder must be a copy), so the
+    copy's season is open and its player folder is checked and written again; True when a review
+    was there."""
+    found = [root / rel for rel in REVIEWS if (root / rel).is_file()]
+    for path in found:
+        path.unlink()
+    return bool(found)
 
 
 def book(year, kind="regular"):
@@ -122,10 +160,31 @@ def period(club=JAX):
     return "%d, through Week %d" % (c.active, club_week(club))
 
 
-def next_jacksonville_fixture(paths):
-    """The first scheduled Jacksonville game after its latest closed one (its bye skipped)."""
-    games = [g for g in json.loads(paths.schedule.read_text(encoding="utf-8"))["games"] if JAX in (g["away"], g["home"])]
-    return min((g for g in games if g["week"] > club_week(JAX)), key=lambda g: g["week"])
+def jacksonville_games(paths):
+    """[(receipt file, receipt)] of Jacksonville's closed regular-season games, in week order."""
+    games = []
+    for f in sorted(paths.receipts.glob("*.json")):
+        r = json.loads(f.read_text(encoding="utf-8"))
+        if JAX in r["team_stats"]:
+            games.append((r["week"], f, r))
+    return [(f, r) for _week, f, r in sorted(games, key=lambda g: g[0])]
+
+
+def regular_season_only(root, restore=False):
+    """Empty an overlay ``root``'s copy of the 2014 playoff receipts (``POSTSEASON``), or with
+    ``restore`` copy the repository's back: the bracket is seeded from the regular season, so
+    while a regular-season game is taken away no playoff game can be placed, and with none a
+    playoff figure has nothing to read."""
+    for f in sorted((root / POSTSEASON).glob("*.json")):
+        f.unlink()
+    for f in sorted((ROOT / POSTSEASON).glob("*.json")) if restore else ():
+        shutil.copyfile(f, root / POSTSEASON / f.name)
+
+
+def game_date(paths, r):
+    """A regular-season receipt's game day, from the schedule (a receipt holds no date)."""
+    return next(g["date"] for g in json.loads(paths.schedule.read_text(encoding="utf-8"))["games"]
+                if (g["week"], g["away"], g["home"]) == (r["week"], r["away"], r["home"]))
 
 
 def month_day(iso):
@@ -153,6 +212,35 @@ def with_short(rid, short, index=None):
     a = record["assessments"][index] if index is not None else player_pages.latest_assessment(record)
     a["short"] = short
     return record
+
+
+def opening_index(rid, season=2014):
+    """The index of a record's opening assessment of ``season``."""
+    return next(i for i, a in enumerate(people.load_all(ROOT)[rid]["assessments"])
+                if a["season"] == season and a["stage"] == "opening")
+
+
+def preview_record(short=None):
+    """Kirk Cousins's record as the preview was written for it: ``short`` (else the preview) on
+    his 2014 opening assessment and nothing recorded after it, so the opening is his page's
+    latest assessment even once the season's final assessment follows it on the record."""
+    i = opening_index("kirk_cousins")
+    record = with_short("kirk_cousins", short or preview_short(), i)
+    record["assessments"] = record["assessments"][:i + 1]
+    return record
+
+
+def shorts(records):
+    """(record id, record, assessment) for every assessment that carries a short. A page reads
+    its record's latest assessment, so a short a later assessment (the season's final) has
+    superseded is read on the record as it stood while it was the latest: cut after it."""
+    for rid, record in sorted(records.items()):
+        for i, a in enumerate(record["assessments"]):
+            if "short" not in a:
+                continue
+            held = dict(record, assessments=record["assessments"][:i + 1])
+            if player_pages.latest_assessment(held) is a:
+                yield rid, held, a
 
 
 def staff_section(text):
@@ -207,7 +295,11 @@ class CommittedPageTests(unittest.TestCase):
         self.assertEqual(len(league), len(data["players"]))
         self.assertEqual(len([r for r in files if r.endswith("/README.md") and r.count("/") == 3]), 32)
         self.assertFalse([r for r in files if not r.endswith(".md")])  # no career-card images
-        jaguars = [r for r in files if r.startswith(FOLDER.relative_to(ROOT).as_posix() + "/")]
+        folder = FOLDER.relative_to(ROOT).as_posix() + "/"
+        if not ctx().folder_open:  # a closed season's folder is history: neither built nor checked
+            self.assertFalse([r for r in files if r.startswith(folder)])
+            self.assertNotIn(FOLDER, player_pages.owned_folders(ctx()))
+        jaguars = [r for r in folder_built()[0] if r.startswith(folder)]
         controlled, assessed = jaguars_page_ids()
         self.assertEqual(len(controlled), len(ctx().roster))  # one record per rostered player
         self.assertEqual(len(jaguars), len(controlled | assessed) + 1)  # and the index
@@ -221,7 +313,7 @@ class CommittedPageTests(unittest.TestCase):
         self.assertLessEqual(set(card_only), controlled | assessed)
 
     def test_a_jaguars_page_is_his_league_page_with_its_links_rebased(self):
-        files, _ = built()
+        files, _ = folder_built()
         compared = 0
         for rel, text in files.items():
             if not rel.startswith(FOLDER.relative_to(ROOT).as_posix() + "/") or rel.endswith("README.md"):
@@ -239,7 +331,13 @@ class CommittedPageTests(unittest.TestCase):
     def test_check_fails_on_a_stale_missing_or_extra_page_and_write_repairs_it(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            overlay(root, (LEAGUE_PLAYER_PAGES, FOLDER.relative_to(ROOT).as_posix(), PLAYER_RECORDS))
+            overlay(root, (LEAGUE_PLAYER_PAGES, FOLDER.relative_to(ROOT).as_posix(), PLAYER_RECORDS,
+                           Path(REVIEWS[0]).parent.as_posix()))
+            # The copy's season is open, so its folder is checked; a folder the review froze is
+            # first brought to the open season's build (a closed one is never checked: StatusTests).
+            if reopen(root):
+                player_pages.write(root)
+                self.assertEqual(player_pages.check(root), [])
             cousins = root / FOLDER.relative_to(ROOT) / "kirk_cousins.md"
             cousins.write_text(cousins.read_text(encoding="utf-8") + "A hand edit.\n", encoding="utf-8")
             (root / LEAGUE_PLAYER_PAGES / "cincinnati_bengals" / "a_j_green.md").unlink()
@@ -361,9 +459,12 @@ class RecordTests(unittest.TestCase):
                          (2014, "opening", "2014-03-31", "Jacksonville staff"))
         self.assertEqual(opening["grades"][0], {"category": "Overall", "grade": "6.0 /10", "standing": "Staff judgment"})
         self.assertEqual([u["date"] for u in opening["updates"]][:1], ["2014-08-01"])
-        # Year-only moves keep only the year; a window keeps the source's words.
-        self.assertEqual([(t["date"], t["kind"]) for t in r["transactions"]], [("2012", "signed"), ("2013", "traded")])
+        # Year-only moves keep only the year; a window keeps the source's words. A move since (a
+        # reserve list, say) follows them in date order, dated 2014 or later.
+        self.assertEqual([(t["date"], t["kind"]) for t in r["transactions"][:2]], [("2012", "signed"), ("2013", "traded")])
         self.assertEqual(r["transactions"][1]["label"], "March 12 to April 24, 2013")
+        self.assertFalse([t for t in r["transactions"][2:] if t["date"] < "2014"])
+        self.assertEqual(r["transactions"], sorted(r["transactions"], key=people.sort_key))
         # His birth date is read through its owners, never stored on the record, and no age is
         # stored either: on the opening assessment's date he was 22 by the canon birth date.
         self.assertNotIn("1991-08-19", json.dumps(r))
@@ -395,9 +496,10 @@ class LayoutTests(unittest.TestCase):
     COUSINS = FOLDER.relative_to(ROOT).as_posix() + "/kirk_cousins.md"
 
     def test_cousins_page_follows_the_approved_layout(self):
-        text = page(self.COUSINS)
+        text = folder_page(self.COUSINS)
         lines = text.splitlines()
         record = ctx().records["kirk_cousins"]
+        p = ctx().league_player(record)
         age = player_bios.age_on("1991-08-19", ctx().jax_latest)  # the user's canon birth date
         self.assertEqual(lines[0], "# Kirk Cousins")
         self.assertEqual(lines[2], "**Jacksonville Jaguars · Quarterback · No. 8 · Age %d · %s**"
@@ -409,18 +511,26 @@ class LayoutTests(unittest.TestCase):
         self.assertEqual(headings, ["## Staff assessment", "## Contract", "## Statistics", "### Regular season",
                                     "### Playoffs", "## Awards", "## Transactions"])
         # The photo stays below As of; then the assignment, the passer rating, the staff assessment.
+        # The assignment is the depth chart's (the starter's seat while he holds it); on a reserve
+        # list he has none and the line is left out.
         photo = next(i for i, l in enumerate(lines) if l.startswith("![Kirk Cousins](https://"))
         self.assertTrue(lines[photo + 2].startswith("*Photo: "))
+        assignment = player_pages.current_assignment(ctx(), record, p, True)
+        if ctx().lists.get("Kirk Cousins") == "active" and ctx().chart["depth"].get("QB", [])[:1] == ["Kirk Cousins"]:
+            self.assertEqual(assignment, "Starting quarterback")
         rating = rating_value(book(2014)["players"]["Kirk Cousins"])
-        order = [photo, lines.index("**Current assignment:** Starting quarterback."),
-                 lines.index("**Passer rating:** %.1f (%s)." % (rating, period())), lines.index("## Staff assessment")]
+        order = [photo] + ([lines.index("**Current assignment:** %s." % assignment)] if assignment else []) + [
+            lines.index("**Passer rating:** %.1f (%s)." % (rating, period())), lines.index("## Staff assessment")]
         self.assertEqual(order, sorted(order))
         self.assertGreater(order[0], 6)
-        opening = next(a for a in record["assessments"] if a["season"] == 2014 and "owner" not in a)
+        self.assertEqual(bool(assignment), "**Current assignment:**" in text)
+        opening = record["assessments"][opening_index("kirk_cousins")]
         section = staff_section(text)
-        if "short" in opening:
+        if player_pages.latest_assessment(record) is not opening:  # the season's final now leads
+            self.assertEqual(section, "%s\n\n*%s*" % player_pages.staff_view(ctx(), record, p, self.COUSINS))
+        elif "short" in opening:  # its 2014 figures are his Jacksonville games, dated through his last
             self.assertIn("*Staff assessment originally dated March 31, 2014; 2014 results current through %s.*"
-                          % month_day(ctx().jax_latest), text)
+                          % month_day(player_pages.jacksonville_block(p, 2014, "regular")["through"]), text)
             self.assertTrue(2 <= people.sentence_count(section.split("\n\n")[0]) <= 4)
         else:  # until his short is written, the staff read as written
             self.assertIn("*Staff view, March 31, 2014; dated updates through %s.*"
@@ -439,8 +549,21 @@ class LayoutTests(unittest.TestCase):
         self.assertEqual(headings, ["## Contract", "## Statistics", "## Awards", "## Transactions"])
         # The template: "otherwise say not established"; the records hold no other club's contract.
         self.assertIn("\n## Contract\n\n%s\n\n## Statistics" % player_pages.NO_CONTRACT, text)
-        # His Week 1 slot (WR1) with Cincinnati, and his yards per target from the statbook.
-        self.assertIn("\n**Current assignment:** Starting wide receiver.\n", text)
+        # His Week 1 slot (WR1) with Cincinnati while nothing has moved him (an applied move, or a
+        # reserve list from an injury in the closed games, takes the line away), and his yards per
+        # target from the statbook.
+        c, record = ctx(), ctx().records["a_j_green"]
+        p = c.league_player(record)
+        self.assertEqual(assignments.week1_assignment(c.week1[("Cincinnati Bengals", record["gsis_id"])]),
+                         "Starting wide receiver")
+        expected = player_pages.current_assignment(c, record, p, False)
+        if record["gsis_id"] not in c.rails_moved and not any(
+                ("Cincinnati Bengals", n) in c.branch_reserve for n in p["record_names"]):
+            self.assertEqual(expected, "Starting wide receiver")
+        if expected is None:
+            self.assertNotIn("**Current assignment:**", text)
+        else:
+            self.assertIn("\n**Current assignment:** %s.\n" % expected, text)
         g = book(2014)["players"]["A.J. Green"]
         self.assertIn("\n**Yards per target:** %.1f (%s).\n" % (g["receiving_yards"] / g["targets"],
                                                                period("Cincinnati Bengals")), text)
@@ -548,10 +671,24 @@ class ValueTests(unittest.TestCase):
     def test_the_number_follows_the_season_and_team(self):
         regular, _ = tables(page(league_page("Kirk Cousins", "Jacksonville Jaguars")))
         self.assertEqual((regular["2013"]["#"], season_row(regular, 2014)["#"]), ("N/A", "8"))
+        # Jacksonville shows one number once. Another club's number comes from that club's own
+        # dated roster (its Week 1 roster or a later week's listing), and no such roster gives one
+        # number twice; across the season a club reissues a number a departed player wore (Scott
+        # Solomon's 56 at Week 1, Jacquies Smith's from his claim), so the source is part of the key.
         no_club_twice = {}
+        codes = ctx().ident.codes
         for p in ctx().data["players"]:
-            if p["number"] is not None:
+            if p["number"] is None:
+                continue
+            if p["team"] == JAX:
                 no_club_twice.setdefault((p["team"], p["number"]), []).append(p["name"])
+                continue
+            w1, listed = p["_w1"] or {}, p["_listed"]
+            self.assertTrue((w1.get("club") == p["team"] and not w1.get("branch_note")
+                             and str(w1.get("jersey")) == str(p["number"]))
+                            or (listed.get("number") == p["number"]
+                                and (listed.get("number_basis") or {}).get("club") == codes.get(p["team"])), p["name"])
+            no_club_twice.setdefault((p["team"], p["number"], p["number_note"]), []).append(p["name"])
         self.assertEqual({k: v for k, v in no_club_twice.items() if len(v) > 1}, {})
 
 
@@ -736,7 +873,8 @@ class ShortRecordTests(unittest.TestCase):
 
     def test_a_pointer_or_a_transcribed_entry_may_carry_a_short(self):
         self.assertEqual(self.errors("brad_meester", self.meester()), [])
-        self.assertEqual(self.errors("kirk_cousins", preview_short()), [])
+        # The preview on the assessment it was written for, his 2014 opening, wherever it now sits.
+        self.assertEqual(self.errors("kirk_cousins", preview_short(), opening_index("kirk_cousins")), [])
 
     def test_each_broken_rule_is_refused(self):
         found = lambda errors, words: [e for e in errors if words in e]  # noqa: E731
@@ -769,7 +907,7 @@ class ShortRecordTests(unittest.TestCase):
             (self.meester(summarizes=[{"season": 2013, "stage": "final"}, {"season": 2014, "stage": "final"}]),
              "not on the record"),
             (self.meester(date="2014-01-13"), "before the assessment it summarizes"),
-            (self.meester(date="2014-12-01"), "after the master date"),
+            (self.meester(date=(player_bios.master_date(ROOT) + timedelta(days=1)).isoformat()), "after the master date"),
             (self.meester(recorded="October 20"), "recorded must be an ISO date"),
             (self.meester(source="docs/no_such_file.md"), "does not exist"),
         )
@@ -786,7 +924,7 @@ class TokenTests(unittest.TestCase):
     """A short's season figures are read from the closed games when the page is built."""
 
     def cousins(self):
-        record = with_short("kirk_cousins", preview_short())
+        record = preview_record()
         return record, ctx().league_player(record)
 
     def test_the_users_preview_renders_from_the_statbook(self):
@@ -797,8 +935,9 @@ class TokenTests(unittest.TestCase):
         self.assertIn("concern: %d in 2013 and %s through the first %s games of 2014."
                       % (thrown(line13), player_pages.words(thrown(line14)), player_pages.words(line14["games"])),
                       text)
+        # Its 2014 figures are regular-season games, dated through his last Jacksonville one.
         self.assertEqual(line, "Staff assessment originally dated March 31, 2014; 2014 results current through %s."
-                         % month_day(ctx().jax_latest))
+                         % month_day(player_pages.jacksonville_block(p, 2014, "regular")["through"]))
         # Against the closed games through Week 5 these are the preview's own sentences.
         if ctx().jax_latest == "2014-10-05":
             preview = page("docs/examples/kirk_cousins_player_card_preview.md")
@@ -827,12 +966,20 @@ class TokenTests(unittest.TestCase):
 
     def test_unresolvable_figures_are_refused(self):
         _, p = self.cousins()
-        for token in ("{{2014.regular.field_goal_percentage}}",   # no attempts
-                      "{{2014.playoffs.games}}",                  # no playoff games yet
-                      "{{2015.regular.games}}",                   # after the active season
-                      "{{2014.regular.interceptions}}"):          # ambiguous
+        # The playoff refusal reads him with no 2014 playoff game, so it holds once he has one.
+        none = copy.deepcopy(p)
+        none["seasons"][2014]["playoffs"] = None
+        for club in (none["seasons"][2014].get("by_club") or {}).values():
+            club["playoffs"] = None
+        for player, token in ((p, "{{2014.regular.field_goal_percentage}}"),   # no attempts
+                              (none, "{{2014.playoffs.games}}"),               # no playoff games yet
+                              (p, "{{%d.regular.games}}" % (ctx().active + 1)),  # after the active season
+                              (p, "{{2014.regular.interceptions}}")):          # ambiguous
             with self.assertRaises(ValueError, msg=token):
-                player_pages.resolve_tokens(ctx(), p, token)
+                player_pages.resolve_tokens(ctx(), player, token)
+        playoffs = player_pages.jacksonville_block(p, 2014, "playoffs")
+        if playoffs:  # a playoff game with Jacksonville: the same token resolves to his games
+            self.assertEqual(player_pages.resolve_tokens(ctx(), p, "{{2014.playoffs.games}}")[0], str(playoffs["games"]))
         # A former Jaguar's season with another club is never cited.
         shorts = ctx().league_player(ctx().records["cecil_shorts"])
         with self.assertRaises(ValueError):
@@ -871,10 +1018,7 @@ class TokenTests(unittest.TestCase):
         its latest dated update up to the summary's date, never an earlier one."""
         c = ctx()
         updated = 0
-        for rid, record in sorted(c.records.items()):
-            a = player_pages.latest_assessment(record)
-            if a is None or "short" not in a:
-                continue
+        for rid, record, a in shorts(c.records):
             view = player_pages.view_date(record, a, ROOT)
             ups = [u["date"] for u in a.get("updates", ()) if u["date"] <= a["short"]["date"]]
             self.assertEqual(view, max([people.assessment_date(a, ROOT)] + ups), rid)
@@ -886,38 +1030,40 @@ class TokenTests(unittest.TestCase):
         self.assertTrue(updated)  # shorts with no current figure that draw on a later dated update
 
     def test_a_game_for_another_club_leaves_his_jacksonville_figures(self):
-        """A Jaguar whose next closed game is for another club (a move in season) keeps his short's
-        Jacksonville figures and their cutoff; nothing refuses the check or the write."""
+        """A Jaguar whose latest closed game was for another club (a move in season) keeps his
+        short's Jacksonville figures and their cutoff; nothing refuses the check or the write.
+        Jacksonville's latest closed game is the scenario, so it holds at every week: without that
+        game his figures run through the game before it; with it, and him on the other side, they
+        still do."""
         paths = SeasonPaths(2014, ROOT)
         receipts = paths.receipts.relative_to(ROOT).as_posix()
-        fixture = next_jacksonville_fixture(paths)
-        last = max((f for f in paths.receipts.glob("*.json")
-                    if JAX in json.loads(f.read_text(encoding="utf-8"))["team_stats"]),
-                   key=lambda f: json.loads(f.read_text(encoding="utf-8"))["week"])
-        r = json.loads(last.read_text(encoding="utf-8"))
-        mover = next(rec for rid, rec in sorted(ctx().records.items())
-                     if "short" in (player_pages.latest_assessment(rec) or {})
-                     and "{{2014.regular." in player_pages.latest_assessment(rec)["short"]["text"]
-                     and rec["name"] in r["team_stats"][JAX]["players"]
-                     and (ctx().league_player(rec) or {}).get("seasons", {}).get(2014, {}).get("clubs") == [JAX])
+        (_, previous), (last_file, last) = jacksonville_games(paths)[-2:]
+        mover = next(record for _rid, record, a in shorts(ctx().records)
+                     if "{{2014.regular." in a["short"]["text"] and ".playoffs." not in a["short"]["text"]
+                     and all(record["name"] in r["team_stats"][JAX]["players"] for r in (previous, last))
+                     and (ctx().league_player(record) or {}).get("seasons", {}).get(2014, {}).get("clubs") == [JAX])
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            overlay(root, (LEAGUE_PLAYER_PAGES, FOLDER.relative_to(ROOT).as_posix(), PLAYER_RECORDS, receipts))
-            opponent = next(t for t in r["team_stats"] if t != JAX)
-            other = fixture["home"] if fixture["away"] == JAX else fixture["away"]
-            r["team_stats"][other] = r["team_stats"].pop(opponent)
-            r["team_stats"][other]["players"][mover["name"]] = r["team_stats"][JAX]["players"].pop(mover["name"])
-            r.update(week=fixture["week"], away=fixture["away"], home=fixture["home"],
-                     event_id=r["event_id"] + "-copy", injuries=[])
-            (root / receipts / ("week_%02d_added.json" % fixture["week"])).write_text(json.dumps(r), encoding="utf-8")
+            overlay(root, (LEAGUE_PLAYER_PAGES, FOLDER.relative_to(ROOT).as_posix(), PLAYER_RECORDS, receipts,
+                           POSTSEASON))
+            regular_season_only(root)
+            (root / receipts / last_file.name).unlink()
+            earlier = player_pages.Context(root)
+            # The game given back with him on the other side (its score, and so the bracket, unchanged).
+            other = next(t for t in last["team_stats"] if t != JAX)
+            last["team_stats"][other]["players"][mover["name"]] = last["team_stats"][JAX]["players"].pop(mover["name"])
+            last.update(injuries=[])
+            (root / receipts / last_file.name).write_text(json.dumps(last), encoding="utf-8")
+            regular_season_only(root, restore=True)
             later = player_pages.Context(root)
             p = later.league_player(mover)
             self.assertEqual(p["seasons"][2014]["clubs"], [JAX, other])
-            before = player_pages.staff_view(ctx(), mover, ctx().league_player(mover), "x.md")
+            before = player_pages.staff_view(earlier, mover, earlier.league_player(mover), "x.md")
             after = player_pages.staff_view(later, mover, p, "x.md")
             self.assertEqual(after, before)  # his Jacksonville games, dated through his last one
             self.assertEqual(player_pages.jacksonville_block(p, 2014, "regular")["through"],
-                             max(d for (t, d) in ctx().weeks if t == JAX))
+                             max(d for (t, d), w in earlier.weeks.items()
+                                 if t == JAX and w not in player_pages.ROUND_NAMES))
             self.assertEqual(player_pages.assessment_errors(later), [])
             self.assertFalse([e for e in player_pages.check(root) if "staff assessment" in e])
             player_pages.write(root)
@@ -925,10 +1071,11 @@ class TokenTests(unittest.TestCase):
     def test_a_bad_short_stops_check_and_write(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            overlay(root, (LEAGUE_PLAYER_PAGES, FOLDER.relative_to(ROOT).as_posix(), PLAYER_RECORDS))
+            overlay(root, (LEAGUE_PLAYER_PAGES, FOLDER.relative_to(ROOT).as_posix(), PLAYER_RECORDS, POSTSEASON))
+            regular_season_only(root)  # no playoff game, so a playoff figure cannot resolve at any week
             short = dict(preview_short(), text=preview_short()["text"].replace("2014.regular.games:words",
                                                                               "2014.playoffs.games:words"))
-            record = with_short("kirk_cousins", short)
+            record = preview_record(short)
             (root / PLAYER_RECORDS / "kirk_cousins.json").write_text(people.dump(record), encoding="utf-8")
             errors = player_pages.check(root)
             self.assertTrue([e for e in errors if "kirk_cousins.json" in e and "2014.playoffs.games" in e], errors)
@@ -936,33 +1083,30 @@ class TokenTests(unittest.TestCase):
                 player_pages.write(root)
 
     def test_a_closed_game_changes_the_figures_and_the_cutoff_but_not_the_words(self):
-        """An added Jacksonville game (a copy of Week 5's, played as Week 6's fixture) moves the
-        figures and the dated line; the words of the short stay as written."""
+        """His latest closed Jacksonville game, taken away and then given back, moves the figures
+        and the dated line; the words of the short stay as written."""
         paths = SeasonPaths(2014, ROOT)
         receipts = paths.receipts.relative_to(ROOT).as_posix()
-        fixture = next_jacksonville_fixture(paths)
-        last = max((f for f in paths.receipts.glob("*.json")
-                    if JAX in json.loads(f.read_text(encoding="utf-8"))["team_stats"]),
-                   key=lambda f: json.loads(f.read_text(encoding="utf-8"))["week"])
+        games = jacksonville_games(paths)
+        his = max(i for i, (_f, r) in enumerate(games) if "Kirk Cousins" in r["team_stats"][JAX]["players"])
+        record = preview_record()
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
-            overlay(root, (LEAGUE_PLAYER_PAGES, FOLDER.relative_to(ROOT).as_posix(), PLAYER_RECORDS, receipts))
-            r = json.loads(last.read_text(encoding="utf-8"))
-            opponent = next(t for t in r["team_stats"] if t != JAX)
-            other = fixture["home"] if fixture["away"] == JAX else fixture["away"]
-            r["team_stats"][other] = r["team_stats"].pop(opponent)
-            r.update(week=fixture["week"], away=fixture["away"], home=fixture["home"],
-                     event_id=r["event_id"] + "-copy", injuries=[])
-            (root / receipts / ("week_%02d_added.json" % fixture["week"])).write_text(json.dumps(r), encoding="utf-8")
+            overlay(root, (receipts, POSTSEASON))
+            regular_season_only(root)
+            for f, _r in games[his:]:  # his latest game, and any Jacksonville game after it
+                (root / receipts / f.name).unlink()
+            earlier = player_pages.Context(root)
+            shutil.copyfile(games[his][0], root / receipts / games[his][0].name)
             later = player_pages.Context(root)
-            record = with_short("kirk_cousins", preview_short())
-            before, before_line = player_pages.staff_view(ctx(), record, ctx().league_player(record), "x.md")
+            before, before_line = player_pages.staff_view(earlier, record, earlier.league_player(record), "x.md")
             after, after_line = player_pages.staff_view(later, record, later.league_player(record), "x.md")
-            games = book(2014)["players"]["Kirk Cousins"]["games"]
-            self.assertIn("the first %s games" % player_pages.words(games), before)
-            self.assertIn("the first %s games" % player_pages.words(games + 1), after)
+            games_played = book(2014)["players"]["Kirk Cousins"]["games"]
+            self.assertIn("the first %s games" % player_pages.words(games_played - 1), before)
+            self.assertIn("the first %s games" % player_pages.words(games_played), after)
             self.assertNotEqual(before_line, after_line)
-            self.assertTrue(after_line.endswith("current through %s." % month_day(fixture["date"])), after_line)
+            self.assertTrue(after_line.endswith("current through %s." % month_day(game_date(paths, games[his][1]))),
+                            after_line)
             pattern = lambda t: re.sub(r"\b(\d[\d,]*|zero|one|two|three|four|five|six|seven|eight|nine)\b", "#", t)  # noqa: E731
             self.assertEqual(pattern(before), pattern(after))  # the words never change
 
@@ -1015,9 +1159,17 @@ class MetricTests(unittest.TestCase):
         self.assertEqual(self.metric("Bryan Anger", JAX), ["**Net punting average:** %.1f (%s)." % (net, period())])
 
     def test_no_attempt_or_an_unrecorded_field_omits_the_line(self):
-        henne = page(league_page("Chad Henne", JAX))
-        self.assertNotIn("**Passer rating:**", henne)
-        self.assertEqual(book(ctx().active)["players"].get("Chad Henne", {}).get("pass_attempts", 0), 0)
+        # Every quarterback with games this season and no pass attempt (a backup who dressed and
+        # never threw), worked out from the closed games: an injury that sends Chad Henne in takes
+        # him off this list, not the rule.
+        idle = [p for p in ctx().data["players"] if p["group"] == "QB"
+                and ((p["seasons"].get(ctx().active) or {}).get("regular") or {}).get("games")
+                and not p["seasons"][ctx().active]["regular"]["totals"].get("pass_attempts", 0)]
+        self.assertTrue(idle)
+        for p in idle:
+            self.assertIsNone(player_pages.position_metric(ctx(), p, p["pos"]), p["name"])
+            rel = "%s/%s/%s.md" % (LEAGUE_PLAYER_PAGES, player_cards.club_slug(p["team"]), p["slug"])
+            self.assertNotIn("**Passer rating:**", page(rel), rel)
         anger = copy.deepcopy(ctx().league_player(ctx().records["bryan_anger"]))
         block = anger["seasons"][ctx().active]["regular"]
         block["tiles"] = [(k, "N/A" if k == "NET" else v) for k, v in block["tiles"]]
@@ -1076,7 +1228,7 @@ class AssignmentTests(unittest.TestCase):
 
     def assignment(self, name):
         rel = FOLDER.relative_to(ROOT).as_posix() + "/%s.md" % people.slugify(name)
-        m = re.search(r"^\*\*Current assignment:\*\* (.+)\.$", page(rel), re.M)
+        m = re.search(r"^\*\*Current assignment:\*\* (.+)\.$", folder_page(rel), re.M)
         return m.group(1) if m else None
 
     def rows(self, heading):
@@ -1089,26 +1241,41 @@ class AssignmentTests(unittest.TestCase):
 
     def test_every_jaguar_matches_the_depth_chart_page(self):
         seats = {label: words for _group, _i, label, words in assignments.OFFENSE_SEATS}
+        depth, roles = ctx().chart["depth"], ctx().chart.get("roles") or {}
+        labels = assignments.stone_labels(ctx().working)
         offense = self.rows("## First-unit offense")
-        self.assertEqual([seat for seat, _ in offense], list(seats))
+        # Every seat with a holder, in order (a group emptied by injuries shows no seat).
+        self.assertEqual([seat for seat, _ in offense], [label for group, i, label, _w in assignments.OFFENSE_SEATS
+                                                         if i < len(depth.get(group) or [])])
         for seat, names in offense:
             self.assertEqual(self.assignment(names[0]), seats[seat], seat)
         positions = ctx().chart["positions"]
         for _unit, names in self.rows("## Base defense"):
             for name in names:
                 self.assertEqual(self.assignment(name), "Starting " + assignments.POSITION_WORDS[positions[name]])
-        roles = {"Nickel corner": "Nickel cornerback", "Outside corner reserve": "Reserve outside cornerback",
-                 "Dime, sixth defensive back": "Dime defensive back"}
+        # A situational role's words, for its first holder unless a seat or Stone's label (which
+        # come first) names him, or for the dime seat a role does; else the one shared source's.
+        first = {n for g, i, _l, _w in assignments.OFFENSE_SEATS for n in (depth.get(g) or [])[i:i + 1]}
+        first |= {n for g, _u, count in assignments.DEFENSE_FIRST for n in (depth.get(g) or [])[:count]}
+        first |= {n for g, _j in assignments.SPECIALISTS for n in (depth.get(g) or [])[:1]}
+        words = {"Nickel corner": ("Nickel cornerback", set()),
+                 "Outside corner reserve": ("Reserve outside cornerback", {"nickel"}),
+                 "Dime, sixth defensive back": ("Dime defensive back",
+                                                {"nickel", "outside_reserve", "kick_return", "punt_return"})}
         for role, names in self.rows("## Situational defensive roles"):
-            self.assertEqual(self.assignment(names[0]), roles[role], role)
+            text, earlier = words[role]
+            name = names[0]
+            if name in first or name in labels or earlier & set(roles.get(name) or ()):
+                self.assertEqual(self.assignment(name),
+                                 assignments.jacksonville_assignment(name, ctx().chart, ctx().working), role)
+            else:
+                self.assertEqual(self.assignment(name), text, role)
         jobs = {job: names for job, names in self.rows("## Special teams")}
         for job in ("Kicker", "Punter", "Long snapper"):
             self.assertEqual(self.assignment(jobs[job][0]), job)
         # Every player on the active roster has the line the one shared source gives him, and a
         # player the depth chart page names in no seat, label or role has none: like that page,
         # the player page infers no unnamed reserve assignment from the order.
-        depth, roles = ctx().chart["depth"], ctx().chart.get("roles") or {}
-        labels = assignments.stone_labels(ctx().working)
         seated = {depth[g][i] for g, i, _l, _w in assignments.OFFENSE_SEATS if i < len(depth.get(g) or [])}
         seated |= {n for g, _u, count in assignments.DEFENSE_FIRST for n in (depth.get(g) or [])[:count]}
         seated |= {n for g, _j in assignments.SPECIALISTS for n in (depth.get(g) or [])[:1]}
@@ -1134,18 +1301,26 @@ class AssignmentTests(unittest.TestCase):
             self.assertIsNone(self.assignment(name), name)
 
     def test_a_label_without_page_words_fails_the_check(self):
-        working = copy.deepcopy(ctx().working)
+        # A player on the game chart in no seat, with no label and no named role (a receiver when
+        # one is such a reserve), worked out from the chart, so a move into a seat, a role or a
+        # reserve list never takes the case away.
+        c = ctx()
+        depth, roles, labels = c.chart["depth"], c.chart.get("roles") or {}, assignments.stone_labels(c.working)
+        reserve = next(name for group in ["WR"] + sorted(set(depth) - {"WR"}) for name in depth[group]
+                       if c.lists.get(name, "active") == "active" and name not in labels and not roles.get(name)
+                       and assignments.jacksonville_assignment(name, c.chart, c.working) is None)
+        working = copy.deepcopy(c.working)
         working["stone_role_decisions"].append({"date": "October 6, 2014",
-                                                "decisions": [{"player": "Allen Hurns", "role": "Slot specialist"}]})
+                                                "decisions": [{"player": reserve, "role": "Slot specialist"}]})
         self.assertTrue([e for e in assignments.label_errors(working) if "Slot specialist" in e])
-        self.assertEqual(assignments.label_errors(ctx().working), [])
+        self.assertEqual(assignments.label_errors(c.working), [])
         with self.assertRaises(ValueError):
-            assignments.jacksonville_assignment("Allen Hurns", ctx().chart, working)
-        # A later decision with no role clears the label, and an unseated receiver with no named
+            assignments.jacksonville_assignment(reserve, c.chart, working)
+        # A later decision with no role clears the label, and an unseated player with no named
         # role then has no confirmed assignment.
         working["stone_role_decisions"].append({"date": "October 7, 2014",
-                                                "decisions": [{"player": "Allen Hurns", "role": None}]})
-        self.assertIsNone(assignments.jacksonville_assignment("Allen Hurns", ctx().chart, working))
+                                                "decisions": [{"player": reserve, "role": None}]})
+        self.assertIsNone(assignments.jacksonville_assignment(reserve, c.chart, working))
 
     def test_every_week1_slot_code_has_words(self):
         self.assertTrue(ctx().library)

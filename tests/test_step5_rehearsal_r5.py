@@ -1,5 +1,10 @@
 """Rebuild step 5, acceptance test 5: a synthetic Week 11 bye close, in a temporary copy.
 
+The copy is the real checkout while its season has not closed the week before the bye. From then the
+real bye's review, answers and close are history and the season has no other bye, so the copy's season
+records and state are those of PRE_BYE, the merge that closed Week 7, read from the checkout's git
+history under the checkout's own code, tests and docs (a checkout without that history, as in the engine
+image's verification stage, has no such state to start from, and the test says so and is skipped).
 The copy is brought to the evening of Jacksonville's game before the bye by relabelled week closes
 (tests/test_week_close_pages.py's model), one week at a time from the copy's open week: each week's
 games are an earlier closed week's games moved onto its fixtures (Jacksonville's on Jacksonville's,
@@ -66,7 +71,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 sys.path.insert(0, str(ROOT / "scripts"))      # scripts/check_game_readiness.py imports its neighbours bare
 
-from runtime import bye_week, events, open_events, practices, rails, week_pages  # noqa: E402
+from runtime import bye_week, clean_pages, events, open_events, practices, rails, week_pages  # noqa: E402
 from runtime.seasons import GAME_REPORT, SeasonPaths  # noqa: E402
 from runtime.week_inputs import event_id, receipt_name  # noqa: E402
 import support_events as se  # noqa: E402
@@ -81,6 +86,14 @@ IGNORED = (".git", ".sim_cache", "__pycache__", ".pytest_cache")
 WEEK_BOUND = ("defensive_calls", "defensive_call_stats", "decision_policies")
 # The one gate the copy's build and close pass by (Rehearsal.slate_close): the in-season rails coverage.
 RAILS_GATE = "In-season rails: the moves are committed through"
+# The copy's start once the real season has closed the week before the bye: the season's records and state
+# as the merge that closed Week 7 left them (pull request #265, on main; CI checks out the full history).
+# The in-season rails data is dated by the clock (rails.data_errors), so it goes back with the state, and
+# with it its two dependants: the DB-family table pins its manifest's digest and the library record links
+# its weekly shards.
+PRE_BYE = "60767eb165029b7e49a8e1fe7d73a90d662b6001"
+PRE_BYE_PATHS = ("career", "data", "state", "library/data/2014_inseason_rails", "library/data/2014_db_families.json",
+                 "library/2014_inseason_rails.md")
 SLATE = """
 import sys
 sys.path.insert(0, '.')
@@ -214,13 +227,12 @@ class Rehearsal:
         return written
 
     def assert_pages(self, label=""):
-        """Every page check passes: nothing stale or unclean, nothing re-recorded as history, and
-        validation of the copy adds nothing to the real checkout's."""
-        from runtime import clean_pages
+        """Every page check passes: nothing stale or unclean, nothing re-recorded as history (the copy's
+        history as it started), and validation of the copy adds nothing to the real checkout's."""
         from scripts import rebuild_pages
         from scripts.validate_repository import validate
         self.assertEqual(rebuild_pages.rebuild(self.root, SEASON, check=True), ([], []), label)
-        self.assertEqual(clean_pages.history(self.root), clean_pages.history(ROOT), label)
+        self.assertEqual(clean_pages.history(self.root), self.history, label)
         if not hasattr(type(self), "baseline"):
             type(self).baseline = set(validate(ROOT))
         self.maxDiff = None
@@ -238,6 +250,35 @@ class Rehearsal:
 
     def next_sequence(self):
         return max(item["sequence"] for _, _, item in events.closures(events.load_events(self.root))) + 1
+
+    def pre_bye(self):
+        """The copy's season records and state put back to PRE_BYE from the checkout's git history (git
+        archive of PRE_BYE_PATHS), its code, tests and docs left as the checkout's. Without git or that
+        commit (the engine image's verification stage, a shallow clone) there is no state to start from
+        and the test is skipped, as scripts/validate_repository.py skips its commit-order check there."""
+        import subprocess
+
+        def git(*args):
+            return subprocess.run(["git", "-C", str(ROOT), *args], capture_output=True)
+        if shutil.which("git") is None or not (ROOT / ".git").exists():
+            self.skipTest("the pre-bye state is read from git history, which this checkout lacks (the engine image)")
+        if git("cat-file", "-e", PRE_BYE + "^{commit}").returncode != 0:
+            if git("rev-parse", "--is-shallow-repository").stdout.strip() == b"true":
+                self.skipTest("the pre-bye commit %s is outside this shallow clone's history" % PRE_BYE[:12])
+            self.fail("the pre-bye commit %s is not in the checkout's history" % PRE_BYE)
+        tar = self.root.parent / "pre_bye.tar"
+        done = git("archive", "--format=tar", "-o", str(tar), PRE_BYE, "--", *PRE_BYE_PATHS)
+        self.assertEqual(done.returncode, 0, done.stderr.decode("utf-8", "replace"))
+        for rel in PRE_BYE_PATHS:
+            path = self.root / rel
+            if path.is_dir():
+                shutil.rmtree(path)
+            elif path.exists():
+                path.unlink()
+        done = subprocess.run(["tar", "-xf", str(tar), "-C", str(self.root)], capture_output=True)
+        tar.unlink()
+        self.assertEqual(done.returncode, 0, done.stderr.decode("utf-8", "replace"))
+        self.assertLess(self.closed_weeks()[-1], BYE - 1, "PRE_BYE is before the week before the bye closed")
 
     # ------------------------------------------------------------------ a relabelled week close
     def donors(self, week):
@@ -437,6 +478,16 @@ class Rehearsal:
                    if l.startswith("| [My Responses]"))
         return row.strip("| ").rsplit(" | ", 1)[-1]
 
+    def question_subjects(self):
+        """The two test roster questions' subjects: the first and the last Jacksonville player hurt in the
+        game before the bye, or, when it hurt none (the injury draw allows it), the first and the last
+        active player on the copy's roster record (test data either way, as the event says)."""
+        names = [i["player"] for i in self.week_10["injuries"] if i.get("team") == JAX]
+        if not names:
+            data = json.loads(self.paths.roster.read_text(encoding="utf-8"))
+            names = [p["name"] for p in data["players"] if p.get("list") == "active"]
+        return names[0], names[-1]
+
     def roster_question(self, ident, subject, raised):
         """A test injury replacement in the bye (test data: its source is a test page the copy alone
         holds): David Caldwell brings it, Stone's recommendation is asked on the bye's My Responses, and
@@ -618,10 +669,10 @@ class Rehearsal:
         refused in the design's words; nothing is applied."""
         from scripts import render_bye_week
         monday, _ = self.bye_days()
-        injured = [i["player"] for i in self.week_10["injuries"] if i.get("team") == JAX]
+        subject, _ = self.question_subjects()
         self.midweek(monday, 9)
         first = self.bye().pages.review.read_bytes()
-        self.first_question = self.roster_question("test-roster-question-first", injured[0],
+        self.first_question = self.roster_question("test-roster-question-first", subject,
                                                    open_events.et(monday, 8, 30))
         self.assertTrue(render_bye_week.reissue_reason(self.bye()).startswith("a:"))
         self.rebuild("Monday's roster question")
@@ -754,9 +805,9 @@ class Rehearsal:
         from scripts import render_bye_week
         games = [g for g in self.paths.regular_games() if int(g["week"]) == BYE]
         friday = min(date.fromisoformat(g["date"]) for g in games) + timedelta(days=1)
-        injured = [i["player"] for i in self.week_10["injuries"] if i.get("team") == JAX]
+        _, subject = self.question_subjects()
         self.midweek(friday, 9)
-        self.second_question = self.roster_question("test-roster-question-second", injured[-1],
+        self.second_question = self.roster_question("test-roster-question-second", subject,
                                                     open_events.et(friday, 8, 30))
         self.assertTrue(render_bye_week.reissue_reason(self.bye()).startswith("a:"))
         self.rebuild("Friday's roster question")
@@ -874,6 +925,9 @@ class ByeCloseRehearsal(Rehearsal, unittest.TestCase):
         self.addCleanup(self.tmp.cleanup)
         self.root = Path(self.tmp.name) / "repo"
         shutil.copytree(ROOT, self.root, ignore=shutil.ignore_patterns(*IGNORED), symlinks=True)
+        if self.closed_weeks()[-1] >= BYE - 1:
+            self.pre_bye()
+        self.history = clean_pages.history(self.root)
         _, self.client = local_service(self, self.root / "private", "step5-rehearsal-r5", snapshot="rehearsal-r5")
         from runtime import week_inputs
         memo = patch.object(week_inputs, "rails_slate", SlateMemo(week_inputs.rails_slate))

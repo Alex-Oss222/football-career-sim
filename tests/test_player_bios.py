@@ -47,15 +47,37 @@ class PlayerBiographyTests(unittest.TestCase):
     def test_current_views_and_practice_squad_are_complete(self):
         self.assertEqual(render_player_ages.check(), [])
         from runtime import roster as roster_record
-        names = [p["name"] for p in roster_record.load(current_record('roster'))["players"]]
-        # 64 under club control from September 8, 2014: the active 53, the four
-        # on reserve/injured and the seven practice-squad players (the roster's
-        # canonical count of 57 excludes the practice squad, listed separately;
-        # Alan Ball signed and Adrian Phillips promoted September 8).
-        self.assertEqual(len(set(names)), 64)
-        # The ages page lists them with the status the roster record holds (rebuild step 3b).
+        from scripts.build_player_progression_roster import parse_current_roster
+        from scripts.render_club_pages import status_text
+        record = roster_record.load(current_record('roster'))
+        names = [p["name"] for p in record["players"]]
+        # Every player under club control, each once: the active roster and the
+        # reserve lists (the roster's canonical count, which excludes the practice
+        # squad) and the practice squad, listed separately. Each signing, release
+        # or promotion moves the counts (57 and 7 from September 8, 2014).
+        canonical = parse_current_roster(current_record('roster'))[1]
+        self.assertEqual(len(set(names)), len(names))
+        self.assertEqual(len(set(names)), canonical + roster_record.counts(record)["practice_squad"])
+        # The ages page lists them with the status the roster record holds (rebuild step 3b),
+        # each age in completed birthdays on Document 5's master date.
         ages = current_record('player_ages').read_text()
-        self.assertIn("| Tyler Bray | QB | 1991-12-27 | 22 | Practice squad |", ages)
+        day, bios = player_bios.master_date(ROOT), player_bios.load()
+        for p in record["players"]:
+            born = bios[p["name"]]["birth_date"]
+            self.assertIn("| %s | %s | %s | %d | %s |" % (p["name"], p["position"], born,
+                                                         player_bios.age_on(born, day), status_text(p["status"])), ages)
+        for p in roster_record.players(record, ("practice_squad",)):
+            self.assertEqual(status_text(p["status"]), "Practice squad")
+        # A practice-squad row whatever the live squad holds (its contracts end with
+        # the club's season): Tyler Bray as signed August 31, 2014.
+        bray = {"name": "Tyler Bray", "position": "QB", "list": "practice_squad", "group": None,
+                "status": "Practice squad (signed August 31, 2014)", "availability": None,
+                "sources": {"status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md"}}
+        held = dict(record, players=[p for p in record["players"] if p["name"] != "Tyler Bray"] + [bray])
+        with mock.patch.object(roster_record, "load", return_value=held):
+            page = render_player_ages.render_views()[current_record('player_ages').relative_to(ROOT).as_posix()]
+        self.assertIn("| Tyler Bray | QB | 1991-12-27 | %d | Practice squad |"
+                      % player_bios.age_on("1991-12-27", day), page)
 
     def test_regeneration_replaces_stale_age_and_is_idempotent(self):
         text = "<!-- player-ages-as-of: 2013-12-29 -->\n\n| Player | Pos | DOB | Age | Status |\n|---|---|---|---:|---|\n| Mike Harris | CB | 1900-01-01 | 99 | Active 53 |\n"
@@ -203,7 +225,9 @@ class CanonOverrideTests(unittest.TestCase):
         self.assertEqual(changed, ["Kirk Cousins"])
 
     def test_age_views_read_the_override(self):
-        self.assertIn("| Kirk Cousins | QB | 1991-08-19 | 23 |",
+        # His age counts from the canon date to Document 5's master date (23 until August 19, 2015).
+        age = player_bios.age_on("1991-08-19", player_bios.master_date(ROOT))
+        self.assertIn("| Kirk Cousins | QB | 1991-08-19 | %d |" % age,
                       re.sub(r"\| +", "| ", current_record("player_ages").read_text(encoding="utf-8")))
 
     def test_an_override_fails_closed_when_the_registry_moves(self):

@@ -1,20 +1,28 @@
 """A synthetic first close under the new system (rebuild step 4): the standings, statistics,
 award and roster-moves pages after a fake 2014 Week 6, in a copy of the repository.
 
-The real season is never touched. In a temporary copy, each Week 6 fixture gets a fake result:
-a closed Week 5 game record of the latest week relabelled to the Week 6 clubs (Jacksonville's
-own Week 5 game for Jacksonville's), with no injuries and no defensive call record. The week's
-awards are recorded from their formula shortlists (the first finalist named, a fixture draw).
-The rest of the week's close that other owners carry is stood in for: the week's open
-decisions in the queue are settled as the user's (the Game Plan's apply step settles them in a
-real week) and the roster record is dated to the game. The master date is left where it stands:
-moving it is the event record's work, not these pages'. Every built page is then rebuilt by the
+The real season is never touched. In a temporary copy, each fixture of the week gets a fake
+result, game for game: Jacksonville's last closed game relabelled to Jacksonville's fixture (a
+bye between them changes nothing), the other fixtures from the latest closed week's other games,
+each moved once (then the week's before it, when the latest has fewer), relabelled to the week's
+clubs, with no injuries and no defensive call record. In Jacksonville's bye only the other clubs'
+games close. The week's awards are recorded from their formula shortlists (the first finalist
+named, a fixture draw), with each month's whose weeks all precede the week and that has none
+yet, as the close draws them. The rest of the week's close that other owners carry is stood in
+for: the week's open decisions holding its games are settled as the user's (the Game Plan's
+apply step settles them in a real week; the bye's adjustments hold only the bye's own close and
+stay open, as at its slate's close), the roster record is dated to Jacksonville's game when the
+week has one, and the week's practice record, when the copy does not hold it yet, is written as
+the practice-week commit writes it (a bye's is written at the bye's own close). The master date is left where it stands: moving it is
+the event record's work, not these pages'. Every built page is then rebuilt by the
 one command the weekly workflow runs (scripts/rebuild_pages.py). Each page the standings,
 statistics, team tracker, award and roster-moves builders own must pass the clean-page check,
 validation of the copy must add no error to the real checkout's, and the
 figures the pages show come from the same arithmetic (the copy's standings and the statbook
-agree on every club's record). Which week is the first new-system week is read from the stored
-facts: the next week after the latest closed one.
+agree on every club's record). Which week is closed is read from the stored facts: the next week
+after the latest closed one; once the regular season is complete, its last week, closed again
+from its own game records with what its close recorded, so the season after it (the postseason
+built on the final standings) stands as recorded.
 """
 import copy
 import json
@@ -28,7 +36,7 @@ from unittest import mock
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from runtime import clean_pages
+from runtime import clean_pages, decision_queue, practices
 from runtime.player_pages import MARKERS
 from runtime.seasons import SeasonPaths
 from runtime.week_inputs import event_id, receipt_name
@@ -45,6 +53,15 @@ def next_week(paths):
     return max(closed) + 1
 
 
+def subject_week(paths):
+    """(week, again): the week this test closes in its copy, the next week after the latest closed
+    one; once every regular-season week has closed, the last one, closed again (``again``) from its
+    own game records."""
+    last = max(int(g["week"]) for g in paths.regular_games())
+    week = next_week(paths)
+    return (week, False) if week <= last else (last, True)
+
+
 def relabel(receipt, mapping):
     """A game record with its clubs renamed (old name -> new name), through placeholders so a
     club that is both renamed and a target is never renamed twice."""
@@ -57,23 +74,22 @@ def relabel(receipt, mapping):
 
 
 def fake_week(paths, week):
-    """Fake results for every fixture of ``week``: the latest closed week's game records,
-    relabelled; Jacksonville's from its own game. Returns the records written."""
+    """Fake results for every fixture of ``week``, game for game, relabelled: Jacksonville's from
+    its last closed game (a bye between them changes nothing), the others from the latest closed
+    week's other games, each moved once, then the week's before it when the latest has fewer.
+    Returns the records written."""
     closed = render_season_stats.load_receipts(paths.receipts)
-    latest = max(int(r["week"]) for r in closed)
-    sources = [r for r in closed if int(r["week"]) == latest]
-    own = next(r for r in sources if JAX in r["team_stats"])
-    others = [r for r in sources if r is not own]
+    own = max((r for r in closed if JAX in r["team_stats"]), key=lambda r: int(r["week"]))
+    others = iter(sorted((r for r in closed if JAX not in r["team_stats"]), key=lambda r: -int(r["week"])))
     written = []
-    for index, fixture in enumerate(sorted((g for g in paths.regular_games() if g["week"] == week),
-                                           key=lambda g: g["game_id"])):
+    for fixture in sorted((g for g in paths.regular_games() if g["week"] == week), key=lambda g: g["game_id"]):
         if JAX in (fixture["away"], fixture["home"]):
             source = own
             opponent = next(t for t in own["team_stats"] if t != JAX)
             new_opponent = fixture["home"] if fixture["away"] == JAX else fixture["away"]
             mapping = {opponent: new_opponent}
         else:
-            source = others[index % len(others)]
+            source = next(others)
             mapping = {source["away"]: fixture["away"], source["home"]: fixture["home"]}
         receipt = relabel(copy.deepcopy(source), mapping)
         for key in ("defensive_calls", "play_ledger", "play_call_stats", "paused"):
@@ -89,39 +105,54 @@ def fake_week(paths, week):
 
 
 def fake_awards(root, paths, week):
-    """The week's awards from their formula shortlists, the first finalist named (a fixture)."""
-    with mock.patch.object(league_awards, "ROOT", root):
-        m = league_awards.method(SEASON)
-        lists = league_awards.shortlists("week", week, m, SEASON)
+    """The awards the week's close draws, from their formula shortlists, the first finalist named (a
+    fixture), in the entries scripts/league_awards.py writes: the week's, and each month's whose
+    weeks all precede it (the rule scripts/validate_repository.award_coverage_errors checks), each
+    when it has none yet."""
     results_path = paths.awards_data / "results.json"
     results = json.loads(results_path.read_text(encoding="utf-8")) if results_path.exists() else {}
-    results["week-%d" % week] = {
-        "kind": "week", "key": str(week), "label": "Week %d" % week, "order": week, "note": "",
-        "awards": {award: {"event_id": league_awards.event_id("week", week, award, m, SEASON),
-                           "packet_sha256": "0" * 64, "result_ref": "synthetic", "shortlist": rows,
-                           "winner_index": 0} for award, rows in lists.items()}}
+
+    def entry(kind, key, m):
+        lists = league_awards.shortlists(kind, key, m, SEASON)
+        return {"kind": kind, "key": str(key),
+                "label": ("Week %d" % key) if kind == "week" else m["months"][key]["label"],
+                "order": key if kind == "week" else 100 + m["months"][key]["order"], "note": "",
+                "awards": {award: {"event_id": league_awards.event_id(kind, key, award, m, SEASON),
+                                   "packet_sha256": "0" * 64, "result_ref": "synthetic", "shortlist": rows,
+                                   "winner_index": 0} for award, rows in lists.items()}}
+
+    with mock.patch.object(league_awards, "ROOT", root):
+        m = league_awards.method(SEASON)
+        if "week-%d" % week not in results:
+            results["week-%d" % week] = entry("week", week, m)
+        for name, month in (m.get("months") or {}).items():
+            if max(month["weeks"]) < week and "month-%s" % name not in results:
+                results["month-%s" % name] = entry("month", name, m)
     results_path.write_text(json.dumps(results, indent=1) + "\n", encoding="utf-8")
 
 
 def settle_the_rest(root, paths, week):
     """The parts of the week's close other owners carry, as fixtures: the week's open queue items
-    settled as the user's, the roster record dated to Jacksonville's game."""
-    from runtime import decision_queue
+    that hold its games (decision_queue.WEEK_KINDS) settled as the user's, as the Game Plan's apply
+    settles them (the bye's adjustments hold only the bye's own close and stay open), and the
+    roster record dated to Jacksonville's game when the week has one and the record is dated
+    before it."""
     queue_path = root / decision_queue.QUEUE
     queue = json.loads(queue_path.read_text(encoding="utf-8"))
     raised = None
     for item in queue["items"]:
-        if item["status"] == "OPEN" and any(b.get("season") == SEASON and b.get("week") == week
-                                            for b in item.get("blocks") or ()):
+        if item["status"] == "OPEN" and any(b.get("kind") in decision_queue.WEEK_KINDS and b.get("season") == SEASON
+                                            and b.get("week") == week for b in item.get("blocks") or ()):
             raised = item["raised"]["date"]
             item["status"] = "RESOLVED"
             item["resolution"] = {"date": raised, "by": "user", "record": item["record"],
                                   "summary": "Synthetic fixture: settled for the test of the league pages."}
     queue_path.write_text(json.dumps(queue, indent=1) + "\n", encoding="utf-8")
-    game = next(g for g in paths.regular_games() if g["week"] == week and JAX in (g["away"], g["home"]))
+    game = next((g for g in paths.regular_games() if g["week"] == week and JAX in (g["away"], g["home"])), None)
     roster = json.loads(paths.roster.read_text(encoding="utf-8"))
-    roster["as_of"] = {"date": game["date"], "event": "after the synthetic Week %d game" % week}
-    paths.roster.write_text(json.dumps(roster, indent=1) + "\n", encoding="utf-8")
+    if game is not None and roster["as_of"]["date"] < game["date"]:
+        roster["as_of"] = {"date": game["date"], "event": "after the synthetic Week %d game" % week}
+        paths.roster.write_text(json.dumps(roster, indent=1) + "\n", encoding="utf-8")
     return raised
 
 
@@ -157,17 +188,26 @@ class Week6LeaguePagesTests(unittest.TestCase):
 
     def test_the_first_new_system_week_closes_with_clean_league_pages(self):
         root, paths = self.root, self.paths
-        week = next_week(paths)
+        week, again = subject_week(paths)
         fixtures = [g for g in paths.regular_games() if g["week"] == week]
         self.assertTrue(fixtures)
-        written = fake_week(paths, week)
+        if again:
+            # The regular season is complete: its last week closes again from its own game records.
+            written = [r for r in render_season_stats.load_receipts(paths.receipts) if int(r["week"]) == week]
+        else:
+            written = fake_week(paths, week)
         self.assertEqual(len(written), len(fixtures))
-        self.assertEqual(sum(JAX in r["team_stats"] for r in written), 1)
+        # Jacksonville's one game of the week, none in its bye.
+        ours = [g for g in fixtures if JAX in (g["away"], g["home"])]
+        self.assertEqual(len(ours), 0 if practices.is_bye(SEASON, week, root) else 1)
+        self.assertEqual(sum(JAX in r["team_stats"] for r in written), len(ours))
         fake_awards(root, paths, week)
         settle_the_rest(root, paths, week)
-        # The week's practice record, as the practice-week commit writes it before the game.
+        # The week's practice record, as the practice-week commit writes it before the game (a bye's
+        # is written at the bye's own close; a week whose record is held keeps it as recorded).
         from test_week_close_pages import check_head_coaches, record_practice
-        record_practice(self, root, week)
+        if ours and practices.load(SEASON, week, root) is None:
+            record_practice(self, root, week)
         # The weekly head-coach check, after the slate closes and before the rebuild opens the next week.
         from local_private_service import local_service
         _, client = local_service(self, Path(self.tmp.name) / "private", "week-league-pages")

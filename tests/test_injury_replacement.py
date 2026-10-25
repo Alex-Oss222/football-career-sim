@@ -24,8 +24,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from runtime import (clean_pages, decision_queue, open_events, people, player_bios, player_contracts,  # noqa: E402
-                     rails, responses, transactions as tx)
+from runtime import (bye_week, clean_pages, decision_queue, open_events, people, player_bios,  # noqa: E402
+                     player_contracts, rails, responses, transactions as tx)
 from runtime import roster as roster_record  # noqa: E402
 from runtime.events import annual_record_path, load_events  # noqa: E402
 from runtime.seasons import SeasonPaths  # noqa: E402
@@ -37,8 +37,9 @@ SEASON = int(json.loads((ROOT / "docs/repository_map.json").read_text(encoding="
 GRADE = re.compile(r"/\s*10\b|\bgrad(?:e|es|ed|ing)\b|\brat(?:ed|ing)\b", re.I)
 
 
-def first(data, position, lists=("active",)):
-    return next(r["name"] for r in data["players"] if r["position"] == position and r["list"] in lists)
+def first(data, position, lists=("active",), skip=()):
+    return next(r["name"] for r in data["players"] if r["position"] == position and r["list"] in lists
+                and r["name"] not in skip)
 
 
 class Case(unittest.TestCase):
@@ -48,8 +49,11 @@ class Case(unittest.TestCase):
         self.root = srm.copy_repo(self)
         self.paths = SeasonPaths(SEASON, self.root)
         data = tx.roster(SEASON, self.root)
-        self.corner = first(data, "CB")
-        self.linebacker = first(data, "LB")
+        # The players the tests injure have no roster question of the live season still open (one per player).
+        asked = {e["subject"] for e in open_events.load(SEASON, self.root) if e["kind"] == tx.KIND
+                 and e["state"] != "resolved"}
+        self.corner = first(data, "CB", skip=asked)
+        self.linebacker = first(data, "LB", skip=asked)
         self.quarterbacks = [r["name"] for r in data["players"] if r["position"] == "QB" and r["list"] == "active"]
         self.squad = [r["name"] for r in data["players"] if r["list"] == "practice_squad"]
         # The promotion structure is the undrafted schedule, the minimum for no credited season, so a
@@ -59,22 +63,42 @@ class Case(unittest.TestCase):
         self.promotable = [n for n in self.squad if self.credited.get(n) == 0]
 
     def close(self, injuries):
+        # The game before Jacksonville's bye is not the one closed: its close opens the bye, and the next
+        # game's Game Plan waits for the bye's close. The latest closed Jacksonville week is played again
+        # instead (unplayed first, so the copy closes it), and its next game is a game week.
+        week, _ = srm.open_week(self.root, SEASON)
+        before_bye = {int(bye_week.around(SEASON, bye, self.root)[0]["week"])
+                      for bye in bye_week.byes(SEASON, self.root)}
+        if week in before_bye and srm.week_to_close(self.root, SEASON) == week:
+            srm.unplay(self.root, SEASON, max(int(g["week"]) for g in open_events.club_fixtures(SEASON, self.root)
+                                              if srm.closed(self.paths, g)))
         self.week, self.game, self.receipt = srm.close_open_week(self.root, SEASON, injuries)
         self.played = date.fromisoformat(self.game["date"])
         self.monday = self.played + timedelta(days=1)
         self.day = self.monday
-        self.next = self.week + 1
+        upcoming = tx.next_game(SEASON, self.root)
+        self.next, self.next_day = int(upcoming["week"]), date.fromisoformat(upcoming["date"])
+        # What the copy holds of the live season before the test's own runs: its events, transactions and
+        # decision items (an open week's Game Plan among them).
+        self.live_events = {e["id"] for e in open_events.load(SEASON, self.root)}
+        self.live_transactions = tx.load(SEASON, self.root)
+        self.live_items = {i["id"] for i in decision_queue.load(self.root)["items"]}
 
     def clock(self, hour, day=None, minute=0):
         self.day = day or self.day
         srm.midweek(self.root, self.day, hour, self.next, minute)
+
+    def raised(self):
+        """The injury replacement events the test's own runs raised in the copy."""
+        return [e for e in open_events.load(SEASON, self.root)
+                if e["kind"] == tx.KIND and e["id"] not in self.live_events]
 
     def open_events(self, hour=9):
         self.clock(hour)
         lines = []
         code = injury_events.main([str(self.week), "--season", str(SEASON)], root=self.root, out=lines.append)
         self.assertEqual(code, 0, lines)
-        return [e for e in open_events.load(SEASON, self.root) if e["kind"] == tx.KIND]
+        return self.raised()
 
     def answer(self, event, words, hour=10, conditions=""):
         """Stone's answer on My Responses, checked and applied as the runner does (A3)."""
@@ -138,15 +162,15 @@ class Case(unittest.TestCase):
                 "availability": self.medical(name)}
 
     def holds(self, kind, week):
-        return [i["id"] for i in decision_queue.load(self.root)["items"]
-                if decision_queue.holds(i, decision_queue.event(kind, SEASON, week))]
+        return [i["id"] for i in decision_queue.load(self.root)["items"] if i["id"] not in self.live_items
+                and decision_queue.holds(i, decision_queue.event(kind, SEASON, week))]
 
 
 class OpeningTests(Case):
     def test_a_shorter_injury_opens_nothing(self):
         self.close([(self.linebacker, "multi_week", 24)])
         self.assertEqual(self.open_events(), [])
-        self.assertEqual(tx.load(SEASON, self.root), [])
+        self.assertEqual(tx.load(SEASON, self.root), self.live_transactions)
 
     def test_a_long_term_injury_opens_one_event_with_legal_options_and_no_grades(self):
         self.close([(self.corner, "long_term", 70), (self.linebacker, "multi_week", 24)])
@@ -232,7 +256,7 @@ class DecisionTests(Case):
         code, lines = self.place(record)
         self.assertEqual(code, 1)
         self.assertIn("criteria", lines[-1])
-        self.assertEqual(tx.load(SEASON, self.root), [])
+        self.assertEqual(tx.load(SEASON, self.root), self.live_transactions)
 
     def test_a_decision_while_stones_answer_is_due_is_refused(self):
         record = self.decision(self.event, [self.reserve(self.corner), self.promote(self.promotable[0])])
@@ -374,7 +398,7 @@ class RecommendationTests(Case):
         lines = []
         self.assertEqual(injury_events.main(["--recommend", self.linebacker, "--source", rel, "--season", str(SEASON)],
                                             root=self.root, out=lines.append), 0, lines)
-        event = next(e for e in open_events.load(SEASON, self.root) if e["subject"] == self.linebacker)
+        event = next(e for e in self.raised() if e["subject"] == self.linebacker)
         self.assertEqual((event["raised"]["by"], event["authority"]["decides"]), ("stone", "caldwell"))
         self.assertEqual(open_events.validation_errors(self.root), [])
         # Without a page of his that names it: refused.
@@ -440,7 +464,8 @@ class TwoEventTests(Case):
             self.assertEqual(result, "applied", out)
             pages.append(open_events.get(SEASON, event["id"], self.root)["resolution"]["result_page"])
         self.assertEqual(len(set(pages)), 2)
-        results, _ = open_events.period_events(SEASON, {"week": self.next}, self.root)
+        # Both are listed in the period they were settled in: the open period the close left.
+        results, _ = open_events.period_events(SEASON, open_events.open_period(SEASON, self.root), self.root)
         self.assertEqual(sorted(r["resolution"]["result_page"] for r in results if r["kind"] == tx.KIND),
                          sorted(pages))
         listed = annual_record_path(self.root, SEASON).read_text(encoding="utf-8")
@@ -451,11 +476,22 @@ class TwoEventTests(Case):
 
 class ReturnTests(Case):
     def test_the_designated_player_returns_through_the_same_tool_and_needs_a_place(self):
-        data = tx.roster(SEASON, self.root)
-        row = next(r for r in data["players"] if "designated for return" in r["status"].lower())
-        name = row["name"]
-        window = tx.return_window(row)
         self.close([(self.linebacker, "multi_week", 24)])
+        # A reserve player designated for return in the copy, placed so his eight weeks end the day after the
+        # close, and not cleared before then (the live season's designation is placed, then used): the live
+        # designated player while one is on the list, else another reserve player.
+        data = json.loads(self.paths.roster.read_text(encoding="utf-8"))
+        reserve = [r for r in roster_record.players(data, ("reserve",))
+                   if tx.open_for(SEASON, r["name"], self.root) is None]
+        row = next((r for r in reserve if "designated for return" in r["status"].lower()), reserve[0])
+        name = row["name"]
+        placed = self.monday + timedelta(days=1) - timedelta(weeks=8)
+        row["status"] = "%s (placed %s)" % (tx.RESERVE_STATUS["designated"], tx.long_date(placed))
+        row["availability"] = "Out, long term: a test injury; projected return %s (a test medical communication)" % (
+            tx.long_date(self.next_day + timedelta(weeks=1)))
+        self.paths.roster.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        window = tx.return_window(row)
+        self.assertEqual(window[1], self.monday + timedelta(days=1))
         # Before the eight weeks: refused.
         self.clock(9, window[1] - timedelta(days=1))
         with self.assertRaises(tx.Refused):
@@ -473,7 +509,7 @@ class ReturnTests(Case):
         lines = []
         self.assertEqual(injury_events.main(["--return", name, "--season", str(SEASON)], root=self.root,
                                             out=lines.append), 0, lines)
-        event = next(e for e in open_events.load(SEASON, self.root) if e["subject"] == name)
+        event = next(e for e in self.raised() if e["subject"] == name)
         self.event_source = event["raised"]["source"]["path"]
         answered = self.answer(event, "I support his return to the 53.", hour=10)
         back = {"player": name, "kind": "reinstated", "from_list": "reserve", "to_list": "active",
@@ -558,6 +594,13 @@ class WaiverTests(Case):
         self.assertIn("claim period", str(caught.exception))
         return event, record, tx.claim_period_end(self.monday)
 
+    def released_on(self):
+        """The test release's day: three days before the copy's Monday while that falls before the veteran
+        waiver date, else the day before it, so he is a free agent at any later clock, never on waivers (W5)."""
+        waivers = tx.veteran_waivers_from(SEASON, self.root)
+        day = self.monday - timedelta(days=3)
+        return min(day, waivers - timedelta(days=1)) if waivers else day
+
     def order(self, day):
         rows = tx.waiver_order(SEASON, day, self.root)
         mine = dict((r[0], r[1]) for r in rows)[open_events.employer_club(self.root)]
@@ -628,8 +671,7 @@ class WaiverTests(Case):
         self.assertNotIn("every club", won + none)
 
     def test_a_section_4_pursuit_waits_for_the_real_signing_and_is_drawn_against_it(self):
-        self.add_rows([self.row(1, "released", self.waiver_club, self.player, self.monday - timedelta(days=3))],
-                      self.monday)
+        self.add_rows([self.row(1, "released", self.waiver_club, self.player, self.released_on())], self.monday)
         event = self.open_events(hour=9)[0]
         self.event_source = event["raised"]["source"]["path"]
         free = next(f for f in event["facts"] if f["label"] == "Free agents Jacksonville may pursue")
@@ -705,8 +747,7 @@ class PursuitWinTests(WaiverTests):
     test_a_section_4_pursuit_waits_for_the_real_signing_and_is_drawn_against_it = None
 
     def test_a_won_draw_signs_him_at_his_real_signing_date(self):
-        self.add_rows([self.row(1, "released", self.waiver_club, self.player, self.monday - timedelta(days=3))],
-                      self.monday)
+        self.add_rows([self.row(1, "released", self.waiver_club, self.player, self.released_on())], self.monday)
         event = self.open_events(hour=9)[0]
         self.event_source = event["raised"]["source"]["path"]
         answered = self.answer(event, "I recommend %s." % self.squad[0])

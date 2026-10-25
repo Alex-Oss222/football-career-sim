@@ -4,7 +4,9 @@
 The copy's regular season is cut short so that its closed games set a playoff field: the released
 fixtures keep only the first weeks, the closed games after them are removed, and a postseason
 slots file is written beside the real 2013 one, in its layout, with fixture dates the week after the
-copy's clock (the 2014 file is not yet researched; nothing here is a real 2014 date or result).
+copy's clock (whatever the real season holds, its 2014 dates, playoff pages, playoff games and
+their items leave the copy first; nothing here is a real 2014 date or result). The players the
+carried Week 5 variations name dress in the copy, whatever the live medical record holds for them.
 With three weeks Jacksonville is the AFC's first seed: it has a Wild Card bye, and no Divisional
 page is issued while the Wild Card games are unplayed. With two weeks it is the third seed and
 hosts Pittsburgh in the Wild Card round. Then, the way the weekly workflow runs a game week:
@@ -25,6 +27,7 @@ hosts Pittsburgh in the Wild Card round. Then, the way the weekly workflow runs 
 No game is played, the private service is never contacted and the real repository is never touched.
 """
 import contextlib
+import hashlib
 import io
 import json
 import re
@@ -89,16 +92,107 @@ def quiet(fn, *args, **kwargs):
         return fn(*args, **kwargs)
 
 
+def digest(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest() if path.is_file() else None
+
+
 class PostseasonGameWeekTests(unittest.TestCase):
     def setUp(self):
+        real = SeasonPaths(SEASON, ROOT)
+        self.real = sorted(p.name for p in real.receipts.glob("*.json"))
+        self.real_post = sorted(p.name for p in real.postseason_receipts.glob("*.json"))
+        self.real_slots = digest(real.postseason_slots)
         self.tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
         self.addCleanup(self.tmp.cleanup)
         self.root = Path(self.tmp.name) / "repo"
         shutil.copytree(ROOT, self.root, ignore=shutil.ignore_patterns(*IGNORED), symlinks=True)
         self.paths = SeasonPaths(SEASON, self.root)
+        self.strip_postseason()
+        self.dress_named()
         self.week5 = json.loads((self.paths.receipts / "week_05_pittsburgh_steelers_at_jacksonville_jaguars.json")
                                 .read_text(encoding="utf-8"))
-        self.real = sorted(p.name for p in SeasonPaths(SEASON, ROOT).receipts.glob("*.json"))
+
+    def strip_postseason(self):
+        """The copy as it stood before any playoff game was set, whatever the real season holds: its
+        postseason dates, the rounds' folders and their data twins, the closed playoff games, and the
+        event records (with their result pages) and queue items of a postseason week leave the copy.
+        The real files are untouched."""
+        from runtime import decision_queue, open_events
+        paths = self.paths
+        post = lambda week: week is not None and decision_queue._is_postseason(SEASON, int(week))
+        paths.postseason_slots.unlink(missing_ok=True)
+        for folder in (paths.postseason, paths.data_for(paths.postseason)):
+            for week in folder.glob("Week_*"):
+                if week.is_dir():
+                    shutil.rmtree(week)
+        for receipt in paths.postseason_receipts.glob("*.json"):
+            receipt.unlink()
+        gone = set()
+        for record in open_events.load(SEASON, self.root):
+            if post((record.get("period") or {}).get("week")):
+                page = (record.get("resolution") or {}).get("result_page")
+                open_events.path_of(record, self.root).unlink()
+                if page:
+                    (self.root / page).unlink(missing_ok=True)
+                gone.add(record["id"])
+        path = self.root / "state/decision_queue.json"
+        queue = json.loads(path.read_text(encoding="utf-8"))
+        kept = [i for i in queue["items"] if not any(
+            (b.get("season") == SEASON and post(b.get("week"))) or b.get("event") in gone
+            for b in i.get("blocks") or ())]
+        if kept != queue["items"]:
+            queue["items"] = kept
+            path.write_text(json.dumps(queue, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    def dress_named(self):
+        """The players the Week 5 calls' variations name ("Kelce receiving Y", "Nicks X relief") dress in
+        the copy, whatever the live record later holds for them. A variation's player is found by the
+        check's own rules (scripts/check_game_plan.offense_problems): a word of it that is the surname of
+        exactly one roster-record player, and every word of it the active book's or a roster-record
+        player's name. A named player on the copy's active list is cleared (no communicated restriction);
+        a variation whose player has left the active list (a reserve list, the practice squad) or the
+        roster record (released or traded) comes off the copy's Week 5 sheet, the check's own remedy."""
+        from runtime import offensive_words, roster as roster_record
+        from runtime.week_inputs import AVAILABLE_TEXT, LIMITED_TEXT
+        data = json.loads(self.paths.roster.read_text(encoding="utf-8"))
+        rows = roster_record.players(data)
+        names = [row["name"] for row in rows]
+        surnames = {}
+        for row in rows:
+            surnames.setdefault(row["name"].split()[-1].lower(), []).append(row)
+        path = self.paths.call_sheet(5)
+        sheet = json.loads(path.read_text(encoding="utf-8"))
+        roster_changed = sheet_changed = False
+        for call in sheet.get("offensive_call_sheet") or ():
+            kept = []
+            for tag in call.get("tags") or ():
+                held = [surnames[w.lower()][0] for w in re.findall(r"[A-Za-z'.-]+", tag)
+                        if len(surnames.get(w.lower()) or ()) == 1]
+                if offensive_words.call_errors({"tags": [tag]}, names) or any(r["list"] != "active" for r in held):
+                    sheet_changed = True
+                    continue                                   # his player cannot dress: the variation comes off
+                for row in held:
+                    if not row["availability"].startswith((AVAILABLE_TEXT, LIMITED_TEXT)):
+                        row["availability"] = AVAILABLE_TEXT
+                        (row.get("as_written") or {}).pop("availability", None)
+                        if row.get("as_written") == {}:
+                            del row["as_written"]
+                        roster_changed = True
+                kept.append(tag)
+            if "tags" in call:
+                call["tags"] = kept
+        if roster_changed:
+            self.paths.roster.write_text(json.dumps(data, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+        if sheet_changed:
+            path.write_text(json.dumps(sheet, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    def assert_isolated(self):
+        """Nothing reached the real season: its postseason dates, closed games and playoff games are as
+        setUp found them."""
+        real = SeasonPaths(SEASON, ROOT)
+        self.assertEqual(digest(real.postseason_slots), self.real_slots)
+        self.assertEqual(sorted(p.name for p in real.receipts.glob("*.json")), self.real)
+        self.assertEqual(sorted(p.name for p in real.postseason_receipts.glob("*.json")), self.real_post)
 
     # ---------------------------------------------------------------- the copy's season
     def write_slots(self):
@@ -126,7 +220,8 @@ class PostseasonGameWeekTests(unittest.TestCase):
         of the largest groups (tests/test_game_plan.needed_inactives, for a playoff game's date),
         passing over a player a variation on the carried week's calls names (the page carries those
         calls as set, and the check refuses a variation whose player does not dress: Nicks, the X
-        relief on two Week 5 calls, last of the receivers from Week 7)."""
+        relief on two Week 5 calls, last of the receivers from Week 7). The named players are not out:
+        setUp clears them in the copy (dress_named)."""
         outs, problems = plan.outs()
         self.assertEqual(problems, [])
         sheet = json.loads(self.paths.call_sheet(carry, postseason=carry >= WILD_CARD).read_text(encoding="utf-8"))
@@ -184,15 +279,26 @@ class PostseasonGameWeekTests(unittest.TestCase):
         root, paths = self.root, self.paths
         post_folder = paths.postseason
 
-        # Mid-season, no playoff game exists: no opponent is named before the bracket sets it.
-        with self.assertRaises(game_weeks.NotSet):
+        # The season over but its postseason dates not on file (setUp takes them out of the copy): no
+        # round is set.
+        self.end_season_after(3)
+        with self.assertRaisesRegex(game_weeks.NotSet, "postseason dates are not on file"):
             game_weeks.club_game(paths, WILD_CARD, JAX)
-        with self.assertRaises(ValueError):
+        with self.assertRaisesRegex(ValueError, "Wild Card game is not set"):
             render_game_week.Week(root, WILD_CARD)
         self.write_slots()
+        # Mid-season (a game of the copy's last week still to play), no playoff game exists: no opponent
+        # is named before the bracket sets it.
+        held = sorted(paths.receipts.glob("week_03_*.json"))[0]
+        kept = held.read_bytes()
+        held.unlink()
+        with self.assertRaisesRegex(game_weeks.NotSet, "once the regular season has finished"):
+            game_weeks.club_game(paths, WILD_CARD, JAX)
+        with self.assertRaisesRegex(ValueError, "Wild Card game is not set"):
+            render_game_week.Week(root, WILD_CARD)
+        held.write_bytes(kept)
 
         # A first-round bye: no Wild Card pages, and the Divisional game waits for the Wild Card results.
-        self.end_season_after(3)
         self.assertEqual(game_weeks.seed_of(game_weeks.regular_receipts(paths), JAX), ("AFC", 1))
         wk = render_game_week.Week(root)
         self.assertIsNone(wk.game)
@@ -353,8 +459,7 @@ class PostseasonGameWeekTests(unittest.TestCase):
         self.assertEqual(render_game_week.validation_errors(root), [])
 
         # Isolation: nothing reached the real season.
-        self.assertFalse(SeasonPaths(SEASON, ROOT).postseason_slots.exists())
-        self.assertEqual(sorted(p.name for p in SeasonPaths(SEASON, ROOT).receipts.glob("*.json")), self.real)
+        self.assert_isolated()
 
 
     # ---------------------------------------------------------------- the later rounds
@@ -523,7 +628,7 @@ class PostseasonGameWeekTests(unittest.TestCase):
         self.assertEqual(render_game_week.validation_errors(root), [])
         self.assertEqual(sorted(p.name for p in paths.postseason.glob("Week_*")), ["Week_19", "Week_20", "Week_21"])
         # Isolation: nothing reached the real season.
-        self.assertFalse(SeasonPaths(SEASON, ROOT).postseason_slots.exists())
+        self.assert_isolated()
 
 
 if __name__ == "__main__":

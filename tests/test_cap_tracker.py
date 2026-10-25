@@ -1,12 +1,25 @@
 import copy
+from datetime import date, timedelta
 import json
 import re
+import tempfile
 import unittest
 
 from scripts.render_jaguars_cap_tracker import (
-    INPUT, ROOT, cap_cell, exact_amount, md_rows, render, release_exposure,
-    team_accounting, totals, validate, working_charge, working_total,
+    INPUT, ROOT, cap_cell, dollars, exact_amount, md_rows, organization_staff, reader_words, render,
+    release_exposure, render_main, team_accounting, totals, validate, working_charge, working_total,
 )
+
+# The contract records after the September 8, 2014 transactions (tests/test_player_contracts.py
+# CONVERTED_ON). The dated figures and named contracts below are read as they stood that day, so a
+# later signing, release, promotion, trade or reserve move never changes them.
+PINNED = date(2014, 9, 8)
+
+
+def amount(page, label):
+    """The dollar figure of a two-column ``| label | $n |`` row (negative when shown -$n)."""
+    found = re.search(r'^\| ' + re.escape(label) + r' \| (-?)\$([\d,]+) \|', page, re.M)
+    return int(found.group(2).replace(',', '')) * (-1 if found.group(1) else 1)
 
 
 class CapTrackerTests(unittest.TestCase):
@@ -18,9 +31,21 @@ class CapTrackerTests(unittest.TestCase):
         self.data = json.loads((ROOT / INPUT).read_text())
         self.data['players'] = player_contracts.rows(ROOT)
         self.data['as_of'] = player_contracts.as_of(ROOT)
+        # The same inputs with the rows and date of PINNED. validate() compares the rows with the
+        # live roster record last, so it runs on these only where it must fail before that check.
+        self.dated = copy.deepcopy(self.data)
+        self.dated['players'] = player_contracts.rows(ROOT, on=PINNED)
+        self.dated['as_of'] = player_contracts.as_of(ROOT, on=PINNED)
 
-    def player(self, name):
-        return next(p for p in self.data['players'] if p['name'] == name)
+    def player(self, name, data=None):
+        return next(p for p in (data or self.data)['players'] if p['name'] == name)
+
+    def dated_main(self):
+        # The cap table as the records stood on PINNED. render() is not given the day: its validate()
+        # compares the dated rows with the live roster record, which every later move changes.
+        from runtime import player_contracts
+        dated = player_contracts.tracker_inputs(self.data, ROOT, PINNED)
+        return reader_words(render_main(dated, player_contracts.horizon(dated)))
 
     def test_future_charges_follow_executed_contracts_not_waived_bray_deal(self):
         draft = md_rows((ROOT / 'career/2013/offseason/draft/draftees.md').read_text())
@@ -28,30 +53,34 @@ class CapTrackerTests(unittest.TestCase):
         expected_2015 = sum(exact_amount(row[6]) for row in surviving) + 4 * 585000
         expected_2016 = sum(exact_amount(row[7]) for row in surviving)
         names={row[1] for row in surviving} | {'A.J. Bouye','Adam Thielen','Brynden Trawick','C.J. Anderson'}
-        rookies=[p for p in self.data['players'] if p['name'] in names]
+        # The contracts as they stood on PINNED: a later release of one of these players ends his charges.
+        rookies=[p for p in self.dated['players'] if p['name'] in names]
         self.assertEqual(totals(rookies, ['2015', '2016']), [expected_2015, expected_2016])
         # Bray's reserve/future deal ended with the August 30, 2014 waiver; his
         # practice-squad contract (August 31) is weekly and ends with 2014.
-        self.assertEqual(working_charge(self.player('Tyler Bray')['years']['2014']), 107100)
-        self.assertEqual(self.player('Tyler Bray')['contract_ends'], 2014)
-        self.assertIsNone(working_charge(self.player('Tyler Bray')['years']['2015']))
-        self.assertIsNone(working_charge(self.player('Tyler Bray')['years']['2016']))
+        bray=self.player('Tyler Bray',self.dated)
+        self.assertEqual(working_charge(bray['years']['2014']), 107100)
+        self.assertEqual(bray['contract_ends'], 2014)
+        self.assertIsNone(working_charge(bray['years']['2015']))
+        self.assertIsNone(working_charge(bray['years']['2016']))
 
     def test_tender_and_options_are_not_double_counted_as_signed_contracts(self):
         # The four qualifying offers were withdrawn August 30, 2014; a withdrawn
         # tender is a former-player row with no charge, counted nowhere.
         self.assertEqual(totals(self.data['players'], ['2014'], status='tender'), [0])
-        bradfield = self.player('Cameron Bradfield')
+        # The rows as they stood on PINNED: a later signing, release or option decision never moves these.
+        bradfield = self.player('Cameron Bradfield', self.dated)
         self.assertTrue(bradfield.get('former_player'))
         self.assertTrue(all(r['status'] == 'not_committed' for r in bradfield['years'].values()))
-        self.assertEqual(self.player('Justin Blackmon')['years']['2016']['status'], 'option_unexercised')
-        self.assertEqual(self.player('Lane Johnson')['years']['2017']['status'], 'option_unexercised')
-        self.assertEqual(totals(self.data['players'], ['2017']), [47836771])  # replay contracts plus the 2014 rookie contracts, less Jemea Thomas (waived August 30, 2014)
+        self.assertEqual(self.player('Justin Blackmon', self.dated)['years']['2016']['status'], 'option_unexercised')
+        self.assertEqual(self.player('Lane Johnson', self.dated)['years']['2017']['status'], 'option_unexercised')
+        self.assertEqual(totals(self.dated['players'], ['2017']), [47836771])  # replay contracts plus the 2014 rookie contracts, less Jemea Thomas (waived August 30, 2014)
 
     def test_model_cannot_be_silently_reclassified_as_historical(self):
-        self.player('John Parker Wilson')['years']['2014']['cap'] = 0
+        # His row as it stood on PINNED (waived August 30, 2014), so a later re-signing never changes it.
+        self.player('John Parker Wilson', self.dated)['years']['2014']['cap'] = 0
         with self.assertRaisesRegex(ValueError, 'must not be numeric'):
-            validate(self.data)
+            validate(self.dated)
 
     def test_duplicate_player_cannot_double_count(self):
         self.data['players'].append(copy.deepcopy(self.data['players'][0]))
@@ -59,8 +88,9 @@ class CapTrackerTests(unittest.TestCase):
             validate(self.data)
 
     def test_former_player_history_is_retained_outside_current_roster(self):
-        # A synthetic former-player row tests preservation, not a branch move.
-        former = copy.deepcopy(self.player('Roy Miller'))
+        # A synthetic former-player row tests preservation, not a branch move. It copies Roy Miller's
+        # contract as it stood on PINNED, which a later move of his never changes.
+        former = copy.deepcopy(self.player('Roy Miller', self.dated))
         former.update(name='Synthetic former player', former_player=True,
                       departure_date=self.data['as_of'],
                       departure_source=self.data['current_contract_table'])
@@ -69,7 +99,8 @@ class CapTrackerTests(unittest.TestCase):
         validate(self.data)
         self.assertEqual(totals(self.data['players'], ['2014'])[0],
                          before + former['years']['2014']['cap'])
-        former['departure_date'] = '2014-09-10'
+        # A day after the records' latest entry is a future departure whatever that date is.
+        former['departure_date'] = (date.fromisoformat(self.data['as_of']) + timedelta(days=1)).isoformat()
         with self.assertRaisesRegex(ValueError, 'future departure'):
             validate(self.data)
 
@@ -96,9 +127,13 @@ class CapTrackerTests(unittest.TestCase):
         outputs = render(self.data)
         main = next(value for path, value in outputs.items() if path.name == 'cap_tracker.md')
         self.assertIn('Unused prior-year room carried in | $5,330,000 to $6,000,000', main)
-        self.assertIn('Difference including the rollover estimate | $15,876,308 to $16,546,308', main)  # the generator's standing Top-51 dashboard; the full count applies from September 3 (cap worksheet)
         self.assertIn('Adjusted team cap | Unresolved', main)
         estimate = self.data['team_years']['2014']['carryover_working_estimate']
+        # The live dashboard keeps the rollover apart: the before-rollover difference plus each end of the range.
+        before = amount(main, 'Difference below league cap, before club adjustments and reserves')
+        self.assertIn('Difference including the rollover estimate | %s to %s'
+                      % (dollars(before + estimate['low']), dollars(before + estimate['high'])), main)
+        self.assertIn('Difference including the rollover estimate | $15,876,308 to $16,546,308', self.dated_main())  # the generator's standing Top-51 dashboard on PINNED; the full count applies from September 3 (cap worksheet)
         estimate['low'], estimate['high'] = estimate['high'], estimate['low']
         with self.assertRaisesRegex(ValueError, 'Carryover working estimate'):
             validate(self.data)
@@ -112,15 +147,33 @@ class CapTrackerTests(unittest.TestCase):
         organization=next(value for path,value in outputs.items() if path.name=='coaching_payroll.md')
         self.assertIn('**Nine-year view**',main)
         self.assertIn('**Additional three years**',main)
-        self.assertIn('$122,453,692',main)  # the generator's Top-51 dashboard after the September 8 transactions
-        self.assertIn('$10,546,308',main)
+        dated=self.dated_main()
+        self.assertIn('| Working counted total | $122,453,692 |',dated)  # the generator's Top-51 dashboard after the September 8 transactions
+        self.assertIn('| Difference below league cap, before club adjustments and reserves | $10,546,308 |',dated)
+        # The live dashboard's counted total and its difference make up the league cap.
+        self.assertEqual(amount(main,'Working counted total')
+                         +amount(main,'Difference below league cap, before club adjustments and reserves'),
+                         self.data['league_caps']['2014'])
         self.assertIn('Certified cap space | Unresolved',main)
         self.assertNotRegex(main,r'^##+ \d+\.',)
         self.assertNotIn('Release comparisons',main)
-        self.assertIn('$7,700,000',organization)
-        self.assertIn('$3,650,000',organization)
-        # Every coach's salary comes from his permanent record; the head coach's is the reconstructed term.
+        # The assistants' payroll in the coach records as they stood on PINNED (a copy without the later
+        # entries, so a later hire, departure or amendment never moves it); the live page shows the
+        # assistants' payroll of the live records.
         from runtime import coaches
+        from runtime.player_bios import master_date
+        years=[str(y) for y in range(self.data['start_year'],self.data['end_year']+1)]
+        assistants=lambda root,on: [sum(s.get(y,0) for _,t,s in organization_staff(root,years,on) if t.get('job')!='Head coach')
+                                    for y in ('2014','2015')]
+        with tempfile.TemporaryDirectory() as tmp:
+            coaches.folder(tmp).mkdir(parents=True)
+            for slug,record in coaches.load_all(ROOT).items():
+                record['entries']=[e for e in record['entries'] if coaches.day(coaches.when(e))<=PINNED]
+                (coaches.folder(tmp)/('%s.json' % slug)).write_text(coaches.dump(record),encoding='utf-8')
+            self.assertEqual(assistants(tmp,PINNED),[7700000,3650000])
+        self.assertIn('| Assistant coaches | %s | %s |' % tuple(dollars(v) if v else '' for v in assistants(ROOT,master_date(ROOT))),
+                      organization)
+        # Every coach's salary comes from his permanent record; the head coach's is the reconstructed term.
         stone=coaches.current_contract(coaches.load('alex_stone',ROOT))
         self.assertIn('Alex Stone | Head coach | $%s' % format(stone['salary']['2014'],','),organization)
         self.assertNotIn('Unspecified',organization)
@@ -158,12 +211,22 @@ class CapTrackerTests(unittest.TestCase):
             self.assertNotIn(name, main.split('## Decision calendar')[1].split('## Expiring')[0])
 
     def test_original_contracts_survive_without_later_real_restructures(self):
-        self.assertEqual(self.player('Kirk Cousins')['years']['2014']['cap'], 570000)
-        self.assertEqual(self.player('Kirk Cousins')['years']['2015']['proration'], 0)
-        self.assertEqual(self.player('Marcedes Lewis')['years']['2015']['base'], 6650000)
-        pos=self.player('Paul Posluszny')['years']
-        self.assertEqual([pos[y]['proration'] for y in ['2014','2015','2016']], [2000000,2000000,0])
-        self.assertEqual(pos['2016']['cap'], 7500000)
+        # Each contract as it stood on PINNED, and as the records stand now while that contract continues
+        # (a later amendment keeps the contract and would show here; a trade or release ends it).
+        from runtime import player_contracts
+        records={r['name']:r for r in player_contracts.load_all(ROOT).values()}
+        def views(name):
+            then,now=(player_contracts.contract_on(records[name],on) for on in (PINNED,None))
+            return [self.player(name,self.dated)]+([self.player(name)] if now and now['contract']==then['contract'] else [])
+        for cousins in views('Kirk Cousins'):
+            self.assertEqual(cousins['years']['2014']['cap'], 570000)
+            self.assertEqual(cousins['years']['2015']['proration'], 0)
+        for lewis in views('Marcedes Lewis'):
+            self.assertEqual(lewis['years']['2015']['base'], 6650000)
+        for posluszny in views('Paul Posluszny'):
+            pos=posluszny['years']
+            self.assertEqual([pos[y]['proration'] for y in ['2014','2015','2016']], [2000000,2000000,0])
+            self.assertEqual(pos['2016']['cap'], 7500000)
 
     def test_traded_blackmon_leaves_only_accelerated_bonus_as_dead_money(self):
         # Traded to Indianapolis March 31, 2014 (Entry 104): the deferred cash left with
@@ -178,36 +241,48 @@ class CapTrackerTests(unittest.TestCase):
         self.assertNotIn('Justin Blackmon', [d['player'] for d in self.data['dead_money']])
 
     def test_every_signed_2014_deal_is_priced_and_estimates_stay_separate(self):
+        from runtime import roster as roster_record
+        from scripts.render_jaguars_cap_tracker import source_path
         current=[p for p in self.data['players'] if p['control'] in {'signed','future'}]
-        self.assertEqual(len(current),64)  # the active 53 and the four on reserve/injured after the September 8, 2014 transactions, plus the seven practice-squad contracts remaining from August 31
+        # Exactly the players the roster record lists (the active roster, the reserve lists and the practice
+        # squad), less any unsigned tender, hold a signed contract: the two records change in one commit.
+        listed={r['name'] for r in roster_record.load(source_path(self.data['current_roster'],ROOT))['players']}
+        tendered={p['name'] for p in self.data['players'] if p['control']=='tender' and not p.get('former_player')}
+        self.assertEqual({p['name'] for p in current},listed-tendered)
         self.assertTrue(all(p['years']['2014']['status'] in {'known','approximate'} for p in current))
-        before=totals(current,['2014'])
-        row=self.player('Montell Owens')['years']['2014']
+        # On PINNED, with Montell Owens's estimate as it stood then (validate fails before its roster check).
+        dated=[p for p in self.dated['players'] if p['control'] in {'signed','future'}]
+        self.assertEqual(len(dated),64)  # the active 53 and the four on reserve/injured after the September 8, 2014 transactions, plus the seven practice-squad contracts remaining from August 31
+        self.assertTrue(all(p['years']['2014']['status'] in {'known','approximate'} for p in dated))
+        before=totals(dated,['2014'])
+        row=self.player('Montell Owens',self.dated)['years']['2014']
         row['approximate_cap']+=1000
-        self.assertEqual(totals(current,['2014']),before)
+        self.assertEqual(totals(dated,['2014']),before)
         with self.assertRaisesRegex(ValueError,'Estimated cap components disagree'):
-            validate(self.data)
+            validate(self.dated)
 
     def test_credited_service_uses_branch_practice_squad_history(self):
         # Jackson's reserve/future minimum continues on reserve/injured; the
         # other five futures ended with the August 30, 2014 waivers (Murphy and
-        # Long returned on weekly practice-squad contracts, a 17-week estimate).
+        # Long returned on weekly practice-squad contracts, a 17-week estimate). The contracts as they
+        # stood on PINNED: a later promotion, release or signing never changes these.
         expected={'Jerrell Jackson':420000}
         for name,salary in expected.items():
-            self.assertEqual(self.player(name)['years']['2014']['cap'],salary)
+            self.assertEqual(self.player(name,self.dated)['years']['2014']['cap'],salary)
         for name in ('Richard Murphy','Jerome Long'):
-            self.assertEqual(working_charge(self.player(name)['years']['2014']),107100)
+            self.assertEqual(working_charge(self.player(name,self.dated)['years']['2014']),107100)
         for name in ("D'Anthony Smith",'Antwon Blake','John Parker Wilson'):
-            self.assertTrue(self.player(name).get('former_player'))
-            self.assertIsNone(working_charge(self.player(name)['years']['2014']))
-        self.assertEqual(working_charge(self.player('Jonathan Grimes')['years']['2014']),570000)
+            self.assertTrue(self.player(name,self.dated).get('former_player'))
+            self.assertIsNone(working_charge(self.player(name,self.dated)['years']['2014']))
+        self.assertEqual(working_charge(self.player('Jonathan Grimes',self.dated)['years']['2014']),570000)
         self.assertTrue(all(r['status']!='term_unknown' for p in self.data['players'] for r in p['years'].values()))
 
     def test_the_views_are_built_from_the_contract_records_not_a_copy(self):
         # The contract records own the player rows (rebuild step 5); an edit to a copy of the rows
-        # changes no cap view.
+        # changes no cap view. The edited row is any estimated charge but the first row's, compared
+        # below (Jeremy Mincey's while he is under contract).
         before=render(copy.deepcopy(self.data))
-        row=self.player('Jeremy Mincey')['years']['2014']
+        row=next(p['years']['2014'] for p in self.data['players'][1:] if p['years']['2014']['status']=='approximate')
         row['base']+=1000
         row['approximate_cap']+=1000
         self.assertEqual(render(self.data), before)
@@ -216,40 +291,52 @@ class CapTrackerTests(unittest.TestCase):
         self.assertNotEqual(self.data['players'], player_contracts.rows(ROOT))
 
     def test_covered_years_cannot_revert_to_placeholders(self):
-        self.player('Kirk Cousins')['years']['2015'] = {
+        # His contract as it stood on PINNED (validate fails before its roster check).
+        self.player('Kirk Cousins',self.dated)['years']['2015'] = {
             'status':'unknown_amount','cap':None,'base':None,'proration':None,'cash':None,
         }
         with self.assertRaisesRegex(ValueError,'Missing covered-year charge'):
-            validate(self.data)
+            validate(self.dated)
 
     def test_charges_cannot_extend_a_deal_without_changing_its_term(self):
-        p=self.player('Jonathan Grimes')
+        # His contract as it stood on PINNED (validate fails before its roster check).
+        p=self.player('Jonathan Grimes',self.dated)
         p['years']['2015']=copy.deepcopy(p['years']['2014'])
         with self.assertRaisesRegex(ValueError,'Charge exceeds recorded term'):
-            validate(self.data)
+            validate(self.dated)
 
     def test_blank_future_cells_currency_and_totals(self):
+        from runtime import player_contracts
         outputs=render(self.data)
         main=outputs[next(path for path in outputs if path.name=='cap_tracker.md')]
         self.assertNotIn('Unknown',main)
         self.assertNotIn('Term unknown',main)
         self.assertNotIn('Not committed',main)
-        self.assertIn('$570,000 | $660,000 |  |  |',main)
-        self.assertEqual(cap_cell(self.player('Lane Johnson')['years']['2017']), '')
-        self.assertEqual(cap_cell(self.player('Brent Grimes')['years']['2014']), '')
-        self.assertEqual(working_charge(self.player('Alan Ball')['years']['2014']), 804706)  # signed September 8, 2014: the $855,000 rate for sixteen of seventeen pay weeks
-        self.assertEqual([working_total(self.data['players'],str(y)) for y in [2014,2015,2016,2017]],
+        # The live table shows each deal's covered years in currency and its other years blank, and
+        # counts each player contract and each dead-money charge once.
+        cousins=self.player('Kirk Cousins')['years']
+        self.assertIn(' | '.join(cap_cell(cousins[str(y)]) for y in range(2014,2018))+' |',main)
+        dead=sum(x['amount'] for x in player_contracts.dead_money(ROOT) if str(x['year'])=='2014')
+        self.assertIn('| Recorded cap obligations | %s |' % dollars(working_total(self.data['players'],'2014')+dead),main)
+        # The table and charges as the records stood on PINNED, after the September 8, 2014 transactions.
+        dated=self.dated_main()
+        self.assertIn('$570,000 | $660,000 |  |  |',dated)
+        self.assertEqual(cap_cell(self.player('Lane Johnson',self.dated)['years']['2017']), '')
+        self.assertEqual(cap_cell(self.player('Brent Grimes',self.dated)['years']['2014']), '')
+        self.assertEqual(working_charge(self.player('Alan Ball',self.dated)['years']['2014']), 804706)  # signed September 8, 2014: the $855,000 rate for sixteen of seventeen pay weeks
+        self.assertEqual([working_total(self.dated['players'],str(y)) for y in [2014,2015,2016,2017]],
                          [114607730,115430972,79764658,47836771])  # after the September 8, 2014 transactions (Ball signed, Phillips promoted on a three-year contract)
-        self.assertIn('$125,194,686',main)  # Old Bray bonus and the August 30 dead money are included once.
+        self.assertIn('$125,194,686',dated)  # Old Bray bonus and the August 30 dead money are included once.
 
     def test_slot_guarantees_and_release_exposure_reconcile(self):
-        lane=self.player('Lane Johnson');kelce=self.player('Travis Kelce')
+        # The rookie-slot contracts as they stood on PINNED (validate fails before its roster check).
+        lane=self.player('Lane Johnson',self.dated);kelce=self.player('Travis Kelce',self.dated)
         self.assertEqual(lane['remaining_guarantees'],6997254)
         self.assertEqual(kelce['remaining_guarantees'],1153596)
         self.assertEqual(release_exposure(kelce,'2014'),2921742)
         kelce['remaining_guarantees']+=1
         with self.assertRaisesRegex(ValueError,'Remaining guarantees disagree'):
-            validate(self.data)
+            validate(self.dated)
 
 
 if __name__ == '__main__':

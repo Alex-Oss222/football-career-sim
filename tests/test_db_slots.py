@@ -7,9 +7,11 @@ participation.db_seats seats each club's defensive backs by family: DB1 and
 DB2 the outside corners, DB3 and DB4 the safeties, DB5 the nickel, then the
 reserves; the designated nickel is settled first, the outside reserve
 replaces an outside starter, and without roles the move-up convention holds.
-Synthetic seeds, the frozen Week 3 game depth chart (commit 7cf75a5) and the
-committed data only; no career state is written and no service is called.
+Synthetic seeds, the frozen Week 3 and Week 5 game depth charts (commits
+7cf75a5 and 3a34951) and the committed data only; no career state is written
+and no service is called.
 """
+import contextlib
 import copy
 import json
 import sys
@@ -35,6 +37,10 @@ from test_injuries_in_game import force
 
 ROOT = Path(__file__).resolve().parents[1]
 CHART = Path(__file__).parent / "data/week_03_jacksonville_game_depth_chart.json"
+# The Week 5 game depth chart as the Week 5 preparation froze it (commit
+# 3a34951; unchanged until the Week 6 Game Plan): the 53, their order, Stone's
+# two slot roles and his Week 5 inactives.
+WEEK5_CHART = Path(__file__).parent / "data/week_05_jacksonville_game_depth_chart.json"
 JAX = "Jacksonville Jaguars"
 SEATS_OFF = Profile("2014.6", base="2010_2014w4", cell_rules="2014.6", strength=PROFILE_2014_6.strength,
                     flags=PROFILE_2014_6.flags - {"db_slots", "pause_eligibility"}, record_base=True)
@@ -504,9 +510,12 @@ class Week5BuildTests(unittest.TestCase):
     event is closed): Jacksonville fails closed until its roles are in the
     chart; with Stone's recorded roles (Bouye nickel, Ball outside reserve)
     every club is legal and dresses 46, the background DBs take their labels
-    and Weeks 1 to 4 are unchanged. The fail-closed case strips the two roles
-    from a copy of the committed chart (they were transcribed at the Week 5
-    preparation), so it does not depend on the clock.
+    and Weeks 1 to 4 are unchanged. Jacksonville's input is the Week 5 record,
+    not the current roster and chart (a later week's, which may hold players
+    who were on another club's Week 5 list): the frozen Week 5 chart over the
+    53 it places, every one under club control on the game date, and the
+    exclusivity gate reads that date's control. The fail-closed case strips
+    the two roles from a copy of that chart, so nothing depends on the clock.
 
     Since the kernel 2014.6 release (B18) the build is the installed
     kernel's: the player-state model, under a stand-in for the 2014 binding
@@ -527,14 +536,15 @@ class Week5BuildTests(unittest.TestCase):
         from runtime import player_state
         cls.binding = {"schema": player_state.BINDING_SCHEMA, "league_year": 2014,
                        "manifest_sha256": player_state.manifest_sha256(), "commitment": "0" * 64}
-        # The current chart without its defensive-back roles, and with Week 5's (Bouye the
-        # nickel, Ball the outside reserve corner), whatever a later Game Plan has set since.
-        bare = json.loads(paths.depth_chart.read_text(encoding="utf-8"))
+        # The Week 5 chart with Stone's recorded roles (Bouye the nickel, Ball the outside
+        # reserve corner), and the same chart without its defensive-back roles.
+        chart = json.loads(WEEK5_CHART.read_text(encoding="utf-8"))
+        bare = copy.deepcopy(chart)
         bare["roles"] = {p: kept for p, kept in ((p, [r for r in roles if r not in ("nickel", "outside_reserve")])
                                                  for p, roles in bare["roles"].items()) if kept}
-        chart = copy.deepcopy(bare)
-        for player, role in (("A.J. Bouye", "nickel"), ("Alan Ball", "outside_reserve")):
-            chart["roles"].setdefault(player, []).append(role)
+        cls.week5 = chart
+        cls.game_day = date.fromisoformat(next(g["date"] for g in week_inputs.schedule(5, 2014)
+                                               if JAX in (g["away"], g["home"])))
         cls.tmp = tempfile.TemporaryDirectory()
         cls.chart = Path(cls.tmp.name) / "chart.json"
         cls.chart.write_text(json.dumps(chart), encoding="utf-8")
@@ -555,12 +565,19 @@ class Week5BuildTests(unittest.TestCase):
                     return test.bare if chart == "bare" else test.chart
                 return super().depth_chart
 
+        def week_5(season=2014, roster_path=None):
+            # The 53 the Week 5 chart places, as the roster stood before
+            # kickoff: its one restriction then (Poyer's hold from the Week 3
+            # game, projected back October 9) is a closed receipt's injury,
+            # which the build applies from the receipts itself.
+            return [(player, week_inputs.AVAILABLE_TEXT) for players in test.week5["depth"].values()
+                    for player in players]
+
         from runtime import player_state
-        from support_as_of import roster_before_week
-        # The roster as it stood before the week's game (a closed week's own
-        # injuries are on the current roster; tests/support_as_of.py).
+        # With a chart, Jacksonville's roster is the Week 5 record too.
+        roster = mock.patch.object(week_inputs, "controlled_active", week_5) if chart else contextlib.nullcontext()
         with mock.patch.object(week_inputs, "SeasonPaths", Paths), \
-                mock.patch.object(player_state, "binding", return_value=self.binding), roster_before_week(week):
+                mock.patch.object(player_state, "binding", return_value=self.binding), roster:
             return week_inputs.build_package(week, receipts, *self.args, decisions=self.decisions, db_slots=db_slots,
                                              **kernel)
 
@@ -568,14 +585,28 @@ class Week5BuildTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "W2b defensive-back roles"):
             self.build(5, self.receipts, True, chart="bare")
         package = self.build(5, self.receipts, True, chart=True)
-        from scripts.check_week_input_exclusivity import check_inputs, controlled_players_from_roster
-        self.assertEqual(check_inputs(package, controlled_players_from_roster(SeasonPaths(2014).roster), JAX,
-                                      expected_games=len(package["games"])), [])
+        from runtime import rails
+        from runtime.decisions import week_pages
+        from scripts.check_week_input_exclusivity import check_inputs
+        # Every player under Jacksonville control on the game date (the 53,
+        # reserve and practice squad, from the roster's dated history): none
+        # is on another club's Week 5 input and no player is on two.
+        control = rails.jacksonville_control(2014)
+        controlled = {control.names[uid] for uid in control.controlled_ids(self.game_day)}
+        self.assertEqual(check_inputs(package, controlled, JAX, expected_games=len(package["games"])), [])
         teams = {}
         for game in package["games"]:
             for side in ("away_input", "home_input"):
                 teams[game[side]["team_id"]] = game[side]
         self.assertTrue(all(len(t["active_players"]) == 46 for t in teams.values()))
+        # Jacksonville's 53 were under club control that day, and its 46 are
+        # the 53 less Stone's frozen Week 5 inactives record.
+        week5 = {player for players in self.week5["depth"].values() for player in players}
+        inactives = json.loads(week_pages(2014, 5).inactives.read_text(encoding="utf-8"))["players"]
+        self.assertEqual(self.week5["game_day_inactives"]["players"], inactives)
+        self.assertEqual({p["player_id"] for p in teams[JAX]["roster"]}, week5)
+        self.assertLessEqual(week5, controlled)
+        self.assertEqual(set(teams[JAX]["active_players"]), week5 - set(inactives))
         report = package["rails"]["game_day"]
         self.assertTrue(all(r["legal"] and r["dressed"] == 46 for g in report.values() for r in g.values()))
         self.assertEqual(package["rails"]["emergency"], [])
@@ -592,7 +623,6 @@ class Week5BuildTests(unittest.TestCase):
         self.assertTrue(package["rails"]["db_slots"]["applied"])
         # Review fix (October 16, 2026): the package records the family table
         # its labels came from, and the weekly close refuses another one.
-        from runtime import rails
         from scripts.close_week import rails_package_errors
         table = SeasonPaths(2014).db_families
         self.assertEqual(package["rails"]["db_slots"]["families_sha256"], rails.sha256_file(table))
@@ -602,7 +632,7 @@ class Week5BuildTests(unittest.TestCase):
         stale["rails"]["db_slots"]["families_sha256"] = "0" * 64
         self.assertTrue(any(family_error in e for e in rails_package_errors(stale, 5, 2014)))
         # Without db_slots (as under kernel 2014.5) nothing is relabelled.
-        plain = self.build(5, self.receipts, False)
+        plain = self.build(5, self.receipts, False, chart=True)
         den = {p["player_id"]: p for g in plain["games"] for s in ("away_input", "home_input")
                if g[s]["team_id"] == "Denver Broncos" for p in g[s]["roster"]}
         self.assertEqual(den["Omar Bolden"]["position"], "FS")

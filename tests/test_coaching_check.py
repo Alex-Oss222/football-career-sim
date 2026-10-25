@@ -246,7 +246,16 @@ class BranchAsItStandsTests(unittest.TestCase):
     def test_validation_and_coverage_pass(self):
         self.assertEqual(lc.validation_errors(ROOT), [])
         self.assertEqual(lc.coverage_errors(ROOT, SEASON), [])
-        self.assertIsNone(lc.career_hold(SEASON, ROOT))
+        # A check that draws a change at the job holder's club records it and holds the career (exit 3),
+        # as designed; the branch then goes no further: no later period open, the clock not moved on.
+        held = lc.held_changes(SEASON, ROOT)
+        if not held:
+            self.assertIsNone(lc.career_hold(SEASON, ROOT))
+        else:
+            week, row = held[0]
+            self.assertIn("The Week %d head-coach check drew a change at %s," % (week, row["club"]),
+                          lc.career_hold(SEASON, ROOT))
+            self.assertEqual(lc.hold_errors(ROOT, SEASON), [])
         self.assertEqual(render_coaching_changes.check(ROOT, SEASON), [])
 
     def test_every_club_has_its_january_record(self):
@@ -363,8 +372,9 @@ class CheckTests(unittest.TestCase):
     def test_changes_take_effect_after_the_latest_closed_game_and_reach_the_pages_with_the_clock(self):
         # One cell certain and every other cell 0, so which clubs change does not depend on the
         # event's random stream (seeded by the packet, which carries the method's digest).
+        certain = "1 to 2|first season"
         cells = lc.load_table(lc.load_method(SEASON, self.root), self.root)["rates"]
-        set_rates(self.root, {key: 1.0 if key == "1 to 2|first season" else 0.0 for key in cells})
+        set_rates(self.root, {key: 1.0 if key == certain else 0.0 for key in cells})
         games = lc.closed_games(SEASON, self.root)
         first_week = min(lc.due_weeks(SEASON, self.root))
         expected = sorted(c for c, t in lc.tenures(lc.load_method(SEASON, self.root), self.root).items()
@@ -372,12 +382,19 @@ class CheckTests(unittest.TestCase):
                           and 1 <= lc.record_after(games[c], first_week)[2] - lc.record_after(games[c], first_week)[1] <= 2)
         self.assertTrue(expected)
         due = lc.due_weeks(SEASON, self.root)
+        # The clock the day before the latest of the changes the table draws (each club in the first due
+        # week its record falls in the certain cell) takes effect, so at least one waits for the clock.
+        method = lc.load_method(SEASON, self.root)
+        drawn = {r["club"] for w in due for r in lc.week_inputs(SEASON, w, self.root, method, {}, games)["clubs"]
+                 if lc.cell(r) == certain}
+        latest = max(lc.closed_weeks(SEASON, self.root))
+        set_master(self.root, max(date.fromisoformat(lc.effective_on(games[c], latest)) for c in drawn)
+                   - timedelta(days=1), "after the week's game (test)")
         before_pages = tree_digest(SeasonPaths(SEASON, self.root).receipts)
         self.assertEqual(self.run_close(max(due))[0], 0)
         records = lc.checks(SEASON, self.root)
         changed = sorted(r["club"] for r in records[first_week]["clubs"] if r["changed"])
         self.assertEqual(changed, expected)
-        latest = max(lc.closed_weeks(SEASON, self.root))
         for row in (r for r in records[first_week]["clubs"] if r["changed"]):
             last_game = max(date.fromisoformat(g.date) for g in games[row["club"]] if g.week <= latest)
             self.assertEqual(row["effective"], (last_game + timedelta(days=1)).isoformat())
@@ -402,6 +419,7 @@ class CheckTests(unittest.TestCase):
         self.assertEqual(coaching_check.main(["--season", str(SEASON), "--effective"], root=self.root, out=out.append), 0)
         self.assertEqual(lc.validation_errors(self.root), [])
         everyone = sorted(r["club"] for rec in records.values() for r in rec["clubs"] if r["changed"])
+        self.assertEqual(everyone, sorted(drawn))
         self.assertEqual(len(list(lc.folder(SEASON, self.root).glob("Head_Coach_Change_*.md"))), len(everyone))
         news = lc.stored_news(SEASON, self.root)
         self.assertEqual(sorted(e["subject"] for e in news.values()), everyone)
@@ -482,13 +500,16 @@ class CheckTests(unittest.TestCase):
 
     def test_the_label_swap(self):
         method = lc.load_method(SEASON, self.root)
-        week = max(lc.closed_weeks(SEASON, self.root))
+        club = lc.holder_club(self.root)
+        # The latest closed week the job holder's club is drawn in (it has no line on its bye, and none
+        # in Week 17, every club's last game), so both clubs swapped below are drawn in it.
+        week = max(w for w in lc.at_risk_weeks(SEASON, self.root)
+                   if any(r["club"] == club for r in lc.week_inputs(SEASON, w, self.root, method)["clubs"]))
         inputs = lc.week_inputs(SEASON, week, self.root, method)
         pkt = lc.packet(method, inputs, "snapshot", self.root, "code")
         # Relabelling the protagonist: the job record names another club as his employer.
         job_path = self.root / "state/current_job.json"
         job = json.loads(job_path.read_text(encoding="utf-8"))
-        club = lc.holder_club(self.root)
         other = next(r["club"] for r in inputs["clubs"] if r["club"] != club)
         for appt in job["appointments"]:
             if appt["id"] == job["current_appointment"]:
@@ -535,7 +556,9 @@ class CheckTests(unittest.TestCase):
         self.assertEqual((stream.random(), stream.random()), (0.6652916429885176, 0.6756820366345362))
         method = lc.load_method(SEASON, self.root)
         table = lc.load_table(method, self.root)
-        inputs = lc.week_inputs(SEASON, max(lc.closed_weeks(SEASON, self.root)), self.root, method)
+        # The latest week a check is due for (Week 17 draws no club), so the draws have clubs to differ in.
+        inputs = lc.week_inputs(SEASON, max(lc.at_risk_weeks(SEASON, self.root)), self.root, method)
+        self.assertTrue(inputs["clubs"])
         pkt = lc.packet(method, inputs, "snapshot", self.root, "code")
         first = lc.draw(inputs, table, coaching_check.stream("cd" * 32, pkt).random)
         self.assertEqual(lc.draw(inputs, table, coaching_check.stream("cd" * 32, pkt).random), first)
@@ -553,6 +576,12 @@ class CheckTests(unittest.TestCase):
         self.assertLess(len(listed), 32)
 
     def test_a_tampered_record_or_a_changed_method_fails(self):
+        # The real rates, drawn afresh over the closed weeks; with no job holder, a change they draw at
+        # Jacksonville holds nothing, so the close always records the checks.
+        job_path = self.root / "state/current_job.json"
+        job = json.loads(job_path.read_text(encoding="utf-8"))
+        job["status"] = "BETWEEN_JOBS"
+        job_path.write_text(json.dumps(job, indent=1), encoding="utf-8")
         due = lc.due_weeks(SEASON, self.root)
         self.assertEqual(self.run_close(max(due))[0], 0)
         path = lc.week_path(SEASON, due[0], self.root)
@@ -617,7 +646,6 @@ class FirstPracticeTests(unittest.TestCase):
         from scripts import record_practice_week as rpw, render_game_week
         sys.path.insert(0, str(ROOT / "tests"))
         import support_events as se
-        from test_practices import answer_text
         tmp = tempfile.TemporaryDirectory(dir=ROOT.parent)
         self.addCleanup(tmp.cleanup)
         root = Path(tmp.name) / "repo"
@@ -636,14 +664,25 @@ class FirstPracticeTests(unittest.TestCase):
             render_game_week.write(root)
         if rpw.practice_item(root, SEASON, week) is None:
             self.skipTest("the open week's practice is not asked")
-        span = practices.week_span(SEASON, week, root)[0]
+        span, last = practices.week_span(SEASON, week, root)
         self.assertEqual(lc.first_practice_day(SEASON, week, root), span)
+        # His answer from the week's own span (a Thursday game's week is three days, the week after it
+        # nine): nothing on its first day, the players' day off on its second, then practices and a
+        # walkthrough on its last day; a weekday that falls twice in the span takes its date.
+        days = [span + timedelta(days=n) for n in range((last - span).days + 1)]
+        twice = {d.strftime("%A") for d in days if [e.strftime("%A") for e in days].count(d.strftime("%A")) > 1}
+        lines = []
+        for n, day in enumerate(days[1:], 1):
+            name = "%s, %s %d" % (day.strftime("%A"), day.strftime("%B"), day.day) if day.strftime("%A") in twice \
+                else day.strftime("%A")
+            work = "day off" if n == 1 else "walkthrough in helmets" if day == last and n > 2 else "practice in helmets"
+            lines.append("%s: %s" % (name, work))
         pages = week_pages(SEASON, week, root)
         block = rpw.read_block(root, SEASON, {"week": week}, PRACTICE_WEEK)
         pages.responses.write_text(pages.responses.read_text(encoding="utf-8").replace(block.text, block.text.replace(
-            "**My answer:**\n", "**My answer:** %s\n" % answer_text(week).replace("\n", "; "), 1), 1), encoding="utf-8")
-        tuesday = se.tuesday_before(game)
-        se.midweek(root, tuesday, 9, 0, week)
+            "**My answer:**\n", "**My answer:** %s\n" % "; ".join(lines), 1), 1), encoding="utf-8")
+        # Answered on the morning the week opens, before any of its days has passed.
+        se.midweek(root, span, 9, 0, week)
         status, problems, _, _ = rpw.answer(root, SEASON, week)
         self.assertEqual((status, problems), ("SET", []))
         schedule, _ = rpw.applied_schedule(root, SEASON, week)

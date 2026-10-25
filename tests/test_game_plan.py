@@ -41,7 +41,9 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
+from runtime import call_situations as cs  # noqa: E402
 from runtime import game_plan  # noqa: E402
+from runtime import game_weeks  # noqa: E402
 from runtime import roster as roster_record  # noqa: E402
 from runtime.clean_pages import page_errors  # noqa: E402
 from runtime.decisions import week_pages  # noqa: E402
@@ -75,9 +77,10 @@ def week5():
 
 
 def earlier(week, root=ROOT):
-    paths = SeasonPaths(SEASON, root)
-    return {w: json.loads(paths.call_sheet(w).read_text(encoding="utf-8")) for w in range(1, week)
-            if paths.call_sheet(w).is_file()}
+    """{week: frozen call sheet} of every earlier Jacksonville week, as the check reads them (a playoff
+    round's sheet in its postseason folder: scripts/check_game_plan.Plan.earlier)."""
+    sheets = {w: week_pages(SEASON, w, root).call_sheet for w in range(1, week)}
+    return {w: json.loads(path.read_text(encoding="utf-8")) for w, path in sheets.items() if path.is_file()}
 
 
 def standing_week5():
@@ -528,13 +531,19 @@ def open_week(root):
 
 
 def out_for_game(root, week):
-    """The active-roster players out on the week's game day, as the roster record's notes read."""
-    from runtime.week_inputs import roster_available
+    """The active-roster players out on the week's game day, as the game reads it: the roster record's
+    notes, or a closed game's injury still inside its projected return (scripts/check_game_plan.Plan.
+    outs). The week's game is a season fixture or, after the last regular-season week, the bracket's."""
+    from runtime.week_inputs import injured_out, roster_available
+    from scripts.render_season_stats import load_receipts
     from datetime import date
     paths = SeasonPaths(SEASON, root)
     active = roster_record.players(roster_record.load(paths.roster), ("active",))
-    game = next(g for g in paths.regular_games() if g["week"] == week and "Jacksonville Jaguars" in (g["away"], g["home"]))
-    return [p["name"] for p in active if not roster_available(p["availability"], date.fromisoformat(game["date"]), SEASON)]
+    day = date.fromisoformat(game_weeks.club_game(paths, week, "Jacksonville Jaguars")["date"])
+    receipts = [r for folder in (paths.receipts, paths.postseason_receipts) if folder.is_dir()
+                for r in load_receipts(folder) if int(r["week"]) < week]
+    injured = injured_out(receipts, day, SEASON)
+    return [p["name"] for p in active if not roster_available(p["availability"], day, SEASON) or p["name"] in injured]
 
 
 def needed_inactives(root, week):
@@ -566,21 +575,61 @@ def role_cover(root, inactive):
     can leave one out, as Week 6 left the nickel): each such role goes to the next player of its group
     below the holder, in chart order, who dresses, holds no role and fits the role (a corner for the
     outside reserve), or, when none below him does (Butler, the outside reserve, second to last in
-    Week 7's order), the nearest such player above him."""
+    Week 7's order), the nearest such player above him. A role of no group (a returner) stays in the
+    holder's own group; a player given one role is not given another (the nickel and the outside
+    reserve both sitting go to two corners)."""
     from scripts.check_game_plan import ROLE_GROUP
     chart = json.loads(SeasonPaths(SEASON, root).depth_chart.read_text(encoding="utf-8"))
     roles, positions = chart.get("roles") or {}, chart.get("positions") or {}
-    lines = []
+    lines, taken = [], set(roles)
     for label, role in game_plan.ROLES.items():
         holder = next((p for p, held in roles.items() if role in (held or ())), None)
-        if holder is None or holder not in inactive or role not in ROLE_GROUP:
+        group = ROLE_GROUP.get(role) or next((g for g, order in chart["depth"].items() if holder in order), None)
+        if holder is None or holder not in inactive or group is None:
             continue
-        order = chart["depth"][ROLE_GROUP[role]]
+        order = chart["depth"][group]
         at = order.index(holder) if holder in order else len(order)
-        fits = [p for p in order[at + 1:] + order[:at][::-1] if p not in inactive and p not in roles
+        fits = [p for p in order[at + 1:] + order[:at][::-1] if p not in inactive and p not in taken
                 and positions.get(p) in ROLE_FAMILY.get(role, {positions.get(p)})]
+        taken.add(fits[0])
         lines.append("%s: %s" % (label, fits[0]))
     return lines
+
+
+def variation_cover(root, week, inactive):
+    """({call: [variations taken off]}, Primary calls rows, calls not available) for each call of Week
+    `week`'s frozen sheet with a variation naming a player who does not dress, by the check's own rule
+    (scripts/check_game_plan.offense_problems: a word of the variation that is the surname of exactly
+    one roster-record player, on the inactives or off the active roster), or a player no longer on the
+    roster record (his name is then no word of the active book): the call carried "(without
+    <variation>)" with its carried situations, as Week 7's page took Nicks X relief off, or, when the
+    opening sequence is its only situation, among the calls not available."""
+    from runtime import offensive_words
+    roster = roster_record.load(SeasonPaths(SEASON, root).roster)
+    names = [p["name"] for p in roster_record.players(roster)]
+    dressed = {p["name"] for p in roster_record.players(roster, ("active",))} - set(inactive)
+    surnames = {}
+    for name in names:
+        surnames.setdefault(name.split()[-1].lower(), []).append(name)
+
+    def sits(tag):
+        named = [surnames[w.lower()][0] for w in re.findall(r"[A-Za-z'.-]+", tag)
+                 if len(surnames.get(w.lower()) or ()) == 1]
+        return any(n not in dressed for n in named) or bool(offensive_words.call_errors({"tags": [tag]}, names))
+    off, rows, gone = {}, [], []
+    sheet = json.loads(week_pages(SEASON, week, root).call_sheet.read_text(encoding="utf-8"))
+    for call in sheet["offensive_call_sheet"]:
+        tags = [t for t in game_plan.base_tags(call.get("tags")) if sits(t)]
+        if not tags:
+            continue
+        off[call["name"]] = tags
+        menus = [m for m in call["menus"] if m != game_plan.SITUATION_TEXT[cs.OPENING]]
+        if not menus:
+            gone.append(call["name"])
+            continue
+        rows.append(["%s (%s)" % (call["name"], "; ".join("without " + t for t in tags)), ", ".join(menus),
+                     "As carried; the variation comes off while its player does not dress.", "As carried."])
+    return off, rows, gone
 
 
 def quiet(call, *args, **kwargs):
@@ -644,17 +693,21 @@ class OpenWeek(unittest.TestCase):
         week_pages(SEASON, wk.game["week"], self.root).plan.unlink(missing_ok=True)
         quiet(render_game_week.write, self.root)
         self.week = wk.game["week"]
+        # The open game and its name: a season fixture ("Week 8") or a bracket game ("Wild Card").
+        self.game, self.label, self.postseason = wk.game, game_weeks.label(wk.game), wk.postseason
         self.pages = week_pages(SEASON, self.week, self.root)
-        self.previous = max(w for w in range(1, self.week) if SeasonPaths(SEASON, self.root).call_sheet(w).is_file())
+        self.previous = max(earlier(self.week, self.root))
 
     def check(self):
         from scripts.check_game_plan import check
         return check(self.root, SEASON, self.week)
 
-    def answers(self, **over):
+    def answers(self, keep_variations=False, **over):
         """A complete page for the open week: the previous week carried, the standing rules, the
-        inactives named from the stored facts, and any game role whose holder does not dress given to
-        a player who does (unless the test's own depth line names that role)."""
+        inactives named from the stored facts, any game role whose holder does not dress given to
+        a player who does (unless the test's own depth line names that role), and each carried
+        variation naming a player who does not dress taken off (unless the test keeps them, or its own
+        Primary calls row names that call)."""
         inactive = needed_inactives(self.root, self.week)
         answers = {
             "baseline": "Carry Week %d" % self.previous, "attack": "Their linebackers in space against our tight ends.",
@@ -677,12 +730,23 @@ class OpenWeek(unittest.TestCase):
         cover = [line for line in role_cover(self.root, inactive) if line.split(":")[0] + ":" not in answers["depth"]]
         if cover:
             answers["depth"] = "; ".join(([] if answers["depth"] == "No change" else [answers["depth"]]) + cover)
+        if not keep_variations:
+            _, rows, gone = variation_cover(self.root, self.previous, inactive)
+            base = lambda cell: game_plan.norm(re.sub(r"\s*\(.*\)\s*$", "", cell))
+            own = {base(r[0]) for r in answers.get("calls") or ()}
+            rows = [r for r in rows if base(r[0]) not in own]
+            if rows:
+                answers["calls"] = list(answers.get("calls") or []) + rows
+            if gone:
+                answers["not_available"] = "; ".join(
+                    ([] if answers["not_available"] == "None" else [answers["not_available"]])
+                    + ["%s (its variation's player does not dress)" % name for name in gone])
         return answers
 
     def write(self, answers):
         from scripts import render_game_week
         wk = render_game_week.Week(self.root)
-        text = game_plan.render("Week %d Game Plan" % self.week, render_game_week.plan_facts(wk), answers)
+        text = game_plan.render("%s Game Plan" % self.label, render_game_week.plan_facts(wk), answers)
         self.pages.plan.write_text(text, encoding="utf-8")
         self.answered = answers
         return text
@@ -736,9 +800,7 @@ class OpenWeek(unittest.TestCase):
 
     def game_day(self):
         from datetime import date
-        game = next(g for g in SeasonPaths(SEASON, self.root).regular_games()
-                    if g["week"] == self.week and "Jacksonville Jaguars" in (g["away"], g["home"]))
-        return date.fromisoformat(game["date"])
+        return date.fromisoformat(self.game["date"])
 
     def out_note(self):
         from datetime import timedelta
@@ -788,11 +850,29 @@ class CheckTests(OpenWeek):
         self.assertEqual(problems, [])
         self.exams_held()
         self.apply()
-        paths = SeasonPaths(SEASON, self.root)
-        sheet = json.loads(paths.call_sheet(self.week).read_text(encoding="utf-8"))
-        before = json.loads(paths.call_sheet(self.previous).read_text(encoding="utf-8"))
+        sheet = json.loads(self.pages.call_sheet.read_text(encoding="utf-8"))
+        before = earlier(self.week, self.root)[self.previous]
         strip = lambda calls: [{k: v for k, v in c.items() if k != "what_stone_is_looking_at"} for c in calls]
-        self.assertEqual(sheet["offensive_call_sheet"], strip(before["offensive_call_sheet"]))
+        # The carried calls as set, less each variation whose player does not dress; a call whose only
+        # situation is the opening sequence leaves with its variation, and the opening calls after it
+        # move up in order (compile_sheet's renumbering).
+        off, _, gone = variation_cover(self.root, self.previous, players)
+        carried = [dict(c, tags=[t for t in c["tags"] if t not in off.get(c["name"], ())])
+                   for c in strip(before["offensive_call_sheet"]) if c["name"] not in gone]
+        if any(c.get("opener") for c in before["offensive_call_sheet"] if c["name"] in gone):
+            slots = sorted((s, c["name"]) for c in carried
+                           for s in ([c["opener"]] if "opener" in c else []) + list(c.get("opener_returns") or ()))
+            numbers = {}
+            for n, (_, name) in enumerate(slots, 1):
+                numbers.setdefault(name, []).append(n)
+            carried = [dict(c, opener=numbers[c["name"]][0], **({"opener_returns": numbers[c["name"]][1:]}
+                                                                if "opener_returns" in c else {}))
+                       if c["name"] in numbers else c for c in carried]
+        # A Primary calls row moves a carried call off the opening ahead of the other carried calls.
+        self.assertEqual(sheet["offensive_call_sheet"],
+                         [c for c in carried if c.get("opener")] +
+                         [c for c in carried if not c.get("opener") and c["name"] in off] +
+                         [c for c in carried if not c.get("opener") and c["name"] not in off])
         self.assertEqual(sheet["defensive_call_sheet"]["rows"], before["defensive_call_sheet"]["rows"])
         self.assertEqual(sheet["decisions"]["two_point"], before["decisions"]["two_point"])
         block = sheet["decisions"]["fourth_down"]
@@ -808,11 +888,21 @@ class CheckTests(OpenWeek):
     def test_invalid_choices_are_named_in_football_words(self):
         roster = self.roster()
         self.assertNotIn("Ace Sanders", {p["name"] for p in roster_record.players(roster)})
-        six = needed_inactives(self.root, self.week)[:5] + ["Ace Sanders"]
-        self.write(self.answers(inactives=", ".join(six), staff="Kernel note.",
+        needed = needed_inactives(self.root, self.week)
+        places = len(roster_record.players(roster, ("active",))) - RULES.active_limit
+        outs = out_for_game(self.root, self.week)
+        # One name more than the list takes: the count is wrong at any size of the active roster (53, or
+        # 52 with a reserve place still to fill) and however many are out for the game.
+        named = needed + ["Ace Sanders"]
+        self.write(self.answers(inactives=", ".join(named), staff="Kernel note.",
                                 calls=[["11 Doubles, Flood Sail", "high red zone", "A shot", "None"]]))
         problems, _, _ = self.check()
-        self.assertIn("Inactives: 6 named, %d needed" % len(needed_inactives(self.root, self.week)), problems)
+        if len(outs) > places:
+            count = ("Inactives: %d named; %d are out for the game, more than the %d inactive places, so the list "
+                     "is those %d" % (len(named), len(outs), places, len(outs)))
+        else:
+            count = "Inactives: %d named, %d needed" % (len(named), places)
+        self.assertIn(count, problems)
         self.assertIn("Inactives: Ace Sanders is not on the roster", problems)
         self.assertIn("Directions to the staff and public position: 'Kernel' is not a football word", problems)
         self.write(self.answers(calls=[["11 Doubles, Flood Sail", "high red zone", "A shot", "None"]]))
@@ -1078,20 +1168,22 @@ class GuardTests(OpenWeek):
         self.write(self.answers(calls=[["12 Ace, Power Right (READ Glance)", "normal downs", "x", "y"]]))
         problems, _, _ = self.check()
         self.assertTrue(any("the tag 'READ Glance' has 'READ'" in p for p in problems), problems)
-        from runtime import offensive_words
-        names = [p["name"] for p in roster_record.players(self.roster())]
-        for week in range(1, self.week):
-            path = SeasonPaths(SEASON, self.root).call_sheet(week)
-            if path.is_file():
-                for call in json.loads(path.read_text(encoding="utf-8"))["offensive_call_sheet"]:
-                    self.assertEqual(offensive_words.call_errors(call, names), [], (week, call["name"]))
+        from runtime import offensive_words, player_contracts
+        # Each closed sheet is held to the players Jacksonville carried when it was frozen: the roster
+        # record's current players and every player who has held a Jacksonville contract (a contract
+        # record is kept when the player is released, waived or traded, so his name still reads).
+        names = sorted({p["name"] for p in roster_record.players(self.roster())}
+                       | {c["name"] for c in player_contracts.load_all(self.root).values()})
+        for week, sheet in earlier(self.week, self.root).items():
+            for call in sheet["offensive_call_sheet"]:
+                self.assertEqual(offensive_words.call_errors(call, names), [], (week, call["name"]))
 
     # GP2: no plan changes while a game is paused or once the week's game is built.
     def test_gp2_a_paused_or_built_week_is_refused(self):
         from scripts.apply_game_plan import apply
         self.write(self.answers())
         paths = SeasonPaths(SEASON, self.root)
-        paused = paths.paused_game(self.week)
+        paused = paths.paused_game(self.week, self.postseason)
         paused.parent.mkdir(parents=True, exist_ok=True)
         paused.write_text(json.dumps({"status": "paused"}), encoding="utf-8")
         problems, _, _ = self.check()
@@ -1103,7 +1195,7 @@ class GuardTests(OpenWeek):
         problems, written = apply(self.root, SEASON, self.week)
         self.assertTrue(problems and "has been built from the applied plan" in problems[0], problems)
         self.assertEqual(written, [])
-        self.assertFalse(paths.call_sheet(self.week).exists())
+        self.assertFalse(self.pages.call_sheet.exists())
 
     # GP3, F2: the applied page is tied to the sheet it froze; the apply records its event and,
     # applied again, replaces its log entry.
@@ -1117,7 +1209,7 @@ class GuardTests(OpenWeek):
         self.assertEqual(validate(self.root), [])
         self.assertIn("-week-%d-game-plan-set" % self.week, self.pages.readme.read_text(encoding="utf-8"))
         record = SeasonPaths(SEASON, self.root).record("record.md").read_text(encoding="utf-8")
-        self.assertIn("Stone set his Week %d Game Plan" % self.week, record.rstrip().splitlines()[-1])
+        self.assertIn("Stone set his %s Game Plan" % self.label, record.rstrip().splitlines()[-1])
         sheet = self.pages.call_sheet.read_bytes()
         # Only a reason changed: the page is no longer the one applied, but the sheet it sets is the same.
         self.write(self.answers(staff="Keep the walkthrough short."))
@@ -1130,29 +1222,47 @@ class GuardTests(OpenWeek):
         self.assertEqual(self.pages.call_sheet.read_bytes(), sheet)
         log = json.loads(SeasonPaths(SEASON, self.root).record("team/depth_chart/update_log.json").read_text(
             encoding="utf-8"))
-        self.assertEqual(len([e for e in log["entries"] if e["event"] == "Week %d: Stone's Game Plan" % self.week]), 1)
+        self.assertEqual(len([e for e in log["entries"] if e["event"] == "%s: Stone's Game Plan" % self.label]), 1)
 
     # GP4: a game role does what it says; an order change reaches the chart.
     def test_gp4_roles_and_orders_reach_the_game(self):
         from scripts.validate_repository import validate
         chart = self.chart()
-        backup = chart["depth"]["QB"][1]
+        sitting = set(needed_inactives(self.root, self.week))
+        roles = chart.get("roles") or {}
+        # The Starter goes to a quarterback who dresses and does not hold the role: a real week can leave
+        # one out (an injured backup, or an injured starter left below the passer Stone named).
+        backup = next((p for p in chart["depth"]["QB"] if p not in sitting and "passer" not in (roles.get(p) or ())),
+                      None)
         swap = list(chart["depth"]["WR"])
         swap[2], swap[3] = swap[3], swap[2]
-        self.write(self.answers(depth="Wide receivers order: %s; Starter: %s" % (", ".join(swap), backup)))
+        if backup is not None:
+            role, line = "passer", "Starter: %s" % backup
+        else:
+            # Only one quarterback dresses and he already starts: the role half moves the kick returner
+            # (a role of no group) to a dressing receiver who does not hold it.
+            backup = next(p for p in swap if p not in sitting and "kick_return" not in (roles.get(p) or ()))
+            role, line = "kick_return", "Kick returner: %s" % backup
+        self.write(self.answers(depth="Wide receivers order: %s; %s" % (", ".join(swap), line)))
         self.assertEqual(self.check()[0], [])
         self.exams_held()
         self.apply()
         chart = self.chart()
-        self.assertEqual(chart["depth"]["QB"][0], backup)
-        self.assertIn("passer", chart["roles"][backup])
+        if role == "passer":
+            self.assertEqual(chart["depth"]["QB"][0], backup)
+        self.assertIn(role, chart["roles"][backup])
         self.assertEqual(chart["depth"]["WR"], swap)
         self.assertEqual(validate(self.root), [])
 
     def test_gp4_gp8_a_role_goes_to_a_player_of_its_group(self):
         chart = self.chart()
         receiver = chart["depth"]["WR"][-1]
+        # The outside reserve corner on the game chart: the chart's, or, when he does not dress (Butler,
+        # the deepest corner but one after Week 8), the corner a complete page gives the seat to.
         reserve = next(p for p, roles in chart["roles"].items() if "outside_reserve" in roles)
+        given = [line.split(": ", 1)[1] for line in role_cover(self.root, needed_inactives(self.root, self.week))
+                 if line.startswith("Outside reserve corner: ")]
+        reserve = given[0] if given else reserve
         self.write(self.answers(depth="Kicker: %s; Nickel: %s" % (receiver, receiver)))
         problems, _, _ = self.check()
         self.assertIn("Depth/role changes: the Kicker role goes to a player of the K group; %s is not one" % receiver,
@@ -1335,11 +1445,11 @@ class GuardTests(OpenWeek):
         (self.root / "state/decision_queue.json").write_text(json.dumps(queue, indent=1, ensure_ascii=False) + "\n",
                                                               encoding="utf-8")
         wk = render_game_week.Week(self.root)
-        row = next(l for l in render_game_week.briefing(wk).splitlines() if l.startswith("| Week %d inactives |" % self.week))
+        row = next(l for l in render_game_week.briefing(wk).splitlines() if l.startswith("| %s inactives |" % self.label))
         self.assertIn("an exam today", row)
         self.assertNotIn("a past exam", row)
         later = render_game_week.briefing(wk, wk.master + timedelta(days=1))
-        row = next(l for l in later.splitlines() if l.startswith("| Week %d inactives |" % self.week))
+        row = next(l for l in later.splitlines() if l.startswith("| %s inactives |" % self.label))
         self.assertTrue(row.rstrip().endswith("; nothing still to come |"), row)
 
     # Fresh: the week's decisions are opened by a tool, and an issued briefing needs them.
@@ -1361,15 +1471,37 @@ class GuardTests(OpenWeek):
     # A variation naming a player needs him dressed.
     def test_a_variation_needs_its_player_dressed(self):
         sheet = earlier(self.week, self.root)[self.previous]
-        tagged = next((c for c in sheet["offensive_call_sheet"] for t in c.get("tags") or ()
-                       if "receiving" in t), None)
-        if tagged is None:
-            self.skipTest("no carried variation names a player")
-        tag = next(t for t in tagged["tags"] if "receiving" in t)
-        player = next(p["name"] for p in roster_record.players(self.roster(), ("active",))
-                      if p["name"].split()[-1] == tag.split()[0])
-        players = [player] + [p for p in needed_inactives(self.root, self.week) if p != player][:-1]
-        self.write(self.answers(inactives=", ".join(players)))
+        # The check (scripts/check_game_plan.offense_problems) names a variation's player by a surname
+        # only one roster-record player holds, on any list: a player moved to reserve or the practice
+        # squad after the game that tagged him still does not dress, and the check still names him.
+        named = {}
+        for p in roster_record.players(self.roster()):
+            named.setdefault(p["name"].split()[-1].lower(), []).append(p)
+        found = [(t, named[t.split()[0].lower()][0]) for c in sheet["offensive_call_sheet"]
+                 for t in c.get("tags") or () if "receiving" in t and len(named.get(t.split()[0].lower(), ())) == 1]
+        calls = []
+        if not found:
+            # No carried variation names a player on the roster record (none was set, or its player has
+            # left): the page puts one on a carried call, for the first tight end or receiver of the
+            # chart who is active and alone in his surname.
+            chart, active = self.chart(), {p["name"] for p in roster_record.players(self.roster(), ("active",))}
+            row = next(named[n.split()[-1].lower()][0] for n in chart["depth"]["TE"] + chart["depth"]["WR"]
+                       if n in active and len(named.get(n.split()[-1].lower(), ())) == 1)
+            call = next(c for c in sheet["offensive_call_sheet"]
+                        if any(m != game_plan.SITUATION_TEXT[cs.OPENING] for m in c["menus"]))
+            tag = "%s receiving Y" % row["name"].split()[-1]
+            calls = [["%s (%s)" % (call["name"], tag),
+                      ", ".join(m for m in call["menus"] if m != game_plan.SITUATION_TEXT[cs.OPENING]),
+                      "He works the Y route.", "None"]]
+            found = [(tag, row)]
+        tag, row = next((f for f in found if f[1]["list"] == "active"), found[0])
+        player = row["name"]
+        needed = needed_inactives(self.root, self.week)
+        # An active player is put on the inactives in a list of the right size; one off the active roster
+        # does not dress anyway.
+        players = ([player] + [p for p in needed if p != player][:len(needed) - 1]) if row["list"] == "active" \
+            else needed
+        self.write(self.answers(inactives=", ".join(players), keep_variations=True, calls=calls))
         problems, _, _ = self.check()
         self.assertTrue(any("the variation %s needs %s, who does not dress" % (tag, player) in p for p in problems),
                         problems)

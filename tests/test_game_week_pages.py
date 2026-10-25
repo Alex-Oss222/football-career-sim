@@ -218,7 +218,12 @@ class BriefingTests(unittest.TestCase):
         self.assertEqual(earlier[0].read_text(encoding="utf-8"), old)
         self.assertIn(earlier[0], written)
         section = self.wk.pages.briefing.read_text(encoding="utf-8").split(SECTIONS[2], 1)[1].split("\n## ", 1)[0]
-        self.assertEqual(changed["name"] in section, not under)
+        # His row is gone (or there): read the player column, since another held player's contingency
+        # may name him as the next in the chart's order.
+        from runtime.game_plan import cells
+        rows = [cells(line) for line in section.splitlines() if line.startswith("| ")][1:]
+        players = {re.sub(r"^\[([^\]]*)\]\(.*\)$", r"\1", r[0].rpartition(", ")[0]) for r in rows}
+        self.assertEqual(changed["name"] in players, not under)
         self.assertIn(earlier[0].name, self.wk.pages.readme.read_text(encoding="utf-8"))
         # Both issues are in the week's issue record, the earlier one under its kept name.
         record = render_game_week.issues(render_game_week.Week(self.root))

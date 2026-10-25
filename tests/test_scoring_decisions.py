@@ -1311,18 +1311,53 @@ class LateFeasibilityTests(unittest.TestCase):
         self.assertGreater(out["onside_kicks"], 0)
 
 
+def real_input_clubs():
+    """The acceptance slate clubs (built once per process) with the Week 5
+    roster before kickoff (tests/support_as_of.py) under the current chart.
+    That chart's game-day list dresses only players cleared for its own game,
+    so a hold the October 5 reading still puts on one of them did not hold at
+    that game: the hold a Week 4 or earlier game left Jordan Poyer through
+    October 9, should a later list dress him, or an injury in a game the
+    reading does not clear (a postseason game). The dressed players are read
+    as cleared, so the build does not fail on whom a later list dresses."""
+    sys.path.insert(0, str(ROOT / "scripts" / "research"))
+    import acceptance_2014_6 as acc
+    from runtime import week_inputs
+    from runtime.seasons import SeasonPaths
+    from support_as_of import roster_before_week
+    chart = json.loads(SeasonPaths(2014).depth_chart.read_text(encoding="utf-8"))
+    dressed = ({p for players in chart["depth"].values() for p in players}
+               - set(chart["game_day_inactives"]["players"]))
+    held_out = week_inputs.injured_out
+    with roster_before_week(5):
+        before = week_inputs.controlled_active
+
+        def roster(season=2014, roster_path=None):
+            return [(player, week_inputs.AVAILABLE_TEXT if player in dressed else availability)
+                    for player, availability in before(season, roster_path)]
+
+        def injured(receipts, game_day, season=2013):
+            return {player: why for player, why in held_out(receipts, game_day, season).items()
+                    if player not in dressed}
+
+        with mock.patch.object(week_inputs, "controlled_active", roster), \
+                mock.patch.object(week_inputs, "injured_out", injured):
+            return acc.slate_clubs("2014.6")
+
+
 class RealInputLabelSwapTests(unittest.TestCase):
     """The Week 4 Jacksonville and San Diego inputs (acceptance slate clubs,
     synthetic latent draws): the same policy carried by either club is the
     same function of state; the other club takes the league chart."""
 
+    # The swap block's sample grows, one game per arm at a time, until every
+    # holder has tried: Jacksonville's input follows the live chart and roster,
+    # so which games a fixed sample draws moves whenever they change.
+    SWAP_COUNT, MAX_SWAP_COUNT = 2, 12
+
     @classmethod
     def setUpClass(cls):
-        sys.path.insert(0, str(ROOT / "scripts" / "research"))
-        import acceptance_2014_6 as acc
-        from support_as_of import roster_before_week
-        with roster_before_week(5):  # the Week 5 roster before kickoff (tests/support_as_of.py)
-            clubs = acc.slate_clubs("2014.6")
+        clubs = real_input_clubs()
         cls.jax, cls.sd = clubs["Jacksonville Jaguars"], clubs["San Diego Chargers"]
 
     def run_side(self, carrier):
@@ -1348,12 +1383,17 @@ class RealInputLabelSwapTests(unittest.TestCase):
 
     def test_the_committed_swap_block(self):
         # scripts/research/acceptance_2014_6.py --block swap (120 games per arm
-        # at acceptance; two here): every holder's try and kick follows its
-        # block and the other club takes the league chart. A relabelled club
-        # is another packet (another stream), so the Jacksonville and Denver
-        # arms agree in distribution (the block's z readings), not game by game.
+        # at acceptance; two here, more while a holder has not tried): every
+        # holder's try and kick follows its block and the other club takes the
+        # league chart. A relabelled club is another packet (another stream),
+        # so the Jacksonville and Denver arms agree in distribution (the
+        # block's z readings), not game by game.
         import acceptance_2014_6 as acc
-        out = acc.swap_block(count=2)
+        count = self.SWAP_COUNT
+        out = acc.swap_block(count=count)
+        while not all(out["arms"][arm]["tries"] for arm in acc.SWAP_ARMS) and count < self.MAX_SWAP_COUNT:
+            count += 1
+            out = acc.swap_block(count=count)
         arms = out["arms"]
         for arm in acc.SWAP_ARMS:
             a = arms[arm]
@@ -1387,12 +1427,8 @@ class SocketWiringTests(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        sys.path.insert(0, str(ROOT / "scripts" / "research"))
-        import acceptance_2014_6 as acc
         from runtime import strength
-        from support_as_of import roster_before_week
-        with roster_before_week(5):  # the Week 5 roster before kickoff (tests/support_as_of.py)
-            clubs = acc.slate_clubs("2014.6")
+        clubs = real_input_clubs()
         cls.jax, cls.sd = clubs["Jacksonville Jaguars"], clubs["San Diego Chargers"]
         cls.terms = strength.parameters(PROFILE_2014_6.strength).terms
         cls.base_games, cls.calls, cls.receipts = cls.games()
