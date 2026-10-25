@@ -28,3 +28,13 @@ Practices and games missed are recorded here as they occur.
 ## Sources
 
 [Game report](../../../Regular_Season/Games/Week_07/Game_Report.md) · [Roster](../../Team/Roster/roster.md) · [Medical history](../medical_history.md)
+
+## Updates from October 20, 2014
+
+| Date | Communicated finding | Permitted work | Source |
+|---|---|---|---|
+| October 23, 2014 | Reassessed on the day the instruction named; no change: out, projected return October 31, no further reassessment date | None (took no part October 20 to 25; a non-participant Wednesday through Friday on the league's report, out for the Week 8 game) | [Medical history](../medical_history.md#october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out) |
+
+**Current medical information, from October 23, 2014:** out; projected return October 31, 2014, the medical staff's projection; no further medical review set.
+
+**Football effect, from October 20, 2014:** He missed every session of the Miami week and is out for the Week 8 game; under Stone's Week 8 Game Plan Paul Posluszny makes the front declaration, with Telvin Smith and Sio Moore completing the first linebacker group.

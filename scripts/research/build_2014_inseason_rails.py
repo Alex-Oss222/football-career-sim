@@ -118,6 +118,11 @@ OUTCOME = {
     # the kind of one move, so both rows wait for a resolution (rules C10).
     "R14-0616": (None, "REVIEW_SOURCE_CONFLICT", "the wire and ESPN disagree on the kind of move (rules C10)"),
     "R14-0617": (None, "REVIEW_SOURCE_CONFLICT", "the wire and ESPN disagree on the kind of move (rules C10)"),
+    # Decision D6 where ESPN's pinned club log, not the wire, shows the pre-Week 1 reserve placement: the
+    # weekly rosters carry him for none of his club's games before the activation (Week 8 review).
+    "R14W8-001": ("activation_return", "APPLY", "an activation from a reserve list he was on before Week 1 (ESPN's "
+                                               "club log of August 30; the wire's August pages have no entry): a "
+                                               "return to his club (decision D6)"),
 }
 # Harrison retired as a free agent (rules C9): his retirement frees no place.
 CLUB = {"R14-0107": "FA"}

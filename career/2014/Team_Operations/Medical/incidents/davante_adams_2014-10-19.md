@@ -28,3 +28,13 @@ Practices and games missed are recorded here as they occur.
 ## Sources
 
 [Game report](../../../Regular_Season/Games/Week_07/Game_Report.md) · [Roster](../../Team/Roster/roster.md) · [Medical history](../medical_history.md)
+
+## Updates from October 20, 2014
+
+| Date | Communicated finding | Permitted work | Source |
+|---|---|---|---|
+| October 20, 2014 | Reassessed on the day the instruction named, also its projected return; nothing else communicated, so he cleared on his projected return date | Full from October 20: the Monday walkthrough, the October 22, 23 and 24 practices and the October 25 walkthrough | [Medical history](../medical_history.md#october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out) |
+
+**Current medical information, from October 20, 2014:** no communicated restriction; cleared October 20, 2014, the medical staff's projected date; not on the league's Week 8 report; no further medical review set.
+
+**Football effect, from October 20, 2014:** He missed no session of the Miami practice week. A clearance restores no role by itself; Stone's Week 8 Game Plan keeps him at X once cleared.

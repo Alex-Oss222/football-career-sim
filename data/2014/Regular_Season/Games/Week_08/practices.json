@@ -1,0 +1,509 @@
+{
+ "schema": "practice-week-v1",
+ "season": 2014,
+ "week": 8,
+ "kind": "game",
+ "basis": "recorded",
+ "schedule": {
+  "source": {
+   "instruction": "stone-practice-schedule-2014"
+  },
+  "sha256": "535a6f1c77e2cc8bcf581700498c5f3673619c8017a493df8664320088713ad8"
+ },
+ "source": {
+  "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+ },
+ "sessions": [
+  {
+   "date": "2014-10-20",
+   "type": "walkthrough",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Davante Adams",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Alterraun Verner",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Aqib Talib",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Joel Bitonio",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "A.J. Bouye",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Andrew Norwell",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Daryl Smith",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-22",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Davante Adams",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Alterraun Verner",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Aqib Talib",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Joel Bitonio",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "A.J. Bouye",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Andrew Norwell",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Daryl Smith",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-23",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Davante Adams",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Alterraun Verner",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Aqib Talib",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Joel Bitonio",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "A.J. Bouye",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Andrew Norwell",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Daryl Smith",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-24",
+   "type": "practice",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Davante Adams",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Alterraun Verner",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Aqib Talib",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Joel Bitonio",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "A.J. Bouye",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Andrew Norwell",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Daryl Smith",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    }
+   ]
+  },
+  {
+   "date": "2014-10-25",
+   "type": "walkthrough",
+   "required": true,
+   "attendees": "team",
+   "equipment": "helmets",
+   "status": "held",
+   "pad_exceptions": [],
+   "participation_recorded": false,
+   "participation": [
+    {
+     "player": "Davante Adams",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Alterraun Verner",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Aqib Talib",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Joel Bitonio",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "A.J. Bouye",
+     "status": "full",
+     "basis": null,
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Andrew Norwell",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    },
+    {
+     "player": "Daryl Smith",
+     "status": "did_not_participate",
+     "basis": "medical_instruction",
+     "medical": {
+      "page": "career/2014/Team_Operations/Medical/medical_history.md",
+      "anchor": "october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out"
+     },
+     "source": {
+      "page": "career/2014/Regular_Season/Games/Week_08/README.md"
+     }
+    }
+   ]
+  }
+ ],
+ "days_off": [
+  {
+   "players": "all",
+   "exceptions": [],
+   "date": "2014-10-21",
+   "scope": "players"
+  }
+ ],
+ "gaps": [
+  "Participation was not recorded session by session; only the medical staff's communicated limitations and the part of the players on the 53 under a medical instruction at the start of the week are recorded; Dwight Lowery, on reserve/injured designated for return, did not practice, his instruction not having cleared him"
+ ]
+}

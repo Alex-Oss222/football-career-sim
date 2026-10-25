@@ -1,6 +1,6 @@
 # Jacksonville Jaguars
 
-As of October 19, 2014, after the Week 7 game against Cleveland (Cleveland 34, Jacksonville 31).
+As of October 26, 2014, after the Week 7 game against Cleveland (Cleveland 34, Jacksonville 31).
 
 Head coach Alex Stone. Employed by the Jacksonville Jaguars; employment decided by Shad Khan, owner, and David Caldwell, general manager.
 
@@ -22,7 +22,7 @@ Next: Week 8 against Miami, October 26, 2014.
 
 | Team | W | L | T | Pct | PF | PA |
 |---|---:|---:|---:|---:|---:|---:|
-| Houston Texans | 4 | 2 | 0 | .667 | 138 | 126 |
+| Houston Texans | 4 | 3 | 0 | .571 | 169 | 164 |
 | Jacksonville Jaguars | 4 | 3 | 0 | .571 | 170 | 153 |
 | Indianapolis Colts | 3 | 4 | 0 | .429 | 152 | 173 |
 | Tennessee Titans | 2 | 5 | 0 | .286 | 143 | 161 |

@@ -3769,7 +3769,7 @@
   },
   "inseason_rails_manifest": {
    "path": "library/data/2014_inseason_rails/manifest.json",
-   "sha256": "f936516aff83aeecb57f64d7b3f8b5769b474293275589e2140f4386c3a6d513"
+   "sha256": "ac0a97fe18c90e722e927ec159f4a6962dd55a52ae54eff601d316d3f04afdfc"
   },
   "roster_weekly_2014w4.csv": {
    "scope": "2014 REG Weeks 1-4, the latest week per player",

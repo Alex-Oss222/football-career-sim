@@ -1,6 +1,6 @@
 # Depth chart changes
 
-As of October 19, 2014, after the Week 7 game against Cleveland (Cleveland 34, Jacksonville 31).
+As of October 26, 2014, after the Week 7 game against Cleveland (Cleveland 34, Jacksonville 31).
 
 [Current depth chart](depth_chart.md)
 

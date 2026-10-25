@@ -1,0 +1,7 @@
+{
+ "about": "The Game Report's pregame sections (the numbered sections before the game story) as they stood before kickoff: each section's heading and the sha256 of its text, frozen at the game-day commit by scripts/freeze_pregame.py. Validation holds the report's pregame sections to it once the game has closed.",
+ "frozen": "2014-10-26",
+ "sections": {
+  "1. Preparation and final game-day decisions": "047092da5e7bc5955285f9d9cbd7a146f659a7afed73393c8889002ecb6cf69e"
+ }
+}

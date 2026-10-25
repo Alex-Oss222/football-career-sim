@@ -28,3 +28,14 @@ Practices and games missed are recorded here as they occur.
 ## Sources
 
 [Game report](../../../Regular_Season/Games/Week_07/Game_Report.md) · [Roster](../../Team/Roster/roster.md) · [Medical history](../medical_history.md)
+
+## Updates from October 20, 2014
+
+| Date | Communicated finding | Permitted work | Source |
+|---|---|---|---|
+| October 20, 2014 | Reassessed on the day the instruction named; no change: independent medical hold, projected return October 22, no further reassessment date | None (did not take part in the Monday walkthrough) | [Medical history](../medical_history.md#october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out) |
+| October 22, 2014 | Released by the independent process on the projected date; nothing further communicated after the October 20 reassessment | Full from October 22 with no communicated limitation, in the Wednesday, Thursday and Friday practices and the October 25 walkthrough; no game designation | [Medical history](../medical_history.md#october-20-to-25-adams-verner-talib-bitonio-and-bouye-back-norwell-and-daryl-smith-out) |
+
+**Current medical information, from October 22, 2014:** no communicated restriction; the independent medical hold was released October 22, 2014, its projected date; no further medical review set.
+
+**Football effect, from October 20, 2014:** He missed the Monday walkthrough of the Miami week and practiced in full after the release. His return outside is Stone's on his Week 8 Game Plan, which sends him back outside only with the independent clearance.

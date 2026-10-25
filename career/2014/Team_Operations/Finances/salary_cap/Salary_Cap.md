@@ -20,7 +20,7 @@ As of September 8, 2014, the latest contract change. Whole US dollars. The 2014 
 
 ## On the reserve lists
 
-Their contracts continue and count in full (the roster as of October 19, 2014, after the Week 7 game against Cleveland).
+Their contracts continue and count in full (the roster as of October 26, 2014, game day against Miami before kickoff).
 
 | Player | Pos | List | 2014 charge |
 |---|---|---|---:|

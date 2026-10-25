@@ -1,20 +1,12 @@
 # Week 8 Game Week Briefing: Miami
 
-**Issued:** October 19, 2014, revision 2  
+**Issued:** October 26, 2014  
 **Game:** Miami at Jacksonville, Sunday, October 26, 2014, 1 p.m. ET, EverBank Field  
 **Prepared for:** Head Coach Alex Stone  
 **Football staff:** Mike Tice (offense), Romeo Crennel (defense), Mike Westhoff (special teams), the medical staff and pro personnel  
-**Status:** Revised: it replaces the briefing of October 19, 2014.
+**Status:** Revised: it replaces the briefing of October 19, 2014, revision 2.
 
 ## COMING UP
-
-> **Dwight Lowery's practice window** | Monday, October 20
->
-> **Why it matters:** Eligibility: the medical communication sets no practice before October 20.
->
-> **Current state:** Reserve/Injured, designated for return (placed September 8, 2014).
->
-> **Action now:** No answer is required.
 
 > **Trading deadline** | Tuesday, October 28, 4 p.m. ET
 >
@@ -40,7 +32,7 @@
 | Venue and kickoff | EverBank Field, Sunday, October 26, 2014, 1 p.m. ET |
 | Rest and travel | Jacksonville: 7 days since its Week 7 game, at home; Miami: 7 days since its Week 7 game, on the road |
 | Game type | Regular season |
-| Stakes | AFC South as of October 19, 2014, with Week 7's Houston at Pittsburgh, October 20 still to play: Houston 4-2, Jacksonville 4-3, Indianapolis 3-4, Tennessee 2-5. In the AFC order Jacksonville is 9th, outside the playoff places. |
+| Stakes | AFC South through Week 7: Houston 4-3, Jacksonville 4-3, Indianapolis 3-4, Tennessee 2-5. In the AFC order Jacksonville is 9th, outside the playoff places. |
 
 **Staff's central football question:** To come.
 
@@ -65,13 +57,8 @@
 
 | Player | Status as of issue | Next medical decision / date | Football contingency |
 |---|---|---|---|
-| [Davante Adams](../../../Team_Operations/Medical/incidents/davante_adams_2014-10-19.md), WR | Out: lower extremity (minor); projected return October 20, 2014 | Reassessment, October 20 | Next in the chart's receiver order: Adam Thielen |
-| [Joel Bitonio](../../../Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md), OT | Out: lower extremity (short); projected return October 22, 2014 | Not communicated | No one behind him in the chart's offensive line order |
-| [Andrew Norwell](../../../Team_Operations/Medical/incidents/andrew_norwell_2014-10-19.md), G | Independent hold: head/neck (short); projected return November 2, 2014 | Reassessment, October 23 | By the chart and the Week 7 game-day list: Cornelius Lucas at left guard |
-| [Daryl Smith](../../../Team_Operations/Medical/incidents/daryl_smith_2014-10-19.md), LB | Out: lower extremity (short); projected return October 31, 2014 | Reassessment, October 23 | Next in the chart's linebacker order: Paul Posluszny |
-| [Aqib Talib](../../../Team_Operations/Medical/incidents/aqib_talib_2014-10-19.md), CB | Independent hold: head/neck (minor); projected return October 22, 2014 | Reassessment, October 20 | By the chart and the Week 7 game-day list: Malcolm Butler at outside corner |
-| [Alterraun Verner](../../../Team_Operations/Medical/incidents/alterraun_verner_2014-10-19.md), CB | Limited: lower extremity (no projected absence) | Reassessment, October 20 | By the chart and the Week 7 game-day list: Chris Prosinski at outside corner |
-| [A.J. Bouye](../../../Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md), CB | Out: lower extremity (short); projected return October 22, 2014 | Not communicated | By the chart and the Week 7 game-day list: Malcolm Butler at outside corner |
+| [Andrew Norwell](../../../Team_Operations/Medical/incidents/andrew_norwell_2014-10-19.md), G | Independent hold: head/neck (short); projected return November 2, 2014 | Not communicated | By the chart and the Week 7 game-day list: Cornelius Lucas at left guard |
+| [Daryl Smith](../../../Team_Operations/Medical/incidents/daryl_smith_2014-10-19.md), LB | Out: lower extremity (short); projected return October 31, 2014 | Not communicated | Next in the chart's linebacker order: Paul Posluszny |
 
 **Game-day numbers:** Who does not dress: 7 of the 53; on the medical staff's projections 2 are out for the game, so your standing rule sits the other five and settles the list.
 
@@ -100,6 +87,8 @@
 | October 6 | Waived | Orleans Darkwa | RB |
 | October 8 | Signed to the practice squad | Orleans Darkwa | RB |
 | October 15 | Signed to the practice squad | McLeod Bethel-Thompson | QB |
+| October 21 | Signed to the practice squad | LaRon Byrd | WR |
+| October 25 | Released | Damian Williams | WR |
 
 **Crennel's recommendation:** To come.
 
@@ -169,8 +158,8 @@
 
 | Decision | Choice required | Deadline / dependency |
 |---|---|---|
-| Week 8 game plan for Miami | The plan for the game | Practice work before the first practice, Wednesday, October 22; the rest before kickoff, Sunday, October 26, 1 p.m. ET; nothing still to come |
-| Week 8 inactives | Who does not dress: 7 of the 53; on the medical staff's projections 2 are out for the game, so your standing rule sits the other five and settles the list | Before kickoff, Sunday, October 26, 1 p.m. ET; after: Alterraun Verner's reassessment (October 20); Aqib Talib's reassessment (October 20); Davante Adams's reassessment and projected return (October 20); A.J. Bouye's projected return (October 22); Aqib Talib's projected return (October 22); Joel Bitonio's projected return (October 22); Andrew Norwell's reassessment (October 23); Daryl Smith's reassessment (October 23) |
+| Week 8 game plan for Miami | The plan for the game | Before kickoff, Sunday, October 26, 1 p.m. ET; nothing still to come |
+| Week 8 inactives | Who does not dress: 7 of the 53; on the medical staff's projections 2 are out for the game, so your standing rule sits the other five and settles the list | Before kickoff, Sunday, October 26, 1 p.m. ET; nothing still to come |
 
 Write your decisions on the [Game Plan](Game_Plan.md); the staff checks it and tells you what is missing before anything is set for the game.
 

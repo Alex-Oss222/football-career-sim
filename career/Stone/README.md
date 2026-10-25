@@ -4,7 +4,7 @@
 
 Born September 21, 1963, Miami, Florida · Tight end, University of Miami, 1982 to 1985 · Tight end, San Diego Chargers, 1986 to 1995
 
-As of October 19, 2014, after Week 7.
+As of October 26, 2014, after Week 7.
 
 ![Alex Stone](photos/alex_stone.webp)
 

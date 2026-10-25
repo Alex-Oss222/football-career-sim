@@ -2,8 +2,8 @@
  "team": "Jacksonville Jaguars",
  "season": 2014,
  "as_of": {
-  "date": "2014-10-19",
-  "event": "after the Week 7 game against Cleveland"
+  "date": "2014-10-26",
+  "event": "game day against Miami before kickoff"
  },
  "practice_squad_places": 10,
  "active_limit": 53,
@@ -93,7 +93,7 @@
    "list": "active",
    "group": "Wide receivers",
    "status": "Active 53 (Rookie, drafted No. 38, May 9, 2014; rookie contract signed May 11, 2014)",
-   "availability": "Out, minor: lower extremity, logged at 0:00 of the second quarter in the October 19 Week 7 game, not removed; projected return October 20, 2014; reassessment October 20 ([medical record](../../Medical/incidents/davante_adams_2014-10-19.md))",
+   "availability": "No communicated restriction: cleared October 20, 2014, his projected date, from the October 19 lower-extremity injury, at the reassessment its instruction named; full October 20 to 25 ([medical record](../../Medical/incidents/davante_adams_2014-10-19.md)); earlier cleared September 26 from the September 21 lower-extremity injury",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/incidents/davante_adams_2014-10-19.md"
@@ -228,7 +228,7 @@
    "list": "active",
    "group": "Offensive line",
    "status": "Active 53 (Rookie, drafted No. 26, May 8, 2014; rookie contract signed May 11, 2014)",
-   "availability": "Out, short: lower extremity, logged at 1:13 of the fourth quarter in the October 12 Week 6 game, not removed; projected return October 22, 2014; reassessed October 15 with no change; did not practice October 15 to 17 ([medical record](../../Medical/incidents/joel_bitonio_2014-10-12.md))",
+   "availability": "No communicated restriction: cleared October 22, 2014, his projected date, from the October 12 lower-extremity injury (reassessed October 15 with no change); did not practice October 15 to 17 or take part in the October 20 walkthrough; full October 22 to 25 ([medical record](../../Medical/incidents/joel_bitonio_2014-10-12.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/incidents/joel_bitonio_2014-10-12.md"
@@ -300,7 +300,7 @@
    "list": "active",
    "group": "Offensive line",
    "status": "Active 53 (Rookie, undrafted; signed May 10, 2014)",
-   "availability": "Independent medical hold, short: head/neck, logged at 6:26 of the first quarter in the October 19 Week 7 game, removed; projected return November 2, 2014; reassessment October 23 ([medical record](../../Medical/incidents/andrew_norwell_2014-10-19.md))",
+   "availability": "Independent medical hold, short: head/neck, logged at 6:26 of the first quarter in the October 19 Week 7 game, removed; projected return November 2, 2014; reassessed October 23 with no change; did not take part October 20 to 25 ([medical record](../../Medical/incidents/andrew_norwell_2014-10-19.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/incidents/andrew_norwell_2014-10-19.md"
@@ -420,7 +420,7 @@
    "list": "active",
    "group": "Linebackers",
    "status": "Active 53",
-   "availability": "Out, short: lower extremity, logged at 10:27 of the second quarter in the October 19 Week 7 game, removed; projected return October 31, 2014; reassessment October 23 ([medical record](../../Medical/incidents/daryl_smith_2014-10-19.md))",
+   "availability": "Out, short: lower extremity, logged at 10:27 of the second quarter in the October 19 Week 7 game, removed; projected return October 31, 2014; reassessed October 23 with no change; did not take part October 20 to 25 ([medical record](../../Medical/incidents/daryl_smith_2014-10-19.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/incidents/daryl_smith_2014-10-19.md"
@@ -504,7 +504,7 @@
    "list": "active",
    "group": "Defensive backs",
    "status": "Active 53 (signed March 11, 2014)",
-   "availability": "Independent medical hold, minor: head/neck, logged at 2:45 of the first quarter in the October 19 Week 7 game, removed; projected return October 22, 2014; reassessment October 20 ([medical record](../../Medical/incidents/aqib_talib_2014-10-19.md))",
+   "availability": "No communicated restriction: independent medical hold from the October 19 head/neck injury released October 22, 2014, its projected date (reassessed October 20 with no change); did not take part in the October 20 walkthrough; full October 22 to 25 ([medical record](../../Medical/incidents/aqib_talib_2014-10-19.md)); earlier released September 25 from the September 21 head/neck hold",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/incidents/aqib_talib_2014-10-19.md"
@@ -552,7 +552,7 @@
    "list": "active",
    "group": "Defensive backs",
    "status": "Active 53 (signed March 11, 2014)",
-   "availability": "Limited, no projected absence: lower extremity, logged at 10:27 of the second quarter in the October 19 Week 7 game, not removed; no time lost projected; reassessment October 20 ([medical record](../../Medical/incidents/alterraun_verner_2014-10-19.md))",
+   "availability": "No communicated restriction: the participation limit from the October 19 lower-extremity injury ended at the October 20 reassessment, no time lost projected and nothing else communicated; full October 20 to 25 ([medical record](../../Medical/incidents/alterraun_verner_2014-10-19.md))",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/incidents/alterraun_verner_2014-10-19.md"
@@ -564,7 +564,7 @@
    "list": "active",
    "group": "Defensive backs",
    "status": "Active 53",
-   "availability": "Out, short: lower extremity, logged at 13:26 of the third quarter in the October 12 Week 6 game, removed; projected return October 22, 2014; reassessed October 15 with no change; did not practice October 15 to 17 ([medical record](../../Medical/incidents/a_j_bouye_2014-10-12.md))",
+   "availability": "No communicated restriction: cleared October 22, 2014, his projected date, from the October 12 lower-extremity injury (reassessed October 15 with no change); did not practice October 15 to 17 or take part in the October 20 walkthrough; full October 22 to 25 ([medical record](../../Medical/incidents/a_j_bouye_2014-10-12.md)); earlier cleared August 31 from the August 28 lower-extremity injury",
    "sources": {
     "status": "career/2014/Training_Camp_and_Preseason/Roster_Decisions/final_roster_cuts.md",
     "availability": "career/2014/Team_Operations/Medical/incidents/a_j_bouye_2014-10-12.md"

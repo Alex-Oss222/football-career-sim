@@ -29,7 +29,7 @@
   {
    "date": "2014-10-19",
    "revision": 2,
-   "file": "Game_Week_Briefing.md",
+   "file": "Game_Week_Briefing_October_19_2.md",
    "sha256": "4e1912d9cd2ecd9cf20c39cd1ce1f73e24ddeaaafd380b10e7917a64f0839849",
    "at": "2014-10-19T13:00:00-04:00",
    "reason": "b: the briefing's own sections changed while the week's decisions are open",
@@ -39,6 +39,26 @@
      "section": "coming_up",
      "sha256": "e285c6844fc7e467d4826c83739ee2222ec2123091f26051ac94ddaa4b6beb17"
     },
+    {
+     "window": "2014-trading-deadline",
+     "section": "coming_up",
+     "sha256": "237f903840fc7e7e885552a4782473aa5b240807d23dbf0c527ee813efca4ad5"
+    },
+    {
+     "window": "dwight-lowery-return-2014-11-03",
+     "section": "coming_up",
+     "sha256": "120fe6e0af4843d7d72d9bf749b917f014899fffe780a184611c4a15ae1646e4"
+    }
+   ]
+  },
+  {
+   "date": "2014-10-26",
+   "revision": 1,
+   "file": "Game_Week_Briefing.md",
+   "sha256": "01d0a5dd73d0bde6c2b0850e2648dbd6f9c4dd898c0ea5307b1fcccd0e28939e",
+   "at": "2014-10-26T00:00:00-04:00",
+   "reason": "b: the briefing's own sections changed while the week's decisions are open",
+   "inserts": [
     {
      "window": "2014-trading-deadline",
      "section": "coming_up",
